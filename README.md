@@ -19,3 +19,8 @@
 1. Install component using bower: `bower install [name] --save`
 2. Run local gulp task to add component to libs files: `gulp bower`
 3. Start gulp: `gulp`
+
+##Setting up Dev Environment
+1. Confirm RVM is installed
+2. gem install bundler
+3. bundle install
