@@ -1,0 +1,26 @@
+{
+  "name": "refed",
+  "version": "0.0.0",
+  "authors": [
+    "Tom Beck <tom@ocupop.com>"
+  ],
+  "description": "ReFED",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/_assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "flexboxgrid": "^6.3.0",
+    "font-awesome": "^4.5.0",
+    "bootstrap-sass": "^3.3.6"
+  }
+}

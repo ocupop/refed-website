@@ -1,9 +1,12 @@
-// @import './node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
-@import 'bootstrap';
+
+// @import 'bower/bootstrap-sass/assets/stylesheets/_bootstrap';
+
 @import '_variables';
+@import 'bootstrap';
 @import '_icons';
 @import '_animations';
 @import '_fixes';
+
 
 /* -----------------------------------------
    Mixins
@@ -62,7 +65,23 @@ a {
 }
 
 // Navigation
-#mainnav {}
+#topnav {
+  height: 25px;
+  line-height: 25px;
+  background-color: $green;
+  ul {
+    margin: 0;
+  }
+}
+#mainnav {
+  height: 50px;
+  line-height: 50px;
+  background-color: $cream-light;
+  border-bottom: 1px solid $gray-lighter;
+  ul {
+    margin: 0;
+  }
+}
 #socialnav {}
 #footernav {}
 

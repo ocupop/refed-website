@@ -40,6 +40,7 @@ assets:
     - "bundle.css"
   digest: true
   sources:
+    - _assets/bower
     - _assets/css
     - _assets/images
     - _assets/javascripts
