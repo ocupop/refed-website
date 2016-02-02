@@ -1,4 +1,5 @@
 .sass-cache
+src/.asset-cache
 .jekyll-metadata
 node_modules
 publish
