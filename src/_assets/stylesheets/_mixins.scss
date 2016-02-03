@@ -1,0 +1,14 @@
+@mixin palette($bg: red, $color: yellow) {
+  background-color: $bg;
+  fill: $bg;
+  color: $color;
+  h1, h2, h3, h4, .lead {
+    color: darken($color, 5%);
+    &.small {
+      color: inherit;
+    }
+  }
+  hr {
+    border-color: lighten($color, 10%);
+  }
+}
