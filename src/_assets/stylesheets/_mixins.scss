@@ -3,9 +3,9 @@
   fill: $bg;
   color: $color;
   h1, h2, h3, h4, .lead {
-    color: darken($color, 5%);
+    color: $color;
     &.small {
-      color: inherit;
+      color: $color;
     }
   }
   hr {

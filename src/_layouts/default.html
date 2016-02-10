@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body>
+  <body class="{{ page.slug }}">
     <header id="page-header">{% include header.html %}</header>
-    <main class="page-content">{{ content }}</main>
-    <footer id="page-footer" class="split-container">{% include footer.html %}</footer>
+    <main id="page-content">{{ content }}</main>
+    <footer id="page-footer" class="">{% include footer.html %}</footer>
   </body>
 </html>

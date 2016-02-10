@@ -9,21 +9,25 @@
 @import '_icons';
 @import '_animations';
 @import '_fixes';
+@import "_charts.scss";
+@import "chartist/dist/scss/chartist.scss";
 
 /* -----------------------------------------
    Variables
 ----------------------------------------- */
 
 // Color Palette
-$cream-lightest:          #f7f5f0;
-$cream-lighter:           #f0eee5;
+$cream-lightest:          #f6f5f0;
+$cream-lighter:           #f0ede4;
 $cream-light:             #EDE9DF;
 $cream:                   #DED8C6;
 $cream-dark:              #C4BA98;
 
 $green:                   #7A9C49;
 $blue:                    #225577;
-$teal:                    #2A8275;
+
+$teal:                    #78beb4;
+$teal-dark:               #2A8275;
 
 $gray-dark:               #414141;
 $gray:                    #565759;
@@ -48,7 +52,7 @@ $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
 // Spacing
-$live-content-width:      920px;
+$live-content-width:      960px;
 $line-height-base:        1.428571429;
 $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 $content-padding:         $line-height-computed;
@@ -70,7 +74,10 @@ $base-line-height:        50px;
 ----------------------------------------- */
 html {}
 body {
+  font-family: $font-family-base;
   background-color: $white;
+  color: $text-color;
+  font-weight: 300;
 }
 section {
   padding: 50px 0;
@@ -82,12 +89,16 @@ nav {
   display: flex;
   ul {
     margin: auto;
+    margin-right: 0;
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
     li {
       height: $base-line-height;
       line-height: $base-line-height;
+      margin: 0 1em;
     }
   }
 }
@@ -98,7 +109,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 300;
   line-height: 1.25em;
-  color: $gray-dark;
+  color: inherit;
   text-transform: uppercase;
   small,
   .small {
@@ -123,6 +134,38 @@ a {
   &:focus {
     outline: none;
   }
+  &.muted {
+    color: $gray-light;
+  }
+}
+
+form {}
+select {
+  min-width: 200px;
+  padding: 15px 22px;
+  font-size: 16px;
+  border: 1px solid $gray-light;
+  border-radius: 0;
+  &:focus {
+   outline: none;
+  }
+  // background: #fff url(icon-arrow-down.svg) no-repeat right center; 
+  background-position-x: 92%;
+  background-size: 12px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+}
+
+ol {
+  padding-left: 1.5em;
+  li {
+    padding-left: 0.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    span {
+      font-weight: 300;
+    }
+  }
 }
 
 /* -----------------------------------------
@@ -131,6 +174,7 @@ a {
 // Structure
 #page-header {
   position: relative;
+  z-index: 9;
 }
 #page-content {
   position: relative;
@@ -142,21 +186,55 @@ a {
 
 // Navigation
 #topnav {
-  height: 25px;
-  line-height: 25px;
-  background-color: $green;
+  background-color: $gray-dark;
   ul {
     li {
+      height: 25px;
+      line-height: 25px;
+      &.search {
+        input {
+          border: none;
+          // border-radius: 12px;
+          // background-color: rgba(255,255,255,0.3);
+          background-color: transparent;
+          text-indent: 30px;
+          font-size: 13px;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+      }
       a {
         font-size: 13px;
         font-weight: 300;
         text-transform: uppercase;
         color: $cream-lighter;
         &:hover {
-          color: $white;
+          color: #fff;
+        }
+        &.download {
+          display: inline-block;
+          width: 100px;
+          height: 75px;
+          text-indent: -999em;
+          background-color: $teal-lighter;
+          color: $teal-light;
+          // border-radius: 0 0 10px 10px;
+          // box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
         }
       }
     }
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $cream-lighter;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $cream-lighter;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $cream-lighter;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $cream-lighter;
   }
 }
 #mainnav {
@@ -165,13 +243,20 @@ a {
   background-color: $cream-light;
   border-bottom: 1px solid $gray-lighter;
   ul {
+    margin-right: 120px;
     li {
+      &.brand {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
       a {
         font-size: 16px;
         font-weight: 500;
         text-transform: uppercase;
+        color: $gray-light;
         &:hover {
-          color: #959697;
+          color: $text-color;
         }
       }
     }
@@ -193,8 +278,8 @@ a {
    Utility Classes
 ----------------------------------------- */
 .hide {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
 }
 .sr {
   position: absolute;
@@ -237,17 +322,50 @@ a {
   }
 }
 
-.full-bleed {
+/* -----------------------------------------
+   Misc Layout
+----------------------------------------- */
+.container {
+  position: relative;
+  max-width: $live-content-width;
+}
+.row {
+  max-width: $live-content-width;
+  margin: auto;
+  [class^="col-"] {
+    .content {
+      padding: $content-padding $content-padding*2;
+    }
+  }
+  [class^="col-"]:first-child {
+    .content {
+      padding-left: 0;
+    }
+  }
+  [class^="col-"]:last-child {
+    .content {
+      padding-right: 0;
+    }
+  }
+}
+.flush {
   padding: 0;
   .row {
     max-width: none;
     .content {
-      margin: auto;
-      margin-right: 0;
-      max-width: floor(($live-content-width / 2 - 40));
+      max-width: floor(($live-content-width / 3 - 40));
     }
     [class^="col-"] {
       padding: 30px 0;
+      .content {
+         padding: $content-padding;
+      }
+    }
+    [class^="col-"]:first-child {
+      .content {
+        margin-right: 0;
+        margin-left: auto;
+      }
     }
     [class^="col-"]:last-child {
       .content {
@@ -256,14 +374,6 @@ a {
       }
     }
   }
-}
-
-/* -----------------------------------------
-   Misc
------------------------------------------ */
-.row {
-  max-width: $live-content-width;
-  margin: auto;
 }
 .button {
   display: inline-block;
@@ -308,6 +418,37 @@ a.external {
   background-repeat: no-repeat;
 }
 
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  // justify-content: center;
+  // align-items: center;
+  // align-content: center;
+  .tab {
+    margin: auto 5px;
+    padding: 5px 20px;
+    flex-grow: 1;
+    font-size: 13px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $cream;
+    color: $text-color;
+    cursor: pointer;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $teal;
+      color: $white;
+    }
+  }
+}
 .card {
   position: relative;
   min-height: 100px;
@@ -407,7 +548,10 @@ a.external {
     }
   }
 }
-// Hero Images
+
+/* -----------------------------------------
+   Hero Banners
+----------------------------------------- */
 .hero {
   display: table;
   position: relative;
@@ -432,14 +576,16 @@ a.external {
     height: 100%;
     top: 0; bottom: 0;
     left: 0; right: 0;
+    padding: 0;
     color: #fff;
-    text-align: center;
-    vertical-align: bottom;
+    text-align: left;
+    vertical-align: middle;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
     h1, h2, h3 { 
       color: #ffffff;
       font-size: 40px;
-      line-height: 0.8em;
+      font-weight: 100;
+      line-height: 1.25em;
       letter-spacing: 0.05em;
       small {
         font-weight: 300;
@@ -448,6 +594,14 @@ a.external {
     }
   }
 }
+
+// .analysis {
+//   .hero {
+//     background-image: url(/assets/images/hero/bg-pepper.jpg);
+//   }
+// }
+
+
 
 /* -----------------------------------------
    Color Palette
@@ -472,6 +626,17 @@ a.external {
   @include palette($blue, $white);
 }
 
+
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: $green;
+  /* The width of your bars */
+  stroke-width: 40px;
+  /* Yes! Dashed bars! */
+  // stroke-dasharray: 20px;
+  /* Maybe you like round corners on your bars? */
+  // stroke-linecap: round;
+}
 /* -----------------------------------------
    Media Queries
 ----------------------------------------- */
