@@ -1,11 +1,105 @@
 <div class="row">
-  <div class="col-sm-3 blue">
-    <div class="content">Content</div>
+  <div class="col-xs-12 col-sm-6">
+    <img src="http://placehold.it/400x80/565759/DED8C6?text=placeholder">
   </div>
-  <div class="col-sm-5 teal">
-    <div class="content">Content</div>
+  <div class="col-xs-12 col-sm-6">
+    <div id="socialnav">
+      <a href="#">
+        <i class="icon-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="icon-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="icon-linkedin"></i>
+      </a>
+      <a href="#">
+        <i class="icon-youtube"></i>
+      </a>
+    </div>
   </div>
-  <div class="col-sm-4 green">
-    <div class="content">Content</div>
+</div>
+<div id="footernav">
+  <div class="row">
+    <div class="col-sm-3 blue">
+      <div class="content">
+        <ul class="primary-sitemap">
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li>
+                <a href="#">The Team</a>
+                <ul>
+                  <li><a href="#">Advisory Council</a></li>
+                  <li><a href="#">Implementation Team</a></li>
+                  <li><a href="#">Steering Committee</a></li>
+                  <li><a href="#">Foundation List</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-5 teal-dark">
+      <div class="content">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul class="report-sitemap">
+              <li>
+                <a href="#">Food Waste</a>
+                <ul>
+                  <li><a href="#">What is Food Waste</a></li>
+                  <li><a href="#">Current State</a></li>
+                  <li><a href="#">Value Chain</a></li>
+                  <li><a href="#">Food Waste Types</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="report-sitemap"></ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="report-sitemap">
+              <li>
+                <a href="#">Stakeholders</a>
+                <ul>
+                  {% for stakeholder in site.stakeholders %}
+                  <li><a href="{{ stakeholder.url }}">{{ stakeholder.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 green">
+      <div class="content">
+        <h3>
+          Subscribe<br>
+          <small>Join our mailing list.</small>
+        </h3>
+        <form>
+          <div class="form-inputs">
+            <label class="sr">First Name</label>
+            <input type="text" placeholder="First Name">
+            <label class="sr">Last Name</label>
+            <input type="text" placeholder="Last Name">
+            <label class="sr">Email</label>
+            <input type="text" placeholder="Email">
+            <label class="sr">Zipcode</label>
+            <input type="text" placeholder="Zip" class="zip">
+            <input type="submit" value="Submit" class="button">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>COPYRIGHT <span class="year">2016</span> ReFED. ALL RIGHTS RESERVED</p>
   </div>
 </div>

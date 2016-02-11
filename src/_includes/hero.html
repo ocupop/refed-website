@@ -1,0 +1,16 @@
+{% if page.hero %}
+<section class="hero" style="background-image: url({% asset_path '{{ page.hero.image }}' %});">
+  <div class="hero-content">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5">
+        <div class="content">
+          <h2>{{ page.hero.title }}</h2>
+          {% if page.hero.summary %}
+          <p class="lead">{{ page.hero.summary }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
