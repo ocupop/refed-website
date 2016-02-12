@@ -45,6 +45,10 @@ assets:
   assets:
     - "*.png"
     - "*.jpg"
+    - "*.eot"
+    - "*.ttf"
+    - "*.woff"
+    - "*.svg"
   #   - "bundle.css"
   digest: true
   sources:
