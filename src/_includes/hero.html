@@ -1,5 +1,9 @@
 {% if page.hero %}
-<section class="hero" style="background-image: url({% asset_path '{{ page.hero.image }}' %});">
+  {% if page.hero.image %}
+  <section class="hero" style="background-image: url({% asset_path '{{ page.hero.image }}' %});">
+  {% else %}
+   <section class="hero" style="background-image: url('http://placehold.it/2500x800/565759/DED8C6?text=+');">
+  {% endif %}
   <div class="hero-content">
     <div class="row">
       <div class="col-xs-12 col-sm-5">

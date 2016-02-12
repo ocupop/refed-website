@@ -36,13 +36,13 @@ hero:
   </div>
 </section>
 
-{% include cost_curve.html %}
+{% include cost_curve_placeholder.html %}
 
 <section>
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="content">
-        {% include donut.html %}
+        <img src="{% asset_path 'analysis/chart-donut-categories.svg' %}" class="img-responsive">
       </div>
     </div>
     <div class="col-sm-6 col-xs-12">

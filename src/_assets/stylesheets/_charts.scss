@@ -65,12 +65,14 @@ $ct-include-colored-series: $ct-include-classes !default;
 $ct-include-alternative-responsive-containers: $ct-include-classes !default;
 
 // Series names and colors. This can be extended or customized as desired. Just add more series and colors.
-$ct-series-names: (a, b, c, d);
+$ct-series-names: (a, b, c, d, e, f);
 $ct-series-colors: (
   $link-color,
   $recycle-color,
   $prevention-color,
-  $recovery-color
+  $recovery-color,
+  $red,
+  orange,
 );
 
 

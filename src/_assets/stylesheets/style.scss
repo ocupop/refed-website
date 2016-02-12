@@ -489,7 +489,10 @@ ol {
   width: 90%;
 }
 
-
+.script {
+  font-family: $font-family-serif;
+  font-style: italic;
+}
 
 .brand {
   text-transform: none !important;
@@ -576,13 +579,22 @@ ol {
     font-size: 14px;
   }
   &.play-video {
-    height: $base-line-height * 2;
-    line-height: $base-line-height * 2;
+    height: $base-line-height * 1.5;
+    line-height: $base-line-height * 1.5;
+    padding-right: 30px;
     font-size: 28.5px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
     border: 1px solid $cream-light;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
+    background-color: transparent;
+    i {
+      font-size: 40px;
+      margin: 0;
+      float: right;
+      line-height: 70px;
+      text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+    }
   }
 }
 .button-stakeholder {
@@ -627,7 +639,7 @@ a.external {
     padding: 5px 20px;
     flex-grow: 1;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 200;
     text-transform: uppercase;
     text-align: center;
     background-color: $cream;
@@ -759,7 +771,7 @@ a.external {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: #000000;
+  background-color: $cream-light;
   color: #fff;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   &.skinny {
@@ -823,7 +835,27 @@ a.external {
 
 section.alternate {
   @include palette($section-alt-color, $text-color);
-} 
+}
+
+/* -----------------------------------------
+   Icons
+----------------------------------------- */
+
+.icon-circle {
+    border-radius: 50%;
+}
+.icon-cloud {
+  color: #e9ae6c;
+}
+.icon-drop {
+  color: #9bcac0;
+}
+.icon-tree {
+  color: #7aa883;
+}
+.icon-trash {
+  color: #922947;
+}
 
 
 /* -----------------------------------------
@@ -855,17 +887,37 @@ section.alternate {
   }
 }
 
-.ct-series-a .ct-bar {
-  stroke: $button-color;
-  stroke-width: 30px;
+#cost-curve {
+  // height: 400px;
 }
 
-.ct-series-a {
+.ct-series-a,
+.ct-series-b,
+.ct-series-c,
+.ct-series-d,
+.ct-series-e,
+.ct-series-f {
+  // display: none;
   overflow: hidden;
   .ct-bar {
-    @include animation(slideUp, 0.8s, 0.5s);
+    stroke: $button-color;
+    stroke-width: 25px;
+    @include animation(cardSlideIn, 0.8s, 0.5s);
   }
 }
+
+// .ct-series-c,
+// .ct-series-d,
+// .ct-series-e,
+// .ct-series-f { display: none; }
+
+
+// .ct-series-a {
+//   overflow: hidden;
+//   .ct-bar {
+//     @include animation(slideUp, 0.8s, 0.5s);
+//   }
+// }
 
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
   display: block;
@@ -873,18 +925,85 @@ section.alternate {
   white-space: nowrap;
   transform: rotate(-90deg);
   text-align: left;
-  font-size: 14px;
-  // @for $i from 1 through 28 {
-  //   &:nth-child(#{$i}) { 
-  //     @include animation(fadeIn, 0.8s, 0.1s * $i);
-  //   }
-  // }
+  font-size: 13px;
+  line-height: 25px;
+  text-indent: 10px;
+  @for $i from 1 through 28 {
+    &:nth-child(#{$i}) { 
+      @include animation(fadeIn, 2.8s, 0.2s * $i);
+    }
+  }
 }
 
 // .ct-grid.ct-horizontal {
 //   display: none;
 // }
 
+
+#doughnutChart {
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  position: relative;
+}
+.doughnutTip {
+  position: absolute;
+  float: left;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 15px;
+  border-radius: 1px;
+  background: rgba(0,0,0,.8);
+  color: #ddd;
+  font-size: 17px;
+  text-shadow: 0 1px 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  transform: all .3s;
+  pointer-events: none;
+}
+.doughnutTip:after {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  content: "";
+  height: 0;
+  margin: 0 0 0 -6px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 6px solid rgba(0,0,0,.7);
+  line-height: 0;
+}
+.doughnutSummary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #d5d5d5;
+  text-align: center;
+  text-shadow: 0 -1px 0 #111;
+  cursor: default;
+}
+.doughnutSummaryTitle {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -27%;
+  font-size: 22px;
+  letter-spacing: .06em;
+}
+.doughnutSummaryNumber {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -15%;
+  font-size: 55px;
+}
+.chart path:hover { 
+  opacity: .65; 
+}
 
 
 /* -----------------------------------------
@@ -900,7 +1019,7 @@ body.food-waste {
     background-image: url("{% asset_path 'food-waste/bg-grapes.jpg' %}");
     background-size: cover;
     .content {
-      padding: 210px $content-padding*4;
+      padding: 170px $content-padding*4;
       padding-bottom: 0;
     }
   }
@@ -996,6 +1115,14 @@ body.analysis {
           background: transparent url("{% asset_path 'analysis/arrow-down.svg' %}") no-repeat center bottom;
         }
       }
+    }
+  }
+}
+
+body.stakeholders {
+  .hero {
+    .hero-content {
+      h1 { font-size: 36px; }
     }
   }
 }
