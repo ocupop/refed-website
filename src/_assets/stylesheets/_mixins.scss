@@ -1,10 +1,20 @@
+/* -----------------------------------------
+   Mixins
+----------------------------------------- */
+
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
+  -webkit-transition: $property $duration $effect;
+  -moz-transition: $property $duration $effect;
+  transition: $property $duration $effect;
+}
+
 @mixin palette($bg: red, $color: yellow) {
   background-color: $bg;
   fill: $bg;
   color: $color;
   h1, h2, h3, h4, .lead {
     color: $color;
-    &.small {
+    small {
       color: $color;
     }
   }

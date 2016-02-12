@@ -1,12 +1,63 @@
-// $fa-font-path:        "../fonts" !default;
-// $fa-font-size-base:   14px !default;
-// $fa-line-height-base: 1 !default;
-// //$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.4.0/fonts" !default; // for referencing Bootstrap CDN font files directly
-// $fa-css-prefix:       fa !default;
-// $fa-version:          "4.4.0" !default;
-// $fa-border-color:     #eee !default;
-// $fa-inverse:          #fff !default;
-// $fa-li-width:         (30em / 14) !default;
+/* -----------------------------------------
+   Variables
+----------------------------------------- */
+
+// Color Palette
+$cream-light:               #F7F5F0;
+$cream:                     #DED8C6;
+$cream-dark:                #C4BA98;
+
+$gray-dark:                 #36383A;
+$gray:                      #555759;
+$gray-light:                #959697;
+$gray-lighter:              #F0ECE4;
+
+$placeholder-color:         #BFB9A1;
+$mainnav-background-color:  #F4F1E9;
+$section-alt-color:         #F1EDE4;
+$button-color:              #69B2A9;
+
+$recycle-color:             #88A65B;
+$prevention-color:          #225577;
+$recovery-color:            #2A8175;
+$red:                       #990000;
+
+$body-bg:                   $cream-light;
+$text-color:                $gray;
+$brand-primary:             $red;
+
+$link-color:                #228E93;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     none;
+
+$well-bg:                   $section-alt-color;
+$well-border:               $section-alt-color;
+
+$hr-border:                 $gray;
+
+
+// Typeography
+$font-family-base:        'Proxima Nova W01', sans-serif;
+$font-family-condensed:   'Trade Gothic W01', sans-serif;
+
+$font-size-base:          16px;
+
+$font-size-h1:            28.5px;
+$font-size-h2:            25.5px;
+$font-size-h3:            24px;
+$font-size-h4:            18px;
+$font-size-h5:            16px;
+$font-size-h6:            12px;
+
+// Spacing
+$live-content-width:      960px;
+$line-height-base:        1.428571429;
+// $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+$line-height-computed:    20px;
+$content-padding:         $line-height-computed;
+$base-line-height:        50px;
+
+$border-radius-base:        0;
 
 
 
@@ -19,21 +70,6 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
-$cream-lightest:          #f7f5f0;
-$cream-lighter:           #f0eee5;
-$cream-light:             #EDE9DF;
-$cream:                   #DED8C6;
-$cream-dark:              #C4BA98;
-
-$green:                   #7A9C49;
-$blue:                    #225577;
-$teal:                    #2A8275;
-
-$gray:                    #565759;
-$gray-lighter:            #F0ECE4;
-
-$body-bg:                $cream-lightest;
-$brand-primary:          $green;
 
 
 
@@ -48,7 +84,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -65,11 +101,11 @@ $body-bg:               #fff !default;
 $text-color:            $gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            #228E93;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none;
 
 
 //== Typography
@@ -82,7 +118,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -140,7 +176,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
+$border-radius-base:        0;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 

@@ -1,10 +1,10 @@
-//= require vendor/normalize.css
-//= require vendor/main.css
+//#= require vendor/normalize.css
+//#= require vendor/main.css
 //= require vendor/flexboxgrid.min.css
 
 
-// @import '_variables';
-// @import 'bootstrap';
+@import '_variables';
+@import 'bootstrap';
 @import '_mixins';
 @import '_icons';
 @import '_animations';
@@ -12,63 +12,6 @@
 @import "_charts.scss";
 @import "chartist/dist/scss/chartist.scss";
 
-/* -----------------------------------------
-   Variables
------------------------------------------ */
-
-// Color Palette
-$cream-lightest:          #f6f5f0;
-$cream-lighter:           #f0ede4;
-$cream-light:             #EDE9DF;
-$cream:                   #DED8C6;
-$cream-dark:              #C4BA98;
-
-$green:                   #7A9C49;
-$blue:                    #225577;
-
-$teal:                    #78beb4;
-$teal-dark:               #2A8275;
-
-$gray-dark:               #414141;
-$gray:                    #545857;
-$gray-light:              #959697;
-$gray-lighter:            #F0ECE4;
-
-$white:                   $cream-lightest;
-
-$text-color:              $gray;
-$placeholder-color:       yellow;
-
-// Typeography
-$font-family-base:        'Proxima Nova W01', sans-serif;
-$font-family-condensed:   'Proxima Nova W01', sans-serif;
-
-$font-size-base:          14px;
-
-$font-size-h1:            28.5px;
-$font-size-h2:            28.5px;
-$font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
-
-// Spacing
-$live-content-width:      960px;
-$line-height-base:        1.428571429;
-$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
-$content-padding:         $line-height-computed;
-$base-line-height:        50px;
-
-
-/* -----------------------------------------
-   Mixins
------------------------------------------ */
-
-@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
-  -webkit-transition: $property $duration $effect;
-  -moz-transition: $property $duration $effect;
-  transition: $property $duration $effect;
-}
 
 /* -----------------------------------------
    Global
@@ -76,7 +19,7 @@ $base-line-height:        50px;
 html {}
 body {
   font-family: $font-family-base;
-  background-color: $white;
+  background-color: $cream-light;
   color: $text-color;
   font-weight: 300;
 }
@@ -108,7 +51,7 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0.5em;
   margin-bottom: 1em;
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.25em;
   color: inherit;
   text-transform: uppercase;
@@ -121,24 +64,26 @@ h1, .h1 { font-size: $font-size-h1; }
 h2, .h2 { font-size: $font-size-h2; }
 h3, .h3 { font-size: $font-size-h3; text-transform: uppercase; margin-bottom: 0;}
 h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; text-transform: uppercase; color: $gray; font-family: $font-family-condensed; }
+h5, .h5 { font-size: $font-size-h5; text-transform: uppercase; color: inherit; margin-bottom: 0; }
 h6, .h6 { font-size: $font-size-h6; }
 
 p {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.15em 0;
+  font-size: 18px;
 }
 img {}
 
 
 a {
-  color: $green;
   text-decoration: none;
   &:active,
   &:focus {
     outline: none;
+    text-decoration: none;
   }
   &.muted {
     color: $gray-light;
+    font-size: 18px;
   }
 }
 i {
@@ -175,7 +120,8 @@ input {
   font-size: 13px;
 }
 ol {
-  padding-left: 1.5em;
+  padding-left: 1em;
+  margin-top: 25px;
   li {
     padding-left: 0.5em;
     font-weight: 500;
@@ -200,7 +146,15 @@ ol {
 }
 #page-footer {
   position: relative;
+  h3 {
+    line-height: 12px;
+    small {
+      font-weight: 100;
+      font-size: 13px;
+    }
+  }
   form {
+    margin-top: 20px;
     input {
       &.zip {
         width: 49%;
@@ -208,12 +162,15 @@ ol {
       }
     }
     input[type="submit"] {
-      width: 47%;
-      height: 37px;
-      line-height: 37px;
+      display: block;
+      float: right;
+      width: 48%;
+      height: 38px;
+      line-height: 40px;
+      margin: 3px 0 0 0;
       padding: 0;
       text-indent: 0;
-      background-color: $teal-dark;
+      background-color: $recovery-color;
     }
   }
 }
@@ -244,7 +201,7 @@ ol {
         font-size: 13px;
         font-weight: 300;
         text-transform: uppercase;
-        color: $cream-lighter;
+        color: $cream-light;
         &:hover {
           color: #fff;
         }
@@ -253,8 +210,8 @@ ol {
           width: 100px;
           height: 75px;
           text-indent: -999em;
-          background-color: $teal;
-          color: darken($teal, 20%);
+          background-color: $button-color;
+          color: darken($button-color, 20%);
           // border-radius: 0 0 10px 10px;
           // box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
         }
@@ -262,31 +219,33 @@ ol {
     }
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $cream-lighter;
+    color: $cream-light;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: $cream-lighter;
+    color: $cream-light;
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: $cream-lighter;
+    color: $cream-light;
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: $cream-lighter;
+    color: $cream-light;
   }
 }
 #mainnav {
   height: 50px;
   line-height: 50px;
-  background-color: $cream-light;
+  background-color: $mainnav-background-color;
   border-bottom: 1px solid $gray-lighter;
+  .brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 120px;
+  }
   ul {
     margin-right: 120px;
     li {
-      &.brand {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
       a {
         font-size: 16px;
         font-weight: 500;
@@ -347,7 +306,7 @@ ol {
 }
 #footernav {
   font-weight: 100;
-  color: $white;
+  color: $cream-light;
   ul {
     font-size: 16px;
     font-weight: 500;
@@ -358,7 +317,7 @@ ol {
       margin-bottom: 2px;
       a {
         text-transform: uppercase;
-        color: $white;
+        color: $cream-light;
         &:hover {
           color: #ffffff;
         }
@@ -433,14 +392,6 @@ ol {
   text-align: center;
 }
 
-// Sections
-
-
-/* -----------------------------------------
-   Page Specific
------------------------------------------ */
-.splash {}
-.homepage {}
 
 /* -----------------------------------------
    Utility Classes
@@ -490,6 +441,28 @@ ol {
   }
 }
 
+.break-50 {
+  width: 50%;
+}
+.break-60 {
+  width: 60%;
+}
+.break-70 {
+  width: 70%;
+}
+.break-80 {
+  width: 80%;
+}
+.break-90 {
+  width: 90%;
+}
+
+
+
+.brand {
+  text-transform: none !important;
+}
+
 /* -----------------------------------------
    Misc Layout
 ----------------------------------------- */
@@ -526,26 +499,29 @@ ol {
     [class^="col-"] {
       padding: 30px 0;
       .content {
-         padding: $content-padding;
+         padding: $content-padding $content-padding*4;
       }
     }
     [class^="col-"]:first-child {
       .content {
         margin-right: 0;
         margin-left: auto;
+        padding-left: 0;
       }
     }
     [class^="col-"]:last-child {
       .content {
         margin-right: auto;
         margin-left: 0;
+        padding-right: 0;
       }
     }
   }
 }
+
 .button {
   display: inline-block;
-  // width: 100%;
+  width: 100%;
   height: $base-line-height;
   line-height: $base-line-height;
   margin: 5px 0;
@@ -553,11 +529,16 @@ ol {
   border-radius: 0;
   text-align: center;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 100;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  background-color: $blue;
-  color: $white;
+  background-color: $button-color;
+  color: $cream-light;
+  &:hover {
+    background-color: darken($button-color, 10%);
+    color: $cream-light;
+  }
   i {
     margin: 0 4px;
     font-size: 14px;
@@ -568,7 +549,7 @@ ol {
     font-size: 28.5px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
-    border: 1px solid $cream-lighter;
+    border: 1px solid $cream-light;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
   }
 }
@@ -613,18 +594,20 @@ a.external {
       margin-right: 0;
     }
     &:hover, &.active {
-      background-color: $teal;
-      color: $white;
+      background-color: $button-color;
+      color: $cream-light;
     }
   }
 }
 
-.card-grid {
+.grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 30px 0;
   margin-right: -20px;
+  padding: 0;
+  list-style: none;
 }
 .card {
   position: relative;
@@ -689,44 +672,43 @@ a.external {
       font-weight: 100;
       text-transform: uppercase;
 
-      color: $white;
+      color: $cream-light;
     }
   }
-  &.prevention {
+  &.prevention-card {
     footer {
-      .stat { color: $blue; }
+      .stat { color: $prevention-color; }
       a {
-        background-color: $blue;
+        background-color: $prevention-color;
       }
     }
   }
-  &.recovery {
+  &.recovery-card {
     footer {
-      .stat { color: $teal-dark; }
+      .stat { color: $recovery-color; }
       a {
-        background-color: $teal-dark;
+        background-color: $recovery-color;
       }
     }
   }
-  &.recycle {
+  &.recycle-card {
     footer {
-      .stat { color: $green; }
+      .stat { color: $recycle-color; }
       a {
-        background-color: $green;
+        background-color: $recycle-color;
       }
     }
   }
 }
 
-/* -----------------------------------------
-   Hero Banners
------------------------------------------ */
+
+// Hero Banners
 .hero {
   display: table;
   position: relative;
   width: 100%;
-  height: 580px;
-  min-height: 580px;
+  height: 380px;
+  min-height: 380px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -756,20 +738,17 @@ a.external {
       font-weight: 100;
       line-height: 1.25em;
       letter-spacing: 0.05em;
+      margin: 0;
       small {
         font-weight: 300;
         letter-spacing: 0.1em;
       }
     }
+    .lead {
+      font-weight: 100;
+    }
   }
 }
-
-.analysis {
-  .hero {
-    // background-image: url(asset_path("header-analysis.jpg"));
-  }
-}
-
 
 
 /* -----------------------------------------
@@ -782,26 +761,28 @@ a.external {
 .cream-light {
   @include palette($cream-light, $text-color);
 }
-.cream-lighter {
-  @include palette($cream-lighter, $text-color);
-}
-.green {
-  @include palette($green, $white);
-}
 .teal {
-  @include palette($teal, $white);
+  @include palette($button-color, $cream-light);
 }
-.teal-dark {
-  @include palette($teal-dark, $white);
+
+.recycle {
+  @include palette($recycle-color, $cream-light);
 }
-.blue {
-  @include palette($blue, $white);
+.recovery {
+  @include palette($recovery-color, $cream-light);
 }
+.prevention {
+  @include palette($prevention-color, $cream-light);
+}
+
+section.alternate {
+  @include palette($section-alt-color, $text-color);
+} 
 
 
 .ct-series-a .ct-bar {
   /* Colour of your bars */
-  stroke: $green;
+  stroke: $recycle-color;
   /* The width of your bars */
   stroke-width: 40px;
   /* Yes! Dashed bars! */
@@ -809,6 +790,151 @@ a.external {
   /* Maybe you like round corners on your bars? */
   // stroke-linecap: round;
 }
+
+/* -----------------------------------------
+   Charts
+----------------------------------------- */
+.legend {
+  padding: $content-padding;
+  margin: 40px 0;
+  background-color: $well-bg;
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-indent: 10px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  i {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+  }
+  table {
+    td {
+      padding: 2px 8px;
+      font-size: 18px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+/* -----------------------------------------
+   Page Specific
+----------------------------------------- */
+body.food-waste {
+  .hero {
+    h1, h2 {
+      font-size: 34px;
+    }
+  }
+  #video {
+    background-image: url("{% asset_path 'food-waste/bg-grapes.jpg' %}");
+    background-size: cover;
+    .content {
+      padding: 210px $content-padding*4;
+      padding-bottom: 0;
+    }
+  }
+  #consumption_percentage {
+    li {
+      width: 50%;
+      h3 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 16px;
+        small {
+          font-size: 17px;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+      }
+      i {
+        display: inline-block;
+      }
+    }
+  }
+  #returns {
+    margin-left: -20px;
+    li {
+      width: 30%;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      img {
+        width: 45%;
+        margin-bottom: 50px;
+        float: left;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 16px;
+        margin: 40px 0 10px 0;
+        small {
+          font-size: 16px;
+          color: lighten($text-color, 15%);
+          text-transform: lowercase;
+        }
+      }
+      hr {
+        border-top: 1px solid $text-color;
+        margin: 10px;
+      }
+      a {
+        display: block;
+        line-height: 1em;
+        font-size: 12px;
+        color: $text-color;
+        text-transform: uppercase;
+        // font-family: $font-family-condensed;
+      }
+    }
+  }
+}
+
+body.analysis {
+  #supply-chain {
+    .chain {
+      width: 190px;
+      float: left;
+      background-color: #ece6da;
+    }
+    .details {
+      width: 280px;
+      padding-left: $content-padding*2;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        cursor: pointer;
+        i {
+          margin: 0 auto;
+          width: 75px;
+          height: 75px;
+        }
+        img {
+          width: 60px;
+          margin: 0 auto;
+        }
+        &.divider {
+          width: 100%;
+          height: 35px;
+          background: transparent url("{% asset_path 'analysis/arrow-down.svg' %}") no-repeat center bottom;
+        }
+      }
+    }
+  }
+}
+
+
 /* -----------------------------------------
    Media Queries
 ----------------------------------------- */
