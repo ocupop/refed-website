@@ -155,3 +155,12 @@
   }
 }
 
+// .card {
+//     // Loop through the cards and delay the loading animation.
+//   @for $i from 1 through 20 {
+//     &:nth-child(#{$i}) { 
+//       @include animation(cardSlideIn, 0.8s, 0.1s * $i);
+//     }
+//   }
+  
+// }

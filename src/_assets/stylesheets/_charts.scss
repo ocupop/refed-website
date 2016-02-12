@@ -34,9 +34,9 @@ $ct-text-justify: flex-start !default;
 $ct-text-line-height: 1;
 
 // Grid styles
-$ct-grid-color: rgba(0, 0, 0, 0.2) !default;
-$ct-grid-dasharray: 2px !default;
-$ct-grid-width: 1px !default;
+$ct-grid-color: rgba(0, 0, 0, 0.2);
+$ct-grid-dasharray: 0;
+$ct-grid-width: 0.5px;
 
 // Line chart properties
 $ct-line-width: 4px !default;
@@ -48,7 +48,7 @@ $ct-point-shape: round !default;
 $ct-area-opacity: 0.1 !default;
 
 // Bar chart bar width
-$ct-bar-width: 10px !default;
+$ct-bar-width: 10px;
 
 // Donut width (If donut width is to big it can cause issues where the shape gets distorted)
 $ct-donut-width: 60px !default;
@@ -65,21 +65,12 @@ $ct-include-colored-series: $ct-include-classes !default;
 $ct-include-alternative-responsive-containers: $ct-include-classes !default;
 
 // Series names and colors. This can be extended or customized as desired. Just add more series and colors.
-$ct-series-names: (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o) !default;
+$ct-series-names: (a, b, c, d);
 $ct-series-colors: (
-  #d70206,
-  #f05b4f,
-  #f4c63d,
-  #d17905,
-  #453d3f,
-  #59922b,
-  #0544d3,
-  #6b0392,
-  #f05b4f,
-  #dda458,
-  #eacf7d,
-  #86797d,
-  #b2c326,
-  #6188e2,
-  #a748ca
-) !default;
+  $link-color,
+  $recycle-color,
+  $prevention-color,
+  $recovery-color
+);
+
+

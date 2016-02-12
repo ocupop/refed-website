@@ -826,17 +826,6 @@ section.alternate {
 } 
 
 
-.ct-series-a .ct-bar {
-  /* Colour of your bars */
-  stroke: $recycle-color;
-  /* The width of your bars */
-  stroke-width: 40px;
-  /* Yes! Dashed bars! */
-  // stroke-dasharray: 20px;
-  /* Maybe you like round corners on your bars? */
-  // stroke-linecap: round;
-}
-
 /* -----------------------------------------
    Charts
 ----------------------------------------- */
@@ -865,6 +854,37 @@ section.alternate {
     }
   }
 }
+
+.ct-series-a .ct-bar {
+  stroke: $button-color;
+  stroke-width: 30px;
+}
+
+.ct-series-a {
+  overflow: hidden;
+  .ct-bar {
+    @include animation(slideUp, 0.8s, 0.5s);
+  }
+}
+
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+  display: block;
+  overflow: visible;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  text-align: left;
+  font-size: 14px;
+  // @for $i from 1 through 28 {
+  //   &:nth-child(#{$i}) { 
+  //     @include animation(fadeIn, 0.8s, 0.1s * $i);
+  //   }
+  // }
+}
+
+// .ct-grid.ct-horizontal {
+//   display: none;
+// }
+
 
 
 /* -----------------------------------------
