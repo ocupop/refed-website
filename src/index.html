@@ -29,7 +29,7 @@ hero:
   </div>
 </section>
 
-<section class="cream">
+<section class="alternate">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="content">
@@ -39,23 +39,35 @@ hero:
     </div>
     <div class="col-xs-12 col-sm-6">
       <div class="content">
-        <h2>Food waste consumes</h2>
-        <ul class="grid waste">
+        <h2>Food waste consumes:</h2>
+        <ul id="consumption_percentage" class="grid">
           <li>
-            <i class="icon-drop"></i>21%<br>
-            <span>of U.S. water use</span>
+            <h3>
+              <i class="icon-drop"></i>
+              21%<br>
+              <small>of U.S. water use</small>
+            </h3>
           </li>
           <li>
-            <i class="icon-fertilizer"></i>19%<br>
-            <span>of fertilizer use</span>
+            <h3>
+              <i class="icon-fertilizer"></i>
+              19%<br>
+              <small>of fertilizer use</small>
+            </h3>
           </li>
           <li>
-            <i class="icon-tree"></i>18%<br>
-            <span>of cropland</span>
+            <h3>
+              <i class="icon-tree"></i>
+              18%<br>
+              <small>of cropland</small>
+            </h3>
           </li>
           <li>
-            <i class="icon-trash"></i>21%<br>
-            <span>of landfill volume</span>
+            <h3>
+              <i class="icon-trash"></i>
+              21%<br>
+              <small>of landfill volume</small>
+            </h3>
           </li>
         </ul>
       </div>
@@ -68,19 +80,19 @@ hero:
     <div class="col-xs-12">
       <div class="content">
         <h2>Food wasted by volume</h2>
-        <p>Waste occurs throughout the supply chain, with nearly 85% occurring downstream at consumer-facing businesses and homes.</p>
+        <p class="break">Waste occurs throughout the supply chain, with nearly 85% occurring downstream at consumer-facing businesses and homes.</p>
         <img src="{% asset_path 'food-waste/graph-waste-volume.svg' %}" class="img-responsive">
       </div>
     </div>
   </div>
 </section>
 
-<section class="cream">
+<section class="alternate">
   <div class="row">
     <div class="col-xs-12">
       <div class="content">
         <h2>Financial Waste</h2>
-        <p>The financial cost of food waste ends up costing consumers the most due to retail pricing versus wholesale pricing for consumer-facing businesses.</p>
+        <p class="break">The financial cost of food waste ends up costing consumers the most due to retail pricing versus wholesale pricing for consumer-facing businesses.</p>
         <img src="{% asset_path 'food-waste/graph-waste-financial.svg' %}" class="img-responsive">
       </div>
     </div>
@@ -98,7 +110,7 @@ hero:
   </div>
 </section>
 
-<section class="cream">
+<section class="alternate">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="content">
@@ -107,7 +119,7 @@ hero:
         <p>ReFED’ analysis of the top prevention, recovery, and recycling solutions shows that 12.5 million tons — over 20% of annual food waste — can be reduced over the next decade in cost-effective and scalable ways.</p>
         <h5>50% by 2030</h5>
         <p>Beyond this near-term 20% roadmap, ReFED has also identified the critical innovations, initiatives, policies, and awareness-building work required to reach the longer-term 50% reduction goal by 2030 as set by the federal government.</p>
-        <a href="/solutions" class="button">View Solution Details &gt;</a>
+        <a href="/solutions" class="button">View Solution Details &nbsp;&gt;</a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -123,7 +135,7 @@ hero:
     <div class="col-xs-12">
       <div class="content">
         <h2>If implemented, these solutions could generate:</h2>
-        <ul class="grid">
+        <ul id="returns" class="grid">
           <li>
             <img src="{% asset_path '{{ page.slug }}/icon-generate-economic-value.svg' %}" class="img-responsive">
             <h4>
@@ -131,7 +143,7 @@ hero:
               <small>of economic value</small>
             </h4>
             <hr>
-            <a href="#">View the top financial solutions &gt;</a>
+            <a href="#">View the top financial solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -141,7 +153,7 @@ hero:
               <small>meals saved</small>
             </h4>
             <hr>
-            <a href="#">View the top meal saving solutions &gt;</a>
+            <a href="#">View the top meal saving solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -151,7 +163,7 @@ hero:
               <small>water saved annually</small>
             </h4>
             <hr>
-            <a href="#">View the top water saving solutions &gt;</a>
+            <a href="#">View the top water saving solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -161,7 +173,7 @@ hero:
               <small>annual consumer savings</small>
             </h4>
             <hr>
-            <a href="#">View the top consumer savings solutions &gt;</a>
+            <a href="#">View the top consumer savings solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -171,7 +183,7 @@ hero:
               <small>annual business profit potential</small>
             </h4>
             <hr>
-            <a href="#">View the top business profit potential solutions &gt;</a>
+            <a href="#">View the top business profit potential solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -181,7 +193,7 @@ hero:
               <small>tons of GHG emissions reduced annually</small>
             </h4>
             <hr>
-            <a href="#">View the top emission reducing solutions &gt;</a>
+            <a href="#">View the top emission reducing solutions &nbsp;&gt;</a>
           </li>
         </ul>
       </div>
