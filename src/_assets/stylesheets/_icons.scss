@@ -32,6 +32,12 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-next:before {
+    content: "\e905";
+}
+.icon-prev:before {
+    content: "\e9e5";
+}
 .icon-stakeholder-farmers .path1:before {
     content: "\e90c";
     color: rgb(189, 202, 214);
@@ -1123,9 +1129,6 @@ i {
 }
 .icon-linkedin:before {
     content: "\e904";
-}
-.icon-next:before {
-    content: "\e905";
 }
 .icon-search:before {
     content: "\e906";
