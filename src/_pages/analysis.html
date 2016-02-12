@@ -8,13 +8,13 @@ hero:
   title: An economic analysis of food waste solutions
 ---
 
-<section class="">
+<section>
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="content">
-        <h2>Solution Evaluation</h2>
+        <h2>A cost effective approach to food waste</h2>
         <p>ReFED set out to understand the most cost-effective ways to reduce food waste and the resources needed to implement those solutions at scale. A wide list of solutions was gathered from stakeholders, and narrowed to a short list of 27 solutions that met criteria around data availability, cost-effectiveness, feasibility, and scalability.</p>
-        <a href="#" class="muted"><em>Read more about ReFED's methodology ></em></a>
+        <a href="#" class="muted"><em>Read more about ReFED's methodology &nbsp;&gt;</em></a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -35,18 +35,10 @@ hero:
     </div>
   </div>
 </section>
-<section class="">
-  <div class="row middle-xs">
-    <div class="col-xs-12">
-      <h2>Explore the solutions</h2>
-      <p>All 27 solutions have positive or near-breakeven Economic Value, with societal benefits outweighing the costs.</p>
-    </div>
-  </div>
-  <div class="row">
-    {% include cost_curve.html %}
-  </div>
-</section>
-<section class="">
+
+{% include cost_curve.html %}
+
+<section>
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="content">
@@ -55,18 +47,38 @@ hero:
     </div>
     <div class="col-sm-6 col-xs-12">
       <div class="content">
-        <h2>How to reduce food waste by 20%</h2>
-        <p>
+        <h2 class="break-80">How to reduce food waste by 20%</h2>
+        <p class="break-80">
           <em>Click on a segment to see how each solution fits into ReFED’s Roadmap to reducing U.S. food waste by 20% by 2026.</em>
         </p>
         <div class="legend">
-          Add legend / styles
+          <h3 class="title">Reduce 12.5 M Tons</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><i class="prevention"></i></td>
+                <td>Prevention</td>
+                <td>2.6 M Tons</td>
+              </tr>
+              <tr>
+                <td><i class="recovery"></i></td>
+                <td>Recovery</td>
+                <td>1.1 M Tons</td>
+              </tr>
+              <tr>
+                <td><i class="recycle"></i></td>
+                <td>Recycle</td>
+                <td>8.8 M Tons</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="flush">
+
+<section id="supply-chain" class="alternate flush">
   <div class="row">
     <div class="col-sm-6">
       <div class="content">
@@ -75,16 +87,43 @@ hero:
         <p>Restaurant and retail businesses impact waste both upstream (farmers and manufacturers) and downstream (consumers), so new corporate policies from a few large businesses can have a powerful trickle-down effect up and down the entire value chain.</p>
       </div>
     </div>
-    <div class="col-sm-3">
-      Supply Chain
+    <div class="chain">
+      <ul>
+        <li>
+          <img src="{% asset_path 'analysis/sc-farming.svg' %}" class="img-responsive">
+          <h5>Farming</h5>
+        </li>
+        <li class="divider">&nbsp;</li>
+        <li>
+          <img src="{% asset_path 'analysis/sc-manufacturing.svg' %}" class="img-responsive">
+          <h5>Manufacturing</h5>
+        </li>
+        <li class="divider">&nbsp;</li>
+        <li>
+          <img src="{% asset_path 'analysis/sc-business.svg' %}" class="img-responsive">
+          <h5>Consumer-Facing Business</h5>
+        </li>
+        <li class="divider">&nbsp;</li>
+        <li>
+          <img src="{% asset_path 'analysis/sc-consumer.svg' %}" class="img-responsive">
+          <h5>Consumer</h5>
+        </li>
+      </ul>
     </div>
     <div class="col-sm-3">
-      <div class="content">
-        <p>Select a circle to see related solutions</p>
+      <div class="content details">
+        <p class="text-center">Select a circle to see related solutions</p>
+        <ul>
+          <li><i class="icon-circle">7</i></li>
+          <li><i class="icon-circle">6</i></li>
+          <li><i class="icon-circle">25</i></li>
+          <li><i class="icon-circle">8</i></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
 <section class="">
   <div class="row">
     <div class="col-sm-6 col-xs-12">
@@ -92,15 +131,16 @@ hero:
     </div>
     <div class="col-sm-6 col-xs-12">
       <div class="content">
-        <h2>Profiting</h2>
+        <h2>Profiting From Food Waste</h2>
         <p>Rather than burdening the bottom line, 11 of the solutions represent $2.3 billion in business profit potential. Nine are geared toward prevention and two toward recycling. They all create revenue and cost savings opportunities that can be captured by the businesses that implement them.</p>
         <hr>
         <p>Restaurants and foodservice facilities have the largest profit opportunity.</p>
-        <a class="icon-button restaurant" href="#" title="Restaurants and Foodservice Providers">Restaurants &amp; Foodservice Providers</a>
+        <a class="button-stakeholder restaurant" href="/" title="Restaurants and Foodservice Providers">Restaurants &amp; Foodservice Providers</a>
       </div>
     </div>
   </div>
 </section>
+
 <section class="">
   <div class="container">
     <header class="section-header">
@@ -116,11 +156,11 @@ hero:
     <p class="lead">
       The top three most cost-effective solutions all fall into the prevention category.
     </p>
-    <div class="card-grid">
-      <div class="card prevention">
+    <div class="grid">
+      <div class="card prevention-card">
         <header>
           <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/565759/DED8C6?text=placeholder">
+          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
         </header>
         <div class="content">
           <h4>Standardized Date Labeling</h4>
@@ -134,10 +174,10 @@ hero:
           <a href="#">Learn How &gt;</a>
         </footer>
       </div>
-      <div class="card prevention">
+      <div class="card prevention-card">
         <header>
           <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/565759/DED8C6?text=placeholder">
+          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
         </header>
         <div class="content">
           <h4>Consumer Education Campaign</h4>
@@ -151,10 +191,10 @@ hero:
           <a href="#">Learn How &gt;</a>
         </footer>
       </div>
-      <div class="card prevention">
+      <div class="card prevention-card">
         <header>
           <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/565759/DED8C6?text=placeholder">
+          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
         </header>
         <div class="content">
           <h4>Packaging Adjustments</h4>
@@ -171,23 +211,5 @@ hero:
     </div>
   </div>
 </section>
-<section id="subnav" class="flush">
-  <div class="row">
-    <a href="#" class="col-xs">
-      <div class="content">
-        <i class="icon-prev"></i>
-        <small>Previous</small>
-        <hr>
-        <span class="title">Food Waste</span>
-      </div>
-    </a>
-    <a href="#" class="col-xs">
-      <div class="content">
-        <small>Next</small>
-        <hr>
-        <span class="title">Solutions</span>
-        <i class="icon-next"></i>
-      </div>
-    </a>
-  </div>
-</section>
+
+{% include subnav.html %}
