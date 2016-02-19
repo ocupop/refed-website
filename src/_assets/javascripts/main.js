@@ -1,4 +1,5 @@
-//= require jquery/dist/jquery
+//= require jquery
+//= require bootstrap-sprockets
 //= require chartist/dist/chartist.min.js
 //= require vendor/jquery.drawDoughnutChart.js
 
