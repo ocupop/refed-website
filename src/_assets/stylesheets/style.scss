@@ -180,7 +180,10 @@ ol {
 
 #topnav {
   background-color: $gray-dark;
+  z-index: 9;
   ul {
+    position: relative;
+    padding-right: 100px;
     li {
       position: relative;
       height: 25px;
@@ -193,74 +196,83 @@ ol {
         &:hover {
           color: #fff;
         }
-        &.download {
+      }
+      &.download {
+        position: absolute;
+        height: auto;
+        right: 0;
+        top: 0;
+        margin-right: 0;
+        button {
           display: inline-block;
-          width: 100px;
+          width: 92px;
           height: 74px;
           background-color: $button-color;
           color: darken($button-color, 20%);
           text-align: center;
           font-size: 15px;
-          font-weight: 100;
+          font-weight: 200;
           line-height: 15px;
+          border: none;
+          text-transform: uppercase;
           small {
             display: inline-block;
             margin-top: 5px;
-            font-size: 10px;
+            font-size: 9px;
           }
           i {
             margin: 0 auto;
-            font-size: 38px;
+            font-size: 32px;
           }
         }
       }
-    }
-  }
-  #follow-menu {
-    ul {
-      display: none;
-      padding: 0;
-      position: relative;
-      float: left;
-      width: auto;
-      height: 25px;
-      line-height: 25px;
-      background: $button-color;
-      margin-right: 20px;
-      flex-wrap: nowrap;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 5px;
-        right: -12px;
-        height: 0;
-        width: 0;
-        border: 6px solid transparent;
-        border-left-color: $button-color;
-      }
-      li {
-        margin: 0 0.5em;
-        a {
-          color: $button-color;
-          white-space: nowrap;
-          background-color: $cream-light;
-          &.newsletter-signup {
-            padding: 1px 3px;
-          }
-        }
-        i {
+      &.follow {
+        ul {
+          display: none;
+          padding: 0;
+          position: relative;
+          float: left;
+          width: auto;
           height: 25px;
-          width: 25px;
-          font-size: 20px;
           line-height: 25px;
-          color: $cream-light;
+          background: $button-color;
+          margin-right: 20px;
+          flex-wrap: nowrap;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: -12px;
+            height: 0;
+            width: 0;
+            border: 6px solid transparent;
+            border-left-color: $button-color;
+          }
+          li {
+            margin: 0 0.5em;
+            a {
+              color: $button-color;
+              white-space: nowrap;
+              background-color: $cream-light;
+              &.newsletter-signup {
+                padding: 1px 3px;
+              }
+            }
+            i {
+              height: 25px;
+              width: 25px;
+              font-size: 20px;
+              line-height: 25px;
+              color: $cream-light;
+            }
+          }
         }
-      }
-    }
-    &:hover {
-      ul {
-        display: flex;
+        &:hover {
+          ul {
+            display: flex;
+          }
+        }
       }
     }
   }
@@ -337,21 +349,25 @@ ol {
   line-height: 50px;
   background-color: $mainnav-background-color;
   border-bottom: 1px solid $gray-lighter;
+  z-index: 1;
+  pointer-events: none;
   .brand {
     position: absolute;
     top: 0;
     left: 0;
     height: 50px;
-    width: 120px;
+    width: 100px;
   }
   ul {
-    margin-right: 120px;
+    margin: 9px 120px 9px auto;
+    border-left: 1px solid $gray-light;
     li {
       a {
         font-size: 16px;
         font-weight: 500;
         text-transform: uppercase;
         color: $gray-light;
+        pointer-events: all;
         &:hover {
           color: $text-color;
         }
@@ -582,6 +598,7 @@ ol {
 .container {
   position: relative;
   max-width: $live-content-width;
+  padding: 0;
 }
 .row {
   max-width: $live-content-width;
