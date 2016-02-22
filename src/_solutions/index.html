@@ -6,3 +6,80 @@ slug: solutions
 hero: 
   title: Food waste is a solvable problem
 ---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content">
+          <h2>Food Waste Solutions</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Scroll down to explore the individual solutions.</p>
+        </div>
+      </div>
+       <div class="col-sm-6">
+         <div class="content">
+            insert graph
+         </div>
+       </div>
+    </div>
+  </div>
+</section>
+<section class="alternate">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <h4>Rearrange Solutions By...</h4>
+      </div>
+      <div class="col-sm-3">
+        <form id="solution-search-form" class="search form-inline">
+          <label class="sr">Search</label>
+          <input class="keyterms" type="text" placeholder="Solution Search">
+          <button type="submit" value="Search"><i class="icon-search"></i></button>
+        </form>
+      </div>
+      <div class="col-sm-12">
+        <ul class="filter tabs">
+          <li class="active tab">Solution Category</li>
+          <li class="tab">Cost Effectiveness</li>
+          <li class="tab">Waste Diverted</li>
+          <li class="tab">Meals Saved</li>
+          <li class="tab">Emissions Reduced</li>
+          <li class="tab">Water Saved</li>
+          <li class="tab">Jobs Created</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+      <div class="grid row">
+        {% for solution in site.solutions %}
+        <div class="card {{ solution.type | slugify }}-card col-sm-4 col-xs-6">
+          <header>
+            <i class="icon icon-prevent">{{ solution.type }}</i>
+            <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
+          </header>
+          <div class="content">
+            <h4>{{ solution.title }}</h4>
+            <p>{{ solution.summary }}</p>
+          </div>
+          <footer>
+            {% for i in solution.impact %}
+            <p class="stat hide">
+              $4,553 <small>/ton</small><br>
+              <span>in financial benefit</span>
+            </p>
+            {% endfor %}
+            <a href="{{ solution.url }}">Learn How &gt;</a>
+          </footer>
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
