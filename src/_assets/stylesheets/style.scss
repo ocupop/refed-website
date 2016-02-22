@@ -770,7 +770,7 @@ a.external {
   position: relative;
   display: block;
   box-sizing: border-box;
-  width: 33.3%;
+  max-width: 31%;
   height: auto;
   min-height: 100px;
   padding-bottom: 110px;
@@ -848,7 +848,7 @@ a.external {
       }
     }
   }
-  &.recycle-card {
+  &.recycling-card {
     footer {
       .stat { color: $recycle-color; }
       a {
