@@ -1,3 +1,4 @@
+{% assign solutions = site.solutions | sort:"order" %}
 <section class="alternate">
   <div class="row">
     <div class="col-xs-12">
@@ -130,28 +131,28 @@
   }
   var data = {
     // A labels array that can contain any sort of values
-    labels: ["Consumer Education Campaign","Standardized Date Labeling","Packaging Adjustments","Donation Matching Software","Safe Donation Regulation","Value-Added Processing","Donation Liability Education","Donation Storage and Handling","Spoilage Prevention Packaging","Donation Transportation","Waste Tracking & Analytics","Trayless Dining","Smaller Plates","Manufacturing Line Optimization","Cold Chain Management","Donation Tax Incentives","Inventory Management","Produce Specifications","Secondary Resellers","Home Composting","Onsite Greywater","Centralized AD","Centralized Composting","WRRF with AD","Animal Feed","Community Composting","In-vessel Composting"],
+    labels: [{% for solution in solutions %}"{{ solution.title }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Our series array that contains series objects or in this case series data arrays
     series: [
       // Cost Effectiveness
-      [5375,4553,3438,2880,2865,2794,2789,2369,2319,2291,2282,2253,2146,1818,1778,1227,1203,1041,222,161,9,7,4,0,-12,-35,-98]
+      [{% for solution in solutions %}{{ solution.impact.financial-benefit }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
     ],
     ticksY: ['hello']
   };
 
   var series = [
     // Cost Effectiveness
-    [5375,4553,3438,2880,2865,2794,2789,2369,2319,2291,2282,2253,2146,1818,1778,1227,1203,1041,222,161,9,7,4,0,-12,-35,-98],
+    [{% for solution in solutions %}{{ solution.impact.financial-benefit }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Waste Diverted
-    [584,398,208,150,193,102,57,103,72,110,571,83,178,11,18,383,59,266,167,97,595,1233,5037,1637,49,167,12],
+    [{% for solution in solutions %}{{ solution.impact.waste-diverted }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Meals Saved
-    [1,0.7,0.03,0.3,0.3,0.2,0.1,0.2,0.1,0.2,1,0.1,0.3,0,0,0.6,0.1,0,0.3,0,0,0,0,0,0,0,0]
+    [{% for solution in solutions %}{{ solution.impact.meals-saved }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Emissions Reduced
-    [2336,1593,830,555,714,299,210,381,329,407,2306,332,711,34,62,874,181,422,510,53,0,772,2605,728,34,163,11],
+    [{% for solution in solutions %}{{ solution.impact.emissions-reduced }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Water Saved
-    [281,191.6,99.9,72.3,93.1,38.4,27.3,49.7,43.6,53,317.4,40,85.6,3.9,5.8,110.1,20.4,0,57.6,0,0,0,0,0,0,0,0],
+    [{% for solution in solutions %}{{ solution.impact.water-saved }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
     // Jobs Created
-    [0,0,0,0,0,153,0,2145,0,1604,0,0,0,0,0,0,0,0,0,0,0,1700,9000,100,0,2,300]
+    [{% for solution in solutions %}{{ solution.impact.jobs-created }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
   ]
 
 
