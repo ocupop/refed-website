@@ -1,5 +1,4 @@
-{% assign solutions = site.solutions | sort:"order" %}
-<section class="alternate">
+<section id="cost-curve" class="alternate">
   <div class="row">
     <div class="col-xs-12">
       <div class="content">
@@ -7,16 +6,8 @@
         <p>All 27 solutions have positive or near-breakeven Economic Value, with societal benefits outweighing the costs.</p>
         <div class="chart">
           <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
-          <ul class="tabs">
-            <li class="tab">Cost Effectiveness</li>
-            <li class="tab">Waste Diverted</li>
-            <li class="tab">Meals Saved</li>
-            <li class="tab">Emissions Reduced</li>
-            <li class="tab">Water Saved</li>
-            <li class="tab">Jobs Created</li>
-          </ul>
-          <div id="cost-curve" class="ct-chart ct-golden-section"></div>
-          <!-- <img src="http://placehold.it/2000x800/565759/DED8C6?text=Cost+Curve" class="responsive"> -->
+          <ul id="filters" class="tabs"></ul>
+          <div id="cost-curve-chart" class="ct-chart"></div>
         </div>
       </div>
     </div>
@@ -24,6 +15,12 @@
 </section>
 
 <script type="text/javascript">
+  $(window).smartresize(function(){
+    // code that takes it easy...
+    $("#cost-curve").outerHeight(window.innerHeight);
+  });
+
+  $("#cost-curve").outerHeight(window.innerHeight);
   // var options = {
   //   // Options for X-Axis
   //   axisX: {
@@ -122,6 +119,7 @@
     axisY: {
       showLabel: false
     },
+    seriesBarDistance: 12,
     chartPadding: {
       top: 0,
       right: 0,
@@ -129,49 +127,87 @@
       left: -30
     }
   }
-  var data = {
-    // A labels array that can contain any sort of values
-    labels: [{% for solution in solutions %}"{{ solution.title }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Our series array that contains series objects or in this case series data arrays
-    series: [
-      // Cost Effectiveness
-      [{% for solution in solutions %}{{ solution.impact.financial-benefit }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
-    ],
-    ticksY: ['hello']
-  };
 
-  var series = [
-    // Cost Effectiveness
-    [{% for solution in solutions %}{{ solution.impact.financial-benefit }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Waste Diverted
-    [{% for solution in solutions %}{{ solution.impact.waste-diverted }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Meals Saved
-    [{% for solution in solutions %}{{ solution.impact.meals-saved }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Emissions Reduced
-    [{% for solution in solutions %}{{ solution.impact.emissions-reduced }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Water Saved
-    [{% for solution in solutions %}{{ solution.impact.water-saved }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
-    // Jobs Created
-    [{% for solution in solutions %}{{ solution.impact.jobs-created }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  var overrides = [
+    // // Options override for media > 400px
+    // ['screen and (min-width: 400px)', {
+    //   reverseData: true,
+    //   horizontalBars: true,
+    //   axisX: {
+    //     labelInterpolationFnc: Chartist.noop
+    //   },
+    //   axisY: {
+    //     offset: 60
+    //   }
+    // }],
+    // // Options override for media > 800px
+    // ['screen and (min-width: 800px)', {
+    //   stackBars: false,
+    //   seriesBarDistance: 10
+    // }],
+    // // Options override for media > 1000px
+    // ['screen and (min-width: 1000px)', {
+    //   reverseData: false,
+    //   horizontalBars: false,
+    //   seriesBarDistance: 15
+    // }]
   ]
 
 
-  var chart = new Chartist.Bar('#cost-curve', data, options);
 
-  chart.on('draw', (ctx) => {
-    if (ctx.type === 'label') {
-      // adjust label position for rotation
-      const dY = ctx.width;
-      // const dX = ctx.width / 2 + (100 - ctx.width)
-      // ctx.element.attr({ x: ctx.element.attr('x') - dX })
-      ctx.element.attr({ y: ctx.element.attr('y') - dY });
+
+  var solution_data = {% include solution_data.js %};
+
+
+  function getFilters(data) {
+    return data.filters.map(function(filter) {
+      return filter.label
+    })
+  }
+
+  function getLabels(data) {
+    return data.solutions.map(function(solution) {
+      return solution.title
+    })
+  }
+  function getSeries(data, key) {
+    return data.solutions.map(function(solution) {
+      return solution.data[key]
+    })
+  }
+  function getData(key) {
+    return {
+      labels: getLabels(solution_data),
+      series: [
+        getSeries(solution_data, key)
+      ]
     }
-  });
+  };
+
+  solution_data.filters.forEach(function(filter) {
+    $tab = $($.parseHTML("<li class='tab'></li>"));
+    $tab.data('filter', filter.slug).text(filter.label).appendTo("#filters");
+  })
+
+
+  // var chart = new Chartist.Bar('#cost-curve-chart', getData(''), options, overrides);
+
+
+  // chart.on('draw', (ctx) => {
+  //   if (ctx.type === 'label') {
+  //     // adjust label position for rotation
+  //     const dY = ctx.width;
+  //     // const dX = ctx.width / 2 + (100 - ctx.width)
+  //     // ctx.element.attr({ x: ctx.element.attr('x') - dX })
+  //     ctx.element.attr({ y: ctx.element.attr('y') - dY });
+  //   }
+  // });
+
+
+
   $('.tab').on('click', function() {
     $(this).addClass('active').siblings().removeClass('active');
-    var n = $('.tab').index($(this));
-    data.series = [series[n]];
-    chart.update(data);
-    // chr = '.ct-series-'+String.fromCharCode(97 + n);
+    var filter = $(this).data('filter');
+    // chart.update(getData(filter));
   });
 </script>

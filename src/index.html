@@ -7,7 +7,7 @@ hero:
   title: Welcome to <span class="brand">ReFED</span>
   summary: A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale<br><br>Together, we can reduce U.S. food waste by 50% by 2030.
 ---
-{% include cost_curve_placeholder.html %}
+{% include cost_curve.html %}
 
 <section class="flush">
   <div class="row">
@@ -81,19 +81,19 @@ hero:
       <div class="content">
         <h2>Food wasted by volume</h2>
         <p class="break-70">Waste occurs throughout the supply chain, with nearly 85% occurring downstream at consumer-facing businesses and homes.</p>
-        <img src="{% asset_path 'food-waste/graph-waste-volume.svg' %}" class="img-responsive">
+        {% include svg/graph-waste-volume.svg %}
       </div>
     </div>
   </div>
 </section>
 
-<section class="alternate">
+<section class="alternate scrollme">
   <div class="row">
     <div class="col-xs-12">
       <div class="content">
         <h2>Financial Waste</h2>
         <p class="break-70">The financial cost of food waste ends up costing consumers the most due to retail pricing versus wholesale pricing for consumer-facing businesses.</p>
-        <img src="{% asset_path 'food-waste/graph-waste-financial.svg' %}" class="img-responsive">
+        {% include svg/graph-waste-financial.svg %}
       </div>
     </div>
   </div>
