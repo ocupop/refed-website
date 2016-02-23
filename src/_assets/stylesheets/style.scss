@@ -47,7 +47,7 @@ nav {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-family: inherit;
   font-weight: 200;
   line-height: 1.25em;
@@ -416,9 +416,9 @@ ol {
     display: inline-block;
     margin: 0 20px;
     padding: 20px 0;
-    color: $gray;
+    color: darken($cream, 5%);
     &:hover {
-      color: $cream;
+      color: $gray;
     }
     i {
 
@@ -1134,6 +1134,49 @@ section.alternate {
   opacity: .65; 
 }
 
+// #bottom {
+//   @include animation(skyBeat, 0.8s, 4s);
+// }
+
+/* -----------------------------------------
+   Sections
+----------------------------------------- */
+#spread-the-word {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      margin-bottom: 5px;
+      padding: 0;
+      padding-left: 20px;
+      background-color: $button-color;
+      color: $cream-light;
+      align-items: center;
+      text-transform: uppercase;
+      span {
+        display: inline-block;
+        margin: auto;
+        margin-right: 0;
+      }
+      a {
+        display: inline-block;
+        margin: auto;
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+        background-color: darken($button-color, 5%);
+        color: $cream-light;
+        i {
+          margin: auto;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
 
 /* -----------------------------------------
    Page Specific
@@ -1252,6 +1295,16 @@ body.stakeholders {
   .hero {
     .hero-content {
       h1 { font-size: 36px; }
+    }
+  }
+}
+
+body.action {
+  .icon-grid {
+    svg {
+      width: 80px;
+      height: 80px;
+      margin: 5px;
     }
   }
 }
