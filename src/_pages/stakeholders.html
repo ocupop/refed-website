@@ -1,0 +1,69 @@
+---
+layout: page
+title: Stakeholders
+permalink: /stakeholder
+slug: stakeholders
+connected-solutions: ['standardized-date-labeling', 'donation-transportation', 'water-resources-recovery-facility-with-ad']
+hero: 
+  title: Opportunities for stakeholders to act on food waste reduction
+---
+{% assign stakeholders = site.stakeholders | sort:"order" %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-9">
+        <div class="content">
+          <h2>Stakeholder Solutions</h2>
+          <p>While ReFED’s food waste analysis takes a holistic look across the entire supply chain, there are specific opportunities for each stakeholder that will provide the greatest benefits based on their priorities. Use this page to identify the solutions that are most aligned with the interests of each stakeholder.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Jump to your stakeholder information <i class="icon-caret-down"></i></h4>
+        <ul id="stakeholder-icons" class="nav nav-pills">
+          {% for stakeholder in stakeholders %}
+          <li><a href="#{{ stakeholder.slug }}"><i class="icon-{{ stakeholder.slug }}"></i></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% for stakeholder in stakeholders %}
+  <section class="{% cycle 'alternate','' %}">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          {% include svg/stakeholders/{{ stakeholder.slug }}.svg %}
+        </div>
+        <div class="col-xs-9">
+          <div class="content">
+            <h2>{{ stakeholder.title }}</h2>
+            <p class="lead">{{ stakeholder.title }} may capture an estimated <strong>{{ stakeholder.potential-gain }}</strong> in annual business profit potential</p>
+            <p>Top Solution: {{ stakeholder.top-solution }}</p>
+            <p>{{ stakeholder.summary }}</p>
+            <a href="{{ stakeholder.url }}" title="{{ stakeholder.title }}" class="button">View {{ stakeholder.title }} Solutions &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+<section class="alernate">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Multi-stakeholder Solutions</h2>
+        <p>Reaching the food waste reduction goals outlined by ReFED will require a collaborative effort from individuals, businesses, and organizations throughout the food value chain. The expected payoffs from these efforts will be enormous, delivering multiple times more economic value than can be created by acting only as individual entities.</p>
+      </div>
+    </div>
+    <div class="grid row">
+      {% for solution in site.solutions %}
+        {% if page.connected-solutions contains solution.slug %}
+          {% include solution_card.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
