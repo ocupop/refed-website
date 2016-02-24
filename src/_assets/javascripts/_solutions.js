@@ -7,6 +7,12 @@ function getFilters(data) {
   })
 };
 
+function getSort(data) {
+  return data.sort.map(function(sort) {
+    return sort.label
+  })
+};
+
 function getLabels(data) {
   return data.solutions.map(function(solution) {
     return solution.title
@@ -25,6 +31,6 @@ function getData(key) {
     ]
   }
 };
-function showStat(filter) {
-  $('.card .stat').hide().filter("."+filter).show();
+function showStat(sort) {
+  $('.card .stat').hide().filter("."+sort).show();
 };

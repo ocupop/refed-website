@@ -1,49 +1,6 @@
 <div id="solution-cards" class="grid row">
   {% for solution in site.solutions %}
-    <div class="card {{ solution.type | slugify }}-card"
-      data-financial-benefit="{{ solution.impact.financial-benefit }}"
-      data-waste-diverted="{{ solution.impact.waste-diverted }}"
-      data-meals-saved="{{ solution.impact.meals-saved }}"
-      data-emission-reduction="{{ solution.impact.emission-reduction }}"
-      data-water-saved="{{ solution.impact.water-saved }}"
-      data-jobs-created="{{ solution.impact.jobs-created }}"
-    >
-      <header>
-        <i class="icon icon-prevent">{{ solution.type }}</i>
-        <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
-      </header>
-      <div class="content">
-        <h4>{{ solution.title }}</h4>
-        <p>{{ solution.summary }}</p>
-      </div>
-      <footer>
-        <p class="stat financial_benefit">
-          $<strong>{{ solution.impact.financial-benefit | add_commas }}</strong> <small>/ton</small><br>
-          <span>in financial benefit</span>
-        </p>
-        <p class="stat waste_diverted">
-          <strong>{{ solution.impact.waste-diverted | add_commas }}K</strong> <small>tons</small><br>
-          <span>in diversion potential</span>
-        </p>
-        <p class="stat meals_saved">
-          <strong>{{ solution.impact.meals-saved | add_commas }}</strong><br>
-          <span>meals saved</span>
-        </p>
-        <p class="stat emissions_reduced">
-          <strong>{{ solution.impact.emissions-reduced | add_commas }}</strong><br>
-          <span>in emission reduction</span>
-        </p>
-        <p class="stat water_saved">
-          <strong>{{ solution.impact.water-saved | add_commas }}</strong> <small>gallons</small><br>
-          <span>in water saved</span>
-        </p>
-        <p class="stat jobs_created">
-          <strong>{{ solution.impact.jobs-created | add_commas }}</strong><br>
-          <span>jobs created</span>
-        </p>
-        <a href="{{ solution.url }}">Learn How &gt;</a>
-      </footer>
-    </div>
+    {% include card.html %}
   {% endfor %}
 </div>
 <script type="text/javascript">

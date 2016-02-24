@@ -23,17 +23,18 @@ $(document).on('ready', function() {
       }
   });
 
-
-  solution_data.filters.forEach(function(filter) {
-    $tab = $($.parseHTML("<li class='tab'></li>"));
-    $tab.data('filter', filter.slug).text(filter.label).appendTo(".filter.tabs");
+  window.console.log(solution_data);
+  solution_data.sort.forEach(function(sort) {
+    window.console.log(sort);
+    $tab = $($.parseHTML("<li class='tab sort'></li>"));
+    $tab.attr('data-sort', sort.slug).text(sort.label).appendTo(".sort.tabs");
   })
 
   $('.tab').on('click', function() {
     $(this).addClass('active').siblings().removeClass('active');
-    var filter = $(this).data('filter');
+    var sort = $(this).attr('data-sort');
 
-    showStat(filter);
+    showStat(sort);
     // chart.update(getData(filter));
   });
 });

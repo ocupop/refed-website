@@ -61,7 +61,7 @@ hero:
     <div class="grid row">
       {% for solution in site.solutions %}
         {% if page.connected-solutions contains solution.slug %}
-          {% include solution_card.html %}
+          {% include card.html %}
         {% endif %}
       {% endfor %}
     </div>
