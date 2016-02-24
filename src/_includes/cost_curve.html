@@ -6,7 +6,7 @@
         <p>All 27 solutions have positive or near-breakeven Economic Value, with societal benefits outweighing the costs.</p>
         <div class="chart">
           <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
-          <ul id="filters" class="tabs"></ul>
+          <ul id="cost-curve-filters" class="filter tabs"></ul>
           <div id="cost-curve-chart" class="ct-chart"></div>
         </div>
       </div>
@@ -155,41 +155,6 @@
 
 
 
-
-  var solution_data = {% include solution_data.js %};
-
-
-  function getFilters(data) {
-    return data.filters.map(function(filter) {
-      return filter.label
-    })
-  }
-
-  function getLabels(data) {
-    return data.solutions.map(function(solution) {
-      return solution.title
-    })
-  }
-  function getSeries(data, key) {
-    return data.solutions.map(function(solution) {
-      return solution.data[key]
-    })
-  }
-  function getData(key) {
-    return {
-      labels: getLabels(solution_data),
-      series: [
-        getSeries(solution_data, key)
-      ]
-    }
-  };
-
-  solution_data.filters.forEach(function(filter) {
-    $tab = $($.parseHTML("<li class='tab'></li>"));
-    $tab.data('filter', filter.slug).text(filter.label).appendTo("#filters");
-  })
-
-
   // var chart = new Chartist.Bar('#cost-curve-chart', getData(''), options, overrides);
 
 
@@ -204,10 +169,4 @@
   // });
 
 
-
-  $('.tab').on('click', function() {
-    $(this).addClass('active').siblings().removeClass('active');
-    var filter = $(this).data('filter');
-    // chart.update(getData(filter));
-  });
 </script>

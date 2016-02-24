@@ -43,25 +43,13 @@ hero:
         </form>
       </div>
       <div class="col-sm-12">
-        <ul class="filter tabs">
-          <li class="active tab">Solution Category</li>
-          <li class="tab">Cost Effectiveness</li>
-          <li class="tab">Waste Diverted</li>
-          <li class="tab">Meals Saved</li>
-          <li class="tab">Emissions Reduced</li>
-          <li class="tab">Water Saved</li>
-          <li class="tab">Jobs Created</li>
-        </ul>
+        <ul class="filter tabs"></ul>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-      <div class="grid row">
-        {% for solution in site.solutions %}
-          {% include solution_card.html %}
-        {% endfor %}
-      </div>
+    {% include solution_cards.html %}
   </div>
 </section>

@@ -2,44 +2,12 @@
 //= require bootstrap-sprockets
 //= require chartist/dist/chartist.min.js
 //= require scrollme/jquery.scrollme.min.js
+//= require mixitup/build/jquery.mixitup.min.js
+//= require _plugins
+//= require _solutions
 
-// $(function() {
-//     alert("HELLO");
-// });
 
-(function($,sr){
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounce = function (func, threshold, execAsap) {
-      var timeout;
-      return function debounced () {
-          var obj = this, args = arguments;
-          function delayed () {
-              if (!execAsap)
-                  func.apply(obj, args);
-              timeout = null;
-          };
 
-          if (timeout)
-              clearTimeout(timeout);
-          else if (execAsap)
-              func.apply(obj, args);
-
-          timeout = setTimeout(delayed, threshold || 100);
-      };
-  }
-  // smartresize 
-  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
-
-})(jQuery,'smartresize');
-
-// // usage:
-// $(window).smartresize(function(){
-//   // code that takes it easy...
-//   $("#chart").outerHeight(window.innerHeight);
-// });
-
-// $("#chart").outerHeight(window.innerHeight);
 
 $(document).on('ready', function() {
   $( "#search-form").on('click', function () {
@@ -53,5 +21,19 @@ $(document).on('ready', function() {
       } else {
         $submit.attr('disabled',true);
       }
+  });
+
+
+  solution_data.filters.forEach(function(filter) {
+    $tab = $($.parseHTML("<li class='tab'></li>"));
+    $tab.data('filter', filter.slug).text(filter.label).appendTo(".filter.tabs");
+  })
+
+  $('.tab').on('click', function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    var filter = $(this).data('filter');
+
+    showStat(filter);
+    // chart.update(getData(filter));
   });
 });
