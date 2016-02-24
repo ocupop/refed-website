@@ -11,6 +11,18 @@
 
 
 $(document).on('ready', function() {
+  // RESPONSIVE MENU
+  $('.menu-toggle').on('click', function(e) {
+    e.stopPropagation();
+    $("#page-header").toggleClass('open-menu');
+  });
+  // $("body").on('click', function() {
+  //   if ($("#page-header").hasClass('open-menu')) {
+  //     $("#page-header").removeClass("open-menu");
+  //   }
+  // });
+
+  // TOPNAV SEARCH
   $( "#search-form").on('click', function () {
     $(this).addClass('active');
     $submit = $(this).find('input[type="submit"]');
@@ -31,6 +43,7 @@ $(document).on('ready', function() {
 
   $('.sort').on('click', function() {
     $(this).trigger('sort-cards');
+    // This might need to be moved to the sort-cards listener
     $(this).addClass('active').siblings().removeClass('active');
     // chart.update(getData(filter));
   });

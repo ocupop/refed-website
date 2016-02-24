@@ -5,13 +5,15 @@
    <section class="hero" style="background-image: url('http://placehold.it/2500x800/565759/DED8C6?text=+');">
   {% endif %}
   <div class="hero-content">
-    <div class="row">
-      <div class="col-xs-12 col-sm-5">
-        <div class="content">
-          <h1>{{ page.hero.title }}</h1>
-          {% if page.hero.summary %}
-          <p class="lead">{{ page.hero.summary }}</p>
-          {% endif %}
+    <div clas="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="content">
+            <h1>{{ page.hero.title }}</h1>
+            {% if page.hero.summary %}
+            <p class="lead">{{ page.hero.summary }}</p>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
