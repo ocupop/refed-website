@@ -148,70 +148,16 @@ hero:
     <header class="section-header">
       <h2>Top Solutions and Benefits</h2>
     </header>
-    <ul class="tabs">
-      <li class="active tab">Most Cost<br>Effective</li>
-      <li class="tab">Largest Waste<br>Diverted</li>
-      <li class="tab">Greatest Environmental<br>Benefits</li>
-      <li class="tab">Most Scalable<br>Solutions</li>
-      <li class="tab">Largest Profit<br>Oportunity</li>
+    <ul class="tabs"> 
+      <li class="active tab sort" data-sort="financial-benefit">Most Cost<br>Effective</li>
+      <li class="tab sort" data-sort="waste-diverted">Largest Waste<br>Diverted</li>
+      <li class="tab sort" data-sort="emissions-reduced">Greatest Environmental<br>Benefits</li>
+      <li class="tab sort" data-sort="scalability">Most Scalable<br>Solutions</li>
+      <li class="tab sort" data-sort="profitability">Largest Profit<br>Oportunity</li>
     </ul>
     <p class="lead">
       The top three most cost-effective solutions all fall into the prevention category.
     </p>
-    <div class="grid">
-      <div class="card prevention-card">
-        <header>
-          <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
-        </header>
-        <div class="content">
-          <h4>Standardized Date Labeling</h4>
-          <p>Standardizing food label dates and instructions; eliminating “sell by” dates to reduce consumer confusion</p>
-        </div>
-        <footer>
-          <p class="stat">
-            $4,553 <small>/ton</small><br>
-            <span>in financial benefit</span>
-          </p>
-          <a href="#">Learn How &gt;</a>
-        </footer>
-      </div>
-      <div class="card prevention-card">
-        <header>
-          <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
-        </header>
-        <div class="content">
-          <h4>Consumer Education Campaign</h4>
-          <p>Conducting large-scale consumer advocacy campaigns to raise awareness of food waste and educate consumers about ways to save money and prevent or reduce wasted food</p>
-        </div>
-        <footer>
-          <p class="stat">
-            $4,553 <small>/ton</small><br>
-            <span>in financial benefit</span>
-          </p>
-          <a href="#">Learn How &gt;</a>
-        </footer>
-      </div>
-      <div class="card prevention-card">
-        <header>
-          <i class="icon icon-prevent">Prevention</i>
-          <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
-        </header>
-        <div class="content">
-          <h4>Packaging Adjustments</h4>
-          <p>Optimizing food packaging size and design to ensure complete consumption by consumers and avoid residual container waste</p>
-        </div>
-        <footer>
-          <p class="stat">
-            $4,553 <small>/ton</small><br>
-            <span>in financial benefit</span>
-          </p>
-          <a href="#">Learn How &gt;</a>
-        </footer>
-      </div>
-    </div>
+    {% include solution_cards.html limit=3 %}
   </div>
 </section>
-
-{% include subnav.html %}

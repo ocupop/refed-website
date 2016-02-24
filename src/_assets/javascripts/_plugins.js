@@ -1,6 +1,20 @@
+// if(!Modernizr.svg || !Modernizr.inlinesvg)
+// {
+//   $('img.svg').each(function()
+//     {
+//     this.src = this.src.replace('.svg','.png');
+//       $(this).addClass('svg_loaded');
+//   });
+// }
+
+jQuery(document).ready(function($) {
+  // Update the current getFullYear
+  var d = new Date();
+  $('.year').html(d.getFullYear());
+});
+
 
 // SMART RESIZER
-
 (function($,sr){
   // debouncing function from John Hann
   // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
@@ -31,3 +45,20 @@
 // $(window).smartresize(function(){
 //   // code that takes it easy...
 // });
+
+
+// URL Parameters
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+

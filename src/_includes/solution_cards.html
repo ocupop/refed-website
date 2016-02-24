@@ -4,11 +4,93 @@
   {% endfor %}
 </div>
 <script type="text/javascript">
-  $('#solution-cards').mixItUp({
-    selectors: {
-      target: '.card',
-      filter: '.filter',
-      sort: '.sort'
+  $(document).on('ready', function() {
+    var $active_tab, sort_by;
+    if(urlParams["sort"]) {
+      $active_tab = $('[data-sort="'+urlParams["sort"]+'"]').first();
+    } else {
+      $active_tab = $('.tab').first();
     }
+
+    sort_by = $active_tab.attr('data-sort');
+
+    $('#solution-cards').mixItUp({
+      controls: {
+        enable: false 
+        // as we are interacting via the API, we can disable default controls to increase performance
+      },
+      callbacks: {
+        onMixLoad: function() {
+          $active_tab.trigger('click');
+        }
+      },
+      load: {
+        sort: sort_by+":dsc"
+      },
+      selectors: {
+        target: '.card',
+        filter: '.filter',
+        sort: '.sort'
+      },
+      pagination: {
+        limit: {{ include.limit }}
+      }
+    });
   });
+  $(document).on('sort-cards', function(el) {
+    var sort_by = $(el.target).attr('data-sort');
+    var l = window.location.pathname + "?sort="+sort_by;
+    window.history.pushState('', '{{ site.title }}: Solutions', l);
+    
+    showStat(sort_by);
+    $('#solution-cards').mixItUp('multiMix', {
+      sort: sort_by+":dsc"
+    });
+    // window.console.log("LIMIT: ", {{ include.limit }}, $(el.target).attr('data-sort'));
+  });
+
+  // search functionality
+  $(function() {
+
+    var inputText;
+    var $matching = $();
+
+    // Delay function
+    var delay = (function(){
+      var timer = 0;
+      return function(callback, ms){
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+      };
+    })();
+
+    $("#terms").keyup(function(){
+      // Delay function invoked to make sure user stopped typing
+      delay(function(){
+        inputText = $("#terms").val().toLowerCase();
+        // Check to see if input field is empty
+        if ((inputText.length) > 0) {
+          $( '.card').each(function() {
+            $this = $("this");
+            window.console.log(inputText);
+            window.console.log($(this).find('.title').text().toLowerCase());
+             // add item to be filtered out if input text matches items inside the title   
+             if($(this).find('.title').text().toLowerCase().match(inputText)) {
+              $matching = $matching.add(this);
+            }
+            else {
+              // removes any previously matched item
+              $matching = $matching.not(this);
+            }
+          });
+          $("#solution-cards").mixItUp('filter', $matching);
+        }
+
+        else {
+          // resets the filter to show all item if input is empty
+          $("#solution-cards").mixItUp('filter', 'all');
+        }
+      }, 200 );
+    });
+  })
 </script>

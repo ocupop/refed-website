@@ -3,6 +3,7 @@
 //= require chartist/dist/chartist.min.js
 //= require scrollme/jquery.scrollme.min.js
 //= require mixitup/build/jquery.mixitup.min.js
+//= require vendor/jquery.mixitup-pagination.min.js
 //= require _plugins
 //= require _solutions
 
@@ -23,19 +24,14 @@ $(document).on('ready', function() {
       }
   });
 
-  solution_data.sort.forEach(function(sort) {
-    $tab = $($.parseHTML("<li class='tab sort'></li>"));
-    $tab.attr('data-sort', sort.slug).text(sort.label).appendTo(".tabs");
-  })
+  // solution_data.sort.forEach(function(sort) {
+  //   $tab = $($.parseHTML("<li class='tab sort'></li>"));
+  //   $tab.attr('data-sort', sort.slug).text(sort.title).appendTo(".tabs");
+  // })
 
   $('.sort').on('click', function() {
+    $(this).trigger('sort-cards');
     $(this).addClass('active').siblings().removeClass('active');
-    var sort = $(this).attr('data-sort');
-    showStat(sort);
-    $('#solution-cards').mixItUp('multiMix', {
-      sort: sort+':dsc'
-    });
     // chart.update(getData(filter));
   });
-  $("[data-sort='financial-benefit']").trigger('click');
 });

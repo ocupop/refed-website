@@ -11,11 +11,11 @@
     <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder">
   </header>
   <div class="content">
-    <h4>{{ solution.title }}</h4>
+    <h4 class="title">{{ solution.title }}</h4>
     <p>{{ solution.summary }}</p>
   </div>
   <footer>
-    <p class="stat financial-benefit">
+    <p class="stat financial-benefit" style="display:block;">
       $<strong>{{ solution.impact.financial-benefit | add_commas }}</strong> <small>/ton</small><br>
       <span>in financial benefit</span>
     </p>

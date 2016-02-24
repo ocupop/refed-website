@@ -66,7 +66,7 @@ h5, .h5 { font-size: $font-size-h5; text-transform: uppercase; color: inherit; m
 h6, .h6 { font-size: $font-size-h6; }
 
 p {
-  margin: 0 0 1.15em 0;
+  margin: 0 0 0.5em 0;
   font-size: 18px;
 }
 img {}
@@ -566,19 +566,19 @@ ol {
 }
 
 .break-50 {
-  width: 50%;
+  width: 50% !important;
 }
 .break-60 {
-  width: 60%;
+  width: 60% !important;
 }
 .break-70 {
-  width: 70%;
+  width: 70% !important;
 }
 .break-80 {
-  width: 80%;
+  width: 80% !important;
 }
 .break-90 {
-  width: 90%;
+  width: 90% !important;
 }
 
 .script {
@@ -648,10 +648,10 @@ ol {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
   width: 100%;
-  height: $base-line-height;
-  line-height: $base-line-height;
+  height: 50px;
+  line-height: 1em;
   margin: 5px 0;
   padding: 0 20px;
   border-radius: 0;
@@ -667,11 +667,15 @@ ol {
     background-color: darken($button-color, 10%);
     color: $cream-light;
   }
+  span {
+    margin: auto;
+  }
   i {
     margin: 0 4px;
     font-size: 14px;
   }
   &.play-video {
+    position: relative;
     height: $base-line-height * 2;
     line-height: $base-line-height * 2;
     padding-right: 30px;
@@ -681,11 +685,17 @@ ol {
     border: 1px solid $cream-light;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
     background-color: transparent;
+    &:hover {
+      color: #ffffff;
+    }
     i {
+      position: absolute;
+      top: 0;
+      right: 20px;
       font-size: 40px;
-      margin: 0;
+      margin: auto;
       float: right;
-      line-height: 70px;
+      line-height: $base-line-height * 2;
       text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
     }
   }
@@ -735,7 +745,7 @@ a.external {
   }
   .tab {
     margin: auto 5px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     flex-grow: 1;
     font-size: 13px;
     font-weight: 200;
@@ -766,7 +776,7 @@ a.external {
 }
 .card {
   position: relative;
-  display: block;
+  display: none;
   box-sizing: border-box;
   max-width: 31%;
   height: auto;
@@ -959,6 +969,7 @@ section.alternate {
    Forms
 ----------------------------------------- */
 #solution-search-form {
+  position: relative;
   input[type="text"] {
     width: 100%;
     margin: 0;
@@ -968,21 +979,23 @@ section.alternate {
       outline: none;
     }
   }
-  button[type="submit"] {
+  span {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 40px;
-    height: $base-line-height +2;
-    line-height: $base-line-height +2;
-    padding: 2px 8px;
+    right: 1px;
+    top: 1px;
+    width: 38px;
+    height: 32px;
+    line-height: 32px;
     background-color: $cream;
     border-radius: 0 20px 20px 0;
-    border: none; 
+    border: none;
+    text-align: center;
     i {
+      display: inline-block;
       width: 20px;
-      height: 20px;
-      font-size: 18px;
+      height: 32px;
+      font-size: 16px;
+      line-height: 32px;
       color: $text-color;
     }
   }

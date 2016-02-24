@@ -22,9 +22,9 @@ hero:
         </div>
       </div>
        <div class="col-sm-6">
-         <div class="content">
-            insert graph
-         </div>
+        <div class="well">
+          {% include svg/solution-bars.svg %}
+        </div>
        </div>
     </div>
   </div>
@@ -38,18 +38,25 @@ hero:
       <div class="col-sm-3">
         <form id="solution-search-form" class="search form-inline">
           <label class="sr">Search</label>
-          <input class="keyterms" type="text" placeholder="Solution Search">
-          <button type="submit" value="Search"><i class="icon-search"></i></button>
+          <input id="terms" type="text" placeholder="Solution Search">
+          <span><i class="icon-search"></i></span>
         </form>
       </div>
       <div class="col-sm-12">
-        <ul class="tabs"></ul>
+        <ul class="tabs">
+          <li class="tab sort active" data-sort="financial-benefit">Financial Benefit</li>
+          <li class="tab sort" data-sort="waste-diverted">Waste Diverted</li>
+          <li class="tab sort" data-sort="emissions-reduced">Emissions Reduced</li>
+          <li class="tab sort" data-sort="water-saved">Water Saved</li>
+          <li class="tab sort" data-sort="meals-saved">Meals Saved</li>
+          <li class="tab sort" data-sort="jobs-created">Jobs Created</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-    {% include solution_cards.html %}
+    {% include solution_cards.html limit=0 %}
   </div>
 </section>
