@@ -31,26 +31,27 @@ hero:
   </div>
 </section>
 {% for stakeholder in stakeholders %}
-  <section class="{% cycle 'alternate','' %}">
+  <section id="stakeholder-list" class="{% cycle 'alternate','' %}">
     <div class="container">
-      <div class="row">
+      <div class="row middle-xs">
         <div class="col-xs-3">
           {% include svg/stakeholders/{{ stakeholder.slug }}.svg %}
         </div>
         <div class="col-xs-9">
-          <div class="content">
+          <div class="content {{ stakeholder.slug }}">
             <h2>{{ stakeholder.title }}</h2>
             <p class="lead">{{ stakeholder.title }} may capture an estimated <strong>{{ stakeholder.potential-gain }}</strong> in annual business profit potential</p>
             <p>Top Solution: {{ stakeholder.top-solution }}</p>
             <p>{{ stakeholder.summary }}</p>
-            <a href="{{ stakeholder.url }}" title="{{ stakeholder.title }}" class="button">View {{ stakeholder.title }} Solutions &gt;</a>
+            <a href="{{ stakeholder.url }}" title="{{ stakeholder.title }}" class="button break-70">
+              <span>View {{ stakeholder.title }} Solutions &gt;</span></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 {% endfor %}
-<section class="alernate">
+<section class="alternate">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
