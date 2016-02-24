@@ -1,25 +1,14 @@
+{% assign tabs = site.data.impact %}
 {% assign solutions = site.solutions | sort:"order" %}
 var solution_data = {
   sort: [
-    {
-      label: "Financial Benefit",
-      slug: "financial-benefit"
-    }, {
-      label: "Waste Diverted",
-      slug: "waste-diverted"
-    }, {
-      label: "Meals Saved",
-      slug: "meals-saved"
-    }, {
-      label: "Emissions Reduced",
-      slug: "emissions-reduced"
-    }, {
-      label: "Water Saved",
-      slug: "water-saved"
-    }, {
-      label: "Jobs Created",
-      slug: "jobs-created"
-    }
+    {% for tab in tabs %}{
+      title: "{{ tab.title }}",
+      label: "{{ tab.label }}",
+      slug: "{{ tab.slug }}",
+      summary: "{{ tab.summary }}",
+      description: "{{ tab.description }}"
+    }{% unless forloop.last %}, {% endunless %}{% endfor %}
   ],
   solutions: [
     {% for solution in solutions %}{

@@ -1,0 +1,47 @@
+- title: Financial Benefit
+  label: Most Cost Effective
+  slug: financial-benefit
+  summary: The top three most cost-effective solutions all fall insto the prevention category.
+  description: description
+
+- title: Waste Diverted
+  label: Largest Waste Diverted
+  slug: waste-diverted
+  summary: summary
+  description: description
+
+- title: Emissions Reduced
+  label: Greatest Environmental Benefits
+  slug: emissions-reduced
+  summary: summary
+  description: description
+
+- title: Water Saved
+  label: Most Water Saved
+  slug: water-saved
+  summary: summary
+  description: description
+
+- title: Meals Saved
+  label: Most Meals Saved
+  slug: meals-saved
+  summary: summary
+  description: description
+
+- title: Jobs Created
+  label: Most Jobs Created
+  slug: jobs-created
+  summary: summary
+  description: description
+
+- title: Profitability
+  label: Largest Profit Opportunity
+  slug: profitability
+  summary: summary
+  description: description
+
+- title: Scalability
+  label: Most Scalable Solutions
+  slug: scalability
+  summary: summary
+  description: description
