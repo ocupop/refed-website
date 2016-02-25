@@ -1,20 +1,28 @@
 <section id="subnav" class="flush">
   <div class="row">
-    <a href="#" class="col-xs">
+    {% if page.prev.url %}
+    <a href="{{ page.prev.url }}" class="col-xs">
       <div class="content">
         <i class="icon-prev"></i>
         <small>Previous</small>
         <hr>
-        <span class="title">Page Title</span>
+        <span class="title">{{ page.prev.title }}</span>
       </div>
     </a>
-    <a href="#" class="col-xs">
+    {% else %}
+    <a class="col-xs"></a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="col-xs">
       <div class="content">
         <small>Next</small>
         <hr>
-        <span class="title">Page Title</span>
+        <span class="title">{{ page.next.title }}</span>
         <i class="icon-next"></i>
       </div>
     </a>
+    {% else %}
+    <a class="col-xs"></a>
+    {% endif %}
   </div>
 </section>
