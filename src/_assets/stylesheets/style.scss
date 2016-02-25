@@ -1380,7 +1380,7 @@ body.action {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 990px) {
   #page-header {
     .brand {
       top: 5px;
@@ -1465,6 +1465,7 @@ body.action {
   }
   .card {
     width: 49%;
+    max-width: none;
   }
   .flush {
     .row {
