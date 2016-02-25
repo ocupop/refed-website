@@ -92,31 +92,60 @@ i {
   // text-indent: -999em;
   // background-color: $placeholder-color;
 }
+button {
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
 
 form {}
-select {
-  min-width: 200px;
-  padding: 15px 22px;
-  font-size: 16px;
-  border: 1px solid $gray-light;
-  border-radius: 0;
-  &:focus {
-   outline: none;
+.select {
+  position: relative;
+  cursor: pointer;
+  select {
+    -webkit-appearance: none;
+    &:focus {
+     outline: none;
+    }
   }
-  // background: #fff url(icon-arrow-down.svg) no-repeat right center; 
-  background-position-x: 92%;
-  background-size: 12px;
-  text-transform: uppercase;
-  -webkit-appearance: none;
+  &:after {
+    content: "\e917";
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-family: 'refed' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 20px;
+    color: $gray;
+    @include transition();
+    pointer-events: none;
+  }
+  &:hover {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
 }
-input {
-  line-height: $base-line-height;
-  text-indent: 10px;
+input, select {
+  line-height: $base-line-height * 1.5;
+  text-indent: 15px;
   width: 100%;
+  min-width: 200px;
   margin: 4px 0;
   border: none;
+  border-radius: 0;
   text-transform: uppercase;
   font-size: 13px;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 ol {
   padding-left: 1em;
@@ -176,8 +205,11 @@ ol {
   form {
     margin-top: 20px;
     input {
+      line-height: 38px;
+      padding: 0;
       &.zip {
         width: 49%;
+        min-width: 0;
         margin-right: 5px;
       }
     }
@@ -185,6 +217,7 @@ ol {
       display: block;
       float: right;
       width: 48%;
+      min-width: 0;
       height: 38px;
       line-height: 40px;
       margin: 3px 0 0 0;
@@ -406,8 +439,11 @@ ol {
       font-size: 18px;
       font-weight: 200;
     }
-    &:hover {
+    &:last-child {
       background-color: darken($cream, 5%);
+    }
+    &:hover {
+      background-color: darken($cream, 10%);
     }
     i {
       display: block;
