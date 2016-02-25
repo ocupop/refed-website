@@ -19,7 +19,7 @@ prev:
     <div class="col-xs-12 col-sm-6">
       <div class="content">
         <h2>A cost effective approach to food waste</h2>
-        <p>ReFED set out to understand the most cost-effective ways to reduce food waste and the resources needed to implement those solutions at scale. A wide list of solutions was gathered from stakeholders, and narrowed to a short list of 27 solutions that met criteria around data availability, cost-effectiveness, feasibility, and scalability.</p>
+        <p>ReFED set out to understand the most cost-effective ways to reduce food waste and the resources needed to implement those solutions at scale.</p>
         <a href="#" class="muted"><em>Read more about ReFED's methodology &nbsp;&gt;</em></a>
       </div>
     </div>
@@ -55,7 +55,7 @@ prev:
       <div class="content">
         <h2 class="break-80">How to reduce food waste by 20%</h2>
         <p class="break-80">
-          <em>Click on a segment to see how each solution fits into ReFED’s Roadmap to reducing U.S. food waste by 20% by 2026.</em>
+          <em>Click on a segment to see how each solution contributes to reducing U.S. food waste.</em>
         </p>
         <div class="legend">
           <h3 class="title">Reduce 12.5 M Tons</h3>
@@ -86,7 +86,7 @@ prev:
 
 <section id="supply-chain" class="alternate flush">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-xs-9 col-sm-6">
       <div class="content">
         <h2>Solutions across the supply chain</h2>
         <p>Each segment of the food supply chain has role to play in reducing our country’s food waste, but <a href="/stakeholders/restaurants" title="Stakeholders: Restaurants">restaurants</a> and <a href="/stakeholders/retail" title="Stakeholders: Retail Businesses">retail</a> businesses have the opportunity to scale up a majority of the analyzed solutions. (Some solutions can be implemented by more than one supply chain category.)</p>
@@ -116,21 +116,39 @@ prev:
         </li>
       </ul>
     </div>
-    <div class="col-sm-3">
-      <div class="content details">
+    <div class="col-sm-3 solutions">
+      <div class="content">
         <p class="text-center">Select a circle to see related solutions</p>
         <ul>
-          <li><i class="icon-circle">7</i></li>
-          <li><i class="icon-circle">6</i></li>
-          <li><i class="icon-circle">25</i></li>
-          <li><i class="icon-circle">8</i></li>
+          <li class="farming">{% img 'analysis/sc-farming-circle.svg' %}</li>
+          <li class="manufacturing">{% img 'analysis/sc-manufacturing-circle.svg' %}</li>
+          <li class="business">{% img 'analysis/sc-business-circle.svg' %}</li>
+          <li class="consumer">{% img 'analysis/sc-consumer-circle.svg' %}</li>
         </ul>
+      </div>
+      <div class="content farming related-solutions hide">
+        <h4>Related Solutions: <span>{{ site.solutions.count }}</span></h4>
+        <div class="scrolling" id="farming-solutions" role="tablist" aria-multiselectable="true">
+          {% for solution in site.solutions %}
+            <h5>
+              <a role="button" data-toggle="collapse" data-parent="#farming-solutions" href="#{{ solution.slug }}-summary" aria-expanded="true" aria-controls="{{ solution.slug }}-summary">
+                {{ solution.title }} <span>&gt;</span>
+              </a>
+            </h5>
+            <div id="{{ solution.slug }}-summary" class="collapse" role="tabpanel" aria-labelledby="{{ solution.slug }}-heading">
+              <div class="summary">
+                <p>{{ solution.summary }}</p>
+                <a href="{{ solution.url }}" title="Learn more about {{ solution.title }}">Learn More &nbsp;&gt;</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="">
+<section>
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       {% include cost_curve_mini.html %}
@@ -141,8 +159,8 @@ prev:
         <p>Rather than burdening the bottom line, 11 of the solutions represent $2.3 billion in business profit potential. Nine are geared toward prevention and two toward recycling. They all create revenue and cost savings opportunities that can be captured by the businesses that implement them.</p>
         <hr>
         <p>Restaurants and foodservice facilities have the largest profit opportunity.</p>
-        <a class="button-stakeholder" href="/" title="Restaurants and Foodservice Providers">
-          <i></i>Restaurants &amp; Foodservice Providers &nbsp;&gt;
+        <a class="button-stakeholder restaurants" href="/" title="Restaurants and Foodservice Providers">
+          <i class="icon-restaurant"></i>Restaurants &amp; Foodservice Providers &nbsp;&gt;
         </a>
       </div>
     </div>
