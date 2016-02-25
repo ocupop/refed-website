@@ -1262,7 +1262,7 @@ body.food-waste {
     }
   }
   #video {
-    background-image: url("{% asset_path 'food-waste/bg-grapes.jpg' %}");
+    background-image: url("{% asset_path 'bg-grapes.jpg' %}");
     background-size: cover;
     .content {
       padding: 170px $content-padding*4;
