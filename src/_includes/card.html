@@ -9,7 +9,7 @@
   <header>
     <i class="icon"></i>
     <!-- <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder"> -->
-    {% img  'solutions/{{ solution.slug }}-card.jpg' %}
+    <img src="{% asset_path 'solutions/{{ solution.slug }}-card.jpg' %}">
   </header>
   <div class="content">
     <h4 class="title">{{ solution.title }}</h4>
@@ -21,20 +21,20 @@
       <span>in financial benefit</span>
     </p>
     <p class="stat diversion-potential">
-      <strong>{{ solution.impact.diversion-potential | add_commas }}K</strong> <small>tons</small><br>
+      <strong>{{ solution.impact.diversion-potential | add_commas }} K </strong> <small>tons/yr</small><br>
       <span>in diversion potential</span>
     </p>
     <p class="stat meals-saved">
-      <strong>{{ solution.impact.meals-saved | add_commas }}</strong><br>
+      <strong>{{ solution.impact.meals-saved | add_commas }} M </strong><small>meals/yr</small><br>
       <span>meals saved</span>
     </p>
     <p class="stat emissions-reduced">
-      <strong>{{ solution.impact.emissions-reduced | add_commas }}</strong><br>
-      <span>in emission reduction</span>
+      <strong>{{ solution.impact.emissions-reduced | add_commas }} K </strong><small>tons/yr</small><br>
+      <span>in GHGs emission reduction</span>
     </p>
     <p class="stat water-conservation">
-      <strong>{{ solution.impact.water-conservation | add_commas }}</strong> <small>gallons</small><br>
-      <span>in water saved</span>
+      <strong>{{ solution.impact.water-conservation | add_commas }} B </strong> <small>gal/yr</small><br>
+      <span>in water conservation</span>
     </p>
     <p class="stat jobs-created">
       <strong>{{ solution.impact.jobs-created | add_commas }}</strong><br>
