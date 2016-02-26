@@ -3,7 +3,6 @@
 //= require bootstrap-sprockets
 //= require chartist/dist/chartist.min.js
 //= require chartist-plugin-fill-donut/dist/chartist-plugin-fill-donut.min.js
-//= require scrollme/jquery.scrollme.min.js
 //= require waypoints/lib/jquery.waypoints.min.js
 //= require waypoints/lib/shortcuts/inview.min.js
 //= require mixitup/build/jquery.mixitup.min.js
