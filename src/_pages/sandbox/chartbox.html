@@ -7,14 +7,16 @@ permalink: /sandbox/chartbox
   <div class="container">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12 col-sm-6">
-        {% include svg/chart-donut-goals.svg %}
+        <div class="content">
+          <p>Animation is drawn sequentially... click to redraw (update)</p>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6">
         <div id="chart-reduction" class="content">
           <div id="reduction-goal" class="ct-chart ct-square"></div>
           <div id="reduction-timeline" class="ct-chart ct-square"></div>
         </div>
-        <button id="blah">Click</button>
+        <button id="blah" class="btn btn-default">Click</button>
       </div>
     </div>
   </div>

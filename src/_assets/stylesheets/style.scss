@@ -1,5 +1,5 @@
 //= require vendor/flexboxgrid.min.css
-
+//= require vendor/animate.css
 
 @import '_variables';
 @import 'bootstrap';
@@ -1604,6 +1604,14 @@ body.action {
     }
   }
 }
+
+
+/* -----------------------------------------
+   Animation
+----------------------------------------- */
+// .scroll-animate {
+//   opacity: 0;
+// }
 
 
 /* -----------------------------------------

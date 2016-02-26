@@ -329,6 +329,30 @@ prev:
         data.element.animate(animationDefinition, false);
       }
     });
+
+
+    var inview = new Waypoint.Inview({
+      element: $("#chart-reduction")[0],
+      enter: function(direction) {
+        chart.update();
+        innerChart.update();
+        $(this.element).addClass('animated ' + $(this.element).data('animation'));
+        window.console.log('Enter triggered with direction ' + direction);
+        window.console.log($(this.element).attr('class'));
+      },
+      entered: function(direction) {
+        window.console.log('Entered triggered with direction ' + direction)
+      },
+      exit: function(direction) {
+        $(this.element).removeClass('animated ' + $(this.element).data('animation'));
+        window.console.log('Exit triggered with direction ' + direction);
+        window.console.log($(this.element).attr('class'));
+      },
+      exited: function(direction) {
+        window.console.log('Exited triggered with direction ' + direction)
+      }
+    });
+
   });
 
 </script>

@@ -1,0 +1,92 @@
+---
+layout: sandbox
+title: Scroll Events
+permalink: /sandbox/appear
+---
+<section class="recycle"></section>
+<section id="element">
+  <div class="container">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+            <img id="inview-example" src="http://placehold.it/800x800/565759/DED8C6?text=Cost+Curve" class="responsive scroll-animate" data-animation="fadeInUp">
+        </div>
+      </div>
+      <div id="basic-waypoint" class="col-xs-12 col-sm-6">
+        Some other stuff...
+      </div>
+    </div>
+  </div>
+</section>
+<section class="recycle"></section>
+<section>
+  <div class="container">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+            <img src="http://placehold.it/800x800/565759/DED8C6?text=Cost+Curve" class="responsive scroll-animate" data-animation="fadeInUp">
+        </div>
+      </div>
+      <div id="basic-waypoint" class="col-xs-12 col-sm-6">
+        Some other stuff...
+      </div>
+    </div>
+  </div>
+</section>
+<section class="recycle"></section>
+
+<script type="text/javascript">
+  $(window).smartresize(function(){
+    // code that takes it easy...
+    $(".recycle").outerHeight(window.innerHeight);
+  });
+
+  $(".recycle").outerHeight(window.innerHeight);
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('basic-waypoint'),
+    handler: function(direction) {
+      window.console.log('Basic waypoint triggered', direction);
+    },
+    offset: 'bottom-in-view'
+  })
+  // // Control animation on scroll event
+  // $('.scroll-animate').each(function() {
+  //   var inview = new Waypoint.Inview({
+  //     element: $(this)[0],
+  //     enter: function(direction) {
+  //       $(this.element).addClass('animated ' + $(this.element).data('animation'));
+  //       window.console.log('Enter triggered with direction ' + direction)
+  //     },
+  //     entered: function(direction) {
+  //       window.console.log('Entered triggered with direction ' + direction)
+  //     },
+  //     exit: function(direction) {
+  //       $(this.element).removeClass('animated ' + $(this.element).data('animation'));
+  //       window.console.log('Exit triggered with direction ' + direction)
+  //     },
+  //     exited: function(direction) {
+  //       window.console.log('Exited triggered with direction ' + direction)
+  //     }
+  //   })
+  // });
+
+  // $('.scroll-animate').each(function() {
+  //   var inview = new Waypoint.Inview({
+  //     element: $(this)[0],
+  //     enter: function(direction) {
+  //       window.console.log('Enter triggered with direction ' + direction)
+  //     },
+  //     entered: function(direction) {
+  //       window.console.log('Entered triggered with direction ' + direction)
+  //     },
+  //     exit: function(direction) {
+  //       window.console.log('Exit triggered with direction ' + direction)
+  //     },
+  //     exited: function(direction) {
+  //       window.console.log('Exited triggered with direction ' + direction)
+  //     }
+  //   })
+  // });
+
+</script>
