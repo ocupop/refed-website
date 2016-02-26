@@ -3,7 +3,7 @@
   data-diversion-potential="{{ solution.impact.diversion-potential }}"
   data-meals-saved="{{ solution.impact.meals-saved }}"
   data-emissions-reduced="{{ solution.impact.emissions-reduced }}"
-  data-water-saved="{{ solution.impact.water-saved }}"
+  data-water-conservation="{{ solution.impact.water-conservation }}"
   data-jobs-created="{{ solution.impact.jobs-created }}"
 >
   <header>
@@ -31,8 +31,8 @@
       <strong>{{ solution.impact.emissions-reduced | add_commas }}</strong><br>
       <span>in emission reduction</span>
     </p>
-    <p class="stat water-saved">
-      <strong>{{ solution.impact.water-saved | add_commas }}</strong> <small>gallons</small><br>
+    <p class="stat water-conservation">
+      <strong>{{ solution.impact.water-conservation | add_commas }}</strong> <small>gallons</small><br>
       <span>in water saved</span>
     </p>
     <p class="stat jobs-created">
