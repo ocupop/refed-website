@@ -1,11 +1,9 @@
 # Site settings
-title: Your awesome title
+title: ReFED | Rethink Food Waste
 email: your-email@domain.com
 description:  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/refed" # the subpath of your site, e.g. /blog
+url: "http://ocupopdev.com" # the base hostname & protocol for your site
 
 collections:
   solutions:
@@ -27,7 +25,7 @@ bundler_args: --without production
 markdown: kramdown
 
 include: ["_pages"]
-exclude: [vendor]
+exclude: ['vendor', '.asset-cache']
 
 gems:
 - jekyll-assets
@@ -37,7 +35,7 @@ assets:
   compress:
     css: true # default - development: false, production: true
     js: true # default - development: false, production: true
-  cache: .asset-cache # default: .asset-cache
+  cache: false # default: .asset-cache
   # cdn: https://cdn.example.com
   # skip_baseurl_with_cdn: false
   # skip_prefix_with_cdn: false
