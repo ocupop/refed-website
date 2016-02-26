@@ -1,6 +1,6 @@
 <div class="card {{ solution.type | slugify }}-card"
   data-financial-benefit="{{ solution.impact.financial-benefit }}"
-  data-waste-diverted="{{ solution.impact.waste-diverted }}"
+  data-diversion-potential="{{ solution.impact.diversion-potential }}"
   data-meals-saved="{{ solution.impact.meals-saved }}"
   data-emissions-reduced="{{ solution.impact.emissions-reduced }}"
   data-water-saved="{{ solution.impact.water-saved }}"
@@ -19,8 +19,8 @@
       $<strong>{{ solution.impact.financial-benefit | add_commas }}</strong> <small>/ton</small><br>
       <span>in financial benefit</span>
     </p>
-    <p class="stat waste-diverted">
-      <strong>{{ solution.impact.waste-diverted | add_commas }}K</strong> <small>tons</small><br>
+    <p class="stat diversion-potential">
+      <strong>{{ solution.impact.diversion-potential | add_commas }}K</strong> <small>tons</small><br>
       <span>in diversion potential</span>
     </p>
     <p class="stat meals-saved">
