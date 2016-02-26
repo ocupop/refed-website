@@ -87,7 +87,7 @@ prev:
       <div class="content">
         <h2>Food wasted by volume</h2>
         <p class="break-70">Waste occurs throughout the supply chain, with nearly 85% occurring downstream at consumer-facing businesses and homes.</p>
-        {% include svg/graph-waste-volume.svg %}
+        {% include svg/chart-waste-volume.svg %}
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@ prev:
       <div class="content">
         <h2>Financial Waste</h2>
         <p class="break-70">The financial cost of food waste ends up costing consumers the most due to retail pricing versus wholesale pricing for consumer-facing businesses.</p>
-        {% include svg/graph-waste-financial.svg %}
+        {% include svg/chart-waste-financial.svg %}
       </div>
     </div>
   </div>
@@ -129,8 +129,9 @@ prev:
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
-      <div class="content">
-        <img src="{% asset_path 'food-waste/chart-donut-goals.svg' %}" class="img-responsive">
+      <div id="chart-reduction" class="content">
+        <div id="reduction-goal" class="ct-chart ct-square"></div>
+        <div id="reduction-timeline" class="ct-chart ct-square"></div>
       </div>
     </div>
   </div>
@@ -206,3 +207,152 @@ prev:
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+
+  var data = {
+      series: [20, 30, 50],
+      labels: ['', '']
+  };
+  var timeline = {
+      series: [30, 20],
+      labels: ['', '']
+  };
+
+  var timeline_options = {
+    donut: true,
+    donutWidth: 8,
+    startAngle: 0,
+    total: 100,
+    showLabel: false,
+    width: 200,
+    height: 200
+  }
+  var options = {
+    donut: true,
+    donutWidth: 70,
+    startAngle: 0,
+    total: 100,
+    showLabel: false,
+    plugins: [
+      Chartist.plugins.fillDonut({
+        items: [{
+          content: '<i class="fa fa-tachometer text-muted"></i>',
+          position: 'bottom',
+          offsetY : 10,
+          offsetX: -2
+        }, {
+          content: '<h3 class="series-a">20%</h3><h3 class="series-b">50%</h3>'
+        }]
+      })
+    ]
+  }
+
+
+  $(function() {
+    var innerChart = new Chartist.Pie('#reduction-timeline', timeline, timeline_options);
+    var chart = new Chartist.Pie('#reduction-goal', data, options);
+
+    innerChart.on('draw', function(data) {
+      if(data.type === 'slice') {
+        // Get the total path length in order to use for dash array animation
+        var pathLength = data.element._node.getTotalLength();
+
+        // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+        data.element.attr({
+          'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+        });
+
+        // Create animation definition while also assigning an ID to the animation for later sync usage
+        var animationDefinition = {
+          'stroke-dashoffset': {
+            id: 'anim' + data.index,
+            dur: 1000,
+            from: -pathLength + 'px',
+            to:  '0px',
+            easing: Chartist.Svg.Easing.easeOutQuint,
+            // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+            fill: 'freeze'
+          }
+        };
+
+        // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+        if(data.index !== 0) {
+          animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+        }
+
+        // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+        data.element.attr({
+          'stroke-dashoffset': -pathLength + 'px'
+        });
+
+        // We can't use guided mode as the animations need to rely on setting begin manually
+        // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+        data.element.animate(animationDefinition, false);
+      }
+    });
+    chart.on('draw', function(data) {
+      if(data.type === 'slice') {
+        // Get the total path length in order to use for dash array animation
+        var pathLength = data.element._node.getTotalLength();
+
+        // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+        data.element.attr({
+          'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+        });
+
+        // Create animation definition while also assigning an ID to the animation for later sync usage
+        var animationDefinition = {
+          'stroke-dashoffset': {
+            id: 'anim' + data.index,
+            dur: 1000,
+            from: -pathLength + 'px',
+            to:  '0px',
+            easing: Chartist.Svg.Easing.easeOutQuint,
+            // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+            fill: 'freeze'
+          }
+        };
+
+        // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+        if(data.index !== 0) {
+          animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+        }
+
+        // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+        data.element.attr({
+          'stroke-dashoffset': -pathLength + 'px'
+        });
+
+        // We can't use guided mode as the animations need to rely on setting begin manually
+        // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+        data.element.animate(animationDefinition, false);
+      }
+    });
+
+
+    var inview = new Waypoint.Inview({
+      element: $("#chart-reduction")[0],
+      enter: function(direction) {
+        chart.update();
+        innerChart.update();
+        $(this.element).addClass('animated ' + $(this.element).data('animation'));
+        window.console.log('Enter triggered with direction ' + direction);
+        window.console.log($(this.element).attr('class'));
+      },
+      entered: function(direction) {
+        window.console.log('Entered triggered with direction ' + direction)
+      },
+      exit: function(direction) {
+        $(this.element).removeClass('animated ' + $(this.element).data('animation'));
+        window.console.log('Exit triggered with direction ' + direction);
+        window.console.log($(this.element).attr('class'));
+      },
+      exited: function(direction) {
+        window.console.log('Exited triggered with direction ' + direction)
+      }
+    });
+
+  });
+
+</script>
