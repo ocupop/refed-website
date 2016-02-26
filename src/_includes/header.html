@@ -1,5 +1,5 @@
 <div class="container">
-  <a class="brand" href="/" title="ReFED: Rethinking Food Waste">
+  <a class="brand" href="{{ '/' | prepend: site.baseurl }}" title="ReFED: Rethinking Food Waste">
     {% img 'logo-wordmark.svg' %}
   </a>
   <button class="menu-toggle">
@@ -28,8 +28,8 @@
             <li><a href="#" class="newsletter-signup">Newsletter Signup</a></li>
           </ul>
         </li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/resources">Resources</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a></li>
+        <li><a href="{{ '/resources' | prepend: site.baseurl | prepend: site.url }}">Resources</a></li>
         <li class="download"><button title="Download the Report" data-toggle="modal" data-target="#downloadDialog"><small>Download the</small><br>Report<br><i class="icon-download"></i></button></li>
       </ul>
     </nav>
@@ -39,15 +39,15 @@
   <div class="container">
     <nav>
       <ul>
-        <li><a href="/" title="Food Waste">Food Waste</a></li>
-        <li><a href="/analysis" title="Analysis">Analysis</a></li>
-        <li><a href="/solution" title="Solutions">Solutions</a></li>
-        <li><a href="/stakeholder" title="Stakeholders">Stakeholders</a></li>
-        <li><a href="/action" title="Action">Action</a></li>
+        <li><a href="{{ '/' | prepend: site.baseurl  }}" title="Food Waste">Food Waste</a></li>
+        <li><a href="{{ '/analysis' | prepend: site.baseurl }}" title="Analysis">Analysis</a></li>
+        <li><a href="{{ '/solution' | prepend: site.baseurl }}" title="Solutions">Solutions</a></li>
+        <li><a href="{{ '/stakeholder' | prepend: site.baseurl }}" title="Stakeholders">Stakeholders</a></li>
+        <li><a href="{{ '/action' | prepend: site.baseurl }}" title="Action">Action</a></li>
       </ul>
       <ul class="drawer">
-        <li><a href="/about">About</a></li>
-        <li><a href="/resources">Resources</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+        <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
         <li><a title="Download the Report" data-toggle="modal" data-target="#downloadDialog">Download the Report <i class="icon-download"></i></a></li>
       </ul>
     </nav>
