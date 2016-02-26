@@ -50,12 +50,12 @@
           <div class="col-xs-4">
             <ul class="report-sitemap">
               <li>
-                <a href="{{ base }}">Food Waste</a>
+                <a href="/">Food Waste</a>
                 <ul>
-                  <li><a href="{{ base }}#">What is Food Waste</a></li>
-                  <li><a href="{{ base }}#">Current State</a></li>
-                  <li><a href="{{ base }}#">Value Chain</a></li>
-                  <li><a href="{{ base }}#">Food Waste Types</a></li>
+                  <li><a href="#">What is Food Waste</a></li>
+                  <li><a href="#">Current State</a></li>
+                  <li><a href="#">Value Chain</a></li>
+                  <li><a href="#">Food Waste Types</a></li>
                 </ul>
               </li>
             </ul>
@@ -66,10 +66,10 @@
           <div class="col-xs-4">
             <ul class="report-sitemap">
               <li>
-                <a href="{{ base }}/stakeholder">Stakeholders</a>
+                <a href="/stakeholder">Stakeholders</a>
                 <ul>
                   {% for stakeholder in site.stakeholders %}
-                  <li><a href="{{ base }}/{{ stakeholder.url }}">{{ stakeholder.title }}</a></li>
+                  <li><a href="{{ stakeholder.url }}">{{ stakeholder.title }}</a></li>
                   {% endfor %}
                 </ul>
               </li>
