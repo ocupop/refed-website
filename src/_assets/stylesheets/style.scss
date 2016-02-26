@@ -1016,7 +1016,7 @@ section.alternate {
 ----------------------------------------- */
 
 .icon-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .icon-cloud {
   color: #e9ae6c;
@@ -1120,25 +1120,97 @@ section.alternate {
     }
   }
 }
+#chart-reduction {
+  position: relative;
+  padding-left: 0;
+  #reduction-goal {
+    .ct-chart-donut .ct-series-a .ct-slice-donut {
+      stroke: #78BEB5;
+    }
+    .ct-chart-donut .ct-series-b .ct-slice-donut {
+      stroke: #9BCAC0;
+      opacity: 1;
+    }
+    .ct-chart-donut .ct-series-c .ct-slice-donut {
+      stroke: $cream;
+      opacity: 1;
+    }
+    .ct-chart-donut .ct-fill-donut .ct-slice-donut{
+      stroke: $cream;
+      opacity: 1;
+    }
+    .ct-fill-donut-label h3{
+      font-weight: bolder;
+      &.series-a { color: #78BEB5; }
+      &.series-b { color: #9BCAC0; }
+    }
+    .ct-fill-donut-label .small {
+        font-size: 0.6em;
+    }
+    .ct-fill-donut-label i { 
+        font-size: 1.5em;
+        color: rgba(0,0,0,.4);
+    }
+  }
+  #reduction-timeline {
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -100px;
+    .ct-chart-donut .ct-series-a .ct-slice-donut {
+        stroke: #78BEB5;
+    }
+    .ct-chart-donut .ct-series-b .ct-slice-donut {
+        stroke: #9BCAC0;
+        opacity: 1;
+    }
+  }
+}
+
+#test {
+  .ct-series {
+    &.ct-series-a {
+      path {
+        stroke: #78BEB5;
+      }
+    }
+    &.ct-series-b {
+      path {
+        stroke: #9BCAC0;
+      }
+    }
+    &.ct-series-c {
+      path {
+        stroke: $cream;
+      }
+    }
+  }
+}
+
+
 
 #cost-curve {
   // height: 400px;
 }
 
-.ct-series-a,
-.ct-series-b,
-.ct-series-c,
-.ct-series-d,
-.ct-series-e,
-.ct-series-f {
-  // display: none;
-  overflow: hidden;
-  .ct-bar {
-    stroke: $button-color;
-    stroke-width: 25px;
-    @include animation(cardSlideIn, 0.8s, 0.5s);
-  }
-}
+// .ct-series-a,
+// .ct-series-b,
+// .ct-series-c,
+// .ct-series-d,
+// .ct-series-e,
+// .ct-series-f {
+//   // display: none;
+//   overflow: hidden;
+//   .ct-bar {
+//     stroke: $button-color;
+//     stroke-width: 25px;
+//     @include animation(cardSlideIn, 0.8s, 0.5s);
+//   }
+// }
 
 // .ct-series-c,
 // .ct-series-d,
@@ -1153,91 +1225,91 @@ section.alternate {
 //   }
 // }
 
-.ct-chart-bar .ct-label.ct-horizontal.ct-end {
-  display: block;
-  overflow: visible;
-  white-space: nowrap;
-  transform: rotate(-90deg);
-  text-align: left;
-  font-size: 13px;
-  line-height: 25px;
-  text-indent: 10px;
-  @for $i from 1 through 28 {
-    &:nth-child(#{$i}) { 
-      @include animation(fadeIn, 2.8s, 0.2s * $i);
-    }
-  }
-}
+// .ct-chart-bar .ct-label.ct-horizontal.ct-end {
+//   display: block;
+//   overflow: visible;
+//   white-space: nowrap;
+//   transform: rotate(-90deg);
+//   text-align: left;
+//   font-size: 13px;
+//   line-height: 25px;
+//   text-indent: 10px;
+//   @for $i from 1 through 28 {
+//     &:nth-child(#{$i}) { 
+//       @include animation(fadeIn, 2.8s, 0.2s * $i);
+//     }
+//   }
+// }
 
 // .ct-grid.ct-horizontal {
 //   display: none;
 // }
 
 
-#doughnutChart {
-  margin: 0 auto;
-  width: 450px;
-  height: 450px;
-  position: relative;
-}
-.doughnutTip {
-  position: absolute;
-  float: left;
-  min-width: 30px;
-  max-width: 300px;
-  padding: 5px 15px;
-  border-radius: 1px;
-  background: rgba(0,0,0,.8);
-  color: #ddd;
-  font-size: 17px;
-  text-shadow: 0 1px 0 #000;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.3;
-  letter-spacing: .06em;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-  transform: all .3s;
-  pointer-events: none;
-}
-.doughnutTip:after {
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  content: "";
-  height: 0;
-  margin: 0 0 0 -6px;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-top: 6px solid rgba(0,0,0,.7);
-  line-height: 0;
-}
-.doughnutSummary {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #d5d5d5;
-  text-align: center;
-  text-shadow: 0 -1px 0 #111;
-  cursor: default;
-}
-.doughnutSummaryTitle {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -27%;
-  font-size: 22px;
-  letter-spacing: .06em;
-}
-.doughnutSummaryNumber {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -15%;
-  font-size: 55px;
-}
-.chart path:hover { 
-  opacity: .65; 
-}
+// #doughnutChart {
+//   margin: 0 auto;
+//   width: 450px;
+//   height: 450px;
+//   position: relative;
+// }
+// .doughnutTip {
+//   position: absolute;
+//   float: left;
+//   min-width: 30px;
+//   max-width: 300px;
+//   padding: 5px 15px;
+//   border-radius: 1px;
+//   background: rgba(0,0,0,.8);
+//   color: #ddd;
+//   font-size: 17px;
+//   text-shadow: 0 1px 0 #000;
+//   text-transform: uppercase;
+//   text-align: center;
+//   line-height: 1.3;
+//   letter-spacing: .06em;
+//   box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+//   transform: all .3s;
+//   pointer-events: none;
+// }
+// .doughnutTip:after {
+//   position: absolute;
+//   left: 50%;
+//   bottom: -6px;
+//   content: "";
+//   height: 0;
+//   margin: 0 0 0 -6px;
+//   border-right: 5px solid transparent;
+//   border-left: 5px solid transparent;
+//   border-top: 6px solid rgba(0,0,0,.7);
+//   line-height: 0;
+// }
+// .doughnutSummary {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   color: #d5d5d5;
+//   text-align: center;
+//   text-shadow: 0 -1px 0 #111;
+//   cursor: default;
+// }
+// .doughnutSummaryTitle {
+//   position: absolute;
+//   top: 50%;
+//   width: 100%;
+//   margin-top: -27%;
+//   font-size: 22px;
+//   letter-spacing: .06em;
+// }
+// .doughnutSummaryNumber {
+//   position: absolute;
+//   top: 50%;
+//   width: 100%;
+//   margin-top: -15%;
+//   font-size: 55px;
+// }
+// .chart path:hover { 
+//   opacity: .65; 
+// }
 
 // #bottom {
 //   @include animation(skyBeat, 0.8s, 4s);

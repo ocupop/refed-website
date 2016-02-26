@@ -1,6 +1,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require chartist/dist/chartist.min.js
+//= require chartist-plugin-fill-donut/dist/chartist-plugin-fill-donut.min.js
 //= require scrollme/jquery.scrollme.min.js
 //= require mixitup/build/jquery.mixitup.min.js
 //= require vendor/jquery.mixitup-pagination.min.js
