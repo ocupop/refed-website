@@ -25,6 +25,8 @@
     "chartist": "^0.9.5",
     "mixitup": "^2.1.11",
     "chartist-plugin-fill-donut": "^0.0.1-beta",
-    "waypoints": "^4.0.0"
+    "waypoints": "^4.0.0",
+    "jquery.localScroll": "^1.4.0",
+    "jquery.scrollTo": "^2.1.2"
   }
 }

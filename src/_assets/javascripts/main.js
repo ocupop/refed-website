@@ -1,6 +1,8 @@
 //= require vendor/modernizr-2.8.3.min.js
 //= require jquery
 //= require bootstrap-sprockets
+//= require jquery.localScroll/jquery.localScroll.min.js
+//= require jquery.scrollTo/jquery.scrollTo.min.js
 //= require chartist/dist/chartist.min.js
 //= require chartist-plugin-fill-donut/dist/chartist-plugin-fill-donut.min.js
 //= require waypoints/lib/jquery.waypoints.min.js
@@ -15,6 +17,10 @@
 
 
 $(document).on('ready', function() {
+  //initiate localscroll
+  $.localScroll();
+
+  
   // RESPONSIVE MENU
   $('.menu-toggle').on('click', function(e) {
     e.stopPropagation();
