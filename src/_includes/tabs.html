@@ -1,8 +1,24 @@
-{% for tab in site.data.tabs %}
-  <li data-sort="{{ tab.slug }}" class="sort tab">
-    <span class="title">{{ tab.title }}</span>
-    <span class="label" style="display: none;">{{ tab.label }}</span>
-    <span class="summary" style="display: none;">{{ tab.summary }}</span>
-    <span class="description" style="display: none;">{{ tab.description }}</span>
-  </li>
-{% endfor %}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-7">
+      <h4>Rearrange Solutions By...</h4>
+    </div>
+    <div class="col-xs-12 col-sm-5">
+      <form id="solution-search-form" class="search form-inline">
+        <label class="sr">Search</label>
+        <input id="terms" type="text" placeholder="Solution Search">
+        <span><i class="icon-search"></i></span>
+      </form>
+    </div>
+    <div class="col-xs-12">
+      <ul class="tabs">
+        <li class="tab sort active" data-sort="economic-value-per-ton">Financial Benefit</li>
+        <li class="tab sort" data-sort="diversion-potential">Waste Diverted</li>
+        <li class="tab sort" data-sort="emissions-reduced">Emissions Reduced</li>
+        <li class="tab sort" data-sort="water-conservation">Water Saved</li>
+        <li class="tab sort" data-sort="meals-saved">Meals Saved</li>
+        <li class="tab sort" data-sort="jobs-created">Jobs Created</li>
+      </ul>
+    </div>
+  </div>
+</div>

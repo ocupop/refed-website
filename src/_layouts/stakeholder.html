@@ -1,4 +1,98 @@
 ---
-layout: default
+layout: page
+prev:
+  url: /solution
+  title: Solutions
+next:
+  url: /action
+  title: Action
 ---
+<section id="stakeholder-list">
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs-3">
+        {% include svg/stakeholders/{{ page.slug }}.svg %}
+      </div>
+      <div class="col-xs-9">
+        <div class="content {{ page.slug }}">
+          <h2>{{ page.title }}</h2>
+          <p class="lead">{{ page.title }} may capture an estimated <strong>{{ page.potential-gain }}</strong> in annual business profit potential</p>
+          <p>Top Solution: {{ page.top-solution }}</p>
+          <p>{{ page.summary }}</p>
+          <a href="{{ page.url }}" title="{{ page.title }}" class="button break-70">
+            <span>View {{ page.title }} Solutions &gt;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="alternate">
+  {% include tabs.html %}
+</section>
+<section class="alternate">
+  <div class="container">
+    {% include solution_cards.html limit=0 %}
+  </div>
+</section>
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content border-right">
+          <h2>Call to Action</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="{{ '/action' | prepend: site.baseurl }}"><span>Take Action Now &nbsp;&gt;</span></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <h3>Resources</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h5>Link &nbsp;&gt;</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+            <li class="list-group-item">
+              <h5>Link &nbsp;&gt;</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+            <li class="list-group-item">
+              <h5>Link &nbsp;&gt;</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="alernate">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h3>A multistakeholder approach is needed</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in.</p>
+          <ol>
+            <li>Build collaboration across organizations</li>
+            <li>Understand regional needs</li>
+            <li>Develop a funding model</li>
+          </ol>
+          <a href="#" class="button break-60"><span>How to get started on multi-stakeholder solutions &nbsp;&gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ content }}
