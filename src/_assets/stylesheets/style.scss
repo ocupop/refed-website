@@ -709,13 +709,13 @@ ol {
 .button {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 60px;
   line-height: 1em;
   margin: 5px 0;
   padding: 0 20px;
   border-radius: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1055,6 +1055,33 @@ section.alternate {
   background-image: url("{% asset_path impact/diversion-potential.svg %}");
 }
 
+// Stakeholders
+.icon-farmers {
+  background-image: url("{% asset_path stakeholders/farmers.svg %}");
+}
+.icon-federal-government {
+  background-image: url("{% asset_path stakeholders/federal-government.svg %}");
+}
+.icon-foundations {
+  background-image: url("{% asset_path stakeholders/foundations.svg %}");
+}
+.icon-investors {
+  background-image: url("{% asset_path stakeholders/investors.svg %}");
+}
+.icon-manufacturers {
+  background-image: url("{% asset_path stakeholders/manufacturers.svg %}");
+}
+.icon-restaurants-and-foodservice-providers {
+  background-image: url("{% asset_path stakeholders/restaurants-and-foodservice-providers.svg %}");
+}
+.icon-retailers {
+  background-image: url("{% asset_path stakeholders/retailers.svg %}");
+}
+.icon-state-government-and-municipalities {
+  background-image: url("{% asset_path stakeholders/state-government-and-municipalities.svg %}");
+}
+
+
 /* -----------------------------------------
    Forms
 ----------------------------------------- */
@@ -1245,75 +1272,6 @@ section.alternate {
 //   display: none;
 // }
 
-
-// #doughnutChart {
-//   margin: 0 auto;
-//   width: 450px;
-//   height: 450px;
-//   position: relative;
-// }
-// .doughnutTip {
-//   position: absolute;
-//   float: left;
-//   min-width: 30px;
-//   max-width: 300px;
-//   padding: 5px 15px;
-//   border-radius: 1px;
-//   background: rgba(0,0,0,.8);
-//   color: #ddd;
-//   font-size: 17px;
-//   text-shadow: 0 1px 0 #000;
-//   text-transform: uppercase;
-//   text-align: center;
-//   line-height: 1.3;
-//   letter-spacing: .06em;
-//   box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-//   transform: all .3s;
-//   pointer-events: none;
-// }
-// .doughnutTip:after {
-//   position: absolute;
-//   left: 50%;
-//   bottom: -6px;
-//   content: "";
-//   height: 0;
-//   margin: 0 0 0 -6px;
-//   border-right: 5px solid transparent;
-//   border-left: 5px solid transparent;
-//   border-top: 6px solid rgba(0,0,0,.7);
-//   line-height: 0;
-// }
-// .doughnutSummary {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   color: #d5d5d5;
-//   text-align: center;
-//   text-shadow: 0 -1px 0 #111;
-//   cursor: default;
-// }
-// .doughnutSummaryTitle {
-//   position: absolute;
-//   top: 50%;
-//   width: 100%;
-//   margin-top: -27%;
-//   font-size: 22px;
-//   letter-spacing: .06em;
-// }
-// .doughnutSummaryNumber {
-//   position: absolute;
-//   top: 50%;
-//   width: 100%;
-//   margin-top: -15%;
-//   font-size: 55px;
-// }
-// .chart path:hover { 
-//   opacity: .65; 
-// }
-
-// #bottom {
-//   @include animation(skyBeat, 0.8s, 4s);
-// }
 
 /* -----------------------------------------
    Sections
@@ -1509,7 +1467,60 @@ section.alternate {
     }
   }
 }
+#stakeholder-icons {
+  a {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+#stakeholder-list {
+  .farmers {
+    .button {
+      background-color: #1b5a7d;
+    }
+  }
+  .federal-government {
+    .button {
+      background-color: #54b7b4;
+    }
+  }
+  .foundations {
+    .button {
+      background-color: #72a94e;
+    }
+  }
+  .investors {
+    .button {
+      background-color: #799c48;
+    }
+  }
+  .manufacturers {
+    .button {
+      background-color: #3d738d;
+    }
+  }
+  .restaurants-and-foodservice-providers {
+    .button {
+      background-color: #4b8590;
+    }
+  }
+  .retailers {
+    .button {
+      background-color: #4aa584;
+    }
+  }
+  .state-government-and-municipalities {
+    .button {
+      background-color: #54b7b4;
+    }
+  }
 
+}
 /* -----------------------------------------
    Page Specific
 ----------------------------------------- */
