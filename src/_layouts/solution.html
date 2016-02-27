@@ -1,8 +1,87 @@
 ---
-layout: default
+layout: page
 ---
-{% include hero.html %}
+<section id="solution-highlights" class="{{ page.type | slugify }}">
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+        <h3><small>Diversion Potential</small><br>{{ page.diversion-potential }}K Tons</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <h2>Definition</h2>
+          <p>{{ page.definition }}</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <h2>Overview</h2>
+          <p>{{ page.overview }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="solution-challenges" class="alternate">
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+        <div class="content">
+          <h2>Challenges</h2>
+          <ul>
+            {% for challenge in page.challenges %}
+            <li>{{ challenge }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="stakeholder-actions">
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+        <div class="content">
+          <h2>Stakeholder Actions</h2>
+          <ul>
+            {% for action in page.stakeholder-actions %}
+            <li>{{ action }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="solution-examples" class="alternate">
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs">
+        <div class="content">
+          <h2>Examples</h2>
+          <ul>
+            {% for example in page.examples %}
+            <li>
+              <h5>{{ example.title }}</h5>
+              <p>{{ example.description }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ content }}
+
 {% if page.connected-solutions %}
 <section id="connected-solutions">
   <div class="container">

@@ -971,6 +971,7 @@ a.external {
       line-height: 1.25em;
       letter-spacing: 0.05em;
       margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
       small {
         font-weight: 300;
         letter-spacing: 0.1em;
@@ -1313,6 +1314,7 @@ section.alternate {
     }
   }
 }
+
 #supply-chain {
   ul {
     list-style: none;
@@ -1467,6 +1469,7 @@ section.alternate {
     }
   }
 }
+
 #stakeholder-icons {
   a {
     &:hover {
@@ -1478,6 +1481,7 @@ section.alternate {
     width: 80px;
   }
 }
+
 #stakeholder-list {
   .farmers {
     .button {
@@ -1519,7 +1523,32 @@ section.alternate {
       background-color: #54b7b4;
     }
   }
+}
 
+#stakeholder-actions {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#solution-challenges {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#solution-examples {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+#connected-solutions {
+  .card {
+    display: inline-block;
+  }
 }
 /* -----------------------------------------
    Page Specific
@@ -1613,6 +1642,13 @@ body.action {
       height: 80px;
       margin: 5px;
     }
+  }
+}
+
+body.solutions {
+  .hero {
+    min-height: 0;
+    height: 280px;
   }
 }
 

@@ -40,6 +40,6 @@
       <strong>{{ solution.impact.jobs-created | add_commas }}</strong><br>
       <span>jobs created</span>
     </p>
-    <a href="{{ solution.url }}">Learn How &gt;</a>
+    <a href="{{ solution.url | prepend: site.baseurl }}">Learn How &gt;</a>
   </footer>
 </div>
