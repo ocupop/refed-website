@@ -3,9 +3,31 @@ layout: page
 ---
 <section id="solution-highlights" class="{{ page.type | slugify }}">
   <div class="container">
-    <div class="row middle-xs">
+    <div class="row middle-xs around-xs">
       <div class="col-xs">
-        <h3><small>Diversion Potential</small><br>{{ page.diversion-potential }}K Tons</h3>
+        <h3><small>Diversion Potential:</small><br>{{ page.impact.diversion-potential | add_commas }}K Tons</h3>
+      </div>
+      <div class="col-xs">
+        <h3><small>Economic Value:</small><br>{{ page.impact.economic-value-per-ton | add_commas }} Billion</h3>
+      </div>
+      <div class="col-xs">
+        <h3><small>Feasibility:</small><br>{{ page.feasibility }}</h3>
+      </div>
+      <div class="col-xs">
+        <h3><small>GHGs:</small><br>{{ page.impact.emissions-reduced | add_commas }}K Tons</h3>
+      </div>
+      <div class="col-xs">
+        {% case page.type %}
+          {% when 'prevention' %}
+          <h3><small>Water Saved:</small><br>{{ page.impact.water-conservation | add_commas }}K Gallons</h3>
+
+          {% when 'recycling' %}
+          <h3><small>Jobs Created:</small><br>{{ page.impact.jobs-created | add_commas }}K Jobs</h3>
+
+          {% when 'recovery' %}
+          <h3><small>Meals Recovered:</small><br>{{ page.impact.meals-recovered | add_commas }}K Meals</h3>
+
+        {% endcase %}
       </div>
     </div>
   </div>
