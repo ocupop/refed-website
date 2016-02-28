@@ -933,6 +933,13 @@ a.external {
   }
 }
 
+.list-group {}
+.list-group-item {
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+}
+
 
 // Hero Banners
 .hero {
@@ -1531,6 +1538,8 @@ section.alternate {
     padding: 0;
   }
 }
+
+#multistakeholder-approach {}
 
 #solution-highlights {
   display: flex;
