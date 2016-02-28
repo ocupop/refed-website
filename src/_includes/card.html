@@ -7,9 +7,10 @@
   data-jobs-created="{{ solution.impact.jobs-created }}"
 >
   <header>
-    <i class="icon"></i>
-    <!-- <img src="http://placehold.it/500x300/BFB9A1/BFB9A1?text=placeholder"> -->
-    <img src="{% asset_path 'solutions/{{ solution.slug }}-card.jpg' %}">
+    <a href="{{ solution.url }}">
+      <i class="icon"></i>
+      <img src="{% asset_path 'solutions/{{ solution.slug }}-card.jpg' %}">
+    </a>
   </header>
   <div class="content">
     <h4 class="title">{{ solution.title }}</h4>
