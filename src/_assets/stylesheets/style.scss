@@ -128,11 +128,11 @@ form {}
     @include transition();
     pointer-events: none;
   }
-  &:hover {
-    &:after {
-      transform: rotate(180deg);
-    }
-  }
+  // &:hover {
+  //   &:after {
+  //     transform: rotate(180deg);
+  //   }
+  // }
 }
 input, select {
   line-height: $base-line-height * 1.5;
@@ -162,6 +162,16 @@ ol {
   }
 }
 
+dl {
+  dt {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.25em;
+  }
+  dd {
+    margin-bottom: 1em;
+  }
+}
 
 /* -----------------------------------------
    DOM Specific
@@ -476,20 +486,6 @@ ol {
     margin-bottom: 0.5em;
   }
 }
-#socialnav {
-  a {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 20px 0;
-    color: darken($cream, 5%);
-    &:hover {
-      color: $gray;
-    }
-    i {
-
-    }
-  }
-}
 #footernav {
   font-weight: 100;
   color: $cream-light;
@@ -736,8 +732,11 @@ ol {
     margin: auto;
   }
   i {
+    display: inline-block;
     margin: 0 4px;
-    font-size: 14px;
+    font-size: 16px;
+    width: auto;
+    height: auto;
   }
   &.play-video {
     position: relative;
@@ -786,6 +785,21 @@ ol {
     }
   }
 }
+
+.nav {
+  li {
+    margin-bottom: 5px;
+    a {
+      background-color: $button-color;
+      color: #ffffff;
+      font-weight: 100;
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}
+
 .lead {
   margin: 1em 0;
   font-size: 20px;
@@ -973,7 +987,6 @@ a.external {
   border: none;
 }
 
-
 // Hero Banners
 .hero {
   display: table;
@@ -1052,9 +1065,35 @@ section.alternate {
   @include palette($section-alt-color, $text-color);
 }
 
+.muted {
+  color: rgba(0,0,0,0.5);
+}
+
 /* -----------------------------------------
    Icons
 ----------------------------------------- */
+.socialnav {
+  a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px 0;
+    color: darken($cream, 5%);
+    &:hover {
+      color: $gray;
+    }
+    i {
+
+    }
+  }
+}
+
+section {
+  .socialnav {
+    a {
+      color: $button-color;
+    }
+  }
+}
 
 .icon-circle {
   border-radius: 50%;

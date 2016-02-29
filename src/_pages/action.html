@@ -43,7 +43,7 @@ prevpage:
   </div>
 </section>
 
-<section>
+<section class="alternate">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -82,7 +82,7 @@ prevpage:
   </div>
 </section>
 
-<section>
+<section class="alternate">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -116,7 +116,7 @@ prevpage:
   </div>
 </section>
 
-<section>
+<section class="alternate">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -159,9 +159,22 @@ prevpage:
         <div class="select">
           <select>
             <option>Choose a stakeholder group</option>
-            <option>blah</option>
+            {% for stakeholder in site.stakeholders %}
+            <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
+            {% endfor %}
           </select>
         </div>
+        <div class="select">
+          <select>
+            <option>Choose interested solutions</option>
+            {% for solution in site.solutions %}
+            <option value="{{ solution.title }}">{{ solution.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <label class="sr">Comments</label>
+        <input type="text" placeholder="Provide additional contact info">
+        <p class="muted content text-center"><small>We never share your information to use it to span you.</small></p>
       </div>
     </form>
   </div>
