@@ -786,19 +786,19 @@ dl {
   }
 }
 
-.nav {
-  li {
-    margin-bottom: 5px;
-    a {
-      background-color: $button-color;
-      color: #ffffff;
-      font-weight: 100;
-      &:hover {
-        background-color: darken($button-color, 10%);
-      }
-    }
-  }
-}
+// .nav {
+//   li {
+//     margin-bottom: 5px;
+//     a {
+//       background-color: $button-color;
+//       color: #ffffff;
+//       font-weight: 100;
+//       &:hover {
+//         background-color: darken($button-color, 10%);
+//       }
+//     }
+//   }
+// }
 
 .lead {
   margin: 1em 0;
@@ -1561,7 +1561,7 @@ section {
   }
 }
 
-#stakeholder-list {
+.stakeholder-list {
   .farmers {
     .button {
       background-color: #1b5a7d;

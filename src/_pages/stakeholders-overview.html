@@ -30,7 +30,7 @@ prevpage:
         <h4>Jump to your stakeholder information <i class="icon-caret-down"></i></h4>
         <ul id="stakeholder-icons" class="nav nav-pills">
           {% for stakeholder in stakeholders %}
-          <li><a href="#{{ stakeholder.slug }}"><i class="icon icon-{{ stakeholder.slug }}"></i></a></li>
+          <li><a href="#{{ stakeholder.slug }}-section"><i class="icon icon-{{ stakeholder.slug }}"></i></a></li>
           {% endfor %}
         </ul>
       </div>
@@ -38,7 +38,7 @@ prevpage:
   </div>
 </section>
 {% for stakeholder in stakeholders %}
-  <section id="stakeholder-list" class="{% cycle 'alternate','' %}">
+  <section id="{{ stakeholder.slug }}-section" class="stakeholder-list {% cycle 'alternate','' %}">
     <div class="container">
       <div class="row middle-xs">
         <div class="col-xs-3">
