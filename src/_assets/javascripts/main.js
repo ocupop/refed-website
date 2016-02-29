@@ -9,6 +9,7 @@
 //= require waypoints/lib/shortcuts/inview.min.js
 //= require mixitup/build/jquery.mixitup.min.js
 //= require vendor/jquery.mixitup-pagination.min.js
+//= require vendor/jquery.joyride-2.1.js
 //= require _plugins
 //= require _solutions
 //= require _charts
