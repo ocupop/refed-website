@@ -39,6 +39,7 @@ $hr-border:                 $gray;
 // Typeography
 $font-family-base:        'Proxima Nova W01', sans-serif;
 $font-family-condensed:   'Trade Gothic W01', sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 
 $font-size-base:          16px;
 
@@ -58,6 +59,27 @@ $content-padding:         $line-height-computed;
 $base-line-height:        32px;
 
 $border-radius-base:        0;
+
+$popover-bg:                          $cream-light;
+$popover-max-width:                   300px;
+$popover-border-color:                rgba(0,0,0,0);
+//** Popover fallback border color
+$popover-fallback-border-color:       transparent;
+
+//** Popover title background color
+$popover-title-bg:                    darken($popover-bg, 3%);
+
+//** Popover arrow width
+$popover-arrow-width:                 10px;
+//** Popover arrow color
+$popover-arrow-color:                 $popover-bg;
+
+//** Popover outer arrow width
+$popover-arrow-outer-width:           ($popover-arrow-width + 1);
+//** Popover outer arrow color
+$popover-arrow-outer-color:           fade_in($popover-border-color, 0.05);
+//** Popover outer arrow fallback color
+$popover-arrow-outer-fallback-color:  transparent;
 
 
 

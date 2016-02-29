@@ -1,5 +1,6 @@
 //= require vendor/flexboxgrid.min.css
 //= require vendor/animate.css
+//= require bootstrap-tour/build/css/bootstrap-tour.min.css
 
 @import '_variables';
 @import 'bootstrap';
@@ -7,6 +8,8 @@
 @import '_icons';
 @import '_animations';
 @import '_fixes';
+@import "_tour";
+
 @import "_charts.scss";
 @import "chartist/dist/scss/chartist.scss";
 
@@ -173,6 +176,10 @@ dl {
   }
 }
 
+em {
+  font-family: $font-family-serif;
+  font-style: italic;
+}
 /* -----------------------------------------
    DOM Specific
 ----------------------------------------- */
@@ -723,7 +730,9 @@ dl {
   letter-spacing: 0.05em;
   // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   background-color: $button-color;
+  border: none;
   color: $cream-light;
+  appearance: none;
   &:hover {
     background-color: darken($button-color, 10%);
     color: $cream-light;
@@ -1232,10 +1241,10 @@ section {
   padding-left: 0;
   #reduction-goal {
     .ct-chart-donut .ct-series-a .ct-slice-donut {
-      stroke: #78BEB5;
+      stroke: #49A69B;
     }
     .ct-chart-donut .ct-series-b .ct-slice-donut {
-      stroke: #9BCAC0;
+      stroke: #8EC4B9;
       opacity: 1;
     }
     .ct-chart-donut .ct-series-c .ct-slice-donut {
@@ -1248,8 +1257,8 @@ section {
     }
     .ct-fill-donut-label h3{
       font-weight: bolder;
-      &.series-a { color: #78BEB5; }
-      &.series-b { color: #9BCAC0; }
+      &.series-a { color: #49A69B; }
+      &.series-b { color: #8EC4B9; }
     }
     .ct-fill-donut-label .small {
         font-size: 0.6em;
@@ -1269,10 +1278,10 @@ section {
     margin-left: -80px;
     margin-top: -100px;
     .ct-chart-donut .ct-series-a .ct-slice-donut {
-        stroke: #78BEB5;
+        stroke: #49A69B;
     }
     .ct-chart-donut .ct-series-b .ct-slice-donut {
-        stroke: #9BCAC0;
+        stroke: #8EC4B9;
         opacity: 1;
     }
   }
@@ -1741,6 +1750,46 @@ body.solutions {
   .hero {
     min-height: 0;
     height: 280px;
+  }
+}
+
+
+/* -----------------------------------------
+   Modal / Joyride
+----------------------------------------- */
+.modal {
+  .modal-content {
+    border-radius: 0;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.4);
+    border: none;
+    overflow: hidden;
+    header {
+      height: 100px;
+      background: url("{% asset_path 'bg-wheat.jpg' %}");
+      background-size: cover;
+    }
+    .content {
+      padding: 35px !important;
+    }
+    .dialog-callout {
+      margin-top: -120px;
+      background-color: $cream-light;
+      box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+      .button {
+        height: auto;
+        h4 {
+          margin: auto;
+          font-size: 30px;
+        }
+        small {
+          font-weight: 100;
+          color: #fff;
+        }
+        i {
+          font-size: 40px;
+        }
+      }
+    }
   }
 }
 
