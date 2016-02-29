@@ -8,7 +8,19 @@
 >
   <header>
     <a href="{{ solution.url }}">
-      <i class="icon"></i>
+      <div class="rated">
+        {% for top in solution.top-rated %}
+        <i class="icon icon-{{ top }}"></i>
+        {% endfor %}
+        <p>
+          <small>Top Rated Solution:</small><br>
+          {% for tab in site.data.tabs %}
+            {% if solution.top-rated contains tab.slug %}
+              {{ tab.label }}<br>
+            {% endif %}
+          {% endfor %}
+        </p>
+      </div>
       <img src="{% asset_path 'solutions/{{ solution.slug }}-card.jpg' %}">
     </a>
   </header>

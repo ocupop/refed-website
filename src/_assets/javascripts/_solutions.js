@@ -58,7 +58,7 @@ function getData(key) {
   }
 };
 function showStat(sort) {
-  var icon_class = "icon icon-"+sort;
-  $('.card header i').attr('class', icon_class);
+  // var icon_class = "icon icon-"+sort;
+  // $('.card header i').attr('class', icon_class);
   $('.card .stat').hide().filter("."+sort).show();
 };

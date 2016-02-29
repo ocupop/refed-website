@@ -26,6 +26,24 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-meals-saved:before {
+    content: "\e906";
+}
+.icon-diversion-potential:before {
+    content: "\e902";
+}
+.icon-economic-value-per-ton:before {
+    content: "\e903";
+}
+.icon-emissions-reduced:before {
+    content: "\e904";
+}
+.icon-jobs-created:before {
+    content: "\e905";
+}
+.icon-water-conservation:before {
+    content: "\e909";
+}
 .icon-facebook:before {
     content: "\e900";
 }
