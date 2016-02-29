@@ -432,10 +432,11 @@ em {
   nav {
     @include transition(0.5s);
     ul {
-      margin: 9px 120px 9px auto;
-      border-left: 1px solid $gray-light;
+      margin: 0 120px 0 auto;
       li {
         a {
+          display: inline-block;
+          padding: 9px 0;
           font-size: 16px;
           font-weight: 500;
           text-transform: uppercase;
@@ -564,6 +565,34 @@ em {
         margin-right: auto;
         margin-left: 0;
         width: 280px;
+      }
+    }
+  }
+}
+#tournav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  ul {
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 2px 30px;
+      background-color: $button-color;
+      color: $cream-light;
+      box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+      font-size: 16px;
+      font-weight: 100;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:last-child {
+        background-color: $gray;
       }
     }
   }

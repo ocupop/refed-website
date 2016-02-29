@@ -87,19 +87,20 @@ jQuery(document).ready(function($) {
       content: "Downloads, links, and the tools you need to get started",
       placement: 'bottom'
     }],
+    backdrop: true,
     template: "<div class='popover tour'>
                 <div class='arrow'></div>
                 <button class='close' data-role='end'><span aria-hidden='true'>&times;</span></button>
                 <div class='popover-content'></div>
                 <div class='popover-navigation'>
-                  <button class='btn btn-default' data-role='prev'>&lt;&nbsp;Prev</button>
-                  <button class='btn btn-default' data-role='next'>Next&nbsp;&gt;</button>
+                  <button data-role='prev'>&lt;&nbsp;Prev</button>
+                  <button data-role='next'>Next&nbsp;&gt;</button>
                 </div>
               </div>"
   });
 
 
-  $('.start-ride').on('click', function() {
+  $('.start-tour').on('click', function() {
     $('#downloadDialog').modal('hide');
 
     // Initialize the tour

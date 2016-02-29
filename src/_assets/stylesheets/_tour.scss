@@ -1,19 +1,25 @@
-// .tour-backdrop {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   z-index: 1100;
-//   background-color: #000;
-//   opacity: 0.8;
-//   filter: alpha(opacity=80);
-// }
-// .tour-step-backdrop {
-//   position: relative;
-//   z-index: 1101;
-//   background: inherit;
-// }
+.tour-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1100;
+  background-color: #000;
+  opacity: 0.2;
+  filter: alpha(opacity=80);
+}
+.tour-step-background {
+  border-radius: 0;
+  padding: 10px;
+  margin-left: -10px;
+  background-color: rgba(255,255,255,0.4);
+}
+.tour-step-backdrop {
+  position: relative;
+  z-index: 1101;
+  background: inherit;
+}
 // .tour-step-backdrop > td {
 //   position: relative;
 //   z-index: 1101;
@@ -57,7 +63,7 @@
   border: none;
   font-weight: 200;
   padding: 0;
-  box-shadow: 10px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.3);
   color: $gray-light;
   &.bottom {
     margin-top: 10px;
