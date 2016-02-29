@@ -6,14 +6,13 @@
   left: 0;
   z-index: 1100;
   background-color: #000;
-  opacity: 0.2;
-  filter: alpha(opacity=80);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .tour-step-background {
-  border-radius: 0;
-  padding: 10px;
-  margin-left: -20px;
-  background-color: rgba(255,255,255,0.4);
+  // border-radius: 0;
+  // background-color: rgba(255,255,255,0.2);
+  // border: 20px solid red;
 }
 .tour-step-backdrop {
   position: relative;
@@ -24,12 +23,13 @@
 //   position: relative;
 //   z-index: 1101;
 // }
-// .tour-step-background {
-//   position: absolute !important;
-//   z-index: 1100;
-//   background: inherit;
-//   border-radius: 0;
-// }
+.tour-step-background {
+  position: absolute !important;
+  z-index: 1100;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid $button-color;
+}
 
 // .popover[class*="tour-"] {
 //   z-index: 1100;
@@ -75,8 +75,19 @@
     right: 4px;
     border: none;
     background-color: transparent;
-    color: $gray-light;
+    color: $gray;
     font-weight: 100;
+  }
+  .end {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    background-color: darken($button-color, 20%);
+    color: $cream-light;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
   }
   .popover-content {
     padding: 20px;

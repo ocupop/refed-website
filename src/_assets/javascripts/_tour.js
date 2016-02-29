@@ -46,6 +46,19 @@ jQuery(document).ready(function($) {
 
   // Instance the tour
   var tour = new Tour({
+    // name: "Site Tour",
+    // container: "body",
+    // keyboard: true,
+    // storage: window.localStorage,
+    // debug: false,
+    // backdrop: true,
+    // backdropContainer: 'body',
+    // backdropPadding: 0,
+    // redirect: true,
+    // orphan: false,
+    // duration: false,
+    // delay: false,
+    // basePath: "",
     steps: [
     {
       element: "#foodwaste-link",
@@ -96,12 +109,14 @@ jQuery(document).ready(function($) {
                   <button data-role='prev'>&lt;&nbsp;Prev</button>
                   <button data-role='next'>Next&nbsp;&gt;</button>
                 </div>
+                <button class='end' data-role='end'>End tour</button>
               </div>"
   });
 
 
   $('.start-tour').on('click', function() {
     $('#downloadDialog').modal('hide');
+    $('#page-header').addClass('open-menu');
 
     // Initialize the tour
     tour.init(true);
@@ -109,6 +124,10 @@ jQuery(document).ready(function($) {
     // Start the tour
     tour.start(true);
 
+  });
+  $(".tour-backdrop").on('click', function() {
+    alert('clicked');
+    // tour.end();
   });
 
 });

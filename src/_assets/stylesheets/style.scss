@@ -1834,6 +1834,9 @@ body.solutions {
 /* -----------------------------------------
    Media Queries
 ----------------------------------------- */
+// $screen-xs-max:              ($screen-sm-min - 1) !default;
+// $screen-sm-max:              ($screen-md-min - 1) !default;
+// $screen-md-max:              ($screen-lg-min - 1) !default;
 
 @media all and (max-width: 1024px) {
   #page-header {
@@ -1952,6 +1955,9 @@ body.solutions {
       }
     }
   }
+  .hero {
+    margin-top: 50px;
+  }
   .card {
     width: 49%;
     max-width: none;
@@ -1989,9 +1995,20 @@ body.solutions {
       }
     }
   }
+  .dialog-callout {
+    margin-top: 10px;
+  }
 }
 
 @media all and (max-width: 600px) {
+  #tournav {
+    ul {
+      li {
+        font-size: 14px;
+        padding: 2px 20px;
+      }
+    }
+  }
   .card {
     width: auto;
     max-width: none;
