@@ -2,46 +2,46 @@
   label: Most Cost Effective
   slug: economic-value-per-ton
   summary: The top three most cost-effective solutions all fall insto the prevention category.
-  description: description
+  description: "The aggregate financial benefit to society (consumers, businesses, governments, and other stakeholders) minus all investment and costs."
 
 - title: Waste Diverted
   label: Largest Waste Diverted
   slug: diversion-potential
   summary: summary
-  description: description
+  description: "The tons of annual waste that can feasibly be diverted from landfills and on-farm losses per solution."
 
 - title: Emissions Reduced
   label: Greatest Environmental Benefits
   slug: emissions-reduced
-  summary: summary
-  description: description
+  summary: "While recycling solutions prevent landfill methane emissions, prevention solutions have up to 10 times greater environmental impact per ton because they prevent unnecessary use of fertilizer, feed, water, and transport fuel."
+  description: "Greenhouse gases are reduced per solution by avoiding landfill methane emissions,avoiding agricultural and livestock impacts, resources that go into producing, processing, and transporting food."
 
 - title: Water Saved
   label: Most Water Saved
   slug: water-conservation
   summary: summary
-  description: description
+  description: "Water conservation occurs when a solution helps avoid agricultural water use to produce food that’s ultimately wasted."
 
 - title: Meals Saved
   label: Most Meals Saved
   slug: meals-saved
   summary: summary
-  description: description
+  description: "Food recovery solutions capture perfectly good food thrown away at a restaurant, bakery, or dinner party and transports it while it is still edible it to help address the issue of food insecurity."
 
 - title: Jobs Created
   label: Most Jobs Created
   slug: jobs-created
   summary: summary
-  description: description
+  description: "Food waste solutions are a strong engine for job creation. A preliminary estimate of over 15,000 permanent jobs created or sustained by implementing the recovery and recycling solutions."
 
 - title: Profitability
   label: Largest Profit Opportunity
   slug: profitability
-  summary: summary
+  summary: "Restaurants and foodservice facilities can generate over $1.6 billion each year by utilizing waste tracking & analytics, smaller plates, trayless dining, and off-spec produce."
   description: description
 
 - title: Scalability
   label: Most Scalable Solutions
   slug: scalability
-  summary: summary
+  summary: "The top three scalable solutions utilize large municipal recycling infrastructure: Centralized Composting, WRRF with AD, Centralized AD."
   description: description

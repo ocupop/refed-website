@@ -10,7 +10,7 @@ layout: page
       <div class="col-xs-9">
         <div class="content {{ page.slug }}">
           <h2>{{ page.title }}</h2>
-          <p class="lead">{{ page.title }} may capture an estimated <strong>{{ page.potential-gain }}</strong> in annual business profit potential</p>
+          <p class="lead">{{ page.potential-gain }}</p>
           <p>Top Solution: {{ page.top-solution }}</p>
           <p>{{ page.summary }}</p>
           <a href="{{ page.url }}" title="{{ page.title }}" class="button break-70">
@@ -75,7 +75,8 @@ layout: page
             <li><h4>Understand regional needs</h4></li>
             <li><h4>Develop a funding model</h4></li>
           </ol>
-          <a href="#" class="button break-60"><span>How to get started on multi-stakeholder solutions &nbsp;&gt;</a>
+          <a href="{{ '/resources' | prepend: site.baseurl }}" class="button break-80"><span>How can I get started business solutions &nbsp;&gt;</a><br>
+          <a href="{{ '/resources' | prepend: site.baseurl }}" class="button break-80"><span>How can I get started on multi-stakeholder solutions &nbsp;&gt;</a>
         </div>
       </div>
     </div>

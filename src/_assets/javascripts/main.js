@@ -55,6 +55,8 @@ $(document).on('ready', function() {
     $(this).trigger('sort-cards');
     // This might need to be moved to the sort-cards listener
     $(this).addClass('active').siblings().removeClass('active');
+    // Change the summary statement if present?
+
     // chart.update(getData(filter));
   });
 

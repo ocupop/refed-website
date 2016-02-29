@@ -5,7 +5,7 @@ permalink: /stakeholder
 slug: stakeholders
 connected-solutions: ['standardized-date-labeling', 'donation-transportation', 'water-resources-recovery-facility-with-ad']
 hero: 
-  image: header-stakeholders.jpg
+  image: header-basil.jpg
   title: Opportunities for stakeholders to act on food waste reduction
 nextpage:
   url: /action
@@ -64,14 +64,9 @@ prevpage:
       <div class="col-xs-12">
         <h2>Multi-stakeholder Solutions</h2>
         <p>Reaching the food waste reduction goals outlined by ReFED will require a collaborative effort from individuals, businesses, and organizations throughout the food value chain. The expected payoffs from these efforts will be enormous, delivering multiple times more economic value than can be created by acting only as individual entities.</p>
+        <a href="{{ '/resources' | prepend: site.baseurl }}" class="button"><span>How can I get started business solutions &nbsp;&gt;</a><br>
+        <a href="{{ '/resources' | prepend: site.baseurl }}" class="button"><span>How can I get started on multi-stakeholder solutions &nbsp;&gt;</a>
       </div>
-    </div>
-    <div class="grid row">
-      {% for solution in site.solutions %}
-        {% if page.connected-solutions contains solution.slug %}
-          {% include card.html %}
-        {% endif %}
-      {% endfor %}
     </div>
   </div>
 </section>
