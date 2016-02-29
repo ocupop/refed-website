@@ -205,6 +205,12 @@ ol {
       font-size: 13px;
     }
   }
+  .button {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background-color: $recovery-color;
+  }
   form {
     margin-top: 20px;
     input {
