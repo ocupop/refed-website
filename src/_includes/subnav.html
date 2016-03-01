@@ -1,3 +1,4 @@
+{% if page.prevpage || page.nextpage %}
 <section id="subnav" class="flush">
   <div class="row">
     {% if page.prevpage.url %}
@@ -26,3 +27,4 @@
     {% endif %}
   </div>
 </section>
+{% endif %}
