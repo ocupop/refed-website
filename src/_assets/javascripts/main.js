@@ -11,6 +11,7 @@
 //= require vendor/jquery.mixitup-pagination.min.js
 //= require vendor/jquery.cookie.js
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
+
 //= require _plugins
 //= require _solutions
 //= require _charts
@@ -63,6 +64,7 @@ $(document).on('ready', function() {
 
 });
 
+// INITIATE ANIMATIONS ON SCROLL
 jQuery(document).ready(function($) {
   // Control animation on scroll event
   $('.scroll-animate').each(function() {

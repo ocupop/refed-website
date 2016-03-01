@@ -6,6 +6,7 @@
 <script type="text/javascript">
   $(document).on('ready', function() {
     var $active_tab, sort_by;
+    
     if(urlParams["sort"]) {
       $active_tab = $('[data-sort="'+urlParams["sort"]+'"]').first();
     } else {

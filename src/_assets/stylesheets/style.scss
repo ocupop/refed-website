@@ -1281,6 +1281,7 @@ section {
     }
   }
 }
+
 #chart-reduction {
   position: relative;
   padding-left: 0;
@@ -1332,21 +1333,67 @@ section {
   }
 }
 
-#test {
-  .ct-series {
-    &.ct-series-a {
-      path {
-        stroke: #78BEB5;
-      }
+@keyframes draw {
+  0%{ height: 0; } 
+}
+
+.bar-chart-vertical {
+  ul {
+    display:table;
+    table-layout: fixed;
+    
+    width:100%;
+    // max-width:700px;
+    height:200px;
+    margin:0 auto;
+    padding: 0;
+    
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+    background-size: 100% 50px;
+    background-position: left top;
+
+    li{
+      position:relative;
+      display:table-cell;
+      vertical-align:bottom;
+      height:200px;
     }
-    &.ct-series-b {
-      path {
-        stroke: #9BCAC0;
-      }
+    
+    span{
+      margin:0 4px;
+      display: block;
+      background: rgba($button-color, .75);
+      animation: draw 1s ease-in-out;
+      
+      // &:before{
+      //   position:absolute;
+      //   left:0;right:0;top:100%;
+      //   padding:5px 1em 0;
+      //   display:block;
+      //   text-align:center;
+      //   content:attr(title);
+      //   word-wrap: break-word;
+      // }
+      
     }
-    &.ct-series-c {
-      path {
-        stroke: $cream;
+  }
+}
+
+.bar-chart-horizontal {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: block;
+      margin: 4px 0;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      background-color: $cream;
+      span {
+        display: block;
+        background-color: rgba($button-color, .75);
+        height: 100% !important;
       }
     }
   }
@@ -1354,24 +1401,18 @@ section {
 
 
 
-#cost-curve {
-  // height: 400px;
+.ct-series-a,
+.ct-series-b,
+.ct-series-c,
+.ct-series-d,
+.ct-series-e,
+.ct-series-f {
+  overflow: hidden;
+  .ct-bar {
+    stroke: $button-color;
+    stroke-width: 25px;
+  }
 }
-
-// .ct-series-a,
-// .ct-series-b,
-// .ct-series-c,
-// .ct-series-d,
-// .ct-series-e,
-// .ct-series-f {
-//   // display: none;
-//   overflow: hidden;
-//   .ct-bar {
-//     stroke: $button-color;
-//     stroke-width: 25px;
-//     @include animation(cardSlideIn, 0.8s, 0.5s);
-//   }
-// }
 
 // .ct-series-c,
 // .ct-series-d,
