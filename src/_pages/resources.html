@@ -11,31 +11,43 @@ prevpage:
   title: About
 ---
 
-<section>
+<section class="alternate">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="content">
           <h2>Spread the word</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>ReFED’s Roadmap is meant to not just be a research report for academic use, but a data-driven playbook for the whole food sector to make significant strides in solving the food waste challenge. Our analysis demonstrates that it is feasible using existing solutions to reduce food waste by 20% over the next decade with positive or breakeven economic value.</p>
+          <p>We need your help in spreading the word about these important solutions.</p>
           {% include socialnav.html %}
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <h2>Download the report</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="{{ '/download' | prepend: site.baseurl }}" class="button"><span><i class="icon icon-download"></i>Download the report</span></a>
+          <div class="well">
+            <header>Keep Up The Conversation <i class="icon icon-twitter"></i></header>
+            <div class="feed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h2>Download the Report</h2>
+        <p>The full report and individual section chapters are are available for <a href="{{ '/downloads' | preprend: site.baseurl }}">download</a>.</p>
+        <img src="{% asset_path 'downloads/the-full-report-cover.jpg' %}" class="img-responsive">
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="grid">
+          {% assign chapters = site.data.report %}
+          {% for chapter in chapters %}
+          <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -43,84 +55,129 @@ prevpage:
 </section>
 
 <section class="alternate">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
-          <h2>Other resources to download</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul class="nav nav-stacked">
-            <li><a href="#">Other Resource &nbsp;&gt;</a></li>
-            <li><a href="#">Other Resource &nbsp;&gt;</a></li>
-          </ul>
-        </div>
+  <div class="row middle-xs">
+    <div class="col-xs">
+      <h2>(Technical Appendix Goes Here)</h2>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="row middle-xs">
+    <div class="col-xs">
+      <h2>Prevention Resources</h2>
+      <div class="col2">
+        <ul>
+          <li>
+            <h3>FOOD LABELING</h3>
+            <h4>THE DATING GAME</h4>
+            <p>Report produced by The NRDC and The Harvard Food Law and Policy Clnic to address how confusing food date labels lead to food waste in America.</p>
+          </li>
+          <li>
+            <h3>PACKAGING ADJUSTMENTS</h3>
+            <h4>FENUGREEN</h4>
+            <p>FreshPaper sheets are infused with organic spices that keep fruits & veggies fresh for 2-4x longer, naturally.</p>
+            
+            <h4>IT’S FRESH!</h4>
+            <p>A highly specialised technical innovations company focused on delivering comprehensive solutions for food freshness.</p>
+            <h4>LIQUIGLIDE</h4>
+            <p>LiquiGlide is a durable solution that makes viscous liquids slide easily out of the coated packaging– reducing the amount of wasted product leftover in the package.</p>
+          </li>
+          <li>
+            <h3>SMALLER PLATES</h3>
+            <h4>THE PERILS OF LARGE PLATES: WAIST, WASTE, AND WALLET</h4>
+            <p>Recent research by Professors Brian Wansink and Koert van Ittersum explored how a well established optical illusion leads us to make inaccurate estimates of serving size, depending on what size plate they are presented on.</p>
+          </li>
+          <li>
+            <h3>INVENTORY MANAGEMENT</h3>
+            <h4>APPLIED DATA CORPORATION</h4>
+            <p>Since 1989, Applied Data Corporation (ADC) has been helping grocery, supermarket, convenience and food service retailers increase fresh item sales, while reducing perishable shrink.</p>
+          </li>
+          <li>
+            <h3>COLD CHAIN MANAGEMENT</h3>
+            <h4>GLOBAL FOOD SAFETY INITIATIVE</h4>
+            <p>The Global Food Safety Initiative (GFSI) is an industry-driven initiative providing thought leadership and guidance on food safety management systems necessary for safety along the supply chain.</p>
+          </li>
+          <li>
+            <h3>WASTE TRACKING AND ANALYTICS</h3>
+            <h4>LEANPATH</h4>
+            <p>LeanPath gives your staff the tools they need to prevent food waste and gives you the ability to monitor food losses from anywhere.</p>
+            
+            <h4>CONSERVE: NATIONAL RESTAURANT ASSOCIATION</h4>
+            <p>Quickly learn how to implement simple, cost effective sustainability efforts that improve your business.</p>
+          </li>
+        </ul>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="content border-left">
-          <h2>Download Highlights</h2>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="#">{{ download.title }}</a></li>
-          </ul>
-        </div>
+    </div>
+  </div>
+</section>
+
+<section class="alternate">
+  <div class="row middle-xs">
+    <div class="col-xs">
+      <h2>Recovery Resources</h2>
+      <div class="col2">
+        <ul>
+          <li>
+            <h3>DONATION LIABILITY</h3>
+            <h4>THE PROTECTING AMERICANS FROM TAX HIKES (PATH) ACT</h4>
+            <p>The America Gives More Act, which makes several charitable giving incentives permanent, including expanding the food donation tax deduction to help small businesses including farmers, restaurants, retailers and food manufacturers donate wholesome food to 501c3 charities. </p>
+            
+            <h4>BILL EMERSON GOOD SAMARITAN ACT</h4>
+            <p>To encourage companies and organizations to donate healthy food that would otherwise go to waste, they are protected from criminal and civil liability under the Good Samaritan Food Donation Act.</p>
+          </li>
+          <li>
+            <h3>DONATION MATCHING SOFTWARE</h3>
+            <h4>ZERO PERCENT</h4>
+            <p>An app that permits restaurants to list their leftover food and sends text alerts to food pantries about what's available. The cloud-based program tracks donations so restaurants can record them as tax deductions.</p>
+            
+            <h4>SPOILER ALERT</h4>
+            <p>Spoiler Alert is a new technology platform that creates a real-time, B2B marketplace and online collaboration tool for surplus food and organic waste.</p>
+          </li>
+          <li>
+            <h3>DONATION ORGANIZATIONS</h3>
+            <h4>COMMUNITY PLATES</h4>
+            <p>Community Plates is committed to ending American food insecurity by directly transferring fresh, usable food that would have otherwise been thrown away from restaurants, markets and other food industry sources to food-insecure families throughout the U.S.</p>
+
+            <h4>FEEDING AMERICA ONLINE MARKETPLACE</h4>
+            <p>The Feeding America nationwide network of food banks secures and distributes more than 3 billion meals each year to communities throughout the United States and leads the nation to engage in the fight against hunger. </p>
+          </li>
+          <li>
+            <h3>POLICY</h3>
+            <h4>FOOD RECOVERY ACT</h4>
+            <p>Congresswoman Chellie Pingree's Food Recovery Act takes commonsense steps to reduce food waste while helping feed millions of Americans.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Helpful Links</h2>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <dl>
-          <dt>Food Waste Reduction Alliance</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-          <dt>Food Waste Reduction Alliance</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-          <dt>Food Waste Reduction Alliance</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-        </dl>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <dl>
-          <dt>Food Waste Reduction Alliance</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-          <dt>Food Waste Reduction Alliance</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-        </dl>
+  <div class="row middle-xs">
+    <div class="col-xs">
+      <h2>Recycling Resources</h2>
+      <div class="col2">
+        <ul>
+          <li>
+            <h3>RECYCLING INFRASTRUCTURE FUNDING</h3>
+            <h4>EPA GLOBAL METHANE INITIATIVE</h4>
+            <p>The Global Methane Initiative (GMI) is a voluntary, multilateral partnership that aims to reduce global methane emissions and to advance the abatement, recovery and use of methane as a valuable clean energy source.</p>
+            
+            <h4>QUALIFIED ENERGY CONSERVATION BONDS</h4>
+            <p>A Qualified Energy Conservation Bond (QECB) is a bond that enables qualified state, tribal, and local government issuers to borrow money at attractive rates to fund energy conservation projects (it is important to note that QECBs are not grants).</p>
+          
+            <h4>RURAL ENERGY FOR AMERICA PROGRAM</h4>
+            <p>This program helps increase American energy independence by increasing the private sector supply of renewable energy and decreasing the demand for energy through energy efficiency improvements.</p>
+          </li>
+          <li>
+            <h3>COMPOSTING</h3>
+            <h4>FILTREXX</h4>
+            <p>Filtrexx International is the inventor of SiltSoxx™, the original compost filter sock and silt fence alternative. Applications include storm water filtration, soil erosion and storm water reduction, vegetation establishment and sustainability applications, gardening and agriculture, and gardens in education.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
