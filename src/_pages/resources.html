@@ -43,10 +43,12 @@ prevpage:
         <img src="{% asset_path 'downloads/the-full-report-cover.jpg' %}" class="img-responsive">
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="grid">
+        <div class="grid row">
           {% assign chapters = site.data.report %}
           {% for chapter in chapters offset:1 %}
-          <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}">
+          <div class="col-xs-3 grid-item">
+            <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
+          </div>
           {% endfor %}
         </div>
       </div>

@@ -149,6 +149,13 @@ input, select {
     outline-color: $cream-light;
   } 
 }
+ul {
+  padding-left: 0;
+  list-style: none;
+  li {
+    margin-bottom: 1em;
+  }
+}
 ol {
   padding-left: 1em;
   margin-top: 25px;
@@ -896,6 +903,11 @@ a.external {
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  .grid-item {
+    padding: 2px;
+  }
 }
 .card {
   position: relative;
@@ -1979,6 +1991,14 @@ body.downloads {
       bottom: -40px;
       left: 0;
     }
+  }
+}
+
+body.resources {
+  h4 {
+    color: $recovery-color;
+    font-weight: 300;
+    margin-top: 1.5em;
   }
 }
 /* -----------------------------------------

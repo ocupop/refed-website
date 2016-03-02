@@ -14,9 +14,7 @@ prevpage:
   title:
 ---
 
-{% comment %}
-{% include cost_curve.html %}
-{% endcomment %}
+{% include chart_cost_curve.html %}
 
 <section class="">
   <div class="row">
@@ -37,7 +35,7 @@ prevpage:
           <li>
             <img src="{% asset_path 'impact/meals-saved.svg' %}" class="img-responsive">
             <h4>
-              X billion<br>
+              1.8 billion<br>
               <small>meals saved</small>
             </h4>
             <hr>
@@ -57,7 +55,7 @@ prevpage:
           <li>
             <img src="{% asset_path 'impact/consumer-savings.svg' %}" class="img-responsive">
             <h4>
-              $X<br>
+              $5.5 billion<br>
               <small>annual consumer savings</small>
             </h4>
             <hr>
@@ -77,7 +75,7 @@ prevpage:
           <li>
             <img src="{% asset_path 'impact/emissions-reduced.svg' %}" class="img-responsive">
             <h4>
-              X million<br>
+              17 million<br>
               <small>tons of GHG emissions reduced annually</small>
             </h4>
             <hr>
@@ -120,9 +118,7 @@ prevpage:
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <ul class="grid">
-          <li></li>
-        </ul>
+        {% include contributor_logos.html %}
       </div>
     </div>
   </div>
