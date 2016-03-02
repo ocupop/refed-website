@@ -1,47 +1,135 @@
 {
- "name": "flare",
+ "name": "Total",
+ "message": "Reduce 13.2M Tons",
  "children": [
   {
-   "name": "recycle",
-   "children": [
-     {"name": "Home Composting", "size": 97 },
-     {"name": "Onsite Greywater", "size": 595 },
-     {"name": "Centralized AD", "size": 1233 },
-     {"name": "Centralized Composting", "size": 5037 },
-     {"name": "WRRF with AD", "size": 1637 },
-     {"name": "Animal Feed", "size": 49 },
-     {"name": "Community Composting", "size": 167 },
-     {"name": "In-vessel Composting", "size": 12 }
-    ]
+    "slug": "recycle",
+    "name": "Recycling",
+    "message": "Reduce 8.8M Tons",
+    "children": [
+     {
+        "slug": "home-composting",
+        "name": "Home Composting",
+        "url": "/solution",
+        "size": 97 
+      },
+      {
+        "slug": "onsite-greywater",
+        "name": "Onsite Greywater",
+        "url": "/solution",
+        "size": 595 
+      },
+      {
+        "slug": "centralized-ad",
+        "name": "Centralized AD",
+        "url": "/solution",
+        "size": 1233 
+      },
+      {
+        "slug": "centralized-composting",
+        "name": "Centralized Composting",
+        "url": "/solution",
+        "size": 5037 
+      },
+      {
+        "slug": "animal-feed",
+        "name": "Animal Feed",
+        "url": "/solution",
+        "size": 49 
+      },
+      {
+        "slug": "community-composting",
+        "name": "Community Composting",
+        "url": "/solution",
+        "size": 167 
+      }
+      ]
   },
   {
-   "name": "recover",
-   "children": [
-      {"name": "Donation Matching Software", "size": 150 },
-      {"name": "Safe Donation Regulation", "size": 193 },
-      {"name": "Value-Added Processing", "size": 102 },
-      {"name": "Donation Liability Education", "size": 57 },
-      {"name": "Donation Storage and Handling", "size": 103 },
-      {"name": "Donation Transportation", "size": 110 },
-      {"name": "Donation Tax Incentives", "size": 383 }
-   ]
+    "slug": "recovery",
+    "name": "Recovery",
+    "message": "Reduce 1.1M Tons",
+    "children": [
+     {
+        "slug": "home-composting",
+        "name": "Home Composting",
+        "url": "/solution",
+        "size": 97 
+      },
+      {
+        "slug": "onsite-greywater",
+        "name": "Onsite Greywater",
+        "url": "/solution",
+        "size": 595 
+      },
+      {
+        "slug": "centralized-ad",
+        "name": "Centralized AD",
+        "url": "/solution",
+        "size": 1233 
+      },
+      {
+        "slug": "centralized-composting",
+        "name": "Centralized Composting",
+        "url": "/solution",
+        "size": 5037 
+      },
+      {
+        "slug": "animal-feed",
+        "name": "Animal Feed",
+        "url": "/solution",
+        "size": 49 
+      },
+      {
+        "slug": "community-composting",
+        "name": "Community Composting",
+        "url": "/solution",
+        "size": 167 
+      }
+      ]
   },
   {
-   "name": "prevention",
-   "children": [
-      {"name": "Consumer Education Campaign", "size": 584 },
-      {"name": "Standardized Date Labeling", "size": 398 },
-      {"name": "Packaging Adjustments", "size": 208 },
-      {"name": "Spoilage Prevention Packaging", "size": 72 },
-      {"name": "Waste Tracking & Analytics", "size": 571 },
-      {"name": "Trayless Dining", "size": 83 },
-      {"name": "Smaller Plates", "size": 178 },
-      {"name": "Manufacturing Line Optimization", "size": 11 },
-      {"name": "Cold Chain Management", "size": 18 },
-      {"name": "Inventory Management", "size": 59 },
-      {"name": "Produce Specifications", "size": 266 },
-      {"name": "Secondary Resellers", "size": 167 }
-   ]
+    "slug": "prevention",
+    "name": "Prevention",
+    "message": "Reduce 2.6M Tons",
+    "children": [
+     {
+        "slug": "home-composting",
+        "name": "Home Composting",
+        "url": "/solution",
+        "size": 97 
+      },
+      {
+        "slug": "onsite-greywater",
+        "name": "Onsite Greywater",
+        "url": "/solution",
+        "size": 595 
+      },
+      {
+        "slug": "centralized-ad",
+        "name": "Centralized AD",
+        "url": "/solution",
+        "size": 1233 
+      },
+      {
+        "slug": "centralized-composting",
+        "name": "Centralized Composting",
+        "url": "/solution",
+        "size": 5037 
+      },
+      {
+        "slug": "animal-feed",
+        "name": "Animal Feed",
+        "url": "/solution",
+        "size": 49 
+      },
+      {
+        "slug": "community-composting",
+        "name": "Community Composting",
+        "url": "/solution",
+        "size": 167 
+      }
+      ]
   }
  ]
 }

@@ -45,8 +45,8 @@ prevpage:
       <div class="col-xs-12 col-sm-6">
         <div class="grid">
           {% assign chapters = site.data.report %}
-          {% for chapter in chapters %}
-          <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
+          {% for chapter in chapters offset:1 %}
+          <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}">
           {% endfor %}
         </div>
       </div>
