@@ -46,45 +46,7 @@ prevpage:
 {% include cost_curve.html %}
 {% endcomment %}
 
-<section>
-  <div class="row">
-    <div class="col-sm-6 col-xs-12">
-      <div class="content">
-        <img src="{% asset_path 'analysis/chart-donut-categories.svg' %}" class="img-responsive">
-      </div>
-    </div>
-    <div class="col-sm-6 col-xs-12">
-      <div class="content">
-        <h2 class="break-80">How to reduce food waste by 20%</h2>
-        <p class="break-80">
-          <em>Click on a segment to see how each solution contributes to reducing U.S. food waste.</em>
-        </p>
-        <div class="legend">
-          <h3 class="title">Reduce 13.2 M Tons</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td><i class="prevention"></i></td>
-                <td>Prevention</td>
-                <td>2.6 M Tons</td>
-              </tr>
-              <tr>
-                <td><i class="recovery"></i></td>
-                <td>Recovery</td>
-                <td>1.1 M Tons</td>
-              </tr>
-              <tr>
-                <td><i class="recycle"></i></td>
-                <td>Recycle</td>
-                <td>8.8 M Tons</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include chart_reduction_donut.html %}
 
 <section id="supply-chain" class="alternate flush">
   <div class="row">
@@ -97,22 +59,22 @@ prevpage:
     </div>
     <div class="chain">
       <ul>
-        <li>
+        <li class="farming">
           <img src="{% asset_path 'analysis/sc-farming.svg' %}" class="img-responsive">
           <h5>Farming</h5>
         </li>
         <li class="divider">&nbsp;</li>
-        <li>
+        <li class="manufacturing">
           <img src="{% asset_path 'analysis/sc-manufacturing.svg' %}" class="img-responsive">
           <h5>Manufacturing</h5>
         </li>
         <li class="divider">&nbsp;</li>
-        <li>
+        <li class="business">
           <img src="{% asset_path 'analysis/sc-business.svg' %}" class="img-responsive">
           <h5>Consumer-Facing Business</h5>
         </li>
         <li class="divider">&nbsp;</li>
-        <li>
+        <li class="consumer">
           <img src="{% asset_path 'analysis/sc-consumer.svg' %}" class="img-responsive">
           <h5>Consumer</h5>
         </li>
@@ -128,8 +90,8 @@ prevpage:
           <li class="consumer">{% img 'analysis/sc-consumer-circle.svg' %}</li>
         </ul>
       </div>
-      <div class="content farming related-solutions hide">
-        <h4>Related Solutions: <span>{{ site.solutions.count }}</span></h4>
+      <div id="related-solutions">
+        <h4>Related Solutions: <span>{{ site.solutions.count }}</span><i class="icon icon-close"></i></h4>
         <div class="scrolling" id="farming-solutions" role="tablist" aria-multiselectable="true">
           {% for solution in site.solutions %}
             <h5>
@@ -139,8 +101,8 @@ prevpage:
             </h5>
             <div id="{{ solution.slug }}-summary" class="collapse" role="tabpanel" aria-labelledby="{{ solution.slug }}-heading">
               <div class="summary">
-                <p>{{ solution.summary }}</p>
-                <a href="{{ solution.url }}" title="Learn more about {{ solution.title }}">Learn More &nbsp;&gt;</a>
+                <p>{{ solution.definition }}</p>
+                <a href="{{ solution.url | prepend: site.baseurl }}" title="Learn more about {{ solution.title }}">Learn More &nbsp;&gt;</a>
               </div>
             </div>
           {% endfor %}

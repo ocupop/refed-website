@@ -62,6 +62,22 @@ $(document).on('ready', function() {
     // chart.update(getData(filter));
   });
 
+  $("#supply-chain li").on('click', function() {
+    var activeClass = $(this).attr('class');
+    $("#supply-chain li").each(function() {
+      if($(this).hasClass(activeClass)) {
+        $(this).addClass('active').removeClass('inactive');
+      } else {
+        $(this).removeClass('active').addClass('inactive');
+      }
+    });
+    $("#related-solutions").attr('class', $(this).attr('class')).fadeIn()
+                            .find('.icon-close').on('click', function() {
+                              $('#related-solutions').fadeOut();
+                              $("#supply-chain li").removeClass('active inactive');
+                            });
+  });
+
 });
 
 // INITIATE ANIMATIONS ON SCROLL

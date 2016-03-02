@@ -72,11 +72,13 @@ layout: page
       <div class="col-xs">
         <div class="content">
           <h2>Stakeholder Actions</h2>
-          <ul>
-            {% for action in page.stakeholder-actions %}
-            <li>{{ action }}</li>
-            {% endfor %}
-          </ul>
+          <div class="col2">
+            <ul>
+              {% for action in page.stakeholder-actions %}
+              <li>{{ action }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -88,14 +90,16 @@ layout: page
       <div class="col-xs">
         <div class="content">
           <h2>Examples</h2>
-          <ul>
-            {% for example in page.examples %}
-            <li>
-              <h5>{{ example.title }}</h5>
-              <p>{{ example.description }}</p>
-            </li>
-            {% endfor %}
-          </ul>
+          <div class="col2">
+            <ul>
+              {% for example in page.examples %}
+              <li>
+                <h5>{{ example.title }}</h5>
+                <p>{{ example.description }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

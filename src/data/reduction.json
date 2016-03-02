@@ -1,11 +1,11 @@
 {
  "name": "Total",
- "message": "Reduce 13.2M Tons",
+ "message": "13.2M",
  "children": [
   {
     "slug": "recycle",
     "name": "Recycling",
-    "message": "Reduce 8.8M Tons",
+    "message": "8.8M",
     "children": [
      {
         "slug": "home-composting",
@@ -48,7 +48,7 @@
   {
     "slug": "recovery",
     "name": "Recovery",
-    "message": "Reduce 1.1M Tons",
+    "message": "1.1M",
     "children": [
      {
         "slug": "home-composting",
@@ -91,7 +91,7 @@
   {
     "slug": "prevention",
     "name": "Prevention",
-    "message": "Reduce 2.6M Tons",
+    "message": "2.6M",
     "children": [
      {
         "slug": "home-composting",
