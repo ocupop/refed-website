@@ -82,4 +82,17 @@ layout: page
     </div>
   </div>
 </section>
+{% if page.connected-solutions %}
+<section id="connected-solutions">
+  <div class="container">
+    <div class="grid row">
+      {% for solution in site.solutions %}
+          {% if page.connected-solutions contains solution.slug %}
+            {% include card.html %}
+          {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 {{ content }}

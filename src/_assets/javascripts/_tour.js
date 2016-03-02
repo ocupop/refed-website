@@ -126,8 +126,7 @@ jQuery(document).ready(function($) {
 
   });
   $(".tour-backdrop").on('click', function() {
-    alert('clicked');
+    // alert('clicked');
     // tour.end();
   });
-
 });

@@ -124,7 +124,7 @@ prevpage:
   </div>
 </section>
 
-<section class="alternate">
+<section id="foodwaste" class="alternate">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="content">
@@ -216,6 +216,10 @@ prevpage:
 </section>
 
 <script type="text/javascript">
+
+  $(document).on('ready', function() {
+    $('#downloadDialog').modal('show');
+  });
 
   var data = {
       series: [20, 30, 50],

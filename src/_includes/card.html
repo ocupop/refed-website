@@ -7,7 +7,7 @@
   data-jobs-created="{{ solution.impact.jobs-created }}"
 >
   <header>
-    <a href="{{ solution.url }}">
+    <a href="{{ solution.url | prepend: site.baseurl }}">
       {% if solution.top-rated %}
       <div class="rated">
         {% for top in solution.top-rated %}

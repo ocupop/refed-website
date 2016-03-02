@@ -23,6 +23,7 @@ body {
   background-color: $cream-light;
   color: $text-color;
   font-weight: 300;
+  padding-top: 75px;
 }
 section {
   padding: 50px 0;
@@ -189,8 +190,12 @@ em {
 ----------------------------------------- */
 // Structure
 #page-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 9;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.05);
   .brand {
     position: absolute;
     top: 30px;
@@ -903,7 +908,6 @@ a.external {
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  align-items: center;
   justify-content: flex-start;
   .grid-item {
     padding: 2px;
