@@ -4,17 +4,21 @@
   {% endfor %}
 </div>
 <script type="text/javascript">
+
+  function sortCards(impact) {
+    window.console.log("sortCards triggered");
+    var l = window.location.pathname + "?sort="+impact;
+    window.history.pushState('', '{{ site.title }}: Solutions', l);
+
+    $('.card .stat').hide().filter("."+impact).show();
+
+    $('#solution-cards').mixItUp('multiMix', {
+      sort: impact+":dsc"
+    });
+  }
+
+
   $(document).on('ready', function() {
-    var $active_tab, sort_by;
-    
-    if(urlParams["sort"]) {
-      $active_tab = $('[data-sort="'+urlParams["sort"]+'"]').first();
-    } else {
-      $active_tab = $('.tab').first();
-    }
-
-    sort_by = $active_tab.attr('data-sort');
-
     $('#solution-cards').mixItUp({
       controls: {
         enable: false 
@@ -22,11 +26,11 @@
       },
       callbacks: {
         onMixLoad: function() {
-          $active_tab.trigger('click');
+          // $active_tab.trigger('click');
         }
       },
       load: {
-        sort: sort_by+":dsc"
+        // sort: sort_by+":dsc"
       },
       selectors: {
         target: '.card',
@@ -37,18 +41,11 @@
         limit: {{ include.limit }}
       }
     });
+    if(urlParams["sort"]) {
+      sortCards(urlParams["sort"])
+    }
   });
-  $(document).on('sort-cards', function(el) {
-    var sort_by = $(el.target).attr('data-sort');
-    var l = window.location.pathname + "?sort="+sort_by;
-    window.history.pushState('', '{{ site.title }}: Solutions', l);
-    
-    showStat(sort_by);
-    $('#solution-cards').mixItUp('multiMix', {
-      sort: sort_by+":dsc"
-    });
-    // window.console.log("LIMIT: ", {{ include.limit }}, $(el.target).attr('data-sort'));
-  });
+
 
   // search functionality
   $(function() {
@@ -73,8 +70,6 @@
         if ((inputText.length) > 0) {
           $( '.card').each(function() {
             $this = $("this");
-            window.console.log(inputText);
-            window.console.log($(this).find('.title').text().toLowerCase());
              // add item to be filtered out if input text matches items inside the title   
              if($(this).find('.title').text().toLowerCase().match(inputText)) {
               $matching = $matching.add(this);
