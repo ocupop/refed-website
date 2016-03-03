@@ -1,24 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-7">
-      <h4>Rearrange Solutions By...</h4>
-    </div>
-    <div class="col-xs-12 col-sm-5">
-      <form id="solution-search-form" class="search form-inline">
-        <label class="sr">Search</label>
-        <input id="terms" type="text" placeholder="Solution Search">
-        <span><i class="icon-search"></i></span>
-      </form>
-    </div>
-    <div class="col-xs-12">
-      <ul class="tabs">
-        <li class="tab sort active" data-sort="economic-value-per-ton">Financial Benefit</li>
-        <li class="tab sort" data-sort="diversion-potential">Waste Diverted</li>
-        <li class="tab sort" data-sort="emissions-reduced">Emissions Reduced</li>
-        <li class="tab sort" data-sort="water-conservation">Water Saved</li>
-        <li class="tab sort" data-sort="meals-saved">Meals Saved</li>
-        <li class="tab sort" data-sort="jobs-created">Jobs Created</li>
-      </ul>
-    </div>
-  </div>
-</div>
+<ul class="tabs">
+  {% for tab in site.data.tabs %}
+  <li class="tab sort {{ tab.slug }}" 
+      data-sort="{{ tab.slug }}"
+      data-title="{{ tab.title }}"
+      data-label="{{ tab.label }}"
+      data-summary="{{ tab.summary }}"
+      data-description="{{ tab.description }}">
+      {{ tab.title }}
+  </li>
+  {% endfor %}
+</ul>
+<p id="impact-summary">{{ site.data.tabs.first.description }}</p>

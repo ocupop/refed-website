@@ -9,15 +9,15 @@ permalink: /sandbox/cost-curve
       <div class="content">
         <h2>27 SOLUTIONS TO FOOD WASTE</h2>
         <p>The benefits of each of these solutions outweigh the costs.</p>
+        <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
+        {% include tabs.html %}
         <div class="chart">
-          <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
-          <ul id="cost-curve-filters" class="sort tabs"></ul>
+          <!-- <ul id="cost-curve-filters" class="sort tabs"></ul> -->
           <!-- <div id="cost-curve-chart" class="ct-chart ct-golden-section"></div> -->
-
 
           <div class="bar-chart-vertical">
             <ul>
-              {% for solution in site.solutions limit:20 %}
+              {% for solution in site.solutions %}
               <li>
                 <span class="progress" title="{{ solution.title }}"></span>
               </li>
@@ -27,7 +27,7 @@ permalink: /sandbox/cost-curve
           <hr>
           <div class="bar-chart-horizontal">
             <ul>
-              {% for solution in site.solutions limit:20 %}
+              {% for solution in site.solutions %}
               <li>
                 <span class="progress" title="{{ solution.title }}" style="height: 100%; width: 60%;"></span>
               </li>
