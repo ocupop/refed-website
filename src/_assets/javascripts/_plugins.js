@@ -7,6 +7,11 @@
 //   });
 // }
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
 jQuery(document).ready(function($) {
   // Update the current getFullYear
   var d = new Date();

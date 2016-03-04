@@ -3,44 +3,7 @@ layout: sandbox
 title: Chart Sandbox
 permalink: /sandbox/cost-curve
 ---
-<section id="cost-curve" class="alternate">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="content">
-        <h2>27 SOLUTIONS TO FOOD WASTE</h2>
-        <p>The benefits of each of these solutions outweigh the costs.</p>
-        <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
-        {% include tabs.html %}
-        <div class="chart">
-          <!-- <ul id="cost-curve-filters" class="sort tabs"></ul> -->
-          <!-- <div id="cost-curve-chart" class="ct-chart ct-golden-section"></div> -->
-
-          <div class="bar-chart-vertical">
-            <ul>
-              {% for solution in site.solutions %}
-              <li>
-                <span class="progress" title="{{ solution.title }}"></span>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-          <hr>
-          <div class="bar-chart-horizontal">
-            <ul>
-              {% for solution in site.solutions %}
-              <li>
-                <span class="progress" title="{{ solution.title }}" style="height: 100%; width: 60%;"></span>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+{% include chart_cost_curve.html %}
 <script type="text/javascript">
 
   // $(window).smartresize(function(){
@@ -49,67 +12,5 @@ permalink: /sandbox/cost-curve
   // });
 
   // $("#cost-curve").outerHeight(window.innerHeight);
-
-  // $('.animate').on('click', function() {
-  //   $('.progress').css('height', '30%');
-  // });
-
-
-  var options = {
-    axisX: {
-      showGrid: false
-    },
-    axisY: {
-      showLabel: false
-    },
-    seriesBarDistance: 12,
-    chartPadding: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: -30
-    }
-  }
-
-  var overrides = [
-    // Options override for media > 400px
-    ['screen and (min-width: 400px)', {
-      reverseData: true,
-      horizontalBars: true,
-      axisX: {
-        labelInterpolationFnc: Chartist.noop
-      },
-      axisY: {
-        offset: 60
-      }
-    }]
-    // ,
-    // // Options override for media > 800px
-    // ['screen and (min-width: 800px)', {
-    //   stackBars: false,
-    //   seriesBarDistance: 10
-    // }],
-    // // Options override for media > 1000px
-    // ['screen and (min-width: 1000px)', {
-    //   reverseData: false,
-    //   horizontalBars: false,
-    //   seriesBarDistance: 15
-    // }]
-  ]
-
-
-  // var chart = new Chartist.Bar('#cost-curve-chart', getData('economic_value_per_ton'), options, overrides);
-
-
-  // chart.on('draw', (ctx) => {
-  //   if (ctx.type === 'label') {
-  //     // adjust label position for rotation
-  //     const dY = ctx.width;
-  //     // const dX = ctx.width / 2 + (100 - ctx.width)
-  //     // ctx.element.attr({ x: ctx.element.attr('x') - dX })
-  //     ctx.element.attr({ y: ctx.element.attr('y') - dY });
-  //   }
-  // });
-
 
 </script>

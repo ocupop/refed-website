@@ -1,12 +1,13 @@
+{% unless include.inline %}
 <div id="solution-cards" class="grid row">
   {% for solution in site.solutions %}
     {% include card.html %}
   {% endfor %}
 </div>
+{% endunless %}
 <script type="text/javascript">
 
   function sortCards(impact) {
-    window.console.log("sortCards triggered");
     var l = window.location.pathname + "?sort="+impact;
     window.history.pushState('', '{{ site.title }}: Solutions', l);
 
@@ -41,8 +42,19 @@
         limit: {{ include.limit }}
       }
     });
+
+    $('.sort').on('click', function() {
+      $("#impact-summary").text($(this).attr('data-description'));
+
+      sortCards($(this).attr('data-sort'));
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+
     if(urlParams["sort"]) {
-      sortCards(urlParams["sort"])
+      var key = urlParams["sort"]
+      $('[data-sort="'+key+'"]').trigger('click');
+    } else {
+      $('.sort').first().trigger('click');
     }
   });
 
@@ -89,4 +101,14 @@
       }, 200 );
     });
   })
+
+  // $('.sort').on('mouseover', function() {
+  //   window.console.log('Sort button active');
+  //   $("#impact-summary").text($(this).attr('data-description'));
+  // });
+  // $('.sort').on('mouseout', function() {
+  //   window.console.log('Sort button inactive');
+  //   $("#impact-summary").text($('.sort.active').attr('data-summary'));
+  // });
+
 </script>

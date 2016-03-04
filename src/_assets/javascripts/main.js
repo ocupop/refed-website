@@ -13,8 +13,7 @@
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
 
 //= require _plugins
-//= require _solutions
-//= require _charts
+
 //= require _tour
 
 
@@ -48,19 +47,6 @@ $(document).on('ready', function() {
       }
   });
 
-  // solution_data.sort.forEach(function(sort) {
-  //   $tab = $($.parseHTML("<li class='tab sort'></li>"));
-  //   $tab.attr('data-sort', sort.slug).text(sort.title).appendTo(".tabs");
-  // })
-
-  $('.sort').on('click', function() {
-    $(this).trigger('sort-cards');
-    // This might need to be moved to the sort-cards listener
-    $(this).addClass('active').siblings().removeClass('active');
-    // Change the summary statement if present?
-
-    // chart.update(getData(filter));
-  });
 
   $("#supply-chain li").on('click', function() {
     var activeClass = $(this).attr('class');
@@ -77,6 +63,7 @@ $(document).on('ready', function() {
                               $("#supply-chain li").removeClass('active inactive');
                             });
   });
+
 
 });
 

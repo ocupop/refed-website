@@ -4,26 +4,154 @@
       <div class="content">
         <h2>27 SOLUTIONS TO FOOD WASTE</h2>
         <p>The benefits of each of these solutions outweigh the costs.</p>
-        <div class="chart">
-          <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
-          <ul id="cost-curve-filters" class="sort tabs"></ul>
-          <!-- <div id="cost-curve-chart" class="ct-chart ct-golden-section"></div> -->
-          <div class="bar-chart-vertical">
-            <ul>
-              {% for solution in site.solutions %}
-              <li>
-                <span class="progress" title="{{ solution.title }}"></span>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+        <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
+        {% include tabs.html %}
+        <ul id="chart" class="vertical">
+          {% for solution in site.solutions %}
+          <li class="solution" 
+              title="{{ solution.title }}"
+              data-content="{{ solution.summary }}">
+            <span class="title">{{ solution.title }}</span>
+            <span class="progress" title="{{ solution.title }}"></span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
 </section>
 <script type="text/javascript">
-  $(document).on('ready', function() {
+  var mq = window.matchMedia("screen and (max-width: 849px)");
 
+  function drawChart() {
+    $('#chart').hide();
+    if(mq.matches) {
+      $('#chart').attr('class', 'horizontal');
+    } else {
+      $('#chart').attr('class', 'vertical');
+    }
+    $('#chart').show();
+
+    if(urlParams["sort"]) {
+      var key = urlParams["sort"]
+      $('[data-sort="'+key+'"]').trigger('click');
+    } else {
+      $('.sort').first().trigger('click');
+    }
+  }
+
+  {% assign tabs = site.data.impact %}
+  {% assign solutions = site.solutions | sort:"order" %}
+  var solution_data = {
+    sort: [
+      {% for tab in tabs %}{
+        title: "{{ tab.title }}",
+        label: "{{ tab.label }}",
+        slug: "{{ tab.slug }}",
+        summary: "{{ tab.summary }}",
+        description: "{{ tab.description }}"
+      }{% unless forloop.last %}, {% endunless %}{% endfor %}
+    ],
+    solutions: [
+      {% for solution in solutions %}{
+        title: "{{ solution.title }}",
+        slug: "{{ solution.slug }}",
+        summary: "{{ solution.summary }}",
+        type: "{{ solution.type }}",
+        featured_image: "{{ solution.featured-image }}",
+        stakeholders: [{% for stakeholder in solution.stakeholders %}"{{ stakeholder }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        connected_solutions: [{% for s in solution.connected-solutions %}"{{ s }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        data: {
+          {% for i in solution.impact %}{{ i[0] | replace: '-', '_' }}: {{ i[1] }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        },
+        percentages: {
+          {% for i in solution.impact %}{{ i[0] | replace: '-', '_' }}: {{ i[1] }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        }
+      }{% unless forloop.last %}, {% endunless %}{% endfor %}
+    ]
+  }
+  function getLabels(data) {
+    return data.solutions.map(function(solution) {
+      return solution.title
+    })
+  };
+  function getSeries(data, key) {
+    var k = key.replaceAll('-','_');
+    return data.solutions.map(function(solution) {
+      return solution.data[k]
+    })
+  };
+  function getData(key) {
+    return {
+      labels: getLabels(solution_data),
+      series: [
+        getSeries(solution_data, key)
+      ]
+    }
+  };
+
+  function getPercentages(key) {
+    var series = getSeries(solution_data, key),
+        max = Math.max.apply(0, series);
+    return series.map(function(value) {
+      var v = value / max * 100;
+      return Math.round(v*100)/100;
+    });
+  }
+
+  function updateCostCurve(key) {
+    var p = [];
+    p = getPercentages(key);
+    $('#cost-curve ul').each(function() {
+      var orientation = $(this).attr('class');
+      $(this).find('.progress').each(function(index) {
+        if(orientation == 'vertical') {
+          $(this).css('height', p[index]+'%');
+        } else {
+          $(this).css('width', p[index]+'%');
+        }
+      });
+    });
+  }
+
+  $('#cost-curve .sort').on('click', function() {
+    $("#impact-summary").text($(this).attr('data-description'));
+    $("#impact-title").text($(this).attr('data-title'));
+
+    updateCostCurve($(this).attr('data-sort'));
+
+    $(this).addClass('active').siblings().removeClass('active');
   });
+
+
+  $(function() {
+    drawChart();
+    // $("#cost-curve").outerHeight(window.innerHeight);
+  });
+
+  $(window).smartresize(function(){
+    drawChart();
+    // code that takes it easy...
+    // $("#cost-curve").outerHeight(window.innerHeight);
+  });
+
+  // $('#cost-curve .solution').popover({
+  //     placement: 'auto right',
+  //     container: '#chart',
+  //     trigger: 'hover'
+  // //   template: "<div class='popover cost-curve'>
+  // //             <div class='arrow'></div>
+  // //             <button class='close' data-role='end'><span aria-hidden='true'>&times;</span></button>
+  // //             <div class='popover-content'></div>
+  // //             <div class='popover-navigation'>
+  // //               <button data-role='prev'>&lt;&nbsp;Prev</button>
+  // //               <button data-role='next'>Next&nbsp;&gt;</button>
+  // //             </div>
+  // //             <button class='end' data-role='end'>End tour</button>
+  // //           </div>"
+  // });
+
+
+
+
 </script>

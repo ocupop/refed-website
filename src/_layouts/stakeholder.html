@@ -82,15 +82,35 @@ layout: page
     </div>
   </div>
 </section>
+<section class="alternate">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7">
+        <h4>Rearrange Solutions By...</h4>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <form id="solution-search-form" class="search form-inline">
+          <label class="sr">Search</label>
+          <input id="terms" type="text" placeholder="Solution Search">
+          <span><i class="icon-search"></i></span>
+        </form>
+      </div>
+      <div class="col-xs-12">
+        {% include tabs.html %}
+      </div>
+    </div>
+  </div>
+</section>
 <section id="connected-solutions">
   <div class="container">
-    <div class="grid row">
+    <div id="solution-cards" class="grid row">
       {% for solution in site.solutions %}
           {% if solution.stakeholders contains page.slug %}
             {% include card.html %}
           {% endif %}
       {% endfor %}
     </div>
+    {% include solution_cards.html inline=true %}
   </div>
 </section>
 {{ content }}
