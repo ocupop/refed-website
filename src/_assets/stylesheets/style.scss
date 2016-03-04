@@ -24,6 +24,50 @@ body {
   color: $text-color;
   font-weight: 300;
   padding-top: 75px;
+  &.condensed-header {
+    padding-top: 50px;
+    #page-header {
+      .brand {
+        top: 3px;
+        @include transition();
+      }
+    }
+    #topnav {
+      ul {
+        li {
+          height: 0;
+          @include transition();
+          &#download-link {
+            top: -15px;
+            height: auto;
+            @include transition();
+            button {
+              height: 57px;
+              @include transition();
+              small {
+                display: none;
+              }
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #mainnav {
+      height: 50px;
+      line-height: 50px;
+      @include transition();
+      ul {
+        li {
+          height: 35px;
+          line-height: 35px;
+          @include transition();
+        }
+      }
+    }
+  }
 }
 section {
   padding: 50px 0;
@@ -195,10 +239,10 @@ em {
   left: 0;
   width: 100%;
   z-index: 9;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
   .brand {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 20px;
     height: 50px;
     width: 150px;
@@ -273,8 +317,8 @@ em {
     padding-right: 100px;
     li {
       position: relative;
-      height: 25px;
-      line-height: 25px;
+      height: 35px;
+      line-height: 35px;
       a {
         font-size: 13px;
         font-weight: 300;
@@ -293,7 +337,7 @@ em {
         button {
           display: inline-block;
           width: 92px;
-          height: 74px;
+          height: 105px;
           background-color: $button-color;
           color: darken($button-color, 20%);
           text-align: center;
@@ -304,7 +348,7 @@ em {
           text-transform: uppercase;
           small {
             display: inline-block;
-            margin-top: 5px;
+            margin-top: 15px;
             font-size: 9px;
           }
           i {
@@ -320,8 +364,8 @@ em {
           position: relative;
           float: left;
           width: auto;
-          height: 25px;
-          line-height: 25px;
+          height: 35px;
+          line-height: 35px;
           background: $button-color;
           margin-right: 20px;
           flex-wrap: nowrap;
@@ -329,7 +373,7 @@ em {
             content: '';
             display: block;
             position: absolute;
-            top: 5px;
+            top: 10px;
             right: -12px;
             height: 0;
             width: 0;
@@ -347,10 +391,10 @@ em {
               }
             }
             i {
-              height: 25px;
+              height: 35px;
               width: 25px;
               font-size: 20px;
-              line-height: 25px;
+              line-height: 35px;
               color: $cream-light;
             }
           }
@@ -408,7 +452,7 @@ em {
     }
     i {
       position: absolute;
-      top: 6px;
+      top: 11px;
       left: 2px;
       font-size: 14px;
       height: 14px;
@@ -432,8 +476,8 @@ em {
   }
 }
 #mainnav {
-  height: 50px;
-  line-height: 50px;
+  height: 70px;
+  line-height: 70px;
   background-color: $mainnav-background-color;
   border-bottom: 1px solid $gray-lighter;
   z-index: 1;
@@ -443,6 +487,8 @@ em {
     ul {
       margin: 0 120px 0 auto;
       li {
+        height: 55px;
+        line-height: 55px;
         a {
           display: inline-block;
           padding: 9px 0;
@@ -579,11 +625,12 @@ em {
   }
 }
 #tournav {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
+  position: fixed;
+  top: 200px;
+  left: -100px;
+  transform: rotate(90deg);
+  // width: 100%;
+  // height: auto;
   ul {
     list-style: none;
     align-items: flex-start;
@@ -593,15 +640,22 @@ em {
       display: inline-block;
       margin-right: 15px;
       padding: 2px 30px;
-      background-color: $button-color;
+      background-color: $gray;
       color: $cream-light;
       box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
       font-size: 16px;
       font-weight: 100;
       text-transform: uppercase;
       cursor: pointer;
-      &:last-child {
-        background-color: $gray;
+      &.share {
+        padding: 2px 5px;
+        i {
+          font-size: 25px;
+          height: 25px;
+          width: 25px;
+          line-height: 25px;
+          transform: rotate(-90deg);
+        }
       }
     }
   }
@@ -1087,6 +1141,9 @@ a.external {
     text-align: left;
     vertical-align: middle;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    .content {
+      padding-left: 50px;
+    }
     h1, h2, h3 { 
       color: #ffffff;
       font-size: 40px;
@@ -2178,6 +2235,7 @@ body.resources {
 }
 
 @media all and (max-width: 990px) {
+  body { padding-top: 50px; }
   #page-header {
     position: fixed;
     top: 0;
@@ -2265,7 +2323,7 @@ body.resources {
     }
   }
   .hero {
-    margin-top: 50px;
+    // margin-top: 50px;
   }
   .card {
     width: 49%;
