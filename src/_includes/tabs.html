@@ -4,6 +4,7 @@
     {% for tab in site.data.tabs %}
     <li class="tab sort {{ tab.slug }}" 
         data-sort="{{ tab.slug }}"
+        data-order="{{ tab.order }}"
         data-title="{{ tab.title }}"
         data-label="{{ tab.label }}"
         data-summary="{{ tab.summary }}"
