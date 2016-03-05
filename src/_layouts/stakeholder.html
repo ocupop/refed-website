@@ -10,98 +10,27 @@ layout: page
       <div class="col-xs-9">
         <div class="content {{ page.slug }}">
           <h2>{{ page.title }}</h2>
-          <p class="lead">{{ page.potential-gain }}</p>
-          <p>Top Solution: {{ page.top-solution }}</p>
-          <p>{{ page.summary }}</p>
-          <a href="{{ page.url }}" title="{{ page.title }}" class="button break-70">
-            <span>View {{ page.title }} Solutions &gt;</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="call-to-action" class="alternate">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="content border-right">
-          <h2>Call to Action</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="{{ '/action' | prepend: site.baseurl }}" class="button"><span>Take Action Now &nbsp;&gt;</span></a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
-          <h3>Resources</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <h5>Link &nbsp;&gt;</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="list-group-item">
-              <h5>Link &nbsp;&gt;</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="list-group-item">
-              <h5>Link &nbsp;&gt;</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
+          <p><small>(Includes {{ stakeholder.sub-stakeholders }})</
+          <p class="lead">{{ page.summary }}</p>
+          <h4>Key Actions</h4>
+          <ul>
+            {% for action in page.key-actions %}
+            <li>{{ action }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="multistakeholder-approach">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h3>A multistakeholder approach is needed</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in.</p>
-          <ol>
-            <li><h4>Build collaboration across organizations</h4></li>
-            <li><h4>Understand regional needs</h4></li>
-            <li><h4>Develop a funding model</h4></li>
-          </ol>
-          <a href="{{ '/resources' | prepend: site.baseurl }}" class="button break-80"><span>How can I get started business solutions &nbsp;&gt;</a><br>
-          <a href="{{ '/resources' | prepend: site.baseurl }}" class="button break-80"><span>How can I get started on multi-stakeholder solutions &nbsp;&gt;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="alternate">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-7">
-        <h4>Rearrange Solutions By...</h4>
-      </div>
-      <div class="col-xs-12 col-sm-5">
-        <form id="solution-search-form" class="search form-inline">
-          <label class="sr">Search</label>
-          <input id="terms" type="text" placeholder="Solution Search">
-          <span><i class="icon-search"></i></span>
-        </form>
-      </div>
-      <div class="col-xs-12">
-        {% include tabs.html %}
-      </div>
-    </div>
-  </div>
-</section>
+{% for content in page.featured-content %}
+  {% capture partial %}content/{{ content }}.html{% endcapture %}
+  {% include partial %}
+{% endfor %}
 <section id="connected-solutions">
+  <header class="section-header">
+    <h3>Key {{ page.title }} Solutions</h3>
+  </header>
   <div class="container">
     <div id="solution-cards" class="grid row">
       {% for solution in site.solutions %}

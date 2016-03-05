@@ -21,7 +21,7 @@ prevpage:
       <div class="col-xs-12 col-md-9">
         <div class="content">
           <h2>Stakeholder Solutions</h2>
-          <p>While ReFED’s food waste analysis takes a holistic look across the entire supply chain, there are specific opportunities for each stakeholder that will provide the greatest benefits based on their priorities. Use this page to identify the solutions that are most aligned with the interests of each stakeholder.</p>
+          <p>While ReFED’s food waste analysis takes a holistic look across the entire supply chain, there are specific opportunities for each stakeholder that will provide the greatest benefits based on their priorities. Use this page to identify the actions that offer the largest opportunities for each stakeholder to contribute to food waste reduction.</p>
         </div>
       </div>
     </div>
@@ -47,11 +47,10 @@ prevpage:
         <div class="col-xs-9">
           <div class="content {{ stakeholder.slug }}">
             <h2>{{ stakeholder.title }}</h2>
-            <p class="lead">{{ stakeholder.potential-gain }}</p>
-            <p>Top Solution: {{ stakeholder.top-solution }}</p>
-            <p>{{ stakeholder.summary }}</p>
+            <p class="lead">{{ stakeholder.summary }}</p>
             <a href="{{ stakeholder.url | prepend: site.baseurl }}" title="{{ stakeholder.title }}" class="button break-70">
               <span>View {{ stakeholder.title }} Solutions &gt;</span></a>
+            <p><small>(Includes {{ stakeholder.sub-stakeholders }})</small></p>
           </div>
         </div>
       </div>
