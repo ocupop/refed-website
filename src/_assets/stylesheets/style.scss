@@ -148,7 +148,14 @@ button {
   }
 }
 
-form {}
+form {
+
+  .muted {
+    font-size: 75%;
+    color: $gray-light;
+    text-indent: 15px;
+  }
+}
 .select {
   position: relative;
   cursor: pointer;
@@ -193,6 +200,9 @@ input, select {
   &:focus, &:active {
     outline-color: $cream-light;
   } 
+  &:required {
+
+  }
 }
 ul {
   padding-left: 0;
@@ -2145,12 +2155,7 @@ body.downloads {
       position: relative;
       height: 100%;
     }
-    button {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      cursor: pointer;
+    .button {
       pointer-events: all;
       &.disabled {
         background-color: rgba(0,0,0,0.2);
@@ -2159,10 +2164,7 @@ body.downloads {
       }
     }
     .message {
-      display:inline-block;
-      position: absolute;
-      bottom: -40px;
-      left: 0;
+      
     }
   }
 }

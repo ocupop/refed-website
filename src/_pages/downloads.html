@@ -16,23 +16,26 @@ slug: downloads
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <div class="form-inputs">
-            <label class="sr">Name</label>
-            <input type="text" placeholder="First Name">
-            <label class="sr">Email</label>
-            <input type="text" placeholder="Email">
-            <label class="sr">Zipcode</label>
-            <input type="text" placeholder="Zip" class="zip">
-            <div class="select">
-              <select>
-                <option>Stakeholder type (if applicable)</option>
-                {% for stakeholder in site.stakeholders %}
-                <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
-                {% endfor %}
-              </select>
+          <form>
+            <div class="form-inputs">
+              <label class="sr">Name</label>
+              <input type="text" placeholder="Name *" required>
+              <label class="sr">Email</label>
+              <input type="text" placeholder="Email *" required>
+              <label class="sr">Zipcode</label>
+              <input type="text" placeholder="Zip" class="zip">
+              <div class="select">
+                <select>
+                  <option>Stakeholder type (if applicable)</option>
+                  {% for stakeholder in site.stakeholders %}
+                  <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <p class="muted">* Required Fields</p>
+              <input type="submit" value="Submit" class="button">
             </div>
-            <input type="submit" value="Submit" class="button">
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -52,15 +55,17 @@ slug: downloads
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
-          <div class="content">
-            <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="responsive">
+          <div class="text-right">
+            <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
           </div>
         </div>
         <div class="col-xs-12 col-sm-8">
+          <div class="content">
             <h2>{{ chapter.title }}</h2>
             <p><em>{{ chapter.summary }}</em></p>
             <a href="" class="button disabled" download=""><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
             <p class="message">To enable downloads, please fill out the above <a href="#signup-form">form</a></p>
+          </div>
         </div>
       </div>
     </div>
