@@ -967,6 +967,16 @@ a.external {
   background-repeat: no-repeat;
 }
 
+.well {
+  header {
+    i {
+      display: inline-block;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+}
+
 .tabs {
   list-style: none;
   display: flex;
@@ -1783,6 +1793,7 @@ section {
     }
   }
   .scrolling {
+    display: none;
     overflow-y: scroll;
     height: calc(100% - 60px);
     // /* pseudo elements */
@@ -1809,15 +1820,27 @@ section {
   }
   &.farming {
     background-color: #6B2935;
+    #farming-solutions {
+      display: block;
+    }
   }
   &.manufacturing {
     background-color: #A24242;
+    #manufacturing-solutions {
+      display: block;
+    }
   }
   &.business {
     background-color: #C56C47;
+    #business-solutions {
+      display: block;
+    }
   }
   &.consumer {
     background-color: #DCAA70;
+    #consumer-solutions {
+      display: block;
+    }
   }
 }
 

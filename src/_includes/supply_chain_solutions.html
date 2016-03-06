@@ -1,0 +1,17 @@
+<div class="scrolling" id="{{ include.tag }}-solutions" role="tablist" aria-multiselectable="true">
+  {% for solution in site.solutions %}
+    {% if solution.supply-chain contains include.tag %}
+      <h5>
+        <a role="button" data-toggle="collapse" data-parent="#farming-solutions" href="#{{ solution.slug }}-summary" aria-expanded="true" aria-controls="{{ solution.slug }}-summary">
+          {{ solution.title }} <span>&gt;</span>
+        </a>
+      </h5>
+      <div id="{{ solution.slug }}-summary" class="collapse" role="tabpanel" aria-labelledby="{{ solution.slug }}-heading">
+        <div class="summary">
+          <p>{{ solution.definition }}</p>
+          <a href="{{ solution.url | prepend: site.baseurl }}" title="Learn more about {{ solution.title }}">Learn More &nbsp;&gt;</a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

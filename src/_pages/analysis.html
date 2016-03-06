@@ -117,7 +117,7 @@ prevpage:
 
 {% include chart_reduction_donut.html %}
 
-<section id="supply-chain" class="alternate flush">
+<section id="supply-chain" class="flush">
   <div class="row">
     <div class="col-xs-9 col-sm-6">
       <div class="content">
@@ -130,22 +130,22 @@ prevpage:
       <ul>
         <li class="farming">
           <img src="{% asset_path 'analysis/sc-farming.svg' %}" class="img-responsive">
-          <h5>Farming</h5>
+          <h5>Farms</h5>
         </li>
         <li class="divider">&nbsp;</li>
         <li class="manufacturing">
           <img src="{% asset_path 'analysis/sc-manufacturing.svg' %}" class="img-responsive">
-          <h5>Manufacturing</h5>
+          <h5>Manufacturers</h5>
         </li>
         <li class="divider">&nbsp;</li>
         <li class="business">
           <img src="{% asset_path 'analysis/sc-business.svg' %}" class="img-responsive">
-          <h5>Consumer-Facing Business</h5>
+          <h5>Consumer-Facing Businesses</h5>
         </li>
         <li class="divider">&nbsp;</li>
         <li class="consumer">
           <img src="{% asset_path 'analysis/sc-consumer.svg' %}" class="img-responsive">
-          <h5>Consumer</h5>
+          <h5>Homes</h5>
         </li>
       </ul>
     </div>
@@ -160,22 +160,11 @@ prevpage:
         </ul>
       </div>
       <div id="related-solutions">
-        <h4>Related Solutions: <span>{{ site.solutions.count }}</span><i class="icon icon-close"></i></h4>
-        <div class="scrolling" id="farming-solutions" role="tablist" aria-multiselectable="true">
-          {% for solution in site.solutions %}
-            <h5>
-              <a role="button" data-toggle="collapse" data-parent="#farming-solutions" href="#{{ solution.slug }}-summary" aria-expanded="true" aria-controls="{{ solution.slug }}-summary">
-                {{ solution.title }} <span>&gt;</span>
-              </a>
-            </h5>
-            <div id="{{ solution.slug }}-summary" class="collapse" role="tabpanel" aria-labelledby="{{ solution.slug }}-heading">
-              <div class="summary">
-                <p>{{ solution.definition }}</p>
-                <a href="{{ solution.url | prepend: site.baseurl }}" title="Learn more about {{ solution.title }}">Learn More &nbsp;&gt;</a>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
+        <h4>Related Solutions: <i class="icon icon-close"></i></h4>
+        {% include supply_chain_solutions.html tag='farming' %}
+        {% include supply_chain_solutions.html tag='manufacturing' %}
+        {% include supply_chain_solutions.html tag='business' %}
+        {% include supply_chain_solutions.html tag='consumer' %}
       </div>
     </div>
   </div>
