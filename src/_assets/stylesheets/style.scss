@@ -74,6 +74,8 @@ section {
   &.hero {
     padding: 0;
   }
+  &:nth-child(even) { @include palette($section-alt-color, $text-color); }
+  &:nth-child(odd) { }
 }
 nav {
   display: flex;
@@ -209,6 +211,10 @@ ul {
   list-style: none;
   li {
     margin-bottom: 1em;
+  }
+  &.styled {
+    padding-left: 1em;
+    list-style: disc;
   }
 }
 ol {
@@ -939,26 +945,14 @@ em {
   }
 }
 
-// .nav {
-//   li {
-//     margin-bottom: 5px;
-//     a {
-//       background-color: $button-color;
-//       color: #ffffff;
-//       font-weight: 100;
-//       &:hover {
-//         background-color: darken($button-color, 10%);
-//       }
-//     }
-//   }
-// }
-
 .lead {
   margin: 1em 0;
   font-size: 20px;
   color: inherit;
 }
-
+.section-header {
+  
+}
 a.external {
   padding-right: 20px;
   background-image: url(../media/images/00-global/external-link-icon.png);
@@ -1156,6 +1150,8 @@ a.external {
   column-gap: 40px;
   li {
     break-inside: avoid;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
 }
 .col3 {
@@ -1163,6 +1159,8 @@ a.external {
   column-gap: 40px;
   li {
     break-inside: avoid;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
 }
 
@@ -1244,10 +1242,6 @@ a.external {
   @include palette($prevention-color, $cream-light);
 }
 
-section.alternate {
-  @include palette($section-alt-color, $text-color);
-}
-
 .muted {
   color: rgba(0,0,0,0.5);
 }
@@ -1295,29 +1289,6 @@ section {
 }
 
 
-// Impact
-// .icon-economic-value-per-ton {
-//   background-image: url("{% asset_path impact/economic-value-per-ton.svg %}");
-// }
-// .icon-consumer-savings {
-//   background-image: url("{% asset_path impact/consumer-savings.svg %}");
-// }
-// .icon-emissions-reduced {
-//   background-image: url("{% asset_path impact/emissions-reduced.svg %}");
-// }
-// .icon-meals-recovered {
-//   background-image: url("{% asset_path impact/meals-recovered.svg %}");
-// }
-// .icon-profit-potential {
-//   background-image: url("{% asset_path impact/profit-potential.svg %}");
-// }
-// .icon-water-conservation {
-//   background-image: url("{% asset_path impact/water-conservation.svg %}");
-// }
-// .icon-diversion-potential {
-//   background-image: url("{% asset_path impact/diversion-potential.svg %}");
-// }
-
 // Stakeholders
 .icon-farmers {
   background-image: url("{% asset_path stakeholders/farmers.svg %}");
@@ -1340,10 +1311,18 @@ section {
 .icon-retailers {
   background-image: url("{% asset_path stakeholders/retailers.svg %}");
 }
-.icon-state-government-and-municipalities {
-  background-image: url("{% asset_path stakeholders/state-government-and-municipalities.svg %}");
+.icon-state-and-local-governments {
+  background-image: url("{% asset_path stakeholders/state-and-local-governments.svg %}");
 }
-
+.icon-nonprofits-and-academia {
+  background-image: url("{% asset_path stakeholders/nonprofits-and-academia.svg %}");
+}
+.icon-consumers {
+  background-image: url("{% asset_path stakeholders/consumers.svg %}");
+}
+.icon-entrepreneurs {
+  background-image: url("{% asset_path stakeholders/entrepreneurs.svg %}");
+}
 
 /* -----------------------------------------
    Forms
@@ -1854,45 +1833,8 @@ section {
 }
 
 .stakeholder-list {
-  .farmers {
-    .button {
-      background-color: #1b5a7d;
-    }
-  }
-  .federal-government {
-    .button {
-      background-color: #54b7b4;
-    }
-  }
-  .foundations {
-    .button {
-      background-color: #72a94e;
-    }
-  }
-  .investors {
-    .button {
-      background-color: #799c48;
-    }
-  }
-  .manufacturers {
-    .button {
-      background-color: #3d738d;
-    }
-  }
-  .restaurants-and-foodservice-providers {
-    .button {
-      background-color: #4b8590;
-    }
-  }
-  .retailers {
-    .button {
-      background-color: #4aa584;
-    }
-  }
-  .state-government-and-municipalities {
-    .button {
-      background-color: #54b7b4;
-    }
+  small {
+    text-transform: capitalize;
   }
 }
 
@@ -2110,6 +2052,48 @@ section {
       // font-family: $font-family-condensed;
     }
   }
+}
+
+#action-list {
+  li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    a {
+      color: $text-color;
+    }
+    &.financing {
+      background-image: url("{% asset_path action/financing.svg %}");
+    }
+    &.policy {
+      background-image: url("{% asset_path action/policy.svg %}");
+    }
+    &.innovation {
+      background-image: url("{% asset_path action/innovation.svg %}");
+    }
+    &.education {
+      background-image: url("{% asset_path action/education.svg %}");
+    }
+
+  }
+}
+
+#education-hero {
+  @include palette(#9BC9C0, $cream-light);
+}
+#policy-hero {
+  @include palette(#912A46, $cream-light);
+}
+#financing-hero {
+  @include palette(#78A783, $cream-light);
+}
+#innovation-hero {
+  @include palette(#E8AD6C, $cream-light);
 }
 /* -----------------------------------------
    Page Specific

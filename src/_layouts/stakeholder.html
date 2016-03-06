@@ -10,10 +10,12 @@ layout: page
       <div class="col-xs-9">
         <div class="content {{ page.slug }}">
           <h2>{{ page.title }}</h2>
-          <p><small>(Includes {{ stakeholder.sub-stakeholders }})</
+          {% if page.sub-stakeholders %}
+            <p><small>(Includes {{ page.sub-stakeholders }})</small></p>
+          {% endif %}
           <p class="lead">{{ page.summary }}</p>
           <h4>Key Actions</h4>
-          <ul>
+          <ul class="styled">
             {% for action in page.key-actions %}
             <li>{{ action }}</li>
             {% endfor %}
@@ -23,13 +25,16 @@ layout: page
     </div>
   </div>
 </section>
-{% for content in page.featured-content %}
-  {% capture partial %}content/{{ content }}.html{% endcapture %}
-  {% include partial %}
-{% endfor %}
+{% comment %}
+  {% for content in page.featured-content %}
+    {% include content/{{ content }}.html %}
+  {% endfor %}
+{% endcomment %}
 <section id="connected-solutions">
   <header class="section-header">
-    <h3>Key {{ page.title }} Solutions</h3>
+    <div class="container">
+      <h4>Key {{ page.title }} Solutions</h4>
+    </div>
   </header>
   <div class="container">
     <div id="solution-cards" class="grid row">
@@ -39,7 +44,32 @@ layout: page
           {% endif %}
       {% endfor %}
     </div>
-    {% include solution_cards.html inline=true %}
+    {% include solution_cards.html inline=true limit=0 %}
   </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <h2>Tools for action</h2>
+          <p>The Roadmap demonstrates that achieving a 20% reduction in food waste will generate a positive financial, social, and environmental return on investment. To make that happen, crosscutting actions are needed in four areas. Click to learn more about each tool.</p>
+          <a class="button" href="{{ '/action' prepend: site.baseurl }}">Take Action Now &nbsp;&gt;</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <ul id="action-list">
+            <li class="financing"><a href="{{ '/financing' | prepend: site.baseurl }}">Financing &nbsp;&gt;</a></li>
+            <li class="policy"><a href="{{ '/policy' | prepend: site.baseurl }}">Policy &nbsp;&gt;</a></li>
+            <li class="innovation"><a href="{{ '/innovation' | prepend: site.baseurl }}">Innovation &nbsp;&gt;</a></li>
+            <li class="education"><a href="{{ '/education' | prepend: site.baseurl }}">Education &nbsp;&gt;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ content }}

@@ -50,7 +50,9 @@ prevpage:
             <p class="lead">{{ stakeholder.summary }}</p>
             <a href="{{ stakeholder.url | prepend: site.baseurl }}" title="{{ stakeholder.title }}" class="button break-70">
               <span>View {{ stakeholder.title }} Solutions &gt;</span></a>
-            <p><small>(Includes {{ stakeholder.sub-stakeholders }})</small></p>
+            {% if stakeholder.sub-stakeholders %}
+              <p><small>(Includes {{ stakeholder.sub-stakeholders }})</small></p>
+            {% endif %}
           </div>
         </div>
       </div>
