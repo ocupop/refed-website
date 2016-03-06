@@ -5,10 +5,11 @@
 <g id="bottom">
 	<circle fill="#DCD7C5" cx="34.245" cy="33.034" r="25.668"/>
 	<circle fill="#751E32" cx="29.245" cy="28.034" r="25.668"/>
+	<text transform="matrix(1 0 0 1 24.455 36.825)" fill="#F0ECE3" font-family="'Gotham-Black'" font-size="25.9701px">7</text>
 </g>
 <g id="Waste_Diverted">
 </g>
-<g id="Jobs" display="none">
+<g id="Jobs">
 </g>
 <g id="consumer_ed_hover" display="none">
 </g>
@@ -16,6 +17,6 @@
 </g>
 <g id="Supply_hover" display="none">
 </g>
-<g id="Key_Solutions" display="none">
+<g id="Key_Solutions">
 </g>
 </svg>

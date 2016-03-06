@@ -48,24 +48,23 @@ prevpage:
     <div class="row">
       <div class="col-xs-3">
         <div class="icon-grid">
-          {% include svg/icons/financing.svg %}
-          {% include svg/icons/policy.svg %}
-          {% include svg/icons/innovation.svg %}
-          {% include svg/icons/education.svg %}
+          <a href="#financing-section">{% include svg/icons/financing.svg %}</a>
+          <a href="#policy-section">{% include svg/icons/policy.svg %}</a>
+          <a href="#innovation-section">{% include svg/icons/innovation.svg %}</a>
+          <a href="#education-section">{% include svg/icons/education.svg %}</a>
         </div>
       </div>
       <div class="col-xs-9">
         <div class="content">
           <h2>Four tools for action</h2>
           <p>To achieve the vision laid out in the <a href="#">Roadmap</a>, stakeholders will need to marshal these four tools. Choose a tool to learn more.</p>
-          <a href="#">Learn More &gt;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="financing-section">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -75,14 +74,14 @@ prevpage:
         <div class="content">
           <h2>Financing</h2>
           <p>The Roadmap analysis estimates that an aggregate $18 billion of new financing is needed to achieve a 20% waste reduction — roughly $2 billion per year over the next decade. This may seem large, but it amounts to only a tenth of a penny of investment for each pound of food waste reduced over a decade. This one-time investment will also yield $130 billion of economic benefits for society and $20 billion of annual business profit opportunity.</p>
-          <a href="#">Learn More &gt;</a>
+          <a href="{{ '/financing' | prepend: site.base.url }}">Learn More &gt;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alternate">
+<section id="policy-section">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -92,14 +91,14 @@ prevpage:
         <div class="content">
           <h2>Policy</h2>
           <p>To achieve the short-term goals, the immediate priority is to spread best practice policies at the local and state levels that will gradually increase support and decrease barriers. A more aggressive waste diversion goal will become increasingly dependent on comprehensive food waste policy that sets national guidelines, which will significantly boost investment by national and global food businesses.</p>
-          <a href="#">Learn More &gt;</a>
+          <a href="{{ '/policy' | prepend: site.base.url }}">Learn More &gt;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="innovation-section">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -109,14 +108,14 @@ prevpage:
         <div class="content">
           <h2>Innovation</h2>
           <p>A number of the Roadmap solutions are expected to benefit from incremental innovation that naturally improves performance and decreases costs over time. While wide-scale innovation is not needed to achieve a 20% reduction, innovation is a key aspect to the optimal performance of any system.</p>
-          <a href="#">Learn More &gt;</a>
+          <a href="{{ '/innovation' | prepend: site.base.url }}">Learn More &gt;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alternate">
+<section id="education-section">
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -126,7 +125,7 @@ prevpage:
         <div class="content">
           <h2>Education</h2>
           <p>The number of Roadmap barriers that are behavioral in nature highlights the need for education, training, and capacity-building for consumers and consumer-facing business staff to enable change at scale.</p>
-          <a href="#">Learn More &gt;</a>
+          <a href="{{ '/education' | prepend: site.base.url }}">Learn More &gt;</a>
         </div>
       </div>
     </div>

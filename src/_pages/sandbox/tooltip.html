@@ -1,0 +1,67 @@
+---
+layout: sandbox
+title: Popove / Tooltip
+permalink: /sandbox/tooltip
+---
+
+<style type="text/css">
+
+</style>
+<section id="tooltips">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="profit-potential-tip" role="tooltip">
+          <div class="content">
+            <h3>Solution Title</h3>
+            <p><em>Prevention Solution</em></p>
+            <p class="stat">
+              <strong>$<span>XXX</span></strong>
+              <small>m/year<br>
+              Business Profit Potential</small>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#" class="button">View more information &nbsp;&gt;</a>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="content">
+          <div class="cost-curve-tip" role="tooltip">
+            <div class="row">
+              <div class="col-xs-7">
+                <h3>Solution Title</h3>
+              </div>
+              <div class="col-xs-5">
+                <ul>
+                  <li class="economic-value-per-ton">$<b>xx</b>/ton<br>in financial benefit</li>
+                  <li class="diversion-potential"><b>xx</b>K tons/yr<br>in diversion potential</li>
+                  <li class="meals-recovered"><b>xx</b>M meals/yr<br>meals recovered</li>
+                  <li class="emissions-reduced"><b>xx</b>K tons/yr<br>in GHGs emission reduction</li>
+                  <li class="water-conservation"><b>xx</b>B gal/yr<br>in water conservation</li>
+                  <li class="jobs-created"><b>xx</b><br>jobs created</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="button prevention">View more information &nbsp;&gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+    $('.hover-me').popover({
+      placement: 'auto right',
+      trigger: 'click',
+      placement: 'auto right',
+      container: '#tooltips',
+      html: true,
+      template: '<div class="popover cost-curve" role="tooltip"><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    });
+  });
+</script>

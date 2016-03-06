@@ -9,10 +9,14 @@
 @import '_animations';
 @import '_fixes';
 @import "_tour";
-
+@import "_popover";
 @import "_charts.scss";
 @import "chartist/dist/scss/chartist.scss";
 
+
+@keyframes draw {
+  0%{ height: 0; } 
+}
 
 /* -----------------------------------------
    Global
@@ -41,8 +45,9 @@ body {
             top: -15px;
             height: auto;
             @include transition();
-            button {
-              height: 57px;
+            a, button {
+              height: 65px;
+              padding: 5px;
               @include transition();
               small {
                 display: none;
@@ -350,7 +355,7 @@ em {
         right: 0;
         top: 0;
         margin-right: 0;
-        button {
+        a, button {
           display: inline-block;
           width: 92px;
           height: 105px;
@@ -1537,10 +1542,6 @@ section {
         opacity: 1;
     }
   }
-}
-
-@keyframes draw {
-  0%{ height: 0; } 
 }
 
 
