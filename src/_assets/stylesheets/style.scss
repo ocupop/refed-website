@@ -1503,6 +1503,15 @@ section {
         }
       }
     }
+    &.active {
+      li {
+        cursor: pointer;
+        opacity: 0.3;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
