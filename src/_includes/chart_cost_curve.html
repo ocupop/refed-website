@@ -11,13 +11,15 @@
             {% for solution in site.solutions %}
             <li class="solution" 
                 data-url="{{ solution.url | prepend: site.baseurl }}"
+                data-class="{{ solution.type }}"
+                data-summary="{{ solution.definition | truncatewords: 10 }}"
                 data-economic-value-per-ton="{{ solution.impact.economic-value-per-ton }}"
                 data-diversion-potential="{{ solution.impact.diversion-potential }}"
                 data-meals-recovered="{{ solution.impact.meals-recovered }}"
                 data-emissions-reduced="{{ solution.impact.emissions-reduced }}"
                 data-water-conservation="{{ solution.impact.water-conservation }}"
                 data-jobs-created="{{ solution.impact.jobs-created }}"
-                title="{{ solution.title }}">
+                data-title="{{ solution.title }}">
               <span class="title">{{ solution.title }}</span>
               <span class="progress" title="{{ solution.title }}"></span>
             </li>
@@ -142,33 +144,29 @@
       // $("#cost-curve").outerHeight(window.innerHeight);
     });
 
-    // var pt = "";
-    //     pt += '<div class="popover tip" role="tooltip">';
-    //     pt += '<div class="content">';
-    //     pt += '<h3 class="popover-title">SolutionTitle</h3>';
-    //     pt += '<p class="stat">';
-    //     pt += '$<strong>100</strong> <small>/ton</small><br>';
-    //     pt += '<span>in financial benefit</span>';
-    //     pt += '</p>';
-    //     pt += '</div>';
-    //     pt += '<a href="#" class="button prevention">View more information &nbsp;&gt;</a>';
-    //     pt += '</div>';
 
 
-    // $('#cost-curve .solution').popover({
-    //     placement: 'auto right',
-    //     container: '#cost-curve',
-    //     trigger: 'click',
-    //     template: pt
-    // });
+    // POPOVERS
 
-    // $('#cost-curve .solution').on('inserted.bs.popover', function () {
-    //   var url = $(this).attr('data-url');
-    //   // replace all the stats
-    //   $('#cost-curve .popover').each(function() {
-    //     $(this).find('.button').attr('href', url);
-    //   });
-    // })
+    {% include tooltip.js %}
+
+
+    $('#cost-curve .solution').popover({
+        placement: 'auto right',
+        container: '#cost-curve',
+        trigger: 'hover',
+        template: t
+    });
+
+    $('#cost-curve .solution').on('inserted.bs.popover', function () {
+      var $el = $(this);
+      // replace all the stats
+      $("#cost-curve .popover").each(function() {
+        $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
+        $(this).find('.summary').text($el.attr('data-summary'));
+        $(this).find('.title').text($el.attr('data-title'));
+      });
+    })
 
   </script>
 </section>
