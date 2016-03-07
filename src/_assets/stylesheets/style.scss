@@ -27,9 +27,8 @@ body {
   background-color: $cream-light;
   color: $text-color;
   font-weight: 300;
-  padding-top: 75px;
   &.condensed-header {
-    padding-top: 50px;
+
     #page-header {
       .brand {
         top: 3px;
@@ -72,13 +71,14 @@ body {
         }
       }
     }
+    #page-content {
+      margin-top: 50px;
+      @include transition();
+    }
   }
 }
 section {
   padding: 50px 0;
-  &.hero {
-    padding: 0;
-  }
   &:nth-child(even) { @include palette($section-alt-color, $text-color); }
   &:nth-child(odd) { }
 }
@@ -286,6 +286,7 @@ em {
 }
 #page-content {
   position: relative;
+  margin-top: 105px;
 }
 #page-footer {
   position: relative;
@@ -520,6 +521,15 @@ em {
           pointer-events: all;
           &:hover {
             color: $text-color;
+          }
+        }
+        &.active {
+          a {
+            color: darken($gray-light, 15%);
+            cursor: default;
+            &:hover {
+              color: darken($gray-light, 15%);
+            }
           }
         }
       }
@@ -974,8 +984,9 @@ a.external {
   header {
     i {
       display: inline-block;
-      font-size: inherit;
+      font-size: 26px;
       color: inherit;
+      float: right;
     }
   }
 }
@@ -1857,7 +1868,19 @@ section {
 }
 
 #stakeholder-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  li {
+    text-align: center;
+    width: 150px;
+  }
   a {
+    font-size: 13px;
+    font-family: $font-family-condensed;
+    text-transform: uppercase;
+    color: $text-color;
     &:hover {
       background-color: transparent;
     }
@@ -1865,6 +1888,7 @@ section {
   .icon {
     height: 80px;
     width: 80px;
+    margin: auto;
   }
 }
 
@@ -2282,7 +2306,6 @@ body.resources {
 }
 
 @media all and (max-width: 990px) {
-  body { padding-top: 50px; }
   #page-header {
     position: fixed;
     top: 0;
@@ -2299,6 +2322,9 @@ body.resources {
         right: 0;
       }
     }
+  }
+  #page-content {
+    margin-top: 50px;
   }
   #topnav {
     display: none;
@@ -2446,6 +2472,14 @@ body.resources {
     .tab {
       margin: 0;
     }
+  }
+
+  // column wrap 
+  .col2 {
+    column-count: 1;
+  }
+  .col3 {
+    column-count: 1;
   }
 }
 

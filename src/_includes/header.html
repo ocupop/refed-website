@@ -46,11 +46,26 @@
   <div class="container">
     <nav>
       <ul>
-        <li id="foodwaste-link"><a href="{{ '/#foodwaste' | prepend: site.baseurl  }}" title="Food Waste">Food Waste</a></li>
-        <li id="analysis-link"><a href="{{ '/analysis' | prepend: site.baseurl }}" title="Analysis">Analysis</a></li>
-        <li id="solutions-link"><a href="{{ '/solution' | prepend: site.baseurl }}" title="Solutions">Solutions</a></li>
-        <li id="stakeholders-link"><a href="{{ '/stakeholder' | prepend: site.baseurl }}" title="Stakeholders">Stakeholders</a></li>
-        <li id="action-link"><a href="{{ '/action' | prepend: site.baseurl }}" title="Action">Action</a></li>
+        <li id="foodwaste-link"
+            {% if page.url =='/' %}class="active"{% endif %}>
+            <a href="{{ '/#foodwaste' | prepend: site.baseurl  }}" title="Food Waste">Food Waste</a>
+        </li>
+        <li id="analysis-link"
+            {% if page.url =='/analysis' %}class="active"{% endif %}>
+            <a href="{{ '/analysis' | prepend: site.baseurl }}" title="Analysis">Analysis</a>
+        </li>
+        <li id="solutions-link"
+            {% if page.url =='/solution' %}class="active"{% endif %}>
+            <a href="{{ '/solution' | prepend: site.baseurl }}" title="Solutions">Solutions</a>
+        </li>
+        <li id="stakeholders-link"
+            {% if page.url =='/stakeholder' %}class="active"{% endif %}>
+            <a href="{{ '/stakeholder' | prepend: site.baseurl }}" title="Stakeholders">Stakeholders</a>
+        </li>
+        <li id="action-link"
+            {% if page.url =='/action' %}class="active"{% endif %}>
+            <a href="{{ '/action' | prepend: site.baseurl }}" title="Action">Action</a>
+        </li>
       </ul>
       <ul class="drawer">
         <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>

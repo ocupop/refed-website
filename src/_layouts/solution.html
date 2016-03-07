@@ -1,19 +1,19 @@
 ---
 layout: page
 ---
-<section id="solution-highlights" class="{{ page.type | slugify }}">
+<div id="solution-highlights" class="{{ page.type | slugify }}">
   <div class="container">
     <div class="row middle-xs around-xs">
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-6 col-md-3">
         <h3><small>Diversion Potential:</small><br>{{ page.impact.diversion-potential | add_commas }}K Tons</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-6 col-md-3">
         <h3><small>Economic Value Per Ton:</small><br>${{ page.impact.economic-value-per-ton | add_commas }}</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-6 col-md-3">
         <h3><small>GHGs Reduced:</small><br>{{ page.impact.emissions-reduced | add_commas }}K Tons</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-6 col-md-3">
         {% case page.type %}
           {% when 'prevention' %}
           <h3><small>Water Saved:</small><br>{{ page.impact.water-conservation | add_commas }}B Gallons</h3>
@@ -28,7 +28,7 @@ layout: page
       </div>
     </div>
   </div>
-</section>
+</div>
 <section>
   <div class="container">
     <div class="row">
@@ -98,9 +98,10 @@ layout: page
             </ul>
           </div>
           {% if page.resources %}
+            <hr>
             <ul class="resource-list">
               {% for resource in page.resources %}
-              <li>{{ resource }}</li>
+              <li><a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a></li>
               {% endfor %}
             </ul>
           {% endif %}
@@ -114,6 +115,9 @@ layout: page
 
 {% if page.connected-solutions %}
 <section id="connected-solutions">
+  <header class="section-header">
+    <h2>Related Solutions</h2>
+  </header>
   <div class="container">
     <div class="grid row">
       {% for solution in site.solutions %}
