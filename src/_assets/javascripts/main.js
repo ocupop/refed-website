@@ -64,13 +64,6 @@ $(document).on('ready', function() {
                             });
   });
 
-  $('#chart').on('mouseover', function() {
-    $(this).addClass('active');
-  });
-  $('#chart').on('mouseout', function() {
-    $(this).removeClass('active');
-  });
-
 
 });
 

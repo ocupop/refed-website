@@ -150,11 +150,21 @@
 
     {% include tooltip.js %}
 
+    $('#cost-curve .solution').on('click', function() {
+      $('#cost-curve .solution').not(this).popover('hide');
+    });
+    $('#chart').on('mouseover', function() {
+      $(this).addClass('active');
+    });
+    $('#chart').on('mouseout', function() {
+      $(this).removeClass('active');
+      $('#cost-curve .solution').popover('hide');
+    });
 
     $('#cost-curve .solution').popover({
         placement: 'auto right',
         container: '#cost-curve',
-        trigger: 'hover',
+        trigger: 'click',
         template: t
     });
 
