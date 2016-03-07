@@ -5,7 +5,7 @@
         <div class="content">
           <div id="d3-donut"></div>
           <div id="center-message">
-            <p>Reduce</p>
+            <p class="tag">Reduce</p>
             <h3>
               <span class="amount">13.2M</span><br>
               <span>Tons</span>
@@ -21,7 +21,7 @@
             <em>Click on a segment to see how each solution contributes to reducing U.S. food waste.</em>
           </p>
           <div id="reduction-legend" class="legend">
-            <h3 class="title">Reduce <span class="amount">13.2 M</span> Tons</h3>
+            <h3 class="title"><span class="tag">Reduce</span> <span class="amount">13.2 M</span> Tons</h3>
             <table>
               <tbody>
                 <tr class="prevention-details">
@@ -37,7 +37,7 @@
                 <tr class="recycle-details">
                   <td><i class="recycle"></i></td>
                   <td>Recycle</td>
-                  <td>8.8 M Tons</td>
+                  <td>9.5 M Tons</td>
                 </tr>
               </tbody>
             </table>
@@ -215,8 +215,10 @@
       // window.console.log("ROOT: ", root);
       // window.console.log("P: ", p);
       // window.console.log("NEW Message: ", p.message);
-      $('#reduction-legend .amount').text(root.message);
-      $('#center-message .amount').text(root.message);
+      $('#reduction-legend .tag').text(root.tag);
+      $('#center-message .tag').text(root.tag);
+      $('#reduction-legend .amount').text(root.amount);
+      $('#center-message .amount').text(root.amount);
     }
     function showMessage(p) {
       $('#reduction-detail-message').addClass('active');

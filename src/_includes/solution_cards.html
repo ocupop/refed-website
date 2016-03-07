@@ -7,6 +7,23 @@
 {% endunless %}
 <script type="text/javascript">
 
+  function hideCards(impact) {
+    var $matching = [];
+    $( '.card').each(function() {
+      $this = $("this");
+       // add item to be filtered out if input text matches items inside the title   
+      if($this.attr('data-'+impact) == "0") {
+        // $matching = $matching.add(this);
+        window.console.log("MATCH", $this);
+      } else {
+        // removes any previously matched item
+        // $matching = $matching.not(this);
+      }
+    });
+    window.console.log($matching);
+    // $("#solution-cards").mixItUp('filter', $matching);
+  }
+
   function sortCards(impact) {
     var l = window.location.pathname + "?sort="+impact;
     window.history.pushState('', '{{ site.title }}: Solutions', l);
@@ -15,7 +32,7 @@
 
     $('#solution-cards').mixItUp('multiMix', {
       sort: impact+":dsc"
-    });
+    }, true, hideCards(impact) );
   }
 
 
@@ -25,13 +42,13 @@
         enable: false 
         // as we are interacting via the API, we can disable default controls to increase performance
       },
-      callbacks: {
-        onMixLoad: function() {
-          // $active_tab.trigger('click');
-        }
-      },
       load: {
         // sort: sort_by+":dsc"
+      },
+      callbacks: {
+        onMixEnd: function(state){
+          // window.console.log(state);
+        }
       },
       selectors: {
         target: '.card',

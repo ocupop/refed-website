@@ -38,12 +38,14 @@ layout: page
           <p>{{ page.definition }}</p>
         </div>
       </div>
+      {% if page.overview %}
       <div class="col-xs-12 col-sm-6">
         <div class="content">
           <h2>Overview</h2>
           <p>{{ page.overview }}</p>
         </div>
       </div>
+      {% endif %}
     </div>
   </div>
 </section>

@@ -30,7 +30,7 @@
   description: >
     The jobs created or sustained by implementing a solution.
 - title: Meals Recovered
-  label: 
+  label: Most Meals Recovered
   slug: meals-recovered
   summary: summary
   description: >

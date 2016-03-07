@@ -1,3 +1,5 @@
+{% assign tabs = site.data.impact %}
+{% assign solutions = site.solutions | sort:"order" %}
 <section id="cost-curve">
   <div class="container">
     <div class="row">
@@ -8,7 +10,7 @@
           <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
           {% include tabs.html %}
           <ul id="chart" class="vertical">
-            {% for solution in site.solutions %}
+            {% for solution in solutions %}
             <li class="solution" 
                 data-url="{{ solution.url | prepend: site.baseurl }}"
                 data-class="{{ solution.type }}"
@@ -49,8 +51,6 @@
       }
     }
 
-    {% assign tabs = site.data.impact %}
-    {% assign solutions = site.solutions | sort:"order" %}
     var solution_data = {
       sort: [
         {% for tab in tabs %}{
