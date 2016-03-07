@@ -6,8 +6,9 @@
   left: 0;
   z-index: 1100;
   background-color: #000;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  pointer-events: all;
 }
 .tour-step-background {
   // border-radius: 0;

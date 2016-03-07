@@ -109,7 +109,7 @@ jQuery(document).ready(function($) {
                   <button data-role='prev'>&lt;&nbsp;Prev</button>
                   <button data-role='next'>Next&nbsp;&gt;</button>
                 </div>
-                <button class='end' data-role='end'>End tour</button>
+                <button class='end hide' data-role='end'>End tour</button>
               </div>"
   });
 
@@ -122,11 +122,11 @@ jQuery(document).ready(function($) {
     tour.init(true);
 
     // Start the tour
-    tour.start(true);
+    tour.goTo(0);
 
   });
   $(".tour-backdrop").on('click', function() {
-    // alert('clicked');
+    alert('clicked');
     // tour.end();
   });
 });
