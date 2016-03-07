@@ -6,36 +6,42 @@
     "slug": "recycle",
     "name": "Recycling",
     "message": "8.8M",
+    "color": "#88A65B",
     "children": [
      {
         "slug": "centralized-composting",
         "name": "Centralized Composting",
         "url": "/refed/solutions/centralized-composting",
-        "size": 5037 
+        "size": 5037,
+        "color": "#7A9C49"
       },
       {
         "slug": "centralized-ad",
         "name": "Centralized AD",
         "url": "/refed/solutions/centralized-ad",
-        "size": 1884 
+        "size": 1884,
+        "color": "#95AF6D"
       },
       {
         "slug": "wrrf-with-ad",
         "name": "WRRF with AD",
         "url": "/refed/solutions/water-resources-recovery-facility-with-ad",
-        "size": 1637 
+        "size": 1637,
+        "color": "#88A65B"
       },
       {
         "slug": "commercial-greywater",
         "name": "Commercial Greywater",
         "url": "/refed/solutions/commercial-greywater",
-        "size": 595 
+        "size": 595,
+        "color": "#A2B97E"
       },
       {
         "slug": "other",
         "name": "Other",
         "url": "/solution",
-        "size": 325 
+        "size": 325,
+        "color": "#95AF6D"
       }
       ]
   },
@@ -43,48 +49,56 @@
     "slug": "recovery",
     "name": "Recovery",
     "message": "1.1M",
+    "color": "#2A8175",
     "children": [
      {
         "slug": "donation-tax-incentives",
         "name": "Donation Tax Incentives",
         "url": "/refed/solutions/donation-tax-incentives",
-        "size": 383 
+        "size": 383,
+        "color": "#2B8275"
       },
       {
         "slug": "standardized-donation-regulation",
         "name": "Standardized Donation Regulation",
         "url": "/refed/solutions/standardized-donation-regulation",
-        "size": 193 
+        "size": 193,
+        "color": "#379487"
       },
       {
         "slug": "donation-matching-software",
         "name": "Donation Matching Software",
         "url": "/refed/solutions/donation-matching-software",
-        "size": 150 
+        "size": 150,
+        "color": "#52A690"
       },
       {
         "slug": "donation-transportation",
         "name": "Donation Transportation",
         "url": "/refed/solutions/donation-transportation",
-        "size": 110 
+        "size": 110,
+        "color": "#379487"
       },
       {
         "slug": "donation-storage-and-handling",
         "name": "Donation Storage and Handling",
         "url": "/refed/solutions/donation-storage-and-handling",
-        "size": 103 
+        "size": 103,
+        "color": "#52A690"
       },
       {
         "slug": "value-added-processing",
         "name": "Value Added Processing",
         "url": "/refed/solutions/value-added-processing",
-        "size": 102 
+        "size": 102,
+        "color": "#379487"
       },
       {
         "slug": "donation-liability-education",
         "name": "Donation Liability Education",
         "url": "/refed/solutions/donation-liability-education",
-        "size": 102 
+        "size": 102,
+        "color": "#52A690"
       }
       ]
   },
@@ -92,61 +106,71 @@
     "slug": "prevention",
     "name": "Prevention",
     "message": "2.6M",
+    "color": "#225577",
     "children": [
      {
         "slug": "consumer-education-campaigns",
         "name": "Consumer Education Campaigns",
         "url": "/refed/solutions/consumer-education-campaigns",
-        "size": 584 
+        "size": 584,
+        "color": "#235477"
       },
       {
         "slug": "waste-tracking-and-analytics",
         "name": "Waste Tracking & Analytics",
         "url": "/refed/solutions/waste-tracking-and-analytics",
-        "size": 571 
+        "size": 571,
+        "color": "#207F9B"
       },
       {
         "slug": "standardized-date-labeling",
         "name": "Standardized Date Labeling",
         "url": "/refed/solutions/standardized-date-labeling",
-        "size": 398 
+        "size": 398,
+        "color": "#2F8EA8"
       },
       {
         "slug": "produce-specifications",
         "name": "Produce Specifications",
         "url": "/refed/solutions/produce-specifications",
-        "size": 266 
+        "size": 266,
+        "color": "#007090"
       },
       {
         "slug": "packaging-adjustments",
         "name": "Packaging Adjustments",
         "url": "/refed/solutions/packaging-adjustments",
-        "size": 208 
+        "size": 208,
+        "color": "#207F9B"
       },
       {
         "slug": "smaller-plates",
         "name": "Smaller Plates",
         "url": "/refed/solutions/smaller-plates",
-        "size": 178 
+        "size": 178,
+        "color": "#235477"
       },
       {
         "slug": "secondary-resellers",
         "name": "Secondary Resellers",
         "url": "/refed/solutions/secondary-resellers",
-        "size": 167 
+        "size": 167,
+        "color": "#207F9B"
       },
       {
         "slug": "trayless-dining",
         "name": "Trayless Dining",
         "url": "/refed/solutions/trayless-dining",
-        "size": 83 
+        "size": 83,
+        "color": "#2F8EA8"
       }
       ,
       {
         "slug": "other",
         "name": "Other",
         "url": "/refed/solution",
-        "size": 169
+        "size": 169,
+        "color": "#007090"
       }
       ]
   }
