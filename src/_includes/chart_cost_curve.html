@@ -155,6 +155,7 @@
       $("#cost-curve .popover").each(function() {
         var filter = $('.sort.active').attr('data-sort');
         // window.console.log(filter);
+        $('.stat').hide();
         $(this).find('.stat.'+filter).show();
 
         // window.console.log($el.attr('data-'+filter));

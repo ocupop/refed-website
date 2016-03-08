@@ -31,6 +31,7 @@
     function updateCostCurve(key) {
       var p = [];
       p = getPercentages(solution_data, key);
+      $('#cost-curve .solution').popover('hide');
       $('#cost-curve ul').each(function() {
         var orientation = $(this).attr('class');
         $(this).find('.progress').each(function(index) {
