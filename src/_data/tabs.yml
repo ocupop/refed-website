@@ -16,7 +16,7 @@
   description: >
     The tons of annual waste that can feasibly be diverted from landfills and on-farm losses per solution.
 - title: Emissions Reduced
-  label: Greatest Environmental Benefits
+  label: Greatest GHG Reduction
   slug: emissions-reduced
   max: 3000
   units: GHGS (K TONS / YEAR)

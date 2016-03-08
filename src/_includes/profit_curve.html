@@ -1,6 +1,6 @@
 <p class="axis">
   <span id="axis-units" class="muted pull-right"></span>
-  <span id="axis-max" class="muted">0</span>
+  <span id="axis-max" class="muted">$1,000M</span>
 </p>
 <ul id="profit-chart" class="bar-chart vertical">
   {% for solution in site.solutions %}
@@ -49,7 +49,7 @@
 
   var t = '';
   t += '<div id="tip" class="popover tip" role="tooltip">';
-  t += '<div class="content"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+  t += '<div class="content"><button type="button" class="close"><span aria-hidden="true">&times;</span></button>';
   t += '<h3 class="title">Solution Title</h3>';
   t += '<p><em class="type">Prevention Solution</em></p>';
   t += '<p class="stat profit-potential">';
@@ -91,10 +91,15 @@
 
       // window.console.log($el.attr('data-'+filter));
 
+      $(this).find('.type').text($el.attr('data-class')+ ' Solution');
       $(this).find('.stat.profit-potential span').text($el.attr('data-profit-potential'));
       $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
       $(this).find('.summary').text($el.attr('data-summary'));
       $(this).find('.title').text($el.attr('data-title'));
+
+      $(this).find('.close').on('click', function() {
+        $('#cost-curve .solution').popover('hide');
+      });
     });
   })
 </script>

@@ -64,11 +64,11 @@ $(document).on('ready', function() {
         $(this).removeClass('active').addClass('inactive');
       }
     });
-    $("#related-solutions").attr('class', $(this).attr('class')).fadeIn()
-                            .find('.icon-close').on('click', function() {
-                              $('#related-solutions').fadeOut();
-                              $("#supply-chain li").removeClass('active inactive');
-                            });
+    $("#related-solutions").attr('class', $(this).attr('class')).fadeIn();
+  });
+  $("#supply-chain .close").on('click', function() {
+    $('#related-solutions').fadeOut();
+    $("#supply-chain li").removeClass('active inactive');
   });
 
 

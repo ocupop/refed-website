@@ -10,7 +10,7 @@ t += 'Economic Value per Ton</small>';
 t += '</p>';
 t += '<p class="stat diversion-potential">';
 t += '<strong><span>XXX</span></strong>';
-t += '<small>m tons/year<br>';
+t += '<small>k tons/year<br>';
 t += 'in Diversion Potential</small>';
 t += '</p>';
 t += '<p class="stat meals-recovered">';

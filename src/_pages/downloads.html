@@ -51,7 +51,7 @@ slug: downloads
 </section>
 {% assign chapters = site.data.report %}
 {% for chapter in chapters %}
-  <section class="chapter {% cycle 'alternate', '' %}">
+  <section id="{{ chapter.title | slugify }}" class="chapter {% cycle 'alternate', '' %}">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">

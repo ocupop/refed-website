@@ -13,8 +13,8 @@ defaults:
       url: /stakeholder
       title: Stakeholders
     prevpage:
-      url: /analysis
-      title: Analysis
+      url: /solution
+      title: Solutions
 - scope:
     path: stakeholders
   values:
@@ -22,8 +22,8 @@ defaults:
       url: /action
       title: Action
     prevpage:
-      url: /solution
-      title: Solutions
+      url: /stakeholder
+      title: Stakeholders
 
 collections:
   solutions:

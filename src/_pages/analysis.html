@@ -57,7 +57,7 @@ prevpage:
               <small>of economic value</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=economic-value-per-ton' | prepend: site.baseurl }}">View the top financial solutions &nbsp;&gt;</a>
+            <a href="{{ '/solution#cards?sort=economic-value-per-ton' | prepend: site.baseurl }}">View the top financial solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -67,7 +67,7 @@ prevpage:
               <small>meals saved</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=meals-recovered' | prepend: site.baseurl }}">View the top meal saving solutions &nbsp;&gt;</a>
+            <a href="{{ '/solution#cards?sort=meals-recovered' | prepend: site.baseurl }}">View the top meal saving solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -77,7 +77,7 @@ prevpage:
               <small>water saved annually</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=water-conservation' | prepend: site.baseurl }}">View the top water saving solutions &nbsp;&gt;</a>
+            <a href="{{ '/solution#cards?sort=water-conservation' | prepend: site.baseurl }}">View the top water saving solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -87,7 +87,7 @@ prevpage:
               <small>annual consumer savings</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=economic-value-per-ton' | prepend: site.baseurl }}">View the top consumer savings solutions &nbsp;&gt;</a>
+            <a href="{{ '/stakeholders/consumers' | prepend: site.baseurl }}">View the top consumer savings solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -97,7 +97,7 @@ prevpage:
               <small>annual business profit potential</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=economic-value-per-ton' | prepend: site.baseurl }}">View the top business profit potential solutions &nbsp;&gt;</a>
+            <a href="{{ '#profit-potential' | prepend: site.baseurl }}">View the top business profit potential solutions &nbsp;&gt;</a>
           </li>
 
           <li>
@@ -107,7 +107,7 @@ prevpage:
               <small>tons of GHG emissions reduced annually</small>
             </h4>
             <hr>
-            <a href="{{ '/solution?sort=emissions-reduced' | prepend: site.baseurl }}">View the top emission reducing solutions &nbsp;&gt;</a>
+            <a href="{{ '/solution?sort=emissions-reduced#cards' | prepend: site.baseurl }}">View the top emission reducing solutions &nbsp;&gt;</a>
           </li>
         </ul>
       </div>
@@ -160,7 +160,7 @@ prevpage:
         </ul>
       </div>
       <div id="related-solutions">
-        <h4>Related Solutions: <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></h4>
+        <h4>Related Solutions: <button type="button" class="close"><span aria-hidden="true">&times;</span></button></h4>
         {% include supply_chain_solutions.html tag='farming' %}
         {% include supply_chain_solutions.html tag='manufacturing' %}
         {% include supply_chain_solutions.html tag='business' %}
@@ -186,7 +186,7 @@ prevpage:
         <p>Eleven of the solutions represent $1.9 billion in business profit potential. Nine are geared toward prevention and two toward recycling. They all create revenue and cost savings opportunities that can be captured by the businesses that implement them.</p>
         <hr>
         <p>Restaurants and foodservice facilities have the largest profit opportunity.</p>
-        <a class="button-stakeholder restaurants" href="/" title="Restaurants and Foodservice Providers">
+        <a class="button-stakeholder restaurants" href="{{ '/stakeholders/restaurants-and-foodservice-providers' | prepend: site.baseurl }}" title="Restaurants and Foodservice Providers">
           <i class="icon-restaurant"></i>Restaurants &amp; Foodservice Providers &nbsp;&gt;
         </a>
       </div>
