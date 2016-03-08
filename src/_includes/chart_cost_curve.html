@@ -19,6 +19,10 @@
           </div>
           {% include tabs.html %}
           <p class="message">Tap on the bars below to see the details for each solution.</p>
+          <p class="axis">
+            <span id="axis-units" class="muted pull-right"></span>
+            <span id="axis-max" class="muted">0</span>
+          </p>
           <ul id="chart" class="bar-chart vertical">
             {% for solution in solutions %}
             <li class="solution" 
@@ -95,6 +99,9 @@
     $('#cost-curve .sort').on('click', function() {
       $("#impact-summary").text($(this).attr('data-description'));
       $("#impact-title").text($(this).attr('data-title'));
+
+      $("#axis-units").text($(this).attr('data-units'));
+      $("#axis-max").text($(this).attr('data-max'));
 
       updateCostCurve($(this).attr('data-sort'));
 

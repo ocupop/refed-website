@@ -21,6 +21,8 @@
     function getPercentages(data, key) {
       var series = getSeries(data, key),
           max = Math.max.apply(0, series);
+
+      window.console.log(series);
       return series.map(function(value) {
         var v = value / max * 100;
         return Math.round(v*100)/100;

@@ -8,6 +8,7 @@
 <script type="text/javascript">
 
   function hideCards(impact) {
+    // window.console.log("HIDING EMPTY CARDS");
     var $filtered = $();
     $( '.card').each(function() {
       $this = $(this);
@@ -24,6 +25,7 @@
   }
 
   function sortCards(impact) {
+    // window.console.log("SHOULD SORT", impact);
     var l = window.location.pathname + "?sort="+impact;
     window.history.pushState('', '{{ site.title }}: Solutions', l);
 
@@ -42,7 +44,7 @@
         // as we are interacting via the API, we can disable default controls to increase performance
       },
       load: {
-        // sort: sort_by+":dsc"
+        sort: urlParams["sort"]+":dsc"
       },
       callbacks: {
         onMixEnd: function(state){
@@ -62,6 +64,7 @@
     $('.sort').on('click', function() {
       $("#impact-summary").text($(this).attr('data-description'));
 
+      // window.console.log("GONNA SORT");
       sortCards($(this).attr('data-sort'));
       $(this).addClass('active').siblings().removeClass('active');
     });
@@ -118,13 +121,5 @@
     });
   })
 
-  // $('.sort').on('mouseover', function() {
-  //   window.console.log('Sort button active');
-  //   $("#impact-summary").text($(this).attr('data-description'));
-  // });
-  // $('.sort').on('mouseout', function() {
-  //   window.console.log('Sort button inactive');
-  //   $("#impact-summary").text($('.sort.active').attr('data-summary'));
-  // });
 
 </script>

@@ -1,6 +1,8 @@
 - title: Financial Benefit
   label: Most Cost Effective
   slug: economic-value-per-ton
+  max: 5000
+  units: Economic value per ton diverted
   summary: >
     The top three most cost-effective solutions all fall insto the prevention category.
   description: >
@@ -8,30 +10,40 @@
 - title: Waste Diverted
   label: Largest Waste Diverted
   slug: diversion-potential
+  max: 6000
+  units: K TONS/ YEAR
   summary: summary
   description: >
     The tons of annual waste that can feasibly be diverted from landfills and on-farm losses per solution.
 - title: Emissions Reduced
   label: Greatest Environmental Benefits
   slug: emissions-reduced
+  max: 3000
+  units: GHGS (K TONS / YEAR)
   summary: summary
   description: >
     Greenhouse gases are reduced per solution by avoiding the resources that go into producing, processing, and transporting food, as well as the methane emissions from food disposed of in landfills.
 - title: Water Saved
   label: Most Water Saved
   slug: water-conservation
+  max: 350
+  units: B GALS / YEAR
   summary: summary
   description: >
     Water conservation occurs when a solution helps avoid agricultural water use to produce food that would have ultimately been wasted.
 - title: Jobs Created
   label: Most Jobs Created
   slug: jobs-created
+  max: 10000
+  units: Jobs Created
   summary: summary
   description: >
     The jobs created or sustained by implementing a solution.
 - title: Meals Recovered
   label: Most Meals Recovered
   slug: meals-recovered
+  max: 800
+  units: M Meals / year
   summary: summary
   description: >
     Food recovery solutions recover perishable food that would otherwise go to waste and donate it to people in need. One pound of food waste diverted equals 1.2 meals.
