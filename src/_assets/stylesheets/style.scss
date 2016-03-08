@@ -1073,6 +1073,7 @@ a.external {
   position: relative;
   display: none;
   box-sizing: border-box;
+  width: 31%;
   max-width: 31%;
   height: auto;
   min-height: 100px;
@@ -1184,6 +1185,14 @@ a.external {
       .stat { color: $recycle-color; }
       a {
         background-color: $recycle-color;
+      }
+    }
+  }
+  &.link-card {
+    header {
+      a {
+        margin: 0;
+        height: 179px;
       }
     }
   }
