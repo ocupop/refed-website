@@ -22,7 +22,6 @@
       var series = getSeries(data, key),
           max = Math.max.apply(0, series);
 
-      window.console.log(series);
       return series.map(function(value) {
         var v = value / max * 100;
         return Math.round(v*100)/100;
@@ -47,7 +46,6 @@
     function updatePotentialCurve(data) {
       var p = [];
       p = getPercentages(data, 'profit-potential');
-      window.console.log(p);
       $('#profit-chart .progress').each(function(index) {
         $(this).css('height', p[index]+'%');
       });

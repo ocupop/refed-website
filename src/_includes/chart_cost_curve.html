@@ -133,6 +133,7 @@
     $('#cost-curve .solution').on('click', function() {
       $('#cost-curve .solution').not(this).popover('hide');
     });
+
     $('#chart').on('mouseover', function() {
       $(this).addClass('active');
     });
@@ -162,6 +163,10 @@
         $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
         $(this).find('.summary').text($el.attr('data-summary'));
         $(this).find('.title').text($el.attr('data-title'));
+
+        $(this).find('.close').on('click', function() {
+          $('#cost-curve .solution').popover('hide');
+        });
       });
     })
 
