@@ -39,12 +39,11 @@ layout: page
   <div class="container">
     <div id="solution-cards" class="grid row">
       {% for solution in site.solutions %}
-          {% if solution.stakeholders contains page.slug %}
+          {% if page.key-solutions contains solution.slug %}
             {% include card.html %}
           {% endif %}
       {% endfor %}
     </div>
-    {% include solution_cards.html inline=true limit=0 %}
   </div>
 </section>
 
