@@ -160,7 +160,8 @@ form {
   .muted {
     font-size: 75%;
     color: $gray-light;
-    text-indent: 15px;
+    text-indent: 0;
+    padding: 10px;
   }
 }
 .select {
@@ -209,6 +210,17 @@ input, select {
   } 
   &:required {
 
+  }
+}
+select[multiple] {
+  height: 108px;
+  option {
+    font-weight: 300;
+    &:first-child {
+      border-bottom: 1px solid lighten($gray-light, 30%);
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
   }
 }
 ul {

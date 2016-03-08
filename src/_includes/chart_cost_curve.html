@@ -174,10 +174,10 @@
       // replace all the stats
       $("#cost-curve .popover").each(function() {
         var filter = $('.sort.active').attr('data-sort');
-        window.console.log(filter);
+        // window.console.log(filter);
         $(this).find('.stat.'+filter).show();
 
-        window.console.log($el.attr('data-'+filter));
+        // window.console.log($el.attr('data-'+filter));
 
         $(this).find('.stat.'+filter+' span').text($el.attr('data-'+filter));
         $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));

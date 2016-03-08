@@ -39,12 +39,12 @@ $(document).on('ready', function() {
     $submit = $(this).find('input[type="submit"]');
   });
   $('input.keyterms').on('keyup', function(){
-    window.console.log($(this).val());
-      if($(this).val().length !=0) {
-        $submit.attr('disabled', false);
-      } else {
-        $submit.attr('disabled',true);
-      }
+    // window.console.log($(this).val());
+    if($(this).val().length !=0) {
+      $submit.attr('disabled', false);
+    } else {
+      $submit.attr('disabled',true);
+    }
   });
 
 

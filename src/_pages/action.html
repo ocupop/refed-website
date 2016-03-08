@@ -164,7 +164,7 @@ prevpage:
           </select>
         </div>
         <div class="select">
-          <select>
+          <select multiple>
             <option>Choose interested solutions</option>
             {% for solution in site.solutions %}
             <option value="{{ solution.title }}">{{ solution.title }}</option>
@@ -173,7 +173,7 @@ prevpage:
         </div>
         <label class="sr">Comments</label>
         <input type="text" placeholder="Provide additional contact info">
-        <p class="muted content"><small>We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</small></p>
+        <p class="muted"><small>We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</small></p>
       </div>
     </form>
   </div>
