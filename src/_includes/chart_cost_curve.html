@@ -15,12 +15,13 @@
                 data-url="{{ solution.url | prepend: site.baseurl }}"
                 data-class="{{ solution.type }}"
                 data-summary="{{ solution.definition | truncatewords: 10 }}"
-                data-economic-value-per-ton="{{ solution.impact.economic-value-per-ton }}"
-                data-diversion-potential="{{ solution.impact.diversion-potential }}"
-                data-meals-recovered="{{ solution.impact.meals-recovered }}"
-                data-emissions-reduced="{{ solution.impact.emissions-reduced }}"
-                data-water-conservation="{{ solution.impact.water-conservation }}"
-                data-jobs-created="{{ solution.impact.jobs-created }}"
+                data-economic-value-per-ton="{{ solution.impact.economic-value-per-ton | add_commas }}"
+                data-diversion-potential="{{ solution.impact.diversion-potential | add_commas }}"
+                data-meals-recovered="{{ solution.impact.meals-recovered | add_commas }}"
+                data-emissions-reduced="{{ solution.impact.emissions-reduced | add_commas }}"
+                data-water-conservation="{{ solution.impact.water-conservation  | add_commas}}"
+                data-jobs-created="{{ solution.impact.jobs-created | add_commas }}"
+                data-profit-potential="{{ solution.impact.profit-potential | add_commas}}"
                 data-title="{{ solution.title }}">
               <span class="title">{{ solution.title }}</span>
               <span class="progress" title="{{ solution.title }}"></span>
@@ -172,6 +173,13 @@
       var $el = $(this);
       // replace all the stats
       $("#cost-curve .popover").each(function() {
+        var filter = $('.sort.active').attr('data-sort');
+        window.console.log(filter);
+        $(this).find('.stat.'+filter).show();
+
+        window.console.log($el.attr('data-'+filter));
+
+        $(this).find('.stat.'+filter+' span').text($el.attr('data-'+filter));
         $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
         $(this).find('.summary').text($el.attr('data-summary'));
         $(this).find('.title').text($el.attr('data-title'));

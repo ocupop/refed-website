@@ -1,0 +1,13 @@
+<ul id="chart" class="vertical">
+  {% for solution in site.solutions %}
+  <li class="solution" 
+      data-url="{{ solution.url | prepend: site.baseurl }}"
+      data-class="{{ solution.type }}"
+      data-summary="{{ solution.definition | truncatewords: 10 }}"
+      data-profit-potential="{{ solution.impact.profit-potential }}"
+      data-title="{{ solution.title }}">
+    <span class="title">{{ solution.title }}</span>
+    <span class="progress" title="{{ solution.title }}"></span>
+  </li>
+  {% endfor %}
+</ul>

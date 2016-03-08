@@ -8,20 +8,19 @@
 <script type="text/javascript">
 
   function hideCards(impact) {
-    var $matching = [];
+    var $filtered = $();
     $( '.card').each(function() {
-      $this = $("this");
-       // add item to be filtered out if input text matches items inside the title   
-      if($this.attr('data-'+impact) == "0") {
-        // $matching = $matching.add(this);
-        window.console.log("MATCH", $this);
+      $this = $(this);
+       // add item to be filtered out if input text matches items inside the title 
+      if($this.attr('data-'+impact) != "0") {
+        $filtered = $filtered.add($this);
       } else {
         // removes any previously matched item
-        // $matching = $matching.not(this);
+        $filtered = $filtered.not(this);
       }
     });
-    window.console.log($matching);
-    // $("#solution-cards").mixItUp('filter', $matching);
+    // window.console.log($filtered);
+    $("#solution-cards").mixItUp('filter', $filtered);
   }
 
   function sortCards(impact) {

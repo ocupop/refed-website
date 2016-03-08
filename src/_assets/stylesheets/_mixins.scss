@@ -9,9 +9,9 @@
 }
 
 @mixin palette($bg: red, $color: yellow) {
-  background-color: $bg !important;
+  background-color: $bg;
   fill: $bg;
-  color: $color !important;
+  color: $color;
   h1, h2, h3, h4, .lead {
     color: $color;
     small {

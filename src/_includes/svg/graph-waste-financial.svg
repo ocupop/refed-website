@@ -1,77 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1033.618 237.419" enable-background="new 0 0 1033.618 237.419" xml:space="preserve">
+	 viewBox="0 0 1037.421 276.727" enable-background="new 0 0 1037.421 276.727" xml:space="preserve">
 <g id="bottom">
+	<g opacity="0.2">
+		<g>
+			<line fill="none" stroke="#555759" stroke-miterlimit="10" x1="3.56" y1="217.812" x2="986.752" y2="217.812"/>
+		</g>
+	</g>
+	<g opacity="0.2">
+		<g>
+			<line fill="none" stroke="#555759" stroke-miterlimit="10" x1="3.56" y1="156.45" x2="986.752" y2="156.45"/>
+		</g>
+	</g>
+	<g opacity="0.2">
+		<g>
+			<line fill="none" stroke="#555759" stroke-miterlimit="10" x1="3.56" y1="95.089" x2="986.752" y2="95.089"/>
+		</g>
+	</g>
+	<g opacity="0.2">
+		<g>
+			<line fill="none" stroke="#555759" stroke-miterlimit="10" x1="3.56" y1="33.728" x2="986.752" y2="33.728"/>
+		</g>
+	</g>
 	<g>
 		<g>
-			<g>
-				
-					<text transform="matrix(0.9989 0 0 1 989.1714 127.6511)" fill="#4D4D4D" font-family="'TradeGothic-CondEighteen'" font-size="11.6504px">$50b</text>
-			</g>
-			<g>
-				
-					<text transform="matrix(0.9989 0 0 1 989.1714 174.6475)" fill="#4D4D4D" font-family="'TradeGothic-CondEighteen'" font-size="11.6504px">$0</text>
-			</g>
-			<g>
-				
-					<text transform="matrix(0.9989 0 0 1 989.1714 74.6477)" fill="#4D4D4D" font-family="'TradeGothic-CondEighteen'" font-size="11.6504px">$100b</text>
-			</g>
-			<g>
-				
-					<text transform="matrix(0.9989 0 0 1 991.6714 24.6475)" fill="#4D4D4D" font-family="'TradeGothic-CondEighteen'" font-size="11.6504px">$150b</text>
-			</g>
-			<g opacity="0.25">
-				<g>
-					
-						<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="6.342" y1="174.647" x2="978.91" y2="174.647"/>
-					
-						<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="6.341" y1="124.647" x2="978.909" y2="124.647"/>
-					
-						<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="6.338" y1="74.647" x2="978.907" y2="74.647"/>
-					
-						<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="6.337" y1="24.647" x2="978.906" y2="24.648"/>
-				</g>
-			</g>
-			
-				<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="977.549" y1="174.642" x2="6.336" y2="174.642"/>
-			<g>
-				<g>
-					<rect x="762.325" y="31.641" fill="#E8AE6C" width="161.346" height="143"/>
-				</g>
-			</g>
-			<g>
-				<g>
-					<rect x="510.329" y="114.641" fill="#D2663A" width="161.346" height="60"/>
-				</g>
-			</g>
-			<g>
-				<g>
-					<rect x="258.332" y="174.026" fill="#D13239" width="161.346" height="0.617"/>
-				</g>
-			</g>
-			<g>
-				<g>
-					<rect x="6.336" y="151.441" fill="#922B47" width="161.346" height="23.2"/>
-				</g>
-			</g>
+			<rect x="814.956" y="40.265" fill="#E8AE6C" width="162.92" height="178.045"/>
 		</g>
-		<text transform="matrix(1 0 0 1 54.6165 141.4414)" fill="#922B47" font-family="'Gotham-Black'" font-size="17px">$23.2 B</text>
-		<text transform="matrix(1 0 0 1 318.905 164.0259)" fill="#D13239" font-family="'Gotham-Black'" font-size="17px">$0.8 B</text>
-		<text transform="matrix(1 0 0 1 566.8376 104.6414)" fill="#D2663A" font-family="'Gotham-Black'" font-size="17px">$60 B</text>
-		<text transform="matrix(1 0 0 1 806.4155 21.3638)" fill="#E8AE6C" font-family="'Gotham-Black'" font-size="17px">$143.8 B</text>
+	</g>
+	<g>
 		<g>
-			<text transform="matrix(1 0 0 1 50.2442 207.0688)" fill="#555759" font-family="'Gotham-Book'" font-size="15px">farming</text>
+			<rect x="544.491" y="143.606" fill="#DA844F" width="162.92" height="74.704"/>
 		</g>
+	</g>
+	<g>
 		<g>
-			<text transform="matrix(1 0 0 1 276.5775 207.0688)" fill="#555759" font-family="'Gotham-Book'" font-size="15px">manufacturing</text>
+			<rect x="274.026" y="217.314" fill="#D13239" width="162.92" height="0.996"/>
 		</g>
+	</g>
+	<g>
 		<g>
-			<text transform="matrix(1 0 0 1 514.0505 207.0688)"><tspan x="0" y="0" fill="#555759" font-family="'Gotham-Book'" font-size="15px">Consumer-Facing</tspan><tspan x="40.072" y="20" fill="#555759" font-family="'Gotham-Book'" font-size="15px">Business</tspan></text>
+			<rect x="3.561" y="189.425" fill="#922B47" width="162.92" height="28.886"/>
 		</g>
-		<g>
-			<text transform="matrix(1 0 0 1 797.7145 207.0688)" fill="#555759" font-family="'Gotham-Book'" font-size="15px">Consumer</text>
-		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 60.2386 179.4247)" fill="#922B47" font-family="'ProximaNova-Bold'" font-size="21.5871px">$15B</text>
+	<text transform="matrix(1 0 0 1 335.2262 207.3142)" fill="#D13239" font-family="'ProximaNova-Bold'" font-size="21.5871px">$2B</text>
+	<text transform="matrix(1 0 0 1 599.7226 133.6061)" fill="#DA844F" font-family="'ProximaNova-Bold'" font-size="21.5871px">$57B</text>
+	<text transform="matrix(1 0 0 1 865.3091 30.2655)" fill="#E8AE6C" font-family="'ProximaNova-Bold'" font-size="21.5871px">$144B</text>
+	<g>
+		<text transform="matrix(1 0 0 1 60.8914 245.816)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="15.2091px">FARMS</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 292.3611 249.5804)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="15.2091px">MANUFACTURERS</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 870.553 249.5804)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="15.2091px">HOMES</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 556.3852 249.5792)"><tspan x="0" y="0" fill="#555759" font-family="'ProximaNova-Regular'" font-size="15.2091px">CONSUMER-FACING</tspan><tspan x="26.38" y="17.662" fill="#555759" font-family="'ProximaNova-Regular'" font-size="15.2091px">BUSINESSES</tspan></text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 1000.4211 33.7276)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="12px">$150B</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 1000.4211 93.3839)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="12px">$100B</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 1000.4211 153.0402)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="12px">$50B</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 1000.4211 212.6966)" fill="#555759" font-family="'ProximaNova-Regular'" font-size="12px">$0</text>
 	</g>
 </g>
 <g id="Farming" display="none">
