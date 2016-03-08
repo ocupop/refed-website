@@ -14,6 +14,7 @@
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
 
 //= require _plugins
+//= require _charts
 
 //= require _tour
 

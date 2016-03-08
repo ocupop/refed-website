@@ -1,13 +1,96 @@
-<ul id="chart" class="vertical">
+<ul id="profit-chart" class="bar-chart vertical">
   {% for solution in site.solutions %}
-  <li class="solution" 
-      data-url="{{ solution.url | prepend: site.baseurl }}"
-      data-class="{{ solution.type }}"
-      data-summary="{{ solution.definition | truncatewords: 10 }}"
-      data-profit-potential="{{ solution.impact.profit-potential }}"
-      data-title="{{ solution.title }}">
-    <span class="title">{{ solution.title }}</span>
-    <span class="progress" title="{{ solution.title }}"></span>
-  </li>
+  {% if solution.impact.profit-potential != 0 %}
+    <li class="solution" 
+        data-url="{{ solution.url | prepend: site.baseurl }}"
+        data-class="{{ solution.type }}"
+        data-summary="{{ solution.definition | truncatewords: 10 }}"
+        data-profit-potential="{{ solution.impact.profit-potential | add_commas }}"
+        data-title="{{ solution.title }}">
+      <span class="title">{{ solution.title }}</span>
+      <span class="progress" title="{{ solution.title }}"></span>
+    </li>
+  {% endif %}
   {% endfor %}
 </ul>
+
+<script type="text/javascript">
+  var profit_data = {
+    solutions: [
+       {% for solution in site.solutions %}
+        {% if solution.impact.profit-potential != 0 %}{
+        title: "{{ solution.title }}",
+        slug: "{{ solution.slug }}",
+        summary: "{{ solution.summary }}",
+        type: "{{ solution.type }}",
+        featured_image: "{{ solution.featured-image }}",
+        stakeholders: [{% for stakeholder in solution.stakeholders %}"{{ stakeholder }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        connected_solutions: [{% for s in solution.connected-solutions %}"{{ s }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+        data: {
+          {% for i in solution.impact %}{{ i[0] | replace: '-', '_' }}: {{ i[1] }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        },
+        percentages: {
+          {% for i in solution.impact %}{{ i[0] | replace: '-', '_' }}: {{ i[1] }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        }
+      }{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}
+    ]
+  }
+
+  updatePotentialCurve(profit_data);
+
+  $(document).on('ready', function() {
+    
+  });
+  // window.console.log(profit_data);
+
+  var t = '';
+  t += '<div id="tip" class="popover tip" role="tooltip">';
+  t += '<div class="content"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+  t += '<h3 class="title">Solution Title</h3>';
+  t += '<p><em class="type">Prevention Solution</em></p>';
+  t += '<p class="stat profit-potential">';
+  t += '<strong>$<span>XXX</span> </strong>';
+  t += '<small>m/year<br>';
+  t += 'Business Profit Potential</small>';
+  t += '</p>';
+  t += '<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod';
+  t += 'tempor incididunt ut labore et dolore magna aliqua.</p>';
+  t += '</div>';
+  t += '<a href="#" class="button">View more information &nbsp;&gt;</a>';
+  t += '</div>';
+
+
+  $('#profit-potential .solution').on('click', function() {
+    $('#profit-potential .solution').not(this).popover('hide');
+  });
+  $('#profit-chart').on('mouseover', function() {
+    $(this).addClass('active');
+  });
+  $('#profit-chart').on('mouseout', function() {
+    $(this).removeClass('active');
+    // $('#profit-potential .solution').popover('hide');
+  });
+
+  $('#profit-potential .solution').popover({
+      placement: 'auto right',
+      container: '#profit-potential',
+      trigger: 'click',
+      template: t
+  });
+
+  $('#profit-potential .solution').on('inserted.bs.popover', function () {
+    var $el = $(this);
+    // replace all the stats
+    $("#profit-potential .popover").each(function() {
+
+      $(this).find('.stat.profit-potential').show();
+
+      // window.console.log($el.attr('data-'+filter));
+
+      $(this).find('.stat.profit-potential span').text($el.attr('data-profit-potential'));
+      $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
+      $(this).find('.summary').text($el.attr('data-summary'));
+      $(this).find('.title').text($el.attr('data-title'));
+    });
+  })
+</script>
