@@ -7,8 +7,18 @@
         <div class="content">
           <h2>27 SOLUTIONS TO FOOD WASTE</h2>
           <p>The benefits of each of these solutions outweigh the costs.</p>
-          <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
+          <div id="chartnav" class="sticky">
+            <p><em class="script">Choose a filter button or bar to see the impacts of each solution.</em></p>
+            <div class="select">
+              <select>
+                {% for tab in site.data.tabs %}
+                <option value="{{ tab.slug }}">{{ tab.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
           {% include tabs.html %}
+          <p class="message">Tap on the bars below to see the details for each solution.</p>
           <ul id="chart" class="vertical">
             {% for solution in solutions %}
             <li class="solution" 
@@ -146,6 +156,10 @@
     });
 
 
+    $('#chartnav select').on('change', function() {
+      window.console.log($(this).val());
+      $('[data-sort="'+$(this).val()+'"]').trigger('click');
+    });
 
     // POPOVERS
 

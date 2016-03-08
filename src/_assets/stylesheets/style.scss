@@ -271,7 +271,7 @@ em {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
   box-shadow: 0 3px 5px rgba(0,0,0,0.5);
   .brand {
     position: absolute;
@@ -741,6 +741,14 @@ em {
         }
       }
     }
+  }
+}
+#chartnav {
+  .select {
+    display: none;
+  }
+  .message {
+    display: none;
   }
 }
 
@@ -1535,6 +1543,9 @@ section {
         }
       }
     }
+  }
+  .message {
+    display: none;
   }
 }
 
@@ -2508,6 +2519,32 @@ body.resources {
     margin-left: -100px;
   }
 
+  #chartnav {
+    margin-bottom: 10px;
+    &.stick {
+      background-color: $button-color;
+      color: #ffffff;
+      width: 100% !important;
+      left: 0 !important;
+      padding: 15px;
+      @include transition();
+    }
+    .select {
+      display: block;
+    }
+
+  }
+  #cost-curve {
+    .message {
+      display: block;
+    }
+  }
+  #impact-summary {
+    display: none;
+  }
+  #impact-tabs {
+    display:none;
+  }
   .tabs {
     display: block;
     .tab {

@@ -10,6 +10,7 @@
 //= require mixitup/build/jquery.mixitup.min.js
 //= require vendor/jquery.mixitup-pagination.min.js
 //= require vendor/jquery.cookie.js
+//= require jquery-stickit/build/jquery.stickit.min.js
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
 
 //= require _plugins
@@ -18,6 +19,11 @@
 
 
 $(document).on('ready', function() {
+  $(".sticky").stickit({
+    // scope: StickScope.Parent,
+    top: 50
+  });
+
   //initiate localscroll
   $.localScroll();
 
