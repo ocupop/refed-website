@@ -14,17 +14,12 @@
       <div class="content">
         <ul class="primary-sitemap">
           <li>
-            <a href="/about">About</a>
+            <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
             <ul>
-              <li>
-                <a href="#">The Team</a>
-                <ul>
-                  <li><a href="#">Advisory Council</a></li>
-                  <li><a href="#">Implementation Team</a></li>
-                  <li><a href="#">Steering Committee</a></li>
-                  <li><a href="#">Foundation List</a></li>
-                </ul>
-              </li>
+              <li><a href="{{ '/about' | prepend: site.baseurl }}">About ReFED</a></li>
+              <li><a href="{{ '/about#steering-committee' | prepend: site.baseurl }}">Steering Committee &amp; Advisory Council</a></li>
+              <li><a href="{{ '/about#refed-team' | prepend: site.baseurl }}">ReFED Team</a></li>
+              <li><a href="{{ '/about#foundations-list' | prepend: site.baseurl }}">Foundations List</a></li>
             </ul>
           </li>
           <li><a href="/resources">Resources</a></li>
@@ -37,18 +32,52 @@
           <div class="col-xs-4">
             <ul class="report-sitemap">
               <li>
-                <a href="/">Food Waste</a>
+                <a href="{{ '/#foodwaste' | prepend: site.baseurl }}">Food Waste</a>
                 <ul>
-                  <li><a href="#">What is Food Waste</a></li>
-                  <li><a href="#">Current State</a></li>
-                  <li><a href="#">Value Chain</a></li>
-                  <li><a href="#">Food Waste Types</a></li>
+                  <li><a href="{{ '/#the-problem' | prepend: site.baseurl }}">The Problem</a></li>
+                  <li><a href="{{ '/#waste-by-volume' | prepend: site.baseurl }}">Waste by Volume</a></li>
+                  <li><a href="{{ '/#financial-waste' | prepend: site.baseurl }}">Financial Waste</a></li>
+                  <li><a href="{{ '/#refed-goals' | prepend: site.baseurl }}">ReFED Goals</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="{{ '/action' | prepend: site.baseurl }}">Action</a>
+                <ul>
+                  <li><a href="{{ '/action#spread-the-word' | prepend: site.baseurl }}">Spread The Word</a></li>
+                  <li><a href="{{ '/action#four-tools' | prepend: site.baseurl }}">Four Tools</a>
+                    <ul>
+                      <li><a href="{{ '/financing' | prepend: site.baseurl }}">Financing</a></li>
+                      <li><a href="{{ '/policy' | prepend: site.baseurl }}">Policy</a></li>
+                      <li><a href="{{ '/innovation' | prepend: site.baseurl }}">Innovation</a></li>
+                      <li><a href="{{ '/education' | prepend: site.baseurl }}">Education</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}">Stay Connected</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-xs-4">
-            <ul class="report-sitemap"></ul>
+            <ul class="report-sitemap">
+              <li>
+                <a href="{{ '/analysis' | prepend: site.baseurl }}">Analysis</a>
+                <ul>
+                  <li><a href="{{ '/analysis#solutions' | prepend: site.baseurl }}">Solutions</a></li>
+                  <li><a href="{{ '/analysis#the-impact' | prepend: site.baseurl }}">The Impact</a></li>
+                  <li><a href="{{ '/analysis#supply-chain' | prepend: site.baseurl }}">Supply Chain</a></li>
+                  <li><a href="{{ '/analysis#profit-potential' | prepend: site.baseurl }}">Business Profit</a></li>
+                  <li><a href="{{ '/analysis#top-solutions' | prepend: site.baseurl }}">Top Solutions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="{{ '/solution' | prepend: site.baseurl }}">Solutions</a>
+                <ul>
+                  {% for tab in site.data.tabs %}
+                  <li><a href="{{ '/solution?sort={{ tab.slug }}' | prepend: site.baseurl }}">{{ tab.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
           </div>
           <div class="col-xs-4">
             <ul class="report-sitemap">
