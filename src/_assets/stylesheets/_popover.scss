@@ -37,6 +37,9 @@
     margin-top: 10px;
 
   }
+  em {
+    text-transform: capitalize;
+  }
   .content {
     background-color: #ffffff;
     color: $text-color;

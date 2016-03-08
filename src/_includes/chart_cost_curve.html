@@ -157,7 +157,7 @@
         $(this).find('.stat.'+filter).show();
 
         // window.console.log($el.attr('data-'+filter));
-
+        $(this).find('.type').text($el.attr('data-class')+ ' Solution');
         $(this).find('.stat.'+filter+' span').text($el.attr('data-'+filter));
         $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
         $(this).find('.summary').text($el.attr('data-summary'));
