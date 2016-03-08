@@ -16,16 +16,24 @@ slug: downloads
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <form>
+          <form id="form2" name="form2" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://refed.wufoo.com/forms/mjvq4r315yv4yd/">
+            <div class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="zxhCn+/E7QykcNLoeCLePJH8kY4U9vT8QLiNJTVJ2y8=" />
+            <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}" />
+            <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="" />
+            <input type="hidden" name="currentPage" id="currentPage" value="wuBeTYVTmNtviGkAS7wuBewuBe8Sb9cGlLQU2r9wr9H73U7rfxJY=" />
+            </div>
             <div class="form-inputs">
               <label class="sr">Name</label>
-              <input type="text" placeholder="Name *" required>
+              <input type="text" id="Field1" name="Field1" placeholder="Name *" required>
               <label class="sr">Email</label>
-              <input type="text" placeholder="Email *" required>
+              <input type="text" id="Field2" name="Field2" placeholder="Email *" required>
               <label class="sr">Zipcode</label>
-              <input type="text" placeholder="Zip" class="zip">
+              <input type="text" id="Field3" name="Field3" placeholder="Zip" class="zip">
               <div class="select">
-                <select>
+                <select id="Field4" name="Field4">
                   <option>Stakeholder type (if applicable)</option>
                   {% for stakeholder in site.stakeholders %}
                   <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
@@ -63,7 +71,7 @@ slug: downloads
           <div class="content">
             <h2>{{ chapter.title }}</h2>
             <p><em>{{ chapter.summary }}</em></p>
-            <a href="/downloads/{{ chapter.download }}" class="button disabled" download=""><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
+            <a href="{{ site.baseurl }}/downloads/{{ chapter.download }}" class="button disabled" download=""><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
             <p class="message">To enable downloads, please fill out the above <a href="#signup-form">form</a></p>
           </div>
         </div>
