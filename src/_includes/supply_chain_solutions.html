@@ -2,7 +2,7 @@
   {% for solution in site.solutions %}
     {% if solution.supply-chain contains include.tag %}
       <h5>
-        <a role="button" data-toggle="collapse" data-parent="#farming-solutions" href="#{{ solution.slug }}-summary" aria-expanded="true" aria-controls="{{ solution.slug }}-summary">
+        <a role="button" data-toggle="collapse" data-parent="#{{ include.tag }}-solutions" href="#{{ solution.slug }}-summary" aria-expanded="true" aria-controls="{{ solution.slug }}-summary">
           {{ solution.title }} <span>&gt;</span>
         </a>
       </h5>
