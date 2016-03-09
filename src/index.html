@@ -150,7 +150,10 @@ prevpage:
 
   <script type="text/javascript">
     $(document).on('ready', function() {
-      $('#downloadDialog').modal('show')
+      if(!$.cookie('visited')) {
+        $('#downloadDialog').modal('show');
+        $.cookie('visited', true);
+      } 
     });
   </script>
   <script type="text/javascript">

@@ -311,30 +311,6 @@ em {
     line-height: 38px;
     background-color: $recovery-color;
   }
-  form {
-    margin-top: 20px;
-    input {
-      line-height: 38px;
-      padding: 0;
-      &.zip {
-        width: 49%;
-        min-width: 0;
-        margin-right: 5px;
-      }
-    }
-    input[type="submit"] {
-      display: block;
-      float: right;
-      width: 48%;
-      min-width: 0;
-      height: 38px;
-      line-height: 40px;
-      margin: 3px 0 0 0;
-      padding: 0;
-      text-indent: 0;
-      background-color: $recovery-color;
-    }
-  }
 }
 
 // Navigation
@@ -2248,15 +2224,54 @@ section {
 
 #education-hero {
   @include palette(#9BC9C0, $cream-light);
+  a {
+    color: #fff;
+  }
 }
 #policy-hero {
   @include palette(#912A46, $cream-light);
+  a {
+    color: #fff;
+  }
 }
 #financing-hero {
   @include palette(#78A783, $cream-light);
+  a {
+    color: #fff;
+  }
 }
 #innovation-hero {
   @include palette(#E8AD6C, $cream-light);
+  a {
+    color: #fff;
+  }
+}
+
+#collaborate {
+  form {
+    margin-top: 20px;
+    input {
+      line-height: 38px;
+      padding: 0;
+      &.zip {
+        width: 49%;
+        min-width: 0;
+        margin-right: 5px;
+      }
+    }
+    input[type="submit"] {
+      display: block;
+      float: right;
+      width: 48%;
+      min-width: 0;
+      height: 38px;
+      line-height: 40px;
+      margin: 3px 0 0 0;
+      padding: 0;
+      text-indent: 0;
+    }
+  }
+
 }
 /* -----------------------------------------
    Page Specific
@@ -2433,6 +2448,8 @@ body.resources {
     display: none;
   }
   #mainnav {
+    height: 50px;
+    line-height: 50px;
     nav {
       display: block;
       position: fixed;
@@ -2611,12 +2628,16 @@ body.resources {
 
   #chartnav {
     margin-bottom: 10px;
+    padding: 25px;
+    margin-left: -35px;
+    margin-right: -35px;
+    background-color: $button-color;
+    color: #ffffff;
     &.stick {
-      background-color: $button-color;
-      color: #ffffff;
       width: 100% !important;
       left: 0 !important;
-      padding: 15px;
+      margin: 0;
+      padding: 15px 25px;
       @include transition();
       p {
         display: block;
@@ -2666,6 +2687,15 @@ body.resources {
   }
   .col3 {
     column-count: 1;
+  }
+  .section-header {
+    margin-bottom: 0;
+    h2 {
+      text-indent: 20px;
+    }
+  }
+  .flush {
+    
   }
 }
 

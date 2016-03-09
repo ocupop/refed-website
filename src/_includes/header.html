@@ -11,7 +11,7 @@
   <div class="container">
     <nav>
       <ul>
-        <li>
+        <li class="hide">
           <form id="search-form">
             <i class="icon-search"></i>
             <label class="sr">Search</label>
@@ -22,10 +22,9 @@
         <li class="follow">
           <a href="#">Follow</a>
           <ul>
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://twitter.com/refed_nowaste" target="_blank"><i class="icon-twitter"></i></a></li>
             <li><a href="#"><i class="icon-linkedin"></i></a></li>
-            <li><a href="#" class="newsletter-signup">Newsletter Signup</a></li>
+            <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="newsletter-signup">Newsletter Signup</a></li>
           </ul>
         </li>
         <li id="about-link"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>

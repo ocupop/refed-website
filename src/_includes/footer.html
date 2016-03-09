@@ -22,7 +22,7 @@
               <li><a href="{{ '/about#foundations-list' | prepend: site.baseurl }}">Foundations List</a></li>
             </ul>
           </li>
-          <li><a href="/resources">Resources</a></li>
+          <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
         </ul>
       </div>
     </div>
@@ -73,7 +73,8 @@
                 <a href="{{ '/solution' | prepend: site.baseurl }}">Solutions</a>
                 <ul>
                   {% for tab in site.data.tabs %}
-                  <li><a href="{{ '/solution?sort={{ tab.slug }}' | prepend: site.baseurl }}">{{ tab.title }}</a></li>
+                  {% capture link %}/solution?sort={{ tab.slug }}#cards{% endcapture %}
+                  <li><a href="{{ link | prepend: site.baseurl }}">{{ tab.title }}</a></li>
                   {% endfor %}
                 </ul>
               </li>
@@ -85,7 +86,7 @@
                 <a href="/stakeholder">Stakeholders</a>
                 <ul>
                   {% for stakeholder in site.stakeholders %}
-                  <li><a href="{{ stakeholder.url }}">{{ stakeholder.title }}</a></li>
+                  <li><a href="{{ stakeholder.url | prepend:site.baseurl }}">{{ stakeholder.title }}</a></li>
                   {% endfor %}
                 </ul>
               </li>
@@ -101,19 +102,6 @@
           <small>Join our mailing list.</small>
         </h3>
         <a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="button"><span>Sign Up</span></a>
-        <form class="hide">
-          <div class="form-inputs">
-            <label class="sr">First Name</label>
-            <input type="text" placeholder="First Name">
-            <label class="sr">Last Name</label>
-            <input type="text" placeholder="Last Name">
-            <label class="sr">Email</label>
-            <input type="text" placeholder="Email">
-            <label class="sr">Zipcode</label>
-            <input type="text" placeholder="Zip" class="zip">
-            <input type="submit" value="Submit" class="button">
-          </div>
-        </form>
       </div>
     </div>
   </div>
