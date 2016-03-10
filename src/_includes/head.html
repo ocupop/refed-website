@@ -9,11 +9,11 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <meta property="og:title" content="Website Title" />
-  <meta property="og:site_name" content="Website Name"/>
-  <meta property="og:url" content="http://domain_url.com" />
-  <meta property="og:description" content="Enter in short description" />
-  <meta property="og:image" content="path_to_image.png" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{% asset_path 'logo-meta.jpg' %}" />
 
   <!-- FONTS -->
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
