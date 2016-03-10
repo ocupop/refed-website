@@ -820,6 +820,9 @@ em {
     display: flex;
     align-items: center;
   }
+  svg {
+    max-width: 100%;
+  }
 }
 
 .break-50 {
