@@ -2,21 +2,18 @@
 	 viewBox="140 69.5 999.8 403.5" style="enable-background:new 140 69.5 999.8 403.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#555759;}
-	.st1{font-family:'TradeGothic-CondEighteen';}
 	.st2{font-size:20.7944px;}
 	.st3{fill:#88A65B;}
 	.st4{fill:#2A8175;}
 	.st5{fill:#225577;}
 	.st6{fill:none;stroke:#555759;stroke-width:0.382;stroke-miterlimit:10;}
 	.st7{fill:none;}
-	.st8{font-family:'ProximaNova-Regular';}
 	.st9{font-size:24px;}
-	.st10{font-family:'ProximaNova-Bold';}
 	.st11{font-size:32.6768px;}
 	.st12{font-size:20.1216px;}
 	.st13{display:none;}
 </style>
-<g id="bottom">
+<g id="graph-financing-group">
 	<g>
 		<g>
 			<g>
@@ -86,19 +83,5 @@
 			<text transform="matrix(1 0 0 1 343.517 461.23)" class="st0 st8 st12">($B)</text>
 		</g>
 	</g>
-</g>
-<g id="pie_layer">
-</g>
-<g id="Pie_Layer_2" class="st13">
-</g>
-<g id="meals_saved" class="st13">
-</g>
-<g id="consumer_ed_hover" class="st13">
-</g>
-<g id="pop_up" class="st13">
-</g>
-<g id="Layer_2">
-</g>
-<g id="Layer_8">
 </g>
 </svg>
