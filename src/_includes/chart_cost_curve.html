@@ -144,13 +144,16 @@
 
     $('#cost-curve .solution').popover({
         placement: 'auto right',
-        container: '#cost-curve',
+        container: '#chart',
         trigger: 'click',
         template: t
     });
 
     $('#cost-curve .solution').on('inserted.bs.popover', function () {
       var $el = $(this);
+      $.scrollTo('#chart', {
+        offset: { top: -80 }
+      })
       // replace all the stats
       $("#cost-curve .popover").each(function() {
         var filter = $('.sort.active').attr('data-sort');
@@ -163,7 +166,7 @@
         $(this).find('.stat.'+filter+' span').text($el.attr('data-'+filter));
         $(this).find('.button').attr('href', $el.attr('data-url')).addClass($el.attr('data-class'));
         $(this).find('.summary').text($el.attr('data-summary'));
-        $(this).find('.title').text($el.attr('data-title'));
+        $(this).find('.popover-title').text($el.attr('data-title'));
 
         $(this).find('.close').on('click', function() {
           $('#cost-curve .solution').popover('hide');

@@ -1,7 +1,7 @@
 var t = '';
 t += '<div id="tip" class="popover tip" role="tooltip">';
 t += '<div class="content"><button type="button" class="close"><span aria-hidden="true">&times;</span></button>';
-t += '<h3 class="title">Solution Title</h3>';
+t += '<h3 class="popover-title">Solution Title</h3>';
 t += '<p><em class="type">Prevention Solution</em></p>';
 t += '<p class="stat economic-value-per-ton">';
 t += '<strong>$<span>XXX</span> </strong>';
