@@ -20,6 +20,14 @@
 
 
 $(document).on('ready', function() {
+  if(urlParams["thanks"]) {
+    $("#thanks .lead").text(urlParams["thanks"]);
+    $("#thanks").fadeIn(500);
+
+    setTimeout(function() {
+      $('#thanks').fadeOut('slow');
+    }, 1500);
+  }
   $(".sticky").stickit({
     // scope: StickScope.Parent,
     top: 50
