@@ -1,4 +1,3 @@
-//= require vendor/flexboxgrid.min.css
 //= require vendor/animate.css
 //= require bootstrap-tour/build/css/bootstrap-tour.min.css
 
@@ -12,6 +11,8 @@
 @import "_popover";
 @import "_charts.scss";
 @import "chartist/dist/scss/chartist.scss";
+
+//= require vendor/flexboxgrid.min.css
 
 
 /* -----------------------------------------
@@ -311,6 +312,11 @@ em {
     line-height: 38px;
     background-color: $recovery-color;
   }
+  .socialnav {
+    a {
+      padding: 0;
+    }
+  }
 }
 
 // Navigation
@@ -532,6 +538,8 @@ em {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
+    height: 150px;
+    overflow: hidden;
     small {
       font-size: 18px;
       font-weight: 200;
@@ -575,6 +583,10 @@ em {
     line-height: 1.5em;
     li {
       margin-bottom: 2px;
+      margin-top: 0;
+      &:first-child {
+        margin-top: 0;
+      }
       a {
         text-transform: uppercase;
         color: $cream-light;
@@ -620,6 +632,7 @@ em {
     }
     [class^="col-"] {
       padding: 0;
+      height: 400px;
       .content {
          padding: $content-padding;
          padding-bottom: 50px;
@@ -746,6 +759,20 @@ em {
   }
 }
 
+#thanks {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  img {
+    width: 250px;
+    margin: 0 auto; 
+  }
+}
 
 /* -----------------------------------------
    Utility Classes
@@ -828,36 +855,28 @@ em {
   max-width: $live-content-width;
   padding: 0;
 }
-.row {
-  max-width: $live-content-width;
-  margin: auto;
-  [class^="col-"] {
-    .content {
-      padding: $content-padding $content-padding*2;
-    }
-  }
-  [class^="col-"]:first-child {
-    .content {
-      padding-left: 0;
-    }
-  }
-  [class^="col-"]:last-child {
-    .content {
-      padding-right: 0;
-    }
+.page-heading {
+  padding: 0 20px;
+  h1, h2, h3 {
+    margin-bottom: 0;
   }
 }
 .flush {
   padding: 0;
   .row {
-    max-width: none;
+    // max-width: none;
+    margin: 0;
     .content {
       max-width: floor(($live-content-width / 2 - 40));
+    }
+    .col {
+      width: 50%;
+      float: left;
     }
     [class^="col-"] {
       padding: 30px 0;
       .content {
-         padding: $content-padding $content-padding*4;
+         // padding: $content-padding $content-padding*4;
       }
     }
     [class^="col-"]:first-child {
@@ -1465,7 +1484,7 @@ section {
       position: absolute;
       bottom: 0px;
       left: 0px;
-      width: 300px;
+      width: 400px;
       height: 28px;
       line-height: 28px;
       font-size: 15px;
@@ -1536,6 +1555,9 @@ section {
     }
   }
 }
+#d3-donut {
+  text-align: center;
+}
 
 .axis {
   font-size: 14px;
@@ -1568,7 +1590,7 @@ section {
       position: absolute;
       bottom: 0px;
       left: 0px;
-      width: 300px;
+      width: 400px;
       height: 28px;
       line-height: 28px;
       font-size: 15px;
@@ -1750,6 +1772,7 @@ section {
 }
 
 #supply-chain {
+  padding-bottom: 0;
   ul {
     list-style: none;
     padding: 0;
@@ -1785,10 +1808,11 @@ section {
   }
   .chain {
     width: 190px;
+    height: 635px;
     float: left;
     background-color: #ece6da;
     margin-top: -50px;
-    margin-bottom:  50px;
+    margin-bottom: 0px;
   }
   .solutions {
     padding-top: 15px;
@@ -1996,10 +2020,14 @@ section {
 #solution-highlights {
   display: flex;
   padding: 30px 0;
+  .content {
+    padding: 0 10px;
+  }
   h3 {
     display: inline-block;
     margin-top: 0;
     small {
+      font-size: 13px;
       font-weight: 100;
     }
   }
@@ -2080,11 +2108,11 @@ section {
 }
 #center-message {
   position: absolute;
-  width: 180px;
-  height: 120px;
+  width: 420px;
+  height: 420px;
   top: 50%;
   left: 50%;
-  margin-left: -105px;
+  margin-left: -210px;
   margin-top: -60px;
   pointer-events: none;
   h3 {
@@ -2137,6 +2165,7 @@ section {
 #video {
   background-image: url("{% asset_path 'bg-grapes.jpg' %}");
   background-size: cover;
+  height: 455px;
   .content {
     padding: 170px $content-padding*4;
     padding-bottom: 0;
@@ -2277,6 +2306,9 @@ section {
   }
 
 }
+#profit-potential {
+  position: relative;
+}
 /* -----------------------------------------
    Page Specific
 ----------------------------------------- */
@@ -2309,7 +2341,10 @@ body.action {
 body.solutions {
   .hero {
     min-height: 0;
-    height: 280px;
+    height: 225px;
+    h1 {
+      font-size: 25px;
+    }
   }
 }
 
@@ -2519,6 +2554,16 @@ body.resources {
       }
     }
   }
+  #footernav {
+    .col3 {
+      column-count: 1;
+    }
+    ul.report-sitemap, ul.primary-sitemap {
+      ul {
+        display: none;
+      }
+    }
+  }
   #returns {
     li {
       margin: auto;
@@ -2536,29 +2581,18 @@ body.resources {
       }
     }
   }
+  #unlocking-food-value {
+    .content {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+  }
   .hero {
     // margin-top: 50px;
   }
   .card {
     width: 49%;
     max-width: none;
-  }
-  .flush {
-    .row {
-      [class^="col-"] {
-        .content {
-          margin: 10px !important;
-          padding: 20px;
-        }
-      }
-    }
-  }
-  .row {
-    [class^="col-"] {
-      .content {
-        padding: 20px !important;
-      }
-    }
   }
   body.food-waste {
     #video {
@@ -2583,6 +2617,7 @@ body.resources {
 }
 
 @media all and (max-width: 650px) {
+
   #tournav {
     ul {
       li {
@@ -2592,18 +2627,38 @@ body.resources {
     }
   }
   .card {
-    width: auto;
+    width: 100%;
     max-width: none;
     margin: 10px;
     header {
       position: absolute;
       bottom: 35px;
-      right: 0;
+      right: 5px;
       height: 50px;
       width: 150px;
+      text-align: right;
       img {
         display: none;
       }
+      i {
+        font-size: 30px;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  #stakeholder-icons {
+    display: none;
+  }
+  .stakeholder-list,
+  #stakeholder-list {
+    svg {
+      width: 100px;
+    }
+  }
+  #solution-hightlights {
+    .content {
+      padding: 0 20px;
     }
   }
   #impact-title {
@@ -2626,22 +2681,26 @@ body.resources {
       }
     }
   }
-  #chart-reduction #reduction-timeline {
-    margin-left: -100px;
+  #chart-reduction {
+    display: none;
+    #reduction-timeline {
+      margin-left: -100px;
+    }
   }
 
   #chartnav {
     margin-bottom: 10px;
-    padding: 25px;
-    margin-left: -35px;
-    margin-right: -35px;
-    background-color: $button-color;
-    color: #ffffff;
+    // padding: 25px;
+    // margin-left: -35px;
+    // margin-right: -35px;
+
     &.stick {
       width: 100% !important;
       left: 0 !important;
       margin: 0;
       padding: 15px 25px;
+      background-color: $button-color;
+      color: #ffffff;
       @include transition();
       p {
         display: block;
@@ -2674,6 +2733,28 @@ body.resources {
     }
   }
 
+  #education-section,
+  #financing-section,
+  #innovation-section,
+  #policy-section {
+    svg {
+      width: 100px;
+    }
+  }
+  body.action .icon-grid svg {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .popover.left {
+    left: 0 !important;
+    top: 0!important;
+    margin-left: 10px;
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
   .tabs {
     display: block;
     .tab {
@@ -2681,7 +2762,11 @@ body.resources {
     }
   }
 
-  [class^="break-"] {
+  .break-50,
+  .break-60,
+  .break-70,
+  .break-80,
+  .break-90, {
     width: 100% !important;
   }
 
@@ -2695,11 +2780,123 @@ body.resources {
   .section-header {
     margin-bottom: 0;
     h2 {
-      text-indent: 20px;
+      padding-left: 20px;
     }
   }
   .flush {
     
+  }
+  body.food-waste {
+    .hero {
+      height: 300px;
+    }
+  }
+  body.stakeholders {
+    .hero .hero-content {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  .hero {
+    height: 250px;
+    min-height: 0;
+    .hero-content {
+      h1 {
+        font-size: 25px;
+      }      
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  #page-footer {
+    .brand {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+  #footernav .row [class^="col-"] {
+    height: auto !important;
+    .content {
+      padding: 40px;
+      margin: 0;
+    }
+    &:first-child {
+      .content {
+        margin: 0;
+      }
+    }
+    &:last-child {
+      .content {
+        margin: 0;
+      }
+    }
+  }
+  #subnav {
+    a {
+      height: 120px;
+      font-size: 15px;
+      small {
+        font-size: 13px;
+      }
+    }
+    hr {
+      width: auto;
+    }
+  }
+  #profit-chart.vertical .title {
+    font-size: 13px;
+    line-height: 21px;
+    height: 21px;
+  }
+  #spread-the-word ul li { font-size: 13px; }
+  .button {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  #footernav .row [class^="col-"] {
+    height: 280px;
+  }
+  #video {
+    height: 280px;
+  }
+  .flush {
+    padding: 0;
+    .row {
+      max-width: none;
+      margin: 0;
+      .content {
+        max-width: none;
+      }
+      .col {
+        width: 50%;
+        float: left;
+      }
+      [class^="col-"] {
+        padding: 0;
+        .content {
+           padding: $content-padding;
+        }
+      }
+      [class^="col-"]:first-child {
+        .content {
+          margin: 0;
+          padding: $content-padding;
+        }
+      }
+      [class^="col-"]:last-child {
+        .content {
+          margin: 0;
+          padding: $content-padding;
+        }
+      }
+    }
+  }
+  #footernav {
+
   }
 }
 

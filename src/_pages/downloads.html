@@ -63,7 +63,7 @@ slug: downloads
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
-          <div class="text-right">
+          <div class="content text-right">
             <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
           </div>
         </div>
@@ -91,6 +91,9 @@ slug: downloads
     if (urlParams["signedup"] == 'true') {
       $.cookie('signedup', 'true');
       $('#thanks').show();
+      setTimeout(function() {
+        $('#thanks').fadeOut('slow');
+      }, 1500);
       $('.chapter').find('.message').fadeOut().end()
                     .find('.button').removeClass('disabled');
       return;

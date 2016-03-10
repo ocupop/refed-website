@@ -5,15 +5,22 @@ layout: page
   <div class="container">
     <div class="row middle-xs around-xs">
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <h3><small>Diversion Potential:</small><br>{{ page.impact.diversion-potential | add_commas }}K Tons</h3>
+        <div class="content">
+          <h3><small>Diversion Potential:</small><br>{{ page.impact.diversion-potential | add_commas }}K Tons</h3>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <h3><small>Economic Value Per Ton:</small><br>${{ page.impact.economic-value-per-ton | add_commas }}</h3>
+        <div class="content">
+          <h3><small>Economic Value Per Ton:</small><br>${{ page.impact.economic-value-per-ton | add_commas }}</h3>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <h3><small>GHGs Reduced:</small><br>{{ page.impact.emissions-reduced | add_commas }}K Tons</h3>
+        <div class="content">
+          <h3><small>GHGs Reduced:</small><br>{{ page.impact.emissions-reduced | add_commas }}K Tons</h3>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="content">
         {% case page.type %}
           {% when 'prevention' %}
           <h3><small>Water Saved:</small><br>{{ page.impact.water-conservation | add_commas }}B Gallons</h3>
@@ -25,6 +32,7 @@ layout: page
           <h3><small>Meals Recovered:</small><br>{{ page.impact.meals-recovered | add_commas }}M Meals</h3>
 
         {% endcase %}
+        </div>
       </div>
     </div>
   </div>
@@ -49,10 +57,10 @@ layout: page
     </div>
   </div>
 </section>
-<section id="solution-challenges" class="alternate">
+<section id="solution-challenges">
   <div class="container">
     <div class="row middle-xs">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <h2>Challenges</h2>
           <ul>
@@ -68,7 +76,7 @@ layout: page
 <section id="stakeholder-actions">
   <div class="container">
     <div class="row middle-xs">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <h2>Stakeholder Actions</h2>
           <div class="col2">
@@ -83,10 +91,10 @@ layout: page
     </div>
   </div>
 </section>
-<section id="solution-examples" class="alternate">
+<section id="solution-examples">
   <div class="container">
     <div class="row middle-xs">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <h2>Examples &amp; Resources</h2>
           <div class="col2">
@@ -119,22 +127,28 @@ layout: page
 <section id="connected-solutions">
   <header class="section-header">
     <div class="container">
-      <h2>Related Solutions</h2>
+      <div class="content">
+        <h2>Related Solutions</h2>
+      </div>
     </div>
   </header>
   <div class="container">
     <div class="grid row">
-      {% for solution in site.solutions %}
-          {% if page.connected-solutions contains solution.slug %}
-            {% include card.html %}
-          {% endif %}
-      {% endfor %}
-      <div class="card link-card">
-        <header>
-          <a href="{{ '/solution' | prepend: site.baseurl }}" class="button">View Full List&nbsp;&gt;</a>
-        </header>
+      <div class="col-xs-12">
         <div class="content">
-          <h4 class="title">View All Solutions</h4>
+          {% for solution in site.solutions %}
+              {% if page.connected-solutions contains solution.slug %}
+                {% include card.html %}
+              {% endif %}
+          {% endfor %}
+          <div class="card link-card hidden-xs">
+            <header>
+              <a href="{{ '/solution' | prepend: site.baseurl }}" class="button">View Full List&nbsp;&gt;</a>
+            </header>
+            <div class="content">
+              <h4 class="title">View All Solutions</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>

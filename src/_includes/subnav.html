@@ -2,7 +2,7 @@
 <section id="subnav" class="flush">
   <div class="row">
     {% if page.prevpage.url %}
-    <a href="{{ page.prevpage.url | prepend: site.baseurl }}" class="col-xs">
+    <a href="{{ page.prevpage.url | prepend: site.baseurl }}" class="col">
       <div class="content">
         <i class="icon-prev"></i>
         <small>Previous</small>
@@ -11,10 +11,10 @@
       </div>
     </a>
     {% else %}
-    <a class="col-xs"></a>
+    <a class="col"></a>
     {% endif %}
     {% if page.nextpage.url %}
-    <a href="{{ page.nextpage.url | prepend: site.baseurl }}" class="col-xs">
+    <a href="{{ page.nextpage.url | prepend: site.baseurl }}" class="col">
       <div class="content">
         <small>Next</small>
         <hr>
@@ -23,7 +23,7 @@
       </div>
     </a>
     {% else %}
-    <a class="col-xs"></a>
+    <a class="col"></a>
     {% endif %}
   </div>
 </section>
