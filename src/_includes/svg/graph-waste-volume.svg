@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="133 176.1 986.8 220" style="enable-background:new 133 176.1 986.8 220;" xml:space="preserve">
 <style type="text/css">
@@ -30,7 +28,7 @@
 	.st24{fill:#CF9C61;}
 	.st25{fill:#C28F5B;}
 	.st26{fill:#A62C31;}
-	.st27{font-family:'Gotham-Black';}
+	.st27{}
 	.st28{font-size:21.0079px;}
 	.st29{display:none;}
 </style>
@@ -170,17 +168,5 @@
 	<text transform="matrix(1 0 0 1 305.6745 384.5137)" class="st22 st27 st28">2%</text>
 	<text transform="matrix(1 0 0 1 484.6472 384.5142)" class="st16 st27 st28">40%</text>
 	<text transform="matrix(1 0 0 1 884.8112 384.5142)" class="st0 st27 st28">43%</text>
-</g>
-<g id="Farming" class="st29">
-</g>
-<g id="Manufacturing" class="st29">
-</g>
-<g id="Waste_diverted">
-</g>
-<g id="jobs">
-</g>
-<g id="consumer_ed_hover">
-</g>
-<g id="pop_up">
 </g>
 </svg>
