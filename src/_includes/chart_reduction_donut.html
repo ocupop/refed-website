@@ -63,9 +63,6 @@
       pointer-events: all;
     }
 
-    path {
-      stroke: #fff;
-    }
   </style>
   <script src="http://d3js.org/d3.v3.js"></script>
   <script>
@@ -74,17 +71,6 @@
 
     var margin = {top: 210, right: 210, bottom: 210, left: 210},
         radius = Math.min(margin.top, margin.right, margin.bottom, margin.left);
-
-    // var hue = d3.scale.category10();
-    var hue = d3.scale.ordinal()
-      .domain(["prevention", "recovery", "recycle"])
-      .range(["#225577", "#88A65B", "#2A8175"]);
-
-    var luminance = d3.scale.sqrt()
-        .domain([0, 1e6])
-        .clamp(true)
-        .range([90, 10]);
-
 
 
     var svg = d3.select("#d3-donut").append("svg")

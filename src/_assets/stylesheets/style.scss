@@ -193,6 +193,7 @@ form {
 }
 input, select {
   line-height: $base-line-height * 1.5;
+  height: $base-line-height * 1.5;
   text-indent: 15px;
   width: 100%;
   margin: 4px 0;
@@ -575,6 +576,7 @@ em {
 #footernav {
   font-weight: 100;
   color: $cream-light;
+  margin: 0;
   ul {
     font-size: 16px;
     font-weight: 500;
@@ -1450,6 +1452,7 @@ section {
   }
 }
 #cost-curve {
+  position: relative;
   .tabs {
     .profitability {
       display: none;
@@ -1463,6 +1466,7 @@ section {
   }
 }
 #chart {
+  position: relative;
   &.vertical {
     display:table;
     table-layout: fixed;
@@ -1681,11 +1685,6 @@ section {
   }
 }
 
-
-
-
-
-
 .ct-series-a,
 .ct-series-b,
 .ct-series-c,
@@ -1698,39 +1697,6 @@ section {
     stroke-width: 25px;
   }
 }
-
-// .ct-series-c,
-// .ct-series-d,
-// .ct-series-e,
-// .ct-series-f { display: none; }
-
-
-// .ct-series-a {
-//   overflow: hidden;
-//   .ct-bar {
-//     @include animation(slideUp, 0.8s, 0.5s);
-//   }
-// }
-
-// .ct-chart-bar .ct-label.ct-horizontal.ct-end {
-//   display: block;
-//   overflow: visible;
-//   white-space: nowrap;
-//   transform: rotate(-90deg);
-//   text-align: left;
-//   font-size: 13px;
-//   line-height: 25px;
-//   text-indent: 10px;
-//   @for $i from 1 through 28 {
-//     &:nth-child(#{$i}) { 
-//       @include animation(fadeIn, 2.8s, 0.2s * $i);
-//     }
-//   }
-// }
-
-// .ct-grid.ct-horizontal {
-//   display: none;
-// }
 
 
 /* -----------------------------------------
@@ -1862,7 +1828,7 @@ section {
 #related-solutions {
   display: none;
   position: absolute;
-  height: 100%;
+  height: 635px;
   width: 100%;
   top: 0;
   left: 0;
