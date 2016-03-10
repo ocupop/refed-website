@@ -19,6 +19,15 @@
 //= require _tour
 
 
+$(window).on('load', function (e){
+  if (window.location.hash) {
+    var h = window.location.hash.slice(0,-1) 
+    window.console.log(h);
+    $.scrollTo($(h));
+  }
+});
+
+
 $(document).on('ready', function() {
 
   if(urlParams["thanks"]) {

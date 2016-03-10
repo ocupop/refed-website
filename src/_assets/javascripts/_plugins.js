@@ -20,7 +20,7 @@ if (!Modernizr.input.placeholder) {
       input.addClass('placeholder');
       input.val(input.attr('placeholder'));
     }
-  }).blur();
+  });
   
   $('[placeholder]').parents('form').submit(function() {
     $(this).find('[placeholder]').each(function() {
@@ -30,6 +30,10 @@ if (!Modernizr.input.placeholder) {
       }
     })
   });
+
+  $('[placeholder]').each(function() {
+    $(this).trigger('blur');
+  })
 }
 
 
@@ -38,6 +42,15 @@ String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };
+
+$.extend($.scrollTo.defaults, {
+  axis: 'y',
+  duration: 800,
+  offset: {
+    top: -100
+  }
+});
+
 
 jQuery(document).ready(function($) {
   // Update the current getFullYear
