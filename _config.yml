@@ -49,6 +49,7 @@ exclude: ['vendor', '.asset-cache']
 
 gems:
 - jekyll-assets
+# - jekyll-lunr-js-search
 
 
 assets:

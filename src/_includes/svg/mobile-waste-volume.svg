@@ -135,9 +135,9 @@
 		<polygon fill="#A62C31" points="120.124,83.004 120.124,101.143 123.537,102.362 122.247,83.004 		"/>
 	</g>
 	<text transform="matrix(1 0 0 1 148.8535 57.0479)" fill="#922A46" font-size="24px">16%</text>
-	<text transform="matrix(1 0 0 1 148.8537 115.5186)" fill="#D13239" font-size="24px">1%</text>
-	<text transform="matrix(1 0 0 1 148.8535 201.8726)" fill="#D3663B" font-size="24px">41%</text>
-	<text transform="matrix(1 0 0 1 148.8537 360.7012)" fill="#E9AE6C" font-size="24px">42%</text>
+	<text transform="matrix(1 0 0 1 148.8537 115.5186)" fill="#D13239" font-size="24px">2%</text>
+	<text transform="matrix(1 0 0 1 148.8535 201.8726)" fill="#D3663B" font-size="24px">40%</text>
+	<text transform="matrix(1 0 0 1 148.8537 360.7012)" fill="#E9AE6C" font-size="24px">43%</text>
 	<g>
 		<text transform="matrix(1 0 0 1 148.8535 33.0996)" fill="#555759" font-size="15px">FARMS</text>
 	</g>

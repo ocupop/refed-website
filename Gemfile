@@ -10,5 +10,7 @@ gem 'sass'
 gem 'uglifier'
 gem 'autoprefixer-rails'
 
+# gem 'jekyll-lunr-js-search'
+
 
 # gem 'jekyll-press'

@@ -59,7 +59,7 @@ $(document).on('ready', function() {
   // });
 
   // TOPNAV SEARCH
-  $( "#search-form").on('click', function () {
+  $( "#site-search-form").on('click', function () {
     $(this).addClass('active');
     $submit = $(this).find('input[type="submit"]');
   });
