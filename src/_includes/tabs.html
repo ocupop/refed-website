@@ -1,5 +1,5 @@
 <!-- <h3 id="impact-title" data-toggle="collapse" data-target="#impact-tabs"></h3> -->
-<div id="impact-tabs">
+<div class="impact-tabs">
   <ul class="tabs">
     {% for tab in site.data.tabs %}
     <li class="tab sort {{ tab.slug }}" 
@@ -16,4 +16,4 @@
     {% endfor %}
   </ul>
 </div>
-<p id="impact-summary">{{ site.data.tabs.first.description }}</p>
+<p class="impact-summary">{{ site.data.tabs.first.description }}</p>

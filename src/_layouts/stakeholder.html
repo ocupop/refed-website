@@ -41,16 +41,12 @@ layout: page
     </div>
   </header>
   <div class="container">
-    <div id="solution-cards" class="grid row">
-      <div class="col-xs-12">
-        <div class="content">
-          {% for solution in site.solutions %}
-              {% if page.key-solutions contains solution.slug %}
-                {% include card.html %}
-              {% endif %}
-          {% endfor %}
-        </div>
-      </div>
+    <div id="solution-cards" class="grid row start-xs">
+      {% for solution in site.solutions %}
+          {% if page.key-solutions contains solution.slug %}
+            {% include card.html %}
+          {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

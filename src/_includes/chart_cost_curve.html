@@ -5,6 +5,11 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="content">
+          {% if include.iframe %}
+          <p class="break-50 pull-right">
+            <a href="http://www.refed.com"><img src="{% asset_path 'logo-tagline.svg' %}" class="img-responsive"></a>
+          </p>
+          {% endif %}
           <h2>27 SOLUTIONS TO FOOD WASTE</h2>
           <p>The benefits of each of these solutions outweigh the costs.</p>
           <div id="chartnav" class="sticky">

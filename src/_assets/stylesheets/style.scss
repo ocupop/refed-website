@@ -565,6 +565,9 @@ em {
         right: 0;
       }
     }
+    .content {
+      margin: auto;
+    }
   }
   hr {
     width: 50%;
@@ -1396,7 +1399,8 @@ section {
     width: 100%;
     margin: 0;
     border-radius: 20px;
-    line-height: 30px;
+    line-height: 32px;
+    height: 32px;
     &:focus {
       outline: none;
     }
@@ -2103,7 +2107,7 @@ section {
   }
 }
 
-#impact-summary {
+.impact-summary {
   margin-top: 30px;
 }
 #impact-title {
@@ -2266,7 +2270,7 @@ section {
       float: right;
       width: 48%;
       min-width: 0;
-      height: 38px;
+      height: 48px;
       line-height: 40px;
       margin: 3px 0 0 0;
       padding: 0;
@@ -2694,10 +2698,10 @@ body.resources {
         text-align: center;
       }
     }
-    #impact-summary {
+    .impact-summary {
       display: none;
     }
-    #impact-tabs {
+    .impact-tabs {
       display:none;
     }
   }
