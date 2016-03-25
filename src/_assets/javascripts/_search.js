@@ -12,7 +12,7 @@ jQuery(function() {
   });
 
   // Download the data from the JSON file we generated
-  window.data = $.getJSON("{{ '/search.json' | prepend: site.baseurl }}");
+  window.data = $.getJSON("{{ '/data/search.json' | prepend: site.baseurl }}");
 
   // Wait for the data to load and add it to lunr
   window.data.then(function(loaded_data){
@@ -46,10 +46,16 @@ jQuery(function() {
           var item = loaded_data[result.ref];
 
           // Build a snippet of HTML for this result
-          var appendString = '<li><a href="' + item.url + '">' + item.title + '</a></li>';
+          var appendString = '<li>';
+              appendString += '<h2><a href="' + item.url + '">'+ item.title +'</a></h2>';
+              appendString += '<p><em>'+ item.url +'</em></p>';
+              appendString += '<p>'+ item.description +'</p>';
+              appendString += '</li>';
 
           // Add it to the results
           $search_results.append(appendString);
+          $("#site-search-results").fadeIn();
+          $("#page-content").hide();
         });
       } else {
         $search_results.html('<li>No results found</li>');

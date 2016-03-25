@@ -12,11 +12,13 @@
 //= require vendor/jquery.cookie.js
 //= require jquery-stickit/build/jquery.stickit.min.js
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
+//= require vendor/lunr.min.js
 
 //= require _plugins
 //= require _charts
 
 //= require _tour
+//= require _search
 
 
 $(window).on('load', function (e){

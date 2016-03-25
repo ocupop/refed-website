@@ -5,17 +5,18 @@ layout: null
   {% for stakeholder in site.stakeholders %}
     "{{ stakeholder.slug }}": {
       "title": "{{ stakeholder.title | xml_escape }}",
-      "url": " {{ stakeholder.url | xml_escape }}",
-      "key-solutions": "{{ stakeholder.key-solutions }}"
+      "url": " {{ stakeholder.url | xml_escape | prepend: site.url }}",
+      "key-solutions": "{{ stakeholder.key-solutions }}",
+      "description": "{{ stakeholder.summary }}"
     },
   {% endfor %}
   {% for solution in site.solutions %}
     "{{ solution.slug }}": {
       "title": "{{ solution.title | xml_escape }}",
-      "url": "{{ solution.url | xml_escape }}",
+      "url": "{{ solution.url | xml_escape | prepend: site.url }}",
       "type": "{{ solution.type }}",
       "supply-chain": "{{ solution.supply-chain }}",
-      "description": "{{ solution.description }}"
+      "description": "{{ solution.definition }}"
     }
     {% unless forloop.last %},{% endunless %}
   {% endfor %}
