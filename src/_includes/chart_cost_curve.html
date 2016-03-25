@@ -5,11 +5,6 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="content">
-          {% if include.iframe == true %}
-          <p class="break-50 pull-right">
-            <a href="http://www.refed.com" class="brand"><img src="{% asset_path 'logo-wordmark.svg' %}" class="pull-right" style="width: 210px;"></a>
-          </p>
-          {% endif %}
           <h2>27 SOLUTIONS TO FOOD WASTE</h2>
           <p>The benefits of each of these solutions outweigh the costs.</p>
           <div id="chartnav" class="sticky">
@@ -47,6 +42,7 @@
             </li>
             {% endfor %}
           </ul>
+          {% include embed.html %}
           <p class="message footer hide">Scroll for more solutions. <i class="icon"></i></p>
         </div>
       </div>

@@ -96,6 +96,30 @@ nav {
     }
   }
 }
+menu {
+  padding: 0;
+  .button {
+    background-color: $cream;
+    color: $text-color;
+    height: 32px;
+    line-height: 32px;
+    width: auto;
+    display: inline-block;
+    font-size: 13px;
+    font-family: $font-family-condensed;
+    opacity: 0.5;
+    @include transition();
+    &:hover,
+    .active {
+      opacity: 1;
+      background-color: $cream;
+      color: $text-color;
+    }
+    i {
+      font-size: 13px;
+    }
+  }
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0.5em;
@@ -1460,6 +1484,68 @@ section {
 }
 
 /* -----------------------------------------
+   Embed
+----------------------------------------- */
+#instructions {
+  display: none;
+  background-color: $cream;
+  @include transition();
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      margin: 0;
+      a {
+        padding: 0 25px 5px 0px;
+        color: $text-color;
+        text-transform: uppercase;
+        &:hover {}
+      }
+      &.active {
+        a {
+          text-decoration: underline;
+          &:hover {}
+        }
+      }
+    }
+  }
+}
+#embed-instructions {
+  input {
+    text-transform: none;
+  }
+}
+#share-instructions {
+  .links {
+    width: 20%;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    background-color: $cream-light;
+    text-align: center;
+    a {
+      display: inline-block;
+      color: $text-color;
+      padding-right: 5px;
+      font-size: 32px;
+      i {
+        font-size: 32px;
+        line-height: 48px;
+        height: 48px;
+        width: 32px;
+      }
+    }
+  }
+  input {
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+    vertical-align: top;
+    text-transform: none;
+  }
+}
+
+/* -----------------------------------------
    Charts
 ----------------------------------------- */
 .legend {
@@ -2383,7 +2469,7 @@ body.resources {
   }
 }
 /* -----------------------------------------
-   Modal / Joyride
+   Modal
 ----------------------------------------- */
 .modal {
   .modal-content {
