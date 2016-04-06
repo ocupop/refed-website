@@ -36,7 +36,8 @@
                 data-water-conservation="{{ solution.impact.water-conservation  | add_commas}}"
                 data-jobs-created="{{ solution.impact.jobs-created | add_commas }}"
                 data-profit-potential="{{ solution.impact.profit-potential | add_commas}}"
-                data-title="{{ solution.title }}">
+                data-title="{{ solution.title }}"
+                onClick="ga('send', 'event', 'solution', 'cost-curve', '{{ solution.title }}');">
               <span class="title">{{ solution.title }}</span>
               <span class="progress" title="{{ solution.title }}"></span>
             </li>
@@ -49,7 +50,7 @@
     </div>
   </div>
   <script type="text/javascript">
-    var mq = window.matchMedia("screen and (max-width: 849px)");
+    var mq = window.matchMedia("screen and (max-width: 600px)");
 
     function drawChart() {
       $('#chart').hide();

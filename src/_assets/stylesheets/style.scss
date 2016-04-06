@@ -12,6 +12,8 @@
 @import "_charts.scss";
 @import "chartist/dist/scss/chartist.scss";
 
+@import "_cost_curve.scss";
+
 //= require vendor/flexboxgrid.min.css
 
 
@@ -1275,84 +1277,6 @@ a.external {
   color: rgba(0,0,0,0.5);
 }
 
-/* -----------------------------------------
-   Icons
------------------------------------------ */
-.socialnav {
-  a {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 20px 0;
-    color: darken($cream, 5%);
-    &:hover {
-      color: $gray;
-    }
-    i {
-
-    }
-  }
-}
-
-section {
-  .socialnav {
-    a {
-      color: $button-color;
-    }
-  }
-}
-
-.icon-circle {
-  border-radius: 50%;
-}
-.icon-cloud {
-  color: #e9ae6c;
-}
-.icon-drop {
-  color: #9bcac0;
-}
-.icon-tree {
-  color: #7aa883;
-}
-.icon-trash {
-  color: #922947;
-}
-
-
-// Stakeholders
-.icon-farmers {
-  background-image: url("{% asset_path stakeholders/farmers.svg %}");
-}
-.icon-federal-government {
-  background-image: url("{% asset_path stakeholders/federal-government.svg %}");
-}
-.icon-foundations {
-  background-image: url("{% asset_path stakeholders/foundations.svg %}");
-}
-.icon-investors {
-  background-image: url("{% asset_path stakeholders/investors.svg %}");
-}
-.icon-manufacturers {
-  background-image: url("{% asset_path stakeholders/manufacturers.svg %}");
-}
-.icon-restaurants-and-foodservice-providers {
-  background-image: url("{% asset_path stakeholders/restaurants-and-foodservice-providers.svg %}");
-}
-.icon-retailers {
-  background-image: url("{% asset_path stakeholders/retailers.svg %}");
-}
-.icon-state-and-local-governments {
-  background-image: url("{% asset_path stakeholders/state-and-local-governments.svg %}");
-}
-.icon-nonprofits-and-academia {
-  background-image: url("{% asset_path stakeholders/nonprofits-and-academia.svg %}");
-}
-.icon-consumers {
-  background-image: url("{% asset_path stakeholders/consumers.svg %}");
-}
-.icon-entrepreneurs {
-  background-image: url("{% asset_path stakeholders/entrepreneurs.svg %}");
-}
-
 
 /* -----------------------------------------
    Search
@@ -1573,126 +1497,9 @@ section {
     }
   }
 }
-#cost-curve {
-  position: relative;
-  .tabs {
-    .profitability {
-      display: none;
-    }
-    .scalability {
-      display: none;
-    }
-  }
-  .message {
-    display: none;
-  }
-}
-#chart {
-  position: relative;
-  &.vertical {
-    display:table;
-    table-layout: fixed;
-    width:100%;
-    // max-width:700px;
-    height:400px;
-    margin:0 auto;
-    padding: 0;
-    padding-top: 20px;
-    
-    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
-    background-size: 100% 65px;
-    background-position: left bottom;
 
-    li{
-      position:relative;
-      display:table-cell;
-      vertical-align:bottom;
-      height:100%;
-    }
-    .title {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      width: 400px;
-      height: 28px;
-      line-height: 28px;
-      font-size: 15px;
-      font-family: $font-family-condensed;
-      text-transform: uppercase;
-      // background-color: rgba(0,0,0,0.1);
-      transform-origin: 11px 8px;
-      transform: rotate(-90deg);
-    }
-    .progress {
-      margin:0 4px;
-      display: block;
-      background: rgba($button-color, .75);
-      @include transition(1s);
-      // &:before{
-      //   position:absolute;
-      //   left:0;right:0;top:100%;
-      //   padding:5px 1em 0;
-      //   display:block;
-      //   text-align:center;
-      //   content:attr(title);
-      //   word-wrap: break-word;
-      // }
-      
-    }
-  }
-
-  &.horizontal {
-    display: block;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    li {
-      display: block;
-      position: relative;
-      margin: 4px 0;
-      width: 100%;
-      height: 28px;
-      line-height: 28px;
-      background-color: darken($cream-light, 2%);
-      .title {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 10px;
-        line-height: 28px;
-        width: 100%;
-        font-family: $font-family-condensed;
-        text-transform: uppercase;
-      } 
-      .progress {
-        display: block;
-        background-color: rgba($button-color, .75);
-        height: 100% !important;
-        width: 40px;
-        animation: draw 1s ease-in-out;
-        @include transition(1s);
-      }
-    }
-  }
-  &.active {
-    li {
-      cursor: pointer;
-      opacity: 0.7;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
 #d3-donut {
   text-align: center;
-}
-
-.axis {
-  font-size: 14px;
-  font-family: $font-family-condensed;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 #profit-chart {
@@ -2668,8 +2475,10 @@ body.resources {
   #cost-curve {
     #chart.vertical {
       .title {
-        line-height: 20px;
-        font-size: 13px;
+        line-height: 18px;
+        height: 18px;
+        margin-bottom: 7px;
+        font-size: 12px;
       }
     }
   }

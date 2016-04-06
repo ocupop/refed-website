@@ -73,7 +73,12 @@ prevpage:
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <a href="{{ '/downloads/ReFED_Technical_Appendix.pdf' | prepend: site.baseurl }}" download class="button">Download the Technical Appendix</a>
+          <a href="{{ '/downloads/ReFED_Technical_Appendix.pdf' | prepend: site.baseurl }}" 
+            class="button"
+            onClick="ga('send', 'event', 'button', 'pdf download', 'Technical Appendix');"
+            download>
+            Download the Technical Appendix
+          </a>
         </div>
       </div>
     </div>

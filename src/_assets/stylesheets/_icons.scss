@@ -93,3 +93,82 @@ i {
     content: "\ea44";
 }
 
+// Add ons
+
+/* -----------------------------------------
+   Icons
+----------------------------------------- */
+.socialnav {
+  a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px 0;
+    color: darken($cream, 5%);
+    &:hover {
+      color: $gray;
+    }
+    i {
+
+    }
+  }
+}
+
+section {
+  .socialnav {
+    a {
+      color: $button-color;
+    }
+  }
+}
+
+.icon-circle {
+  border-radius: 50%;
+}
+.icon-cloud {
+  color: #e9ae6c;
+}
+.icon-drop {
+  color: #9bcac0;
+}
+.icon-tree {
+  color: #7aa883;
+}
+.icon-trash {
+  color: #922947;
+}
+
+
+// Stakeholders
+.icon-farmers {
+  background-image: url("{% asset_path stakeholders/farmers.svg %}");
+}
+.icon-federal-government {
+  background-image: url("{% asset_path stakeholders/federal-government.svg %}");
+}
+.icon-foundations {
+  background-image: url("{% asset_path stakeholders/foundations.svg %}");
+}
+.icon-investors {
+  background-image: url("{% asset_path stakeholders/investors.svg %}");
+}
+.icon-manufacturers {
+  background-image: url("{% asset_path stakeholders/manufacturers.svg %}");
+}
+.icon-restaurants-and-foodservice-providers {
+  background-image: url("{% asset_path stakeholders/restaurants-and-foodservice-providers.svg %}");
+}
+.icon-retailers {
+  background-image: url("{% asset_path stakeholders/retailers.svg %}");
+}
+.icon-state-and-local-governments {
+  background-image: url("{% asset_path stakeholders/state-and-local-governments.svg %}");
+}
+.icon-nonprofits-and-academia {
+  background-image: url("{% asset_path stakeholders/nonprofits-and-academia.svg %}");
+}
+.icon-consumers {
+  background-image: url("{% asset_path stakeholders/consumers.svg %}");
+}
+.icon-entrepreneurs {
+  background-image: url("{% asset_path stakeholders/entrepreneurs.svg %}");
+}
