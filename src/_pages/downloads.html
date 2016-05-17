@@ -71,7 +71,7 @@ slug: downloads
           <div class="content">
             <h2>{{ chapter.title }}</h2>
             <p><em>{{ chapter.summary }}</em></p>
-            <a href="{{ site.baseurl }}/downloads/{{ chapter.download }}" class="button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" download><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
+            <a href="{{ site.baseurl }}/downloads/{{ chapter.download }}" class="button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" target="_blank"><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
             <p class="message">To enable downloads, please fill out the above <a href="#signup-form">form</a></p>
           </div>
         </div>
