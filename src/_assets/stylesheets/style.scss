@@ -903,15 +903,15 @@ em {
   }
   &.play-video {
     position: relative;
-    height: $base-line-height * 2;
-    line-height: $base-line-height * 2;
-    padding-right: 30px;
-    font-size: 28.5px;
+    height: $base-line-height * 2.5;
+    line-height: $base-line-height * 2.5;
+    padding-right: 40px;
+    font-size: 32.5px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
     border: 1px solid $cream-light;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
     &:hover {
       color: #ffffff;
     }
@@ -922,7 +922,7 @@ em {
       font-size: 40px;
       margin: auto;
       float: right;
-      line-height: $base-line-height * 2;
+      line-height: $base-line-height * 2.5;
       text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
     }
   }
@@ -2061,11 +2061,15 @@ a.external {
 }
 
 #video {
-  background-image: url("{% asset_path 'bg-grapes.jpg' %}");
-  background-size: cover;
+  background-image: url("{% asset_path 'bg-map.jpg' %}");
+  background-size: contain;
+  background-color: #c5ced5;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   height: 455px;
+  cursor: pointer;
   .content {
-    padding: 170px $content-padding*4;
+    padding: 170px 20px 170px 120px;
     padding-bottom: 0;
   }
 }
@@ -2284,11 +2288,11 @@ body.resources {
     box-shadow: 10px 10px 0px rgba(0,0,0,0.4);
     border: none;
     overflow: hidden;
-    header {
-      height: 100px;
-      background: url("{% asset_path 'bg-wheat.jpg' %}");
-      background-size: cover;
-    }
+    // header {
+    //   height: 100px;
+    //   background: url("{% asset_path 'bg-wheat.jpg' %}");
+    //   background-size: cover;
+    // }
     .content {
       padding: 35px !important;
     }

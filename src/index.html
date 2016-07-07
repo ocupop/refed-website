@@ -29,10 +29,21 @@ prevpage:
       </div>
     </div>
     <div id="video" class="col-xs-12 col-md-6">
-      <div class="content">
-        <a href="#" class="hide button play-video">Play Video <i class="icon-next"></i></a>
-      </div>
+      <!-- <div class="content">
+        <a href="#" class="button play-video" data-toggle="modal" data-target="#videoModal">Play Video <i class="icon-next"></i></a>
+      </div> -->
     </div>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('#video').on('click', function() {
+        $('#videoModal iframe').attr('src', 'https://www.youtube.com/embed/z1X-HWPbeD4?autoplay=1');
+        $('#videoModal').modal();
+      });
+      $('#videoModal').on('hidden.bs.modal', function (e) {
+        $(this).find('iframe').attr('src', '');
+      })
+    });
+    </script>
   </div>
 </section>
 
