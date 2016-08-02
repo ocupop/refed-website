@@ -237,7 +237,7 @@ input, select {
   }
 }
 select[multiple] {
-  height: 108px;
+  height: 130px;
   option {
     font-weight: 300;
     &:first-child {
@@ -738,7 +738,7 @@ em {
   text-align: center;
   img {
     width: 250px;
-    margin: 0 auto; 
+    margin: 80px auto 0 auto; 
   }
 }
 
@@ -2210,6 +2210,18 @@ a.external {
 }
 #profit-potential {
   position: relative;
+}
+
+#profile {
+  #confirm_zip_code {
+    width: 49%;
+  }
+  input[type="submit"] {
+    width: 49%;
+    float: right;
+    height: 48px;
+    margin: 3px 0;
+  }
 }
 /* -----------------------------------------
    Page Specific
