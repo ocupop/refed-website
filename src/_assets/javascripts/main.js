@@ -10,6 +10,7 @@
 //= require mixitup/build/jquery.mixitup.min.js
 //= require vendor/jquery.mixitup-pagination.min.js
 //= require vendor/jquery.cookie.js
+//= require vendor/jquery.form.js
 //= require jquery-stickit/build/jquery.stickit.min.js
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
 //= require vendor/lunr.min.js
@@ -40,6 +41,7 @@ $(document).on('ready', function() {
       $('#thanks').fadeOut('slow');
     }, 1500);
   }
+  
   $(".sticky").stickit({
     // scope: StickScope.Parent,
     top: 50
