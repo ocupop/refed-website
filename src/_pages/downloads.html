@@ -59,7 +59,7 @@ slug: downloads
                   <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
                 </div>
                 <div class="select">
-                  <select id="confirm_stakeholder" name="confirm_stakeholder" multiple>
+                  <select id="confirm_stakeholders" name="confirm_stakeholders" multiple>
                     <option>Choose a Stakeholder Group</option>
                     {% for stakeholder in site.stakeholders %}
                     <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
@@ -215,7 +215,7 @@ slug: downloads
     if ($.cookie('memberEmail')) {
       $('#signup-signin').hide();
       $.ajax({
-        url: "http://localhost:5000/signin",
+        url: "https://ancient-wave-20081.herokuapp.com/signin",
         data: {email_return: $.cookie('memberEmail')},
         success: function(resp) {
           updateProfile(resp);
@@ -230,6 +230,19 @@ slug: downloads
       alert("Please fill in form details to enable download.");
       $.scrollTo('#signup-form');
     }
+  });
+
+  $(document).ready(function() {
+      $('#confirm_stakeholders').multiselect({
+        includeSelectAllOption: true,
+        selectAllText: 'Select All',
+        nonSelectedText: 'Choose Stakeholders'
+      });
+      $('#confirm_solutions').multiselect({
+        includeSelectAllOption: true,
+        selectAllText: 'Select All',
+        nonSelectedText: 'Choose Solutions'
+      });
   });
 </script>
 

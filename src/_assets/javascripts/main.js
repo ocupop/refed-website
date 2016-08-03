@@ -13,6 +13,7 @@
 //= require vendor/jquery.form.js
 //= require jquery-stickit/build/jquery.stickit.min.js
 //= require bootstrap-tour/build/js/bootstrap-tour.min.js
+//= require bootstrap-multiselect/dist/js/bootstrap-multiselect.js
 //= require vendor/lunr.min.js
 
 //= require _plugins
