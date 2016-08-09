@@ -43,6 +43,7 @@ source: src
 destination: publish
 bundler_args: --without production
 markdown: kramdown
+incremental: true
 
 include: ["_pages"]
 exclude: ['vendor', '.asset-cache']

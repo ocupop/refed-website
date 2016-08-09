@@ -60,7 +60,6 @@ slug: downloads
                 </div>
                 <div class="select">
                   <select id="confirm_stakeholders" name="confirm_stakeholders" multiple>
-                    <option>Choose a Stakeholder Group</option>
                     {% for stakeholder in site.stakeholders %}
                     <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
                     {% endfor %}
@@ -68,7 +67,6 @@ slug: downloads
                 </div>
                 <div class="select">
                   <select id="confirm_solutions" name="confirm_solutions" multiple>
-                    <option>Choose interested solutions</option>
                     {% for solution in site.solutions %}
                     <option value="{{ solution.title }}">{{ solution.title }}</option>
                     {% endfor %}
