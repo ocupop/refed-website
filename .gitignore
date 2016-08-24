@@ -4,3 +4,4 @@ src/.asset-cache
 src/_assets/bower
 node_modules
 publish
+*.log
