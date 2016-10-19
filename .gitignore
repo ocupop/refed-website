@@ -1,7 +1,10 @@
 .sass-cache
 src/.asset-cache
 .jekyll-metadata
+
 src/_assets/bower
 node_modules
 publish
+_site
+bower_components
 *.log

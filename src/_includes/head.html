@@ -13,13 +13,20 @@
   <meta property="og:site_name" content="{{ site.title }}"/>
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:description" content="{{ site.description }}" />
-  <meta property="og:image" content="{% asset_path 'logo-meta.jpg' %}" />
+  <meta property="og:image" content="{{ site.baseurl }}/img/logo-meta.jpg" />
 
   <!-- FONTS -->
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
 
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/animate.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/bootstrap-tour.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/chartist.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/flexboxgrid.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
 
-  {% stylesheet style %}
-  {% javascript main %}
-  
+  <!-- JS -->
+  <script src="{{ site.baseurl }}/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
 </head>

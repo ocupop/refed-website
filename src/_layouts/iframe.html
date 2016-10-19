@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Language" content="en_US" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} : {{ site.title }}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:site_name" content="{{ site.title }}"/>
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:image" content="{% asset_path 'logo-meta.jpg' %}" />
-
-    <!-- FONTS -->
-    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
-
-    {% stylesheet style %}
-    {% javascript main %}
+  {% include head.html %}
+  <body class="{{ page.slug }}">
     <style type="text/css">
       #page-content {
         margin: 0;
@@ -36,9 +16,8 @@
       }
       .popover.left { left: 0 !important; }
     </style>
-  </head>
-  <body class="{{ page.slug }}">
-    <a href="http://www.refed.com" class="brand"><img src="{% asset_path 'logo-wordmark.svg' %}" style="width: 210px;"></a>
+    <a href="http://www.refed.com" class="brand"><img src="{{ site.baseurl }}/img/logo-wordmark.svg" style="width: 210px;"></a>
     <main id="page-content">{{ content }}</main>
+    {% include scripts.html %}
   </body>
 </html>

@@ -1,5 +1,7 @@
-//= require vendor/animate.css
-//= require bootstrap-tour/build/css/bootstrap-tour.min.css
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
 
 @import '_variables';
 @import 'bootstrap';
@@ -10,11 +12,8 @@
 @import "_tour";
 @import "_popover";
 @import "_charts.scss";
-@import "chartist/dist/scss/chartist.scss";
 
 @import "_cost_curve.scss";
-
-//= require vendor/flexboxgrid.min.css
 
 
 /* -----------------------------------------
@@ -1022,7 +1021,7 @@ em {
     background-repeat: no-repeat;
     &.icon-restaurant {
       // Add PNG
-      background-image: url("{% asset_path 'stakeholders/restaurants-and-foodservice-providers.svg' %}"), linear-gradient(transparent, transparent);
+      background-image: url("{{ site.baseurl }}/img/icons/stakeholders/restaurants-and-foodservice-providers.svg"), linear-gradient(transparent, transparent);
     }
   }
 }
@@ -1771,7 +1770,7 @@ a.external {
       &.divider {
         width: 100%;
         height: 35px;
-        background: transparent url("{% asset_path 'analysis/arrow-down.svg' %}") no-repeat center bottom;
+        background: transparent url("{{ site.baseurl }}/img/analysis/arrow-down.svg") no-repeat center bottom;
       }
       &.inactive {
         opacity: 0.5;
@@ -2139,7 +2138,7 @@ a.external {
 }
 
 #video {
-  background-image: url("{% asset_path 'bg-map.jpg' %}");
+  background-image: url("{{ site.baseurl }}/img/bg-map.jpg");
   background-size: contain;
   background-color: #c5ced5;
   background-repeat: no-repeat;
@@ -2220,16 +2219,16 @@ a.external {
       color: $text-color;
     }
     &.financing {
-      background-image: url("{% asset_path action/financing.svg %}");
+      background-image: url("{{ site.baseurl }}/img/icons/action/financing.svg");
     }
     &.policy {
-      background-image: url("{% asset_path action/policy.svg %}");
+      background-image: url("{{ site.baseurl }}/img/icons/action/policy.svg");
     }
     &.innovation {
-      background-image: url("{% asset_path action/innovation.svg %}");
+      background-image: url("{{ site.baseurl }}/img/icons/action/innovation.svg");
     }
     &.education {
-      background-image: url("{% asset_path action/education.svg %}");
+      background-image: url("{{ site.baseurl }}/img/icons/action/education.svg");
     }
 
   }
@@ -2378,11 +2377,6 @@ body.resources {
     box-shadow: 10px 10px 0px rgba(0,0,0,0.4);
     border: none;
     overflow: hidden;
-    // header {
-    //   height: 100px;
-    //   background: url("{% asset_path 'bg-wheat.jpg' %}");
-    //   background-size: cover;
-    // }
     .content {
       padding: 35px !important;
     }

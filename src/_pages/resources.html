@@ -44,7 +44,7 @@ prevpage:
         <div class="content">
           <h2>Download the Report</h2>
           <p>The full report and individual section chapters are available for <a href="{{ '/download' | prepend: site.baseurl }}">download</a>.</p>
-          <img src="{% asset_path 'downloads/the-full-report-cover.jpg' %}" class="img-responsive">
+          <img src="{{ site.baseurl }}/img/downloads/the-full-report-cover.jpg" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 hidden-xs">
@@ -53,7 +53,7 @@ prevpage:
             {% assign chapters = site.data.report %}
             {% for chapter in chapters offset:1 %}
             <div class="col-xs-3 grid-item">
-              <img src="{% asset_path 'downloads/{{ chapter.thumbnail }}' %}" class="img-responsive">
+              <img src="{{ site.baseurl }}/img/downloads/{{ chapter.thumbnail }}" class="img-responsive">
             </div>
             {% endfor %}
           </div>

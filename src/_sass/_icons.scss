@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'refed';
-    src:    url(font_path("refed.eot"));
-    src:    url(font_path("refed.eot#iefix")) format('embedded-opentype'),
-        url(font_path("refed.ttf")) format('truetype'),
-        url(font_path("refed.woff")) format('woff'),
-        url(font_path("refed.svg#refed")) format('svg');
+    src:    url("/fonts/refed.eot");
+    src:    url("/fonts/refed.eot#iefix") format('embedded-opentype'),
+        url("/fonts/refed.ttf") format('truetype'),
+        url("/fonts/refed.woff") format('woff'),
+        url("/fonts/refed.svg#refed") format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -140,35 +140,35 @@ section {
 
 // Stakeholders
 .icon-farmers {
-  background-image: url(asset_path("stakeholders/farmers.svg"));
+  background-image: url("/img/icons/stakeholders/farmers.svg");
 }
 .icon-federal-government {
-  background-image: url(asset_path("stakeholders/federal-government.svg"));
+  background-image: url("/img/icons/stakeholders/federal-government.svg");
 }
 .icon-foundations {
-  background-image: url(asset_path("stakeholders/foundations.svg"));
+  background-image: url("/img/icons/stakeholders/foundations.svg");
 }
 .icon-investors {
-  background-image: url(asset_path("stakeholders/investors.svg"));
+  background-image: url("/img/icons/stakeholders/investors.svg");
 }
 .icon-manufacturers {
-  background-image: url(asset_path("stakeholders/manufacturers.svg"));
+  background-image: url("/img/icons/stakeholders/manufacturers.svg");
 }
 .icon-restaurants-and-foodservice-providers {
-  background-image: url(asset_path("stakeholders/restaurants-and-foodservice-providers.svg"));
+  background-image: url("/img/icons/stakeholders/restaurants-and-foodservice-providers.svg");
 }
 .icon-retailers {
-  background-image: url(asset_path("stakeholders/retailers.svg"));
+  background-image: url("/img/icons/stakeholders/retailers.svg");
 }
 .icon-state-and-local-governments {
-  background-image: url(asset_path("stakeholders/state-and-local-governments.svg"));
+  background-image: url("/img/icons/stakeholders/state-and-local-governments.svg");
 }
 .icon-nonprofits-and-academia {
-  background-image: url(asset_path("stakeholders/nonprofits-and-academia.svg"));
+  background-image: url("/img/icons/stakeholders/nonprofits-and-academia.svg");
 }
 .icon-consumers {
-  background-image: url(asset_path("stakeholders/consumers.svg"));
+  background-image: url("/img/icons/stakeholders/consumers.svg");
 }
 .icon-entrepreneurs {
-  background-image: url(asset_path("stakeholders/entrepreneurs.svg"));
+  background-image: url("/img/icons/stakeholders/entrepreneurs.svg");
 }

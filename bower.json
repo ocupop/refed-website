@@ -31,5 +31,16 @@
     "jquery-stickit": "^0.2.2",
     "iframe-resizer": "^3.5.3",
     "bootstrap-multiselect": "^0.9.13"
+  },
+  "overrides": {
+    "chartist": {
+        "main": ["dist/chartist.min.js", "dist/chartist.min.js.map", "dist/chartist.min.css"]
+    },
+    "chartist-plugin-tooltip": {
+        "main": ["dist/chartist-plugin-tooltip.min.js", "dist/chartist-plugin-tooltip.min.js.map"]
+    },
+    "waypoints": {
+      "main": ["lib/jquery.waypoints.min.js", "lib/shortcuts/inview.min.js"]
+    }
   }
 }

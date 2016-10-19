@@ -1,5 +1,5 @@
 {% if page.collection == 'solutions' %}
-<div class="hero" style="background-image: url({% asset_path '{{ page.collection }}/{{ page.slug }}-header.jpg' %});">
+<div class="hero" style="background-image: url({{ site.baseurl }}/img/solutions/{{ page.slug }}-header.jpg);">
   <div class="hero-content">
     <div class="container">
       <div class="row">
@@ -15,7 +15,7 @@
 {% endif %}
 {% if page.hero %}
   {% if page.hero.image %}
-  <div class="hero" style="background-image: url({% asset_path '{{ page.hero.image }}' %});">
+  <div class="hero" style="background-image: url({{ site.baseurl }}/img/{{ page.hero.image }});">
   {% else %}
    <div class="hero" style="background-image: url('http://placehold.it/2500x800/565759/DED8C6?text=+');">
   {% endif %}
