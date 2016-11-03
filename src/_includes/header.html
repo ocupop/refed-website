@@ -71,6 +71,7 @@
     </nav>
   </div>
 </div>
+{% unless page.layout == 'admin' %}
 <nav id="tournav" class="hidden-xs">
   <ul>
     <li class="start-tour">Site Tour</li>
@@ -80,3 +81,4 @@
     </li>
   </ul>
 </nav>
+{% endunless %}
