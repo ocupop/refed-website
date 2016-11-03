@@ -23,7 +23,7 @@ defaults:
       title: Action
     prevpage:
       url: /stakeholder
-      title: Stakeholders
+      title: Stakeholders      
 
 collections:
   solutions:
@@ -34,6 +34,10 @@ collections:
     output: true
     layout: default
     permalink: /stakeholders/:path
+  states:
+    output: true
+    layout: state
+    permalink: /states/:path  
 
 
 # Build settings
