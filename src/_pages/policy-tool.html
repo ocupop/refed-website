@@ -11,6 +11,7 @@ slug: policy-tool
     <div class="col-xs-12">
       <div id="map"></div>
       <select name="" id="state-select">
+        <option value="#">Select State</option>
         {% for state in site.states %}
           <option value="{{ state.url }}">{{ state.name }}</option>
         {% endfor %}
@@ -18,6 +19,18 @@ slug: policy-tool
     </div>
   </div>
 </div>
+
+<script>
+  $('#state-select').change(function(){
+    var value = $(this).val();
+    window.console.log('value', value);
+    var url = $(this).val(); // get selected value
+      if (url) { // require a URL
+          window.location = url; // redirect
+      }
+      return false;
+  });
+</script>
 
 <script type="text/javascript">
 
