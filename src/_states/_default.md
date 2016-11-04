@@ -1,5 +1,4 @@
 ---
-layout: state
 name: Default
 code: XX
 policy_data:
