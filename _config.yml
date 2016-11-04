@@ -24,7 +24,9 @@ defaults:
       title: Stakeholders
 - type: 'states'
   values:
-        _hide_content: true
+    layout: state
+    _hide_content: true
+
 collections:
   solutions:
     output: true
