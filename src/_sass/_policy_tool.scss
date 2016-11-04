@@ -1,10 +1,13 @@
 .states {
   h1 { font-size: 36px;}
   h2 { font-size: 30px; font-weight: 500; }
-  h3 { margin-bottom: 5px; }
+  h3 { margin-bottom: 5px; margin-top: 20px; }
   section {
-    &:nth-child(even) { background-color: transparent; }
-    &:nth-child(odd) { @include palette($section-alt-color, $text-color);}
+    &:nth-child(even) {@include palette($section-alt-color, $text-color);}
+    &:nth-child(odd) {background-color: transparent;}
+  }
+  .button {
+    width: 50%;
   }
 }
 
@@ -34,7 +37,7 @@
     border: none;
     background: transparent;
     font-size: 14px;
-    
+
   }
 
   .close-nav {
@@ -78,6 +81,15 @@
   border-left: 30px solid $recycle-color;
 }
 
+#spotlight {
+  h2 {
+    margin-top: 0;
+  }
+  .button {
+    width: 100%;
+  }
+}
+
 .state-header {
   border-left: 30px solid $cream;
 }
@@ -94,6 +106,7 @@
     margin-bottom: 10px;
     &.column-heading {
       background-color: transparent;
+      font-size: 16px;
     }
     &.item-large {
       width: calc(55% - 10px);
