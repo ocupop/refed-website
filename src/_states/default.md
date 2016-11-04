@@ -1,5 +1,4 @@
 ---
-layout: state
 policy_data:
   date_labeling:
       overview: "lorem"
