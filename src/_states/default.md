@@ -7,14 +7,14 @@ policy_data:
       case_studies: []
       legislation:
         - title:
-          food_type: 
-          purpose:
-          excerpt:
+          applies_to_food_type: 
+          purpose_of_law:
+          excerpted_language_from_the_law:
           legal_citation:
       label_regulation:
-        foods:
-        sale_after_date: boolean
-        donation_after_date: boolean
+        foods_for_which_date_is_required:
+        sale_after_date_permitted: true
+        donation_after_date_premitted: true
   liability_protection:
       overview: "lorem"
       summary: "lorem"
@@ -22,13 +22,13 @@ policy_data:
       case_studies: []
       legislation:
         - title:
-          type:
-          when:
-          who:
+          type_of_protection:
+          when_protection_will_not_apply:
+          who_is_protected:
           eligible_recipients:
-          standards:
-          paid_donations:
-          direct_donations:
+          standards_for_donated_food:
+          protections_apply_when_recipient_pays_for_donated_food:
+          protections_apply_to_direct_donations:
           additional_protections:
   donation_tax_incentives:
       overiew: "lorem"
@@ -64,5 +64,5 @@ policy_data:
         - title:
           generators_covered:
           waste_prduction:
-          exemptions_for_distance:
+          exemptions_for_distance_from_organics_processing_facility:
 ---
