@@ -18,6 +18,36 @@ policy_data:
         purpose_of_law: Definition (open-date statement)
         excerpted_language_from_the_law: (14) Open-date statement. Terms “Sell By”; “Freeze By”; “Sell or Freeze By”; “Not to be Sold After”; “Best if Used By”; “Expiration”; or other terms as defined by rules or regulations; or a date without additional words shall be considered an open-date statement
         legal_citation: Ala. Code § 20-1-20 (2013).
+      - title: Reg 3
+        applies_to_food_type: General
+        purpose_of_law: Additional descriptive terms (opendate statement)
+        excerpted_language_from_the_law: '(1) In addition to the terms listed in §20-1-20 (definitions) for (14) open date statements, the following list of terms and other terms with similar import, shall also be included and considered as open date statements: (a) “For full fresh flavor use by” (b) “For best quality purchase and use by date shown” (c) “Use/freeze by” (d) “Prepare or freeze by” (e) “For wholesome great taste, serve before date stamped below” (f) “Best when purchase by date” (g) “Best if sold by” (h) “Best used by” (i) “Product expiration” (j) “Expiration date” (k) “Best by” (l) “Best before” (m) “Best when purchase by” (n) “Use before” (o) “Use by” (p) “Full freshness until date shown when stored unopened at 40 or below” (q) “Prepare by” (r) “Fresh until” (s) “Use or freeze by” (t) “Sell or use by” (u) “Freshness through”'
+        legal_citation: Ala. Admin. Code r. 80- 1-22-.33 (2013).
+      - title: Reg 4
+        applies_to_food_type: General
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: 'No person shall engage in any of the following activities within this state: . . . (3)a. Obscure, remove, or otherwise render illegible any information appearing on beverage labels, packages, or containers related to production information, best before dates, or other disclosure printed on, affixed to, or appearing on the labels, packages, or containers. b. This subdivision shall not apply to any alteration of a beverage label, package, or container made by, or at the direction of, either the owner of the trademark rights to the brand that appears on the beverage label, package, or container or an authorized manufacturer of the beverage. c. This subdivision shall not apply to alcoholic beverages as defined in Section 28-3-1. d. This subdivision shall not apply to any entity, organization, or association, including, but not limited to, a nonprofit or other fund-raising organization that does not operate for a commercial purpose. (4)a. Store or transport any beverage product that bears a labeling that has been obscured, removed, or rendered illegible as described in subdivision (3). b. This subdivision shall not apply to any alteration of a beverage label, package, or container made by, or at the direction of, either the owner of the trademark rights to the brand that appears on the beverage label, package, or container or an authorized manufacturer of the beverage.'
+        legal_citation: Ala. Code § 20-1-27 (2013).
+      - title: Reg 5
+        applies_to_food_type: Class A Foods
+        purpose_of_law: Definition (class A foods)
+        excerpted_language_from_the_law: '(4) Class A foods. Baby food, infant formula, and potentially hazardous food.'
+        legal_citation: Ala. Code § 20-1-20 (2013).
+      - title: Reg 6
+        applies_to_food_type: Class A Foods
+        purpose_of_law: Date labeling not required
+        excerpted_language_from_the_law: 'Date labeling not required for Class A food products in Alabama (with the exception of infant formula, which is federally regulated).'
+        legal_citation: No relevant state law.
+      - title: Reg 7
+        applies_to_food_type: Class A Foods
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'No person shall engage in any of the following activities within this state: . . . (2) Sell or offer for sale out-of-date Class A foods which include baby food, infant formula, and potentially hazardous food.'
+        legal_citation: Ala. Code § 20-1-27 (2013).
+      - title: Reg 8
+        applies_to_food_type: Class A Foods
+        purpose_of_law: Alteration of date labels not permitted (potentially hazardous foods)
+        excerpted_language_from_the_law: '(1) Packages of potentially hazardous foods bearing an open date statement are not to be repacked or relabeled or otherwise altered in a manner that would change the open date statement originally placed on the package. It is not permissible to reprocess products by freezing, slicing, grinding, cubing, dicing, marinating, chopping, or other similar methods unless the original open date statement is maintained on the product label.'
+        legal_citation: Ala. Admin. Code r. 80- 1-22-.36 (2013).
       - title:
         applies_to_food_type:
         purpose_of_law:
