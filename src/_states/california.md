@@ -1,7 +1,7 @@
 ---
 layout: state
-name: Georgia
-code: GA
+name: Hawaii
+code: HI
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
