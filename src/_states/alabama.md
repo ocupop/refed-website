@@ -9,10 +9,20 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Definition (date limit)
+        excerpted_language_from_the_law: '(4)(a)(8) “Date limit” means all terms reasonably construed to mean food is not intended to be used or sold after the date limit, or that food quality is best before the date limit, and includes but is not limited to the terms “Sell By;” “Freeze By;” “Sell or Freeze By;” “Not to be Sold After;” “Best if Used By;” “Best if Purchased By,” “Expiration;” or other similar designations.'
+        legal_citation: Ala. Admin Code r. 420-3-22.01 (2013).
+      - title: Reg 2
+        applies_to_food_type: General
+        purpose_of_law: Definition (open-date statement)
+        excerpted_language_from_the_law: (14) Open-date statement. Terms “Sell By”; “Freeze By”; “Sell or Freeze By”; “Not to be Sold After”; “Best if Used By”; “Expiration”; or other terms as defined by rules or regulations; or a date without additional words shall be considered an open-date statement
+        legal_citation: Ala. Code § 20-1-20 (2013).
+      - title:
+        applies_to_food_type:
+        purpose_of_law:
+        excerpted_language_from_the_law:
+        legal_citation:
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
