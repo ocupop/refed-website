@@ -1,6 +1,6 @@
 ---
 layout: state
-name: Mississippi
+name: Missouri
 code: MS
 policy_data:
   date_labeling:
