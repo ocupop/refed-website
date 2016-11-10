@@ -1,7 +1,7 @@
 ---
 layout: state
-name: Washington
-code: WA
+name: Washington DC
+code: DC
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
