@@ -19,7 +19,7 @@ policy_data:
           or similar language.
         legal_citation: Kan. Stat. Ann. § 2-2509 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
