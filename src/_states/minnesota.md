@@ -124,7 +124,7 @@ policy_data:
         excerpted_language_from_the_law: 'Nothing contained in sections 31.781 to 31.789 or any rule adopted pursuant hereto shall require the removal from sale of a perishable food product after the expiration of the quality assurance date on the product nor imply that after the expiration of the quality assurance date on the product, the product is not wholesome or safe for human consumption.'
         legal_citation: Minn. Stat. § 31.784 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: 'Eggs, Perishable Foods, Shellfish'
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
