@@ -22,7 +22,7 @@ policy_data:
           shellfish, and either the sell-by date or the date shucked;
         legal_citation: 'Alaska Admin. Code tit. 18, §31.200 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
