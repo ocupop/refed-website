@@ -9,10 +9,33 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Cream
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          II. All retail containers of cream sold or offered for sale shall be
+          conspicuously marked
+
+          with the date of the last day on which it may be sold or offered for
+          sale with a reasonable
+
+          expectation that the cream will not be sour, as determined by the
+          manufacturer.
+        legal_citation: 'N.H. Rev. Stat Ann. § 184:30-g (2013).'
+      - title: Reg 2
+        applies_to_food_type: Prewrapped Sandwiches
+        purpose_of_law: Definition (expiration date)
+        excerpted_language_from_the_law: '(a) “Expiration date” means the last day of sale, printed or stamped on a prewrapped sandwich label, determined in accordance with these rules.'
+        legal_citation: N.H. Code Admin. R. Agr. 1412.03 (2013).
+      - title: Reg 4
+        applies_to_food_type: Prewrapped Sandwiches
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(c) The expiration date for a fresh refrigerated prewrapped sandwich shall be clearly and legibly printed or stamped by the vendor on the sandwich wrapper label, at the time it is wrapped, by stating “expiration date” or “sell by” followed by the month and day. (d) The expiration date for a previously frozen prewrapped sandwich shall be clearly and conspicuously printed or stamped on the sandwich wrapper label, at the time it is thawed for retail sale, by stating “expiration date” or “sell by” followed by the month and day. (e) The expiration date for a fresh refrigerated prewrapped sandwich shall be determined by the vendor who makes the prewrapped sandwiches.'
+        legal_citation: N.H. Code Admin. R. Agr. 1412.04 (2013).
+      - title:
+        applies_to_food_type: Prewrapped Sandwiches
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'The purpose of these rules is to protect public health and safety by establishing an expiration date on all sandwiches beyond which each sandwich shall not be sold. These rules implement the procedures of the department of agriculture, markets, and food pursuant to RSA 438:26-b, dating prewrapped sandwiches.'
+        legal_citation: N.H. Code Admin. R. Agr. 1412.01 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
