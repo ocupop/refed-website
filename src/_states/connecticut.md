@@ -11,8 +11,30 @@ policy_data:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: >-
+          Each person, handler, firm or corporation shall clearly mark each
+          container of milk or milk
+
+          product, cream, yogurt, cream cheese, cottage cheese, ricotta cheese,
+          soft cheese, eggnog
+
+          or sour cream offered for retail sale with a last sale date. In
+          accordance with the provisions
+
+          of chapter 54, the Milk Regulation Board shall adopt regulations
+          establishing standards and
+
+          criteria for label type size, color and wording that is consistent with
+          national standards and
+
+          said board may incorporate by reference The Nutritional Education and
+          Labeling Act, 21 CFR 101.
+        legal_citation: Conn. Gen. Stat. Ann. § 22-197b (2013).
+      - title: Reg 2
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: (f) The manufacturer’s last sale date or expiration date shall not be altered in any way.
+        legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
