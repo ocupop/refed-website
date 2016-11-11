@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
           (c) In addition to meeting the requirements of (a) and (b) of this
           section, the operator of a food establishment shall obtain . . . (6)
