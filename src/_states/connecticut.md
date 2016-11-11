@@ -4,7 +4,7 @@ name: Connecticut
 code: CT
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Connecticut requires date labels only for dairy products, but does not explicitly prohibit the sale of these items past this date. However, manufacturers that choose to place date labels on other products in Connecticut must follow the Uniform Open Dating Regulation. The voluntary version of the Uniform Regulation requires the use of “Sell by” dates on perishable products and “Best if used by” dates on semi-perishable and long-shelf-life products. It also requires that perishable products sold after the “Sell by” date be clearly marked as past-date.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url: /url_path
     legislation:
