@@ -9,10 +9,10 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Shellfish
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: '(A) Raw shucked shellfish shall be obtained in nonreturnable packages which bear: . . . (2) The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
+        legal_citation: 4000 Del. Admin. Code §3-202.17 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
