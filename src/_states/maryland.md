@@ -9,10 +9,15 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Milk
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: 'B. A permittee shall conspicuously and legibly mark the cap or non-glass container of Grade A fluid milk with the words “Sell by”, followed by the designation of the month and the day of the month after which the product may not be sold, delivered, or offered for sale.'
+        legal_citation: Md. Code Regs. 10.15.06.10 (2013).
+      - title: Reg 2
+        applies_to_food_type: Milk
+        purpose_of_law: Sale after date not permitted (with exemptions)
+        excerpted_language_from_the_law: 'A. Except as provided in §B of this regulation, a person may not offer Grade A fluid milk for sale beyond the sell-by date. B. The following establishments may use or serve Grade A fluid milk up to 4 days beyond the sell-by date: (1) Food service facilities; (2) Hospitals; (3) Schools; (4) Institutions; and (5) Places where milk is consumed on the premises. C. An establishment listed in §B of this regulation shall ensure that Grade A fluid milk is used by the establishment not later than 4 days beyond the sell-by date.'
+        legal_citation: Md. Code Regs. 10.15.06.11 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
