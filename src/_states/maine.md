@@ -9,10 +9,32 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Shellfish
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: >-
+          A. Each individual package containing fresh or fresh frozen shucked
+          shellfish meat shall bear a permanent printed label approved by the
+          Department that is legibly and indelibly marked in accordance with
+          applicable federal and state regulations to contain, but not be limited
+          to, the following . . .
+
+          B. The dealer shall also label each individual package containing less
+          than 64 fluid ounces
+
+          (1873 ml) of fresh or fresh frozen shellfish with the following:
+
+          1. The words “SELL BY DATE” or “BEST IF USED BY” followed by a date
+          when the product
+
+          would be expected to reach the end of its shelf life.
+
+          2. The date shall consist of the abbreviation for the month and number
+          of the day of the
+
+          month; and
+
+          3. For fresh frozen shellfish, the year shall be added to the date.
+        legal_citation: 13-188 Me. Code R. § 15.21 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
