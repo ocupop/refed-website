@@ -10,9 +10,54 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          Containers of milk, certified milk, Vitamin D milk, homogenized milk,
+          low fat milk, protein
+
+          fortified low fat milk, skim milk, protein fortified skim milk, nonfat
+          milk, protein fortified
+
+          nonfat milk, flavored milks and dairy drinks, buttermilk, cultured
+          buttermilk, yogurt, eggnog, creams, half-and-half and all other fluid
+          milk products designated by the department shall be marked with the
+          name and address of the processor or the pasteurizing plant number as
+          assigned by the department or the state of origin and the name and
+          address of the distributor.
+
+          All containers of fluid milk products, including those mentioned above,
+          intended for sale to
+
+          consumers, (except for those products which are sterilized and packaged
+          in hermetically
+
+          sealed containers), shall be marked with a legend “NOT TO BE SOLD
+          AFTER”, or “SELL
+
+          BY”, or any other clearly understandable legend approved by the
+          department, followed or
+
+          accompanied by the first three letters of the month where possible . .
+          . If two letters are used the letters MR shall mean MARCH and MY shall
+          mean MAY; JN shall mean JUNE and JL
+
+          shall mean JULY.
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'No fluid milk product listed in this section shall be sold or offered for sale after 11:59 p.m. of the date appearing on the containers so marked.'
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
+      - title: Reg 3
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(d) No milk product referred to in this regulation shall be sold or offered for sale after 11:59 P.M. of the date appearing on the package or container. Products delivered prior to the “shelflife expiration date” may be consumed on the premises beyond the date appearing thereon.'
+        legal_citation: 'N.J. Admin. Code § 8:21-10.20 (2013).'
+      - title: Reg 4
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(n)(1) Raw shucked shellfish, packaging and identification requirements include the following: . . . ii. The “sell by” date for packages with a capacity of less than one-half gallon or the date shucked for packages with a capacity of one-half gallon or more.'
+        legal_citation: 'N.J. Admin. Code § 8:24-3.2 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
