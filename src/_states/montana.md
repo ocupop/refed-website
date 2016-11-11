@@ -9,10 +9,25 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Milk (Grade A)
+        purpose_of_law: Definition (pasteurized date)
+        excerpted_language_from_the_law: (1)(d) “Pasteurized date” is the same date a unit of milk completes pasteurization.
+        legal_citation: Mont. Admin. R. 32.8.101 (2013).
+      - title: Reg 2
+        applies_to_food_type: Milk (Grade A)
+        purpose_of_law: Definition (“sell-by” date)
+        excerpted_language_from_the_law: '(e) A “sell-by” date is defined as the 12th consecutive day, never to exceed 288 hours, following pasteurization of a unit of milk.'
+        legal_citation: Mont. Admin. R. 32.8.101 (2013).
+      - title: Reg 3
+        applies_to_food_type: Milk (Grade A)
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(1) Each container into which grade A pasteurized milk is placed for sale for public consumption must be marked with a pasteurized date and a sell-by date. (a) The sell-by and pasteurized date will be displayed in Arabic numerals or standard abbreviations for day and month, which shows the last day the milk may be sold as required by ARM 32.8.202.'
+        legal_citation: Mont. Admin. R. 32.8.203 (2013).
+      - title: Reg 4
+        applies_to_food_type: Milk (Grade A)
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(1) When 12 days or more have passed following pasteurization of a unit of grade A milk, there will be no quantities of that unit of milk sold or otherwise offered for public consumption. (2) No grade A pasteurized milk may be put in any container marked with a sell-by date which is more than 12 days after pasteurization of the milk for sale in Montana. (3) Unless otherwise agreed upon, the person who offers the milk for sale to the public is responsible for removing the milk at or before the expiration of the 12 days.'
+        legal_citation: Mont. Admin. R. 32.8.202 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
