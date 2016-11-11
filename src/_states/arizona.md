@@ -9,10 +9,20 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Definition (Expiration date)
+        excerpted_language_from_the_law: >-
+          13. “Expiration date” means the words “sell by” or “buy thru” followed
+          by a date, including
+
+          the month and day, that is not more than twenty-four days after the
+          eggs were candled and that includes the date the eggs were candled.
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-701 (2013).
+      - title: Reg 2
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'E. Cases, half cases, cartons or containers marked grade AA or grade A shall be marked with an expiration date. F. The expiration date marked on a case, half case or container holding fifteen dozen eggs or more shall be plainly and conspicuously marked in bold-faced type not less than three-eighths inch in height on one outward end of the case or container. G. The expiration date marked on a carton or container holding less than fifteen dozen eggs shall be plainly and conspicuously marked in bold-faced type not less than one-eighth inch in height on one end of the outward top face of each carton and on one outward end or the outward top of each container.'
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-719 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
