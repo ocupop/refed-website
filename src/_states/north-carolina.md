@@ -9,10 +9,37 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: >-
+          A food shall be deemed to be misbranded: . . .
+
+          (15) If the labeling provided by the manufacturer, packer, distributor,
+          or retailer on meat,
+
+          meat products, poultry, or seafood includes a “sell-by” date or other
+          indicator of a last
+
+          recommended day of sale, and the date has been removed, obscured, or
+          altered by any person other than the customer. This subdivision does
+          not prohibit the removal of a label for the purpose of repackaging and
+          relabeling a food item so long as the new package or new label does not
+          bear a “sell-by” date or other indicator of a last recommended day of
+          sale later than the original package. This subdivision does not
+          prohibit relabeling of meat, meat products, poultry, or seafood that
+          has had its shelf life extended through freezing, cooking, or other
+          additional processing that extends the shelf life of the product.
+        legal_citation: N.C. Gen. Stat. Ann. § 106-130 (2013).
+      - title: Reg 2
+        applies_to_food_type: Shellfish
+        purpose_of_law: Definition (sell by date)
+        excerpted_language_from_the_law: (26) “SELL BY date” means a date conspicuously placed on a container or tag by which a consumer is informed of the latest date the product will remain suitable for sale.
+        legal_citation: 15A N.C. Admin. Code 18A.0301 (2013).
+      - title: Reg 3
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: (c) Any container of shucked shellfish which has a capacity of 64 fluid ounces or more shall be dated as of the date shucked on both the lid and sidewall or bottom. Any container of shucked shellfish which has a capacity of less than 64 fluid ounces shall indicate a SELL BY date.
+        legal_citation: 15A N.C. Admin. Code 18A.0614 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
