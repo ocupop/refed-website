@@ -48,11 +48,6 @@ policy_data:
         purpose_of_law: Alteration of date labels not permitted (potentially hazardous foods)
         excerpted_language_from_the_law: '(1) Packages of potentially hazardous foods bearing an open date statement are not to be repacked or relabeled or otherwise altered in a manner that would change the open date statement originally placed on the package. It is not permissible to reprocess products by freezing, slicing, grinding, cubing, dicing, marinating, chopping, or other similar methods unless the original open date statement is maintained on the product label.'
         legal_citation: Ala. Admin. Code r. 80- 1-22-.36 (2013).
-      - title:
-        applies_to_food_type:
-        purpose_of_law:
-        excerpted_language_from_the_law:
-        legal_citation:
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: false
