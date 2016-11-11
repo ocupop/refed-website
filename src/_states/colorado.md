@@ -9,10 +9,29 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: >-
+          A. When voluntary code date information appears on a retail food
+          establishment or
+
+          manufacturers’ label, it shall not be concealed or altered.
+        legal_citation: '6 Colo. Code Regs. § 1010-2:3-701 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '3.2 PACK DATE REQUIREMENTS Every case, carton, or container of shell eggs at the time of packing shall have legibly printed thereon, in numerals not less than one-eighth inch in height, the date the eggs are first packed, which shall be referred to in these rules as the “pack date.” The pack date shall be stated numerically by month and day (e.g., 1/15), or by the numbered consecutive day of the year (e.g., 123, being the 123rd consecutive day of the year).'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+      - title: Reg 3
+        applies_to_food_type: Eggs
+        purpose_of_law: Further date labeling optional (formatting specified if used)
+        excerpted_language_from_the_law: '3.3 SELL-BY DATE REQUIREMENTS Every case, carton, or container of shell eggs may, but need not have legibly printed thereon, . . . a date by which the eggs must be sold, which shall be referred to in these rules as the “sell-by date.” The sell-by date shall be no more than 30 days after the pack date. It shall be stated by month and day using the three-letter abbreviation of the month followed by the numerical day of the month (e.g., Jan 15), and preceded by the term SELL BY or EXP.'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+      - title: Reg 4
+        applies_to_food_type: Eggs
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 4.1 No shell eggs may be offered for sale or sold to a consumer or restaurant more than 45 days after the pack date.
+        legal_citation: '8 Colo. Code Regs. § 1202-10:4.0 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
