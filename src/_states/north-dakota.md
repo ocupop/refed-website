@@ -24,7 +24,7 @@ policy_data:
           or more.
         legal_citation: N.D. Admin. Code 33- 33-04-03.1 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
