@@ -24,7 +24,7 @@ policy_data:
           c. The name and address of the distributor or packer.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
