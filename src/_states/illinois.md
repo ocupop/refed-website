@@ -9,10 +9,26 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling optional
+        excerpted_language_from_the_law: >-
+          (d) . . . it shall be allowable to include expiration dates in the
+          labeling of consumer-size
+
+          containers at retail. An expiration date, or other similar language as
+          specified by USDA
+
+          standards, that is not later than 30 days from the candling date for
+          Grade A eggs and not later
+
+          than the 15 days from the candling date for Grade AA eggs shall be
+          used.
+        legal_citation: 'Ill. Admin. Code tit. 8, § 65.30 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Eggs
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: (d) . . . Eggs with an expiration date marked on the container shall not be offered for sale or sold to a consumer after the date marked on the container.
+        legal_citation: 'Ill. Admin. Code tit. 8, § 65.30 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
