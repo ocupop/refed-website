@@ -52,8 +52,8 @@ policy_data:
         excerpted_language_from_the_law: '(4) A retail food establishment shall not sell or offer for sale any of the following foods under the following circumstances: (a) After the date, meat that has been removed from a federally inspected retail package. (9) If the date is the recommended last day of sale, the date shall be calculated to allow a reasonable period for the subsequent consumption of the food, but shall not allow for a period which would result in a health nuisance as described in section 2107.'
         legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: 'Pre-packaged perishable foods, milk/dairy'
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
