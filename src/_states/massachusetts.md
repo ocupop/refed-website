@@ -4,7 +4,7 @@ name: Massachusetts
 code: MA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Massachusetts follows one of the most restrictive date labeling laws in the country. In Massachusetts, all prepackaged perishable and semi-perishable foods must have date labels; once applied by the manufacturer, processor, or whoever packaged the food, the date label cannot be changed. Further, Massachusetts is one of twenty states that set additional conditions on the sale or donation of foods after the labeled date. However, past date food may be sold or donated in Massachusetts so long as it meets three criteria regarding wholesomeness, separation from other foods, and identification as past date.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url: /url_path
     legislation:
