@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
       - title: Reg 2
