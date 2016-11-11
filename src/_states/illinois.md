@@ -31,7 +31,7 @@ policy_data:
         legal_citation: 'Ill. Admin. Code tit. 8, § 65.30 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
-      sale_after_date_permitted: true
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
