@@ -36,7 +36,7 @@ policy_data:
           3. For fresh frozen shellfish, the year shall be added to the date.
         legal_citation: 13-188 Me. Code R. § 15.21 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
