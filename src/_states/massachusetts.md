@@ -46,7 +46,7 @@ policy_data:
         legal_citation: 105 Mass. Code Regs. 520.119 (2013).
     label_regulation:
       foods_for_which_date_is_required: All food products (special focus on perishable and semi-perishable foods)
-      sale_after_date_permitted: true
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
