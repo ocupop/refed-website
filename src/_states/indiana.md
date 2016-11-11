@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: "Sec. 2. All eggs offered for sale in consumer packages (cases, boxes, baskets, or containers):\n(1) shall be legibly dated (month and day or consecutive day of the year) the day the eggs\nwere packed;\n(2) shall bear an expiration date of not more than thirty (30) days from date of pack, excluding date of pack; and\n(3) may contain a “BEST BY”, “BEST IF USED BY”, or “USE BY” date in addition to the\nexpiration date, which shall not exceed forty-five (45) days from the date of pack, excluding\nthe date of pack.\nShell eggs labeled AA shall bear in distinctly legible form an expiration date of no more than ten (10) days from date of pack excluding date of pack. The expiration date shall be stated as the month and day, for example, April 3 or 4-3, preceded by the letters “EXP” or “SELL BY”. \nQuality is best if sold by the expiration date."
         legal_citation: 370 Ind. Admin. Code 1-3-2 (2013).
       - title: Reg 2
