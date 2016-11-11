@@ -9,10 +9,36 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Milk/Milk Products
+        purpose_of_law: Definition (Open date)
+        excerpted_language_from_the_law: >-
+          Section 1. (29) “Open date” means the date which shall be affixed on
+          a consumer package
+
+          or container of Grade A pasteurized milk or milk products subsequent to
+          the date of
+
+          manufacturing, processing or packaging and which represents the period
+          of time that the
+
+          product will remain unspoiled and acceptable for consumption when
+          transported, handled and stored under approved conditions.
+        legal_citation: '902 Ky. Admin. Regs. 50:010 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Milk/Milk Products
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: Section 1. Open Date Required. No person shall sell or offer for sale any Grade A pasteurized milk or milk product in this state in a consumer package that does not bear the open date as required by this administrative regulation.
+        legal_citation: '902 Ky. Admin. Regs. 50:080 (2013).'
+      - title: Reg 3
+        applies_to_food_type: Milk/Milk Products
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'Section 4. Enforcement. If a product is not sold within the period specified in the open date, the cabinet shall take action to remedy the condition consistent with this administrative regulation by removing the product from consumer channels and causing the product to be returned to the milk plant of origin for destruction.'
+        legal_citation: '902 Ky. Admin. Regs. 50:080 (2013).'
+      - title: Reg 4
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'Section 9. (4) The certified shellfish dealer shall assure that each package containing less than sixty-four (64) fluid ounces of fresh or frozen shellfish shall have: (b) A “sell by date” which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date if the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year shall be added to the date.'
+        legal_citation: '902 Ky. Admin. Regs. 45:020 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
