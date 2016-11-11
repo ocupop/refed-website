@@ -9,10 +9,19 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Milk
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: >-
+          Every container of processed milk and milk product held in retail and
+          wholesale stores,
+
+          restaurants, schools, or similar establishments for sale shall be
+          conspicuously and legibly
+
+          marked by the milk plant with the designation of the month and day of
+          the month after which the milk shall not be sold for human
+          consumption.
+        legal_citation: Haw. Code R. § 11-15- 39 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
