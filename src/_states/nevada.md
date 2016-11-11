@@ -9,10 +9,39 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
+        applies_to_food_type: Milk
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          1. At the time of sale to the consumer by a retail store of any milk or
+          milk product, there must appear upon the package or container of the
+          product the date established by the processor as the date on which, in
+          order to ensure quality, the product is to be removed from the shelf or
+          similar location or vehicle from which the product is offered for sale
+          to the consumer. This section does not apply to any bulk milk shipments
+          of milk or milk products between
+
+          distributors.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Milk
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '2. The date respecting assurance of quality must appear at the top of the carton or package and must be indelible and in a contrasting color to the carton or package in the area where the date is affixed. The date respecting assurance of quality must be the first three letters of the month followed by the day of the month. The date must be of a size commensurate with the size of the container and the location on the container, but in no case may the letters be less than three-sixteenths of an inch in height.'
+        legal_citation: Nev. Admin. Code § 584.4321 (2012).
+      - title: Reg 3
+        applies_to_food_type: Potentially Hazardous Foods
+        purpose_of_law: Definition (potentially hazardous foods)
+        excerpted_language_from_the_law: '1. “Potentially hazardous food” means: (a) Food that consists, in whole or in part, of milk, products made from milk, eggs, meat, poultry, fish, shellfish, edible crustacea or other ingredients in a form capable of supporting the rapid and progressive growth of infectious or toxigenic microorganisms. (b) Cereals, fruits, vegetables and dairy products, such as cooked rice, eggs, other than powdered eggs, baked or boiled potatoes, moist soy protein products, any mixture that includes garlic in oil, melons that have been cut, sliced or otherwise breached, whipped butter, products of margarine that contain butter or raw seed sprouts, that have been declared by the health authority to be potentially hazardous. 2. The term does not include foods which have a pH level of 4.1 or below or a value of water activity of 0.85 or less.'
+        legal_citation: Nev. Admin. Code § 446.025 (2012).
+      - title: Reg 4
+        applies_to_food_type: Potentially Hazardous Foods
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '4. Potentially hazardous foods which have been prepared by another food establishment or food processing plant to be ready to eat and packaged in a container for refrigeration must be marked by the manufacturer to indicate the date by which the food must be sold, served or frozen'
+        legal_citation: Nev. Admin. Code § 446.145 (2012).
+      - title: Reg 5
+        applies_to_food_type: Potentially Hazardous Foods
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '4. These foods must be discarded if not sold, served or frozen: (a) Within 10 calendar days after the original container is opened; or (b) On or before the date by which the food must be sold or used, as indicated on the container, whichever occurs first.'
+        legal_citation: Nev. Admin. Code § 446.145 (2012).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
