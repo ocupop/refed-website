@@ -40,8 +40,8 @@ policy_data:
         excerpted_language_from_the_law: 'Section 9. (4) The certified shellfish dealer shall assure that each package containing less than sixty-four (64) fluid ounces of fresh or frozen shellfish shall have: (b) A “sell by date” which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date if the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year shall be added to the date.'
         legal_citation: '902 Ky. Admin. Regs. 45:020 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: 'Milk/Milk Product, Shellfish'
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
