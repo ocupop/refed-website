@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(A) Raw shucked shellfish shall be obtained in nonreturnable packages which bear: . . . (2) The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
         legal_citation: 4000 Del. Admin. Code §3-202.17 (2013).
     label_regulation:
