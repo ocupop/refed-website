@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
           (A) Raw SHUCKED SHELLFISH shall be obtained in nonreturnable packages
           which bear a
