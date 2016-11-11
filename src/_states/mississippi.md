@@ -23,7 +23,7 @@ policy_data:
           date shucked.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
