@@ -43,8 +43,8 @@ policy_data:
         excerpted_language_from_the_law: '4. These foods must be discarded if not sold, served or frozen: (a) Within 10 calendar days after the original container is opened; or (b) On or before the date by which the food must be sold or used, as indicated on the container, whichever occurs first.'
         legal_citation: Nev. Admin. Code § 446.145 (2012).
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: 'Milk, Potentially Hazardous Foods'
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
