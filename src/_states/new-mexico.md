@@ -10,9 +10,23 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        purpose_of_law: Definition (pull date)
+        excerpted_language_from_the_law: >-
+          E. “Pull date” means the last day on which a product is to be sold or
+          offered for sale for
+
+          human consumption.
+        legal_citation: N.M. Code R. § 21.34.5.7 (2013).
+      - title: Reg 2
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'A. In addition to other labeling requirements, except as otherwise exempted in this rule, all processors and producer distributors shall label each container of one-half (1/2) pint or larger of milk, lowfat milk, non-fat milk, flavored milk, skim milk, half and half and creams sold or offered for sale with a legible pull date. B. The length of pull date for pasteurized products shall be determined by the processor. C. The length of pull date for raw products shall not exceed five (5) days including the date of packaging.'
+        legal_citation: N.M. Code R. § 21.34.5.9 (2013).
+      - title: Reg 3
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'Dairy products required to be labeled with a pull date and those dairy products labeled with an optional pull date, except frozen, dried, condensed or evaporated products, may not be sold or offered for sale for human consumption by any person after the pull date.'
+        legal_citation: N.M. Code R. § 21.34.5.16 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
