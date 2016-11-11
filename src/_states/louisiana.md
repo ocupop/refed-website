@@ -18,7 +18,7 @@ policy_data:
           2. the date when packed;
         legal_citation: 'La. Admin. Code tit. 7, pt. V § 929 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
