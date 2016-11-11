@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
           (a) Each container of eggs shall be labeled with the following
           information: . . . (6) the
