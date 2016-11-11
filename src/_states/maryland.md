@@ -10,7 +10,7 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk (Grade A)
-        purpose_of_law: Date labelling required
+        purpose_of_law: Date labeling required
         excerpted_language_from_the_law: 'B. A permittee shall conspicuously and legibly mark the cap or non-glass container of Grade A fluid milk with the words “Sell by”, followed by the designation of the month and the day of the month after which the product may not be sold, delivered, or offered for sale.'
         legal_citation: Md. Code Regs. 10.15.06.10 (2013).
       - title: Reg 2
