@@ -23,7 +23,7 @@ policy_data:
           consumption.
         legal_citation: Haw. Code R. § 11-15- 39 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Milk
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
