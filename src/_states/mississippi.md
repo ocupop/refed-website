@@ -9,9 +9,18 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          100.06 On packages containing sixty-four (64) fluid ounces or more
+          shall have on the lid and sidewall or bottom the “DATE SHUCKED”
+          indicated as the number of the day, month and year or the month, day
+          and year.
+
+          100.07 On packages of less than sixty-four (64) fluid ounces of fresh
+          product labeled with the wording “SELL BY” followed by a date expressed
+          as a month, day and year, not to exceed seventeen (17) days from the
+          date shucked.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
     label_regulation:
       foods_for_which_date_is_required:
