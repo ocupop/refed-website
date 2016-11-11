@@ -9,10 +9,37 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
+        applies_to_food_type: Shellfish
+        purpose_of_law: Definition (terminal sale date)
+        excerpted_language_from_the_law: >-
+          (65) Terminal sale date - the last day freshly packed shellfish shall
+          be offered for sale; that
+
+          being no more than 14 calendar days subsequent to the date the product
+          was shucked, or for oyster shellstock harvested from the Gulf of
+          Mexico, no more than 14 days subsequent to the date shellstock was
+          harvested.
+        legal_citation: Fla. Admin. Code Ann. r. 5L-1.002 (2013).
+      - title: Reg 2
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(1) . . . Containers of fresh shellfish, with a capacity of less than 64 ounces, shall further clearly and permanently bear the terminal sale date, by the numerical month, day, and last digit of the year.'
+        legal_citation: Fla. Admin. Code Ann. r. 5L-1.007 (2013).
+      - title: Reg 3
+        applies_to_food_type: Shellfish
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(11) It shall be unlawful for any person, firm, corporation, wholesale or retail dealer to sell or offer for sale any fresh shellfish after the terminal sale date has expired, or sell or offer for sale any fresh, frozen, or previously frozen shellfish not in compliance with any and all requirements of Chapter 5L-1, F.A.C.'
+        legal_citation: Fla. Admin. Code Ann r. 5L-1.007 (2013).
+      - title: Reg 4
         applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: (1)(a) All milk and milk products shall be legibly labeled with their shelf-life date. The date or date code for frozen desserts and other manufactured milk products shall be approved by the department and shall indicate the date of manufacture of the product or the last day the product is to be offered for sale.
+        legal_citation: Fla. Admin. Code Ann. r. 5D-1.007 (2013).
+      - title: Reg 5
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(1)(e) No milk or milk products shall be offered for sale as a grade A product after the shelflife expiration date shown on the container. All milk and milk products offered for sale after the shelf-life expiration date will be deemed to be misbranded and subject to be impounded and made unsalable or otherwise disposed of by the department, under the provisions of Section 502.231, F.S. (1)(f) This rule does not apply to containers of milk or milk products which are not to be sold in the State of Florida.'
+        legal_citation: Fla. Admin. Code Ann r. 5D-1.007 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
