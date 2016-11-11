@@ -24,7 +24,7 @@ policy_data:
         excerpted_language_from_the_law: 'E. Cases, half cases, cartons or containers marked grade AA or grade A shall be marked with an expiration date. F. The expiration date marked on a case, half case or container holding fifteen dozen eggs or more shall be plainly and conspicuously marked in bold-faced type not less than three-eighths inch in height on one outward end of the case or container. G. The expiration date marked on a carton or container holding less than fifteen dozen eggs shall be plainly and conspicuously marked in bold-faced type not less than one-eighth inch in height on one end of the outward top face of each carton and on one outward end or the outward top of each container.'
         legal_citation: Ariz. Rev. Stat. Ann. § 3-719 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
