@@ -9,10 +9,15 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Eggs
         purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: "Sec. 2. All eggs offered for sale in consumer packages (cases, boxes, baskets, or containers):\n(1) shall be legibly dated (month and day or consecutive day of the year) the day the eggs\nwere packed;\n(2) shall bear an expiration date of not more than thirty (30) days from date of pack, excluding date of pack; and\n(3) may contain a “BEST BY”, “BEST IF USED BY”, or “USE BY” date in addition to the\nexpiration date, which shall not exceed forty-five (45) days from the date of pack, excluding\nthe date of pack.\nShell eggs labeled AA shall bear in distinctly legible form an expiration date of no more than ten (10) days from date of pack excluding date of pack. The expiration date shall be stated as the month and day, for example, April 3 or 4-3, preceded by the letters “EXP” or “SELL BY”. \nQuality is best if sold by the expiration date."
+        legal_citation: 370 Ind. Admin. Code 1-3-2 (2013).
+      - title: Reg 2
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: Sec. 156 (a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies the . . . “sell by” date for packages with a capacity of less than one-half ( ½ ) gallon or the date shucked for packages with a capacity of one-half ( ½ ) gallon or more.
+        legal_citation: 410 Ind. Admin. Code 7-24-156 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
