@@ -9,10 +9,32 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Dairy
+        purpose_of_law: Definition (dairy products)
+        excerpted_language_from_the_law: >-
+          “Dairy product” means butter, natural or processed cheese, dry whole
+          milk, nonfat dry
+
+          milk, dry buttermilk, dry whey, evaporated whole or skim milk,
+          condensed whole milk and
+
+          condensed plain or sweetened skim milk.
+        legal_citation: 2 Va. Admin. Code § 5-531-10 (2013).
+      - title: Reg 2
+        applies_to_food_type: Dairy
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 4. No person may sell or offer for sale to the final consumer any dairy product in container or package form that does not bear a “sell by date.”
+        legal_citation: or package form that does not bear a “sell by date.” 2 Va. Admin. Code § 5-531-60 (2013).
+      - title: Reg 3
+        applies_to_food_type: Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 5. No person may sell or offer for sale to the final consumer any dairy product in container or package form after the “sell by date” shown on the package.
+        legal_citation: 2 Va. Admin. Code § 5-531-60 (2013).
+      - title: Reg 4
+        applies_to_food_type: Dairy
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: '6. No person may change, remove, or replace the “sell by date” on any dairy product in container or package form after the “sell by date” is initially affixed to the package.'
+        legal_citation: 2 Va. Admin. Code § 5-531-60 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
