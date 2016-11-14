@@ -9,12 +9,21 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          B. An expiration date shall be used on the container, the date shall be
+          preceded by “EXP”,
+
+          “sell by”, or “use through”.
+        legal_citation: 'Okla. Stat. tit. 2, § 10-72 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: (a) Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the . . . (2) The “sell by” or “best if used by” date for packages with a capacity of less than 1.89 L (one-half gallon) or the date shucked for packages with a capacity of 1.89 L (one-half gallon) or more.
+        legal_citation: 'Okla. Admin. Code § 310:257-5-15 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: 'Eggs, Shellfish'
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
