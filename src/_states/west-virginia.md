@@ -21,7 +21,7 @@ policy_data:
           provided to the retailer.
         legal_citation: W. Va. Code R. § 61- 7A-6 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
