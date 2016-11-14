@@ -38,7 +38,7 @@ policy_data:
         excerpted_language_from_the_law: 'No person shall: (1) Alter, deface or remove the open date from any perishable food retail or shipping package carton, container or wrapper. (2) Label any perishable food retail or shipping package carton, container or wrapper in a manner that does not conform to the rules promulgated pursuant to ORS 616.835.'
         legal_citation: Or. Rev. Stat. § 616.830 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: Packaged Perishable Foods
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
