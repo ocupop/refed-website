@@ -60,7 +60,11 @@ policy_data:
       - title: Cal.Civ.Code § 1714.25
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
+        who_is_protected: >-
+          Donor (any food facility, nonprofit charitable organization or food
+          bank)
+
+          Distributor (nonprofit/charitable organization or food bank)
         eligible_recipients: Nonprofit charitable organization or food bank
         standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
         protections_apply_when_recipient_pays_for_donated_food: 'No'
