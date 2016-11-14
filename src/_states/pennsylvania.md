@@ -46,8 +46,8 @@ policy_data:
         excerpted_language_from_the_law: '(a) Label requirement. Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the following:[…] (2) For packages with a capacity of less than 1.87 L (1/2 gallon): the “sell by” or “best if used by” date.'
         legal_citation: 7 Pa. Code § 46.246 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: 'Milk, Shellfish'
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
