@@ -9,10 +9,53 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          (1) (e) One of the following dates, in addition to the packing date
+          under par. (d):
+
+          1. An expiration date or “sell by” date after which the eggs may not be
+          offered for sale or
+
+          sold at retail. The expiration date may not be more than 30 days from
+          the packing date,
+
+          including the day on which the eggs were packed. The expiration date or
+          “sell by” date shall
+
+          be designated by at least the first three letters of the month and the
+          date within that month. The date shall be accompanied by a phrase or
+          abbreviation such as “sell by” or “EXP” which clearly identifies it as
+          an expiration date or “sell by” date.
+
+          2. A “use by” date consisting of at least the first 3 letters of the
+          month, and the date within
+
+          that month. The date shall be accompanied by a phrase such as “use by,”
+          “best if used by” or “use before,” which indicates that the consumer
+          should use the eggs before that date.
+        legal_citation: 'Wis. Admin. Code Agric. Trade & Consumer Prot. § 88- 08 (2013).'
+      - title: Reg 2
+        applies_to_food_type: Eggs
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(4) (a) No eggs may be sold as whole eggs at retail after the expiration or “sell by” date specified for those eggs under subs. (1) (e) 1. or (2) (g) 1. If otherwise used as human food, the eggs shall meet at least grade B egg standards.'
+        legal_citation: 'Wis. Admin. Code Agric. Trade & Consumer Prot. § 88- 08 (2013).'
+      - title: Reg 3
+        applies_to_food_type: Eggs
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: (4) (b) Eggs labeled with dates under subs. (1) (e) or (2) (g) shall retain those dates and may not be repackaged or relabeled with any other dates.
+        legal_citation: 'Wis. Admin. Code Agric. Trade & Consumer Prot. § 88- 08 (2013).'
+      - title: Reg 4
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '3-202.17 (A) Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the: . . . (2) The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
+        legal_citation: 'Wis. Admin. Code Agric. Trade & Consumer Prot. §75, App. (2013).'
+      - title: Reg 5
+        applies_to_food_type: Shellfish
+        purpose_of_law: Sale after date not restricted
+        excerpted_language_from_the_law: Not restricted for shellfish in Wisconsin.
+        legal_citation: No relevant state law.
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
