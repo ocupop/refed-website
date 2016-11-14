@@ -34,7 +34,7 @@ policy_data:
         excerpted_language_from_the_law: '6.6 (d) The dealer shall assure that each package containing less than 64 fluid ounces of fresh or frozen shellfish shall have: (i) The shucker-packer’s or repacker’s license number on the label; and (ii) A “SELL BY DATE” which provides a reasonable subsequent shelf-life or the words “BEST IF USED BY” followed by a date when the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year will be added to the date.'
         legal_citation: 31-3-9 R.I. Code R. § 6.0 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
+      foods_for_which_date_is_required: 'Packaged Bakery Products, Shellfish'
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
