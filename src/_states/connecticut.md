@@ -44,23 +44,14 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+      - title: C.G.S.A. § 52-557L
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: Where the donor knew or had reasonable grounds to believe the food was adulterated or unfit for human consumption
+        who_is_protected: "Donor: Any person, including (but not limited to): seller, farmer, processor, distributor, wholesaler, or retailer of food \nDistributor: No protection for organizations accepting or distributing donations of perishable food"
+        eligible_recipients: Nonprofit organization or corporation
+        standards_for_donated_food: Food must not be known or believed to be adulterated or unfit for human consumption
+        protections_apply_when_recipient_pays_for_donated_food: Nonprofit distributing to another nonprofit may charge low fee; nothing stated about end recipient paying
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
-      - title:
-        type_of_protection:
-        when_protection_will_not_apply:
-        who_is_protected:
-        eligible_recipients:
-        standards_for_donated_food:
-        protections_apply_when_recipient_pays_for_donated_food:
-        protections_apply_to_direct_donations:
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
