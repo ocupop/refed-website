@@ -9,10 +9,42 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Milk
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          (a) Label requirement. The cap or nonglass container of pasteurized
+          milk held in retail
+
+          food stores, restaurants, schools or similar food facilities for resale
+          shall be conspicuously
+
+          and legibly marked in a contrasting color with the designation of the
+          “sell-by” date--the
+
+          month and day of the month after which the product may not be sold or
+          offered for sale.
+
+          The designation may be numerical--such as “8-15”--or with the use of an
+          abbreviation for
+
+          the month, such as “AUG 15 or AU 15.” The words “Sell by” or “Not to be
+          sold after” must
+
+          precede the designation of the date, or the statement “Not to be sold
+          after the date stamped above” must appear legibly on the container.
+          This designation of the date may not exceed 17 days beginning after
+          midnight on the day on which the milk was pasteurized.
+        legal_citation: 7 Pa. Code § 59a.15 (2013).
+      - title: Reg 2
+        applies_to_food_type: Milk
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: (c) Prohibition. Pasteurized milk may not be sold or offered for sale if the milk is sold or offered for sale after the sell-by date designated on the container.
+        legal_citation: 7 Pa. Code § 59a.15 (2013).
+      - title: Reg 3
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(a) Label requirement. Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the following:[…] (2) For packages with a capacity of less than 1.87 L (1/2 gallon): the “sell by” or “best if used by” date.'
+        legal_citation: 7 Pa. Code § 46.246 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
