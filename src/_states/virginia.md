@@ -35,6 +35,11 @@ policy_data:
         purpose_of_law: Alteration of date labels not permitted
         excerpted_language_from_the_law: '6. No person may change, remove, or replace the “sell by date” on any dairy product in container or package form after the “sell by date” is initially affixed to the package.'
         legal_citation: 2 Va. Admin. Code § 5-531-60 (2013).
+      - title: Reg 5
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'A. Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies the: . . . “sell by” or “best if used by” date for packages with a capacity of less than one-half gallon (1.87 L) or the date shucked for packages with a capacity of one-half gallon (1.87 L) or more.'
+        legal_citation: 2 Va. Admin. Code § 5-585-400 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
