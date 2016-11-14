@@ -9,10 +9,17 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          6.5 Egg producers who own three thousand birds or less shall denote the
+          expiration date of
+
+          the eggs on the outside container in which the egg cards are
+          transported or on an invoice
+
+          provided to the retailer.
+        legal_citation: W. Va. Code R. § 61- 7A-6 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
