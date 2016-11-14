@@ -9,10 +9,22 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: >-
+          (E) . . . On this label must be printed or stamped, legibly in letters
+          not less than one-fourth
+
+          of an inch in size, the date when the eggs were packed and candled or
+          the expiration date,
+
+          which may not exceed forty-five days from the date packed
+        legal_citation: S.C. Code Ann. § 39- 39-140 (2013).
+      - title: Reg 2
+        applies_to_food_type: Shellfish
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '(2) Packages containing less than sixty-four (64) fluid ounces shall include: (a) The words “SELL BY” or “BEST IF USED BY” followed by a reasonable date when the product would be expected to reach the end of its shelf life; (b) The date as a month and day of the month; and (c) For fresh frozen shellfish, the year shall be added to the date.'
+        legal_citation: S.C. Code Ann. Regs. 61-47 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
