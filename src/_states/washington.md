@@ -9,10 +9,35 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Perishable Packaged Food Goods Definition (pull date)
+        excerpted_language_from_the_law: (2) “Pull date” means the latest date a packaged food product shall be offered for sale to the public.
+        legal_citation: Wash. Rev. Code Ann. § 69.04.900 (2013).
+      - title: Reg 2
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Definition (shelf life)
+        excerpted_language_from_the_law: (3) “Shelf life” means the length of time during which a packaged food product will retain its safe consumption quality if stored under proper temperature conditions.
+        legal_citation: Wash. Rev. Code Ann. § 69.04.900 (2013).
+      - title: Reg 3
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Definition (perishable packaged food goods)
+        excerpted_language_from_the_law: '(1) “Perishable packaged food goods” means and includes all foods and beverages, except alcoholic beverages, frozen foods, fresh meat, poultry and fish and a raw agricultural commodity as defined in this chapter, intended for human consumption which are canned, bottled, or packaged other than at the time and point of retail sale, which have a high risk of spoilage within a period of thirty days, and as determined by the director of the department of agriculture by rule and regulation to be perishable.'
+        legal_citation: Wash. Rev. Code Ann. § 69.04.900 (2013).
+      - title: Reg 4
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'All perishable packaged food goods with a projected shelf life of thirty days or less, which are offered for sale to the public after January 1, 1974 shall state on the package the pull date.'
+        legal_citation: Wash. Rev. Code Ann. § 69.04.905 (2013).
+      - title: Reg 5
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Sale after date not permitted (with exemptions)
+        excerpted_language_from_the_law: 'Can products be sold after the pull date? Yes, products can be sold after the pull date has expired if they are still wholesome, not a danger to health and clearly labeled indicating that the pull date has expired. They must be separated from products that are still within pull date.'
+        legal_citation: Wash. Admin. Code § 16-142-130 (2013).
+      - title: Reg 6
+        applies_to_food_type: Perishable Packaged Food Goods
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: 'Can pull dates be changed? No, pull dates on perishable packaged foods subject to pull dating may not be changed, crossed-out or concealed.'
+        legal_citation: Wash. Admin. Code § 16-142-150 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
