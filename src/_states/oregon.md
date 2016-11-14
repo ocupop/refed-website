@@ -9,10 +9,34 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labelling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Definition (open date)
+        excerpted_language_from_the_law: >-
+          2) “Open date” means a date clearly visible to retail consumers showing
+          the pull date,
+
+          packing date or other date described in ORS 616.835 (2).
+        legal_citation: Or. Rev. Stat. § 616.805 (2013).
+      - title: Reg 2
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'No person shall sell or offer for sale at retail any packaged perishable food unless the package bears a clearly marked, printed or stamped label showing the open date for the perishable food in the package. Such label shall be so designed and placed as to be clearly visible to the consumer.'
+        legal_citation: Or. Rev. Stat. § 616.815 (2013).
+      - title: Reg 3
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'Unless otherwise provided, the following perishable foods shall be open date labeled with the pull date: (1) Processed or cured meat and meat products including wieners, bologna, luncheon meat, liver sausage, salami, braunschweiger, hams and ham products, and bacon (tuck or vacuum packed). (2) Fluid milk and cream products for which a standard of identity has been established under ORS Chapter 621, cottage cheeses, yogurts, cheeses with a moisture content of more than 50 percent, sour creams, and party dips. (3) Bakery products as defined in subsection (2) of ORS 625.010, pastries, cookies, or crackers having a moisture content of 16 percent or more. (4) Eggs in shell. (5) Vegetable, macaroni, or potato salads that use mayonnaise or other acidic dressing as an ingredient or dressing, puddings, sandwiches, and other ready-to-eat products. (6) Fowl, including chickens, fryers, turkeys, ducks, geese, and other domesticated birds. (7) Fresh or raw packaged meat products, whether whole, ground, chopped or fabricated. (8) Fresh sausage products. (9) Fresh seafood products. (10) Fresh fish products (not breaded or precooked).'
+        legal_citation: Or. Admin. R. 603-025- 0080 (2013).
+      - title: Reg 4
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Sale after date not permitted (with exemptions)
+        excerpted_language_from_the_law: '(1) No person shall sell or offer for sale at retail any packaged perishable food after the expiration of the open pull date appearing on the label of the package or container unless: (a) The package has been separated from packages of perishable food with open pull dates that have not expired; (b) Each such package or group of packages is clearly identified in retail display as having an expired open pull date; and (c) The food is fit for human consumption according to applicable state and federal law. (2) Notwithstanding the provisions of this section, a vendor shall be allowed the first eight business hours after the expiration of the open pull date within which to remove all packages with an expired pull date.'
+        legal_citation: Or. Rev. Stat. § 616.825 (2013).
+      - title: Reg 5
+        applies_to_food_type:
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: 'No person shall: (1) Alter, deface or remove the open date from any perishable food retail or shipping package carton, container or wrapper. (2) Label any perishable food retail or shipping package carton, container or wrapper in a manner that does not conform to the rules promulgated pursuant to ORS 616.835.'
+        legal_citation: Or. Rev. Stat. § 616.830 (2013).
     label_regulation:
       foods_for_which_date_is_required:
       sale_after_date_permitted: true
