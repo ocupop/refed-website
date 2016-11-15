@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Maine
+code: ME
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,34 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
-      - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: >-
+          A. Each individual package containing fresh or fresh frozen shucked
+          shellfish meat shall bear a permanent printed label approved by the
+          Department that is legibly and indelibly marked in accordance with
+          applicable federal and state regulations to contain, but not be limited
+          to, the following . . .
+
+          B. The dealer shall also label each individual package containing less
+          than 64 fluid ounces
+
+          (1873 ml) of fresh or fresh frozen shellfish with the following:
+
+          1. The words “SELL BY DATE” or “BEST IF USED BY” followed by a date
+          when the product
+
+          would be expected to reach the end of its shelf life.
+
+          2. The date shall consist of the abbreviation for the month and number
+          of the day of the
+
+          month; and
+
+          3. For fresh frozen shellfish, the year shall be added to the date.
+        legal_citation: 13-188 Me. Code R. § 15.21 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,19 +44,17 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
+      - title: 14 M.R.S.A. § 166
         type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
+        who_is_protected: |-
+          Donor: A good faith donor
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients: Bona fide charitable or no-for-profit organization
+        standards_for_donated_food: 'Food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
+        additional_protections: Hospitals and licensed healthcare facilities can receive donor protections
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

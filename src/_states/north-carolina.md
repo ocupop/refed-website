@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: North Carolina
+code: NC
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,39 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: >-
+          A food shall be deemed to be misbranded: . . .
+
+          (15) If the labeling provided by the manufacturer, packer, distributor,
+          or retailer on meat,
+
+          meat products, poultry, or seafood includes a “sell-by” date or other
+          indicator of a last
+
+          recommended day of sale, and the date has been removed, obscured, or
+          altered by any person other than the customer. This subdivision does
+          not prohibit the removal of a label for the purpose of repackaging and
+          relabeling a food item so long as the new package or new label does not
+          bear a “sell-by” date or other indicator of a last recommended day of
+          sale later than the original package. This subdivision does not
+          prohibit relabeling of meat, meat products, poultry, or seafood that
+          has had its shelf life extended through freezing, cooking, or other
+          additional processing that extends the shelf life of the product.
+        legal_citation: N.C. Gen. Stat. Ann. § 106-130 (2013).
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
+        applies_to_food_type: Shellfish
+        purpose_of_law: Definition (sell by date)
+        excerpted_language_from_the_law: (26) “SELL BY date” means a date conspicuously placed on a container or tag by which a consumer is informed of the latest date the product will remain suitable for sale.
+        legal_citation: 15A N.C. Admin. Code 18A.0301 (2013).
       - title: Reg 3
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: (c) Any container of shucked shellfish which has a capacity of 64 fluid ounces or more shall be dated as of the date shucked on both the lid and sidewall or bottom. Any container of shucked shellfish which has a capacity of less than 64 fluid ounces shall indicate a SELL BY date.
+        legal_citation: 15A N.C. Admin. Code 18A.0614 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,16 +49,14 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+      - title: N.C.G.S.A. § 99B-10
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: Grossly negligent or willful conduct of the donor; negligent or willful conduct of the nonprofit distributor
+        who_is_protected: |-
+          Donor: Any donor or gleaner
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients: Bona fide charitable or nonprofit organization
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:

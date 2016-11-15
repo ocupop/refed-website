@@ -8,7 +8,7 @@ policy_data:
       link_url: /url_path
       legislation:
         - title:
-          applies_to_food_type: 
+          applies_to_food_type: stuff
           purpose_of_law:
           excerpted_language_from_the_law:
           legal_citation:
@@ -53,6 +53,7 @@ policy_data:
           licensure_requirements:
           treatment_requirements:
           enforcement:
+          relevant_state_regulatory_body:
   organics_recycling_mandates:
       overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
       summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
@@ -60,6 +61,6 @@ policy_data:
       legislation:
         - title:
           generators_covered:
-          waste_prduction:
+          waste_production:
           exemptions_for_distance_from_organics_processing_facility:
 ---

@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: New Jersey
+code: NJ
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -11,20 +11,55 @@ policy_data:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        excerpted_language_from_the_law: >-
+          Containers of milk, certified milk, Vitamin D milk, homogenized milk,
+          low fat milk, protein
+
+          fortified low fat milk, skim milk, protein fortified skim milk, nonfat
+          milk, protein fortified
+
+          nonfat milk, flavored milks and dairy drinks, buttermilk, cultured
+          buttermilk, yogurt, eggnog, creams, half-and-half and all other fluid
+          milk products designated by the department shall be marked with the
+          name and address of the processor or the pasteurizing plant number as
+          assigned by the department or the state of origin and the name and
+          address of the distributor.
+
+          All containers of fluid milk products, including those mentioned above,
+          intended for sale to
+
+          consumers, (except for those products which are sterilized and packaged
+          in hermetically
+
+          sealed containers), shall be marked with a legend “NOT TO BE SOLD
+          AFTER”, or “SELL
+
+          BY”, or any other clearly understandable legend approved by the
+          department, followed or
+
+          accompanied by the first three letters of the month where possible . .
+          . If two letters are used the letters MR shall mean MARCH and MY shall
+          mean MAY; JN shall mean JUNE and JL
+
+          shall mean JULY.
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
       - title: Reg 2
         applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'No fluid milk product listed in this section shall be sold or offered for sale after 11:59 p.m. of the date appearing on the containers so marked.'
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
       - title: Reg 3
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(d) No milk product referred to in this regulation shall be sold or offered for sale after 11:59 P.M. of the date appearing on the package or container. Products delivered prior to the “shelflife expiration date” may be consumed on the premises beyond the date appearing thereon.'
+        legal_citation: 'N.J. Admin. Code § 8:21-10.20 (2013).'
+      - title: Reg 4
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: '(n)(1) Raw shucked shellfish, packaging and identification requirements include the following: . . . ii. The “sell by” date for packages with a capacity of less than one-half gallon or the date shucked for packages with a capacity of one-half gallon or more.'
+        legal_citation: 'N.J. Admin. Code § 8:24-3.2 (2013).'
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,19 +67,20 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
+      - title: 'N.J.S.A. 24:4A-1 to 5'
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or knowing misconduct'
         who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
+          Donor: Includes, but is not limited to, any farmer, processor,
+          distributor, wholesaler, or retailer of food, higher education
+          institute, or gleaner nonprofits, food banks, and their agents
 
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+          Distributor: Food bank or nonprofit organization
+        eligible_recipients: Nonprofit organization
+        standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
+        protections_apply_when_recipient_pays_for_donated_food: Does not specify
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
+        additional_protections: Also protects owners of agricultural food who allow a person to harvest food for distribution
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

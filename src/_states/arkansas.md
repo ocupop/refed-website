@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Arkansas
+code: AR
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,22 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
-      - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: >-
+          (A) Raw SHUCKED SHELLFISH shall be obtained in nonreturnable packages
+          which bear a
+
+          legible label that identifies the: . . . (2) The “sell by” or “best
+          used by” date for packages
+
+          with a capacity of less than 1.89 L (one-half gallon) or the date
+          shucked for packages with a
+
+          capacity of 1.89 L (one-half gallon) or more
+        legal_citation: Ark. Code Ann. § 007- 04-8 3-202.17 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: Shellfish
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,18 +32,25 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+      - title: A.C.A. § 20-57-103
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
+        who_is_protected: |-
+          Donor: A good faith donor
+          Distributor: No protection for organizations accepting or distributing donations of perishable food
+        eligible_recipients: Bona fide charitable or not for profit organization
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
+        additional_protections:
+      - title:
+        type_of_protection:
+        when_protection_will_not_apply:
+        who_is_protected:
+        eligible_recipients:
+        standards_for_donated_food:
+        protections_apply_when_recipient_pays_for_donated_food:
+        protections_apply_to_direct_donations:
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

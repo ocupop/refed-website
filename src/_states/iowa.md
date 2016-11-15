@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Iowa
+code: IA
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,22 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
+        applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
+        excerpted_language_from_the_law: >-
+          (2) Each carton containing eggs for retail sale in Iowa which have been
+          candled and graded
+
+          shall be marked with:
+
+          a. The grade and size of the eggs contained;
+
+          b. The date the eggs were packed; and
+
+          c. The name and address of the distributor or packer.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
-      - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
-        applies_to_food_type: Shellfish
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,17 +32,18 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
+      - title: I.C.A. § 672.1
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct, or if the donor or nonprofit had actual or constructive knowledge that the food was contaminated or harmful to health'
         who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
+          Donor: A gleaner, restaurant, food establishment, food or food services
+          establishment, school, foodstuffs manufacturer, meat or poultry
+          establishment, or other person
 
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+          Distributor: Charitable or nonprofit organization
+        eligible_recipients: Charitable or nonprofit organization
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus but not defective canned goods'
+        protections_apply_when_recipient_pays_for_donated_food: Yes; Free or for a nominal fee
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

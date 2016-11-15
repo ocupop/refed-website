@@ -1340,6 +1340,9 @@ a.external {
 .gray {
   @include palette($text-color, $cream-light);
 }
+.alt {
+  background-color: $section-alt-color;
+}
 
 .recycle, .recycling {
   @include palette($recycle-color, $cream-light);

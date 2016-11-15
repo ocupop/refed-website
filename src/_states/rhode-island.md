@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Rhode Island
+code: RI
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,32 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Packaged Bakery Products
+        purpose_of_law: Definition (pull date)
+        excerpted_language_from_the_law: 'C) ‘Pull Date’ is the final date or day as established by the packer or manufacturer upon which a packaged bakery product may be sold, except as provided under Chapter 21-33, Section 3 and Section R21-33-PBP 6.00 of these rules and regulations.'
+        legal_citation: 31-3-5 R.I. Code R. § 21-33-PBP 1.00 (2013).
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
+        applies_to_food_type: Packaged Bakery Products
+        purpose_of_law: Definition (packaged bakery product)
+        excerpted_language_from_the_law: A) A ‘Packaged Bakery Product’ is a packaged bakery or bakery-type product consisting of flour and other ingredients having a normal shelf life as established by the manufacturer or distributor of sixty (60) days or less. The term shall not include frozen or canned products or foods which are or may be baked as part of a cooking or preparation procedure.
+        legal_citation: 31-3-5 R.I. Code R. § 21-33-PBP 1.00 (2013).
       - title: Reg 3
+        applies_to_food_type: Packaged Bakery Products
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: 'All packaged bakery product sold in this state shall have a pull date in a conspicuous place upon each package in which they are sold in accordance with these regulations and Chapter 21-33 of Rhode Island General Laws of 1956, as amended.'
+        legal_citation: 31-3-5 R.I. Code R. § 21-33-PBP 2.00 (2013).
+      - title: Reg 4
+        applies_to_food_type: Packaged Bakery Products
+        purpose_of_law: Sale after date not permitted (with exemptions)
+        excerpted_language_from_the_law: 'Packaged bakery products may be sold after their ‘Pull Date’, provided however, that: (1) Such products are segregated from such products which have not passed their ‘Pull Date’, and (2) Shelf markers or placards, or markings on the individual packages clearly identify such products as being offered for sale ‘Past Date’. The requirements of this section do not apply to any business whose exclusive purpose is the sale of past-date bakery products.'
+        legal_citation: 31-3-5 R.I. Code R. § 21-33-PBP 6.00 (2013).
+      - title: Reg 5
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: '6.6 (d) The dealer shall assure that each package containing less than 64 fluid ounces of fresh or frozen shellfish shall have: (i) The shucker-packer’s or repacker’s license number on the label; and (ii) A “SELL BY DATE” which provides a reasonable subsequent shelf-life or the words “BEST IF USED BY” followed by a date when the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year will be added to the date.'
+        legal_citation: 31-3-9 R.I. Code R. § 6.0 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: 'Packaged Bakery Products, Shellfish'
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,17 +42,18 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
+      - title: RI ST § 21-34-1 to 2
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: Intentional misconduct or recklessness
         who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
+          Donor: A person or organization, including but not limited to a farmer,
+          a processor, distributor, wholesaler, or retailer of food,
+          a restaurant, or an accredited culinary arts school
 
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients: Bona fide charitable or nonprofit organization
+        standards_for_donated_food: Food must appear fit for human consumption
+        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute without charge to receive protection; donor is protected even if the ultimate distributor charges
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

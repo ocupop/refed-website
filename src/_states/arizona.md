@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Arizona
+code: AZ
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,22 +9,22 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Eggs
+        purpose_of_law: Definition (Expiration date)
+        excerpted_language_from_the_law: >-
+          13. “Expiration date” means the words “sell by” or “buy thru” followed
+          by a date, including
+
+          the month and day, that is not more than twenty-four days after the
+          eggs were candled and that includes the date the eggs were candled.
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-701 (2013).
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
-        applies_to_food_type: Shellfish
+        applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: 'E. Cases, half cases, cartons or containers marked grade AA or grade A shall be marked with an expiration date. F. The expiration date marked on a case, half case or container holding fifteen dozen eggs or more shall be plainly and conspicuously marked in bold-faced type not less than three-eighths inch in height on one outward end of the case or container. G. The expiration date marked on a carton or container holding less than fifteen dozen eggs shall be plainly and conspicuously marked in bold-faced type not less than one-eighth inch in height on one end of the outward top face of each carton and on one outward end or the outward top of each container.'
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-719 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
+      foods_for_which_date_is_required: Eggs
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
@@ -32,19 +32,15 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
+      - title: A.R.S. § 36-916
         type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
-        protections_apply_to_direct_donations: 'No'
-        additional_protections:
+        when_protection_will_not_apply: Gross negligence or intentional misconduct
+        who_is_protected: "Donor: Nonprofit/Charitable organization, or any other person \nDistributor: Nonprofit/charitable organization and donor donating to immediate family"
+        eligible_recipients: 'Charitable organization or nonprofit, or any other person'
+        standards_for_donated_food: 'Apparently fit for human consumption. Provides protection for food that does not meet quality and label standards if (a) donor informs the recipient nonprofit, and (b) the recipient nonprofit agrees to recondition the product.'
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
+        protections_apply_to_direct_donations: 'Yes'
+        additional_protections: Protects property owners/managers who allow persons to glean food for charitable distribution
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

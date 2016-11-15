@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Florida
+code: FL
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,42 +9,55 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: Shellfish
+        purpose_of_law: Definition (terminal sale date)
+        excerpted_language_from_the_law: >-
+          (65) Terminal sale date - the last day freshly packed shellfish shall
+          be offered for sale; that
+
+          being no more than 14 calendar days subsequent to the date the product
+          was shucked, or for oyster shellstock harvested from the Gulf of
+          Mexico, no more than 14 days subsequent to the date shellstock was
+          harvested.
+        legal_citation: Fla. Admin. Code Ann. r. 5L-1.002 (2013).
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: '(1) . . . Containers of fresh shellfish, with a capacity of less than 64 ounces, shall further clearly and permanently bear the terminal sale date, by the numerical month, day, and last digit of the year.'
+        legal_citation: Fla. Admin. Code Ann. r. 5L-1.007 (2013).
+      - title: Reg 3
+        applies_to_food_type: Shellfish
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(11) It shall be unlawful for any person, firm, corporation, wholesale or retail dealer to sell or offer for sale any fresh shellfish after the terminal sale date has expired, or sell or offer for sale any fresh, frozen, or previously frozen shellfish not in compliance with any and all requirements of Chapter 5L-1, F.A.C.'
+        legal_citation: Fla. Admin. Code Ann r. 5L-1.007 (2013).
+      - title: Reg 4
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: (1)(a) All milk and milk products shall be legibly labeled with their shelf-life date. The date or date code for frozen desserts and other manufactured milk products shall be approved by the department and shall indicate the date of manufacture of the product or the last day the product is to be offered for sale.
+        legal_citation: Fla. Admin. Code Ann. r. 5D-1.007 (2013).
+      - title: Reg 5
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: '(1)(e) No milk or milk products shall be offered for sale as a grade A product after the shelflife expiration date shown on the container. All milk and milk products offered for sale after the shelf-life expiration date will be deemed to be misbranded and subject to be impounded and made unsalable or otherwise disposed of by the department, under the provisions of Section 502.231, F.S. (1)(f) This rule does not apply to containers of milk or milk products which are not to be sold in the State of Florida.'
+        legal_citation: Fla. Admin. Code Ann r. 5D-1.007 (2013).
     label_regulation:
       foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
-      sale_after_date_permitted: true
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+      - title: "West's F.S.A. § 768.136"
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: "Donor: Person, business, organization, or institution that owns, rents, leases, or operates (a) a facility where food is prepared for consumption or delivery, (b) a public location with vending machines that dispense prepared foods, or (c) a grocery store; and gleaners \nDistributor: Nonprofit/charitable organization"
+        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
+        eligible_recipients: Bona fide charitable or nonprofit organization
+        standards_for_donated_food: 'Apparently fit for human consumption; protection regardless of whether food is readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
+        additional_protections: 'Protects representatives or volunteers acting on behalf of bona fide nonprofits, as well as any uncompensated person who operates in a similar philanthropic role as such an organization (but does not explicitly protect donors that donate to such persons)'
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

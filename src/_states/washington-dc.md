@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Washington DC
+code: DC
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,39 +9,72 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Definition (pull date)
+        excerpted_language_from_the_law: >-
+          Pull date -- the date after which the food may not be sold, unless
+          isolated and prominently
+
+          labeled as being beyond the last date on which the food should be sold
+          without a significant risk of spoilage, loss of palatability if stored
+          by the consumer after that date and in the manner which the food can
+          reasonably be expected to be stored.
+        legal_citation: 'D.C. Mun. Regs. tit. 25- A, § 9901 (2013).'
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
+        applies_to_food_type: 'Potentially Hazardous Foods, Dairy, Meat/Poultry, Eggs'
+        purpose_of_law: Date labeling required
+        excerpted_language_from_the_law: '718.1 All pasteurized fluid milk, fresh meat, poultry, fish, bread products, eggs, butter, cheese, cold meat cuts, mildly processed pasteurized products, and potentially hazardous foods sold in food-retail establishments which are pre-wrapped and not intended to be eaten on the premises of the food establishment shall have easily understood pull dates prominently displayed on their containers.'
+        legal_citation: 'D.C. Mun. Regs. tit. 25-A, § 718 (2013).'
       - title: Reg 3
+        applies_to_food_type: 'Potentially Hazardous Foods, Dairy, Meat/Poultry, Eggs'
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'Pull date -- the date after which the food may not be sold, unless isolated and prominently labeled as being beyond the last date on which the food should be sold without a significant risk of spoilage, loss of palatability if stored by the consumer after that date and in the manner which the food can reasonably be expected to be stored.'
+        legal_citation: 'D.C. Mun. Regs. tit. 25- A, § 9901 (2013).'
+      - title: Reg 4
+        applies_to_food_type: 'Potentially Hazardous Foods, Dairy, Meat/Poultry, Eggs'
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: '718.2 If any food that has a pull date is rewrapped, the new package shall retain the original pull date and the word “REWRAPPED” shall be prominent displayed on the package.'
+        legal_citation: 'D.C. Mun. Regs. tit. 25-A, § 718 (2013).'
+      - title: Reg 5
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Date labeling not required
+        excerpted_language_from_the_law: 'Date labeling not required for packaged perishable food in Washington, D.C.'
+        legal_citation: No relevant state law.
+      - title: Reg 6
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 'No person shall sell, trade, or barter any perishable packaged food beyond the pull date appearing thereon.'
+        legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 3606 (2013).'
+      - title: Reg 7
+        applies_to_food_type: Packaged Perishable Food
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: 3606.2 No person shall rewrap or repackage any packaged perishable food with the intention of placing a pull date on the food that is different from the original pull date.
+        legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 3606 (2013).'
+      - title: Reg 8
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: '2403.5 Each individual package containing less than sixty-four fluid ounces (64 fl. oz.) of fresh or frozen shellfish shall be labeled with the following information: . . . (b) A “Sell by” date which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date when the product would be expected to reach the end of its shelf-life.'
+        legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 2403 (2013).'
+      - title: Reg 9
+        applies_to_food_type: Shellfish
+        purpose_of_law: Sale after date not restricted
+        excerpted_language_from_the_law: 'Not restricted for shellfish in Washington, D.C.'
+        legal_citation: No relevant state law.
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: 'Potentially Hazardous Foods, Dairy, Meat/Poultry, Eggs, Shellfish'
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
-        who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
-
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+      - title: DC ST § 48-301
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: Gross negligence or intentional misconduct
+        who_is_protected: "Donor: A good faith donor \nDistributor: Nonprofit/charitable organization"
+        eligible_recipients: Bona fide charitable or nonprofit organization
+        standards_for_donated_food: Food must not be known or believed to be unfit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:

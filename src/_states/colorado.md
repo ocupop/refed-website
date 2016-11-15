@@ -1,7 +1,7 @@
 ---
 layout: state
-name: California
-code: CA
+name: Colorado
+code: CO
 policy_data:
   date_labeling:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -9,39 +9,50 @@ policy_data:
     link_url: /url_path
     legislation:
       - title: Reg 1
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: 'At the time of sale to the consumer . . . there shall appear upon the package container of such product the date established by the processor as the date upon which, in order to insure quality, such product is normally removed from the shelf'
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        applies_to_food_type: General
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: >-
+          A. When voluntary code date information appears on a retail food
+          establishment or
+
+          manufacturers’ label, it shall not be concealed or altered.
+        legal_citation: '6 Colo. Code Regs. § 1010-2:3-701 (2013).'
       - title: Reg 2
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Date labeling required (scope of law)
-        excerpted_language_from_the_law: '(a) Except as otherwise provided in Food and Agricultural Code Section 36004(c), the licensed milk products plant which bottles or packages the following products shall be responsible for affixing the quality assurance date to all containers which are offered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese. (b) The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.'
-        legal_citation: 'Cal. Code Regs. tit. III, § 627 (2013).'
-      - title: Reg 3
-        applies_to_food_type: Shellfish
+        applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
+        excerpted_language_from_the_law: '3.2 PACK DATE REQUIREMENTS Every case, carton, or container of shell eggs at the time of packing shall have legibly printed thereon, in numerals not less than one-eighth inch in height, the date the eggs are first packed, which shall be referred to in these rules as the “pack date.” The pack date shall be stated numerically by month and day (e.g., 1/15), or by the numbered consecutive day of the year (e.g., 123, being the 123rd consecutive day of the year).'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+      - title: Reg 3
+        applies_to_food_type: Eggs
+        purpose_of_law: Further date labeling optional (formatting specified if used)
+        excerpted_language_from_the_law: '3.3 SELL-BY DATE REQUIREMENTS Every case, carton, or container of shell eggs may, but need not have legibly printed thereon, . . . a date by which the eggs must be sold, which shall be referred to in these rules as the “sell-by date.” The sell-by date shall be no more than 30 days after the pack date. It shall be stated by month and day using the three-letter abbreviation of the month followed by the numerical day of the month (e.g., Jan 15), and preceded by the term SELL BY or EXP.'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+      - title: Reg 4
+        applies_to_food_type: Eggs
+        purpose_of_law: Sale after date not permitted
+        excerpted_language_from_the_law: 4.1 No shell eggs may be offered for sale or sold to a consumer or restaurant more than 45 days after the pack date.
+        legal_citation: '8 Colo. Code Regs. § 1202-10:4.0 (2013).'
     label_regulation:
-      foods_for_which_date_is_required: 'Milk/Dairy, Shellfish'
-      sale_after_date_permitted: true
+      foods_for_which_date_is_required: Eggs
+      sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct'
+      - title: C.R.S.A. § 13-21-113
+        type_of_protection: Civil and Criminal
+        when_protection_will_not_apply: 'Willful, wanton, or reckless acts'
         who_is_protected: >-
-          Donor: any food facility, nonprofit charitable organization or food
-          bank
+          Donor: Farmer, retail food establishment, or processor, distributor,
+          wholesaler, or retailer of food; nonprofits that donate to another
+          nonprofit to distribute
 
-          Distributor: nonprofit/charitable organization or food bank
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+          Distributor: Nonprofits that distribute under the states Cottage Food
+          Law
+        eligible_recipients: Nonprofit organizations
+        standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
