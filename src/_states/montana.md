@@ -45,7 +45,7 @@ policy_data:
           Distributor: Nonprofit/charitable organization
         eligible_recipients: Bona fide charitable or nonprofit organization
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute the food for free; donor is protected even if the ultimate
+        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute the food for free; donor is protected even if the ultimate distributor charges
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
