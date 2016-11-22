@@ -11,6 +11,8 @@
   }
 }
 
+
+
 #policy-nav {
   position: fixed;
   right: -275px;
@@ -20,6 +22,12 @@
   height: 100%;
   width: 275px;
   transition: all 1s ease;
+  &.map-nav {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
+  }
   &.policy-open {
     right: 0;
     box-shadow: -5px -3px 10px rgba(0,0,0,0.3);
@@ -37,7 +45,6 @@
     border: none;
     background: transparent;
     font-size: 14px;
-
   }
 
   .close-nav {

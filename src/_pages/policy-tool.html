@@ -4,7 +4,33 @@ title: Policy Tool
 permalink: /policy-tool
 slug: policy-tool
 ---
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<div class="row">
+  <div id="map"></div>
+  <div id="map-nav" class="cream">
+    <ul>
+      <li class="prevention heading">Prevention Policy</li>
+      <li><small>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</small></li>
+      <li>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Date Labelling
+          </label>
+          <br>
+          <small>
+            Reveal state policies that hinder food waste prevention
+          </small>  
+        </div>
+      </li>
+      <li class="recovery heading">Recovery Policy</li>
+      <li>Liability Protection</li>
+      <li>Tax Incentives</li>
+      <li class="recycling heading">Recycling Policy</li>
+      <li>Animal Feed</li>
+      <li>Organic Waste Bans &amp; Waste Recycling Laws</li>
+    </ul>
+  </div>
+</div>
+
 
 <div class="container">
   <div class="row">
@@ -20,6 +46,7 @@ slug: policy-tool
   </div>
 </div>
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
   $('#state-select').change(function(){
     var value = $(this).val();

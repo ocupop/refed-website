@@ -1,5 +1,6 @@
 #map {
   position: relative;
+  width: 75%;
 }
 .map-tooltip {   
   position: absolute;           
@@ -13,4 +14,34 @@
   border-radius: 3px;           
   pointer-events: none; 
   box-shadow: 1px 2px 3px rgba(0,0,0,.4);        
+}
+
+#map-nav {
+  width: 25%;
+  ul {
+    li {
+      padding: 10px 20px;
+      margin-bottom: 0;
+      &.heading {
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    } 
+  }
+  small {
+    font-size: 12px;
+  }
+  .checkbox {
+    margin: 0;
+    input {
+      height: auto;
+    }
+    label {
+      font-weight: 300;
+    }
+    small {
+      display: block;
+      padding-left: 20px;
+    }
+  }
 }
