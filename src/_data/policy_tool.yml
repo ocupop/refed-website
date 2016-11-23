@@ -1,30 +1,34 @@
 date_labeling:
   case_studies: []
   filters:
-    - title: "Lorem Ipsum"
-      definition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+    - title: Lorem Ipsum
+      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
       states:
 liability_protection:
   case_studies: []
   filters:
-    - title: "Lorem Ipsum"
-      definition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+    - title: Protections apply when end recipient pays for the donated food
+      definition: L
+      states:
+        - alaska
+    - title:
+      definition:
       states:
 tax_incentives:
   case_studies: []
   filters:
-    - title: "Lorem Ipsum"
-      definition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+    - title: Lorem Ipsum
+      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
       states:
 animal_feed:
   case_studies: []
   filters:
-    - title: "Lorem Ipsum"
-      definition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+    - title: Lorem Ipsum
+      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
       states:
 organics_recycling_mandates:
   case_studies: []
   filters:
-    - title: "Lorem Ipsum"
-      definition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+    - title: Lorem Ipsum
+      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
       states:
