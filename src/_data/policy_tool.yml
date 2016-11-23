@@ -7,10 +7,6 @@ date_labeling:
 liability_protection:
   case_studies: []
   filters:
-    - title: Protections apply when end recipient pays for the donated food
-      definition: L
-      states:
-        - alaska
     - title:
       definition:
       states:
