@@ -1,9 +1,68 @@
 date_labeling:
   case_studies: []
   filters:
-    - title: Lorem Ipsum
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    - title: No date label regulations
+      definition: No date label regulations
       states:
+        - idaho
+        - missouri
+        - nebraska
+        - new-york
+        - south-dakota
+        - tennessee
+        - utah
+    - title: Date labels required for certain foods. No restrictions on sales after those dates
+      definition: Date labels required for certain foods. No restrictions on sales after those dates
+      states:
+        - alaska
+        - arizona
+        - arkansas
+        - california
+        - connecticut
+        - delaware
+        - hawaii
+        - indiana
+        - iowa
+        - kansas
+        - louisiana
+        - maine
+        - minnesota
+        - mississippi
+        - north-carolina
+        - north-dakota
+        - ohio
+        - oklahoma
+        - south-carolina
+        - texas
+        - vermont
+        - west-virginia
+        - wyoming
+    - title: Date labels required for certain foods. Regulations on sales after those dates
+      definition: Date labels required for certain foods. Regulations on sales after those dates
+      states:
+        - colorado
+        - florida
+        - georgia
+        - kentucky
+        - maryland
+        - massachusetts
+        - michigan
+        - montana
+        - nevada
+        - new-hampshire
+        - new-jersey
+        - new-mexico
+        - oregon
+        - pennsylvania
+        - rhode-island
+        - virginia
+        - washington
+        - wisconsin
+    - title: No date label regulations. Regulations on sales after dates if date labels are voluntarily applied
+      definition: No date label regulations. Regulations on sales after dates if date labels are voluntarily applied
+      states:
+        - alabama
+        - illinois
 liability_protection:
   case_studies: []
   filters:
