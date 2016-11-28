@@ -11,22 +11,27 @@ slug: policy-tool
       <li class="prevention heading">Prevention Policy</li>
       <li><small>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</small></li>
       <li>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Date Labelling
-          </label>
-          <br>
-          <small>
-            Reveal state policies that hinder food waste prevention
-          </small>  
-        </div>
+        {% assign section = site.data.policy_tool['date_labeling'] %}
+        {% include tools/policy_tool_filter.html section=section %}
       </li>
       <li class="recovery heading">Recovery Policy</li>
-      <li>Liability Protection</li>
-      <li>Tax Incentives</li>
+      <li>
+        {% assign section = site.data.policy_tool['liability_protection'] %}
+        {% include tools/policy_tool_filter.html section=section %}
+      </li>
+      <li>
+        {% assign section = site.data.policy_tool['tax_incentives'] %}
+        {% include tools/policy_tool_filter.html section=section %}
+      </li>
       <li class="recycling heading">Recycling Policy</li>
-      <li>Animal Feed</li>
-      <li>Organic Waste Bans &amp; Waste Recycling Laws</li>
+      <li>
+        {% assign section = site.data.policy_tool['animal_feed'] %}
+        {% include tools/policy_tool_filter.html section=section %}
+      </li>
+      <li>
+        {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+        {% include tools/policy_tool_filter.html section=section %}
+      </li>
     </ul>
   </div>
 </div>

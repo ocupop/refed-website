@@ -1,0 +1,22 @@
+<!-- TODO - Refactor filters sidebar on policy tool page -->
+{% assign section = include.section %}
+<div class="checkbox">
+  <label>
+    <input type="checkbox"> {{ section.title }}
+  <br>
+  <small>
+    {{ section.definition }}
+  </small>  
+</div>
+<ul>
+  {% for filter in section.filters %}
+    <li>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">
+          <small>{{ filter.definition }}</small>
+        </label>
+      </div>
+    </li>
+    {% endfor %}
+</ul>

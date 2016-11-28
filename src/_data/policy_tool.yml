@@ -1,4 +1,6 @@
 date_labeling:
+  title: Data Labeling
+  definition: Reveal state policies that hinder food waste prevention
   case_studies: []
   filters:
     - title: No date label regulations
@@ -64,6 +66,8 @@ date_labeling:
         - alabama
         - illinois
 liability_protection:
+  title: Liability Protection
+  definition: Reveal states that offer liability protection
   case_studies: []
   filters:
     - title: Protections apply when end recipient pays for the donated food
@@ -109,6 +113,8 @@ liability_protection:
       states:
         - massachusetts
 tax_incentives:
+  title: Tax Incentives
+  definition: Reveal states that offer tax incentives
   case_studies: []
   filters:
     - title: "States that o\x1Fffer additional tax incentives beyond federal incentives"
@@ -124,6 +130,8 @@ tax_incentives:
         - south-carolina
         - virginia
 animal_feed:
+  title: Animal Feed
+  definition: Reveal state policies that hinder food waste recycling
   case_studies: []
   filters:
     - title: Prohibits feeding food waste to all animals
@@ -202,6 +210,8 @@ animal_feed:
         - west-virginia
         - wyoming
 organics_recycling_mandates:
+  title: "Organic Waste Bans & Waste Recycling Laws"
+  definition: Reveal states that offer liability protection
   case_studies: []
   filters:
     - title: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
