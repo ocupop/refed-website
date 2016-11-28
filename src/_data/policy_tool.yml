@@ -126,9 +126,81 @@ tax_incentives:
 animal_feed:
   case_studies: []
   filters:
-    - title: Lorem Ipsum
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    - title: Prohibits feeding food waste to all animals
+      definition: Prohibits feeding food waste to all animals
       states:
+        - illinois
+        - kansas
+    - title: Prohibits feeding animal waste to swine
+      definition: Prohibits feeding animal waste to swine
+      states:
+        - alabama
+        - delaware
+        - idaho
+        - illinois
+        - kansas
+        - kentucky
+        - louisiana
+        - mississippi
+        - nebraska
+        - north-carolina
+        - oregon
+        - south-carolina
+        - south-dakota
+        - texas
+        - vermont
+        - wisconsin
+    - title: Prohibits feeding animal and vegetable waste to swine
+      definition: Prohibits feeding animal and vegetable waste to swine
+      states:
+        - alabama
+        - illinois
+        - kansas
+        - kentucky
+        - louisiana
+        - mississippi
+        - north-carolina
+        - oregon
+        - south-dakota
+        - wisconsin
+    - title: Prohibits feeding household waste to your own swine
+      definition: Prohibits feeding household waste to your own swine
+      states:
+        - kentucky
+        - louisiana
+        - michigan
+        - virginia
+    - title: Regulates the feeding of food scraps to other animals besides swine
+      definition: Regulates the feeding of food scraps to other animals besides swine
+      states:
+        - california
+        - georgia
+        - illinois
+        - iowa
+        - kansas
+        - massachusetts
+        - michigan
+        - minnesota
+        - nebraska
+        - new-jersey
+        - new-york
+        - pennsylvania
+        - south-dakota
+    - title: Require both vegetable and animal waste to be heat treated.
+      definition: Require both vegetable and animal waste to be heat treated.
+      states:
+        - arkansas
+        - colorado
+        - iowa
+        - minnesota
+        - missouri
+        - new-jersey
+        - oklahoma
+        - rhode-island
+        - tennessee
+        - virginia
+        - west-virginia
+        - wyoming
 organics_recycling_mandates:
   case_studies: []
   filters:
