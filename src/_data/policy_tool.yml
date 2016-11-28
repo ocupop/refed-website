@@ -204,6 +204,13 @@ animal_feed:
 organics_recycling_mandates:
   case_studies: []
   filters:
-    - title: Lorem Ipsum
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    - title: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
+      definition: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       states:
+        - california
+        - connecticut
+        - massachusetts
+        - new-york
+        - rhode-island
+        - texas
+        - washington
