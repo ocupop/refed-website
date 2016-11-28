@@ -111,9 +111,18 @@ liability_protection:
 tax_incentives:
   case_studies: []
   filters:
-    - title: Lorem Ipsum
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    - title: "States that o\x1Fffer additional tax incentives beyond federal incentives"
+      definition: "States that o\x1Fffer additional tax incentives beyond federal incentives"
       states:
+        - arizona
+        - california
+        - colorado
+        - iowa
+        - kentucky
+        - missouri
+        - oregon
+        - south-carolina
+        - virginia
 animal_feed:
   case_studies: []
   filters:
