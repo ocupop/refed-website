@@ -66,9 +66,48 @@ date_labeling:
 liability_protection:
   case_studies: []
   filters:
-    - title:
-      definition:
+    - title: Protections apply when end recipient pays for the donated food
+      definition: Protections apply when end recipient pays for the donated food
       states:
+        - alaska
+        - arizona
+        - arkansas
+        - connecticut
+        - georgia
+        - idaho
+        - iowa
+        - massachusetts
+        - mississippi
+        - montana
+        - new-hampshire
+        - new-jersey
+        - north-carolina
+        - oklahoma
+        - oregon
+        - pennsylvania
+        - south-carolina
+        - rhode-island
+        - texas
+        - wisconsin
+    - title: Protection for food service establishments and retail stores donating directly to final recipients.
+      definition: Protection for food service establishments and retail stores donating directly to final recipients.
+      states:
+        - arizona
+        - louisiana
+        - minnesota
+        - new-hampshire
+        - new-mexico
+    - title: Protection regardless of compliance with non-safety related labeling requirements.
+      definition: Protection regardless of compliance with non-safety related labeling requirements.
+      states:
+        - california
+        - nevada
+        - oregon
+        - washington
+    - title: Protection for the donation of past-date food
+      definition: Protection for the donation of past-date food.
+      states:
+        - massachusetts
 tax_incentives:
   case_studies: []
   filters:
