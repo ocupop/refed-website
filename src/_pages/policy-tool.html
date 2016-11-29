@@ -4,44 +4,76 @@ title: Policy Tool
 permalink: /policy-tool
 slug: policy-tool
 ---
-<div class="row">
-  <div id="map"></div>
-  <div id="map-nav" class="cream">
-    <h4 class="prevention">Prevention Policy</h4>
-    <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
-    {% assign section = site.data.policy_tool['date_labeling'] %}
-    {% include tools/policy_tool_filter.html section=section %}
-
-    <h4 class="recovery">Recovery Policy</h4>
-    {% assign section = site.data.policy_tool['liability_protection'] %}
-    {% include tools/policy_tool_filter.html section=section %}
-
-    {% assign section = site.data.policy_tool['tax_incentives'] %}
-    {% include tools/policy_tool_filter.html section=section %}
-
-    <h4 class="recycling">Recycling Policy</h4>
-    {% assign section = site.data.policy_tool['animal_feed'] %}
-    {% include tools/policy_tool_filter.html section=section %}
-    
-    {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
-    {% include tools/policy_tool_filter.html section=section %}
-  </div>
-</div>
-
-
+<header class="policy-header">
+  U.S Food Waste Policy Finder
+</header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <div id="map"></div>
-      <select name="" id="state-select">
-        <option value="#">Select State</option>
-        {% for state in site.states %}
-          <option value="{{ state.url }}">{{ state.name }}</option>
-        {% endfor %}
-      </select>
+    <div class="col-md-12">
+      <div id="map">
+        <div id="federal-state-nav">
+          <a href="#" class="button">Federal<br>Policy</a>
+          <a href="#" class="button active">State<br>Policy</a>
+        </div>
+        <div id="map-instructions">
+          <div class="content">
+            <h4>U.S. Food Waste Policy Finder</h4>
+            <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<div id="map-nav" class="cream">
+  <h4 class="prevention">Prevention Policy</h4>
+  <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
+  <ul>
+    <li class="checkbox">
+      <input id="date_labelling_filters" type="checkbox" value="">
+      <label for="date_labelling_filters">
+        <span></span>
+        Date Labelling
+        <small>Reveal state policies that hinder food waste prevention</small>
+      </label>
+      <a href="#" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
+    </li>
+  </ul>
+  
+  <h4 class="recovery">Recovery Policy</h4>
+  {% assign section = site.data.policy_tool['liability_protection'] %}
+  {% include tools/policy_tool_filter.html section=section %}
+
+  {% assign section = site.data.policy_tool['tax_incentives'] %}
+  {% include tools/policy_tool_filter.html section=section %}
+
+  <h4 class="recycling">Recycling Policy</h4>
+  {% assign section = site.data.policy_tool['animal_feed'] %}
+  {% include tools/policy_tool_filter.html section=section %}
+  
+  {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+  {% include tools/policy_tool_filter.html section=section %}
+</div>
+<section id="explore">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <label for="state-select">Explore Food Waste Policy by State</label>
+      </div>
+      <div class="col-sm-9">
+        <div class="select">
+          <select name="" id="state-select">
+            <option value="#">Choose State</option>
+            {% for state in site.states %}
+              <option value="{{ state.url }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script>
   $('#state-select').change(function(){
     var value = $(this).val();
@@ -53,6 +85,12 @@ slug: policy-tool
       return false;
   });
 
+  $('.show-categories').click(function(){
+    event.preventDefault();
+    $(this).next().fadeIn('slow');
+    window.console.log('clicked');
+    //need to still hide on second click
+  })
 
   $('input[type="checkbox"]').change(function(e) {
 

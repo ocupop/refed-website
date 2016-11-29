@@ -1,3 +1,22 @@
+.policy-tool {
+  .select {
+    &:after {
+      right: 0;
+      top: 4px;
+      color: $recovery-color;
+      background-color: #9bcac0;
+      width: 50px;
+      height: 47px;
+      line-height: 47px;
+      text-align: center;
+      font-size: 13px;
+    }
+    select {
+      font-style: italic;
+    }
+  }
+}
+
 .states {
   h1 { font-size: 36px;}
   h2 { font-size: 30px; font-weight: 500; }
@@ -11,7 +30,144 @@
   }
 }
 
+.policy-header {
+  width: 100%;
+  background-color: $gray;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 20px 0;
+  height: 62px;
+}
 
+.map-tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 3px;
+  pointer-events: none;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.4);
+}
+
+#map {
+  height: 650px;
+  svg {
+    margin-top: 60px;
+  }
+}
+
+#map-instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // background-color: rgba(255,255,255, .3);
+  .content {
+    font-size: 14px;
+    padding: 25px 40px;
+    background: #fff;
+    max-width: 60%;
+    h4 {
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+#federal-state-nav {
+  position: absolute;
+  top: 20px;
+  left: 25%;
+  width: auto;
+  z-index: 10;
+  .button {
+    display: inline-block;
+    width: 150px;
+    margin: 7px;
+    height: auto;
+    padding: 12px 0;
+    font-weight: 400;
+    background-color: $cream;
+    color: $gray;
+    opacity: .5;
+    &.active {
+      background-color: $gray;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+#map-nav {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  width: 325px;
+  height: 650px;
+  z-index: 50;
+  overflow: auto;
+  h4 {
+    padding: 10px 20px;
+    margin-top: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  p {
+    padding: 0 20px;
+    line-height: 1em;
+    font-size: 13px;
+  }
+  ul {
+    padding: 0;
+    padding-right: 30px;
+    margin: 10px 0;
+    li  { 
+      padding-left: 20px;
+      margin-bottom: 15px;
+      .btn {
+        color: $text-color;
+        font-size: 13px;
+        font-weight: 300;
+        padding-left: 23px;
+      }
+      >ul {
+        display: none;
+        padding-right: 0;
+        font-size: 12px;
+      }
+    }
+    
+  }
+
+  label {
+    font-weight: 300;
+  }
+  small {
+    display: block;
+  }
+  .button {
+    font-weight: 300;
+    margin: 5px 0 5px 25px;
+    font-size: 14px;
+    width: auto;
+  }
+}  
+
+#explore {
+  padding: 20px 0;
+}
 
 #policy-nav {
   position: fixed;
