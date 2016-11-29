@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   {% include scripts.html %}
-  <body class="{{ page.slug }} {{ page.collection }}">
+  <body class="{{ page.slug }} {{ page.collection }} {{ page.layout }}">
     <header id="page-header">{% include header.html %}</header>
     {% include search-results.html %}
     <main id="page-content">
