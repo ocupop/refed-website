@@ -1,22 +1,23 @@
 <!-- TODO - Refactor filters sidebar on policy tool page -->
 {% assign section = include.section %}
-<div class="checkbox">
-  <label>
-    <input type="checkbox"> {{ section.title }}
-  <br>
-  <small>
-    {{ section.definition }}
-  </small>  
-</div>
 <ul>
-  {% for filter in section.filters %}
-    <li>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox">
-          <small>{{ filter.definition }}</small>
-        </label>
-      </div>
-    </li>
-    {% endfor %}
+  <li class="checkbox">
+    <input id="{{ section.title | slugify }}_filters" type="checkbox" value="">
+    <label for="{{ section.title | slugify }}_filters">
+      <span></span>
+      {{ section.title }}
+      <small>{{ section.definition }}</small>
+    </label>
+    <ul>
+      {% for filter in section.filters %}
+        <li class="checkbox">
+          <input id="{{ section.title | slugify }}_filter_{{ forloop.index }}" type="checkbox" value="{{ filter.states | split: '' }}">
+          <label for="{{ section.title | slugify }}_filter_{{ forloop.index }}">
+            <span></span>
+            {{ filter.title }}
+          </label>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
 </ul>

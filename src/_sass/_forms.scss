@@ -1,0 +1,181 @@
+// Custom Checkboxes
+
+.checkbox, .radio {
+  margin: 0;
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+    margin-left: 0;
+    &+label {
+      position: relative;
+      padding-left: 25px;
+      span {
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 0;
+        vertical-align: middle;
+        background: #ffffff;
+        border: 1px solid $gray-light;
+        border-radius: 50%;
+        cursor: pointer;
+        &:after {
+          display: block;
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          top: 3px;
+          left: 3px;
+          border-radius: 50%;
+          background-color: transparent;
+        }
+      }
+    }
+    &:checked {
+      &+label {
+        font-weight: 600;
+        span {
+          &:after {
+            background-color: $gray-light;
+          }
+        }
+      }
+    }
+  }
+  label {
+    min-height: 20px;
+    padding-left: 0px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.checkbox {
+  input[type="radio"],
+  input[type="checkbox"] {
+    &+label {
+      span {
+        border-radius: 0;
+      }
+    }
+    &:checked {
+      &+label {
+        span {
+          // background-color: $gray-light;
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 12px;
+            line-height: 12px;
+            width: 12px;
+            top: 3px;
+            left: 3px;
+            text-align: center;
+            background-color: $gray-dark;
+            color: #fff;
+            text-align: center;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+    &:indeterminate {
+      &+label {
+        span {
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 4px;
+            line-height: 4px;
+            width: 12px;
+            top: 7px;
+            left: 3px;
+            text-align: center;
+            background-color: $gray-dark;
+            color: #fff;
+            text-align: center;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $gray;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "OFF";
+    height: 14px;
+    width: 14px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    color: #fff;
+    text-indent: 16px;
+    font-size: 10px;
+    line-height: 14px;
+    transition: .4s;
+  }
+
+  .slider:after {
+    position: absolute;
+    content: "ON";
+    background-color: transparent;
+    color: #fff;
+    font-size: 10px;
+    text-indent: 5px;
+    line-height: 16px;
+    transition: .4s;
+    opacity: 0;
+  }
+
+  input {display:none;}
+
+  input:checked + .slider {
+    background-color: $brand-primary;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $brand-primary;
+  }
+
+  input:checked + .slider:before {
+    color: transparent;
+    transform: translateX(24px);
+  }
+  input:checked + .slider:after {
+    opacity: 1;
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}

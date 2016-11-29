@@ -7,32 +7,24 @@ slug: policy-tool
 <div class="row">
   <div id="map"></div>
   <div id="map-nav" class="cream">
-    <ul>
-      <li class="prevention heading">Prevention Policy</li>
-      <li><small>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</small></li>
-      <li>
-        {% assign section = site.data.policy_tool['date_labeling'] %}
-        {% include tools/policy_tool_filter.html section=section %}
-      </li>
-      <li class="recovery heading">Recovery Policy</li>
-      <li>
-        {% assign section = site.data.policy_tool['liability_protection'] %}
-        {% include tools/policy_tool_filter.html section=section %}
-      </li>
-      <li>
-        {% assign section = site.data.policy_tool['tax_incentives'] %}
-        {% include tools/policy_tool_filter.html section=section %}
-      </li>
-      <li class="recycling heading">Recycling Policy</li>
-      <li>
-        {% assign section = site.data.policy_tool['animal_feed'] %}
-        {% include tools/policy_tool_filter.html section=section %}
-      </li>
-      <li>
-        {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
-        {% include tools/policy_tool_filter.html section=section %}
-      </li>
-    </ul>
+    <h4 class="prevention">Prevention Policy</h4>
+    <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
+    {% assign section = site.data.policy_tool['date_labeling'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+
+    <h4 class="recovery">Recovery Policy</h4>
+    {% assign section = site.data.policy_tool['liability_protection'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+
+    {% assign section = site.data.policy_tool['tax_incentives'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+
+    <h4 class="recycling">Recycling Policy</h4>
+    {% assign section = site.data.policy_tool['animal_feed'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+    
+    {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+    {% include tools/policy_tool_filter.html section=section %}
   </div>
 </div>
 
@@ -50,8 +42,6 @@ slug: policy-tool
     </div>
   </div>
 </div>
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
   $('#state-select').change(function(){
     var value = $(this).val();
@@ -62,8 +52,63 @@ slug: policy-tool
       }
       return false;
   });
+
+
+  $('input[type="checkbox"]').change(function(e) {
+
+    var checked = $(this).prop("checked"),
+        container = $(this).parent(),
+        siblings = container.siblings();
+    window.console.log("CONTAINER: ", container);
+
+    container.find('input[type="checkbox"]').prop({
+      indeterminate: false,
+      checked: checked
+    });
+
+    function checkSiblings(el) {
+
+      var parent = el.parent().parent(),
+          all = true;
+
+      el.siblings().each(function() {
+        return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+      });
+
+      if (all && checked) {
+
+        parent.children('input[type="checkbox"]').prop({
+          indeterminate: false,
+          checked: checked
+        });
+
+        checkSiblings(parent);
+
+      } else if (all && !checked) {
+
+        parent.children('input[type="checkbox"]').prop("checked", checked);
+        parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+        checkSiblings(parent);
+
+      } else {
+
+        el.parents("li").children('input[type="checkbox"]').prop({
+          indeterminate: true,
+          checked: false
+        });
+
+      }
+
+    }
+
+    checkSiblings(container);
+  });
+
 </script>
 
+
+<!-- Map -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript">
 
   /*  This visualization was made possible by modifying code provided by:
