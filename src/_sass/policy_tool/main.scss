@@ -23,7 +23,7 @@ body.policy_tool_layout {
 #policynav {
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 0;
   bottom: 2px;
   width: 325px;
   background-color: $section-alt-color;
@@ -99,10 +99,9 @@ body.policy_tool_layout {
   }
 }
 
-// TODO - refactor to make more global
+// TODO - refactor section classes to make more global
 
 section {
-  // TODO - Refactor names to make more global
   &.prevention-policy {
     border-left: 30px solid $prevention-color;
   }
@@ -118,27 +117,24 @@ section {
     border-left: 30px solid $cream;
   }
 }
-
+header.tool-header {
+  width: 100%;
+  background-color: $gray;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 20px 0;
+  height: 60px;
+}
 
 #policy-tool {
   position: relative;
   padding-right: 325px;
+  padding-bottom: 0;
   &:before {
     content: " ";
     display: table;
-  }
-  header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $gray;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 20px 0;
-    height: 60px;
   }
   .row {
     margin: 0 auto;
@@ -197,6 +193,7 @@ section {
   }
 }
 
+// TODO - make this a class to make these styles accessible / global
 #federal-state-nav {
   .button {
     display: inline-block;

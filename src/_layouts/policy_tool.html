@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<section id="policy-tool">
-  {% if page.header %}
-    <header>{{ page.header }}</header>
-  {% endif %}
-  
+{% if page.header %}
+  <header class="tool-header">{{ page.header }}</header>
+{% endif %}
+<div id="policy-tool">
   {{ content }}
-</section>
+</div>
