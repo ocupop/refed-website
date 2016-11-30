@@ -199,30 +199,3 @@ layout: policy_tool
     </div>
   </div>
 </section>
-
-<script>
-$("#policynav .sticky").stickit({
-    scope: StickScope.Parent,
-    top: 105
-});
-// $('#policy-nav-button').on('click', function(){
-//   if($('#policy-nav').hasClass('policy-open')){
-//     $('#policy-nav').removeClass('policy-open');
-//   }else{
-//     $('#policy-nav').addClass('policy-open');
-//   }
-// });
-$('#policynav a').on('click', function(){
-  // $('#policy-nav').removeClass('policy-open'); 
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-     var target = $(this.hash);
-     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-     if (target.length) {
-       $('html, body').animate({
-         scrollTop: target.offset().top - 105
-       }, 1000);
-       return false;
-     }
-   }
-});
-</script>

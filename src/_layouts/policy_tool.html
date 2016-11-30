@@ -7,3 +7,23 @@ layout: default
 <div id="policy-tool">
   {{ content }}
 </div>
+
+<script>
+  $("#policynav .sticky").stickit({
+      scope: StickScope.Parent,
+      top: 105
+  });
+
+  $('#policynav a').on('click', function(){
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html, body').animate({
+           scrollTop: target.offset().top - 105
+         }, 1000);
+         return false;
+       }
+     }
+  });
+</script>
