@@ -1260,6 +1260,9 @@ a.external {
 .teal {
   @include palette($button-color, $cream-light);
 }
+.gray-lighter {
+  @include palette($gray-lighter, $text-color);
+}
 .gray {
   @include palette($text-color, $cream-light);
 }

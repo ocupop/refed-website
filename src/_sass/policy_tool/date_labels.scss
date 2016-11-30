@@ -25,18 +25,29 @@
   }
 }
 
+// TODO - Move to another stylesheet
 .nav-tabs {
+  position: relative;
+  top: 20px;
   border-bottom: 0;
   li {
     &.active {
       border: none;
+      a {
+        background-color: $cream-light;
+        border-color: $cream-light;
+      }
     }
     a {
       border: none;
-      background: $gray;
-      color: #fff;
+      background: darken($cream-light, 10%);
+      color: $gray;
       padding: 10px 30px;
       margin-right: 10px;
+      &:hover {
+        border: none;
+        background: darken($cream-light, 15%);
+      }
     }
   }
 }
@@ -57,6 +68,9 @@
         font-weight: 300;
       }
     }
+  }
+  .answer {
+    display: none;
   }
   .panel {
     padding: 20px;
