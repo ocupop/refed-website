@@ -43,11 +43,11 @@ header: "U.S. Food Waste Policy Finder"
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
+        <div id="federal-state-nav">
+          <a href="/tools/policy/federal" class="button">Federal<br>Policy</a>
+          <a href="#" class="button active">State<br>Policy</a>
+        </div>
         <div id="map">
-          <div id="federal-state-nav">
-            <a href="/tools/policy/federal" class="button">Federal<br>Policy</a>
-            <a href="#" class="button active">State<br>Policy</a>
-          </div>
           <div id="map-instructions">
             <div class="content">
               <h4>U.S. Food Waste Policy Finder</h4>
@@ -87,13 +87,6 @@ header: "U.S. Food Waste Policy Finder"
       }
       return false;
   });
-
-  // $('.inline').click(function(e){
-  //   e.preventDefault();
-  //   $(this).next().fadeIn('slow');
-  //   window.console.log('clicked');
-  //   //need to still hide on second click
-  // })
 
   $('input[type="checkbox"]').change(function(e) {
 
@@ -180,8 +173,10 @@ header: "U.S. Food Waste Policy Finder"
   //Create SVG element and append map to the SVG
   var svg = d3.select("#map")
         .append("svg")
-        .attr("width", width)
-        .attr("height", height);
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 960 500");
+        // .attr("width", width)
+        // .attr("height", height);
 
   // Append Div for tooltip to SVG
   var tip = d3.select("#map")

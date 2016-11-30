@@ -141,7 +141,6 @@ section {
     height: 60px;
   }
   .row {
-    max-width: 900px;
     margin: 0 auto;
   }
   .select {
@@ -176,13 +175,6 @@ section {
   box-shadow: 1px 2px 3px rgba(0,0,0,.4);
 }
 
-#map {
-  height: 650px;
-  svg {
-    margin-top: 60px;
-  }
-}
-
 #map-instructions {
   display: flex;
   align-items: center;
@@ -191,7 +183,6 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  // background-color: rgba(255,255,255, .3);
   .content {
     font-size: 14px;
     padding: 25px 40px;
@@ -207,11 +198,6 @@ section {
 }
 
 #federal-state-nav {
-  position: absolute;
-  top: 20px;
-  left: 25%;
-  width: auto;
-  z-index: 10;
   .button {
     display: inline-block;
     width: 150px;
