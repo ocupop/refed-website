@@ -3,8 +3,34 @@ layout: policy-tool
 title: Date Label Policy
 permalink: /tools/policy/date-labels
 ---
-TODO - Add tabbed behavior and navigation
+<header id="date-label-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <h4>Understanding Date<br>Labeling Regulations</h4>
+      </div>
+      <div class="col-sm-7">
+        <ul class="nav nav-tabs navbar-right" role="tablist">
+          <li role="presentation"><a href="#date-label-terminology-quiz" aria-controls="date-label-terminology-quiz" role="tab" data-toggle="tab">Date Label<br>Terminology Quiz</a></li>
+          <li role="presentation"><a href="#date-label-policy-issues" aria-controls="date-label-policy-issues" role="tab" data-toggle="tab">Date Labeling<br>Policy Issues</a></li>
+          <li role="presentation"><a href="#federal-policy-solutions" aria-controls="federal-policy-solutions" role="tab" data-toggle="tab">Federal Policy<br>Solutions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
 
-{% include_relative _date_label_terminology_quiz.html %}
-{% include_relative _date_label_policy_issues.html %}
-{% include_relative _federal_policy_solutions.html %}
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="date-label-terminology-quiz">
+    {% include_relative _date_label_terminology_quiz.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="date-label-policy-issues">
+    {% include_relative _date_label_policy_issues.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="federal-policy-solutions">
+    {% include_relative _federal_policy_solutions.html %}
+  </div>
+</div>  
+
+
+
