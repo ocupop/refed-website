@@ -12,7 +12,7 @@ jQuery(function() {
   });
 
   // Download the data from the JSON file we generated
-  window.data = $.getJSON("{{ '/data/search.json' | prepend: site.baseurl }}");
+  window.data = $.getJSON("/data/search.json");
 
   // Wait for the data to load and add it to lunr
   window.data.then(function(loaded_data){

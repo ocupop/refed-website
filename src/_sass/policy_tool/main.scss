@@ -1,3 +1,41 @@
+// Layout adjustments
+body.state_layout {
+  h1 { font-size: 36px;}
+  h2 { font-size: 30px; font-weight: 500; }
+  h3 { margin-bottom: 5px; margin-top: 20px; }
+  section {
+    &:nth-child(even) {@include palette($section-alt-color, $text-color);}
+    &:nth-child(odd) {background-color: transparent;}
+  }
+  .button {
+    width: 50%;
+  }
+  
+  #tournav { display: none; }
+  #page-footer {
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  }
+}
+body.policy_tool_layout {
+  #tournav { display: none; }
+}
+
+
+section {
+  &.prevention-policy {
+    border-left: 30px solid $prevention-color;
+  }
+
+  &.recovery-policy {
+    border-left: 30px solid $recovery-color;
+  }
+
+  &.recycling-policy {
+    border-left: 30px solid $recycle-color;
+  }
+}
+
+
 .policy-tool {
   .select {
     &:after {
@@ -14,19 +52,6 @@
     select {
       font-style: italic;
     }
-  }
-}
-
-.states {
-  h1 { font-size: 36px;}
-  h2 { font-size: 30px; font-weight: 500; }
-  h3 { margin-bottom: 5px; margin-top: 20px; }
-  section {
-    &:nth-child(even) {@include palette($section-alt-color, $text-color);}
-    &:nth-child(odd) {background-color: transparent;}
-  }
-  .button {
-    width: 50%;
   }
 }
 
@@ -172,49 +197,16 @@
   padding: 20px 0;
 }
 
-#policy-nav {
-  position: fixed;
-  right: -275px;
-  top: 105px;
-  z-index: 50;
-  background-color: $section-alt-color;
-  height: 100%;
+#policynav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 2px;
+  // height: 100%;
   width: 275px;
+  background-color: $section-alt-color;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
   transition: all 1s ease;
-  &.map-nav {
-    position: relative;
-    right: auto;
-    top: auto;
-    width: auto;
-  }
-  &.policy-open {
-    right: 0;
-    box-shadow: -5px -3px 10px rgba(0,0,0,0.3);
-    .open-nav {
-      display: none;
-    }
-    .close-nav {
-      display: inline-block;
-    }
-  }
-  #policy-nav-button {
-    position: absolute;
-    left: -105px;
-    top: 10px;
-    border: none;
-    background: transparent;
-    font-size: 14px;
-  }
-
-  .close-nav {
-    transition: all 1s ease;
-    display: none;
-
-  }
-  .open-nav {
-    transition: all 1s ease;
-    display: inline-block;
-  }
   ul {
     li {
       margin: 0;
@@ -233,18 +225,6 @@
       }
     }
   }
-}
-
-#prevention-policy {
-  border-left: 30px solid $prevention-color;
-}
-
-#recovery-policy {
-  border-left: 30px solid $recovery-color;
-}
-
-#recycling-policy {
-  border-left: 30px solid $recycle-color;
 }
 
 #spotlight {

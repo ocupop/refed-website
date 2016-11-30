@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
       placement: 'bottom'
     }],
     backdrop: true,
-    template: "<div class='popover tour'>
+    template: `<div class='popover tour'>
                 <div class='arrow'></div>
                 <button class='close' data-role='end'><span aria-hidden='true'>&times;</span></button>
                 <div class='popover-content'></div>
@@ -110,7 +110,7 @@ jQuery(document).ready(function($) {
                   <button data-role='next'>Next&nbsp;&gt;</button>
                 </div>
                 <button class='end hide' data-role='end'>End tour</button>
-              </div>"
+              </div>`
   });
 
 

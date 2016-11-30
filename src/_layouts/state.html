@@ -1,212 +1,214 @@
 ---
 layout: default
 ---
-<div class="state-wrapper">
-  <div id="policy-nav">
-    <button id="policy-nav-button"><span class="open-nav">&lt;</span><span class="close-nav">x</span>&nbsp;policy menu</button>
-    <ul>
-      <li><a href="#prevention-policy" class="prevention heading">Prevention Policy</a></li>
-      <li><a href="#date-labelling">Date Labelling</a></li>
-      <li><a href="#recovery-policy" class="recovery heading">Recovery Policy</a></li>
-      <li><a href="#liability-protection">Liability Protection</a></li>
-      <li><a href="#tax-incentives">Tax Incentives</a></li>
-      <li><a href="#recycling-policy" class="recycling heading">Recycling Policy</a></li>
-      <li><a href="#animal-feed">Animal Feed</a></li>
-      <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
-    </ul>
-  </div>
-  <section class="state-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            <h1>{{ page.name }} State Policy</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="prevention-policy">
-    <div class="container">
-      <div id="date-labelling" class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            <h2>Date Labeling</h2>
-            <h3>Overview</h3>
-            {% assign labeling = page.policy_data.date_labeling %}
-            <p>{{ labeling.overview }}</p>
-            <!-- food date requirements need to go here ... -->
-            <h3>Date Labelling Regulations</h3>
-            <div class="flex-table">
-              <div class="flex-table-item column-heading">Applies to<br>food type</div>
-              <div class="flex-table-item column-heading">Purpose<br>of Law</div>
-              <div class="flex-table-item item-large column-heading">Excerpted Language<br>from the Law</div>
-              <div class="flex-table-item column-heading">Legal<br>Citation</div>
-              {% for item in labeling.legislation %}
-                <div class="flex-table-item">{{ item.applies_to_food_type }}</div>
-                <div class="flex-table-item">{{ item.purpose_of_law }}</div>
-                <div class="flex-table-item item-large">{{ item.excerpted_language_from_the_law }}</div>
-                <div class="flex-table-item">{{ item.legal_citation}}</div>
-              {% endfor %}
-              <!-- <div class="flex-table-item">Milk/Dairy</div>
-              <div class="flex-table-item">Date labeling required (scope of law)</div>
-              <div class="flex-table-item item-large">Except as otherwise provided in Food and Agricultural Code Section 36004(c), licensed milk products plant which bottles or packages the following products shall be responsible for a xing the quality assurance date to all containers which are o ered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese.
-              The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.</div>
-              <div class="flex-table-item">Cal. Code Regs. tit. III,§ 627 (2013).</div> -->
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="content">
-              <img src="http://placehold.it/450x350" class="img-responsive" alt="">
-            </div>
-          </div>
-          <div id="spotlight" class="col-md-7">
-            <div class="content">
-              <h2>Spotlight on date labelling regulations</h2>
-              <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
-              <a href="#" class="button prevention"><span>Learn More &nbsp;&gt;</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="recovery-policy">
-    <div class="container">
-      <div id="liability-protection" class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            {% assign liability = page.policy_data.liability_protection %}
-            <h2>Liability Protection</h2>
-            <h3>Overview</h3>
-            <p>{{ liability.overview }}</p>
-            <h3>Date Labelling Regulations</h3>
-            <dl class="dl-policy">
-              {% for item in liability.legislation limit:1 %}
-                <dt>Statute Citation</dt>
-                <dd>{{ item.title }}</dd>
-                <dt>Type of Protection</dt>
-                <dd>{{ item.type_of_protection }}</dd>
-                <dt>When protection will not apply</dt>
-                <dd>{{ item.when_protection_will_not_apply }}</dd>
-                <dt>Who it protects</dt>
-                <dd>{{ item.who_is_protected }}</dd>
-                <dt>Eligible Recipients</dt>
-                <dd>{{ item.eligible_recipients }}</dd>
-                <dt>Standards for Donated Food</dt>
-                <dd>{{ item.standards_for_donated_food }}</dd>
-                <dt>Protections Apply When End Recipient Pays for the Donated Food</dt>
-                <dd>{{ item.protections_apply_when_recipient_pays_for_donated_food }}</dd>
-                <dt>Protections Apply to Direct Donations</dt>
-                <dd>{{ item.protections_apply_to_direct_donations }}</dd>
-                <dt>Additional Protections</dt>
-                <dd>{{ item.additional_protections }}</dd>
-              {% endfor %}
-            </dl>
-            <h3>Federal Liability Protection</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat eaque, eum necessitatibus eligendi quae molestias velit quam deserunt est possimus quidem ratione dolorem voluptatibus commodi provident a eveniet porro!</p>
-            <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
-          </div>
-        </div>
-      </div>
-      <div id="tax-incentives" class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            {% assign tax = page.policy_data.tax_incentives %}
-            <h2>Tax Incentives</h2>
-            <h3>Overview</h3>
-            <p>{{ tax.overview }}</p>
-            {% for item in tax.legislation %}
-            <h3>{{ item.title }}</h3>
-              <dl class="dl-policy">
-                <dt>Benefit</dt>
-                <dd>{{ item.benefit }}</dd>
-                <dt>Eligible donors</dt>
-                <dd>{{ item.eligible_donors }}</dd>
-                <dt>Eligible food</dt>
-                <dd>{{ item.eligible_food }}</dd>
-                <dt>Eligible Recipients</dt>
-                <dd>{{ item.eligible_recipients }}</dd>
-              </dl>
-            {% endfor %}
-            <h3>Federal Tax Incentives</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quasi debitis architecto consectetur amet blanditiis eum laboriosam illo impedit dicta, nesciunt minima quas incidunt, possimus ratione consequuntur iste! Modi, vitae.</p>
-            <a href="#" class="button" ><span>View Federal Policy &nbsp;&gt;</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="recycling-policy">
-    <div class="container">
-      <div id="animal-feed" class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            {% assign feed = page.policy_data.animal_feed %}
-            <h2>Animal Feed</h2>
-            <h3>Overview</h3>
-            <p>{{ feed.overview }}</p>
-            {% for item in feed.legislation %}
-              <h3>{{ item.title }}</h3>
-              <dl class="dl-policy">
-                <dt>Animals covered</dt>
-                <dd>{{ item.animals_covered }}</dd>
-                <dt>Definition of "garbage"</dt>
-                <dd>{{ item.definition_of_garbage }}</dd>
-                <dt>Prohibitions</dt>
-                <dd>{{ item.prohibitions }}</dd>
-                <dt>Licensure</dt>
-                <dd>{{ item.licensure_requirements }}</dd>
-                <dt>Enforcement</dt>
-                <dd>{{ item.enforcement }}</dd>
-                <dt>Treatment requirements</dt>
-                <dd>{{ item.treatment_requirements }}</dd>
-                <dt>Relevant state regulatory body</dt>
-                <dd>{{ item.relevant_state_regulatory_body }}</dd>
-              </dl>
-            {% endfor %}
-            <h3>Federal Animal Feed Policy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quos, ea labore, fugit esse aspernatur nostrum, atque eum consequatur dolorem architecto fugiat minus animi, facilis ex nulla aliquid minima cupiditate.</p>
-            <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
-          </div>
-        </div>
-      </div>
-      <div id="organic-waste" class="row">
-        <div class="col-xs-12">
-          <div class="content">
-            {% assign waste = page.policy_data.organics_recycling_mandates %}
-            <h2>Organic waste bans &amp; waste recycling laws</h2>
-            <h3>Overview</h3>
-            <p>{{ waste.overview }}</p>
-            {% for item in waste.legislation %}
-            <h3>{{ item.title }}</h3>
-            <dl class="dl-policy">
-              <dt>Generators Covered</dt>
-              <dd>{{ item.generators_covered }}</dd>
-              <dt>Waste Production</dt>
-              <dd>{{ item.waste_production }}</dd>
-              <dt>Exemptions for distance from organics processing facility</dt>
-              <dd>{{ item.exemptions_for_distance_from_organics_processing_facility }}</dd>
-            </dl>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div id="policynav">
+  <ul class="sticky">
+    <li><a href="#prevention-policy" class="prevention heading">Prevention Policy</a></li>
+    <li><a href="#date-labelling">Date Labelling</a></li>
+    <li><a href="#recovery-policy" class="recovery heading">Recovery Policy</a></li>
+    <li><a href="#liability-protection">Liability Protection</a></li>
+    <li><a href="#tax-incentives">Tax Incentives</a></li>
+    <li><a href="#recycling-policy" class="recycling heading">Recycling Policy</a></li>
+    <li><a href="#animal-feed">Animal Feed</a></li>
+    <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
+  </ul>
 </div>
+<section class="state-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h1>{{ page.name }} State Policy</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="prevention-policy">
+  <div class="container">
+    <div id="date-labelling" class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h2>Date Labeling</h2>
+          <h3>Overview</h3>
+          {% assign labeling = page.policy_data.date_labeling %}
+          <p>{{ labeling.overview }}</p>
+          <!-- food date requirements need to go here ... -->
+          <h3>Date Labelling Regulations</h3>
+          <div class="flex-table">
+            <div class="flex-table-item column-heading">Applies to<br>food type</div>
+            <div class="flex-table-item column-heading">Purpose<br>of Law</div>
+            <div class="flex-table-item item-large column-heading">Excerpted Language<br>from the Law</div>
+            <div class="flex-table-item column-heading">Legal<br>Citation</div>
+            {% for item in labeling.legislation %}
+              <div class="flex-table-item">{{ item.applies_to_food_type }}</div>
+              <div class="flex-table-item">{{ item.purpose_of_law }}</div>
+              <div class="flex-table-item item-large">{{ item.excerpted_language_from_the_law }}</div>
+              <div class="flex-table-item">{{ item.legal_citation}}</div>
+            {% endfor %}
+            <!-- <div class="flex-table-item">Milk/Dairy</div>
+            <div class="flex-table-item">Date labeling required (scope of law)</div>
+            <div class="flex-table-item item-large">Except as otherwise provided in Food and Agricultural Code Section 36004(c), licensed milk products plant which bottles or packages the following products shall be responsible for a xing the quality assurance date to all containers which are o ered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese.
+            The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.</div>
+            <div class="flex-table-item">Cal. Code Regs. tit. III,§ 627 (2013).</div> -->
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="content">
+            <img src="http://placehold.it/450x350" class="img-responsive" alt="">
+          </div>
+        </div>
+        <div id="spotlight" class="col-md-7">
+          <div class="content">
+            <h2>Spotlight on date labelling regulations</h2>
+            <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
+            <a href="#" class="button prevention"><span>Learn More &nbsp;&gt;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recovery-policy">
+  <div class="container">
+    <div id="liability-protection" class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% assign liability = page.policy_data.liability_protection %}
+          <h2>Liability Protection</h2>
+          <h3>Overview</h3>
+          <p>{{ liability.overview }}</p>
+          <h3>Date Labelling Regulations</h3>
+          <dl class="dl-policy">
+            {% for item in liability.legislation limit:1 %}
+              <dt>Statute Citation</dt>
+              <dd>{{ item.title }}</dd>
+              <dt>Type of Protection</dt>
+              <dd>{{ item.type_of_protection }}</dd>
+              <dt>When protection will not apply</dt>
+              <dd>{{ item.when_protection_will_not_apply }}</dd>
+              <dt>Who it protects</dt>
+              <dd>{{ item.who_is_protected }}</dd>
+              <dt>Eligible Recipients</dt>
+              <dd>{{ item.eligible_recipients }}</dd>
+              <dt>Standards for Donated Food</dt>
+              <dd>{{ item.standards_for_donated_food }}</dd>
+              <dt>Protections Apply When End Recipient Pays for the Donated Food</dt>
+              <dd>{{ item.protections_apply_when_recipient_pays_for_donated_food }}</dd>
+              <dt>Protections Apply to Direct Donations</dt>
+              <dd>{{ item.protections_apply_to_direct_donations }}</dd>
+              <dt>Additional Protections</dt>
+              <dd>{{ item.additional_protections }}</dd>
+            {% endfor %}
+          </dl>
+          <h3>Federal Liability Protection</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat eaque, eum necessitatibus eligendi quae molestias velit quam deserunt est possimus quidem ratione dolorem voluptatibus commodi provident a eveniet porro!</p>
+          <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+        </div>
+      </div>
+    </div>
+    <div id="tax-incentives" class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% assign tax = page.policy_data.tax_incentives %}
+          <h2>Tax Incentives</h2>
+          <h3>Overview</h3>
+          <p>{{ tax.overview }}</p>
+          {% for item in tax.legislation %}
+          <h3>{{ item.title }}</h3>
+            <dl class="dl-policy">
+              <dt>Benefit</dt>
+              <dd>{{ item.benefit }}</dd>
+              <dt>Eligible donors</dt>
+              <dd>{{ item.eligible_donors }}</dd>
+              <dt>Eligible food</dt>
+              <dd>{{ item.eligible_food }}</dd>
+              <dt>Eligible Recipients</dt>
+              <dd>{{ item.eligible_recipients }}</dd>
+            </dl>
+          {% endfor %}
+          <h3>Federal Tax Incentives</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quasi debitis architecto consectetur amet blanditiis eum laboriosam illo impedit dicta, nesciunt minima quas incidunt, possimus ratione consequuntur iste! Modi, vitae.</p>
+          <a href="#" class="button" ><span>View Federal Policy &nbsp;&gt;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="recycling-policy">
+  <div class="container">
+    <div id="animal-feed" class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% assign feed = page.policy_data.animal_feed %}
+          <h2>Animal Feed</h2>
+          <h3>Overview</h3>
+          <p>{{ feed.overview }}</p>
+          {% for item in feed.legislation %}
+            <h3>{{ item.title }}</h3>
+            <dl class="dl-policy">
+              <dt>Animals covered</dt>
+              <dd>{{ item.animals_covered }}</dd>
+              <dt>Definition of "garbage"</dt>
+              <dd>{{ item.definition_of_garbage }}</dd>
+              <dt>Prohibitions</dt>
+              <dd>{{ item.prohibitions }}</dd>
+              <dt>Licensure</dt>
+              <dd>{{ item.licensure_requirements }}</dd>
+              <dt>Enforcement</dt>
+              <dd>{{ item.enforcement }}</dd>
+              <dt>Treatment requirements</dt>
+              <dd>{{ item.treatment_requirements }}</dd>
+              <dt>Relevant state regulatory body</dt>
+              <dd>{{ item.relevant_state_regulatory_body }}</dd>
+            </dl>
+          {% endfor %}
+          <h3>Federal Animal Feed Policy</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quos, ea labore, fugit esse aspernatur nostrum, atque eum consequatur dolorem architecto fugiat minus animi, facilis ex nulla aliquid minima cupiditate.</p>
+          <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+        </div>
+      </div>
+    </div>
+    <div id="organic-waste" class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% assign waste = page.policy_data.organics_recycling_mandates %}
+          <h2>Organic waste bans &amp; waste recycling laws</h2>
+          <h3>Overview</h3>
+          <p>{{ waste.overview }}</p>
+          {% for item in waste.legislation %}
+          <h3>{{ item.title }}</h3>
+          <dl class="dl-policy">
+            <dt>Generators Covered</dt>
+            <dd>{{ item.generators_covered }}</dd>
+            <dt>Waste Production</dt>
+            <dd>{{ item.waste_production }}</dd>
+            <dt>Exemptions for distance from organics processing facility</dt>
+            <dd>{{ item.exemptions_for_distance_from_organics_processing_facility }}</dd>
+          </dl>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
-$('#policy-nav-button').on('click', function(){
-  if($('#policy-nav').hasClass('policy-open')){
-    $('#policy-nav').removeClass('policy-open');
-  }else{
-    $('#policy-nav').addClass('policy-open');
-  }
+$("#policynav ul").stickit({
+    scope: StickScope.Parent,
+    top: 0
 });
+// $('#policy-nav-button').on('click', function(){
+//   if($('#policy-nav').hasClass('policy-open')){
+//     $('#policy-nav').removeClass('policy-open');
+//   }else{
+//     $('#policy-nav').addClass('policy-open');
+//   }
+// });
 $('#policy-nav ul li a').on('click', function(){
-  $('#policy-nav').removeClass('policy-open'); 
+  // $('#policy-nav').removeClass('policy-open'); 
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
      var target = $(this.hash);
      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
