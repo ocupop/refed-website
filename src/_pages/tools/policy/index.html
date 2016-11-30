@@ -20,7 +20,7 @@ header: "U.S. Food Waste Policy Finder"
         </label>
       </li>
     </ul>
-    <a href="#" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
+    <a href="/tools/policy/date-labels" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
 
     <h4 class="recovery">Recovery Policy</h4>
     <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
@@ -88,12 +88,12 @@ header: "U.S. Food Waste Policy Finder"
       return false;
   });
 
-  $('.inline').click(function(e){
-    e.preventDefault();
-    $(this).next().fadeIn('slow');
-    window.console.log('clicked');
-    //need to still hide on second click
-  })
+  // $('.inline').click(function(e){
+  //   e.preventDefault();
+  //   $(this).next().fadeIn('slow');
+  //   window.console.log('clicked');
+  //   //need to still hide on second click
+  // })
 
   $('input[type="checkbox"]').change(function(e) {
 

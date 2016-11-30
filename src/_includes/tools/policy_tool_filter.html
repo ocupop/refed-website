@@ -9,9 +9,9 @@
       <small>{{ section.definition }}</small>
     </label>
     {% if section.filters.size > 1 %}
-      <button class="inline">View {{ section.title }} categories <span class="caret"></span></button>
+      <button class="toggle" data-toggle="collapse" href="#{{ section.title | slugify }}-subfilters">View {{ section.title }} categories <span class="caret"></span></button>
     {% endif %}
-    <ul>
+    <ul id="{{ section.title | slugify }}-subfilters" class="collapse">
       {% for filter in section.filters %}
         <li class="checkbox">
           <input id="{{ section.title | slugify }}_filter_{{ forloop.index }}" type="checkbox" value="{{ filter.states | split: '' }}">
