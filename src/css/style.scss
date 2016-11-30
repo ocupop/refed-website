@@ -20,6 +20,7 @@
 @import "policy_tool/main";
 @import "policy_tool/date_labels";
 @import "policy_tool/map";
+@import "policy_tool/federal_policy";
 
 
 
@@ -370,6 +371,7 @@ em {
   font-family: $font-family-serif;
   font-style: italic;
 }
+
 /* -----------------------------------------
    DOM Specific
 ----------------------------------------- */
@@ -863,6 +865,10 @@ em {
   text-align: left !important;
 }
 
+.fineprint {
+  font-size: 14px;
+  line-height: 1;
+}
 // Content
 .content {
   position: relative;

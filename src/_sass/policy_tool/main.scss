@@ -1,14 +1,36 @@
 // Layout adjustments
-body.state_layout {
+body.state_layout, body.policy_tool_layout {
   h1 { font-size: 36px;}
   h2 { font-size: 30px; font-weight: 500; }
   h3 { margin-bottom: 5px; margin-top: 20px; }
   section {
     &:nth-child(even) {@include palette($section-alt-color, $text-color);}
-    &:nth-child(odd) {background-color: transparent;}
+    &:nth-child(odd) {
+      background-color: transparent;
+      &.alt {
+        background-color: $section-alt-color;
+      }
+    }
   }
   .button {
     width: 50%;
+    &.fed-state-button{
+      display: inline-block;
+      margin: 0 7px 0 0;
+      height: auto;
+      width: 47%;
+      max-width: 150px;
+      padding: 12px 0;
+      font-weight: 400;
+      background-color: $cream;
+      color: $gray;
+      opacity: .5;
+      &.active {
+        background-color: $gray;
+        color: #fff;
+        opacity: 1;
+      }
+    }
   }
   
   #tournav { display: none; }
@@ -21,6 +43,10 @@ body.policy_tool_layout {
   #page-footer {
     box-shadow: 0 0 25px rgba(0,0,0,0.2);
   }
+  .button {
+    margin-top:25px;
+    margin-bottom: 25px;
+  }
 }
 
 #policynav {
@@ -32,6 +58,12 @@ body.policy_tool_layout {
   background-color: $section-alt-color;
   box-shadow: 0 0 25px rgba(0,0,0,0.2);
   transition: all 1s ease;
+  .content {
+    padding: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
   h4 {
     padding: 7px 30px;
     margin-top: 0;
@@ -75,7 +107,12 @@ body.policy_tool_layout {
         font-size: 12px;
       }
     }
-    
+    &.flush {
+      li {
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   label {
@@ -192,26 +229,6 @@ header.tool-header {
     }
     p {
       font-size: 14px;
-    }
-  }
-}
-
-// TODO - make this a class to make these styles accessible / global
-#federal-state-nav {
-  .button {
-    display: inline-block;
-    width: 150px;
-    margin: 7px;
-    height: auto;
-    padding: 12px 0;
-    font-weight: 400;
-    background-color: $cream;
-    color: $gray;
-    opacity: .5;
-    &.active {
-      background-color: $gray;
-      color: #fff;
-      opacity: 1;
     }
   }
 }
