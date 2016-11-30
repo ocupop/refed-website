@@ -6,38 +6,75 @@ slug: policy-tool
 
 header: "U.S. Food Waste Policy Finder"
 ---
+<div id="policynav">
+  <div class="sticky">
+    <h4 class="prevention">Prevention Policy</h4>
+    <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
+    <ul>
+      <li class="checkbox">
+        <input id="date_labelling_filters" type="checkbox" value="">
+        <label for="date_labelling_filters">
+          <span></span>
+          Date Labelling
+          <small>Reveal state policies that hinder food waste prevention</small>
+        </label>
+      </li>
+    </ul>
+    <a href="#" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
 
-<div class="row middle-xs center-xs">
-  <div class="col-xs-12">
-    <div id="map">
-      <div id="federal-state-nav">
-        <a href="#" class="button">Federal<br>Policy</a>
-        <a href="#" class="button active">State<br>Policy</a>
+    <h4 class="recovery">Recovery Policy</h4>
+    <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
+    {% assign section = site.data.policy_tool['liability_protection'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+
+    {% assign section = site.data.policy_tool['tax_incentives'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+
+    <h4 class="recycling">Recycling Policy</h4>
+    <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
+    {% assign section = site.data.policy_tool['animal_feed'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+    
+    {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+    {% include tools/policy_tool_filter.html section=section %}
+  </div>
+</div>
+<section>
+  <div class="container-fluid">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12">
+        <div id="map">
+          <div id="federal-state-nav">
+            <a href="/tools/policy/federal" class="button">Federal<br>Policy</a>
+            <a href="#" class="button active">State<br>Policy</a>
+          </div>
+          <div id="map-instructions">
+            <div class="content">
+              <h4>U.S. Food Waste Policy Finder</h4>
+              <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="map-instructions">
-        <div class="content">
-          <h4>U.S. Food Waste Policy Finder</h4>
-          <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+    </div>
+    <div class="row middle-xs center-xs">
+      <div class="col-sm-3">
+        <label for="state-select">Explore Food Waste Policy by State</label>
+      </div>
+      <div class="col-sm-9">
+        <div class="select">
+          <select name="" id="state-select">
+            <option>Choose State</option>
+            {% for state in site.states %}
+              <option value="{{ state.url }}">{{ state.name }}</option>
+            {% endfor %}
+          </select>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="row middle-xs center-xs">
-  <div class="col-sm-3">
-    <label for="state-select">Explore Food Waste Policy by State</label>
-  </div>
-  <div class="col-sm-9">
-    <div class="select">
-      <select name="" id="state-select">
-        <option value="#">Choose State</option>
-        {% for state in site.states %}
-          <option value="{{ state.url }}">{{ state.name }}</option>
-        {% endfor %}
-      </select>
-    </div>
-  </div>
-</div>
+</section>
+
 
 
 <script>
