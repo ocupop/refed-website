@@ -58,9 +58,13 @@
             {% if page.url =='/stakeholder' %}class="active"{% endif %}>
             <a href="{{ '/stakeholder' | prepend: site.baseurl }}" title="Stakeholders">Stakeholders</a>
         </li>
-        <li id="action-link"
+        <!-- <li id="action-link"
             {% if page.url =='/action' %}class="active"{% endif %}>
             <a href="{{ '/action' | prepend: site.baseurl }}" title="Action">Action</a>
+        </li> -->
+        <li id="policy-link"
+            {% if page.url =='/tools/policy/' %}class="active"{% endif %}>
+            <a href="{{ '/tools/policy/' | prepend: site.baseurl }}" title="Policy">Policy</a>
         </li>
       </ul>
       <ul class="drawer">
