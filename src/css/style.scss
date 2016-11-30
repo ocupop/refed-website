@@ -13,9 +13,13 @@
 @import "_tour";
 @import "_popover";
 @import "_charts.scss";
-@import "_policy_tool";
-@import "_policy_map";
 @import "_cost_curve.scss";
+
+// Tools
+@import "policy_tool/main";
+@import "policy_tool/map";
+@import "policy_tool/date_labels";
+
 
 
 /* -----------------------------------------
