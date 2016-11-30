@@ -20,17 +20,9 @@ layout: policy_tool
       </ul>
     </div>
 </div>
-<section class="state-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h1>{{ page.name }} State Policy</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% capture title %}{{ page.name }} State Policy{% endcapture %}
+{% include _page_header.html title=title %}
+
 <section class="prevention-policy">
   <div class="container">
     <div id="date-labelling" class="row">

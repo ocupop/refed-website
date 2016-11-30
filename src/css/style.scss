@@ -370,6 +370,7 @@ em {
   font-family: $font-family-serif;
   font-style: italic;
 }
+
 /* -----------------------------------------
    DOM Specific
 ----------------------------------------- */
@@ -863,6 +864,10 @@ em {
   text-align: left !important;
 }
 
+.fineprint {
+  font-size: 14px;
+  line-height: 1;
+}
 // Content
 .content {
   position: relative;
