@@ -1,0 +1,92 @@
+#date-label-header {
+  padding-top: 15px;
+  h4 {
+    margin: 0;
+  }
+}
+
+#next-prev-nav {
+  a {
+    width: 50%;
+    display: block;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: $gray-dark;
+    text-transform: uppercase;
+    &.previous {
+      background-color: $gray-light;
+    }
+    &.next {
+      background-color: $gray;
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  li {
+    &.active {
+      border: none;
+    }
+    a {
+      border: none;
+      background: $gray;
+      color: #fff;
+      padding: 10px 30px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.quiz {
+  li {
+    text-transform: uppercase;
+  }
+  .checkbox {
+    padding: 7px;
+    margin: 10px 0;
+    background: $gray-lighter;
+    font-weight: 300;
+  }
+  ul {
+    li {
+      label {
+        font-weight: 300;
+      }
+    }
+  }
+  .panel {
+    padding: 20px;
+    h4 {
+      margin-top: 0;
+      font-style: italic;
+      font-weight: 400;
+    }
+    p {
+      font-size: 13px;
+      text-transform: none;
+      font-weight: 300;
+    }
+  }
+  .correct {
+    background-color: $green;
+    color: $gray-dark;
+  }
+  .incorrect {
+    background-color: $red;
+    color: $gray-dark;
+  }
+}
+
+//tab specific
+#date-label-policy-issues {
+  .panel-body {
+    padding: 30px 50px;
+    p {
+      font-size: 13px;
+    }
+  }
+}
