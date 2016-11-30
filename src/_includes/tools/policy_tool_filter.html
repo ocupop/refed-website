@@ -1,8 +1,8 @@
 <!-- TODO - Refactor filters sidebar on policy tool page -->
 {% assign section = include.section %}
-<ul>
+<ul class="root">
   <li class="checkbox">
-    <input id="{{ section.title | slugify }}_filters" type="checkbox" value="">
+    <input id="{{ section.title | slugify }}_filters" type="checkbox" class="map-filter" value="">
     <label for="{{ section.title | slugify }}_filters">
       <span></span>
       {{ section.title }}
@@ -14,7 +14,10 @@
     <ul id="{{ section.title | slugify }}-subfilters" class="collapse">
       {% for filter in section.filters %}
         <li class="checkbox">
-          <input id="{{ section.title | slugify }}_filter_{{ forloop.index }}" type="checkbox" value="{{ filter.states | split: '' }}">
+          <input id='{{ section.title | slugify }}_filter_{{ forloop.index }}'
+            type='checkbox'
+            class='map-subfilter'
+            data-states='{{ filter.states | jsonify }}'>
           <label for="{{ section.title | slugify }}_filter_{{ forloop.index }}">
             <span></span>
             {{ filter.title }}
