@@ -20,8 +20,82 @@ body.policy_tool_layout {
   #tournav { display: none; }
 }
 
+#policynav {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  bottom: 2px;
+  width: 325px;
+  background-color: $section-alt-color;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  transition: all 1s ease;
+  h4 {
+    padding: 7px 30px;
+    margin-top: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    a {
+      color: #ffffff;
+      &:hover, &:focus, &:active {
+        color: #ffffff;
+      }
+    }
+  }
+  p {
+    padding: 0 30px;
+    line-height: 1em;
+    font-size: 13px;
+  }
+  ul {
+    padding: 0;
+    padding-right: 30px;
+    margin: 10px 0;
+    li  { 
+      padding-left: 30px;
+      margin-bottom: 15px;
+      a {
+        color: $gray;
+        &:hover, &:focus, &:active {
+          color: $gray-darker;
+        }
+      }
+      .btn {
+        color: $text-color;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 300;
+        padding-left: 23px;
+      }
+      >ul {
+        display: none;
+        padding-right: 0;
+        font-size: 12px;
+      }
+    }
+    
+  }
+
+  label {
+    font-weight: 300;
+  }
+  small {
+    display: block;
+    line-height: 1.2;
+    margin: 2px 0;
+  }
+  .button {
+    font-weight: 300;
+    margin: 7px 25px;
+    font-size: 13px;
+    width: auto;
+  }
+}
+
+// TODO - refactor to make more global
 
 section {
+  // TODO - Refactor names to make more global
   &.prevention-policy {
     border-left: 30px solid $prevention-color;
   }
@@ -33,10 +107,36 @@ section {
   &.recycling-policy {
     border-left: 30px solid $recycle-color;
   }
+  &.state-header {
+    border-left: 30px solid $cream;
+  }
 }
 
 
-.policy-tool {
+#policy-tool {
+  position: relative;
+  padding-right: 325px;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $gray;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px 0;
+    height: 60px;
+  }
+  .row {
+    max-width: 900px;
+    margin: 0 auto;
+  }
   .select {
     &:after {
       right: 0;
@@ -53,17 +153,6 @@ section {
       font-style: italic;
     }
   }
-}
-
-.policy-header {
-  width: 100%;
-  background-color: $gray;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 20px 0;
-  height: 60px;
 }
 
 .map-tooltip {
@@ -134,99 +223,6 @@ section {
   }
 }
 
-#map-nav {
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 325px;
-  height: 650px;
-  z-index: 50;
-  overflow: auto;
-  h4 {
-    padding: 7px 30px;
-    margin-top: 0;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  p {
-    padding: 0 30px;
-    line-height: 1em;
-    font-size: 13px;
-  }
-  ul {
-    padding: 0;
-    padding-right: 30px;
-    margin: 10px 0;
-    li  { 
-      padding-left: 30px;
-      margin-bottom: 15px;
-      .btn {
-        color: $text-color;
-        font-size: 13px;
-        font-style: italic;
-        font-weight: 300;
-        padding-left: 23px;
-      }
-      >ul {
-        display: none;
-        padding-right: 0;
-        font-size: 12px;
-      }
-    }
-    
-  }
-
-  label {
-    font-weight: 300;
-  }
-  small {
-    display: block;
-    line-height: 1.2;
-    margin: 2px 0;
-  }
-  .button {
-    font-weight: 300;
-    margin: 7px 0 7px 25px;
-    font-size: 13px;
-    width: auto;
-  }
-}  
-
-#explore {
-  padding: 20px 0;
-}
-
-#policynav {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 2px;
-  // height: 100%;
-  width: 275px;
-  background-color: $section-alt-color;
-  box-shadow: 0 0 25px rgba(0,0,0,0.2);
-  transition: all 1s ease;
-  ul {
-    li {
-      margin: 0;
-      a {
-        display: block;
-        width: 100%;
-        padding: 10px 20px;
-        color: $gray;
-        font-size: 14px;
-        &.heading {
-          text-transform: uppercase;
-          font-weight: 500;
-          color: $cream;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
 #spotlight {
   h2 {
     margin-top: 0;
@@ -234,10 +230,6 @@ section {
   .button {
     width: 100%;
   }
-}
-
-.state-header {
-  border-left: 30px solid $cream;
 }
 
 .flex-table {
@@ -281,3 +273,5 @@ section {
     margin-bottom: 10px;
   }
 }
+
+ 
