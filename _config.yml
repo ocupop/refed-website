@@ -25,6 +25,7 @@ defaults:
 - type: 'states'
   values:
     layout: state
+    header: "U.S. Food Waste Policy Finder"
     _hide_content: true
 
 collections:
