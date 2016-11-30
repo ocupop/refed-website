@@ -84,6 +84,14 @@ body.policy_tool_layout {
     line-height: 1.2;
     margin: 2px 0;
   }
+  button.inline {
+    border: none;
+    background-color: transparent;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-style: italic;
+  }
   .button {
     font-weight: 300;
     margin: 7px 25px;

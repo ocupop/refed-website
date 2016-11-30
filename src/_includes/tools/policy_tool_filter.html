@@ -9,7 +9,7 @@
       <small>{{ section.definition }}</small>
     </label>
     {% if section.filters.size > 1 %}
-      <a href="#" class="btn show-categories">View {{ section.title }} categories <span class="caret"></span></a>
+      <button class="inline">View {{ section.title }} categories <span class="caret"></span></button>
     {% endif %}
     <ul>
       {% for filter in section.filters %}

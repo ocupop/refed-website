@@ -88,8 +88,8 @@ header: "U.S. Food Waste Policy Finder"
       return false;
   });
 
-  $('.show-categories').click(function(){
-    event.preventDefault();
+  $('.inline').click(function(e){
+    e.preventDefault();
     $(this).next().fadeIn('slow');
     window.console.log('clicked');
     //need to still hide on second click
