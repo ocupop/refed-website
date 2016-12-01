@@ -2,6 +2,8 @@
 layout: policy_tool
 title: Policy Tool
 permalink: /tools/policy/
+
+tool: U.S. Food Waste Policy Finder
 ---
 
 <div id="tooltip">
@@ -317,6 +319,7 @@ permalink: /tools/policy/
         $('#tooltip')
           .find('.title').text(d.properties.title).end()
           .find('.summary').text(d.properties.summary).end()
+          .find('.button').attr('class', 'button '+d.category).end()
           .addClass('active');
 
         tip.style("left", (d3.event.pageX - 42) + "px")
