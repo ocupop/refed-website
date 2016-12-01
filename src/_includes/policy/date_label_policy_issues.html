@@ -6,18 +6,22 @@
           <div class="panel-body">
             <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false">
               <div class="carousel-inner" role="listbox">
-                <div class="item active" data-progress="0">
-                  <h2>Date Labeling<br>Policy Issues</h2>
-                  <p>Exploring some of the food date label regulation patterns across the country reveals extreme variations among states and demonstrates how our current labeling system creates confusion for consumers while not necessarily improving food safety.</p>
-                </div>
-                {% for filter in site.data.policy_tool['date_labeling'].filters %}
-                  <div class="item"
-                       data-progress="{% cycle '20','40','60','80' %}"
-                       data-states='{{ filter.states | jsonify }}'>
-                    <h2>{{ filter.title }}</h2>
-                    <p>{{ filter.definition }}</p>
+                  <div class="item active" data-progress="0">
+                    <h2>Date Labeling<br>Policy Issues</h2>
+                    <p>Exploring some of the food date label regulation patterns across the country reveals extreme variations among states and demonstrates how our current labeling system creates confusion for consumers while not necessarily improving food safety.</p>
                   </div>
-                {% endfor %}
+                  <div class="item" data-progress="25">
+                    <h3><span class="box"></span>No date label regulations</h3>
+                    <p>These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.</p>
+                  </div>
+                  <div class="item" data-progress="50">
+                    <h3><span class="box"></span>Date labels required for certain foods<br>No restrictions on sales after those dates</h3>
+                    <p>These are the states that regulate the presence of date labels on certain foods but do not regulate sales after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus.</p>
+                  </div>
+                  <div class="item" data-progress="75">
+                    <h3><span class="box"></span>Date labels required for certain foods<br>Regulations on sales after those dates</h3>
+                    <p>These are the states that regulate both the presence of date labels and, broadly, the sale of products after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ealiquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.</p>
+                  </div>
                   <div class="item explore" data-progress="100">
                     <h2>Explore Each State</h2>
                     <ul>
