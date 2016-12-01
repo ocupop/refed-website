@@ -10,7 +10,10 @@ tool: U.S. Food Waste Policy Finder
 
 {% include policy/policynav_map.html %}
 
-<section>
+<section class="alt">
+  {% include policy/explore_state_navigation.html %}
+</section>
+<section class="transparent">
   {% include policy/page_header.html %}
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
@@ -28,7 +31,7 @@ tool: U.S. Food Waste Policy Finder
   {% include_relative _map_legend.html %}
 </section>
 
-{% include policy/explore_state_navigation.html %}
+
 
 <script>
 

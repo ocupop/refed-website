@@ -145,6 +145,12 @@ header.tool-header {
   font-weight: 400;
   padding: 20px 0;
   height: 60px;
+  a {
+    color: #ffffff;
+    &:hover, &:focus {
+      color: #ffffff;
+    }
+  }
 }
 
 #policy-tool {

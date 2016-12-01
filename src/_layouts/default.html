@@ -7,7 +7,7 @@
     {% include search-results.html %}
     <main id="page-content">
       {% if page.tool %}
-        <header class="tool-header">{{ page.tool }}</header>
+        <header class="tool-header"><a href="/tools/policy">{{ page.tool }}</a></header>
       {% endif %}
       {{ content }}
     </main>
