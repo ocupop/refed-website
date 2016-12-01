@@ -96,11 +96,59 @@
 }
 
 //tab specific
+
+//date label policy tab
 #date-label-policy-issues {
   .panel-body {
-    padding: 30px 50px;
+    padding: 30px;
+    h2, h3 {
+      height: 120px;
+      font-weight: 400;
+      margin: 0;
+    }
+    h3 {
+      position: relative;
+      padding-left: 40px;
+      font-size: 20px;
+    }
     p {
       font-size: 13px;
+      height: 110px;
+    }
+    .explore {
+      h2 {
+        height: 40px;
+      }
+      ul {
+        height: 190px;
+        margin-bottom: 6px;
+        li {
+          position: relative;
+          padding-left: 40px;
+          line-height: 1;
+          .box {
+            top: 0;
+          }
+        }
+      }
     }
   }
+  .icon-next, .icon-prev {
+    font-size: 20px;
+    color: $gray;
+  }
+}
+
+.box {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: $gray;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.progress-bar {
+  background-color: $gray;
 }
