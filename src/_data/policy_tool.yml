@@ -9,7 +9,7 @@ date_labeling:
       long: -112.2869638
   filters:
     - title: No date label regulations
-      definition: "These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non."
+      definition: 'These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.'
       states:
         - idaho
         - missouri
@@ -19,7 +19,7 @@ date_labeling:
         - tennessee
         - utah
     - title: Date labels required for certain foods. No restrictions on sales after those dates
-      definition: "These are the states that regulate the presence of date labels on certain foods but do not regulate sales after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus."
+      definition: 'These are the states that regulate the presence of date labels on certain foods but do not regulate sales after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus.'
       states:
         - alaska
         - arizona
@@ -45,7 +45,7 @@ date_labeling:
         - west-virginia
         - wyoming
     - title: Date labels required for certain foods. Regulations on sales after those dates
-      definition: "These are the states that regulate both the presence of date labels and, broadly, the sale of products after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ealiquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non."
+      definition: 'These are the states that regulate both the presence of date labels and, broadly, the sale of products after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ealiquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.'
       states:
         - colorado
         - florida
@@ -111,7 +111,6 @@ liability_protection:
         - idaho
         - iowa
         - massachusetts
-        - mississippi
         - montana
         - new-hampshire
         - new-jersey
@@ -119,10 +118,9 @@ liability_protection:
         - oklahoma
         - oregon
         - pennsylvania
-        - south-carolina
         - rhode-island
         - texas
-        - wisconsin
+        - michigan
     - title: Protection for food service establishments and retail stores donating directly to final recipients.
       definition: Protection for food service establishments and retail stores donating directly to final recipients.
       states:
@@ -131,13 +129,14 @@ liability_protection:
         - minnesota
         - new-hampshire
         - new-mexico
+        - massachusetts
+        - vermont
     - title: Protection regardless of compliance with non-safety related labeling requirements.
       definition: Protection regardless of compliance with non-safety related labeling requirements.
       states:
         - california
         - nevada
         - oregon
-        - washington
     - title: Protection for the donation of past-date food
       definition: Protection for the donation of past-date food.
       states:
@@ -147,12 +146,12 @@ tax_incentives:
   definition: Reveal states that offer tax incentives
   case_studies:
     - title: California tax incentives
-      summary: "California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
+      summary: 'California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability.'
       state: california
       lat: 37.1871655
       long: -120.7612299
     - title: Virginia tax incentives
-      summary: "In 2016, the Virginia General Assembly established the Food Crop Donation Tax Credit. The credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops and no tax payer is allowed to claim more than $5,000 in credits each year."
+      summary: 'In 2016, the Virginia General Assembly established the Food Crop Donation Tax Credit. The credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops and no tax payer is allowed to claim more than $5,000 in credits each year.'
       state: virginia
       lat: 37.926866
       long: -83.9472357
@@ -174,12 +173,12 @@ animal_feed:
   definition: Reveal state policies that hinder food waste recycling
   case_studies:
     - title: Feeding food scraps to animals
-      summary: "Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, including vegetable waste, may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit."
+      summary: 'Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, including vegetable waste, may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.'
       state: connecticut
       lat: 41.5153735
       long: -73.8784879
     - title: Feeding food scraps to animals
-      summary: "North Carolina, the second largest producer of swine, allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. However, all other waste may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals."
+      summary: 'North Carolina, the second largest producer of swine, allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. However, all other waste may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals.'
       state: north-carolina
       lat: 35.1403193
       long: -84.3805519
@@ -264,7 +263,7 @@ organics_recycling_mandates:
   definition: Reveal states that offer liability protection
   case_studies:
     - title: San Francisco
-      summary: "San Francisco has passed laws requiring businesses and households to sort their waste into separate categories. The separated organic materials, including food waste, are placed in appropriate composting bins rather than with the rest of the garbage. In order to facilitate these laws at the residential level, property owners, including owners and managers of multi-family housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials. Individual residents can receive compost carts from the city at no cost."
+      summary: 'San Francisco has passed laws requiring businesses and households to sort their waste into separate categories. The separated organic materials, including food waste, are placed in appropriate composting bins rather than with the rest of the garbage. In order to facilitate these laws at the residential level, property owners, including owners and managers of multi-family housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials. Individual residents can receive compost carts from the city at no cost.'
       state: california
       lat: 37.757815
       long: -122.5076395
