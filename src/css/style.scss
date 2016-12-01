@@ -1276,6 +1276,9 @@ a.external {
 .alt {
   background-color: $section-alt-color;
 }
+.transparent {
+  background-color: transparent !important;
+}
 
 .recycle, .recycling {
   @include palette($recycle-color, $cream-light);
