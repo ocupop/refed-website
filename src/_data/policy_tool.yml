@@ -2,7 +2,7 @@ date_labeling:
   title: Date Labeling
   definition: Reveal state policies that hinder food waste prevention
   case_studies:
-    - title: This is an example case study
+    - title: Arbitrary bans on donating or selling past date foods
       summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away each week. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste while allowing wholesome products to end up in the hands of those who want them.'
       state: montana
       lat: 0
@@ -74,11 +74,31 @@ liability_protection:
   title: Liability Protection
   definition: Reveal states that offer liability protection
   case_studies:
-    - title: This is an example case study
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      state:
-      lat: 0
-      long: 0
+    - title: Liability protection when nonprofits charge needy individuals for food.
+      summary: 'Massachusetts’ law allows nonprofit food recovery organizations to charge recipients for food at a level high enough to “cover the cost of handling such food” without sacrificing liability protection. So long as the food recovery organization does not make a profit off the distribution, it will be shielded from liability. The passage of the Massachusetts’ law allowed for the creation of Daily Table, a not-for-profit retail store that sells food recovered from supermarkets, growers and food distributors that would otherwise have been wasted at prices affordable to low-income consumers.'
+      state: massachusetts
+      lat: 42.0615048
+      long: -72.2788299
+    - title: Liability protection when nonprofits charge needy individuals for food.
+      summary: "Arizona's law provides liability protection for nonprofit food recovery organizations charging final recipients for food by defining donation as giving food for a 'fee significantly less than the value of the item.'"
+      state: arizona
+      lat: 34.1478179
+      long: -114.1737247
+    - title: Liability protection when nonprofits charge needy individuals for food.
+      summary: "Oregon's law provides liability protection when a nonprofit food recovery organization charges the final recipient 'on a scale reflecting ability to pay or only requiring a shared maintenance contribution.'"
+      state: oregon
+      lat: 44.1199746
+      long: -122.7804332
+    - title: Liability protection for food service establishments and retail stores donating directly to final recipients.
+      summary: "New Hampshire provides liability protection to donors donating to a 'needy individual or individuals or to a bona fide charitable or non-profit organization.'"
+      state: new-hampshire
+      lat: 43.9957512
+      long: -72.7008387
+    - title: Liability protection for food service establishments and retail stores donating directly to final recipients.
+      summary: "Oregon's statute states that liability protection applies 'regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.' This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
+      state: oregon
+      lat: 44.1199746
+      long: -122.7804332
   filters:
     - title: Protections apply when end recipient pays for the donated food
       definition: Protections apply when end recipient pays for the donated food
@@ -126,11 +146,16 @@ tax_incentives:
   title: Tax Incentives
   definition: Reveal states that offer tax incentives
   case_studies:
-    - title: This is an example case study
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      state:
-      lat: 0
-      long: 0
+    - title: California tax incentives
+      summary: "California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
+      state: california
+      lat: 37.1871655
+      long: -123.7612299
+    - title: Virginia tax incentives
+      summary: "In 2016, the Virginia General Assembly established the Food Crop Donation Tax Credit. The credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops and no tax payer is allowed to claim more than $5,000 in credits each year."
+      state: virginia
+      lat: 37.926866
+      long: -83.9472357
   filters:
     - title: "States that o\x1Fffer additional tax incentives beyond federal incentives"
       definition: "States that o\x1Fffer additional tax incentives beyond federal incentives"
@@ -148,11 +173,16 @@ animal_feed:
   title: Animal Feed
   definition: Reveal state policies that hinder food waste recycling
   case_studies:
-    - title: This is an example case study
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      state:
-      lat: 0
-      long: 0
+    - title: Feeding food scraps to animals
+      summary: "Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, including vegetable waste, may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit."
+      state: connecticut
+      lat: 41.5153735
+      long: -73.8784879
+    - title: Feeding food scraps to animals
+      summary: "North Carolina, the second largest producer of swine, allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. However, all other waste may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals."
+      state: north-carolina
+      lat: 35.1403193
+      long: -84.3805519
   filters:
     - title: Prohibits feeding food waste to all animals
       definition: Prohibits feeding food waste to all animals
@@ -233,11 +263,16 @@ organics_recycling_mandates:
   title: 'Organic Waste Bans & Waste Recycling Laws'
   definition: Reveal states that offer liability protection
   case_studies:
-    - title: This is an example case study
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      state:
-      lat: 0
-      long: 0
+    - title: San Francisco
+      summary: "San Francisco has passed laws requiring businesses and households to sort their waste into separate categories. The separated organic materials, including food waste, are placed in appropriate composting bins rather than with the rest of the garbage. In order to facilitate these laws at the residential level, property owners, including owners and managers of multi-family housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials. Individual residents can receive compost carts from the city at no cost."
+      state: california
+      lat: 37.757815
+      long: -122.5076395
+    - title: Needs Title
+      summary: "In 2012, Vermont passed the Universal Recycling Law, which bans disposal of food scraps, in addition to "blue bin" recyclables and leaf and yard debris. All residents and businesses must divert food scraps by 2020, with larger businesses and institutions subject to the ban even earlier depending on the amount of food waste generated annually."
+      state: vermont
+      lat: 43.8682565
+      long: -73.568751
   filters:
     - title: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       definition: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
