@@ -4,15 +4,88 @@
       <div class="col-md-5">
         <div class="panel">
           <div class="panel-body">
-            <h2>Date Labeling<br>Policy Issues</h2>
-            <p>Exploring some of the food date label regulation patterns across the country reveals extreme variations among states and demonstrates how our current labeling system creates confusion for consumers while not necessarily improving food safety.</p>
+            <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner" role="listbox">
+                  <div class="item active" data-progress="0">
+                    <h2>Date Labeling<br>Policy Issues</h2>
+                    <p>Exploring some of the food date label regulation patterns across the country reveals extreme variations among states and demonstrates how our current labeling system creates confusion for consumers while not necessarily improving food safety.</p>
+                  </div>
+                  <div class="item" data-progress="25">
+                    <h3><span class="box"></span>No date label regulations</h3>
+                    <p>These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.</p>
+                  </div>
+                  <div class="item" data-progress="50">
+                    <h3><span class="box"></span>Date labels required for certain foods<br>No restrictions on sales after those dates</h3>
+                    <p>These are the states that regulate the presence of date labels on certain foods but do not regulate sales after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus.</p>
+                  </div>
+                  <div class="item" data-progress="75">
+                    <h3><span class="box"></span>Date labels required for certain foods<br>Regulations on sales after those dates</h3>
+                    <p>These are the states that regulate both the presence of date labels and, broadly, the sale of products after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ealiquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.</p>
+                  </div>
+                  <div class="item explore" data-progress="100">
+                    <h2>Explore Each State</h2>
+                    <ul>
+                      <li>
+                        <span class="box"></span><span class="fineprint">No date label regulations
+                      </li>
+                      <li>
+                        <span class="box"></span><span class="fineprint">Date labels required for certain foods<br>No restrictions on sales after those dates</span>
+                      </li>
+                      <li>
+                        <span class="box"></span>
+                        <span class="fineprint">
+                          Date labels required for certain foods<br>
+                          Regulations on sales after those dates
+                        </span>
+                      </li>
+                      <li>
+                        <span class="box"></span>
+                        <span class="fineprint">
+                          No date label regulations Regulations on sales after dates if date labels are voluntarily applied
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-2">
+                <a class="left" href="#carousel-date-label" role="button" data-slide="prev">
+                  <i class="icon-prev"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                    <span class="sr-only">0% Complete</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <a class="right" href="#carousel-date-label" role="button" data-slide="next">
+                  <i class="icon-next"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-7">
-        <img src="http://placehold.it/960x700" class="img-responsive" alt="">
+        <img src="http://placehold.it/500x500" class="img-responsive" alt="">
       </div>
     </div>
   </div>
 </section>
+<script>
+  $('#carousel-date-label').on('slid.bs.carousel', function (e) {
+    window.console.log("slide");
+    var direction = e.direction;
+    var progress = $(e.relatedTarget).data("progress");
+    window.console.log(direction);
+    $('.progress-bar').css("width", progress + "%").attr("aria-valuenow", progress);
+  });
+</script>
 
