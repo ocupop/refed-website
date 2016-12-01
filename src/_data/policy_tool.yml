@@ -83,7 +83,7 @@ liability_protection:
       summary: "Arizona's law provides liability protection for nonprofit food recovery organizations charging final recipients for food by defining donation as giving food for a 'fee significantly less than the value of the item.'"
       state: arizona
       lat: 34.1478179
-      long: -114.1737247
+      long: -112.1737247
     - title: Liability protection when nonprofits charge needy individuals for food.
       summary: "Oregon's law provides liability protection when a nonprofit food recovery organization charges the final recipient 'on a scale reflecting ability to pay or only requiring a shared maintenance contribution.'"
       state: oregon
@@ -150,7 +150,7 @@ tax_incentives:
       summary: "California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
       state: california
       lat: 37.1871655
-      long: -123.7612299
+      long: -120.7612299
     - title: Virginia tax incentives
       summary: "In 2016, the Virginia General Assembly established the Food Crop Donation Tax Credit. The credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops and no tax payer is allowed to claim more than $5,000 in credits each year."
       state: virginia
@@ -268,8 +268,8 @@ organics_recycling_mandates:
       state: california
       lat: 37.757815
       long: -122.5076395
-    - title: Needs Title
-      summary: "In 2012, Vermont passed the Universal Recycling Law, which bans disposal of food scraps, in addition to "blue bin" recyclables and leaf and yard debris. All residents and businesses must divert food scraps by 2020, with larger businesses and institutions subject to the ban even earlier depending on the amount of food waste generated annually."
+    - title: Need title
+      summary: "In 2012, Vermont passed the Universal Recycling Law, which bans disposal of food scraps, in addition to 'blue bin' recyclables and leaf and yard debris. All residents and businesses must divert food scraps by 2020, with larger businesses and institutions subject to the ban even earlier depending on the amount of food waste generated annually."
       state: vermont
       lat: 43.8682565
       long: -73.568751

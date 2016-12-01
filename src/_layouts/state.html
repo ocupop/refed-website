@@ -1,31 +1,11 @@
 ---
 layout: policy_tool
 ---
-<div id="policynav">
-    <div class="sticky">
-      <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
-      <ul>
-        <li><a href="#date-labelling">Date Labelling</a></li>
-      </ul>
-
-      <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
-      <ul>
-        <li><a href="#liability-protection">Liability Protection</a></li>
-        <li><a href="#tax-incentives">Tax Incentives</a></li>
-      </ul>
-      <h4 class="recycling"><a href="#prevention-policy">Recycling Policy</a></h4>
-      <ul>
-        <li><a href="#animal-feed">Animal Feed</a></li>
-        <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
-      </ul>
-    </div>
-</div>
-<section class="alt">
-    {% capture title %}{{ page.name }} State Policy{% endcapture %}
-    {% include tools/_page_header.html title=title%}
+<section class="cream-border">
+  {% include policy/page_header.html %}
 </section>
 
-<section class="prevention-policy">
+<section class="prevention-border">
   <div class="container">
     <div id="date-labelling" class="row">
       <div class="col-xs-12">
@@ -70,7 +50,7 @@ layout: policy_tool
     </div>
   </div>
 </section>
-<section class="recovery-policy">
+<section class="recovery-border">
   <div class="container">
     <div id="liability-protection" class="row">
       <div class="col-xs-12">
@@ -136,7 +116,7 @@ layout: policy_tool
     </div>
   </div>
 </section>
-<section class="recycling-policy">
+<section class="recycling-border">
   <div class="container">
     <div id="animal-feed" class="row">
       <div class="col-xs-12">
@@ -193,3 +173,23 @@ layout: policy_tool
     </div>
   </div>
 </section>
+
+<div id="policynav">
+  <div class="sticky">
+    <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
+    <ul>
+      <li><a href="#date-labelling">Date Labelling</a></li>
+    </ul>
+
+    <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
+    <ul>
+      <li><a href="#liability-protection">Liability Protection</a></li>
+      <li><a href="#tax-incentives">Tax Incentives</a></li>
+    </ul>
+    <h4 class="recycling"><a href="#prevention-policy">Recycling Policy</a></h4>
+    <ul>
+      <li><a href="#animal-feed">Animal Feed</a></li>
+      <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
+    </ul>
+  </div>
+</div>

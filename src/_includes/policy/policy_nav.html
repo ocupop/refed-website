@@ -1,0 +1,104 @@
+<!-- TODO - Consolidate all of the policynav into a single include -->
+
+{% if page is homepage %}
+<div id="policynav">
+  <h4 class="prevention">Prevention Policy</h4>
+  <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
+  <ul>
+    <li class="checkbox">
+      <input id="date_labeling_studies"
+        type="checkbox"
+        class="study-filter"
+        value="prevention">
+      <label for="date_labeling_studies">
+        <span></span>
+        Date Labeling
+        <small>Reveal state policies that hinder food waste prevention</small>
+      </label>
+    </li>
+  </ul>
+  <a href="/tools/policy/date-labels" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
+
+  <h4 class="recovery">Recovery Policy</h4>
+  <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
+  {% assign section = site.data.policy_tool['liability_protection'] %}
+  {% include policy/policy_tool_filter.html section=section category='recovery' %}
+
+  {% assign section = site.data.policy_tool['tax_incentives'] %}
+  {% include policy/policy_tool_filter.html section=section category='recovery' %}
+  <ul>
+    <li class="checkbox small">
+      <input id='recovery_studies'
+        type='checkbox'
+        class='study-filter'
+        value="recovery">
+      <label for="recovery_studies">
+        <span></span>
+        Best-practice Policies
+      </label>
+    </li>
+  </ul>
+
+  <h4 class="recycling">Recycling Policy</h4>
+  <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
+  {% assign section = site.data.policy_tool['animal_feed'] %}
+  {% include policy/policy_tool_filter.html section=section category='recycling' %}
+  
+  {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+  {% include policy/policy_tool_filter.html section=section category='recycling' %}
+  <ul>
+    <li class="checkbox small">
+      <input id='recycling_studies'
+        type='checkbox'
+        class='study-filter'
+        value="recycle">
+      <label for="recycling_studies">
+        <span></span>
+        Best-practice Policies
+      </label>
+    </li>
+  </ul>
+</div>
+{% endif %
+  
+{% if page.layout == 'state' %}
+<div id="policynav">
+  <div class="sticky">
+    <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
+    <ul>
+      <li><a href="#date-labelling">Date Labelling</a></li>
+    </ul>
+
+    <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
+    <ul>
+      <li><a href="#liability-protection">Liability Protection</a></li>
+      <li><a href="#tax-incentives">Tax Incentives</a></li>
+    </ul>
+    <h4 class="recycling"><a href="#prevention-policy">Recycling Policy</a></h4>
+    <ul>
+      <li><a href="#animal-feed">Animal Feed</a></li>
+      <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
+    </ul>
+  </div>
+</div>
+{% endif %}
+
+{% if page.permalink contains 'federal' %}
+<div id="policynav">
+  <div class="sticky">
+    <div class="content">
+      <h3>Current Federal Policy</h3>
+      <ul class="flush">
+        <li><a href="#">Liability Protection</a></li>
+        <li><a href="#">Tax Incentives</a></li>
+        <li><a href="#">Animal Feed</a></li>
+      </ul>
+      <h3>Proposed Federal Policy</h3>
+      <ul class="flush">
+        <li><a href="#">The Food Recovery Act</a></li>
+        <li><a href="#">Food Date Labeling Act</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endif %}

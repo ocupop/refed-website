@@ -32,6 +32,23 @@
     width: auto;
     height: auto;
   }
+  &.inverse {
+    display: inline-block;
+    margin: 0 7px 0 0;
+    height: auto;
+    width: 47%;
+    max-width: 150px;
+    padding: 12px 0;
+    font-weight: 400;
+    background-color: $cream;
+    color: $gray;
+    opacity: .5;
+    &.active {
+      background-color: $gray;
+      color: #fff;
+      opacity: 1;
+    }
+  }
   &.prevention {
     color: $cream-light;
     &:hover, &:focus, &:active {

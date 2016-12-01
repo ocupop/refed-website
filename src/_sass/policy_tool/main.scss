@@ -12,26 +12,6 @@ body.state_layout, body.policy_tool_layout {
       }
     }
   }
-  .button {
-    width: 50%;
-    &.fed-state-button{
-      display: inline-block;
-      margin: 0 7px 0 0;
-      height: auto;
-      width: 47%;
-      max-width: 150px;
-      padding: 12px 0;
-      font-weight: 400;
-      background-color: $cream;
-      color: $gray;
-      opacity: .5;
-      &.active {
-        background-color: $gray;
-        color: #fff;
-        opacity: 1;
-      }
-    }
-  }
   
   #tournav { display: none; }
   #page-footer {
@@ -42,10 +22,6 @@ body.policy_tool_layout {
   #tournav { display: none; }
   #page-footer {
     box-shadow: 0 0 25px rgba(0,0,0,0.2);
-  }
-  .button {
-    margin-top:25px;
-    margin-bottom: 25px;
   }
 }
 
@@ -89,6 +65,9 @@ body.policy_tool_layout {
     li  { 
       padding-left: 30px;
       margin-bottom: 15px;
+      &.checkbox.small {
+        padding-left: 50px;
+      }
       a {
         color: $gray;
         &:hover, &:focus, &:active {
@@ -142,18 +121,18 @@ body.policy_tool_layout {
 // TODO - refactor section classes to make more global
 
 section {
-  &.prevention-policy {
+  &.prevention-border {
     border-left: 30px solid $prevention-color;
   }
 
-  &.recovery-policy {
+  &.recovery-border {
     border-left: 30px solid $recovery-color;
   }
 
-  &.recycling-policy {
+  &.recycling-border {
     border-left: 30px solid $recycle-color;
   }
-  &.state-header {
+  &.cream-border {
     border-left: 30px solid $cream;
   }
 }
@@ -183,8 +162,10 @@ header.tool-header {
       display: none;
     }
   }
-  .row {
-    margin: 0 auto;
+  .container-fluid {
+    .row {
+      margin: 0 auto;
+    }
   }
   .select {
     &:after {
@@ -193,7 +174,7 @@ header.tool-header {
       color: $recovery-color;
       background-color: #9bcac0;
       width: 50px;
-      height: 47px;
+      height: 48px;
       line-height: 47px;
       text-align: center;
       font-size: 13px;
@@ -292,4 +273,3 @@ header.tool-header {
   }
 }
 
- 

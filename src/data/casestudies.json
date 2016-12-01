@@ -6,23 +6,23 @@ layout: null
 
 "features": [
 {% for study in site.data.policy_tool['date_labeling'].case_studies %}
-{ "type": "Feature", "id": "date_label_{{ forloop.index }}", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ -112.073795102267638, 33.448183151118144 ] } },
+{ "type": "Feature", "id": "date_label_{{ forloop.index }}", "category": "prevention", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ {{ study.long }}, {{ study.lat }} ] } },
 {% endfor %}
 
 {% for study in site.data.policy_tool['liability_protection'].case_studies %}
-{ "type": "Feature", "id": "liability_protection_{{ forloop.index }}", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ -112.073795102267638, 33.448183151118144 ] } },
+{ "type": "Feature", "id": "liability_protection_{{ forloop.index }}", "category": "recovery", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ {{ study.long }}, {{ study.lat }} ] } },
 {% endfor %}
 
 {% for study in site.data.policy_tool['tax_incentives'].case_studies %}
-{ "type": "Feature", "id": "tax_incentives{{ forloop.index }}", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ -112.073795102267638, 33.448183151118144 ] } },
+{ "type": "Feature", "id": "tax_incentives{{ forloop.index }}", "category": "recovery", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ {{ study.long }}, {{ study.lat }} ] } },
 {% endfor %}
 
 {% for study in site.data.policy_tool['animal_feed'].case_studies %}
-{ "type": "Feature", "id": "animal_feed{{ forloop.index }}", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ -112.073795102267638, 33.448183151118144 ] } },
+{ "type": "Feature", "id": "animal_feed{{ forloop.index }}", "category": "recycle", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ {{ study.long }}, {{ study.lat }} ] } },
 {% endfor %}
 
 {% for study in site.data.policy_tool['organics_recycling_mandates'].case_studies %}
-{ "type": "Feature", "id": "organics_recycling_mandates{{ forloop.index }}", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ -112.073795102267638, 33.448183151118144 ] } }{% unless forloop.last %},{% endunless %}
+{ "type": "Feature", "id": "organics_recycling_mandates{{ forloop.index }}", "category": "recycle", "properties": { "title": "{{ study.title }}", "state": "{{ study.state }}", "summary": "{{ study.summary }}" }, "geometry": { "type": "Point", "coordinates": [ {{ study.long }}, {{ study.lat }} ] } }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
 }

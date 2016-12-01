@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-5">
+      <a href="/tools/policy/federal-policy" 
+         class="button inverse {% if page.permalink contains 'federal' %}active{% endif %}">
+         Federal<br>Policy</a>
+      <a href="/tools/policy/"
+         class="button inverse {% unless page.permalink contains 'federal' %}active{% endunless %}">
+         State<br>Policy</a>
+    </div>
+    <div class="col-xs-12 col-sm-7">
+      <p class="fineprint">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      {% if page.layout == 'state' %}
+        <h1>{{ page.name }} State Policy</h1>
+      {% else %}
+        {% unless page.permalink == '/tools/policy/' %}
+          <h1>{{ page.title }}</h1>
+        {% endunless %}
+      {% endif %}
+    </div>
+  </div>
+</div>
