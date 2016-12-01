@@ -8,7 +8,6 @@ header: "U.S. Food Waste Policy Finder"
 ---
 <div id="tooltip">HELLO</div>
 <div id="policynav">
-  <div class="sticky">
     <h4 class="prevention">Prevention Policy</h4>
     <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
     <ul>
@@ -38,22 +37,14 @@ header: "U.S. Food Waste Policy Finder"
     
     {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
     {% include tools/policy_tool_filter.html section=section category='recycling' %}
-  </div>
 </div>
 <section>
+  {% include tools/_page_header.html %}
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
-        
-          <a href="/tools/policy/federal" class="button fed-state-button">Federal<br>Policy</a>
-          <a href="#" class="button fed-state-button active">State<br>Policy</a>
-       
-      </div>
-    </div>
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12">
         <div id="map"></div>
-        <div id="map-instructions" class="hide">
+        <div id="map-instructions">
           <div class="content">
             <h4>U.S. Food Waste Policy Finder</h4>
             <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
@@ -94,6 +85,9 @@ header: "U.S. Food Waste Policy Finder"
           window.location = url; // redirect
       }
       return false;
+  });
+  $('.collapse').on('show.bs.collapse', function() {
+    $('#policynav .collapse').not($(this)).collapse('hide');
   });
   $('.map-filter, .map-subfilter').on('click', function() {
     var root = $(this).closest('.root');
@@ -187,6 +181,8 @@ header: "U.S. Food Waste Policy Finder"
       // console.log(state, getLevel(activeStates, state));
     });
   }
+
+
 
 </script>
 

@@ -1,7 +1,12 @@
 date_labeling:
   title: Date Labeling
   definition: Reveal state policies that hinder food waste prevention
-  case_studies: []
+  case_studies:
+    - title: This is an example case study
+      summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away each week. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste while allowing wholesome products to end up in the hands of those who want them.'
+      state: montana
+      lat: 46.657895
+      long: -112.2869638
   filters:
     - title: No date label regulations
       definition: No date label regulations
@@ -68,7 +73,12 @@ date_labeling:
 liability_protection:
   title: Liability Protection
   definition: Reveal states that offer liability protection
-  case_studies: []
+  case_studies:
+    - title: This is an example case study
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      state:
+      lat: 0
+      long: 0
   filters:
     - title: Protections apply when end recipient pays for the donated food
       definition: Protections apply when end recipient pays for the donated food
@@ -115,7 +125,12 @@ liability_protection:
 tax_incentives:
   title: Tax Incentives
   definition: Reveal states that offer tax incentives
-  case_studies: []
+  case_studies:
+    - title: This is an example case study
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      state:
+      lat: 0
+      long: 0
   filters:
     - title: "States that o\x1Fffer additional tax incentives beyond federal incentives"
       definition: "States that o\x1Fffer additional tax incentives beyond federal incentives"
@@ -132,7 +147,12 @@ tax_incentives:
 animal_feed:
   title: Animal Feed
   definition: Reveal state policies that hinder food waste recycling
-  case_studies: []
+  case_studies:
+    - title: This is an example case study
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      state:
+      lat: 0
+      long: 0
   filters:
     - title: Prohibits feeding food waste to all animals
       definition: Prohibits feeding food waste to all animals
@@ -210,9 +230,14 @@ animal_feed:
         - west-virginia
         - wyoming
 organics_recycling_mandates:
-  title: "Organic Waste Bans & Waste Recycling Laws"
+  title: 'Organic Waste Bans & Waste Recycling Laws'
   definition: Reveal states that offer liability protection
-  case_studies: []
+  case_studies:
+    - title: This is an example case study
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      state:
+      lat: 0
+      long: 0
   filters:
     - title: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       definition: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
