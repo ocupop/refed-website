@@ -42,6 +42,12 @@
       .study.recycle { display: block; }
     }
   }
+  &.tax-incentives {
+    .level-1 { fill: $recovery-color; }
+  }
+  &.organic-waste-bans-waste-recycling-laws {
+    .level-1 { fill: $recycle-color; }
+  }
   .states:hover {
     // opacity: 0.9;
     cursor: pointer;

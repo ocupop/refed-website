@@ -52,7 +52,7 @@ tool: U.S. Food Waste Policy Finder
     $('#policynav .collapse').not($(this)).collapse('hide');
   });
 
-  $('.map-filter, .map-subfilter').on('click', function() {
+  $('.map-filter, .map-subfilter, .study-filter').on('click', function() {
     var $root = $(this).closest('.root');
     clearFilters($root);
   });
@@ -109,10 +109,8 @@ tool: U.S. Food Waste Policy Finder
 
   $('.study-filter').on('click', function() {
     var type = this.checked ? this.value : false;
-    var cat = $(this).val();
     if(type) {
       showStudies(type);
-      activateCategory(cat);
     } else {
       hideStudies();
     }
@@ -126,12 +124,6 @@ tool: U.S. Food Waste Policy Finder
     $('#map').addClass('show-studies');
   }
 
-  function activateCategory(cat) {
-    $('#map')
-      .removeClass('recycle recovery prevention')
-      .addClass(cat);
-  }
-
   function clearFilters(activeRoot) {
     $(".root").not(activeRoot).each(function() {
       $(this).find('input[type="checkbox"]').prop({
@@ -140,9 +132,7 @@ tool: U.S. Food Waste Policy Finder
       });
     });
     var category = $(activeRoot).data('category');
-    $('#map')
-      .removeClass('recycle recovery prevention')
-      .addClass(category);
+    $('#map').attr('class', category);
   }
 
   function clearLevels() {
