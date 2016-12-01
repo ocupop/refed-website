@@ -38,15 +38,15 @@ tool: U.S. Food Waste Policy Finder
   $('#tooltip .close').on('click', function() {
     $('#tooltip').removeClass('active');
   });
-  $('#state-select').change(function(){
-    var value = $(this).val();
-    window.console.log('value', value);
-    var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
+  // $('#state-select').change(function(){
+  //   var value = $(this).val();
+  //   window.console.log('value', value);
+  //   var url = $(this).val(); // get selected value
+  //     if (url) { // require a URL
+  //         window.location = url; // redirect
+  //     }
+  //     return false;
+  // });
 
   $('.collapse').on('show.bs.collapse', function() {
     $('#policynav .collapse').not($(this)).collapse('hide');
@@ -104,29 +104,32 @@ tool: U.S. Food Waste Policy Finder
     }
 
     checkSiblings(container);
-    updateMap();
+    updateMapLevels();
   });
 
   $('.study-filter').on('click', function() {
     var type = this.checked ? this.value : false;
+    var cat = $(this).val();
     if(type) {
       showStudies(type);
+      activateCategory(cat);
     } else {
       hideStudies();
     }
-    // var $root = $(this).closest('.root');
-    // clearFilters($root);
-    // 
   });
 
   function hideStudies() {
-    $("#map").removeClass('recycle recovery prevention');
+    $("#map").removeClass('show-studies');
   }
 
   function showStudies(type) {
+    $('#map').addClass('show-studies');
+  }
+
+  function activateCategory(cat) {
     $('#map')
       .removeClass('recycle recovery prevention')
-      .addClass(type);
+      .addClass(cat);
   }
 
   function clearFilters(activeRoot) {
@@ -137,7 +140,7 @@ tool: U.S. Food Waste Policy Finder
       });
     });
     var category = $(activeRoot).data('category');
-    $('.states')
+    $('#map')
       .removeClass('recycle recovery prevention')
       .addClass(category);
   }
@@ -152,7 +155,7 @@ tool: U.S. Food Waste Policy Finder
     return array.filter(item => item == state).length;
   }
 
-  function updateMap() {
+  function updateMapLevels() {
     var activeStates = [];
     $(".map-subfilter").each(function() {
       if($(this).is(':checked')) {
