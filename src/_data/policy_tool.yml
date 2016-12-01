@@ -9,7 +9,7 @@ date_labeling:
       long: -112.2869638
   filters:
     - title: No date label regulations
-      definition: No date label regulations
+      definition: "These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non."
       states:
         - idaho
         - missouri
@@ -19,7 +19,7 @@ date_labeling:
         - tennessee
         - utah
     - title: Date labels required for certain foods. No restrictions on sales after those dates
-      definition: Date labels required for certain foods. No restrictions on sales after those dates
+      definition: "These are the states that regulate the presence of date labels on certain foods but do not regulate sales after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus."
       states:
         - alaska
         - arizona
@@ -45,7 +45,7 @@ date_labeling:
         - west-virginia
         - wyoming
     - title: Date labels required for certain foods. Regulations on sales after those dates
-      definition: Date labels required for certain foods. Regulations on sales after those dates
+      definition: "These are the states that regulate both the presence of date labels and, broadly, the sale of products after those dates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ealiquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non."
       states:
         - colorado
         - florida
