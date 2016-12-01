@@ -6,6 +6,7 @@ slug: policy-tool
 
 header: "U.S. Food Waste Policy Finder"
 ---
+<div id="tooltip">HELLO</div>
 <div id="policynav">
   <div class="sticky">
     <h4 class="prevention">Prevention Policy</h4>
@@ -25,18 +26,18 @@ header: "U.S. Food Waste Policy Finder"
     <h4 class="recovery">Recovery Policy</h4>
     <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
     {% assign section = site.data.policy_tool['liability_protection'] %}
-    {% include tools/policy_tool_filter.html section=section %}
+    {% include tools/policy_tool_filter.html section=section category='recovery' %}
 
     {% assign section = site.data.policy_tool['tax_incentives'] %}
-    {% include tools/policy_tool_filter.html section=section %}
+    {% include tools/policy_tool_filter.html section=section category='recovery' %}
 
     <h4 class="recycling">Recycling Policy</h4>
     <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
     {% assign section = site.data.policy_tool['animal_feed'] %}
-    {% include tools/policy_tool_filter.html section=section %}
+    {% include tools/policy_tool_filter.html section=section category='recycling' %}
     
     {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
-    {% include tools/policy_tool_filter.html section=section %}
+    {% include tools/policy_tool_filter.html section=section category='recycling' %}
   </div>
 </div>
 <section>
@@ -51,17 +52,15 @@ header: "U.S. Food Waste Policy Finder"
     </div>
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
-        <div id="map">
-          <div id="map-instructions">
-            <div class="content">
-              <h4>U.S. Food Waste Policy Finder</h4>
-              <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
-            </div>
+        <div id="map"></div>
+        <div id="map-instructions" class="hide">
+          <div class="content">
+            <h4>U.S. Food Waste Policy Finder</h4>
+            <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <section>
@@ -96,13 +95,15 @@ header: "U.S. Food Waste Policy Finder"
       }
       return false;
   });
-
-  $('input[type="checkbox"]').change(function(e) {
-
+  $('.map-filter, .map-subfilter').on('click', function() {
+    var root = $(this).closest('.root');
+    clearFilters(root);
+  });
+  $('.map-filter, .map-subfilter').on('change', function(e) {
     var checked = $(this).prop("checked"),
         container = $(this).parent(),
         siblings = container.siblings();
-    window.console.log("CONTAINER: ", container);
+    // window.console.log("CONTAINER: ", container);
 
     container.find('input[type="checkbox"]').prop({
       indeterminate: false,
@@ -145,77 +146,119 @@ header: "U.S. Food Waste Policy Finder"
     }
 
     checkSiblings(container);
+    updateMap();
   });
+
+  function clearFilters(activeRoot) {
+    $(".root").not(activeRoot).each(function() {
+      window.console.log("CLEAR:", $(this));
+      $(this).find('input[type="checkbox"]').prop({
+        indeterminate: false,
+        checked: false
+      });
+    });
+    var category = $(activeRoot).data('category');
+    $('.states')
+      .removeClass('recycle recovery prevention')
+      .addClass(category);
+  }
+
+  function clearLevels() {
+    $('path.states').removeClass(function (index, css) {
+      return (css.match (/(^|\s)level-\S+/g) || []).join(' ');
+    });
+  }
+  function getLevel(array, state) {
+    return array.filter(item => item == state).length;
+  }
+  function updateMap() {
+    var activeStates = [];
+    $(".map-subfilter").each(function() {
+      if($(this).is(':checked')) {
+        var states = $(this).data('states');
+        states.forEach(function(state) {
+          activeStates.push(state);
+        });
+      }
+    });
+    clearLevels();
+    activeStates.forEach(function(state) {
+      $('#'+state).addClass('level-'+getLevel(activeStates, state));
+      // console.log(state, getLevel(activeStates, state));
+    });
+  }
 
 </script>
 
 
 <!-- Map -->
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+
 <script type="text/javascript">
+  String.prototype.trim = function(){
+    return this.replace(" ", "-").toLowerCase();
+  };
 
   /*  This visualization was made possible by modifying code provided by:
 
-  Scott Murray, Choropleth example from "Interactive Data Visualization for the Web" 
-  https://github.com/alignedleft/d3-book/blob/master/chapter_12/05_choropleth.html   
-      
-  Malcolm Maclean, tooltips example tutorial
-  http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
 
-  Mike Bostock, Pie Chart Legend
-  http://bl.ocks.org/mbostock/3888852  */
+  */
+  var width = 960,
+      height = 500;
 
-      
-  //Width and height of map
-  var width = 960;
-  var height = 500;
-
-  // D3 Projection
-  var projection = d3.geo.albersUsa()
-             .translate([width/2, height/2])    // translate to center of screen
-             .scale([1000]);          // scale things down so see entire US
-          
-  // Define path generator
-  var path = d3.geo.path()               // path generator that will convert GeoJSON to SVG paths
-           .projection(projection);  // tell path generator to use albersUsa projection
-
-  //Create SVG element and append map to the SVG
   var svg = d3.select("#map")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 960 500");
-        // .attr("width", width)
-        // .attr("height", height);
+        .attr("viewBox", "0 0 "+width+" "+height+"");
+
+  var projection = d3.geo.albersUsa()
+    .scale(1000)
+    .translate([width / 2, height / 2]);
+   
+  var path = d3.geo.path()
+    .projection(projection);
 
   // Append Div for tooltip to SVG
-  var tip = d3.select("#map")
-          .append("span")   
-          .attr("class", "map-tooltip")               
-          .style("opacity", 0);      
+  var tip = d3.select("#tooltip");
+    
+  queue()
+    // .defer(d3.json, '/data/states.json')
+    .defer(d3.json, '/data/us-states.json')
+    .defer(d3.json, '/data/cities.json')
+    .await(buildMap);
 
-  // Load GeoJSON data and merge with states data
-  d3.json("/data/us-states.json", function(json) {
-    // Bind the data to the SVG and create one path per GeoJSON feature
-    svg.selectAll("path")
-    .data(json.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .style("stroke", "#fff")
-    .style("stroke-width", "1")  
-    .style("fill", "rgb(42,129,117)")
-    .on("mouseover", function(d) {    
-       //  tip.transition()        
-       // .duration(200)      
-       // .style("opacity", .9);      
-       // tip.text(d.properties.name)
-       // .style("left", (d3.event.pageX) + "px")     
-       // .style("top", (d3.event.pageY - 10) + "px");
-       window.console.log("hover", d);
-       d3.select(this).style("opacity", .9); 
-    }) 
-    .on("mouseout", function(d) {       
-      d3.select(this).style("opacity", 1);    
-    });
-  });
+  function buildMap(error, states, cities) {
+
+    svg.selectAll(".states")
+      .data(states.features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .attr('class', 'states')
+      .attr('id', function(d) { return d.properties.name.trim(); })
+      .on('click', function(d) {
+        var url = "/states/"+d.properties.name.trim();
+        window.location.href = url;
+      });
+
+    // svg.selectAll('.cities')
+    //   .data(cities.features)
+    //   .enter()
+    //   .append('path')
+    //   .attr('d', path.pointRadius(5))
+    //   .attr('class', 'cities')
+    //   .on("mouseover", function(d) {
+    //     tip.attr('class', 'active')
+              // .style("left", (d3.event.pageX) + "px")
+    //        .style("top", (d3.event.pageY - 150) + "px");
+    //      window.console.log("hover", d);
+    //   })
+    //   .on("mouseout", function(d) {
+        // tip.attr('class', 'hide')
+    // }
+
+  }
 </script>
+
