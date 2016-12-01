@@ -18,12 +18,15 @@
 
   <h4 class="recovery">Recovery Policy</h4>
   <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
-  {% assign section = site.data.policy_tool['liability_protection'] %}
-  {% include policy/policy_tool_filter.html section=section category='recovery' %}
 
+  {% assign section = site.data.policy_tool['liability_protection'] %}
+  <ul class="root" data-category="recovery {{ section.title | slugify }}">
+    {% include policy/policy_tool_filter.html section=section %}
+
+  </ul>
   {% assign section = site.data.policy_tool['tax_incentives'] %}
-  {% include policy/policy_tool_filter.html section=section category='recovery' %}
-  <ul>
+  <ul class="root" data-category="recovery {{ section.title | slugify }}">
+    {% include policy/policy_tool_filter.html section=section %}
     <li class="checkbox small">
       <input id='recovery_studies'
         type='checkbox'
@@ -39,11 +42,13 @@
   <h4 class="recycling">Recycling Policy</h4>
   <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
   {% assign section = site.data.policy_tool['animal_feed'] %}
-  {% include policy/policy_tool_filter.html section=section category='recycle' %}
+  <ul class="root" data-category="recycle {{ section.title | slugify }}">
+    {% include policy/policy_tool_filter.html section=section %}
+  </ul>
   
   {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
-  {% include policy/policy_tool_filter.html section=section category='recycle' %}
-  <ul>
+  <ul class="root" data-category="recycle {{ section.title | slugify }}">
+    {% include policy/policy_tool_filter.html section=section %}
     <li class="checkbox small">
       <input id='recycling_studies'
         type='checkbox'
