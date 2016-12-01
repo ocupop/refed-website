@@ -4,7 +4,7 @@
       <div class="col-xs-12 col-md-5">
         <div class="panel">
           <div class="panel-body">
-            <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
               <div class="carousel-inner" role="listbox">
                   <div class="item active" data-progress="0">
                     <h2>Date Labeling<br>Policy Issues</h2>
@@ -88,8 +88,15 @@
     var direction = e.direction;
     var progress = $(e.relatedTarget).data("progress");
     window.console.log(direction);
+    window.console.log(progress);
     $('.progress-bar').css("width", progress + "%").attr("aria-valuenow", progress);
+    if(progress == 100) {
+      $('.right').addClass('hide');
+    }else{
+      $('.right').removeClass('hide');
+    }
   });
+   
 </script>
 
 <!-- Map -->
