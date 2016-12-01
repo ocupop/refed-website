@@ -170,9 +170,11 @@ header.tool-header {
 
 #policy-tool {
   position: relative;
+  min-height: 1100px;
   padding-right: 325px;
   padding-bottom: 0;
-  &:before {
+  &:before, &:after {
+    clear: both;
     content: " ";
     display: table;
   }
