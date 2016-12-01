@@ -178,6 +178,11 @@ header.tool-header {
     content: " ";
     display: table;
   }
+  &.active {
+    #map-instructions {
+      display: none;
+    }
+  }
   .row {
     margin: 0 auto;
   }
@@ -221,6 +226,7 @@ header.tool-header {
   position: absolute;
   top: 0;
   left: 0;
+  @include transition(0.5s);
   .content {
     font-size: 14px;
     padding: 25px 40px;

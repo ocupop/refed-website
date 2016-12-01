@@ -39,19 +39,12 @@ header: "U.S. Food Waste Policy Finder"
     {% include tools/policy_tool_filter.html section=section category='recycling' %}
 </div>
 <section>
+  {% include tools/_page_header.html %}
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
-        
-          <a href="/tools/policy/federal" class="button fed-state-button">Federal<br>Policy</a>
-          <a href="#" class="button fed-state-button active">State<br>Policy</a>
-       
-      </div>
-    </div>
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12">
         <div id="map"></div>
-        <div id="map-instructions" class="hide">
+        <div id="map-instructions">
           <div class="content">
             <h4>U.S. Food Waste Policy Finder</h4>
             <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
