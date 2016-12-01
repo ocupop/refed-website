@@ -79,25 +79,9 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="container-fluid">
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <label for="state-select" class="text-left">Explore Date Labeling Policy by State</label>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-5">
-        <div class="select">
-          <select name="" id="state-select">
-            <option>Choose State</option>
-            {% for state in site.states %}
-              <option value="{{ state.url }}">{{ state.name }}</option>
-            {% endfor %}
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+{% include policy/explore_state_navigation.html %}
+
 <script>
   $('#carousel-date-label').on('slid.bs.carousel', function (e) {
     window.console.log("slide");

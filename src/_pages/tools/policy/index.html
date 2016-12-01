@@ -2,82 +2,13 @@
 layout: policy_tool
 title: Policy Tool
 permalink: /tools/policy/
+
+tool: U.S. Food Waste Policy Finder
 ---
 
-<div id="tooltip">
-  <div class="content">
-    <button type="button" class="close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <h3 class="title">Example tooltip title</h3>
-    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <a href="/tools/policy/date-labels" class="button">Explore Date Labeling Policy Issues In-Depth &gt;</a>
-</div>
+{% include policy/tooltip.html %}
 
-<div id="policynav">
-  <h4 class="prevention">Prevention Policy</h4>
-  <p>Policy changes related to date labelling have the potential to prevent 398,000 tons of waste per year</p>
-  <ul>
-    <li class="checkbox">
-      <input id="date_labeling_studies"
-        type="checkbox"
-        class="study-filter"
-        value="prevention">
-      <label for="date_labeling_studies">
-        <span></span>
-        Date Labeling
-        <small>Reveal state policies that hinder food waste prevention</small>
-      </label>
-    </li>
-  </ul>
-  <a href="/tools/policy/date-labels" class="button prevention">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
-
-  <h4 class="recovery">Recovery Policy</h4>
-  <p>Federal policy provides liability protection and tax incentives for donating food. States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
-  {% assign section = site.data.policy_tool['liability_protection'] %}
-  {% include policy/policy_tool_filter.html section=section category='recovery' %}
-
-  {% assign section = site.data.policy_tool['tax_incentives'] %}
-  {% include policy/policy_tool_filter.html section=section category='recovery' %}
-  <ul>
-    <li class="checkbox small">
-      <input id='recovery_studies'
-        type='checkbox'
-        class='study-filter'
-        value="recovery">
-      <label for="recovery_studies">
-        <span></span>
-        Best-practice Policies
-      </label>
-    </li>
-  </ul>
-
-  <h4 class="recycling">Recycling Policy</h4>
-  <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
-  {% assign section = site.data.policy_tool['animal_feed'] %}
-  {% include policy/policy_tool_filter.html section=section category='recycle' %}
-  
-  {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
-  {% include policy/policy_tool_filter.html section=section category='recycle' %}
-  <ul>
-    <li class="checkbox small">
-      <input id='recycling_studies'
-        type='checkbox'
-        class='study-filter'
-        value="recycle">
-      <label for="recycling_studies">
-        <span></span>
-        Best-practice Policies
-      </label>
-    </li>
-  </ul>
-</div>
+{% include policy/policynav_map.html %}
 
 <section>
   {% include policy/page_header.html %}
@@ -96,25 +27,8 @@ permalink: /tools/policy/
   </div>
   {% include_relative _map_legend.html %}
 </section>
-<section>
-  <div class="container-fluid">
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <label for="state-select" class="text-left">Explore Food Waste Policy by State</label>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-5">
-        <div class="select">
-          <select name="" id="state-select">
-            <option>Choose State</option>
-            {% for state in site.states %}
-              <option value="{{ state.url }}">{{ state.name }}</option>
-            {% endfor %}
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+{% include policy/explore_state_navigation.html %}
 
 <script>
 
@@ -318,6 +232,7 @@ permalink: /tools/policy/
         $('#tooltip')
           .find('.title').text(d.properties.title).end()
           .find('.summary').text(d.properties.summary).end()
+          .find('.button').attr('class', 'button '+d.category).end()
           .addClass('active');
 
         tip.style("left", (d3.event.pageX - 42) + "px")
