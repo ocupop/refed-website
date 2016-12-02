@@ -5,25 +5,25 @@
   }
 }
 
-#next-prev-nav {
-  a {
-    width: 50%;
-    display: block;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    color: $gray-dark;
-    text-transform: uppercase;
-    &.previous {
-      background-color: $gray-light;
-    }
-    &.next {
-      background-color: $gray;
-    }
-  }
-}
+// #next-prev-nav {
+//   a {
+//     width: 50%;
+//     display: block;
+//     height: 200px;
+//     line-height: 200px;
+//     text-align: center;
+//     font-size: 18px;
+//     font-weight: 400;
+//     color: $gray-dark;
+//     text-transform: uppercase;
+//     &.previous {
+//       background-color: $gray-light;
+//     }
+//     &.next {
+//       background-color: $gray;
+//     }
+//   }
+// }
 
 // TODO - Move to another stylesheet
 .nav-tabs {
@@ -31,6 +31,7 @@
   top: 20px;
   border-bottom: 0;
   li {
+
     &.active {
       border: none;
       a {
@@ -39,6 +40,7 @@
       }
     }
     a {
+      max-width: 185px;
       border: none;
       background: darken($cream-light, 10%);
       color: $gray;
@@ -160,4 +162,16 @@
 
 .progress-bar {
   background-color: $gray;
+}
+
+#subnav {
+  &.subnav-for-tabs {
+    a {
+      font-size: 22px;
+    }
+    .disabled {
+      opacity: .3;
+      pointer-events: none;      
+    }
+  }
 }
