@@ -18,7 +18,9 @@ tool: U.S. Food Waste Policy Finder
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
-        <div id="map"></div>
+        <div id="map">
+          {% include_relative _map_legend.html %}
+        </div>
         <div id="map-instructions">
           <div class="content">
             <h4>U.S. Food Waste Policy Finder</h4>
@@ -28,7 +30,6 @@ tool: U.S. Food Waste Policy Finder
       </div>
     </div>
   </div>
-  {% include_relative _map_legend.html %}
 </section>
 
 

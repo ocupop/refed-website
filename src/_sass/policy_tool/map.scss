@@ -1,3 +1,44 @@
+.map-legend {
+  .legend-key {
+    display: none;
+    position: relative;
+    &.icon-key {
+      svg, .box {
+        position: absolute;
+        top: 4px;
+        left: 0;
+      }
+      .box, .circle {
+        width: 30px;
+        height: 30px;
+      }
+      .circle {
+        border-radius: 50%;
+        position: absolute;
+        background-color: #bdcca1;
+      } 
+      h5 {
+        padding-left: 40px;
+      }
+    }
+    &.gradient-key {
+      padding: 0 20px;
+      border-left: 1px solid $cream;
+    }
+    h5 {
+      font-weight: 400;
+    }
+    ul {
+      li {
+        position: relative;
+        padding: 5px 0;
+        h5 {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
 #map {
   position: relative;
   background: transparent !important;
@@ -42,17 +83,27 @@
       .study.recycle { display: block; }
     }
   }
+  &.date-labeling {
+    .date-labeling-key { display: block; }
+  }
+  &.liability-protection {
+    .liability-protection-key { display: block; }
+  }
   &.tax-incentives {
     .level-1 { fill: $recovery-color; }
+    .tax-incentives-key { display: block; }
+  }
+  &.animal-feed {
+    .animal-feed-key { display: block; }
   }
   &.organic-waste-bans-waste-recycling-laws {
     .level-1 { fill: $recycle-color; }
+    .organic-waste-bans-waste-recycling-laws-key { display: block; }
   }
   .states:hover {
     // opacity: 0.9;
     cursor: pointer;
   }
-
 
 }
 #tooltip {
@@ -84,43 +135,4 @@
   }
 }
 
-.map-legend {
-  .legend-key {
-    position: relative;
-    &.icon-key {
-      svg, .box {
-        position: absolute;
-        top: 4px;
-        left: 0;
-      }
-      .box, .circle {
-        width: 30px;
-        height: 30px;
-      }
-      .circle {
-        border-radius: 50%;
-        position: absolute;
-        background-color: #bdcca1;
-      } 
-      h5 {
-        padding-left: 40px;
-      }
-    }
-    &.gradient-key {
-      padding: 0 20px;
-      border-left: 1px solid $cream;
-    }
-    h5 {
-      font-weight: 400;
-    }
-    ul {
-      li {
-        position: relative;
-        padding: 5px 0;
-        h5 {
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-}
+
