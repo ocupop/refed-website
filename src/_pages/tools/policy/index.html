@@ -10,7 +10,7 @@ tool: U.S. Food Waste Policy Finder
 
 {% include policy/policynav_map.html %}
 
-<section class="alt">
+<section class="alt" style="padding: 10px 0;">
   {% include policy/explore_state_navigation.html %}
 </section>
 <section class="transparent">
@@ -38,23 +38,17 @@ tool: U.S. Food Waste Policy Finder
   $('#tooltip .close').on('click', function() {
     $('#tooltip').removeClass('active');
   });
-  // $('#state-select').change(function(){
-  //   var value = $(this).val();
-  //   window.console.log('value', value);
-  //   var url = $(this).val(); // get selected value
-  //     if (url) { // require a URL
-  //         window.location = url; // redirect
-  //     }
-  //     return false;
-  // });
+
+  $('#state-select').change(function(){
+    var url = $(this).val(); // get selected value
+      if (url) { // require a URL
+          window.location = url; // redirect
+      }
+      return false;
+  });
 
   $('.collapse').on('show.bs.collapse', function() {
     $('#policynav .collapse').not($(this)).collapse('hide');
-  });
-
-  $('.map-filter, .map-subfilter, .study-filter').on('click', function() {
-    var $root = $(this).closest('.root');
-    clearFilters($root);
   });
 
   $('.map-filter, .map-subfilter').on('change', function(e) {
@@ -107,33 +101,52 @@ tool: U.S. Food Waste Policy Finder
     updateMapLevels();
   });
 
-  $('.study-filter').on('click', function() {
-    var type = this.checked ? this.value : false;
-    if(type) {
-      showStudies(type);
-    } else {
-      hideStudies();
-    }
+  $(".nav_category").each(function() {
+    var $el = $(this),
+        cat = $el.data('category');
+
+    $el.find('.map-filter, .map-subfilter, .study-filter').on('click', function() {
+      var checked = this.checked ? true : false;
+      var bp = $(this).hasClass('study-filter');
+      var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
+      window.console.log ($(this), bp);
+
+      if(checked) {
+        var showStudies = $el.find('.study-filter:checked').length;
+        var section = $(this).closest('.section_root').attr('data-section');
+        var activeClass = cat + " " + section;
+
+        $el.siblings('.nav_category').find('input[type="checkbox"]').prop({
+          indeterminate: false,
+          checked: false
+        });
+        if(!bp) {
+          $el.find('.map-filter, .map-subfilter').not(this).prop({
+            indeterminate: false,
+            checked: false
+          });
+        }
+
+        if(showStudies) {
+          activeClass += " show-studies";
+        }
+        if(!activeNav) {
+          clearLevels();
+        }
+
+        $('#map').attr('class', activeClass);
+
+      } else {
+        if(bp) { 
+          $('#map').removeClass('show-studies');
+        } else {
+          clearLevels();
+        }
+
+      }
+    });
   });
 
-  function hideStudies() {
-    $("#map").removeClass('show-studies');
-  }
-
-  function showStudies(type) {
-    $('#map').addClass('show-studies');
-  }
-
-  function clearFilters(activeRoot) {
-    $(".root").not(activeRoot).each(function() {
-      $(this).find('input[type="checkbox"]').prop({
-        indeterminate: false,
-        checked: false
-      });
-    });
-    var category = $(activeRoot).data('category');
-    $('#map').attr('class', category);
-  }
 
   function clearLevels() {
     $('path.states').removeClass(function (index, css) {
