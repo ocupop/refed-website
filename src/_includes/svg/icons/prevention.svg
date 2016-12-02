@@ -1,0 +1,31 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 45 45" enable-background="new 0 0 45 45" xml:space="preserve" width="30" height="30">
+  <g id="bottom">
+    <g>
+      <g>
+        <circle fill="#225577" cx="22.5" cy="22.5" r="18.402"/>
+        <path fill="#FFFFFF" d="M22.5,42.25c-10.89,0-19.75-8.86-19.75-19.75S11.61,2.75,22.5,2.75s19.75,8.86,19.75,19.75
+          S33.39,42.25,22.5,42.25z M22.5,5.445c-9.404,0-17.055,7.651-17.055,17.055S13.096,39.555,22.5,39.555S39.555,31.904,39.555,22.5
+          S31.904,5.445,22.5,5.445z"/>
+      </g>
+      <path fill="#FFFFFF" d="M22.5,27.395c-1.116,0-2.021-0.905-2.021-2.021v-14.24c0-1.117,0.905-2.021,2.021-2.021
+        s2.021,0.905,2.021,2.021v14.24C24.521,26.49,23.616,27.395,22.5,27.395z"/>
+      <path fill="#FFFFFF" d="M22.5,35.106c-1.116,0-2.021-0.905-2.021-2.021v-0.647c0-1.117,0.905-2.021,2.021-2.021
+        s2.021,0.905,2.021,2.021v0.647C24.521,34.201,23.616,35.106,22.5,35.106z"/>
+    </g>
+  </g>
+  <g id="pie_layer">
+  </g>
+  <g id="Pie_Layer_2" display="none">
+  </g>
+  <g id="meals_saved" display="none">
+  </g>
+  <g id="consumer_ed_hover" display="none">
+  </g>
+  <g id="pop_up" display="none">
+  </g>
+  <g id="Layer_2">
+  </g>
+  <g id="Layer_8">
+  </g>
+</svg>

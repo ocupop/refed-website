@@ -1,4 +1,10 @@
 .map-legend {
+  position: absolute;
+  bottom: -250px;
+  right: 0;
+  height: 250px;
+  width: 500px;
+  text-align: left;
   .legend-key {
     display: none;
     position: relative;
@@ -27,6 +33,7 @@
     }
     h5 {
       font-weight: 400;
+      color: $text-color;
     }
     ul {
       li {

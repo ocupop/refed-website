@@ -56,11 +56,6 @@ permalink: /tools/policy/date-labels
   </section>
 </section>
 <script>
-  // $('.nav-tabs a').click(function(){
-  //   var nextText = $(this).next().text();
-    
-  //   $('.btnNext .title').text(nextText);
-  // });
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     var nextText = $('.nav-tabs > .active').next('li').find('a').text();
     window.console.log("nextText is", nextText);
