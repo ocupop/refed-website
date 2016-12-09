@@ -83,18 +83,12 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
-        deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+      - title: D .C. Code § 47-1806.14
+        deduction_or_credit: Credit
+        benefit: '50% of the value of the food commodity donation, up to 2,500 annually'
+        eligible_donors: All taxpayers
+        eligible_food: 'Food Commodities (vegetables, fruits, grains, mushrooms, honey, herbs, nuts, seeds, or rootstock grown in the District by urban farming or by a community garden)'
+        eligible_recipients: District of Columbia food banks or shelters recognized as a tax-exempt organization
   animal_feed:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
