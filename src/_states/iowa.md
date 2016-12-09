@@ -51,18 +51,12 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
-        deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+      - title: 'I owa Code §§ 190B.101-.106, 422.11E, 422.33(30)'
+        deduction_or_credit: Credit
+        benefit: '15% of fair market value, up to $5,000 annually'
+        eligible_donors: Taxpayers that produce a food commodity
+        eligible_food: Any apparently wholesome food
+        eligible_recipients: Food banks and emergency feeding organizations
   animal_feed:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
