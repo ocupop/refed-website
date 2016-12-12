@@ -67,18 +67,26 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: New Mexico allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: N.M. Stat. Ann. § 77-7-16–18 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'Waste consisting in whole or in part of animal waste resulting from handling, preparing, cooking and consuming of food, including the offal from animal carcasses or parts thereof, but excluding such waste obtained by an individual from his own household operations and fed to his own swine on the same premises. § 77-7-16 (2015).'
+        prohibitions: 'No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 77-7-16, 18 (2015).'
+        licensure_requirements: Individuals and facilities must obtain a certificate of registration or a permit for special processing in order to feed garbage to swine. § 77-7-18 (2015).
+        treatment_requirements: All garbage fed to swine must be brought to the boiling point or equivalent temperature for a period of not less than 30 minutes. § 77-7-18 (2015).
+        enforcement: >-
+          Any individual or facility in violation of the garbage-feeding rule is
+          guilty of a petty misdemeanor. Each day of violation counts as
+          a separate offense. § 77-7-17 (2015).
+
+
+
+          The state can make periodic inspections of cooking facilities and
+          premises. § 77-7-18 (2015).
+        relevant_state_regulatory_body: 'New Mexico Livestock Board (§ 77-7-18 (2015)), <a href="https://www.nmlbonline.com/">https://www.nmlbonline.com/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
