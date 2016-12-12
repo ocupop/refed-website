@@ -59,18 +59,18 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Maryland allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a license.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: MD Code Ann. Agric. § 3-404 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'Any putrescible animal and fowl waste resulting from the handling, preparation, cooking, and consumption of foods, including any animal and fowl carcass, part of it, and any other substance that has been mixed with or been in contact with any animal or fowl waste or carcass. § 3-404 (2015).'
+        prohibitions: No feeding untreated garbage to animals. Exception for individuals feeding household garbage. § 3-404 (2015).
+        licensure_requirements: An individual or facility may not feed garbage to swine without procuring an annual license from the state. § 3-404 (2015).
+        treatment_requirements: “Garbage” does not include waste that has been heat-treated such that it either contains less than ten percent moisture or has been deemed safe to feed animals by the secretary of the department of agriculture. § 3-404 (2015).
+        enforcement: 'The secretary of the department of agriculture enforces the garbage-feeding rule. If any individual or facility violates the garbage-feeding rule, the swine may not be sold or removed from its location within 30 days of having consumed the garbage or longer if prescribed by the secretary. § 3-404 (2015).'
+        relevant_state_regulatory_body: 'Maryland Department of Agriculture (§ 3-404 (2015)), <a href="http://mda.maryland.gov/Pages/default.aspx>http://mda.maryland.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
