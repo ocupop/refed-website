@@ -60,18 +60,18 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: South Dakota prohibits the feeding of food waste to cattle that are enrolled in the Dakota Certified Beef Program. But South Dakota has no other laws relating to the feeding of food waste or garbage to animals. It repealed its ban on feeding garbage to animals in 2013.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'A.R.S.D. 12:79:03:06 (2015); H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013)'
+        animals_covered: Cattle
+        definition_of_garbage: N/A
+        prohibitions: 'Cattle that are certified and enrolled in the Dakota Certified Beef Program may not be fed any feed products containing food processing waste, restaurant food waste, dried poultry waste, dried poultry litter, dried ruminant waste, dried swine waste, undried processed animal waste products, or processed animal waste. A.R.S.D. 12:79:03:06 (2015).'
+        licensure_requirements: N/A
+        treatment_requirements: 'South Dakota repealed many of its laws pertaining to garbage feeding. Before the repeal, these laws prohibited the feeding of garbage to swine and livestock; there was no exception for heat-treated garbage. The state decided to repeal this law in order to loosen the reigns on animal disease control generally, as many animal diseases have been eradicated and better managed in recent years. H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013).'
+        enforcement: N/A
+        relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/">https://sdda.sd.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
