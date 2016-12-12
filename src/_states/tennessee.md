@@ -58,18 +58,45 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Tennessee does not recommend feeding animal-derived waste to swine.97 But Tennessee allows the feeding of animal-derived and vegetable waste to swine provided that it has been processed in accordance with federal law (that is, heat-treated and fed by a licensed facility). Feeders must submit a plan to the commissioner detailing how garbage will be processed. Food waste that consists of only bakery waste, whey, and dairy waste from milk processing plants may be fed to swine without being further processed. Individuals may feed household garbage to their own swine without processing it.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: Tenn. Code Ann. §§ 44-2-401–08 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'Animal or plant waste resulting from the handling, preparation, cooking or consumption of foods, including animal and fowl carcasses or parts thereof, and all waste material and byproducts of a kitchen, restaurant, hospital, hotel, motel, or slaughterhouse; except, however, bakery waste, whey, or other dairy waste from milk processing plants shall not be included in this definition. § 44-2-402 (2015).'
+        prohibitions: No feeding unprocessed garbage to swine. Exception for individuals feeding household garbage. § 44-2-404 (2015).
+        licensure_requirements: N/A
+        treatment_requirements: >-
+          Garbage must be processed in accordance with federal law, meaning that
+          garbage must be boiled (212 degrees Fahrenheit/100 degrees Celsius at
+          sea level) for at least 30 minutes. 9 C.F.R. § 166 (2015).
+
+
+
+          Garbage must be processed in a manner prescribed and approved by the
+          commissioner, meaning that feeders must submit a written plan to the
+          commissioner detailing treatment of garbage in a manner prescribed
+          under 9 C.F.R. § 166. § 44-2-404 (2015).
+        enforcement: >-
+          The commissioner of agriculture enforces the garbage-feeding rule.
+          § 44-2-403 (2015).
+
+          The commissioner or an authorized representative may investigate any
+          public or private premises to determine whether the garbage-feeding
+          rule has been violated. § 44-2-406 (2015).
+
+
+
+          A violation of the garbage-feeding rule is a Class C misdemeanor. Each
+          illegal feeding of garbage counts as a separate offense. § 44-2-407
+          (2015).
+
+
+
+          The commissioner may seek to enjoin any individual or facility that
+          violates the garbage-feeding rule. § 44-2-408 (2015).
+        relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/">https://www.tn.gov/agriculture/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
