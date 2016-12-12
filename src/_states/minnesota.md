@@ -161,18 +161,41 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Minnesota allows the feeding of animal-derived and vegetable waste to livestock and poultry provided that it has been properly heat-treated and fed by a licensed facility. Food waste that consists of only canned or frozen food byproducts may be fed to livestock and poultry without being heat-treated provided that the feeding individual or facility obtains an “exempt materials” permit. Individuals and facilities must obtain a license to transport garbage over the public highways for the purpose of feeding it to livestock or poultry. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: Minn. Stat. §§ 35.73–.78 (2015)
+        animals_covered: Livestock and poultry
+        definition_of_garbage: 'Animal or vegetable refuse, including all waste material, byproducts of a kitchen, restaurant, or slaughter house, and refuse accumulation of animal, fruit, or vegetable matter, liquid or solid, but does not mean vegetable waste or byproducts resulting from the manufacture or processing of canned or frozen vegetables or materials exempted under section 35.751. § 35.73 (2015).'
+        prohibitions: 'No feeding untreated garbage to livestock or poultry. Exception for individuals feeding household garbage to swine. § 35.74, .76 (2015).'
+        licensure_requirements: >-
+          No individual or facility may feed garbage to livestock or poultry
+          without first obtaining a license from the board of animal health.
+          Individuals who transport garbage over the public highways of Minnesota
+          for the purpose of feeding it to livestock or poultry must obtain
+          a license from the board of animal health to do so. The license must be
+          renewed on or before the first day of July each year. § 35.75 (2015).
+
+          An individual or facility may feed byproducts of canned or frozen foods
+          to livestock or poultry provided that the individual or facility has
+          obtained an “exempt materials” permit. §§ 35.73, 35.751 (2015).
+        treatment_requirements: Garbage fed to livestock or poultry must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or treated in some other manner approved by the board of animal health. § 35.76 (2015).
+        enforcement: >-
+          The board of animal health may revoke or refuse to issue a permit to
+          any individual who has violated the garbage-feeding rule. § 35.751
+          (2015).
+
+
+
+          An authorized representative of the board may enter any property at
+          reasonable times for purposes of inspecting and investigating
+          conditions relating to the feeding and treating of garbage to be fed to
+          livestock or poultry. The board also may require garbage-feeding
+          facilities to maintain records, and an authorized representative also
+          may examine such records. Copies of the records must be submitted to
+          the board upon request of them. § 35.78 (2015).
+        relevant_state_regulatory_body: 'Minnesota Board of Animal Health (§§ 35.78–.751 (2015)), <a href="https://www.bah.state.mn.us/">https://www.bah.state.mn.us/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
