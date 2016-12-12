@@ -73,18 +73,25 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Maine allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: '7-4-303–05 Me. Code R. §§ 1753, 1813, 1814-A (2015)'
+        animals_covered: Swine
+        definition_of_garbage: 'All waste material derived in whole or in part from the meat of any animal, including fish and poultry, or other animal material and other refuse of any character whatsoever that has been associated with any such material resulting from the handling, preparation, cooking or consumption of food, except that “garbage” does not include waste from ordinary household operations that is fed directly to swine on the same premises where such a household is located. § 1813 (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 1814-A (2015).
+        licensure_requirements: An individual or facility may not feed garbage to swine without procuring a license from the state. § 1814-A (2015).
+        treatment_requirements: Garbage must be thoroughly heated to at least 212 degrees Fahrenheit for at least 30 minutes or treated in some other manner that is approved in writing by the state before being fed to swine. § 1814-A (2015).
+        enforcement: >-
+          The commissioner may enter at reasonable times any private or public
+          property to investigate conditions related to treating or feeding of
+          garbage. § 1814-A (2015).
+
+          Feeding garbage to swine without a license is a civil violation
+          warranting a fine between $250 and $500 for the first violation and
+          $500 and $1,000 for the second violation. § 1814-A (2015).
+        relevant_state_regulatory_body: 'Maine Department of Agriculture, Conservation, and Forestry (§ 1753 (2015)), <a href="http://www.maine.gov/dacf/">http://www.maine.gov/dacf/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
