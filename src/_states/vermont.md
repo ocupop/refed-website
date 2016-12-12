@@ -88,10 +88,106 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           An authorized representative of the Vermont agency of agriculture,
           food, and markets or the U.S. Department of Agriculture may investigate
           private or public property at reasonable times to ensure prohibited
           food waste is not being fed to swine. § 1675 (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -121,6 +217,6 @@ policy_data:
     legislation:
       - title: 'Vt. Stat. Ann. tit. 10, § 6605k'
         generators_covered: 'Any individual, partnership, company, corporation, association, unincorporated association, joint venture, trust, municipality, the State of Vermont or any agency, department, or subdivision of the State, federal agency, or any other legal or commercial entity.'
-        waste_production: "2014: 104 tons/year \n2015: 52 tons/year \n2016: 26 tons/years \n2017: 18 tons/year \n2020: Food scraps banned from landfill completely"
+        waste_production: "2014: 104 tons/year\n  \n2015: 52 tons/year  \n\n2016: 26 tons/years \n\n2017: 18 tons/year \n\n2020: Food scraps banned from landfill completely"
         exemptions_for_distance_from_organics_processing_facility: 20 miles
 ---
