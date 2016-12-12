@@ -76,18 +76,18 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Florida allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Food waste that consists of only fruit or vegetable matter may be fed to swine without being heat-treated. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Fla. Stat. §§ 585.01, 585.50–.59 (2015)'
+        animals_covered: Swine
+        definition_of_garbage: 'All refuse matter, animal or vegetable, byproducts of a restaurant, kitchen, or slaughterhouse; and shall include every accumulation of animal, fruit, or vegetable matter, liquid, or otherwise. “Garbage” shall also include “swill” as commonly used; provided, however, “garbage” shall not include fruit or vegetable matter which does not contain or has not been in contact or mixed with meat or meat parts. § 585.01 (2015).'
+        prohibitions: 'No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 585.01, 585.50–.59 (2015).'
+        licensure_requirements: An individual or facility must obtain an annual permit from the state before feeding garbage to swine. § 585.51 (2015).
+        treatment_requirements: 'Garbage must be heated, cooked, treated, or processed under such temperature, pressure, process, or method and for such period of time as is necessary to render garbage free of disease before being fed to swine. § 585.50 (2015).'
+        enforcement: 'The department of agriculture may refuse revoke, cancel, or suspend the license of any individual or facility that violates the garbage-feeding rule. § 585.53 (2015).'
+        relevant_state_regulatory_body: 'Florida Department of Agriculture, Division of Animal Industry (§ 585.01 (2015)), <a href="http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry">http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
