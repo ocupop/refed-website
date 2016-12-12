@@ -68,18 +68,37 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Wyoming allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: Wyo. Stat. Ann. §§ 11-27-101–107 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 11-27-101 (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 11-27-106 (2015).
+        licensure_requirements: An individual or facility must obtain an annual permit to feed garbage to swine. § 11-27-103 (2015). But individuals that feed household garbage to swine on their own premises need not obtain a permit. § 11-27-104 (2015).
+        treatment_requirements: All garbage fed to swine must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner. § 11-27-106 (2015).
+        enforcement: >-
+          An authorized representative of the board may at reasonable times
+          inspect private or public property upon which garbage is being treated
+          to be fed to swine. The representative also may examine records
+          pertaining to feeding the garbage to swine, may require maintenance of
+          records pertaining to heat-treatment of garbage, and may request that
+          copies of such records be submitted to the board. § 11-27-102 (2015).
+
+
+
+          The board may revoke or refuse to issue a permit to any individual or
+          facility that violates the garbage-feeding rule. § 11-27-105 (2015).
+
+
+
+          Any individual or facility that violates the garbage-feeding rule may
+          be fined $25-$250, imprisoned for 6 months or less, or both. The
+          individual or facility also may be enjoined from continuing the
+          violation. Each day upon which the violation occurs counts as
+          a separate offense. § 11-27-107 (2015).
+        relevant_state_regulatory_body: 'Wyoming Livestock Board (§§ 11-27-102–105 (2015)), <a href="https://wlsb.state.wy.us/public">https://wlsb.state.wy.us/public</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
