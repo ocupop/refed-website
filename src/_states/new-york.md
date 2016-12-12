@@ -51,18 +51,24 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'New York allows the feeding of animal-derived waste to cattle, swine, and poultry provided that it has been properly heat-treated by a rendering facility. All other waste may be fed to cattle, swine, and poultry without heat-treatment. Individuals may feed household garbage to their own cattle, swine, and poultry without heat-treating it.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'N.Y. AGM. Law §§ 72-a, 76 (2015)'
+        animals_covered: 'Cattle, swine, and poultry'
+        definition_of_garbage: 'Putrescible animal and poultry wastes from the handling, processing, preparation, cooking and consumption of foods. § 72-a (2015).'
+        prohibitions: 'No feeding untreated garbage to cattle, swine, or poultry. Exception for individuals feeding household garbage to cattle, swine, or poultry. § 72-a (2015).'
+        licensure_requirements: N/A
+        treatment_requirements: Food waste that is heat rendered by a rendering plant at a temperature sufficient to make the product commercially sterile is not considered “garbage” and may be fed to animals. § 72-a (2015).
+        enforcement: >-
+          Violation of the garbage-feeding rule is a class A misdemeanor. § 72-a
+          (2015).
+
+          The department of agriculture may quarantine the premises on which
+          animals are kept if it has reasonable grounds to believe that the
+          animals are being fed untreated garbage. § 76 (2015).
+        relevant_state_regulatory_body: 'New York State Department of Agriculture & Markets (§ 76 (2015)), <a href="http://www.agriculture.ny.gov/">ttp://www.agriculture.ny.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
