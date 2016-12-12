@@ -56,18 +56,28 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Indiana allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated by a licensed facility. All other waste, including bakery waste, may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Ind. Code Ann. §§ 15-17-2-34, 3-15, 10-16, 16-5, 19-3 (2015)'
+        animals_covered: Swine
+        definition_of_garbage: 'Any waste material derived in whole or in part from, or associated with waste material derived in whole or in part from any animal, including fish and poultry. Garbage does not include bakery waste, candy waste, eggs, domestic dairy products, processed products, rendered products, or waste from ordinary household operations that is fed directly to swine on the same premises where the household is located. § 15-17-2-34 (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 15-17-10-16 (2015).
+        licensure_requirements: No individual or facility may feed garbage to swine unless the garbage is processed by a license-holding facility. § 15-17-10-16 (2015).
+        treatment_requirements: >-
+          Garbage fed to swine must be heat-treated to kill disease organisms.
+          § 15-17-10-16 (2015).
+
+
+
+          Individuals may feed without heat-treating the following items: bakery
+          waste, candy waste, eggs, domestic dairy products, processed products,
+          rendered products, or waste from ordinary household operations that is
+          fed directly to swine on the same premises where the household is
+          located. § 15-17-2-34 (2015).
+        enforcement: The state has the power to inspect private and public property to enforce the garbage-feeding rule. § 15-17-3-15 (2015). They state may revoke a garbage feeder’s license for violation of the rule. § 15-17-16-5 (2015). The state also may issue an injunction against a violator of the garbage-feeding rule. § 15-17-19-3 (2015).
+        relevant_state_regulatory_body: 'Indiana State Board of Animal Health (§ 15-17-3-1 (2015)), <a href="http://www.in.gov/boah/">http://www.in.gov/boah/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
