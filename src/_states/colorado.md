@@ -74,18 +74,28 @@ policy_data:
         eligible_food: Crops and livestock
         eligible_recipients: 'Charitable organizations that do not collect money, other property, or services in exchange for product'
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Colorado allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: Colo. Rev. Stat. § 35-52-101–115 (2015); 8 CCR 1201-1 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'All refuse, animal or vegetable, and includes all waste material, byproducts of a kitchen, restaurant, hospital, hotel, or slaughterhouse, and every refuse accumulation of animal, fruit, or vegetable matter, liquid or otherwise but excludes such vegetable products as leaves and tops of vegetable plants which have not been mixed with or exposed to or which do not contain any other garbage or waste product prior to feeding to swine. § 35-52-101 (2015). “Garbage” excludes waste from ordinary household operations that is fed directly to swine on the same premises. 8 CCR 1201-1 (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 35-52-114 (2015).
+        licensure_requirements: An individual or facility must obtain a permit from the state before feeding garbage to swine. § 35-52-114; 8 CCR 1201-1 (2015).
+        treatment_requirements: All garbage must be heated for at least 30 minutes or else treated in some other manner approved by the state. § 35-52-113 (2015).
+        enforcement: >-
+          Any individual or facility that violates this law will lose their
+          permit following a hearing. § 35-52-115 (2015). Such individual or
+          facility is also guilty of a misdemeanor and will be fined $500 or
+          less. § 35-52-111 (2015). Such individual or facility may further be
+          subject to a civil penalty to be determined in court. § 35-52-111.1
+          (2015).
+
+          The agricultural commissioner is responsible for enforcement of this
+          law, and he or she may issue a cease and desist order, seek
+          a restraining order, or seek an injunction. § 35-52-111.2 (2015).
+        relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118 (2015)), https://www.colorado.gov/agmain.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
