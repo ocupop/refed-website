@@ -97,7 +97,7 @@ policy_data:
         enforcement: Whoever feeds garbage to swine will be guilty of a misdemeanor and fined up to $500 and imprisoned for up to 6 months. § 2-15-211 (2015).
         relevant_state_regulatory_body: |-
           Alabama Department of Agriculture & Industries (§ 2-15-211 (2015)),
-          http://agi.alabama.gov/.
+          <a href="http://agi.alabama.gov/">http://agi.alabama.gov/</a>.
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
