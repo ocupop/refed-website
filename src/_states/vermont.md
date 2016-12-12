@@ -74,10 +74,14 @@ policy_data:
 
 
 
+
+
           An authorized representative of the Vermont agency of agriculture,
           food, and markets or the U.S. Department of Agriculture may investigate
           private or public property at reasonable times to ensure prohibited
           food waste is not being fed to swine. § 1675 (2015).
+
+
 
 
 
@@ -87,12 +91,12 @@ policy_data:
           enjoined from further violation. § 1677 (2015).
         relevant_state_regulatory_body: 'Vermont Agency of Agriculture, Food, & Markets (§ 1676 (2015)), <a href="http://agriculture.vermont.gov/">http://agriculture.vermont.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: 'Vt. Stat. Ann. tit. 10, § 6605k'
+        generators_covered: 'Any individual, partnership, company, corporation, association, unincorporated association, joint venture, trust, municipality, the State of Vermont or any agency, department, or subdivision of the State, federal agency, or any other legal or commercial entity.'
+        waste_production: '2014: 104 tons/year 2015: 52 tons/year 2016: 26 tons/years 2017: 18 tons/year 2020: Food scraps banned from landfill completely'
+        exemptions_for_distance_from_organics_processing_facility: 20 miles
 ---
