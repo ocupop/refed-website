@@ -82,18 +82,43 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Massachusetts allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit, provided the swine will not be sold or removed from the premises. Massachusetts prohibits (1) the feeding to any animal, besides swine, of animal-derived garbage, refuse, or offal collected by a city of more than 30,000 inhabitants, and (2) the feeding to cows of garbage, refuse, or offal collected by a town.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Mass. Gen. Laws ch. 129, § 14B (2015); Mass. Gen. Laws ch. 270, § 9 (2015)'
+        animals_covered: All animals; ruminants; exception for swine
+        definition_of_garbage: 'Any meat waste, or meat waste combined with any other food waste, resulting from handling, preparation, cooking and consumption of foods, including animal carcasses or parts thereof. Ch. 129, § 14B (2015).'
+        prohibitions: 'No feeding any garbage to any ruminants. No feeding any garbage collected from a large town to any animal, besides swine, which may be fed treated garbage. Individuals may feed untreated household garbage to swine. Ch. 270, § 9; Ch. 129, § 14B (2015).'
+        licensure_requirements: 'An individual or facility may not feed garbage to swine without procuring a permit from the state. Permits must be renewed on the first day of January each year. Ch. 129, § 14B (2015).'
+        treatment_requirements: 'All garbage fed to swine must be thoroughly heated to at least 212 degrees Fahrenheit for at least 30 minutes or be treated in some other manner that has been approved by the director of the division of animal health. Ch. 129, § 14B (2015).'
+        enforcement: >-
+          Violators of the general garbage-feeding rule will be fined not more
+          than $50 or imprisoned for not more than one month. Ch. 129, § 14B
+          (2015). Violators of the garbage-feeding ban for ruminants will be
+          fined not more than $100 or imprisoned for not more than two months.
+          Ch. 270, § 9 (2015).
+
+
+
+          The state shall inspect the premises of all permit-holding garbage
+          treatment facilities semi-monthly. The state may revoke or refuse to
+          issue a permit to an individual or facility that has violated the
+          garbage-feeding rule. Ch. 129, § 14B (2015).
+
+
+
+          The state may require maintenance of records pertaining to the
+          equipment used for heat-treating garbage fed to swine. Copies of these
+          records must be submitted to the division upon request, and the
+          division may examine these records. Ch. 129, § 14B (2015).
+
+
+
+          Any individual or facility who feeds to cows garbage, refuse, or offal
+          collected by a town shall be fined not more than $100 or imprisoned for
+          not more than two months. Ch. 270, § 9 (2015)
+        relevant_state_regulatory_body: 'Massachusetts Department of Agriculture, Division of Animal Health (Ch. 129, § 14B (2015)), <a href="http://www.mass.gov/eea/agencies/agr/animal-health/">http://www.mass.gov/eea/agencies/agr/animal-health/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
