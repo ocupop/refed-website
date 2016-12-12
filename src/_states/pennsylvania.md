@@ -83,18 +83,41 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Pennsylvania allows the feeding of animal-derived waste to domestic animals provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 3 Pa. Stat. and Cons. Stat. Ann. § 2303 (West)
+        animals_covered: All domestic animals
+        definition_of_garbage: 'All waste or residuals resulting from the handling, preparation, cooking or consumption of food derived in whole or in part from the meat of any animal, including poultry and fish, or other animal material and other refuse of any character that has been associated with the meat of any animal or other animal material. The term does not include waste from ordinary household operations that is fed directly to swine on the same premises where the household is located. § 2303 (2015).'
+        prohibitions: 'No feeding untreated garbage to domestic animals. Exception for individuals feeding household garbage to swine. §§ 2303, 2324 (2015).'
+        licensure_requirements: >-
+          Individuals and facilities must obtain an annual license from the
+          department of agriculture before feeding garbage to domestic animals.
+          § 2371 (2015).
+
+
+
+          All state and federal agencies or commissions are exempt from the
+          licensure rules for garbage feeding. § 2388 (2015).
+        treatment_requirements: 'Before being fed to domestic animals, garbage must be heated to a temperature of at least 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the department of agriculture. § 2376 (2015).'
+        enforcement: >-
+          The department of agriculture may inspect a license applicant’s or
+          licensee’s facilities for compliance with the garbage-feeding rule.
+          § 2378 (2015).
+
+
+
+          The department of agriculture may deny, suspend, or revoke the license
+          of any individual or facility that violates the garbage-feeding rule.
+          § 2379 (2015).
+
+
+
+          Individuals or facilities engaged in heating garbage must maintain
+          records of the heating operations for at least one year and provide it
+          to the department upon request. § 2376 (2015).
+        relevant_state_regulatory_body: 'Pennsylvania Department of Agriculture (§ 2378 (2015)), <a href="http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo">http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
