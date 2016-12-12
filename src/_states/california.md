@@ -83,12 +83,12 @@ policy_data:
         enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
         relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), <a href="https://www.cdfa.ca.gov/">https://www.cdfa.ca.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: Cal. Pub. Res. Code § 42649.81
+        generators_covered: 'Any business, meaning a commercial or public entity such as a firm, partnership, corporation, or association organized as a for-profit or non-profit entity. Multifamily residential dwellings are exempted.'
+        waste_production: '2016: 8 cubic yards per week; 2017: 4 cubic yards per week; 2020: 2 cubic yards per week IF statewide organic waste disposal has not been reduced to 50% of the level in 2014.'
+        exemptions_for_distance_from_organics_processing_facility: None (but there are exemptions for rural jurisdictions)
 ---
