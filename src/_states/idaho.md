@@ -49,18 +49,28 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Idaho prohibits the feeding of animal-derived waste to swine. Individuals may feed household garbage to their own swine.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: Idaho Code Ann. § 25-234 (2015); Idaho Admin. Code r. 02.04.03.400 (2015)
+        animals_covered: Swine
+        definition_of_garbage: >-
+          Putrescible animal or vegetable wastes containing animal parts,
+          resulting from the handling, preparation, processing, cooking or
+          consumption of food and which is collected from any source and includes
+          animals or parts thereof as defined in section 25-3201, Idaho Code.
+
+
+
+          The term shall not apply to private household wastes not removed from
+          the premises where produced. Idaho Code Ann. § 25-234 (2015); Idaho
+          Admin. Code r. 02.04.03.400 (2015).
+        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage. Idaho Code Ann. § 25-234 (2015); Idaho Admin. Code r. 02.04.03.400 (2015).
+        licensure_requirements: N/A
+        treatment_requirements: N/A
+        enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a misdemeanor. Each day the individual or facility violates the rule shall count as a separate offense. Idaho Code Ann. § 25-234 (2015).
+        relevant_state_regulatory_body: 'Idaho Department of Agriculture, Division of Animal Industries (§ 25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/">http://www.agri.idaho.gov/AGRI/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
