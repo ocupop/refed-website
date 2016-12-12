@@ -65,18 +65,42 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: West Virginia allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: W. Va. Code R. §§ 19-9A-1–8 (2015)
+        animals_covered: Swine
+        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 19-9A-1 (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individual feeding household garbage. § 19-9A-2 (2015).
+        licensure_requirements: No individual or facility may feed garbage to swine without first obtaining an annual license from the state. § 19-9A-2 (2015).
+        treatment_requirements: All garbage fed to swine must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner. § 19-9A-5 (2015).
+        enforcement: >-
+          The commissioner enforces the garbage-feeding rule. § 19-9A-7 (2015).
+
+
+
+          The commissioner may revoke or refuse to issue a permit to any
+          individual or facility that has violated the garbage-feeding rule.
+          § 19-9A-4 (2015).
+
+
+
+          Any authorized representative of the commissioner has the power to
+          investigate private or public property on which garbage is being
+          heat-treated to be fed to swine. The commissioner also may require
+          garbage heat-treating facilities to maintain records, to allow the
+          commissioner to inspect such records, and to submit copies of such
+          records to the commissioner upon request. § 19-9A-6 (2015).
+
+
+
+          Any individual or facility that violates the garbage-feeding rule is
+          guilty of a misdemeanor and may be punished by a fine of $25-$300. The
+          individual or facility also may be enjoined from continuing the
+          violation. Each day upon which the violation occurs counts as
+          a separate offense. § 19-9A-8 (2015).
+        relevant_state_regulatory_body: 'West Virginia Department of Agriculture (§ 19-9A-7 (2015)), <a href="http://www.agriculture.wv.gov/Pages/default.aspx">http://www.agriculture.wv.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
