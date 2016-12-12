@@ -63,8 +63,15 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: >-
+      California allows the feeding of pasteurized milk to farm animals, and the
+      feeding of animal-derived waste to swine provided that it has been properly
+      heat-treated and fed by a licensed facility. All other waste may be fed to
+      swine without heat-treatment. Individuals may feed household garbage to
+      their own swine without
+
+      heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
       - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
