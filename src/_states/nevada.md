@@ -80,18 +80,30 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: Nevada allows the feeding of animal-derived waste to animals provided that it has been properly heat-treated by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own animals without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: NAC 571.004–.190 (2015); NRS 571.135 (2015)
+        animals_covered: All animals
+        definition_of_garbage: 'Definition of "food waste": Any waste, discarded or byproduct material resulting from handling, preparation, cooking and consumption of foods, or the slaughtering and processing of animals for food, which contains or may contain, meat or meat scraps. NAC 571.150 (2015).'
+        prohibitions: No feeding untreated garbage to animals. Exception for individuals feeding household garbage to animals. NRS 571.135 (2015).
+        licensure_requirements: An individual or facility must obtain an annual permit in order to treat food waste for animal consumption. NAC 571.160 (2015). But this requirement does not apply to individuals feeding household garbage to their own swine. NRS 571.135 (2015).
+        treatment_requirements: All food waste must be cooked within 72 hours after its arrival on the premises. NAC 571.170 (2015).
+        enforcement: >-
+          The state will inspect licensed food waste treatment facilities at
+          least once every three months. NAC 571.180 (2015).
+
+
+
+          The state may cancel a food waste treatment permit if the permit holder
+          violates the waste-feeding rule. NAC 571.160 (2015).
+
+
+
+          The state may quarantine and treat any animal that is fed food waste
+          and develops any contagious or infectious disease. NAC 571.190 (2015).
+        relevant_state_regulatory_body: 'Nevada Department of Agriculture (NAC 571.004 (2015)), <a href="http://agri.nv.gov/">http://agri.nv.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
