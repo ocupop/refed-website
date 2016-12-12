@@ -58,18 +58,35 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Texas prohibits the feeding of animal-derived waste to swine. Food waste that consists of only vegetable, fruit, dairy, or baked goods waste may be fed to swine by a licensed facility. Individuals may feed household garbage to their own swine without a permit.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Tex. Ag. Code Ann. §§ 165.001, 165.026 (2015); see also Tex. Admin. Code tit. 4, § 55.3 (2015)'
+        animals_covered: Swine
+        definition_of_garbage: >-
+          “Restricted garbage” includes (A) the animal refuse matter and the
+          putrescible animal waste resulting from handling, preparing, cooking,
+          or consuming food containing all or part of an animal carcass;
+
+          (B) the animal waste material byproducts or commingled animal and
+          vegetable waste material byproducts of a restaurant, kitchen, cookery,
+          or slaughterhouse; and
+
+          (C) refuse accumulations of animal matter or commingled animal and
+          vegetable matter, liquid or otherwise.
+
+
+
+          “Unrestricted garbage” includes vegetable, fruit, dairy, or baked goods
+          refuse matter and vegetable waste and refuse accumulations resulting
+          from handling, preparing, cooking, or consuming food containing only
+          vegetable matter, liquid or otherwise. § 165.026 (2015).
+        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage. § 165.026 (2015).
+        licensure_requirements: An individual or facility can only feed unrestricted garbage to swine if it secures a permit from the state. But an individual feeding household garbage to his or her own swine need not obtain a permit. § 165.026 (2015).
+        treatment_requirements: N/A
+        enforcement: The commission may suspend a registration or require the immediate quarantine and closure of a garbage-feeding facility if the operation presents a danger to public health or the livestock industry. § 165.026 (2015).
+        relevant_state_regulatory_body: 'Texas Animal Health Commission (§165.001 (2015)), <a href="http://www.tahc.texas.gov/">http://www.tahc.texas.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
