@@ -51,18 +51,33 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Nebraska prohibits the feeding of animal-derived waste to animals. Food waste that consists of only plant materials, fruit, vegetables, and any other nonmeat food byproduct may be fed to animals. Individuals may feed household garbage to their own animals.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Neb. Rev. Stat. §§ 53-753.01, 753.04; 54-701 (2015); Neb. Admin. R. & Regs. Tit. 23, Ch. 14, § 002 (2015)'
+        animals_covered: All animals
+        definition_of_garbage: >-
+          All waste material derived in whole or in part from fruits, vegetables,
+          meats, or other plant or animal material, including poultry material,
+          and any other refuse of any character whatsoever that has been
+          associated with any such material, resulting from the handling,
+          preparation, cooking, or consumption of food, except that such term
+          shall not include material exempted by the Department of Agriculture.
+          Only nonmeat materials may be so exempted. Neb. Rev. Stat. § 54-753.01
+          (2015).
+
+
+
+          Plant materials, fruit, vegetables, and any other food byproducts of
+          a nonmeat nature that do not consist of meat or poultry are exempt from
+          the definition of “garbage.” Neb. Admin. R. & Regs. Tit. 23, Ch. 14,
+          § 002 (2015).
+        prohibitions: No feeding garbage to animals. Exception for individuals feeding household garbage to animals. Neb. Rev. Stat. § 54-753.01 (2015).
+        licensure_requirements: N/A
+        treatment_requirements: N/A
+        enforcement: Any individual who violates the garbage-feeding rule is guilty of a misdemeanor. Each day the rule is violated is considered a separate offense. Neb. Rev. Stat. § 54-753.04 (2015).
+        relevant_state_regulatory_body: 'Nebraska Department of Agriculture (Neb. Rev. Stat. § 54-701 (2015)), a href="http://www.nda.nebraska.gov/">http://www.nda.nebraska.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
