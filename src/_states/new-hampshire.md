@@ -77,18 +77,41 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: New Hampshire allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'N.H. Rev. Stat. Ann. §§ 435:32–37 (2015)'
+        animals_covered: Swine
+        definition_of_garbage: 'Waste consisting in whole or in part of animal waste, including any waste animal carcasses or offal from such carcasses or parts thereof, but excluding waste from ordinary household operations that is fed directly to swine on the same premises where such household is located. § 435.32 (2015).'
+        prohibitions: 'No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 435.32, .36 (2015).'
+        licensure_requirements: An individual or facility must obtain an annual permit in order to feed garbage to swine. § 435.33 (2015).
+        treatment_requirements: All garbage must be heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner of agriculture or the state veterinarian. § 435.36 (2015).
+        enforcement: >-
+          Any individual or facility that violates the garbage-feeding rule is
+          guilty of a misdemeanor, may be enjoined for continuing the offense,
+          and may be subject to a fine under $5,000. Each day of the violation
+          counts as a separate offense. § 435.40 (2015).
+
+
+
+          The commissioner of agriculture may revoke the permit of an individual
+          or facility that violates the garbage-feeding rule. § 435.35 (2015).
+
+
+
+          Any individual or facility that feeds raw garbage to swine shall be
+          required to have such swine quarantined and tested for disease.
+          § 435.36-a (2015).
+
+
+
+          An authorized representative of the commissioner or the state
+          veterinarian has the power to investigate garbage-treatment facilities,
+          examine records pertaining to heat-treatment of garbage, require
+          maintenance of such records, and request submission of such records to
+          the state. § 435.37 (2015).
+        relevant_state_regulatory_body: 'New Hampshire Department of Agriculture, Markets & Food (§ 435.37 (2015)), <a href="http://agriculture.nh.gov/">http://agriculture.nh.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
