@@ -90,6 +90,8 @@ policy_data:
 
 
 
+
+
           Any individual or facility that violates the garbage-feeding rule is
           guilty of a misdemeanor and will be fined not more than $200. That
           person also may be enjoined from continuing the violation. Each day on
@@ -98,8 +100,12 @@ policy_data:
 
 
 
+
+
           The director may revoke or refuse to issue a permit to an individual or
           facility that has violated the garbage-feeding rule. § 4-3-7 (2015).
+
+
 
 
 
@@ -109,18 +115,20 @@ policy_data:
 
 
 
+
+
           Any authorized representative of the director may examine records
           pertaining to garbage-feeding operations. The director may require
           maintenance of such records, which must be submitted to the director
           upon request. § 4-3-9 (2015).
         relevant_state_regulatory_body: 'Rhode Island Department of Environmental Management (§ 4-3-10 (2015)), <a href="http://www.dem.ri.gov/">http://www.dem.ri.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: R.I. Gen. Laws Ann. § 23-18.9-17
+        generators_covered: 'Commercial food wholesaler or distributor, industrial food manufacturer or processor, supermarket, resort or conference center, banquet hall, restaurant, religious institution, military installation, prison, corporation, hospital or other medical care institution, casino, and covered educational facility.'
+        waste_production: '2016: 104 tons/year; 2018: 52 tons/year for covered educational facilities'
+        exemptions_for_distance_from_organics_processing_facility: 15 miles. Waiver from the above requirements if the landfill tipping fee is less than the fee charged by an authorized composting or anaerobic digestion facility located within 15 miles of the business.
 ---
