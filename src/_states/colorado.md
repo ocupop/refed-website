@@ -95,7 +95,7 @@ policy_data:
           The agricultural commissioner is responsible for enforcement of this
           law, and he or she may issue a cease and desist order, seek
           a restraining order, or seek an injunction. § 35-52-111.2 (2015).
-        relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118 (2015)), https://www.colorado.gov/agmain.'
+        relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118 (2015)), <a href="https://www.colorado.gov/agmain">https://www.colorado.gov/agmain</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
