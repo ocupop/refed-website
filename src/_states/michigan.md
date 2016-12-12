@@ -91,18 +91,36 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview: 'Michigan allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated. All other waste, including rendered products, bakery waste, and manure, may be fed to swine without heat-treatment. Michigan does not appear to exempt the feeding of household garbage to swine from the garbage-feeding rules. Pasteurized dairy plant byproducts may be fed to farm animals.'
+    summary:
     link_url:
     legislation:
-      - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
-        animals_covered: Farm animals; swine
-        definition_of_garbage: 'Any waste which consists in whole or in part of any animal waste that results from the handling, preparing, cooking, and consuming of food, including the o al from any animal carcass or from any part of an animal carcass. It does not, however, include such waste from ordinary household operations that is fed directly to swine on the premises. § 10901 (2015).'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized milk to farm animals. Exception for ndividuals feeding household garbage. §§ 10901–90, 34006 (2015).'
-        licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
-        enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), www.cdfa.ca.gov/.'
+      - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538 (2015)'
+        animals_covered: Farm animals; exception for swine
+        definition_of_garbage: >-
+          Any animal origin products, including those of poultry and fish origin,
+          or other animal material resulting from the handling, processing,
+          preparation, cooking, and consumption of foods. Garbage includes, but
+          is not limited to, any refuse of any type that has been associated with
+          any such material at any time during the handling, preparation,
+          cooking, or consumption of food. Garbage does not include rendered
+          products or manure (both of which may be fed to swine). § 287.704
+          (2015).
+
+
+
+          “Rendered products” excluded from the garbage definition are
+          animal-derived waste products that have been ground and heat-treated to
+          a minimum temperature of 230 degrees Fahrenheit to make animal protein
+          meal, poultry protein meal, fish protein meal, grease, or tallow.
+          Rendered products also include bakery wastes, eggs, candy wastes, and
+          domestic diary products including, but not limited to, milk. § 287.706
+          (2015).
+        prohibitions: 'No feeding unpasteurized dairy plant byproducts to farm animals. No feeding untreated garbage to swine. §§ 288.538, 287.717a (2015).'
+        licensure_requirements: N/A
+        treatment_requirements: N/A
+        enforcement: 'The director of the department of agriculture has full access to inspect any premises if he or she has any grounds to believe or suspect that garbage, offal, or carcasses are being used to feed swine or may expose swine to a communicable disease. The director will quarantine swine that have been exposed to, in contact with, or fed garbage, offal, or carcasses. § 287.717a (2015).'
+        relevant_state_regulatory_body: 'Michigan Department of Agriculture & Rural Development (§ 287.717a (2015)), <a href="http://www.michigan.gov/mdard">http://www.michigan.gov/mdard</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
