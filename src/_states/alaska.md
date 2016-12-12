@@ -68,7 +68,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: N/A
-        relevant_state_regulatory_body: 'Alaska Department of Natural Resources, Division of Agriculture, http://dnr.alaska.gov/ag/.'
+        relevant_state_regulatory_body: 'Alaska Department of Natural Resources, Division of Agriculture, <a href="http://dnr.alaska.gov/ag/">http://dnr.alaska.gov/ag/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
