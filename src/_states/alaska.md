@@ -58,7 +58,7 @@ policy_data:
         eligible_recipients: Nonprofits
   animal_feed:
     overview: Alaska does not have any laws that bear on the feeding of garbage to animals.
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    summary:
     link_url:
     legislation:
       - title:
