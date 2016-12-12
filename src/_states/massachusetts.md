@@ -101,10 +101,14 @@ policy_data:
 
 
 
+
+
           The state shall inspect the premises of all permit-holding garbage
           treatment facilities semi-monthly. The state may revoke or refuse to
           issue a permit to an individual or facility that has violated the
           garbage-feeding rule. Ch. 129, § 14B (2015).
+
+
 
 
 
@@ -115,17 +119,19 @@ policy_data:
 
 
 
+
+
           Any individual or facility who feeds to cows garbage, refuse, or offal
           collected by a town shall be fined not more than $100 or imprisoned for
           not more than two months. Ch. 270, § 9 (2015)
         relevant_state_regulatory_body: 'Massachusetts Department of Agriculture, Division of Animal Health (Ch. 129, § 14B (2015)), <a href="http://www.mass.gov/eea/agencies/agr/animal-health/">http://www.mass.gov/eea/agencies/agr/animal-health/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: 310 Mass. Code Regs. 19.017
+        generators_covered: 'Any individual, partnership, association, firm, company, corporation, department, agency, group, public body (including a city, town, district, county, authority, state, federal, or other governmental unit).'
+        waste_production: 1 ton/week. Generators are covered only for weeks during which they meet the threshold.
+        exemptions_for_distance_from_organics_processing_facility: None
 ---
