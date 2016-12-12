@@ -91,12 +91,12 @@ policy_data:
           a garbage-feeding swine farm. § 22-320d (2015).
         relevant_state_regulatory_body: 'Connecticut Department of Agriculture (§ 22-320a), <a href="http://www.ct.gov/doag/site/default.asp">http://www.ct.gov/doag/site/default.asp</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: Conn. Gen. Stat. Ann. § 22a-226e
+        generators_covered: 'Commercial food wholesaler or distributor, industrial food manufacturer or processor, supermarket, resort or conference center.'
+        waste_production: '2014: 104 tons/year; 2020: 52 tons/year'
+        exemptions_for_distance_from_organics_processing_facility: 20 miles
 ---
