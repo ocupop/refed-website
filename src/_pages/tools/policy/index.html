@@ -1,257 +1,59 @@
 ---
-layout: policy_tool
-title: Policy Tool
+layout: page
+title: Policy Tool Home
 permalink: /tools/policy/
-
-tool: U.S. Food Waste Policy Finder
+hero: 
+  image: header-onion.jpg
+  title: Policy Solutions to Food Waste Reduction
 ---
 
-{% include policy/tooltip.html %}
-
-{% include policy/policynav_map.html %}
-
-<section class="alt" style="padding: 10px 0;">
-  {% include policy/explore_state_navigation.html %}
-</section>
-<section class="transparent">
-  {% include policy/page_header.html %}
-  <div class="container-fluid">
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12">
-        <div id="map">
-          {% include_relative _map_legend.html %}
+<section>
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          {% include svg/icons/policy.svg %}
         </div>
-        <div id="map-instructions">
-          <div class="content">
-            <h4>U.S. Food Waste Policy Finder</h4>
-            <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
-          </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+          <h2>Reducing Food Waste Through Good Policy</h2>
+          <p>The Roadmap highlights a number of areas where policy can facilitate solutions that will reduce food waste by 20%. To achieve this, the immediate priority is to spread and advocate for best-practice policies at the local and state levels. Reaching greater long-term goals will likely require a comprehensive federal food waste policy that sets national guidelines.</p>
+          <p>Enacting supportive food waste reduction policies has the potential to clear up consumer confusion about date labeling, spur increased donations to food recovery e orts, incentivize more businesses to reduce food waste, and develop more robust food waste recycling infrastructure.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-<script>
-
-  $('#tooltip .close').on('click', function() {
-    $('#tooltip').removeClass('active');
-  });
-
-  $('#state-select').change(function(){
-    var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
-
-  $('.collapse').on('show.bs.collapse', function() {
-    $('#policynav .collapse').not($(this)).collapse('hide');
-  });
-
-  $('.map-filter, .map-subfilter').on('change', function(e) {
-    var checked = $(this).prop("checked"),
-        container = $(this).parent(),
-        siblings = container.siblings();
-    // window.console.log("CONTAINER: ", container);
-
-    container.find('input[type="checkbox"]').prop({
-      indeterminate: false,
-      checked: checked
-    });
-
-    function checkSiblings(el) {
-
-      var parent = el.parent().parent(),
-          all = true;
-
-      el.siblings().each(function() {
-        return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
-      });
-
-      if (all && checked) {
-
-        parent.children('input[type="checkbox"]').prop({
-          indeterminate: false,
-          checked: checked
-        });
-
-        checkSiblings(parent);
-
-      } else if (all && !checked) {
-
-        parent.children('input[type="checkbox"]').prop("checked", checked);
-        parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
-        checkSiblings(parent);
-
-      } else {
-
-        el.parents("li").children('input[type="checkbox"]').prop({
-          indeterminate: true,
-          checked: false
-        });
-
-      }
-
-    }
-
-    checkSiblings(container);
-    updateMapLevels();
-  });
-
-  $(".nav_category").each(function() {
-    var $el = $(this),
-        cat = $el.data('category');
-
-    $el.find('.map-filter, .map-subfilter, .study-filter').on('click', function() {
-      var checked = this.checked ? true : false;
-      var bp = $(this).hasClass('study-filter');
-      var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
-      window.console.log ($(this), bp);
-
-      if(checked) {
-        var showStudies = $el.find('.study-filter:checked').length;
-        var section = $(this).closest('.section_root').attr('data-section');
-        var activeClass = cat + " " + section;
-
-        $el.siblings('.nav_category').find('input[type="checkbox"]').prop({
-          indeterminate: false,
-          checked: false
-        });
-        if(!bp) {
-          $el.find('.map-filter, .map-subfilter').not(this).prop({
-            indeterminate: false,
-            checked: false
-          });
-        }
-
-        if(showStudies) {
-          activeClass += " show-studies";
-        }
-        if(!activeNav) {
-          clearLevels();
-        }
-
-        $('#map').attr('class', activeClass);
-
-      } else {
-        if(bp) { 
-          $('#map').removeClass('show-studies');
-        } else {
-          clearLevels();
-        }
-
-      }
-    });
-  });
-
-
-  function clearLevels() {
-    $('path.states').removeClass(function (index, css) {
-      return (css.match (/(^|\s)level-\S+/g) || []).join(' ');
-    });
-  }
-
-  function getLevel(array, state) {
-    return array.filter(item => item == state).length;
-  }
-
-  function updateMapLevels() {
-    var activeStates = [];
-    $(".map-subfilter").each(function() {
-      if($(this).is(':checked')) {
-        var states = $(this).data('states');
-        states.forEach(function(state) {
-          activeStates.push(state);
-        });
-      }
-    });
-    clearLevels();
-    activeStates.forEach(function(state) {
-      $('#'+state).addClass('level-'+getLevel(activeStates, state));
-      // console.log(state, getLevel(activeStates, state));
-    });
-  }
-
-
-</script>
-
-
-<!-- Map -->
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-
-<script type="text/javascript">
-  String.prototype.trim = function(){
-    return this.replace(" ", "-").toLowerCase();
-  };
-
-  /*  This visualization was made possible by modifying code provided by:
-
-
-  */
-  var width = 960,
-      height = 500;
-
-  var svg = d3.select("#map")
-        .append("svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 "+width+" "+height+"");
-
-  var projection = d3.geo.albersUsa()
-    .scale(1000)
-    .translate([width / 2, height / 2]);
-   
-  var path = d3.geo.path()
-    .projection(projection);
-
-  // Append Div for tooltip to SVG
-  var tip = d3.select("#tooltip");
-    
-  queue()
-    // .defer(d3.json, '/data/states.json')
-    .defer(d3.json, '/data/us-states.json')
-    .defer(d3.json, '/data/casestudies.json')
-    .await(buildMap);
-
-  function buildMap(error, states, casestudies) {
-
-    svg.selectAll(".states")
-      .data(states.features)
-      .enter()
-      .append("path")
-      .attr("d", path)
-      .attr('class', 'states')
-      .attr('id', function(d) { return d.properties.name.trim(); })
-      .on('click', function(d) {
-        var url = "/states/"+d.properties.name.trim();
-        window.location.href = url;
-      });
-
-    svg.selectAll('.study')
-      .data(casestudies.features)
-      .enter()
-      .append('path')
-      .attr('d', path.pointRadius(10))
-      .attr('class', function(d) { return "study "+d.category; })
-      .on("click", function(d) {
-        $('#tooltip')
-          .find('.title').text(d.properties.title).end()
-          .find('.summary').text(d.properties.summary).end()
-          .find('.button').attr('class', 'button '+d.category).end()
-          .addClass('active');
-
-        tip.style("left", (d3.event.pageX - 42) + "px")
-          .style("top", (d3.event.pageY - 146) + "px");
-      });
-      // .on("mouseout", function(d) {
-      //   tip.attr('class', 'hide')
-      // });
-
-  }
-</script>
-
+<section>
+  <div class="container">
+    <div class="row">      
+      <div class="col-xs-12">
+        <div class="content">
+          <h1>Food Waste Policy Tool</h1>
+          <p>Drawing from the latest food waste policy research, we’ve developed a comprehensive tool that will help businesses and policy makers understand current policies, explore best practices and advocate for better food waste policies at all levels of government.</p>
+        </div>
+        <div class="content">
+          <img src="http://placehold.it/1000x500" class="img-responsive" alt="">
+        </div>
+        <div class="content">
+          <a href="{{ site.baseurl }}/tools/policy/policy_tool" class="button">Explore the Tool &gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="content">
+          <img src="http://placehold.it/500x325" class="img-responsive" alt="">
+        </div>
+      </div>
+      <div id="spotlight" class="col-xs-12 col-md-6">
+        <div class="content">
+          <h2>Spotlight on date<br>labeling regulations</h2>
+          <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
+          <a href="#" class="button">Learn More &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
