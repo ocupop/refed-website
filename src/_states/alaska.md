@@ -26,11 +26,11 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
     summary:
     link_url:
     legislation:
-      - title: AS § 17.20.346
+      - title: Alaska Stat. § 17.20.346
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct'
         who_is_protected: 'Donor: Gleaner; Distributor: Food bank'
