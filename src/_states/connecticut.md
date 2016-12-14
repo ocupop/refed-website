@@ -40,17 +40,22 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: C.G.S.A. § 52-557L
+      - title: Conn. Gen. Stat. Ann. § 52-557L
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: Where the donor knew or had reasonable grounds to believe the food was adulterated or unfit for human consumption
-        who_is_protected: "Donor: Any person, including (but not limited to): seller, farmer, processor, distributor, wholesaler, or retailer of food \nDistributor: No protection for organizations accepting or distributing donations of perishable food"
-        eligible_recipients: Nonprofit organization or corporation
+        who_is_protected: >-
+          Donor: Any person, including (but not limited to): seller, farmer,
+          processor, distributor, wholesaler, or retailer of food <br>
+
+          Distributor: No protection for organizations accepting or distributing
+          donations of perishable food
+        eligible_recipients:
         standards_for_donated_food: Food must not be known or believed to be adulterated or unfit for human consumption
-        protections_apply_when_recipient_pays_for_donated_food: Nonprofit distributing to another nonprofit may charge low fee; nothing stated about end recipient paying
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
