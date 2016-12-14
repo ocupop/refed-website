@@ -56,21 +56,21 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: M.C.L.A. 691.1572
+      - title: Mich. Comp. Laws Ann. § 691.1572
         type_of_protection: Civil
         when_protection_will_not_apply: 'Willful, wanton, or reckless acts; donor had actual or constructive knowledge that the food was tainted, contaminated, or harmful to health'
         who_is_protected: >-
           Donor: Individual, farmer, food producer, processor, distributor,
-          retailer, wholesaler, gleaner, or other person
+          retailer, wholesaler, gleaner, or other person<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Nonprofit corporation or charitable organization
+        eligible_recipients:
         standards_for_donated_food: None stated
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -106,6 +106,8 @@ policy_data:
           cooking, or consumption of food. Garbage does not include rendered
           products or manure (both of which may be fed to swine). § 287.704
           (2015).
+
+
 
 
 
