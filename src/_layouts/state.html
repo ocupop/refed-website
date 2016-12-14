@@ -7,7 +7,7 @@ layout: policy_tool
 
 <section class="prevention-border">
   <div class="container">
-    <div id="date-labelling" class="row">
+    <div id="date-labeling" class="row">
       <div class="col-xs-12">
         <div class="content">
           <h1>{{ page.name }} State Policy</h1>
@@ -16,7 +16,7 @@ layout: policy_tool
           {% assign labeling = page.policy_data.date_labeling %}
           <p>{{ labeling.overview }}</p>
           <!-- food date requirements need to go here ... -->
-          <h3>Date Labelling Regulations</h3>
+          <h3>Date Labeling Regulations</h3>
           <div class="flex-table">
             <div class="flex-table-item column-heading">Applies to<br>food type</div>
             <div class="flex-table-item column-heading">Purpose<br>of Law</div>
@@ -42,7 +42,7 @@ layout: policy_tool
         </div>
         <div id="spotlight" class="col-md-7">
           <div class="content">
-            <h2>Spotlight on date labelling regulations</h2>
+            <h2>Spotlight on date labeling regulations</h2>
             <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
             <a href="#" class="button prevention"><span>Learn More &nbsp;&gt;</span></a>
           </div>
@@ -60,7 +60,7 @@ layout: policy_tool
           <h2>Liability Protection</h2>
           <h3>Overview</h3>
           <p>{{ liability.overview }}</p>
-          <h3>Date Labelling Regulations</h3>
+          <h3>Date Labeling Regulations</h3>
           <dl class="dl-policy">
             {% for item in liability.legislation limit:1 %}
               <dt>Statute Citation</dt>
@@ -179,7 +179,7 @@ layout: policy_tool
   <div class="sticky">
     <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
     <ul>
-      <li><a href="#date-labelling">Date Labelling</a></li>
+      <li><a href="#date-labeling">Date Labeling</a></li>
     </ul>
 
     <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
