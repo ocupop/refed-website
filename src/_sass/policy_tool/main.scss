@@ -121,19 +121,22 @@ body.policy_tool_layout {
 // TODO - refactor section classes to make more global
 
 section {
-  &.prevention-border {
-    border-left: 30px solid $prevention-color;
-  }
+  &.border {
+    border-left: 30px solid;
+    &.prevention-border {
+      border-color: $prevention-color;
+    }
 
-  &.recovery-border {
-    border-left: 30px solid $recovery-color;
-  }
+    &.recovery-border {
+      border-color: $recovery-color;
+    }
 
-  &.recycling-border {
-    border-left: 30px solid $recycle-color;
-  }
-  &.cream-border {
-    border-left: 30px solid $cream;
+    &.recycling-border {
+      border-color: $recycle-color;
+    }
+    &.cream-border {
+      border-color: $cream;
+    }
   }
 }
 header.tool-header {
@@ -243,7 +246,7 @@ header.tool-header {
   font-size: 14px;
   justify-content: space-between;
   .flex-table-item {
-    width: calc(15% - 10px);
+    width: calc(25% - 10px);
     background-color: #fff;
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -252,7 +255,7 @@ header.tool-header {
       font-size: 16px;
     }
     &.item-large {
-      width: calc(55% - 10px);
+      width: calc(75% - 10px);
     }
   }
 }
@@ -276,6 +279,82 @@ header.tool-header {
     width: calc(80% - 10px);
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1300px){
+  #policy-tool {
+    .container {
+      max-width: 90%;
+    }
+  }
+}
+
+@media(max-width: 1300px) {
+  #state-federal-navigation {
+    .button {
+      &.inverse {
+        max-width: none;
+        margin: 0 1% 0 1%;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  #policy-tool {
+    padding-right: 0;
+  }
+  #policynav {
+    display: none;
+  }
+  #policy-intro {
+    .col-xs-3 {
+      .content {
+        padding-right: 0;
+        padding-top: 40px;
+      }
+    }
+    .col-xs-9 {
+      .content {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  #policy-tool {
+    min-height: none;
+  }
+  #map, #map-instructions {
+    display: none;
+  }
+  
+  section {
+    &.border {
+      border: none;
+    }
+  }
+  .flex-table {
+    .flex-table-item {
+      width: calc(30% - 10px);
+      &.item-large {
+        width: calc(70% - 10px);
+      }
+    }
+  }
+
+  .dl-policy {
+    dt {
+      width: 30%;
+      margin-bottom: 10px;
+      font-weight: 300;
+      text-transform: none;
+    }
+    dd {
+      width: calc(70% - 10px);
+    }
   }
 }
 

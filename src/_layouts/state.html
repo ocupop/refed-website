@@ -1,11 +1,12 @@
 ---
 layout: policy_tool
 ---
-<section class="cream-border">
+<section class="border cream-border">
   {% include policy/page_header.html %}
+  {% include policy/state_mobilenav.html %}
 </section>
 
-<section class="prevention-border">
+<section class="border prevention-border">
   <div class="container">
     <div id="date-labeling" class="row">
       <div class="col-xs-12">
@@ -17,23 +18,25 @@ layout: policy_tool
           <p>{{ labeling.overview }}</p>
           <!-- food date requirements need to go here ... -->
           <h3>Date Labeling Regulations</h3>
-          <div class="flex-table">
-            <div class="flex-table-item column-heading">Applies to<br>food type</div>
-            <div class="flex-table-item column-heading">Purpose<br>of Law</div>
-            <div class="flex-table-item item-large column-heading">Excerpted Language<br>from the Law</div>
-            <div class="flex-table-item column-heading">Legal<br>Citation</div>
-            {% for item in labeling.legislation %}
-              <div class="flex-table-item">{{ item.applies_to_food_type }}</div>
-              <div class="flex-table-item">{{ item.purpose_of_law }}</div>
-              <div class="flex-table-item item-large">{{ item.excerpted_language_from_the_law }}</div>
-              <div class="flex-table-item">{{ item.legal_citation}}</div>
-            {% endfor %}
+          {% for item in labeling.legislation %}
+          <h4>{{ item.legal_citation}}</h4>
+          <div class="flex-table">  
+            <div class="flex-table-item">Applies to<br>food type</div>
+            <div class="flex-table-item item-large">{{ item.applies_to_food_type }}</div>
+            <div class="flex-table-item">Purpose<br>of Law</div>
+            <div class="flex-table-item item-large">{{ item.purpose_of_law }}</div>
+            <div class="flex-table-item">Excerpted Language<br>from the Law</div>
+            <div class="flex-table-item item-large">{{ item.excerpted_language_from_the_law }}</div>
+            <!-- <div class="flex-table-item">Legal<br>Citation</div>  
+            <div class="flex-table-item item-large"></div> -->
+          </div>  
+          {% endfor %}
             <!-- <div class="flex-table-item">Milk/Dairy</div>
             <div class="flex-table-item">Date labeling required (scope of law)</div>
             <div class="flex-table-item item-large">Except as otherwise provided in Food and Agricultural Code Section 36004(c), licensed milk products plant which bottles or packages the following products shall be responsible for a xing the quality assurance date to all containers which are o ered for sale to the consumer by a retail store: market milk, market cream, skim or non-fat milk, half and half, sour cream, sour cream dressing, low-fat milk, flavored milk, flavored dairy drink, yogurt, concentrated milk, concentrated skim milk, acidophilus milk, buttermilk and cultured buttermilk, cottage cheese, creamed cottage cheese, homogenized creamed cottage cheese spread, and partially creamed or low-fat cottage cheese.
             The quality assurance date shall be readily identifiable by the consumer. If a numerical sequence of months and days is used, it may not be located on the container with other numbers such as factory license number or lot numbers unless such other numbers are clearly identified. If the quality assurance date is used with unidentified code numbers, the date shall be at least the first three letters of the month followed by the day of the month.</div>
             <div class="flex-table-item">Cal. Code Regs. tit. III,§ 627 (2013).</div> -->
-          </div>
+          
         </div>
         <div class="col-md-5">
           <div class="content">
@@ -44,14 +47,14 @@ layout: policy_tool
           <div class="content">
             <h2>Spotlight on date labeling regulations</h2>
             <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
-            <a href="#" class="button prevention"><span>Learn More &nbsp;&gt;</span></a>
+            <a href="{{ site.baseurl }}/tools/policy/date-labels" class="button prevention"><span>Learn More &nbsp;&gt;</span></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="recovery-border">
+<section class="border recovery-border">
   <div class="container">
     <div id="liability-protection" class="row">
       <div class="col-xs-12">
@@ -85,7 +88,7 @@ layout: policy_tool
           </dl>
           <h3>Federal Liability Protection</h3>
           <p>The Bill Emerson Good Samaritan Food Donation Act provides a strong federal baseline of protection for food donors. It covers individuals, businesses, nonprofit organizations, the officers of businesses and nonprofit organizations, and gleaners. A donor must donate in good faith to a nonprofit organization that distributes the donated food to needy populations, and the food must meet all quality and labeling standards imposed by federal, state and local laws and regulations.</p>
-          <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+          <a href="{{site.baseurl }}/tools/policy/federal-liability-protection" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
         </div>
       </div>
     </div>
@@ -111,13 +114,13 @@ layout: policy_tool
           {% endfor %}
           <h3>Federal Tax Incentives</h3>
           <p>The federal government provides tax deductions to incentivize businesses to donate food. As of December 2015, all businesses—including C-corporations, S-corporations, limited liability corporations (LLCs), partnerships and sole proprietorships—are eligible for an enhanced tax deduction that exceeds the property’s basis for donated food if they meet certain requirements. If they do not meet the requirements, they can still claim a general tax deduction in the amount of the property’s basis.</p>
-          <a href="#" class="button" ><span>View Federal Policy &nbsp;&gt;</span></a>
+          <a href="{{site.baseurl }}/tools/policy/federal-tax-incentives" class="button" ><span>View Federal Policy &nbsp;&gt;</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="recycling-border">
+<section class="border recycling-border">
   <div class="container">
     <div id="animal-feed" class="row">
       <div class="col-xs-12">
@@ -147,7 +150,7 @@ layout: policy_tool
           {% endfor %}
           <h3>Federal Animal Feed Policy</h3>
           <p>Under federal law, food scraps can generally be fed to animals, so long as food scraps with animal derived by-products are heat-treated by a licensed facility before being fed to swine; and food scraps containing animal-derived by-products are not fed to ruminants. The federal regulations function as a floor, and most state regulations go beyond them.</p>
-          <a href="#" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+          <a href="{{ site.baseurl }}/tools/policy/federal-animal-feed-policy" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
         </div>
       </div>
     </div>
