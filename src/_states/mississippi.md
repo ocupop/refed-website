@@ -27,21 +27,21 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
       - title: Miss. Code Ann. § 95-7-1
         type_of_protection: Civil
-        when_protection_will_not_apply: 'Donor not protected in cases of gross negligence, recklessness, or intentional misconduct; ultimate distributor is protected from liability in actions based on strict liability'
+        when_protection_will_not_apply: 'Donor not protected in cases of gross negligence, recklessness, or intentional misconduct; ultimate distributor is protected from liability in actions based on strict liability.'
         who_is_protected: >-
           Donor: Individual, corporation, partnership, organization, or
-          association
+          association<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Nonprofit or charitable organization
-        standards_for_donated_food: 'Food must appear fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food'
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        eligible_recipients:
+        standards_for_donated_food: 'Food must appear fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food.'
+        protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -80,6 +80,8 @@ policy_data:
           the garbage-feeding rule. § 69-11-11 (2015). Either official also may
           quarantine any premises on which swine are fed garbage. § 69-11-13
           (2015).
+
+
 
 
 
