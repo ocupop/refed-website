@@ -15,6 +15,7 @@ tool: U.S. Food Waste Policy Finder
     <div id="overview" class="row">
       <div class="col-xs-12">
         <div class="content">
+          <h1>{{ page.title }}</h1>
           <p>Under federal law, food scraps can generally be fed to animals, so long as food scraps with animal derived by-products are heat-treated by a licensed facility before being fed to swine; and food scraps containing animal-derived by-products are not fed to ruminants. Both the federal government and state governments regulate the use of food scraps in animal feed. The federal regulations function as a floor, and most state regulations go beyond them.</p>
         </div>
       </div>
@@ -72,9 +73,21 @@ tool: U.S. Food Waste Policy Finder
   </div>
 </section>
 
-<section style="padding: 10px 0;">
-  <!-- need to customize this for this page -->
-  {% include policy/explore_state_navigation.html %}
+<section id="state-select" style="padding: 10px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-5">
+        <div class="content">
+          <h3>View State Level<br>Animal Feed Policy</h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-7">
+        <div class="content">
+          {% include policy/state_navigation.html %}
+        </div>
+      </div>
+    </div> 
+  </div>
 </section>
 
 <div id="policynav">
@@ -90,14 +103,3 @@ tool: U.S. Food Waste Policy Finder
     </div>
   </div>
 </div>
-
-<script>
-  $('#state-select').change(function(){
-    var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
-</script>
-
