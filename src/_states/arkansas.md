@@ -36,7 +36,7 @@ policy_data:
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: |-
-          Donor: A good faith donor
+          Donor: A good faith donor<br>
           Distributor: No protection for organizations accepting or distributing donations of perishable food
         eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus.'
