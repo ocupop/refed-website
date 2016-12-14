@@ -65,16 +65,16 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: DC ST § 48-301
+      - title: D.C. Code § 48-301
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: Gross negligence or intentional misconduct
-        who_is_protected: "Donor: A good faith donor \nDistributor: Nonprofit/charitable organization"
-        eligible_recipients: Bona fide charitable or nonprofit organization
-        standards_for_donated_food: Food must not be known or believed to be unfit for human consumption
+        who_is_protected: "Donor: A good faith donor<br> \nDistributor: Nonprofit/charitable organization"
+        eligible_recipients:
+        standards_for_donated_food: Food must not be known or believed to be unfit for human consumption.
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
