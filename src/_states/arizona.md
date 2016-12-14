@@ -32,7 +32,7 @@ policy_data:
     summary:
     link_url:
     legislation:
-      - title: A.R.S. § 36-916
+      - title: Ariz .Rev. Stat. Ann. § 36-916
         type_of_protection: Civil
         when_protection_will_not_apply: Gross negligence or intentional misconduct
         who_is_protected: "Donor: Nonprofit/Charitable organization, or any other person \nDistributor: Nonprofit/charitable organization and donor donating to immediate family"
