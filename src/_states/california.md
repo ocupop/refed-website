@@ -37,7 +37,7 @@ policy_data:
         when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
         who_is_protected: >-
           Donor: Any food facility, nonprofit charitable organization or food
-          bank
+          bank<br>
 
           Distributor: Nonprofit/charitable organization or food bank
         eligible_recipients:
