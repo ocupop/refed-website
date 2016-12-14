@@ -90,7 +90,7 @@ policy_data:
     link_url:
     legislation:
       - title: 'Ga. Code Ann., § 51-1-31'
-        type_of_protection: Civil and Criminal
+        type_of_protection: Civil or Criminal
         when_protection_will_not_apply: Recklessness or intentional misconduct
         who_is_protected: >-
           Donor: Includes, but is not limited to, a farmer, processor,
