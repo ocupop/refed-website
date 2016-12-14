@@ -41,8 +41,8 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
       - title: 'N.H. Rev. Stat. § 508:15'
@@ -51,12 +51,12 @@ policy_data:
         who_is_protected: >-
           Donor: Any person, corporation, unincorporated business entity,
           nonprofit, or entity, or any employee, agent, officer, or volunteer
-          thereof
+          thereof<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: 'Bona fide nonprofit or charitable organization, or needy individuals'
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Yes; Free or at a charge sufficient to cover only the costs of handling and administering the food
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'Yes'
         additional_protections:
   tax_incentives:
@@ -95,14 +95,20 @@ policy_data:
 
 
 
+
+
           The commissioner of agriculture may revoke the permit of an individual
           or facility that violates the garbage-feeding rule. § 435.35 (2015).
+
+
 
 
 
           Any individual or facility that feeds raw garbage to swine shall be
           required to have such swine quarantined and tested for disease.
           § 435.36-a (2015).
+
+
 
 
 
