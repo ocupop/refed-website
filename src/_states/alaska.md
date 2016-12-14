@@ -33,7 +33,7 @@ policy_data:
       - title: Alaska Stat. § 17.20.346
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct'
-        who_is_protected: 'Donor: Gleaner; Distributor: Food bank'
+        who_is_protected: 'Donor: Gleaner<br> Distributor: Food bank'
         eligible_recipients: Food bank
         standards_for_donated_food: 'Apparently fit for human consumption; includes items with missing labels or misbranded items, and food not readily marketable due to appearance, grade, or surplus; food must be apparently fit for human consumption.'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
