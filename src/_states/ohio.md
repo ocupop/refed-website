@@ -38,21 +38,21 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: R.C. § 2305.37
+      - title: Ohio Rev. Code Ann. § 2305.37
         type_of_protection: Civil
         when_protection_will_not_apply: Gross negligence or willful or wanton misconduct
         who_is_protected: >-
           Donor: Any individual, corporation, business trust, estate, trust,
-          partnership, association, or government entity
+          partnership, association, or government entity<br>
 
           Distributor: Any nonhospital, charitable nonprofit corporation or any
           nonhospital, charitable association, group, institution, organization,
           or society that is not organized and not operated for profit
-        eligible_recipients: Nonhospital charitable enterprise
+        eligible_recipients:
         standards_for_donated_food: Food must be determined fit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
@@ -90,6 +90,8 @@ policy_data:
 
 
 
+
+
           The garbage-feeding rule does not apply to an individual who feeds
           household garbage to his or her own swine, or feeds only bakery waste,
           candy waste, eggs, vegetables, or dairy products to swine. Nor does the
@@ -105,6 +107,8 @@ policy_data:
 
 
 
+
+
           Each licensed garbage heat-treatment facility shall maintain records
           relating to heat-treatment operations for one year. § 942.07 (2015).
         treatment_requirements: N/A
@@ -115,8 +119,12 @@ policy_data:
 
 
 
+
+
           The department of agriculture may inspect garbage heat-treatment
           facilities during regular business hours. § 942.06 (2015).
+
+
 
 
 
