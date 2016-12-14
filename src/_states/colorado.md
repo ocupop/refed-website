@@ -47,7 +47,7 @@ policy_data:
         who_is_protected: >-
           Donor: Farmer, retail food establishment, or processor, distributor,
           wholesaler, or retailer of food; nonprofits that donate to another
-          nonprofit to distribute
+          nonprofit to distribute.<br>
 
           Distributor: Nonprofits that distribute under the states Cottage Food
           Law
