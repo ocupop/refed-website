@@ -50,19 +50,19 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 10 P.S. § 351-58
+      - title: 10 Pa. Stat. Ann. § 351-58
         type_of_protection: Civil or Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct, or if the donor or ultimate distributor had actual or constructive knowledge that the food was contaminated or harmful to health'
         who_is_protected: |-
-          Donor: Any person
+          Donor: Any person<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Charitable or religious organization
+        eligible_recipients:
         standards_for_donated_food: 'Fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
-        protections_apply_when_recipient_pays_for_donated_food: Yes for distributor; no for donors
+        protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -98,6 +98,8 @@ policy_data:
 
 
 
+
+
           All state and federal agencies or commissions are exempt from the
           licensure rules for garbage feeding. § 2388 (2015).
         treatment_requirements: 'Before being fed to domestic animals, garbage must be heated to a temperature of at least 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the department of agriculture. § 2376 (2015).'
@@ -108,9 +110,13 @@ policy_data:
 
 
 
+
+
           The department of agriculture may deny, suspend, or revoke the license
           of any individual or facility that violates the garbage-feeding rule.
           § 2379 (2015).
+
+
 
 
 
