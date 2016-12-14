@@ -35,7 +35,9 @@ policy_data:
       - title: Ariz .Rev. Stat. Ann. § 36-916
         type_of_protection: Civil
         when_protection_will_not_apply: Gross negligence or intentional misconduct
-        who_is_protected: "Donor: Nonprofit/Charitable organization, or any other person \nDistributor: Nonprofit/charitable organization and donor donating to immediate family"
+        who_is_protected: |-
+          Donor: Nonprofit/Charitable organization, or any other person <br>
+          Distributor: Nonprofit/charitable organization and donor donating to immediate family
         eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption. Provides protection for food that does not meet quality and label standards if (a) donor informs the recipient nonprofit, and (b) the recipient nonprofit agrees to recondition the product.'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
@@ -76,6 +78,14 @@ policy_data:
           of a class 2 misdemeanor and may be enjoined from continuing the
           violation. Each day upon which the violation occurs counts as
           a separate offense. § 3-2669 (2015).
+
+
+
+
+
+
+
+
 
 
 
