@@ -85,8 +85,8 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
       - title: 'Ga. Code Ann., § 51-1-31'
@@ -95,12 +95,12 @@ policy_data:
         who_is_protected: >-
           Donor: Includes, but is not limited to, a farmer, processor,
           distributor, commercial food service operator, wholesaler, or retailer
-          of food, and gleaners
+          of food, and gleaners<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; protection regardless of whether food is readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

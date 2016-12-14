@@ -28,19 +28,21 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: A.R.S. § 36-916
+      - title: Ariz .Rev. Stat. Ann. § 36-916
         type_of_protection: Civil
         when_protection_will_not_apply: Gross negligence or intentional misconduct
-        who_is_protected: "Donor: Nonprofit/Charitable organization, or any other person \nDistributor: Nonprofit/charitable organization and donor donating to immediate family"
-        eligible_recipients: 'Charitable organization or nonprofit, or any other person'
+        who_is_protected: |-
+          Donor: Nonprofit/Charitable organization, or any other person <br>
+          Distributor: Nonprofit/charitable organization and donor donating to immediate family
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption. Provides protection for food that does not meet quality and label standards if (a) donor informs the recipient nonprofit, and (b) the recipient nonprofit agrees to recondition the product.'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'Yes'
-        additional_protections: Protects property owners/managers who allow persons to glean food for charitable distribution
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -76,6 +78,18 @@ policy_data:
           of a class 2 misdemeanor and may be enjoined from continuing the
           violation. Each day upon which the violation occurs counts as
           a separate offense. § 3-2669 (2015).
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

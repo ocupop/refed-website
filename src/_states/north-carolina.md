@@ -45,19 +45,21 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: N.C.G.S.A. § 99B-10
+      - title: N.C. Gen. Stat. Ann. § 99B-10
         type_of_protection: Civil and Criminal
-        when_protection_will_not_apply: Grossly negligent or willful conduct of the donor; negligent or willful conduct of the nonprofit distributor
-        who_is_protected: |-
-          Donor: Any donor or gleaner
-          Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or nonprofit organization
-        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
+        who_is_protected: >-
+          Donor: Any person, including but not limited to a seller, farmer,
+          processor, distributor, wholesaler, or retailer of food<br>
+
+          Distributor: Nonprofit organization
+        eligible_recipients:
+        standards_for_donated_food: Not stated
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -91,6 +93,8 @@ policy_data:
 
 
 
+
+
           Individuals in charge of restaurants, cafes, schools, hospitals, or
           other public or private places where food is served must not allow
           garbage to be removed from the premises unless the individual moving
@@ -105,14 +109,20 @@ policy_data:
 
 
 
+
+
           Any individual or facility that violates the garbage-feeding rule is
           guilty of a Class 1 misdemeanor and may be enjoined from continuing the
           violation. § 106-405.9 (2015).
 
 
 
+
+
           The commissioner of agriculture may revoke an individual or facility’s
           permit if they violate the garbage-feeding rule. § 106-405.4 (2015).
+
+
 
 
 

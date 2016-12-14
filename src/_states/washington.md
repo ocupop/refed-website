@@ -43,27 +43,25 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+      - title: Wash. Rev. Code Ann. § 69.80.031
+        type_of_protection: Civil and criminal
+        when_protection_will_not_apply: Act or omission constituting gross negligence or intentional misconduct
+        who_is_protected: >-
+          Donor: An individual, corporation, partnership, organization,
+          association, or governmental entity, including a retail grocer,
+          wholesaler, hotel, motel, manufacturer, restaurant, caterer, farmer,
+          nonprofit food distributor, and hospital<br>
+
+          Distributor: No protection for organizations accepting or distributing
+          donations of food
+        eligible_recipients:
+        standards_for_donated_food: 'Food must meet quality and labeling standards, which Includes food not readily marketable due to appearance, age, freshness, size, grade, or surplus. If food does not meet quality or labeling standards, the donor can still be protected from liability if the donor informs the nonprofit of the defects, the nonprofit agrees to recondition the'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
-      - title:
-        type_of_protection:
-        when_protection_will_not_apply:
-        who_is_protected:
-        eligible_recipients:
-        standards_for_donated_food:
-        protections_apply_when_recipient_pays_for_donated_food:
-        protections_apply_to_direct_donations:
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -99,6 +97,8 @@ policy_data:
           counts as a separate offense. The director may enjoin the violation and
           may also deny, revoke, or suspend any licenses issued to an individual
           or facility. 16.36.110 (2015).
+
+
 
 
 

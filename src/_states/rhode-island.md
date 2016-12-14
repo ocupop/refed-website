@@ -38,22 +38,22 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: RI ST § 21-34-1 to 2
+      - title: R.I. Gen. Laws Ann. § 21-34-1—2
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: Intentional misconduct or recklessness
         who_is_protected: >-
           Donor: A person or organization, including but not limited to a farmer,
           a processor, distributor, wholesaler, or retailer of food,
-          a restaurant, or an accredited culinary arts school
+          a restaurant, or an accredited culinary arts school<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: Food must appear fit for human consumption
-        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute without charge to receive protection; donor is protected even if the ultimate distributor charges
+        protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -92,11 +92,19 @@ policy_data:
 
 
 
+
+
+
+
           Any individual or facility that violates the garbage-feeding rule is
           guilty of a misdemeanor and will be fined not more than $200. That
           person also may be enjoined from continuing the violation. Each day on
           which the violation occurs counts as a separate violation. § 4-3-11
           (2015).
+
+
+
+
 
 
 
@@ -109,9 +117,17 @@ policy_data:
 
 
 
+
+
+
+
           Any authorized representative of the director may inspect any private
           or public property used to treat garbage that will be fed to swine.
           § 4-3-8 (2015).
+
+
+
+
 
 
 

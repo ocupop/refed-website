@@ -32,19 +32,19 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'M. S. A. 1978, § 41-10-1 to 3'
+      - title: N.M. Stat. Ann. § 41-10-1—3
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: >-
           Donor: Any individual, partnership, corporation, association,
-          governmental entity, public or private organization, or gleaner
+          governmental entity, public or private organization, or gleaner<br>
 
-          Distributor: Nonprofit/charitable organization or Food bank
-        eligible_recipients: Bona fide charitable or nonprofit organization or municipality
+          Distributor: Nonprofit/charitable organization or food bank
+        eligible_recipients:
         standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'Yes'
@@ -81,6 +81,8 @@ policy_data:
           Any individual or facility in violation of the garbage-feeding rule is
           guilty of a petty misdemeanor. Each day of violation counts as
           a separate offense. § 77-7-17 (2015).
+
+
 
 
 

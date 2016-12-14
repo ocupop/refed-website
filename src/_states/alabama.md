@@ -53,14 +53,14 @@ policy_data:
       sale_after_date_permitted: false
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: Ala.Code 1975 § 20-1-6
+      - title: Ala. Code 1975 § 20-1-6
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
-        who_is_protected: "Donor: A good faith donor \nDistributor: Charitable or nonprofit organization"
+        who_is_protected: "Donor: A good faith donor<br> \nDistributor: Charitable or nonprofit organization"
         eligible_recipients: Bona fide charitable or nonprofit organization
         standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
