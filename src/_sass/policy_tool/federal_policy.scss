@@ -1,0 +1,31 @@
+.policy_tool_layout {
+  ol {
+    li {
+      font-weight: 300;
+    }
+  }
+}
+
+#federal-details {
+  h4 {
+    font-weight: 500;
+    text-transform: none;
+  }
+  strong {
+    font-weight: 500;
+  }
+  ol {
+    li {
+      margin-bottom:15px;
+      ul {
+        margin-top:10px;
+        list-style-type: disc;
+        padding-left: 20px;
+        li {
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
