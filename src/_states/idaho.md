@@ -18,17 +18,22 @@ policy_data:
       sale_after_date_permitted: true
       donation_after_date_premitted: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: I.C. § 6-1301 to 1302
+      - title: Idaho Code Ann. § 6-1301—1302
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
-        who_is_protected: "Donor: Food establishment, farmer, processor, distributor, wholesaler, or retailer of perishable or nonperishable food; and gleaner \nDistributor: No protection for organizations accepting or distributing perishable food"
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        who_is_protected: >-
+          Donor: Food establishment, farmer, processor, distributor, wholesaler,
+          or retailer of perishable or nonperishable food; and gleaner <br>
+
+          Distributor: No protection for organizations accepting or distributing
+          perishable food
+        eligible_recipients:
         standards_for_donated_food: Apparently fit for human consumption
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -60,6 +65,8 @@ policy_data:
           resulting from the handling, preparation, processing, cooking or
           consumption of food and which is collected from any source and includes
           animals or parts thereof as defined in section 25-3201, Idaho Code.
+
+
 
 
 
