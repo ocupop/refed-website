@@ -11,12 +11,64 @@ layout: policy_tool
     <div id="date-labeling" class="row">
       <div class="col-xs-12">
         <div class="content">
-          <h1>{{ page.name }} State Policy</h1>
           <h2>Date Labeling</h2>
           <h3>Overview</h3>
           {% assign labeling = page.policy_data.date_labeling %}
           <p>{{ labeling.overview }}</p>
           <!-- food date requirements need to go here ... -->
+          <div class="row hide">
+            <div class="col-xs-12 col-md-4">
+              <div class="panel icon-panel">
+                <h3>Date Label<br>Required For</h3>
+                <div class="content">
+                  <div class="row middle-xs">
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Dairy</h6>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Shellfish</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="panel icon-panel">
+                <h3>Sale After Date<br>Restricted For</h3>
+                <div class="content">
+                  <div class="row middle-xs">
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Dairy</h6>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Shellfish</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="panel icon-panel">
+                <h3>Donation After<br>Date Restricted</h3>
+                <div class="content">
+                  <div class="row middle-xs">
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Dairy</h6>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                      <i class="icon-twitter"></i>
+                      <h6>Shellfish</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <h3>Date Labeling Regulations</h3>
           {% for item in labeling.legislation %}
           <h4>{{ item.legal_citation}}</h4>

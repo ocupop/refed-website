@@ -10,7 +10,7 @@
         <a href="/tools/policy/federal-policy" 
            class="button inverse {% if page.permalink contains 'federal' %}active{% endif %}">
            Federal<br>Policy</a>
-        <a href="/tools/policy/"
+        <a href="/tools/policy/policy_tool"
            class="button inverse {% unless page.permalink contains 'federal' %}active{% endunless %}">
            State<br>Policy</a>
       </div>
@@ -28,14 +28,15 @@
           </select>
         </div>
       </div>
-      
-      <!-- {% if page.layout == 'state' %}
-        <h1>{{ page.name }} State Policy</h1>
-      {% else %}
-        {% unless page.permalink == '/tools/policy/' %}
-          <h1>{{ page.title }}</h1>
-        {% endunless %}
-      {% endif %} -->
+      <div class="content">
+        {% if page.layout == 'state' %}
+          <h1>{{ page.name }} State Policy</h1>
+        {% else %}
+          {% unless page.permalink == '/tools/policy/policy_tool' %}
+            <h1>{{ page.title }}</h1>
+          {% endunless %}
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>

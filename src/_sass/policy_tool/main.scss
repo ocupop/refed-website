@@ -282,6 +282,29 @@ header.tool-header {
   }
 }
 
+.panel {
+  &.icon-panel {
+    background-color: $cream-light;
+    h3 {
+      background-color: $cream;
+      padding: 10px 15px;
+      margin: 0;
+      line-height: 1;
+    }
+    h6 {
+      font-size: 11px;
+    }
+    .content {
+      padding: 10px 15px;
+      i {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 @media(min-width: 992px) and (max-width: 1300px){
   #policy-tool {
     .container {
@@ -304,8 +327,9 @@ header.tool-header {
 @media(max-width: 992px) {
   #policy-tool {
     padding-right: 0;
+    min-height: auto;
   }
-  #policynav {
+  #policynav, #map, #map-instructions {
     display: none;
   }
   #policy-intro {
