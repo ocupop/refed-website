@@ -44,6 +44,9 @@ GEM
     jekyll-bootstrap-sass (0.1.0)
       bootstrap-sass (~> 3.3)
       jekyll (>= 2.5)
+    jekyll-last-modified-at (1.0.0)
+      jekyll (~> 3.2.1)
+      posix-spawn (~> 0.3.9)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -62,6 +65,7 @@ GEM
     parallel (1.6.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    posix-spawn (0.3.12)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -87,9 +91,10 @@ DEPENDENCIES
   html-proofer
   jekyll (= 3.2.1)
   jekyll-bootstrap-sass
+  jekyll-last-modified-at
   redcarpet
   sass
   uglifier
 
 BUNDLED WITH
-   1.13.5
+   1.13.6

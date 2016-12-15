@@ -156,6 +156,17 @@ header.tool-header {
   }
 }
 
+.sub-header {
+  background-color: $gray-dark;
+  color: $gray-light;
+  padding: 5px 20px;
+  margin-top: 18px;
+  text-transform: none;
+  span {
+    font-style: italic;
+  }
+}
+
 #policy-tool {
   position: relative;
   min-height: 1100px;
