@@ -343,19 +343,6 @@ header.tool-header {
   #policynav, #map, #map-instructions {
     display: none;
   }
-  #policy-intro {
-    .col-xs-3 {
-      .content {
-        // padding: 40px 0 10px 10px;
-        // padding-top: 40px;
-      }
-    }
-    .col-xs-9 {
-      .content {
-        padding-left: 0;
-      }
-    }
-  }
 }
 
 @media(max-width: 768px) {
@@ -364,6 +351,14 @@ header.tool-header {
   }
   #map, #map-instructions {
     display: none;
+  }
+
+  #policy-intro {
+    svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 25%;
+    }   
   }
   
   section {
