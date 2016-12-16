@@ -22,7 +22,7 @@ tool: U.S. Food Waste Policy Finder
           <p>Select a policy filter below to view the States related to that policy</p>
           <a href="#liability-collapse" class="button recovery" data-toggle="collapse" aria-expanded="false" aria-controls="liability-collapse">Liability Protection</a>
           <div class="collapse" id="liability-collapse">
-            <img src="http://placehold.it/700x375?text=Map Image" class="img-responsive" alt="">
+            <img src="http://placehold.it/720x375?text=Map Image" class="img-responsive" alt="">
             <a href="#liability-studies" class="sub-trigger" data-toggle="collapse" aria-expanded="false" aria-controls="liability-studies">Best-practice Policies <i class="icon-caret-up"></i></a>
             <div class="collapse" id="liability-studies">
               {% for case_study in site.data.policy_tool['liability_protection'].case_studies %}
@@ -72,6 +72,20 @@ tool: U.S. Food Waste Policy Finder
               {% endfor %}
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="row visible-xs visible-sm">
+      <div class="col-md-5">
+        <div class="content">
+          <img src="http://placehold.it/710x320" class="img-responsive" alt="">
+        </div>
+      </div>
+      <div id="spotlight" class="col-md-7">
+        <div class="content">
+          <h2>Spotlight on date labeling regulations</h2>
+          <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
+          <a href="{{ site.baseurl }}/tools/policy/date-labels" class="button"><span>Learn More &nbsp;&gt;</span></a>
         </div>
       </div>
     </div>
