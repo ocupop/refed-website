@@ -125,8 +125,8 @@ policy_data:
         legal_citation: Minn. Stat. § 31.784 (2013).
     label_regulation:
       date_labels_required_for: 'Eggs, Perishable Foods, Shellfish'
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

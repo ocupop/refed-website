@@ -42,8 +42,8 @@ policy_data:
         legal_citation: Fla. Admin. Code Ann r. 5D-1.007 (2013).
     label_regulation:
       date_labels_required_for: 'Milk/Dairy, Shellfish'
-      restricted_sales_on_expired_labels: false
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

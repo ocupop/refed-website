@@ -15,8 +15,8 @@ policy_data:
         legal_citation: 4000 Del. Admin. Code §3-202.17 (2013).
     label_regulation:
       date_labels_required_for: Shellfish
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

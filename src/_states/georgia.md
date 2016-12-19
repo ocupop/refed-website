@@ -82,8 +82,8 @@ policy_data:
         legal_citation: 'Ga. Comp. R. & Regs. 40-7-1-.26 (2013).'
     label_regulation:
       date_labels_required_for: 'Eggs, Infant Formula, Milk, Shellfish, Prepackaged Sandwiches'
-      restricted_sales_on_expired_labels: false
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

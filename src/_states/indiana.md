@@ -20,8 +20,8 @@ policy_data:
         legal_citation: 410 Ind. Admin. Code 7-24-156 (2013).
     label_regulation:
       date_labels_required_for: 'Eggs, Shellfish'
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

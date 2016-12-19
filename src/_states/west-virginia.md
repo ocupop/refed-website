@@ -21,9 +21,9 @@ policy_data:
           provided to the retailer.
         legal_citation: W. Va. Code R. § 61- 7A-6 (2013).
     label_regulation:
-      date_labels_required_for: Eggs
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      date_labels_required_for: 
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

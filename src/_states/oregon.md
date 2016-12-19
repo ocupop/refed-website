@@ -39,8 +39,8 @@ policy_data:
         legal_citation: Or. Rev. Stat. § 616.830 (2013).
     label_regulation:
       date_labels_required_for: Packaged Perishable Foods
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

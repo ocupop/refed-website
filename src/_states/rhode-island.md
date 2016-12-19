@@ -35,8 +35,8 @@ policy_data:
         legal_citation: 31-3-9 R.I. Code R. § 6.0 (2013).
     label_regulation:
       date_labels_required_for: 'Packaged Bakery Products, Shellfish'
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

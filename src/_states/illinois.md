@@ -31,8 +31,8 @@ policy_data:
         legal_citation: 'Ill. Admin. Code tit. 8, § 65.30 (2013).'
     label_regulation:
       date_labels_required_for:
-      restricted_sales_on_expired_labels: false
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

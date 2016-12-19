@@ -58,8 +58,8 @@ policy_data:
         legal_citation: No relevant state law.
     label_regulation:
       date_labels_required_for: 'Eggs, Shellfish'
-      restricted_sales_on_expired_labels: false
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:

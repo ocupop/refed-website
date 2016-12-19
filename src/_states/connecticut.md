@@ -37,8 +37,8 @@ policy_data:
         legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
     label_regulation:
       date_labels_required_for: Milk/Dairy
-      restricted_sales_on_expired_labels: true
-      restricted_donations_on_expired_labels: true
+      restricted_sales_on_expired_labels:
+      restricted_donations_on_expired_labels:
   liability_protection:
     overview:
     summary:
