@@ -40,7 +40,9 @@ policy_data:
         legal_citation: Wash. Admin. Code § 16-142-150 (2013).
     label_regulation:
       date_labels_required_for:
+        - perishables
       restricted_sales_on_expired_labels:
+        - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -97,6 +99,10 @@ policy_data:
           counts as a separate offense. The director may enjoin the violation and
           may also deny, revoke, or suspend any licenses issued to an individual
           or facility. 16.36.110 (2015).
+
+
+
+
 
 
 
