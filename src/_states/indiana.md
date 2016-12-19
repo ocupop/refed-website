@@ -19,7 +19,9 @@ policy_data:
         excerpted_language_from_the_law: Sec. 156 (a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies the . . . “sell by” date for packages with a capacity of less than one-half ( ½ ) gallon or the date shucked for packages with a capacity of one-half ( ½ ) gallon or more.
         legal_citation: 410 Ind. Admin. Code 7-24-156 (2013).
     label_regulation:
-      date_labels_required_for: 'Eggs, Shellfish'
+      date_labels_required_for:
+        - eggs
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -68,6 +70,10 @@ policy_data:
         treatment_requirements: >-
           Garbage fed to swine must be heat-treated to kill disease organisms.
           § 15-17-10-16 (2015).
+
+
+
+
 
 
 
