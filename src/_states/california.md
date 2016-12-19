@@ -24,7 +24,9 @@ policy_data:
         excerpted_language_from_the_law: '(a) Raw shucked shellfish shall be obtained in nonreturnable packages that bear a legible label that identifies . . . a “sell by” date or a “best if used by” date for packages with a capacity of less than one-half gallon, or the date shucked for packages with a capacity of one-half gallon or more.'
         legal_citation: 'Cal. Health & Safety Code § 114039 (2013).'
     label_regulation:
-      date_labels_required_for: 'Milk/Dairy, Shellfish'
+      date_labels_required_for:
+        - dairy
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
