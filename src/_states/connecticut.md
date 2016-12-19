@@ -36,7 +36,8 @@ policy_data:
         excerpted_language_from_the_law: (f) The manufacturer’s last sale date or expiration date shall not be altered in any way.
         legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
     label_regulation:
-      date_labels_required_for: Milk/Dairy
+      date_labels_required_for:
+        - dairy
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
