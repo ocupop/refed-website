@@ -16,20 +16,22 @@ layout: policy_tool
           {% assign labeling = page.policy_data.date_labeling %}
           <p>{{ labeling.overview }}</p>
           <!-- food date requirements need to go here ... -->
-          <div class="row hide">
+          <div class="row">
             <div class="col-xs-12 col-md-4">
               <div class="panel icon-panel">
                 <h3>Date Label<br>Required For</h3>
                 <div class="content">
                   <div class="row middle-xs">
+                    {% for item in page.date_labels_required_for %}
                     <div class="col-xs-3 text-center">
                       <i class="icon-twitter"></i>
-                      <h6>Dairy</h6>
+                      <h6>{{ item }}</h6>
                     </div>
-                    <div class="col-xs-3 text-center">
+                    {% endfor %}
+                    <!-- <div class="col-xs-3 text-center">
                       <i class="icon-twitter"></i>
                       <h6>Shellfish</h6>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
