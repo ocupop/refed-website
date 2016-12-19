@@ -26,18 +26,6 @@ defaults:
   values:
     layout: state
     tool: "U.S. Food Waste Policy Finder"
-    # policy_data:
-    #   date_labeling:
-    #     label_regulation:
-    date_labels_required_for:
-      - Shellfish
-      - Eggs
-    restricted_sales_on_expired_labels:
-      - Shellfish
-      - Eggs
-    restricted_donations_on_expired_labels:
-      - Shellfish
-      - Eggs
     _hide_content: true
 
 collections:
@@ -54,13 +42,16 @@ collections:
     layout: state
     permalink: /states/:path  
 
-food_items:
-  - Shellfish
-  - Eggs
-
 date_labels_required_for:
   - Shellfish
   - Eggs
+restricted_sales_on_expired_labels:
+  - Shellfish
+  - Eggs
+restricted_donations_on_expired_labels:
+  - Shellfish
+  - Eggs
+
 
 # Build settings
 safe: false
