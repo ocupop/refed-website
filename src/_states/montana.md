@@ -29,9 +29,12 @@ policy_data:
         excerpted_language_from_the_law: '(1) When 12 days or more have passed following pasteurization of a unit of grade A milk, there will be no quantities of that unit of milk sold or otherwise offered for public consumption. (2) No grade A pasteurized milk may be put in any container marked with a sell-by date which is more than 12 days after pasteurization of the milk for sale in Montana. (3) Unless otherwise agreed upon, the person who offers the milk for sale to the public is responsible for removing the milk at or before the expiration of the 12 days.'
         legal_citation: Mont. Admin. R. 32.8.202 (2013).
     label_regulation:
-      date_labels_required_for: Milk
+      date_labels_required_for:
+        - dairy
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
+        - dairy
   liability_protection:
     overview:
     summary:
@@ -92,6 +95,10 @@ policy_data:
 
 
 
+
+
+
+
           The department of agriculture has the authority to restrain
           garbage-feeding operations in violation of the garbage-feeding rule.
           § 81-2-507 (2015).
@@ -100,9 +107,17 @@ policy_data:
 
 
 
+
+
+
+
           The department may revoke garbage-feeding licenses if the department
           determines that an individual or facility has violated the
           garbage-feeding rule and other state laws. § 81-2-508 (2015).
+
+
+
+
 
 
 

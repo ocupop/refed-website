@@ -41,8 +41,12 @@ policy_data:
         excerpted_language_from_the_law: '(1)(e) No milk or milk products shall be offered for sale as a grade A product after the shelflife expiration date shown on the container. All milk and milk products offered for sale after the shelf-life expiration date will be deemed to be misbranded and subject to be impounded and made unsalable or otherwise disposed of by the department, under the provisions of Section 502.231, F.S. (1)(f) This rule does not apply to containers of milk or milk products which are not to be sold in the State of Florida.'
         legal_citation: Fla. Admin. Code Ann r. 5D-1.007 (2013).
     label_regulation:
-      date_labels_required_for: 'Milk/Dairy, Shellfish'
+      date_labels_required_for:
+        - dairy
+        - shellfish
       restricted_sales_on_expired_labels:
+        - dairy
+        - shellfish
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:

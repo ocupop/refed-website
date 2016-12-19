@@ -124,7 +124,10 @@ policy_data:
         excerpted_language_from_the_law: 'Nothing contained in sections 31.781 to 31.789 or any rule adopted pursuant hereto shall require the removal from sale of a perishable food product after the expiration of the quality assurance date on the product nor imply that after the expiration of the quality assurance date on the product, the product is not wholesome or safe for human consumption.'
         legal_citation: Minn. Stat. § 31.784 (2013).
     label_regulation:
-      date_labels_required_for: 'Eggs, Perishable Foods, Shellfish'
+      date_labels_required_for:
+        - dairy
+        - perishables
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -185,6 +188,10 @@ policy_data:
           The board of animal health may revoke or refuse to issue a permit to
           any individual who has violated the garbage-feeding rule. § 35.751
           (2015).
+
+
+
+
 
 
 

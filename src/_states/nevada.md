@@ -43,8 +43,11 @@ policy_data:
         excerpted_language_from_the_law: '4. These foods must be discarded if not sold, served or frozen: (a) Within 10 calendar days after the original container is opened; or (b) On or before the date by which the food must be sold or used, as indicated on the container, whichever occurs first.'
         legal_citation: Nev. Admin. Code § 446.145 (2012).
     label_regulation:
-      date_labels_required_for: 'Milk, Potentially Hazardous Foods'
+      date_labels_required_for:
+        - dairy
+        - hazardous foods
       restricted_sales_on_expired_labels:
+        - hazardous foods
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -98,8 +101,16 @@ policy_data:
 
 
 
+
+
+
+
           The state may cancel a food waste treatment permit if the permit holder
           violates the waste-feeding rule. NAC 571.160 (2015).
+
+
+
+
 
 
 

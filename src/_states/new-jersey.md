@@ -60,7 +60,10 @@ policy_data:
         legal_citation: 'N.J. Admin. Code § 8:24-3.2 (2013).'
     label_regulation:
       date_labels_required_for:
+        - dairy
+        - shellfish
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -121,6 +124,10 @@ policy_data:
 
 
 
+
+
+
+
           Dairy byproducts must be pasteurized by heating them to 145 degrees
           Fahrenheit and held at that temperature for at least 30 minutes, or
           heated to 185 degrees without holding. By byproducts from cheese
@@ -134,8 +141,16 @@ policy_data:
 
 
 
+
+
+
+
           The department will inspect the premises of each licensee as often as
           it deems necessary and at least once per year. § 4:5-106.11 (2015).
+
+
+
+
 
 
 
@@ -149,6 +164,10 @@ policy_data:
 
 
 
+
+
+
+
           The department may refuse to issue or restore, or to revoke or suspend
           the license of an individual or facility that violates the
           garbage-feeding rule. § 4:5-106.13 (2015).
@@ -157,9 +176,17 @@ policy_data:
 
 
 
+
+
+
+
           Any individual or facility that violates the garbage-feeding rule will
           be fined up to $100 for the first penalty and $200 for each subsequent
           penalty. § 4:5-106.14 (2015).
+
+
+
+
 
 
 

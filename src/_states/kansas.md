@@ -19,7 +19,8 @@ policy_data:
           or similar language.
         legal_citation: Kan. Stat. Ann. § 2-2509 (2013).
     label_regulation:
-      date_labels_required_for: Eggs
+      date_labels_required_for:
+        - eggs
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -69,6 +70,10 @@ policy_data:
         enforcement: >-
           The state animal health commissioner is authorized to enforce the
           garbage-feeding ban. § 47-1304 (2015).
+
+
+
+
 
 
 

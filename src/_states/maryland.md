@@ -19,8 +19,10 @@ policy_data:
         excerpted_language_from_the_law: 'A. Except as provided in §B of this regulation, a person may not offer Grade A fluid milk for sale beyond the sell-by date. B. The following establishments may use or serve Grade A fluid milk up to 4 days beyond the sell-by date: (1) Food service facilities; (2) Hospitals; (3) Schools; (4) Institutions; and (5) Places where milk is consumed on the premises. C. An establishment listed in §B of this regulation shall ensure that Grade A fluid milk is used by the establishment not later than 4 days beyond the sell-by date.'
         legal_citation: Md. Code Regs. 10.15.06.11 (2013).
     label_regulation:
-      date_labels_required_for: Milk
+      date_labels_required_for:
+        - dairy
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:

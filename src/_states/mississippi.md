@@ -23,7 +23,8 @@ policy_data:
           date shucked.
         legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
     label_regulation:
-      date_labels_required_for: Shellfish
+      date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -80,6 +81,10 @@ policy_data:
           the garbage-feeding rule. § 69-11-11 (2015). Either official also may
           quarantine any premises on which swine are fed garbage. § 69-11-13
           (2015).
+
+
+
+
 
 
 

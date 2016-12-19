@@ -32,6 +32,7 @@ policy_data:
     label_regulation:
       date_labels_required_for:
       restricted_sales_on_expired_labels:
+        - eggs
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
