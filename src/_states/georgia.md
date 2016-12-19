@@ -81,8 +81,18 @@ policy_data:
         excerpted_language_from_the_law: '(2) Expiration Dates. It shall be unlawful to sell or offer for sale, at retail or wholesale, the following food items past the EXPIRATION DATE stated on the label: […](b) Prepackaged Sandwiches. For the purpose of this section, prePACKAGED sandwiches shall be classified as Type A, Type B or Type C.'
         legal_citation: 'Ga. Comp. R. & Regs. 40-7-1-.26 (2013).'
     label_regulation:
-      date_labels_required_for: 'Eggs, Infant Formula, Milk, Shellfish, Prepackaged Sandwiches'
+      date_labels_required_for:
+        - eggs
+        - dairy
+        - shellfish
+        - sandwiches
       restricted_sales_on_expired_labels:
+        - eggs
+        - dairy
+        - shellfish
+        - sandwiches
+        - infant formula
+        - hazardous foods
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
