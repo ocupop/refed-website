@@ -18,7 +18,8 @@ policy_data:
           2. the date when packed;
         legal_citation: 'La. Admin. Code tit. 7, pt. V § 929 (2013).'
     label_regulation:
-      date_labels_required_for: Eggs
+      date_labels_required_for:
+        - eggs
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
