@@ -26,7 +26,9 @@ policy_data:
         excerpted_language_from_the_law: '(2) Packages containing less than sixty-four (64) fluid ounces shall include: (a) The words “SELL BY” or “BEST IF USED BY” followed by a reasonable date when the product would be expected to reach the end of its shelf life; (b) The date as a month and day of the month; and (c) For fresh frozen shellfish, the year shall be added to the date.'
         legal_citation: S.C. Code Ann. Regs. 61-47 (2013).
     label_regulation:
-      date_labels_required_for: 'Eggs, Shellfish'
+      date_labels_required_for:
+        - eggs
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -75,11 +77,19 @@ policy_data:
 
 
 
+
+
+
+
           Any person who violates the garbage-feeding ban is guilty of
           a misdemeanor and may be enjoined from continuing the violation. Each
           day on which the violation occurs counts as a separate offense. The
           violator also will be fined or imprisoned. §§ 47-15-80, 47-4-130
           (2015).
+
+
+
+
 
 
 
