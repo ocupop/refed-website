@@ -45,19 +45,19 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: "West's F.S.A. § 768.136"
+      - title: Fla. Stat. Ann. § 768.136
         type_of_protection: Civil and Criminal
-        when_protection_will_not_apply: "Donor: Person, business, organization, or institution that owns, rents, leases, or operates (a) a facility where food is prepared for consumption or delivery, (b) a public location with vending machines that dispense prepared foods, or (c) a grocery store; and gleaners \nDistributor: Nonprofit/charitable organization"
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
+        who_is_protected: 'Donor: Person, business, organization, or institution that owns, rents, leases, or operates (a) a facility where food is prepared for consumption or delivery, (b) a public location with vending machines that dispense prepared foods, or (c) a grocery store; and gleaners.<br> Distributor: Nonprofit/charitable organization'
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; protection regardless of whether food is readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections: 'Protects representatives or volunteers acting on behalf of bona fide nonprofits, as well as any uncompensated person who operates in a similar philanthropic role as such an organization (but does not explicitly protect donors that donate to such persons)'
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

@@ -63,24 +63,24 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'N.J.S.A. 24:4A-1 to 5'
+      - title: 'N.J. Stat. Ann. § 24:4A-1—A5'
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or knowing misconduct'
         who_is_protected: >-
           Donor: Includes, but is not limited to, any farmer, processor,
           distributor, wholesaler, or retailer of food, higher education
-          institute, or gleaner nonprofits, food banks, and their agents
+          institute, or gleaner nonprofits, food banks, and their agents<br>
 
           Distributor: Food bank or nonprofit organization
-        eligible_recipients: Nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
-        additional_protections: Also protects owners of agricultural food who allow a person to harvest food for distribution
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -119,6 +119,8 @@ policy_data:
 
 
 
+
+
           Dairy byproducts must be pasteurized by heating them to 145 degrees
           Fahrenheit and held at that temperature for at least 30 minutes, or
           heated to 185 degrees without holding. By byproducts from cheese
@@ -130,8 +132,12 @@ policy_data:
 
 
 
+
+
           The department will inspect the premises of each licensee as often as
           it deems necessary and at least once per year. § 4:5-106.11 (2015).
+
+
 
 
 
@@ -141,15 +147,21 @@ policy_data:
 
 
 
+
+
           The department may refuse to issue or restore, or to revoke or suspend
           the license of an individual or facility that violates the
           garbage-feeding rule. § 4:5-106.13 (2015).
 
 
 
+
+
           Any individual or facility that violates the garbage-feeding rule will
           be fined up to $100 for the first penalty and $200 for each subsequent
           penalty. § 4:5-106.14 (2015).
+
+
 
 
 

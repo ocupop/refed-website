@@ -44,20 +44,20 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: KRS § 413.247 to 248
+      - title: Ky. Rev. Stat. § 413.247—248
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: >-
           Donor: Individual, corporation, partnership, organization, association,
-          or retail food establishment
+          or retail food establishment<br>
 
           Distributor: Nonprofit organization
-        eligible_recipients: Nonprofit organization
-        standards_for_donated_food: 'Food must meet all local, county, state, and federal standards of quality, but the law protects donation of food not readily marketable due to appearance, age, freshness, size or grade'
+        eligible_recipients:
+        standards_for_donated_food: 'Food must meet all local, county, state, and federal standards of quality, but the law protects donation of food not readily marketable due to appearance, age, freshness, size or grade.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:

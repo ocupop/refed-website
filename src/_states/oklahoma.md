@@ -27,22 +27,22 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 76 Okl.St.Ann. § 5.6
+      - title: 'Okla. Stat. Ann. tit. 76, § 5.6'
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: >-
           Donor: Any person, profit or nonprofit distributor, or person who
-          harvests perishable foods
+          harvests perishable foods<br>
 
           Distributor: No protection for organizations accepting or distributing
           donations of perishable food
-        eligible_recipients: Charitable organization or nonprofit corporation
+        eligible_recipients:
         standards_for_donated_food: 'Fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
-        protections_apply_when_recipient_pays_for_donated_food: Does not specify
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

@@ -18,27 +18,22 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
-        type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
-        protections_apply_to_direct_donations: 'No'
-        additional_protections:
-      - title:
-        type_of_protection:
-        when_protection_will_not_apply:
-        who_is_protected:
+      - title: 'Tex. Civ. Prac. & Rem. Code Ann. § 76.001—004'
+        type_of_protection: Civil and criminal
+        when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
+        who_is_protected: >-
+          Donor: An individual, corporation, partnership, organization,
+          association, governmental entity, or gleaner<br>
+
+          Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food:
-        protections_apply_when_recipient_pays_for_donated_food:
-        protections_apply_to_direct_donations:
+        standards_for_donated_food: 'Apparently wholesome (must meet all quality and health standards), but the law protects donations of food not readily marketable due to appearance, age, freshness, grade, size, or surplus'
+        protections_apply_when_recipient_pays_for_donated_food: Food recovery organization must distribute the food for free in order to receive protection; donor is protected even if the food recovery organization charges.
+        protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -75,6 +70,8 @@ policy_data:
 
           (C) refuse accumulations of animal matter or commingled animal and
           vegetable matter, liquid or otherwise.
+
+
 
 
 

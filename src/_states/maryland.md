@@ -23,24 +23,26 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'MD Code, Courts and Judicial Proceedings, § 5-634; MD Code, Health - General, § 21-322'
+      - title: |-
+          Md. Code Ann. Cts. & Jud. Proc. § 5-634<br>
+          Md. Code Ann. Health—Gen. § 21-322
         type_of_protection: Civil
         when_protection_will_not_apply: Acts or omissions amounting to gross negligence or willful and wanton misconduct
         who_is_protected: >-
           Donor: A person, including a nonprofit corporation, organization, or
-          association
+          association<br>
 
           Distributor: Employees/volunteers of nonprofit are explicitly
           protected
-        eligible_recipients: 'Nonprofit corporation, organization, or association'
+        eligible_recipients:
         standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections: Protection for persons who serve or dispense donated food distributed by a nonprofit
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

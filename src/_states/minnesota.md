@@ -128,17 +128,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: M.S.A. § 604A.10
+      - title: Minn. Stat. Ann. § 604A.10
         type_of_protection: Civil
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: |-
-          Donor: A food manufacturer, processor, distributor, or person
+          Donor: A food manufacturer, processor, distributor, or person<br>
           Distributor: Food bank or charitable organization
-        eligible_recipients: 'Nonprofit or charitable organization, OR the needy or the elderly (direct donation), or the state or political subdivision or an institution operated by the state or political subdivision'
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'Yes'
@@ -185,6 +185,8 @@ policy_data:
           The board of animal health may revoke or refuse to issue a permit to
           any individual who has violated the garbage-feeding rule. § 35.751
           (2015).
+
+
 
 
 

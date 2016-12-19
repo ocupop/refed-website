@@ -33,19 +33,21 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: false
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: MCA 27-1-716
+      - title: Mont. Code Ann. § 27-1-716
         type_of_protection: Civil or Criminal
         when_protection_will_not_apply: Gross negligence or intentional misconduct
-        who_is_protected: |-
-          Donor: Any processor, distributor, wholesaler, retailer, or gleaner
+        who_is_protected: >-
+          Donor: Any processor, distributor, wholesaler, retailer, or
+          gleaner<br>
+
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute the food for free; donor is protected even if the ultimate distributor charges
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -88,15 +90,21 @@ policy_data:
 
 
 
+
+
           The department of agriculture has the authority to restrain
           garbage-feeding operations in violation of the garbage-feeding rule.
           § 81-2-507 (2015).
 
 
 
+
+
           The department may revoke garbage-feeding licenses if the department
           determines that an individual or facility has violated the
           garbage-feeding rule and other state laws. § 81-2-508 (2015).
+
+
 
 
 

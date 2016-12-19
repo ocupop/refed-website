@@ -28,27 +28,20 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: Cal.Civ.Code § 1714.25
+      - title: Wyo. Stat. Ann. § 35-7-1301
         type_of_protection: Civil
-        when_protection_will_not_apply: 'For the original donor, there is no protection for negligence or a willful act; for the ultimate distributor, there is no protection for negligence, recklessness, or intentional misconduct.'
-        who_is_protected: 'Donor (any food facility, nonprofit charitable organization or food bank) and Distributor (nonprofit/charitable organization or food bank)'
-        eligible_recipients: Nonprofit charitable organization or food bank
-        standards_for_donated_food: Apparently fit for human consumption. Provides protection regardless of compliance with packaging and labeling laws; food must be fit for human consumption.
+        when_protection_will_not_apply: 'Willful, wanton, or reckless acts'
+        who_is_protected: |-
+          Donor: Any person<br>
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients:
+        standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections:
-      - title:
-        type_of_protection:
-        when_protection_will_not_apply:
-        who_is_protected:
-        eligible_recipients:
-        standards_for_donated_food:
-        protections_apply_when_recipient_pays_for_donated_food:
-        protections_apply_to_direct_donations:
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -88,8 +81,12 @@ policy_data:
 
 
 
+
+
           The board may revoke or refuse to issue a permit to any individual or
           facility that violates the garbage-feeding rule. § 11-27-105 (2015).
+
+
 
 
 

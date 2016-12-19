@@ -18,15 +18,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: V.A.M.S. 537.115
+      - title: Mo. Rev. Stat. § 537.115
         type_of_protection: Civil or Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct'
-        who_is_protected: "Donor: A good faith donor \nDistributor: Nonprofit/charitable organization"
-        eligible_recipients: Bona fide charitable or not-for-profit organization
+        who_is_protected: |-
+          Donor: A good faith donor <br>
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
@@ -56,6 +58,8 @@ policy_data:
         enforcement: >-
           Violation of the garbage-feeding rule is a misdemeanor. Each day of the
           violation counts as a separate offense. § 266.460 (2015).
+
+
 
 
 

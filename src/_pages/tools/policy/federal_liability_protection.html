@@ -89,9 +89,21 @@ tool: U.S. Food Waste Policy Finder
     </div>
   </div>
 </section>
-<section style="padding: 10px 0;">
-  <!-- need to customize this for this page -->
-  {% include policy/explore_state_navigation.html %}
+<section id="state-select" style="padding: 10px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-5">
+        <div class="content">
+          <h3>View State Level<br>Liability Protection Policy</h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-7">
+        <div class="content">
+          {% include policy/state_navigation.html %}
+        </div>
+      </div>
+    </div> 
+  </div>
 </section>
 
 <div id="policynav">
@@ -107,14 +119,3 @@ tool: U.S. Food Waste Policy Finder
     </div>
   </div>
 </div>
-
-<script>
-  $('#state-select').change(function(){
-    var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
-</script>
-

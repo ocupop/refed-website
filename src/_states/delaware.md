@@ -18,17 +18,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 10 Del.C. § 8130
+      - title: 'Del. Code Ann. Tit. 10, § 8130'
         type_of_protection: Civil and Criminal
-        when_protection_will_not_apply: 'Charitable organization is not protected from gross negligence, recklessness, or intentional misconduct'
+        when_protection_will_not_apply: 'Charitable organization is not protected from gross negligence, recklessness, or intentional misconduct.'
         who_is_protected: |-
-          Donor: Any person or business, or institution
+          Donor: Any person or business, or institution<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Charitable organization
+        eligible_recipients:
         standards_for_donated_food: Food must appear fit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'

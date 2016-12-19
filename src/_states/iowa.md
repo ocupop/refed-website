@@ -28,22 +28,22 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: I.C.A. § 672.1
+      - title: Iowa Code Ann. § 672.1
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct, or if the donor or nonprofit had actual or constructive knowledge that the food was contaminated or harmful to health'
         who_is_protected: >-
           Donor: A gleaner, restaurant, food establishment, food or food services
           establishment, school, foodstuffs manufacturer, meat or poultry
-          establishment, or other person
+          establishment, or other person<br>
 
           Distributor: Charitable or nonprofit organization
-        eligible_recipients: Charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus but not defective canned goods'
-        protections_apply_when_recipient_pays_for_donated_food: Yes; Free or for a nominal fee
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

@@ -22,24 +22,24 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'LSA-R.S. 9:2799'
+      - title: 'La. Rev. Stat. Ann. § 9:2799'
         type_of_protection: Civil
         when_protection_will_not_apply: 'Intentional act or omission, or gross negligence'
         who_is_protected: >-
           Donor: Any individual, farmer, food service establishment, school,
           church, civic organization, manufacturer, processor, packager,
-          wholesaler, or retailer or food or vitamins
+          wholesaler, or retailer or food or vitamins<br>
 
           Distributor: Food bank
-        eligible_recipients: Food bank
+        eligible_recipients:
         standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: Only wild game
-        additional_protections: "Food bank's designated distributors with on-premise feeding programs are also protected"
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

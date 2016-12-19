@@ -37,21 +37,21 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: C.R.S.A. § 13-21-113
+      - title: Colo. Rev. Stat. § 13-21-113
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Willful, wanton, or reckless acts'
         who_is_protected: >-
           Donor: Farmer, retail food establishment, or processor, distributor,
           wholesaler, or retailer of food; nonprofits that donate to another
-          nonprofit to distribute
+          nonprofit to distribute.<br>
 
           Distributor: Nonprofits that distribute under the states Cottage Food
           Law
-        eligible_recipients: Nonprofit organizations
+        eligible_recipients:
         standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'

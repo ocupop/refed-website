@@ -121,19 +121,22 @@ body.policy_tool_layout {
 // TODO - refactor section classes to make more global
 
 section {
-  &.prevention-border {
-    border-left: 30px solid $prevention-color;
-  }
+  &.border {
+    border-left: 30px solid;
+    &.prevention-border {
+      border-color: $prevention-color;
+    }
 
-  &.recovery-border {
-    border-left: 30px solid $recovery-color;
-  }
+    &.recovery-border {
+      border-color: $recovery-color;
+    }
 
-  &.recycling-border {
-    border-left: 30px solid $recycle-color;
-  }
-  &.cream-border {
-    border-left: 30px solid $cream;
+    &.recycling-border {
+      border-color: $recycle-color;
+    }
+    &.cream-border {
+      border-color: $cream;
+    }
   }
 }
 header.tool-header {
@@ -150,6 +153,17 @@ header.tool-header {
     &:hover, &:focus {
       color: #ffffff;
     }
+  }
+}
+
+.sub-header {
+  background-color: $gray-dark;
+  color: $gray-light;
+  padding: 5px 20px;
+  margin-top: 18px;
+  text-transform: none;
+  span {
+    font-style: italic;
   }
 }
 
@@ -243,7 +257,7 @@ header.tool-header {
   font-size: 14px;
   justify-content: space-between;
   .flex-table-item {
-    width: calc(15% - 10px);
+    width: calc(25% - 10px);
     background-color: #fff;
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -252,7 +266,7 @@ header.tool-header {
       font-size: 16px;
     }
     &.item-large {
-      width: calc(55% - 10px);
+      width: calc(75% - 10px);
     }
   }
 }
@@ -276,6 +290,101 @@ header.tool-header {
     width: calc(80% - 10px);
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+}
+
+.panel {
+  &.icon-panel {
+    background-color: $cream-light;
+    h3 {
+      background-color: $cream;
+      padding: 10px 15px;
+      margin: 0;
+      line-height: 1;
+    }
+    h6 {
+      font-size: 11px;
+    }
+    .content {
+      padding: 10px 15px;
+      i {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1300px){
+  #policy-tool {
+    .container {
+      max-width: 90%;
+    }
+  }
+}
+
+@media(max-width: 1300px) {
+  #state-federal-navigation {
+    .button {
+      &.inverse {
+        max-width: none;
+        margin: 0 1% 0 1%;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  #policy-tool {
+    padding-right: 0;
+    min-height: auto;
+  }
+  #policynav, #map, #map-instructions {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  #policy-tool {
+    min-height: none;
+  }
+  #map, #map-instructions {
+    display: none;
+  }
+
+  #policy-intro {
+    svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 25%;
+    }   
+  }
+  
+  section {
+    &.border {
+      border: none;
+    }
+  }
+  .flex-table {
+    .flex-table-item {
+      width: calc(30% - 10px);
+      &.item-large {
+        width: calc(70% - 10px);
+      }
+    }
+  }
+
+  .dl-policy {
+    dt {
+      width: 30%;
+      margin-bottom: 10px;
+      font-weight: 300;
+      text-transform: none;
+    }
+    dd {
+      width: calc(70% - 10px);
+    }
   }
 }
 

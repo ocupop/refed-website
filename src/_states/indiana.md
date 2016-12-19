@@ -23,17 +23,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'IC 34-30-5-1, 34-30-5-2'
+      - title: Ind. Code § 34-30-5-1—34-30-5-2
         type_of_protection: Civil
         when_protection_will_not_apply: 'Intentional, knowing, or reckless misconduct'
         who_is_protected: |-
-          Donor: Any person
+          Donor: Any person<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Charitable entity
+        eligible_recipients:
         standards_for_donated_food: Not stated
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
@@ -68,6 +68,8 @@ policy_data:
         treatment_requirements: >-
           Garbage fed to swine must be heat-treated to kill disease organisms.
           § 15-17-10-16 (2015).
+
+
 
 
 

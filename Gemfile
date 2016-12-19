@@ -8,6 +8,7 @@ gem 'jekyll-bootstrap-sass'
 gem 'sass'
 gem 'uglifier'
 gem 'autoprefixer-rails'
+gem 'jekyll-last-modified-at'
 
 # gem 'jekyll-lunr-js-search'
 

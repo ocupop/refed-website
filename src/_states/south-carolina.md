@@ -30,19 +30,19 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: SC ST § 15-74-10 to 40
+      - title: S.C. Code Ann. § 15-74-10—40
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: |-
-          Donor: Any donor
+          Donor: Any donor<br>
           Distributor: Nonprofit/charitable organization, food bank, or prepared and perishable food program
-        eligible_recipients: 'Bona fide charitable or nonprofit organization, food bank, or "prepared and perishable food program"'
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: No for donor; Yes for distributor
+        protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -73,11 +73,15 @@ policy_data:
 
 
 
+
+
           Any person who violates the garbage-feeding ban is guilty of
           a misdemeanor and may be enjoined from continuing the violation. Each
           day on which the violation occurs counts as a separate offense. The
           violator also will be fined or imprisoned. §§ 47-15-80, 47-4-130
           (2015).
+
+
 
 
 

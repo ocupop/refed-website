@@ -49,21 +49,21 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'M.G.L.A. 94 § 328, 105; Mass. Code Regs. 520.119'
+      - title: 'Mass. Gen. Laws Ann. Ch. 94, § 328<br> 105 Mass. Code Regs. 520.119'
         type_of_protection: Civil
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: |-
-          Donor: Any person
+          Donor: Any person<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Nonprofit corporation
-        standards_for_donated_food: 'Food must not be misbranded or adulterated, and must have been manufactured, processed, and prepared in compliance with department of health regulations'
-        protections_apply_when_recipient_pays_for_donated_food: Yes; Nonprofit must serve food free or at cost sufficient to cover only the costs of handling such food
-        protections_apply_to_direct_donations: 'No'
-        additional_protections: 'Explicitly allows donation of past-date food, as long as the food is wholesome, separated from foods that are not past-date, and clearly labeled as past-date'
+        eligible_recipients:
+        standards_for_donated_food: 'Food must not be misbranded or adulterated, and must have been manufactured, processed, and prepared in compliance with department of health regulations.'
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
+        protections_apply_to_direct_donations: 'Yes. Explicitly allows donation of past-date food, as long as the food is wholesome, separated from foods that are not past-date, and clearly labeled as past-date'
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -103,6 +103,10 @@ policy_data:
 
 
 
+
+
+
+
           The state shall inspect the premises of all permit-holding garbage
           treatment facilities semi-monthly. The state may revoke or refuse to
           issue a permit to an individual or facility that has violated the
@@ -112,10 +116,18 @@ policy_data:
 
 
 
+
+
+
+
           The state may require maintenance of records pertaining to the
           equipment used for heat-treating garbage fed to swine. Copies of these
           records must be submitted to the division upon request, and the
           division may examine these records. Ch. 129, § 14B (2015).
+
+
+
+
 
 
 

@@ -18,19 +18,19 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'Neb.Rev.St. § 25-21,189'
+      - title: 'Neb. Rev. Stat. § 25-21,189'
         type_of_protection: Civil
-        when_protection_will_not_apply: 'Donor not protected in cases of gross negligence, recklessness, or intentional misconduct; ultimate distributor is protected from liability in actions based on strict liability'
+        when_protection_will_not_apply: 'Donor not protected in cases of gross negligence, recklessness, or intentional misconduct; ultimate distributor is protected from liability in actions based on strict liability.'
         who_is_protected: |-
-          Donor: Any person
+          Donor: Any person<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
-        protections_apply_when_recipient_pays_for_donated_food: Ultimate distributor must distribute the food for free; donor is protected even if the ultimate distributor charges
+        protections_apply_when_recipient_pays_for_donated_food: Food recovery organization must distribute the food for free in order to receive protection; donor is protected even if the food recovery organization charges.
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -66,6 +66,8 @@ policy_data:
           shall not include material exempted by the Department of Agriculture.
           Only nonmeat materials may be so exempted. Neb. Rev. Stat. § 54-753.01
           (2015).
+
+
 
 
 

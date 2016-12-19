@@ -42,31 +42,22 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: O.R.S. § 30.890
+      - title: Or. Rev. Stat. § 30.890
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: >-
           Donor: Any person who operates a licensed or regulated restaurant or
-          food establishment ; any gleaner
+          food establishment; any gleaner<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or nonprofit organization
-        standards_for_donated_food: 'mmunity applies regardless of compliance with laws governing the packaging, labeling, storage, or handling of food; food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
-        protections_apply_when_recipient_pays_for_donated_food: Yes; Can be distributed for free or on a sliding scale reflecting ability to pay
-        protections_apply_to_direct_donations: 'No'
-        additional_protections:
-      - title:
-        type_of_protection:
-        when_protection_will_not_apply:
-        who_is_protected:
         eligible_recipients:
-        standards_for_donated_food:
-        protections_apply_when_recipient_pays_for_donated_food:
-        protections_apply_to_direct_donations:
+        standards_for_donated_food: 'Immunity applies regardless of compliance with laws governing the packaging, labeling, storage, or handling of food; food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade.'
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
+        protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -93,6 +84,8 @@ policy_data:
         enforcement: >-
           The state department of agriculture may quarantine any swine that are
           being fed garbage or offal. 600.105 (2015).
+
+
 
 
 

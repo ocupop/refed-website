@@ -23,15 +23,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: K.S.A. 65-687
+      - title: Kan. Stat. Ann. § 65-687
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Willful, wanton, malicious, or intentional misconduct'
-        who_is_protected: "Donor: A good faith donor \nDistributor: Nonprofit/charitable organization"
-        eligible_recipients: Bona fide charitable or not for profit organization
+        who_is_protected: |-
+          Donor: A good faith donor <br>
+          Distributor: Nonprofit/charitable organization
+        eligible_recipients:
         standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus; and must comply with K.S.A. 65-655'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
@@ -67,6 +69,8 @@ policy_data:
         enforcement: >-
           The state animal health commissioner is authorized to enforce the
           garbage-feeding ban. § 47-1304 (2015).
+
+
 
 
 

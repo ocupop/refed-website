@@ -47,21 +47,21 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: N.R.S. 41.491
+      - title: Nev. Rev. Stat. § 41.491
         type_of_protection: Civil
         when_protection_will_not_apply: Gross negligence or willful misconduct
         who_is_protected: |-
-          Donor: Person or employee of a person; gleaner
+          Donor: Person or employee of a person; gleaner<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Nonprofit charitable organization
-        standards_for_donated_food: 'Covers food that does not meet federal and state quality and labeling standards as long as a donor informs the nonprofit recipient, who must agree to recondition the food. The nonprofit must actually recondition the food to receive protection'
+        eligible_recipients:
+        standards_for_donated_food: 'Covers food that does not meet federal and state quality and labeling standards as long as a donor informs the nonprofit recipient, who must agree to recondition the food. The nonprofit must actually recondition the food to receive protection.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
-        protections_apply_to_direct_donations: Only to immediate family
-        additional_protections: 'A person to whom food has been donated who then donates that food without charge to immediate family members (but a donor who donates to such a person is not protected), and an owner or manager of property who allows a person to glean'
+        protections_apply_to_direct_donations: 'Yes'
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
@@ -96,8 +96,12 @@ policy_data:
 
 
 
+
+
           The state may cancel a food waste treatment permit if the permit holder
           violates the waste-feeding rule. NAC 571.160 (2015).
+
+
 
 
 

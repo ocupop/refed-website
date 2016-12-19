@@ -40,21 +40,21 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 14 M.R.S.A. § 166
+      - title: 'Me. Rev. Stat. tit. 14, § 166'
         type_of_protection: Civil
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: |-
-          Donor: A good faith donor
+          Donor: A good faith donor<br>
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Bona fide charitable or no-for-profit organization
-        standards_for_donated_food: 'Food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
+        eligible_recipients:
+        standards_for_donated_food: 'Food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
-        additional_protections: Hospitals and licensed healthcare facilities can receive donor protections
+        additional_protections:
   tax_incentives:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

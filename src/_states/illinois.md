@@ -34,21 +34,21 @@ policy_data:
       restricted_sales_on_expired_labels: false
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 745 ILCS 50/1 to 50/4
+      - title: 745 Ill. Comp. Stat. 50/1—50/4
         type_of_protection: Civil
         when_protection_will_not_apply: 'Willful, wanton, or reckless acts'
         who_is_protected: >-
           Donor: Wild game donor, farmer, food producer, processor, distributor,
           wholesaler, retailer, gleaner, or other individual (as long as that
           other individual donates food that has been inspected by state or
-          federal authorities)
+          federal authorities)<br>
 
           Distributor: Nonprofit/charitable organization
-        eligible_recipients: Not for profit corporation or charitable organization
+        eligible_recipients:
         standards_for_donated_food: Apparently fit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'

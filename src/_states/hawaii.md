@@ -27,20 +27,20 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: HRS § 145D-1 to D-5
+      - title: Haw. Rev. Stat. § 145D-1—D-5
         type_of_protection: Civil or Criminal
         when_protection_will_not_apply: Gross negligence or wanton acts or omissions
         who_is_protected: >-
           Donor: Person, partnership, corporation, company, or association
           engaged in the farming, processing, distribution, wholesale, or retail
-          of food products
+          of food products<br>
 
           Distributor: Nonprofit, charitable or religious organization
-        eligible_recipients: 'Charitable, religious, or nonprofit organization'
+        eligible_recipients:
         standards_for_donated_food: "Apparently fit for human consumption; and recipient organization must label food with a statement that it is not for resale, and that it was fit for human consumption when it left the organization's control"
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'

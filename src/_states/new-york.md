@@ -18,17 +18,17 @@ policy_data:
       restricted_sales_on_expired_labels: true
       restricted_donations_on_expired_labels: true
   liability_protection:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: 'NY AGRI & MKTS § 71-y to z'
+      - title: 'N.Y. Agric. & Mkts. Laww § 71-y—z'
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'If the donor has actual or constructive knowledge that the food is adulterated, tainted, contaminated, or harmful to health'
         who_is_protected: |-
-          Donor: Any good faith donor
+          Donor: Any good faith donor<br>
           Distributor: No protection for organizations accepting or distributing donations of perishable food
-        eligible_recipients: Bona fide charitable or nonprofit organization
+        eligible_recipients:
         standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
