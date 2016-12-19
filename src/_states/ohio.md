@@ -34,7 +34,8 @@ policy_data:
         excerpted_language_from_the_law: '(F)(iii)(d) The dealer shall assure that each package containing less than sixty-four fluid ounces of fresh or frozen shellfish shall have: . . . (ii) A “Sell by date” which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date when the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year will be added to the date.'
         legal_citation: 'Ohio Admin. Code 901:3-8-03 (2013).'
     label_regulation:
-      date_labels_required_for: 'Packaged Perishable Foods, Shellfish'
+      date_labels_required_for:
+        - perishables
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -92,6 +93,10 @@ policy_data:
 
 
 
+
+
+
+
           The garbage-feeding rule does not apply to an individual who feeds
           household garbage to his or her own swine, or feeds only bakery waste,
           candy waste, eggs, vegetables, or dairy products to swine. Nor does the
@@ -109,6 +114,10 @@ policy_data:
 
 
 
+
+
+
+
           Each licensed garbage heat-treatment facility shall maintain records
           relating to heat-treatment operations for one year. § 942.07 (2015).
         treatment_requirements: N/A
@@ -121,8 +130,16 @@ policy_data:
 
 
 
+
+
+
+
           The department of agriculture may inspect garbage heat-treatment
           facilities during regular business hours. § 942.06 (2015).
+
+
+
+
 
 
 
