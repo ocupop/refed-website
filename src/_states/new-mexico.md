@@ -28,8 +28,10 @@ policy_data:
         excerpted_language_from_the_law: 'Dairy products required to be labeled with a pull date and those dairy products labeled with an optional pull date, except frozen, dried, condensed or evaporated products, may not be sold or offered for sale for human consumption by any person after the pull date.'
         legal_citation: N.M. Code R. § 21.34.5.16 (2013).
     label_regulation:
-      date_labels_required_for: Milk/Dairy
+      date_labels_required_for:
+        - dairy
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -81,6 +83,10 @@ policy_data:
           Any individual or facility in violation of the garbage-feeding rule is
           guilty of a petty misdemeanor. Each day of violation counts as
           a separate offense. § 77-7-17 (2015).
+
+
+
+
 
 
 
