@@ -46,8 +46,11 @@ policy_data:
         excerpted_language_from_the_law: '(a) Label requirement. Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the following:[…] (2) For packages with a capacity of less than 1.87 L (1/2 gallon): the “sell by” or “best if used by” date.'
         legal_citation: 7 Pa. Code § 46.246 (2013).
     label_regulation:
-      date_labels_required_for: 'Milk, Shellfish'
+      date_labels_required_for:
+        - dairy
+        - shellfish
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -100,6 +103,10 @@ policy_data:
 
 
 
+
+
+
+
           All state and federal agencies or commissions are exempt from the
           licensure rules for garbage feeding. § 2388 (2015).
         treatment_requirements: 'Before being fed to domestic animals, garbage must be heated to a temperature of at least 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the department of agriculture. § 2376 (2015).'
@@ -112,9 +119,17 @@ policy_data:
 
 
 
+
+
+
+
           The department of agriculture may deny, suspend, or revoke the license
           of any individual or facility that violates the garbage-feeding rule.
           § 2379 (2015).
+
+
+
+
 
 
 
