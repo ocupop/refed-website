@@ -37,8 +37,11 @@ policy_data:
         excerpted_language_from_the_law: 'The purpose of these rules is to protect public health and safety by establishing an expiration date on all sandwiches beyond which each sandwich shall not be sold. These rules implement the procedures of the department of agriculture, markets, and food pursuant to RSA 438:26-b, dating prewrapped sandwiches.'
         legal_citation: N.H. Code Admin. R. Agr. 1412.01 (2013).
     label_regulation:
-      date_labels_required_for: 'Cream, Prewrapped Sandwiches'
+      date_labels_required_for:
+        - dairy
+        - sandwiches
       restricted_sales_on_expired_labels:
+        - sandwiches
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -97,8 +100,16 @@ policy_data:
 
 
 
+
+
+
+
           The commissioner of agriculture may revoke the permit of an individual
           or facility that violates the garbage-feeding rule. § 435.35 (2015).
+
+
+
+
 
 
 
@@ -107,6 +118,10 @@ policy_data:
           Any individual or facility that feeds raw garbage to swine shall be
           required to have such swine quarantined and tested for disease.
           § 435.36-a (2015).
+
+
+
+
 
 
 
