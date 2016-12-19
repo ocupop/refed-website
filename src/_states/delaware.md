@@ -14,7 +14,8 @@ policy_data:
         excerpted_language_from_the_law: '(A) Raw shucked shellfish shall be obtained in nonreturnable packages which bear: . . . (2) The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
         legal_citation: 4000 Del. Admin. Code §3-202.17 (2013).
     label_regulation:
-      date_labels_required_for: Shellfish
+      date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
