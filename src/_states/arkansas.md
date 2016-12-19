@@ -24,7 +24,8 @@ policy_data:
           capacity of 1.89 L (one-half gallon) or more
         legal_citation: Ark. Code Ann. § 007- 04-8 3-202.17 (2013).
     label_regulation:
-      date_labels_required_for: Shellfish
+      date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
