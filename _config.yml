@@ -43,14 +43,35 @@ collections:
     permalink: /states/:path  
 
 date_labels_required_for:
-  - Shellfish
-  - Eggs
+  - bakery
+  - dairy
+  - eggs
+  - hazardous foods
+  - infant formula
+  - meat
+  - perishables
+  - sandwiches
+  - shellfish
 restricted_sales_on_expired_labels:
-  - Shellfish
-  - Eggs
+  - bakery
+  - dairy
+  - eggs
+  - hazardous foods
+  - infant formula
+  - meat
+  - perishables
+  - sandwiches
+  - shellfish
 restricted_donations_on_expired_labels:
-  - Shellfish
-  - Eggs
+  - bakery
+  - dairy
+  - eggs
+  - hazardous Foods
+  - infant Formula
+  - meat
+  - perishables
+  - sandwiches
+  - shellfish
 
 
 # Build settings
