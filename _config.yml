@@ -29,9 +29,15 @@ defaults:
     policy_data:
       date_labeling:
         label_regulation:
-          date_labels_required_for: ["Shellfish","Eggs"]
-          restricted_sales_on_expired_labels: ["Shellfish","Eggs"]
-          restricted_donations_on_expired_labels: ["Shellfish","Eggs"]
+          date_labels_required_for:
+            - Shellfish
+            - Eggs
+          restricted_sales_on_expired_labels:
+            - Shellfish
+            - Eggs
+          restricted_donations_on_expired_labels:
+            - Shellfish
+            - Eggs
     _hide_content: true
 
 collections:
