@@ -26,9 +26,9 @@ policy_data:
         excerpted_language_from_the_law: '(2) Packages containing less than sixty-four (64) fluid ounces shall include: (a) The words “SELL BY” or “BEST IF USED BY” followed by a reasonable date when the product would be expected to reach the end of its shelf life; (b) The date as a month and day of the month; and (c) For fresh frozen shellfish, the year shall be added to the date.'
         legal_citation: S.C. Code Ann. Regs. 61-47 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Eggs, Shellfish'
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: 'Eggs, Shellfish'
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

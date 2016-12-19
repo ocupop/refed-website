@@ -59,9 +59,9 @@ policy_data:
         excerpted_language_from_the_law: '(n)(1) Raw shucked shellfish, packaging and identification requirements include the following: . . . ii. The “sell by” date for packages with a capacity of less than one-half gallon or the date shucked for packages with a capacity of one-half gallon or more.'
         legal_citation: 'N.J. Admin. Code § 8:24-3.2 (2013).'
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for:
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

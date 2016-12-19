@@ -19,9 +19,9 @@ policy_data:
           or similar language.
         legal_citation: Kan. Stat. Ann. § 2-2509 (2013).
     label_regulation:
-      foods_for_which_date_is_required: Eggs
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: Eggs
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

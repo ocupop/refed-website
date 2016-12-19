@@ -41,9 +41,9 @@ policy_data:
         excerpted_language_from_the_law: (c) Any container of shucked shellfish which has a capacity of 64 fluid ounces or more shall be dated as of the date shucked on both the lid and sidewall or bottom. Any container of shucked shellfish which has a capacity of less than 64 fluid ounces shall indicate a SELL BY date.
         legal_citation: 15A N.C. Admin. Code 18A.0614 (2013).
     label_regulation:
-      foods_for_which_date_is_required: Shellfish
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: Shellfish
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

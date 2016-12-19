@@ -29,9 +29,9 @@ policy_data:
         excerpted_language_from_the_law: '(1) When 12 days or more have passed following pasteurization of a unit of grade A milk, there will be no quantities of that unit of milk sold or otherwise offered for public consumption. (2) No grade A pasteurized milk may be put in any container marked with a sell-by date which is more than 12 days after pasteurization of the milk for sale in Montana. (3) Unless otherwise agreed upon, the person who offers the milk for sale to the public is responsible for removing the milk at or before the expiration of the 12 days.'
         legal_citation: Mont. Admin. R. 32.8.202 (2013).
     label_regulation:
-      foods_for_which_date_is_required: Milk
-      sale_after_date_permitted: false
-      donation_after_date_premitted: false
+      date_labels_required_for: Milk
+      restricted_sales_on_expired_labels: false
+      restricted_donations_on_expired_labels: false
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

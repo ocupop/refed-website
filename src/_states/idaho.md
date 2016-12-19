@@ -14,9 +14,9 @@ policy_data:
         excerpted_language_from_the_law:
         legal_citation:
     label_regulation:
-      foods_for_which_date_is_required: None
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: None
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

@@ -8,3 +8,4 @@ publish
 _site
 bower_components
 *.log
+notes.txt

@@ -14,9 +14,9 @@ policy_data:
         excerpted_language_from_the_law: 'R. 1. Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the: . . . b. The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
         legal_citation: '12-5 Vt. Code R. § 30:5-204 (2013).'
     label_regulation:
-      foods_for_which_date_is_required: Shellfish
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: Shellfish
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

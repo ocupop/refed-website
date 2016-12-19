@@ -49,9 +49,9 @@ policy_data:
         excerpted_language_from_the_law: '(1) Packages of potentially hazardous foods bearing an open date statement are not to be repacked or relabeled or otherwise altered in a manner that would change the open date statement originally placed on the package. It is not permissible to reprocess products by freezing, slicing, grinding, cubing, dicing, marinating, chopping, or other similar methods unless the original open date statement is maintained on the product label.'
         legal_citation: Ala. Admin. Code r. 80- 1-22-.36 (2013).
     label_regulation:
-      foods_for_which_date_is_required:
-      sale_after_date_permitted: false
-      donation_after_date_premitted: true
+      date_labels_required_for:
+      restricted_sales_on_expired_labels: false
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

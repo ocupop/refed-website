@@ -37,9 +37,9 @@ policy_data:
         excerpted_language_from_the_law: 'The purpose of these rules is to protect public health and safety by establishing an expiration date on all sandwiches beyond which each sandwich shall not be sold. These rules implement the procedures of the department of agriculture, markets, and food pursuant to RSA 438:26-b, dating prewrapped sandwiches.'
         legal_citation: N.H. Code Admin. R. Agr. 1412.01 (2013).
     label_regulation:
-      foods_for_which_date_is_required: 'Cream, Prewrapped Sandwiches'
-      sale_after_date_permitted: false
-      donation_after_date_premitted: true
+      date_labels_required_for: 'Cream, Prewrapped Sandwiches'
+      restricted_sales_on_expired_labels: false
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

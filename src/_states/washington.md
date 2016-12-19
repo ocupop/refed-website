@@ -39,9 +39,9 @@ policy_data:
         excerpted_language_from_the_law: 'Can pull dates be changed? No, pull dates on perishable packaged foods subject to pull dating may not be changed, crossed-out or concealed.'
         legal_citation: Wash. Admin. Code § 16-142-150 (2013).
     label_regulation:
-      foods_for_which_date_is_required: Perishable Packaged Food Goods
-      sale_after_date_permitted: true
-      donation_after_date_premitted: true
+      date_labels_required_for: Perishable Packaged Food Goods
+      restricted_sales_on_expired_labels: true
+      restricted_donations_on_expired_labels: true
   liability_protection:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
