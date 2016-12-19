@@ -33,8 +33,10 @@ policy_data:
         excerpted_language_from_the_law: 4.1 No shell eggs may be offered for sale or sold to a consumer or restaurant more than 45 days after the pack date.
         legal_citation: '8 Colo. Code Regs. § 1202-10:4.0 (2013).'
     label_regulation:
-      date_labels_required_for: Eggs
+      date_labels_required_for:
+        - eggs
       restricted_sales_on_expired_labels:
+        - eggs
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
