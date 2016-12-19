@@ -58,6 +58,10 @@ food_items:
   - Shellfish
   - Eggs
 
+date_labels_required_for:
+  - Shellfish
+  - Eggs
+
 # Build settings
 safe: false
 source: src
