@@ -177,6 +177,7 @@ header: U.S. Food Waste Policy Finder
     $el.find('.map-filter, .map-subfilter, .study-filter').on('click', function() {
       var checked = this.checked ? true : false;
       var bp = $(this).hasClass('study-filter');
+      var sf = $(this).hasClass('map-subfilter');
       var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
       window.console.log ($(this), bp);
 
@@ -191,10 +192,17 @@ header: U.S. Food Waste Policy Finder
           checked: false
         });
         if(!bp) {
-          $el.find('.map-filter, .map-subfilter').not(this).prop({
-            indeterminate: false,
-            checked: false
-          });
+          if(sf) {
+            $el.find('.map-filter').not($(this).closest('.map-filter')).prop({
+              indeterminate: false,
+              checked: false
+            });
+          } else {
+            $el.find('.map-filter, .map-subfilter').not(this).prop({
+              indeterminate: false,
+              checked: false
+            });
+          }
         }
 
         if(showStudies) {
