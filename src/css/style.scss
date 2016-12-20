@@ -1294,6 +1294,10 @@ a.external {
   color: rgba(0,0,0,0.5);
 }
 
+.text-prevention { color: $prevention-color; }
+.text-recovery { color: $recovery-color; }
+.text-recycle, .text-recycling { color: $recycle-color; }
+
 
 /* -----------------------------------------
    Search

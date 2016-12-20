@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45 45" enable-background="new 0 0 45 45" xml:space="preserve">
+<g id="bottom">
+	<g>
+		<g>
+			<circle fill="#88A65B" cx="22.5" cy="22.5" r="18.751"/>
+			<path fill="#FFFFFF" d="M22.5,42.251c-10.891,0-19.751-8.86-19.751-19.751S11.609,2.749,22.5,2.749s19.751,8.86,19.751,19.751
+				S33.391,42.251,22.5,42.251z M22.5,4.749c-9.788,0-17.751,7.963-17.751,17.751S12.712,40.251,22.5,40.251
+				S40.251,32.288,40.251,22.5S32.288,4.749,22.5,4.749z"/>
+		</g>
+		<polygon fill="#FFFFFF" points="22.5,11.947 24.991,20.009 33.053,20.009 26.531,24.991 29.022,33.053 22.5,28.07 15.978,33.053 
+			18.469,24.991 11.947,20.009 20.009,20.009 		"/>
+	</g>
+</g>
+<g id="pie_layer">
+</g>
+<g id="Pie_Layer_2" display="none">
+</g>
+<g id="meals_saved" display="none">
+</g>
+<g id="consumer_ed_hover" display="none">
+</g>
+<g id="pop_up" display="none">
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_8">
+</g>
+</svg>
