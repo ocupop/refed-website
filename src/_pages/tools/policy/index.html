@@ -10,9 +10,6 @@ header: U.S. Food Waste Policy Finder
 
 {% include policy/policynav_map.html %}
 
-<!-- <section class="alt" style="padding: 10px 0;">
-  {% include policy/explore_state_navigation.html %}
-</section> -->
 <section class="transparent">
   {% include policy/page_header.html %}
   <div class="container mobilenav">
@@ -123,10 +120,6 @@ header: U.S. Food Waste Policy Finder
       return false;
   });
 
-  $('.collapse').on('show.bs.collapse', function() {
-    $('#policynav .collapse').not($(this)).collapse('hide');
-  });
-
   $('.map-filter, .map-subfilter').on('change', function(e) {
     var checked = $(this).prop("checked"),
         container = $(this).parent(),
@@ -191,6 +184,7 @@ header: U.S. Food Waste Policy Finder
         var showStudies = $el.find('.study-filter:checked').length;
         var section = $(this).closest('.section_root').attr('data-section');
         var activeClass = cat + " " + section;
+        $(this).siblings('.collapse').collapse('show');
 
         $el.siblings('.nav_category').find('input[type="checkbox"]').prop({
           indeterminate: false,
@@ -220,6 +214,10 @@ header: U.S. Food Waste Policy Finder
         }
 
       }
+    });
+
+    $el.find('.collapse').on('show.bs.collapse', function() {
+      $el.siblings('.nav_category').find('.collapse').collapse('hide');
     });
   });
 
