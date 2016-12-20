@@ -143,7 +143,7 @@ liability_protection:
         - massachusetts
 tax_incentives:
   title: Tax Incentives
-  definition: Reveal states that offer tax incentives
+  definition: Reveal states that offer additional tax incentives beyond federal incentives
   case_studies:
     - title: California tax incentives
       summary: 'California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability.'
@@ -156,8 +156,8 @@ tax_incentives:
       lat: 37.926866
       long: -83.9472357
   filters:
-    - title: "States that o\x1Fffer additional tax incentives beyond federal incentives"
-      definition: "States that o\x1Fffer additional tax incentives beyond federal incentives"
+    - title: "States that offer additional tax incentives beyond federal incentives"
+      definition: "States that offer additional tax incentives beyond federal incentives"
       states:
         - arizona
         - california
@@ -260,7 +260,7 @@ animal_feed:
         - wyoming
 organics_recycling_mandates:
   title: 'Organic Waste Bans & Waste Recycling Laws'
-  definition: Reveal states and municipalities that have food waste recycling regulations.
+  definition: "Reveal states and municipalities that have enacted Organic Waste Bans & Waste Recycling Laws."
   case_studies:
     - title: San Francisco
       summary: 'San Francisco has passed laws requiring businesses and households to sort their waste into separate categories. The separated organic materials, including food waste, are placed in appropriate composting bins rather than with the rest of the garbage. In order to facilitate these laws at the residential level, property owners, including owners and managers of multi-family housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials. Individual residents can receive compost carts from the city at no cost.'
@@ -273,7 +273,7 @@ organics_recycling_mandates:
       lat: 43.8682565
       long: -73.568751
   filters:
-    - title: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
+    - title: 'States / municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       definition: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       states:
         - california
