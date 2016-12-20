@@ -11,9 +11,9 @@
       </div>
       <div class="col-md-8">
         <div class="content">
-          <ol class="quiz">
-            <li class="question">For which foods does the federal government regulate date labels? Check all that apply.
-              <ul class="">
+          <ol id="date_label_quiz" class="quiz">
+            <li class="question incomplete">For which foods does the federal government regulate date labels? Check all that apply.
+              <ul class="choices">
                 <li class="checkbox">
                   <input id="milk" type="checkbox" value="">
                   <label for="milk">
@@ -57,8 +57,8 @@
                 </li>
               </ul>
             </li>
-            <li class="question">Which of these labels relate to product safety?<br>Check all that apply.
-              <ul class="">
+            <li class="question incomplete">Which of these labels relate to product safety?<br>Check all that apply.
+              <ul class="choices">
                 <li class="checkbox">
                   <input id="sell-by" type="checkbox" value="">
                   <label for="sell-by">
@@ -123,8 +123,8 @@
                 </li>
               </ul>
             </li>
-            <li class="question">Who is responsible for determining what date goes on a particular food?
-              <ul class="">
+            <li class="question incomplete">Who is responsible for determining what date goes on a particular food?
+              <ul class="choices">
                 <li class="checkbox">
                   <input id="usda" type="checkbox" value="">
                   <label for="usda">
@@ -161,8 +161,8 @@
                 </li>
               </ul>
             </li>
-            <li class="question">What percentage of Americans report occasionally throwing away foods that have reached or exceeded the date on the label?
-              <ul class="">
+            <li class="question incomplete">What percentage of Americans report occasionally throwing away foods that have reached or exceeded the date on the label?
+              <ul class="choices">
                 <li class="checkbox">
                   <input id="17" type="checkbox" value="">
                   <label for="17">
@@ -199,8 +199,8 @@
                 </li>
               </ul>
             </li>
-            <li class="question">How many states restrict selling some foods paste the date on the label?
-              <ul class="">
+            <li class="question incomplete">How many states restrict selling some foods paste the date on the label?
+              <ul class="choices">
                 <li class="checkbox">
                   <input id="none" type="checkbox" value="">
                   <label for="none">
@@ -237,6 +237,24 @@
                 </li>
               </ul>
             </li>
+            <div class="grade well">
+              <h3 class="results_title">Quiz Results - <small><span class="results_correct">X</span>/5 Correct</small></h3>
+              <p class="results_message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="results_message good">Congratulations! You already know a lot about how food date labeling practices and policies are contributing to food waste. </p>
+
+              <p class="results_message good">Next, see how different state-level policies affect food waste, and explore potential federal policy solutions to the problem.</p>
+
+              <p class="results_message poor">Thanks for taking the quiz! We hope you learned something new about how date labeling practices and regulations are contributing to food waste.</p>
+
+              <p class="results_message poor">Next, see how different state-level policies affect food waste, and explore potential federal policy solutions to the problem.</p>
+
+              <a href="#" class="button">Learn more &gt;</a>
+            </div>
           </ol>
         </div>
       </div>
@@ -244,15 +262,44 @@
   </div>
 </section>
 <script>
-  $('.checkbox input').on('change', function(){
-    $(this).closest("ul")
-      .addClass("active")
-      .find('input[type="checkbox"]:checked')
-      .each(function(){
-        var test = $(this).parent().hasClass('correct');
-        if(!test){
-          $(this).parent().addClass('incorrect');
-        }
-      })
+  function checkTest() {
+    var incomplete = $('.incomplete').length;
+    if(!incomplete) { gradeTest(); }
+  }
+  function gradeTest() {
+    // Tally score
+    var wrong = $('.incorrect').length;
+    var score = 5 - wrong;
+    var grade = score < 4 ? 'poor' : 'good'
+
+    // Update DOM with message and score
+    $('.grade').addClass(grade).find('.results_correct').text(score).end().show();
+
+    // Mark as complete
+    $('#date_label_quiz').addClass("complete");
+  }
+  function checkAnswer($question) {
+    window.console.log("HELLO:",$question);
+    var $guess = $question.find('input[type="checkbox"]:checked');
+    var test = $guess.parent().hasClass('correct');
+
+    $question.find('.choices').addClass('active');
+    if(!test){
+      $guess.parent().addClass('incorrect');
+    }
+    $question.removeClass('incomplete');
+    checkTest();
+  }
+  $('.question').each(function() {
+    var $question = $(this);
+    var $choices = $question.find('.checkbox input');
+
+    $choices.on('change', function() {
+      // disable all choices
+      $choices.attr('disabled', true);
+
+      // check answer
+      checkAnswer($question);
+    });
   });
 </script>

@@ -54,60 +54,8 @@
   }
 }
 
-.quiz {
-  li {
-    text-transform: uppercase;
-  }
-  .checkbox {
-    padding: 7px;
-    margin: 10px 0;
-    background: $gray-lighter;
-    font-weight: 300;
-  }
-  ul {
-    &.active {
-      .correct {
-        background-color: $green;
-        color: $gray-dark;
-      }
-      .incorrect {
-        background-color: $red;
-        color: $gray-dark;
-      }
-      .answer {
-        display: block;
-      }
-    }
-    li {
-      transition: all .5s ease;
-      label {
-        font-weight: 300;
-      }
-    }
-  }
-  .answer {
-    padding-left: 0;
-    display: none;
-    transition: all .5s ease;
-  }
-  .panel {
-    padding: 20px;
-    h4 {
-      margin-top: 0;
-      font-style: italic;
-      font-weight: 400;
-    }
-    p {
-      font-size: 13px;
-      text-transform: none;
-      font-weight: 300;
-    }
-  }  
-}
-
 //tab specific
 
-//date label policy tab
 #date-label-policy-issues {
   .panel-body {
     padding: 30px;
