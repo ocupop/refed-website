@@ -116,6 +116,16 @@ body.policy_tool_layout {
     font-size: 13px;
     width: auto;
   }
+  .case-studies-filter {
+    margin: 0 30px;
+    font-style: italic;
+    border-bottom: 1px solid $cream;
+    padding: 15px 0;
+    img {
+      width: 18px;
+      margin-top: -2px;
+    }
+  }
 }
 
 // TODO - refactor section classes to make more global
