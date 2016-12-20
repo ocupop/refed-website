@@ -38,8 +38,10 @@ policy_data:
         excerpted_language_from_the_law: 'No person shall: (1) Alter, deface or remove the open date from any perishable food retail or shipping package carton, container or wrapper. (2) Label any perishable food retail or shipping package carton, container or wrapper in a manner that does not conform to the rules promulgated pursuant to ORS 616.835.'
         legal_citation: Or. Rev. Stat. § 616.830 (2013).
     label_regulation:
-      date_labels_required_for: Packaged Perishable Foods
+      date_labels_required_for:
+        - perishables
       restricted_sales_on_expired_labels:
+        - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -84,6 +86,10 @@ policy_data:
         enforcement: >-
           The state department of agriculture may quarantine any swine that are
           being fed garbage or offal. 600.105 (2015).
+
+
+
+
 
 
 

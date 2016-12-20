@@ -23,7 +23,9 @@ policy_data:
         excerpted_language_from_the_law: (a) Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the . . . (2) The “sell by” or “best if used by” date for packages with a capacity of less than 1.89 L (one-half gallon) or the date shucked for packages with a capacity of 1.89 L (one-half gallon) or more.
         legal_citation: 'Okla. Admin. Code § 310:257-5-15 (2013).'
     label_regulation:
-      date_labels_required_for: 'Eggs, Shellfish'
+      date_labels_required_for:
+        - eggs
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:

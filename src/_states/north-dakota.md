@@ -24,7 +24,8 @@ policy_data:
           or more.
         legal_citation: N.D. Admin. Code 33- 33-04-03.1 (2013).
     label_regulation:
-      date_labels_required_for: Shellfish
+      date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:

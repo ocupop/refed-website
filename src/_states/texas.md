@@ -15,6 +15,7 @@ policy_data:
         legal_citation: 25 Tex. Admin. Code § 241.66 (2013).
     label_regulation:
       date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -70,6 +71,10 @@ policy_data:
 
           (C) refuse accumulations of animal matter or commingled animal and
           vegetable matter, liquid or otherwise.
+
+
+
+
 
 
 

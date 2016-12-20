@@ -41,7 +41,8 @@ policy_data:
         excerpted_language_from_the_law: (c) Any container of shucked shellfish which has a capacity of 64 fluid ounces or more shall be dated as of the date shucked on both the lid and sidewall or bottom. Any container of shucked shellfish which has a capacity of less than 64 fluid ounces shall indicate a SELL BY date.
         legal_citation: 15A N.C. Admin. Code 18A.0614 (2013).
     label_regulation:
-      date_labels_required_for: Shellfish
+      date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -95,6 +96,10 @@ policy_data:
 
 
 
+
+
+
+
           Individuals in charge of restaurants, cafes, schools, hospitals, or
           other public or private places where food is served must not allow
           garbage to be removed from the premises unless the individual moving
@@ -111,6 +116,10 @@ policy_data:
 
 
 
+
+
+
+
           Any individual or facility that violates the garbage-feeding rule is
           guilty of a Class 1 misdemeanor and may be enjoined from continuing the
           violation. § 106-405.9 (2015).
@@ -119,8 +128,16 @@ policy_data:
 
 
 
+
+
+
+
           The commissioner of agriculture may revoke an individual or facility’s
           permit if they violate the garbage-feeding rule. § 106-405.4 (2015).
+
+
+
+
 
 
 
