@@ -237,17 +237,26 @@ layout: policy_tool
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          {% if waste.legislation %}
           {% for item in waste.legislation %}
-          <h3>{{ item.title }}</h3>
-          <dl class="dl-policy">
-            <dt>Generators Covered</dt>
-            <dd>{{ item.generators_covered }}</dd>
-            <dt>Waste Production</dt>
-            <dd>{{ item.waste_production }}</dd>
-            <dt>Exemptions for distance from organics processing facility</dt>
-            <dd>{{ item.exemptions_for_distance_from_organics_processing_facility }}</dd>
-          </dl>
-          {% endfor %}
+            <h3>{{ item.title }}</h3>
+            <dl class="dl-policy">
+              <dt>Generators Covered</dt>
+              <dd>{{ item.generators_covered }}</dd>
+              <dt>Waste Production</dt>
+              <dd>{{ item.waste_production }}</dd>
+              <dt>Exemptions for distance from organics processing facility</dt>
+              <dd>{{ item.exemptions_for_distance_from_organics_processing_facility }}</dd>
+            </dl>
+            {% endfor %}
+          {% else %}
+            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          {% endif %}
         </div>
       </div>
     </div>
