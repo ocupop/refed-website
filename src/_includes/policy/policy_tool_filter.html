@@ -9,19 +9,19 @@
   </label>
   {% if section.filters.size > 1 %}
     <button class="toggle" data-toggle="collapse" data-target="#{{ section.title | slugify }}_subfilters">View {{ section.title }} categories <span class="caret"></span></button>
-    <ul id="{{ section.title | slugify }}_subfilters" class="collapse">
-      {% for filter in section.filters %}
-        <li class="checkbox">
-          <input id='{{ section.title | slugify }}_filter_{{ forloop.index }}'
-            type='checkbox'
-            class='map-subfilter'
-            data-states='{{ filter.states | jsonify }}'>
-          <label for="{{ section.title | slugify }}_filter_{{ forloop.index }}">
-            <span></span>
-            {{ filter.title }}
-          </label>
-        </li>
-      {% endfor %}
-    </ul>
   {% endif %}
+  <ul id="{{ section.title | slugify }}_subfilters" class="collapse">
+    {% for filter in section.filters %}
+      <li class="checkbox">
+        <input id='{{ section.title | slugify }}_filter_{{ forloop.index }}'
+          type='checkbox'
+          class='map-subfilter'
+          data-states='{{ filter.states | jsonify }}'>
+        <label for="{{ section.title | slugify }}_filter_{{ forloop.index }}">
+          <span></span>
+          {{ filter.title }}
+        </label>
+      </li>
+    {% endfor %}
+  </ul>
 </li>

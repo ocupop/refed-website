@@ -22,6 +22,9 @@
     border-bottom: 10px solid #fff;
     border-left: 10px solid transparent;
   }
+  .title {
+    font-weight: 600;
+  }
   .button {
     margin-bottom: 0;
     &.recovery { display: none; }

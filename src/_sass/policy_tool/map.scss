@@ -65,52 +65,5 @@
 
 }
 
-.map-legend {
-  position: absolute;
-  bottom: 3%;
-  right: 28%;
-  text-align: left;
-  .legend-key {
-    display: none;
-    position: relative;
-    &.icon-key {
-      svg, .box {
-        position: absolute;
-        top: 4px;
-        left: 0;
-      }
-      .box, .circle {
-        width: 30px;
-        height: 30px;
-      }
-      .circle {
-        border-radius: 50%;
-        position: absolute;
-        background-color: #bdcca1;
-      } 
-      h5 {
-        padding-left: 40px;
-      }
-    }
-    &.gradient-key {
-      padding: 0 20px;
-      border-left: 1px solid $cream;
-    }
-    h5 {
-      font-weight: 400;
-      color: $text-color;
-    }
-    ul {
-      li {
-        position: relative;
-        padding: 5px 0;
-        h5 {
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-}
-
 
 
