@@ -1,0 +1,30 @@
+#tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+  z-index: 9;
+  &.active {
+    display: block;
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+  }
+  .button {
+    margin-bottom: 0;
+    &.recovery { display: none; }
+    &.recycle { display: none; }
+  }
+}
