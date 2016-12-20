@@ -18,12 +18,12 @@ layout: policy_tool
           <!-- food date requirements need to go here ... -->
           <div class="row">
             <div class="col-xs-12 col-md-4">
-              <div class="panel icon-panel">
+              <div class="panel icon-panel" style="height: 310px">
                 <h3>Date Label<br>Required For</h3>
                 <div class="content">
                   <div class="row middle-xs">
-                    {% for item in page.policy_data.date_labels_required_for %}
-                    <div class="col-xs-3 text-center">
+                    {% for item in labeling.label_regulation.date_labels_required_for %}
+                    <div class="col-xs-4 text-center">
                       <i class="icon-twitter"></i>
                       <h6>{{ item }}</h6>
                     </div>
@@ -37,35 +37,31 @@ layout: policy_tool
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <div class="panel icon-panel">
+              <div class="panel icon-panel" style="height: 310px">
                 <h3>Sale After Date<br>Restricted For</h3>
                 <div class="content">
                   <div class="row middle-xs">
-                    <div class="col-xs-3 text-center">
+                    {% for item in labeling.label_regulation.restricted_sales_on_expired_labels %}
+                    <div class="col-xs-4 text-center">
                       <i class="icon-twitter"></i>
-                      <h6>Dairy</h6>
+                      <h6>{{ item }}</h6>
                     </div>
-                    <div class="col-xs-3 text-center">
-                      <i class="icon-twitter"></i>
-                      <h6>Shellfish</h6>
-                    </div>
+                    {% endfor %}
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <div class="panel icon-panel">
+              <div class="panel icon-panel" style="height: 310px">
                 <h3>Donation After<br>Date Restricted</h3>
                 <div class="content">
                   <div class="row middle-xs">
-                    <div class="col-xs-3 text-center">
+                    {% for item in labeling.label_regulation.restricted_donations_on_expired_labels %}
+                    <div class="col-xs-4 text-center">
                       <i class="icon-twitter"></i>
-                      <h6>Dairy</h6>
+                      <h6>{{ item }}</h6>
                     </div>
-                    <div class="col-xs-3 text-center">
-                      <i class="icon-twitter"></i>
-                      <h6>Shellfish</h6>
-                    </div>
+                    {% endfor %}
                   </div>
                 </div>
               </div>
