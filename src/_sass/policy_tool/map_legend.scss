@@ -1,16 +1,22 @@
 .map-legend {
   position: absolute;
-  bottom: 3%;
-  right: 28%;
+  bottom: -60px;
+  right: 0;
   text-align: left;
+  width: 400px;
   .legend-key {
     display: none;
     position: relative;
     &.icon-key {
-      svg, .box {
+      svg, .box, .circle {
         position: absolute;
         top: 4px;
-        left: 0;
+        left: -45px;
+      }
+      &.organic-waste-bans-waste-recycling-laws-key {
+        .box, .circle {
+          left: 0;
+        }
       }
       .box, .circle {
         width: 30px;
@@ -21,13 +27,19 @@
         position: absolute;
         background-color: #bdcca1;
       } 
-      h5 {
-        padding-left: 40px;
-      }
+      h5 {}
     }
     &.gradient-key {
       padding: 0 20px;
       border-left: 1px solid $cream;
+    }
+
+    small {
+      font-size: 11px;
+      color: $text-color;
+      a {
+        text-transform: uppercase;
+      }
     }
     h5 {
       font-weight: 400;
@@ -36,10 +48,24 @@
     ul {
       li {
         position: relative;
-        padding: 5px 0;
+        display: block;
+        float: left;
+        padding: 5px 40px 5px 50px;
         h5 {
           margin-top: 5px;
         }
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .map-legend {
+    right: auto;
+    left: 25%;
+    .legend-key {
+      &.icon-key {
+        border-left: none;
       }
     }
   }
