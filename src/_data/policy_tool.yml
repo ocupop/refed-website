@@ -94,21 +94,16 @@ liability_protection:
       state: california
       lat: 36.778259
       long: -119.417931
-    - title: Liability protection when nonprofits charge needy individuals for food.
-      summary: "Oregon's law provides liability protection when a nonprofit food recovery organization charges the final recipient 'on a scale reflecting ability to pay or only requiring a shared maintenance contribution.'"
+    - title: OregonLiability Protection
+      summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards.\_However, some states, like\_Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies \"regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.\" This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
       state: oregon
       lat: 44.1199746
       long: -122.7804332
-    - title: Liability protection for food service establishments and retail stores donating directly to final recipients.
-      summary: "New Hampshire provides liability protection to donors donating to a 'needy individual or individuals or to a bona fide charitable or non-profit organization.'"
+    - title: New Hampshire Liability Protection
+      summary: 'The majority of state liability protection statutes provide liability protection only for food donated to a nonprofit food recovery organization, which then distributes the food to end users. However, some states, like New Hampshire, provide liability protection to donors donating to a "needy individual or individuals or to a bona fide charitable or nonprofit organization." Extending protections to direct donations could help increase efficiency and enable timely use of perishable food.'
       state: new-hampshire
       lat: 43.9957512
       long: -72.7008387
-    - title: Liability protection for food service establishments and retail stores donating directly to final recipients.
-      summary: "Oregon's statute states that liability protection applies 'regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.' This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
-      state: oregon
-      lat: 44.1199746
-      long: -122.7804332
   filters:
     - title: Protections apply when end recipient pays for the donated food
       definition: Protections apply when end recipient pays for the donated food
