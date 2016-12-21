@@ -7,6 +7,16 @@ date_labeling:
       state: montana
       lat: 46.657895
       long: -112.2869638
+    - title: Does Not Require or Regulate Date Labels
+      summary: 'New York City is an example of a government choosing to eliminate unnecessary date labels. New York City used to require dates on milk, even though the state of New York imposes no date labeling requirements on any foods. The city repealed its date labeling requirement for milk in 2010 to harmonize with state regulations. The city recognized that its date label requirement was not necessary to protect public health because milk, if handled properly, is still safe to consume even after the date passes (and if handled improperly, the date is irrelevant in any case).'
+      state: new-york
+      lat: '40.7128'
+      long: '74.0059'
+    - title:
+      summary:
+      state:
+      lat:
+      long:
   filters:
     - title: No date label regulations
       definition: 'These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.'
@@ -156,8 +166,8 @@ tax_incentives:
       lat: 37.926866
       long: -83.9472357
   filters:
-    - title: "States that offer additional tax incentives beyond federal incentives"
-      definition: "States that offer additional tax incentives beyond federal incentives"
+    - title: States that offer additional tax incentives beyond federal incentives
+      definition: States that offer additional tax incentives beyond federal incentives
       states:
         - arizona
         - california
@@ -260,7 +270,7 @@ animal_feed:
         - wyoming
 organics_recycling_mandates:
   title: 'Organic Waste Bans & Waste Recycling Laws'
-  definition: "Reveal states and municipalities that have enacted Organic Waste Bans & Waste Recycling Laws."
+  definition: 'Reveal states and municipalities that have enacted Organic Waste Bans & Waste Recycling Laws.'
   case_studies:
     - title: San Francisco
       summary: 'San Francisco has passed laws requiring businesses and households to sort their waste into separate categories. The separated organic materials, including food waste, are placed in appropriate composting bins rather than with the rest of the garbage. In order to facilitate these laws at the residential level, property owners, including owners and managers of multi-family housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials. Individual residents can receive compost carts from the city at no cost.'
