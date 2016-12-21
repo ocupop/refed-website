@@ -84,11 +84,11 @@ liability_protection:
   title: Liability Protection
   definition: Reveal states that offer liability protection
   case_studies:
-    - title: Liability protection when nonprofits charge needy individuals for food.
-      summary: 'Massachusetts’ law allows nonprofit food recovery organizations to charge recipients for food at a level high enough to “cover the cost of handling such food” without sacrificing liability protection. So long as the food recovery organization does not make a profit off the distribution, it will be shielded from liability. The passage of the Massachusetts’ law allowed for the creation of Daily Table, a not-for-profit retail store that sells food recovered from supermarkets, growers and food distributors that would otherwise have been wasted at prices affordable to low-income consumers.'
-      state: massachusetts
-      lat: 42.0615048
-      long: -72.2788299
+    - title: Wisconsin Liability Protection
+      summary: "A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient.\_Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food\_\"at a price not to exceed overhead and transportation costs\"\_without sacrificing liability protection. States that\_provide this protection\_offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
+      state: wisconsin
+      lat: 43.7844
+      long: -88.7879
     - title: Liability protection when nonprofits charge needy individuals for food.
       summary: "Arizona's law provides liability protection for nonprofit food recovery organizations charging final recipients for food by defining donation as giving food for a 'fee significantly less than the value of the item.'"
       state: arizona
