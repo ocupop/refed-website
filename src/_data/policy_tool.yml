@@ -150,16 +150,21 @@ tax_incentives:
   title: Tax Incentives
   definition: Reveal states that offer additional tax incentives beyond federal incentives
   case_studies:
-    - title: California tax incentives
-      summary: 'California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit charitable organization. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred by the taxpayer in connection with the transportation of that donated agricultural product. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability.'
+    - title: California Tax Incentives
+      summary: "California helps alleviate the costs associated with food donation by o\x1Fffering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
       state: california
       lat: 37.1871655
       long: -120.7612299
-    - title: Virginia tax incentives
-      summary: 'In 2016, the Virginia General Assembly established the Food Crop Donation Tax Credit. The credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops and no tax payer is allowed to claim more than $5,000 in credits each year.'
+    - title: Virginia Tax Incentives
+      summary: "State tax incentives can provide an opportunity to target incentives to certain food producers, like farmers and small businesses, that often do not sufficiently benefit from federal tax incentives. For example, Virginia's Food Crop Donation Tax Credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops; claims are capped at $5,000 per year."
       state: virginia
       lat: 37.926866
       long: -83.9472357
+    - title: South Carolina Tax Incentives
+      summary: 'South Carolina provides a tax credit for licensed meat packers, butchers or processing plants that contract with charitable organizations to process deer for donation to those in need. The deer in question are typically hunted for sport and would not be eaten, meaning that it does not make sense to compensate the “producers”—in this case, hunters—for donating their surplus animals. Instead, South Carolina’s scheme recognizes that processing costs represent the most significant cost barrier for recovering this particular food source. The tax credit offers licensed meat packers, butchers and processing plants $50 per carcass donated in order to recover a large amount of high-value meat for low-income households.'
+      state: south-carolina
+      lat: '33.8361'
+      long: '-81.1637'
   filters:
     - title: States that offer additional tax incentives beyond federal incentives
       definition: States that offer additional tax incentives beyond federal incentives
