@@ -287,6 +287,16 @@ organics_recycling_mandates:
       state: vermont
       lat: 43.8682565
       long: -73.568751
+    - title: New York City Mandates on Food Scraps and Recycling
+      summary: 'New York City’s organic recycling mandate, which went into effect in July 2016, requires certain food service establishments in hotels, arenas and stadiums, and certain food manufacturers and wholesalers source-separate their organic material and either arrange for the transportation of organic waste material, including food waste, to an appropriate processing facility, or to process the food waste on-site.'
+      state: new-york
+      lat: '40.7128'
+      long: '-74.0059'
+    - title: Austin Restaurants to Recycle Food Scraps
+      summary: 'Austin, Texas, amended its organic waste recycling law, the Universal Recycling Ordinance, so as to require all restaurants 5,000 square feet and larger to compost food scraps by 2017. This amendment to the existing ordinance was passed as part of the city’s Zero Waste Initiative, which seeks to reduce the amount of trash sent to the city’s landfills by 90% by 2040.'
+      state: texas
+      lat: '30.2672'
+      long: '-97.7431'
   filters:
     - title: 'States / municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
       definition: 'States/ municipalities that have enacted Organic Waste Bans & Waste Recycling Laws'
