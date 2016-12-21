@@ -115,6 +115,13 @@
     .panel {
       padding: 0 20px;
     }
+    h3 {
+      img {
+        display: inline-block;
+        width: 25px;
+        margin-top: -5px;
+      }
+    }
     .sub-trigger {
       display: block;
       padding: 20px 0;
@@ -171,6 +178,7 @@ body.date-labels {
       display: block;
     }
     p {
+      font-size: 15px;
       padding: 0 0 0.5em 0;
     }
   }
