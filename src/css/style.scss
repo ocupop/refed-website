@@ -6,18 +6,26 @@
 @import '_variables';
 @import 'bootstrap';
 @import '_mixins';
-@import '_icons';
-@import '_forms';
-@import '_buttons';
-@import '_animations';
+
+@import 'global/colors';
+@import 'global/sections';
+@import 'global/icons';
+@import 'global/forms';
+@import 'global/buttons';
+@import 'global/animations';
+@import "global/popover";
+
 @import '_fixes';
 @import "_tour";
-@import "_popover";
 @import "_charts.scss";
 @import "_cost_curve.scss";
+@import 'toc';
 
 // Tools
 @import "policy_tool/main";
+@import "policy_tool/policy_tool";
+@import "policy_tool/policynav";
+@import "policy_tool/header";
 @import "policy_tool/date_labels";
 @import "policy_tool/map";
 @import "policy_tool/map_legend";
@@ -86,11 +94,7 @@ body {
     }
   }
 }
-section {
-  padding: 50px 0;
-  &:nth-child(even) { @include palette($section-alt-color, $text-color); }
-  &:nth-child(odd) { }
-}
+
 nav {
   display: flex;
   ul {
@@ -1256,50 +1260,6 @@ a.external {
   }
 }
 
-
-/* -----------------------------------------
-   Color Palette
------------------------------------------ */
-
-.cream {
-  @include palette($cream, $text-color);
-}
-.cream-light {
-  @include palette($cream-light, $text-color);
-}
-.teal {
-  @include palette($button-color, $cream-light);
-}
-.gray-lighter {
-  @include palette($gray-lighter, $text-color);
-}
-.gray {
-  @include palette($text-color, $cream-light);
-}
-.alt {
-  background-color: $section-alt-color;
-}
-.transparent {
-  background-color: transparent !important;
-}
-
-.recycle, .recycling {
-  @include palette($recycle-color, $cream-light);
-}
-.recovery {
-  @include palette($recovery-color, $cream-light);
-}
-.prevention {
-  @include palette($prevention-color, $cream-light);
-}
-
-.muted {
-  color: rgba(0,0,0,0.5);
-}
-
-.text-prevention { color: $prevention-color; }
-.text-recovery { color: $recovery-color; }
-.text-recycle, .text-recycling { color: $recycle-color; }
 
 
 /* -----------------------------------------

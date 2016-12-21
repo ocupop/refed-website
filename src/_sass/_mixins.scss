@@ -9,16 +9,16 @@
 }
 
 @mixin palette($bg: red, $color: yellow) {
-  background-color: $bg;
-  fill: $bg;
-  color: $color;
+  background-color: $bg !important;
+  fill: $bg !important;
+  color: $color !important;
   h1, h2, h3, h4, .lead {
-    color: $color;
+    color: $color !important;
     small {
-      color: $color;
+      color: $color !important;
     }
   }
   hr {
-    border-color: lighten($color, 10%);
+    border-color: lighten($color, 10%) !important;
   }
 }

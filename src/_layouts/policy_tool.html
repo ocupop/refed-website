@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
+{% comment %}
+{% include policy/tooltip.html %}
+{% endcomment %}
+
+{% include policy/header.html %}
+
 <div id="policy-tool">
+  {% include policy/policynav.html %}
   {{ content }}
+  {% include policy/statenav.html %}
 </div>
 
 <script>

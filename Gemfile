@@ -10,6 +10,8 @@ gem 'uglifier'
 gem 'autoprefixer-rails'
 gem 'jekyll-last-modified-at'
 
+gem 'jekyll-toc'
+
 # gem 'jekyll-lunr-js-search'
 
 

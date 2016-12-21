@@ -283,7 +283,9 @@
     var $guess = $question.find('input[type="checkbox"]:checked');
     var test = $guess.parent().hasClass('correct');
 
+    window.console.log($question.find('.choices'));
     $question.find('.choices').addClass('active');
+
     if(!test){
       $guess.parent().addClass('incorrect');
     }

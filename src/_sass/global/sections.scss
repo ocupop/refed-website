@@ -1,0 +1,33 @@
+section {
+  padding: 50px 0;
+  // &:nth-of-type(even) { @include palette($section-alt-color, $text-color); }
+  // &:nth-of-type(odd) { }
+
+  &:nth-of-type(even) {@include palette($section-alt-color, $text-color);}
+  &:nth-of-type(odd) {
+    background-color: transparent;
+  }
+
+  // Bleeds
+  &.fullbleed { padding: 0; }
+  &.bottombleed { padding-bottom: 0; }
+
+  // Borders
+  &.border {
+    border-left: 30px solid;
+    &.prevention-border {
+      border-color: $prevention-color;
+    }
+
+    &.recovery-border {
+      border-color: $recovery-color;
+    }
+
+    &.recycling-border {
+      border-color: $recycle-color;
+    }
+    &.cream-border {
+      border-color: $cream;
+    }
+  }
+}

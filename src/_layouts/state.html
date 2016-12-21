@@ -1,11 +1,6 @@
 ---
 layout: policy_tool
 ---
-<section class="border cream-border">
-  {% include policy/page_header.html %}
-  {% include policy/state_mobilenav.html %}
-</section>
-
 <section class="border prevention-border">
   <div class="container">
     <div id="date-labeling" class="row">
@@ -34,10 +29,6 @@ layout: policy_tool
                       <h6>{{ item }}</h6>
                     </div>
                     {% endfor %}
-                    <!-- <div class="col-xs-3 text-center">
-                      <i class="icon-twitter"></i>
-                      <h6>Shellfish</h6>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -250,35 +241,10 @@ layout: policy_tool
             </dl>
             {% endfor %}
           {% else %}
-            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>{{ state.name }} does not have any state-level organics recycling mandates.</p>
           {% endif %}
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<div id="policynav">
-  <div class="sticky">
-    <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
-    <ul>
-      <li><a href="#date-labeling">Date Labeling</a></li>
-    </ul>
-
-    <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
-    <ul>
-      <li><a href="#liability-protection">Liability Protection</a></li>
-      <li><a href="#tax-incentives">Tax Incentives</a></li>
-    </ul>
-    <h4 class="recycling"><a href="#prevention-policy">Recycling Policy</a></h4>
-    <ul>
-      <li><a href="#animal-feed">Animal Feed</a></li>
-      <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
-    </ul>
-  </div>
-</div>

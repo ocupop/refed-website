@@ -1,0 +1,42 @@
+{% if page.header %}
+  <header class="tool-header">
+    <div class="message">
+      <a href="/tools/policy">{{ page.header }}</a>
+      <div class="updated_at">
+        <em>Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }}</em>.<br>
+        Have an update for us? &nbsp;&nbsp;<a href="#">Submit it here &gt;</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row bottom-xs">
+        <div class="col-xs-">
+          {% if  page.slug == 'date-labels' %}
+          
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#date-label-terminology-quiz" aria-controls="date-label-terminology-quiz" role="tab" data-toggle="tab">Date Label Terminology Quiz</a></li>
+            <li role="presentation"><a href="#date-label-policy-issues" aria-controls="date-label-policy-issues" role="tab" data-toggle="tab">Date Labeling Policy Issues</a></li>
+            <li role="presentation"><a href="#federal-policy-solutions" aria-controls="federal-policy-solutions" role="tab" data-toggle="tab">Federal Policy Solutions</a></li>
+          </ul>
+
+          {% else %}
+
+          <ul class="nav nav-tabs">
+            <li class="{% if page.permalink contains 'federal' %}active{% endif %}">
+              <a href="/tools/policy/federal-policy">Federal Policy</a>
+            </li>
+            <li class="{% unless page.permalink contains 'federal' %}active{% endunless %}">
+              <a href="/tools/policy">State Policy</a>
+            </li>
+          </ul>
+
+          {% endif %}
+        </div>
+        <div class="col-xs">
+          <div class="content">
+            <p class="fineprint">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endif %}

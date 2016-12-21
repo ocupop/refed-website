@@ -1,59 +1,43 @@
 ---
-layout: default
+layout: policy_tool
 title: Date Label Policy
 permalink: /tools/policy/date-labels
+slug: date-labels
 
+header: Understanding Date Labeling Regulations
 ---
-<section class="gray-lighter">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="content">
-          <h4>Spotlight on date Labeling Regulations</h4>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-8">
-        <div class="content">
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#date-label-terminology-quiz" aria-controls="date-label-terminology-quiz" role="tab" data-toggle="tab">Date Label Terminology Quiz</a></li>
-            <li role="presentation"><a href="#date-label-policy-issues" aria-controls="date-label-policy-issues" role="tab" data-toggle="tab">Date Labeling Policy Issues</a></li>
-            <li role="presentation"><a href="#federal-policy-solutions" aria-controls="federal-policy-solutions" role="tab" data-toggle="tab">Federal Policy Solutions</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<section>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="date-label-terminology-quiz">
+    {% include policy/date_label_terminology_quiz.html %}
   </div>
-  <div class="tab-content cream-light">
-    <div role="tabpanel" class="tab-pane active" id="date-label-terminology-quiz">
-      {% include policy/date_label_terminology_quiz.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="date-label-policy-issues">
-      {% include policy/date_label_policy_issues.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="federal-policy-solutions">
-      {% include policy/federal_policy_solutions.html %}
-    </div>
+  <div role="tabpanel" class="tab-pane" id="date-label-policy-issues">
+    {% include policy/date_label_policy_issues.html %}
   </div>
-  <section id="subnav" class="flush subnav-for-tabs">
-    <div class="row">
-      <a href="{{ '/tools/policy' | prepend: site.baseurl  }}" class="col ">
-        <div class="content">
-          <i class="icon-prev"></i>
-          <small>Previous</small>
-          <hr>
-          <span class="title" style="white-space: pre-line;">U.S. Food Waste<br>Policy Finder</span>
-        </div>
-      </a>
-      <a href="#" class="col btnNext">
-        <div class="content">
-          <small>Next</small>
-          <hr>
-          <span class="title">Date Labeling<br>Policy Issues</span>
-          <i class="icon-next"></i>
-        </div>
-      </a>
-    </div>
-  </section>
+  <div role="tabpanel" class="tab-pane" id="federal-policy-solutions">
+    {% include policy/federal_policy_solutions.html %}
+  </div>
+</div>
+</section>
+<section id="subnav" class="flush subnav-for-tabs">
+  <div class="row">
+    <a href="{{ '/tools/policy' | prepend: site.baseurl  }}" class="col ">
+      <div class="content">
+        <i class="icon-prev"></i>
+        <small>Previous</small>
+        <hr>
+        <span class="title" style="white-space: pre-line;">U.S. Food Waste<br>Policy Finder</span>
+      </div>
+    </a>
+    <a href="#" class="col btnNext">
+      <div class="content">
+        <small>Next</small>
+        <hr>
+        <span class="title">Date Labeling<br>Policy Issues</span>
+        <i class="icon-next"></i>
+      </div>
+    </a>
+  </div>
 </section>
 <script>
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {

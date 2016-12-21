@@ -1,0 +1,43 @@
+/* -----------------------------------------
+   Color Palette
+----------------------------------------- */
+
+.cream {
+  @include palette($cream, $text-color);
+}
+.cream-light {
+  @include palette($cream-light, $text-color);
+}
+.teal {
+  @include palette($button-color, $cream-light);
+}
+.gray-lighter {
+  @include palette($gray-lighter, $text-color);
+}
+.gray {
+  @include palette($text-color, $cream-light);
+}
+.alt {
+  background-color: $section-alt-color;
+}
+.transparent {
+  background-color: transparent !important;
+}
+
+.recycle, .recycling {
+  @include palette($recycle-color, $cream-light);
+}
+.recovery {
+  @include palette($recovery-color, $cream-light);
+}
+.prevention {
+  @include palette($prevention-color, $cream-light);
+}
+
+.muted {
+  color: rgba(0,0,0,0.5);
+}
+
+.text-prevention { color: $prevention-color; }
+.text-recovery { color: $recovery-color; }
+.text-recycle, .text-recycling { color: $recycle-color; }
