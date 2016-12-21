@@ -12,11 +12,6 @@ date_labeling:
       state: new-york
       lat: '40.7128'
       long: '-74.0059'
-    - title:
-      summary:
-      state:
-      lat:
-      long:
   filters:
     - title: No date label regulations
       definition: 'These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.'
