@@ -3,7 +3,7 @@ date_labeling:
   definition: Reveal state policies that hinder food waste prevention
   case_studies:
     - title: Arbitrary bans on donating or selling past date foods
-      summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away each week. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste while allowing wholesome products to end up in the hands of those who want them.'
+      summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away weekly. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste and allow wholesome products to get to those who want them.'
       state: montana
       lat: 46.657895
       long: -112.2869638
@@ -13,7 +13,7 @@ date_labeling:
       lat: '40.7128'
       long: '-74.0059'
     - title: Arbitrary Nature of Date Labels
-      summary: "No two states' date labeling laws are the same, which shows their decisions aren’t based on sound public policy. For example, Connecticut only requires date labels on dairy products while\_it's neighbor Massachusetts requires date labels on all prepared perishable and semi-perishable food products."
+      summary: "No two states' date labeling laws are the same, which shows their decisions aren’t based on sound public policy. For example, Connecticut only requires date labels on dairy products while it's neighbor Massachusetts requires date labels on all prepackaged perishable and semi-perishable food products."
       state: connecticut
       lat: '41.762085'
       long: '-72.742012'
@@ -85,7 +85,7 @@ liability_protection:
   definition: Reveal states that offer liability protection
   case_studies:
     - title: Wisconsin Liability Protection
-      summary: "Wisconsin protects nonprofits that charge\_end recipients\_for food at low\_cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient.\_Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food\_\"at a price not to exceed overhead and transportation costs\"\_without sacrificing liability protection. States that\_provide this protection\_offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
+      summary: "Wisconsin protects nonprofits that charge end recipients for food at low cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient. Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food \"at a price not to exceed overhead and transportation costs\" without sacrificing liability protection. States that provide this protection offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
       state: wisconsin
       lat: 43.7844
       long: -88.7879
@@ -95,7 +95,7 @@ liability_protection:
       lat: 36.778259
       long: -119.417931
     - title: OregonLiability Protection
-      summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards.\_However, some states, like\_Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies \"regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.\" This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
+      summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards. However, some states, like Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies \"regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.\" This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
       state: oregon
       lat: 44.1199746
       long: -122.7804332
@@ -151,7 +151,7 @@ tax_incentives:
   definition: Reveal states that offer additional tax incentives beyond federal incentives
   case_studies:
     - title: California Tax Incentives
-      summary: "California helps alleviate the costs associated with food donation by o\x1Fffering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
+      summary: "California helps alleviate the costs associated with food donation by offering a tax credit that explicitly covers the costs associated with the transportation of any agricultural product donated to a nonprofit. The tax credit is allowed as a credit against the “net tax” in an amount equal to 50% of the transportation costs paid or incurred. Because many businesses cite the costs of transporting food items as a key barrier to donation, California’s model is worth analyzing for potential applicability."
       state: california
       lat: 37.1871655
       long: -120.7612299
@@ -188,12 +188,12 @@ animal_feed:
       lat: 41.5153735
       long: -73.8784879
     - title: North Carolina Animal Feed Regulations
-      summary: "Several states require the heat treatment of non-animal derived waste, yet most of this waste is generally safe for consumption by most animals. The cost of heat-treatment equipment or services may discourage farms from feeding food scraps to animals.\_North Carolina, the second-largest producer of swine, is one of many states that provide a good model for regulating feeding food scraps to animals. It allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, such as\_vegetable-derived waste,\_may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals."
+      summary: "Several states require the heat treatment of non-animal derived waste, yet most of this waste is generally safe for consumption by most animals. The cost of heat-treatment equipment or services may discourage farms from feeding food scraps to animals. North Carolina, the second-largest producer of swine, is one of many states that provide a good model for regulating feeding food scraps to animals. It allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, such as vegetable-derived waste, may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals."
       state: north-carolina
       lat: 35.1403193
       long: -84.3805519
     - title: New Mexico Animal Feed Regulations
-      summary: "Understanding and omplying with the requirements outlined in federal and state laws and regulations that bear on the practice of feeding food scraps to animals can be daunting to a facility that is interested in doing so.\_Providing guidance, technical assistance and education on applicable laws and regulations that outlines the benefits while detailing the safe and proper handling of such products can help encourage the feeding of food scraps to animals. The New Mexico Recycling Coalition produced a report directed at restaurants which outlined guidelines on feeding food waste to animals, including applicable state and federal laws and regulations, benefits and challenges of the practice, and contact persons for further information."
+      summary: "Understanding and omplying with the requirements outlined in federal and state laws and regulations that bear on the practice of feeding food scraps to animals can be daunting to a facility that is interested in doing so. Providing guidance, technical assistance and education on applicable laws and regulations that outlines the benefits while detailing the safe and proper handling of such products can help encourage the feeding of food scraps to animals. The New Mexico Recycling Coalition produced a report directed at restaurants which outlined guidelines on feeding food waste to animals, including applicable state and federal laws and regulations, benefits and challenges of the practice, and contact persons for further information."
       state: new-mexico
       lat: '34.5199'
       long: '-105.8701'
