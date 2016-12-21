@@ -85,15 +85,15 @@ liability_protection:
   definition: Reveal states that offer liability protection
   case_studies:
     - title: Wisconsin Liability Protection
-      summary: "A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient.\_Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food\_\"at a price not to exceed overhead and transportation costs\"\_without sacrificing liability protection. States that\_provide this protection\_offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
+      summary: "Wisconsin protects nonprofits that charge\_end recipients\_for food at low\_cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient.\_Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food\_\"at a price not to exceed overhead and transportation costs\"\_without sacrificing liability protection. States that\_provide this protection\_offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
       state: wisconsin
       lat: 43.7844
       long: -88.7879
-    - title: Liability protection when nonprofits charge needy individuals for food.
-      summary: "Arizona's law provides liability protection for nonprofit food recovery organizations charging final recipients for food by defining donation as giving food for a 'fee significantly less than the value of the item.'"
-      state: arizona
-      lat: 34.1478179
-      long: -112.1737247
+    - title: California  Liability Protection
+      summary: 'California provides education and awareness about liability protection. Some states and localities publish guidance about federal and state liability protection for food donations. This guidance is a helpful tool to promote awareness and dispel concerns about food donation liability. For example, Los Angeles County published a guideline for safe food donation that specifically targets food facility operators. A fillable “Food Donation Delivery Form” is included, as well as guidance on food safety and federal and state liability protections.'
+      state: california
+      lat: 36.778259
+      long: -119.417931
     - title: Liability protection when nonprofits charge needy individuals for food.
       summary: "Oregon's law provides liability protection when a nonprofit food recovery organization charges the final recipient 'on a scale reflecting ability to pay or only requiring a shared maintenance contribution.'"
       state: oregon
