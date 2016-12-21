@@ -12,6 +12,11 @@ date_labeling:
       state: new-york
       lat: '40.7128'
       long: '-74.0059'
+    - title: Arbitrary Nature of Date Labels
+      summary: "No two states' date labeling laws are the same, which shows their decisions aren’t based on sound public policy. For example, Connecticut only requires date labels on dairy products while\_it's neighbor Massachusetts requires date labels on all prepared perishable and semi-perishable food products."
+      state: connecticut
+      lat: '41.762085'
+      long: '-72.742012'
   filters:
     - title: No date label regulations
       definition: 'These are the states that do not require or regulate date labels at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tincidunt metus. Etiam aliquam aliquam ante a convallis. Curabitur fringilla sapien tortor, sit amet viverra orci luctus non.'
