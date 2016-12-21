@@ -192,11 +192,11 @@ animal_feed:
       state: north-carolina
       lat: 35.1403193
       long: -84.3805519
-    - title:
-      summary:
-      state:
-      lat:
-      long:
+    - title: New Mexico Animal Feed Regulations
+      summary: "Understanding and omplying with the requirements outlined in federal and state laws and regulations that bear on the practice of feeding food scraps to animals can be daunting to a facility that is interested in doing so.\_Providing guidance, technical assistance and education on applicable laws and regulations that outlines the benefits while detailing the safe and proper handling of such products can help encourage the feeding of food scraps to animals. The New Mexico Recycling Coalition produced a report directed at restaurants which outlined guidelines on feeding food waste to animals, including applicable state and federal laws and regulations, benefits and challenges of the practice, and contact persons for further information."
+      state: new-mexico
+      lat: '34.5199'
+      long: '-105.8701'
   filters:
     - title: Prohibits feeding food waste to all animals
       definition: Prohibits feeding food waste to all animals
