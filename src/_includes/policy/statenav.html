@@ -8,7 +8,7 @@
     <div class="col-xs-12 col-md-5">
       <div class="content">
         <div class="select">
-          <select id="state-select" name="state-select">
+          <select id="state-select" name="state-select" class="quicknav">
             <option>Choose State</option>
             {% for state in site.states %}
               <option value="{{ state.url }}">{{ state.name }}</option>

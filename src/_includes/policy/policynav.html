@@ -171,7 +171,7 @@
     <!-- END Mobile: Map Filters -->
 
   {% elsif page.layout == 'state' %}
-    <div class="sticky">
+    <div class="sticky" data-offset-top="105">
       <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
       <ul>
         <li><a href="#date-labeling">Date Labeling</a></li>
@@ -205,7 +205,7 @@
     </div>
    
   {% else %}
-    <div class="sticky">
+    <div class="sticky" data-offset-top="105">
       <div class="content">
         {{ content | toc_only }}
       </div>

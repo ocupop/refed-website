@@ -1,28 +1,3 @@
-//= require vendor/modernizr-2.8.3.min.js
-//= require jquery
-//= require bootstrap-sprockets
-//= require jquery.localScroll/jquery.localScroll.min.js
-//= require jquery.scrollTo/jquery.scrollTo.min.js
-//= require chartist/dist/chartist.min.js
-//= require chartist-plugin-fill-donut/dist/chartist-plugin-fill-donut.min.js
-//= require waypoints/lib/jquery.waypoints.min.js
-//= require waypoints/lib/shortcuts/inview.min.js
-//= require mixitup/build/jquery.mixitup.min.js
-//= require vendor/jquery.mixitup-pagination.min.js
-//= require vendor/jquery.cookie.js
-//= require vendor/jquery.form.js
-//= require jquery-stickit/build/jquery.stickit.min.js
-//= require bootstrap-tour/build/js/bootstrap-tour.min.js
-//= require bootstrap-multiselect/dist/js/bootstrap-multiselect.js
-//= require vendor/lunr.min.js
-
-//= require _plugins
-//= require _charts
-
-//= require _tour
-//= require _search
-
-
 $(window).on('load', function (e){
   if (window.location.hash) {
     var h = window.location.hash.slice(0,-1) 
@@ -42,11 +17,7 @@ $(document).on('ready', function() {
       $('#thanks').fadeOut('slow');
     }, 1500);
   }
-  
-  $(".sticky").stickit({
-    // scope: StickScope.Parent,
-    top: 50
-  });
+
 
   //initiate localscroll
   $.localScroll();

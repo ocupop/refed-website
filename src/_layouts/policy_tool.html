@@ -8,38 +8,24 @@ layout: default
 {% include policy/header.html %}
 
 <div id="policy-tool">
-  {% include policy/policynav.html %}
+  {% unless page.slug == 'date-labels' %}{% include policy/policynav.html %}{% endunless %}
   {{ content }}
   {% include policy/statenav.html %}
 </div>
 
 <script>
-  // $('#policy-tool').on('click', function() {
-  //   $(this).addClass('active');
+
+  // $('#policynav a').on('click', function(){
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //      var target = $(this.hash);
+  //      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //      if (target.length) {
+  //        $('html, body').animate({
+  //          scrollTop: target.offset().top - 105
+  //        }, 1000);
+  //        return false;
+  //      }
+  //    }
   // });
-  $("#policynav .sticky").stickit({
-      scope: StickScope.Parent,
-      top: 105
-  });
 
-  $('#policynav a').on('click', function(){
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-       var target = $(this.hash);
-       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-       if (target.length) {
-         $('html, body').animate({
-           scrollTop: target.offset().top - 105
-         }, 1000);
-         return false;
-       }
-     }
-  });
-
-  $('#state-select').change(function(){
-    var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
 </script>

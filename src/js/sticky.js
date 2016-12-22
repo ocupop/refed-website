@@ -18,26 +18,16 @@
  */
 (function() {
 
-$.behaviors('.dependentSelect', dependentSelect);
+$.behaviors('.sticky', sticky);
 
-function dependentSelect(select) {
-    select = $(select);
-    var controllerField = $(select.data('controller'));
-    var originalOptions = $('option', select).clone();
+  function sticky(container) {
 
-    controllerField.change(updateChoices);
-    updateChoices();
+    var offset = $(container).data('offset-top') ? $(container).data('offset-top')/1 : 0;
 
-    function updateChoices() {
-        var currentValue = controllerField.val();
-        $('option', select).remove();
-        originalOptions.each(function() {
-            option = $(this);
-            if(option.data('enabledFor') === undefined || option.data('enabledFor') == currentValue) {
-                select.append(option.clone());
-            }
-        });
-    }
-}
+    $(container).stickit({
+      scope: StickScope.Parent,
+      top: offset
+    });
+  }
 
 })();

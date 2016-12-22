@@ -18,26 +18,16 @@
  */
 (function() {
 
-$.behaviors('.dependentSelect', dependentSelect);
+$.behaviors('.quicknav', quicknav);
 
-function dependentSelect(select) {
-    select = $(select);
-    var controllerField = $(select.data('controller'));
-    var originalOptions = $('option', select).clone();
-
-    controllerField.change(updateChoices);
-    updateChoices();
-
-    function updateChoices() {
-        var currentValue = controllerField.val();
-        $('option', select).remove();
-        originalOptions.each(function() {
-            option = $(this);
-            if(option.data('enabledFor') === undefined || option.data('enabledFor') == currentValue) {
-                select.append(option.clone());
-            }
-        });
-    }
-}
+  function quicknav(select) {
+    $(select).change(function(){
+      var url = $(this).val(); // get selected value
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+    });
+  }
 
 })();

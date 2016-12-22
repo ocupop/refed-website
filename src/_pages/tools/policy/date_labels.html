@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: policy_tool
 title: Date Label Policy
 permalink: /tools/policy/date-labels
 slug: date-labels
@@ -19,9 +19,9 @@ header: Understanding Date Labeling Regulations
   </div>
 </div>
 
-<section id="subnav" class="flush subnav-for-tabs">
+<section id="subnav" class="flush subnav subnav-tabs">
   <div class="row">
-    <a href="{{ '/tools/policy' | prepend: site.baseurl  }}" class="col ">
+    <a href="{{ '/tools/policy' | prepend: site.baseurl  }}" class="col">
       <div class="content">
         <i class="icon-prev"></i>
         <small>Previous</small>
@@ -40,27 +40,5 @@ header: Understanding Date Labeling Regulations
   </div>
 </section>
 <script>
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    var nextText = $('.nav-tabs > .active').next('li').find('a').text();
-    window.console.log("nextText is", nextText);
-    if(nextText == ''){
-      $('.btnNext').addClass('disabled');
-    }else {
-      $('.btnNext').removeClass('disabled');
-      $('.btnNext .title').text(nextText);
-    }
-  })
-  $('.btnNext').click(function(){
-    $('.nav-tabs > .active').next('li').find('a').trigger('click');
-    var title = $('.nav-tabs > .active').next('li').find('a').text();
-    // window.console.log(title);
-    $("html, body").animate({ scrollTop: 0 }, 500);
-    if(title == ''){
-      $(this).addClass('disabled');
-      window.console.log("no title to show");
-    } else {
-      $(this).removeClass('disabled');
-      $('.btnNext .title').text(title);
-    }
-  });
+
 </script>
