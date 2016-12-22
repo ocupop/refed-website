@@ -105,28 +105,28 @@ body.policy_tool_layout {
   }
 }
 
-// .panel {
-//   &.icon-panel {
-//     background-color: $cream-light;
-//     h3 {
-//       background-color: $cream;
-//       padding: 10px 15px;
-//       margin: 0;
-//       line-height: 1;
-//     }
-//     h6 {
-//       font-size: 11px;
-//     }
-//     .content {
-//       padding: 10px 15px;
-//       i {
-//         width: auto;
-//         height: auto;
-//         margin: 0 auto;
-//       }
-//     }
-//   }
-// }
+.panel {
+  &.icon-panel {
+    background-color: $cream-light;
+    h3 {
+      background-color: $cream;
+      padding: 10px 15px;
+      margin: 0;
+      line-height: 1;
+    }
+    h6 {
+      font-size: 11px;
+    }
+    .content {
+      padding: 10px 15px;
+      i {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
 
 @media(min-width: 992px) and (max-width: 1300px){
   #policy-tool {
