@@ -34,7 +34,7 @@ layout: policy_tool
 
                       {% for item in regulations.date_labels_required_for %}
                       <div class="col-xs-4 text-center">
-                        <i class="icon-twitter"></i>
+                        <i class="icon-{{ item | slugify }}"></i>
                         <h6>{{ item }}</h6>
                       </div>
                       {% endfor %}

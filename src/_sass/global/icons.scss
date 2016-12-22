@@ -26,6 +26,33 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bakery:before {
+  content: "\e907";
+}
+.icon-dairy:before {
+  content: "\e908";
+}
+.icon-eggs:before {
+  content: "\e90a";
+}
+.icon-hazardous:before {
+  content: "\e90b";
+}
+.icon-infant-formula:before {
+  content: "\e90c";
+}
+.icon-meat:before {
+  content: "\e90d";
+}
+.icon-perishables:before {
+  content: "\e90e";
+}
+.icon-sandwiches:before {
+  content: "\e90f";
+}
+.icon-shellfish:before {
+  content: "\e910";
+}
 .icon-meals-recovered:before {
     content: "\e906";
 }
