@@ -1,0 +1,24 @@
+.statenav {
+  padding: 10px 0;
+  .statenav-message {
+    @extend .col-xs-12;
+    @extend .col-sm-offset-0;
+    @extend .col-md-4;
+    @extend .col-md-offset-2;
+    .content {
+      float: right;
+    }
+  }
+  .statenav-select {
+    @extend .col-xs-12;
+    @extend .col-md-6;
+    @extend .col-lg-5;
+  }
+}
+
+@media(max-width: 1024px) {
+  .statenav-message {
+    h3 { font-size: 18px; }
+  }
+
+}
