@@ -1,4 +1,4 @@
-header.tool-header {
+.tool-header {
   // TODO - Refactor color palette
   background-color: #b8b8b8;
   .message {
@@ -40,7 +40,6 @@ header.tool-header {
   }
   .nav-tabs {
     position: relative;
-    // top: 20px;
     border-bottom-color: #b8b8b8;
     li {
 
@@ -53,7 +52,6 @@ header.tool-header {
             border: none;
             background-color: $cream-light;
             cursor: default;
-            // box-shadow: 0 -2px 2px rgba(0,0,0,0.03);
           }
         }
       }
@@ -68,6 +66,27 @@ header.tool-header {
           border: none;
           background: darken($cream-light, 15%);
         }
+      }
+    }
+  }
+}
+
+@media(max-width: 1280px) {
+  .tool-header {
+    .message {
+      height: auto;
+      padding-bottom: 0;
+      .updated_at {
+        position: relative;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: auto;
+        padding: 3px 20px;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: center;
       }
     }
   }
