@@ -46,13 +46,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
-$.extend($.scrollTo.defaults, {
-  axis: 'y',
-  duration: 800,
-  offset: {
-    top: -100
-  }
-});
+
 
 
 jQuery(document).ready(function($) {
