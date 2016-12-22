@@ -27,10 +27,10 @@
             {% else %}
 
             <ul class="nav nav-tabs">
-              <li class="{% if page.permalink contains 'federal' %}active{% endif %}">
+              <li class="{% unless page.slug contains 'state-policy' %}active{% endunless %}">
                 <a href="/tools/policy/federal-policy">Federal Policy</a>
               </li>
-              <li class="{% unless page.permalink contains 'federal' %}active{% endunless %}">
+              <li class="{% if page.slug contains 'state-policy' %}active{% endif %}">
                 <a href="/tools/policy">State Policy</a>
               </li>
             </ul>
