@@ -13,6 +13,41 @@ layout: default
   {% include policy/statenav.html %}
 </div>
 
+{% if page.connected-solutions %}
+<section id="connected-solutions">
+  <header class="section-header">
+    <div class="container">
+      <div class="content">
+        <h2>Related Solutions</h2>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="grid row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% for solution in site.solutions %}
+              {% if page.connected-solutions contains solution.slug %}
+                {% include card.html %}
+              {% endif %}
+          {% endfor %}
+          <div class="card link-card hidden-xs">
+            <header>
+              <a href="{{ '/solution' | prepend: site.baseurl }}" class="button">View Full List&nbsp;&gt;</a>
+            </header>
+            <div class="content">
+              <h4 class="title">View All Solutions</h4>
+              <p>&nbsp;</p>
+            </div>
+            <footer></footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <script>
 
   // $('#policynav a').on('click', function(){
