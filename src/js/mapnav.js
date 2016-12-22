@@ -88,7 +88,13 @@ $.behaviors('.mapnav', initMapNav);
           var showStudies = $el.find('.study-filter:checked').length;
           var section = $(this).closest('.section_root').attr('data-section');
           var activeClass = "map " + cat + " " + section;
-          $(this).siblings('.collapse').collapse('show');
+          
+          $(this).siblings('.collapse').each(function() {
+            var children = $(this).find('.map-subfilter');
+            if (children.length > 1) {
+              $(this).collapse('show');
+            }
+          });
 
           $el.siblings('.nav_category').find('input[type="checkbox"]').prop({
             indeterminate: false,
