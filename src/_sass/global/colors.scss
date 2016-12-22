@@ -34,6 +34,14 @@
   @include palette($prevention-color, $cream-light);
 }
 
+.recovery-light {
+  background-color: $recovery-light;
+}
+
+.cream-dark {
+  background-color: $cream-dark;
+}
+
 .muted {
   color: rgba(0,0,0,0.5);
 }

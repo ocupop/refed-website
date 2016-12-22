@@ -36,6 +36,15 @@
     }
 
     .progress {
+      width: 75%;
+      float: left;
+    }
+
+    .progress-bar {
+      background-color: $gray-light;
+    }
+
+    .progress {
       margin: 0 10px;
     }
     .progress-bar {
@@ -46,4 +55,9 @@
 }
 .carousel-datelabel {
   display: none;
+}
+
+
+@media(max-width: 992px) {
+  .item { min-height: none; }
 }
