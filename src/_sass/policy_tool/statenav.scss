@@ -2,10 +2,7 @@
   padding: 10px 0;
   .statenav-message {
     @extend .col-xs-12;
-    @extend .col-md-6;
-    @extend .col-md-offset-0;
-    @extend .col-lg-4;
-    @extend .col-lg-offset-2;
+    @extend .col-md-7;
     .content {
       float: right;
     }
@@ -13,7 +10,6 @@
   .statenav-select {
     @extend .col-xs-12;
     @extend .col-md-5;
-    @extend .col-lg-5;
   }
 }
 
