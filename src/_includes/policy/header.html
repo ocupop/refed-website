@@ -4,17 +4,17 @@
       <a href="/tools/policy">{{ page.header }}</a>
       <div class="updated_at">
         <em>Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }}</em>.<br>
-        Have an update for us? &nbsp;&nbsp;<a href="#">Submit it here &gt;</a>
+        Have an update for us? &nbsp;&nbsp;<a href="mailto:info@refed.com">Submit it here &gt;</a>
       </div>
     </div>
     <div class="container">
       <div class="row bottom-xs">
-        <div class="col-xs-12 col-md-4 col-md-push-8">
+        <div class="tool-header-summary">
           <div class="content">
             <p class="fineprint">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-8 col-md-pull-4">
+        <div class="tool-header-nav">
           <div class="content flush-bottom">
             {% if  page.slug == 'date-labels' %}
             
@@ -27,10 +27,10 @@
             {% else %}
 
             <ul class="nav nav-tabs">
-              <li class="{% if page.permalink contains 'federal' %}active{% endif %}">
+              <li class="{% unless page.slug contains 'state-policy' %}active{% endunless %}">
                 <a href="/tools/policy/federal-policy">Federal Policy</a>
               </li>
-              <li class="{% unless page.permalink contains 'federal' %}active{% endunless %}">
+              <li class="{% if page.slug contains 'state-policy' %}active{% endif %}">
                 <a href="/tools/policy">State Policy</a>
               </li>
             </ul>
