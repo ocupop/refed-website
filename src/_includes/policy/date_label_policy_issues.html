@@ -1,3 +1,4 @@
+{% assign filters = site.data.policy_tool['date_labeling'].filters %}
 <section>
   <div class="container-fluid">
     <div id="labeling-carousel-intro" class="row">
@@ -21,40 +22,32 @@
         <div class="content">
           <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
             <div class="carousel-inner" role="listbox">
-                <div class="item active" data-progress="20">
-                  <h3 class="item-title"><i class="icon cream-dark"></i>No date label regulations</h3>
-                  <p>Nine states do not require or regulate date labels on any food products. For unregulated foods and even most foods that are regulated under state laws, manufacturers have broad discretion to decide which foods will bear date labels, how the date is selected, and what language the labels will use. Allowing manufacturers to independently determine this language contributes to the dizzying variety of date label phrases on food products, furthering consumer confusion on the meaning of date labels.</p>
+              {% for item in filters %}
+                <div class="item{% if forloop.first %} active{% endif %}"
+                     data-states='{{ item.states | jsonify }}'
+                     data-progress="{% cycle '20', '40', '60', '80' %}">
+                  <h3 class="item-title"><i class="icon {% cycle 'cream-dark','recovery-light','recovery','prevention' %}"></i>{{ item.title }}</h3>
+                  <p>{{ item.definition }}</p>
                 </div>
-                <div class="item" data-progress="40">
-                  <h3 class="item-title"><i class="icon recovery-light"></i>Date labels required for certain foods. No restrictions on sales after those dates</h3>
-                  <p>Currently, 41 states and the District of Columbia require at least some foods to have date labels. Yet no two states have the same law, lending evidence that these laws are not based in science or sound public. Inconsistent policies and practices harm the interests of manufacturers and retailers by creating increased compliance burdens. This inconsistency also leads to considerable amounts of avoidable wasted food as the mistaken belief that past-date foods are unsuitable for consumption causes consumers to discard food prematurely.</p>
-                </div>
-                <div class="item" data-progress="60">
-                  <h3 class="item-title"><i class="icon recovery"></i>Date labels required for certain foods. Regulations on sales after those dates</h3>
-                  <p>Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted. </p>
-                </div>
-                <div class="item" data-progress="80">
-                  <h3 class="item-title"><i class="icon prevention"></i>Date labels required for certain foods. Regulations on sales after those dates</h3>
-                  <p>Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted. </p>
-                </div>
-                <div class="item explore" data-progress="100">
-                  <h2>Explore Each State</h2>
-                  <ul class="nav">
-                    <li>
-                      <i class="icon cream-dark"></i>No date label regulations.
-                    </li>
-                    <li>
-                      <i class="icon recovery-light"></i>Date labels required for certain foods.<br>No restrictions on sales after those dates.
-                    </li>
-                    <li>
-                      <i class="icon recovery"></i>Date labels required for certain foods.<br>Regulations on sales after those dates.
-                    </li>
-                    <li>
-                      <i class="icon prevention"></i>No date label regulations.<br>Regulations on sales after dates if date labels are voluntarily applied.
-                    </li>
-                  </ul>
-                </div>
+              {% endfor %}
+              <div class="item explore" data-progress="100">
+                <h2>Explore Each State</h2>
+                <ul class="nav">
+                  <li>
+                    <i class="icon cream-dark"></i>No date label regulations.
+                  </li>
+                  <li>
+                    <i class="icon recovery-light"></i>Date labels required for certain foods.<br>No restrictions on sales after those dates.
+                  </li>
+                  <li>
+                    <i class="icon recovery"></i>Date labels required for certain foods.<br>Regulations on sales after those dates.
+                  </li>
+                  <li>
+                    <i class="icon prevention"></i>No date label regulations.<br>Regulations on sales after dates if date labels are voluntarily applied.
+                  </li>
+                </ul>
               </div>
+            </div>
           </div>
         </div>
       </div>
