@@ -19,7 +19,7 @@ date_labeling:
       long: '-72.742012'
   filters:
     - title: No date label regulations
-      definition: "Nine states do not require or regulate date labels on any food products. For unregulated foods and even most foods that are regulated under state laws, manufacturers have broad discretion to decide which foods will bear date labels, how the date is selected, and what language the labels will use. Allowing manufacturers to independently determine this language contributes to the dizzying variety of date label phrases on food products, furthering consumer confusion on the meaning of date labels."
+      definition: 'Nine states do not require or regulate date labels on any food products. For unregulated foods and even most foods that are regulated under state laws, manufacturers have broad discretion to decide which foods will bear date labels, how the date is selected, and what language the labels will use. Allowing manufacturers to independently determine this language contributes to the dizzying variety of date label phrases on food products, furthering consumer confusion on the meaning of date labels.'
       states:
         - idaho
         - missouri
@@ -29,7 +29,7 @@ date_labeling:
         - tennessee
         - utah
     - title: Date labels required for certain foods. No restrictions on sales after those dates.
-      definition: "Currently, 41 states and the District of Columbia require at least some foods to have date labels. Yet no two states have the same law, lending evidence that these laws are not based in science or sound public. Inconsistent policies and practices harm the interests of manufacturers and retailers by creating increased compliance burdens. This inconsistency also leads to considerable amounts of avoidable wasted food as the mistaken belief that past-date foods are unsuitable for consumption causes consumers to discard food prematurely."
+      definition: 'Currently, 41 states and the District of Columbia require at least some foods to have date labels. Yet no two states have the same law, lending evidence that these laws are not based in science or sound public. Inconsistent policies and practices harm the interests of manufacturers and retailers by creating increased compliance burdens. This inconsistency also leads to considerable amounts of avoidable wasted food as the mistaken belief that past-date foods are unsuitable for consumption causes consumers to discard food prematurely.'
       states:
         - alaska
         - arizona
@@ -55,7 +55,7 @@ date_labeling:
         - west-virginia
         - wyoming
     - title: Date labels required for certain foods. Regulations on sales after those dates.
-      definition: "Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted."
+      definition: 'Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted.'
       states:
         - colorado
         - florida
@@ -76,7 +76,7 @@ date_labeling:
         - washington
         - wisconsin
     - title: No date label regulations. Regulations on sales after dates if date labels are voluntarily applied.
-      definition: "Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted."
+      definition: 'Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted.'
       states:
         - alabama
         - illinois
@@ -87,8 +87,8 @@ liability_protection:
     - title: Wisconsin Liability Protection
       summary: "Wisconsin protects nonprofits that charge end recipients for food at low cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient. Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food \"at a price not to exceed overhead and transportation costs\" without sacrificing liability protection. States that provide this protection offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
       state: wisconsin
-      lat: 43.7844
-      long: -88.7879
+      lat: 43.8844
+      long: -89.2879
     - title: California  Liability Protection
       summary: 'California provides education and awareness about liability protection. Some states and localities publish guidance about federal and state liability protection for food donations. This guidance is a helpful tool to promote awareness and dispel concerns about food donation liability. For example, Los Angeles County published a guideline for safe food donation that specifically targets food facility operators. A fillable “Food Donation Delivery Form” is included, as well as guidance on food safety and federal and state liability protections.'
       state: california
