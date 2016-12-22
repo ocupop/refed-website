@@ -9,11 +9,13 @@
     </div>
     <div class="container">
       <div class="row bottom-xs">
+        {% unless  page.slug == 'date-labels' %}
         <div class="tool-header-summary">
           <div class="content">
             <p class="fineprint">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
           </div>
         </div>
+        {% endunless %}
         <div class="tool-header-nav">
           <div class="content flush-bottom">
             {% if  page.slug == 'date-labels' %}
