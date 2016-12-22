@@ -18,12 +18,13 @@
 }
 
 @media(max-width: 1024px) {
-  .statenav-message {
-    .content {
-      float: none;
-      text-align: center;
+  .statenav {
+    .statenav-message {
+      .content {
+        float: none;
+        text-align: center;
+      }
+      h3 { font-size: 18px; }
     }
-    h3 { font-size: 18px; }
   }
-
 }
