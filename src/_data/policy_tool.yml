@@ -11,7 +11,7 @@ date_labeling:
       summary: 'New York City is an example of a government choosing to eliminate unnecessary date labels. New York City used to require dates on milk, even though the state of New York imposes no date labeling requirements on any foods. The city repealed its date labeling requirement for milk in 2010 to harmonize with state regulations. The city recognized that its date label requirement was not necessary to protect public health because milk, if handled properly, is still safe to consume even after the date passes (and if handled improperly, the date is irrelevant in any case).'
       state: new-york
       lat: '43.149094'
-      long: '-75.835498'
+      long: '-75.135498'
     - title: Arbitrary Nature of Date Labels
       summary: "No two states' date labeling laws are the same, which shows their decisions aren’t based on sound public policy. For example, Connecticut only requires date labels on dairy products while it's neighbor Massachusetts requires date labels on all prepackaged perishable and semi-perishable food products."
       state: connecticut
