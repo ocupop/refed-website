@@ -4,7 +4,9 @@ title: Policy Tool Home
 permalink: /policy
 hero: 
   image: header-onion.jpg
-  title: Policy Solutions to Food Waste Reduction  
+  title: Policy Solutions to Food Waste Reduction 
+
+connected-solutions: [donation-tax-incentives, standardized-donation-regulation, standardized-date-labeling]
 ---
 
 <section id="policy-intro">
@@ -27,7 +29,7 @@ hero:
 </section>
 <section>
   <div class="container">
-    <div class="row">      
+    <div class="row">
       <div class="col-xs-12">
         <div class="content">
           <h1>Food Waste Policy Tool</h1>
@@ -52,6 +54,30 @@ hero:
           <h2>Spotlight on date<br>labeling regulations</h2>
           <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
           <a href="{{ site.baseurl }}/tools/policy/date-labels" class="button">Learn More &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="connected-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h3>Related Solutions</h3>
+          <p class="editable">The top three solutions that are most affected by policy.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid row">
+      <div class="col-xs-12">
+        <div class="content">
+          {% for solution in site.solutions %}
+              {% if page.connected-solutions contains solution.slug %}
+                {% include card.html %}
+              {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
