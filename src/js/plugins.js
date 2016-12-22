@@ -37,6 +37,9 @@ if (!Modernizr.input.placeholder) {
 }
 
 
+String.prototype.trim = function(){
+  return this.replace(" ", "-").toLowerCase();
+};
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
