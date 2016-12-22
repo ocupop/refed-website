@@ -1,19 +1,21 @@
 <section class="statenav">
-  <div class="row middle-xs">
-    <div class="statenav-message">
-      <div class="content">
-        <h3>Explore food waste policy by state</h3>
+  <div class="container">
+    <div class="row middle-xs">
+      <div class="statenav-message">
+        <div class="content">
+          <h3>Explore food waste policy by state</h3>
+        </div>
       </div>
-    </div>
-    <div class="statenav-select">
-      <div class="content">
-        <div class="select">
-          <select id="state-select" name="state-select" class="quicknav">
-            <option>Choose State</option>
-            {% for state in site.states %}
-              <option value="{{ state.url }}">{{ state.name }}</option>
-            {% endfor %}
-          </select>
+      <div class="statenav-select">
+        <div class="content">
+          <div class="select">
+            <select id="state-select" name="state-select" class="quicknav">
+              <option>Choose State</option>
+              {% for state in site.states %}
+                <option value="{{ state.url }}">{{ state.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
         </div>
       </div>
     </div>
