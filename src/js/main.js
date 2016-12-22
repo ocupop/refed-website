@@ -8,6 +8,9 @@ $(window).on('load', function (e){
 
 
 $(document).on('ready', function() {
+  $('#tooltip .close').on('click', function() {
+    $('#tooltip').removeClass('active');
+  });
 
   if(urlParams["thanks"]) {
     $("#thanks .lead").text(urlParams["thanks"]);
