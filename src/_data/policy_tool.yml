@@ -5,7 +5,7 @@ date_labeling:
     - title: Arbitrary bans on donating or selling past date foods
       summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away weekly. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste and allow wholesome products to get to those who want them.'
       state: montana
-      lat: -46.657895
+      lat: 89
       long: -112.2869638
     - title: Does Not Require or Regulate Date Labels
       summary: 'New York City is an example of a government choosing to eliminate unnecessary date labels. New York City used to require dates on milk, even though the state of New York imposes no date labeling requirements on any foods. The city repealed its date labeling requirement for milk in 2010 to harmonize with state regulations. The city recognized that its date label requirement was not necessary to protect public health because milk, if handled properly, is still safe to consume even after the date passes (and if handled improperly, the date is irrelevant in any case).'
