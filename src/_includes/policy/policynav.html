@@ -1,5 +1,5 @@
 <div id="policynav">
-  {% if page.slug == 'state-policy' %}
+  {% if page.slug == 'policy-tool' %}
     <!-- Desktop: Map Filters -->
     <div class="mapnav" data-target=".map">
       <div class="nav_category" data-category="prevention">
@@ -173,7 +173,7 @@
     <!-- END Mobile: Map Filters -->
 
   {% elsif page.layout == 'state' %}
-    <div class="sticky" data-offset-top="105">
+    <div class="sticky" data-offset-top="50">
       <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
       <ul>
         <li><a href="#date-labeling">Date Labeling</a></li>
@@ -207,11 +207,14 @@
     </div>
    
   {% else %}
-    <div class="sticky" data-offset-top="105">
+    <div class="sticky" data-offset-top="50">
       <div class="content">
         {{ content | toc_only }}
       </div>
     </div>
+    <script>
+
+    </script>
   {% endif %}
 </div>
 

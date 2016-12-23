@@ -1,15 +1,11 @@
 ---
 layout: default
 ---
-{% comment %}
-{% include policy/tooltip.html %}
-{% endcomment %}
-
 {% include policy/header.html %}
 
 <div id="policy-tool">
   {% unless page.slug == 'date-labels' %}{% include policy/policynav.html %}{% endunless %}
-  {{ content }}
+  {{ content | inject_anchors }}
   {% include policy/statenav.html %}
 
   {% if page.connected-solutions %}
