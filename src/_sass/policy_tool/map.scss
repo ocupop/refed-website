@@ -15,6 +15,7 @@
     display: none;
     cursor: pointer;
   }
+  .muni { opacity: 0; }
   &.prevention { 
     .level-1 { fill: $prevention-color; }
     .level-2 { fill: $prevention-color; }
@@ -44,6 +45,7 @@
     &.show-studies {
       .study.recycle { display: block; }
     }
+
   }
   &.date-labeling {
     .date-labeling-key { display: block; }
@@ -60,6 +62,7 @@
   }
   &.organic-waste-bans-waste-recycling-laws {
     .level-1 { fill: $recycle-color; }
+    .muni { opacity: 0.6; }
     .organic-waste-bans-waste-recycling-laws-key { display: block; }
   }
   .states:hover {

@@ -42,9 +42,10 @@ $.behaviors('.map', initMap);
       // .defer(d3.json, '/data/states.json')
       .defer(d3.json, '/data/us-states.json')
       .defer(d3.json, '/data/casestudies.json')
+      .defer(d3.json, '/data/municipalities.json')
       .await(buildMap);
 
-    function buildMap(error, states, casestudies) {
+    function buildMap(error, states, casestudies, municipalities) {
       svg.selectAll(".states")
         .data(states.features)
         .enter()
@@ -56,6 +57,20 @@ $.behaviors('.map', initMap);
           var url = "/states/"+d.properties.name.trim();
           window.location.href = url;
         });
+
+      svg.selectAll('.municipality')
+        .data(municipalities.features)
+        .enter()
+        .append("svg:image")
+        .attr("xlink:href", function(d) { return "/img/icons/policy/muni_icon.svg"; })
+        .attr("width", 28)
+        .attr("height", 28)
+        .attr("opacity", 0.7)
+        .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
+        .attr('class', function(d) { return "muni "+d.category; });
+        // .append("path")
+        // .attr('d', path.pointRadius(10))
+        // .attr('class', "municipality");
 
       svg.selectAll('.study')
         .data(casestudies.features)

@@ -304,7 +304,31 @@ organics_recycling_mandates:
         - california
         - connecticut
         - massachusetts
-        - new-york
         - rhode-island
-        - texas
-        - washington
+      municipalities:
+        - title: San Francisco
+          state: california
+          lat: 37.757815
+          long: -123.5076395 
+        - title: Boulder
+          state: colorado
+          lat: 40.014984
+          long: -105.270546 
+        - title: "Minneapolis & Hennepin County"
+          state: Minnesota
+          lat: 44.975918
+          long: -93.273079 
+        - title: New York City
+          state: new-york
+          lat: 40.730610
+          long: -74.935242
+        - title: Austin
+          state: texas
+          lat: 30.2672
+          long: -97.7431
+        - title: Seattle
+          state: washington
+          lat: 47.6063
+          long: -122.3321 
+
+
