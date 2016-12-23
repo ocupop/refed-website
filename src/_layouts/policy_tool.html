@@ -32,4 +32,26 @@ layout: default
     </div>
   </section>
   {% endif %}
+  {% if page.slug == 'date-labels' %}
+  <section id="subnav" class="flush subnav subnav-tabs">
+    <div class="row">
+      <a href="{{ '/tools/policy' | prepend: site.baseurl  }}" class="col">
+        <div class="content">
+          <i class="icon-prev"></i>
+          <small>Previous</small>
+          <hr>
+          <span class="title" style="white-space: pre-line;">U.S. Food Waste<br>Policy Finder</span>
+        </div>
+      </a>
+      <a href="#" class="col btnNext">
+        <div class="content">
+          <small>Next</small>
+          <hr>
+          <span class="title">Date Labeling<br>Policy Issues</span>
+          <i class="icon-next"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+  {% endif %}
 </div>
