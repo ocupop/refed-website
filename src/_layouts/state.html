@@ -29,7 +29,7 @@ layout: policy_tool
               <div class="panel icon-panel" style="height: 310px">
                 <h3>Date Label<br />Required For</h3>
                 <div class="content">
-                  <div class="row middle-xs">
+                  <div class="row">
                     {% if regulations.date_labels_required_for %}
 
                       {% for item in regulations.date_labels_required_for %}
@@ -52,12 +52,12 @@ layout: policy_tool
               <div class="panel icon-panel" style="height: 310px">
                 <h3>Sale After Date<br />Restricted For</h3>
                 <div class="content">
-                  <div class="row middle-xs">
+                  <div class="row">
                     {% if regulations.restricted_sales_on_expired_labels %}
 
                       {% for item in regulations.restricted_sales_on_expired_labels %}
                       <div class="col-xs-4 text-center">
-                        <i class="icon-twitter"></i>
+                        <i class="icon-{{ item | slugify }}"></i>
                         <h6>{{ item }}</h6>
                       </div>
                       {% endfor %}
@@ -75,12 +75,12 @@ layout: policy_tool
               <div class="panel icon-panel" style="height: 310px">
                 <h3>Donation After<br />Date Restricted</h3>
                 <div class="content">
-                  <div class="row middle-xs">
+                  <div class="row">
                     {% if regulations.restricted_donations_on_expired_labels %}
 
                       {% for item in regulations.restricted_donations_on_expired_labels %}
                       <div class="col-xs-4 text-center">
-                        <i class="icon-twitter"></i>
+                        <i class="icon-{{ item | slugify }}"></i>
                         <h6>{{ item }}</h6>
                       </div>
                       {% endfor %}
