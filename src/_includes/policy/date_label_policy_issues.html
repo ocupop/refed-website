@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-lg-7">
-        <div class="map"></div>
+        <img src="/img/maps/map_date-label-05.svg">
       </div>
     </div>
     <div class="row carousel-datelabel">
@@ -25,12 +25,13 @@
               {% for item in filters %}
                 <div class="item{% if forloop.first %} active{% endif %}"
                      data-states='{{ item.states | jsonify }}'
-                     data-progress="{% cycle '20', '40', '60', '80' %}">
+                     data-progress="{% cycle '20', '40', '60', '80' %}"
+                     data-map="#map_{{ forloop.index }}">
                   <h3 class="item-title"><i class="icon {% cycle 'cream-dark','recovery-light','recovery','prevention' %}"></i>{{ item.title }}</h3>
                   <p>{{ item.definition }}</p>
                 </div>
               {% endfor %}
-              <div class="item explore" data-progress="100">
+              <div class="item explore" data-progress="100" data-map="#map_5">
                 <h2>Explore Each State</h2>
                 <ul class="nav">
                   <li>
@@ -50,13 +51,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-7">
-        <div class="map"></div>
-      </div>
-    </div>
-    <div class="row carousel-datelabel">
-      <div class="col-xs-12">
         <div class="content text-center">
           <div class="carousel-controls">
             <a class="left" href="#carousel-date-label" role="button" data-slide="prev">
@@ -75,6 +69,14 @@
           </div>
         </div>
       </div>
+      <div class="col-xs-12 col-md-7">
+        {% for map in (1..5) %}
+        <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
+          <img src="/img/maps/map_date-label-0{{ forloop.index }}.svg">
+        </div>
+        {% endfor %}
+
+      </div>
     </div>
   </div>
 </section>
@@ -83,6 +85,11 @@
   $('#carousel-date-label').on('slid.bs.carousel', function (e) {
     var direction = e.direction;
     var progress = $(e.relatedTarget).data("progress");
+    var current_map = $(e.relatedTarget).data("map");
+
+    $('.map-datelabel').removeClass('active');
+    $(current_map).addClass('active');
+
     $('.progress-bar').css("width", progress + "%").attr("aria-valuenow", progress);
     if(progress == 100) {
       $('.right').addClass('hide');
