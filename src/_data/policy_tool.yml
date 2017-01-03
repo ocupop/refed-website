@@ -94,7 +94,7 @@ liability_protection:
       state: california
       lat: 36.778259
       long: -119.417931
-    - title: OregonLiability Protection
+    - title: Oregon Liability Protection
       summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards. However, some states, like Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies \"regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.\" This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
       state: oregon
       lat: 44.1199746
@@ -309,18 +309,18 @@ organics_recycling_mandates:
         - title: San Francisco
           state: california
           lat: 37.757815
-          long: -123.5076395 
+          long: -123.5076395
         - title: Boulder
           state: colorado
           lat: 40.014984
-          long: -105.270546 
-        - title: "Minneapolis & Hennepin County"
-          state: Minnesota
+          long: -105.270546
+        - title: 'Minneapolis & Hennepin County'
+          state: minnesota
           lat: 44.975918
-          long: -93.273079 
+          long: -93.273079
         - title: New York City
           state: new-york
-          lat: 40.730610
+          lat: 40.73061
           long: -74.935242
         - title: Austin
           state: texas
@@ -329,6 +329,4 @@ organics_recycling_mandates:
         - title: Seattle
           state: washington
           lat: 47.6063
-          long: -122.3321 
-
-
+          long: -122.3321
