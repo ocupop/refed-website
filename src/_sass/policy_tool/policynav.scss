@@ -183,12 +183,15 @@ body.date-labels {
     right: auto;
     width: 100%;
     box-shadow: none;
-    border-top: 10px solid $cream-light;
+    // border-top: 10px solid $cream-light;
     .nav_category {
       display: none;
     }
     .mobilenav {
       display: block;
+    }
+    .contentnav {
+      display: none;
     }
     p {
       font-size: 15px;

@@ -14,7 +14,6 @@
     font-weight: 400;
     padding: 0;
     height: 60px;
-    margin-bottom: 10px;
     h1 {
       font-size: 16px;
       font-weight: 400;
@@ -121,6 +120,14 @@
     }
     .nav-tabs {
       float: none;
+    }
+  }
+  // Hiding the tab nav on satte pages
+  body.state_layout {
+    .tool-header {
+      .tabnav {
+        display: none;
+      }
     }
   }
 }
