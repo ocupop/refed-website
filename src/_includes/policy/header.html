@@ -29,10 +29,10 @@
             {% else %}
 
             <ul class="nav nav-tabs">
-              <li class="{% unless page.slug contains 'policy-tool' %}active{% endunless %}">
+              <li class="{% if page.slug contains 'federal' or page.slug contains 'act' %}active{% endif %}">
                 <a href="/tools/policy/federal-policy">Federal Policy</a>
               </li>
-              <li class="{% if page.slug contains 'policy-tool' %}active{% endif %}">
+              <li class="{% unless page.slug contains 'federal' or page.slug contains 'act' %}active{% endunless %}">
                 <a href="/tools/policy">State Policy</a>
               </li>
             </ul>

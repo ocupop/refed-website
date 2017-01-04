@@ -61,7 +61,12 @@ policy_data:
         excerpted_language_from_the_law: 'Not restricted for shellfish in Washington, D.C.'
         legal_citation: No relevant state law.
     label_regulation:
-      date_labels_required_for: 'Potentially Hazardous Foods, Dairy, Meat/Poultry, Eggs, Shellfish'
+      date_labels_required_for: 
+        - hazardous foods
+        - dairy 
+        - meat
+        - eggs
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:

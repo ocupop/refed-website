@@ -85,7 +85,7 @@ liability_protection:
   definition: Reveal states that offer liability protection
   case_studies:
     - title: Wisconsin Liability Protection
-      summary: "Wisconsin protects nonprofits that charge end recipients for food at low cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient. Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food ”at a price not to exceed overhead and transportation costs” without sacrificing liability protection. States that provide this protection offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
+      summary: "Wisconsin protects nonprofits that charge end recipients for food at low cost. A handful of states, including Wisconsin, provide liability protection even when the food is sold at a reduced rate to the end recipient. Wisconsin's law allows nonprofit food recovery organizations to charge recipients for food “at a price not to exceed overhead and transportation costs” without sacrificing liability protection. States that provide this protection offer the potential for an economically sustainable solution to food recovery because they allow the labor, storage and transportation costs of recovering food to be offset by end-user purchases."
       state: wisconsin
       lat: 43.8844
       long: -89.2879
@@ -95,12 +95,12 @@ liability_protection:
       lat: 36.778259
       long: -119.417931
     - title: Oregon Liability Protection
-      summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards. However, some states, like Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies \"regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.\" This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
+      summary: "Currently, most states follow the Emerson Act’s model of providing liability protection only when the donated food fully complies with all federal, state and local quality and labeling requirements. These requirements impose extraneous burdens on donors and food recovery organizations by forcing them to meet all labeling standards. However, some states, like Oregon, eliminate compliance with packaging or labeling laws as a condition for liability protection. Oregon's statute states that liability protection applies “regardless of compliance with any laws, rules or ordinances regulating the packaging or labeling of food.” This allows donation of partially compliant food and absolves donors of any duty placed on the food recovery organization to recondition the food as compliant."
       state: oregon
       lat: 44.1199746
       long: -122.7804332
     - title: New Hampshire Liability Protection
-      summary: 'The majority of state liability protection statutes provide liability protection only for food donated to a nonprofit food recovery organization, which then distributes the food to end users. However, some states, like New Hampshire, provide liability protection to donors donating to a "needy individual or individuals or to a bona fide charitable or nonprofit organization." Extending protections to direct donations could help increase efficiency and enable timely use of perishable food.'
+      summary: 'The majority of state liability protection statutes provide liability protection only for food donated to a nonprofit food recovery organization, which then distributes the food to end users. However, some states, like New Hampshire, provide liability protection to donors donating to a “needy individual or individuals or to a bona fide charitable or nonprofit organization.” Extending protections to direct donations could help increase efficiency and enable timely use of perishable food.'
       state: new-hampshire
       lat: 43.9957512
       long: -72.7008387
@@ -283,7 +283,7 @@ organics_recycling_mandates:
       lat: 37.757815
       long: -122.5076395
     - title: "Vermont's Food Scraps Disposal Ban"
-      summary: 'In 2012, Vermont passed the Universal Recycling Law, which bans disposal of food scraps, in addition to "blue bin" recyclables and leaf and yard debris. All residents and businesses must divert food scraps by 2020, with larger businesses and institutions subject to the ban even earlier depending on the amount of food waste generated annually.'
+      summary: 'In 2012, Vermont passed the Universal Recycling Law, which bans disposal of food scraps, in addition to “blue bin” recyclables and leaf and yard debris. All residents and businesses must divert food scraps by 2020, with larger businesses and institutions subject to the ban even earlier depending on the amount of food waste generated annually.'
       state: vermont
       lat: 43.8682565
       long: -73.568751
@@ -291,7 +291,7 @@ organics_recycling_mandates:
       summary: 'New York City’s organic recycling mandate, which went into effect in July 2016, requires certain food service establishments in hotels, arenas and stadiums, and certain food manufacturers and wholesalers source-separate their organic material and either arrange for the transportation of organic waste material, including food waste, to an appropriate processing facility, or to process the food waste on-site.'
       state: new-york
       lat: '40.7128'
-      long: '-74.0059'
+      long: '-75.0059'
     - title: Austin Restaurants to Recycle Food Scraps
       summary: 'Austin, Texas, amended its organic waste recycling law, the Universal Recycling Ordinance, so as to require all restaurants 5,000 square feet and larger to compost food scraps by 2017. This amendment to the existing ordinance was passed as part of the city’s Zero Waste Initiative, which seeks to reduce the amount of trash sent to the city’s landfills by 90% by 2040.'
       state: texas
