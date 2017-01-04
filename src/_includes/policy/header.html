@@ -30,10 +30,10 @@
         </div>
         <div class="col-xs-12 col-md-6 col-md-pull-6">
           <ul class="nav nav-tabs">
-            <li class="{% if page.slug contains 'federal' or page.slug contains 'act' %}active{% endif %}">
+            <li class="{% if page.slug contains 'federal' %}active{% endif %}">
               <a href="/tools/policy/federal-policy">Federal Policy</a>
             </li>
-            <li class="{% unless page.slug contains 'federal' or page.slug contains 'act' %}active{% endunless %}">
+            <li class="{% unless page.slug contains 'federal' %}active{% endunless %}">
               <a href="/tools/policy">State Policy</a>
             </li>
           </ul>

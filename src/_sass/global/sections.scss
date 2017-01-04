@@ -11,6 +11,7 @@ section {
   // Bleeds
   &.fullbleed { padding: 0; }
   &.bottombleed { padding-bottom: 0; }
+  &.topbleed { padding-bottom: 0; }
 
   // Borders
   &.border {
