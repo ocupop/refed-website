@@ -1,6 +1,10 @@
 .tool-header {
   // TODO - Refactor color palette
   background-color: #b8b8b8;
+  h2 {
+    font-size: 23px;
+    font-weight: 200;
+  }
   .message {
     width: 100%;
     background-color: $gray;
@@ -8,9 +12,15 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 0;
     height: 60px;
     margin-bottom: 10px;
+    h1 {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 60px;
+    }
     a {
       color: #ffffff;
       &:hover, &:focus {
@@ -24,23 +34,31 @@
       right: 0;
       height: 60px;
       padding: 0 20px;
-      padding-top: 17px;
       font-size: 13px;
       line-height: 13px;
       text-align: left;
       color: $gray-light;
       background-color: rgba(255,255,255,0.1);
       em {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 3px;
         font-family: $font-family-base;
         font-style: italic;
         font-weight: 200;
         font-size: 14px;
+        clear: both;
+        &:before, &:after {
+          content: " ";
+          display: table;
+        }
       }
     }
   }
   .nav-tabs {
     position: relative;
     border-bottom-color: #b8b8b8;
+    float: right;
     li {
 
       &.active {
@@ -69,32 +87,22 @@
       }
     }
   }
-}
-.tool-header-summary {
-  display: inline-block;
-  padding: 0 0.5rem;
+  .title {
 
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 100%;
-  flex: 0 0 auto;
-}
+  }
+  .navigation {
 
-.tool-header-nav {
-  display: inline-block;
-  padding: 0 0.5rem;
-
-  flex-grow: 2;
-  flex-basis: 0;
-  max-width: 100%;
-  flex: 0 0 auto;
+  }
 }
 
 @media(max-width: 1024px) {
   .tool-header {
+    h2 {
+      text-align: center;
+    }
     .message {
       height: auto;
-      padding-bottom: 0;
+      padding: 0;
       .updated_at {
         position: relative;
         width: 100%;
@@ -102,10 +110,39 @@
         bottom: 0;
         right: 0;
         height: auto;
-        padding: 3px 20px;
+        padding: 5px 20px;
         font-size: 13px;
         line-height: 13px;
         text-align: center;
+        em {
+          margin-top: 0;
+        }
+      }
+    }
+    .nav-tabs {
+      float: none;
+    }
+  }
+}
+
+@media(max-width: 650px) {
+  .tool-header {
+    .nav-tabs {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 20px;
+      padding-top: 0;
+      li {
+        display: block;
+        width: 100%;
+        margin: 5px 0px;
+        text-align: center;
+        a {
+          max-width: none;
+          width: 100%;
+          margin: 0px;
+          padding: 20px;
+        }
       }
     }
   }

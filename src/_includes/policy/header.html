@@ -1,45 +1,44 @@
 {% if page.header %}
   <header class="tool-header">
     <div class="message">
-      {{ page.header }}
+      <h1>{{ page.header }}</h1>
       <div class="updated_at">
-        <em>Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }}</em>.<br>
+        <em>Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }}.</em>
         Have an update for us? &nbsp;&nbsp;<a href="mailto:info@refed.com">Submit it here &gt;</a>
       </div>
     </div>
     <div class="container">
       <div class="row bottom-xs">
-        {% unless  page.slug == 'date-labels' %}
-        <div class="tool-header-summary">
+        {% if page.slug == 'date-labels' %}
+        <div class="col-xs-12 col-md-4">
+          <div class="content">
+            <h2>Spotlight on date labeling regulations</h2>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#date-label-terminology-quiz" aria-controls="date-label-terminology-quiz" role="tab" data-toggle="tab">Date Label Terminology Quiz</a></li>
+            <li role="presentation"><a href="#date-label-policy-issues" aria-controls="date-label-policy-issues" role="tab" data-toggle="tab">Date Labeling Policy Issues</a></li>
+            <li role="presentation"><a href="#federal-policy-solutions" aria-controls="federal-policy-solutions" role="tab" data-toggle="tab">Federal Policy Solutions</a></li>
+          </ul>
+        </div>
+        {% else %}
+        <div class="col-xs-12 col-md-6 col-md-push-6">
           <div class="content">
             <p class="fineprint">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
           </div>
         </div>
-        {% endunless %}
-        <div class="tool-header-nav">
-          <div class="content flush-bottom">
-            {% if  page.slug == 'date-labels' %}
-            
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#date-label-terminology-quiz" aria-controls="date-label-terminology-quiz" role="tab" data-toggle="tab">Date Label Terminology Quiz</a></li>
-              <li role="presentation"><a href="#date-label-policy-issues" aria-controls="date-label-policy-issues" role="tab" data-toggle="tab">Date Labeling Policy Issues</a></li>
-              <li role="presentation"><a href="#federal-policy-solutions" aria-controls="federal-policy-solutions" role="tab" data-toggle="tab">Federal Policy Solutions</a></li>
-            </ul>
-
-            {% else %}
-
-            <ul class="nav nav-tabs">
-              <li class="{% if page.slug contains 'federal' or page.slug contains 'act' %}active{% endif %}">
-                <a href="/tools/policy/federal-policy">Federal Policy</a>
-              </li>
-              <li class="{% unless page.slug contains 'federal' or page.slug contains 'act' %}active{% endunless %}">
-                <a href="/tools/policy">State Policy</a>
-              </li>
-            </ul>
-
-            {% endif %}
-          </div>
+        <div class="col-xs-12 col-md-6 col-md-pull-6">
+          <ul class="nav nav-tabs">
+            <li class="{% if page.slug contains 'federal' or page.slug contains 'act' %}active{% endif %}">
+              <a href="/tools/policy/federal-policy">Federal Policy</a>
+            </li>
+            <li class="{% unless page.slug contains 'federal' or page.slug contains 'act' %}active{% endunless %}">
+              <a href="/tools/policy">State Policy</a>
+            </li>
+          </ul>
         </div>
+        {% endif %}
       </div>
     </div>
   </header>

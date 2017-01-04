@@ -3,6 +3,7 @@
   .statenav-message {
     @extend .col-xs-12;
     @extend .col-md-7;
+    h1,h2,h3,h4,h5 { margin: 0; }
     .content {
       float: right;
     }
