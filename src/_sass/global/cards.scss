@@ -1,0 +1,139 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+  .grid-item {
+    padding: 2px;
+  }
+}
+.card {
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  width: 31%;
+  max-width: 31%;
+  height: auto;
+  min-height: 100px;
+  padding-bottom: 110px;
+  margin: 10px auto;
+  background-color: $cream;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  header {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+    .rated {
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: transparent;
+       &:hover {
+        background-color: rgba(0,0,0,0.6);
+        p {
+          display: block;
+        }
+       }
+      i {
+        display: inline-block;
+        margin: 5px 0;
+        color: #fff;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        &:first-child {
+          margin-left: 5px;
+        }
+      }
+      p {
+        display: none;
+        padding: 0 10px;
+        color: #ffffff !important;
+        font-size: 13px;
+        font-weight: 100;
+        text-transform: uppercase;
+        small {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .content {
+    padding: $content-padding / 2;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // height: 110px;
+    .stat {
+      display: none;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0 $content-padding / 2;
+      font-size: 30px;
+      font-weight: 500;
+      color: $gray;
+      text-transform: uppercase;
+      line-height: 0.65em;
+      small {
+        font-size: 75%;
+      }
+      span {
+        font-size: 13px;
+        font-weight: 200;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 $content-padding / 2;
+      background-color: $gray;
+      font-size: 13px;
+      font-weight: 100;
+      text-transform: uppercase;
+
+      color: $cream-light;
+    }
+  }
+  &.prevention-card {
+    footer {
+      .stat { color: $prevention-color; }
+      a {
+        background-color: $prevention-color;
+      }
+    }
+  }
+  &.recovery-card {
+    footer {
+      .stat { color: $recovery-color; }
+      a {
+        background-color: $recovery-color;
+      }
+    }
+  }
+  &.recycling-card {
+    footer {
+      .stat { color: $recycle-color; }
+      a {
+        background-color: $recycle-color;
+      }
+    }
+  }
+  &.link-card {
+    header {
+      a {
+        margin: 0;
+        height: 179px;
+      }
+    }
+  }
+}

@@ -67,17 +67,13 @@ connected-solutions: [donation-tax-incentives, standardized-donation-regulation,
         <div class="content">
           <h3>Related Solutions</h3>
           <p class="editable">The top three solutions that are most affected by policy.</p>
-        </div>
-      </div>
-    </div>
-    <div class="grid row">
-      <div class="col-xs-12">
-        <div class="content">
-          {% for solution in site.solutions %}
-              {% if page.connected-solutions contains solution.slug %}
-                {% include card.html %}
-              {% endif %}
-          {% endfor %}
+          <div class="grid row">
+            {% for solution in site.solutions %}
+                {% if page.connected-solutions contains solution.slug %}
+                  {% include card.html %}
+                {% endif %}
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
