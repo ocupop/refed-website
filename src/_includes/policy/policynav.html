@@ -102,10 +102,24 @@
         <div class="col-xs-12">
           <div class="content">
             <p>Select a policy filter below to view the States related to that policy</p>
-            <a href="#liability-collapse" class="button recovery" data-toggle="collapse" aria-expanded="false" aria-controls="liability-collapse">Liability Protection</a>
+            <button
+               data-parent=".mobilenav"
+               data-target="#liability-collapse"
+               class="button recovery"
+               data-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="liability-collapse">
+               Liability Protection
+            </button>
             <div class="collapse" id="liability-collapse">
               {% include svg/map_food-waste-liability-protection.svg %}
-              <a href="#liability-studies" class="sub-trigger" data-toggle="collapse" aria-expanded="false" aria-controls="liability-studies"><img src="/img/icons/policy/recovery_study_icon.svg" alt="Liability icon"> Best-practice Policies <i class="icon-caret-up"></i></a>
+              <a href="#liability-studies"
+                 class="sub-trigger"
+                 data-toggle="collapse"
+                 aria-expanded="false"
+                 aria-controls="liability-studies">
+                 <img src="/img/icons/policy/recovery_study_icon.svg" alt="Liability icon"> Best-practice Policies <i class="icon-caret-up"></i>
+              </a>
               <div class="collapse" id="liability-studies">
                 {% for case_study in site.data.policy_tool['liability_protection'].case_studies %}
                   <div class="panel">
@@ -115,7 +129,15 @@
                 {% endfor %}
               </div>
             </div>
-            <a href="#tax-collapse" class="button recovery" data-toggle="collapse" aria-expanded="false" aria-controls="tax-collapse">Tax Incentives</a>
+            <button
+               data-parent=".mobilenav"
+               data-target="#tax-collapse"
+               class="button recovery"
+               data-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="tax-collapse">
+               Tax Incentives
+            </button>
             <div class="collapse" id="tax-collapse">
               {% include svg/map_food-waste-tax-incentives.svg %}
               <a href="#tax-studies" class="sub-trigger" data-toggle="collapse" aria-expanded="false" aria-controls="tax-studies"><img src="/img/icons/policy/recovery_study_icon.svg" alt="tax icon">Best Practice Policies <i class="icon-caret-up"></i></a>
@@ -128,7 +150,15 @@
                 {% endfor %}
               </div>
             </div>
-            <a href="#feed-collapse" class="button recycling" data-toggle="collapse" aria-expanded="false" aria-controls="feed-collapse">Animal Feed</a>
+            <button
+               data-parent=".mobilenav"
+               data-target="#feed-collapse"
+               class="button recycling"
+               data-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="feed-collapse">
+               Animal Feed
+            </button>
             <div class="collapse" id="feed-collapse">
               {% include svg/map_food-waste-animal-feed.svg %}
               <a href="#feed-studies" class="sub-trigger text-recycle" data-toggle="collapse" aria-expanded="false" aria-controls="feed-studies"><img src="/img/icons/policy/recycle_study_icon.svg" alt="Animal feed icon"> Best Practice Policies <i class="icon-caret-up"></i></a>
@@ -141,7 +171,15 @@
                 {% endfor %}
               </div>
             </div>
-            <a href="#waste-collapse" class="button recycling" data-toggle="collapse" aria-expanded="false" aria-controls="waste-collapse">Organic Waste Bans &amp; Waste Recycling Laws</a>
+            <button
+               data-parent=".mobilenav"
+               data-target="#waste-collapse"
+               class="button recycling"
+               data-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="waste-collapse">
+               Organic Waste Bans &amp; Waste Recycling Laws
+            </button>
             <div class="collapse" id="waste-collapse">
               {% include svg/map_food-waste-organic-waste-bans.svg %}
               <a href="#organics-studies" class="sub-trigger text-recycle" data-toggle="collapse" aria-expanded="false" aria-controls="organics-studies"><img src="/img/icons/policy/recycle_study_icon.svg" alt="Organic waste icon"> Best Practice Policies <i class="icon-caret-up"></i></a>
@@ -157,6 +195,14 @@
           </div>
         </div>
       </div>
+      <script type="text/javascript">
+        // $('a[data-toggle="collapse"]').click(function() {
+        //   alert("HELLP");
+        // });
+        // $('a').on('show.bs.collapse', function() {
+        //   alert("HE");
+        // });
+      </script>
       <div class="row">
         <div class="col-xs-12 col-md-5">
           <div class="content">
@@ -176,7 +222,7 @@
     <!-- END Mobile: Map Filters -->
 
   {% elsif page.layout == 'state' %}
-    <div class="sticky hidden-sm hidden-xs" data-offset-top="50">
+    <div class="contentnav sticky hidden-sm hidden-xs" data-offset-top="50">
       <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
       <ul>
         <li><a href="#date-labeling">Date Labeling</a></li>
@@ -210,7 +256,7 @@
     </div>
    
   {% else %}
-    <div class="sticky" data-offset-top="50">
+    <div class="contentnav sticky" data-offset-top="50">
       <div class="content">
         {{ content | toc_only }}
       </div>

@@ -15,6 +15,7 @@
     font-size: 20px;
   }
   h4 {
+    position: relative;
     padding: 7px 30px;
     margin: 0;
     color: #fff;
@@ -26,6 +27,11 @@
       &:hover, &:focus, &:active {
         color: #ffffff;
       }
+    }
+    .caret {
+      position: absolute;
+      top: 15px;
+      right: 20px;
     }
   }
   p {
@@ -112,6 +118,7 @@
   .mobilenav {
     display: none;
     .button {
+      width: 100%;
       margin: 15px 0;
       font-weight: 500;
       font-size: 16px;
