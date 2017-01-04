@@ -70,12 +70,13 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-7">
-        {% for map in (1..5) %}
-        <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
-          <img src="/img/maps/map_date-label-0{{ forloop.index }}.svg">
+        <div class="content" style="padding-top: 60%;">
+          {% for map in (1..5) %}
+          <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
+            <img src="/img/maps/map_date-label-0{{ forloop.index }}.svg">
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-
       </div>
     </div>
   </div>
