@@ -92,7 +92,7 @@
     margin-top: 5px;
     font-style: italic;
   }
-  .button {
+  .date-label-button {
     font-weight: 300;
     margin: 7px 25px;
     font-size: 13px;
@@ -114,49 +114,50 @@
   .toc-entry {
     padding-left: 0;
   }
-  //mobilenav styles
-  .mobilenav {
-    display: none;
-    .button {
-      width: 100%;
-      margin: 15px 0;
-      font-weight: 500;
-      font-size: 16px;
+}
+
+//mobilenav styles
+.mobilenav {
+  display: none;
+  .button {
+    width: 100%;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .panel {
+    padding: 0 20px;
+  }
+  h3 {
+    img {
+      display: inline-block;
+      width: 25px;
+      margin-top: -5px;
     }
-    .panel {
-      padding: 0 20px;
+  }
+  .sub-trigger {
+    display: block;
+    padding: 20px 0;
+    font-size: 22px;
+    font-style: italic;
+    i {
+      display: inline-block;
+      font-size: 18px;
+      width: auto;
+      height: auto;
+      margin-left: 10px;
+      transform: rotate(180deg);
+      transition: all .5s ease;
     }
-    h3 {
-      img {
-        display: inline-block;
-        width: 25px;
-        margin-top: -5px;
-      }
+    img {
+      width: 30px;
+      margin-top: -5px;
+      margin-right: 5px;
     }
-    .sub-trigger {
-      display: block;
-      padding: 20px 0;
-      font-size: 22px;
-      font-style: italic;
-      i {
-        display: inline-block;
-        font-size: 18px;
-        width: auto;
-        height: auto;
-        margin-left: 10px;
-        transform: rotate(180deg);
-        transition: all .5s ease;
-      }
-      img {
-        width: 30px;
-        margin-top: -5px;
-        margin-right: 5px;
-      }
-    }
-    .sub-trigger[aria-expanded="true"] {
-      i {
-        transform: rotate(0);
-      }
+  }
+  .sub-trigger[aria-expanded="true"] {
+    i {
+      transform: rotate(0);
     }
   }
 }
@@ -187,9 +188,6 @@ body.date-labels {
     .nav_category {
       display: none;
     }
-    .mobilenav {
-      display: block;
-    }
     .contentnav {
       display: none;
     }
@@ -197,5 +195,8 @@ body.date-labels {
       font-size: 15px;
       padding: 0 0 0.5em 0;
     }
+  }
+  .mobilenav {
+    display: block;
   }
 }
