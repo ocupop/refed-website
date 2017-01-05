@@ -65,7 +65,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: N/A
-        relevant_state_regulatory_body: 'Utah Department of Agriculture & Food (§ 4-31-109 (2015)), <a href="http://ag.utah.gov/">http://ag.utah.gov/</a>.'
+        relevant_state_regulatory_body: 'Utah Department of Agriculture & Food (§ 4-31-109 (2015)), <a href="http://ag.utah.gov/" target="_blank">http://ag.utah.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

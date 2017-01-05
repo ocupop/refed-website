@@ -147,7 +147,7 @@ policy_data:
           reasonable times enter and investigate garbage heat-treatment and
           garbage-feeding facilities. Garbage feeders must keep a complete record
           of their operations. § 106-405.7 (2015).
-        relevant_state_regulatory_body: 'North Carolina Department of Agriculture & Consumer Services (§ 106-405.8 (2015)), <a href="http://www.ncagr.gov/>http://www.ncagr.gov/</a>.'
+        relevant_state_regulatory_body: 'North Carolina Department of Agriculture & Consumer Services (§ 106-405.8 (2015)), <a href="http://www.ncagr.gov" target="_blank">http://www.ncagr.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

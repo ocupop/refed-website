@@ -89,7 +89,7 @@ policy_data:
         licensure_requirements: Any person who manufacturers commercial feed must obtain a license from the commissioner. § 3.2-4803 (2015).
         treatment_requirements: 'The commissioner may in his or her discretion exclude from the definition of “garbage” such wastes that have been heat-treated to the extent that the resultant material is of a uniform consistency, contains by analysis not more than 10 percent moisture, and that he has determined to be “non-putrescible.” Such treated “non-putrescible” wastes shall be “commercial feed.” § 3.2-6031 (2015).'
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a Class 1 misdemeanor. Each day upon which the violation occurs counts as a separate offense. Violators may be enjoined from continuing such violation. § 3.2-6034 (2015).
-        relevant_state_regulatory_body: 'Virginia Department of Agriculture & Consumer Services (§ 3.2-6001 (2015)), <a href="http://www.vdacs.virginia.gov/">http://www.vdacs.virginia.gov/</a>.'
+        relevant_state_regulatory_body: 'Virginia Department of Agriculture & Consumer Services (§ 3.2-6001 (2015)), <a href="http://www.vdacs.virginia.gov/" target="_blank">http://www.vdacs.virginia.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

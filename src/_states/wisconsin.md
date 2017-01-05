@@ -109,7 +109,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: The department of agriculture may order any swine to be condemned or destroyed because of any infectious or communicable disease resulting from the swine’s consumption of garbage. 95.10 (2015).
-        relevant_state_regulatory_body: 'Wisconsin Department of Agriculture, Trade, & Consumer Protection (95.10 (2015)), <a href="http://datcp.wi.gov/">http://datcp.wi.gov/</a>.'
+        relevant_state_regulatory_body: 'Wisconsin Department of Agriculture, Trade, & Consumer Protection (95.10 (2015)), <a href="http://datcp.wi.gov/" target="_blank">http://datcp.wi.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

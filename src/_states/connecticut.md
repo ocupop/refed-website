@@ -95,7 +95,7 @@ policy_data:
           Violation of the garbage-feeding rule also may result in the department
           of agriculture suspending, revoking, or withholding registration from
           a garbage-feeding swine farm. § 22-320d (2015).
-        relevant_state_regulatory_body: 'Connecticut Department of Agriculture (§ 22-320a), <a href="http://www.ct.gov/doag/site/default.asp">http://www.ct.gov/doag/site/default.asp</a>.'
+        relevant_state_regulatory_body: 'Connecticut Department of Agriculture (§ 22-320a), <a href="http://www.ct.gov/doag/site/default.asp" target="_blank">http://www.ct.gov/doag/site/default.asp</a>.'
   organics_recycling_mandates:
     overview:
     summary:

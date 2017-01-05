@@ -99,7 +99,7 @@ policy_data:
           commission may enter at reasonable times upon private or public
           property where swine are kept to inspect the premises. § 47-15-50
           (2015).
-        relevant_state_regulatory_body: 'Clemson Livestock-Poultry Health Commission (§ 47-15-70 (2015)), <a href="http://www.clemson.edu/public/lph/">http://www.clemson.edu/public/lph/</a>.'
+        relevant_state_regulatory_body: 'Clemson Livestock-Poultry Health Commission (§ 47-15-70 (2015)), <a href="http://www.clemson.edu/public/lph/" target="_blank">http://www.clemson.edu/public/lph/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

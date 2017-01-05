@@ -84,7 +84,7 @@ policy_data:
           The livestock and poultry commission may quarantine for 30 days swine
           that have been fed improperly cooked or raw garbage. Reg. No. 14 § 7
           (2015).
-        relevant_state_regulatory_body: 'Arkansas Livestock & Poultry Commission, <a href="http://alpc.arkansas.gov/Pages/default.aspx">http://alpc.arkansas.gov/Pages/default.aspx</a>.'
+        relevant_state_regulatory_body: 'Arkansas Livestock & Poultry Commission, <a href="http://alpc.arkansas.gov/Pages/default.aspx" target="_blank">http://alpc.arkansas.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

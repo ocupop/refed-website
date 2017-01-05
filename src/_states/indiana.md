@@ -85,7 +85,7 @@ policy_data:
           fed directly to swine on the same premises where the household is
           located. § 15-17-2-34 (2015).
         enforcement: The state has the power to inspect private and public property to enforce the garbage-feeding rule. § 15-17-3-15 (2015). They state may revoke a garbage feeder’s license for violation of the rule. § 15-17-16-5 (2015). The state also may issue an injunction against a violator of the garbage-feeding rule. § 15-17-19-3 (2015).
-        relevant_state_regulatory_body: 'Indiana State Board of Animal Health (§ 15-17-3-1 (2015)), <a href="http://www.in.gov/boah/">http://www.in.gov/boah/</a>.'
+        relevant_state_regulatory_body: 'Indiana State Board of Animal Health (§ 15-17-3-1 (2015)), <a href="http://www.in.gov/boah/" target="_blank">http://www.in.gov/boah/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

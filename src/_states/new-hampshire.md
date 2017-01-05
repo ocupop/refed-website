@@ -132,7 +132,7 @@ policy_data:
           examine records pertaining to heat-treatment of garbage, require
           maintenance of such records, and request submission of such records to
           the state. § 435.37 (2015).
-        relevant_state_regulatory_body: 'New Hampshire Department of Agriculture, Markets & Food (§ 435.37 (2015)), <a href="http://agriculture.nh.gov/">http://agriculture.nh.gov/</a>.'
+        relevant_state_regulatory_body: 'New Hampshire Department of Agriculture, Markets & Food (§ 435.37 (2015)), <a href="http://agriculture.nh.gov/" target="_blank">http://agriculture.nh.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

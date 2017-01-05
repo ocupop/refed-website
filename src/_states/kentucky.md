@@ -87,7 +87,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: 'The department of agriculture may seek to enjoin an individual or facility in violation of the garbage-feeding rule. Each day upon which the violation occurs counts as a separate violation. 20:100 (2015).'
-        relevant_state_regulatory_body: 'Kentucky Department of Agriculture (§ 246.020 (2015)), <a href="http://www.kyagr.com/">http://www.kyagr.com/</a>.'
+        relevant_state_regulatory_body: 'Kentucky Department of Agriculture (§ 246.020 (2015)), <a href="http://www.kyagr.com/" target="_blank">http://www.kyagr.com/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

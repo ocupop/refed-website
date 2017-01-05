@@ -128,7 +128,7 @@ policy_data:
           six months or less. Violators may also be enjoined from continuing such
           violation. Each day of the violation counts as a separate offense.
           § 81-2-511 (2015).
-        relevant_state_regulatory_body: 'Montana Department of Agriculture (§ 81-2-505 (2015)), <a href="http://agr.mt.gov/>http://agr.mt.gov/</a>.'
+        relevant_state_regulatory_body: 'Montana Department of Agriculture (§ 81-2-505 (2015)), <a href="http://agr.mt.gov/ target="_blank">http://agr.mt.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

@@ -74,7 +74,7 @@ policy_data:
         licensure_requirements: An individual or facility may not feed garbage to swine without procuring an annual license from the state. § 3-404 (2015).
         treatment_requirements: “Garbage” does not include waste that has been heat-treated such that it either contains less than ten percent moisture or has been deemed safe to feed animals by the secretary of the department of agriculture. § 3-404 (2015).
         enforcement: 'The secretary of the department of agriculture enforces the garbage-feeding rule. If any individual or facility violates the garbage-feeding rule, the swine may not be sold or removed from its location within 30 days of having consumed the garbage or longer if prescribed by the secretary. § 3-404 (2015).'
-        relevant_state_regulatory_body: 'Maryland Department of Agriculture (§ 3-404 (2015)), <a href="http://mda.maryland.gov/Pages/default.aspx>http://mda.maryland.gov/Pages/default.aspx</a>.'
+        relevant_state_regulatory_body: 'Maryland Department of Agriculture (§ 3-404 (2015)), <a href="http://mda.maryland.gov/Pages/default.aspx" target="_blank">http://mda.maryland.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

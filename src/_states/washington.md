@@ -111,7 +111,7 @@ policy_data:
           Any individual or facility that violates the garbage-feeding rule may
           also be subject to a civil penalty of $1,000 or less for each
           violation. 16.36.113 (2015).
-        relevant_state_regulatory_body: 'Washington State Department of Agriculture (16.36.110 (2015)), <a href="http://agr.wa.gov/">http://agr.wa.gov/</a>.'
+        relevant_state_regulatory_body: 'Washington State Department of Agriculture (16.36.110 (2015)), <a href="http://agr.wa.gov/" target="_blank">http://agr.wa.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

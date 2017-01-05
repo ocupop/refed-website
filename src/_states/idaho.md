@@ -77,7 +77,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a misdemeanor. Each day the individual or facility violates the rule shall count as a separate offense. Idaho Code Ann. § 25-234 (2015).
-        relevant_state_regulatory_body: 'Idaho Department of Agriculture, Division of Animal Industries (§ 25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/">http://www.agri.idaho.gov/AGRI/</a>.'
+        relevant_state_regulatory_body: 'Idaho Department of Agriculture, Division of Animal Industries (§ 25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/" target="_blank">http://www.agri.idaho.gov/AGRI/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

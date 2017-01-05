@@ -88,7 +88,7 @@ policy_data:
         licensure_requirements: An individual or facility can only feed unrestricted garbage to swine if it secures a permit from the state. But an individual feeding household garbage to his or her own swine need not obtain a permit. § 165.026 (2015).
         treatment_requirements: N/A
         enforcement: The commission may suspend a registration or require the immediate quarantine and closure of a garbage-feeding facility if the operation presents a danger to public health or the livestock industry. § 165.026 (2015).
-        relevant_state_regulatory_body: 'Texas Animal Health Commission (§165.001 (2015)), <a href="http://www.tahc.texas.gov/">http://www.tahc.texas.gov/</a>.'
+        relevant_state_regulatory_body: 'Texas Animal Health Commission (§165.001 (2015)), <a href="http://www.tahc.texas.gov/" target="_blank">http://www.tahc.texas.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

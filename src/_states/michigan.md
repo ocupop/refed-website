@@ -130,7 +130,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: 'The director of the department of agriculture has full access to inspect any premises if he or she has any grounds to believe or suspect that garbage, offal, or carcasses are being used to feed swine or may expose swine to a communicable disease. The director will quarantine swine that have been exposed to, in contact with, or fed garbage, offal, or carcasses. § 287.717a (2015).'
-        relevant_state_regulatory_body: 'Michigan Department of Agriculture & Rural Development (§ 287.717a (2015)), <a href="http://www.michigan.gov/mdard">http://www.michigan.gov/mdard</a>.'
+        relevant_state_regulatory_body: 'Michigan Department of Agriculture & Rural Development (§ 287.717a (2015)), <a href="http://www.michigan.gov/mdard" target="_blank">http://www.michigan.gov/mdard</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

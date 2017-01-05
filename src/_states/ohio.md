@@ -148,7 +148,7 @@ policy_data:
           The director of agriculture may refuse to grant, or may suspend or
           revoke a license for any violation of the garbage-feeding rule.
           § 942.03 (2015).
-        relevant_state_regulatory_body: 'Ohio Department of Agriculture (§ 942.06 (2015)), <a href="http://www.agri.ohio.gov/">http://www.agri.ohio.gov/</a>.'
+        relevant_state_regulatory_body: 'Ohio Department of Agriculture (§ 942.06 (2015)), <a href="http://www.agri.ohio.gov/" target="_blank">http://www.agri.ohio.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

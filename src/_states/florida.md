@@ -91,7 +91,7 @@ policy_data:
         licensure_requirements: An individual or facility must obtain an annual permit from the state before feeding garbage to swine. § 585.51 (2015).
         treatment_requirements: 'Garbage must be heated, cooked, treated, or processed under such temperature, pressure, process, or method and for such period of time as is necessary to render garbage free of disease before being fed to swine. § 585.50 (2015).'
         enforcement: 'The department of agriculture may refuse revoke, cancel, or suspend the license of any individual or facility that violates the garbage-feeding rule. § 585.53 (2015).'
-        relevant_state_regulatory_body: 'Florida Department of Agriculture, Division of Animal Industry (§ 585.01 (2015)), <a href="http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry">http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry</a>.'
+        relevant_state_regulatory_body: 'Florida Department of Agriculture, Division of Animal Industry (§ 585.01 (2015)), <a href="http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry" target="_blank">http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

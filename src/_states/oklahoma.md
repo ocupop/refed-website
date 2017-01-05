@@ -76,7 +76,7 @@ policy_data:
         licensure_requirements: No individual or facility may feed garbage to swine unless it has obtained a permit from the state veterinarian. 2 Okl. St. Ann. § 6-22 (2015).
         treatment_requirements: 'Before being fed to swine, all garbage, regardless of previous processing, must be thoroughly heated to at least 212 degrees Fahrenheit and maintained at this temperature for at least 30 minutes, or else be treated in some other manner approved by the state. Okla. Admin. Code 35:15-35-2 (2015).'
         enforcement: 'The state veterinarian may refuse to renew or may suspend any permit, and the state may revoke any permit has been issued if the holder violates the garbage-feeding rule. 2 Okl. St. Ann. § 6-22 (2015).'
-        relevant_state_regulatory_body: 'Oklahoma Department of Agriculture & Forestry (§ 6-1 (2015)), <a href="http://www.oda.state.ok.us/">http://www.oda.state.ok.us/</a>.'
+        relevant_state_regulatory_body: 'Oklahoma Department of Agriculture & Forestry (§ 6-1 (2015)), <a href="http://www.oda.state.ok.us/" target="_blank">http://www.oda.state.ok.us/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
