@@ -84,7 +84,6 @@ include: ["_pages"]
 
 
 gems:
-  - jekyll-bootstrap-sass
   - jekyll-last-modified-at
   - jekyll-toc
 # - jekyll-lunr-js-search

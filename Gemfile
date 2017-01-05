@@ -4,7 +4,7 @@ gem 'jekyll', '3.2.1'
 gem 'redcarpet'
 
 gem 'html-proofer'
-gem 'jekyll-bootstrap-sass'
+# gem 'jekyll-bootstrap-sass'
 gem 'sass'
 gem 'uglifier'
 gem 'autoprefixer-rails'

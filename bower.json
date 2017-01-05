@@ -18,36 +18,65 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.0",
-    "flexboxgrid": "^6.3.0",
-    "bootstrap-sass": "^3.3.6",
+    "bootstrap-multiselect": "^0.9.13",
+    "bootstrap-tour": "^0.10.2",
     "chartist": "^0.9.5",
-    "mixitup": "^2.1.11",
     "chartist-plugin-fill-donut": "^0.0.1-beta",
-    "waypoints": "^4.0.0",
+    "jquery-behaviors": "tiff/jquery-behaviors",
+    "jquery.cookie": "^1.4.1",
+    "jquery-form": "^3.46.0",
+    "jquery-stickit": "^0.2.2",
     "jquery.localScroll": "^1.4.0",
     "jquery.scrollTo": "^2.1.2",
-    "bootstrap-tour": "^0.10.2",
-    "jquery-stickit": "^0.2.2",
     "iframe-resizer": "^3.5.3",
-    "bootstrap-multiselect": "^0.9.13",
-    "jquery-behaviors": "tiff/jquery-behaviors",
-    "underscore": "^1.8.3"
+    "mixitup": "^2.1.11",
+    "underscore": "^1.8.3",
+    "waypoints": "^4.0.0",
+    "lunr.js": "lunr#^0.7.2"
   },
   "overrides": {
+    "bootstrap-multiselect": {
+      "main": [
+        "dist/js/bootstrap-multiselect.js"
+      ]
+    },
+    "bootstrap-tour": {
+      "main": [
+        "build/css/bootstrap-tour.min.css",
+        "build/js/bootstrap-tour.min.js"
+      ]
+    },
+    "chartist": {
+      "main": [
+        "dist/chartist.min.js",
+        "dist/chartist.min.js.map",
+        "dist/chartist.min.css"
+      ]
+    },
+    "chartist-plugin-fill-donut": {
+      "main": [
+        "dist/chartist-plugin-fill-donut.min.js",
+        "dist/chartist-plugin-fill-donut.min.js.map"
+      ]
+    },
+    "lunr.js": {
+      "main": ["lunr.min.js"]
+    },
+    "mixitup": {
+      "main": [
+        "build/jquery.mixitup.min.js"
+      ]
+    },
     "jquery-behaviors": {
       "main": [
         "behaviors.js"
       ]
     },
-    "chartist": {
-        "main": ["dist/chartist.min.js", "dist/chartist.min.js.map", "dist/chartist.min.css"]
-    },
-    "chartist-plugin-tooltip": {
-        "main": ["dist/chartist-plugin-tooltip.min.js", "dist/chartist-plugin-tooltip.min.js.map"]
-    },
     "waypoints": {
-      "main": ["lib/jquery.waypoints.min.js", "lib/shortcuts/inview.min.js"]
+      "main": [
+        "lib/jquery.waypoints.min.js",
+        "lib/shortcuts/inview.min.js"
+      ]
     }
   }
 }
