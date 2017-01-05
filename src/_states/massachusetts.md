@@ -170,7 +170,7 @@ policy_data:
           Any individual or facility who feeds to cows garbage, refuse, or offal
           collected by a town shall be fined not more than $100 or imprisoned for
           not more than two months. Ch. 270, § 9 (2015)
-        relevant_state_regulatory_body: 'Massachusetts Department of Agriculture, Division of Animal Health (Ch. 129, § 14B (2015)), <a href="http://www.mass.gov/eea/agencies/agr/animal-health/">http://www.mass.gov/eea/agencies/agr/animal-health/</a>.'
+        relevant_state_regulatory_body: 'Massachusetts Department of Agriculture, Division of Animal Health (Ch. 129, § 14B (2015)), <a href="http://www.mass.gov/eea/agencies/agr/animal-health/" target="_blank">http://www.mass.gov/eea/agencies/agr/animal-health/</a>.'
   organics_recycling_mandates:
     overview:
     summary:

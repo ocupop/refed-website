@@ -152,7 +152,7 @@ policy_data:
           An individual or facility that violates the garbage-feeding rule will
           have its license revoked, cancelled, or suspended upon a notice and
           hearing. § 4-4-24 (2015).
-        relevant_state_regulatory_body: 'Georgia Department of Agriculture (§ 4-4-2 (2015)), <a href="http://agr.georgia.gov/">http://agr.georgia.gov/</a>.'
+        relevant_state_regulatory_body: 'Georgia Department of Agriculture (§ 4-4-2 (2015)), <a href="http://agr.georgia.gov/" target="_blank">http://agr.georgia.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

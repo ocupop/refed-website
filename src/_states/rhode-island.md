@@ -172,7 +172,7 @@ policy_data:
           pertaining to garbage-feeding operations. The director may require
           maintenance of such records, which must be submitted to the director
           upon request. § 4-3-9 (2015).
-        relevant_state_regulatory_body: 'Rhode Island Department of Environmental Management (§ 4-3-10 (2015)), <a href="http://www.dem.ri.gov/">http://www.dem.ri.gov/</a>.'
+        relevant_state_regulatory_body: 'Rhode Island Department of Environmental Management (§ 4-3-10 (2015)), <a href="http://www.dem.ri.gov/" target="_blank">http://www.dem.ri.gov/</a>.'
   organics_recycling_mandates:
     overview:
     summary:

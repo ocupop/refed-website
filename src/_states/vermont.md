@@ -2123,7 +2123,7 @@ policy_data:
           fined $10-$100 for each offense. Each day on which the violation occurs
           counts as a separate offense. Such individual or facility also may be
           enjoined from further violation. § 1677 (2015).
-        relevant_state_regulatory_body: 'Vermont Agency of Agriculture, Food, & Markets (§ 1676 (2015)), <a href="http://agriculture.vermont.gov/">http://agriculture.vermont.gov/</a>.'
+        relevant_state_regulatory_body: 'Vermont Agency of Agriculture, Food, & Markets (§ 1676 (2015)), <a href="http://agriculture.vermont.gov/" target="_blank">http://agriculture.vermont.gov/</a>.'
   organics_recycling_mandates:
     overview:
     summary:

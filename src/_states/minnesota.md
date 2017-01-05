@@ -204,7 +204,7 @@ policy_data:
           facilities to maintain records, and an authorized representative also
           may examine such records. Copies of the records must be submitted to
           the board upon request of them. § 35.78 (2015).
-        relevant_state_regulatory_body: 'Minnesota Board of Animal Health (§§ 35.78–.751 (2015)), <a href="https://www.bah.state.mn.us/">https://www.bah.state.mn.us/</a>.'
+        relevant_state_regulatory_body: 'Minnesota Board of Animal Health (§§ 35.78–.751 (2015)), <a href="https://www.bah.state.mn.us/" target="_blank">https://www.bah.state.mn.us/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

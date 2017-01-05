@@ -93,7 +93,7 @@ policy_data:
           Whoever violates the garbage-feeding rule is guilty of a misdemeanor
           and shall be fined $50-$250 dollars and may also be imprisoned for
           a period not to exceed 90 days. § 69-11-15 (2015).
-        relevant_state_regulatory_body: 'Mississippi Board of Animal Health, http://www.mbah.ms.gov/; Mississippi Department of Agriculture & Commerce, <a href="https://www.mdac.ms.gov/>https://www.mdac.ms.gov/</a> (§ 69-11-11 (2015)).'
+        relevant_state_regulatory_body: 'Mississippi Board of Animal Health, http://www.mbah.ms.gov/; Mississippi Department of Agriculture & Commerce, <a href="https://www.mdac.ms.gov/ target="_blank">https://www.mdac.ms.gov/</a> (§ 69-11-11 (2015)).'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

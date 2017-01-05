@@ -84,7 +84,7 @@ policy_data:
           Stat. § 142-12 (2015). Such individual or facility shall be fined not
           more than $1,000 or imprisoned not more than one year, or both. Haw.
           Rev Stat. §§ 142-12, 142-23.5 (2015).
-        relevant_state_regulatory_body: 'Hawaii Department of Agriculture (Haw. Rev Stat. § 142-3 (2015)), Animal Industry Division, Animal Disease Control Branch, <a href="http://hdoa.hawaii.gov/ai/ldc/">http://hdoa.hawaii.gov/ai/ldc/</a>.'
+        relevant_state_regulatory_body: 'Hawaii Department of Agriculture (Haw. Rev Stat. § 142-3 (2015)), Animal Industry Division, Animal Disease Control Branch, <a href="http://hdoa.hawaii.gov/ai/ldc/" target="_blank">http://hdoa.hawaii.gov/ai/ldc/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

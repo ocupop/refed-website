@@ -95,7 +95,7 @@ policy_data:
           individual or facility also may be enjoined from continuing the
           violation. Each day upon which the violation occurs counts as
           a separate offense. § 11-27-107 (2015).
-        relevant_state_regulatory_body: 'Wyoming Livestock Board (§§ 11-27-102–105 (2015)), <a href="https://wlsb.state.wy.us/public">https://wlsb.state.wy.us/public</a>.'
+        relevant_state_regulatory_body: 'Wyoming Livestock Board (§§ 11-27-102–105 (2015)), <a href="https://wlsb.state.wy.us/public" target="_blank">https://wlsb.state.wy.us/public</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

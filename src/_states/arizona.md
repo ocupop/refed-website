@@ -117,7 +117,7 @@ policy_data:
           may examine records pertaining to garbage-feeding operations, may
           require maintenance of such records, and may request copies. § 3-2668
           (2015).
-        relevant_state_regulatory_body: 'Arizona Department of Agriculture, Animal Services Division (§ 3-2661 (2015)), <a href="https://agriculture.az.gov/animal-services-division">https://agriculture.az.gov/animal-services-division</a>.'
+        relevant_state_regulatory_body: 'Arizona Department of Agriculture, Animal Services Division (§ 3-2661 (2015)), <a href="https://agriculture.az.gov/animal-services-division" target="_blank">https://agriculture.az.gov/animal-services-division</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

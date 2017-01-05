@@ -97,7 +97,7 @@ policy_data:
 
           The state also may restrain any actual or threatened violation. 600.120
           (2015).
-        relevant_state_regulatory_body: 'Oregon Department of Agriculture (600.105, 600.120 (2015)), <a href="http://www.oregon.gov/oda/Pages/default.aspx">http://www.oregon.gov/oda/Pages/default.aspx</a>.'
+        relevant_state_regulatory_body: 'Oregon Department of Agriculture (600.105, 600.120 (2015)), <a href="http://www.oregon.gov/oda/Pages/default.aspx" target="_blank">http://www.oregon.gov/oda/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

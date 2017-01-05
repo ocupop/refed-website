@@ -195,7 +195,7 @@ policy_data:
           Any individual or facility that violates the pasteurization rule will
           be fined up to $50 for the first offense and up to $100 for each
           subsequent offense. § 4:4-23 (2015).
-        relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3 (2015)), <a href="http://www.nj.gov/agriculture/">http://www.nj.gov/agriculture/</a>.'
+        relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3 (2015)), <a href="http://www.nj.gov/agriculture/" target="_blank">http://www.nj.gov/agriculture/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

@@ -95,7 +95,7 @@ policy_data:
 
           The commissioner may seek to enjoin any individual or facility that
           violates the garbage-feeding rule. § 44-2-408 (2015).
-        relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/">https://www.tn.gov/agriculture/</a>.'
+        relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/" target="_blank">https://www.tn.gov/agriculture/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

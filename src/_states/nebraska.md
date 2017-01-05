@@ -79,7 +79,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: Any individual who violates the garbage-feeding rule is guilty of a misdemeanor. Each day the rule is violated is considered a separate offense. Neb. Rev. Stat. § 54-753.04 (2015).
-        relevant_state_regulatory_body: 'Nebraska Department of Agriculture (Neb. Rev. Stat. § 54-701 (2015)), a href="http://www.nda.nebraska.gov/">http://www.nda.nebraska.gov/</a>.'
+        relevant_state_regulatory_body: 'Nebraska Department of Agriculture (Neb. Rev. Stat. § 54-701 (2015)), a href="http://www.nda.nebraska.gov/" target="_blank">http://www.nda.nebraska.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

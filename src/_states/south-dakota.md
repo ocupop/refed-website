@@ -62,7 +62,7 @@ policy_data:
         licensure_requirements: N/A
         treatment_requirements: 'South Dakota repealed many of its laws pertaining to garbage feeding. Before the repeal, these laws prohibited the feeding of garbage to swine and livestock; there was no exception for heat-treated garbage. The state decided to repeal this law in order to loosen the reigns on animal disease control generally, as many animal diseases have been eradicated and better managed in recent years. H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013).'
         enforcement: N/A
-        relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/">https://sdda.sd.gov/</a>.'
+        relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/" target="_blank">https://sdda.sd.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

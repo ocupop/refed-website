@@ -68,7 +68,7 @@ policy_data:
           The department of agriculture may quarantine the premises on which
           animals are kept if it has reasonable grounds to believe that the
           animals are being fed untreated garbage. § 76 (2015).
-        relevant_state_regulatory_body: 'New York State Department of Agriculture & Markets (§ 76 (2015)), <a href="http://www.agriculture.ny.gov/">ttp://www.agriculture.ny.gov/</a>.'
+        relevant_state_regulatory_body: 'New York State Department of Agriculture & Markets (§ 76 (2015)), <a href="http://www.agriculture.ny.gov/" target="_blank">ttp://www.agriculture.ny.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

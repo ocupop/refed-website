@@ -79,7 +79,7 @@ policy_data:
           a continuing violation counts as a separate violation, but an
           individual or facility may not be subject to a civil penalty totaling
           more than $25,000. § 163.61 (2015).
-        relevant_state_regulatory_body: 'Iowa Department of Agriculture & Land Stewardship (§ 163.1 (2015)), <a href="http://www.iowaagriculture.gov/">http://www.iowaagriculture.gov/</a>.'
+        relevant_state_regulatory_body: 'Iowa Department of Agriculture & Land Stewardship (§ 163.1 (2015)), <a href="http://www.iowaagriculture.gov/" target="_blank">http://www.iowaagriculture.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

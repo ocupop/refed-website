@@ -118,7 +118,7 @@ policy_data:
 
           The state may quarantine and treat any animal that is fed food waste
           and develops any contagious or infectious disease. NAC 571.190 (2015).
-        relevant_state_regulatory_body: 'Nevada Department of Agriculture (NAC 571.004 (2015)), <a href="http://agri.nv.gov/">http://agri.nv.gov/</a>.'
+        relevant_state_regulatory_body: 'Nevada Department of Agriculture (NAC 571.004 (2015)), <a href="http://agri.nv.gov/" target="_blank">http://agri.nv.gov/</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'

@@ -83,7 +83,7 @@ policy_data:
         licensure_requirements: An individual or facility must obtain an annual license from the state before feeding garbage to swine. § 10981 (2015).
         treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 10952 (2015).
         enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
-        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), <a href="https://www.cdfa.ca.gov/">https://www.cdfa.ca.gov/</a>.'
+        relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), <a href="https://www.cdfa.ca.gov/" target="_blank">https://www.cdfa.ca.gov/</a>.'
   organics_recycling_mandates:
     overview:
     summary:
