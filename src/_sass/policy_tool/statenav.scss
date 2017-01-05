@@ -1,17 +1,12 @@
 .statenav {
   padding: 10px 0;
   .statenav-message {
-    @extend .col-xs-12;
-    @extend .col-md-7;
     h1,h2,h3,h4,h5 { margin: 0; }
     .content {
       float: right;
     }
   }
-  .statenav-select {
-    @extend .col-xs-12;
-    @extend .col-md-5;
-  }
+  .statenav-select {}
 }
 
 @media(max-width: 1024px) {

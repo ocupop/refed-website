@@ -1,0 +1,84 @@
+  // Bleeds
+  .flush { padding: 0 !important; }
+  .flush-bottom { padding-bottom: 0 !important; }
+
+
+  /* -----------------------------------------
+     Utility Classes
+  ----------------------------------------- */
+  .hide {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .visible-mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  // Alignment
+  .text-center {
+    text-align: center !important;
+  }
+  .text-right {
+    text-align: right !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+
+  .fineprint {
+    font-size: 14px;
+    line-height: 1;
+  }
+  // Content
+  .content {
+    position: relative;
+    padding: $content-padding;
+    // @extend .clearfix;
+    &.middle {
+      display: flex;
+      align-items: center;
+    }
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  .break-50 {
+    width: 50% !important;
+  }
+  .break-60 {
+    width: 60% !important;
+  }
+  .break-70 {
+    width: 70% !important;
+  }
+  .break-80 {
+    width: 80% !important;
+  }
+  .break-90 {
+    width: 90% !important;
+  }
+
+  .script {
+    font-family: $font-family-serif;
+    font-style: italic;
+  }
+
+  .brand {
+    text-transform: none !important;
+  }
