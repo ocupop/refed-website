@@ -21,6 +21,9 @@ GEM
     execjs (2.6.0)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
+    hologram (1.4.0)
+      redcarpet (>= 2.2, < 4.0)
+      rouge (>= 1.5)
     html-proofer (2.6.4)
       activesupport (~> 4.2)
       addressable (~> 2.3)
@@ -90,6 +93,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  hologram
   html-proofer
   jekyll (= 3.2.1)
   jekyll-bootstrap-sass
