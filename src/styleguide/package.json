@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "hologram-github-theme",
+        "raw": "hologram-github-theme@^0.1.4",
         "scope": null,
         "escapedName": "hologram-github-theme",
         "name": "hologram-github-theme",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^0.1.4",
+        "spec": ">=0.1.4 <0.2.0",
+        "type": "range"
       },
       "/Users/tom/Ocupop/refed-projects/refed"
     ]
   ],
-  "_from": "hologram-github-theme@latest",
+  "_from": "hologram-github-theme@>=0.1.4 <0.2.0",
   "_id": "hologram-github-theme@0.1.4",
   "_inCache": true,
   "_location": "/hologram-github-theme",
@@ -25,22 +25,21 @@
   "_npmVersion": "2.11.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "hologram-github-theme",
+    "raw": "hologram-github-theme@^0.1.4",
     "scope": null,
     "escapedName": "hologram-github-theme",
     "name": "hologram-github-theme",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^0.1.4",
+    "spec": ">=0.1.4 <0.2.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "#USER"
+    "#DEV:/"
   ],
   "_resolved": "https://registry.npmjs.org/hologram-github-theme/-/hologram-github-theme-0.1.4.tgz",
   "_shasum": "6c6d1926dbc7bced202d84babc10964ef795d138",
   "_shrinkwrap": null,
-  "_spec": "hologram-github-theme",
+  "_spec": "hologram-github-theme@^0.1.4",
   "_where": "/Users/tom/Ocupop/refed-projects/refed",
   "author": {
     "name": "Mathis Hofer",
