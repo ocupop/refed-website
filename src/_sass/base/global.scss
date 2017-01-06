@@ -80,6 +80,7 @@ img {}
 
 a {
   text-decoration: none;
+  &:hover,
   &:active,
   &:focus {
     outline: none;
@@ -95,8 +96,6 @@ i {
   width: 40px;
   height: 40px;
   font-size: 40px;
-  // text-indent: -999em;
-  // background-color: $placeholder-color;
 }
 button {
   &:active,
