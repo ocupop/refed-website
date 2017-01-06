@@ -97,9 +97,5 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    &.icon-restaurant {
-      // Add PNG
-      background-image: url("{{ site.baseurl }}/img/icons/stakeholders/restaurants-and-foodservice-providers.svg"), linear-gradient(transparent, transparent);
-    }
   }
 }
