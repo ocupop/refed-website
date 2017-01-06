@@ -8,7 +8,7 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url: /url_path
     legislation:
-      - title: Reg 1
+      - title: Iowa Admin. Code r. 21-36.8 (2013)
         applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
@@ -22,7 +22,7 @@ policy_data:
           b. The date the eggs were packed; and
 
           c. The name and address of the distributor or packer.
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        legal_citation: Iowa Admin. Code r. 21-36.8 (2013)
     label_regulation:
       date_labels_required_for:
         - eggs
