@@ -8,7 +8,7 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url: /url_path
     legislation:
-      - title: Iowa Admin. Code r. 21-36.8 (2013)
+      - title: Reg 1
         applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
@@ -21,11 +21,6 @@ policy_data:
 
           c. The name and address of the distributor or packer.
         legal_citation: Iowa Admin. Code r. 21-36.8 (2013)
-      - title:
-        applies_to_food_type: Eggs
-        purpose_of_law: Sale after date not restricted
-        excerpted_language_from_the_law: No relevant state law.
-        legal_citation: No relevant state law.
     label_regulation:
       date_labels_required_for:
         - eggs
