@@ -7,13 +7,13 @@
 @import '_mixins';
 
 @import 'base/global';
+@import 'base/utils';
 // @import 'base/grid';
 
 @import 'elements/page_header';
 @import 'elements/page_footer';
 @import 'elements/page_hero';
 
-@import 'base/utils';
 @import 'global/colors';
 @import 'global/sections';
 @import 'global/icons';
@@ -30,7 +30,12 @@
 @import 'toc';
 
 // Components
-@import "components/cost_curve";
+@import "components/tour_nav";
+
+// Charts
+@import "components/charts/cost_curve";
+@import "components/charts/chart_reduction";
+
 
 // Tools
 @import "policy_tool/main";
@@ -49,85 +54,7 @@
 
 
 
-#tournav {
-  position: fixed;
-  top: 150px;
-  // left: -102px;
-  left: 0;
-  transform: rotate(90deg);
-  transform-origin: 32px 0px;
-  ul {
-    list-style: none;
-    padding-left: 0;
-    li {
-      display: inline-block;
-      margin-right: 15px;
-      padding: 2px 30px;
-      background-color: $gray;
-      color: $cream-light;
-      box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
-      font-size: 16px;
-      font-weight: 100;
-      text-transform: uppercase;
-      cursor: pointer;
-      &.share {
-        padding: 0;
-        i {
-          display: inline-block;
-          font-size: 20px;
-          height: 32px;
-          line-height: 32px;
-          width: 32px;
-          text-align: center;
-          transform: rotate(-90deg);
-          transform-origin: 16px 16px;
-          &.icon-share {
-            position: relative;
-            display: block;
-            float: left;
-            z-index: 99;
-          }
-        }
-        .links {
-          display: none;
-          width: auto;
-          height: 32px;
-          position: relative;
-          overflow: hidden;
-          padding-left: 17px;
-          background-color: $button-color;
-          @include transition();
-          a {
-            display: inline-block;
-            color: $cream-light;
-            &:last-child {
-              padding-right: 10px;
-            }
-          }
-        }
-        &:hover {
-          .icon-share {
-            &:after {
-              content: '';
-              display: block;
-              position: absolute;
-              bottom: -14px;
-              right: 8px;
-              height: 0;
-              width: 0;
-              border: 8px solid transparent;
-              border-top-color: $gray;
-              z-index: 99;
-            }
-          }
-          .links {
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
-}
+
 #chartnav {
   .select {
     display: none;
@@ -187,40 +114,7 @@
     margin-bottom: 0;
   }
 }
-.flush {
-  padding: 0;
-  .row {
-    // max-width: none;
-    margin: 0;
-    .content {
-      max-width: floor(($live-content-width / 2 - 40));
-    }
-    .col {
-      width: 50%;
-      float: left;
-    }
-    [class^="col-"] {
-      padding: 30px 0;
-      .content {
-         // padding: $content-padding $content-padding*4;
-      }
-    }
-    [class^="col-"]:first-child {
-      .content {
-        margin-right: 0;
-        margin-left: auto;
-        padding-left: 0;
-      }
-    }
-    [class^="col-"]:last-child {
-      .content {
-        margin-right: auto;
-        margin-left: 0;
-        padding-right: 0;
-      }
-    }
-  }
-}
+
 
 .lead {
   margin: 1em 0;
@@ -611,57 +505,6 @@ a.external {
       &:hover {
         opacity: 1;
       }
-    }
-  }
-}
-
-#chart-reduction {
-  position: relative;
-  padding-left: 0;
-  #reduction-goal {
-    .ct-chart-donut .ct-series-a .ct-slice-donut {
-      stroke: #49A69B;
-    }
-    .ct-chart-donut .ct-series-b .ct-slice-donut {
-      stroke: #8EC4B9;
-      opacity: 1;
-    }
-    .ct-chart-donut .ct-series-c .ct-slice-donut {
-      stroke: $cream;
-      opacity: 1;
-    }
-    .ct-chart-donut .ct-fill-donut .ct-slice-donut{
-      stroke: $cream;
-      opacity: 1;
-    }
-    .ct-fill-donut-label h3{
-      font-weight: bolder;
-      &.series-a { color: #49A69B; }
-      &.series-b { color: #8EC4B9; }
-    }
-    .ct-fill-donut-label .small {
-        font-size: 0.6em;
-    }
-    .ct-fill-donut-label i { 
-        font-size: 1.5em;
-        color: rgba(0,0,0,.4);
-    }
-  }
-  #reduction-timeline {
-    position: absolute;
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    margin-left: -100px;
-    margin-top: -100px;
-    .ct-chart-donut .ct-series-a .ct-slice-donut {
-        stroke: #49A69B;
-    }
-    .ct-chart-donut .ct-series-b .ct-slice-donut {
-        stroke: #8EC4B9;
-        opacity: 1;
     }
   }
 }

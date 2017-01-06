@@ -1,0 +1,50 @@
+#chart-reduction {
+  position: relative;
+  padding-left: 0;
+  #reduction-goal {
+    .ct-chart-donut .ct-series-a .ct-slice-donut {
+      stroke: #49A69B;
+    }
+    .ct-chart-donut .ct-series-b .ct-slice-donut {
+      stroke: #8EC4B9;
+      opacity: 1;
+    }
+    .ct-chart-donut .ct-series-c .ct-slice-donut {
+      stroke: $cream;
+      opacity: 1;
+    }
+    .ct-chart-donut .ct-fill-donut .ct-slice-donut{
+      stroke: $cream;
+      opacity: 1;
+    }
+    .ct-fill-donut-label h3{
+      font-weight: bolder;
+      &.series-a { color: #49A69B; }
+      &.series-b { color: #8EC4B9; }
+    }
+    .ct-fill-donut-label .small {
+        font-size: 0.6em;
+    }
+    .ct-fill-donut-label i { 
+        font-size: 1.5em;
+        color: rgba(0,0,0,.4);
+    }
+  }
+  #reduction-timeline {
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    .ct-chart-donut .ct-series-a .ct-slice-donut {
+        stroke: #49A69B;
+    }
+    .ct-chart-donut .ct-series-b .ct-slice-donut {
+        stroke: #8EC4B9;
+        opacity: 1;
+    }
+  }
+}
