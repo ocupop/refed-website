@@ -1,11 +1,7 @@
 section {
   padding: 50px 0;
-  // &:nth-of-type(even) { @include palette($section-alt-color, $text-color); }
-  // &:nth-of-type(odd) { }
-
-  &:nth-of-type(even) {@include palette($section-alt-color, $text-color);}
-  &:nth-of-type(odd) {
-    background-color: transparent;
+  &.alt-bg {
+    @include palette($section-alt-color, $text-color);
   }
 
   // Bleeds
@@ -29,6 +25,41 @@ section {
     }
     &.cream-border {
       border-color: $cream;
+    }
+  }
+
+  &.flush {
+    padding: 0;
+    .row {
+      // max-width: none;
+      margin: 0;
+      .content {
+        max-width: floor(($live-content-width / 2 - 40));
+      }
+      .col {
+        width: 50%;
+        float: left;
+      }
+      [class^="col-"] {
+        padding: 30px 0;
+        .content {
+           // padding: $content-padding $content-padding*4;
+        }
+      }
+      [class^="col-"]:first-child {
+        .content {
+          margin-right: 0;
+          margin-left: auto;
+          padding-left: 0;
+        }
+      }
+      [class^="col-"]:last-child {
+        .content {
+          margin-right: auto;
+          margin-left: 0;
+          padding-right: 0;
+        }
+      }
     }
   }
 }
