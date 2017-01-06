@@ -26,8 +26,10 @@
 @import '_fixes';
 @import "_tour";
 @import "_charts.scss";
-@import "_cost_curve.scss";
 @import 'toc';
+
+// Components
+@import "components/cost_curve";
 
 // Tools
 @import "policy_tool/main";

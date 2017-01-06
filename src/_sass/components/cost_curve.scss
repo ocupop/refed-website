@@ -51,6 +51,7 @@
         margin:0 4px;
         display: block;
         background: rgba($button-color, .75);
+        border-radius: 0;
         @include transition(1s);
         // &:before{
         //   position:absolute;
