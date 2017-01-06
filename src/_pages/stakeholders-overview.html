@@ -15,7 +15,7 @@ prevpage:
   title: Solutions
 ---
 {% assign stakeholders = site.stakeholders | sort:"order" %}
-<section>
+<section class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-9">
@@ -45,7 +45,7 @@ prevpage:
   </div>
 </section>
 {% for stakeholder in stakeholders %}
-  <section id="{{ stakeholder.slug }}-section" class="stakeholder-list {% cycle 'alternate','' %}">
+  <section id="{{ stakeholder.slug }}-section" class="stakeholder-list {% cycle '','alt-bg' %}">
     <div class="container">
       <div class="row middle-xs">
         <div class="col-xs-12 col-sm-3">
