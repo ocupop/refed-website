@@ -34,7 +34,8 @@
 
 // Charts
 @import "components/charts/cost_curve";
-@import "components/charts/chart_reduction";
+@import "components/charts/reduction_chart";
+@import "components/charts/profit_chart";
 
 
 // Tools
@@ -446,67 +447,6 @@ a.external {
 
 #d3-donut {
   text-align: center;
-}
-
-#profit-chart {
-  &.vertical {
-    display:table;
-    table-layout: fixed;
-    width:100%;
-    // max-width:700px;
-    height:400px;
-    margin:0 auto;
-    padding: 0;
-    
-    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
-    background-size: 100% 50px;
-    background-position: left top;
-
-    li{
-      position:relative;
-      display:table-cell;
-      vertical-align:bottom;
-      height:100%;
-    }
-    .title {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      width: 400px;
-      height: 28px;
-      line-height: 28px;
-      font-size: 15px;
-      font-family: $font-family-condensed;
-      text-transform: uppercase;
-      // background-color: rgba(0,0,0,0.1);
-      transform-origin: 11px 8px;
-      transform: rotate(-90deg);
-    }
-    .progress {
-      margin:0 4px;
-      display: block;
-      background: rgba($button-color, .75);
-      // &:before{
-      //   position:absolute;
-      //   left:0;right:0;top:100%;
-      //   padding:5px 1em 0;
-      //   display:block;
-      //   text-align:center;
-      //   content:attr(title);
-      //   word-wrap: break-word;
-      // }
-      
-    }
-  }
-  &.active {
-    li {
-      cursor: pointer;
-      opacity: 0.7;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .ct-series-a,
