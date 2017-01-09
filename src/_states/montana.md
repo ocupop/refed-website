@@ -99,9 +99,25 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
           The department of agriculture has the authority to restrain
           garbage-feeding operations in violation of the garbage-feeding rule.
           § 81-2-507 (2015).
+
+
+
+
+
+
+
+
 
 
 
@@ -123,12 +139,20 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
           Any individual or facility who violates the garbage-feeding rule is
           guilty of a misdemeanor and shall be fined $50-$250 or imprisoned for
           six months or less. Violators may also be enjoined from continuing such
           violation. Each day of the violation counts as a separate offense.
           § 81-2-511 (2015).
-        relevant_state_regulatory_body: 'Montana Department of Agriculture (§ 81-2-505 (2015)), <a href="http://agr.mt.gov/ target="_blank">http://agr.mt.gov/</a>.'
+        relevant_state_regulatory_body: 'Montana Department of Agriculture (§ 81-2-505 (2015)), <a href="http://agr.mt.gov" target="_blank">http://agr.mt.gov</a>.'
   organics_recycling_mandates:
     overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
