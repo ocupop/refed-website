@@ -13,16 +13,14 @@ policy_data:
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
           (2) Each carton containing eggs for retail sale in Iowa which have been
-          candled and graded
-
-          shall be marked with:
+          candled and graded shall be marked with:
 
           a. The grade and size of the eggs contained;
 
           b. The date the eggs were packed; and
 
           c. The name and address of the distributor or packer.
-        legal_citation: 'Cal. Food & Agric. Code§ 36004 (2013).'
+        legal_citation: Iowa Admin. Code r. 21-36.8 (2013)
     label_regulation:
       date_labels_required_for:
         - eggs
