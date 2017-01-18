@@ -51,11 +51,6 @@ policy_data:
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '3-202.17 (A) Raw shucked shellfish shall be obtained in nonreturnable packages which bear a legible label that identifies the: . . . (2) The “sell by” date for packages with a capacity of less than 1.87 L (one-half gallon) or the date shucked for packages with a capacity of 1.87 L (one-half gallon) or more.'
         legal_citation: 'Wis. Admin. Code Agric. Trade & Consumer Prot. §75, App. (2013).'
-      - title: Reg 5
-        applies_to_food_type: Shellfish
-        purpose_of_law: Sale after date not restricted
-        excerpted_language_from_the_law: Not restricted for shellfish in Wisconsin.
-        legal_citation: No relevant state law.
     label_regulation:
       date_labels_required_for:
         - eggs
