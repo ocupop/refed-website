@@ -56,7 +56,7 @@ policy_data:
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
         standards_for_donated_food: Food must appear fit for human consumption
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+        protections_apply_when_recipient_pays_for_donated_food: Food recovery organization must distribute the food for free in order to receive protection; donor is protected even if the food recovery organization charges.
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
@@ -107,11 +107,43 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           Any individual or facility that violates the garbage-feeding rule is
           guilty of a misdemeanor and will be fined not more than $200. That
           person also may be enjoined from continuing the violation. Each day on
           which the violation occurs counts as a separate violation. § 4-3-11
           (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,9 +180,41 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           Any authorized representative of the director may inspect any private
           or public property used to treat garbage that will be fed to swine.
           § 4-3-8 (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
