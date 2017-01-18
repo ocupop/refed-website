@@ -57,10 +57,11 @@ policy_data:
         excerpted_language_from_the_law: Not restricted for shellfish in Wisconsin.
         legal_citation: No relevant state law.
     label_regulation:
-      date_labels_required_for: 
-        - eggs 
+      date_labels_required_for:
+        - eggs
         - shellfish
       restricted_sales_on_expired_labels:
+        - eggs
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
