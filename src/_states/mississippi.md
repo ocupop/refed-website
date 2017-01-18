@@ -25,11 +25,19 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
           100.07 On packages of less than sixty-four (64) fluid ounces of fresh
           product labeled with the wording “SELL BY” followed by a date expressed
           as a month, day and year, not to exceed seventeen (17) days from the
           date shucked.
-        legal_citation: 43-46 Miss. Code R. § 17 (LexisNexis 2013).
+        legal_citation: 43-46 MISS. CODE R. § 17 (LexisNexis 2013).
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -89,6 +97,70 @@ policy_data:
           the garbage-feeding rule. § 69-11-11 (2015). Either official also may
           quarantine any premises on which swine are fed garbage. § 69-11-13
           (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
