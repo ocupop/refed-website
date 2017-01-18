@@ -30,16 +30,16 @@ policy_data:
           said board may incorporate by reference The Nutritional Education and
           Labeling Act, 21 CFR 101.
         legal_citation: Conn. Gen. Stat. Ann. § 22-197b (2013).
-      - title: Reg 3
-        applies_to_food_type: Milk/Dairy
-        purpose_of_law: Alteration of date labels not permitted
-        excerpted_language_from_the_law: (f) The manufacturer’s last sale date or expiration date shall not be altered in any way.
-        legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
       - title: Reg 2
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(b) Products not manufactured, packaged and heat treated in a manner that makes the product safe to store at room temperature shall be conspicuously labeled with a last sale date. The last sale date shall be shown in contrasting color with the background. The last sale date shall be expressed as “sell by”, “last sale date” or “must be sold by”.'
         legal_citation: Conn. Agencies Regs. §22-133-131 (2013).
+      - title: Reg 3
+        applies_to_food_type: Milk/Dairy
+        purpose_of_law: Alteration of date labels not permitted
+        excerpted_language_from_the_law: (f) The manufacturer’s last sale date or expiration date shall not be altered in any way.
+        legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
     label_regulation:
       date_labels_required_for:
         - dairy
