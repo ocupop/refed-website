@@ -25,6 +25,7 @@ policy_data:
         legal_citation: AGR FSF 3 Wyo. Code R. § 11 (2013).
     label_regulation:
       date_labels_required_for:
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -83,8 +84,16 @@ policy_data:
 
 
 
+
+
+
+
           The board may revoke or refuse to issue a permit to any individual or
           facility that violates the garbage-feeding rule. § 11-27-105 (2015).
+
+
+
+
 
 
 
