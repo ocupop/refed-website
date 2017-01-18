@@ -58,6 +58,11 @@ policy_data:
         - eggs
         - shellfish
       restricted_sales_on_expired_labels:
+        - dairy
+        - eggs
+        - hazardous foods
+        - meat
+        - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
