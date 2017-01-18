@@ -71,7 +71,7 @@ policy_data:
         excerpted_language_from_the_law: '(35) “Expiration Date” is synonymous with Pull Date, Best-By Date, Best Before Date, Use-By Date, and Sell-By Date; and means the last date on which the following FOOD products can be sold at retail or wholesale: . . . (d) Shucked oysters'
         legal_citation: 'Ga. Comp. R. & Regs. 40-7-1-.02 (2013).'
       - title: Reg 11
-        applies_to_food_type: Repackaged Sandwiches
+        applies_to_food_type: Prepackaged Sandwiches
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(2) (b) Prepackaged Sandwiches. 1. Type A . . . (ii) Type A Sandwiches which are stored, transported and offered for sale in a non-refrigerated state shall be labeled with an EXPIRATION DATE not later than two (2) days from the date of manufacture. 2. Type B Sandwiches. (i) Type B Sandwiches are those prePACKAGED sandwiches which are handled and sold as refrigerated sandwiches . . . (iii) The EXPIRATION DATE for sandwiches shall state the last day of sale in terms of the month, or its abbreviation, and numerical day of the month (e.g. 6-6). The expiration day shall be preceded by an explanatory term, such as “Expires”, “Sell-By”, or similar wording. Other PRODUCT CODES or dating methods are prohibited. 3. Type C Sandwiches. (i) Type C Sandwiches are those prePACKAGED sandwiches which are immediately hard frozen after manufacture, […] (iv) The EXPIRATION DATE, as required in Subparagraphs (ii) and (iii) of this section, shall meet the criteria as in 40-7-1-.26(2)(b)2.(iii); and be conspicuously displayed on the front of the wrapper.'
         legal_citation: 'Ga. Comp. R. & Regs. 40-7-1-.26 (2013).'
