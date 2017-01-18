@@ -35,7 +35,7 @@ policy_data:
           Donor: A good faith donor <br>
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus; and must comply with K.S.A. 65-655'
+        standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus; and must comply with K.S.A. 65-655 et. seq., including the prohibition of misbranded food.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -70,6 +70,14 @@ policy_data:
         enforcement: >-
           The state animal health commissioner is authorized to enforce the
           garbage-feeding ban. § 47-1304 (2015).
+
+
+
+
+
+
+
+
 
 
 
