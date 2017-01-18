@@ -41,7 +41,7 @@ policy_data:
 
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Food must be apparently wholesome (must meet all quality and health standards); includes donations of food not readily marketable due to appearance, age, freshness, grade, size, or surplus'
+        standards_for_donated_food: 'Apparently wholesome (must meet all quality and health standards); includes donations of food not readily marketable due to appearance, age, freshness, grade, size, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
