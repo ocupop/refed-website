@@ -24,7 +24,7 @@ policy_data:
         applies_to_food_type: Dairy
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: 4. No person may sell or offer for sale to the final consumer any dairy product in container or package form that does not bear a “sell by date.”
-        legal_citation: or package form that does not bear a “sell by date.” 2 Va. Admin. Code § 5-531-60 (2013).
+        legal_citation: 2 Va. Admin. Code § 5-531-60 (2013).
       - title: Reg 3
         applies_to_food_type: Dairy
         purpose_of_law: Sale after date not permitted
