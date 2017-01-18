@@ -57,7 +57,7 @@ policy_data:
 
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Food must appear fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food.'
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
