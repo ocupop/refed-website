@@ -35,25 +35,20 @@ policy_data:
         legal_citation: Ala. Code § 20-1-20 (2013).
       - title: Reg 6
         applies_to_food_type: Class A Foods
-        purpose_of_law: Date labeling not required
-        excerpted_language_from_the_law: 'Date labeling not required for Class A food products in Alabama (with the exception of infant formula, which is federally regulated).'
-        legal_citation: No relevant state law.
-      - title: Reg 7
-        applies_to_food_type: Class A Foods
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: 'No person shall engage in any of the following activities within this state: . . . (2) Sell or offer for sale out-of-date Class A foods which include baby food, infant formula, and potentially hazardous food.'
         legal_citation: Ala. Code § 20-1-27 (2013).
-      - title: Reg 8
+      - title: Reg 7
         applies_to_food_type: Class A Foods
         purpose_of_law: Alteration of date labels not permitted (potentially hazardous foods)
         excerpted_language_from_the_law: '(1) Packages of potentially hazardous foods bearing an open date statement are not to be repacked or relabeled or otherwise altered in a manner that would change the open date statement originally placed on the package. It is not permissible to reprocess products by freezing, slicing, grinding, cubing, dicing, marinating, chopping, or other similar methods unless the original open date statement is maintained on the product label.'
         legal_citation: Ala. Admin. Code r. 80- 1-22-.36 (2013).
-      - title: Reg 9
+      - title: Reg 8
         applies_to_food_type: Meat Products
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: '(4) It is not permissible to freeze, sell, or offer for sale any ready-to-eat meat product after the expiration of the open-date statement. It is not permissible to freeze, sell, or offer for sale a product having the appearance of a ready-to-eat meat product (e.g., smoked sausages and smoked hams) after the expiration of the open-date statement unless such product bears labeling to include safe handling statements and proper cooking instructions.'
         legal_citation: Ala. Admin. Code r. 80- 1-22-.36 (2013).
-      - title: Reg 10
+      - title: Reg 9
         applies_to_food_type: Meat Products
         purpose_of_law: Sale after date not permitted – exemptions
         excerpted_language_from_the_law: '(3) Any rule in this chapter to the contrary not withstanding, meat products bearing an open-date statement may be frozen and sold after the original expiration date only if all the following stipulations are met: (a) The product is a fresh or raw meat product that is frozen prior to the expiration of the open-date statement. (b) The product is labeled “Frozen on _______,” with the month, day, and year the product is frozen in the blank. (c) The original open-date statement is maintained on the product package. (d) If offered for sale at retail, the product is frozen and labeled and sold only to a household consumer by the same establishment that originally offered the product for retail sale. (e) If offered for sale at wholesale (i.e., warehouse, manufacturer, or distributor) the product is frozen and labeled and sold only to the end user (i.e., consumer, restaurant, or hotel). Provided however that consumer ready packages of fresh or raw meat can be sold to retail establishments if all other provisions of this rule are followed and each package is properly labeled. (f) Products frozen before the expiration of the open-date statement may not be thawed or further processed in any manner. (g) All products properly frozen and labeled must also maintain the safe handling labels as mandated through USDA. (h) Products not properly labeled, re-labeled or exempted as set forth in (a) through (h) of this rule shall be deemed date expired and shall be included in the equivalent number utilized to determine the applicable class of violation as determined by Rule No. 80-1-22-.32. (i) Nothing in this paragraph (3) of Rule 80-1-22-.36 shall preclude a manufacturer or wholesaler or retailer from having more stringent requirements for their products. Nothing in this paragraph is intended to negate the agreement between sellers of these products concerning guarantees or credit for expired products'
