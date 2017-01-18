@@ -37,33 +37,23 @@ policy_data:
         legal_citation: 'D.C. Mun. Regs. tit. 25-A, § 718 (2013).'
       - title: Reg 5
         applies_to_food_type: Packaged Perishable Food
-        purpose_of_law: Date labeling not required
-        excerpted_language_from_the_law: 'Date labeling not required for packaged perishable food in Washington, D.C.'
-        legal_citation: No relevant state law.
-      - title: Reg 6
-        applies_to_food_type: Packaged Perishable Food
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: 'No person shall sell, trade, or barter any perishable packaged food beyond the pull date appearing thereon.'
         legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 3606 (2013).'
-      - title: Reg 7
+      - title: Reg 6
         applies_to_food_type: Packaged Perishable Food
         purpose_of_law: Alteration of date labels not permitted
         excerpted_language_from_the_law: 3606.2 No person shall rewrap or repackage any packaged perishable food with the intention of placing a pull date on the food that is different from the original pull date.
         legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 3606 (2013).'
-      - title: Reg 8
+      - title: Reg 7
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '2403.5 Each individual package containing less than sixty-four fluid ounces (64 fl. oz.) of fresh or frozen shellfish shall be labeled with the following information: . . . (b) A “Sell by” date which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date when the product would be expected to reach the end of its shelf-life.'
         legal_citation: 'D.C. Mun. Regs. tit. 25-B, § 2403 (2013).'
-      - title: Reg 9
-        applies_to_food_type: Shellfish
-        purpose_of_law: Sale after date not restricted
-        excerpted_language_from_the_law: 'Not restricted for shellfish in Washington, D.C.'
-        legal_citation: No relevant state law.
     label_regulation:
-      date_labels_required_for: 
+      date_labels_required_for:
         - hazardous foods
-        - dairy 
+        - dairy
         - meat
         - eggs
         - shellfish
