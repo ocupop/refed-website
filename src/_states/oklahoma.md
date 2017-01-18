@@ -43,7 +43,7 @@ policy_data:
           Distributor: No protection for organizations accepting or distributing
           donations of perishable food
         eligible_recipients:
-        standards_for_donated_food: 'Fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
