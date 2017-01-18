@@ -58,6 +58,7 @@ policy_data:
       restricted_sales_on_expired_labels:
         - dairy
         - perishables
+        - meat
       restricted_donations_on_expired_labels:
   liability_protection:
     overview:
@@ -110,6 +111,14 @@ policy_data:
           cooking, or consumption of food. Garbage does not include rendered
           products or manure (both of which may be fed to swine). § 287.704
           (2015).
+
+
+
+
+
+
+
+
 
 
 
