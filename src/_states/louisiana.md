@@ -64,7 +64,7 @@ policy_data:
     link_url:
     legislation:
       - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701 (2015)'
-        animals_covered: swine
+        animals_covered: Swine
         definition_of_garbage: 'The putrescible components of refuse which are subject to spoilage, rot, or decomposition. It includes wastes from the preparation and consumption of food, vegetable matter, and animal offal and carcasses. § 101 (2015).'
         prohibitions: No feeding garbage to swine. § 105 (2015).
         licensure_requirements: N/A
