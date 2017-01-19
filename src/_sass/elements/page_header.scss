@@ -28,147 +28,7 @@
     }
   }
 }
-#topnav {
-  background-color: $gray-dark;
-  z-index: 9;
-  ul {
-    position: relative;
-    padding-right: 100px;
-    li {
-      position: relative;
-      height: 35px;
-      line-height: 35px;
-      a {
-        font-size: 13px;
-        font-weight: 300;
-        text-transform: uppercase;
-        color: $cream-light;
-        &:hover {
-          color: #fff;
-        }
-      }
-      &.download {
-        position: absolute;
-        height: auto;
-        right: 0;
-        top: 0;
-        margin-right: 0;
-        a, button {
-          display: inline-block;
-          width: 92px;
-          height: 105px;
-          background-color: $button-color;
-          color: darken($button-color, 20%);
-          text-align: center;
-          font-size: 15px;
-          font-weight: 200;
-          line-height: 15px;
-          border: none;
-          text-transform: uppercase;
-          small {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 9px;
-          }
-          i {
-            margin: 0 auto;
-            font-size: 32px;
-          }
-        }
-      }
-      &.follow {
-        ul {
-          display: none;
-          padding: 0;
-          position: relative;
-          float: left;
-          width: auto;
-          height: 35px;
-          line-height: 35px;
-          background: $button-color;
-          margin-right: 20px;
-          flex-wrap: nowrap;
-          &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 10px;
-            right: -12px;
-            height: 0;
-            width: 0;
-            border: 6px solid transparent;
-            border-left-color: $button-color;
-          }
-          li {
-            margin: 0 0.5em;
-            a {
-              color: $button-color;
-              white-space: nowrap;
-              background-color: $cream-light;
-              &.newsletter-signup {
-                padding: 1px 3px;
-              }
-            }
-            i {
-              height: 35px;
-              width: 25px;
-              font-size: 20px;
-              line-height: 35px;
-              color: $cream-light;
-            }
-          }
-        }
-        &:hover {
-          ul {
-            display: flex;
-          }
-        }
-      }
-    }
-  }
-}
-#mainnav {
-  height: 70px;
-  line-height: 70px;
-  background-color: $mainnav-background-color;
-  border-bottom: 1px solid $gray-lighter;
-  z-index: 1;
-  pointer-events: none;
-  nav {
-    @include transition(0.5s);
-    ul {
-      margin: 0 120px 0 auto;
-      li {
-        height: 55px;
-        line-height: 55px;
-        a {
-          display: inline-block;
-          padding: 9px 0;
-          font-size: 16px;
-          font-weight: 500;
-          text-transform: uppercase;
-          color: $gray-light;
-          pointer-events: all;
-          &:hover {
-            color: $text-color;
-          }
-        }
-        &.active {
-          a {
-            color: darken($gray-light, 15%);
-            cursor: default;
-            &:hover {
-              color: darken($gray-light, 15%);
-            }
-          }
-        }
-      }
-      &.drawer {
-        display: none;
-      }
-    }
-  }
-}
+
 
 // TODO - Refactor so that the padding on <body> resolves the same issue
 #page-content {
@@ -223,5 +83,48 @@ body.condensed-header {
   #page-content {
     margin-top: 50px;
     @include transition();
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+  #page-header {
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media all and (max-width: $screen-xs-max) {
+  #page-header {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .brand {
+      top: 5px;
+    }
+    .menu-toggle {
+      display: inline-block;
+    }
+    &.open-menu {
+      nav {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  #page-header {
+    
   }
 }

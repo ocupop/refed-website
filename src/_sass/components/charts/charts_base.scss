@@ -77,3 +77,47 @@ $ct-series-colors: (
 );
 
 
+
+
+.legend {
+  padding: $content-padding;
+  margin: 40px 0;
+  background-color: $well-bg;
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-indent: 10px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  i {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+  }
+  table {
+    td {
+      padding: 2px 8px;
+      font-size: 18px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#d3-donut {
+  text-align: center;
+}
+
+.ct-series-a,
+.ct-series-b,
+.ct-series-c,
+.ct-series-d,
+.ct-series-e,
+.ct-series-f {
+  overflow: hidden;
+  .ct-bar {
+    stroke: $button-color;
+    stroke-width: 25px;
+  }
+}

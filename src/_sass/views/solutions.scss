@@ -1,0 +1,25 @@
+body.solutions {
+  .hero {
+    min-height: 0;
+    height: 225px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  body.solutions {
+  
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  body.solutions {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  body.solutions {
+    
+  }
+}

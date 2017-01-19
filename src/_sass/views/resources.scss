@@ -1,0 +1,23 @@
+body.resources {
+  h4 {
+    color: $recovery-color;
+    font-weight: 300;
+    margin-top: 1.5em;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  body.resources {
+  
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  body.resources {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  body.resources {
+    
+  }
+}

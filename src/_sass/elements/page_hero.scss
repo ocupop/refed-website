@@ -49,3 +49,26 @@
     }
   }
 }
+
+
+@media all and (max-width: $screen-xs-max) {
+  .hero {
+    height: 250px;
+    min-height: 0;
+    .hero-content {
+      h1 {
+        font-size: 25px;
+      }      
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  .hero {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  .hero {
+    
+  }
+}

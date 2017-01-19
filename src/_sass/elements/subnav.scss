@@ -52,3 +52,44 @@
     }
   }
 }
+
+@media all and (max-width: $screen-xs-max) {
+  #subnav {
+    a {
+      height: 120px;
+      font-size: 15px;
+      small {
+        font-size: 13px;
+      }
+    }
+    hr {
+      width: auto;
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  #subnav {
+    a {
+      text-align: left;
+      hr  {
+        margin-left: 0;
+        margin-right: auto;
+      }
+      i {
+        display: none;
+      }
+      &:first-child {
+        text-align: right;
+        hr {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  #subnav {
+    
+  }
+}

@@ -1,5 +1,3 @@
-
-
 .grid {
   display: flex;
   flex-direction: row;
@@ -138,4 +136,41 @@
       }
     }
   }
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+  .grid {}
+  .card {
+    width: 100%;
+    max-width: none;
+    margin: 10px;
+    header {
+      position: absolute;
+      bottom: 35px;
+      right: 5px;
+      height: 50px;
+      width: 150px;
+      text-align: right;
+      img {
+        display: none;
+      }
+      i {
+        font-size: 30px;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  .grid {}
+  .card {
+    width: 49%;
+    max-width: none;
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  .grid {}
+  .card {}
 }

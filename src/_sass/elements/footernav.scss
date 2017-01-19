@@ -1,0 +1,128 @@
+#footernav {
+  font-weight: 100;
+  color: $cream-light;
+  margin: 0;
+  ul {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.5em;
+    li {
+      margin-bottom: 2px;
+      margin-top: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        text-transform: uppercase;
+        color: $cream-light;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+    &.report-sitemap {
+      font-size: 14px;
+      ul {
+        font-size: 12px;
+        font-weight: 100;
+        ul {
+          padding-left: 4px;
+          font-size: 11px;
+        }
+      }
+    }
+    &.primary-sitemap {
+      font-size: 16px;
+      ul {
+        padding-left: 4px;
+        font-size: 14px;
+        ul {
+          padding-left: 4px;
+          li {
+            font-size: 12px;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+  h3 {
+    font-weight: 100;
+    line-height: 1em;
+  }
+  .row {
+    max-width: none;
+    margin: 0;
+    .content {
+      // max-width: floor(($live-content-width / 3 - 40));
+    }
+    [class^="col-"] {
+      padding: 0;
+      height: 400px;
+      .content {
+         padding: $content-padding;
+         padding-bottom: 50px;
+      }
+    }
+    [class^="col-"]:first-child {
+      .content {
+        margin-right: 0;
+        margin-left: auto;
+        width: 200px;
+      }
+    }
+    [class^="col-"]:last-child {
+      .content {
+        margin-right: auto;
+        margin-left: 0;
+        width: 280px;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+  #footernav {
+    .row [class^="col-"] {
+      height: auto !important;
+      .content {
+        padding: 40px;
+        margin: 0;
+      }
+      &:first-child {
+        .content {
+          margin: 0;
+        }
+      }
+      &:last-child {
+        .content {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  #footernav {
+    .col3 {
+      column-count: 1;
+    }
+    ul.report-sitemap, ul.primary-sitemap {
+      ul {
+        display: none;
+      }
+    }
+    .row [class^="col-"] {
+      height: 280px;
+    }
+  }
+
+}
+@media all and (max-width: $screen-md-max) {
+  #footernav {
+    
+  }
+}

@@ -1,0 +1,29 @@
+body.food-waste {
+  .hero {
+    h1, h2 {
+      font-size: 34px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  body.food-waste {
+    .hero {
+      height: 300px;
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  body.food-waste {
+    #video {
+      .content {
+        padding: 80px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  body.food-waste {
+    
+  }
+}

@@ -9,33 +9,41 @@
 @import 'base/global';
 @import 'base/utils';
 // @import 'base/grid';
+@import 'base/colors';
+@import 'base/sections';
+@import 'base/icons';
+@import 'base/forms';
+@import 'base/buttons';
+@import 'base/animations';
+@import "base/popover";
+@import 'base/cards';
+@import 'base/wells';
+@import 'base/modals';
+@import 'base/tabs';
 
+@import '_fixes';
+@import 'toc';
+
+// Elements
 @import 'elements/page_header';
 @import 'elements/page_footer';
 @import 'elements/page_hero';
-
-@import 'global/colors';
-@import 'global/sections';
-@import 'global/icons';
-@import 'global/forms';
-@import 'global/buttons';
-@import 'global/animations';
-@import "global/popover";
-@import 'global/subnav';
-@import 'global/cards';
-
-@import '_fixes';
-@import "_tour";
-@import "_charts.scss";
-@import 'toc';
+@import 'elements/topnav';
+@import 'elements/mainnav';
+@import 'elements/subnav';
+@import 'elements/socialnav';
+@import 'elements/footernav';
+@import 'elements/tournav';
 
 // Components
 @import "components/tour_nav";
-
-// Charts
+@import "components/charts/charts_base";
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
 @import "components/charts/profit_chart";
+
+@import "components/signup";
+@import "components/site_tour";
 
 
 // Tools
@@ -85,20 +93,6 @@
   }
 }
 
-#thanks {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  img {
-    width: 250px;
-    margin: 80px auto 0 auto; 
-  }
-}
 
 
 /* -----------------------------------------
@@ -128,70 +122,7 @@
   padding: 30px 0;
   margin-bottom: 20px;
 }
-a.external {
-  padding-right: 20px;
-  background-image: url(../media/images/00-global/external-link-icon.png);
-  background-image: url(../media/images/00-global/external-link-icon.svg), linear-gradient(transparent, transparent);
-  background-position: right center;
-  background-size: 0.9em;
-  background-repeat: no-repeat;
-}
 
-.well {
-  header {
-    i {
-      display: inline-block;
-      font-size: 26px;
-      color: inherit;
-      float: right;
-    }
-  }
-}
-
-.tabs {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  // justify-content: center;
-  // align-items: center;
-  // align-content: center;
-  &.filter {
-    li {
-      padding: 5px 10px;
-      font-size: 12px;
-    }
-  }
-  .tab {
-    margin: auto 5px;
-    padding: 10px 18px;
-    flex-grow: 1;
-    font-size: 13px;
-    font-weight: 200;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: $cream;
-    color: $text-color;
-    cursor: pointer;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover, &.active {
-      background-color: $button-color;
-      color: $cream-light;
-    }
-  }
-  .profitability,
-  .profit-potential {
-    display: none;
-  }
-  .scalability {
-    display: none;
-  }
-}
 
 .list-group {}
 .list-group-item {
@@ -199,29 +130,6 @@ a.external {
   background-color: transparent;
   border: none;
 }
-
-// column wrap 
-.col2 {
-  column-count: 2;
-  column-gap: 40px;
-  li {
-    break-inside: avoid;
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
-}
-.col3 {
-  column-count: 3;
-  column-gap: 40px;
-  li {
-    break-inside: avoid;
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
-}
-
-
-
 
 
 
@@ -413,52 +321,6 @@ a.external {
     margin: 0;
     vertical-align: top;
     text-transform: none;
-  }
-}
-
-/* -----------------------------------------
-   Charts
------------------------------------------ */
-.legend {
-  padding: $content-padding;
-  margin: 40px 0;
-  background-color: $well-bg;
-  .title {
-    font-size: 24px;
-    font-weight: 700;
-    text-indent: 10px;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-  }
-  i {
-    width: 25px;
-    height: 25px;
-    margin: 2px;
-  }
-  table {
-    td {
-      padding: 2px 8px;
-      font-size: 18px;
-      font-weight: 100;
-      text-transform: uppercase;
-    }
-  }
-}
-
-#d3-donut {
-  text-align: center;
-}
-
-.ct-series-a,
-.ct-series-b,
-.ct-series-c,
-.ct-series-d,
-.ct-series-e,
-.ct-series-f {
-  overflow: hidden;
-  .ct-bar {
-    stroke: $button-color;
-    stroke-width: 25px;
   }
 }
 
@@ -1047,268 +909,20 @@ a.external {
   position: relative;
 }
 
-#profile {
-  #confirm_zip_code {
-    width: 49%;
-  }
-  input[type="submit"] {
-    width: 49%;
-    float: right;
-    height: 48px;
-    margin: 3px 0;
-  }
-}
-/* -----------------------------------------
-   Page Specific
------------------------------------------ */
-body.food-waste {
-  .hero {
-    h1, h2 {
-      font-size: 34px;
-    }
-  }
-}
-
-body.stakeholders {
-  .hero {
-    .hero-content {
-      h1 { font-size: 36px; }
-    }
-  }
-}
-
-body.action {
-  .icon-grid {
-    svg {
-      width: 75px;
-      height: 75px;
-      margin: 5px;
-    }
-  }
-}
-
-body.solutions {
-  .hero {
-    min-height: 0;
-    height: 225px;
-    h1 {
-      font-size: 25px;
-    }
-  }
-}
-
-
-
-body.downloads {
-  .chapter {
-    .content {
-      position: relative;
-      height: 100%;
-    }
-    .button {
-      pointer-events: all;
-      &.disabled {
-        background-color: rgba(0,0,0,0.2);
-        cursor: default;
-        pointer-events: none;
-      }
-    }
-    .message {
-      
-    }
-  }
-}
-
-body.resources {
-  h4 {
-    color: $recovery-color;
-    font-weight: 300;
-    margin-top: 1.5em;
-  }
-}
-/* -----------------------------------------
-   Modal
------------------------------------------ */
-.modal {
-  .modal-content {
-    border-radius: 0;
-    box-shadow: 10px 10px 0px rgba(0,0,0,0.4);
-    border: none;
-    overflow: hidden;
-    .content {
-      padding: 35px !important;
-    }
-    .dialog-callout {
-      margin-top: -120px;
-      background-color: $cream-light;
-      box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-      .button {
-        height: auto;
-        h4 {
-          margin: auto;
-          font-size: 30px;
-        }
-        small {
-          font-weight: 100;
-          color: #fff;
-        }
-        i {
-          font-size: 40px;
-        }
-      }
-    }
-  }
-}
-
-
-/* -----------------------------------------
-   Animation
------------------------------------------ */
-// .scroll-animate {
-//   opacity: 0;
-// }
 
 
 /* -----------------------------------------
    Media Queries
 ----------------------------------------- */
-// $screen-xs-max:              ($screen-sm-min - 1) !default;
-// $screen-sm-max:              ($screen-md-min - 1) !default;
-// $screen-md-max:              ($screen-lg-min - 1) !default;
 
-@media all and (max-width: 1024px) {
-  #page-header {
-    .container {
-      width: 100%;
-    }
-  }
-  #mainnav {
-    .brand {
-      left: 20px;
-    }
-    nav {
-      ul {
-        border: none; 
-        li {
-          margin: 0 0.5em;
-          a {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-  #socialnav {
-    text-align: center;
-    a {
-      margin: 0 10px;
-    }
-  }
-}
 
 @media all and (max-width: 990px) {
-  #page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    .brand {
-      top: 5px;
-    }
-    .menu-toggle {
-      display: inline-block;
-    }
-    &.open-menu {
-      nav {
-        right: 0;
-      }
-    }
-  }
+
   #page-content,
   #site-search-results {
     margin-top: 50px;
   }
-  #topnav {
-    display: none;
-  }
-  #mainnav {
-    height: 50px;
-    line-height: 50px;
-    nav {
-      display: block;
-      position: fixed;
-      width: 320px;
-      height: calc(100% - 50px);
-      top: 50px;
-      left: auto;
-      right: -340px;
-      background-color: $gray;
-      ul {
-        display: block;
-        padding: 30px 0;
-        padding-left: 20px;
-        li {
-          line-height: 30px;
-          height: auto;
-          a {
-            font-size: 16px;
-            &:hover {
-              color: $cream-light;
-            }
-          }
-        }
-      }
-      ul.drawer {
-        display: block;
-        margin: 0;
-        border-top: 1px solid lighten($gray, 15%);
-        li {
-          width: 100%;
-          margin: 0;
-          a {
-            display: inline-block;
-            padding: 0 15px;
-            font-size: 15px;
-            background: $gray;
-            color: $cream-light;
-          }
-          ul {
-            margin: 0;
-            padding: 0;
-          }
-        }
-      }
-    }
-  }
-  #subnav {
-    a {
-      text-align: left;
-      hr  {
-        margin-left: 0;
-        margin-right: auto;
-      }
-      i {
-        display: none;
-      }
-      &:first-child {
-        text-align: right;
-        hr {
-          margin-left: auto;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-  #footernav {
-    .col3 {
-      column-count: 1;
-    }
-    ul.report-sitemap, ul.primary-sitemap {
-      ul {
-        display: none;
-      }
-    }
-  }
+ 
   #returns {
     li {
       margin: auto;
@@ -1334,30 +948,6 @@ body.resources {
       margin: 0 auto;
     }
   }
-  .hero {
-    // margin-top: 50px;
-  }
-  .card {
-    width: 49%;
-    max-width: none;
-  }
-  body.food-waste {
-    #video {
-      .content {
-        padding: 80px;
-      }
-    }
-  }
-  body.downloads {
-    .chapter {
-      p {
-        font-size: 14px;
-      }
-      .message {
-        bottom: -30px;
-      }
-    }
-  }
   .dialog-callout {
     margin-top: 10px;
   }
@@ -1365,35 +955,6 @@ body.resources {
 
 @media all and (max-width: 650px) {
 
-  #tournav {
-    ul {
-      li {
-        font-size: 14px;
-        padding: 2px 20px;
-      }
-    }
-  }
-  .card {
-    width: 100%;
-    max-width: none;
-    margin: 10px;
-    header {
-      position: absolute;
-      bottom: 35px;
-      right: 5px;
-      height: 50px;
-      width: 150px;
-      text-align: right;
-      img {
-        display: none;
-      }
-      i {
-        font-size: 30px;
-        height: 30px;
-        width: 30px;
-      }
-    }
-  }
   #stakeholder-icons {
     display: none;
   }
@@ -1488,10 +1049,7 @@ body.resources {
       width: 100px;
     }
   }
-  body.action .icon-grid svg {
-    width: 50px;
-    height: 50px;
-  }
+
 
 
   .popover.left {
@@ -1502,148 +1060,35 @@ body.resources {
     margin-right: 10px;
   }
 
-  .tabs {
-    display: block;
-    .tab {
-      margin: 0;
-    }
-  }
-
-  .break-50,
-  .break-60,
-  .break-70,
-  .break-80,
-  .break-90, {
-    width: 100% !important;
-  }
-
-  // column wrap 
-  .col2 {
-    column-count: 1;
-  }
-  .col3 {
-    column-count: 1;
-  }
   .section-header {
     margin-bottom: 0;
     h2 {
       padding-left: 20px;
     }
   }
-  .flush {
-    
-  }
-  body.food-waste {
-    .hero {
-      height: 300px;
-    }
-  }
-  body.stakeholders {
-    .hero .hero-content {
-      h1 {
-        font-size: 20px;
-      }
-    }
-  }
-  .hero {
-    height: 250px;
-    min-height: 0;
-    .hero-content {
-      h1 {
-        font-size: 25px;
-      }      
-    }
-  }
+
+
+
+
 }
 
 @media all and (max-width: $screen-xs-max) {
-  #page-footer {
-    .brand {
-      width: 250px;
-      margin: 0 auto;
-    }
-  }
-  #footernav .row [class^="col-"] {
-    height: auto !important;
-    .content {
-      padding: 40px;
-      margin: 0;
-    }
-    &:first-child {
-      .content {
-        margin: 0;
-      }
-    }
-    &:last-child {
-      .content {
-        margin: 0;
-      }
-    }
-  }
-  #subnav {
-    a {
-      height: 120px;
-      font-size: 15px;
-      small {
-        font-size: 13px;
-      }
-    }
-    hr {
-      width: auto;
-    }
-  }
+
+
+
   #profit-chart.vertical .title {
     font-size: 13px;
     line-height: 21px;
     height: 21px;
   }
   #spread-the-word ul li { font-size: 13px; }
-  .button {
-    font-size: 13px;
-    line-height: 16px;
-  }
+
 }
 @media all and (max-width: $screen-sm-max) {
-  #footernav .row [class^="col-"] {
-    height: 280px;
-  }
+
   #video {
     height: 280px;
   }
-  .flush {
-    padding: 0;
-    .row {
-      max-width: none;
-      margin: 0;
-      .content {
-        max-width: none;
-      }
-      .col {
-        width: 50%;
-        float: left;
-      }
-      [class^="col-"] {
-        padding: 0;
-        .content {
-           padding: $content-padding;
-        }
-      }
-      [class^="col-"]:first-child {
-        .content {
-          margin: 0;
-          padding: $content-padding;
-        }
-      }
-      [class^="col-"]:last-child {
-        .content {
-          margin: 0;
-          padding: $content-padding;
-        }
-      }
-    }
-  }
-  #footernav {
 
-  }
 }
 

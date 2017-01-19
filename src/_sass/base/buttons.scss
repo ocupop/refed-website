@@ -1,9 +1,18 @@
+button {
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
 .button {
   display: flex;
   width: 100%;
   height: 60px;
   line-height: 1em;
-  margin: 5px 0;
+  margin: 0;
+  margin-bottom: 5px;
   padding: 0 20px;
   border-radius: 0;
   text-align: center;
@@ -11,7 +20,6 @@
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   background-color: $button-color;
   border: none;
   color: $cream-light;
@@ -97,5 +105,24 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .button {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .button {
+
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .button {
+
   }
 }

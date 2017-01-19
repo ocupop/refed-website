@@ -1,0 +1,26 @@
+#socialnav {}
+
+@media all and (max-width: 1024px) {
+  #socialnav {
+    text-align: center;
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  #socialnav {
+  
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  #socialnav {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  #socialnav {
+    
+  }
+}

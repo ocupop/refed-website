@@ -1,0 +1,16 @@
+.well {
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  // TODO - Refactor with class selector
+  header {
+    i {
+      display: inline-block;
+      font-size: 26px;
+      color: inherit;
+      float: right;
+    }
+  }
+}

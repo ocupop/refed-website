@@ -1,0 +1,64 @@
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  // justify-content: center;
+  // align-items: center;
+  // align-content: center;
+  &.filter {
+    li {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  .tab {
+    margin: auto 5px;
+    padding: 10px 18px;
+    flex-grow: 1;
+    font-size: 13px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $cream;
+    color: $text-color;
+    cursor: pointer;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover, &.active {
+      background-color: $button-color;
+      color: $cream-light;
+    }
+  }
+  .profitability,
+  .profit-potential {
+    display: none;
+  }
+  .scalability {
+    display: none;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .tabs {
+    display: block;
+    .tab {
+      margin: 0;
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  .tabs {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  .tabs {
+    
+  }
+}
+

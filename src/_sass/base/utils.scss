@@ -1,84 +1,176 @@
-  // Bleeds
-  .flush { padding: 0 !important; }
-  .flush-bottom { padding-bottom: 0 !important; }
+// Bleeds
+.flush { padding: 0 !important; }
+.flush-bottom { padding-bottom: 0 !important; }
 
 
-  /* -----------------------------------------
-     Utility Classes
-  ----------------------------------------- */
-  .hide {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  .sr {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-  .visible-mobile {
-    visibility: hidden;
-    display: none;
-  }
+/* -----------------------------------------
+   Utility Classes
+----------------------------------------- */
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.visible-mobile {
+  visibility: hidden;
+  display: none;
+}
 
-  .responsive {
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+// Alignment
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+
+.fineprint {
+  font-size: 14px;
+  line-height: 1;
+}
+// Content
+.content {
+  position: relative;
+  padding: $content-padding;
+  // @extend .clearfix;
+  &.middle {
+    display: flex;
+    align-items: center;
+  }
+  svg {
     max-width: 100%;
-    height: auto;
   }
-  // Alignment
-  .text-center {
-    text-align: center !important;
+}
+
+.break-50 {
+  width: 50% !important;
+}
+.break-60 {
+  width: 60% !important;
+}
+.break-70 {
+  width: 70% !important;
+}
+.break-80 {
+  width: 80% !important;
+}
+.break-90 {
+  width: 90% !important;
+}
+
+.script {
+  font-family: $font-family-serif;
+  font-style: italic;
+}
+
+.brand {
+  text-transform: none !important;
+}
+
+
+// column wrap 
+.col2 {
+  column-count: 2;
+  column-gap: 40px;
+  li {
+    break-inside: avoid;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
-  .text-right {
-    text-align: right !important;
+}
+.col3 {
+  column-count: 3;
+  column-gap: 40px;
+  li {
+    break-inside: avoid;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
-  .text-left {
-    text-align: left !important;
+}
+
+
+// External Links
+a.external {
+  padding-right: 20px;
+  background-image: url(../media/images/00-global/external-link-icon.png);
+  background-image: url(../media/images/00-global/external-link-icon.svg), linear-gradient(transparent, transparent);
+  background-position: right center;
+  background-size: 0.9em;
+  background-repeat: no-repeat;
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+  // breaks go to full width
+  .break-50,
+  .break-60,
+  .break-70,
+  .break-80,
+  .break-90, {
+    width: 100% !important;
   }
 
-  .fineprint {
-    font-size: 14px;
-    line-height: 1;
+  // columns stop wrapping 
+  .col2 {
+    column-count: 1;
   }
-  // Content
-  .content {
-    position: relative;
-    padding: $content-padding;
-    // @extend .clearfix;
-    &.middle {
-      display: flex;
-      align-items: center;
+  .col3 {
+    column-count: 1;
+  }
+
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .flush {
+    padding: 0;
+    .row {
+      max-width: none;
+      margin: 0;
+      .content {
+        max-width: none;
+      }
+      .col {
+        width: 50%;
+        float: left;
+      }
+      [class^="col-"] {
+        padding: 0;
+        .content {
+           padding: $content-padding;
+        }
+      }
+      [class^="col-"]:first-child {
+        .content {
+          margin: 0;
+          padding: $content-padding;
+        }
+      }
+      [class^="col-"]:last-child {
+        .content {
+          margin: 0;
+          padding: $content-padding;
+        }
+      }
     }
-    svg {
-      max-width: 100%;
-    }
   }
+}
 
-  .break-50 {
-    width: 50% !important;
-  }
-  .break-60 {
-    width: 60% !important;
-  }
-  .break-70 {
-    width: 70% !important;
-  }
-  .break-80 {
-    width: 80% !important;
-  }
-  .break-90 {
-    width: 90% !important;
-  }
+@media all and (max-width: $screen-md-max) {
 
-  .script {
-    font-family: $font-family-serif;
-    font-style: italic;
-  }
-
-  .brand {
-    text-transform: none !important;
-  }
+}

@@ -1,0 +1,27 @@
+body.stakeholders {
+  .hero {
+    .hero-content {
+      h1 { font-size: 36px; }
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  body.stakeholders {
+    .hero .hero-content {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  body.stakeholders {
+    
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  body.stakeholders {
+    
+  }
+}
