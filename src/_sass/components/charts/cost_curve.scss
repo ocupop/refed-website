@@ -128,3 +128,45 @@ TODO - Enter example
     margin: 0;
   }
 }
+
+
+@media all and (max-width: $screen-xs-max) {
+  #cost-curve {
+    .message {
+      display: block;
+      &.footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: $gray;
+        color: $cream-light;
+        text-align: center;
+      }
+    }
+    .impact-summary {
+      display: none;
+    }
+    .impact-tabs {
+      display:none;
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  #cost-curve {
+    #chart.vertical {
+      .title {
+        line-height: 18px;
+        height: 18px;
+        margin-bottom: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  #cost-curve {
+    
+  }
+}

@@ -841,16 +841,7 @@
       }
     }
   }
-  #cost-curve {
-    #chart.vertical {
-      .title {
-        line-height: 18px;
-        height: 18px;
-        margin-bottom: 7px;
-        font-size: 12px;
-      }
-    }
-  }
+
   #unlocking-food-value {
     .content {
       max-width: 750px;
@@ -928,27 +919,7 @@
     }
 
   }
-  #cost-curve {
-    .message {
-      display: block;
-      &.footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 20px;
-        background-color: $gray;
-        color: $cream-light;
-        text-align: center;
-      }
-    }
-    .impact-summary {
-      display: none;
-    }
-    .impact-tabs {
-      display:none;
-    }
-  }
+
 
   #education-section,
   #financing-section,
