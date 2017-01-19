@@ -28,6 +28,7 @@
 @import 'elements/page_header';
 @import 'elements/page_footer';
 @import 'elements/page_hero';
+@import 'elements/site_search';
 @import 'elements/topnav';
 @import 'elements/mainnav';
 @import 'elements/subnav';
@@ -61,6 +62,8 @@
 @import "policy_tool/quiz";
 
 
+// Sections
+@import "views/sections/spread_the_word";
 
 
 
@@ -238,43 +241,6 @@
 /* -----------------------------------------
    Sections
 ----------------------------------------- */
-#spread-the-word {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      display: flex;
-      margin-bottom: 5px;
-      padding: 0;
-      padding-left: 20px;
-      background-color: $button-color;
-      color: $cream-light;
-      align-items: center;
-      text-transform: uppercase;
-      span {
-        display: inline-block;
-        margin: auto;
-        margin-right: 0;
-      }
-      a {
-        display: inline-block;
-        margin: auto;
-        height: 45px;
-        line-height: 45px;
-        width: 45px;
-        background-color: darken($button-color, 5%);
-        color: $cream-light;
-        text-align: center;
-        i {
-          margin: auto;
-          font-size: 30px;
-          line-height: 45px;
-        }
-      }
-    }
-  }
-}
 
 #supply-chain {
   padding-bottom: 0;
