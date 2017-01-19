@@ -79,10 +79,12 @@ img {}
 
 
 a {
+  color: $link-color;
   text-decoration: none;
   &:hover,
   &:active,
   &:focus {
+    color: $link-hover-color;
     outline: none;
     text-decoration: none;
   }
