@@ -1,5 +1,28 @@
 #socialnav {}
 
+.socialnav {
+  a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px 0;
+    color: darken($cream, 5%);
+    &:hover {
+      color: $gray;
+    }
+    i {
+
+    }
+  }
+}
+
+section {
+  .socialnav {
+    a {
+      color: $button-color;
+    }
+  }
+}
+
 @media all and (max-width: 1024px) {
   #socialnav {
     text-align: center;

@@ -125,28 +125,6 @@ i {
 /* -----------------------------------------
    Icons
 ----------------------------------------- */
-.socialnav {
-  a {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 20px 0;
-    color: darken($cream, 5%);
-    &:hover {
-      color: $gray;
-    }
-    i {
-
-    }
-  }
-}
-
-section {
-  .socialnav {
-    a {
-      color: $button-color;
-    }
-  }
-}
 
 .icon-circle {
   border-radius: 50%;
