@@ -1,0 +1,91 @@
+<section>
+  <div id="signup-signin" class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+ <!--          <h2>Please fill out the form to access downloads</h2>
+          <p>As part of our continuing research efforts, we’d love to know who the report is reaching. Please submit the form to access all ReFED report content.</p> -->
+          <form id="signup_form" name="signup_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ancient-wave-20081.herokuapp.com/signup">
+            <div class="hide">
+              <label for="comment">Comments</label>
+              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="sr">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name *" required>
+              <label class="sr">Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name *" required>
+              <label class="sr">Email</label>
+              <input type="text" id="email" name="email" placeholder="Email *" required>
+              <input type="submit" value="Submit" class="button">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <div class="well">
+<!--             <h2>Are you a returning user?</h2>
+            <p>If you have already signed up for access to the downloads just enter your email address below to regain access.</p> -->
+            <form id="signin_form" name="signin_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ancient-wave-20081.herokuapp.com/signin">
+              <div class="form-group">
+                <label class="sr">Email</label>
+                <input type="text" id="email_return" name="email_return" placeholder="Email *" required>
+                <input type="submit" value="Submit" class="button">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="profile" class="container">
+    <div class="row center-xs middle-xs">
+      <div class="col-xs-12">
+        <div class="content">
+<!--           <h2>Thank You!</h2>
+          <p class="lead">You have access to all downloadable content below. Help us continue our research by answering the questions below. We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</p> -->
+          <form autocomplete="off" method="post" action="https://ancient-wave-20081.herokuapp.com/update" novalidate>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="sr">First Name</label>
+                  <input type="text" id="confirm_first_name" name="confirm_first_name" placeholder="First Name *" required>
+                  <label class="sr">Last Name</label>
+                  <input type="text" id="confirm_last_name" name="confirm_last_name" placeholder="Last Name *" required>
+                  <label class="sr">Email</label>
+                  <input type="text" id="confirm_email" name="confirm_email" placeholder="Email *" required>
+                  <label class="sr">Organization Name</label>
+                  <input type="text" id="confirm_organization" name="confirm_organization" placeholder="Organization Name">
+                  <label class="sr">Zipcode</label>
+                  <input type="text" id="confirm_zip_code" name="confirm_zip_code" placeholder="Zip" class="zip">
+                  <input type="submit" value="Update" class="button">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="hide">
+                  <label for="comment">Comments</label>
+                  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                </div>
+                <div class="select">
+                  <select id="confirm_stakeholders" name="confirm_stakeholders" multiple>
+                    {% for stakeholder in site.stakeholders %}
+                    <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+                <div class="select">
+                  <select id="confirm_solutions" name="confirm_solutions" multiple>
+                    {% for solution in site.solutions %}
+                    <option value="{{ solution.title }}">{{ solution.title }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
