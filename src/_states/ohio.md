@@ -36,6 +36,7 @@ policy_data:
     label_regulation:
       date_labels_required_for:
         - perishables
+        - shellfish
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -54,7 +55,7 @@ policy_data:
           nonhospital, charitable association, group, institution, organization,
           or society that is not organized and not operated for profit
         eligible_recipients:
-        standards_for_donated_food: Food must be determined fit for human consumption
+        standards_for_donated_food: Apparently fit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -97,6 +98,30 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           The garbage-feeding rule does not apply to an individual who feeds
           household garbage to his or her own swine, or feeds only bakery waste,
           candy waste, eggs, vegetables, or dairy products to swine. Nor does the
@@ -109,6 +134,30 @@ policy_data:
         licensure_requirements: >-
           No person shall heat-treat or feed garbage to swine without an annual
           license to do so. §§ 942.02 (2015); 942.04 (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,8 +183,56 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           The department of agriculture may inspect garbage heat-treatment
           facilities during regular business hours. § 942.06 (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

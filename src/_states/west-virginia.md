@@ -21,7 +21,8 @@ policy_data:
           provided to the retailer.
         legal_citation: W. Va. Code R. § 61- 7A-6 (2013).
     label_regulation:
-      date_labels_required_for: 
+      date_labels_required_for:
+        - eggs
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
@@ -40,7 +41,7 @@ policy_data:
 
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Food must be apparently wholesome (must meet all quality and health standards); includes donations of food not readily marketable due to appearance, age, freshness, grade, size, or surplus'
+        standards_for_donated_food: 'Apparently wholesome (must meet all quality and health standards); includes donations of food not readily marketable due to appearance, age, freshness, grade, size, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -79,9 +80,17 @@ policy_data:
 
 
 
+
+
+
+
           The commissioner may revoke or refuse to issue a permit to any
           individual or facility that has violated the garbage-feeding rule.
           § 19-9A-4 (2015).
+
+
+
+
 
 
 
@@ -93,6 +102,10 @@ policy_data:
           garbage heat-treating facilities to maintain records, to allow the
           commissioner to inspect such records, and to submit copies of such
           records to the commissioner upon request. § 19-9A-6 (2015).
+
+
+
+
 
 
 

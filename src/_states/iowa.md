@@ -50,7 +50,7 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: 'I owa Code §§ 190B.101-.106, 422.11E, 422.33(30)'
+      - title: 'Iowa Code §§ 190B.101-.106, 422.11E, 422.33(30)'
         deduction_or_credit: Credit
         benefit: '15% of fair market value, up to $5,000 annually'
         eligible_donors: Taxpayers that produce a food commodity

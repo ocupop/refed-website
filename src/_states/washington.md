@@ -61,7 +61,7 @@ policy_data:
           Distributor: No protection for organizations accepting or distributing
           donations of food
         eligible_recipients:
-        standards_for_donated_food: 'Food must meet quality and labeling standards, which Includes food not readily marketable due to appearance, age, freshness, size, grade, or surplus. If food does not meet quality or labeling standards, the donor can still be protected from liability if the donor informs the nonprofit of the defects, the nonprofit agrees to recondition the'
+        standards_for_donated_food: 'Food must meet quality and labeling standards, including food not readily marketable due to appearance, age, freshness, size, grade, or surplus. If food does not meet quality or labeling standards, the donor may still be protected from liability if the donor informs the nonprofit of the defects, the nonprofit agrees to recondition the products to comply with quality and labeling standards, and the nonprofit is knowledgeable of those standards.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -99,6 +99,14 @@ policy_data:
           counts as a separate offense. The director may enjoin the violation and
           may also deny, revoke, or suspend any licenses issued to an individual
           or facility. 16.36.110 (2015).
+
+
+
+
+
+
+
+
 
 
 

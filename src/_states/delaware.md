@@ -30,7 +30,7 @@ policy_data:
           Donor: Any person or business, or institution<br>
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: Food must appear fit for human consumption
+        standards_for_donated_food: Apparently fit for human consumption
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:

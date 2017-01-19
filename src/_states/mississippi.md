@@ -25,11 +25,19 @@ policy_data:
 
 
 
+
+
+
+
+
+
+
+
           100.07 On packages of less than sixty-four (64) fluid ounces of fresh
           product labeled with the wording “SELL BY” followed by a date expressed
           as a month, day and year, not to exceed seventeen (17) days from the
           date shucked.
-        legal_citation: 43-46 Miss. Code R. § 17 (LexisNexis 2013).
+        legal_citation: 43-46 MISS. CODE R. § 17 (LexisNexis 2013).
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -49,7 +57,7 @@ policy_data:
 
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Food must appear fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food.'
+        standards_for_donated_food: 'Apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, grade, or surplus. Nonprofits distributing donated food must label it as not for resale and stating that they are not liable for any injury due to the condition of the food.'
         protections_apply_when_recipient_pays_for_donated_food: 'No'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -89,6 +97,70 @@ policy_data:
           the garbage-feeding rule. § 69-11-11 (2015). Either official also may
           quarantine any premises on which swine are fed garbage. § 69-11-13
           (2015).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

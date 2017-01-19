@@ -33,7 +33,7 @@ policy_data:
         excerpted_language_from_the_law: '(1) No person shall sell or offer for sale at retail any packaged perishable food after the expiration of the open pull date appearing on the label of the package or container unless: (a) The package has been separated from packages of perishable food with open pull dates that have not expired; (b) Each such package or group of packages is clearly identified in retail display as having an expired open pull date; and (c) The food is fit for human consumption according to applicable state and federal law. (2) Notwithstanding the provisions of this section, a vendor shall be allowed the first eight business hours after the expiration of the open pull date within which to remove all packages with an expired pull date.'
         legal_citation: Or. Rev. Stat. § 616.825 (2013).
       - title: Reg 5
-        applies_to_food_type:
+        applies_to_food_type: N/A
         purpose_of_law: Alteration of date labels not permitted
         excerpted_language_from_the_law: 'No person shall: (1) Alter, deface or remove the open date from any perishable food retail or shipping package carton, container or wrapper. (2) Label any perishable food retail or shipping package carton, container or wrapper in a manner that does not conform to the rules promulgated pursuant to ORS 616.835.'
         legal_citation: Or. Rev. Stat. § 616.830 (2013).
@@ -57,7 +57,7 @@ policy_data:
 
           Distributor: Nonprofit/charitable organization
         eligible_recipients:
-        standards_for_donated_food: 'Immunity applies regardless of compliance with laws governing the packaging, labeling, storage, or handling of food; food must be apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade.'
+        standards_for_donated_food: 'Immunity applies regardless of compliance with laws governing the packaging, labeling, storage, or handling of food; apparently fit for human consumption; includes food not readily marketable due to appearance, freshness, or grade.'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
@@ -86,6 +86,14 @@ policy_data:
         enforcement: >-
           The state department of agriculture may quarantine any swine that are
           being fed garbage or offal. 600.105 (2015).
+
+
+
+
+
+
+
+
 
 
 
