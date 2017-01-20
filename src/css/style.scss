@@ -63,9 +63,9 @@
 @import "policy_tool/quiz";
 
 // Views
+@import "views/homepage";
 @import "views/action";
 @import "views/downloads";
-@import "views/food-waste";
 @import "views/resources";
 @import "views/solutions";
 @import "views/stakeholders";
@@ -561,24 +561,7 @@
 }
 
 
-#consumption_percentage {
-  li {
-    width: 50%;
-    h3 {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 16px;
-      small {
-        font-size: 17px;
-        font-weight: 100;
-        text-transform: uppercase;
-      }
-    }
-    i {
-      display: inline-block;
-    }
-  }
-}
+
 #returns {
   margin-left: -20px;
   li {
@@ -753,29 +736,8 @@
   #impact-title {
     display: block;
   }
-  #consumption_percentage {
-    li {
-      position: relative;
-      padding-top: 80px;
-      text-align: center;
-      i {
-        position: absolute;
-        top:  0;
-        left: 50%;
-        width: 80px;
-        height: 80px;
-        margin-left: -40px;
-        display: block;
-        font-size: 80px;
-      }
-    }
-  }
-  #chart-reduction {
-    display: none;
-    #reduction-timeline {
-      margin-left: -100px;
-    }
-  }
+
+
 
   #chartnav {
     margin-bottom: 10px;

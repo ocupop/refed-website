@@ -1,0 +1,67 @@
+body.food-waste {
+  .hero {
+    h1, h2 {
+      font-size: 34px;
+    }
+  }
+}
+
+// Sections
+#consumption_percentage {
+  li {
+    width: 50%;
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 16px;
+      small {
+        font-size: 17px;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+    }
+    i {
+      display: inline-block;
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  body.food-waste {
+    .hero {
+      height: 300px;
+    }
+  }
+
+  #consumption_percentage {
+    li {
+      position: relative;
+      padding-top: 80px;
+      text-align: center;
+      i {
+        position: absolute;
+        top:  0;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        display: block;
+        font-size: 80px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+  body.food-waste {
+    #video {
+      .content {
+        padding: 80px;
+      }
+    }
+  }
+}
+@media all and (max-width: $screen-md-max) {
+  body.food-waste {
+    
+  }
+}

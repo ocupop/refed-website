@@ -83,7 +83,7 @@ prevpage:
   </div>  
 </section>
 
-<section id="waste-by-volume">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -102,7 +102,7 @@ prevpage:
   </div>
 </section>
 
-<section id="financial-waste" class="scrollme alt-bg">
+<section class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -121,7 +121,7 @@ prevpage:
   </div>
 </section>
 
-<section id="refed-goals">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
@@ -131,158 +131,29 @@ prevpage:
           <p>ReFED’ analysis of the top prevention, recovery, and recycling solutions shows that 13.2 million tons — over 20% of annual food waste — can be reduced over the next decade in cost-effective and scalable ways.</p>
           <h5>50% by 2030</h5>
           <p>Beyond this near-term 20% roadmap, ReFED has also identified the critical innovations, initiatives, policies, and awareness-building work required to reach the longer-term 50% reduction goal by 2030 as set by the federal government.</p>
-          <a href="{{'/solution' | prepend: site.baseurl }}" class="button"><span>View Solution Details &nbsp;&gt;</span></a>
+          <a href="/solution" class="button"><span>View Solution Details &nbsp;&gt;</span></a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div id="chart-reduction" class="content">
+        <div class="content chart reduction_chart">
           <div id="reduction-goal" class="ct-chart ct-square"></div>
           <div id="reduction-timeline" class="ct-chart ct-square"></div>
         </div>
       </div>
     </div>
   </div>
-
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-      if(!$.cookie('visited') == 'true') {
-        $('#downloadDialog').modal('show');
-        $.cookie('visited', true);
-      } 
-    });
-  </script>
-  <script type="text/javascript">
-
-    var data = {
-        series: [20, 30, 50],
-        labels: ['', '']
-    };
-    var timeline = {
-        series: [30, 20],
-        labels: ['', '']
-    };
-
-    var timeline_options = {
-      donut: true,
-      donutWidth: 8,
-      startAngle: 0,
-      total: 100,
-      showLabel: false,
-      width: 200,
-      height: 200
-    }
-    var options = {
-      donut: true,
-      donutWidth: 70,
-      startAngle: 0,
-      total: 100,
-      showLabel: false,
-      plugins: [
-        Chartist.plugins.fillDonut({
-          items: [{
-            content: '<i class="fa fa-tachometer text-muted"></i>',
-            position: 'bottom',
-            offsetY : 10,
-            offsetX: -2
-          }, {
-            content: '<h3 class="series-a">20%</h3><h3 class="series-b">50%</h3>'
-          }]
-        })
-      ]
-    }
-
-    var innerChart = new Chartist.Pie('#reduction-timeline', timeline, timeline_options);
-    var chart = new Chartist.Pie('#reduction-goal', data, options);
-
-    innerChart.on('draw', function(data) {
-      if(data.type === 'slice') {
-        // Get the total path length in order to use for dash array animation
-        var pathLength = data.element._node.getTotalLength();
-
-        // Set a dasharray that matches the path length as prerequisite to animate dashoffset
-        data.element.attr({
-          'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
-        });
-
-        // Create animation definition while also assigning an ID to the animation for later sync usage
-        var animationDefinition = {
-          'stroke-dashoffset': {
-            id: 'anim' + data.index,
-            dur: 1000,
-            from: -pathLength + 'px',
-            to:  '0px',
-            easing: Chartist.Svg.Easing.easeOutQuint,
-            // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
-            fill: 'freeze'
-          }
-        };
-
-        // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
-        if(data.index !== 0) {
-          animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
-        }
-
-        // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
-        data.element.attr({
-          'stroke-dashoffset': -pathLength + 'px'
-        });
-
-        // We can't use guided mode as the animations need to rely on setting begin manually
-        // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
-        data.element.animate(animationDefinition, false);
-      }
-    });
-    chart.on('draw', function(data) {
-      if(data.type === 'slice') {
-        // Get the total path length in order to use for dash array animation
-        var pathLength = data.element._node.getTotalLength();
-
-        // Set a dasharray that matches the path length as prerequisite to animate dashoffset
-        data.element.attr({
-          'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
-        });
-
-        // Create animation definition while also assigning an ID to the animation for later sync usage
-        var animationDefinition = {
-          'stroke-dashoffset': {
-            id: 'anim' + data.index,
-            dur: 1000,
-            from: -pathLength + 'px',
-            to:  '0px',
-            easing: Chartist.Svg.Easing.easeOutQuint,
-            // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
-            fill: 'freeze'
-          }
-        };
-
-        // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
-        if(data.index !== 0) {
-          animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
-        }
-
-        // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
-        data.element.attr({
-          'stroke-dashoffset': -pathLength + 'px'
-        });
-
-        // We can't use guided mode as the animations need to rely on setting begin manually
-        // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
-        data.element.animate(animationDefinition, false);
-      }
-    });
-
-
-  </script>
 </section>
 
-<section id="contributors" class="alt-bg">
+<section class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <div class="content">
           <h2>About ReFED</h2>
           <p>ReFED is a collaboration of over 30 business, nonprofit, foundation, and government leaders committed to reducing food waste in the United States. ReFED seeks to unlock new philanthropic and investment capital, along with technology, business, and policy innovation, which is projected to catalyze tens of thousands of new jobs, recover billions of meals annually for the hungry, and reduce national water use and greenhouse gas emissions. ReFED was formed in early 2015 to create a Roadmap to Reduce U.S. Food Waste, the first ever national economic study and action plan driven by a multi-stakeholder group committed to tackling food waste at scale.</p>
-          {% include contributor_logos.html %}
+
+          {% include sections/contributor_logos.html %}
+          
         </div>
       </div>
     </div>

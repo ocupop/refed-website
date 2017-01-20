@@ -1,4 +1,4 @@
-#chart-reduction {
+.reduction_chart {
   position: relative;
   padding-left: 0;
   #reduction-goal {
@@ -47,4 +47,20 @@
         opacity: 1;
     }
   }
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+  .reduction_chart {
+    display: none;
+    #reduction-timeline {
+      margin-left: -100px;
+    }
+  }
+}
+@media all and (max-width: $screen-sm-max) {
+
+}
+@media all and (max-width: $screen-md-max) {
+
 }
