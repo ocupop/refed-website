@@ -37,7 +37,6 @@
 @import 'elements/tournav';
 
 // Components
-@import "components/tour_nav";
 @import "components/charts/charts_base";
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
@@ -45,6 +44,8 @@
 
 @import "components/signup";
 @import "components/site_tour";
+
+@import "components/video";
 
 
 // Tools
@@ -559,19 +560,7 @@
   }
 }
 
-#video {
-  background-image: url("{{ site.baseurl }}/img/bg-map.jpg");
-  background-size: contain;
-  background-color: #c5ced5;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  height: 455px;
-  cursor: pointer;
-  .content {
-    padding: 170px 20px 170px 120px;
-    padding-bottom: 0;
-  }
-}
+
 #consumption_percentage {
   li {
     width: 50%;
@@ -856,11 +845,5 @@
   #spread-the-word ul li { font-size: 13px; }
 
 }
-@media all and (max-width: $screen-sm-max) {
 
-  #video {
-    height: 280px;
-  }
-
-}
 
