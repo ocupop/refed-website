@@ -15,7 +15,7 @@ prevpage:
 ---
 {% include sections/spread_the_word.html %}
 
-<section id="four-tools">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-3">
@@ -38,7 +38,7 @@ prevpage:
   </div>
 </section>
 
-<section id="financing-section">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-3">
@@ -57,7 +57,7 @@ prevpage:
   </div>
 </section>
 
-<section id="policy-section">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-3">
@@ -76,7 +76,7 @@ prevpage:
   </div>
 </section>
 
-<section id="innovation-section">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-3">
@@ -95,7 +95,7 @@ prevpage:
   </div>
 </section>
 
-<section id="education-section">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-3">
@@ -114,74 +114,3 @@ prevpage:
   </div>
 </section>
 
-<section id="stay-connected">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h2>Stay Connected</h2>
-        </div>
-        <p></p>
-      </div>
-    </div>
-    <form id="form1" name="form1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://refed.wufoo.com/forms/general-mailing-list/">
-      <div class="hide">
-        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-        <input type="hidden" id="idstamp" name="idstamp" value="TfspB5VkwLpxIbXpXjKl27J/dm7tmwflQCXtsONZtH8=">
-        <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:&quot;https:\/\/refed.wufoo.com\/admin\/&quot;}">
-        <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
-        <input type="hidden" name="currentPage" id="currentPage" value="wuBeTYVTmNtviGkAS7wuBewuBe8Sb9cGlLQU2r9wr9H73U7rfxJY=">
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-xs-12">
-          <div class="content">
-            <div class="form-inputs">
-              <label class="sr">First Name</label>
-              <input type="text" id="Field1" name="Field1" placeholder="First Name">
-              <label class="sr">Last Name</label>
-              <input type="text" id="Field2" name="Field2" placeholder="Last Name">
-              <label class="sr">Email</label>
-              <input type="text" id="Field3" name="Field3" placeholder="Email">
-              <label class="sr">Zipcode</label>
-              <input type="text" id="Field4" name="Field4" placeholder="Zip" class="zip">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <div class="content">
-            <div class="select">
-              <select id="Field9" name="Field9">
-                <option>Choose a stakeholder group</option>
-                {% for stakeholder in site.stakeholders %}
-                <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="select">
-              <select id="Field7" name="Field7" multiple>
-                <option>Choose interested solutions</option>
-                {% for solution in site.solutions %}
-                <option value="{{ solution.title }}">{{ solution.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <label class="sr">Comments</label>
-            <input type="text" placeholder="Provide additional contact info">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-xs-12">
-          <div class="content">
-            <input type="submit" value="Submit" id="saveForm" name="saveForm" class="button">
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <div class="content">
-            <p class="muted"><small>We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</small></p>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
