@@ -33,7 +33,7 @@ prevpage:
   </div>
 </section>
 
-{% include chart_cost_curve.html %}
+{% include components/charts/chart_cost_curve.html %}
 
 <section class="alt-bg">
   <div class="container">
@@ -135,9 +135,8 @@ prevpage:
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="content chart reduction_chart">
-          <div id="reduction-goal" class="ct-chart ct-square"></div>
-          <div id="reduction-timeline" class="ct-chart ct-square"></div>
+        <div class="content">
+          {% include components/charts/chart_reduction_donut_01.html %}
         </div>
       </div>
     </div>

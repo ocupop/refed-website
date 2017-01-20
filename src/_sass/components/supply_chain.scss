@@ -22,7 +22,7 @@
       &.divider {
         width: 100%;
         height: 35px;
-        background: transparent url("{{ site.baseurl }}/img/analysis/arrow-down.svg") no-repeat center bottom;
+        background: transparent url("/img/analysis/arrow-down.svg") no-repeat center bottom;
       }
       &.inactive {
         opacity: 0.5;
@@ -82,4 +82,15 @@
       padding-top: 0;
     }
   }
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+
+}
+@media all and (max-width: $screen-sm-max) {
+
+}
+@media all and (max-width: $screen-md-max) {
+
 }

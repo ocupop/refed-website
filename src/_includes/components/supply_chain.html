@@ -1,0 +1,54 @@
+<section id="supply-chain" class="alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5">
+        <div class="content">
+          <h2>Solutions across the supply chain</h2>
+          <p>Each segment of the food supply chain has a role to play in reducing our country’s food waste, but restaurants and retail businesses have the opportunity to scale up a majority of the analyzed solutions. (Some solutions can be implemented by more than one supply chain category.)</p>
+          <p>Restaurant and retail businesses impact waste both upstream (<strong>farmers</strong> and <strong>manufacturers</strong>) and downstream (<strong>consumers</strong>), so new corporate policies from a few large businesses can have a powerful effect up and down the entire value chain.</p>
+        </div>
+      </div>
+      <div class="chain hidden-xs">
+        <ul>
+          <li class="farming">
+            <img src="/img/analysis/sc-farming.svg" class="img-responsive">
+            <h5>Farms</h5>
+          </li>
+          <li class="divider">&nbsp;</li>
+          <li class="manufacturing">
+            <img src="/img/analysis/sc-manufacturing.svg" class="img-responsive">
+            <h5>Manufacturers</h5>
+          </li>
+          <li class="divider">&nbsp;</li>
+          <li class="business">
+            <img src="/img/analysis/sc-business.svg" class="img-responsive">
+            <h5>Consumer-Facing Businesses</h5>
+          </li>
+          <li class="divider">&nbsp;</li>
+          <li class="consumer">
+            <img src="/img/analysis/sc-consumer.svg" class="img-responsive">
+            <h5>Homes</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4 solutions hidden-xs">
+        <div class="content">
+          <p class="text-center">Select a circle to see related solutions</p>
+          <ul>
+            <li class="farming"><img src="/img/analysis/sc-farming-circle.svg"></li>
+            <li class="manufacturing"><img src="/img/analysis/sc-manufacturing-circle.svg"></li>
+            <li class="business"><img src="/img/analysis/sc-business-circle.svg"></li>
+            <li class="consumer"><img src="/img/analysis/sc-consumer-circle.svg"></li>
+          </ul>
+        </div>
+        <div id="related-solutions">
+          <h4>Related Solutions: <button type="button" class="close"><span aria-hidden="true">&times;</span></button></h4>
+          {% include supply_chain_solutions.html tag='farming' %}
+          {% include supply_chain_solutions.html tag='manufacturing' %}
+          {% include supply_chain_solutions.html tag='business' %}
+          {% include supply_chain_solutions.html tag='consumer' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

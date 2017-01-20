@@ -21,7 +21,7 @@ prevpage:
         <div class="content">
           <h2>A cost effective approach to food waste</h2>
           <p>ReFED set out to understand the most cost-effective ways to reduce food waste and the resources needed to implement those solutions at scale.</p>
-          <a href="{{ '/resources' | prepend: site.baseurl }}" class="muted"><em>Read more about ReFED's methodology &nbsp;&gt;</em></a>
+          <a href="/resources" class="muted"><em>Read more about ReFED's methodology &nbsp;&gt;</em></a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -44,9 +44,9 @@ prevpage:
   </div>
 </section>
 
-{% include chart_cost_curve.html %}
+{% include components/charts/chart_cost_curve.html %}
 
-<section id="the-impact" class="alt-bg">
+<section class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -54,63 +54,63 @@ prevpage:
           <h2>If implemented, these solutions could generate:</h2>
           <ul id="returns" class="grid">
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/economic-value-per-ton.svg" class="img-responsive">
+              <img src="/img/icons/impact/economic-value-per-ton.svg" class="img-responsive">
               <h4>
                 $10 billion<br>
                 <small>of economic value</small>
               </h4>
               <hr>
-              <a href="{{ '/solution#cards?sort=economic-value-per-ton' | prepend: site.baseurl }}">View the top financial solutions &nbsp;&gt;</a>
+              <a href="/solution#cards?sort=economic-value-per-ton">View the top financial solutions &nbsp;&gt;</a>
             </li>
 
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/meals-recovered.svg" class="img-responsive">
+              <img src="/img/icons/impact/meals-recovered.svg" class="img-responsive">
               <h4>
                 1.8 billion<br>
                 <small>meals saved</small>
               </h4>
               <hr>
-              <a href="{{ '/solution#cards?sort=meals-recovered' | prepend: site.baseurl }}">View the top meal saving solutions &nbsp;&gt;</a>
+              <a href="/solution#cards?sort=meals-recovered">View the top meal saving solutions &nbsp;&gt;</a>
             </li>
 
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/water-conservation.svg" class="img-responsive">
+              <img src="/img/icons/impact/water-conservation.svg" class="img-responsive">
               <h4>
                 1.6 Trillion gallons<br>
                 <small>water saved annually</small>
               </h4>
               <hr>
-              <a href="{{ '/solution#cards?sort=water-conservation' | prepend: site.baseurl }}">View the top water saving solutions &nbsp;&gt;</a>
+              <a href="/solution#cards?sort=water-conservation">View the top water saving solutions &nbsp;&gt;</a>
             </li>
 
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/consumer-savings.svg" class="img-responsive">
+              <img src="/img/icons/impact/consumer-savings.svg" class="img-responsive">
               <h4>
                 $5.6 billion<br>
                 <small>annual consumer savings</small>
               </h4>
               <hr>
-              <a href="{{ '/stakeholders/consumers' | prepend: site.baseurl }}">View the top consumer savings solutions &nbsp;&gt;</a>
+              <a href="/stakeholders/consumers">View the top consumer savings solutions &nbsp;&gt;</a>
             </li>
 
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/profit-potential.svg" class="img-responsive">
+              <img src="/img/icons/impact/profit-potential.svg" class="img-responsive">
               <h4>
                 $1.9 billion<br>
                 <small>annual business profit potential</small>
               </h4>
               <hr>
-              <a href="{{ '#profit-potential' | prepend: site.baseurl }}">View the top business profit potential solutions &nbsp;&gt;</a>
+              <a href="#profit-potential">View the top business profit potential solutions &nbsp;&gt;</a>
             </li>
 
             <li>
-              <img src="{{ site.baseurl }}/img/icons/impact/emissions-reduced.svg" class="img-responsive">
+              <img src="/img/icons/impact/emissions-reduced.svg" class="img-responsive">
               <h4>
                 18 million<br>
                 <small>tons of GHG emissions reduced annually</small>
               </h4>
               <hr>
-              <a href="{{ '/solution?sort=emissions-reduced#cards' | prepend: site.baseurl }}">View the top emission reducing solutions &nbsp;&gt;</a>
+              <a href="/solution?sort=emissions-reduced#cards">View the top emission reducing solutions &nbsp;&gt;</a>
             </li>
           </ul>
         </div>
@@ -119,72 +119,16 @@ prevpage:
   </div>
 </section>
 
-{% include chart_reduction_donut.html %}
+{% include components/charts/chart_reduction_donut_02.html %}
 
-<section id="supply-chain" class="alt-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-5">
-        <div class="content">
-          <h2>Solutions across the supply chain</h2>
-          <p>Each segment of the food supply chain has a role to play in reducing our country’s food waste, but restaurants and retail businesses have the opportunity to scale up a majority of the analyzed solutions. (Some solutions can be implemented by more than one supply chain category.)</p>
-          <p>Restaurant and retail businesses impact waste both upstream (<strong>farmers</strong> and <strong>manufacturers</strong>) and downstream (<strong>consumers</strong>), so new corporate policies from a few large businesses can have a powerful effect up and down the entire value chain.</p>
-        </div>
-      </div>
-      <div class="chain hidden-xs">
-        <ul>
-          <li class="farming">
-            <img src="{{ site.baseurl }}/img/analysis/sc-farming.svg" class="img-responsive">
-            <h5>Farms</h5>
-          </li>
-          <li class="divider">&nbsp;</li>
-          <li class="manufacturing">
-            <img src="{{ site.baseurl }}/img/analysis/sc-manufacturing.svg" class="img-responsive">
-            <h5>Manufacturers</h5>
-          </li>
-          <li class="divider">&nbsp;</li>
-          <li class="business">
-            <img src="{{ site.baseurl }}/img/analysis/sc-business.svg" class="img-responsive">
-            <h5>Consumer-Facing Businesses</h5>
-          </li>
-          <li class="divider">&nbsp;</li>
-          <li class="consumer">
-            <img src="{{ site.baseurl }}/img/analysis/sc-consumer.svg" class="img-responsive">
-            <h5>Homes</h5>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-4 solutions hidden-xs">
-        <div class="content">
-          <p class="text-center">Select a circle to see related solutions</p>
-          <ul>
-            <li class="farming"><img src="{{ site.baseurl }}/img/analysis/sc-farming-circle.svg"></li>
-            <li class="manufacturing"><img src="{{ site.baseurl }}/img/analysis/sc-manufacturing-circle.svg"></li>
-            <li class="business"><img src="{{ site.baseurl }}/img/analysis/sc-business-circle.svg"></li>
-            <li class="consumer"><img src="{{ site.baseurl }}/img/analysis/sc-consumer-circle.svg"></li>
-          </ul>
-        </div>
-        <div id="related-solutions">
-          <h4>Related Solutions: <button type="button" class="close"><span aria-hidden="true">&times;</span></button></h4>
-          {% include supply_chain_solutions.html tag='farming' %}
-          {% include supply_chain_solutions.html tag='manufacturing' %}
-          {% include supply_chain_solutions.html tag='business' %}
-          {% include supply_chain_solutions.html tag='consumer' %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include components/supply_chain.html %}
 
-<section id="profit-potential">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-xs-12">
         <div class="content">
-          {% include profit_curve.html %}
-          {% comment %}
-          {% include svg/graph-profit.svg %}
-          {% endcomment %}
+          {% include components/charts/chart_profit_curve.html %}
         </div>
       </div>
       <div class="col-sm-6 col-xs-12">
@@ -193,7 +137,7 @@ prevpage:
           <p>Eleven of the solutions represent $1.9 billion in business profit potential. Nine are geared toward prevention and two toward recycling. They all create revenue and cost savings opportunities that can be captured by the businesses that implement them.</p>
           <hr>
           <p>Restaurants and foodservice facilities have the largest profit opportunity.</p>
-          <a class="button-stakeholder restaurants" href="{{ '/stakeholders/restaurants-and-foodservice-providers' | prepend: site.baseurl }}" title="Restaurants and Foodservice Providers">
+          <a class="button-stakeholder restaurants" href="/stakeholders/restaurants-and-foodservice-providers" title="Restaurants and Foodservice Providers">
             <i class="icon-restaurants-and-foodservice-providers"></i>Restaurants &amp; Foodservice Providers &nbsp;&gt;
           </a>
         </div>
@@ -202,7 +146,7 @@ prevpage:
   </div>
 </section>
 
-<section id="top-solutions" class="alt-bg">
+<section class="alt-bg">
   <header class="section-header">
     <div class="container">
       <h2>Top Solutions and Benefits</h2>

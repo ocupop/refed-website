@@ -39,22 +39,6 @@ $(document).on('ready', function() {
   });
 
 
-  $("#supply-chain li").on('click', function() {
-    var activeClass = $(this).attr('class');
-    $("#supply-chain li").each(function() {
-      if($(this).hasClass(activeClass)) {
-        $(this).addClass('active').removeClass('inactive');
-      } else {
-        $(this).removeClass('active').addClass('inactive');
-      }
-    });
-    $("#related-solutions").attr('class', $(this).attr('class')).fadeIn();
-  });
-  $("#supply-chain .close").on('click', function() {
-    $('#related-solutions').fadeOut();
-    $("#supply-chain li").removeClass('active inactive');
-  });
-
   // Control animation on scroll event
   $('.scroll-animate').each(function() {
     var inview = new Waypoint.Inview({
