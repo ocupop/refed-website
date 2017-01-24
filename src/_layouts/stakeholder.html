@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<section id="stakeholder-list">
+<section class="stakeholder-list">
   <div class="container">
     <div class="row middle-xs">
       <div class="col-xs-12 col-sm-3">
@@ -87,25 +87,20 @@ layout: page
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <form id="form4" name="form4" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://refed.wufoo.com/forms/stakeholder-collaborative/">
+          <form id="form4" name="form4" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://ancient-wave-20081.herokuapp.com/signup">
             <div class="hide">
-              <input type="hidden" name="currentPage" id="currentPage" value="wuBeTYVTmNtviGkAS7wuBewuBe8Sb9cGlLQU2r9wr9H73U7rfxJY=">
-              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-              <input type="hidden" id="idstamp" name="idstamp" value="b2sj0dhhvH6kwvydA5ZabtnNMsKM/G8suLwsJ9UvGVE=">
-              <input type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:&quot;https:\/\/refed.wufoo.com\/admin\/&quot;}">
-              <input type="hidden" id="clickOrEnter" name="clickOrEnter" value="">
               <input type="hidden" id="Field6" name="Field6" value="{{ stakeholder.title }}">
             </div>
             <div class="form-inputs">
               <label class="sr">Name</label>
-              <input type="text" id="Field1" name="Field1" placeholder="First Name *" required>
-              <input type="text" id="Field2" name="Field2" placeholder="Last Name *" required>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name *" required>
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name *" required>
               <label class="sr">Email</label>
-              <input type="text" id="Field3" name="Field3" placeholder="Email *" required>
-              <label class="sr">Company</label>
-              <input type="text" id="Field4" name="Field4" placeholder="Company Name *" required>
+              <input type="text" id="email" name="email" placeholder="Email *" required>
+              <label class="sr">Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="Organization Name *" required>
               <label class="sr">Zipcode</label>
-              <input type="text" id="Field5" name="Field5" placeholder="Zip" class="zip">
+              <input type="text" id="postal" name="postal" placeholder="Zip" class="zip">
               <input type="submit" value="Submit" class="button">
               <p class="muted"><small>We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</small></p>
             </div>

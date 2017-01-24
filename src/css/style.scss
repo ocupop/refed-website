@@ -373,36 +373,9 @@
   }
 }
 
-#stakeholder-icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  li {
-    text-align: center;
-    width: 150px;
-  }
-  a {
-    font-size: 13px;
-    font-family: $font-family-condensed;
-    text-transform: uppercase;
-    color: $text-color;
-    &:hover {
-      background-color: transparent;
-    }
-  }
-  .icon {
-    height: 80px;
-    width: 80px;
-    margin: auto;
-  }
-}
 
-.stakeholder-list {
-  small {
-    text-transform: capitalize;
-  }
-}
+
+
 
 #stakeholder-actions {
   ul {
@@ -619,32 +592,7 @@
   }
 }
 
-#collaborate {
-  form {
-    margin-top: 20px;
-    input {
-      line-height: 38px;
-      padding: 0;
-      &.zip {
-        width: 49%;
-        min-width: 0;
-        margin-right: 5px;
-      }
-    }
-    input[type="submit"] {
-      display: block;
-      float: right;
-      width: 48%;
-      min-width: 0;
-      height: 48px;
-      line-height: 40px;
-      margin: 3px 0 0 0;
-      padding: 0;
-      text-indent: 0;
-    }
-  }
 
-}
 
 
 
@@ -674,15 +622,8 @@
 
 @media all and (max-width: 650px) {
 
-  #stakeholder-icons {
-    display: none;
-  }
-  .stakeholder-list,
-  #stakeholder-list {
-    svg {
-      width: 100px;
-    }
-  }
+
+
   #solution-hightlights {
     .content {
       padding: 0 20px;
@@ -696,9 +637,6 @@
 
   #chartnav {
     margin-bottom: 10px;
-    // padding: 25px;
-    // margin-left: -35px;
-    // margin-right: -35px;
 
     &.stick {
       width: 100% !important;

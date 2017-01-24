@@ -4,6 +4,36 @@ body.stakeholders {
       h1 { font-size: 36px; }
     }
   }
+  // Sections
+  #stakeholder-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li {
+      text-align: center;
+      width: 150px;
+    }
+    a {
+      font-size: 13px;
+      font-family: $font-family-condensed;
+      text-transform: uppercase;
+      color: $text-color;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    .icon {
+      height: 80px;
+      width: 80px;
+      margin: auto;
+    }
+  }
+  .stakeholder-list {
+    small {
+      text-transform: capitalize;
+    }
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {
@@ -11,6 +41,15 @@ body.stakeholders {
     .hero .hero-content {
       h1 {
         font-size: 20px;
+      }
+    }
+    // Sections
+    #stakeholder-icons {
+      display: none;
+    }
+    .stakeholder-list {
+      svg {
+        width: 100px;
       }
     }
   }
