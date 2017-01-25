@@ -28,3 +28,16 @@
     }
   }
 }
+
+
+@media all and (max-width: $screen-xs-max) {
+
+}
+@media all and (max-width: $screen-sm-max) {
+  .dialog-callout {
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: $screen-md-max) {
+
+}

@@ -34,6 +34,34 @@ body.stakeholders {
       text-transform: capitalize;
     }
   }
+  #action-list {
+    li {
+      height: 50px;
+      line-height: 50px;
+      padding-left: 80px;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-size: contain;
+      background-position: left center;
+      background-repeat: no-repeat;
+      a {
+        color: $text-color;
+      }
+      &.financing {
+        background-image: url("{{ site.baseurl }}/img/icons/action/financing.svg");
+      }
+      &.policy {
+        background-image: url("{{ site.baseurl }}/img/icons/action/policy.svg");
+      }
+      &.innovation {
+        background-image: url("{{ site.baseurl }}/img/icons/action/innovation.svg");
+      }
+      &.education {
+        background-image: url("{{ site.baseurl }}/img/icons/action/education.svg");
+      }
+
+    }
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {

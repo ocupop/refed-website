@@ -84,6 +84,123 @@
   }
 }
 
+#related-solutions {
+  display: none;
+  position: absolute;
+  height: 635px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  color: $cream-light;
+  background-color: $gray;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  .icon-close {
+    font-size: 15px;
+    float: right;
+    background: rgba(0,0,0,0.4);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  h4 {
+    color: $cream-light;
+  }
+  h5 {
+    margin: 0;
+    line-height: $base-line-height*1.5;
+    color: $cream-light;
+    text-transform: capitalize;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    font-family: $font-family-condensed;
+    a {
+      color: $cream-light;
+      &:hover {
+        color: $cream-light;
+      }
+    }
+    span {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 12px;
+      @include transition();
+    }
+    &.in {
+      span {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .summary {
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.5);
+    p {
+      padding: 20px;
+      font-size: 13px;
+      font-weight: 200;
+      line-height: 1.25em;
+    }
+    a {
+      display: block;
+      width: 100%;
+      line-height: $base-line-height;
+      background-color: #ffffff;
+      color:$gray;
+      text-align: center;
+    }
+  }
+  .scrolling {
+    display: none;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+    // /* pseudo elements */
+    // ::-webkit-scrollbar              {  }
+    // ::-webkit-scrollbar-button       {  }
+    // ::-webkit-scrollbar-track        {  }
+    // ::-webkit-scrollbar-track-piece  {  }
+    // ::-webkit-scrollbar-thumb        {  }
+    // ::-webkit-scrollbar-corner       {  }
+    // ::-webkit-resizer                {  }
+
+    // /* pseudo class selectors */
+    // :horizontal
+    // :vertical
+    // :decrement
+    // :increment
+    // :start
+    // :end 
+    // :double-button
+    // :single-button
+    // :no-button
+    // :corner-present
+    // :window-inactive
+  }
+  &.farming {
+    background-color: #6B2935;
+    #farming-solutions {
+      display: block;
+    }
+  }
+  &.manufacturing {
+    background-color: #A24242;
+    #manufacturing-solutions {
+      display: block;
+    }
+  }
+  &.business {
+    background-color: #C56C47;
+    #business-solutions {
+      display: block;
+    }
+  }
+  &.consumer {
+    background-color: #DCAA70;
+    #consumer-solutions {
+      display: block;
+    }
+  }
+}
 
 @media all and (max-width: $screen-xs-max) {
 

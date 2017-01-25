@@ -50,6 +50,32 @@
   }
 }
 
+// Hero banners on action pages
+#education-hero {
+  @include palette(#9BC9C0, $cream-light);
+  a {
+    color: #fff;
+  }
+}
+#policy-hero {
+  @include palette(#912A46, $cream-light);
+  a {
+    color: #fff;
+  }
+}
+#financing-hero {
+  @include palette(#78A783, $cream-light);
+  a {
+    color: #fff;
+  }
+}
+#innovation-hero {
+  @include palette(#E8AD6C, $cream-light);
+  a {
+    color: #fff;
+  }
+}
+
 
 @media all and (max-width: $screen-xs-max) {
   .hero {
