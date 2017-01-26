@@ -11,11 +11,11 @@
 @mixin palette($bg: red, $color: yellow) {
   background-color: $bg !important;
   fill: $bg !important;
-  color: $color !important;
+  color: $color;
   h1, h2, h3, h4, .lead {
-    color: $color !important;
+    color: $color;
     small {
-      color: $color !important;
+      color: $color;
     }
   }
   hr {
