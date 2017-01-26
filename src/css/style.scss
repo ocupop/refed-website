@@ -29,7 +29,6 @@
 @import 'elements/page_header';
 @import 'elements/page_footer';
 @import 'elements/page_hero';
-@import 'elements/site_search';
 @import 'elements/topnav';
 @import 'elements/mainnav';
 @import 'elements/subnav';
@@ -42,6 +41,7 @@
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
 @import "components/charts/profit_chart";
+@import 'components/siteSearch';
 
 @import "components/signup";
 @import "components/site_tour";

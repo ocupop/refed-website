@@ -1,15 +1,30 @@
-
 #site-search-form {
   padding-left: 30px;
   padding-right: 0;
   position: relative;
   background-color: transparent;
+  cursor: pointer;
+  label {
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: $cream-light;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
   &.active {
     background-color: rgba(255,255,255,0.1);
+    label {
+      display: none;
+    }
     input[type="text"] {
       display: inline-block;
     }
     input[type="submit"] {
+      display: inline-block;
       padding: 0 15px;
     }
   }
@@ -33,6 +48,7 @@
     }
   }
   input[type="submit"] {
+    display: none;
     width: auto;
     height: 20px;
     line-height: 20px;
@@ -41,6 +57,7 @@
     text-indent: 0;
     color: $cream-light;
     background-color: transparent;
+    cursor: pointer;
   }
   i {
     position: absolute;
