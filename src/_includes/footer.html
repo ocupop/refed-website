@@ -1,109 +1,111 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <div class="content">
-        <img src="{{ site.baseurl }}/img/logo-tagline.svg" class="img-responsive">
+<footer id="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <img src="{{ site.baseurl }}/img/logo-tagline.svg" class="img-responsive">
+        </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <div class="content text-center">
-        {% include socialnav.html %}
-      </div>
-    </div>
-  </div>
-</div>
-<div id="footernav">
-  <div class="row">
-    <div class="col-xs-12 col-sm-3 prevention">
-      <div class="content">
-        <ul class="primary-sitemap">
-          <li>
-            <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
-            <ul>
-              <li><a href="{{ '/about' | prepend: site.baseurl }}">About ReFED</a></li>
-              <li><a href="{{ '/about#steering-committee' | prepend: site.baseurl }}">Steering Committee &amp; Advisory Council</a></li>
-              <li><a href="{{ '/about#refed-team' | prepend: site.baseurl }}">ReFED Team</a></li>
-              <li><a href="{{ '/about#foundations-list' | prepend: site.baseurl }}">Foundations List</a></li>
-            </ul>
-          </li>
-          <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-5 recovery">
-      <div class="content">
-        <div class="col3">
-          <ul class="report-sitemap">
-            <li>
-              <a href="{{ '/#foodwaste' | prepend: site.baseurl }}">Food Waste</a>
-              <ul>
-                <li><a href="{{ '/#the-problem' | prepend: site.baseurl }}">The Problem</a></li>
-                <li><a href="{{ '/#waste-by-volume' | prepend: site.baseurl }}">Waste by Volume</a></li>
-                <li><a href="{{ '/#financial-waste' | prepend: site.baseurl }}">Financial Waste</a></li>
-                <li><a href="{{ '/#refed-goals' | prepend: site.baseurl }}">ReFED Goals</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="{{ '/action' | prepend: site.baseurl }}">Action</a>
-              <ul>
-                <li><a href="{{ '/action#spread-the-word' | prepend: site.baseurl }}">Spread The Word</a></li>
-                <li><a href="{{ '/action#four-tools' | prepend: site.baseurl }}">Four Tools</a>
-                  <ul>
-                    <li><a href="{{ '/financing' | prepend: site.baseurl }}">Financing</a></li>
-                    <li><a href="{{ '/policy' | prepend: site.baseurl }}">Policy</a></li>
-                    <li><a href="{{ '/innovation' | prepend: site.baseurl }}">Innovation</a></li>
-                    <li><a href="{{ '/education' | prepend: site.baseurl }}">Education</a></li>
-                  </ul>
-                </li>
-                <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}">Stay Connected</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="report-sitemap">
-            <li>
-              <a href="{{ '/analysis' | prepend: site.baseurl }}">Analysis</a>
-              <ul>
-                <li><a href="{{ '/analysis#solutions' | prepend: site.baseurl }}">Solutions</a></li>
-                <li><a href="{{ '/analysis#the-impact' | prepend: site.baseurl }}">The Impact</a></li>
-                <li><a href="{{ '/analysis#supply-chain' | prepend: site.baseurl }}">Supply Chain</a></li>
-                <li><a href="{{ '/analysis#profit-potential' | prepend: site.baseurl }}">Business Profit</a></li>
-                <li><a href="{{ '/analysis#top-solutions' | prepend: site.baseurl }}">Top Solutions</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="{{ '/solution' | prepend: site.baseurl }}">Solutions</a>
-              <ul>
-                {% for tab in site.data.tabs %}
-                {% capture link %}/solution?sort={{ tab.slug }}#cards{% endcapture %}
-                <li><a href="{{ link | prepend: site.baseurl }}">{{ tab.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
-          </ul>
-          <ul class="report-sitemap">
-            <li>
-              <a href="/stakeholder">Stakeholders</a>
-              <ul>
-                {% for stakeholder in site.stakeholders %}
-                <li><a href="{{ stakeholder.url | prepend:site.baseurl }}">{{ stakeholder.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
-          </ul>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content text-center">
+          {% include socialnav.html %}
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4 recycle">
-      <div class="content">
-        <h3>
-          Subscribe<br>
-          <small>Join our mailing list.</small>
-        </h3>
-        <a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="button"><span>Sign Up</span></a>
+  </div>
+  <div id="footernav">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 prevention">
+        <div class="content">
+          <ul class="primary-sitemap">
+            <li>
+              <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+              <ul>
+                <li><a href="{{ '/about' | prepend: site.baseurl }}">About ReFED</a></li>
+                <li><a href="{{ '/about#steering-committee' | prepend: site.baseurl }}">Steering Committee &amp; Advisory Council</a></li>
+                <li><a href="{{ '/about#refed-team' | prepend: site.baseurl }}">ReFED Team</a></li>
+                <li><a href="{{ '/about#foundations-list' | prepend: site.baseurl }}">Foundations List</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 recovery">
+        <div class="content">
+          <div class="col3">
+            <ul class="report-sitemap">
+              <li>
+                <a href="{{ '/#foodwaste' | prepend: site.baseurl }}">Food Waste</a>
+                <ul>
+                  <li><a href="{{ '/#the-problem' | prepend: site.baseurl }}">The Problem</a></li>
+                  <li><a href="{{ '/#waste-by-volume' | prepend: site.baseurl }}">Waste by Volume</a></li>
+                  <li><a href="{{ '/#financial-waste' | prepend: site.baseurl }}">Financial Waste</a></li>
+                  <li><a href="{{ '/#refed-goals' | prepend: site.baseurl }}">ReFED Goals</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="{{ '/action' | prepend: site.baseurl }}">Action</a>
+                <ul>
+                  <li><a href="{{ '/action#spread-the-word' | prepend: site.baseurl }}">Spread The Word</a></li>
+                  <li><a href="{{ '/action#four-tools' | prepend: site.baseurl }}">Four Tools</a>
+                    <ul>
+                      <li><a href="{{ '/financing' | prepend: site.baseurl }}">Financing</a></li>
+                      <li><a href="{{ '/policy' | prepend: site.baseurl }}">Policy</a></li>
+                      <li><a href="{{ '/innovation' | prepend: site.baseurl }}">Innovation</a></li>
+                      <li><a href="{{ '/education' | prepend: site.baseurl }}">Education</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}">Stay Connected</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="report-sitemap">
+              <li>
+                <a href="{{ '/analysis' | prepend: site.baseurl }}">Analysis</a>
+                <ul>
+                  <li><a href="{{ '/analysis#solutions' | prepend: site.baseurl }}">Solutions</a></li>
+                  <li><a href="{{ '/analysis#the-impact' | prepend: site.baseurl }}">The Impact</a></li>
+                  <li><a href="{{ '/analysis#supply-chain' | prepend: site.baseurl }}">Supply Chain</a></li>
+                  <li><a href="{{ '/analysis#profit-potential' | prepend: site.baseurl }}">Business Profit</a></li>
+                  <li><a href="{{ '/analysis#top-solutions' | prepend: site.baseurl }}">Top Solutions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="{{ '/solution' | prepend: site.baseurl }}">Solutions</a>
+                <ul>
+                  {% for tab in site.data.tabs %}
+                  {% capture link %}/solution?sort={{ tab.slug }}#cards{% endcapture %}
+                  <li><a href="{{ link | prepend: site.baseurl }}">{{ tab.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+            <ul class="report-sitemap">
+              <li>
+                <a href="/stakeholder">Stakeholders</a>
+                <ul>
+                  {% for stakeholder in site.stakeholders %}
+                  <li><a href="{{ stakeholder.url | prepend:site.baseurl }}">{{ stakeholder.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 recycle">
+        <div class="content">
+          <h3>
+            Subscribe<br>
+            <small>Join our mailing list.</small>
+          </h3>
+          <a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="button"><span>Sign Up</span></a>
+        </div>
       </div>
     </div>
+    <div id="copyright">
+      <p>COPYRIGHT <span class="year">2016</span> ReFED. ALL RIGHTS RESERVED</p>
+    </div>
   </div>
-  <div id="copyright">
-    <p>COPYRIGHT <span class="year">2016</span> ReFED. ALL RIGHTS RESERVED</p>
-  </div>
-</div>
+</footer>

@@ -2,12 +2,13 @@
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}">
-    <header id="page-header">{% include header.html %}</header>
+    {% include header.html %}
     {% include search-results.html %}
     <main id="page-content">
       {{ content }}
     </main>
-    <footer id="page-footer">{% include footer.html %}</footer>
+    {% include footer.html %}
+    
     {% include video-modal.html %}
     {% include thanks.html %}
     {% include policy/tooltip.html %}
