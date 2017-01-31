@@ -103,8 +103,12 @@ policy_data:
     summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: BOULDER MUN. CODE 6-3-13 to 6-3-18 (2017)
+        generators_covered: 'Any business (including educational institutions, and charitable or nonprofit organizations), single family homeowner or other property owner or manager, or special event permit holder.'
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---
