@@ -128,7 +128,7 @@ function hideCards(impact) {
 
 function sortCards(impact) {
   // window.console.log("SHOULD SORT", impact);
-  var l = window.location.pathname + "?sort="+impact;
+  var l = window.location.pathname + "?sort="+impact + window.location.hash;
   window.history.pushState('', '{{ site.title }}: Solutions', l);
 
   $('.card .stat').hide().filter("."+impact).show();

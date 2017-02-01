@@ -11,11 +11,4 @@ $(document).on('ready', function() {
       $('#thanks').fadeOut('slow');
     }, 1500);
   }
-
-
-
 });
-
-
-
-  

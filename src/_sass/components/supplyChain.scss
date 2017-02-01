@@ -40,6 +40,9 @@
     background-color: #ece6da;
     margin-top: -50px;
     margin-bottom: 0px;
+    ul {
+      margin: 60px 0;
+    }
   }
   .solutions {
     padding-top: 15px;
@@ -50,7 +53,7 @@
     ul {
       margin: 0;
       li {
-        margin: 35px 0;
+        margin-bottom: 42px;
         img {
           width: auto;
         }
