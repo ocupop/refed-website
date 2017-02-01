@@ -3,6 +3,12 @@ layout: page
 title: Downloads
 permalink: /download
 slug: downloads
+nextpage:
+  url: /
+  title: Homepage
+prevpage:
+  url: /resources
+  title: Resources
 ---
 {% include components/signup.html %}
 
@@ -13,14 +19,14 @@ slug: downloads
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="content text-right">
-            <img src="{{ site.baseurl }}/img/downloads/{{ chapter.thumbnail }}" class="img-responsive">
+            <img src="/img/downloads/{{ chapter.thumbnail }}" class="img-responsive">
           </div>
         </div>
         <div class="col-xs-12 col-sm-8">
           <div class="content">
             <h2>{{ chapter.title }}</h2>
             <p><em>{{ chapter.summary }}</em></p>
-            <a href="{{ site.baseurl }}/downloads/{{ chapter.download }}" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" target="_blank"><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
+            <a href="/downloads/{{ chapter.download }}" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" target="_blank"><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
             <p class="message">To enable downloads, please fill out the above <a href="#signup-form">form</a></p>
           </div>
         </div>
@@ -40,7 +46,7 @@ slug: downloads
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <a href="{{ '/downloads/ReFED_Technical_Appendix.pdf' | prepend: site.baseurl }}" 
+          <a href="/downloads/ReFED_Technical_Appendix.pdf" 
             class="button"
             onClick="ga('send', 'event', 'button', 'pdf download', 'Technical Appendix');"
             download>
