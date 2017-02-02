@@ -52,11 +52,11 @@
           </div>
           {% assign section = site.data.policy_tool['liability_protection'] %}
           <ul class="section_root" data-section="{{ section.title | slugify }}">
-            {% include policy/policy_tool_filter.html section=section %}
+            {% include_relative partials/policy_tool_filter.html section=section %}
           </ul>
           {% assign section = site.data.policy_tool['tax_incentives'] %}
           <ul class="section_root" data-section="{{ section.title | slugify }}">
-            {% include policy/policy_tool_filter.html section=section %}
+            {% include_relative partials/policy_tool_filter.html section=section %}
           </ul>
         </div>
       </div>
@@ -84,12 +84,12 @@
             </label>
           </div>
           <ul class="section_root" data-section="{{ section.title | slugify }}">
-            {% include policy/policy_tool_filter.html section=section %}
+            {% include_relative partials/policy_tool_filter.html section=section %}
           </ul>
           
           {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
           <ul class="section_root" data-section="{{ section.title | slugify }}">
-            {% include policy/policy_tool_filter.html section=section %}
+            {% include_relative partials/policy_tool_filter.html section=section %}
           </ul>
         </div>
       </div>

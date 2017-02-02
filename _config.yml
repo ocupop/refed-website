@@ -38,10 +38,14 @@ collections:
     output: true
     layout: default
     permalink: /stakeholders/:path
+  tools:
+    output: true
+    layout: tool
+    permalink: /tools/:path
   states:
     output: true
     layout: state
-    permalink: /states/:path  
+    permalink: /states/:path
 
 date_labels_required_for:
   - bakery
