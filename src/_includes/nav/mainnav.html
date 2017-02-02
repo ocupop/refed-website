@@ -1,0 +1,40 @@
+<div id="mainnav">
+  <div class="container">
+    <nav>
+      <ul>
+
+        <li id="analysis-link"
+            {% if page.url =='/analysis' %}class="active"{% endif %}>
+            <a href="/analysis" title="Analysis">Analysis</a>
+        </li>
+
+        <li id="solutions-link"
+            {% if page.url =='/solutions/' %}class="active"{% endif %}>
+            <a href="/solutions/?sort=economic-value-per-ton" title="Solutions">Solutions</a>
+        </li>
+
+        <li id="stakeholders-link"
+            {% if page.url =='/stakeholders/' %}class="active"{% endif %}>
+            <a href="/stakeholders/" title="Stakeholders">Stakeholders</a>
+        </li>
+        
+        <li id="policy-link"
+            {% if page.url =='/tools/policy-tool/' %}class="active"{% endif %}>
+            <a href="/tools/policy-tool" title="Policy">Policy</a>
+        </li>
+       
+        
+        <li id="innovator-link"
+            {% if page.url =='/tools/innovator-database/' %}class="active"{% endif %}>
+            <a href="/tools/innovator-database" title="Innovator Database">Innovators</a>
+        </li>
+        
+      </ul>
+      <ul class="drawer">
+        <li><a href="/about">About</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/download" title="Download the Report" >Download the Report <i class="icon-download"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

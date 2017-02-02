@@ -8,85 +8,11 @@
       <i class="icon-menu"></i>
     </button>
   </div>
-  <div id="topnav">
-    <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <form id="site-search-form" class="siteSearch">
-              <i class="icon-search"></i>
-              <input id="search_box" class="keyterms" type="text" placeholder="Enter Keyterms">
-              <input type="submit" value="Search" disabled>
-              <label for="search_box">Search</label>
-            </form>
-          </li>
-          <li class="follow">
-            <a href="#">Follow</a>
-            <ul>
-              <li><a href="https://twitter.com/refed_nowaste" target="_blank"><i class="icon-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/10496812?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10496812%2Cidx%3A2-3-4%2CtarId%3A1458225312551%2Ctas%3Arefed"><i class="icon-linkedin"></i></a></li>
-              <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="newsletter-signup">Newsletter Signup</a></li>
-            </ul>
-          </li>
-          <li id="about-link"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          <li id="resources-link"><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
-          <li id="download-link" class="download">
-            <a href='{{ "/download" | prepend: site.baseurl }}' title="Download the Report">
-              <small>Download the</small><br>Roadmap<br><i class="icon-download"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div id="mainnav">
-    <div class="container">
-      <nav>
-        <ul>
-          <li id="foodwaste-link"
-              {% if page.url =='/' %}class="active"{% endif %}>
-              <a href="{{ '/#foodwasted' | prepend: site.baseurl  }}" title="Food Waste">Food Waste</a>
-          </li>
-          <li id="analysis-link"
-              {% if page.url =='/analysis' %}class="active"{% endif %}>
-              <a href="{{ '/analysis' | prepend: site.baseurl }}" title="Analysis">Analysis</a>
-          </li>
-          <li id="solutions-link"
-              {% if page.url =='/solution' %}class="active"{% endif %}>
-              <a href="{{ '/solution?sort=economic-value-per-ton' | prepend: site.baseurl }}" title="Solutions">Solutions</a>
-          </li>
-          <li id="stakeholders-link"
-              {% if page.url =='/stakeholder' %}class="active"{% endif %}>
-              <a href="{{ '/stakeholder' | prepend: site.baseurl }}" title="Stakeholders">Stakeholders</a>
-          </li>
-          <li id="action-link"
-              {% if page.url =='/action' %}class="active"{% endif %}>
-              <a href="{{ '/action' | prepend: site.baseurl }}" title="Action">Action</a>
-          </li>
-          <!-- 
-          <li id="policy-link"
-              {% if page.url =='/tools/policy/' %}class="active"{% endif %}>
-              <a href="{{ '/policy' | prepend: site.baseurl }}" title="Policy">Policy</a>
-          </li>
-          -->
-        </ul>
-        <ul class="drawer">
-          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
-          <li><a href='{{ "/download" | prepend: site.baseurl }}' title="Download the Report" >Download the Report <i class="icon-download"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  {% include nav/topnav.html %}
+  
+  {% include nav/mainnav.html %}
+
   {% unless page.layout == 'admin' %}
-  <nav id="tournav" class="hidden-xs">
-    <ul>
-      <li class="start-tour">Site Tour</li>
-      <li class="share">
-        <i class="icon icon-share"></i>
-        {% include sharenav.html %}
-      </li>
-    </ul>
-  </nav>
+    {% include nav/tournav.html %}
   {% endunless %}
 </header>

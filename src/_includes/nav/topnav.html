@@ -1,0 +1,35 @@
+<div id="topnav">
+  <div class="container">
+    <nav>
+      <ul>
+        <li>
+          <form id="site-search-form" class="siteSearch">
+            <i class="icon-search"></i>
+            <input id="search_box" class="keyterms" type="text" placeholder="Enter Keyterms">
+            <input type="submit" value="Search" disabled>
+            <label for="search_box">Search</label>
+          </form>
+        </li>
+        <!-- TODO - Remove this once we are sure that it no longer needs to be here. -->
+        <!-- 
+        <li class="follow">
+          <a href="#">Follow</a>
+          <ul>
+            <li><a href="https://twitter.com/refed_nowaste" target="_blank"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/10496812?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10496812%2Cidx%3A2-3-4%2CtarId%3A1458225312551%2Ctas%3Arefed"><i class="icon-linkedin"></i></a></li>
+            <li><a href="{{ '/action#stay-connected' | prepend: site.baseurl }}" class="newsletter-signup">Newsletter Signup</a></li>
+          </ul>
+        </li>
+        -->
+        <li id="share-link"><a href="{{ '/share' | prepend: site.baseurl }}">Share / Follow</a></li>
+        <li id="about-link"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+        <li id="resources-link"><a href="{{ '/tools/content-hub' | prepend: site.baseurl }}">News &amp; Resources</a></li>
+        <li id="download-link" class="download">
+          <a href='{{ "/download" | prepend: site.baseurl }}' title="Download the Report">
+            <small>Download the</small><br>Roadmap<br><i class="icon-download"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
