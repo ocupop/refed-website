@@ -102,12 +102,18 @@
 
 // External Links
 a.external {
-  padding-right: 20px;
-  background-image: url(../media/images/00-global/external-link-icon.png);
-  background-image: url(../media/images/00-global/external-link-icon.svg), linear-gradient(transparent, transparent);
-  background-position: right center;
-  background-size: 0.9em;
-  background-repeat: no-repeat;
+  position: relative;
+  padding-right: 16px;
+  &:after {
+    font-family: 'refed' !important;
+    content: "\e913";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 14px;
+    opacity: 0.5;
+  }
 }
 
 

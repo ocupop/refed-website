@@ -26,6 +26,9 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-external:before {
+  content: "\e913";
+}
 .icon-bakery:before {
   content: "\e907";
 }
