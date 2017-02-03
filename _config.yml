@@ -85,6 +85,8 @@ source: src
 markdown: kramdown
 
 include: ["_pages"]
+exclude: 
+  - _tools/policy-tool/_partials
 
 
 gems:

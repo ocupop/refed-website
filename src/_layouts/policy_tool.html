@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-{% include_relative partials/header.html %}
+{% include_relative _partials/header.html %}
 
 <div id="policy-tool">
-  {% unless page.slug == 'date-labels' %}{% include_relative partials/policynav.html %}{% endunless %}
+  {% unless page.slug == 'date-labels' %}{% include_relative _partials/policynav.html %}{% endunless %}
   {{ content | inject_anchors }}
-  {% include_relative partials/statenav.html %}
+  {% include_relative _partials/statenav.html %}
 
   {% if page.connected-solutions %}
   <section id="connected-solutions">
