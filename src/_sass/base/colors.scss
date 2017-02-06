@@ -6,32 +6,32 @@
   @include palette($cream, $text-color);
 }
 .cream-light {
-  @include palette($cream-light, $text-color);
+  @include palette($cream-lighter, $text-color);
 }
 .teal {
-  @include palette($button-color, $cream-light);
+  @include palette($button-color, $cream-lighter);
 }
 .gray-lighter {
   @include palette($gray-lighter, $text-color);
 }
 .gray {
-  @include palette($text-color, $cream-light);
+  @include palette($text-color, $cream-lighter);
 }
 .alt {
-  background-color: $section-alt-color;
+  background-color: $cream-light;
 }
 .transparent {
   background-color: transparent !important;
 }
 
 .recycle, .recycling {
-  @include palette($recycle-color, $cream-light);
+  @include palette($recycle-color, $cream-lighter);
 }
 .recovery {
-  @include palette($recovery-color, $cream-light);
+  @include palette($recovery-color, $cream-lighter);
 }
 .prevention {
-  @include palette($prevention-color, $cream-light);
+  @include palette($prevention-color, $cream-lighter);
 }
 
 .recovery-light {
@@ -40,6 +40,10 @@
 
 .cream-dark {
   background-color: $cream-dark;
+}
+
+.cream-darker {
+  background-color: $cream-darker;
 }
 
 .muted {

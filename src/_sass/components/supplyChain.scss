@@ -95,7 +95,7 @@
   top: 0;
   left: 0;
   padding: 0 10px;
-  color: $cream-light;
+  color: $cream-lighter;
   background-color: $gray;
   margin-top: -50px;
   margin-bottom: 50px;
@@ -108,19 +108,19 @@
     cursor: pointer;
   }
   h4 {
-    color: $cream-light;
+    color: $cream-lighter;
   }
   h5 {
     margin: 0;
     line-height: $base-line-height*1.5;
-    color: $cream-light;
+    color: $cream-lighter;
     text-transform: capitalize;
     border-top: 1px solid rgba(255,255,255,0.5);
     font-family: $font-family-condensed;
     a {
-      color: $cream-light;
+      color: $cream-lighter;
       &:hover {
-        color: $cream-light;
+        color: $cream-lighter;
       }
     }
     span {

@@ -63,11 +63,11 @@
       &.active {
         border: none;
         a {
-          background-color: $cream-light;
+          background-color: $cream-lighter;
           border: none;
           &:hover, &:focus, &:active {
             border: none;
-            background-color: $cream-light;
+            background-color: $cream-lighter;
             cursor: default;
           }
         }
@@ -75,13 +75,13 @@
       a {
         max-width: 185px;
         border: none;
-        background: darken($cream-light, 10%);
+        background: darken($cream-lighter, 10%);
         color: $gray;
         padding: 10px 30px;
         margin-right: 10px;
         &:hover {
           border: none;
-          background: darken($cream-light, 15%);
+          background: darken($cream-lighter, 15%);
         }
       }
     }

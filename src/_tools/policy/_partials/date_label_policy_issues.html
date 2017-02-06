@@ -27,7 +27,7 @@
                      data-states='{{ item.states | jsonify }}'
                      data-progress="{% cycle '20', '40', '60', '80' %}"
                      data-map="#map_{{ forloop.index }}">
-                  <h3 class="item-title"><i class="icon {% cycle 'cream-dark','recovery-light','recovery','prevention' %}"></i>{{ item.title }}</h3>
+                  <h3 class="item-title"><i class="icon {% cycle 'cream-darker','recovery-light','recovery','prevention' %}"></i>{{ item.title }}</h3>
                   <p>{{ item.definition }}</p>
                 </div>
               {% endfor %}

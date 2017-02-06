@@ -3,9 +3,11 @@
 ----------------------------------------- */
 
 // Color Palette
-$cream-light:               #F7F5F0;
+$cream-lighter:             #F7F5F0;
+$cream-light:               #F1EDE4;
 $cream:                     #DED8C6;
 $cream-dark:                #C4BA98;
+$cream-darker:              #C4BA98;
 
 $gray-darker:               #222222;
 $gray-dark:                 #36383A;
@@ -15,7 +17,6 @@ $gray-lighter:              #F0ECE4;
 
 $placeholder-color:         #BFB9A1;
 $mainnav-background-color:  #F4F1E9;
-$section-alt-color:         #F1EDE4;
 $button-color:              #69B2A9;
 
 $recycle-color:             #88A65B;
@@ -25,15 +26,15 @@ $recovery-light:            #67a9a8;
 $red:                       #990000;
 $green:                     #7a9c49;
 
-$body-bg:                   $cream-light;
+$body-bg:                   $cream-lighter;
 $text-color:                $gray;
 $brand-primary:             $red;
 
 $link-color:                #228E93;
 $link-hover-color:          darken($link-color, 15%);
 
-$well-bg:                   $section-alt-color;
-$well-border:               $section-alt-color;
+$well-bg:                   $cream-light;
+$well-border:               $cream-light;
 
 $hr-border:                 $gray;
 
@@ -62,7 +63,7 @@ $base-line-height:        32px;
 
 $border-radius-base:        0;
 
-$popover-bg:                          $cream-light;
+$popover-bg:                          $cream-lighter;
 $popover-max-width:                   300px;
 $popover-border-color:                rgba(0,0,0,0);
 $popover-fallback-border-color:       transparent;

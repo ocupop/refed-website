@@ -22,13 +22,13 @@ button {
   letter-spacing: 0.05em;
   background-color: $button-color;
   border: none;
-  color: $cream-light;
+  color: $cream-lighter;
   appearance: none;
   align-items: center;
   justify-content: center;
   &:hover {
     background-color: darken($button-color, 10%);
-    color: $cream-light;
+    color: $cream-lighter;
   }
   span {
     margin: auto;
@@ -58,10 +58,10 @@ button {
     }
   }
   &.prevention {
-    color: $cream-light;
+    color: $cream-lighter;
     &:hover, &:focus, &:active {
       background-color: darken($prevention-color, 10%);
-      color: $cream-light;
+      color: $cream-lighter;
     }
   }
   &.play-video {
@@ -72,7 +72,7 @@ button {
     font-size: 32.5px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
-    border: 1px solid $cream-light;
+    border: 1px solid $cream-lighter;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
     background-color: rgba(0,0,0,0.3);
     &:hover {

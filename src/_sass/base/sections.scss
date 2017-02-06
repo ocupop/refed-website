@@ -1,7 +1,7 @@
 section {
   padding: 50px 0;
   &.alt-bg {
-    @include palette($section-alt-color, $text-color);
+    @include palette($cream-light, $text-color);
   }
 
   // Borders

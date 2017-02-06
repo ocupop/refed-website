@@ -10,13 +10,14 @@
   .brand {
     display: inline-block;
     height: 100%;
-    width: 300px;
-    padding: 20px;
-    background-color: $cream-light;
+    width: 25%;
+    padding: 20px 0;
+    background-color: $cream-lighter;
     text-align: right;
     @include transition();
     img {
       height: 100%;
+      margin: 0 40px;
     }
   }
 }

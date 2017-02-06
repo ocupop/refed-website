@@ -4,7 +4,7 @@
   top: 0;
   bottom: 0;
   width: 325px;
-  background-color: $section-alt-color;
+  background-color: $cream-light;
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   @include transition(0.5s);
@@ -184,7 +184,7 @@ body.date-labels {
     right: auto;
     width: 100%;
     box-shadow: none;
-    // border-top: 10px solid $cream-light;
+    // border-top: 10px solid $cream-lighter;
     .nav_category {
       display: none;
     }
