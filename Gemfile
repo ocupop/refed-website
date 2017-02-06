@@ -16,5 +16,8 @@ gem 'jekyll-toc'
 # Styleguide
 gem 'hologram'
 
+# Content Blocks
+gem 'jekyll-contentblocks'
+
 # gem 'jekyll-lunr-js-search'
 # gem 'jekyll-press'
