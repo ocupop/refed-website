@@ -1,0 +1,53 @@
+#toolHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $cream;
+  z-index: 999;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  .brand {
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    background-color: $cream-light;
+    text-align: right;
+    @include transition();
+    img {
+      height: 100%;
+    }
+  }
+}
+
+body.condensed-header {
+  #toolHeader {
+    .brand {
+      img {
+
+      }
+    }
+  }
+}
+
+
+
+
+@media all and (max-width: $screen-xs-max) {
+  #toolHeader {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #toolHeader {
+
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  #toolHeader {
+    
+  }
+}

@@ -1,4 +1,4 @@
-#page-footer {
+#pageFooter {
   position: relative;
   h3 {
     line-height: 12px;
@@ -36,7 +36,7 @@
 
 
 @media all and (max-width: $screen-xs-max) {
-  #page-footer {
+  #pageFooter {
     .brand {
       width: 250px;
       margin: 0 auto;
@@ -45,13 +45,13 @@
 }
 
 @media all and (max-width: $screen-sm-max) {
-  #page-footer {
+  #pageFooter {
 
   }
 }
 
 @media all and (max-width: $screen-md-max) {
-  #page-footer {
+  #pageFooter {
     
   }
 }
