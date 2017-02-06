@@ -26,8 +26,8 @@
 @import 'toc';
 
 // Elements
-@import 'elements/page_header';
-@import 'elements/page_footer';
+@import 'elements/pageHeader';
+@import 'elements/pageFooter';
 @import 'elements/page_hero';
 @import 'elements/topnav';
 @import 'elements/mainnav';
@@ -35,6 +35,7 @@
 @import 'elements/socialnav';
 @import 'elements/footernav';
 @import 'elements/tournav';
+@import 'elements/toolHeader';
 
 // Components
 @import "components/charts/charts_base";
@@ -66,6 +67,9 @@
 @import "policy_tool/quiz";
 
 // Views
+@import "views/page_layout";
+@import "views/admin_layout";
+@import "views/tool_layout";
 @import "views/homepage";
 @import "views/analysis";
 @import "views/action";

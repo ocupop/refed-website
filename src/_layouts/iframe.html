@@ -3,9 +3,6 @@
   {% include head.html %}
   <body class="{{ page.slug }}">
     <style type="text/css">
-      #page-content {
-        margin: 0;
-      }
       #cost-curve {
         padding-top: 0px;
       }
@@ -17,7 +14,7 @@
       .popover.left { left: 0 !important; }
     </style>
     <a href="http://www.refed.com" class="brand"><img src="{{ site.baseurl }}/img/logo-wordmark.svg" style="width: 210px;"></a>
-    <main id="page-content">{{ content }}</main>
+    <main>{{ content }}</main>
     {% include scripts.html %}
   </body>
 </html>

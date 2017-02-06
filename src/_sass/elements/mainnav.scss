@@ -41,6 +41,23 @@
   }
 }
 
+body.condensed-header {
+  #mainnav {
+    height: 50px;
+    line-height: 50px;
+    @include transition();
+    ul {
+      li {
+        height: 35px;
+        line-height: 35px;
+        @include transition();
+      }
+    }
+  }
+}
+
+
+// TODO - Refactor to be a part of the regular breakpoints
 @media all and (max-width: 1024px) {
   #mainnav {
     .brand {
@@ -61,13 +78,12 @@
 }
 
 
-
-
 @media all and (max-width: $screen-xs-max) {
   #mainnav {
 
   }
 }
+
 @media all and (max-width: $screen-sm-max) {
   #mainnav {
     height: 50px;
@@ -119,6 +135,7 @@
     }
   }
 }
+
 @media all and (max-width: $screen-md-max) {
   #mainnav {
     

@@ -96,7 +96,7 @@
           // Add it to the results
           $search_results.append(appendString);
           $("#site-search-results").fadeIn();
-          $("#page-content").hide();
+          $("main").hide();
         });
       } else {
         $search_results.html('<li>No results found</li>');

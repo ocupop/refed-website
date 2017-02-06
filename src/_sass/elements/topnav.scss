@@ -98,6 +98,33 @@
   }
 }
 
+body.condensed-header {
+  #topnav {
+    ul {
+      li {
+        height: 0;
+        @include transition();
+        &#download-link {
+          top: -15px;
+          height: auto;
+          @include transition();
+          a, button {
+            height: 65px;
+            padding: 5px;
+            @include transition();
+            small {
+              display: none;
+            }
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media all and (max-width: $screen-xs-max) {
   #topnav {
     

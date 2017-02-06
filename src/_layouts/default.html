@@ -2,14 +2,17 @@
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}">
-    {% include header.html %}
+    {% if page.layout == 'tool' %}
+      {% include elements/toolHeader.html %}
+    {% else %}
+      {% include elements/pageHeader.html %}
+    {% endif %}
+
     {% include search-results.html %}
-    <main id="page-content">
+    <main>
       {{ content }}
     </main>
-    {% include footer.html %}
-    
-    {% include video-modal.html %}
+    {% include elements/pageFooter.html %}
     {% include thanks.html %}
     <!-- TODO - Include the policy tool tooltip -->
     {% include analytics.html %}
