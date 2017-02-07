@@ -4,27 +4,59 @@ title: Test Tool Layout
 
 header: U.S. Food Waste Policy Finder
 ---
+
 <section class="map-section">
   <div class="container-fluid">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
         <div class="map">
           {% include_relative _partials/map_legend.html %}
+          <!-- 
           <div id="map-instructions">
             <div class="content">
               <h4>U.S. Food Waste Policy Finder</h4>
               <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
             </div>
           </div>
+           -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
+{% contentfor toolnav %}
+<!-- TOOLNAV CONTENT -->
+<div class="menu">
+  <ul>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">State Policy</a>
+    </li>
+    <li>
+      <a href="#">Federal Policy</a>
+    </li>
+  </ul>
+</div>
+<div class="next">
+  <a href="#">Spolight on date labeling regulations &gt;</a>
+</div>
+<div class="update">
+  Have an update for us?<br>
+  <a href="#">Submit it here &gt;</a>
+</div>
+{% endcontentfor %}
+
+
+
 {% contentfor sidebar %}
+<!-- SIDEBAR CONTENT -->
+
   <!-- Desktop: Map Filters -->
-  <div class="mapnav hidden-sm hidden-xs" data-target=".map">
+  <div class="mapnav" data-target=".map">
     <div class="nav_category" data-category="prevention">
       <h4 class="prevention"
           data-toggle="collapse"
@@ -118,129 +150,4 @@ header: U.S. Food Waste Policy Finder
     </div>
   </div>
   <!-- END Desktop: Map Filters -->
-
-  <!-- Mobile: Map Filters -->
-  <div class="container mobilenav">
-    <div  class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <p>Select a policy filter below to view the States related to that policy</p>
-          <button
-             data-parent=".mobilenav"
-             data-target="#liability-collapse"
-             class="button recovery"
-             data-toggle="collapse"
-             aria-expanded="false"
-             aria-controls="liability-collapse">
-             Liability Protection
-          </button>
-          <div class="collapse" id="liability-collapse">
-            {% include svg/map_food-waste-liability-protection.svg %}
-            <a href="#liability-studies"
-               class="sub-trigger"
-               data-toggle="collapse"
-               aria-expanded="false"
-               aria-controls="liability-studies">
-               <img src="/img/icons/policy/recovery_study_icon.svg" alt="Liability icon"> Best-practice Policies <i class="icon-caret-up"></i>
-            </a>
-            <div class="collapse" id="liability-studies">
-              {% for case_study in site.data.policy_tool['liability_protection'].case_studies %}
-                <div class="panel">
-                  <h3><img src="/img/icons/policy/recovery_study_icon.svg" alt="Liability icon"> {{ case_study.state }} Liability Protection</h3>
-                  <p>{{ case_study.summary}}</p>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-          <button
-             data-parent=".mobilenav"
-             data-target="#tax-collapse"
-             class="button recovery"
-             data-toggle="collapse"
-             aria-expanded="false"
-             aria-controls="tax-collapse">
-             Tax Incentives
-          </button>
-          <div class="collapse" id="tax-collapse">
-            {% include svg/map_food-waste-tax-incentives.svg %}
-            <a href="#tax-studies" class="sub-trigger" data-toggle="collapse" aria-expanded="false" aria-controls="tax-studies"><img src="/img/icons/policy/recovery_study_icon.svg" alt="tax icon">Best Practice Policies <i class="icon-caret-up"></i></a>
-            <div class="collapse" id="tax-studies">
-              {% for case_study in site.data.policy_tool['tax_incentives'].case_studies %}
-                <div class="panel">
-                  <h3><img src="/img/icons/policy/recovery_study_icon.svg" alt="tax icon"> {{ case_study.state }} Tax Incentives</h3>
-                  <p>{{ case_study.summary}}</p>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-          <button
-             data-parent=".mobilenav"
-             data-target="#feed-collapse"
-             class="button recycling"
-             data-toggle="collapse"
-             aria-expanded="false"
-             aria-controls="feed-collapse">
-             Animal Feed
-          </button>
-          <div class="collapse" id="feed-collapse">
-            {% include svg/map_food-waste-animal-feed.svg %}
-            <a href="#feed-studies" class="sub-trigger text-recycle" data-toggle="collapse" aria-expanded="false" aria-controls="feed-studies"><img src="/img/icons/policy/recycle_study_icon.svg" alt="Animal feed icon"> Best Practice Policies <i class="icon-caret-up"></i></a>
-            <div class="collapse" id="feed-studies">
-              {% for case_study in site.data.policy_tool['animal_feed'].case_studies %}
-                <div class="panel">
-                  <h3><img src="/img/icons/policy/recycle_study_icon.svg" alt="Animal feed icon"> {{ case_study.state }}</h3>
-                  <p>{{ case_study.summary}}</p>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-          <button
-             data-parent=".mobilenav"
-             data-target="#waste-collapse"
-             class="button recycling"
-             data-toggle="collapse"
-             aria-expanded="false"
-             aria-controls="waste-collapse">
-             Organic Waste Bans &amp; Waste Recycling Laws
-          </button>
-          <div class="collapse" id="waste-collapse">
-            {% include svg/map_food-waste-organic-waste-bans.svg %}
-            <a href="#organics-studies" class="sub-trigger text-recycle" data-toggle="collapse" aria-expanded="false" aria-controls="organics-studies"><img src="/img/icons/policy/recycle_study_icon.svg" alt="Organic waste icon"> Best Practice Policies <i class="icon-caret-up"></i></a>
-            <div class="collapse" id="organics-studies">
-              {% for case_study in site.data.policy_tool['organics_recycling_mandates'].case_studies %}
-                <div class="panel">
-                  <h3><img src="/img/icons/policy/recycle_study_icon.svg" alt="Organic waste icon"> {{ case_study.state }}</h3>
-                  <p>{{ case_study.summary}}</p>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      // $('a[data-toggle="collapse"]').click(function() {
-      //   alert("HELLP");
-      // });
-      // $('a').on('show.bs.collapse', function() {
-      //   alert("HE");
-      // });
-    </script>
-    <div class="row">
-      <div class="col-xs-12 col-md-5">
-        <div class="content">
-          <img src="/img/tools/policy-tool/spotlight-image-500px.jpg" class="img-responsive center-block" alt="Spotlight on date labeling regulations image">
-        </div>
-      </div>
-      <div id="spotlight" class="col-xs-12 col-md-7">
-        <div class="content">
-          <h2>Spotlight on date labeling regulations</h2>
-          <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
-          <a href="{{ site.baseurl }}/tools/policy/date-labels" class="button"><span>Learn More &nbsp;&gt;</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END Mobile: Map Filters -->
 {% endcontentfor %}
