@@ -46,6 +46,10 @@ collections:
     output: true
     layout: state
     permalink: /states/:path
+  articles:
+    output: true
+    layout: article
+    permalink: /tools/content-hub/:path
 
 date_labels_required_for:
   - bakery

@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /posts/:title.html
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <a href="{{ site.baseurl}}/tools/content-hub" class="italic">&lt; All News</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <div class="content">
+          <div class="article single-article">
+            <div class="article-image" style="background-image: url({{ page.featured_image }})"></div>
+            <h4>{{ page.title }}</h4>
+            <p class="article-date">Published {{ page.date | date: "%B %-d, %Y"}}</p>
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 recent-news">
+        <div class="content">
+          <h4>Recent News</h4>
+          
+          {% for article in site.articles reversed limit: 4 %}
+          {% unless article.title == page.title %}
+            <a href="{{ article.url }}">
+              <div class="article">
+                <div class="article-image" style="background-image: url({{ article.featured_image }})"></div>
+                <h4>{{ article.title }}</h4>
+              </div>
+            </a>  
+          {% endunless %}
+          {% endfor%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
