@@ -4,6 +4,9 @@
 .toc-entry {
   padding-left: 0;
   list-style: none;
+  a {
+    color: $text-color;
+  }
   &.toc-h1 { font-size: 20px; }
   &.toc-h2 { font-size: 16px; }
   &.toc-h3 { font-size: 14px; }

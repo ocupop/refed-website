@@ -24,7 +24,6 @@
 @import 'base/bootstrap-overwrites';
 
 @import '_fixes';
-@import 'toc';
 
 // Elements
 @import 'elements/pageHeader';
@@ -38,6 +37,7 @@
 @import 'elements/tournav';
 @import 'elements/toolnav';
 @import 'elements/toolHeader';
+@import 'elements/toc';
 
 // Components
 @import "components/charts/charts_base";
