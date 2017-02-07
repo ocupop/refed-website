@@ -16,7 +16,12 @@
 
 @media all and (max-width: $screen-xs-max) {
   .tool_layout {
-  
+    padding-top: 104px;
+    .primary {
+      width: 100%;
+      flex-basis: 100%;
+    }
+    .sidebar { display: none; }
   }
 }
 

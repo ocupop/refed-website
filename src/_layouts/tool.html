@@ -6,6 +6,14 @@ layout: default
     {{ content | inject_anchors }}
   </div>
   <div class="sidebar">
-    {% contentblock sidebar %}
+    {% if page.toc %}
+      <div class="contentnav sticky" data-offset-top="70">
+        <div class="content">
+          {{ content | toc_only }}
+        </div>
+      </div>
+    {% else %}
+      {% contentblock sidebar %}
+    {% endif %}
   </div>
 </div>

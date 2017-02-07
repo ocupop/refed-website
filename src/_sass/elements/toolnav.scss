@@ -9,6 +9,7 @@
     flex-shrink: 2;
     width: calc(100% - 325px - 180px);
     margin: 0;
+    background-color: $cream-light;
     ul {
       display: flex;
       align-items: center;
@@ -44,6 +45,7 @@
     width: 325px;
     padding: 10px 20px;
     margin: 0;
+    color: $gray-light;
     a {
       color: $gray-lighter;
       &:hover, &:focus, &:active {
@@ -70,7 +72,24 @@
 
 @media all and (max-width: $screen-xs-max) {
   #toolnav {
-  
+    display: block;
+    text-align: right;
+    .menu {
+      width: 70px;
+      height: 70px;
+      display: block;
+      float: left;
+      ul {
+        display: none;
+      }
+    }
+    .next {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% - 70px);
+    }
+    .update { display: none; }
   }
 }
 
