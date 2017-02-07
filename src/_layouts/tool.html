@@ -1,15 +1,11 @@
 ---
 layout: default
 ---
-<section>
-  <div class="container">
-    <div class="row middle-sm">
-      <div class="col-xs-12">
-        <div class="content">
-          <h1>{{ page.title }}</h1>
-        </div>
-      </div>
-    </div>
+<div class="wrapper">
+  <div class="primary">
+    {{ content | inject_anchors }}
   </div>
-</section>
-{{ content }}
+  <div class="sidebar">
+    {% contentblock sidebar %}
+  </div>
+</div>

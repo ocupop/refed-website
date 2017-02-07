@@ -21,9 +21,11 @@
 $.behaviors('.mapnav', initMapNav);
 
   function initMapNav(mapNav) {
-    $('#policy-tool').on('click', function() {
-      $('#map-instructions').addClass('hide');
-    });
+    // TODO - Refactor based on relation to .mapnav
+    // $('#policy-tool').on('click', function() {
+    //   $('#map-instructions').addClass('hide');
+    // });
+    
     var targetMap = $(mapNav).data('target');
 
     $('.map-filter, .map-subfilter').on('change', function(e) {

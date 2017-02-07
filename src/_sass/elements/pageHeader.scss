@@ -1,4 +1,4 @@
-#page-header {
+#pageHeader {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,65 +30,20 @@
 }
 
 
-// TODO - Refactor so that the padding on <body> resolves the same issue
-#page-content {
-  position: relative;
-  margin-top: 105px;
-}
-
 body.condensed-header {
 
-  #page-header {
+  #pageHeader {
     .brand {
       top: 3px;
       @include transition();
     }
   }
-  #topnav {
-    ul {
-      li {
-        height: 0;
-        @include transition();
-        &#download-link {
-          top: -15px;
-          height: auto;
-          @include transition();
-          a, button {
-            height: 65px;
-            padding: 5px;
-            @include transition();
-            small {
-              display: none;
-            }
-            i {
-              font-size: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-  #mainnav {
-    height: 50px;
-    line-height: 50px;
-    @include transition();
-    ul {
-      li {
-        height: 35px;
-        line-height: 35px;
-        @include transition();
-      }
-    }
-  }
-  #page-content {
-    margin-top: 50px;
-    @include transition();
-  }
+
 }
 
 
 @media all and (max-width: 1024px) {
-  #page-header {
+  #pageHeader {
     .container {
       width: 100%;
     }
@@ -98,13 +53,13 @@ body.condensed-header {
 
 
 @media all and (max-width: $screen-xs-max) {
-  #page-header {
+  #pageHeader {
   
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
-  #page-header {
+  #pageHeader {
     position: fixed;
     top: 0;
     left: 0;
@@ -124,7 +79,7 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-md-max) {
-  #page-header {
+  #pageHeader {
     
   }
 }

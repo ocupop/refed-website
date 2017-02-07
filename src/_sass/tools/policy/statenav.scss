@@ -9,7 +9,13 @@
   .statenav-select {}
 }
 
-@media(max-width: 1024px) {
+@media all and (max-width: $screen-xs-max) {
+  .statenav {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
   .statenav {
     .statenav-message {
       .content {
@@ -18,5 +24,11 @@
       }
       h3 { font-size: 18px; }
     }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .statenav {
+    
   }
 }

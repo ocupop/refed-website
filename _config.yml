@@ -96,4 +96,5 @@ exclude:
 gems:
   - jekyll-last-modified-at
   - jekyll-toc
+  - jekyll-contentblocks
 # - jekyll-lunr-js-search

@@ -1,12 +1,4 @@
-#policynav {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 325px;
-  background-color: $section-alt-color;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
+.mapnav {
   @include transition(0.5s);
   .content {
     padding: 30px;
@@ -175,28 +167,24 @@ body.date-labels {
   }
 }
 
-// Responsive
 
-@media(max-width: 992px) {
-  #policynav {
-    position: relative;
-    left: auto;
-    right: auto;
-    width: 100%;
-    box-shadow: none;
-    // border-top: 10px solid $cream-light;
-    .nav_category {
-      display: none;
-    }
-    .contentnav {
-      display: none;
-    }
-    p {
-      font-size: 15px;
-      padding: 0 0 0.5em 0;
-    }
+@media all and (max-width: $screen-xs-max) {
+  .mapnav {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .mapnav {
+
   }
   .mobilenav {
     display: block;
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .mapnav {
+    
   }
 }

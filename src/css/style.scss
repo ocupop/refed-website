@@ -8,8 +8,8 @@
 
 @import 'base/global';
 @import 'base/utils';
+@import 'base/grid';
 @import 'base/layout';
-// @import 'base/grid';
 @import 'base/colors';
 @import 'base/sections';
 @import 'base/icons';
@@ -21,13 +21,14 @@
 @import 'base/wells';
 @import 'base/modals';
 @import 'base/tabs';
+@import 'base/bootstrap-overwrites';
 
 @import '_fixes';
 @import 'toc';
 
 // Elements
-@import 'elements/page_header';
-@import 'elements/page_footer';
+@import 'elements/pageHeader';
+@import 'elements/pageFooter';
 @import 'elements/page_hero';
 @import 'elements/topnav';
 @import 'elements/mainnav';
@@ -35,6 +36,8 @@
 @import 'elements/socialnav';
 @import 'elements/footernav';
 @import 'elements/tournav';
+@import 'elements/toolnav';
+@import 'elements/toolHeader';
 
 // Components
 @import "components/charts/charts_base";
@@ -53,20 +56,24 @@
 
 
 // Tools
-@import "policy_tool/main";
-@import "policy_tool/policy_tool";
-@import "policy_tool/policynav";
-@import "policy_tool/statenav";
-@import "policy_tool/header";
-@import "policy_tool/date_labels";
-@import "policy_tool/map";
-@import "policy_tool/map_legend";
-@import "policy_tool/federal_policy";
-@import "policy_tool/carousel";
-@import "policy_tool/tooltip";
-@import "policy_tool/quiz";
+@import "tools/policy/main";
+@import "tools/policy/map";
+@import "tools/policy/mapnav";
+@import "tools/policy/map_legend";
+
+@import "tools/policy/statenav";
+@import "tools/policy/header";
+@import "tools/policy/date_labels";
+
+@import "tools/policy/federal_policy";
+@import "tools/policy/carousel";
+@import "tools/policy/tooltip";
+@import "tools/policy/quiz";
 
 // Views
+@import "views/page_layout";
+@import "views/admin_layout";
+@import "views/tool_layout";
 @import "views/homepage";
 @import "views/analysis";
 @import "views/action";

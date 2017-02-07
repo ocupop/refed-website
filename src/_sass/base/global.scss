@@ -4,10 +4,11 @@
 html {}
 body {
   font-family: $font-family-base;
-  background-color: $cream-light;
+  background-color: $cream-lighter;
   color: $text-color;
   font-weight: 300;
 }
+main { position: relative; }
 
 nav {
   display: flex;

@@ -3,9 +3,9 @@
   {% include head.html %}
   {% include scripts.html %}
   <body class="{{ page.slug }} {{ page.collection }}">
-    {% include header.html %}
+    {% include elements/pageHeader.html %}
     {% include search-results.html %}
-    <main id="page-content">
+    <main>
       {{ content }}
     </main>
     {% include analytics.html %}

@@ -9,7 +9,7 @@
       padding: 0;
       padding-left: 20px;
       background-color: $button-color;
-      color: $cream-light;
+      color: $cream-lighter;
       align-items: center;
       text-transform: uppercase;
       span {
@@ -24,7 +24,7 @@
         line-height: 45px;
         width: 45px;
         background-color: darken($button-color, 5%);
-        color: $cream-light;
+        color: $cream-lighter;
         text-align: center;
         i {
           margin: auto;

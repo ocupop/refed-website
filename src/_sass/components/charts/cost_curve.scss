@@ -90,7 +90,7 @@ TODO - Enter example
         width: 100%;
         height: 28px;
         line-height: 28px;
-        background-color: darken($cream-light, 2%);
+        background-color: darken($cream-lighter, 2%);
         .title {
           display: inline-block;
           position: absolute;
@@ -184,7 +184,7 @@ TODO - Enter example
         width: 100%;
         height: 20px;
         background-color: $gray;
-        color: $cream-light;
+        color: $cream-lighter;
         text-align: center;
       }
     }

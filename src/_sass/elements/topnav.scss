@@ -12,7 +12,7 @@
         font-size: 13px;
         font-weight: 300;
         text-transform: uppercase;
-        color: $cream-light;
+        color: $cream-lighter;
         &:hover {
           color: #fff;
         }
@@ -74,7 +74,7 @@
             a {
               color: $button-color;
               white-space: nowrap;
-              background-color: $cream-light;
+              background-color: $cream-lighter;
               &.newsletter-signup {
                 padding: 1px 3px;
               }
@@ -84,13 +84,40 @@
               width: 25px;
               font-size: 20px;
               line-height: 35px;
-              color: $cream-light;
+              color: $cream-lighter;
             }
           }
         }
         &:hover {
           ul {
             display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.condensed-header {
+  #topnav {
+    ul {
+      li {
+        height: 0;
+        @include transition();
+        &#download-link {
+          top: -15px;
+          height: auto;
+          @include transition();
+          a, button {
+            height: 65px;
+            padding: 5px;
+            @include transition();
+            small {
+              display: none;
+            }
+            i {
+              font-size: 20px;
+            }
           }
         }
       }

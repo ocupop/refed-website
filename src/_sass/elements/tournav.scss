@@ -13,7 +13,7 @@
       margin-right: 15px;
       padding: 2px 30px;
       background-color: $gray;
-      color: $cream-light;
+      color: $cream-lighter;
       box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
       font-size: 16px;
       font-weight: 100;
@@ -48,7 +48,7 @@
           @include transition();
           a {
             display: inline-block;
-            color: $cream-light;
+            color: $cream-lighter;
             &:last-child {
               padding-right: 10px;
             }

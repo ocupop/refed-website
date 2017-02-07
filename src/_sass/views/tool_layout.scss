@@ -1,0 +1,33 @@
+.tool_layout {
+  padding-top: 80px;
+  .primary {
+    flex-basis: calc(100% - 325px);
+    width: calc(100% - 325px);
+    height: auto;
+    background: $cream-lighter;
+  }
+  .sidebar {
+    flex-basis: 325px;
+    height: auto;
+    background-color: $cream-light;
+    // box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .tool_layout {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .tool_layout {
+
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .tool_layout {
+    
+  }
+}

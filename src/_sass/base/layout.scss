@@ -1,51 +1,15 @@
-// TODO - refactor this style sheet to be included in the grid.scss
-.container {
-  position: relative;
-  max-width: $live-content-width;
-  padding: 0;
+.wrapper {
+  display: flex;
 }
-
-
-// MISC
-.page-heading {
-  padding: 0 20px;
-  h1, h2, h3 {
-    margin-bottom: 0;
-  }
-}
-
-
-.lead {
-  margin: 1em 0;
-  font-size: 20px;
-  color: inherit;
-}
-.section-header {
-  margin-top: -50px;
-  background: rgba($cream, 0.5);
-  padding: 30px 0;
-  margin-bottom: 20px;
-}
-
-.list-group-item {
-  padding: 10px 0;
-  background-color: transparent;
-  border: none;
-}
+.wrapper {}
+.sidebar {}
 
 
 @media all and (max-width: $screen-xs-max) {
-  .section-header {
-    margin-bottom: 0;
-    h2 {
-      padding-left: 20px;
-    }
-  }
+
 }
 @media all and (max-width: $screen-sm-max) {
-  #page-content {
-    margin-top: 50px;
-  }
+
 }
 @media all and (max-width: $screen-md-max) {
 

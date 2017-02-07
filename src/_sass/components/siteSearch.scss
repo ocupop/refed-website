@@ -11,7 +11,7 @@
     margin: 0;
     font-size: 13px;
     font-weight: 300;
-    color: $cream-light;
+    color: $cream-lighter;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -37,14 +37,14 @@
     margin: 0;
     border-radius: 0px;
     background-color: rgba(255,255,255,0.3);
-    color: $cream-light;
+    color: $cream-lighter;
     text-indent: 10px;
     font-size: 13px;
     font-weight: 100;
     text-transform: uppercase;
     text-shadow: none;
     &:focus {
-      outline-color: $cream-light;
+      outline-color: $cream-lighter;
     }
   }
   input[type="submit"] {
@@ -55,7 +55,7 @@
     padding: 0;
     margin: 0;
     text-indent: 0;
-    color: $cream-light;
+    color: $cream-lighter;
     background-color: transparent;
     cursor: pointer;
   }
@@ -67,26 +67,26 @@
     height: 14px;
     width: 13px;
     margin-left: 5px;
-    color: $cream-light;
+    color: $cream-lighter;
     background-color: transparent;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $cream-light;
+    color: $cream-lighter;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: $cream-light;
+    color: $cream-lighter;
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: $cream-light;
+    color: $cream-lighter;
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: $cream-light;
+    color: $cream-lighter;
   }
 }
 #site-search-results {
   display: none;
   margin-top: 105px;
-  background: $cream-light;
+  background: $cream-lighter;
   #search_results {
     a {
       color: $text-color;

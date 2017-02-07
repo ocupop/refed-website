@@ -1,0 +1,81 @@
+#toolHeader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $cream;
+  z-index: 999;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  .brand {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    min-width: 225px;
+    padding: 20px 40px;
+    background-color: $cream-lighter;
+    text-align: right;
+    @include transition();
+    img {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.toolHeader-title {
+  display: inline-block;
+  padding-left: 20%;
+  font-size: 23px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-family-base;
+  small {
+    font-size: 13px;
+    &:after {
+      display: table;
+      content: " ";
+    }
+  }
+}
+
+body.condensed-header {
+  #toolHeader {
+    .brand {
+      img {
+
+      }
+    }
+  }
+}
+
+
+
+
+@media all and (max-width: $screen-xs-max) {
+  #toolHeader {
+    .brand {
+      width: 25%;
+      min-width: 150px;
+      padding: 20px;
+    }
+  }
+  .toolHeader-title {
+    padding-left: 20px;
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #toolHeader {
+
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  #toolHeader {
+    
+  }
+}
