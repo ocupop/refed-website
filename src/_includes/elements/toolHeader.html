@@ -1,11 +1,11 @@
 <header id="toolHeader">
   <a class="brand" href="{{ '/' | prepend: site.baseurl }}" title="ReFED: Rethinking Food Waste">
-    <img src="{{ site.baseurl }}/img/logo-wordmark.svg">
+    <img src="/img/logo-wordmark.svg">
   </a>
   <div class="toolHeader-title">
-    <small>U.S. Food Waste</small>Policy Finder
+    {{ page.header }}
   </div>
 </header>
 <div id="toolnav">
-  {% contentblock toolnav %}
+  {% include_relative _partials/toolnav.html %}
 </div>
