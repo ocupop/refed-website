@@ -8,6 +8,9 @@
   .grid-item {
     padding: 2px;
   }
+  &.articles {
+    //justify-content: space-between;
+  }
 }
 .card {
   position: relative;
@@ -136,6 +139,17 @@
       }
     }
   }
+  &.article-card {
+    background-color: transparent;
+    box-shadow: none;
+    width: 44%;
+    max-width: 44%;
+    padding-bottom: 20px;
+    margin-right: 12%;
+    &:nth-of-type(even) {
+      margin-right: 0;
+    }
+  }
 }
 
 
@@ -161,6 +175,7 @@
         width: 30px;
       }
     }
+
   }
 }
 @media all and (max-width: $screen-sm-max) {
@@ -168,6 +183,14 @@
   .card {
     width: 49%;
     max-width: none;
+    &.article-card {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 10px;
+      &:nth-of-type(even){
+        margin-right: 10px;
+      }
+    }
   }
 }
 @media all and (max-width: $screen-md-max) {
