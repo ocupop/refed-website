@@ -1,14 +1,7 @@
 #toolnav {
-  // display: block;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   background-color: $gray-dark;
   color: $gray-lighter;
   .menu {
-    // flex-basis: calc(100% - 325px - 180px);
-    // flex-shrink: 2;
-    // width: calc(100% - 325px - 180px);
     margin: 0;
     ul {
       display: inline-flex;
@@ -22,7 +15,6 @@
       height: 40px;
       line-height: 40px;
       &:last-child {
-        // align-self: flex-end;
         a {
           border-right: none;
         }
@@ -42,7 +34,6 @@
     }
   }
   .update {
-    // flex-shrink: 0;
     width: 325px;
     padding: 10px 20px;
     margin: 0;
@@ -56,10 +47,10 @@
   }
   .next {
     background: $cream;
-    width: 180px;
+    width: 250px;
     display: inline-block;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 40px;
     text-align: center;
     a {
       color: $text-color;
