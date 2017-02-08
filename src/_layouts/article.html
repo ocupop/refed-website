@@ -6,16 +6,10 @@ permalink: /posts/:title.html
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <a href="{{ site.baseurl}}/tools/content-hub" class="italic">&lt; All News</a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-xs-12 col-md-8">
         <div class="content">
           <div class="article single-article">
+            <a href="{{ site.baseurl}}/tools/content-hub" class="italic">&lt; All News</a>
             <div class="article-image" style="background-image: url({{ page.featured_image }})"></div>
             <h4>{{ page.title }}</h4>
             <p class="article-date">Published {{ page.date | date: "%B %-d, %Y"}}</p>

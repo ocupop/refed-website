@@ -78,7 +78,8 @@ body.solutions {
       border-radius: 0 20px 20px 0;
       border: none;
       text-align: center;
-      i {
+      display:block;
+      .icon-search {
         display: inline-block;
         width: 20px;
         height: 32px;
