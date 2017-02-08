@@ -2,7 +2,7 @@
 <section>
   <div class="container">
     <div id="labeling-carousel-intro" class="row">
-      <div class="col-xs-12 col-lg-5">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-0">
         <div class="content">
           <h2>Date Labeling Policy Issues</h2>
           <p>The date labels on food packaging accompanied by phrases such as “use by,” “best before,” “sell by,” “enjoy by” and “expires on” are generally intended to communicate food quality, not food safety. Nevertheless, date labels exert a powerful influence on consumers and food vendors. Under federal law, date labels are almost entirely unregulated. States have filled the void with a wide variety of regulations that often fail to reflect the distinction between food safety and food quality.<p> 
@@ -10,11 +10,11 @@
           <p>This tool explores the date label regulation patterns across the country. The extreme variations demonstrate how our current system creates confusion for consumers while not necessarily improving food safety, ultimately resulting in significant waste of wholesome food.</p>
 
           <p>ReFED found that standardizing date labels nationally was the most cost-effective solution to this country’s food waste problem. The fairly simple solution has the potential to divert 398,000 tons of food waste per year and provide $1.8 billion in annual economic value.</p>
-          <button id="start-slides" class="button" style="margin: 30px 0;">Explore the map &gt;</button>
         </div>
       </div>
-      <div class="col-xs-12 col-lg-7">
-        <img src="/img/maps/map_date-label-05.svg">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-5 col-lg-offset-0">
+        <img src="/img/maps/map_date-label-intro-end.svg" style="padding: 60px 0;">
+        <button id="start-slides" class="button">Explore the map &gt;</button>
       </div>
     </div>
     <div class="row carousel-datelabel">
@@ -22,16 +22,34 @@
         <div class="content">
           <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
             <div class="carousel-inner" role="listbox">
-              {% for item in filters %}
-                <div class="item{% if forloop.first %} active{% endif %}"
-                     data-states='{{ item.states | jsonify }}'
-                     data-progress="{% cycle '20', '40', '60', '80' %}"
-                     data-map="#map_{{ forloop.index }}">
-                  <h3 class="item-title"><i class="icon {% cycle 'cream-darker','recovery-light','recovery','prevention' %}"></i>{{ item.title }}</h3>
-                  <p>{{ item.definition }}</p>
-                </div>
-              {% endfor %}
-              <div class="item explore" data-progress="100" data-map="#map_5">
+              <div class="item active"
+                   data-progress="25"
+                   data-map="#map_1">
+                <h3 class="item-title"><i class="icon cream-darker"></i>No date label regulations.</h3>
+                <p>
+                  Nine states do not require or regulate date labels on any food products. For unregulated foods and even most foods that are regulated under state laws, manufacturers have broad discretion to decide which foods will bear date labels, how the date is selected, and what language the labels will use. Allowing manufacturers to independently determine this language contributes to the dizzying variety of date label phrases on food products, furthering consumer confusion on the meaning of date labels.
+                </p>
+              </div>
+
+              <div class="item"
+                   data-progress="50"
+                   data-map="#map_2">
+                <h3 class="item-title"><i class="icon recovery-light"></i>Date labels required for certain foods. No restrictions on sales after those dates.</h3>
+                <p>
+                  Currently, 41 states and the District of Columbia require at least some foods to have date labels. Yet no two states have the same law, lending evidence that these laws are not based in science or sound public. Inconsistent policies and practices harm the interests of manufacturers and retailers by creating increased compliance burdens. This inconsistency also leads to considerable amounts of avoidable wasted food as the mistaken belief that past-date foods are unsuitable for consumption causes consumers to discard food prematurely.
+                </p>
+              </div>
+
+              <div class="item"
+                   data-progress="75"
+                   data-map="#map_3">
+                <h3 class="item-title"><i class="icon prevention"></i>Date labels required for certain foods. Regulations on sales after those dates.</h3>
+                <p>
+                  Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted.
+                </p>
+              </div>
+
+              <div class="item explore" data-progress="100" data-map="#map_4">
                 <h2>Explore Each State</h2>
                 <ul class="nav">
                   <li>
@@ -41,14 +59,23 @@
                     <i class="icon recovery-light"></i>Date labels required for certain foods.<br>No restrictions on sales after those dates.
                   </li>
                   <li>
-                    <i class="icon recovery"></i>Date labels required for certain foods.<br>Regulations on sales after those dates.
-                  </li>
-                  <li>
-                    <i class="icon prevention"></i>No date label regulations.<br>Regulations on sales after dates if date labels are voluntarily applied.
+                    <i class="icon prevention"></i>Date labels required for certain foods.<br>Regulations on sales after those dates.
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-7">
+        <div class="content" style="padding-top: 60%;">
+          {% for map in (1..3) %}
+          <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
+            <img src="/img/maps/map_date-label-0{{ forloop.index }}.svg">
+          </div>
+          {% endfor %}
+          <div id="map_4" class="map-datelabel">
+            <img src="/img/maps/map_date-label-intro-end.svg">
           </div>
         </div>
         <div class="content text-center">
@@ -67,15 +94,6 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-lg-7">
-        <div class="content" style="padding-top: 60%;">
-          {% for map in (1..5) %}
-          <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
-            <img src="/img/maps/map_date-label-0{{ forloop.index }}.svg">
-          </div>
-          {% endfor %}
         </div>
       </div>
     </div>
