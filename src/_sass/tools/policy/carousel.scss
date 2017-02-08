@@ -30,9 +30,9 @@
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
-    color: $cream-dark;
+    color: $button-color;
     a {
-      color: $cream-dark;
+      color: $button-color;
     }
 
     .progress {
@@ -41,7 +41,7 @@
       margin: 0 10px;
     }
     .progress-bar {
-      background-color: $cream-dark;
+      background-color: $button-color;
       box-shadow: none;
     }
   }
