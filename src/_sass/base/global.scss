@@ -93,6 +93,11 @@ a {
     color: $gray-light;
     font-size: 18px;
   }
+  &.disabled {
+    cursor: default;
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 i {
   display: block;
