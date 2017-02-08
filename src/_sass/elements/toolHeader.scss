@@ -59,7 +59,10 @@ body.condensed-header {
     display: block;
     position: absolute;
     height: auto;
-    background-color: $cream-lighter;
+    background: $cream-lighter;
+    .container-flex {
+      display: block;
+    }
     .brand {
       display: block;
       width: 100%;

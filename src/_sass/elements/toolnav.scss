@@ -74,6 +74,9 @@
   #toolnav {
     display: block;
     text-align: right;
+    .container-flex {
+      display: block;
+    }
     .menu {
       width: 70px;
       height: 70px;
