@@ -1,4 +1,5 @@
 body.stakeholders {
+  padding-top: 105px;
   .hero {
     .hero-content {
       h1 { font-size: 36px; }
@@ -84,7 +85,7 @@ body.stakeholders {
 }
 @media all and (max-width: $screen-sm-max) {
   body.stakeholders {
-    
+    padding-top: 50px;
   }
 }
 @media all and (max-width: $screen-md-max) {

@@ -148,6 +148,22 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+  .grid {}
+  .card {}
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .grid {}
+  .card {
+    width: 49%;
+    max-width: none;
+    &.article-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
 
 @media all and (max-width: $screen-xs-max) {
   .grid {}
@@ -162,6 +178,14 @@
       height: 50px;
       width: 150px;
       text-align: right;
+      .rated {
+        &:hover {
+          background-color: transparent;
+          p {
+            display: none;
+          }
+        }
+      }
       img {
         display: none;
       }
@@ -173,19 +197,4 @@
     }
 
   }
-}
-@media all and (max-width: $screen-sm-max) {
-  .grid {}
-  .card {
-    width: 49%;
-    max-width: none;
-    &.article-card {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-}
-@media all and (max-width: $screen-md-max) {
-  .grid {}
-  .card {}
 }
