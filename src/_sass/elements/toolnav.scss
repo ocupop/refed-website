@@ -1,21 +1,19 @@
 #toolnav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  // align-items: center;
+  // justify-content: center;
   background-color: $gray-dark;
-
+  color: $gray-lighter;
   .menu {
     flex-basis: calc(100% - 325px - 180px);
     flex-shrink: 2;
     width: calc(100% - 325px - 180px);
     margin: 0;
-    background-color: $cream-light;
     ul {
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0;
-      background-color: $cream-light;
     }
     li {
       display: inline-block;
@@ -31,11 +29,11 @@
       a {
         padding: 0 30px;
         font-size: 18px;
-        color: $gray-light;
+        color: $gray-lighter;
         text-transform: uppercase;
         border-right: 1px solid $gray-light;
         &:hover, &:focus, &:active {
-          color: $text-color;
+          color: #fff;
         }
       }
     }

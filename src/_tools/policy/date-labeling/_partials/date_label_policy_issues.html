@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="row carousel-datelabel">
-      <div class="col-xs-12 col-md-5">
+      <div class="col-xs-12 col-lg-5">
         <div class="content">
           <div id="carousel-date-label" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
             <div class="carousel-inner" role="listbox">
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-7">
+      <div class="col-xs-12 col-lg-7">
         <div class="content" style="padding-top: 60%;">
           {% for map in (1..5) %}
           <div id="map_{{ forloop.index }}" class="map-datelabel{% if forloop.first %} active{% endif %}">
@@ -83,6 +83,7 @@
 </section>
 
 <script>
+// TODO refactor into seperate js
   $('#carousel-date-label').on('slid.bs.carousel', function (e) {
     var direction = e.direction;
     var progress = $(e.relatedTarget).data("progress");

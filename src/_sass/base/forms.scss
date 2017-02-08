@@ -185,7 +185,7 @@ select[multiple] {
     }
     &:checked {
       &+label {
-        font-weight: 600;
+        // font-weight: 600;
         span {
           &:after {
             background-color: $gray-light;
@@ -244,7 +244,6 @@ select[multiple] {
     &:checked {
       &+label {
         span {
-          // background-color: $gray-light;
           &:after {
             content: "";
             display: block;

@@ -1,8 +1,5 @@
 .mapnav {
   @include transition(0.5s);
-  .content {
-    padding: 30px;
-  }
   h3 {
     font-size: 20px;
   }
@@ -23,21 +20,18 @@
     .caret {
       position: absolute;
       top: 15px;
-      right: 20px;
+      left: 10px;
     }
   }
   p {
-    padding: 0 30px;
     line-height: 1em;
     font-size: 13px;
   }
   ul {
     padding: 0;
-    padding-right: 30px;
     margin: 10px 0;
     list-style: none;
-    li  { 
-      padding-left: 30px;
+    li  {
       margin-bottom: 15px;
       &.checkbox.small {
         padding-top: 8px;
@@ -57,6 +51,7 @@
       }
       >ul {
         padding-right: 0;
+        padding-left: 30px;
         font-size: 12px;
       }
     }
@@ -84,14 +79,9 @@
     margin-top: 5px;
     font-style: italic;
   }
-  .date-label-button {
-    font-weight: 300;
-    margin: 7px 25px;
-    font-size: 13px;
-    width: auto;
-  }
+
   .case-studies-filter {
-    margin: 0 30px;
+    margin: 0;
     font-style: italic;
     border-bottom: 1px solid $cream;
     padding: 15px 0;
@@ -101,7 +91,8 @@
     }
   }
   .filters {
-    padding: 20px 0;
+    padding: 20px 30px;
+    max-width: 325px;
   }
   .toc-entry {
     padding-left: 0;
@@ -155,17 +146,17 @@
 }
 
 // Template modifications
-body.date-labels {
-  #policy-tool {
-    padding-right: 0;
-  }
-  #policynav {
-    display: none;
-  }
-  #tool-header {
-    .fineprint { display: none; }
-  }
-}
+// body.date-labels {
+//   #policy-tool {
+//     padding-right: 0;
+//   }
+//   #policynav {
+//     display: none;
+//   }
+//   #tool-header {
+//     .fineprint { display: none; }
+//   }
+// }
 
 
 @media all and (max-width: $screen-xs-max) {

@@ -1,7 +1,12 @@
 .wrapper {
   display: flex;
 }
-.wrapper {}
+.primary {
+
+  .container {
+    max-width: 100%;
+  }
+}
 .sidebar {}
 
 
