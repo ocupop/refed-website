@@ -117,8 +117,7 @@ a.external {
   &:after {
     font-family: 'refed' !important;
     content: "\e913";
-    display: block;
-    position: absolute;
+    position: relative;
     top: 2px;
     font-size: 10px;
     vertical-align: super;
