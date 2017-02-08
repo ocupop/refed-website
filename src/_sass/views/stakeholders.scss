@@ -49,16 +49,16 @@ body.stakeholders {
         color: $text-color;
       }
       &.financing {
-        background-image: url("{{ site.baseurl }}/img/icons/action/financing.svg");
+        background-image: url("../img/icons/action/financing.svg");
       }
       &.policy {
-        background-image: url("{{ site.baseurl }}/img/icons/action/policy.svg");
+        background-image: url("../img/icons/action/policy.svg");
       }
       &.innovation {
-        background-image: url("{{ site.baseurl }}/img/icons/action/innovation.svg");
+        background-image: url("../img/icons/action/innovation.svg");
       }
       &.education {
-        background-image: url("{{ site.baseurl }}/img/icons/action/education.svg");
+        background-image: url("../img/icons/action/education.svg");
       }
 
     }
@@ -80,6 +80,12 @@ body.stakeholders {
       svg {
         width: 100px;
       }
+    }
+    #action-list li {
+      height: 25px;
+      line-height: 25px;
+      font-size: 18px;
+      padding-left: 35px;
     }
   }
 }
