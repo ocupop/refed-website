@@ -15,4 +15,12 @@ $(function(){
       $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:asc');
     }
   });
+
+  $('#filter-articles').on('change', function(){
+    $container.mixItUp('filter', this.value);
+  });
 });
+
+
+
+

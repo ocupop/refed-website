@@ -29,6 +29,14 @@ permalink: /tools/content-hub/
         <div class="row">
           <div class="col-xs-12">
             <div class="content">
+              <select name="" id="filter-articles" class="hide">
+                <option value="all"></option>
+                {% for article in site.articles %}
+                  {% for category in article.categories %}
+                    <option value=".{{ category }}">{{ category | capitalize }}</option>
+                  {% endfor%}  
+                {% endfor %}
+              </select>
               <p class="sort-articles" data-sort="date:dsc">Sort by date <span class="caret"></span></p>
             </div>
           </div>
@@ -39,7 +47,7 @@ permalink: /tools/content-hub/
 
               <div class="grid row articles">
                 {% for article in site.articles %}
-                <div class="card article-card article mix" data-date="{{ article.date }}">
+                <div class="card article-card article mix {{ article.categories | join: ' '}}" data-date="{{ article.date }}">
                   <div class="article-image" style="background-image: url({{ article.featured_image }});"></div>
                   <h4>{{ article.title }}</h4>
                   <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
