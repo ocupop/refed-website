@@ -7,7 +7,12 @@
     max-width: 100%;
   }
 }
-.sidebar {}
+.sidebar {
+  .container {
+    max-width: 300px;
+    margin-left: 25px;
+  }
+}
 
 
 @media all and (max-width: $screen-xs-max) {

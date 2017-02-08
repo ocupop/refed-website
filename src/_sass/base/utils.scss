@@ -5,7 +5,7 @@
 // Bleeds
 .fullbleed { padding: 0; }
 .bottombleed { padding-bottom: 0; }
-.topbleed { padding-bottom: 0; }
+.topbleed { padding-top: 0; }
 
 /* -----------------------------------------
    Utility Classes
@@ -37,6 +37,12 @@
 .fineprint {
   font-size: 14px;
   line-height: 1;
+}
+
+.transparent {
+  opacity: 0;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 // Content

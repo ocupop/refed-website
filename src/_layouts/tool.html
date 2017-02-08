@@ -1,19 +1,4 @@
 ---
 layout: default
 ---
-<div class="wrapper">
-  <div class="primary">
-    {{ content | inject_anchors }}
-  </div>
-  <div class="sidebar">
-    {% if page.toc %}
-      <div class="contentnav sticky" data-offset-top="70">
-        <div class="content">
-          {{ content | toc_only }}
-        </div>
-      </div>
-    {% else %}
-      {% contentblock sidebar %}
-    {% endif %}
-  </div>
-</div>
+{{ content | inject_anchors }}
