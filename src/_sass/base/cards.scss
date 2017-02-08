@@ -142,13 +142,9 @@
   &.article-card {
     background-color: transparent;
     box-shadow: none;
-    width: 44%;
-    max-width: 44%;
+    width: 47%;
+    max-width: 47%;
     padding-bottom: 20px;
-    margin-right: 12%;
-    &:nth-of-type(even) {
-      margin-right: 0;
-    }
   }
 }
 
@@ -186,10 +182,6 @@
     &.article-card {
       width: 100%;
       max-width: 100%;
-      margin-right: 10px;
-      &:nth-of-type(even){
-        margin-right: 10px;
-      }
     }
   }
 }
