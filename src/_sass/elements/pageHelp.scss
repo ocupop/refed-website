@@ -1,0 +1,43 @@
+.pageHelp {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  // TODO - Refactor width for responsive considerations
+  width: 30%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
+  @include transition(1s);
+  .pageHelp-content {
+    width: 300px;
+    margin: 40px 0;
+    float: right;
+  }
+  &.open {
+    left: 0;
+  }
+  button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .pageHelp {
+
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .pageHelp {
+
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .pageHelp {
+
+  }
+}

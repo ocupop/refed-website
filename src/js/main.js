@@ -15,7 +15,11 @@ $(document).on('ready', function() {
   // Make all external links open in another window.
   $('a').each(function() {
      var a = new RegExp('/' + window.location.host + '/');
-     if(!a.test(this.href)) {
+     var href = $(this).attr('href');
+     var mail = href.indexOf("mailto") >= 0 ? true: false;
+
+     window.console.log(mail, href);
+     if(!a.test(this.href) && !mail ) {
        $(this).addClass('external');
        $(this).click(function(event) {
            event.preventDefault();
