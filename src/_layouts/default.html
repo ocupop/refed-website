@@ -7,12 +7,26 @@
     {% else %}
       {% include elements/pageHeader.html %}
     {% endif %}
-
-    {% include search-results.html %}
-    <main>
-      {{ content }}
-      {% include elements/pageHelp.html %}
-    </main>
+    <div id="pageContent" class="{% if page.sidebar %}sidebar {{ page.sidebar }}{% endif %}">
+      {% include search-results.html %}
+      {% if page.sidebar %}
+        <aside class="sidebar {{ page.sidebar }}">
+          {% if page.sidebar == 'toc' %}
+            <div class="sticky" data-offset-top="70">
+              <div class="content">
+                {{ content | toc_only }}
+              </div>
+            </div>
+          {% else %}
+            {% contentblock sidebar %}
+          {% endif %}
+        </aside>
+      {% endif %}
+      <main>
+        {{ content }}
+        {% include elements/pageHelp.html %}
+      </main>
+    </div>
     {% include elements/pageFooter.html %}
     {% include thanks.html %}
     <!-- TODO - Include the policy tool tooltip -->

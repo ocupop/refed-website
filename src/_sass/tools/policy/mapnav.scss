@@ -18,9 +18,8 @@
       }
     }
     .caret {
-      position: absolute;
-      top: 15px;
-      left: 10px;
+      float: right;
+      margin: 9px 0;
     }
   }
   p {
@@ -92,7 +91,6 @@
   }
   .filters {
     padding: 20px 30px;
-    max-width: 325px;
   }
   .toc-entry {
     padding-left: 0;

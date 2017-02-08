@@ -1,16 +1,32 @@
-.wrapper {
-  display: flex;
-}
-.primary {
-
-  .container {
-    max-width: 100%;
+#pageContent {
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: table;
   }
-}
-.sidebar {
-  .container {
-    max-width: 300px;
-    margin-left: 25px;
+  main {
+    width: 100%;
+  }
+  aside {
+    display: none;
+    // Set default styles
+    height: 100%;
+    background-color: $cream-light;
+    box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
+  }
+
+  &.sidebar {
+    main {
+      width: 70%;
+    }
+    aside {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+    }
   }
 }
 
