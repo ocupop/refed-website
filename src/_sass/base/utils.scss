@@ -119,10 +119,12 @@ a.external {
     content: "\e913";
     display: block;
     position: absolute;
-    top: 0;
-    right: 2px;
-    font-size: 14px;
+    top: 2px;
+    font-size: 10px;
+    vertical-align: super;
+    margin: 0 2px;
     opacity: 0.5;
+    display: inline;
   }
 }
 
@@ -144,7 +146,6 @@ a.external {
   .col3 {
     column-count: 1;
   }
-
 }
 
 @media all and (max-width: $screen-sm-max) {
