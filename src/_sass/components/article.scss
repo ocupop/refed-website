@@ -47,12 +47,23 @@
   float: right;
   font-size: 14px;
   cursor: pointer;
+  margin-top: 10px;
   .caret {
     @include transition(.5s);
   }
   &.sort-dsc {
     .caret {
       transform: rotate(-180deg);
+    }
+  }
+}
+
+#news {
+  .select {
+    width: 160px;
+    display: inline-block;
+    select {
+      background-color: $cream;
     }
   }
 }

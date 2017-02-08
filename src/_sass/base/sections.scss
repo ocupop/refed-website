@@ -58,3 +58,22 @@ section {
     }
   }
 }
+
+@media all and (max-width: $screen-md-max) {
+  section {
+    padding: 25px 0;
+    &.flush {
+      .row {
+        [class^="col-"]:first-child {
+          .content {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 20px;
+            width: 750px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

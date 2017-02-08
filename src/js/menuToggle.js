@@ -25,7 +25,7 @@ function menuToggle(button) {
   
   button.on('click', function(e) {
     e.stopPropagation();
-    $("#page-header").toggleClass('open-menu');
+    $("#pageHeader").toggleClass('open-menu');
   });
 }
 
