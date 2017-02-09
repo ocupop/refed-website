@@ -2,19 +2,20 @@
   background-color: $gray-dark;
   color: $gray-lighter;
   .menu {
+    width: 100%;
     margin: 0;
     ul {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: auto;
+      width: 100%;
     }
     li {
       display: inline-block;
-      margin: 0;
-      height: 40px;
-      line-height: 40px;
+      margin: auto 0;
       &:last-child {
+        align-self: flex-end;
         a {
           border-right: none;
         }
@@ -31,20 +32,21 @@
           color: #fff;
         }
       }
-    }
-  }
-  .update {
-    width: 325px;
-    padding: 10px 20px;
-    margin: 0;
-    color: $gray-light;
-    a {
-      color: $gray-lighter;
-      &:hover, &:focus, &:active {
-        color: #fff;
+      &.update {
+        padding: 10px 20px;
+        margin: auto 0;
+        color: $gray-light;
+        a {
+          padding: 0;
+          color: $gray-lighter;
+          &:hover, &:focus, &:active {
+            color: #fff;
+          }
+        }
       }
     }
   }
+
   .next {
     background: $cream;
     width: 250px;
