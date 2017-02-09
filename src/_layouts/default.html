@@ -9,6 +9,9 @@
     {% endif %}
     <div id="pageContent" class="{% if page.sidebar %}sidebar {{ page.sidebar }}{% endif %}">
       {% include search-results.html %}
+      <main>
+        {{ content }}
+      </main>
       {% if page.sidebar %}
         <aside class="sidebar {{ page.sidebar }}">
           {% if page.sidebar == 'toc' %}
@@ -22,10 +25,7 @@
           {% endif %}
         </aside>
       {% endif %}
-      <main>
-        {{ content }}
-        {% include elements/pageHelp.html %}
-      </main>
+      {% include elements/pageHelp.html %}
     </div>
     {% include elements/pageFooter.html %}
     {% include thanks.html %}

@@ -6,7 +6,7 @@
   background-color: $cream;
   background: linear-gradient(to right, $cream-lighter 0%, $cream-lighter 25%, $cream-light 26%);
   z-index: 999;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px -8px 5px -5px rgba(0,0,0,.2), 0px 8px 5px -5px rgba(0,0,0,.2);
   .brand {
     display: inline-block;
     width: 25%;
