@@ -56,6 +56,12 @@ body.condensed-header {
 
 @media all and (max-width: $screen-xs-max) {
   #toolHeader {
+
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #toolHeader {
     display: block;
     position: absolute;
     height: auto;
@@ -78,13 +84,7 @@ body.condensed-header {
   }
   .toolHeader-title {
     display: block;
-    padding: 10px 20px;
-  }
-}
-
-@media all and (max-width: $screen-sm-max) {
-  #toolHeader {
-
+    padding: 8px 20px;
   }
 }
 

@@ -165,7 +165,9 @@
 
 @media all and (max-width: $screen-sm-max) {
   .mapnav {
-
+    .button {
+      font-size: 16px;
+    }
   }
   .mobilenav {
     display: block;
@@ -174,6 +176,8 @@
 
 @media all and (max-width: $screen-md-max) {
   .mapnav {
-    
+    .button {
+      font-size: 14px;
+    }
   }
 }

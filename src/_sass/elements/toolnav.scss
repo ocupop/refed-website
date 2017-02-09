@@ -14,8 +14,8 @@
     li {
       display: inline-block;
       margin: auto 0;
-      &:last-child {
-        align-self: flex-end;
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
         a {
           border-right: none;
         }
@@ -34,64 +34,113 @@
       }
       &.update {
         padding: 10px 20px;
-        margin: auto 0;
+        margin-left: auto;
         color: $gray-light;
+        white-space: nowrap;
         a {
           padding: 0;
           color: $gray-lighter;
+          border-right: none;
           &:hover, &:focus, &:active {
             color: #fff;
           }
         }
       }
+      &.next {
+        display: table-cell;
+        margin: 0;
+        margin-left: auto;
+        padding: 10px 30px;
+        text-align: center;
+        background: $cream;
+        a {
+          padding: 0;
+          color: $text-color;
+          white-space: normal;
+          &:hover, &:focus, &:active {
+            color: $gray-base;
+          }
+        }
+      }
     }
   }
-
-  .next {
-    background: $cream;
-    width: 250px;
-    display: inline-block;
-    margin: 0;
-    padding: 10px 40px;
-    text-align: center;
-    a {
-      color: $text-color;
-      &:hover, &:focus, &:active {
-        color: $gray-base;
-      }
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $cream-light;
+    cursor: pointer;
+    pointer-events: all;
+    i {
+      font-size: 20px;
+      line-height: 50px;
+      height: 50px;
     }
   }
 }
 
 @media all and (max-width: $screen-xs-max) {
   #toolnav {
-    display: block;
-    text-align: right;
-    .container-flex {
-      display: block;
-    }
-    .menu {
-      width: 70px;
-      height: 70px;
-      display: block;
-      float: left;
-      ul {
-        display: none;
-      }
-    }
-    .next {
-      // display: inline-flex;
-      // align-items: center;
-      // justify-content: center;
-      // width: calc(100% - 70px);
-    }
-    .update { display: none; }
+
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
   #toolnav {
-
+    // height: 50px;
+    .container { width: 100%; }
+    .menu {
+      ul {
+        justify-content: center;
+        margin: 8px;
+        li.next { display: none; }
+        li.update { display: none; }
+      }
+    }
+    // .menu {
+    //   display: block;
+    //   position: fixed;
+    //   width: 320px;
+    //   height: calc(100% - 100px);
+    //   top: 100px;
+    //   left: auto;
+    //   right: -340px;
+    //   background-color: #555759;
+    //   z-index: 999;
+    //   &.open {
+    //     right: 0;
+    //   }
+    //   ul {
+    //     display: block;
+    //     padding: 30px 0;
+    //     width: auto;
+    //     li {
+    //       display: block;
+    //       height: 35px;
+    //       line-height: 35px;
+    //       a {
+    //         display: inline-block;
+    //         padding: 10px 30px;
+    //         margin: 0;
+    //         border-right: none;
+    //       }
+    //       &.next { display: none; }
+    //       &.update {
+    //         height: auto;
+    //         line-height: 1.5em;
+    //         border-top: 1px solid $gray-light;
+    //         margin-top: 30px;
+    //       }
+    //     }
+    //   }
+    // }
+    // .menu-toggle {
+    //   display: inline-block;
+    // }
   }
 }
 
