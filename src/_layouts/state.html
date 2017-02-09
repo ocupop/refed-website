@@ -189,14 +189,26 @@ layout: default
           {% for item in tax.legislation %}
           <h3>{{ item.title }}</h3>
             <dl class="dl-policy">
+              {% if item.deduction_or_credit %}
+              <dt>Deduction or Credit</dt>
+              <dd>{{ item.deduction_or_credit }}</dd>
+              {% endif %}
+              {% if item.benefit %}
               <dt>Benefit</dt>
               <dd>{{ item.benefit }}</dd>
+              {% endif %}
+              {% if item.eligible_donors %}
               <dt>Eligible donors</dt>
               <dd>{{ item.eligible_donors }}</dd>
+              {% endif %}
+              {% if item.eligible_food %}
               <dt>Eligible food</dt>
               <dd>{{ item.eligible_food }}</dd>
+              {% endif %}
+              {% if item.eligible_recipients %}
               <dt>Eligible Recipients</dt>
               <dd>{{ item.eligible_recipients }}</dd>
+              {% endif %}
             </dl>
           {% endfor %}
           <h3>Federal Tax Incentives</h3>
