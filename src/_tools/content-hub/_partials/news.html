@@ -29,7 +29,7 @@
         <div class="grid row articles">
           {% for article in site.articles %}
           <div class="card article-card article mix {{ article.categories | join: ' '}}" data-date="{{ article.date }}">
-            <div class="article-image" style="background-image: url({{ article.featured_image }});"></div>
+            <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
             <p>{{ article.summary }} <a class="view-more" href="{{ article.url }}">View more &gt;</a></p>

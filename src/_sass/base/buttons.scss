@@ -30,7 +30,8 @@ button {
   &.external {
     padding: 0 20px;
   }
-  &:hover {
+  &:visited { color: $cream-lighter; }
+  &:hover, &:focus {
     background-color: darken($button-color, 10%);
     color: $cream-lighter;
   }

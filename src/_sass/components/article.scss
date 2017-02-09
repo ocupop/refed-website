@@ -4,6 +4,8 @@ body.article_layout {
 
 .article {
   .article-image {
+    display: block;
+    text-indent: -999em;
     width: 100%;
     height: 150px;
     background-size: cover;

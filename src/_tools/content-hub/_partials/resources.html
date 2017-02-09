@@ -42,21 +42,17 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h2 class="editable">Download the Report</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="content">
+          <div class="content-header">
+            <h2 class="editable">Download the Report</h2>
+          </div>
           <p class="editable">The Roadmap to Reduce U.S. Food Waste by 20 Percent and other ReFED reports are available for <a href="/download">download</a>.</p>
           <img src="/img/downloads/the-full-report-cover.jpg" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 hidden-xs">
-        <div class="content">
+        <div class="content" style="padding-top: 80px;">
           <div class="grid row">
             {% assign chapters = site.data.report %}
             {% for chapter in chapters offset:1 %}
@@ -77,14 +73,24 @@
         <div class="content">
           <h2>Technical Appendix</h2>
           <p>Details about data validation, methodology, excluded solutions, and full data sets are available in the Technical Appendix.</p>
-          <a href="/download" class="button" download>Download the Technical Appendix</a>
+          <a href="/downloads/ReFED_Technical_Appendix.pdf" 
+            class="button cms-no-rewrite"
+            onClick="ga('send', 'event', 'button', 'pdf download', 'Technical Appendix');"
+            download>
+            Download the Technical Appendix
+          </a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="content">
           <h2>Media Resources</h2>
           <p>Details about data validation, methodology, excluded solutions, and full data sets are available in the Technical Appendix.</p>
-          <a href="/download" class="button" download>Download the Press Release</a>
+          <a href="/downloads/ReFED_Press_Release.pdf" 
+            class="button cms-no-rewrite"
+            onClick="ga('send', 'event', 'button', 'pdf download', 'Technical Appendix');"
+            download>
+            Download the Press Release
+          </a>
         </div>
       </div>
     </div>
@@ -121,16 +127,12 @@
 </section>
 <section>
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h2 class="editable">Resources &amp; Helpful Links</h2>
-        </div>
-      </div>
-    </div>
     <div class="row middle-xs">
       <div class="col-xs-12">
         <div class="content">
+          <div class="content-header">
+            <h2 class="editable">Resources &amp; Helpful Links</h2>
+          </div>
           <div class="col2">
             <ul class="editable">
               <li>

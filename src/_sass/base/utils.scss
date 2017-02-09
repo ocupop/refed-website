@@ -93,6 +93,9 @@
     break-inside: avoid;
     margin-bottom: 0;
     margin-top: 1em;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 .col3 {
