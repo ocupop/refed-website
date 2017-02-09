@@ -26,6 +26,9 @@
         background-color: darken($button-color, 5%);
         color: $cream-lighter;
         text-align: center;
+        &:after {
+          display: none !important;
+        }
         i {
           margin: auto;
           font-size: 30px;

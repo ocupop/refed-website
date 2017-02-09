@@ -9,6 +9,9 @@
     &:hover {
       color: $gray;
     }
+    &:after {
+      display: none !important;
+    }
     i {
 
     }
