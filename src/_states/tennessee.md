@@ -29,6 +29,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Tenn. Code Ann. §§ 44-2-401–08 (2015)
@@ -74,5 +80,10 @@ policy_data:
         relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/" target="_blank">https://www.tn.gov/agriculture/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

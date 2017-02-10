@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: N.D. Cent. Code §§ 36-01-01–28 (2015)
@@ -52,5 +58,10 @@ policy_data:
         relevant_state_regulatory_body: 'North Dakota Department of Agriculture, State Board of Animal Health (§ 36-01-01 (2015)), <a href="http://www.nd.gov/ndda/program/animal-health" target="_blank">http://www.nd.gov/ndda/program/animal-health</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -41,6 +41,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: W. Va. Code R. §§ 19-9A-1–8 (2015)
@@ -95,5 +101,10 @@ policy_data:
         relevant_state_regulatory_body: 'West Virginia Department of Agriculture (§ 19-9A-7 (2015)), <a href="http://www.agriculture.wv.gov/Pages/default.aspx" target="_blank">http://www.agriculture.wv.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

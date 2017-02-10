@@ -1,5 +1,5 @@
 {% assign legislation = page.policy_data.tax_incentives.legislation %}
-{% if legislation.size %}
+{% if legislation[0].title %}
   {% assign showchart = true %}
 {% else %}
   {% assign showchart = false %}

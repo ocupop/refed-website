@@ -30,6 +30,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Del. Code Ann. 3. 71, §§ 7101, 7108 (2015)'
@@ -44,5 +50,10 @@ policy_data:
           <a href="http://dda.delaware.gov/">http://dda.delaware.gov/<a>.
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

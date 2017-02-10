@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: MD Code Ann. Agric. § 3-404 (2015)
@@ -52,5 +58,10 @@ policy_data:
         relevant_state_regulatory_body: 'Maryland Department of Agriculture (§ 3-404 (2015)), <a href="http://mda.maryland.gov/Pages/default.aspx" target="_blank">http://mda.maryland.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

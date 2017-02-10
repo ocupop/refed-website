@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Arkansas Livestock & Poultry Commission, Reg. No. 14 §§ 1–8 (2015)'
@@ -63,5 +69,10 @@ policy_data:
         relevant_state_regulatory_body: 'Arkansas Livestock & Poultry Commission, <a href="http://alpc.arkansas.gov/Pages/default.aspx" target="_blank">http://alpc.arkansas.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

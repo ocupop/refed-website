@@ -47,6 +47,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: N.M. Stat. Ann. § 77-7-16–18 (2015)
@@ -73,5 +79,10 @@ policy_data:
         relevant_state_regulatory_body: 'New Mexico Livestock Board (§ 77-7-18 (2015)), <a href="https://www.nmlbonline.com/" target="_blank">https://www.nmlbonline.com/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -58,6 +58,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Fla. Stat. §§ 585.01, 585.50–.59 (2015)'
@@ -70,5 +76,10 @@ policy_data:
         relevant_state_regulatory_body: 'Florida Department of Agriculture, Division of Animal Industry (§ 585.01 (2015)), <a href="http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry" target="_blank">http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

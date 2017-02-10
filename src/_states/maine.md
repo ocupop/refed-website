@@ -52,6 +52,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '7-4-303–05 Me. Code R. §§ 1753, 1813, 1814-A (2015)'
@@ -71,5 +77,10 @@ policy_data:
         relevant_state_regulatory_body: 'Maine Department of Agriculture, Conservation, and Forestry (§ 1753 (2015)), <a href="http://www.maine.gov/dacf/" target="_blank">http://www.maine.gov/dacf/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

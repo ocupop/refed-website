@@ -69,6 +69,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538 (2015)'
@@ -129,5 +135,10 @@ policy_data:
         relevant_state_regulatory_body: 'Michigan Department of Agriculture & Rural Development (§ 287.717a (2015)), <a href="http://www.michigan.gov/mdard" target="_blank">http://www.michigan.gov/mdard</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

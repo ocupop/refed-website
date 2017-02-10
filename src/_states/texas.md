@@ -32,6 +32,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Tex. Ag. Code Ann. §§ 165.001, 165.026 (2015); see also Tex. Admin. Code tit. 4, § 55.3 (2015)'

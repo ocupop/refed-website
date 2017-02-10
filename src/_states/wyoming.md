@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Wyo. Stat. Ann. §§ 11-27-101–107 (2015)
@@ -83,5 +89,10 @@ policy_data:
         relevant_state_regulatory_body: 'Wyoming Livestock Board (§§ 11-27-102–105 (2015)), <a href="https://wlsb.state.wy.us/public" target="_blank">https://wlsb.state.wy.us/public</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

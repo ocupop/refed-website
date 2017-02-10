@@ -29,6 +29,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'A.R.S.D. 12:79:03:06 (2015); H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013)'
@@ -41,5 +47,10 @@ policy_data:
         relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/" target="_blank">https://sdda.sd.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

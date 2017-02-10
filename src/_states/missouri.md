@@ -56,5 +56,10 @@ policy_data:
         relevant_state_regulatory_body: 'Missouri Department of Agriculture (§ 261.020 (2015)), <a href="http://agriculture.mo.gov/" target="_blank">http://agriculture.mo.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

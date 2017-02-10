@@ -37,6 +37,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701 (2015)'
@@ -49,5 +55,10 @@ policy_data:
         relevant_state_regulatory_body: 'Louisiana Department of Health and Hospitals, Office of Public Health (§ 1701 (2015)), <a href="http://www.dhh.state.la.us/index.cfm/subhome/16/n/330" target="_blank">http://www.dhh.state.la.us/index.cfm/subhome/16/n/330</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

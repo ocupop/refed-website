@@ -58,6 +58,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'N.H. Rev. Stat. Ann. §§ 435:32–37 (2015)'
@@ -111,5 +117,10 @@ policy_data:
         relevant_state_regulatory_body: 'New Hampshire Department of Agriculture, Markets & Food (§ 435.37 (2015)), <a href="http://agriculture.nh.gov/" target="_blank">http://agriculture.nh.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

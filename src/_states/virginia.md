@@ -80,5 +80,10 @@ policy_data:
         relevant_state_regulatory_body: 'Virginia Department of Agriculture & Consumer Services (§ 3.2-6001 (2015)), <a href="http://www.vdacs.virginia.gov/" target="_blank">http://www.vdacs.virginia.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

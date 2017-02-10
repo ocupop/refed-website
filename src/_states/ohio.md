@@ -55,6 +55,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Ohio Rev. Code Ann. §§ 942.01–.99 (2015)
@@ -224,5 +230,10 @@ policy_data:
         relevant_state_regulatory_body: 'Ohio Department of Agriculture (§ 942.06 (2015)), <a href="http://www.agri.ohio.gov/" target="_blank">http://www.agri.ohio.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

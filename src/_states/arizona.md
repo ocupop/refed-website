@@ -108,5 +108,10 @@ policy_data:
         relevant_state_regulatory_body: 'Arizona Department of Agriculture, Animal Services Division (§ 3-2661 (2015)), <a href="https://agriculture.az.gov/animal-services-division" target="_blank">https://agriculture.az.gov/animal-services-division</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

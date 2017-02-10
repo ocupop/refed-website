@@ -61,6 +61,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Wash. Admin. Code 16.36.005, 16.36.105–.113, 246.203.180 (2015)'

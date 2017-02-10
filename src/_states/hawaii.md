@@ -42,6 +42,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Haw. Rev Stat. §§ 142-3, 142-12, 142-23.5 (2015); Haw. Admin. Rules §§ 4-17-16–23 (2015); 9 C.F.R. § 166.1 (2016)'
@@ -63,5 +69,10 @@ policy_data:
         relevant_state_regulatory_body: 'Hawaii Department of Agriculture (Haw. Rev Stat. § 142-3 (2015)), Animal Industry Division, Animal Disease Control Branch, <a href="http://hdoa.hawaii.gov/ai/ldc/" target="_blank">http://hdoa.hawaii.gov/ai/ldc/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

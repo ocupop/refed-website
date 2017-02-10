@@ -70,6 +70,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Mass. Gen. Laws ch. 129, § 14B (2015); Mass. Gen. Laws ch. 270, § 9 (2015)'

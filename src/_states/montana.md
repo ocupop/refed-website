@@ -49,6 +49,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Mont. Code Ann. §§ 81-2-501–511 (2015)
@@ -131,5 +137,10 @@ policy_data:
         relevant_state_regulatory_body: 'Montana Department of Agriculture (§ 81-2-505 (2015)), <a href="http://agr.mt.gov" target="_blank">http://agr.mt.gov</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

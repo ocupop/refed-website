@@ -32,6 +32,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title:
@@ -44,5 +50,10 @@ policy_data:
         relevant_state_regulatory_body: 'Utah Department of Agriculture & Food (§ 4-31-109 (2015)), <a href="http://ag.utah.gov/" target="_blank">http://ag.utah.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

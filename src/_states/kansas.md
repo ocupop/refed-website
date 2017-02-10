@@ -35,6 +35,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Kan. Stat. Ann. §§ 47-1301–05 (2015)
@@ -69,5 +75,10 @@ policy_data:
         relevant_state_regulatory_body: 'Kansas Department of Agriculture, Division of Animal Health (§ 47-1304 (2015)), <a href="https://agriculture.ks.gov/divisions-programs/division-of-animal-health" target="_blank">https://agriculture.ks.gov/divisions-programs/division-of-animal-health</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---
