@@ -1,0 +1,9 @@
+#share-instructions {
+  height: 0;
+  opacity: 0;
+  @include transition(.5s);
+  &.active {
+    height: auto;
+    opacity: 1;
+  }
+}
