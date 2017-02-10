@@ -280,26 +280,33 @@ layout: default
           <h2>Organic waste bans &amp; waste recycling laws</h2>
           <h3>Overview</h3>
           <p class="editable">A growing number of states and localities are creating organic waste bans or waste recycling laws to restrict the amount of food waste an entity can dispose of in a landfill in order to push businesses and consumers to reduce food waste. Five states and several localities have passed either waste bans or waste recycling laws for food waste. Four states&mdash;Connecticut, Massachusetts, Rhode Island and Vermont&mdash;structure their laws as organic waste bans, while one state&mdash;California&mdash;has instituted a waste recycling law requiring commercial generators of organic waste to either compost or anaerobically digest organic waste. Each of the five states prohibits certain entities that generate specified amounts of food waste from sending this waste to landfills, subject to exceptions.<br /><br />However, each waste ban or recycling law differs in important details. For example, they vary with regard to the types of entities covered under the law, how much organic waste an entity must produce in order to be covered, and whether exceptions exist for entities located far from a certified recycling or composting facility that accepts food scraps. These differences have a significant impact on the reach of these laws, and therefore on the amount of food waste diverted from landfills. For example, the states differ widely in terms of the types of generators they cover. As of 2020, Vermont&rsquo;s law will cover anyone, including residents, who &nbsp;generates any amount of food waste. In contrast, the other states&rsquo; bans cover only certain commercial, industrial, and institutional entities, with variation among the three states.<br /><br />At the local level, a number of municipal laws exist that seek to divert food from landfills. Some of these local laws function similarly to the state laws described above.<br />&nbsp;</p>
-          
+          {% if waste.legislation.size %}
           {% for item in waste.legislation %}
-          {% if item.title %}
             <h4 class="nocase">{{ item.title }}</h4>
             <dl class="dl-policy">
               <dt>Generators Covered</dt>
               <dd>{{ item.generators_covered }}</dd>
+              {% if item.waste_production %}
               <dt>Waste Production</dt>
               <dd>{{ item.waste_production }}</dd>
+              {% endif %}
+              {% if item.exemptions_for_distance_from_organics_processing_facility %}
               <dt>Exemptions for distance from organics processing facility</dt>
               <dd>{{ item.exemptions_for_distance_from_organics_processing_facility }}</dd>
-              {% if item.other %}
-              <dt>Other</dt>
-              <dd>{{ item.other }}</dd>
+              {% endif %}
+              {% if item.other_requirements %}
+              <dt>Other Requirements</dt>
+              <dd>{{ item.other_requirements }}</dd>
+              {% endif %}
+              {% if item.waivers %}
+              <dt>Waivers</dt>
+              <dd>{{ item.waivers }}</dd>
               {% endif %}
             </dl>
+            {% endfor %}
             {% else %}
               <p>{{ page.name }} does not have any state-level organics recycling mandates.</p>
             {% endif %}
-            {% endfor %}
         </div>
       </div>
     </div>

@@ -94,8 +94,10 @@ policy_data:
     summary:
     link_url:
     legislation:
-      - title:
-        generators_covered:
+      - title: 'Austin, Tex., Ordinance to Amend City Code Ch. 15-6 (Apr. 25, 2013)'
+        generators_covered: 'Any food enterprise, meaning any food establishment, food process plant, farmers market vendor, temporary or mobile food establishment that is required a food permit. All food enterprises must comply by October 1, 2020, with compliance phased in based on establishment size according to the following schedule:   2016: 50,000+ square feet 2017: 15,000+ square feet 2018: 5,000+ square feet 2019: 1,000+ square feet'
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

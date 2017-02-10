@@ -125,8 +125,10 @@ policy_data:
     summary:
     link_url:
     legislation:
-      - title:
+      - title: SEATTLE MUN. CODE 21.36.082(C)–(D) (2017); SEATTLE MUN. CODE 21.36.083(B)–(C) (2017)
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements: 'Waiver from the above requirements if there is inadequate storage pace in the residence or commercial structure for recyclable materials.'
+        waivers: 'Waiver from the above requirements if there is inadequate storage pace in the residence or commercial structure for recyclable materials.'
 ---
