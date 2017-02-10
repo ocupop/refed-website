@@ -107,8 +107,6 @@ policy_data:
         generators_covered: 'Any business (including educational institutions, and charitable or nonprofit organizations), single family homeowner or other property owner or manager, or special event permit holder.'
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements: 'Property owners or managers are required to establish on-site collection of compostable materials in containers that are as convenient to use as trash cans.'
+        waivers: 'Waiver from the above requirements for business or property owner or manager that can show extreme economic hardship or inadequate space, or composts on-site. Waiver from the above requirements for business that generates less than a certain volume of compostables. A waiver is valid for one year and may be renewed.'
 ---

@@ -86,4 +86,10 @@ policy_data:
         generators_covered: 'Any business, meaning a commercial or public entity such as a firm, partnership, corporation, or association organized as a for-profit or non-profit entity. Multifamily residential dwellings are exempted.'
         waste_production: '2016: 8 cubic yards per week; 2017: 4 cubic yards per week; 2020: 2 cubic yards per week IF statewide organic waste disposal has not been reduced to 50% of the level in 2014.'
         exemptions_for_distance_from_organics_processing_facility: None (but there are exemptions for rural jurisdictions)
+      - title: S.F. ENV. CODE §§ 1901–1912 (2016)
+        generators_covered: 'Any individual (including a resident, employee or visitor), firm, business concern, association, partnership, corporation, or governmental entity (including the City and County of San Francisco, its boards, departments and commissions).'
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements: 'Property owners, including owners and managers of multifamily housing and commercial entities, are required to subscribe to appropriate collection services and provide proper containers to residents for disposing of compostable materials.'
+        waivers: 'Waiver from the above requirements if there is inadequate storage space on the property for proper disposal containers.'
 ---
