@@ -30,9 +30,9 @@
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
-    color: $button-color;
+    color: $cream;
     a {
-      color: $button-color;
+      color: $cream;
     }
 
     .progress {
@@ -41,18 +41,36 @@
       margin: 0 10px;
     }
     .progress-bar {
-      background-color: $button-color;
+      background-color: $cream;
       box-shadow: none;
     }
   }
+
+  // #start-slides {
+  //   position: absolute;
+  //   bottom: -10px;
+  // }
 }
 .carousel-datelabel {
   display: none;
 }
 
 
-@media(max-width: 992px) {
+@media all and (max-width: $screen-xs-max) {
   #date-label-policy-issues {
+  
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #date-label-policy-issues {
+    // #start-slides { position: relative; bottom: 0; }
     .item { min-height: 100px; }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  #date-label-policy-issues {
+
   }
 }
