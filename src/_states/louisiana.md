@@ -72,12 +72,12 @@ policy_data:
         enforcement: The Office of Public Health enforces the garbage-feeding rule. § 1701 (2015).
         relevant_state_regulatory_body: 'Louisiana Department of Health and Hospitals, Office of Public Health (§ 1701 (2015)), <a href="http://www.dhh.state.la.us/index.cfm/subhome/16/n/330" target="_blank">http://www.dhh.state.la.us/index.cfm/subhome/16/n/330</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---

@@ -197,12 +197,12 @@ policy_data:
           subsequent offense. § 4:4-23 (2015).
         relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3 (2015)), <a href="http://www.nj.gov/agriculture/" target="_blank">http://www.nj.gov/agriculture/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---

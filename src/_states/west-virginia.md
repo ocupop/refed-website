@@ -118,12 +118,12 @@ policy_data:
           a separate offense. § 19-9A-8 (2015).
         relevant_state_regulatory_body: 'West Virginia Department of Agriculture (§ 19-9A-7 (2015)), <a href="http://www.agriculture.wv.gov/Pages/default.aspx" target="_blank">http://www.agriculture.wv.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---

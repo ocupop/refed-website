@@ -62,21 +62,21 @@ policy_data:
     summary:
     link_url:
     legislation:
-      - title: N/A
-        animals_covered: N/A
-        definition_of_garbage: N/A
-        prohibitions: N/A
-        licensure_requirements: N/A
-        treatment_requirements: N/A
-        enforcement: N/A
+      - title:
+        animals_covered:
+        definition_of_garbage:
+        prohibitions:
+        licensure_requirements:
+        treatment_requirements:
+        enforcement:
         relevant_state_regulatory_body: 'Alaska Department of Natural Resources, Division of Agriculture, <a href="http://dnr.alaska.gov/ag/" target="_blank">http://dnr.alaska.gov/ag/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary: 
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: 
+        generators_covered:
+        waste_production: 
+        exemptions_for_distance_from_organics_processing_facility: 
 ---

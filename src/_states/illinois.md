@@ -85,12 +85,12 @@ policy_data:
         enforcement: 'Feeding garbage to animals is a Class B misdemeanor and for the first offense an individual or facility shall be fined $100-$500. For a second offense, the individual or facility shall be fined $200-$500, imprisoned for not more than 6 months, or both. A violator also may be enjoined from continuing the violation. The department of agriculture may make reasonable inspections necessary to enforce the garbage-feeding rule. § 5/48-7 (2015).'
         relevant_state_regulatory_body: 'Illinois Department of Agriculture (§ 5/48-7 (2015)), <a href="https://www.agr.state.il.us/" target="_blank">https://www.agr.state.il.us/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---
