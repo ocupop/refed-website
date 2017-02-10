@@ -41,6 +41,8 @@
 @import 'nav/footernav';
 @import 'nav/tournav';
 @import 'nav/toolnav';
+@import "nav/mapnav";
+@import "nav/statenav";
 
 // Components
 @import "components/charts/charts_base";
@@ -61,10 +63,7 @@
 // Tools
 @import "tools/policy/main";
 @import "tools/policy/map";
-@import "tools/policy/mapnav";
 @import "tools/policy/map_legend";
-
-@import "tools/policy/statenav";
 @import "tools/policy/header";
 @import "tools/policy/date_labels";
 
