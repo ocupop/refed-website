@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Wyo. Stat. Ann. §§ 11-27-101–107 (2015)

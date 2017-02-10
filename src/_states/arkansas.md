@@ -40,6 +40,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Arkansas Livestock & Poultry Commission, Reg. No. 14 §§ 1–8 (2015)'

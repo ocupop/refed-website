@@ -29,6 +29,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'A.R.S.D. 12:79:03:06 (2015); H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013)'

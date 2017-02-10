@@ -59,6 +59,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: N.C. Gen. Stat. Ann. §§ 106-405.1–.9 (2015)

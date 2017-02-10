@@ -50,6 +50,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 720 Ill. Comp. Stat. § 5/48-7 (2015)

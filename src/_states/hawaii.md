@@ -42,6 +42,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Haw. Rev Stat. §§ 142-3, 142-12, 142-23.5 (2015); Haw. Admin. Rules §§ 4-17-16–23 (2015); 9 C.F.R. § 166.1 (2016)'

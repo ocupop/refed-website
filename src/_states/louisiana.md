@@ -37,6 +37,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701 (2015)'

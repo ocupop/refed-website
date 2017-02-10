@@ -80,6 +80,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '4 N.J. Stat. Ann. §§ 2:2-4.11, 4:4-22–23, 4:5-106.1–.14 (2015)'

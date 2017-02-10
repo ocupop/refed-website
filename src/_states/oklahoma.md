@@ -43,6 +43,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '2 Okl. St. Ann. §§ 6-1, 6-21–27 (2015); Okla. Admin. Code 35:15-35-2 (2015)'

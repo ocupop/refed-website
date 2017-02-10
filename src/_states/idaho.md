@@ -32,6 +32,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: Idaho Code Ann. § 25-234 (2015); Idaho Admin. Code r. 02.04.03.400 (2015)

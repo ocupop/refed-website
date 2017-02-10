@@ -69,6 +69,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538 (2015)'

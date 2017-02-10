@@ -36,6 +36,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'Ind. Code Ann. §§ 15-17-2-34, 3-15, 10-16, 16-5, 19-3 (2015)'

@@ -52,6 +52,12 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: '7-4-303–05 Me. Code R. §§ 1753, 1813, 1814-A (2015)'
