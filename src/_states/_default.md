@@ -63,4 +63,5 @@ policy_data:
           generators_covered:
           waste_production:
           exemptions_for_distance_from_organics_processing_facility:
+      other:    
 ---
