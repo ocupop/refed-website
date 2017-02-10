@@ -12,13 +12,14 @@ $(document).on('ready', function() {
     }, 1500);
   }
 
+  // TODO - Refactor into component
   // Make all external links open in another window.
   $('a').each(function() {
      var a = new RegExp('/' + window.location.host + '/');
      var href = $(this).attr('href');
      var mail = href.indexOf("mailto") >= 0 ? true: false;
 
-     window.console.log(mail, href);
+     // window.console.log(mail, href);
      if(!a.test(this.href) && !mail ) {
        $(this).addClass('external');
        $(this).click(function(event) {
