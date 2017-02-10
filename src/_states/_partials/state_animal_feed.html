@@ -1,0 +1,51 @@
+{% assign legislation = page.policy_data.animal_feed.legislation %}
+{% if legislation.size %}
+  {% assign showchart = true %}
+{% endif %}
+
+<div id="animal-feed" class="row">
+  <div class="col-xs-12">
+    <div class="content">
+      <h2>Animal Feed</h2>
+      <h3>Overview</h3>
+      <p class="editable overviewStatement">For centuries, using food scraps as animal feed was common worldwide. The practice declined precipitously in the 1980s when several disease outbreaks were linked to unsafe animal feed. In an attempt to prevent the spread of such diseases, federal laws and regulations were enacted to restrict what is often pejoratively referred to as &ldquo;garbage feeding&rdquo; to animals. However, using food scraps as animal feed in a safe, resource-efficient way can be environmentally friendly and energy-efficient with multiple benefits for regional farmers and food waste generators, such as retailers, restaurants and educational institutions. Recently, interest in the practice of using a wider array of safe, properly-treated food scraps from a range of sources&mdash;including unsold retail food and post-consumer food scraps&mdash;as animal feed has been growing.<br /><br />Federal and state governments regulate the use of food scraps in animal feed by setting restrictions, which largely vary based on the type of animals that may be fed food scraps and the kind of scraps they may be fed. The federal regulations function as a floor, and most state regulations go beyond them. The majority of states (48 plus Puerto Rico) regulate the feeding of food scraps to animals, focusing mostly on swine.<br /><br />Many states have added their own more stringent regulations, and in some cases, outright bans on the practice. &nbsp;For example, 15 states ban feeding swine food scraps that contain any animal parts or material, and nine of these states even ban the feeding of vegetable waste to swine. States also have different license and heat-treatment requirements, with 12 states going above the federal rules and requiring heat-treating of vegetable-based food scraps before they are fed to swine.<br /><br />Scroll down to learn about this state&rsquo;s laws around feeding food scraps to animals.<br />&nbsp;</p>
+
+      <h3>{{ page.name }} Animal Feed Regulations</h3>
+      {% if showchart %}
+        {% for item in legislation %}
+          {% if item.title %}
+          <h4 class="nocase">{{ item.title }}</h4>
+          <dl class="dl-policy">
+            <dt>Animals covered</dt>
+            <dd>{{ item.animals_covered }}</dd>
+            <dt>Definition of "garbage"</dt>
+            <dd>{{ item.definition_of_garbage }}</dd>
+            <dt>Prohibitions</dt>
+            <dd>{{ item.prohibitions }}</dd>
+            <dt>Licensure</dt>
+            <dd>{{ item.licensure_requirements }}</dd>
+            <dt>Enforcement</dt>
+            <dd>{{ item.enforcement }}</dd>
+            <dt>Treatment requirements</dt>
+            <dd>{{ item.treatment_requirements }}</dd>
+            <dt>Relevant state regulatory body</dt>
+            <dd>{{ item.relevant_state_regulatory_body }}</dd>
+          </dl>
+          {% else %}
+          <p><em>{{ page.name }} does not have any laws that bear on the feeding of garbage to animals</em></p>
+          <dl class="dl-policy">
+            <dt>Relevant state regulatory body</dt>
+            <dd>{{ item.relevant_state_regulatory_body }}</dd>
+          </dl>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p>AMY: Need a no-chart statement</p>
+      {% endif %}
+
+      <h3>Federal Animal Feed Policy</h3>
+      <p class="editable"><br />Under federal law, food scraps can generally be fed to animals, so long as food scraps with animal derived by-products are heat-treated by a licensed facility before being fed to swine; and food scraps containing animal-derived by-products are not fed to ruminants. The federal regulations function as a floor, and most state regulations go beyond them.<br />&nbsp;</p>
+      <a href="{{ site.baseurl }}/tools/policy/federal-animal-feed-policy" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+    </div>
+  </div>
+</div>
