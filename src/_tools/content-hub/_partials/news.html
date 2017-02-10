@@ -27,7 +27,7 @@
       <div class="content">
 
         <div class="grid row articles">
-          {% for article in site.articles %}
+          {% for article in site.articles reversed %}
           <div class="card article-card article mix {{ article.categories | join: ' '}}" data-date="{{ article.date }}">
             <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
             <h4>{{ article.title }}</h4>
