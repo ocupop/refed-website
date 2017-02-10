@@ -91,12 +91,12 @@ policy_data:
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a Class 1 misdemeanor. Each day upon which the violation occurs counts as a separate offense. Violators may be enjoined from continuing such violation. § 3.2-6034 (2015).
         relevant_state_regulatory_body: 'Virginia Department of Agriculture & Consumer Services (§ 3.2-6001 (2015)), <a href="http://www.vdacs.virginia.gov/" target="_blank">http://www.vdacs.virginia.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---

@@ -29,8 +29,7 @@ policy_data:
     summary:
     link_url:
     legislation:
-      - title: |-
-          Md. Code Ann. Cts. & Jud. Proc. § 5-634<br>
+      - title: Md. Code Ann. Cts. & Jud. Proc. § 5-634<br>
           Md. Code Ann. Health—Gen. § 21-322
         type_of_protection: Civil
         when_protection_will_not_apply: Acts or omissions amounting to gross negligence or willful and wanton misconduct
@@ -76,12 +75,12 @@ policy_data:
         enforcement: 'The secretary of the department of agriculture enforces the garbage-feeding rule. If any individual or facility violates the garbage-feeding rule, the swine may not be sold or removed from its location within 30 days of having consumed the garbage or longer if prescribed by the secretary. § 3-404 (2015).'
         relevant_state_regulatory_body: 'Maryland Department of Agriculture (§ 3-404 (2015)), <a href="http://mda.maryland.gov/Pages/default.aspx" target="_blank">http://mda.maryland.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---

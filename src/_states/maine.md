@@ -94,12 +94,12 @@ policy_data:
           $500 and $1,000 for the second violation. § 1814-A (2015).
         relevant_state_regulatory_body: 'Maine Department of Agriculture, Conservation, and Forestry (§ 1753 (2015)), <a href="http://www.maine.gov/dacf/" target="_blank">http://www.maine.gov/dacf/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
 ---
