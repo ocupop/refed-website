@@ -95,5 +95,10 @@ policy_data:
         relevant_state_regulatory_body: 'West Virginia Department of Agriculture (§ 19-9A-7 (2015)), <a href="http://www.agriculture.wv.gov/Pages/default.aspx" target="_blank">http://www.agriculture.wv.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

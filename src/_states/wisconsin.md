@@ -84,5 +84,10 @@ policy_data:
         relevant_state_regulatory_body: 'Wisconsin Department of Agriculture, Trade, & Consumer Protection (95.10 (2015)), <a href="http://datcp.wi.gov/" target="_blank">http://datcp.wi.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

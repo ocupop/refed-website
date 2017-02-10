@@ -41,5 +41,10 @@ policy_data:
         relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/" target="_blank">https://sdda.sd.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -90,5 +90,10 @@ policy_data:
         relevant_state_regulatory_body: 'Clemson Livestock-Poultry Health Commission (§ 47-15-70 (2015)), <a href="http://www.clemson.edu/public/lph/" target="_blank">http://www.clemson.edu/public/lph/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

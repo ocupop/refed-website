@@ -63,5 +63,10 @@ policy_data:
         relevant_state_regulatory_body: 'Hawaii Department of Agriculture (Haw. Rev Stat. § 142-3 (2015)), Animal Industry Division, Animal Disease Control Branch, <a href="http://hdoa.hawaii.gov/ai/ldc/" target="_blank">http://hdoa.hawaii.gov/ai/ldc/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

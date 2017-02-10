@@ -55,5 +55,10 @@ policy_data:
         relevant_state_regulatory_body: 'Oklahoma Department of Agriculture & Forestry (§ 6-1 (2015)), <a href="http://www.oda.state.ok.us/" target="_blank">http://www.oda.state.ok.us/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

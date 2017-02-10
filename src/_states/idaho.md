@@ -56,5 +56,10 @@ policy_data:
         relevant_state_regulatory_body: 'Idaho Department of Agriculture, Division of Animal Industries (§ 25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/" target="_blank">http://www.agri.idaho.gov/AGRI/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -44,5 +44,10 @@ policy_data:
           <a href="http://dda.delaware.gov/">http://dda.delaware.gov/<a>.
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

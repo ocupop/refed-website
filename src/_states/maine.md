@@ -71,5 +71,10 @@ policy_data:
         relevant_state_regulatory_body: 'Maine Department of Agriculture, Conservation, and Forestry (§ 1753 (2015)), <a href="http://www.maine.gov/dacf/" target="_blank">http://www.maine.gov/dacf/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

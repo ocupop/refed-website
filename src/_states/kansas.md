@@ -69,5 +69,10 @@ policy_data:
         relevant_state_regulatory_body: 'Kansas Department of Agriculture, Division of Animal Health (§ 47-1304 (2015)), <a href="https://agriculture.ks.gov/divisions-programs/division-of-animal-health" target="_blank">https://agriculture.ks.gov/divisions-programs/division-of-animal-health</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

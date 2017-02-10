@@ -126,5 +126,10 @@ policy_data:
         relevant_state_regulatory_body: 'North Carolina Department of Agriculture & Consumer Services (§ 106-405.8 (2015)), <a href="http://www.ncagr.gov" target="_blank">http://www.ncagr.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

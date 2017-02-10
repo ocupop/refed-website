@@ -104,5 +104,10 @@ policy_data:
         relevant_state_regulatory_body: 'Nevada Department of Agriculture (NAC 571.004 (2015)), <a href="http://agri.nv.gov/" target="_blank">http://agri.nv.gov/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

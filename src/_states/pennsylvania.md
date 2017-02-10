@@ -117,5 +117,10 @@ policy_data:
         relevant_state_regulatory_body: 'Pennsylvania Department of Agriculture (§ 2378 (2015)), <a href="http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo" target="_blank">http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

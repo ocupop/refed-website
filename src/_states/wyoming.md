@@ -83,5 +83,10 @@ policy_data:
         relevant_state_regulatory_body: 'Wyoming Livestock Board (§§ 11-27-102–105 (2015)), <a href="https://wlsb.state.wy.us/public" target="_blank">https://wlsb.state.wy.us/public</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -174,5 +174,10 @@ policy_data:
         relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3 (2015)), <a href="http://www.nj.gov/agriculture/" target="_blank">http://www.nj.gov/agriculture/</a>.'
   organics_recycling_mandates:
     legislation:
-
+      - title:
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---
