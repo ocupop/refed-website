@@ -7,103 +7,20 @@ sidebar: default
 nextpage: false
 prevpage: false
 ---
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content editable">
-          <h2>Over 350 Innovators</h2>
-          <p>The ReFED Innovator Database is a living compilation of 350+ commercial and
-          nonprofit entities that are turning the food waste problem into an entrepreneurial
-          opportunity. The database is currently populated as ReFED learns of new or existing
-          innovators, though in the future, users will be able to suggest additional
-          organizations for inclusion. Innovators are grouped by where they fall in the food
-          recovery hierarchy (prevention, recovery, and recycling), and then placed into one of
-          13 Innovator Database categories.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="content">
-          <i class="icon icon-circle"></i>
-          <h4>Innovator List</h4>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae facilisis eros sit amet, porttitor quam.</p>
-          <a href="#list" data-toggle="tab" role="tab">View Innovator List &gt;</a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="content">
-          <i class="icon icon-circle"></i>
-          <h4>Innovator Map</h4>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae facilisis eros sit amet, porttitor quam.</p>
-          <a href="#map" data-toggle="tab" role="tab">View Innovator List &gt;</a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="content">
-          <i class="icon icon-circle"></i>
-          <h4>Innovator Analysis</h4>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae facilisis eros sit amet, porttitor quam.</p>
-          <a href="#analysis" data-toggle="tab" role="tab">View Innovator List &gt;</a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 col-sm-push-8">
-        <div class="content">
-          <h4>Search the databse</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitr quam.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-sm-pull-4">
-        <div class="content">
-          <div class="form-group">
-            <i class="icon icon-search"></i>
-            <input type="text">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <hr>
-          <div class="editable">
-            <h2>How to find an Innovator</h2>
-            <p> Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
-          </div>
+<div class="tab-content">
+  <section role="tabpanel" class="tab-pane active" id="about">
+    {% include_relative _partials/about.html %}
+  </section>
 
-          <div>
-            Loop through categories
-          </div>
-          <hr>
-          <div class="editable">
-            <h2>Related food waste databases</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem condimentum, facilisis eros sit amet, porttitor quam. Proin et quam ac nulla tincidunt sagittis a ac metus. Mauris suscipit, ex dapibus hendrerit imperdiet, dui quam volutpat nibh, eget aliquam augue metus et ipsum. Vestibulum pulvinar mauris sit amet nisl accumsan tincidunt sit amet eget libero.</p>
-          </div>
-          <div class="col2">
-            <ul class="editable">
-              <li>
-                <a href="#">Food Rescue Locator</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem condimentum, facilisis eros sit amet, porttitor quam.</p>
-              </li>
-              <li>
-                <a href="#">EPA & USDA Further with Food</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem condimentum, facilisis eros sit amet, porttitor quam.</p>
-              </li>
-              <li>
-                <a href="#">BioCycle Resources</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem condimentum, facilisis eros sit amet, porttitor quam.</p>
-              </li>
-              <li>
-                <a href="#">Other</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem condimentum, facilisis eros sit amet, porttitor quam.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <section role="tabpanel" class="tab-pane active" id="list">
+    {% include_relative _partials/list.html %}
+  </section>
+
+  <section role="tabpanel" class="tab-pane active" id="map">
+    {% include_relative _partials/map.html %}
+  </section>
+
+  <section role="tabpanel" class="tab-pane active" id="analysis">
+    {% include_relative _partials/analysis.html %}
+  </section>
+</div>
