@@ -121,12 +121,14 @@ policy_data:
           violation. 16.36.113 (2015).
         relevant_state_regulatory_body: 'Washington State Department of Agriculture (16.36.110 (2015)), <a href="http://agr.wa.gov/" target="_blank">http://agr.wa.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: SEATTLE MUN. CODE 21.36.082(C)–(D) (2017); SEATTLE MUN. CODE 21.36.083(B)–(C) (2017)
+        generators_covered:
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements: 'Waiver from the above requirements if there is inadequate storage pace in the residence or commercial structure for recyclable materials.'
+        waivers: 'Waiver from the above requirements if there is inadequate storage pace in the residence or commercial structure for recyclable materials.'
 ---

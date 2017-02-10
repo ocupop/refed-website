@@ -4,9 +4,8 @@ name: New York
 code: NY
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
+    overview:
+    link_url: 
     legislation:
       - title:
         applies_to_food_type:
@@ -70,12 +69,14 @@ policy_data:
           animals are being fed untreated garbage. § 76 (2015).
         relevant_state_regulatory_body: 'New York State Department of Agriculture & Markets (§ 76 (2015)), <a href="http://www.agriculture.ny.gov/" target="_blank">ttp://www.agriculture.ny.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: N.Y.C. ADMIN. CODE § 16-306.1 (2016)
+        generators_covered: 'Any location at which a food service establishment has a floor area of at least 7,000 square feet, a food service establishment in a hotel with 150 or more rooms, a food service vendor in an arena or stadium with seating capacity of at least 15,000 people, a food manufacturer with a floor area of at least 25,000 square feet, a food wholesaler with a floor area of at least 20,000 square feet, a retail food store with a floor area of at least 10,000 square feet, and certain chain retail food stores and food service establishments that meet combined floor space and operational structure requirements.'
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers: 'Waiver from the above requirements for two or fewer food service establishments if all establishments (1) have a floor area smaller than 7000 square feet; (2) are franchisees of a covered food waste generator; and (3) do not have general waste removal services provided for by the franchisor. A waiver is valid for one year and may be renewed.'
 ---

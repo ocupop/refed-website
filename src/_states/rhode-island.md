@@ -245,5 +245,6 @@ policy_data:
       - title: R.I. Gen. Laws Ann. § 23-18.9-17
         generators_covered: 'Commercial food wholesaler or distributor, industrial food manufacturer or processor, supermarket, resort or conference center, banquet hall, restaurant, religious institution, military installation, prison, corporation, hospital or other medical care institution, casino, and covered educational facility.'
         waste_production: '2016: 104 tons/year; 2018: 52 tons/year for covered educational facilities'
-        exemptions_for_distance_from_organics_processing_facility: 15 miles. Waiver from the above requirements if the landfill tipping fee is less than the fee charged by an authorized composting or anaerobic digestion facility located within 15 miles of the business.
+        exemptions_for_distance_from_organics_processing_facility: 15 miles. 
+        other_requirements: Waiver from the above requirements if the landfill tipping fee is less than the fee charged by an authorized composting or anaerobic digestion facility located within 15 miles of the business.
 ---

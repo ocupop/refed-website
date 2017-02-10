@@ -90,12 +90,14 @@ policy_data:
         enforcement: The commission may suspend a registration or require the immediate quarantine and closure of a garbage-feeding facility if the operation presents a danger to public health or the livestock industry. § 165.026 (2015).
         relevant_state_regulatory_body: 'Texas Animal Health Commission (§165.001 (2015)), <a href="http://www.tahc.texas.gov/" target="_blank">http://www.tahc.texas.gov/</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
+    overview:
+    summary:
     link_url:
     legislation:
-      - title: legislation title
-        generators_covered: lorem
-        waste_production: lorem
-        exemptions_for_distance_from_organics_processing_facility: lorem
+      - title: 'Austin, Tex., Ordinance to Amend City Code Ch. 15-6 (Apr. 25, 2013)'
+        generators_covered: 'Any food enterprise, meaning any food establishment, food process plant, farmers market vendor, temporary or mobile food establishment that is required a food permit. All food enterprises must comply by October 1, 2020, with compliance phased in based on establishment size according to the following schedule:   2016: 50,000+ square feet 2017: 15,000+ square feet 2018: 5,000+ square feet 2019: 1,000+ square feet'
+        waste_production:
+        exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

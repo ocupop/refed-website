@@ -55,12 +55,14 @@ policy_data:
           enforcement:
           relevant_state_regulatory_body:
   organics_recycling_mandates:
-      overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum."
+      overview:
+      summary:
       link_url:
       legislation:
         - title:
           generators_covered:
           waste_production:
           exemptions_for_distance_from_organics_processing_facility:
+          other_requirements:
+          waivers:
 ---

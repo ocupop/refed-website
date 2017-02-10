@@ -129,6 +129,18 @@ a.external {
   }
 }
 
+.nocase {
+  text-transform: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 
 @media all and (max-width: $screen-xs-max) {
   // breaks go to full width
