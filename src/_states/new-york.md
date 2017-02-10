@@ -4,8 +4,6 @@ name: New York
 code: NY
 policy_data:
   date_labeling:
-    overview:
-    link_url: 
     legislation:
       - title:
         applies_to_food_type:
@@ -17,9 +15,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'N.Y. Agric. & Mkts. Laww § 71-y—z'
         type_of_protection: Civil and Criminal
@@ -33,9 +28,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -50,9 +42,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'New York allows the feeding of animal-derived waste to cattle, swine, and poultry provided that it has been properly heat-treated by a rendering facility. All other waste may be fed to cattle, swine, and poultry without heat-treatment. Individuals may feed household garbage to their own cattle, swine, and poultry without heat-treating it.'
-    summary:
-    link_url:
     legislation:
       - title: 'N.Y. AGM. Law §§ 72-a, 76 (2015)'
         animals_covered: 'Cattle, swine, and poultry'
@@ -69,9 +58,6 @@ policy_data:
           animals are being fed untreated garbage. § 76 (2015).
         relevant_state_regulatory_body: 'New York State Department of Agriculture & Markets (§ 76 (2015)), <a href="http://www.agriculture.ny.gov/" target="_blank">ttp://www.agriculture.ny.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: N.Y.C. ADMIN. CODE § 16-306.1 (2016)
         generators_covered: 'Any location at which a food service establishment has a floor area of at least 7,000 square feet, a food service establishment in a hotel with 150 or more rooms, a food service vendor in an arena or stadium with seating capacity of at least 15,000 people, a food manufacturer with a floor area of at least 25,000 square feet, a food wholesaler with a floor area of at least 20,000 square feet, a retail food store with a floor area of at least 10,000 square feet, and certain chain retail food stores and food service establishments that meet combined floor space and operational structure requirements.'

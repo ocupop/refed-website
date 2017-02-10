@@ -4,9 +4,6 @@ name: Nevada
 code: NV
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk
@@ -41,9 +38,6 @@ policy_data:
         - hazardous foods
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Nev. Rev. Stat. § 41.491
         type_of_protection: Civil
@@ -57,9 +51,6 @@ policy_data:
         protections_apply_to_direct_donations: 'Yes'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -74,9 +65,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Nevada allows the feeding of animal-derived waste to animals provided that it has been properly heat-treated by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own animals without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: NAC 571.004–.190 (2015); NRS 571.135 (2015)
         animals_covered: All animals
@@ -127,12 +115,6 @@ policy_data:
           and develops any contagious or infectious disease. NAC 571.190 (2015).
         relevant_state_regulatory_body: 'Nevada Department of Agriculture (NAC 571.004 (2015)), <a href="http://agri.nv.gov/" target="_blank">http://agri.nv.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

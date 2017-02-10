@@ -1,6 +1,8 @@
 {% assign legislation = page.policy_data.date_labeling.legislation %}
 {% if legislation.size %}
   {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
 {% endif %}
 
 {% assign regulations = page.policy_data.date_labeling.label_regulation %}

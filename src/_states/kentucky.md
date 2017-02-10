@@ -4,9 +4,6 @@ name: Kentucky
 code: KY
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Milk Products
@@ -47,9 +44,6 @@ policy_data:
         - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Ky. Rev. Stat. § 413.247—248
         type_of_protection: Civil and Criminal
@@ -65,9 +59,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: Ky. Rev. Stat. Ann. § 141.392
         deduction_or_credit: Credit
@@ -76,9 +67,6 @@ policy_data:
         eligible_food: Edible agricultural products
         eligible_recipients: Nonprofit food programs operating in Kentucky
   animal_feed:
-    overview: Kentucky prohibits the feeding of animal-derived and vegetable waste to swine. Kentucky does not appear to exempt the feeding of household garbage to swine from the garbage-feeding rules.
-    summary:
-    link_url:
     legislation:
       - title: '302 K.A.R. 20:100 (2015); KRS § 246.020 (2015)'
         animals_covered: Swine
@@ -89,12 +77,6 @@ policy_data:
         enforcement: 'The department of agriculture may seek to enjoin an individual or facility in violation of the garbage-feeding rule. Each day upon which the violation occurs counts as a separate violation. 20:100 (2015).'
         relevant_state_regulatory_body: 'Kentucky Department of Agriculture (§ 246.020 (2015)), <a href="http://www.kyagr.com/" target="_blank">http://www.kyagr.com/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

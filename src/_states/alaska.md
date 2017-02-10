@@ -4,9 +4,6 @@ name: Alaska
 code: AK
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
@@ -27,9 +24,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Alaska Stat. § 17.20.346
         type_of_protection: Civil and Criminal
@@ -41,9 +35,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -58,9 +49,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Alaska does not have any laws that bear on the feeding of garbage to animals.
-    summary:
-    link_url:
     legislation:
       - title:
         animals_covered:
@@ -71,9 +59,6 @@ policy_data:
         enforcement:
         relevant_state_regulatory_body: 'Alaska Department of Natural Resources, Division of Agriculture, <a href="http://dnr.alaska.gov/ag/" target="_blank">http://dnr.alaska.gov/ag/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary: 
-    link_url:
     legislation:
       - title: 
         generators_covered:

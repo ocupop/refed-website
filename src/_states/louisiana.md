@@ -4,9 +4,6 @@ name: Louisiana
 code: LA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -23,9 +20,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'La. Rev. Stat. Ann. § 9:2799'
         type_of_protection: Civil
@@ -42,9 +36,6 @@ policy_data:
         protections_apply_to_direct_donations: Only wild game
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -59,9 +50,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Louisiana prohibits the feeding of animal-derived and vegetable waste to swine. Louisiana does not appear to exempt the feeding of household garbage to swine from the garbage-feeding rules.
-    summary:
-    link_url:
     legislation:
       - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701 (2015)'
         animals_covered: Swine
@@ -72,12 +60,6 @@ policy_data:
         enforcement: The Office of Public Health enforces the garbage-feeding rule. § 1701 (2015).
         relevant_state_regulatory_body: 'Louisiana Department of Health and Hospitals, Office of Public Health (§ 1701 (2015)), <a href="http://www.dhh.state.la.us/index.cfm/subhome/16/n/330" target="_blank">http://www.dhh.state.la.us/index.cfm/subhome/16/n/330</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

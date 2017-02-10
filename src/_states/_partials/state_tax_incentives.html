@@ -1,6 +1,8 @@
 {% assign legislation = page.policy_data.tax_incentives.legislation %}
 {% if legislation.size %}
   {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
 {% endif %}
 
 <div id="tax-incentives" class="row">

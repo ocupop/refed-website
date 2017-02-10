@@ -4,9 +4,6 @@ name: Colorado
 code: CO
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -39,9 +36,6 @@ policy_data:
         - eggs
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Colo. Rev. Stat. § 13-21-113
         type_of_protection: Civil and Criminal
@@ -59,9 +53,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: Colo. Rev. Stat. § 39-22-536
         deduction_or_credit: Credit
@@ -76,9 +67,6 @@ policy_data:
         eligible_food: Crops and livestock
         eligible_recipients: 'Charitable organizations that do not collect money, other property, or services in exchange for product'
   animal_feed:
-    overview: Colorado allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
-    summary:
-    link_url:
     legislation:
       - title: Colo. Rev. Stat. § 35-52-101–115 (2015); 8 CCR 1201-1 (2015)
         animals_covered: Swine
@@ -99,9 +87,6 @@ policy_data:
           a restraining order, or seek an injunction. § 35-52-111.2 (2015).
         relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118 (2015)), <a href="https://www.colorado.gov/agmain" target="_blank">https://www.colorado.gov/agmain</a>.'
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: BOULDER MUN. CODE 6-3-13 to 6-3-18 (2017)
         generators_covered: 'Any business (including educational institutions, and charitable or nonprofit organizations), single family homeowner or other property owner or manager, or special event permit holder.'

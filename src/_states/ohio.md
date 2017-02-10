@@ -4,9 +4,6 @@ name: Ohio
 code: OH
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -40,9 +37,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Ohio Rev. Code Ann. § 2305.37
         type_of_protection: Civil
@@ -60,9 +54,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -77,9 +68,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Ohio allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated by a licensed facility. All other waste may be fed to swine without heat-treatment. Food waste that consists of only certain food products, including bakery waste, may be fed to swine without being heat-treated. Individuals may feed household garbage to their own swine without heat-treating it and without a license.'
-    summary:
-    link_url:
     legislation:
       - title: Ohio Rev. Code Ann. §§ 942.01–.99 (2015)
         animals_covered: Swine
@@ -247,12 +235,6 @@ policy_data:
           § 942.03 (2015).
         relevant_state_regulatory_body: 'Ohio Department of Agriculture (§ 942.06 (2015)), <a href="http://www.agri.ohio.gov/" target="_blank">http://www.agri.ohio.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

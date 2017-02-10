@@ -1,6 +1,8 @@
 {% assign legislation = page.policy_data.animal_feed.legislation %}
 {% if legislation.size %}
   {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
 {% endif %}
 
 <div id="animal-feed" class="row">

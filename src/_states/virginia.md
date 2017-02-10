@@ -4,9 +4,6 @@ name: Virginia
 code: VA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Dairy
@@ -48,9 +45,6 @@ policy_data:
         - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Va. Code Ann. § 3.2-5144
         type_of_protection: Civil
@@ -67,9 +61,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'V A Code Ann. § 58.1-439.12:12'
         deduction_or_credit: Credit
@@ -78,9 +69,6 @@ policy_data:
         eligible_food: 'Food crops (grains, fruits, nuts, or vegetables)'
         eligible_recipients: Nonprofit food bank engaged in providing food to the needy; food can be sold to the needy or other nonprofits
   animal_feed:
-    overview: Virginia allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated by a licensed commercial feed facility. Virginia does not appear to exempt the feeding of household garbage to swine from the garbage-feeding rules.
-    summary:
-    link_url:
     legislation:
       - title: '3.2 Va. Admin. Code §§ 4803, 6001–34 (2015)'
         animals_covered: Swine
@@ -91,12 +79,6 @@ policy_data:
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a Class 1 misdemeanor. Each day upon which the violation occurs counts as a separate offense. Violators may be enjoined from continuing such violation. § 3.2-6034 (2015).
         relevant_state_regulatory_body: 'Virginia Department of Agriculture & Consumer Services (§ 3.2-6001 (2015)), <a href="http://www.vdacs.virginia.gov/" target="_blank">http://www.vdacs.virginia.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

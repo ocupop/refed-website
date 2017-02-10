@@ -4,9 +4,6 @@ name: Massachusetts
 code: MA
 policy_data:
   date_labeling:
-    overview: 'Massachusetts follows one of the most restrictive date labeling laws in the country. In Massachusetts, all prepackaged perishable and semi-perishable foods must have date labels; once applied by the manufacturer, processor, or whoever packaged the food, the date label cannot be changed. Further, Massachusetts is one of twenty states that set additional conditions on the sale or donation of foods after the labeled date. However, past date food may be sold or donated in Massachusetts so long as it meets three criteria regarding wholesomeness, separation from other foods, and identification as past date.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -59,9 +56,6 @@ policy_data:
         - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Mass. Gen. Laws Ann. Ch. 94, § 328<br> 105 Mass. Code Regs. 520.119'
         type_of_protection: Civil
@@ -75,9 +69,6 @@ policy_data:
         protections_apply_to_direct_donations: 'Yes. Explicitly allows donation of past-date food, as long as the food is wholesome, separated from foods that are not past-date, and clearly labeled as past-date'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -92,9 +83,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Massachusetts allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit, provided the swine will not be sold or removed from the premises. Massachusetts prohibits (1) the feeding to any animal, besides swine, of animal-derived garbage, refuse, or offal collected by a city of more than 30,000 inhabitants, and (2) the feeding to cows of garbage, refuse, or offal collected by a town.'
-    summary:
-    link_url:
     legislation:
       - title: 'Mass. Gen. Laws ch. 129, § 14B (2015); Mass. Gen. Laws ch. 270, § 9 (2015)'
         animals_covered: All animals; ruminants; exception for swine
@@ -220,9 +208,6 @@ policy_data:
           not more than two months. Ch. 270, § 9 (2015)
         relevant_state_regulatory_body: 'Massachusetts Department of Agriculture, Division of Animal Health (Ch. 129, § 14B (2015)), <a href="http://www.mass.gov/eea/agencies/agr/animal-health/" target="_blank">http://www.mass.gov/eea/agencies/agr/animal-health/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 310 Mass. Code Regs. 19.017
         generators_covered: 'Any individual, partnership, association, firm, company, corporation, department, agency, group, public body (including a city, town, district, county, authority, state, federal, or other governmental unit).'

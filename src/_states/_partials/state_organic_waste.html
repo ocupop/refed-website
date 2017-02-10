@@ -1,6 +1,8 @@
 {% assign legislation = page.policy_data.organics_recycling_mandates.legislation %}
 {% if legislation.size %}
   {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
 {% endif %}
 
 <div id="organic-waste" class="row">
@@ -36,7 +38,7 @@
           </dl>
         {% endfor %}
       {% else %}
-        <p>{{ page.name }} does not have any state-level organics recycling mandates.</p>
+        <p><strong>{{ page.name }} does not have any state-level organics recycling mandates.</strong></p>
       {% endif %}
     </div>
   </div>

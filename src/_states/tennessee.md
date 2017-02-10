@@ -4,9 +4,6 @@ name: Tennessee
 code: TN
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title:
         applies_to_food_type:
@@ -18,9 +15,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Tenn. Code Ann. § 53-13-101—103
         type_of_protection: Civil and Criminal
@@ -34,9 +28,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -51,9 +42,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Tennessee does not recommend feeding animal-derived waste to swine.97 But Tennessee allows the feeding of animal-derived and vegetable waste to swine provided that it has been processed in accordance with federal law (that is, heat-treated and fed by a licensed facility). Feeders must submit a plan to the commissioner detailing how garbage will be processed. Food waste that consists of only bakery waste, whey, and dairy waste from milk processing plants may be fed to swine without being further processed. Individuals may feed household garbage to their own swine without processing it.'
-    summary:
-    link_url:
     legislation:
       - title: Tenn. Code Ann. §§ 44-2-401–08 (2015)
         animals_covered: Swine
@@ -97,12 +85,6 @@ policy_data:
           violates the garbage-feeding rule. § 44-2-408 (2015).
         relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/" target="_blank">https://www.tn.gov/agriculture/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

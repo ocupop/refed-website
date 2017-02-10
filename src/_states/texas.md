@@ -4,9 +4,6 @@ name: Texas
 code: TX
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
@@ -19,9 +16,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Tex. Civ. Prac. & Rem. Code Ann. § 76.001—004'
         type_of_protection: Civil and criminal
@@ -37,9 +31,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -54,9 +45,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Texas prohibits the feeding of animal-derived waste to swine. Food waste that consists of only vegetable, fruit, dairy, or baked goods waste may be fed to swine by a licensed facility. Individuals may feed household garbage to their own swine without a permit.'
-    summary:
-    link_url:
     legislation:
       - title: 'Tex. Ag. Code Ann. §§ 165.001, 165.026 (2015); see also Tex. Admin. Code tit. 4, § 55.3 (2015)'
         animals_covered: Swine
@@ -90,9 +78,6 @@ policy_data:
         enforcement: The commission may suspend a registration or require the immediate quarantine and closure of a garbage-feeding facility if the operation presents a danger to public health or the livestock industry. § 165.026 (2015).
         relevant_state_regulatory_body: 'Texas Animal Health Commission (§165.001 (2015)), <a href="http://www.tahc.texas.gov/" target="_blank">http://www.tahc.texas.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Austin, Tex., Ordinance to Amend City Code Ch. 15-6 (Apr. 25, 2013)'
         generators_covered: 'Any food enterprise, meaning any food establishment, food process plant, farmers market vendor, temporary or mobile food establishment that is required a food permit. All food enterprises must comply by October 1, 2020, with compliance phased in based on establishment size according to the following schedule:   2016: 50,000+ square feet 2017: 15,000+ square feet 2018: 5,000+ square feet 2019: 1,000+ square feet'

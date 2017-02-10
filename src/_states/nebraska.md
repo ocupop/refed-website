@@ -4,9 +4,6 @@ name: Nebraska
 code: NE
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title:
         applies_to_food_type:
@@ -18,9 +15,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Neb. Rev. Stat. § 25-21,189'
         type_of_protection: Civil
@@ -34,9 +28,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -51,9 +42,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Nebraska prohibits the feeding of animal-derived waste to animals. Food waste that consists of only plant materials, fruit, vegetables, and any other nonmeat food byproduct may be fed to animals. Individuals may feed household garbage to their own animals.'
-    summary:
-    link_url:
     legislation:
       - title: |-
           Neb. Rev. Stat. §§ 53-753.01, 753.04; 54-701 (2015)
@@ -87,12 +75,6 @@ policy_data:
         enforcement: Any individual who violates the garbage-feeding rule is guilty of a misdemeanor. Each day the rule is violated is considered a separate offense. Neb. Rev. Stat. § 54-753.04 (2015).
         relevant_state_regulatory_body: 'Nebraska Department of Agriculture (Neb. Rev. Stat. § 54-701 (2015)), <a href="http://www.nda.nebraska.gov/" target="_blank">http://www.nda.nebraska.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

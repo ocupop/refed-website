@@ -4,9 +4,6 @@ name: Washington DC
 code: DC
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -65,9 +62,6 @@ policy_data:
         - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: D.C. Code § 48-301
         type_of_protection: Civil and Criminal
@@ -79,9 +73,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: D .C. Code § 47-1806.14
         deduction_or_credit: Credit
@@ -90,9 +81,6 @@ policy_data:
         eligible_food: 'Food Commodities (vegetables, fruits, grains, mushrooms, honey, herbs, nuts, seeds, or rootstock grown in the District by urban farming or by a community garden)'
         eligible_recipients: District of Columbia food banks or shelters recognized as a tax-exempt organization
   animal_feed:
-    overview: Washington D.C. does not have any laws that bear on the feeding of garbage to animals.
-    summary:
-    link_url:
     legislation:
       - title:
         animals_covered:
@@ -103,12 +91,6 @@ policy_data:
         enforcement:
         relevant_state_regulatory_body:
   organics_recycling_mandates:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

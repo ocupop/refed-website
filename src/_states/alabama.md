@@ -4,9 +4,6 @@ name: Alabama
 code: AL
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -61,9 +58,6 @@ policy_data:
         - hazardous foods
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Ala. Code 1975 § 20-1-6
         type_of_protection: Civil and Criminal
@@ -75,9 +69,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title:
         deduction_or_credit:
@@ -86,9 +77,6 @@ policy_data:
         eligible_food:
         eligible_recipients:
   animal_feed:
-    overview: 'Alabama prohibits the feeding of animal-derived and vegetable waste to swine. Food waste that consists only of citrus pulps, pea vines, bakery waste, candy kitchen waste, and dairy waste that have not been mixed with other waste may be fed to swine. Individuals may feed household garbage to their own swine.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: Ala. Code § 2-15-211 (2015)
         animals_covered: Swine
@@ -101,12 +89,6 @@ policy_data:
           Alabama Department of Agriculture & Industries (§ 2-15-211 (2015)),
           <a href="http://agi.alabama.gov/">http://agi.alabama.gov/</a>.
   organics_recycling_mandates:
-    overview:
-    summary: 
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

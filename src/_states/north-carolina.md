@@ -4,9 +4,6 @@ name: North Carolina
 code: NC
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -46,9 +43,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: N.C. Gen. Stat. Ann. § 99B-10
         type_of_protection: Civil and Criminal
@@ -64,9 +58,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -81,9 +72,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'North Carolina allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit. Individuals in charge of food service facilities must not allow any garbage to be removed from the premises unless the individual moving the garbage has a permit, has been authorized by the department of agriculture to remove the garbage, or is an employee of the city engaged in the regular collection of garbage.'
-    summary:
-    link_url:
     legislation:
       - title: N.C. Gen. Stat. Ann. §§ 106-405.1–.9 (2015)
         animals_covered: Swine
@@ -149,12 +137,6 @@ policy_data:
           of their operations. § 106-405.7 (2015).
         relevant_state_regulatory_body: 'North Carolina Department of Agriculture & Consumer Services (§ 106-405.8 (2015)), <a href="http://www.ncagr.gov" target="_blank">http://www.ncagr.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

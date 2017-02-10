@@ -4,9 +4,6 @@ name: Florida
 code: FL
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
@@ -49,9 +46,6 @@ policy_data:
         - shellfish
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Fla. Stat. Ann. § 768.136
         type_of_protection: Civil and Criminal
@@ -63,9 +57,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -80,9 +71,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Florida allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Food waste that consists of only fruit or vegetable matter may be fed to swine without being heat-treated. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
-    summary:
-    link_url:
     legislation:
       - title: 'Fla. Stat. §§ 585.01, 585.50–.59 (2015)'
         animals_covered: Swine
@@ -93,12 +81,6 @@ policy_data:
         enforcement: 'The department of agriculture may refuse revoke, cancel, or suspend the license of any individual or facility that violates the garbage-feeding rule. § 585.53 (2015).'
         relevant_state_regulatory_body: 'Florida Department of Agriculture, Division of Animal Industry (§ 585.01 (2015)), <a href="http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry" target="_blank">http://www.freshfromflorida.com/Divisions-Offices/Animal-Industry</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

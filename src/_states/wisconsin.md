@@ -4,9 +4,6 @@ name: Wisconsin
 code: WI
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -59,9 +56,6 @@ policy_data:
         - eggs
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Wis. Stat. Ann. § 895.51
         type_of_protection: Civil
@@ -77,9 +71,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -94,9 +85,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Wisconsin prohibits the feeding of animal-derived and vegetable waste to swine. It is also unlawful for any individual or facility to deposit or receive garbage where swine are kept. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: Wis. Stat. Ann. 95.10 (2015)
         animals_covered: Swine
@@ -107,12 +95,6 @@ policy_data:
         enforcement: The department of agriculture may order any swine to be condemned or destroyed because of any infectious or communicable disease resulting from the swine’s consumption of garbage. 95.10 (2015).
         relevant_state_regulatory_body: 'Wisconsin Department of Agriculture, Trade, & Consumer Protection (95.10 (2015)), <a href="http://datcp.wi.gov/" target="_blank">http://datcp.wi.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

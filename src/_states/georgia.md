@@ -4,9 +4,6 @@ name: Georgia
 code: GA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -95,9 +92,6 @@ policy_data:
         - hazardous foods
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Ga. Code Ann., § 51-1-31'
         type_of_protection: Civil or Criminal
@@ -114,9 +108,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Summary Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -131,9 +122,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Georgia allows the feeding of animal-derived and vegetable waste to swine provided that it is fed by a licensed facility that does not import or export swine or swine products to or from the premises. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: Ga. Code Ann. §§ 4-4-20–24 (2015)
         animals_covered: All animals; exception for swine
@@ -154,9 +142,6 @@ policy_data:
           hearing. § 4-4-24 (2015).
         relevant_state_regulatory_body: 'Georgia Department of Agriculture (§ 4-4-2 (2015)), <a href="http://agr.georgia.gov/" target="_blank">http://agr.georgia.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered: 

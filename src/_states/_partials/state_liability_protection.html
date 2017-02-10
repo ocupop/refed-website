@@ -1,6 +1,8 @@
 {% assign legislation = page.policy_data.liability_protection.legislation %}
 {% if legislation.size %}
   {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
 {% endif %}
 
 <div id="liability-protection" class="row">

@@ -4,9 +4,6 @@ name: Arizona
 code: AZ
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -29,9 +26,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Ariz .Rev. Stat. Ann. § 36-916
         type_of_protection: Civil
@@ -45,9 +39,6 @@ policy_data:
         protections_apply_to_direct_donations: 'Yes'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: Ariz. Rev. Stat. Ann. § 42-5074
         deduction_or_credit: Deduction
@@ -62,9 +53,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits located in Arizona whose use of the crop is related to their tax-exempt status
   animal_feed:
-    overview: Arizona allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: Ariz. Rev. Stat. §§ 3-2661–69 (2015)
         animals_covered: Swine
@@ -119,12 +107,6 @@ policy_data:
           (2015).
         relevant_state_regulatory_body: 'Arizona Department of Agriculture, Animal Services Division (§ 3-2661 (2015)), <a href="https://agriculture.az.gov/animal-services-division" target="_blank">https://agriculture.az.gov/animal-services-division</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

@@ -4,9 +4,6 @@ name: Pennsylvania
 code: PA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk
@@ -53,9 +50,6 @@ policy_data:
         - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 10 Pa. Stat. Ann. § 351-58
         type_of_protection: Civil or Criminal
@@ -69,9 +63,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -86,9 +77,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: Pennsylvania allows the feeding of animal-derived waste to domestic animals provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
-    summary:
-    link_url:
     legislation:
       - title: 3 Pa. Stat. and Cons. Stat. Ann. § 2303 (West)
         animals_covered: All domestic animals
@@ -140,12 +128,6 @@ policy_data:
           to the department upon request. § 2376 (2015).
         relevant_state_regulatory_body: 'Pennsylvania Department of Agriculture (§ 2378 (2015)), <a href="http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo" target="_blank">http://www.agriculture.pa.gov/Pages/default.aspx#.Vo-3uJMrLVo</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---

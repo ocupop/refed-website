@@ -4,9 +4,6 @@ name: Michigan
 code: MI
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: General
@@ -56,9 +53,6 @@ policy_data:
         - meat
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Mich. Comp. Laws Ann. § 691.1572
         type_of_protection: Civil
@@ -74,9 +68,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit:
@@ -91,9 +82,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'Michigan allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated. All other waste, including rendered products, bakery waste, and manure, may be fed to swine without heat-treatment. Michigan does not appear to exempt the feeding of household garbage to swine from the garbage-feeding rules. Pasteurized dairy plant byproducts may be fed to farm animals.'
-    summary:
-    link_url:
     legislation:
       - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538 (2015)'
         animals_covered: Farm animals; exception for swine
@@ -152,12 +140,6 @@ policy_data:
         enforcement: 'The director of the department of agriculture has full access to inspect any premises if he or she has any grounds to believe or suspect that garbage, offal, or carcasses are being used to feed swine or may expose swine to a communicable disease. The director will quarantine swine that have been exposed to, in contact with, or fed garbage, offal, or carcasses. § 287.717a (2015).'
         relevant_state_regulatory_body: 'Michigan Department of Agriculture & Rural Development (§ 287.717a (2015)), <a href="http://www.michigan.gov/mdard" target="_blank">http://www.michigan.gov/mdard</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
-      - title:
-        generators_covered:
-        waste_production:
-        exemptions_for_distance_from_organics_processing_facility:
+
 ---
