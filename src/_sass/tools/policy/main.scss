@@ -129,6 +129,20 @@ body.policy_tool_layout {
   }
 }
 
+
+// classes for show hide behavior on state pages
+.morecontent {
+  span {
+    display: none;
+    &.caret {
+      display: inline-block;
+    }
+  }
+}
+.morelink {
+  display: block;
+}
+
 @media(min-width: 992px) and (max-width: 1300px){
   #policy-tool {
     .container {
