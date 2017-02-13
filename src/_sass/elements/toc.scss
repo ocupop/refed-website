@@ -1,19 +1,24 @@
 .section-nav {
   list-style: none;
 }
-.toc-entry {
-  padding-left: 0;
-  list-style: none;
-  a {
+.toc {
+  .toc-entry {
+    display: block;
+    line-height: 1.5em;
+    margin-bottom: 5px;
     color: $text-color;
-  }
-  &.toc-h1 { font-size: 20px; }
-  &.toc-h2 { font-size: 16px; }
-  &.toc-h3 { font-size: 14px; }
+    &:hover, &:active {
+      background-color: transparent;
+    }
 
-  &.toc-h4,
-  &.toc-h5,
-  &.toc-h6 {
-    display: none;
+    &.toc-h1 { font-size: 20px; }
+    &.toc-h2 { font-size: 16px; }
+    &.toc-h3 { font-size: 14px; padding-left: 30px; }
+
+    &.toc-h4,
+    &.toc-h5,
+    &.toc-h6 {
+      display: none;
+    }
   }
 }

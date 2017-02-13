@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}">
+  <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
     {% if page.layout == 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}
@@ -14,15 +14,7 @@
       </main>
       {% if page.sidebar %}
         <aside class="sidebar {{ page.sidebar }}">
-          {% if page.sidebar == 'toc' %}
-            <div class="sticky" data-offset-top="70">
-              <div class="content">
-                {{ content | toc_only }}
-              </div>
-            </div>
-          {% else %}
-            {% contentblock sidebar %}
-          {% endif %}
+          {% contentblock sidebar %}
         </aside>
       {% endif %}
       {% include elements/pageHelp.html %}
