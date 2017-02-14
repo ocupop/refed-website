@@ -14,7 +14,15 @@
       </main>
       {% if page.sidebar %}
         <aside class="sidebar {{ page.sidebar }}">
-          {% contentblock sidebar %}
+          {% if page.sidebar == 'toc' %}
+            <div class="sticky" data-offset-top="70">
+              <div class="content">
+                <ul class="nav tableofcontents"></ul>
+              </div>
+            </div>
+          {% else %}
+            {% contentblock sidebar %}
+          {% endif %}
         </aside>
       {% endif %}
       {% include elements/pageHelp.html %}

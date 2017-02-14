@@ -18,3 +18,4 @@
 
 ##Publish
 1. Push commits to bitbucket repository. All build and CI is dealt with using Cloudcannon. `git push origin master`
+

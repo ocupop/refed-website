@@ -18,7 +18,7 @@
  */
 (function() {
 
-$.behaviors('.toc', toc);
+$.behaviors('.tableofcontents', toc);
 $.behaviors('[class^="toc-entry"]', tocLink);
 
   function toc(container) {
