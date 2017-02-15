@@ -130,15 +130,15 @@ a.external {
 }
 
 .nocase {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .capitalize {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 
