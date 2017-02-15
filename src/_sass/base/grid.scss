@@ -9,12 +9,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  max-width: $live-content-width;
+  max-width: $live-content-width + 300;
   padding: 0;
   margin: 0 auto;
 }
 
-// TODO - Add custom grid below to replace bootstrap
+.row-header {
+  padding: 35px;
+  padding-bottom: 0;
+  margin-bottom: -15px;
+  h1, h2, h3, h4, h5 { margin-bottom: 0; }
+}
+
+// // TODO - Add custom grid below to replace bootstrap
 
 
 // body {
