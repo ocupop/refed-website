@@ -79,6 +79,9 @@
     font-style: italic;
   }
 
+  .button {
+    font-size: 14px;
+  }
   .case-studies-filter {
     margin: 0;
     font-style: italic;
@@ -90,10 +93,8 @@
     }
   }
   .filters {
+    width: 320px;
     padding: 20px 30px;
-  }
-  .toc-entry {
-    padding-left: 0;
   }
 }
 
@@ -142,19 +143,6 @@
     }
   }
 }
-
-// Template modifications
-// body.date-labels {
-//   #policy-tool {
-//     padding-right: 0;
-//   }
-//   #policynav {
-//     display: none;
-//   }
-//   #tool-header {
-//     .fineprint { display: none; }
-//   }
-// }
 
 
 @media all and (max-width: $screen-xs-max) {

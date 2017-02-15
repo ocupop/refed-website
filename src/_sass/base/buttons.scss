@@ -4,6 +4,16 @@ button {
     outline: none;
     text-decoration: none;
   }
+  &.inline {
+    padding: 0;
+    color: $link-color;
+    border: none;
+    background: none;
+    background-color: transparent;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
 }
 
 .button {
