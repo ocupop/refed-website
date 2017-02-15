@@ -21,7 +21,7 @@
 $.behaviors('.signup', initSignup);
 
   function initSignup(container) {
-    window.console.log("HELLO");
+    // window.console.log("HELLO");
   }
 
   // function showMessage(notification) {

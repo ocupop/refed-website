@@ -26,8 +26,8 @@
     var lesstext = "Show less <span class='caret'></span>";
     $('.overviewStatement').each(function() {
         var content = $(this).html();
-        window.console.log(content);
-        window.console.log(content.length);
+        // window.console.log(content);
+        // window.console.log(content.length);
 
         if(content.length > showChar) {
             var c = content.substr(0, showChar);
