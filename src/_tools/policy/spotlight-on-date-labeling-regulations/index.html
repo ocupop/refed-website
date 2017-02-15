@@ -1,20 +1,18 @@
 ---
 layout: tool
-title: Food Waste Policy Finder
+title: Spotlight on Date Labeling Regulations
 
-header: <small>U.S. Food Waste</small>Policy Finder
+header: <small>Spotlight on</small>Date Labeling Regulations
 sidebar: fixed
 ---
 {% contentfor sidebar %}
   {% include elements/toolSidebar.html %}
 {% endcontentfor %}
 
-
 <section>
   <div class="container">
-
     <div class="row">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <h1>{{ page.title }}</h1>
           <p class="editable">The ReFED Food Waste Policy Finder is an interactive tool for exploring federal and state policies that affect food waste reduction and diversion. Find out which states have effective policy to encourage food donation. Learn about states that are leading on recycling policy, and discover how proposed federal policy could clear up consumer confusion around date labeling.</p>
@@ -24,37 +22,61 @@ sidebar: fixed
 
     <div class="row">
       <div class="row-header">
-        <h3>Explore State Policy</h3>
+        <h3>Quiz Yourself</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-3">
         <div class="content">
-          <img src="http://placehold.it/350x350" class="img-responsive">
+          <a href="#quiz" data-toggle="tab">
+            <img src="http://placehold.it/350x350" class="img-responsive">
+          </a>
         </div>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-9">
         <div class="content">
           <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="/tools/policy/state-policy">Open State Policy Tool &gt;</a>
+          <a href="#quiz" data-toggle="tab">Take the Quiz &gt;</a>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="row-header">
-        <h3>Understand Federal Policy</h3>
+        <h3>Understand Policy Issues</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-3">
         <div class="content">
-          <img src="http://placehold.it/350x350" class="img-responsive">
+          <a href="#maps" data-toggle="tab">
+            <img src="http://placehold.it/350x350" class="img-responsive">
+          </a>
         </div>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-9">
         <div class="content">
           <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="/tools/policy/federal-policy">Open Federal Policy Tool &gt;</a>
+          <a href="#maps" data-toggle="tab">Open the Map &gt;</a>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="row-header">
+        <h3>Proposed Solutions</h3>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          <a href="#federal-solutions" data-toggle="tab">
+            <img src="http://placehold.it/350x350" class="img-responsive">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#federal-solutions" data-toggle="tab">View Policy Proposal &gt;</a>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </section>
@@ -63,7 +85,7 @@ sidebar: fixed
   <div class="container">
 
     <div class="row">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <p><strong>Explore Food Waste Policy by State</strong></p>
           {% include nav/quicknav.html %}
@@ -79,20 +101,23 @@ sidebar: fixed
 
     <div class="row">
       <div class="row-header">
-        <h3>Spotlight on Date Labeling Regulations</h3>
+        <h3>U.S. Food Waste Policy Tool</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-3">
         <div class="content">
-          <img src="http://placehold.it/350x350" class="img-responsive">
+          <a href="/tools/policy/food-waste-policy-finder" title="Food Waste Policy Finder">
+            <img src="http://placehold.it/350x350" class="img-responsive">
+          </a>
         </div>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12 col-sm-9">
         <div class="content">
           <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="/tools/policy/state-policy" class="button">Learn More &gt;</a>
+          <a href="/tools/policy/food-waste-policy-finder" title="Food Waste Policy Finder" class="button">Learn More &gt;</a>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -103,10 +128,10 @@ sidebar: fixed
       <div class="row-header">
         <h3>About This Tool</h3>
       </div>
-      <div class="col-xs">
+      <div class="col-xs-12">
         <div class="content">
           <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="/tools/policy/about" class="button">About</a>
+          <a href="#about" data-toggle="tab" class="button">About</a>
         </div>
       </div>
     </div>
@@ -114,36 +139,18 @@ sidebar: fixed
   </div>
 </section>
 
+
 <section>
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="add">
-      Tab Content 1
+    <div role="tabpanel" class="tab-pane active" id="quiz">
+      {% include_relative _partials/quiz.html %}
     </div>
-    <div role="tabpanel" class="tab-pane" id="add">
-      Tab Content 2
+    <div role="tabpanel" class="tab-pane" id="maps">
+      {% include_relative _partials/maps.html %}
     </div>
-    <div role="tabpanel" class="tab-pane" id="add">
-      Tab Content 3
+    <div role="tabpanel" class="tab-pane" id="federal-solutions">
+      {% include_relative _partials/federal-solutions.html %}
     </div>
   </div>
 </section>
 
-
-
-<!-- 
-<div class="row">
-  <div class="row-header">
-    <h3>Header</h3>
-  </div>
-  <div class="col-xs">
-    <div class="content">
-
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="content">
-
-    </div>
-  </div>
-</div>
--->
