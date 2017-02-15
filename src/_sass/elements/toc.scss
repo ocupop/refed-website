@@ -5,15 +5,16 @@
   .toc-entry {
     display: block;
     line-height: 1.5em;
+    padding: 0;
     margin-bottom: 5px;
     color: $text-color;
     &:hover, &:active {
       background-color: transparent;
     }
 
-    &.toc-h1 { font-size: 20px; }
+    &.toc-h1 { font-size: 20px; margin-top: 15px; }
     &.toc-h2 { font-size: 16px; }
-    &.toc-h3 { font-size: 14px; padding-left: 30px; }
+    &.toc-h3 { font-size: 14px; padding-left: 20px; }
 
     &.toc-h4,
     &.toc-h5,
