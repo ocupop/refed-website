@@ -9,22 +9,21 @@ sidebar: fixed
   {% include elements/toolSidebar.html %}
 {% endcontentfor %}
 
-<section>
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="about">
-      {% include_relative _partials/about.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="quiz">
-      {% include_relative _partials/quiz.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="maps">
-      {% include_relative _partials/maps.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="federal-solutions">
-      {% include_relative _partials/federal-solutions.html %}
-    </div>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="about">
+    {% include_relative _partials/about.html %}
   </div>
-</section>
+  <div role="tabpanel" class="tab-pane" id="quiz">
+    {% include_relative _partials/quiz.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="maps">
+    {% include_relative _partials/maps.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="federal-solutions">
+    {% include_relative _partials/federal-solutions.html %}
+  </div>
+</div>
+
 
 <section class="alt-bg">
   <div class="container">
