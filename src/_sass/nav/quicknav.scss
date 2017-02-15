@@ -1,12 +1,17 @@
-.quicknav {
-  padding: 10px 0;
-  .quicknav-message {
-    h1,h2,h3,h4,h5 { margin: 0; }
-    .content {
-      float: right;
-    }
+.quicknav-select {
+  &:after {
+    right: 0;
+    top: 0;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $button-color;
+    color: #fff;
   }
-  .quicknav-select {}
+}
+.quicknav {
+  
 }
 
 @media all and (max-width: $screen-xs-max) {
@@ -17,13 +22,7 @@
 
 @media all and (max-width: $screen-sm-max) {
   .quicknav {
-    .quicknav-message {
-      .content {
-        float: none;
-        text-align: center;
-      }
-      h3 { font-size: 18px; }
-    }
+    
   }
 }
 
