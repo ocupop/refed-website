@@ -1,5 +1,8 @@
 .map-section {
   padding-top: 25px;
+  .container {
+    max-width: none;
+  }
 }
 .map {
   position: relative;
@@ -72,13 +75,17 @@
 
 }
 
-
-@media(max-width: 1420px) {
-
-  .map {
-    margin-bottom: 50px;
-  }
+@media all and (max-width: $screen-xs-max) {
 
 }
+
+@media all and (max-width: $screen-sm-max) {
+
+}
+
+@media all and (max-width: $screen-md-max) {
+
+}
+
 
 
