@@ -46,13 +46,6 @@ button {
     height: auto;
   }
   &.inverse {
-    display: inline-block;
-    margin: 0 7px 0 0;
-    height: auto;
-    width: 47%;
-    max-width: 150px;
-    padding: 12px 0;
-    font-weight: 400;
     background-color: $gray-darker;
     color: $cream-light;
     &:hover, &.active {
