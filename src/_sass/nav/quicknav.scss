@@ -1,23 +1,23 @@
-.statenav {
+.quicknav {
   padding: 10px 0;
-  .statenav-message {
+  .quicknav-message {
     h1,h2,h3,h4,h5 { margin: 0; }
     .content {
       float: right;
     }
   }
-  .statenav-select {}
+  .quicknav-select {}
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .statenav {
+  .quicknav {
   
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
-  .statenav {
-    .statenav-message {
+  .quicknav {
+    .quicknav-message {
       .content {
         float: none;
         text-align: center;
@@ -28,7 +28,7 @@
 }
 
 @media all and (max-width: $screen-md-max) {
-  .statenav {
+  .quicknav {
     
   }
 }
