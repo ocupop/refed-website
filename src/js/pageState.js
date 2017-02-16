@@ -20,16 +20,39 @@
 
 $.behaviors('body', pageState);
 
+// Revert to a previously saved state
+window.addEventListener('popstate', function(event) {
+  window.console.log("HASH",location.hash);
+  // window.console.log("pageState: popstate fired.", event);
+  updateContent(event.state);
+});
+
   function pageState(body) {
     body = $('body');
-    var activeLink = $('[href="' + location.hash + '"]');
+    var hash = location.hash;
+    var link = $('[href="' + location.hash + '"]').first();
 
-    if (activeLink.length) {
-      activeLink.first().trigger('click');
+    if (hash) {
+      // potential breakpoint for intercepting the browser behavior
+      if (link) {
+        link.trigger('click');
+      } else {
+        window.console.log("pageState: DOM does not contain an href that matches the hash", location.hash);
+        // $.scrollTo(location.hash);
+      }
     } else {
-      window.console.log("No button with anchor", location.hash);
-      // $.scrollTo(location.hash);
+      window.console.log("pageState: Checked for hash but did not find one.");
     }
+
+  }
+
+  function updateContent(data) {
+    // window.console.log("pageState: ", data);
+    // var activeTab = $("[data-target='"+data.activeTab+"']");
+    window.console.log(data.activeTab);
+    
+    // activeTab.trigger('click');
+
   }
 
 })();

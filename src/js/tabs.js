@@ -18,16 +18,24 @@
  */
 (function() {
 
-$.behaviors('a[data-toggle="tab"]', initTab);
+$.behaviors('[data-toggle="tab"]', initTab);
 
   function initTab(tab) {
     tab = $(tab);
 
-    tab.on('click', function (e) {
-      var l = window.location.pathname + $(e.target).attr('href');
-      window.history.pushState('', 'ReFED', l);
+    // var url = document.location.toString();
+    // if (url.match('#')) {
+    //   window.console.log("MATCH");
+    // } 
+
+    tab.on('shown.bs.tab', function (e) {
+      var data = {
+        activeTab: e.target.hash
+      };
+      window.history.pushState(data, 'ReFED', window.location.pathname + e.target.hash);
     });
   }
+
 
   // window.addEventListener("popstate", function(e) {
   //   window.console.log("POPPING");
