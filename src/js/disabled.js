@@ -25,7 +25,7 @@ $.behaviors('.disabled', disable);
 
     button.on('click', function(e){
       e.preventDefault();
-      window.console.log("Disabled LINK: ", button.attr('href'));
+      // window.console.log("Disabled LINK: ", button.attr('href'));
     });
   }
 

@@ -61,7 +61,7 @@
     });
 
     input.on('keyup', function(){
-      window.console.log($(this).val());
+      // window.console.log($(this).val());
       if($(this).val().length !=0) {
         submit.attr('disabled', false);
       } else {
@@ -72,7 +72,7 @@
   }
 
   function display_search_results(results) {
-    window.console.log("displaying results");
+    // window.console.log("displaying results");
     var $search_results = $("#search_results");
 
     // Wait for data to load

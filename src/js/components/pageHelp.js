@@ -22,7 +22,7 @@ $.behaviors('.pageHelp', pageHelp);
 
   function pageHelp(container) {
     container = $(container);
-    window.console.log("Loaded Page Help");
+    // window.console.log("Loaded Page Help");
   }
 
 })();

@@ -23,7 +23,7 @@ $.behaviors('.subnav', subnav);
   function subnav(container) {
    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
      var nextText = $('.nav-tabs > .active').next('li').find('a').text();
-     window.console.log("nextText is", nextText);
+     // window.console.log("nextText is", nextText);
      if(nextText == ''){
        $('.btnNext').addClass('disabled');
      }else {

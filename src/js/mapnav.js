@@ -87,7 +87,7 @@ $.behaviors('.mapnav', initMapNav);
         var bp = $(this).hasClass('study-filter');
         var sf = $(this).hasClass('map-subfilter');
         var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
-        window.console.log ($(this), bp);
+        // window.console.log ($(this), bp);
 
         if(checked) {
           var showStudies = $el.find('.study-filter:checked').length;
