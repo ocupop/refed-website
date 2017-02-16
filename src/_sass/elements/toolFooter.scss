@@ -1,5 +1,29 @@
 #toolFooter {
-
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#555759+0,555759+63,222222+63 */
+  background: #555759; /* Old browsers */
+  background: -moz-linear-gradient(left, #555759 0%, #555759 63%, #222222 63%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #555759 0%,#555759 63%,#222222 63%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #555759 0%,#555759 63%,#222222 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555759', endColorstr='#222222',GradientType=1 ); /* IE6-9 */
+  color: #fff;
+  .brand {
+    display: block;
+    margin: 0 auto;
+    img {
+      width: 200px;
+    }
+  }
+  .button {
+    
+  }
+  .content {
+    width: 33%;
+  }
+  .socialnav {
+    a {
+      padding: 0;
+    }
+  }
 }
 
 
