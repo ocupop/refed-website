@@ -10,6 +10,9 @@
     <div id="pageContent" class="{% if page.sidebar %}sidebar {{ page.sidebar }}{% endif %}">
       {% include search-results.html %}
       <main>
+        {% if page.breadcrumb %}
+          {% include elements/breadCrumbs.html%}
+        {% endif %}
         {{ content }}
       </main>
       {% if page.sidebar %}

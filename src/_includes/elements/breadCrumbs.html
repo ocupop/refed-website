@@ -1,4 +1,4 @@
-<ol class="breadcrumb">
+{% comment %}<ol class="breadcrumb">
 <li><a href="{{ site.baseurl }}/">ReFED</a></li>
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
@@ -19,3 +19,25 @@
   {% endfor %}
 {% endfor %}
 </ol>
+{% endcomment %}
+
+{% assign crumbs = page.url | remove:'/index' | split: '/' %}
+
+<div class="container" style="margin-bottom:-50px;">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="content">
+        <ol class="breadcrumb">
+          <li><a href="/">Refed</a></li>
+          {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+              / {{ crumb | replace:'-',' ' }}
+            {% else %}
+              / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
