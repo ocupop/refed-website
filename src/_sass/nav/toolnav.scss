@@ -12,12 +12,15 @@
       li {
         display: inline-block;
         margin: auto 0;
-        a {
+        a, button {
           padding: 0 30px;
           font-size: 16px;
           color: $gray-lighter;
           text-transform: uppercase;
           white-space: nowrap;
+          border: none;
+          background-image: none;
+          background-color: transparent;
           &:hover, &:focus, &:active {
             color: #fff;
           }
