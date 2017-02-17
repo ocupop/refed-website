@@ -23,27 +23,23 @@ $.behaviors('[data-toggle="tab"]', initTab);
   function initTab(tab) {
     tab = $(tab);
 
-    // var url = document.location.toString();
-    // if (url.match('#')) {
-    //   window.console.log("MATCH");
-    // } 
-
     tab.on('shown.bs.tab', function (e) {
+      var hash = e.target.hash;
       var data = {
         activeTab: e.target.hash
       };
-      window.history.pushState(data, 'ReFED', window.location.pathname + e.target.hash);
+      if (typeof hash != 'undefined' && hash != '') {
+        if (history && history.pushState) {
+          window.history.pushState(data, 'ReFED', window.location.pathname + window.location.search + hash);
+        } else {
+          scrollV = document.body.scrollTop;
+          scrollH = document.body.scrollLeft;
+          window.location.hash = hash;
+          document.body.scrollTop = scrollV;
+          document.body.scrollLeft = scrollH;
+        }
+      }
     });
   }
 
-
-  // window.addEventListener("popstate", function(e) {
-  //   window.console.log("POPPING");
-  //   var activeTab = $('[href="' + location.hash + '"]');
-  //   if (activeTab.length) {
-  //     activeTab.tab('show');
-  //   } else {
-  //     $('a[data-toggle="tab"]:first').tab('show');
-  //   }
-  // });
 })();

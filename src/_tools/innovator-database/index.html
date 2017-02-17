@@ -2,25 +2,33 @@
 layout: tool
 title: Innovator Database
 header: <small>The Food Waste</small>Innovator Database
-sidebar: default
 
-nextpage: false
-prevpage: false
+sidebar: default
 ---
+{% contentfor sidebar %}
+  {% include elements/toolSidebar.html %}
+{% endcontentfor %}
+
+{% include_relative _partials/filters.html %}
+
 <div class="tab-content">
   <section role="tabpanel" class="tab-pane active" id="about">
     {% include_relative _partials/about.html %}
   </section>
 
-  <section role="tabpanel" class="tab-pane active" id="list">
+  <section role="tabpanel" class="tab-pane" id="list">
     {% include_relative _partials/list.html %}
   </section>
 
-  <section role="tabpanel" class="tab-pane active" id="map">
+  <section role="tabpanel" class="tab-pane" id="map">
     {% include_relative _partials/map.html %}
   </section>
 
-  <section role="tabpanel" class="tab-pane active" id="analysis">
+  <section role="tabpanel" class="tab-pane" id="analysis">
     {% include_relative _partials/analysis.html %}
+  </section>
+
+  <section role="tabpanel" class="tab-pane" id="search">
+    {% include_relative _partials/search.html %}
   </section>
 </div>
