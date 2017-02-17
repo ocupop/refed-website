@@ -46,10 +46,21 @@ collections:
     output: true
     layout: state
     permalink: /states/:path
+  innovators:
+    output: true
+    layout: innovator
+    permalink: /innovators/:path
   articles:
     output: true
     layout: article
     permalink: /tools/content-hub/:path
+
+
+# page_gen:
+#   - data: 'innovators'
+#     template: 'innovator'
+#     name: 'name'
+#     dir: '_tools/innovator-database'
 
 date_labels_required_for:
   - bakery
@@ -97,3 +108,4 @@ gems:
   - jekyll-last-modified-at
   - jekyll-contentblocks
 # - jekyll-lunr-js-search
+
