@@ -1,4 +1,4 @@
-
+// TODO - JB: This needs to be refactored
     /* Copyright (C) 2017 Ocupop
      * 
      * http://www.ocupop.com

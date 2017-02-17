@@ -1,3 +1,4 @@
+// TODO - Refactor to match behaviors pattern
 jQuery(document).ready(function($) {
 
   // var tour = new Tour({
