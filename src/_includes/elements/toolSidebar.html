@@ -22,16 +22,32 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="row-header">
-        <h4>Innovator Database</h4>
-      </div>
-      <div class="col-xs-12">
-        <div class="content">
-          <p class="editable">To learn about state and federal policies that facilitate food waste reduction and diversion, check out our Policy Tool.</p>
-          <a href="#" class="button inverse">Learn More</a>
+
+    {% if page.title == "Innovator Database" %}
+      <div class="row">
+        <div class="row-header">
+          <h4>Food Waste Policy Finder</h4>
+        </div>
+        <div class="col-xs-12">
+          <div class="content">
+            <p class="editable">To learn about state and federal policies that facilitate food waste reduction and diversion, check out our Policy Tool.</p>
+            <a href="#" class="button inverse">Learn More</a>
+          </div>
         </div>
       </div>
-    </div>
+    {% else %}
+      <div class="row">
+        <div class="row-header">
+          <h4>Innovator Database</h4>
+        </div>
+        <div class="col-xs-12">
+          <div class="content">
+            <p class="editable">To learn about state and federal policies that facilitate food waste reduction and diversion, check out our Policy Tool.</p>
+            <a href="#" class="button inverse">Learn More</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
   </div>
 </div>
