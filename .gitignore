@@ -5,6 +5,7 @@ src/.asset-cache
 src/_assets/bower
 node_modules
 publish
+_holding
 _site
 bower_components
 *.log
