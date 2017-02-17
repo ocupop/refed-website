@@ -1,9 +1,9 @@
-<button class="share button">Share</button>
+<p id="share-toggle" class="share">Share <i class="icon-share"></i></p>
 <div id="share-instructions" class="cream content">
   <div class="links">
-    <a class="facebook" href="" target="_blank"><i class="icon icon-facebook"></i></a>
-    <a class="twitter" href="" target="_blank"><i class="icon icon-twitter"></i></a>
-    <a class="linkedin" href="" target="_blank"><i class="icon icon-linkedin"></i></a>
+    <a class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//www.refed.com{{ page.url}}" target="_blank"><i class="icon icon-facebook"></i></a>
+    <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A//www.refed.com{{ page.url}}&amp;text={{ page.title }}+%7C+Rethink+Food+Waste&amp;hashtags=refed" target="_blank"><i class="icon icon-twitter"></i></a>
+    <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.refed.com{{ page.url}}&title={{ page.title }}&summary={{ page.excerpt }}&source=" target="_blank"><i class="icon icon-linkedin"></i></a>
   </div>
-  <input type="text" value="" placeholder="">
+  <input type="text" value="http://www.refed.com{{ page.url }}" placeholder="">
 </div>
