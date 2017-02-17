@@ -22,8 +22,6 @@ $.behaviors('body', pageState);
 
 // Revert to a previously saved state
 window.addEventListener('popstate', function(event) {
-  window.console.log("HASH",location.hash);
-  // window.console.log("pageState: popstate fired.", event);
   updateContent(event.state);
 });
 
@@ -47,30 +45,11 @@ window.addEventListener('popstate', function(event) {
   }
 
   function updateContent(data) {
-    // window.console.log("pageState: ", data);
-    // var activeTab = $("[data-target='"+data.activeTab+"']");
-    // window.console.log(data.activeTab);
-    
-    // activeTab.trigger('click');
+    // window.console.log("pageState: data", data);
+    // window.console.log("pageState: activeTab", data.activeTab);
+    var activeTab = $("[data-target='"+data.activeTab+"'], [href='"+data.activeTab+"']").first();
+    if(activeTab) activeTab.trigger('click');
 
   }
-
-
-  // var settings = $.extend({
-  //     getHashCallback: function(hash, btn) { return hash },
-  //     selectorAttribute: "href",
-  //     backToTop: false,
-  //     initialTab: $('li.active > a')
-  // }, options );
-
-  // // Show the tab corresponding with the hash in the URL, or the first tab.
-  // var showTabFromHash = function() {
-  //   var hash = settings.selectorAttribute == "href" ? window.location.hash : window.location.hash.substring(1);
-  //   if (hash != '') {
-  //       var selector = hash ? 'a[' + settings.selectorAttribute +'="' + hash + '"]' : settings.initialTab;
-  //       $(selector, context).tab('show');
-  //       setTimeout(backToTop, 1);
-  //   }
-  // }
 
 })();
