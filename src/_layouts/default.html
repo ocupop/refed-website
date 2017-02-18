@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
-    {% if page.layout == 'tool' %}
+    {% if page.url contains 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}
       {% include elements/pageHeader.html %}
@@ -30,7 +30,7 @@
       {% endif %}
       {% include elements/pageHelp.html %}
     </div>
-    {% if page.layout == 'tool' %}
+    {% if page.url contains 'tool' %}
       {% include elements/toolFooter.html %}
     {% else %}
       {% include elements/pageFooter.html %}
