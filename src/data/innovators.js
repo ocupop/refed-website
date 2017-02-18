@@ -1,7 +1,8 @@
 ---
 layout: null
 ---
-[
+load_innovator_map({
+   "innovators": [
 {% for innovator in site.innovators %}
  {
    "name": "{{ innovator.name }}",
@@ -23,4 +24,4 @@ layout: null
    "email": "{{ innovator.email }}"
  }{% unless forloop.last %},{% endunless %}
  {% endfor %}
- ]
+ ]})
