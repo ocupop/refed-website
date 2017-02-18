@@ -49,18 +49,43 @@ collections:
   innovators:
     output: true
     layout: innovator
-    permalink: /innovators/:path
+    permalink: /tools/innovator-database/:path
   articles:
     output: true
     layout: article
-    permalink: /tools/content-hub/:path
+    permalink: /content-hub/:path
 
 
-# page_gen:
-#   - data: 'innovators'
-#     template: 'innovator'
-#     name: 'name'
-#     dir: '_tools/innovator-database'
+
+# Build settings
+safe: false
+source: src
+markdown: kramdown
+
+include: ["_pages"]
+exclude: 
+  - _tools/policy-tool/_partials
+
+
+gems:
+  - jekyll-last-modified-at
+  - jekyll-contentblocks
+# - jekyll-lunr-js-search
+
+
+# Cloudcannon Editor
+reach:
+  - Local
+  - National
+
+food_recovery_hierarchy:
+  - Prevention
+  - Recovery
+  - Recycle
+
+organization_status:
+  - For-Profit
+  - nonprofit
 
 date_labels_required_for:
   - bakery
@@ -92,20 +117,3 @@ restricted_donations_on_expired_labels:
   - perishables
   - sandwiches
   - shellfish
-
-
-# Build settings
-safe: false
-source: src
-markdown: kramdown
-
-include: ["_pages"]
-exclude: 
-  - _tools/policy-tool/_partials
-
-
-gems:
-  - jekyll-last-modified-at
-  - jekyll-contentblocks
-# - jekyll-lunr-js-search
-

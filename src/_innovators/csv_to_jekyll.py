@@ -24,7 +24,7 @@ for row_index, row in enumerate(datareader):
 	# Othrwise, create a YAML file from the data in this row...
 	else:
 		# Open a new file with filename based on the first column
-		filename = row[0].lower().replace("&", "and").replace("/", "_").replace("(", "_").replace(")", "_").replace("-", "_").replace(" ", "_").replace("__", "_") + '.html'
+		filename = row[0].lower().replace("&", "and").replace("/", "_").replace("(", "_").replace(")", "").replace(":", "_").replace("-", "_").replace(" ", "_").replace("__", "_") + '.html'
 		new_yaml = open(filename, 'w')
 
 		# Empty string that we will fill with YAML formatted text based on data extracted from our CSV.
@@ -39,7 +39,13 @@ for row_index, row in enumerate(datareader):
 			# Heading text is converted to lowercase. Spaces are converted to underscores and hyphens are removed.
 			# In the cell text, line endings are replaced with commas.
 			cell_heading = data_headings[cell_index].lower().replace(" ", "_").replace("-", "_").replace("%", "percent").replace("$", "").replace(",", "")
-			cell_text = cell_heading + ": " + cell.replace("\n", ", ") + "\n"
+			cell = cell.replace("\n", ", ").replace(":", "&#58;").replace('"', '&quot;')
+
+			if cell_heading == 'description':
+				cell_text = cell_heading + ': "' + cell + '"\n'
+			else:
+				cell_text = cell_heading + ": " + cell + "\n"
+
 
 			# Add this line of text to the current YAML string.
 			yaml_text += cell_text

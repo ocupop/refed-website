@@ -1,28 +1,28 @@
 <section>
   <div class="container">
     {% for innovator in site.innovators %}
-    <div class="row">
-      <div class="col-xs-12 col-sm-8">
-        <div class="content">
-          <h3><a href="{{ innovator.url }}" title="{{ innovator.name }}">{{ innovator.name }}</a></h3>
-          <p>{{ innovator.description }}</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <div class="content">
+            <h3><a href="{{ innovator.url }}" title="{{ innovator.name }}">{{ innovator.name }}</a></h3>
+            <p>{{ innovator.description }}</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="content">
+            <dl>
+              <dt>Status:</dt>
+              <dd>{{ innovator.status }}</dd>
+              <dt>Category:</dt>
+              <dd>{{ innovator.category }}</dd>
+              <dt>Food Recovery Hierarchy:</dt>
+              <dd>{{ innovator.food-recovery-hierarchy }}</dd>
+            </dl>
+            <a href="{{ innovator.website }}">{{ innovator.website }}</a>
+            <h4><i class="icon icon-{{ innovator.reach | slugify }}"></i> {{ innovator.reach }} Organization</h4>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-8">
-        <div class="content">
-          <dl>
-            <dt>Status:</dt>
-            <dd>{{ innovator.status }}</dd>
-            <dt>Category:</dt>
-            <dd>{{ innovator.category }}</dd>
-            <dt>Food Recovery Hierarchy:</dt>
-            <dd>{{ innovator.food-recovery-hierarchy }}</dd>
-          </dl>
-          <a href="{{ innovator.website }}">{{ innovator.website }}</a>
-          <h4><i class="icon icon-{{ innovator.reach | slugify }}"></i> {{ innovator.reach }} Organization</h4>
-        </div>
-      </div>
-    </div>
     {% endfor %}
   </div>
 </section>
