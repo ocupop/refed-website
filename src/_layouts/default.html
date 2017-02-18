@@ -2,6 +2,7 @@
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
+    {% include components/share.html %}
     {% if page.url contains 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}

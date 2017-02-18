@@ -23,10 +23,18 @@ $.behaviors('.share', initShare);
   function initShare(button) {
     button = $(button);
 
+    var close = $('#share-instructions .close');
+    var share_instructions = $('#share-instructions');
+
     button.on('click', function(e){
       e.preventDefault();
-      $('#share-instructions').toggleClass('active');
+      share_instructions.toggleClass('active');
     });
+
+    close.on('click', function(){
+      share_instructions.removeClass('active');
+    });
+
   }
 
 })();
