@@ -97,7 +97,7 @@ $.behaviors('.start-tour', start_tour);
     container.on('click', function() {
       $('#downloadDialog').modal('hide');
       $('#pageHeader').addClass('open-menu');
-      window.console.log("tour.js:", 'start tour clicked');
+      //window.console.log("tour.js:", 'start tour clicked');
       // Initialize the tour
       tour.init(true);
 

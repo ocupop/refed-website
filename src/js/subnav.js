@@ -24,7 +24,7 @@ $.behaviors('.subnav', subnav);
     window.console.log("subnav.js: Loaded");
    // $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
    //   var nextText = $('.nav-tabs > .active').next('li').find('a').text();
-   //   // window.console.log("nextText is", nextText);
+   //   // window.console.log("subnav.js: nextText is", nextText);
    //   if(nextText == ''){
    //     $('.btnNext').addClass('disabled');
    //   }else {
@@ -35,11 +35,11 @@ $.behaviors('.subnav', subnav);
    // $('.btnNext').click(function(){
    //   $('.nav-tabs > .active').next('li').find('a').trigger('click');
    //   var title = $('.nav-tabs > .active').next('li').find('a').text();
-   //   // window.console.log(title);
+   //   // window.console.log("subnav.js:", title);
    //   $("html, body").animate({ scrollTop: 0 }, 500);
    //   if(title == ''){
    //     $(this).addClass('disabled');
-   //     window.console.log("no title to show");
+   //     window.console.log("subnav.js: no title to show");
    //   } else {
    //     $(this).removeClass('disabled');
    //     $('.btnNext .title').text(title);

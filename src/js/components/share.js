@@ -22,25 +22,9 @@ $.behaviors('.share', initShare);
 
   function initShare(button) {
     button = $(button);
-    // var shareSource = button.data('src');
-    // var host = window.location.host;
-    // var pathname = window.location.pathname;
-    // var current_url = host + pathname;
-    // window.console.log(current_url);
-    // var linkedin_url = 'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//' + current_url + '&title=&summary=&source=';
-    // var facebook_url = 'http://www.facebook.com/sharer.php?u=http%3A//' + current_url;
-    // var twitter_url = 'https://twitter.com/intent/tweet?url=http%3A//' + current_url + '&amp;text=ReFED+%7C+Rethink+Food+Waste&amp;hashtags=refed';
-    // var full_url = 'http://' + current_url;
-    // window.console.log(full_url);
 
     button.on('click', function(e){
       e.preventDefault();
-      // $('#socialShare').attr('src', shareSource);
-      // window.console.log('share clicked');
-      // $('#share-instructions .facebook').attr('href', facebook_url);
-      // $('#share-instructions .twitter').attr('href', twitter_url);
-      // $('#share-instructions .linkedin').attr('href', linkedin_url);
-      // $('#share-instructions input').attr('value', full_url);
       $('#share-instructions').toggleClass('active');
     });
   }
