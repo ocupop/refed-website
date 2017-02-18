@@ -18,36 +18,77 @@
      * http://www.gnu.org/licenses/agpl-3.0.html.
      */
   
-  $(document).on('ready', function(){
-    // Configure/customize these variables.
-    var showChar = 500;  // How many characters are shown by default
-    var ellipsestext = "...";
-    var moretext = "Show more <span class='caret'></span>";
-    var lesstext = "Show less <span class='caret'></span>";
-    $('.overviewStatement').each(function() {
-        var content = $(this).html();
-        // window.console.log(content);
-        // window.console.log(content.length);
+  // $(document).on('ready', function(){
+  //   // Configure/customize these variables.
+  //   var showChar = 500;  // How many characters are shown by default
+  //   var ellipsestext = "...";
+  //   var moretext = "Show more <span class='caret'></span>";
+  //   var lesstext = "Show less <span class='caret'></span>";
+  //   $('.overviewStatement').each(function() {
+  //       var content = $(this).html();
+  //       // window.console.log(content);
+  //       // window.console.log(content.length);
 
-        if(content.length > showChar) {
-            var c = content.substr(0, showChar);
-            var h = content.substr(showChar, content.length - showChar);
-            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-            $(this).html(html);
+  //       if(content.length > showChar) {
+  //           var c = content.substr(0, showChar);
+  //           var h = content.substr(showChar, content.length - showChar);
+  //           var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+  //           $(this).html(html);
+  //       }
+  //   });
+  //   $(".morelink").click(function(){
+  //       if($(this).hasClass("less")) {
+  //           $(this).removeClass("less");
+  //           $(this).html(moretext);
+  //       } else {
+  //           $(this).addClass("less");
+  //           $(this).html(lesstext);
+  //       }
+  //       $(this).parent().prev().toggle();
+  //       $(this).prev().toggle();
+  //       return false;
+  //   });
+  // });
+
+  (function() {
+
+  $.behaviors('.lineClamp', clamp);
+
+    function clamp(container) {
+
+      container = $(container);
+
+      var num_lines = container.data('numlines');
+      var line_height = container.css('line-height').replace(/[^-\d\.]/g, '');  
+      var clamp_height = num_lines * line_height;
+      var total_height = container.css('height').replace(/[^-\d\.]/g, '');
+      var unclamp = '<button class="unclamp">Read More</button>';
+      if(clamp_height <= total_height){
+        container.css('height', num_lines * line_height);
+        $('<button class="unClamp">Read More</button>').insertAfter(container);
+      }
+
+      var unclamp = $('.unClamp');
+
+      unclamp.on('click', function(){
+        if(container.hasClass('open')){
+          unclamp.text('Read more');
+          container.height(clamp_height).removeClass('open');
+        }else {
+          unclamp.text('Less');
+          container.height('auto').addClass('open');
         }
-    });
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-  });
-  
-     
+      });
+    
+      // container.on('click', function(){
+      //   window.console.log("state.js:", 'read more clicked');
+      //   container.prev().toggleClass('show-full');
+      //   if(container.text() == 'Read more'){
+      //     container.text('Less');
+      //   }else {
+      //     container.text('Read more');
+      //   }
+      // });
+    }
+
+  })();
