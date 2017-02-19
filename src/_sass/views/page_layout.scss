@@ -1,21 +1,21 @@
-.page_layout {
+.page-layout {
   padding-top: 105px;
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .page_layout {
+  .page-layout {
   
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
-  .page_layout {
+  .page-layout {
     padding-top: 50px;
   }
 }
 
 @media all and (max-width: $screen-md-max) {
-  .page_layout {
+  .page-layout {
     
   }
 }
