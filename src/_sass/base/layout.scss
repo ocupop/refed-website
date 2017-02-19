@@ -2,12 +2,14 @@
   position: relative;
   main {
     width: 100%;
+    @include transition();
   }
   aside {
     display: none;
     // Set default styles
     background-color: $cream-light;
     box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
+    @include transition();
   }
 
   &.sidebar {
@@ -16,6 +18,7 @@
     main {
       display: block;
       width: 70%;
+      left: 0;
       .container {
         width: auto !important;
       }
@@ -23,6 +26,7 @@
     aside {
       display: block;
       width: 30%;
+      left: 0;
     }
   }
 }
