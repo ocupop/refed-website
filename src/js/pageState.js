@@ -39,16 +39,10 @@ window.addEventListener('popstate', function(event) {
   function pageState(body) {
     body = $('body');
     var hash = location.hash;
-    var link = $('[href="' + location.hash + '"]').first();
 
     if (hash) {
-      // potential breakpoint for intercepting the browser behavior
-      if (link) {
-        link.trigger('click');
-      } else {
-        window.console.log("pageState.js: DOM does not contain an href that matches the hash", location.hash);
-        // $.scrollTo(location.hash);
-      }
+      $(hash).addClass('active');
+      // $.scrollTo(location.hash);
     } else {
       window.console.log("pageState.js: Checked for hash but did not find one.");
     }
@@ -56,13 +50,8 @@ window.addEventListener('popstate', function(event) {
   }
 
   function updateContent(data) {
-
-    var activeTab = $("[data-target='"+data.activeTab+"'], [href='"+data.activeTab+"']").first();
-    if(activeTab.length) {
-      activeTab.trigger('click');
-    } else {
-      window.console.log("updateContent NO SUCH ANCHOR");
-    }
+    // Set activeTab
+    $(data.activeTab).addClass('active').siblings().removeClass('active');
 
   }
 
