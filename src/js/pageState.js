@@ -46,16 +46,17 @@ window.addEventListener('popstate', function(event) {
       if (link) {
         link.trigger('click');
       } else {
-        window.console.log("pageState: DOM does not contain an href that matches the hash", location.hash);
+        window.console.log("pageState.js: DOM does not contain an href that matches the hash", location.hash);
         // $.scrollTo(location.hash);
       }
     } else {
-      window.console.log("pageState: Checked for hash but did not find one.");
+      window.console.log("pageState.js: Checked for hash but did not find one.");
     }
 
   }
 
   function updateContent(data) {
+
     var activeTab = $("[data-target='"+data.activeTab+"'], [href='"+data.activeTab+"']").first();
     if(activeTab.length) {
       activeTab.trigger('click');

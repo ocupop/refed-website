@@ -19,7 +19,7 @@ $(document).on('ready', function() {
      var href = $(this).attr('href');
      var mail = href.indexOf("mailto") >= 0 ? true: false;
 
-     // window.console.log(mail, href);
+     // window.console.log("main.js:", mail, href);
      if(!a.test(this.href) && !mail ) {
        $(this).addClass('external');
        $(this).click(function(event) {

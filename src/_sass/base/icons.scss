@@ -26,6 +26,28 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-analysis:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-list:before {
+  content: "\e914";
+}
+.icon-local:before {
+  content: "\e915";
+}
+.icon-logo:before {
+  content: "\e916";
+}
+.icon-mail:before {
+  content: "\e919";
+}
+.icon-national:before {
+  content: "\e91a";
+}
 .icon-external:before {
   content: "\e913";
 }

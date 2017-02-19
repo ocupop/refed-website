@@ -32,7 +32,7 @@ $.behaviors('.mapnav', initMapNav);
       var checked = $(this).prop("checked"),
           container = $(this).parent(),
           siblings = container.siblings();
-      // window.console.log("CONTAINER: ", container);
+      // window.console.log("mapnav.js: CONTAINER: ", container);
 
       container.find('input[type="checkbox"]').prop({
         indeterminate: false,
@@ -87,7 +87,7 @@ $.behaviors('.mapnav', initMapNav);
         var bp = $(this).hasClass('study-filter');
         var sf = $(this).hasClass('map-subfilter');
         var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
-        // window.console.log ($(this), bp);
+        // window.console.log ("mapnav.js:", $(this), bp);
 
         if(checked) {
           var showStudies = $el.find('.study-filter:checked').length;

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
+  <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
+
+    {% include components/share.html %}
     {% if page.url contains 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}

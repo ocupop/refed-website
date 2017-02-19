@@ -5,7 +5,7 @@ $(function(){
   
   $('.sort-articles').on('click', function(){
     var sort = $(this).data('sort');
-    // window.console.log(sort);
+    // window.console.log("/components/article.js: "sort);
     if(sort == 'date:asc'){
       $container.mixItUp('sort', sort);
       $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:dsc');
