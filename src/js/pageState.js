@@ -22,7 +22,18 @@ $.behaviors('body', pageState);
 
 // Revert to a previously saved state
 window.addEventListener('popstate', function(event) {
+
+  if(location.hash) {
+    // The user has typed the hash and hit enter
+    var data = {
+      activeTab: location.hash
+    }
+    updateContent(data);
+    return;
+  }
+
   updateContent(event.state);
+
 });
 
   function pageState(body) {
@@ -45,10 +56,12 @@ window.addEventListener('popstate', function(event) {
   }
 
   function updateContent(data) {
-    // window.console.log("pageState: data", data);
-    // window.console.log("pageState: activeTab", data.activeTab);
     var activeTab = $("[data-target='"+data.activeTab+"'], [href='"+data.activeTab+"']").first();
-    if(activeTab) activeTab.trigger('click');
+    if(activeTab.length) {
+      activeTab.trigger('click');
+    } else {
+      window.console.log("updateContent NO SUCH ANCHOR");
+    }
 
   }
 

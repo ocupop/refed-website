@@ -25,9 +25,17 @@ $.behaviors('[data-toggle="tab"]', initTab);
 
     tab.on('shown.bs.tab', function (e) {
       var hash = e.target.hash;
+      var tabClass = "activeTab_" + hash.replace("#","");
       var data = {
         activeTab: e.target.hash
       };
+
+      // TODO - Refactor to call pageState object and update from multiple tabs
+      $('body').removeClass(function(index, className) {
+                  return (className.match (/(^|\s)activeTab_\S+/g) || []).join(' ');
+                })
+               .addClass(tabClass);
+
       if (typeof hash != 'undefined' && hash != '') {
         if (history && history.pushState) {
           window.history.pushState(data, 'ReFED', window.location.pathname + window.location.search + hash);
