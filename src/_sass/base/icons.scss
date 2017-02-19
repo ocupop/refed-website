@@ -105,6 +105,10 @@ i {
 .icon-caret-up:before {
     content: "\e917";
 }
+.icon-caret-down:before {
+    transform: rotate(90deg);
+    content: "\e917";
+}
 .icon-cloud:before {
     content: "\e918";
 }

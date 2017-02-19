@@ -1,4 +1,14 @@
 button {
+  padding: 0 20px;
+  color: $link-color;
+  border: none;
+  background: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  i {
+    display: inline-block;
+    font-size: inherit;
+  }
   &:active,
   &:focus {
     outline: none;
@@ -13,6 +23,12 @@ button {
     &:hover {
       color: $link-hover-color;
     }
+  }
+  &.sort {
+    color: $text-color;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 13px;
   }
 }
 
