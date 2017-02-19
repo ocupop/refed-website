@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-load_innovator_map({
+load_innovatorMap({
    "innovators": [
 {% for innovator in site.innovators %}
  {
@@ -9,7 +9,7 @@ load_innovator_map({
    "city": "{{ innovator.city }}",
    "state": "{{ innovator.state }}",
    "country": "{{ innovator.country }}",
-   "innovator_reach": "{{ innovator.innovator_reach }}",
+   "innovator_reach": "{{ innovator.innovator_reach | downcase }}",
    "description": "{{ innovator.description | xml_escape }}",
    "organization_status": "{{ innovator.organization_status }}",
    "food_recovery_hierarchy": "{{ innovator.food_recovery_hierarchy }}",
@@ -21,7 +21,8 @@ load_innovator_map({
    "facebook": "{{ innovator.facebook }}",
    "twitter": "{{ innovator.twitter }}",
    "linkedin": "{{ innovator.linkedin }}",
-   "email": "{{ innovator.email }}"
+   "email": "{{ innovator.email }}",
+   "geolocation": ["{{ innovator.lat }}","{{ innovator.lng }}" ]
  }{% unless forloop.last %},{% endunless %}
  {% endfor %}
  ]})

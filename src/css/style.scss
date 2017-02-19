@@ -63,18 +63,18 @@
 
 
 // Tools
-@import "tools/policy/main";
-@import "tools/policy/map";
-@import "tools/policy/map_legend";
-@import "tools/policy/header";
-@import "tools/policy/date_labels";
+@import "tools/food-waste-policy-finder/main";
+@import "tools/food-waste-policy-finder/map";
+@import "tools/food-waste-policy-finder/map_legend";
+@import "tools/food-waste-policy-finder/header";
+@import "tools/food-waste-policy-finder/tooltip";
+@import "tools/food-waste-policy-finder/federal_policy";
 
-@import "tools/policy/federal_policy";
-@import "tools/policy/carousel";
-@import "tools/policy/tooltip";
-@import "tools/policy/quiz";
+@import "tools/spotlight-on-date-labeling-regulations/date_labels";
+@import "tools/spotlight-on-date-labeling-regulations/carousel";
+@import "tools/spotlight-on-date-labeling-regulations/quiz";
 
-@import "tools/innovation/innovator-database";
+@import "tools/innovator-database/map";
 
 // Views
 @import "views/page_layout";

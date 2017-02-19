@@ -22,7 +22,7 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
  */
 (function() {
 
-$.behaviors('.innovatorMap', innovatorMap);
+$.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   // var locations = [
   //   {lat: -31.563910, lng: 147.154312},
@@ -49,15 +49,19 @@ $.behaviors('.innovatorMap', innovatorMap);
   //   {lat: -42.735258, lng: 147.438000},
   //   {lat: -43.999792, lng: 170.463352}
   // ];
-
-  function innovatorMap(container) {
+  var innovatorMap;
+  function innovatorDatabase_map(container) {
     // container = $(container);
-    // var options = {
-    //   zoom: 2,
-    //   center: new google.maps.LatLng(2.8,-187.3),
-    //   mapTypeId: 'terrain'
-    // };
-    // var map = new google.maps.Map(container, options);
+
+    var options = {
+      zoom: 4,
+      // mapTypeId: 'terrain',
+      gestureHandling: 'none',
+      center: new google.maps.LatLng(41.850033, -100.6500523)
+      // center: {lat: -28.024, lng: 140.887}
+    };
+
+    innovatorMap = new google.maps.Map(container, options);
 
     // Create a <script> tag and set the Innovator Database URL as the source.
     var script = document.createElement('script');
@@ -69,22 +73,47 @@ $.behaviors('.innovatorMap', innovatorMap);
 
   // Loop through the results array and place a marker for each
   // set of coordinates.
-  window.load_innovator_map = function(results) {
-    // window.console.log("innovatorMap: Load Map",results);
+  window.load_innovatorMap = function(results) {
+    // window.console.log("innovatorDatabase_map: Load Map",results);
+    // var markers = [];
 
-    // for (var i = 0; i < results.features.length; i++) {
-    //   var coords = results.features[i].geometry.coordinates;
-    //   var latLng = new google.maps.LatLng(coords[1],coords[0]);
-    //   var marker = new google.maps.Marker({
-    //     position: latLng,
-    //     map: map
-    //   });
-    // }
+    var iconBase = '/img/icons/maps/markers/';
+    var icons = {
+      national: {
+        icon: iconBase + 'national.png'
+      },
+      local: {
+        icon: iconBase + 'local.png'
+      }
+    };
+
+    for (var i = 0; i < results.innovators.length; i++) {
+      var geolocation = results.innovators[i].geolocation;
+      var location = new google.maps.LatLng(geolocation[0],geolocation[1]);
+      var reach = results.innovators[i].innovator_reach;
+      var marker = new google.maps.Marker({
+        position: location,
+        icon: icons[reach].icon,
+        title: results.innovators[i].name,
+        // animation: google.maps.Animation.DROP,
+        map: innovatorMap
+      });
+      marker.details = results.innovators[i];
+      marker.addListener('click', function() {
+        window.console.log(this.details);
+        // innovatorMap.setZoom(8);
+        // innovatorMap.setCenter(this.getPosition());
+      });
+      // markers.push(marker);
+    }
+
+    // Add a marker clusterer to manage the markers.
+    // var markerCluster = new MarkerClusterer(innovatorMap, markers, {imagePath: '/img/innovator-database/markers/m'});
   }
 
 
-  window.initMap = function() {
-    window.console.log("initMap");
+  // window.initMap = function() {
+  //   window.console.log("initMap");
     // var map = new google.maps.Map(document.getElementById('map'), {
     //   zoom: 3,
     //   center: {lat: -28.024, lng: 140.887}
@@ -107,7 +136,7 @@ $.behaviors('.innovatorMap', innovatorMap);
     // // Add a marker clusterer to manage the markers.
     // var markerCluster = new MarkerClusterer(map, markers,
     //     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-  }
+  // }
 
 })();
 
