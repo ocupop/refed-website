@@ -51,8 +51,19 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
   // ];
   var innovatorMap;
   function innovatorDatabase_map(container) {
-    // container = $(container);
 
+    if (typeof google === "undefined") {
+        window.console.log("Gotta load google maps");
+        // lazyLoadGoogleMaps();
+    } else {                
+        window.console.log("Google Maps is already loaded: Initialize autocomplete");
+        // googleMapsLoaded();
+        initMap(container);
+    }
+
+  }
+
+  function initMap(container) {
     var options = {
       zoom: 4,
       // mapTypeId: 'terrain',
@@ -68,7 +79,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     // This example uses a jsonp data source from the jekyll built
     script.src = '/data/innovators.js';
     document.getElementsByTagName('head')[0].appendChild(script);
-
   }
 
   // Loop through the results array and place a marker for each
@@ -110,33 +120,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     // Add a marker clusterer to manage the markers.
     // var markerCluster = new MarkerClusterer(innovatorMap, markers, {imagePath: '/img/innovator-database/markers/m'});
   }
-
-
-  // window.initMap = function() {
-  //   window.console.log("initMap");
-    // var map = new google.maps.Map(document.getElementById('map'), {
-    //   zoom: 3,
-    //   center: {lat: -28.024, lng: 140.887}
-    // });
-
-    // // Create an array of alphabetical characters used to label the markers.
-    // var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-    // // Add some markers to the map.
-    // // Note: The code uses the JavaScript Array.prototype.map() method to
-    // // create an array of markers based on a given "locations" array.
-    // // The map() method here has nothing to do with the Google Maps API.
-    // var markers = locations.map(function(location, i) {
-    //   return new google.maps.Marker({
-    //     position: location,
-    //     label: labels[i % labels.length]
-    //   });
-    // });
-
-    // // Add a marker clusterer to manage the markers.
-    // var markerCluster = new MarkerClusterer(map, markers,
-    //     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-  // }
 
 })();
 

@@ -29,8 +29,8 @@
 <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup-pagination.min.js"></script>
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM"></script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM&libraries=places"
+        async defer></script>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -62,8 +62,9 @@
 
 
 <!-- Components -->
+
+
 <script src="/js/components/share.js"></script>
-<script src="/js/components/charts/reduction_chart.js"></script>
 <script src="/js/components/solutionCards.js"></script>
 <script src="/js/components/supplyChain.js"></script>
 <script src="/js/components/siteSearch.js"></script>
@@ -71,6 +72,12 @@
 <script src="/js/components/articles.js"></script>
 <script src="/js/components/menuToggle.js"></script>
 <script src="/js/components/toc.js"></script>
+
+<!-- Charts -->
+<script src="/js/components/charts/reduction_chart.js"></script>
+
+<!-- Maps -->
+<script src="/js/components/maps/locationField.js"></script>
 
 <!-- Tools -->
 <script src="/js/tools/innovator-database/map.js"></script>

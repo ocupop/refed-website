@@ -1,10 +1,12 @@
-<section class="alt-bg hide">
+<section class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <div class="content">
           <h4>Search by location</h4>
-          <input type="text" placeholder="Enter zip code">
+          <input id="autocomplete" placeholder="Enter your address"
+                   onFocus="geolocate()" type="text" class="locationField"></input>
+
           <h4>Filter by details</h4>
           <div class="select">
             <select placeholder="Status">
