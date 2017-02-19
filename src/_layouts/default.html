@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
+  <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}" data-spy="scroll" data-target="#tableofcontents">
     {% if page.url contains 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}
       {% include elements/pageHeader.html %}
     {% endif %}
-    <div id="pageContent" class="{% if page.sidebar %}sidebar {{ page.sidebar }}{% endif %}">
+    <div id="pageContent" class="{% if page.sidebar %}sidebar{% endif %}">
       {% include search-results.html %}
       <main>
         {% if page.breadcrumb %}
@@ -16,7 +16,7 @@
         {{ content }}
       </main>
       {% if page.sidebar %}
-        <aside class="sidebar {{ page.sidebar }}">
+        <aside class="{{ page.sidebar }}Sidebar">
           {% if page.sidebar == 'toc' %}
             <div class="sticky" data-offset-top="70">
               <div class="content">
