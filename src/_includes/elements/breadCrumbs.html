@@ -31,16 +31,13 @@
           <li><a href="/">Refed</a></li>
           {% for crumb in crumbs offset: 1 %}
             {% if forloop.last %}
-              / {{ crumb | replace:'-',' ' }}
+              <li class="active">{{ crumb | replace:'-',' ' }}</li>
             {% else %}
-              / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a>
+              <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a></li>
             {% endif %}
           {% endfor %}
-          <li><div class="updated_at" style="border-left: 1px solid #555759; padding-left: 30px; margin-left: 20px;">
-        <em>Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }}.</em>
-        Have an update for us? &nbsp;&nbsp;<a href="mailto:info@refed.com">Submit it here &gt;</a>
-      </div></li>
         </ol>
+        <p><em>(Last Updated {{ page.last_modified_at | date: "%m/%d/%Y" }})</em></p>
       </div>
     </div>
   </div>
