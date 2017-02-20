@@ -44,7 +44,7 @@ collections:
   states:
     output: true
     layout: state
-    permalink: /tools/food-waste-policy-finder/:path
+    permalink: /tools/food-waste-policy-finder/states/:path
   innovators:
     output: true
     layout: innovator

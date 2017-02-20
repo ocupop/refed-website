@@ -92,7 +92,7 @@ $.behaviors('.mapnav', initMapNav);
         if(checked) {
           var showStudies = $el.find('.study-filter:checked').length;
           var section = $(this).closest('.section_root').attr('data-section');
-          var activeClass = "map " + cat + " " + section;
+          var activeClass = "policyFinder_map " + cat + " " + section;
           
           $(this).siblings('.collapse').each(function() {
             var children = $(this).find('.map-subfilter');

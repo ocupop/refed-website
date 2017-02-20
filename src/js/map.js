@@ -18,7 +18,7 @@
  */
 (function() {
 
-$.behaviors('.map', initMap);
+$.behaviors('.policyFinder_map', initMap);
 
   function initMap(map) {
     var width = 960,
@@ -54,7 +54,7 @@ $.behaviors('.map', initMap);
         .attr('class', 'states')
         .attr('id', function(d) { return d.properties.name.trim(); })
         .on('click', function(d) {
-          var url = "/states/"+d.properties.name.trim();
+          var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.trim();
           window.location.href = url;
         });
 

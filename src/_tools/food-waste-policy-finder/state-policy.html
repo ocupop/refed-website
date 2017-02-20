@@ -5,24 +5,19 @@ header: <small>U.S. Food Waste</small>Policy Finder
 tool_url: /tools/food-waste-policy-finder/
 
 sidebar: default
-breadcrumb: true
 ---
 <section class="map-section">
-  <div class="container">
-    <div class="row middle-xs center-xs">
-      <div class="col-xs-12">
-        <div class="map">
-          {% include_relative _partials/map_legend.html %}
-          <!-- 
-          <div id="map-instructions">
-            <div class="content">
-              <h4>U.S. Food Waste Policy Finder</h4>
-              <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
-            </div>
-          </div>
-           -->
+  <div class="content">
+    <div class="policyFinder_map">
+      {% include_relative _partials/map_legend.html %}
+      <!-- 
+      <div id="map-instructions">
+        <div class="content">
+          <h4>U.S. Food Waste Policy Finder</h4>
+          <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
         </div>
       </div>
+       -->
     </div>
   </div>
 </section>
@@ -31,7 +26,7 @@ breadcrumb: true
 
 {% contentfor sidebar %}
   <!-- Desktop: Map Filters -->
-  <div class="mapnav" data-target=".map">
+  <div class="mapnav" data-target=".policyFinder_map">
     <div class="nav_category" data-category="prevention">
       <h4 class="prevention"
           data-toggle="collapse"
@@ -55,7 +50,7 @@ breadcrumb: true
             </label>
           </li>
         </ul>
-        <a href="/tools/policy/date-labeling" class="button cream">Explore date labeling policy issues in depth&nbsp;&gt;</a>
+        <a href="/tools/spotlight-on-date-labeling-regulations" class="button cream">Explore date labeling policy issues in depth&nbsp;&gt;</a>
       </div>
     </div>
 
