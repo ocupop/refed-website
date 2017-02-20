@@ -1,6 +1,7 @@
 .lineClamp {
   position: relative;
   height: auto;
+  padding-bottom: 3em;
   overflow: hidden;
   @include transition(.4s);
   &:after {
@@ -10,7 +11,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 1em;
+    height: 3em;
     background: linear-gradient(to bottom, rgba(247, 245, 240, 0), rgba(247, 245, 240, 1) 50%);
   }
   &.open {
@@ -27,4 +28,16 @@
   padding: 0;
   margin: 0 0 20px 0;
   font-style: italic;
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .lineClamp {}
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .lineClamp {}
+}
+
+@media all and (max-width: $screen-md-max) {
+  .lineClamp {}
 }

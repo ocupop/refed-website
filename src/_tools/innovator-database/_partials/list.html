@@ -10,7 +10,7 @@
     </div>
     <ul class="innovatorDatabase_list">
       {% for innovator in site.innovators %}
-        <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.category | slugify }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy">
+        <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.innovator_category | slugify }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy">
           <div class="row">
             <div class="col-xs-12 col-sm-8">
               <div class="content">
