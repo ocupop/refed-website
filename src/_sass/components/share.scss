@@ -17,10 +17,10 @@
     top: 0;
   }
   .links {
-    width: 29%;
+    width: 100%;
   }
   input {
-    width: 70%;
+    width: 100%;
   }
   p {
     font-size: 12px;
@@ -33,12 +33,23 @@
     position: absolute;
     right: 30px;
     top: 15px;
+    z-index: 1000;
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
   #share-instructions {
-    height: 160px;
-    top: -160px;
+    height: 190px;
+    top: -190px;
+    padding-top: 20px;
+    input {
+      margin-top: -5px;
+    }
+    .links {
+      width: 100%;
+    }
+    .content {
+      padding: 5px 20px;
+    }
   }
 }
