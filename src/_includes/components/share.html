@@ -1,9 +1,23 @@
-<div id="share-instructions" class="cream content">
+<div id="share-instructions" class="cream">
   <span class="close">x</span>
-  <div class="links">
-    <a class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//www.refed.com{{ page.url}}" target="_blank"><i class="icon icon-facebook"></i></a>
-    <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A//www.refed.com{{ page.url}}&amp;text={{ page.title }}+%7C+Rethink+Food+Waste&amp;hashtags=refed" target="_blank"><i class="icon icon-twitter"></i></a>
-    <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.refed.com{{ page.url}}&title={{ page.title }}&summary=[EXCERPT]&source=" target="_blank"><i class="icon icon-linkedin"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="content">
+          <h6>{{ page.title }}</h6> {{ page.description | truncate: 140 }}
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="content">
+          <div class="links">
+            <a class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}" target="_blank"><i class="icon icon-facebook"></i></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&amp;text={{ page.title }}+%7C+Rethink+Food+Waste&amp;hashtags=refed" target="_blank"><i class="icon icon-twitter"></i></a>
+            <a class="mail" href="mailto:?subject=Refed - {{ page.title }}"><i class="icon icon-mail"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&title={{ page.title }}&summary=[EXCERPT]&source=" target="_blank"><i class="icon icon-linkedin"></i></a>
+          </div>
+          <input type="text" value="{{ site.url }}{{ page.url | remove: '/index'}}">
+        </div>
+      </div>
+    </div>
   </div>
-  <input type="text" value="http://www.refed.com{{ page.url }}">
 </div>

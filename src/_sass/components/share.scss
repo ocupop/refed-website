@@ -1,11 +1,11 @@
 #share-instructions {
   position: fixed;
-  top: -100px;
-  height: 100px;
+  top: -125px;
+  height: 125px;
   left:0;
   width: 100%;
   background: $cream;
-  padding: 20px;
+  padding: 0;
   z-index:1000;
   @include transition(.4s);
   a {
@@ -14,19 +14,16 @@
     }
   }
   &.active {
-    padding: 20px;
     top: 0;
-    // &:before {
-    //   position: fixed;
-    //   top:0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   content: '';
-    //   background-color: rgba(0,0,0,.7);
-    //   display: block;
-    //   z-index:888;
-    // }
+  }
+  .links {
+    width: 29%;
+  }
+  input {
+    width: 70%;
+  }
+  p {
+    font-size: 12px;
   }
   .close {
     font-weight: 100;
@@ -34,8 +31,8 @@
     text-shadow: none;
     opacity: 1;
     position: absolute;
-    right: 10px;
-    top: 0px;
+    right: 30px;
+    top: 15px;
   }
 }
 

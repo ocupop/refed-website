@@ -22,7 +22,7 @@ $.behaviors('.share', initShare);
 
   function initShare(button) {
     button = $(button);
-
+    window.console.log('share.js: share ready');
     var close = $('#share-instructions .close');
     var share_instructions = $('#share-instructions');
 
@@ -34,6 +34,10 @@ $.behaviors('.share', initShare);
     close.on('click', function(){
       share_instructions.removeClass('active');
     });
+
+    $(window).bind('hashchange', function() {
+      window.console.log("share.js: hashchange");
+    }); 
 
   }
 
