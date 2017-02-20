@@ -6,27 +6,30 @@
   }
   aside {
     display: none;
-    // Set default styles
     background-color: $cream-light;
     box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
+    z-index: 99;
     @include transition();
   }
 
   &.sidebar {
     display: flex;
-    flex-wrap: wrap;
-    main {
-      display: block;
+    flex-wrap: nowrap;
+    main, .main {
       width: 70%;
-      left: 0;
       .container {
-        width: auto !important;
+        width: 100%;
+        max-width: $live-content-width * 0.7;
+        margin-right: 0;
       }
     }
-    aside {
+    aside, .aside {
       display: block;
       width: 30%;
-      left: 0;
+      .content {
+        width: 100%;
+        max-width: $live-content-width * 0.3;
+      }
     }
   }
 }
@@ -35,14 +38,28 @@
 @media all and (max-width: $screen-xs-max) {
 
 }
+
 @media all and (max-width: $screen-sm-max) {
   #pageContent {
     &.sidebar {
+      display: block;
+      // flex-wrap: wrap;
       main {
         width: 100%;
+        .container {
+          max-width: none;
+          margin: 0 auto;
+        }
       }
       aside {
-        width: 100%;
+        width: 320px;
+        position: absolute;
+        top: 0;
+        left: -350px;
+        height: 100%;
+        .content {
+          max-width: none;
+        }
       }
     }
   }

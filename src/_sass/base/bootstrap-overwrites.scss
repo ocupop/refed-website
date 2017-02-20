@@ -77,12 +77,23 @@
   padding: 0;
   margin: 0;
   text-transform: capitalize;
+  background-color: transparent;
   li {
+    padding: 0;
     margin-bottom: 0;
+    font-weight: 100;
     &:first-of-type {
       padding-left: 0;
     }
+    a {
+      // color: $gray;
+    }
   }
+}
+.breadcrumb>li+li:before {
+  padding: 0 4px;
+  color: $gray;
+  content: "\003e";
 }
 
 @media all and (max-width: $screen-xs-max) {

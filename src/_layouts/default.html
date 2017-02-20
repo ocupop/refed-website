@@ -9,8 +9,10 @@
     {% else %}
       {% include elements/pageHeader.html %}
     {% endif %}
+
+    {% include search-results.html %}
+
     <div id="pageContent" class="{% if page.sidebar %}sidebar{% endif %}">
-      {% include search-results.html %}
       <main>
         {% if page.breadcrumb %}
           {% include elements/breadCrumbs.html%}
@@ -30,13 +32,14 @@
           {% endif %}
         </aside>
       {% endif %}
-      {% include elements/pageHelp.html %}
     </div>
     {% if page.url contains 'tool' %}
       {% include elements/toolFooter.html %}
     {% else %}
       {% include elements/pageFooter.html %}
     {% endif %}
+
+    {% include elements/pageHelp.html %}
     
     {% include thanks.html %}
     <!-- TODO - Include the policy tool tooltip -->
