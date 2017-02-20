@@ -1,5 +1,26 @@
 .innovatorDatabase_filters {
-  
+  padding: 10px 0;
+  h4 {
+    font-size: 14px;
+  }
+  input, select {
+    height: 32px;
+    line-height: 32px;
+  }
+  .select {
+    &:after {
+      top: 12px;
+    }
+  }
+  .button {
+    height: 32px;
+  }
+}
+
+body.activeTab_innovatorSearch {
+  .innovatorDatabase_filters {
+    margin-top: -100px;
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {
