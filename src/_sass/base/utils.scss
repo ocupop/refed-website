@@ -149,6 +149,16 @@ a.external {
   text-transform: capitalize !important;
 }
 
+.editable {
+  ul {
+    padding-left: 20px;
+    margin-bottom: 1.5em;
+    li {
+      list-style: disc;
+    }
+  }
+}
+
 
 @media all and (max-width: $screen-xs-max) {
   // breaks go to full width
