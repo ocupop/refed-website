@@ -1,12 +1,12 @@
 /**
  * [jQuery-stickit]{@link https://github.com/emn178/jquery-stickit}
  *
- * @version 0.2.9
+ * @version 0.2.12
  * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2014-2016
+ * @copyright Chen, Yi-Cyuan 2014-2017
  * @license MIT
  */
-(function ($, window, document) {
+(function ($) {
   var KEY = 'jquery-stickit';
   var SPACER_KEY = KEY + '-spacer';
   var SELECTOR = ':' + KEY;
@@ -28,30 +28,7 @@
     Absolute: 2
   };
 
-  var init = false;
-
-  function throttle(func) {
-    var delay = 10;
-    var lastTime = 0;
-    var timer;
-    return function () {
-      var self = this, args = arguments;
-      var exec = function () {
-        lastTime = new Date();
-        func.apply(self, args);
-      };
-      if (timer) {
-        clearTimeout(timer);
-        timer = null;
-      }
-      var diff = new Date() - lastTime;
-      if (diff > delay) {
-        exec();
-      } else {
-        timer = setTimeout(exec, delay - diff);
-      }
-    };
-  }
+  var init = false, lock = false;
 
   $.expr[':'][KEY] = function (element) {
     return !!$(element).data(KEY);
@@ -210,24 +187,24 @@
   Sticker.prototype.bound = function () {
     var element = this.element;
     if (!IE7 && element.css('box-sizing') == 'border-box') {
-      var bl = parseInt(element.css('border-left-width')) || 0;
-      var br = parseInt(element.css('border-right-width')) || 0;
-      var pl = parseInt(element.css('padding-left')) || 0;
-      var pr = parseInt(element.css('padding-right')) || 0;
+      var bl = parseFloat(element.css('border-left-width')) || 0;
+      var br = parseFloat(element.css('border-right-width')) || 0;
+      var pl = parseFloat(element.css('padding-left')) || 0;
+      var pr = parseFloat(element.css('padding-right')) || 0;
       this.extraWidth = bl + br + pl + pr;
     } else {
       this.extraWidth = 0;
     }
     
     this.margin = {
-      top: parseInt(element.css('margin-top')) || 0,
-      bottom: parseInt(element.css('margin-bottom')) || 0,
-      left: parseInt(element.css('margin-left')) || 0,
-      right: parseInt(element.css('margin-right')) || 0
+      top: parseFloat(element.css('margin-top')) || 0,
+      bottom: parseFloat(element.css('margin-bottom')) || 0,
+      left: parseFloat(element.css('margin-left')) || 0,
+      right: parseFloat(element.css('margin-right')) || 0
     };
     this.parent = {
       border: {
-        bottom: parseInt(element.parent().css('border-bottom-width')) || 0
+        bottom: parseFloat(element.parent().css('border-bottom-width')) || 0
       }
     };
   };
@@ -236,7 +213,8 @@
     this.baseTop = this.margin.top + this.options.top;
     this.basePadding = this.baseTop + this.margin.bottom;
     this.baseParentOffset = this.options.extraHeight - this.parent.border.bottom;
-    this.offsetHeight = Math.max(this.element.height() - screenHeight, 0);
+    this.offsetHeight = this.options.overflowScrolling ? Math.max(this.element.outerHeight(false) + this.basePadding - screenHeight, 0) : 0;
+    this.minOffsetHeight = -this.offsetHeight;
   };
 
   Sticker.prototype.reset = function () {
@@ -247,7 +225,7 @@
       this.trigger('unstick');
     }
     this.stick = Stick.None;
-    this.spacer.css('width', '');    
+    this.spacer.css('width', this.origStyle.width);
     this.spacer[0].style.cssText += ';display: none !important';
     this.restore();
     this.element.removeClass(this.options.className);
@@ -279,6 +257,9 @@
     } else {
       this.trigger('unend');
     }
+    if (!this.options.overflowScrolling) {
+      offsetY = 0;
+    }
     this.stick = Stick.Fixed;
     this.lastY = lastY;
     this.offsetY = offsetY;
@@ -296,9 +277,13 @@
     if (this.offsetHeight == 0 || !this.options.overflowScrolling) {
       return;
     }
-    this.offsetY = Math.max(this.offsetY + newY - this.lastY, -(this.options.top + this.offsetHeight));
-    this.offsetY = Math.min(this.offsetY, 0);
+    var offsetY = Math.max(this.offsetY + newY - this.lastY, this.minOffsetHeight);
+    offsetY = Math.min(offsetY, 0);
     this.lastY = newY;
+    if (this.offsetY == offsetY) {
+      return;
+    }
+    this.offsetY = offsetY;
     this.element.css('top', (this.options.top + this.offsetY) + 'px');
   };
 
@@ -357,7 +342,7 @@
         if (this.options.scope == Scope.Document) {
           this.setFixed(left, rect.bottom, 0);
         } else {
-          if (rect2.bottom + this.baseParentOffset <= element.outerHeight(false) + this.basePadding) {
+          if (rect2.bottom + this.baseParentOffset + this.offsetHeight <= element.outerHeight(false) + this.basePadding) {
             this.setAbsolute(this.element.position().left);
           } else {
             this.setFixed(left + OFFSET, rect.bottom, 0);
@@ -375,24 +360,8 @@
     this.updateOptions();
     this.bound();
     this.precalculate();
-    if (this.stick == Stick.None) {
-      this.locate();
-      return;
-    }
-    var element = this.element;
-    var spacer = this.spacer;
-    if (this.lastValues.width != spacer.width()) {
-      element.width(this.lastValues.width = spacer.width());
-    }
-    if (this.lastValues.height != spacer.height()) {
-      spacer.height(this.lastValues.height = spacer.height());
-    }
-    if (this.stick == Stick.Fixed) {
-      var rect = this.spacer[0].getBoundingClientRect();
-      var left = rect.left - this.margin.left;
-      if (this.lastValues.left != left + 'px') {
-        element.css('left', this.lastValues.left = left + 'px');
-      }
+    if (this.stick !== Stick.None) {
+      this.reset();
     }
     this.locate();
   };
@@ -418,14 +387,22 @@
   }
 
   function refresh() {
+    lock = true;
     $(SELECTOR).each(function () {
       $(this).data(KEY).refresh();
+    });
+    setTimeout(function () {
+      lock = false;
     });
   }
 
   function scroll() {
+    lock = true;
     $(SELECTOR).each(function () {
       $(this).data(KEY).locate();
+    });
+    setTimeout(function () {
+      lock = false;
     });
   };
 
@@ -436,15 +413,22 @@
     });
   }
 
+  function mutationUpdate(records) {
+    if (!lock) {
+      refresh();
+    }
+  }
+
   var PublicMethods = ['destroy', 'refresh'];
   $.fn.stickit = function (method, options) {
     // init
     if (typeof(method) == 'string') {
       if ($.inArray(method, PublicMethods) != -1) {
+        var args = arguments;
         this.each(function () {
           var sticker = $(this).data(KEY);
           if (sticker) {
-            sticker[method].apply(sticker, options);
+            sticker[method].apply(sticker, Array.prototype.slice.call(args, 1));
           }
         });
       }
@@ -459,7 +443,7 @@
         });
 
         if (MUTATION) {
-          var observer = new MutationObserver(throttle(refresh));
+          var observer = new MutationObserver(mutationUpdate);
           observer.observe(document, { 
             attributes: true, 
             childList: true, 
@@ -486,4 +470,4 @@
   $.stickit = {
     refresh: refresh
   };
-})(jQuery, window, document);
+})(jQuery);
