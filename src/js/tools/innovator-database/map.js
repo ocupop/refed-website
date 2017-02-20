@@ -42,7 +42,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
   function initMap(container) {
     var options = {
       zoom: 5,
-      mapTypeId: 'terrain',
+      // mapTypeId: 'terrain',
       gestureHandling: 'none',
       // center: new google.maps.LatLng(41.850033, -100.6500523)
       center: {lat: 41.850033, lng: -95.6500523}
