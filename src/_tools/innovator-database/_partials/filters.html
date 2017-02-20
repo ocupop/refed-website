@@ -1,35 +1,46 @@
 <section class="alt-bg innovatorDatabase_filters">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h4>Search by location</h4>
-          <input id="autocomplete" placeholder="Enter your address"
-                   onFocus="geolocate()" type="text" class="locationField"></input>
-
-          <h4>Filter by details</h4>
-          <div data-filter-group class="select">
-            <select>
-              <option value="">Status</option>
-              <option value=".nonprofit">Nonprofit</option>
-              <option value=".for-profit">For-Profit</option>
-            </select>
+      <div class="col-xs-12 col-md-3">
+        <h4>Search by location</h4>
+        <input id="autocomplete" placeholder="Enter your address"
+                 onFocus="geolocate()" type="text" class="locationField"></input>
+      </div>
+      <div class="col-xs-12 col-md-7">
+        <h4>Filter by details</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <div data-filter-group class="select">
+              <select>
+                <option value="">Status</option>
+                <option value=".nonprofit">Nonprofit</option>
+                <option value=".for-profit">For-Profit</option>
+              </select>
+            </div>
           </div>
-          <div data-filter-group class="select">
-            <select>
-              <option value="">Food Recovery Hierarchy</option>
-              <option value=".prevention">Prevention</option>
-              <option value=".recovery">Recovery</option>
-              <option value=".recycling">Recycling</option>
-            </select>
+          <div class="col-xs-12 col-sm-3">
+            <div data-filter-group class="select">
+              <select>
+                <option value="">Category</option>
+              </select>
+            </div>
           </div>
-          <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
-          <button type="reset" class="hide">Reset</button>
-          <div class="control-group">
-              <button type="button" class="control control-sort" data-sort="default:asc">Asc</button>
-              <button type="button" class="control control-sort" data-sort="default:desc">Desc</button>
+          <div class="col-xs-12 col-sm-6">
+            <div data-filter-group class="select">
+              <select>
+                <option value="">Food Recovery Hierarchy</option>
+                <option value=".prevention-hierarchy">Prevention</option>
+                <option value=".recovery-hierarchy">Recovery</option>
+                <option value=".recycling-hierarchy">Recycling</option>
+              </select>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="col-xs-12 col-md-2">
+        <h4 class="transparent">Share</h4>
+        <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
+        <!-- <button type="reset" class="inline">Reset</button> -->
       </div>
     </div>
   </div>
