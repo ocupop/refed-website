@@ -1,5 +1,5 @@
 
-#date-label-policy-issues {
+.carousel-datelabel{
   .item {
     min-height: 400px;
     i {
@@ -57,20 +57,20 @@
 
 
 @media all and (max-width: $screen-xs-max) {
-  #date-label-policy-issues {
+  .carousel-datelabel {
   
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
-  #date-label-policy-issues {
+  .carousel-datelabel {
     // #start-slides { position: relative; bottom: 0; }
     .item { min-height: 100px; }
   }
 }
 
 @media all and (max-width: $screen-md-max) {
-  #date-label-policy-issues {
+  .carousel-datelabel {
 
   }
 }
