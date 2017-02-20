@@ -21,7 +21,8 @@
 $.behaviors('.quiz', quiz);
 
   function quiz(test) {
-    var questions = $(test).find('.question');
+    test = $(test);
+    var questions = test.find('.question');
 
     questions.each(function() {
       var $question = $(this);
@@ -35,8 +36,22 @@ $.behaviors('.quiz', quiz);
         checkAnswer($question);
       });
     });
+
+    $(window).on('hide.bs.tab', function(e) {
+      resetTest(test);
+    });
   }
 
+  function resetTest(test) {
+    window.console.log("reset");
+    var questions = test.find('.question'),
+        choices = test.find('.choices'),
+        answers = test.find('.checkbox');
+    
+    questions.addClass('incomplete');
+    choices.removeClass('active');
+    answers.removeClass('incorrect').find('input').attr('checked', false).attr('disabled', false);
+  }
   function checkTest() {
     var incomplete = $('.incomplete').length;
     if(!incomplete) { gradeTest(); }

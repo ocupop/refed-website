@@ -124,6 +124,11 @@
     $('#labeling-carousel-intro').hide();
     $('.carousel-datelabel').fadeIn();
   });
+
+  $(window).on('hide.bs.tab', function(e) {
+    $('#labeling-carousel-intro').fadeIn();
+    $('.carousel-datelabel').hide();
+  });
    
 </script>
 
