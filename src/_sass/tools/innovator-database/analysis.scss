@@ -1,0 +1,35 @@
+.innovatorDatabase_categories {
+  h3 {
+    margin-top: 0;
+  }
+  .button {
+    height: 32px;
+    font-size: 14px;
+    margin-top: 25px;
+    letter-spacing: 0;
+    text-transform: none;
+    &.cream {
+      color: $text-color;
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_categories {
+    .button {
+      margin-top: 0;
+    }
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .innovatorDatabase_categories  {
+    
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_categories  {
+
+  }
+}
