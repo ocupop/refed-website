@@ -25,6 +25,10 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   var innovatorMap;
+  // var infowindow = new google.maps.InfoWindow();
+  var marker,
+      markers = [],
+      searchLocation = null;
 
   function innovatorDatabase_map(container) {
 
@@ -80,6 +84,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       var marker = new google.maps.Marker({
         position: location,
         icon: icons[reach].icon,
+        opacity: 0.7,
         title: results.innovators[i].name,
         // animation: google.maps.Animation.DROP,
         map: innovatorMap
@@ -90,7 +95,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         // innovatorMap.setZoom(8);
         // innovatorMap.setCenter(this.getPosition());
       });
-      // markers.push(marker);
+      markers.push(marker);
     }
 
     // Add a marker clusterer to manage the markers.

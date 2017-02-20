@@ -53,8 +53,7 @@ $.behaviors('.locationField', locationField);
       lat: place.geometry.location.lat(),
       lng: place.geometry.location.lng()
     }
-
-    window.console.log(location);
+    $('body').trigger('searchLocation', [location]);
 
   }
 

@@ -26,7 +26,12 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function innovatorDatabase_list(list) {
     list = $(list);
-
+    $(window).on('searchLocation', function(event, location) {
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng),
+            compare = new google.maps.LatLng(-34.397, 150.644);
+        var distance = calcDistance(searchLocation, compare);
+        window.console.log("Distance: ", distance);
+    });
     // list.mixItUp({
     //   controls: {
     //     enable: false 
@@ -51,6 +56,13 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
     //   // }
     // });
 
+  }
+
+  function updateInnovatorDistances(location) {
+
+  }
+  function calcDistance(p1, p2) {
+    return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
   }
 
 })();
