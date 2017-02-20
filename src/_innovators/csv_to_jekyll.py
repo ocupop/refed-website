@@ -43,6 +43,19 @@ for row_index, row in enumerate(datareader):
 
 			if cell_heading == 'description':
 				cell_text = cell_heading + ': "' + cell + '"\n'
+
+			elif cell_heading == 'innovator_category':
+				cell = cell.replace(";", ",").replace(", ", ",").replace(" ", "-").lower()
+				cell_text = cell_heading + ': [' + cell + ']\n'
+			
+			elif cell_heading == 'subcategories':
+				cell = cell.replace(";", ",").replace(", ", ",").replace(" ", "-").lower()
+				cell_text = cell_heading + ': [' + cell + ']\n'
+			
+			elif cell_heading == 'solutions':
+				cell = cell.replace(";", ",").replace(", ", ",").replace(" ", "-").lower()
+				cell_text = cell_heading + ': [' + cell + ']\n'
+			
 			else:
 				cell_text = cell_heading + ": " + cell + "\n"
 
