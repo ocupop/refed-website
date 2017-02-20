@@ -33,18 +33,17 @@ $.behaviors('.innovatorDatabase_filters', innovatorDatabase_filters);
     var containerEl = document.querySelector('.innovatorDatabase_list');
 
     // Instantiate MixItUp
-
-    var mixer = mixitup(containerEl, {
-        multifilter: {
-            enable: true
-        },
-        animation: {
-            effects: 'fade translateZ(-100px)'
-        },
-        callbacks: {
-            onMixEnd: setHash // Call the setHash() method at the end of each operation
-        }
-    });
+    // var mixer = mixitup(containerEl, {
+    //     multifilter: {
+    //         enable: true
+    //     },
+    //     animation: {
+    //         effects: 'fade translateZ(-100px)'
+    //     },
+    //     callbacks: {
+    //         onMixEnd: setHash // Call the setHash() method at the end of each operation
+    //     }
+    // });
 
     // var groupsState = deserializeHash();
 

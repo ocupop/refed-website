@@ -19,6 +19,16 @@
 
 Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 
+FOR SOLUTION CARDS AND BLOG ARTICLE FILTERS
+import mixitup from 'mixitup';
+import $ from 'jquery';
+
+mixitup.use($);
+
+// MixItUp can now be used as a jQuery plugin, as per the v2 API
+
+$('.container').mixitup();
+
  */
 (function() {
 
@@ -27,10 +37,10 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
   function innovatorDatabase_list(list) {
     list = $(list);
     $(window).on('searchLocation', function(event, location) {
-        var searchLocation = new google.maps.LatLng(location.lat, location.lng),
-            compare = new google.maps.LatLng(-34.397, 150.644);
-        var distance = calcDistance(searchLocation, compare);
-        window.console.log("Distance: ", distance);
+
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
+        updateInnovatorDistances(list, searchLocation);
+
     });
     // list.mixItUp({
     //   controls: {
@@ -58,11 +68,22 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   }
 
-  function updateInnovatorDistances(location) {
+  function updateInnovatorDistances(list, searchLocation) {
 
+    list.find('.innovator').each(function() {
+        var lat = $(this).data('lat')/1,
+            lng = $(this).data('lng')/1,
+            position = new google.maps.LatLng(lat, lng);
+
+        var distance = calcDistance(position, searchLocation);
+
+        $(this).find('.distance').text(distance);
+        $(this).attr('data-distance', distance);
+        // list.mixItUp({});
+    });
   }
   function calcDistance(p1, p2) {
-    return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
+    return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) * 0.000621371).toFixed(0);
   }
 
 })();
