@@ -1,4 +1,4 @@
-<section class="alt-bg">
+<section class="alt-bg innovatorDatabase_filters">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -8,22 +8,27 @@
                    onFocus="geolocate()" type="text" class="locationField"></input>
 
           <h4>Filter by details</h4>
-          <div class="select">
-            <select placeholder="Status">
-              <option></option>
+          <div data-filter-group class="select">
+            <select>
+              <option value="">Status</option>
+              <option value=".nonprofit">Nonprofit</option>
+              <option value=".for-profit">For-Profit</option>
             </select>
           </div>
-          <div class="select">
-            <select placeholder="Category">
-              <option></option>
-            </select>
-          </div>
-          <div class="select">
-            <select placeholder="Recovery Hierarchy">
-              <option></option>
+          <div data-filter-group class="select">
+            <select>
+              <option value="">Food Recovery Hierarchy</option>
+              <option value=".prevention">Prevention</option>
+              <option value=".recovery">Recovery</option>
+              <option value=".recycling">Recycling</option>
             </select>
           </div>
           <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
+          <button type="reset" class="hide">Reset</button>
+          <div class="control-group">
+              <button type="button" class="control control-sort" data-sort="default:asc">Asc</button>
+              <button type="button" class="control control-sort" data-sort="default:desc">Desc</button>
+          </div>
         </div>
       </div>
     </div>

@@ -42,28 +42,20 @@ $.behaviors('.locationField', locationField);
 
     // When the user selects an address from the dropdown, populate the address
     // fields in the form.
-    autocomplete.addListener('place_changed', fillInAddress);
+    autocomplete.addListener('place_changed', filterResults);
   }
 
-  function fillInAddress() {
-    window.console.log('fillInAddress');
-    // // Get the place details from the autocomplete object.
-    // var place = autocomplete.getPlace();
+  function filterResults() {
 
-    // for (var component in componentForm) {
-    //   document.getElementById(component).value = '';
-    //   document.getElementById(component).disabled = false;
-    // }
+    // Get the place details from the autocomplete object.
+    var place = autocomplete.getPlace();
+    var location = {
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng()
+    }
 
-    // // Get each component of the address from the place details
-    // // and fill the corresponding field on the form.
-    // for (var i = 0; i < place.address_components.length; i++) {
-    //   var addressType = place.address_components[i].types[0];
-    //   if (componentForm[addressType]) {
-    //     var val = place.address_components[i][componentForm[addressType]];
-    //     document.getElementById(addressType).value = val;
-    //   }
-    // }
+    window.console.log(location);
+
   }
 
   // Bias the autocomplete object to the user's geographical location,

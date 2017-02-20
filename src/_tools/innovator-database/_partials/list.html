@@ -6,29 +6,31 @@
           <button class="sort">Sort Newest <i class="icon icon-caret-up"></i></button>
       </div>
     </div>
-    {% for innovator in site.innovators %}
-      <div class="row">
-        <div class="col-xs-12 col-sm-8">
-          <div class="content">
-            <h3><a href="{{ innovator.url }}" title="{{ innovator.name }}">{{ innovator.name }}</a></h3>
-            <p>{{ innovator.description }}</p>
+    <ul class="innovatorDatabase_list">
+      {% for innovator in site.innovators %}
+        <li class="row mix {{ innovator.organization_status | slugify }} {{ innovator.food_recovery_hierarchy | slugify }}">
+          <div class="col-xs-12 col-sm-8">
+            <div class="content">
+              <h3><a href="{{ innovator.url }}" title="{{ innovator.name }}">{{ innovator.name }}</a></h3>
+              <p>{{ innovator.description }}</p>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-          <div class="content">
-            <dl>
-              <dt>Status:</dt>
-              <dd>{{ innovator.status }}</dd>
-              <dt>Category:</dt>
-              <dd>{{ innovator.category }}</dd>
-              <dt>Food Recovery Hierarchy:</dt>
-              <dd>{{ innovator.food-recovery-hierarchy }}</dd>
-            </dl>
-            <a href="{{ innovator.website }}">{{ innovator.website }}</a>
-            <h4><i class="icon icon-{{ innovator.reach | slugify }}"></i> {{ innovator.reach }} Organization</h4>
+          <div class="col-xs-12 col-sm-8">
+            <div class="content">
+              <dl>
+                <dt>Status:</dt>
+                <dd>{{ innovator.organization_status }}</dd>
+                <dt>Category:</dt>
+                <dd>{{ innovator.innovator_category }}</dd>
+                <dt>Food Recovery Hierarchy:</dt>
+                <dd>{{ innovator.food_recovery_hierarchy }}</dd>
+              </dl>
+              <a href="{{ innovator.website }}">{{ innovator.website }}</a>
+              <h4><i class="icon icon-{{ innovator.reach | slugify }}"></i> {{ innovator.reach }} Organization</h4>
+            </div>
           </div>
-        </div>
-      </div>
-    {% endfor %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
