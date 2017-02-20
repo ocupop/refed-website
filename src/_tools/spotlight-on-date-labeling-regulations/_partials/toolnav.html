@@ -1,16 +1,20 @@
+{% assign tab = true %}
+{% if page.path contains 'index' %}
+  {% assign tab = false %}
+{% endif %}
 <div class="menu">
   <ul>
     <li>
-      <a href="#about" data-toggle="tab" role="tab" class="active">About</a>
+      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
+          href="/tools/spotlight-on-date-labeling-regulations/spotlight#quiz">Quiz</a>
     </li>
     <li>
-      <a href="#quiz" data-toggle="tab" role="tab">Quiz</a>
+      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
+          href="/tools/spotlight-on-date-labeling-regulations/spotlight#maps">Policy Issues</a>
     </li>
     <li>
-      <a href="#maps" data-toggle="tab" role="tab">Policy Issues</a>
-    </li>
-    <li>
-      <a href="#federal-solutions" data-toggle="tab" role="tab">Federal Solutions</a>
+      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
+          href="/tools/spotlight-on-date-labeling-regulations/spotlight#federal-solutions">Federal Solutions</a>
     </li>
     <li class="next hide">
       <a href="/tools/policy/state-policy">U.S. Food Waste<br>Policy Finder &gt;</a>

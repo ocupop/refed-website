@@ -11,20 +11,83 @@ breadcrumb: true
   {% include elements/toolSidebar.html %}
 {% endcontentfor %}
 
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="about">
-    {% include_relative _partials/about.html %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h1>{{ page.title }}</h1>
+          <p class="editable">A patchwork of state regulations around date labeling causes confusion that leads to 20 percent of consumer waste of safe, edible food. Here, you can learn more about these issues, compare state regulations, and find potential solutions to date labeling policy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-header">
+        <h3>Quiz Yourself</h3>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          <img src="/img/tools/policy/Policy_thumb-dl-quiz.png" data-target="#quiz" data-toggle="tab" class="img-responsive">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+
+          <p class="editable">You may have heard that food date labels are a significant contributor to food waste, but do you know why? Take this quiz to test your knowledge and learn how policy can influence good date labeling practices.</p>
+          <button class="inline"
+                  data-toggle="tab"
+                  data-target="#quiz">
+                  Take the Quiz &gt;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-header">
+        <h3>Understand Policy Issues</h3>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          <a href="#maps" data-toggle="tab">
+            <img src="/img/tools/policy/Policy_thumb-dl-map.png" class="img-responsive">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+          <p class="editable">Take a guided tour of the issues surrounding state-level date labeling policy, and see how your state compares.</p>
+          <button class="inline"
+                  data-toggle="tab"
+                  data-target="#maps">
+                  Open the Map &gt;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-header">
+        <h3>Proposed Solutions</h3>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          <a href="#federal-solutions" data-toggle="tab">
+            <img src="/img/tools/policy/Policy_thumb-dl-fed.png" class="img-responsive">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+          <p class="editable">What can be done about date labeling issues in the United States? Learn about federal legislation that has been proposed to establish a uniform system for food date labeling exists.</p>
+          <button class="inline"
+                  data-toggle="tab"
+                  data-target="#federal-solutions">
+                  View Policy Proposal &gt;</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div role="tabpanel" class="tab-pane" id="quiz">
-    {% include_relative _partials/quiz.html %}
-  </div>
-  <div role="tabpanel" class="tab-pane" id="maps">
-    {% include_relative _partials/maps.html %}
-  </div>
-  <div role="tabpanel" class="tab-pane" id="federal-solutions">
-    {% include_relative _partials/federal-solutions.html %}
-  </div>
-</div>
+</section>
 
 
 <section class="alt-bg">
