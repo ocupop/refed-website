@@ -8,7 +8,10 @@
     </div>
     <ul class="innovatorDatabase_list">
       {% for innovator in site.innovators %}
-        <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.innovator_category | slugify }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy">
+        <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.innovator_category | slugify }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy"
+            data-lat="{{ innovator.lat }}"
+            data-lng="{{ innovator.lng }}"
+            data-distance="">
           <div class="row">
             <div class="col-xs-12 col-sm-8">
               <div class="content">
@@ -26,6 +29,7 @@
                   <a href="{{ innovator.website }}">{{ innovator.website }}</a>
                 </p>
                 <h5 class="innovator_reach"><i class="icon icon-{{ innovator.innovator_reach | slugify }}"></i> {{ innovator.innovator_reach }} Organization</h5>
+                Distance: <span class="distance">0</span>miles
               </div>
             </div>
           </div>

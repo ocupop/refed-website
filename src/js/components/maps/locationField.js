@@ -49,10 +49,19 @@ $.behaviors('.locationField', locationField);
 
     // Get the place details from the autocomplete object.
     var place = autocomplete.getPlace();
-    var location = {
-      lat: place.geometry.location.lat(),
-      lng: place.geometry.location.lng()
+    window.console.log(place);
+    if (!place.geometry) {
+      // Get the geometry from another API request
+      // http://maps.googleapis.com/maps/api/geocode/xml?address=
+      alert('TODO: Add error message when Google API does not return proper Geometry');
+      return;
+    } else {
+      var location = {
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng()
+      }
     }
+
     $('body').trigger('searchLocation', [location]);
 
   }
