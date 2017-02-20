@@ -14,7 +14,7 @@ $(document).on('ready', function() {
 
   // TODO - Refactor into component
   // Make all external links open in another window.
-  var editing = $(body).hasClass('cms-editor-active');
+  var editing = $('body').hasClass('cms-editor-active');
   if(!editing) {
     $('a').each(function() {
        var a = new RegExp('/' + window.location.host + '/');
