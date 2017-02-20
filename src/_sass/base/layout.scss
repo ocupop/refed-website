@@ -6,7 +6,7 @@
   }
   aside {
     display: none;
-    background-color: $cream-light;
+    background-color: $mainnav-background-color;
     box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
     z-index: 99;
     @include transition();
@@ -17,10 +17,11 @@
     flex-wrap: nowrap;
     main, .main {
       width: 70%;
+      background-color: #fff;
       .container {
         width: 100%;
         max-width: $live-content-width * 0.7;
-        margin-right: 0;
+        margin-right: 20px;
       }
     }
     aside, .aside {

@@ -358,3 +358,21 @@ select[multiple] {
     border-radius: 50%;
   }
 }
+
+.search-group {
+  margin-bottom: 15px;
+  input {
+    text-indent: 55px;
+    border: 1px solid $gray-lighter;
+  }
+  .icon-search {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: $gray-dark;
+    color: #fff;
+    font-size: 23px;
+  }
+}
