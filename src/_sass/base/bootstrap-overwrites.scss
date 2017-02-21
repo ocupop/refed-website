@@ -101,6 +101,14 @@
   content: "\003e";
 }
 
+@media all and (max-width: $screen-md-max) {
+ 
+}
+
+@media all and (max-width: $screen-sm-max) {
+
+}
+
 @media all and (max-width: $screen-xs-max) {
   .section-header {
     margin-bottom: 0;
@@ -125,10 +133,4 @@
   .breadcrumb { display: none; }
 
   .row { margin: 0; }
-}
-@media all and (max-width: $screen-sm-max) {
-
-}
-@media all and (max-width: $screen-md-max) {
- 
 }

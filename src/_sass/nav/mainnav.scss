@@ -77,10 +77,9 @@ body.condensed-header {
   }
 }
 
-
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   #mainnav {
-
+    
   }
 }
 
@@ -136,8 +135,8 @@ body.condensed-header {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   #mainnav {
-    
+
   }
 }

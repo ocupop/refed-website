@@ -23,8 +23,8 @@ body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
-  .innovatorDatabase_filters {
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_filters  {
 
   }
 }
@@ -35,8 +35,8 @@ body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
-  .innovatorDatabase_filters  {
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_filters {
 
   }
 }

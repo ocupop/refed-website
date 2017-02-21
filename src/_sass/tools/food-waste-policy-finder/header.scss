@@ -94,7 +94,7 @@
   }
 }
 
-@media(max-width: 1024px) {
+@media all and (max-width: $screen-md-max) {
   .tool-header {
     h2 {
       text-align: center;
@@ -132,7 +132,10 @@
   }
 }
 
-@media(max-width: 650px) {
+@media all and (max-width: $screen-sm-max) {
+}
+
+@media all and (max-width: $screen-xs-max) {
   .tool-header {
     .nav-tabs {
       width: 100%;

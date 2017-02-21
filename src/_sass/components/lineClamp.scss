@@ -30,7 +30,7 @@
   font-style: italic;
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   .lineClamp {}
 }
 
@@ -38,6 +38,6 @@
   .lineClamp {}
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   .lineClamp {}
 }

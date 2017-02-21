@@ -173,6 +173,25 @@ TODO - Enter example
 }
 // END TODO
 
+@media all and (max-width: $screen-md-max) {
+  #cost-curve {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #cost-curve {
+    #chart.vertical {
+      .title {
+        line-height: 18px;
+        height: 18px;
+        margin-bottom: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 @media all and (max-width: $screen-xs-max) {
   #cost-curve {
     .message {
@@ -220,22 +239,5 @@ TODO - Enter example
 
   #impact-title {
     display: block;
-  }
-}
-@media all and (max-width: $screen-sm-max) {
-  #cost-curve {
-    #chart.vertical {
-      .title {
-        line-height: 18px;
-        height: 18px;
-        margin-bottom: 7px;
-        font-size: 12px;
-      }
-    }
-  }
-}
-@media all and (max-width: $screen-md-max) {
-  #cost-curve {
-    
   }
 }

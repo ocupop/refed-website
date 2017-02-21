@@ -55,10 +55,9 @@
   display: none;
 }
 
-
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   .carousel-datelabel {
-  
+
   }
 }
 
@@ -69,8 +68,8 @@
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   .carousel-datelabel {
-
+  
   }
 }

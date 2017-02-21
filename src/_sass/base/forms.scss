@@ -376,3 +376,9 @@ select[multiple] {
     font-size: 23px;
   }
 }
+
+@media all and (max-width: $screen-md-max) {}
+
+@media all and (max-width: $screen-sm-max) {}
+
+@media all and (max-width: $screen-xs-max) {}

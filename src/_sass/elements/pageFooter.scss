@@ -35,13 +35,9 @@
   }
 }
 
-
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   #pageFooter {
-    .brand {
-      width: 250px;
-      margin: 0 auto;
-    }
+    
   }
 }
 
@@ -51,8 +47,11 @@
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   #pageFooter {
-    
+    .brand {
+      width: 250px;
+      margin: 0 auto;
+    }
   }
 }

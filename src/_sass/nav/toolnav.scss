@@ -89,6 +89,28 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+  #toolnav {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #toolnav {
+    // height: 50px;
+    .container { width: 100%; }
+    .menu {
+      i {
+        font-size: 20px;
+      }
+      ul {
+        li.next { display: none; }
+        li.update { display: none; }
+      }
+    }
+  }
+}
+
 @media all and (max-width: $screen-xs-max) {
   .toolHeader-title {
     padding: 5px 20px 8px 20px;
@@ -157,27 +179,5 @@
         }
       }
     }
-  }
-}
-
-@media all and (max-width: $screen-sm-max) {
-  #toolnav {
-    // height: 50px;
-    .container { width: 100%; }
-    .menu {
-      i {
-        font-size: 20px;
-      }
-      ul {
-        li.next { display: none; }
-        li.update { display: none; }
-      }
-    }
-  }
-}
-
-@media all and (max-width: $screen-md-max) {
-  #toolnav {
-    
   }
 }

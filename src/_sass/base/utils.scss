@@ -168,23 +168,8 @@ $border-color: $gray-lighter;
 .border-bottom { border-bottom-width: $border-width;}
 .border-left { border-left-width: $border-width; }
 
-@media all and (max-width: $screen-xs-max) {
-  // breaks go to full width
-  .break-50,
-  .break-60,
-  .break-70,
-  .break-80,
-  .break-90, {
-    width: 100% !important;
-  }
+@media all and (max-width: $screen-md-max) {
 
-  // columns stop wrapping 
-  .col2 {
-    column-count: 1;
-  }
-  .col3 {
-    column-count: 1;
-  }
 }
 
 @media all and (max-width: $screen-sm-max) {
@@ -222,6 +207,21 @@ $border-color: $gray-lighter;
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
+  // breaks go to full width
+  .break-50,
+  .break-60,
+  .break-70,
+  .break-80,
+  .break-90, {
+    width: 100% !important;
+  }
 
+  // columns stop wrapping 
+  .col2 {
+    column-count: 1;
+  }
+  .col3 {
+    column-count: 1;
+  }
 }

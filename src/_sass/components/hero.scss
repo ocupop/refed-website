@@ -113,6 +113,17 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+  .hero {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .hero {
+    
+  }
+}
 
 @media all and (max-width: $screen-xs-max) {
   .hero {
@@ -139,15 +150,5 @@
   }
   .carousel-indicators {
     bottom: -5px;
-  }
-}
-@media all and (max-width: $screen-sm-max) {
-  .hero {
-    
-  }
-}
-@media all and (max-width: $screen-md-max) {
-  .hero {
-    
   }
 }

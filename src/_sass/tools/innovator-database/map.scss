@@ -38,8 +38,9 @@
     }
   }
 }
-@media all and (max-width: $screen-xs-max) {
-  .innovatorDatabase_map {
+
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_map  {
 
   }
 }
@@ -50,8 +51,8 @@
   }
 }
 
-@media all and (max-width: $screen-md-max) {
-  .innovatorDatabase_map  {
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_map {
 
   }
 }

@@ -26,7 +26,8 @@ section {
   }
 }
 
-@media all and (max-width: 1024px) {
+
+@media all and (max-width: $screen-md-max) {
   #socialnav {
     text-align: center;
     a {
@@ -35,18 +36,14 @@ section {
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
-  #socialnav {
-  
-  }
-}
 @media all and (max-width: $screen-sm-max) {
   #socialnav {
     
   }
 }
-@media all and (max-width: $screen-md-max) {
+
+@media all and (max-width: $screen-xs-max) {
   #socialnav {
-    
+  
   }
 }

@@ -43,6 +43,18 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+  .tabs {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .tabs {
+    
+  }
+}
+
 @media all and (max-width: $screen-xs-max) {
   .tabs {
     display: block;
@@ -51,14 +63,3 @@
     }
   }
 }
-@media all and (max-width: $screen-sm-max) {
-  .tabs {
-    
-  }
-}
-@media all and (max-width: $screen-md-max) {
-  .tabs {
-    
-  }
-}
-
