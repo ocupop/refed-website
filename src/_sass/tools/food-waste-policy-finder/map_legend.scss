@@ -1,9 +1,9 @@
 .map-legend {
   position: absolute;
-  top: 90%;
-  left: 55%;
+  top: 100%;
+  left: 45%;
   text-align: left;
-  width: 34%;
+  width: 41%;
   .legend-key {
     display: none;
     position: relative;
@@ -36,12 +36,18 @@
       border-left: 1px solid $cream;
     }
 
-    small {
+    p {
       font-size: 11px;
-      color: $text-color;
+      line-height: 12px;
       a {
         text-transform: uppercase;
       }
+    }
+    small {
+      font-size: 11px;
+      line-height: 12px;
+      color: $text-color;
+
     }
     h5 {
       font-weight: 400;

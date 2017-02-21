@@ -1,14 +1,55 @@
 body.state-policy {
   section {
-    padding-top: 25px;
+    padding: 0;
     .container {
       max-width: none;
     }
   }
 }
+.mapInstructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.6);
+  color: $text-color;
+  // Animation
+  display: none;
+  opacity: 1;
+  @include transition(0.5s);
+  .content {
+    font-size: 14px;
+    h4 {
+      font-weight: 400;
+      color: $text-color;
+    }
+    p {
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+}
+.mapWizard {
+  .mapInstructions {
+    display: flex;
+    opacity: 1;
+  }
+  &.step1 {}
+  &.step2 {}
+  &.step3 {}
+  &.step4 {}
+}
+
 .policyFinder_map {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background: transparent !important;
   .states {
     fill: #e3dcca;
@@ -21,11 +62,7 @@ body.state-policy {
     cursor: pointer;
   }
   .muni { opacity: 0; }
-  &.active {
-    .mapInstructions {
-      display: none;
-    }
-  }
+
   &.prevention { 
     .level-1 { fill: $prevention-color; }
     .level-2 { fill: $prevention-color; }
@@ -74,34 +111,6 @@ body.state-policy {
     .level-1 { fill: $recycle-color; }
     .muni { opacity: 0.6; }
     .organic-waste-bans-waste-recycling-laws-key { display: block; }
-  }
-
-  .mapInstructions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-width: 500px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 30px;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0.6);
-    color: $text-color;
-    @include transition(0.5s);
-    .content {
-      font-size: 14px;
-      h4 {
-        font-weight: 400;
-        color: $text-color;
-      }
-      p {
-        font-size: 14px;
-        color: $text-color;
-      }
-    }
   }
 
   .states:hover {
