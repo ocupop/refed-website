@@ -21,7 +21,7 @@
           border: none;
           background-image: none;
           background-color: transparent;
-          &:hover, &:focus, &:active {
+          &:hover, &:focus, &:active, &.active {
             color: #fff;
           }
         }
