@@ -20,8 +20,19 @@
           </div>
           <div class="col-xs-12 col-sm-3">
             <div data-filter-group class="select">
+              {% assign categories =  "" | split: "," %}
+              {% for innovator in site.innovators %}
+                {% for category in innovator.innovator_category %}
+                {% assign categories = categories | push: category %}
+                {% endfor %}
+              {% endfor %}
+
+              {% assign categories_uniq = categories | uniq %}
               <select>
                 <option value="">Category</option>
+                {% for category in categories_uniq %}
+                  <option value="{{ category }}">{{ category | replace: '-', ' ' }}</option>
+                {% endfor %}
               </select>
             </div>
           </div>
