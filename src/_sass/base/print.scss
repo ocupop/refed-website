@@ -1,0 +1,8 @@
+@media print {
+  #toolnav, .mobilenav {
+    display: none;
+  }
+  .hidden-print {
+    display: none;
+  }
+}
