@@ -36,12 +36,18 @@
       border-left: 1px solid $cream;
     }
 
-    small {
+    p {
       font-size: 11px;
-      color: $text-color;
+      line-height: 12px;
       a {
         text-transform: uppercase;
       }
+    }
+    small {
+      font-size: 11px;
+      line-height: 12px;
+      color: $text-color;
+
     }
     h5 {
       font-weight: 400;

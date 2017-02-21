@@ -99,6 +99,11 @@
     padding: 20px 30px;
   }
 }
+#recycling_filters {
+  .toggle {
+    color: $recycle-color;
+  }
+}
 
 //mobilenav styles
 .mobilenav {
