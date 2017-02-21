@@ -47,6 +47,43 @@
     .lead {
       font-weight: 100;
     }
+    .icon-play {
+      font-size: 150px;
+    }
+  }
+}
+
+// styles for carousel controls
+.carousel-control {
+  &.left, &.right {
+    background-color: transparent;
+    background-image: none;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      background-image: none;
+    }
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    &.icon-arrow-right {
+      right: 40px;
+    }
+    &.icon-arrow-left {
+      left: 40px;
+    }
+  }
+}
+
+.carousel-indicators {
+  li {
+    background-color: rgba(255,255,255, .3);
+    border: none;
+    margin: 1px 10px;
+    &.active {
+      margin: 0 10px;
+    }
   }
 }
 
@@ -83,9 +120,25 @@
     min-height: 0;
     .hero-content {
       h1 {
-        font-size: 25px;
+        font-size: 25px !important;
       }      
+      p {
+        font-size: 14px;
+      }
     }
+  }
+  .carousel-control {
+    i {
+      &.icon-arrow-right {
+        right: 0;
+      }
+      &.icon-arrow-left {
+        left: 0;
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: -5px;
   }
 }
 @media all and (max-width: $screen-sm-max) {

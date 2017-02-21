@@ -1,3 +1,102 @@
+{% if page.url == "/" %}
+  <div id="carousel-home" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-home" data-slide-to="1"></li>
+      <li data-target="#carousel-home" data-slide-to="2"></li>
+      <li data-target="#carousel-home" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="hero hero-slider" style="background-image: url(/img/Slider_image-1.jpg);">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <h1>Welcome to <span class="brand">ReFED</span></h1>
+                    <p>ReFED was formed to build a different future, where food waste prevention is recognized as an untapped strategy that can save resources, create jobs, alleviate hunger, conserve water, and reduce greenhouse gas emissions — all while stimulating a new multi-billion dollar market opportunity.</p>
+                  </div>
+                </div>
+                <div class="hidden-xs col-sm-4">
+                  <div class="content">
+                    <i class="icon-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="hero hero-slider" style="background-image: url(/img/Slider_image-2.jpg)">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <h1>Food Waste Policy Finder</h1>
+                    <p>Drawing from the latest food waste policy research, we’ve developed a comprehensive tool that will help businesses and policy makers understand current policies, explore best practices and advocate for better food waste policies at all levels of government.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="hero hero-slider" style="background-image: url(/img/Slider_image-3.jpg);">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <h1>Food Waste Innovator Database</h1>
+                    <p>The ReFED Innovator Database is a living compilation of 350+ commercial and nonprofit entities that are turning the food waste problem into an entrepreneurial opportunity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="hero hero-slider" style="background-image: url(/img/Slider_image-4.jpg);">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <h1>Recent News</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, facilis, inventore! Esse eveniet odit alias accusamus ipsum, nostrum accusantium sed dignissimos quae, inventore similique nobis, ratione in laborum magni fugiat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+      <i class="icon-arrow-left"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+      <i class="icon-arrow-right"></i>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+{% endif %}
+
+<!-- image: header-cabbage.jpg
+title: Welcome to <span class="brand">ReFED</span>
+summary: A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale<br><br>Together, we can reduce U.S. food waste by 50% by 2030. -->
+
 {% if page.collection == 'solutions' %}
 <div class="hero" style="background-image: url({{ site.baseurl }}/img/solutions/{{ page.slug }}-header.jpg);">
   <div class="hero-content">
