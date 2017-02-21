@@ -121,6 +121,10 @@
       }
     }
   }
+
+  .breadcrumb { display: none; }
+
+  .row { margin: 0; }
 }
 @media all and (max-width: $screen-sm-max) {
 

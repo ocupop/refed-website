@@ -79,9 +79,10 @@ body.condensed-header {
       width: 100%;
       height: 20px;
       background-color: $gray-base;
-      background-image: url();
+      background-image: url(/img/logo-mobile.svg);
       background-position: center center;
       background-repeat: no-repeat;
+      background-size: 65px;
       img {
         display: none;
       }
