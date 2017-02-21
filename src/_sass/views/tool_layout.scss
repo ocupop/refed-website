@@ -12,7 +12,9 @@
 
 @media all and (max-width: $screen-sm-max) {
   .tool-layout, .state-layout {
-    margin-top: 138px;
+    #pageContent {
+      margin-top: 75px;
+    }
   }
 }
 
