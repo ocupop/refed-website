@@ -58,6 +58,11 @@
     display: flex;
     align-items: center;
   }
+  &.flex-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
   svg {
     max-width: 100%;
   }
@@ -159,6 +164,17 @@ a.external {
   }
 }
 
+
+// Borders
+// Borders
+$border-width: 1px;
+$border-color: $gray-lighter;
+.border { border: 0 solid $border-color; }
+.border-all { border-width: $border-width; }
+.border-top { border-top-width: $border-width; }
+.border-right { border-right-width: $border-width; }
+.border-bottom { border-bottom-width: $border-width;}
+.border-left { border-left-width: $border-width; }
 
 @media all and (max-width: $screen-xs-max) {
   // breaks go to full width
