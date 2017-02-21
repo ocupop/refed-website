@@ -26,7 +26,15 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-arrow-left:before {
+  content: "\e91b";
+}
+.icon-arrow-right:before {
+  content: "\e91c";
+}
+.icon-play:before {
+  content: "\e91d";
+}
 .icon-analysis:before {
   content: "\e911";
 }
