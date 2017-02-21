@@ -9,7 +9,6 @@
 @import 'base/global';
 @import 'base/utils';
 @import 'base/grid';
-@import 'base/layout';
 @import 'base/colors';
 @import 'base/sections';
 @import 'base/icons';
@@ -27,6 +26,7 @@
 
 // Elements
 @import 'elements/pageHeader';
+@import 'elements/pageContent';
 @import 'elements/pageFooter';
 @import 'elements/pageHelp';
 @import 'elements/page_hero';

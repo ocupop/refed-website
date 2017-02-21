@@ -5,6 +5,7 @@ load_innovatorMap({
    "innovators": [
 {% for innovator in site.innovators %}
  {
+   "id": "{{ forloop.index }}",
    "name": "{{ innovator.name }}",
    "city": "{{ innovator.city }}",
    "state": "{{ innovator.state }}",

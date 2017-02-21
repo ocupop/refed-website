@@ -21,59 +21,28 @@
 $.behaviors('.articles', initMixItUp);
 
   function initMixItUp(container) {
-    // button = $(button);
-    var mixer = mixitup(container);
-    
-    $('.sort-articles').on('click', function(){
-      var sort = $(this).data('sort');
-      // window.console.log("/components/article.js: "sort);
-
-      mixer.sort(sort)
-        .then(function(state) {
-          $(this).toggleClass('sort-desc sort-asc')
-        });
-
-      if(sort == 'date:asc'){
-
-        $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:dsc');
-      }
-      if(sort == 'date:dsc'){
-        $container.mixItUp('sort', sort);
-        $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:asc');
+    var mixer = mixitup(container, {
+      multifilter: {
+          enable: true
+      },
+      selectors: {
+        target: '.article'
       }
     });
 
-    $('#filter-articles').on('change', function(){
-      $container.mixItUp('filter', this.value);
+    $('.sort-articles').on('click', function(){
+      var sort = $(this).data('sort');
+      window.console.log(sort);
+      if(sort == 'date:asc'){
+        $(this).attr('data-sort', 'date:desc');
+      } else {
+        $(this).attr('data-sort', 'date:asc');
+      }
     });
 
   }
 
 })();
-
-
-$(function(){
-  var $container = $('.articles');
-  
-  $container.mixItUp();
-  
-  $('.sort-articles').on('click', function(){
-    var sort = $(this).data('sort');
-    // window.console.log("/components/article.js: "sort);
-    if(sort == 'date:asc'){
-      $container.mixItUp('sort', sort);
-      $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:dsc');
-    }
-    if(sort == 'date:dsc'){
-      $container.mixItUp('sort', sort);
-      $('.sort-articles').toggleClass('sort-dsc').data('sort', 'date:asc');
-    }
-  });
-
-  $('#filter-articles').on('change', function(){
-    $container.mixItUp('filter', this.value);
-  });
-});
 
 
 

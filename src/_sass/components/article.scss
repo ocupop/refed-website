@@ -1,7 +1,3 @@
-body.article-layout {
-  padding-top: 105px;
-}
-
 .article {
   .article-image {
     display: block;
@@ -57,7 +53,7 @@ body.article-layout {
   .caret {
     @include transition(.5s);
   }
-  &.sort-dsc {
+  &[data-sort="date:desc"] {
     .caret {
       transform: rotate(-180deg);
     }
@@ -80,8 +76,15 @@ body.article-layout {
   }
 }
 
+
+@media all and (max-width: $screen-xs-max) {
+
+}
+
 @media all and (max-width: $screen-sm-max) {
-  body.article-layout {
-    padding-top: 50px;
-  }
+
+}
+
+@media all and (max-width: $screen-md-max) {
+
 }
