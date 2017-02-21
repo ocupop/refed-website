@@ -111,21 +111,23 @@
     }
   }
   #toolnav {
-    height: 40px;
     .menu-toggle {
       display: block;
-      top: 0;
-      background-color: $gray;
+      top: -44px;
+      background-color: $cream;
+      padding: 0 5px;
+      left: 0;
       i {
-        line-height: 40px;
-        height: 40px;
+        line-height: 44px;
+        height: 44px;
+        color: $text-color;
       }
     }
     .menu {
       width: 320px;
       position: fixed;
       right: -320px;
-      top: 114px;
+      top: 74px;
       height: 100%;
       background-color: $gray;
       @include transition(.5s);
