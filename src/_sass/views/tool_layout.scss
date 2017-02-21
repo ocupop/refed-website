@@ -4,11 +4,14 @@
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   .tool-layout, .state-layout {
-
+    #pageContent {
+      margin-top: 138px;
+    }
   }
 }
+
 
 @media all and (max-width: $screen-sm-max) {
   .tool-layout, .state-layout {
@@ -18,8 +21,10 @@
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   .tool-layout, .state-layout {
-
+    #pageContent {
+      
+    }
   }
 }
