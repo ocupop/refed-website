@@ -31,28 +31,7 @@ body.policy_tool-layout {
   box-shadow: 1px 2px 3px rgba(0,0,0,.4);
 }
 
-#map-instructions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  @include transition(0.5s);
-  .content {
-    font-size: 14px;
-    padding: 25px 40px;
-    background: #fff;
-    max-width: 60%;
-    h4 {
-      font-weight: 400;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-}
+
 
 #spotlight {
   h2 {
