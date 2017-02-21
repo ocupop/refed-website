@@ -1,7 +1,9 @@
-.map-section {
-  padding-top: 25px;
-  .container {
-    max-width: none;
+body.state-policy {
+  section {
+    padding-top: 25px;
+    .container {
+      max-width: none;
+    }
   }
 }
 .policyFinder_map {
@@ -19,6 +21,11 @@
     cursor: pointer;
   }
   .muni { opacity: 0; }
+  &.active {
+    .mapInstructions {
+      display: none;
+    }
+  }
   &.prevention { 
     .level-1 { fill: $prevention-color; }
     .level-2 { fill: $prevention-color; }
@@ -68,6 +75,35 @@
     .muni { opacity: 0.6; }
     .organic-waste-bans-waste-recycling-laws-key { display: block; }
   }
+
+  .mapInstructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.6);
+    color: $text-color;
+    @include transition(0.5s);
+    .content {
+      font-size: 14px;
+      h4 {
+        font-weight: 400;
+        color: $text-color;
+      }
+      p {
+        font-size: 14px;
+        color: $text-color;
+      }
+    }
+  }
+
   .states:hover {
     // opacity: 0.9;
     cursor: pointer;
