@@ -90,7 +90,17 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
+  .toolHeader-title {
+    padding: 5px 20px 8px 20px;
+    small {
+      display: block;
+      line-height: 1;
+    }
+  }
   #toolHeader {
+    .brand {
+      padding: 15px 40px;
+    }
     &.active {
       position: fixed;
       #toolnav {
@@ -115,7 +125,7 @@
       width: 320px;
       position: fixed;
       right: -320px;
-      top: 136px;
+      top: 114px;
       height: 100%;
       background-color: $gray;
       @include transition(.5s);
