@@ -1,5 +1,14 @@
 .mapnav {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
   @include transition(0.5s);
+  &.bottom {
+    transform: translateY(100vh);
+  }
   h3 {
     font-size: 20px;
   }
