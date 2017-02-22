@@ -22,9 +22,6 @@ $.behaviors('.articles', initMixItUp);
 
   function initMixItUp(container) {
     var mixer = mixitup(container, {
-      multifilter: {
-          enable: true
-      },
       selectors: {
         target: '.article'
       }
@@ -39,9 +36,7 @@ $.behaviors('.articles', initMixItUp);
         $(this).attr('data-sort', 'date:asc');
       }
     });
-
   }
-
 })();
 
 
