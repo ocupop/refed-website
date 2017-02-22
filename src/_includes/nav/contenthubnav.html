@@ -1,0 +1,34 @@
+{% assign tab = false %}
+{% if page.path contains 'index' %}
+  {% assign tab = true %}
+{% endif %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="content">
+        <h1>News &amp; Resources</h1>
+        <ul class="nav nav-tabs tabs-right">
+          <li class="active"><a {% if tab %}data-toggle="tab" role="tab"{% endif %}
+          href="/content-hub#news">Most Recent News</a></li>
+          <li><a {% if tab %}data-toggle="tab" role="tab"{% endif %} href="/content-hub#resources">R<span class="nocase">e</span>Fed Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="content">
+        <h1>News &amp; Resources</h1>
+        <ul class="nav nav-tabs tabs-right" role="tablist">
+          <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Most Recent News</a></li>
+          <li role="presentation"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">ReFed Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+
