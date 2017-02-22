@@ -267,7 +267,7 @@ $.behaviors('.mapnav', initMapNav);
 
     window.scrollTo(0, 0);
     mapnav.removeClass('bottom');
-    map.delay(2000)
+    map.delay(500)
       .queue(function() { 
         map.attr( "class", mapClass + ' step1' ).dequeue();
         mapnav.find('.step1').trigger('click');
