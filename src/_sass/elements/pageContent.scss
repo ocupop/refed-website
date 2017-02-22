@@ -1,6 +1,6 @@
 #pageContent {
   position: relative;
-  //margin-top: 105px;
+  margin-top: 105px;
   main {
     width: 100%;
     @include transition();
@@ -45,7 +45,7 @@
 
 body.condensed-header {
   #pageContent {
-    //margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -55,7 +55,7 @@ body.condensed-header {
 
 @media all and (max-width: $screen-sm-max) {
   #pageContent {
-    //margin-top: 50px;
+    margin-top: 50px;
     &.sidebar {
       display: block;
       // flex-wrap: wrap;
