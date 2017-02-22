@@ -109,7 +109,7 @@ $.behaviors('.mapnav', initMapNav);
 
     startMapWizard(mapnav);
 
-    $('.mapInstructions', mapnav).on('click', function() {
+    $('.show0, .mapInstructions').on('click', function() {
       activateMap(targetMap);
     });
     
@@ -175,7 +175,6 @@ $.behaviors('.mapnav', initMapNav);
         var sf = $(this).hasClass('map-subfilter');
         var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
         // window.console.log ("mapnav.js:", $(this), bp);
-
         if(checked) {
           var showStudies = $el.find('.study-filter:checked').length;
           var section = $(this).closest('.section_root').attr('data-section');
@@ -198,6 +197,13 @@ $.behaviors('.mapnav', initMapNav);
                 indeterminate: false,
                 checked: false
               });
+              // select only a single subfilter
+              var parent = $(this).closest('ul');
+              parent.find('.map-subfilter').not($(this)).prop({
+                indeterminate: false,
+                checked: false
+              });
+
             } else {
               $el.find('.map-filter, .map-subfilter').not(this).prop({
                 indeterminate: false,
@@ -219,6 +225,17 @@ $.behaviors('.mapnav', initMapNav);
           if(bp) { 
             $(targetMap).removeClass('show-studies');
           } else {
+            if(sf) {
+              var parent = $(this).closest('ul');
+              parent.find('.map-subfilter').not($(this)).prop({
+                indeterminate: false,
+                checked: false
+              });
+              $(this).prop({
+                indeterminate: false,
+                checked: true
+              });
+            }
             clearLevels();
           }
 
