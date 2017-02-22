@@ -28,7 +28,7 @@ $.behaviors('.mapnav', initMapNav);
   function mapInstructions(container) {
     container = $(container);
     container.on('click', function() {
-      $('.policyFinder_map').addClass('active');
+      $('.policyFinder_map').finish().addClass('active');
     });
   }
 
@@ -113,6 +113,7 @@ $.behaviors('.mapnav', initMapNav);
   function initMapNav(mapNav) {
 
     var targetMap = $(mapNav).data('target');
+    animateMap($('.mapWizard'));
 
     $('.map-filter, .map-subfilter').on('change', function(e) {
       var checked = $(this).prop("checked"),
@@ -169,6 +170,7 @@ $.behaviors('.mapnav', initMapNav);
           cat = $el.data('category');
 
       $el.find('.map-filter, .map-subfilter, .study-filter').on('click', function() {
+
         var checked = this.checked ? true : false;
         var bp = $(this).hasClass('study-filter');
         var sf = $(this).hasClass('map-subfilter');
@@ -255,6 +257,47 @@ $.behaviors('.mapnav', initMapNav);
       $('#'+state).addClass('level-'+getLevel(activeStates, state));
       // console.log(state, getLevel(activeStates, state));
     });
+  }
+
+  function animateMap(map) {
+    window.console.log("Start animation");
+    var mapClass = map.attr('class'),
+        mapnav = $('.mapnav');
+
+    map.delay(2000)
+      .queue(function() { 
+        map.attr( "class", mapClass + ' step1' ).dequeue();
+        mapnav.find('.step1').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass + ' step2' ).dequeue();
+        mapnav.find('.step2').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass + ' step3' ).dequeue();
+        mapnav.find('.step3').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass + ' step4' ).dequeue();
+        mapnav.find('.step4').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass + ' step5' ).dequeue();
+        mapnav.find('.step5').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass + ' step6' ).dequeue();
+        mapnav.find('.step6').trigger('click');
+      })
+      .delay(2000)
+      .queue(function() {
+        map.attr( "class", mapClass ).stop();
+      })
   }
 
   window.onhashchange = function() {
