@@ -60,6 +60,14 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+
+}
+
+@media all and (max-width: $screen-sm-max) {
+
+}
+
 @media all and (max-width: $screen-xs-max) {
   #profit-chart.vertical .title {
     font-size: 13px;
@@ -67,10 +75,3 @@
     height: 21px;
   }
 }
-@media all and (max-width: $screen-sm-max) {
-
-}
-@media all and (max-width: $screen-md-max) {
-
-}
-

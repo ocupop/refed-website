@@ -56,7 +56,11 @@ body.condensed-header {
   }
 }
 
-
+@media all and (max-width: $screen-md-max) {
+  #toolHeader {
+    
+  }
+}
 
 
 @media all and (max-width: $screen-xs-max) {
@@ -92,11 +96,5 @@ body.condensed-header {
     display: block;
     padding: 8px 20px;
     margin: 0;
-  }
-}
-
-@media all and (max-width: $screen-md-max) {
-  #toolHeader {
-    
   }
 }

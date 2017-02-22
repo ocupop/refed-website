@@ -151,10 +151,11 @@
   }
 }
 
-
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   .mapnav {
-    
+    .button {
+      font-size: 14px;
+    }
   }
 }
 
@@ -169,10 +170,8 @@
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   .mapnav {
-    .button {
-      font-size: 14px;
-    }
+    
   }
 }

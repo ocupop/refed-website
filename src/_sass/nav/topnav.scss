@@ -125,7 +125,7 @@ body.condensed-header {
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   #topnav {
     
   }
@@ -137,7 +137,7 @@ body.condensed-header {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   #topnav {
     
   }

@@ -160,6 +160,14 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+
+}
+
+@media all and (max-width: $screen-sm-max) {
+
+}
+
 @media all and (max-width: $screen-xs-max) {
   .popover.left {
     left: 0 !important;
@@ -169,12 +177,3 @@
     margin-right: 10px;
   }
 }
-@media all and (max-width: $screen-sm-max) {
-
-}
-@media all and (max-width: $screen-md-max) {
-
-}
-
-
-

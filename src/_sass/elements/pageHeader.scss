@@ -41,16 +41,13 @@ body.condensed-header {
 
 }
 
-
-@media all and (max-width: 1024px) {
+@media all and (max-width: $screen-md-max) {
   #pageHeader {
     .container {
       width: 100%;
     }
   }
 }
-
-
 
 @media all and (max-width: $screen-xs-max) {
   #pageHeader {
@@ -78,8 +75,3 @@ body.condensed-header {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
-  #pageHeader {
-    
-  }
-}

@@ -132,10 +132,9 @@ button {
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   .button {
-    font-size: 13px;
-    line-height: 16px;
+
   }
 }
 
@@ -145,8 +144,9 @@ button {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
   .button {
-
+    font-size: 13px;
+    line-height: 16px;
   }
 }
