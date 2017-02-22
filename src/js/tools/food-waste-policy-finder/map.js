@@ -28,7 +28,8 @@ $.behaviors('.mapnav', initMapNav);
   function mapInstructions(container) {
     container = $(container);
     container.on('click', function() {
-      $('.policyFinder_map').finish().addClass('active');
+      $('.policyFinder_map').addClass('active');
+      $('.mapnav').finish();
     });
   }
 
@@ -264,6 +265,8 @@ $.behaviors('.mapnav', initMapNav);
     var mapClass = map.attr('class'),
         mapnav = $('.mapnav');
 
+    window.scrollTo(0, 0);
+    mapnav.removeClass('bottom');
     map.delay(2000)
       .queue(function() { 
         map.attr( "class", mapClass + ' step1' ).dequeue();
@@ -296,7 +299,7 @@ $.behaviors('.mapnav', initMapNav);
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass ).stop();
+        map.attr( "class", mapClass ).stop().finish();
       })
   }
 
