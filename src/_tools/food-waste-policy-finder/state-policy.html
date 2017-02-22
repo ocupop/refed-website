@@ -19,8 +19,8 @@ sidebar: map
   </div>
 </section>
 <section>
-  <div class="content">
-    <div class="policyFinder_map mapWizard">
+  <div class="content mapWizard">
+    <div class="policyFinder_map">
       {% include_relative _partials/map_legend.html %}
       <div class="mapInstructions">
         <div class="col-xs-12 col-md-4">
@@ -32,6 +32,15 @@ sidebar: map
           <div class="content border border-left">
             <h4>U.S. Food Waste Policy Finder</h4>
             <p class="editable">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+            <h5 class="show1">Learn about state policies that hinder food waste recycling.</h5>
+            <h5 class="show2">Learn about states and municipalities that have enacted Organic Waste Bans &amp; Waste Recycling Laws.</h5>
+
+            <h5 class="show3">Learn about states that offer liability protection.</h5>
+            <h5 class="show4">Learn about states that offer additional tax incentives beyond federal incentives.</h5>
+
+            <h5 class="show5">Learn about date labeling policies that hinder food waste prevention.</h5>
+
+            <button class="show0 button">Start Now</button>
           </div>
         </div>
       </div>
@@ -46,14 +55,14 @@ sidebar: map
   <!-- Desktop: Map Filters -->
   <div class="mapnav" data-target=".policyFinder_map">
     <div class="nav_category" data-category="prevention">
-      <h4 class="prevention"
+      <h4 class="prevention step6"
           data-toggle="collapse"
           data-parent="#policynav"
           href="#prevention_filters">
           Prevention Policy
           <span class="caret"></span>
       </h4>
-      <div id="prevention_filters" class="filters collapse in">
+      <div id="prevention_filters" class="filters collapse">
         <p>Policy changes related to date labeling have the potential to prevent 398,000 tons of waste per year</p>
         <ul class="section_root" data-section="date-labeling">
           <li class="checkbox">
@@ -73,14 +82,14 @@ sidebar: map
     </div>
 
     <div class="nav_category" data-category="recovery">
-      <h4 class="recovery"
+      <h4 class="recovery step3"
           data-toggle="collapse"
           data-parent="#policynav"
           href="#recovery_filters">
           Recovery Policy
           <span class="caret"></span>
       </h4>
-      <div id="recovery_filters" class="filters collapse in">
+      <div id="recovery_filters" class="filters collapse">
         <p>States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
         <div class="case-studies-filter checkbox">
           <input id='recovery_studies'
