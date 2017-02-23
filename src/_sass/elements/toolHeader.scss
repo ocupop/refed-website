@@ -46,6 +46,33 @@
   }
 }
 
+#toolPrint {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  display: flex;
+  z-index: 800;
+  .button {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    &.share {
+      font-size: 12px;
+      background-color: $cream;
+    }
+  }
+}
+
+.print {
+  padding: 0 5px;
+  .icon-printer {
+    color: $cream;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+  }
+} 
+
 body.condensed-header {
   #toolHeader {
     .brand {

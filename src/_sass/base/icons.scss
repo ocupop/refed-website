@@ -26,6 +26,9 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-printer:before {
+  content: "\e91e";
+}
 .icon-arrow-left:before {
   content: "\e91b";
 }
