@@ -5,7 +5,7 @@ $.extend($.scrollTo.defaults, {
   axis: 'y',
   duration: 800,
   offset: {
-    top: -100
+    top: -130
   }
 });
 
