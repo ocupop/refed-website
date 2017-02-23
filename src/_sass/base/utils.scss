@@ -3,9 +3,9 @@
 .flush-bottom { padding-bottom: 0 !important; }
 
 // Bleeds
-.fullbleed { padding: 0; }
-.bottombleed { padding-bottom: 0; }
-.topbleed { padding-top: 0; }
+.fullbleed { padding: 0 !important; }
+.bottombleed { padding-bottom: 0 !important; }
+.topbleed { padding-top: 0 !important; }
 
 /* -----------------------------------------
    Utility Classes

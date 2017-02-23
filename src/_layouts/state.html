@@ -2,7 +2,6 @@
 layout: tool
 ---
 {% contentfor sidebar %}
-
 <div class="statenav sticky" data-offset-top="120">
   <h4 class="prevention">
       <a href="#state-prevention-policy" title="prevention policy" class="toc-entry">Prevention Policy</a>
@@ -29,30 +28,27 @@ layout: tool
     <li><a href="#organic-waste" class="toc-entry toc-h1">Organic waste bans &amp; Waste recycling laws</a></li>
   </ul>
 </div>
-
 {% endcontentfor %}
 
-<section class="border cream-border fullbleed">
+<section id="state-header" class="border cream-border fullbleed">
+  {% include elements/breadcrumbs.html %}
   <div class="container">
     {% include_relative _partials/state_header.html %}
   </div>
 </section>
 <section id="state-prevention-policy" class="border prevention-border">
   <div class="container">
-    <h1 class="hide" data-label-class="prevention">Prevention Policy</h1>
     {% include_relative _partials/state_date_labeling.html %}
   </div>
 </section>
 <section id="state-recovery-policy" class="border recovery-border">
   <div class="container">
-    <h1 class="hide" data-label-class="recovery">Recovery Policy</h1>
     {% include_relative _partials/state_liability_protection.html %}
     {% include_relative _partials/state_tax_incentives.html %}
   </div>
 </section>
 <section id="state-recycling-policy" class="border recycling-border">
   <div class="container">
-    <h1 class="hide" data-label-class="recycling">Recycling Policy</h1>
     {% include_relative _partials/state_animal_feed.html %}
     {% include_relative _partials/state_organic_waste.html %}
   </div>
