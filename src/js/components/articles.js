@@ -21,12 +21,12 @@
 $.behaviors('.articles', initMixItUp);
 
   function initMixItUp(container) {
-    
-    window.console.log('articles.js: articles ready');
+
     var mixer = mixitup(container, {
       selectors: {
         target: '.article'
       }
+      
     });
 
     $('.sort-articles').on('click', function(){
