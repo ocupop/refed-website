@@ -113,6 +113,16 @@ $.behaviors('.mapnav', initMapNav);
       activateMap(targetMap);
     });
     
+    mapnav.on('click', function(e) {
+      window.console.log(e);
+      if(e.hasOwnProperty('originalEvent')) {
+        activateMap(targetMap);
+      } else {
+        window.console.log("map.js: initMapNav(); - Program Click");
+      }
+    });
+
+
 
     $('.map-filter, .map-subfilter').on('change', function(e) {
       var checked = $(this).prop("checked"),
@@ -277,11 +287,12 @@ $.behaviors('.mapnav', initMapNav);
 
   function activateMap(map) {
     map.parent().finish().removeClass('mapWizard');
+    $('#statenav').slideDown();
   }
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
 
-    window.scrollTo(0, 0);
+    pageScroll('#pageContent', 120);
     mapnav.removeClass('bottom');
     wizard.delay(500)
       .queue(function() { 
@@ -323,6 +334,7 @@ $.behaviors('.mapnav', initMapNav);
   window.onhashchange = function() {
 
       var hash        = window.location.hash;
+      window.console.log("map.js: window.onhashchange()");
 
       // Compare new hash with active hash
       // if (hash === activeHash) return; // no change
