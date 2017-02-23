@@ -1,0 +1,87 @@
+<!-- Mobile: Map Filters -->
+<div class="container mobilenav">
+  <div  class="row">
+    <div class="col-xs-12">
+      <div class="content">
+        <p>Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+        
+        {% include nav/quicknav.html %}
+
+        <p>Select a policy filter below to view the States related to that policy</p>
+        <button
+           data-parent=".mobilenav"
+           data-target="#liability-collapse"
+           class="button recovery"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="liability-collapse">
+           Liability Protection
+        </button>
+        <div class="collapse" id="liability-collapse">
+          {% include_relative _partials/legend-liability-protection.html %}
+          {% include svg/map_food-waste-liability-protection.svg %}
+        </div>
+
+        <button
+           data-parent=".mobilenav"
+           data-target="#tax-collapse"
+           class="button recovery"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="tax-collapse">
+           Tax Incentives
+        </button>
+        <div class="collapse" id="tax-collapse">
+          {% include_relative _partials/legend-tax-incentives.html %}
+          {% include svg/map_food-waste-tax-incentives.svg %}
+        </div>
+
+        <button
+           data-parent=".mobilenav"
+           data-target="#feed-collapse"
+           class="button recycling"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="feed-collapse">
+           Animal Feed
+        </button>
+        <div class="collapse" id="feed-collapse">
+          {% include_relative _partials/legend-animal-feed.html %}
+          {% include svg/map_food-waste-animal-feed.svg %}
+        </div>
+
+
+        <button
+           data-parent=".mobilenav"
+           data-target="#waste-collapse"
+           class="button recycling"
+           data-toggle="collapse"
+           aria-expanded="false"
+           aria-controls="waste-collapse">
+           Organic Waste Bans &amp; Waste Recycling Laws
+        </button>
+        <div class="collapse" id="waste-collapse">
+          {% include_relative _partials/legend-organic-waste.html %}
+          {% include svg/map_food-waste-organic-waste-bans.svg %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-5">
+      <div class="content">
+        <img src="/img/tools/policy/spotlight-image-500px.jpg" class="img-responsive center-block" alt="Spotlight on date labeling regulations image">
+      </div>
+    </div>
+    <div id="spotlight" class="col-xs-12 col-md-7">
+      <div class="content">
+        <h2>Spotlight on date labeling regulations</h2>
+        <p>Current date labeling practices on food packaging cause confusion that leads to 20% of consumer waste of safe, edible food. Five to 10% of this could be impacted by standardizing policy around date labeling.</p>
+        <a href="{{ site.baseurl }}/tools/spotlight-on-date-labeling-regulations/" class="button"><span>Learn More &nbsp;&gt;</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END Mobile: Map Filters -->
