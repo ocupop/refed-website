@@ -1,27 +1,19 @@
-{% assign tab = true %}
-{% if page.path contains 'index' %}
-  {% assign tab = false %}
-{% endif %}
 <div class="menu">
   <ul>
     <li>
-      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
-          href="/tools/spotlight-on-date-labeling-regulations/spotlight#quiz">Quiz</a>
+      <a href="/tools/spotlight-on-date-labeling-regulations/quiz"
+      {% if page.url =='/tools/spotlight-on-date-labeling-regulations/quiz' %}class="active"{% endif %}>
+      Quiz</a>
     </li>
     <li>
-      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
-          href="/tools/spotlight-on-date-labeling-regulations/spotlight#carousel">Policy Issues</a>
+      <a href="/tools/spotlight-on-date-labeling-regulations/carousel"
+      {% if page.url =='/tools/spotlight-on-date-labeling-regulations/carousel' %}class="active"{% endif %}>
+        Policy Issues</a>
     </li>
     <li>
-      <a {% if tab %}data-toggle="tab" role="tab"{% endif %}
-          href="/tools/spotlight-on-date-labeling-regulations/spotlight#federal-solutions">Federal Solutions</a>
-    </li>
-    <li class="next hide">
-      <a href="/tools/policy/state-policy">U.S. Food Waste<br>Policy Finder &gt;</a>
-    </li>
-    <li class="update hide">
-      Have an update for us?<br>
-      <a href="mailto:info@refed.com">Submit it here &gt;</a>
+      <a href="/tools/spotlight-on-date-labeling-regulations/federal-solutions"
+      {% if page.url =='/tools/spotlight-on-date-labeling-regulations/federal-solutions' %}class="active"{% endif %}>
+        Federal Solutions</a>
     </li>
   </ul>
 </div>
