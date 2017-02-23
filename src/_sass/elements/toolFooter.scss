@@ -7,7 +7,7 @@
     background-color: $gray-dark;
     .container {
       width: 100%;
-      max-width: $live-content-width * 0.7;
+      max-width: $live-content-width * 0.7 + 40;
       margin-right: 0;
     }
   }

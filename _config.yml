@@ -32,15 +32,11 @@ collections:
     permalink: /content-hub/:path
 
 defaults:
-- scope:
-    path: "_states/"
-    type: 'states'
+- type: 'states'
   values:
     layout: state
     header: "<small>U.S. Food Waste</small>Policy Finder"
-- scope:
-    path: "_solutions/"
-    type: 'solutions'
+- type: 'solutions'
   values:
     nextpage:
       url: /stakeholder
@@ -48,9 +44,7 @@ defaults:
     prevpage:
       url: /solution
       title: Solutions
-- scope:
-    path: "_stakeholders/"
-    type: 'stakeholders'
+- type: 'stakeholders'
   values:
     nextpage:
       url: /action
