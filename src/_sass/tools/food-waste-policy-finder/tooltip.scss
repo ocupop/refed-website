@@ -3,6 +3,7 @@
   position: absolute;
   top: 0;
   width: 500px;
+  height: 100%;
   background-color: #fff;
   box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
   z-index: 9;
@@ -36,6 +37,9 @@
 }
 
 @media all and (max-width: $screen-sm-max) {
+  #tooltip {
+    display: none !important;
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {
