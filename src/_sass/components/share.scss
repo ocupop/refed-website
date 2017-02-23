@@ -18,6 +18,7 @@
   }
   .links {
     width: 100%;
+    margin-top: 10px;
   }
   input {
     width: 100%;
@@ -45,17 +46,21 @@
 
 @media all and (max-width: $screen-xs-max) {
   #share-instructions {
-    height: 190px;
-    top: -190px;
-    padding-top: 20px;
+    padding: 10px 20px;
+    height: 200px;
+    top: -200px;
+    h3 {
+      margin-top: 0;
+    }
     input {
       margin-top: -5px;
     }
     .links {
+      margin-top: 0;
       width: 100%;
     }
-    .content {
-      padding: 5px 20px;
+    .close {
+      top: 10px;
     }
   }
 }
