@@ -1,23 +1,25 @@
-<div id="share-instructions" class="cream">
-  <span class="close">x</span>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h3>Share {{ page.title }}</h3>
-      </div>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="links">
-          <div class="row">
-            <div class="col-xs-12 col-sm-3">
-              <a class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}" target="_blank"><i class="icon icon-facebook"></i></a>
-              <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&amp;text={{ page.title }}+%7C+Rethink+Food+Waste&amp;hashtags=refed" target="_blank"><i class="icon icon-twitter"></i></a>
-              <a class="mail" href="mailto:?subject=Refed - {{ page.title }}"><i class="icon icon-mail"></i></a>
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&title={{ page.title }}&summary=[EXCERPT]&source=" target="_blank"><i class="icon icon-linkedin"></i></a>
-            </div>
-            <div class="col-xs-12 col-sm-9">
-              <input type="text" value="{{ site.url }}{{ page.url | remove: '/index'}}">
+<div id="share-instructions">
+  <div class="notificationBar cream">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <span class="close">x</span>
+          <h3>Share {{ page.title }}</h3>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="links">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <a class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}" target="_blank"><i class="icon icon-facebook"></i></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&amp;text={{ page.title }}+%7C+Rethink+Food+Waste&amp;hashtags=refed" target="_blank"><i class="icon icon-twitter"></i></a>
+                <a class="mail" href="mailto:?subject=Refed - {{ page.title }}"><i class="icon icon-mail"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//{{ site.url | remove: 'http://'}}{{ page.url}}&title={{ page.title }}&summary=[EXCERPT]&source=" target="_blank"><i class="icon icon-linkedin"></i></a>
+              </div>
+              <div class="col-xs-12 col-sm-9">
+                <input type="text" value="{{ site.url }}{{ page.url | remove: '/index'}}">
+              </div>
             </div>
           </div>
         </div>
