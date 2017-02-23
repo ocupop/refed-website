@@ -2,6 +2,11 @@
   #pageContent {
     margin-top: 120px;
   }
+  &.condensed-header {
+    #pageContent {
+      margin-top: 120px;
+    }
+  }
 }
 
 @media all and (max-width: $screen-md-max) {

@@ -31,7 +31,7 @@ $.behaviors('[class^="toc-entry"]', tocLink);
           text = heading.text(),
           label = heading.data('label'),
           label_class = "toc-entry toc-"+ heading_type,
-          assign_label = label ? label : heading.text(),
+          assign_label = label ? label : text,
           id = heading.attr('id'),
           new_id = id ? id : text.trim();
       
@@ -51,8 +51,10 @@ $.behaviors('[class^="toc-entry"]', tocLink);
     link = $(link);
     var target = link.attr('href');
     var offset = $('#toolHeader').height() + 10;
+    window.console.log("toc.js: offset", offset);
 
     link.on('click', function() {
+      window.console.log("toc.js: offset on click", offset);
       pageScroll(target, offset);
     });
 

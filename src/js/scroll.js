@@ -53,7 +53,7 @@ $(window).scroll(function(){
 
 window.pageScroll = function(target, offset) {
   target = $(target);
-  offset = offset || 0
+  offset = offset || 0;
 
   $('html, body').animate({
     scrollTop: target.offset().top - offset
