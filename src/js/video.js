@@ -18,7 +18,7 @@
  */
 (function() {
 
-$.behaviors('.videoPlay', initVideo);
+$.behaviors('[data-toggle="video"]', initVideo);
 
   function initVideo(button) {
     var target = $(button).data('target');
