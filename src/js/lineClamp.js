@@ -31,7 +31,7 @@ $.behaviors('.lineClamp', clamp);
     var total_height = container.css('height').replace(/[^-\d\.]/g, '');
     var unclamp = '<button class="unclamp">Read More</button>';
     if(clamp_height <= total_height){
-      container.css('height', num_lines * line_height);
+      container.css('height', num_lines * line_height + 20);
       $('<button class="unClamp">Read More</button>').insertAfter(container);
     }
 

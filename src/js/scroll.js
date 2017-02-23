@@ -48,7 +48,10 @@ $(window).scroll(function(){
 
 // });
 
-function pageScroll(target, offset) {
+
+// function pageScroll(target, offset) 
+
+window.pageScroll = function(target, offset) {
   target = $(target);
   offset = offset || 0
 

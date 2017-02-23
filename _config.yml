@@ -5,29 +5,6 @@ description:  "A data-driven guide for businesses, government, funders, and nonp
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dev.refed.com" # the base hostname & protocol for your site
 
-defaults:
-- type: 'solutions'
-  values:
-    nextpage:
-      url: /stakeholder
-      title: Stakeholders
-    prevpage:
-      url: /solution
-      title: Solutions
-- type: 'stakeholders'
-  values:
-    nextpage:
-      url: /action
-      title: Action
-    prevpage:
-      url: /stakeholder
-      title: Stakeholders
-- type: 'states'
-  values:
-    layout: state
-    header: "<small>U.S. Food Waste</small>Policy Finder"
-    sidebar: state
-
 collections:
   solutions:
     output: true
@@ -53,6 +30,31 @@ collections:
     output: true
     layout: article
     permalink: /content-hub/:path
+
+defaults:
+- type: 'states'
+  values:
+    layout: state
+    header: "<small>U.S. Food Waste</small>Policy Finder"
+- type: 'solutions'
+  values:
+    nextpage:
+      url: /stakeholder
+      title: Stakeholders
+    prevpage:
+      url: /solution
+      title: Solutions
+- type: 'stakeholders'
+  values:
+    nextpage:
+      url: /action
+      title: Action
+    prevpage:
+      url: /stakeholder
+      title: Stakeholders
+
+
+
 
 
 

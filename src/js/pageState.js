@@ -41,7 +41,9 @@ window.addEventListener('popstate', function(event) {
     var hash = location.hash;
 
     if (hash) {
+      pageScroll('#pageContent', 120);
       $(hash).addClass('active');
+      $('[href$="'+hash+'"]').addClass('active');
       // $.scrollTo(location.hash);
     } else {
       window.console.log("pageState.js: Checked for hash but did not find one.");

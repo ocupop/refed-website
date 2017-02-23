@@ -50,7 +50,7 @@ body.state-policy {
   .mapInstructions {
     display: flex;
     opacity: 1;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
   }
 
   .show0 { opacity: 1; }
@@ -84,7 +84,7 @@ body.state-policy {
 
 .policyFinder_map {
   position: relative;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
   background: transparent !important;
   .states {
     fill: #e3dcca;
@@ -164,5 +164,5 @@ body.state-policy {
 }
 
 @media all and (max-width: $screen-xs-max) {
-
+  .policyFinder_map { display: none; }
 }

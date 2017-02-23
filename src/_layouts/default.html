@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+{% if page.layout == 'state' %}
+  {% assign sidebar = 'state' %}
+{% else %}
+  {% assign sidebar = page.sidebar %}
+{% endif %}
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
@@ -12,16 +17,17 @@
 
     {% include search-results.html %}
 
-    <div id="pageContent" class="{% if page.sidebar %}sidebar{% endif %}">
+    <div id="pageContent" class="{% if sidebar %}sidebar{% endif %}">
       <main>
         {% if page.breadcrumb %}
           {% include elements/breadCrumbs.html%}
         {% endif %}
         {{ content }}
       </main>
-      {% if page.sidebar %}
+
+      {% if sidebar %}
         <aside class="{{ page.sidebar }}Sidebar">
-          {% if page.sidebar == 'toc' %}
+          {% if sidebar == 'toc' %}
             <div class="sticky" data-offset-top="120">
               <div class="content">
                 <ul class="nav tableofcontents"></ul>
@@ -32,6 +38,7 @@
           {% endif %}
         </aside>
       {% endif %}
+
     </div>
     {% if page.url contains 'tool' %}
       {% include elements/toolFooter.html %}

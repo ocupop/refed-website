@@ -1,7 +1,8 @@
 .lineClamp {
   position: relative;
   height: auto;
-  padding-bottom: 3em;
+  padding-bottom: 0;
+  margin: 0;
   overflow: hidden;
   @include transition(.4s);
   &:after {
@@ -15,6 +16,7 @@
     background: linear-gradient(to bottom, rgba(247, 245, 240, 0), rgba(247, 245, 240, 1) 50%);
   }
   &.open {
+    padding-bottom: 0;
     &:after {
       display: none;
     }

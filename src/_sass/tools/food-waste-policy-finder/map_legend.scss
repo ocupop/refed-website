@@ -1,6 +1,6 @@
 .map-legend {
   position: absolute;
-  top: 100%;
+  top: 75%;
   left: 35%;
   text-align: left;
   width: 50%;
@@ -70,9 +70,8 @@
 @media(max-width: $screen-md-max) {
   .map-legend {
     right: auto;
-    left: 0;
-    width: 100%;
-    top: 100%;
+    left: 10%;
+    width: 80%;
     .legend-key {
       &.icon-key {
         border-left: none;
@@ -88,4 +87,7 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
+  .map-legend {
+    
+  }
 }
