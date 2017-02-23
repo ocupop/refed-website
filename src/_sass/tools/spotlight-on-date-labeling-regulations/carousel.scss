@@ -57,15 +57,30 @@
 
 @media all and (max-width: $screen-md-max) {
   .carousel-datelabel {
-
+    .item { min-height: 100px; }
+  }
+  #carousel-date-label {
+    padding-bottom: 20px;
+  }
+  #carousel-controls {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+  #start-slides {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
   .carousel-datelabel {
     // #start-slides { position: relative; bottom: 0; }
-    .item { min-height: 100px; }
   }
+  
 }
 
 @media all and (max-width: $screen-xs-max) {

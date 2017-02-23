@@ -89,7 +89,7 @@ breadcrumb: true
             <img src="/img/maps/map_date-label-intro-end.svg">
           </div>
         </div>
-        <div class="content text-center">
+        <div id="carousel-controls" class="content text-center">
           <div class="carousel-controls">
             <a class="left" href="#carousel-date-label" role="button" data-slide="prev">
               <i class="icon-prev"></i>
@@ -132,6 +132,14 @@ breadcrumb: true
   $('#start-slides').click(function(){
     $('#labeling-carousel-intro').hide();
     $('.carousel-datelabel').fadeIn();
+  });
+
+  $('[data-slide="prev"]').on('click', function(){
+    var progress = $('#carousel-date-label .active').data("progress");
+    if(progress == 25){
+      $('#labeling-carousel-intro').fadeIn();
+      $('.carousel-datelabel').hide();
+    }
   });
 
   $(window).on('hide.bs.tab', function(e) {

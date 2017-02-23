@@ -89,17 +89,10 @@ body.condensed-header {
   }
 }
 
-
-@media all and (max-width: $screen-xs-max) {
-  #toolHeader {
-
-  }
-}
-
 @media all and (max-width: $screen-sm-max) {
   #toolHeader {
     display: block;
-    position: absolute;
+    // position: absolute;
     height: auto;
     background: $cream-lighter;
     .container-flex {
@@ -124,4 +117,16 @@ body.condensed-header {
     padding: 8px 20px;
     margin: 0;
   }
+
+  #toolPrint {
+    top: 3px;
+  }
 }
+
+
+@media all and (max-width: $screen-xs-max) {
+  #toolHeader {
+
+  }
+}
+
