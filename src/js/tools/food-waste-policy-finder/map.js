@@ -20,20 +20,12 @@
  */
 (function() {
 
-$.behaviors('.mapInstructions', mapInstructions);
 $.behaviors('.policyFinder_map', initMap);
 $.behaviors('.mapnav', initMapNav);
 
 
-  function mapInstructions(container) {
-    container = $(container);
-    container.on('click', function() {
-      $('.policyFinder_map').addClass('active');
-      $('.mapnav').finish();
-    });
-  }
-
   function initMap(map) {
+
     var width = 960,
         height = 500;
 
@@ -111,10 +103,16 @@ $.behaviors('.mapnav', initMapNav);
     }
   }
 
-  function initMapNav(mapNav) {
+  function initMapNav(mapnav) {
+    mapnav = $(mapnav);
+    var targetMap = $(mapnav.data('target'));
 
-    var targetMap = $(mapNav).data('target');
-    animateMap($('.mapWizard'));
+    startMapWizard(mapnav);
+
+    $('.show0, .mapInstructions').on('click', function() {
+      activateMap(targetMap);
+    });
+    
 
     $('.map-filter, .map-subfilter').on('change', function(e) {
       var checked = $(this).prop("checked"),
@@ -177,7 +175,6 @@ $.behaviors('.mapnav', initMapNav);
         var sf = $(this).hasClass('map-subfilter');
         var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
         // window.console.log ("mapnav.js:", $(this), bp);
-
         if(checked) {
           var showStudies = $el.find('.study-filter:checked').length;
           var section = $(this).closest('.section_root').attr('data-section');
@@ -200,6 +197,13 @@ $.behaviors('.mapnav', initMapNav);
                 indeterminate: false,
                 checked: false
               });
+              // select only a single subfilter
+              var parent = $(this).closest('ul');
+              parent.find('.map-subfilter').not($(this)).prop({
+                indeterminate: false,
+                checked: false
+              });
+
             } else {
               $el.find('.map-filter, .map-subfilter').not(this).prop({
                 indeterminate: false,
@@ -221,6 +225,17 @@ $.behaviors('.mapnav', initMapNav);
           if(bp) { 
             $(targetMap).removeClass('show-studies');
           } else {
+            if(sf) {
+              var parent = $(this).closest('ul');
+              parent.find('.map-subfilter').not($(this)).prop({
+                indeterminate: false,
+                checked: false
+              });
+              $(this).prop({
+                indeterminate: false,
+                checked: true
+              });
+            }
             clearLevels();
           }
 
@@ -260,46 +275,48 @@ $.behaviors('.mapnav', initMapNav);
     });
   }
 
-  function animateMap(map) {
-    window.console.log("Start animation");
-    var mapClass = map.attr('class'),
-        mapnav = $('.mapnav');
+  function activateMap(map) {
+    map.parent().finish().removeClass('mapWizard');
+  }
+  function startMapWizard(mapnav) {
+    var wizard = $('.mapWizard');
 
     window.scrollTo(0, 0);
     mapnav.removeClass('bottom');
-    map.delay(2000)
+    wizard.delay(500)
       .queue(function() { 
-        map.attr( "class", mapClass + ' step1' ).dequeue();
+        wizard.attr( "class", "mapWizard step1" ).dequeue();
         mapnav.find('.step1').trigger('click');
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass + ' step2' ).dequeue();
+        wizard.attr( "class", "mapWizard step2" ).dequeue();
         mapnav.find('.step2').trigger('click');
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass + ' step3' ).dequeue();
+        wizard.attr( "class", "mapWizard step3" ).dequeue();
         mapnav.find('.step3').trigger('click');
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass + ' step4' ).dequeue();
+        wizard.attr( "class", "mapWizard step4" ).dequeue();
         mapnav.find('.step4').trigger('click');
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass + ' step5' ).dequeue();
+        wizard.attr( "class", "mapWizard step5" ).dequeue();
         mapnav.find('.step5').trigger('click');
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass + ' step6' ).dequeue();
+        wizard.attr( "class", "mapWizard step6" ).dequeue();
         mapnav.find('.step6').trigger('click');
+        $('#statenav').slideDown();
       })
       .delay(2000)
       .queue(function() {
-        map.attr( "class", mapClass ).stop().finish();
+        wizard.attr( "class", "mapWizard" ).stop().finish();
       })
   }
 
