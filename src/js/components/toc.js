@@ -30,12 +30,17 @@ $.behaviors('[class^="toc-entry"]', tocLink);
           heading_type = heading.get(0).tagName.toLowerCase(),
           text = heading.text(),
           label = heading.data('label'),
+          label_class = "toc-entry toc-"+ heading_type,
           assign_label = label ? label : heading.text(),
           id = heading.attr('id'),
           new_id = id ? id : text.trim();
+      
       heading.attr('id', new_id);
+      if(heading.data('label-class')){ 
+        label_class += " "+heading.data('label-class');
+      }
 
-      list_item = '<li><a href="#'+new_id+'" class="toc-entry toc-'+heading_type+'" title="'+assign_label+'">'+assign_label+'</a></li>'
+      list_item = '<li><a href="#'+new_id+'" class="'+label_class+'" title="'+assign_label+'">'+assign_label+'</a></li>'
       container.append(list_item);
 
     });

@@ -1,24 +1,58 @@
 ---
 layout: tool
 ---
-<section class="border cream-border">
+{% contentfor sidebar %}
+
+<div class="statenav sticky" data-offset-top="120">
+  <h4 class="prevention">
+      <a href="#state-prevention-policy" title="prevention policy" class="toc-entry">Prevention Policy</a>
+  </h4>
+  <ul class="nav">
+    <li><a href="#date-labeling" class="toc-entry toc-h1">Date labeling</a></li>
+  </ul>
+
+  <h4 class="recovery">
+      <a href="#state-recovery-policy" title="Recovery policy" class="toc-entry">Recovery Policy</a>
+  </h4>
+  <ul class="nav">
+    <li><a href="#liability-protection" class="toc-entry toc-h1">Liability protection</a></li>
+  </ul>
+  <ul class="nav">
+    <li><a href="#tax-incentives" class="toc-entry toc-h1">Tax Incentives</a></li>
+  </ul>
+
+  <h4 class="recycling">
+    <a href="#state-recycling-policy" title="Recycling policy" class="toc-entry">Recycling Policy</a>
+  </h4>
+  <ul class="nav">
+    <li><a href="#animal-feed" class="toc-entry toc-h1">Animal Feed</a></li>
+    <li><a href="#organic-waste" class="toc-entry toc-h1">Organic waste bans &amp; Waste recycling laws</a></li>
+  </ul>
+</div>
+
+{% endcontentfor %}
+
+<section class="border cream-border fullbleed">
   <div class="container">
     {% include_relative _partials/state_header.html %}
   </div>
 </section>
-<section class="border prevention-border">
+<section id="state-prevention-policy" class="border prevention-border">
   <div class="container">
+    <h1 class="hide" data-label-class="prevention">Prevention Policy</h1>
     {% include_relative _partials/state_date_labeling.html %}
   </div>
 </section>
-<section class="border recovery-border">
+<section id="state-recovery-policy" class="border recovery-border">
   <div class="container">
+    <h1 class="hide" data-label-class="recovery">Recovery Policy</h1>
     {% include_relative _partials/state_liability_protection.html %}
     {% include_relative _partials/state_tax_incentives.html %}
   </div>
 </section>
-<section class="border recycling-border">
+<section id="state-recycling-policy" class="border recycling-border">
   <div class="container">
+    <h1 class="hide" data-label-class="recycling">Recycling Policy</h1>
     {% include_relative _partials/state_animal_feed.html %}
     {% include_relative _partials/state_organic_waste.html %}
   </div>
