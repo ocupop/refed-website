@@ -106,21 +106,30 @@ $.behaviors('.mapnav', initMapNav);
   function initMapNav(mapnav) {
     mapnav = $(mapnav);
     var targetMap = $(mapnav.data('target'));
+    var search = window.location.search;
+
+    window.console.log('location:', location);
 
     startMapWizard(mapnav);
 
+    if(search) {
+      activateMap(mapnav, search);
+    } else {
+      mapnav.on('click', function(e) {
+        if(e.hasOwnProperty('originalEvent')) {
+          activateMap(mapnav);
+        } else {
+          // window.console.log("map.js: initMapNav(); - Program Click");
+        }
+      });
+    }
+
+    // Add listeners to activate map
     $('.show0, .mapInstructions').on('click', function() {
-      activateMap(targetMap);
+      activateMap(mapnav);
     });
     
-    mapnav.on('click', function(e) {
-      window.console.log(e);
-      if(e.hasOwnProperty('originalEvent')) {
-        activateMap(targetMap);
-      } else {
-        window.console.log("map.js: initMapNav(); - Program Click");
-      }
-    });
+
 
 
 
@@ -285,9 +294,22 @@ $.behaviors('.mapnav', initMapNav);
     });
   }
 
-  function activateMap(map) {
+  function activateMap(mapnav, search) {
+    map = $(mapnav.data('target'));
     map.parent().finish().removeClass('mapWizard');
+
     $('#statenav').slideDown();
+    
+    // check url and trigger clicks in mapnav
+    mapnav.find('#'+urlParams['category']).trigger('click');
+
+    var filters = urlParams['filters'].split(',')
+    for(let i in filters) {
+      setTimeout(function(){
+        mapnav.find('#'+filters[i]).trigger('click');
+      }, i * 500);
+
+    }
   }
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
