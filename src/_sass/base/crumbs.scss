@@ -1,0 +1,40 @@
+#crumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  li {
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 100;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    a {
+      // color: $gray;
+    }
+  }
+}
+.breadcrumb>li+li:before {
+  padding: 0 4px;
+  color: $gray;
+  content: "\003e";
+}
+
+@media all and (max-width: $screen-md-max) {
+
+}
+
+@media all and (max-width: $screen-sm-max) {}
+@media all and (max-width: $screen-xs-max) {
+  #crumbs {
+    display: none;
+  }
+}
