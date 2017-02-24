@@ -49,27 +49,30 @@
 #toolPrint {
   position: absolute;
   top: 27px;
-  right: 0;
+  right: 20px;
   display: flex;
-  z-index: 800;
+  z-index: 999;
   .button {
-    height: 24px;
-    line-height: 24px;
-    padding: 0 10px;
+    height: auto;
+    line-height: 1.2em;
+    padding: 6px 10px;
     &.share {
       font-size: 12px;
-      background-color: $cream;
     }
   }
 }
 
 .print {
   padding: 0 5px;
+  color: $gray-dark;
   .icon-printer {
-    color: $cream;
+    color: inherit;
     font-size: 18px;
     line-height: 24px;
     height: 24px;
+  }
+  &:hover {
+    color: $gray-base;
   }
 } 
 
