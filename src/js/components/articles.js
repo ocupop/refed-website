@@ -23,15 +23,19 @@ $.behaviors('.articles', initMixItUp);
   function initMixItUp(container) {
 
     var mixer = mixitup(container, {
+      multifilter: {
+          enable: true
+      },
       selectors: {
-        target: '.article'
+        target: '.article',
+        control: '[data-mixitup-control]'
       }
-      
     });
 
     $('.sort-articles').on('click', function(){
-      var sort = $(this).data('sort');
-      window.console.log(sort);
+      var sort = $(this).attr('data-sort');
+      mixer.sort(sort);
+      
       if(sort == 'date:asc'){
         $(this).attr('data-sort', 'date:desc');
       } else {

@@ -13,12 +13,12 @@
           <select name="filter-articles" id="filter-articles">
             <option value="all">View All</option>
             {% for category in uniq_cat_list %}
-              <option value="[data-type='{{ category }}']">{{ category | capitalize }}</option>
+              <option value="[data-type='{{ category }}']" data-mixitup-control>{{ category | capitalize }}</option>
             {% endfor %}
           </select>
         </div>
-        
-        <p class="sort-articles" data-sort="date:desc">Sort by date <span class="caret"></span></p>
+
+        <p class="sort-articles" data-sort="date:desc" data-mixitup-control>Sort by date <span class="caret"></span></p>
       </div>
     </div>
   </div>
