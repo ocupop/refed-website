@@ -23,40 +23,44 @@ $.behaviors('.share', initShare);
   function initShare(button) {
     button = $(button);
 
-    var close = $('#share-instructions .close');
-    var share_instructions = $('#share-instructions');
+    var share = {};
+    share.title = button.data('title') || document.querySelector("title").innerHTML;
+    share.summary = document.querySelector('meta[name="description"]')["content"];
+    share.url = button.data('link') || window.location.href;
+
+    window.console.log(window.location.href);
 
     button.on('click', function(e){
       e.preventDefault();
-      build_urls(e);
-      share_instructions.toggleClass('active');
+      build_urls(share);
     });
+
+    // $(window).bind('hashchange', function() {
+    //   window.console.log("share.js: hashchange");
+    // }); 
+
+  }
+
+  function build_urls(share) {
+    window.console.log('share:', share);
+    var facebook_url = "http://www.facebook.com/sharer.php?u=" + share.url,
+        twitter_url = "https://twitter.com/intent/tweet?url="+share.url+"&text="+share.title+"+%7C+Rethink+Food+Waste&amp;hashtags=refed",
+        linkedin_url = "https://www.linkedin.com/shareArticle?mini=true&url="+share.url+"&title="+share.title+"&summary="+share.summary+"&source=",
+        mail_url = "mailto:?subject=ReFED - "+share.title;
+
+    var close = $('#share-instructions .close');
+    var share_instructions = $('#share-instructions');
+
+    share_instructions.find('a.facebook').attr('href', facebook_url).end()
+                      .find('a.twitter').attr('href', twitter_url).end()
+                      .find('a.linkedin').attr('href', linkedin_url).end()
+                      .find('a.mail').attr('href', mail_url).end()
+                      .find('input.link').val(share.url).end()
+                      .addClass('active');
 
     close.on('click', function(){
       share_instructions.removeClass('active');
     });
-
-    $(window).bind('hashchange', function() {
-      window.console.log("share.js: hashchange");
-    }); 
-
-  }
-  function build_urls(event) {
-    var facebook_url = "http://www.facebook.com/sharer.php",
-        twitter_url = "https://twitter.com/intent/tweet",
-        linkedin_url = "https://www.linkedin.com/shareArticle",
-        mail_url = "mailto:?subject=ReFED - ";
-    window.console.log(event);
   }
 
 })();
-
-
-// TODO - Combine with the embed include
-
-// share: {
-//   title: "title",
-//   summary: "lorem ipsum",
-//   url: "absolute path",
-//   keywords: "ReFED"
-// }

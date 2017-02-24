@@ -50,7 +50,7 @@ window.addEventListener('popstate', function(event) {
     } else {
       $('[data-toggle="tab"]').first().trigger('click');
 
-      window.console.log("pageState.js: Checked for hash but did not find one.");
+      // window.console.log("pageState.js: Checked for hash but did not find one.");
     }
 
   }

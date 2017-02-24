@@ -19,9 +19,9 @@
 (function() {
 
 $.behaviors('#toolnav .menu', toolnav);
+
   function toolnav(container) {
     container = $(container);
-    window.console.log("toolnav.js: Loaded");
 
     var trigger = $('#toolnav .menu-toggle');
     var tool_header = $('#toolHeader');

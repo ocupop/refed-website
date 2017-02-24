@@ -315,7 +315,9 @@ $.behaviors('.mapnav', initMapNav);
     window.console.log('#'+urlParams['category']);
     mapnav.find('#'+urlParams['category']).collapse('show');
 
-    var filters = urlParams['filters'].split(',');
+    if(urlParams['filters']) {
+      var filters = urlParams['filters'].split(',');
+    }
     for(let i in filters) {
       window.console.log("filter:", filters[i]);
       setTimeout(function(){
