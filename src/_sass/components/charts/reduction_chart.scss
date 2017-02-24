@@ -125,7 +125,13 @@
     color: $gray;
   }
 }
+@media all and (max-width: $screen-md-max) {
 
+}
+
+@media all and (max-width: $screen-sm-max) {
+
+}
 
 @media all and (max-width: $screen-xs-max) {
   .reduction_chart {
@@ -134,10 +140,4 @@
       margin-left: -100px;
     }
   }
-}
-@media all and (max-width: $screen-sm-max) {
-
-}
-@media all and (max-width: $screen-md-max) {
-
 }

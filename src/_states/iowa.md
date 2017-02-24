@@ -4,9 +4,6 @@ name: Iowa
 code: IA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -27,9 +24,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Iowa Code Ann. § 672.1
         type_of_protection: Civil and Criminal
@@ -46,9 +40,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'Iowa Code §§ 190B.101-.106, 422.11E, 422.33(30)'
         deduction_or_credit: Credit
@@ -57,9 +48,6 @@ policy_data:
         eligible_food: Any apparently wholesome food
         eligible_recipients: Food banks and emergency feeding organizations
   animal_feed:
-    overview: Iowa allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated. Individuals may feed household garbage to their own swine without heat-treating it.
-    summary:
-    link_url:
     legislation:
       - title: Iowa Code §§ 163.1–.62 (2015)
         animals_covered: All animals; exception for swine
@@ -79,12 +67,11 @@ policy_data:
           more than $25,000. § 163.61 (2015).
         relevant_state_regulatory_body: 'Iowa Department of Agriculture & Land Stewardship (§ 163.1 (2015)), <a href="http://www.iowaagriculture.gov/" target="_blank">http://www.iowaagriculture.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

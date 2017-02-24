@@ -4,9 +4,6 @@ name: Washington
 code: WA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Perishable Packaged Food Goods
@@ -45,9 +42,6 @@ policy_data:
         - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Wash. Rev. Code Ann. § 69.80.031
         type_of_protection: Civil and criminal
@@ -66,26 +60,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Washington allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: 'Wash. Admin. Code 16.36.005, 16.36.105–.113, 246.203.180 (2015)'
         animals_covered: Swine
@@ -121,9 +103,6 @@ policy_data:
           violation. 16.36.113 (2015).
         relevant_state_regulatory_body: 'Washington State Department of Agriculture (16.36.110 (2015)), <a href="http://agr.wa.gov/" target="_blank">http://agr.wa.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: SEATTLE MUN. CODE 21.36.082(C)–(D) (2017); SEATTLE MUN. CODE 21.36.083(B)–(C) (2017)
         generators_covered:

@@ -4,9 +4,6 @@ name: Hawaii
 code: HI
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk
@@ -28,9 +25,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Haw. Rev. Stat. § 145D-1—D-5
         type_of_protection: Civil or Criminal
@@ -47,26 +41,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Hawaii allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: 'Haw. Rev Stat. §§ 142-3, 142-12, 142-23.5 (2015); Haw. Admin. Rules §§ 4-17-16–23 (2015); 9 C.F.R. § 166.1 (2016)'
         animals_covered: Swine
@@ -86,12 +68,11 @@ policy_data:
           Rev Stat. §§ 142-12, 142-23.5 (2015).
         relevant_state_regulatory_body: 'Hawaii Department of Agriculture (Haw. Rev Stat. § 142-3 (2015)), Animal Industry Division, Animal Disease Control Branch, <a href="http://hdoa.hawaii.gov/ai/ldc/" target="_blank">http://hdoa.hawaii.gov/ai/ldc/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

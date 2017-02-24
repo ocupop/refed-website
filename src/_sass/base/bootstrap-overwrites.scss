@@ -5,6 +5,11 @@
   }
 }
 
+.page-header {
+  margin-top: 0;
+  border-bottom: none;
+}
+
 .lead {
   margin: 1em 0;
   font-size: 20px;
@@ -73,6 +78,15 @@
   }
 }
 
+
+@media all and (max-width: $screen-md-max) {
+ 
+}
+
+@media all and (max-width: $screen-sm-max) {
+
+}
+
 @media all and (max-width: $screen-xs-max) {
   .section-header {
     margin-bottom: 0;
@@ -93,10 +107,6 @@
       }
     }
   }
-}
-@media all and (max-width: $screen-sm-max) {
 
-}
-@media all and (max-width: $screen-md-max) {
- 
+  .breadcrumb { display: none; }
 }

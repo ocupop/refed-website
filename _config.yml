@@ -3,31 +3,7 @@ title: ReFED | Rethink Food Waste
 email: info@refed.com
 description:  "A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale. Together, we can reduce U.S. food waste by 50% by 2030."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://refed.com" # the base hostname & protocol for your site
-
-defaults:
-- type: 'solutions'
-  values:
-    nextpage:
-      url: /stakeholder
-      title: Stakeholders
-    prevpage:
-      url: /solution
-      title: Solutions
-- type: 'stakeholders'
-  values:
-    nextpage:
-      url: /action
-      title: Action
-    prevpage:
-      url: /stakeholder
-      title: Stakeholders
-- type: 'states'
-  values:
-    layout: state
-    header: "U.S. Food Waste Policy Finder"
-    slug: state-policy
-    _hide_content: true
+url: "http://dev.refed.com" # the base hostname & protocol for your site
 
 collections:
   solutions:
@@ -45,11 +21,72 @@ collections:
   states:
     output: true
     layout: state
-    permalink: /states/:path
+    permalink: /tools/food-waste-policy-finder/states/:path
+  innovators:
+    output: true
+    layout: innovator
+    permalink: /tools/innovator-database/:path
   articles:
     output: true
     layout: article
-    permalink: /tools/content-hub/:path
+    permalink: /content-hub/:path
+
+defaults:
+- type: 'states'
+  values:
+    layout: state
+    header: "<small>U.S. Food Waste</small>Policy Finder"
+- type: 'solutions'
+  values:
+    nextpage:
+      url: /stakeholder
+      title: Stakeholders
+    prevpage:
+      url: /solution
+      title: Solutions
+- type: 'stakeholders'
+  values:
+    nextpage:
+      url: /action
+      title: Action
+    prevpage:
+      url: /stakeholder
+      title: Stakeholders
+
+
+
+
+
+
+# Build settings
+safe: false
+source: src
+markdown: kramdown
+
+include: ["_pages"]
+exclude: 
+  - _tools/policy-tool/_partials
+
+
+gems:
+  - jekyll-last-modified-at
+  - jekyll-contentblocks
+# - jekyll-lunr-js-search
+
+
+# Cloudcannon Editor
+reach:
+  - Local
+  - National
+
+food_recovery_hierarchy:
+  - Prevention
+  - Recovery
+  - Recycle
+
+organization_status:
+  - For-Profit
+  - nonprofit
 
 date_labels_required_for:
   - bakery
@@ -81,20 +118,3 @@ restricted_donations_on_expired_labels:
   - perishables
   - sandwiches
   - shellfish
-
-
-# Build settings
-safe: false
-source: src
-markdown: kramdown
-
-include: ["_pages"]
-exclude: 
-  - _tools/policy-tool/_partials
-
-
-gems:
-  - jekyll-last-modified-at
-  - jekyll-toc
-  - jekyll-contentblocks
-# - jekyll-lunr-js-search

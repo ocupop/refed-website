@@ -38,7 +38,7 @@ if (!Modernizr.input.placeholder) {
 
 
 String.prototype.trim = function(){
-  return this.replace(" ", "-").toLowerCase();
+  return this.replaceAll(" ", "-").toLowerCase();
 };
 
 String.prototype.replaceAll = function(search, replacement) {
@@ -102,3 +102,15 @@ var urlParams;
     while (match = search.exec(query))
        urlParams[decode(match[1])] = decode(match[2]);
 })();
+
+
+// Replace URL Parameter
+function replaceUrlParam(url, paramName, paramValue){
+  if(paramValue == null)
+      paramValue = '';
+  var pattern = new RegExp('\\b('+paramName+'=).*?(&|$)')
+  if(url.search(pattern)>=0){
+      return url.replace(pattern,'$1' + paramValue + '$2');
+  }
+  return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue 
+}

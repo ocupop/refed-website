@@ -4,9 +4,6 @@ name: Idaho
 code: ID
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title:
         applies_to_food_type:
@@ -18,9 +15,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Idaho Code Ann. § 6-1301—1302
         type_of_protection: Civil and Criminal
@@ -37,26 +31,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Idaho prohibits the feeding of animal-derived waste to swine. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: Idaho Code Ann. § 25-234 (2015); Idaho Admin. Code r. 02.04.03.400 (2015)
         animals_covered: Swine
@@ -79,12 +61,11 @@ policy_data:
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of a misdemeanor. Each day the individual or facility violates the rule shall count as a separate offense. Idaho Code Ann. § 25-234 (2015).
         relevant_state_regulatory_body: 'Idaho Department of Agriculture, Division of Animal Industries (§ 25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/" target="_blank">http://www.agri.idaho.gov/AGRI/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

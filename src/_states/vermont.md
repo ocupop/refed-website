@@ -4,9 +4,6 @@ name: Vermont
 code: VT
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
@@ -19,9 +16,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Vt. Stat. Ann. tit. 12, § 5761—5762'
         type_of_protection: Civil and criminal
@@ -35,26 +29,14 @@ policy_data:
         protections_apply_to_direct_donations: 'Yes'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: 'Vermont prohibits the feeding of animal-derived waste to swine. Food waste that consists of only processed (that is, pasteurized) dairy products may be fed to swine. Individuals may feed household garbage to their own swine.'
-    summary:
-    link_url:
     legislation:
       - title: 'Vt. Stat. Ann. tit. 6, §§ 1671–77 (2015)'
         animals_covered: Swine
@@ -2125,9 +2107,6 @@ policy_data:
           enjoined from further violation. § 1677 (2015).
         relevant_state_regulatory_body: 'Vermont Agency of Agriculture, Food, & Markets (§ 1676 (2015)), <a href="http://agriculture.vermont.gov/" target="_blank">http://agriculture.vermont.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Vt. Stat. Ann. tit. 10, § 6605k'
         generators_covered: 'Any individual, partnership, company, corporation, association, unincorporated association, joint venture, trust, municipality, the State of Vermont or any agency, department, or subdivision of the State, federal agency, or any other legal or commercial entity.'

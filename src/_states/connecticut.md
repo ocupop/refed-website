@@ -4,9 +4,6 @@ name: Connecticut
 code: CT
 policy_data:
   date_labeling:
-    overview: 'Connecticut requires date labels only for dairy products, but does not explicitly prohibit the sale of these items past this date. However, manufacturers that choose to place date labels on other products in Connecticut must follow the Uniform Open Dating Regulation. The voluntary version of the Uniform Regulation requires the use of “Sell by” dates on perishable products and “Best if used by” dates on semi-perishable and long-shelf-life products. It also requires that perishable products sold after the “Sell by” date be clearly marked as past-date.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
@@ -46,9 +43,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Conn. Gen. Stat. Ann. § 52-557L
         type_of_protection: Civil and Criminal
@@ -65,26 +59,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit.
-    summary:
-    link_url:
     legislation:
       - title: Conn. Gen. Stat. §§ 22-320a–g (2015)
         animals_covered: Swine
@@ -102,9 +84,6 @@ policy_data:
           a garbage-feeding swine farm. § 22-320d (2015).
         relevant_state_regulatory_body: 'Connecticut Department of Agriculture (§ 22-320a), <a href="http://www.ct.gov/doag/site/default.asp" target="_blank">http://www.ct.gov/doag/site/default.asp</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Conn. Gen. Stat. Ann. § 22a-226e
         generators_covered: 'Commercial food wholesaler or distributor, industrial food manufacturer or processor, supermarket, resort or conference center.'

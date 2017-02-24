@@ -53,20 +53,12 @@
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   #subnav {
-    a {
-      height: 120px;
-      font-size: 15px;
-      small {
-        font-size: 13px;
-      }
-    }
-    hr {
-      width: auto;
-    }
+    
   }
 }
+
 @media all and (max-width: $screen-sm-max) {
   #subnav {
     a {
@@ -88,8 +80,18 @@
     }
   }
 }
-@media all and (max-width: $screen-md-max) {
+
+@media all and (max-width: $screen-xs-max) {
   #subnav {
-    
+    a {
+      height: 120px;
+      font-size: 15px;
+      small {
+        font-size: 13px;
+      }
+    }
+    hr {
+      width: auto;
+    }
   }
 }

@@ -4,9 +4,6 @@ name: Kansas
 code: KS
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -24,9 +21,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Kan. Stat. Ann. § 65-687
         type_of_protection: Civil and Criminal
@@ -40,26 +34,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Kansas prohibits the feeding of animal-derived and vegetable waste to animals. Food waste that consists of only pasteurized dairy products may be fed to animals. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: Kan. Stat. Ann. §§ 47-1301–05 (2015)
         animals_covered: All animals; exception for swine
@@ -92,12 +74,11 @@ policy_data:
           the ban is considered a separate offense. § 47-1305 (2015).
         relevant_state_regulatory_body: 'Kansas Department of Agriculture, Division of Animal Health (§ 47-1304 (2015)), <a href="https://agriculture.ks.gov/divisions-programs/division-of-animal-health" target="_blank">https://agriculture.ks.gov/divisions-programs/division-of-animal-health</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

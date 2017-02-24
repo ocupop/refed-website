@@ -1,2 +1,41 @@
-{% include_relative _partials/filters.html %}
-List View
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+          <button class="sort" data-sort="default:asc">Sort A-Z <i class="icon icon-caret-up"></i></button>
+          <button class="sort hide">Sort Newest <i class="icon icon-caret-up"></i></button>
+      </div>
+    </div>
+    <ul class="innovatorDatabase_list">
+      {% for innovator in site.innovators %}
+        <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.innovator_category }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy"
+            data-lat="{{ innovator.lat }}"
+            data-lng="{{ innovator.lng }}"
+            data-distance="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="content">
+                <h3 class="innovator_name h4"><a href="{{ innovator.url }}" title="{{ innovator.name }}">{{ innovator.name }}</a></h3>
+                <p class="innovator_description">{{ innovator.description }}</p>
+                <a href="{{ innovator.url }}" class="button inverse">View Innovator</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="content">
+                <p class="innovator_details">
+                  <em>Status:</em> {{ innovator.organization_status }}<br>
+                  <em>Category:</em> {{ innovator.innovator_category }}<br>
+                  <em>Food Recovery Hierarchy:</em> {{ innovator.food_recovery_hierarchy }}<br>
+                  <a href="{{ innovator.website }}">{{ innovator.website }}</a>
+                </p>
+                <h5 class="innovator_reach"><i class="icon icon-{{ innovator.innovator_reach | slugify }}"></i> {{ innovator.innovator_reach }} Organization</h5>
+                Distance: <span class="distance">0</span>miles.
+              </div>
+            </div>
+          </div>
+          <hr>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

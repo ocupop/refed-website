@@ -4,9 +4,6 @@ name: North Dakota
 code: ND
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Shellfish
@@ -29,9 +26,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: N.D. Cent. Code § 19-05.1-02—19-05.1-05
         type_of_protection: Civil and Criminal
@@ -45,26 +39,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: North Dakota prohibits the feeding of animal-derived and vegetable waste to swine. Food waste that consists of only dairy products from a licensed creamery or dairy may be fed to swine. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: N.D. Cent. Code §§ 36-01-01–28 (2015)
         animals_covered: Swine
@@ -75,12 +57,11 @@ policy_data:
         enforcement: Any individual or facility that violates the garbage-feeding rule is guilty of an infraction. § 36-01-28 (2015).
         relevant_state_regulatory_body: 'North Dakota Department of Agriculture, State Board of Animal Health (§ 36-01-01 (2015)), <a href="http://www.nd.gov/ndda/program/animal-health" target="_blank">http://www.nd.gov/ndda/program/animal-health</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

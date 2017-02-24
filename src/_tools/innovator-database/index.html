@@ -2,25 +2,116 @@
 layout: tool
 title: Innovator Database
 header: <small>The Food Waste</small>Innovator Database
+
 sidebar: default
-
-nextpage: false
-prevpage: false
+breadcrumb: true
 ---
-<div class="tab-content">
-  <section role="tabpanel" class="tab-pane active" id="about">
-    {% include_relative _partials/about.html %}
-  </section>
+{% contentfor sidebar %}
+  {% include elements/toolSidebar.html %}
+{% endcontentfor %}
 
-  <section role="tabpanel" class="tab-pane active" id="list">
-    {% include_relative _partials/list.html %}
-  </section>
+<section class="innovatorDatabase_about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content editable">
+          <h2>Hundreds of Innovators, One Location</h2>
+          <p>Explore the dynamic, expanding food waste innovation sector, broken down by food waste solution type, organizational status, and geographic location. The ReFED Food Waste Innovator Database is a living compilation of commercial and nonprofit entities turning the food waste problem into an opportunity for economic, social, and environmental impact. To get a perspective on the measureable impacts of the broader Innovator Categories, visit the ‘Related Solution(s)’ pages linked to each ‘Innovator Detail’ page. </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="content">
+          <i class="icon icon-list"></i>
+          <h4>Innovator List</h4>
+          <p class="editable">Easily view key information on innovators in a list format.</p>
+          <a href="/tools/innovator-database/innovators#innovatorList">View Innovator List &gt;</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="content">
+          <i class="icon icon-national"></i>
+          <h4>Innovator Map</h4>
+          <p class="editable">See where innovators are based, and whether their services are offered regionally or nationally.</p>
+          <a href="/tools/innovator-database/innovators#innovatorMap">View Innovator List &gt;</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="content">
+          <i class="icon icon-analysis"></i>
+          <h4>Innovator Analysis</h4>
+          <p class="editable">Look at the big picture – trends in the number of innovators per category organized by certain variables.</p>
+          <a href="/tools/innovator-database/innovators#innovatorAnalysis">View Innovator List &gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-push-8">
+        <div class="content">
+          <h4>Search the database</h4>
+          <p>Already know what you’re looking for? Search here.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+        <div class="content">
+          <div class="search-group" style="margin-top: 15px;">
+            <i class="icon icon-search"></i>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <hr>
+          <div class="editable">
+            <h2>Navigating the Food Waste Innovator Database</h2>
+            <p>Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
+          </div>
 
-  <section role="tabpanel" class="tab-pane active" id="map">
-    {% include_relative _partials/map.html %}
-  </section>
-
-  <section role="tabpanel" class="tab-pane active" id="analysis">
-    {% include_relative _partials/analysis.html %}
-  </section>
-</div>
+          <div>
+            <h5>TODO - Loop through categories</h5>
+          </div>
+          <hr>
+          <div class="editable">
+            <h2>Related food waste databases</h2>
+            <p>ReFED’s Food Waste Innovator Database focuses on food waste innovation, but there are a number of complementary tools that list additional organizations tackling food waste. We encourage you to check out these valuable resources, and <a href="mailto:info@refed.com">let us know if there is something missing!</a></p>
+          </div>
+          <div class="col2">
+            <ul class="editable">
+              <li>
+                <a href="#">ReFED's Policy Tool</a>
+                <p>A comprehensive overview of federal and state policies that facilitate food waste reduction and diversion. </p>
+              </li>
+              <li>
+                <a href="#">Food Rescue Locator</a>
+                <p>A directory of organizations across the U.S. that rescue, glean, transport, prepare, and distribute food to food insecure populations.</p>
+              </li>
+              <li>
+                <a href="#">OpenIDEO Food Waste Initiatives</a>
+                <p>From July to October 2016, OpenIDEO ran the global “Food Waste Challenge” – now, the organization is continuing its food waste work with new initiatives.</p>
+              </li>
+              <li>
+                <a href="#">EPA &amp; USDA Further with Food</a>
+                <p>An online hub and first-of-its-kind aggregator of existing food waste research and resources.</p>
+              </li>
+              <li>
+                <a href="#">BioCycle Resources</a>
+                <p>Searchable databases of composting facilities, anaerobic digestion facilities, and organics collection services across the U.S. and Canada. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <p class="italic">DISCLAIMER: Please note that inclusion in ReFED’s Innovator Database does not represent an endorsement from ReFED: Rethink Food Waste or our funders. ReFED is ultimately responsible for determining which entities to include in the database, and reserves the right to deny entry without explanation. ReFED is not affiliated with any organization in its database, and all names, trademarks, copyrights, intellectual property, or any proprietary information associated with an organization is under their ownership.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

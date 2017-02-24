@@ -1,0 +1,58 @@
+#innovatorMap {
+  position: relative;
+}
+.innovatorDatabase_map {
+  height: calc(100vh - 250px);
+}
+.innovatorDatabase_mapKey {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
+  .content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    >div {
+      margin: 5px 20px;
+    }
+    h4 {
+      line-height: 50px;
+      font-weight: 400;
+    }
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    small {
+      font-size: 9px;
+      float: right;
+      margin-top: -10px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_map  {
+
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .innovatorDatabase_map  {
+    
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_map {
+
+  }
+}

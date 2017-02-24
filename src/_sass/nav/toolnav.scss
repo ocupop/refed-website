@@ -7,18 +7,21 @@
     ul {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 10px auto;
       li {
         display: inline-block;
         margin: auto 0;
-        a {
+        a, button {
           padding: 0 30px;
           font-size: 16px;
           color: $gray-lighter;
           text-transform: uppercase;
           white-space: nowrap;
-          &:hover, &:focus, &:active {
+          border: none;
+          background-image: none;
+          background-color: transparent;
+          &:hover, &:focus, &:active, &.active {
             color: #fff;
           }
         }
@@ -86,9 +89,9 @@
   }
 }
 
-@media all and (max-width: $screen-xs-max) {
+@media all and (max-width: $screen-md-max) {
   #toolnav {
-
+    
   }
 }
 
@@ -105,51 +108,76 @@
         li.update { display: none; }
       }
     }
-    // .menu {
-    //   display: block;
-    //   position: fixed;
-    //   width: 320px;
-    //   height: calc(100% - 100px);
-    //   top: 100px;
-    //   left: auto;
-    //   right: -340px;
-    //   background-color: #555759;
-    //   z-index: 999;
-    //   &.open {
-    //     right: 0;
-    //   }
-    //   ul {
-    //     display: block;
-    //     padding: 30px 0;
-    //     width: auto;
-    //     li {
-    //       display: block;
-    //       height: 35px;
-    //       line-height: 35px;
-    //       a {
-    //         display: inline-block;
-    //         padding: 10px 30px;
-    //         margin: 0;
-    //         border-right: none;
-    //       }
-    //       &.next { display: none; }
-    //       &.update {
-    //         height: auto;
-    //         line-height: 1.5em;
-    //         border-top: 1px solid $gray-light;
-    //         margin-top: 30px;
-    //       }
-    //     }
-    //   }
-    // }
-    // .menu-toggle {
-    //   display: inline-block;
-    // }
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
+  .toolHeader-title {
+    padding: 5px 20px 8px 20px;
+    small {
+      display: block;
+      line-height: 1;
+    }
+  }
+  #toolHeader {
+    .brand {
+      padding: 15px 40px;
+    }
+    &.active {
+      position: fixed;
+      #toolnav {
+        .menu {
+          right: 0;
+        }
+      }
+    }
+  }
   #toolnav {
-    
+    .menu-toggle {
+      display: block;
+      top: -44px;
+      background-color: $cream;
+      padding: 0 5px;
+      left: 0;
+      i {
+        line-height: 44px;
+        height: 44px;
+        color: $text-color;
+      }
+      &:hover {
+        i {
+          color: $cream-lighter;
+        }
+      }
+    }
+    .menu {
+      width: 320px;
+      position: fixed;
+      right: -320px;
+      top: 74px;
+      height: 100%;
+      background-color: $gray;
+      @include transition(.5s);
+      ul {
+        display: block;
+        padding: 30px 0 30px 20px;
+        li {
+          display: block;
+          line-height: 30px;
+          height: auto;
+          margin: 0 .5em;
+          padding: 9px 0;
+          &.divider {
+            display: none;
+          }
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $gray-light;
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }

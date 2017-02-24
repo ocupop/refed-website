@@ -1,0 +1,98 @@
+#pageContent {
+  position: relative;
+  margin-top: 105px;
+  main {
+    width: 100%;
+    @include transition();
+  }
+  aside {
+    display: none;
+    background-color: $cream-light;
+    box-shadow: -8px 0px 5px -5px rgba(0,0,0,.2), 8px 0px 5px -5px rgba(0,0,0,.2);
+    z-index: 99;
+    @include transition();
+  }
+
+  &.sidebar {
+    display: flex;
+    flex-wrap: nowrap;
+    main, .main {
+      width: 70%;
+      .container {
+        width: 100%;
+        max-width: $live-content-width * 0.7 + 40;
+        margin-right: 20px;
+      }
+    }
+    aside, .aside {
+      display: block;
+      position: relative;
+      width: 30%;
+      .container {
+        width: 100%;
+        max-width: $live-content-width * 0.3 - 20px;
+        margin-left: 20px;
+      }
+
+      &.defaultSidebar {
+        padding-top: 30px;
+        .container {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+body.condensed-header {
+  #pageContent {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #pageContent {
+    margin-top: 50px;
+    &.sidebar {
+      display: block;
+      // flex-wrap: wrap;
+      main {
+        width: 100%;
+        .container {
+          max-width: none;
+          margin: 0 auto;
+        }
+      }
+      // aside {
+      //   width: 320px;
+      //   position: absolute;
+      //   top: 0;
+      //   left: -350px;
+      //   height: 100%;
+      //   .content {
+      //     max-width: none;
+      //   }
+      // }
+      aside.defaultSidebar {
+        width: 100%;
+        position: relative;
+        background-color: transparent;
+        .container {
+          max-width: none;
+          margin: 0;
+        }
+      }
+      aside.mapSidebar, aside.tocSidebar, aside.stateSidebar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+
+}

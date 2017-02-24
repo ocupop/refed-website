@@ -78,6 +78,18 @@
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+  #tournav {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #tournav {
+    
+  }
+}
+
 @media all and (max-width: $screen-xs-max) {
   #tournav {
     ul {
@@ -86,15 +98,5 @@
         padding: 2px 20px;
       }
     }
-  }
-}
-@media all and (max-width: $screen-sm-max) {
-  #tournav {
-    
-  }
-}
-@media all and (max-width: $screen-md-max) {
-  #tournav {
-    
   }
 }

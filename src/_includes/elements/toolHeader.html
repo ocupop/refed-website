@@ -1,19 +1,27 @@
 <header id="toolHeader">
+  <div id="toolPrint">
+    <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
+    <button class="print">
+      <i class="icon-printer"></i>
+    </button>
+  </div>  
   <div class="container-flex">
     <a class="brand" href="{{ '/' | prepend: site.baseurl }}" title="ReFED: Rethinking Food Waste">
       <img src="/img/logo-wordmark.svg">
     </a>
     <div class="toolHeader-title">
-      {{ page.header }}
+      <a href="{{ page.tool_url }}" title="{{ page.header }}">
+        {{ page.header }}
+      </a>
+    </div>
+  </div>
+  <div id="toolnav">
+    <div class="container">
+      <button class="menu-toggle menuToggle">
+        <span class="sr">Toggle navigation</span>
+        <i class="icon-menu"></i>
+      </button>
+      {% include_relative _partials/toolnav.html %}
     </div>
   </div>
 </header>
-<div id="toolnav">
-  <div class="container">
-    <button class="menu-toggle menuToggle">
-      <span class="sr">Toggle navigation</span>
-      <i class="icon-menu"></i>
-    </button>
-    {% include_relative _partials/toolnav.html %}
-  </div>
-</div>

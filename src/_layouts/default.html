@@ -1,23 +1,36 @@
 <!DOCTYPE html>
+{% if page.layout == 'state' %}
+  {% assign sidebar = 'state' %}
+{% else %}
+  {% assign sidebar = page.sidebar %}
+{% endif %}
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}_layout {{ page.collection }} {{ page.slug }}">
-    {% if page.layout == 'tool' %}
+  <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
+
+    {% include components/share.html %}
+    {% if page.url contains 'tool' %}
       {% include elements/toolHeader.html %}
     {% else %}
       {% include elements/pageHeader.html %}
     {% endif %}
-    <div id="pageContent" class="{% if page.sidebar %}sidebar {{ page.sidebar }}{% endif %}">
-      {% include search-results.html %}
+
+    {% include search-results.html %}
+
+    <div id="pageContent" class="{% if sidebar %}sidebar{% endif %}">
       <main>
+        {% if page.breadcrumb %}
+          {% include elements/breadCrumbs.html%}
+        {% endif %}
         {{ content }}
       </main>
-      {% if page.sidebar %}
-        <aside class="sidebar {{ page.sidebar }}">
-          {% if page.sidebar == 'toc' %}
-            <div class="sticky" data-offset-top="70">
+
+      {% if sidebar %}
+        <aside class="{{ page.sidebar }}Sidebar">
+          {% if sidebar == 'toc' %}
+            <div class="sticky" data-offset-top="120">
               <div class="content">
-                {{ content | toc_only }}
+                <ul class="nav tableofcontents"></ul>
               </div>
             </div>
           {% else %}
@@ -25,9 +38,16 @@
           {% endif %}
         </aside>
       {% endif %}
-      {% include elements/pageHelp.html %}
+
     </div>
-    {% include elements/pageFooter.html %}
+    {% if page.url contains 'tool' %}
+      {% include elements/toolFooter.html %}
+    {% else %}
+      {% include elements/pageFooter.html %}
+    {% endif %}
+
+    {% include elements/pageHelp.html %}
+    
     {% include thanks.html %}
     <!-- TODO - Include the policy tool tooltip -->
     {% include analytics.html %}

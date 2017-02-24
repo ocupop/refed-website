@@ -14,7 +14,7 @@
 }
 .card {
   position: relative;
-  display: none;
+  // display: none;
   box-sizing: border-box;
   width: 31%;
   max-width: 31%;
@@ -173,11 +173,11 @@
     margin: 10px;
     header {
       position: absolute;
-      bottom: 35px;
-      right: 5px;
+      bottom: 80px;
+      left: 5px;
       height: 50px;
       width: 150px;
-      text-align: right;
+      text-align: left;
       .rated {
         &:hover {
           background-color: transparent;

@@ -1,28 +1,54 @@
-<div class="sticky" data-offset-top="70">
+<div class="sticky" data-offset-top="120">
   <div class="container">
-    <div class="content">
-      <img src="/img/logo-wordmark.svg" style="width: 150px; margin 20px 0;"><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#" class="button inverse">ReFED.com</a>
-      <h4>Share this tool</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#" class="button inverse share"><i class="icon icon-share"></i> Share</a>
-      <h4>Innovator Database</h4>
-      <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <a href="#" class="button inverse">Learn More</a>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <img src="/img/logo-wordmark.svg" class="img-responsive" style="margin-bottom: 10px; margin-left:-15px;" />
+          <p class="editable">ReFED is a multi-stakeholder nonprofit powered by an influential network of the nation&rsquo;s leading business, nonprofit, foundation, and government leaders committed to scaling solutions to reducing U.S. food waste.</p>
+          <a href="/" class="button inverse nocase">ReFED.com</a>
+        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h4>Share this tool</h4>
+          <p>Think someone else would benefit from the {{ page.title }}? Share it!</p>
+          <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
+        </div>
+      </div>
+    </div>
+
+    {% if page.title == "Innovator Database" %}
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content">
+            <h4>Food Waste Policy Finder</h4>
+            <p class="editable">To learn about state and federal policies that facilitate food waste reduction and diversion, check out our Policy Tool.</p>
+            <a href="/tools/food-waste-policy-finder" class="button inverse">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content">
+            <h4>Suggest An Innovator</h4>
+            <p class="editable">We need your help to keep a pulse on food waste innovation. If you can’t find what you’re looking for, or if you see an entry that needs an update, please reach out today.</p>
+            <a href="mailto:info@refed.com" class="button inverse">Learn More</a>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content">
+            <h4>Innovator Database</h4>
+            <p class="editable">Access a living compilation of 350+ commercial and nonprofit entities turning the food waste problem into an entrepreneurial opportunity.</p>
+            <a href="/tools/innovator-database/" class="button inverse">Learn More</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
   </div>
 </div>

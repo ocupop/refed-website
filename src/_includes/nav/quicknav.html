@@ -1,0 +1,9 @@
+<div class="select quicknav-select">
+  <select id="state-select" name="state-select" class="quicknav">
+    <option>Choose State</option>
+    {% for state in site.states %}
+      <option value="{{ state.url }}">{{ state.name }}</option>
+    {% endfor %}
+  </select>
+</div>
+

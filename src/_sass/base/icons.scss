@@ -26,6 +26,39 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-printer:before {
+  content: "\e91e";
+}
+.icon-arrow-left:before {
+  content: "\e91b";
+}
+.icon-arrow-right:before {
+  content: "\e91c";
+}
+.icon-play:before {
+  content: "\e91d";
+}
+.icon-analysis:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-list:before {
+  content: "\e914";
+}
+.icon-local:before {
+  content: "\e915";
+}
+.icon-logo:before {
+  content: "\e916";
+}
+.icon-mail:before {
+  content: "\e919";
+}
+.icon-national:before {
+  content: "\e91a";
+}
 .icon-external:before {
   content: "\e913";
 }
@@ -81,6 +114,10 @@ i {
     content: "\e901";
 }
 .icon-caret-up:before {
+    content: "\e917";
+}
+.icon-caret-down:before {
+    transform: rotate(90deg);
     content: "\e917";
 }
 .icon-cloud:before {

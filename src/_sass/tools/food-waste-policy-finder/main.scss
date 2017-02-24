@@ -1,0 +1,253 @@
+// Layout adjustments
+body.state-layout, body.federal_policy {
+  h1 { font-size: 36px;}
+  h2 { font-size: 30px; font-weight: 500; }
+  h3 { margin-bottom: 5px; margin-top: 20px; }
+  
+  #tournav { display: none; }
+  #page-footer {
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  }
+}
+body.policy_tool-layout {
+  #tournav { display: none; }
+  #page-footer {
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  }
+}
+
+
+.map-tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 3px;
+  pointer-events: none;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.4);
+}
+
+
+
+#spotlight {
+  h2 {
+    margin-top: 0;
+  }
+  .button {
+    width: 100%;
+  }
+}
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  justify-content: space-between;
+  .flex-table-item {
+    width: calc(25% - 10px);
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    &.column-heading {
+      background-color: transparent;
+      font-size: 16px;
+    }
+    &.item-large {
+      width: calc(75% - 10px);
+    }
+  }
+}
+
+.dl-policy {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  font-size: 16px;
+  dt, dd {
+    padding: 10px;
+    background: #fff;
+  }
+  dt {
+    width: 20%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-transform: none;
+  }
+  dd {
+    width: calc(80% - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.panel {
+  &.icon-panel {
+    background-color: $cream-lighter;
+    height: 100%;
+    h3 {
+      background-color: $cream;
+      padding: 10px 15px;
+      margin: 0;
+      line-height: 1;
+    }
+    h6 {
+      font-size: 11px;
+    }
+    .content {
+      padding: 10px 15px;
+      i {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+// classes for show hide behavior on state pages
+.morecontent {
+  span {
+    display: none;
+    &.caret {
+      display: inline-block;
+    }
+  }
+}
+.morelink {
+  display: block;
+}
+
+// remove once we make sure these are working as expected
+// @media(min-width: 992px) and (max-width: 1300px){
+//   #policy-tool {
+//     .container {
+//       max-width: 90%;
+//     }
+//   }
+// }
+
+// @media(max-width: 1300px) {
+//   #state-federal-navigation {
+//     .button {
+//       &.inverse {
+//         max-width: none;
+//         margin: 0 1% 0 1%;
+//       }
+//     }
+//   }
+// }
+
+
+// @media(max-width: 768px) {
+//   #policy-tool {
+//     min-height: none;
+//   }
+//   #map, #map-instructions {
+//     display: none;
+//   }
+
+//   #policy-intro {
+//     svg {
+//       display: block;
+//       margin: 0 auto;
+//       max-width: 25%;
+//     }   
+//   }
+  
+//   section {
+//     &.border {
+//       border: none;
+//     }
+//   }
+//   .flex-table {
+//     .flex-table-item {
+//       width: calc(30% - 10px);
+//       &.item-large {
+//         width: calc(70% - 10px);
+//       }
+//     }
+//   }
+
+//   .dl-policy {
+//     dt {
+//       width: 30%;
+//       margin-bottom: 10px;
+//       font-weight: 300;
+//       text-transform: none;
+//     }
+//     dd {
+//       width: calc(70% - 10px);
+//     }
+//   }
+// }
+
+@media all and (max-width: $screen-md-max) {
+  #state-federal-navigation {
+    .button {
+      &.inverse {
+        max-width: none;
+        margin: 0 1% 0 1%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-sm-max) and (max-width: $screen-md-max){
+  #policy-tool {
+    .container {
+      max-width: 90%;
+    }
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+}
+
+@media all and (max-width: $screen-xs-max) {
+  #policy-tool {
+    min-height: none;
+  }
+  #map, #map-instructions {
+    display: none;
+  }
+
+  #policy-intro {
+    svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 25%;
+    }   
+  }
+  
+  section {
+    &.border {
+      border: none;
+    }
+  }
+  .flex-table {
+    .flex-table-item {
+      width: calc(30% - 10px);
+      &.item-large {
+        width: calc(70% - 10px);
+      }
+    }
+  }
+
+  .dl-policy {
+    dt {
+      width: 30%;
+      margin-bottom: 10px;
+      font-weight: 300;
+      text-transform: none;
+    }
+    dd {
+      width: calc(70% - 10px);
+    }
+  }
+}
+

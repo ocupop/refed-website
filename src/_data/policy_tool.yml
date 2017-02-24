@@ -2,19 +2,22 @@ date_labeling:
   title: Date Labeling
   definition: Reveal state policies that hinder food waste prevention
   case_studies:
-    - title: Arbitrary bans on donating or selling past date foods
+    - title: Arbitrary bans on donating or selling past-date foods
       summary: 'Montana bans the sale or donation of milk 12 or more days after pasteurization. The industry standard is to date milk 21 days past pasteurization, nearly twice as long as the time allowed in Montana. As a result, thousands of gallons of safe-to-drink milk get thrown away weekly. By eliminating its ban on the sale of past-date milk, a ban that is not supported by science, Montana could help reduce milk waste and allow wholesome products to get to those who want them.'
       state: montana
+      effect: negative
       lat: 46.657895
       long: -112.2869638
     - title: Does Not Require or Regulate Date Labels
       summary: 'New York City is an example of a government choosing to eliminate unnecessary date labels. New York City used to require dates on milk, even though the state of New York imposes no date labeling requirements on any foods. The city repealed its date labeling requirement for milk in 2010 to harmonize with state regulations. The city recognized that its date label requirement was not necessary to protect public health because milk, if handled properly, is still safe to consume even after the date passes (and if handled improperly, the date is irrelevant in any case).'
       state: new-york
+      effect: positive
       lat: '43.149094'
       long: '-75.135498'
     - title: Arbitrary Nature of Date Labels
       summary: "No two states' date labeling laws are the same, which shows their decisions aren’t based on sound public policy. For example, Connecticut only requires date labels on dairy products while it's neighbor Massachusetts requires date labels on all prepackaged perishable and semi-perishable food products."
       state: connecticut
+      effect: negative
       lat: '41.762085'
       long: '-72.742012'
   filters:
@@ -127,7 +130,7 @@ liability_protection:
         - texas
         - michigan
     - title: Protection for food service establishments and retail stores donating directly to final recipients.
-      definition: Protection for food service establishments and retail stores donating directly to final recipients.
+      definition: Protection for food service establishments and retail stores donating directly to final recipients
       states:
         - arizona
         - louisiana
@@ -159,7 +162,7 @@ tax_incentives:
       summary: "State tax incentives can provide an opportunity to target incentives to certain food producers, like farmers and small businesses, that often do not sufficiently benefit from federal tax incentives. For example, Virginia's Food Crop Donation Tax Credit is available to individuals and corporate entities engaged in the business of farming food crops and donating such crops to nonprofit food banks. The amount of the credit is equal to 30% of the fair market value of the crops; claims are capped at $5,000 per year."
       state: virginia
       lat: 37.926866
-      long: -83.9472357
+      long: -79.9472357
     - title: South Carolina Tax Incentives
       summary: 'South Carolina provides a tax credit for licensed meat packers, butchers or processing plants that contract with charitable organizations to process deer for donation to those in need. The deer in question are typically hunted for sport and would not be eaten, meaning that it does not make sense to compensate the “producers”—in this case, hunters—for donating their surplus animals. Instead, South Carolina’s scheme recognizes that processing costs represent the most significant cost barrier for recovering this particular food source. The tax credit offers licensed meat packers, butchers and processing plants $50 per carcass donated in order to recover a large amount of high-value meat for low-income households.'
       state: south-carolina
@@ -193,7 +196,7 @@ animal_feed:
       lat: 35.1403193
       long: -84.3805519
     - title: New Mexico Animal Feed Regulations
-      summary: 'Understanding and omplying with the requirements outlined in federal and state laws and regulations that bear on the practice of feeding food scraps to animals can be daunting to a facility that is interested in doing so. Providing guidance, technical assistance and education on applicable laws and regulations that outlines the benefits while detailing the safe and proper handling of such products can help encourage the feeding of food scraps to animals. The New Mexico Recycling Coalition produced a report directed at restaurants which outlined guidelines on feeding food waste to animals, including applicable state and federal laws and regulations, benefits and challenges of the practice, and contact persons for further information.'
+      summary: 'Understanding and complying with the requirements outlined in federal and state laws and regulations that bear on the practice of feeding food scraps to animals can be daunting to a facility that is interested in doing so. Providing guidance, technical assistance and education on applicable laws and regulations that outlines the benefits while detailing the safe and proper handling of such products can help encourage the feeding of food scraps to animals. The New Mexico Recycling Coalition produced a report directed at restaurants which outlined guidelines on feeding food waste to animals, including applicable state and federal laws and regulations, benefits and challenges of the practice, and contact persons for further information.'
       state: new-mexico
       lat: '34.5199'
       long: '-105.8701'

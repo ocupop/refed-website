@@ -34,7 +34,7 @@ function solutionCards(container) {
     },
     callbacks: {
       onMixEnd: function(state){
-        // window.console.log(state);
+        // window.console.log("/components/solutionCards.js: ", state);
       }
     },
     selectors: {
@@ -50,7 +50,7 @@ function solutionCards(container) {
   $('.sort').on('click', function() {
     $(".impact-summary").text($(this).attr('data-description'));
 
-    // window.console.log("GONNA SORT");
+    // window.console.log("/components/solutionCards.js: GONNA SORT");
     var activeClass = $(this).attr('data-sort');
     sortCards(activeClass);
     $('.sort').each(function() {
@@ -110,7 +110,7 @@ function solutionCards(container) {
 }
 
 function hideCards(impact) {
-  // window.console.log("HIDING EMPTY CARDS");
+  // window.console.log("/components/solutionCards.js: HIDING EMPTY CARDS");
   var $filtered = $();
   $( '.card').each(function() {
     $this = $(this);
@@ -122,12 +122,12 @@ function hideCards(impact) {
       $filtered = $filtered.not(this);
     }
   });
-  // window.console.log($filtered);
+  // window.console.log("/components/solutionCards.js:", $filtered);
   $("#solution-cards").mixItUp('filter', $filtered);
 }
 
 function sortCards(impact) {
-  // window.console.log("SHOULD SORT", impact);
+  // window.console.log("/components/solutionCards.js: SHOULD SORT", impact);
   var l = window.location.pathname + "?sort="+impact + window.location.hash;
   window.history.pushState('', '{{ site.title }}: Solutions', l);
 

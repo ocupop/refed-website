@@ -1,0 +1,54 @@
+#innovatorList {
+  background-color: #fff;
+}
+.innovatorDatabase_list {
+  .innovator {
+    padding: 20px 0;
+    hr {
+      margin: 20px;
+      margin-bottom: 0;
+      border-top: 1px solid $gray-lightest;
+    }
+    .button {
+      margin-top: 25px;
+    }
+    .innovator_name {
+      font-weight: 400;
+      a { color: inherit; }
+    }
+    .innovator_description {}
+    .innovator_details {
+      margin-top: 35px;
+      font-size: 13px;
+      em {
+        font-family: $font-family-base;
+        color: $gray-light;
+      }
+    }
+    .innovator_reach {
+      margin-top: 20px;
+      i {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_list  {
+
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .innovatorDatabase_list  {
+    
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_list {
+
+  }
+}

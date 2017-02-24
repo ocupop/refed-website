@@ -1,0 +1,43 @@
+#federal-details {
+  h4 {
+    font-weight: 500;
+    text-transform: none;
+  }
+  strong {
+    font-weight: 500;
+  }
+  ol {
+    li {
+      margin-bottom:15px;
+    }
+    ul {
+      margin-top:10px;
+      list-style-type: disc;
+      padding-left: 20px;
+      li {
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .panel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+}
+
+@media all and (max-width: $screen-sm-max) {
+}
+
+@media all and (max-width: $screen-xs-max) {
+}

@@ -1,13 +1,9 @@
-body.article_layout {
-  padding-top: 105px;
-}
-
 .article {
   .article-image {
     display: block;
     text-indent: -999em;
     width: 100%;
-    height: 150px;
+    height: 240px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -57,7 +53,7 @@ body.article_layout {
   .caret {
     @include transition(.5s);
   }
-  &.sort-dsc {
+  &[data-sort="date:desc"] {
     .caret {
       transform: rotate(-180deg);
     }
@@ -80,8 +76,14 @@ body.article_layout {
   }
 }
 
+@media all and (max-width: $screen-md-max) {
+
+}
+
 @media all and (max-width: $screen-sm-max) {
-  body.article_layout {
-    padding-top: 50px;
-  }
+
+}
+
+@media all and (max-width: $screen-xs-max) {
+
 }

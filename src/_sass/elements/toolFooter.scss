@@ -1,0 +1,95 @@
+#toolFooter {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #fff;
+  .main {
+    width: 70%;
+    background-color: $gray-dark;
+    .container {
+      width: 100%;
+      max-width: $live-content-width * 0.7 + 40;
+      margin-right: 0;
+    }
+  }
+  .aside {
+    width: 30%;
+    background-color: $gray-base;
+    .content {
+      width: 100%;
+      max-width: $live-content-width * 0.3;
+    }
+  }
+
+  .brand {
+    display: block;
+    margin: 0 auto 0 30px;
+    color: #fff;
+    img {
+      width: 200px;
+    }
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .button {
+    background-color: $gray-light;
+    padding: 0;
+    height: 40px;
+  }
+  .socialnav {
+    height: 66px;
+    a {
+      padding: 0;
+      color: #fff;
+      margin: 0 20px 0 0;
+      i {
+        font-size: 28px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: $screen-xs-max) {
+
+}
+
+@media all and (max-width: $screen-sm-max) {
+  #toolFooter {
+    flex-wrap: wrap;
+    .main {
+      width: 100%;
+      .container {
+        margin-right: auto;
+      }
+    }
+    .aside {
+      width: 100%;
+      .content {
+        max-width: none;
+        text-align: center;
+      }
+    }
+    .brand {
+      padding-top: 20px;
+      margin: 0;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .socialnav {
+      margin-bottom: 0;
+      height: 66px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+
+}

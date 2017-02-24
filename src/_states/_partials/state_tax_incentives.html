@@ -1,0 +1,50 @@
+{% assign legislation = page.policy_data.tax_incentives.legislation %}
+{% if legislation[0].title %}
+  {% assign showchart = true %}
+{% else %}
+  {% assign showchart = false %}
+{% endif %}
+
+<div id="tax-incentives" class="row">
+  <div class="col-xs-12">
+    <div class="content">
+      <h2>Tax Incentives</h2>
+      <h3>Overview</h3>
+      <p class="editable lineClamp" data-numlines="3">Tax incentives make food donation more cost-effective and economically beneficial. At the federal level, there are two tax deductions for food donations: a general deduction and an enhanced deduction. The enhanced deduction provides a significantly higher financial benefit, allowing businesses to deduct a value for donated food that is almost double the general deduction when the donated food meets certain eligibility criteria. These incentives have been extraordinarily successful in motivating food donation.<br /><br />Additionally, a growing number of states have passed or considered state-level tax incentives in recent years. Currently, nine states (Arizona, California, Colorado, Iowa, Kentucky, Missouri, Oregon, South Carolina, and Virginia) and the District of Columbia offer such tax incentives. These incentives aim to assist certain businesses that do not benefit sufficiently from the federal tax incentive, such as farmers or other businesses with low profit margins. State tax incentives provide those businesses with a more tailored incentive and a benefit that is often easier to understand and utilize than the federal one.<br /><br />Tax incentives for food donations are structured differently by state; for example, eight states and Washington DC offer tax credits, while Arizona offers a tax deduction. California and South Carolina cover specific costs related to processing or transporting food for donation. Different states also offer incentives for different types of donors, with the bulk targeting farmers.</p>
+
+      {% if showchart %}
+        {% for item in legislation %}
+        <h4 class="nocase">{{ item.title }}</h4>
+          <dl class="dl-policy">
+            {% if item.deduction_or_credit %}
+            <dt>Deduction or Credit</dt>
+            <dd>{{ item.deduction_or_credit }}</dd>
+            {% endif %}
+            {% if item.benefit %}
+            <dt>Benefit</dt>
+            <dd>{{ item.benefit }}</dd>
+            {% endif %}
+            {% if item.eligible_donors %}
+            <dt>Eligible donors</dt>
+            <dd>{{ item.eligible_donors }}</dd>
+            {% endif %}
+            {% if item.eligible_food %}
+            <dt>Eligible food</dt>
+            <dd>{{ item.eligible_food }}</dd>
+            {% endif %}
+            {% if item.eligible_recipients %}
+            <dt>Eligible Recipients</dt>
+            <dd>{{ item.eligible_recipients }}</dd>
+            {% endif %}
+          </dl>
+        {% endfor %}
+      {% else %}
+        <p>{{ page.name }} does not offer additional tax incentives beyond federal incentives.</p>
+      {% endif %}
+
+      <h3>Federal Tax Incentives</h3>
+      <p class="editable">The federal government provides tax deductions to incentivize businesses to donate food. As of December 2015, all businesses&mdash;including C-corporations, S-corporations, limited liability corporations (LLCs), partnerships and sole proprietorships&mdash;are eligible for an enhanced tax deduction that exceeds the property&rsquo;s basis for donated food if they meet certain requirements. If they do not meet the requirements, they can still claim a general tax deduction in the amount of the property&rsquo;s basis.</p>
+      <a href="{{site.baseurl }}/tools/food-waste-policy-finder/federal-tax-incentives" class="button"><span>View Federal Policy &nbsp;&gt;</span></a>
+    </div>
+  </div>
+</div>

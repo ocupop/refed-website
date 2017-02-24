@@ -21,7 +21,7 @@
 $.behaviors('.signup', initSignup);
 
   function initSignup(container) {
-    window.console.log("HELLO");
+    // window.console.log("/components/signup.js: HELLO");
   }
 
   // function showMessage(notification) {
@@ -35,7 +35,7 @@ $.behaviors('.signup', initSignup);
   // }
 
   // function updateProfile(resp) {
-  //   window.console.log(resp);
+  //   window.console.log("/components/signup.js: ", resp);
   //   $.scrollTo($("#"));
   //   if (resp.error) {
   //     var notification = { title: 'Error', message: resp.error };
@@ -72,7 +72,7 @@ $.behaviors('.signup', initSignup);
   //     updateProfile(resp);
   //   },
   //   error: function() {
-  //     window.console.log("OOPS");
+  //     window.console.log("/components/signup.js: OOPS");
   //     var notification = { title: 'Error', message: "Sorry we have experienced an unexpected issue. Please try again." };
   //     showMessage(notification);
   //   }
@@ -89,7 +89,7 @@ $.behaviors('.signup', initSignup);
   //     updateProfile(resp);
   //   },
   //   error: function() {
-  //     window.console.log("OOPS");
+  //     window.console.log("/components/signup.js: OOPS");
   //     var notification = { title: 'Error', message: "Sorry we have experienced an unexpected issue. Please try again." };
   //     showMessage(notification);
   //   }
@@ -106,7 +106,7 @@ $.behaviors('.signup', initSignup);
   //     updateProfile(resp);
   //   },
   //   error: function() {
-  //     window.console.log("OOPS");
+  //     window.console.log("/components/signup.js: OOPS");
   //     var notification = { title: 'Error', message: "Sorry we have experienced an unexpected issue. Please try again." };
   //     showMessage(notification);
   //   }

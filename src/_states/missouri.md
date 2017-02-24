@@ -4,9 +4,6 @@ name: Missouri
 code: MO
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title:
         applies_to_food_type:
@@ -18,9 +15,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Mo. Rev. Stat. § 537.115
         type_of_protection: Civil or Criminal
@@ -34,9 +28,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: Mo. Rev. Stat. § 135.647
         deduction_or_credit: Credit
@@ -45,9 +36,6 @@ policy_data:
         eligible_food: Cash or food that is not past-date
         eligible_recipients: Local food pantries in the area where the donor resides in MO
   animal_feed:
-    overview: Missouri allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: 'Mo. Rev. Stat. §§ 261.020, 266.410–.460 (2015)'
         animals_covered: Swine
@@ -67,12 +55,11 @@ policy_data:
           § 266.450 (2015).
         relevant_state_regulatory_body: 'Missouri Department of Agriculture (§ 261.020 (2015)), <a href="http://agriculture.mo.gov/" target="_blank">http://agriculture.mo.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

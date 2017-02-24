@@ -1,5 +1,4 @@
-body.stakeholders {
-  padding-top: 105px;
+body.stakeholder-layout {
   .hero {
     .hero-content {
       h1 { font-size: 36px; }
@@ -14,6 +13,7 @@ body.stakeholders {
     li {
       text-align: center;
       width: 150px;
+      height: 150px;
     }
     a {
       font-size: 13px;
@@ -49,16 +49,16 @@ body.stakeholders {
         color: $text-color;
       }
       &.financing {
-        background-image: url("../img/icons/action/financing.svg");
+        background-image: url("/img/icons/action/financing.svg");
       }
       &.policy {
-        background-image: url("../img/icons/action/policy.svg");
+        background-image: url("/img/icons/action/policy.svg");
       }
       &.innovation {
-        background-image: url("../img/icons/action/innovation.svg");
+        background-image: url("/img/icons/action/innovation.svg");
       }
       &.education {
-        background-image: url("../img/icons/action/education.svg");
+        background-image: url("/img/icons/action/education.svg");
       }
 
     }
@@ -91,7 +91,7 @@ body.stakeholders {
 }
 @media all and (max-width: $screen-sm-max) {
   body.stakeholders {
-    padding-top: 50px;
+
   }
 }
 @media all and (max-width: $screen-md-max) {

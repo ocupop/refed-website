@@ -10,9 +10,6 @@ gem 'uglifier'
 gem 'autoprefixer-rails'
 gem 'jekyll-last-modified-at'
 
-# Table of contents
-gem 'jekyll-toc'
-
 # Styleguide
 gem 'hologram'
 

@@ -10,11 +10,12 @@ $cream-dark:                #C4BA98;
 $cream-darker:              #C4BA98;
 
 $gray-base:                 #111111;
-$gray-darker:               #222222;
-$gray-dark:                 #36383A;
+$gray-darker:               #292a2b;
+$gray-dark:                 #3f4041;
 $gray:                      #555759;
-$gray-light:                #959697;
-$gray-lighter:              #F0ECE4;
+$gray-light:                #6f6f71;
+$gray-lighter:              #bdbec0;
+$gray-lightest:             #d9dadc;
 
 $placeholder-color:         #BFB9A1;
 $mainnav-background-color:  #F4F1E9;
@@ -55,7 +56,7 @@ $font-size-h5:            16px;
 $font-size-h6:            12px;
 
 // Spacing
-$live-content-width:      960px;
+$live-content-width:      1170px;
 $line-height-base:        1.428571429;
 // $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 $line-height-computed:    20px;

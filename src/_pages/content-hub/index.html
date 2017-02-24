@@ -1,0 +1,19 @@
+---
+layout: page
+title: Content Hub
+permalink: /content-hub/
+
+nextpage: false
+prevpage: false
+---
+
+{% include nav/contenthubnav.html %}
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane" id="news">
+    {% include_relative _partials/news.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="resources">
+    {% include_relative _partials/resources.html %}
+  </div>
+</div>

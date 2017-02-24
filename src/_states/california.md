@@ -4,9 +4,6 @@ name: California
 code: CA
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Milk/Dairy
@@ -30,9 +27,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Cal. Civ.Code § 1714.25
         type_of_protection: Civil
@@ -48,9 +42,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: 'CAL. REV. & TAX. CODE § 17053.88'
         deduction_or_credit: Credit
@@ -65,9 +56,6 @@ policy_data:
         eligible_food: Agricultural crops
         eligible_recipients: Nonprofits
   animal_feed:
-    overview: 'California allows the feeding of pasteurized milk to farm animals, and the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste may be fed to swine without heat-treatment. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.'
-    summary:
-    link_url:
     legislation:
       - title: 'CAL. FOOD & AGRIC. CODE §§ 32, 10901–90, 34006 (2015)'
         animals_covered: Farm animals; swine
@@ -78,9 +66,6 @@ policy_data:
         enforcement: 'The state may inspect any premises where garbage is fed to swine and may order a facility to cease garbage-feeding operations. § 10922 (2015). The state may inspect records pertaining to garbage-feeding operations. § 10923 (2015). The state may refuse to issue, revoke, or suspend the license of an individual or facility that violates the garbage-feeding rule. § 10987 (2015).'
         relevant_state_regulatory_body: 'California Department of Food and Agriculture (§ 32 (2015)), <a href="https://www.cdfa.ca.gov/" target="_blank">https://www.cdfa.ca.gov/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Cal. Pub. Res. Code § 42649.81
         generators_covered: 'Any business, meaning a commercial or public entity such as a firm, partnership, corporation, or association organized as a for-profit or non-profit entity. Multifamily residential dwellings are exempted.'

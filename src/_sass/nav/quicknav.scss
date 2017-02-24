@@ -1,0 +1,33 @@
+.quicknav-select {
+  &:after {
+    right: 0;
+    top: 0;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $button-color;
+    color: #fff;
+  }
+}
+.quicknav {
+  
+}
+
+@media all and (max-width: $screen-md-max) {
+  .quicknav {
+    
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .quicknav {
+    
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .quicknav {
+  
+  }
+}

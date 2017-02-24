@@ -1,0 +1,27 @@
+---
+layout: tool
+title: Innovator Database
+header: <small>The Food Waste</small>Innovator Database
+
+tool_url: /tools/innovator-database/
+---
+
+{% include_relative _partials/filters.html %}
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane" id="innovatorList">
+    {% include_relative _partials/list.html %}
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="innovatorMap">
+    {% include_relative _partials/map.html %}
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="innovatorAnalysis">
+    {% include_relative _partials/analysis.html %}
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="innovatorSearch">
+    {% include_relative _partials/search.html %}
+  </div>
+</div>

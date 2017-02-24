@@ -1,27 +1,40 @@
+{% assign tab = true %}
+{% if page.path contains 'index' %}
+  {% assign tab = false %}
+{% endif %}
+
 <div class="menu">
   <ul>
     <li>
-      <a href="#">
-        <i class="icon icon-circle"></i>
-        <span class="hidden-xs">List</span>
-      </a></li>
+      <a {% if tab %}data-toggle="tab"{% endif %}
+         href="/tools/innovator-database/innovators#innovatorList">
+        <i class="icon icon-list"></i>
+        <span>List</span>
+      </a>
+    </li>
     <li class="divider"></li>
     <li>
-      <a href="#">
-        <i class="icon icon-circle"></i>
-        <span class="hidden-xs">Map</span>
-      </a></li>
+      <a {% if tab %}data-toggle="tab"{% endif %}
+         href="/tools/innovator-database/innovators#innovatorMap">
+        <i class="icon icon-local"></i>
+        <span>Map</span>
+      </a>
+    </li>
     <li class="divider"></li>
     <li>
-      <a href="#">
-        <i class="icon icon-circle"></i>
-        <span class="hidden-xs">Analysis</span>
-      </a></li>
+      <a {% if tab %}data-toggle="tab"{% endif %}
+         href="/tools/innovator-database/innovators#innovatorAnalysis">
+        <i class="icon icon-analysis"></i>
+        <span>Analysis</span>
+      </a>
+    </li>
     <li class="divider"></li>
     <li>
-      <a href="#">
+      <a {% if tab %}data-toggle="tab"{% endif %}
+         href="/tools/innovator-database/innovators#innovatorSearch">
         <i class="icon icon-search"></i>
-        <span class="hidden-xs">Search</span>
-      </a></li>
+        <span>Search</span>
+      </a>
+    </li>
   </ul>
 </div>

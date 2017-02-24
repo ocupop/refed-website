@@ -20,16 +20,45 @@
 
 $.behaviors('body', pageState);
 
+// Revert to a previously saved state
+window.addEventListener('popstate', function(event) {
+
+  if(location.hash) {
+    // The user has typed the hash and hit enter
+    var data = {
+      activeTab: location.hash
+    }
+    updateContent(data);
+    return;
+  }
+
+  updateContent(event.state);
+
+});
+
   function pageState(body) {
     body = $('body');
-    var activeLink = $('[href="' + location.hash + '"]');
+    var hash = location.hash;
 
-    if (activeLink.length) {
-      activeLink.first().trigger('click');
-    } else {
-      window.console.log("No button with anchor", location.hash);
+    if (hash) {
+      // TODO - Refactor for all page content scenarios
+      pageScroll('#pageContent', 120);
+      $(hash).addClass('active');
+
+      $('[href$="'+hash+'"]').addClass('active');
       // $.scrollTo(location.hash);
+    } else {
+      $('[data-toggle="tab"]').first().trigger('click');
+
+      // window.console.log("pageState.js: Checked for hash but did not find one.");
     }
+
+  }
+
+  function updateContent(data) {
+    // Set activeTab
+    $(data.activeTab).addClass('active').siblings().removeClass('active');
+
   }
 
 })();

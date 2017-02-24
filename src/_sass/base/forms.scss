@@ -135,6 +135,20 @@ input, select {
 
   }
 }
+textarea {
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 13px;
+  text-indent: 15px;
+  border-radius: 0;
+  padding: 10px 0;
+  &:focus, &:active {
+    outline-color: $cream-lighter;
+  } 
+}
 select[multiple] {
   height: 130px;
   option {
@@ -358,3 +372,27 @@ select[multiple] {
     border-radius: 50%;
   }
 }
+
+.search-group {
+  margin-bottom: 15px;
+  input {
+    text-indent: 55px;
+    border: 1px solid $gray-lighter;
+  }
+  .icon-search {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: $gray-dark;
+    color: #fff;
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width: $screen-md-max) {}
+
+@media all and (max-width: $screen-sm-max) {}
+
+@media all and (max-width: $screen-xs-max) {}

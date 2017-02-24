@@ -15,6 +15,10 @@ body.resources {
     font-size: 14px;
     margin-bottom: 15px;
   }
+  //fix for report covers grid breaking on safari
+  .col-xs-3 {
+    width: 24.5%;
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {

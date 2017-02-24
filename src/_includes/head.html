@@ -4,7 +4,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} : {{ site.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -33,6 +33,19 @@
   <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+  {% if page.layout == 'tool' or page.url contains 'content-hub' %}
+    <!-- ver 3.0 -->
+    <script src="{{ site.baseurl }}/js/vendor/mixitup.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/mixitup-pagination.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/mixitup-multifilter.min.js"></script>
+  {% else %}
+    <!-- TODO - Refactor for ver3.0 -->
+    <script src="{{ site.baseurl }}/libs/jquery.mixitup.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup-pagination.min.js"></script>
+  {% endif %}
+
+
   {% include scripts.html %}
 
 </head>

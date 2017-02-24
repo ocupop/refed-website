@@ -1,0 +1,131 @@
+<div id="policynav">
+  {% if page.slug == 'policy-tool' %}
+    <!-- Desktop: Map Filters -->
+    <div class="mapnav hidden-sm hidden-xs" data-target=".map">
+      <div class="nav_category" data-category="prevention">
+        <h4 class="prevention"
+            data-toggle="collapse"
+            data-parent="#policynav"
+            href="#prevention_filters">
+            Prevention Policy
+            <span class="caret"></span>
+        </h4>
+        <div id="prevention_filters" class="filters collapse in">
+          <p>Policy changes related to date labeling have the potential to prevent 398,000 tons of waste per year</p>
+          <ul class="section_root" data-section="date-labeling">
+            <li class="checkbox">
+              <input id="date_labeling_studies"
+                type="checkbox"
+                class="study-filter"
+                value="prevention">
+              <label for="date_labeling_studies">
+                <span></span>
+                Date Labeling
+                <small>Reveal state policies that hinder food waste prevention</small>
+              </label>
+            </li>
+          </ul>
+          <a href="/tools/policy/date-labels" class="button date-label-button cream">Explore date labeling<br>policy issues in depth &nbsp; &gt;</a>
+        </div>
+      </div>
+
+      <div class="nav_category" data-category="recovery">
+        <h4 class="recovery"
+            data-toggle="collapse"
+            data-parent="#policynav"
+            href="#recovery_filters">
+            Recovery Policy
+            <span class="caret"></span>
+        </h4>
+        <div id="recovery_filters" class="filters collapse in">
+          <p>States have the opportunity to spur greater food recovery by enacting stronger policies in both areas.</p>
+          <div class="case-studies-filter checkbox">
+            <input id='recovery_studies'
+              type='checkbox'
+              class='study-filter'
+              value="recovery">
+            <label for="recovery_studies" class="text-recovery">
+              <span></span>
+              <img src="/img/icons/policy/recovery_study_icon.svg">
+              Best-practice Policies
+            </label>
+          </div>
+          {% assign section = site.data.policy_tool['liability_protection'] %}
+          <ul class="section_root" data-section="{{ section.title | slugify }}">
+            {% include_relative _partials/policy_tool_filter.html section=section %}
+          </ul>
+          {% assign section = site.data.policy_tool['tax_incentives'] %}
+          <ul class="section_root" data-section="{{ section.title | slugify }}">
+            {% include_relative _partials/policy_tool_filter.html section=section %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav_category" data-category="recycle">
+        <h4 class="recycling"
+            data-toggle="collapse"
+            data-parent="#policynav"
+            href="#recycling_filters">
+            Recycling Policy
+            <span class="caret"></span>
+        </h4>
+        <div id="recycling_filters" class="filters collapse in">
+          <p>Increased food scrap recycling can be incentivized by these state and local policies.</p>
+          {% assign section = site.data.policy_tool['animal_feed'] %}
+          <div class="case-studies-filter checkbox">
+            <input id='recycling_studies'
+              type='checkbox'
+              class='study-filter'
+              value="recovery">
+            <label for="recycling_studies" class="text-recycle">
+              <span></span>
+              <img src="/img/icons/policy/recycle_study_icon.svg">
+              Best-practice Policies
+            </label>
+          </div>
+          <ul class="section_root" data-section="{{ section.title | slugify }}">
+            {% include_relative _partials/policy_tool_filter.html section=section %}
+          </ul>
+          
+          {% assign section = site.data.policy_tool['organics_recycling_mandates'] %}
+          <ul class="section_root" data-section="{{ section.title | slugify }}">
+            {% include_relative _partials/policy_tool_filter.html section=section %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END Desktop: Map Filters -->
+
+
+
+  {% elsif page.layout == 'state' %}
+    <div class="contentnav sticky" data-offset-top="50">
+      <h4 class="prevention"><a href="#prevention-policy">Prevention Policy</a></h4>
+      <ul>
+        <li><a href="#date-labeling">Date Labeling</a></li>
+      </ul>
+
+      <h4 class="recovery"><a href="#prevention-policy">Recovery Policy</a></h4>
+      <ul>
+        <li><a href="#liability-protection">Liability Protection</a></li>
+        <li><a href="#tax-incentives">Tax Incentives</a></li>
+      </ul>
+      <h4 class="recycling"><a href="#prevention-policy">Recycling Policy</a></h4>
+      <ul>
+        <li><a href="#animal-feed">Animal Feed</a></li>
+        <li><a href="#organic-waste">Organic Waste Bans &amp; Waste Recycling Laws</a></li>
+      </ul>
+    </div>
+   
+  {% else %}
+    <div class="contentnav sticky" data-offset-top="50">
+      <div class="content">
+        {{ content | toc_only }}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+
+
+

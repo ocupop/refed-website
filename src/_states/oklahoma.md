@@ -4,9 +4,6 @@ name: Oklahoma
 code: OK
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -29,9 +26,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: 'Okla. Stat. Ann. tit. 76, § 5.6'
         type_of_protection: Civil and Criminal
@@ -48,26 +42,14 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
-      - title: 'CAL. REV. & TAX. CODE § 17053.88'
+      - title:
         deduction_or_credit:
-        benefit: '10% of inventory cost'
-        eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
-        eligible_food: Fresh produce
-        eligible_recipients: Food banks located in California
-      - title: 'CAL. REV. & TAX. CODE § 17053.12'
-        deduction_or_credit:
-        benefit: '50% of transportation costs'
-        eligible_donors: 'Taxpayer engaged in the business of processing, distributing, or selling agricultural products'
-        eligible_food: Agricultural crops
-        eligible_recipients: Nonprofits
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
-    overview: Oklahoma allows the feeding of animal-derived and vegetable waste to swine provided that it has been properly heat-treated and fed by a licensed facility. Individuals may feed household garbage to their own swine without heat-treating it and without a permit.
-    summary:
-    link_url:
     legislation:
       - title: '2 Okl. St. Ann. §§ 6-1, 6-21–27 (2015); Okla. Admin. Code 35:15-35-2 (2015)'
         animals_covered: Swine
@@ -78,12 +60,11 @@ policy_data:
         enforcement: 'The state veterinarian may refuse to renew or may suspend any permit, and the state may revoke any permit has been issued if the holder violates the garbage-feeding rule. 2 Okl. St. Ann. § 6-22 (2015).'
         relevant_state_regulatory_body: 'Oklahoma Department of Agriculture & Forestry (§ 6-1 (2015)), <a href="http://www.oda.state.ok.us/" target="_blank">http://www.oda.state.ok.us/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

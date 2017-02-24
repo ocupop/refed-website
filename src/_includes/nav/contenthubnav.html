@@ -1,0 +1,19 @@
+{% assign tab = false %}
+{% if page.path contains 'index' %}
+  {% assign tab = true %}
+{% endif %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="content">
+        <h1>News &amp; Resources</h1>
+        <ul class="nav nav-tabs tabs-right">
+          <li><a {% if tab %}data-toggle="tab" role="tab"{% endif %}
+          href="/content-hub#news">Most Recent News</a></li>
+          <li><a {% if tab %}data-toggle="tab" role="tab"{% endif %} href="/content-hub#resources">R<span class="nocase">e</span>Fed Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,9 +4,6 @@ name: Oregon
 code: OR
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Packaged Perishable Food
@@ -44,9 +41,6 @@ policy_data:
         - perishables
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: Or. Rev. Stat. § 30.890
         type_of_protection: Civil and Criminal
@@ -62,9 +56,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: O r. Rev. Stat. § 315.154 and 315.156
         deduction_or_credit: Credit
@@ -73,9 +64,6 @@ policy_data:
         eligible_food: Crops and livestock
         eligible_recipients: Food bank or other charitable organization in OR that distributes food without charge
   animal_feed:
-    overview: 'Oregon prohibits the feeding of animal-derived and most vegetable waste to swine. Food waste that comes from a fruit or vegetable cannery, processing plant, sorting establishment, or bakery may be fed to swine. Individuals may feed household garbage to their own swine.'
-    summary:
-    link_url:
     legislation:
       - title: Or. Rev. Stat. §§ 600.010–.120 (2015)
         animals_covered: Swine
@@ -107,12 +95,11 @@ policy_data:
           (2015).
         relevant_state_regulatory_body: 'Oregon Department of Agriculture (600.105, 600.120 (2015)), <a href="http://www.oregon.gov/oda/Pages/default.aspx" target="_blank">http://www.oregon.gov/oda/Pages/default.aspx</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

@@ -4,9 +4,6 @@ name: South Carolina
 code: SC
 policy_data:
   date_labeling:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url: /url_path
     legislation:
       - title: Reg 1
         applies_to_food_type: Eggs
@@ -32,9 +29,6 @@ policy_data:
       restricted_sales_on_expired_labels:
       restricted_donations_on_expired_labels:
   liability_protection:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title: S.C. Code Ann. § 15-74-10—40
         type_of_protection: Civil and Criminal
@@ -48,9 +42,6 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    overview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus mi, consequat at laoreet eget, vestibulum nec dolor. Vivamus volutpat quam ac quam bibendum rutrum.'
-    link_url:
     legislation:
       - title: S.C. Code Ann. § 12-6-3750
         deduction_or_credit: Credit
@@ -59,9 +50,6 @@ policy_data:
         eligible_food: Deer
         eligible_recipients: Nonprofits engaged in distributing food to needy; no portion of deer can be sold
   animal_feed:
-    overview: South Carolina prohibits the feeding of animal-derived waste and unpasteurized milk products to swine. Individuals may feed household garbage to their own swine.
-    summary:
-    link_url:
     legislation:
       - title: S.C. Code Ann. §§ 47-15-3–130 (2015)
         animals_covered: Swine
@@ -101,12 +89,11 @@ policy_data:
           (2015).
         relevant_state_regulatory_body: 'Clemson Livestock-Poultry Health Commission (§ 47-15-70 (2015)), <a href="http://www.clemson.edu/public/lph/" target="_blank">http://www.clemson.edu/public/lph/</a>.'
   organics_recycling_mandates:
-    overview:
-    summary:
-    link_url:
     legislation:
       - title:
         generators_covered:
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
+        other_requirements:
+        waivers:
 ---

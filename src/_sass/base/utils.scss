@@ -3,9 +3,9 @@
 .flush-bottom { padding-bottom: 0 !important; }
 
 // Bleeds
-.fullbleed { padding: 0; }
-.bottombleed { padding-bottom: 0; }
-.topbleed { padding-top: 0; }
+.fullbleed { padding: 0 !important; }
+.bottombleed { padding-bottom: 0 !important; }
+.topbleed { padding-top: 0 !important; }
 
 /* -----------------------------------------
    Utility Classes
@@ -45,6 +45,10 @@
   border-color: transparent;
 }
 
+.condensed {
+  font-family: $font-family-condensed !important;
+}
+
 // Content
 .content {
   position: relative;
@@ -52,6 +56,14 @@
   // @extend .clearfix;
   &.middle {
     display: flex;
+    align-items: center;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.flex-content {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
   }
   svg {
@@ -112,6 +124,10 @@
   font-style: italic;
 }
 
+.muted, .faded {
+  opacity: 0.5;
+}
+
 
 // External Links
 a.external {
@@ -130,35 +146,33 @@ a.external {
 }
 
 .nocase {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .capitalize {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 
-@media all and (max-width: $screen-xs-max) {
-  // breaks go to full width
-  .break-50,
-  .break-60,
-  .break-70,
-  .break-80,
-  .break-90, {
-    width: 100% !important;
-  }
 
-  // columns stop wrapping 
-  .col2 {
-    column-count: 1;
-  }
-  .col3 {
-    column-count: 1;
-  }
+
+// Borders
+// Borders
+$border-width: 1px;
+$border-color: $gray-lighter;
+.border { border: 0 solid $border-color; }
+.border-all { border-width: $border-width; }
+.border-top { border-top-width: $border-width; }
+.border-right { border-right-width: $border-width; }
+.border-bottom { border-bottom-width: $border-width;}
+.border-left { border-left-width: $border-width; }
+
+@media all and (max-width: $screen-md-max) {
+
 }
 
 @media all and (max-width: $screen-sm-max) {
@@ -196,6 +210,21 @@ a.external {
   }
 }
 
-@media all and (max-width: $screen-md-max) {
+@media all and (max-width: $screen-xs-max) {
+  // breaks go to full width
+  .break-50,
+  .break-60,
+  .break-70,
+  .break-80,
+  .break-90, {
+    width: 100% !important;
+  }
 
+  // columns stop wrapping 
+  .col2 {
+    column-count: 1;
+  }
+  .col3 {
+    column-count: 1;
+  }
 }
