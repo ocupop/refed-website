@@ -22,12 +22,13 @@ $.behaviors('.share', initShare);
 
   function initShare(button) {
     button = $(button);
-    window.console.log('share.js: share ready');
+
     var close = $('#share-instructions .close');
     var share_instructions = $('#share-instructions');
 
     button.on('click', function(e){
       e.preventDefault();
+      build_urls(e);
       share_instructions.toggleClass('active');
     });
 
@@ -40,8 +41,22 @@ $.behaviors('.share', initShare);
     }); 
 
   }
+  function build_urls(event) {
+    var facebook_url = "http://www.facebook.com/sharer.php",
+        twitter_url = "https://twitter.com/intent/tweet",
+        linkedin_url = "https://www.linkedin.com/shareArticle",
+        mail_url = "mailto:?subject=ReFED - ";
+    window.console.log(event);
+  }
 
 })();
 
 
 // TODO - Combine with the embed include
+
+// share: {
+//   title: "title",
+//   summary: "lorem ipsum",
+//   url: "absolute path",
+//   keywords: "ReFED"
+// }
