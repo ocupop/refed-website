@@ -135,6 +135,20 @@ input, select {
 
   }
 }
+textarea {
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 13px;
+  text-indent: 15px;
+  border-radius: 0;
+  padding: 10px 0;
+  &:focus, &:active {
+    outline-color: $cream-lighter;
+  } 
+}
 select[multiple] {
   height: 130px;
   option {
