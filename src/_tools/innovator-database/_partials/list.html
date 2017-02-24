@@ -1,14 +1,21 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-          <button class="sort" data-sort="default:asc">Sort A-Z <i class="icon icon-caret-up"></i></button>
-          <button class="sort hide">Sort Newest <i class="icon icon-caret-up"></i></button>
+      <div class="col-md-8">
+        <div class="content">
+          <div class="mixitup-page-stats" data-mixitup-control></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          <button type="button" class="sort" data-sort="default:desc" data-mixitup-control>Sort A-Z <i class="icon icon-caret-up"></i></button>
+        </div>
       </div>
     </div>
     <ul class="innovatorDatabase_list">
       {% for innovator in site.innovators %}
         <li class="innovator mix {{ innovator.organization_status | slugify }} {{ innovator.innovator_category }}-category {{ innovator.food_recovery_hierarchy | slugify }}-hierarchy"
+            data-title="{{ innovator.name }}"
             data-lat="{{ innovator.lat }}"
             data-lng="{{ innovator.lng }}"
             data-distance="">
@@ -37,5 +44,8 @@
         </li>
       {% endfor %}
     </ul>
+    <div class="content">
+      <div class="mixitup-page-list" data-mixitup-control></div>
+    </div>
   </div>
 </section>

@@ -35,40 +35,48 @@ $('.container').mixitup();
 $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function innovatorDatabase_list(list) {
-    list = $(list);
-    $(window).on('searchLocation', function(event, location) {
+    window.console.log("Innovator Database: List");
 
-        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
-        updateInnovatorDistances(list, searchLocation);
-
+    var mixer = mixitup(list, {
+      multifilter: {
+        enable: true
+      },
+      selectors: {
+        target: '.innovator',
+        control: '[data-mixitup-control]'
+      },
+      pagination: {
+        limit: 4,
+        maintainActivePage: false,
+        loop: true,
+        hidePageListIfSinglePage: true
+      }
     });
-    // list.mixItUp({
-    //   controls: {
-    //     enable: false 
-    //     // as we are interacting via the API, we can disable default controls to increase performance
-    //   },
-    //   load: {
-    //     filter: urlParams["filter"],
-    //     sort: "name:desc"
-    //   },
-    //   callbacks: {
-    //     onMixEnd: function(state){
-    //       window.console.log("/tools/innovator-database.list.js: ", state);
-    //     }
-    //   },
-    //   selectors: {
-    //     target: '.row',
-    //     filter: '.filter',
-    //     sort: '.sort'
-    //   }
-    //   // ,pagination: {
-    //   //   limit: limit
-    //   // }
-    // });
+
+    $(window).on('searchLocation', function(event, location) {
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
+        updateInnovatorDistances(list, searchLocation, mixer);
+            // .then(mixer.sort('distance'));
+    });
+
+
+    list = $(list);
+
+    list.find('[data-sort]').on('click', function(){
+      var sort = $(this).attr('data-sort');
+      mixer.sort(sort);
+
+      if(sort == 'date:asc'){
+        $(this).attr('data-sort', 'date:desc');
+      } else {
+        $(this).attr('data-sort', 'date:asc');
+      }
+    });
+
 
   }
 
-  function updateInnovatorDistances(list, searchLocation) {
+  function updateInnovatorDistances(list, searchLocation, mixer) {
 
     list.find('.innovator').each(function() {
         var lat = $(this).data('lat')/1,
@@ -79,8 +87,9 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
         $(this).find('.distance').text(distance);
         $(this).attr('data-distance', distance);
-        // list.mixItUp({});
     });
+
+    mixer.sort('distance:asc');
   }
   function calcDistance(p1, p2) {
     return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) * 0.000621371).toFixed(0);

@@ -12,9 +12,18 @@
           <div class="col-xs-12 col-sm-3">
             <div data-filter-group class="select">
               <select>
-                <option value="">Status</option>
-                <option value=".nonprofit">Nonprofit</option>
-                <option value=".for-profit">For-Profit</option>
+                <option value=""
+                        data-mixitup-control>
+                        Status
+                        </option>
+                <option value=".nonprofit"
+                        data-mixitup-control>
+                        Nonprofit
+                        </option>
+                <option value=".for-profit"
+                        data-mixitup-control>
+                        For-Profit
+                        </option>
               </select>
             </div>
           </div>
@@ -31,7 +40,10 @@
               <select>
                 <option value="">Category</option>
                 {% for category in categories_uniq %}
-                  <option value="{{ category }}">{{ category | replace: '-', ' ' }}</option>
+                  <option value="{{ category }}"
+                           data-mixitup-control>
+                           {{ category | replace: '-', ' ' }}
+                          </option>
                 {% endfor %}
               </select>
             </div>
@@ -39,10 +51,22 @@
           <div class="col-xs-12 col-sm-6">
             <div data-filter-group class="select">
               <select>
-                <option value="">Food Recovery Hierarchy</option>
-                <option value=".prevention-hierarchy">Prevention</option>
-                <option value=".recovery-hierarchy">Recovery</option>
-                <option value=".recycling-hierarchy">Recycling</option>
+                <option value=""
+                        data-mixitup-control>
+                        Food Recovery Hierarchy
+                        </option>
+                <option value=".prevention-hierarchy"
+                        data-mixitup-control>
+                        Prevention
+                        </option>
+                <option value=".recovery-hierarchy"
+                        data-mixitup-control>
+                        Recovery
+                        </option>
+                <option value=".recycling-hierarchy"
+                        data-mixitup-control>
+                        Recycling
+                        </option>
               </select>
             </div>
           </div>

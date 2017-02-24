@@ -28,8 +28,6 @@ $.behaviors('.share', initShare);
     share.summary = document.querySelector('meta[name="description"]')["content"];
     share.url = button.data('link') || window.location.href;
 
-    window.console.log(window.location.href);
-
     button.on('click', function(e){
       e.preventDefault();
       build_urls(share);
