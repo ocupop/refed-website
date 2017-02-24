@@ -41,11 +41,15 @@ window.addEventListener('popstate', function(event) {
     var hash = location.hash;
 
     if (hash) {
+      // TODO - Refactor for all page content scenarios
       pageScroll('#pageContent', 120);
       $(hash).addClass('active');
+
       $('[href$="'+hash+'"]').addClass('active');
       // $.scrollTo(location.hash);
     } else {
+      $('[data-toggle="tab"]').first().trigger('click');
+
       window.console.log("pageState.js: Checked for hash but did not find one.");
     }
 

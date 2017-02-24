@@ -106,21 +106,28 @@ $.behaviors('.mapnav', initMapNav);
   function initMapNav(mapnav) {
     mapnav = $(mapnav);
     var targetMap = $(mapnav.data('target'));
+    var search = window.location.search;
 
     startMapWizard(mapnav);
 
+    if(search) {
+      activateMap(mapnav, search);
+    } else {
+      mapnav.on('click', function(e) {
+        if(e.hasOwnProperty('originalEvent')) {
+          activateMap(mapnav);
+        } else {
+          // window.console.log("map.js: initMapNav(); - Program Click");
+        }
+      });
+    }
+
+    // Add listeners to activate map
     $('.show0, .mapInstructions').on('click', function() {
-      activateMap(targetMap);
+      activateMap(mapnav);
     });
     
-    mapnav.on('click', function(e) {
-      window.console.log(e);
-      if(e.hasOwnProperty('originalEvent')) {
-        activateMap(targetMap);
-      } else {
-        window.console.log("map.js: initMapNav(); - Program Click");
-      }
-    });
+
 
 
 
@@ -248,14 +255,27 @@ $.behaviors('.mapnav', initMapNav);
             }
             clearLevels();
           }
-
         }
+
+        var filters = [];
+        $el.find('input:checked').each(function() {
+          filters.push($(this).attr('id'));
+        });
+        var new_url = replaceUrlParam(window.location.href, 'filters', filters );
+        window.history.pushState('', 'ReFED - State Policy Map', new_url);
+
       });
 
       $el.find('.collapse').on('show.bs.collapse', function() {
         $el.siblings('.nav_category').find('.collapse').collapse('hide');
       });
     });
+
+    mapnav.find('.filters').on('shown.bs.collapse', function () {
+      var new_url = replaceUrlParam(window.location.href, 'category', $(this).attr('id') );
+      window.history.pushState('', 'ReFED - State Policy Map', new_url);
+    });
+
   }
 
   function clearLevels() {
@@ -285,9 +305,24 @@ $.behaviors('.mapnav', initMapNav);
     });
   }
 
-  function activateMap(map) {
+  function activateMap(mapnav, search) {
+    map = $(mapnav.data('target'));
     map.parent().finish().removeClass('mapWizard');
+
     $('#statenav').slideDown();
+    
+    // check url and trigger clicks in mapnav
+    window.console.log('#'+urlParams['category']);
+    mapnav.find('#'+urlParams['category']).collapse('show');
+
+    var filters = urlParams['filters'].split(',');
+    for(let i in filters) {
+      window.console.log("filter:", filters[i]);
+      setTimeout(function(){
+        mapnav.find('#'+filters[i]).trigger('click');
+      }, i * 500);
+
+    }
   }
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
