@@ -1,4 +1,4 @@
-<form id="signup_form" name="signup_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ancient-wave-20081.herokuapp.com/signup">
+<form id="member_signup_form" class="profile" data-action="{{ include.action }}" name="signup_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ancient-wave-20081.herokuapp.com/signup">
   <div class="hide">
     <label for="comment">Comments</label>
     <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
@@ -11,9 +11,11 @@
     <label class="sr">Email</label>
     <input type="text" id="email" name="email" placeholder="Email *" required>
     <label class="sr">Organization Name</label>
-    <input type="text" id="confirm_organization" name="confirm_organization" placeholder="Organization Name">
+    <input type="text" id="organization" name="organization" placeholder="Organization Name">
+    <label class="sr">Title</label>
+    <input type="text" id="title" name="title" placeholder="Title / Position">
     <div class="select">
-      <select id="confirm_stakeholders" name="confirm_stakeholders" multiple>
+      <select id="stakeholders" name="stakeholders">
         {% for stakeholder in site.stakeholders %}
         <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
         {% endfor %}

@@ -73,27 +73,24 @@ prevpage:
         </div>
       </div>
     </div>
-    <div class="row hide">
+    <div class="row">
       <div class="col-xs-12 col-md-6">
         <div class="content">
           <h3>Sign up for our Newsletter</h3>
           {% include components/signup_form.html %}
+          <div class="formMessage_success"> WAHHOOOOO  </div>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="content">
           <h3>Already Signed Up? Sign in here</h3>
-          {% include components/signin_form.html %}
+          {% include components/signin_form.html action = 'update' %}
         </div>
       </div>
+      <div class="formMessage_success">
+        {% include components/update_form.html %}
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="alt-bg">
-  <div class="container">
-    <h1>SIGNUP FORM:</h1>
-    <h3>Currently refactoring</h3>
   </div>
 </section>
 

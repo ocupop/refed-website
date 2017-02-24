@@ -15,52 +15,102 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see
  * http://www.gnu.org/licenses/agpl-3.0.html.
+
+4 scenarios
+- signing up for first time (confirmation message)
+- signing in from downloads page (confirmation message and update downloadble links - with a link to show the form)
+
+- singing in (show the update form)
+
+
+
+
+
+
  */
 (function() {
 
-$.behaviors('.signup', initSignup);
+$.behaviors('.profile', initSignup);
 
-  function initSignup(container) {
-    // window.console.log("/components/signup.js: HELLO");
+  function initSignup(form) {
+    form = $(form);
+
+    form.ajaxForm({
+      dataType: 'json',
+      beforeSubmit: function(arr, $form, options) { 
+        // The array of form data takes the following form: 
+        // [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ] 
+        // return false to cancel submit
+      },
+      success: function(resp) {
+        // window.console.log("/components/signup.js: Success");
+        if (resp.error) {
+          var notification = { title: 'Error', message: resp.error };
+          showProgress(notification);
+        } else {
+          // Set Message
+          var notification = { title: '', message: "Updating page..." };
+          showProgress(notification);
+          // Set cookie for memberEmail
+          $.cookie('memberEmail', resp.email_address, { expires: 7, path: '/' });
+
+          // if this is an update do this
+          if(form.data('action') == 'update') {
+            buildUpdateForm(resp);
+          }
+          // if this is a download do this
+          if(form.data('action') == 'download') {
+            updateDownloadPage();
+          }
+
+          $(".formMessage_success").fadeIn('slow');
+          // TODO - Hide any form elements that need.
+        }
+      },
+      error: function() {
+        // window.console.log("/components/signup.js: OOPS");
+        var notification = { title: 'Error', message: "Sorry we have experienced an unexpected issue. Please try again." };
+        showProgress(notification);
+      }
+    });
   }
 
-  // function showMessage(notification) {
-  //   $("#thanks h2").text(notification.title);
-  //   $("#thanks .lead").text(notification.message);
-  //   $("#thanks").fadeIn(500);
 
-  //   setTimeout(function() {
-  //     $('#thanks').fadeOut('slow');
-  //   }, 3000);
-  // }
 
-  // function updateProfile(resp) {
-  //   window.console.log("/components/signup.js: ", resp);
-  //   $.scrollTo($("#"));
-  //   if (resp.error) {
-  //     var notification = { title: 'Error', message: resp.error };
-  //     showMessage(notification);
-  //   } else {
-  //     // Set Message
-  //     var notification = { title: '', message: "Loading profile information..." };
-  //     showMessage(notification);
-  //     // Set cookie for memberEmail
-  //     $.cookie('memberEmail', resp.email_address, { expires: 7, path: '/' });
-  //     // Populate form values with response
-  //     $("#confirm_email").val(resp.email_address);
-  //     $("#confirm_first_name").val(resp.merge_fields.FNAME);
-  //     $("#confirm_last_name").val(resp.merge_fields.LNAME);
-  //     $("#confirm_zip_code").val(resp.merge_fields.ZIP);
-  //     $("#confirm_organization").val(resp.merge_fields.ORG);
-  //     $("#confirm_stakeholders").val(resp.merge_fields.STAKEHOLDE);
-  //     $("#confirm_solutions").val(resp.merge_fields.SOLUTIONS);
-      
-  //     $("#signup-signin").hide();
-  //     $("#profile").fadeIn();
-  //     $('.chapter').find('.message').fadeOut().end()
-  //                   .find('.button').removeClass('disabled');
-  //   }
-  // }
+  function buildUpdateForm(resp) {
+    window.console.log("/components/signup.js: buildUpdateForm");
+    // Populate form values with response
+    $("#confirm_email").val(resp.email_address);
+    $("#confirm_first_name").val(resp.merge_fields.FNAME);
+    $("#confirm_last_name").val(resp.merge_fields.LNAME);
+    $("#confirm_zip_code").val(resp.merge_fields.ZIP);
+    $("#confirm_organization").val(resp.merge_fields.ORG);
+    $("#confirm_stakeholders").val(resp.merge_fields.STAKEHOLDE);
+    $("#confirm_solutions").val(resp.merge_fields.SOLUTIONS);
+  }
+
+  function signUpSuccess() {
+    window.console.log("/components/signup.js: signUpSuccess");
+    // Leave a message in place of the signup form
+  }
+
+  function updateDownloadPage() {
+    window.console.log("/components/signup.js: updateDownloadPage");
+    // $.scrollTo($("#"));
+    $('.chapter').find('.message').fadeOut().end()
+                  .find('.button').removeClass('disabled');
+  }
+
+  function showProgress(notification) {
+    $("#thanks h2").text(notification.title);
+    $("#thanks .lead").text(notification.message);
+    $("#thanks").fadeIn(500);
+
+    setTimeout(function() {
+      $('#thanks').fadeOut('slow');
+    }, 3000);
+  }
+
   // $('#profile form').ajaxForm({
   //   dataType: 'json',
   //   beforeSubmit: function(arr, $form, options) { 
@@ -78,22 +128,6 @@ $.behaviors('.signup', initSignup);
   //   }
   // });
 
-  // $('#signup_form').ajaxForm({
-  //   dataType: 'json',
-  //   beforeSubmit: function(arr, $form, options) { 
-  //     // The array of form data takes the following form: 
-  //     // [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ] 
-  //     // return false to cancel submit
-  //   },
-  //   success: function(resp) {
-  //     updateProfile(resp);
-  //   },
-  //   error: function() {
-  //     window.console.log("/components/signup.js: OOPS");
-  //     var notification = { title: 'Error', message: "Sorry we have experienced an unexpected issue. Please try again." };
-  //     showMessage(notification);
-  //   }
-  // });
 
   // $('#signin_form').ajaxForm({
   //   dataType: 'json',
@@ -112,6 +146,8 @@ $.behaviors('.signup', initSignup);
   //   }
   // });
 
+
+
   // $(function() {
   //   if ($.cookie('memberEmail')) {
   //     $('#signup-signin').hide();
@@ -125,6 +161,8 @@ $.behaviors('.signup', initSignup);
   //   }
   // });
 
+
+  // // TODO - Needs to be abstracte out to seperate JS
   // $('.chapter .button').on('click', function(e) {
   //   if($(this).hasClass('disabled')) {
   //     e.stopPropagation();
@@ -133,18 +171,6 @@ $.behaviors('.signup', initSignup);
   //   }
   // });
 
-  // $(document).ready(function() {
-  //     $('#confirm_stakeholders').multiselect({
-  //       includeSelectAllOption: true,
-  //       selectAllText: 'Select All',
-  //       nonSelectedText: 'Choose Stakeholders'
-  //     });
-  //     $('#confirm_solutions').multiselect({
-  //       includeSelectAllOption: true,
-  //       selectAllText: 'Select All',
-  //       nonSelectedText: 'Choose Solutions'
-  //     });
-  // });
 
 })();
 
