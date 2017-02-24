@@ -75,9 +75,7 @@ gems:
 
 
 # Cloudcannon Editor
-reach:
-  - Local
-  - National
+reach: ["Local", "National"]
 
 food_recovery_hierarchy:
   - Prevention
