@@ -285,7 +285,10 @@ $.behaviors('.mapnav', initMapNav);
   }
 
   function getLevel(array, state) {
-    return array.filter(item => item == state).length;
+    // return array.filter(item => item == state).length;
+    return array.filter(function(item) {
+      return item == state;
+    }).length;
   }
 
   function updateMapLevels() {
