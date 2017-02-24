@@ -285,6 +285,7 @@ $.behaviors('.mapnav', initMapNav);
   }
 
   function getLevel(array, state) {
+    window.console.log("map.js: troubleshooting getlevel method");
     // return array.filter(item => item == state).length;
     return array.filter(function(item) {
       return item == state;
@@ -322,13 +323,17 @@ $.behaviors('.mapnav', initMapNav);
       var filters = urlParams['filters'].split(',');
 
       for (i = 0; i < filters.length; i++) { 
-        window.console.log("filter:", "#"+filters[i]);
         var filter_link = "#"+filters[i];
         setTimeout(function(){
           $(filter_link).click();
         }, i * 500);
-
       }
+      // for(let i in filters) {
+      //   window.console.log("filter:", filters[i]);
+      //   setTimeout(function(){
+      //     mapnav.find('#'+filters[i]).trigger('click');
+      //   }, i * 500);
+      // }
     }
 
   }
