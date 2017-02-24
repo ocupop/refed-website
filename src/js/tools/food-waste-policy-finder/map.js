@@ -317,14 +317,17 @@ $.behaviors('.mapnav', initMapNav);
 
     if(urlParams['filters']) {
       var filters = urlParams['filters'].split(',');
-    }
-    for(let i in filters) {
-      window.console.log("filter:", filters[i]);
-      setTimeout(function(){
-        mapnav.find('#'+filters[i]).trigger('click');
-      }, i * 500);
 
+      for (i = 0; i < filters.length; i++) { 
+        window.console.log("filter:", "#"+filters[i]);
+        var filter_link = "#"+filters[i];
+        setTimeout(function(){
+          $(filter_link).click();
+        }, i * 500);
+
+      }
     }
+
   }
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
