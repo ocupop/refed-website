@@ -81,7 +81,7 @@ $.behaviors('.mapnav', initMapNav);
         .data(casestudies.features)
         .enter()
         .append("svg:image")
-        .attr("xlink:href", function(d) { return "/img/icons/policy/"+d.category+"_study_icon.svg"; })
+        .attr("xlink:href", function(d) { var effect = d.effect || ''; return "/img/icons/policy/"+d.category+"_study_"+ effect +"icon.svg"; })
         .attr("width", 28)
         .attr("height", 28)
         .attr("transform", function(d) { return "translate(" + projection(d.geometry.coordinates) + ")"; })
