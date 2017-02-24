@@ -46,6 +46,33 @@
   }
 }
 
+#toolPrint {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  display: flex;
+  z-index: 800;
+  .button {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    &.share {
+      font-size: 12px;
+      background-color: $cream;
+    }
+  }
+}
+
+.print {
+  padding: 0 5px;
+  .icon-printer {
+    color: $cream;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+  }
+} 
+
 body.condensed-header {
   #toolHeader {
     .brand {
@@ -62,17 +89,10 @@ body.condensed-header {
   }
 }
 
-
-@media all and (max-width: $screen-xs-max) {
-  #toolHeader {
-
-  }
-}
-
 @media all and (max-width: $screen-sm-max) {
   #toolHeader {
     display: block;
-    position: absolute;
+    // position: absolute;
     height: auto;
     background: $cream-lighter;
     .container-flex {
@@ -97,4 +117,16 @@ body.condensed-header {
     padding: 8px 20px;
     margin: 0;
   }
+
+  #toolPrint {
+    top: 3px;
+  }
 }
+
+
+@media all and (max-width: $screen-xs-max) {
+  #toolHeader {
+
+  }
+}
+
