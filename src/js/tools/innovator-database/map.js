@@ -67,6 +67,9 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     script.src = '/data/innovators.js';
     document.getElementsByTagName('head')[0].appendChild(script);
 
+    $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
+      google.maps.event.trigger(innovatorMap, 'resize');
+    });
   }
 
   // Loop through the results array and place a marker for each

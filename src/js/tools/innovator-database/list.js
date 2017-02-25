@@ -39,7 +39,11 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
     var mixer = mixitup(list, {
       multifilter: {
-        enable: true
+        enable: true,
+        minSearchLength: 2
+      },
+      load: {
+        sort: 'random'
       },
       selectors: {
         target: '.innovator',

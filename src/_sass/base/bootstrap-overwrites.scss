@@ -88,6 +88,10 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
+  // TODO - CHECK > Removing row margins on small screen sizes to account for content blocks without the padding.
+  .row { margin: 0; }
+
+  
   .section-header {
     margin-bottom: 0;
     h2 {
