@@ -70,6 +70,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
+      innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
     });
   }
 
