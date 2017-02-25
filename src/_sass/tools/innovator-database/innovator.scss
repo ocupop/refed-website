@@ -1,0 +1,49 @@
+.innovator-layout {
+  .innovator_name {
+    font-weight: 400;
+    a { color: inherit; }
+  }
+  .innovator_description {}
+  .innovator_details {
+    span {
+      margin-right: 10px;
+    }
+  }
+  .innovator_reach {
+    margin: 20px 0;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .innovator_tags {
+    text-transform: capitalize;
+  }
+
+  .innovator_tags {
+    text-transform: capitalize;
+  }
+
+  .innovator_solutions {
+    text-transform: capitalize;
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  .innovatorDatabase_about  {
+
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .innovatorDatabase_about  {
+    
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_about {
+
+  }
+}

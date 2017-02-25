@@ -68,6 +68,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     document.getElementsByTagName('head')[0].appendChild(script);
 
     $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
+      // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
     });
   }

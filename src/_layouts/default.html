@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-{% if page.layout == 'state' %}
-  {% assign sidebar = 'state' %}
-{% else %}
-  {% assign sidebar = page.sidebar %}
-{% endif %}
+{% case page.layout %}
+  {% when "state" %}
+    {% assign sidebar = 'state' %}
+  {% when "innovator" %}
+    {% assign sidebar = 'state' %}
+  {% else %}
+    {% assign sidebar = page.sidebar %}
+{% endcase %}
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
