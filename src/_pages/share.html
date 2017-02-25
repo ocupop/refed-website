@@ -77,13 +77,13 @@ prevpage:
       <div class="col-xs-12 col-md-6">
         <div class="content">
           <h3>Sign up for our Newsletter</h3>
-          {% include components/signup_form.html %}
+          {% include components/forms/signupForm.html %}
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="content">
           <h3>Already Signed Up? Sign in here</h3>
-          {% include components/signin_form.html action ='signin' %}
+          {% include components/forms/signinForm.html action ='signin' %}
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@ prevpage:
         <div class="content">
           <h2 id="firstname">Hello</h2>
           <p class="lead editable">Thank you for your interest in ReFED's work. You have access to all ReFED <a href="/download">downloadable content</a>. Help us continue our research by updating the information below. We will never share your information and will use it only to keep you updated on new information, resources, and ways to get involved.</p>
-          {% include components/update_form.html action = 'update' %}
+          {% include components/forms/updateForm.html action = 'update' %}
         </div>
       </div>
     </div>
