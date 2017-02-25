@@ -75,18 +75,38 @@ gems:
 
 
 # Cloudcannon Editor
-reach:
-  - Local
-  - National
+reach: 
+  - local
+  - national
 
 food_recovery_hierarchy:
-  - Prevention
-  - Recovery
-  - Recycle
+  - prevention
+  - recovery
+  - recycle
 
 organization_status:
-  - For-Profit
+  - forprofit
   - nonprofit
+
+innovator_categories:
+  - secondary marketplace
+  - consumer education
+  - donation coordination
+  - donation transportation
+  - renewable energy from organics (anaerobic digestion)
+  - composting
+  - animal feed
+  - shelf life extension
+  - supply chain and operational efficiency
+  - food product creation
+  - centralized composting
+  - specialty recycled products
+  - on site processing solutions
+  - donated food processing
+  - composting
+  - on site processing solution
+  - donation coordination
+  - donation transporation
 
 date_labels_required_for:
   - bakery
