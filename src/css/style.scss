@@ -64,6 +64,8 @@
 @import "components/article";
 @import "components/video";
 
+@import "components/tooltip";
+
 
 // Tools
 @import "tools/food-waste-policy-finder/main";
@@ -72,7 +74,6 @@
 @import "tools/food-waste-policy-finder/map_nav";
 @import "tools/food-waste-policy-finder/state";
 @import "tools/food-waste-policy-finder/header";
-@import "tools/food-waste-policy-finder/tooltip";
 @import "tools/food-waste-policy-finder/federal_policy";
 
 @import "tools/spotlight-on-date-labeling-regulations/date_labels";

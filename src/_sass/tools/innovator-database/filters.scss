@@ -15,6 +15,21 @@
   .button {
     height: 32px;
   }
+
+  .locationSearch {
+    position: relative;
+    i {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background: $gray-dark;
+      color: #fff;
+      font-size: 14px;
+      right: 0;
+    }
+  }
 }
 
 body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {

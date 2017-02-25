@@ -99,6 +99,10 @@ a {
     pointer-events: none;
   }
 }
+b, strong {
+  font-weight: 500;
+}
+
 i {
   display: block;
   width: 40px;

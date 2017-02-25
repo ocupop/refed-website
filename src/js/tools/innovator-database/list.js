@@ -46,7 +46,7 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
         control: '[data-mixitup-control]'
       },
       pagination: {
-        limit: 4,
+        limit: 10,
         maintainActivePage: false,
         loop: true,
         hidePageListIfSinglePage: true
@@ -85,8 +85,9 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
         var distance = calcDistance(position, searchLocation);
 
-        $(this).find('.distance').text(distance);
-        $(this).attr('data-distance', distance);
+        $(this).find('.distance').text(distance).end()
+               .find('.innovator_distance').show().end()
+               .attr('data-distance', distance);
     });
 
     mixer.sort('distance:asc');
