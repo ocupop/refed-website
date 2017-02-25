@@ -34,6 +34,8 @@ $.behaviors('.profile', initSignup);
 
   function initSignup(form) {
     form = $(form);
+    var form_id;
+    var profile_message = $('.profileMessage');
 
     form.ajaxForm({
       dataType: 'json',
@@ -41,9 +43,10 @@ $.behaviors('.profile', initSignup);
         // The array of form data takes the following form: 
         // [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ] 
         // return false to cancel submit
+        form_id = $form.attr('id');
       },
       success: function(resp) {
-        // window.console.log("/components/signup.js: Success");
+        window.console.log("/components/signup.js: Success", form_id);
         if (resp.error) {
           var notification = { title: 'Error', message: resp.error };
           showProgress(notification);
@@ -58,13 +61,22 @@ $.behaviors('.profile', initSignup);
           if(form.data('action') == 'update') {
             buildUpdateForm(resp);
           }
+          if(form.data('action') == 'signin'){
+            buildUpdateForm(resp);
+          }
           // if this is a download do this
           if(form.data('action') == 'download') {
             updateDownloadPage();
+            buildUpdateForm(resp);
           }
-
-          $(".formMessage_success").fadeIn('slow');
-          // TODO - Hide any form elements that need.
+          
+          profile_message.each(function(){
+            $(this).removeClass('active');
+            if($(this).data('message') == form_id){
+              window.console.log($(this).data('message'));
+              $(this).addClass('active');
+            }
+          })
         }
       },
       error: function() {
@@ -74,8 +86,6 @@ $.behaviors('.profile', initSignup);
       }
     });
   }
-
-
 
   function buildUpdateForm(resp) {
     window.console.log("/components/signup.js: buildUpdateForm");
@@ -87,6 +97,9 @@ $.behaviors('.profile', initSignup);
     $("#confirm_organization").val(resp.merge_fields.ORG);
     $("#confirm_stakeholders").val(resp.merge_fields.STAKEHOLDE);
     $("#confirm_solutions").val(resp.merge_fields.SOLUTIONS);
+    var firstname = ' ' + resp.merge_fields.FNAME;
+    window.console.log(firstname);
+    $("#firstname").append(firstname);
   }
 
   function signUpSuccess() {
@@ -97,8 +110,9 @@ $.behaviors('.profile', initSignup);
   function updateDownloadPage() {
     window.console.log("/components/signup.js: updateDownloadPage");
     // $.scrollTo($("#"));
+    
     $('.chapter').find('.message').fadeOut().end()
-                  .find('.button').removeClass('disabled');
+                  .find('.button').removeClass('disabled').off('click');
   }
 
   function showProgress(notification) {
@@ -110,6 +124,10 @@ $.behaviors('.profile', initSignup);
       $('#thanks').fadeOut('slow');
     }, 3000);
   }
+
+
+
+  
 
   // $('#profile form').ajaxForm({
   //   dataType: 'json',
@@ -148,18 +166,7 @@ $.behaviors('.profile', initSignup);
 
 
 
-  // $(function() {
-  //   if ($.cookie('memberEmail')) {
-  //     $('#signup-signin').hide();
-  //     $.ajax({
-  //       url: "https://ancient-wave-20081.herokuapp.com/signin",
-  //       data: {email_return: $.cookie('memberEmail')},
-  //       success: function(resp) {
-  //         updateProfile(resp);
-  //       }
-  //     });
-  //   }
-  // });
+  
 
 
   // // TODO - Needs to be abstracte out to seperate JS

@@ -2,8 +2,11 @@
 #member_signin_form {}
 #member_update_form {}
 
-.formMessage_success {
+.profileMessage {
   display: none;
+  &.active {
+    display: block;
+  }
 }
 
 #profile {
