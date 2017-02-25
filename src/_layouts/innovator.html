@@ -47,14 +47,12 @@ layout: tool
       <h4>Tags</h4>
       <p class="innovator_tags">
         {% for c in page.subcategories %}
-          <span>{{ c | replace: '-', ' ' }}</span>
-          {% unless forloop.last %}, {% endunless %}
+          <span>{{ c | replace: '-', ' ' }}</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       </p>
   </div>
   {% endunless %}
 
-{{ page.solutions }}
   {% unless page.solutions == empty %}
     <div class="content">
       <h4>Related Solutions</h4>

@@ -3,7 +3,7 @@
   {% when "state" %}
     {% assign sidebar = 'state' %}
   {% when "innovator" %}
-    {% assign sidebar = 'state' %}
+    {% assign sidebar = 'innovator' %}
   {% else %}
     {% assign sidebar = page.sidebar %}
 {% endcase %}
@@ -29,7 +29,7 @@
       </main>
 
       {% if sidebar %}
-        <aside class="{{ page.sidebar }}Sidebar">
+        <aside class="{{ sidebar }}Sidebar">
           {% if sidebar == 'toc' %}
             <div class="sticky" data-offset-top="120">
               <div class="content">
