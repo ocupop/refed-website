@@ -19,14 +19,16 @@
 
   .innovator_tags {
     text-transform: capitalize;
-  }
-
-  .innovator_tags {
-    text-transform: capitalize;
+    li {
+      margin-bottom: 0;
+    }
   }
 
   .innovator_solutions {
     text-transform: capitalize;
+    li {
+      margin-bottom: 3px;
+    }
   }
 }
 
