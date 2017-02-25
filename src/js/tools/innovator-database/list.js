@@ -45,6 +45,12 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       load: {
         sort: 'random'
       },
+      classNames: {
+        block: '',
+      },
+      layout: {
+        containerClassName: 'innovatorDatabase_list'
+      },
       selectors: {
         target: '.innovator',
         control: '[data-mixitup-control]'

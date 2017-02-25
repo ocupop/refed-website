@@ -1,7 +1,16 @@
 #innovatorList {
   background-color: #fff;
 }
-.innovatorDatabase_list {
+.innovatorDatabase_list, ul[class^="innovatordatabase_list"] {
+  .fail-message {
+    display: none;
+    @include transition(1s);
+  }
+  &.container-failed {
+    .fail-message {
+      display: block;
+    }
+  }
   .innovator {
     padding: 20px 0;
     hr {

@@ -12,6 +12,17 @@
 
     </div>
     <ul class="innovatorDatabase_list">
+      <li class="fail-message">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="content">
+              <h4 class="italic">Sorry, there are no listing that match your criteria</h4>
+              <p>Find what you're looking for? If not, remember that food waste innovation is a growing sector, and our database is always expanding. If you or
+someone you know should be included in ReFED's Innovator Database, <a href="mailto:info@refed.com">send us an email today!</a></p>
+            </div>
+          </div>
+        </div>
+      </li>
       {% for innovator in site.innovators %}
         <li class="innovator mix"
             data-title="{{ innovator.name }}"
