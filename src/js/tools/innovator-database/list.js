@@ -16,19 +16,6 @@
  * along with this program.  If not, see
  * http://www.gnu.org/licenses/agpl-3.0.html.
 
-
-Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
-
-FOR SOLUTION CARDS AND BLOG ARTICLE FILTERS
-import mixitup from 'mixitup';
-import $ from 'jquery';
-
-mixitup.use($);
-
-// MixItUp can now be used as a jQuery plugin, as per the v2 API
-
-$('.container').mixitup();
-
  */
 (function() {
 
@@ -45,28 +32,21 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       load: {
         sort: 'random'
       },
-      classNames: {
-        block: '',
-      },
-      layout: {
-        containerClassName: 'innovatorDatabase_list'
-      },
       selectors: {
         target: '.innovator',
         control: '[data-mixitup-control]'
       },
       pagination: {
         limit: 10,
-        maintainActivePage: false,
-        loop: true,
-        hidePageListIfSinglePage: true
+        // maintainActivePage: false,
+        // loop: true,
+        // hidePageListIfSinglePage: true
       }
     });
 
     $(window).on('searchLocation', function(event, location) {
         var searchLocation = new google.maps.LatLng(location.lat, location.lng);
         updateInnovatorDistances(list, searchLocation, mixer);
-            // .then(mixer.sort('distance'));
     });
 
 
