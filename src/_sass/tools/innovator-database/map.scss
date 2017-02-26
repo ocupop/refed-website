@@ -32,10 +32,18 @@
       vertical-align: middle;
     }
     small {
+      display: block;
       font-size: 9px;
-      float: right;
       margin-top: -10px;
+      margin-left: 45px;
     }
+  }
+}
+.innovator_reach {
+  margin-bottom: 20px;
+  i {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -48,6 +56,9 @@
 @media all and (max-width: $screen-sm-max) {
   .innovatorDatabase_map  {
     
+  }
+  .innovatorDatabase_mapKey {
+    display: none;
   }
 }
 

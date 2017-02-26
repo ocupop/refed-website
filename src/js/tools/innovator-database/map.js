@@ -47,8 +47,9 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     var options = {
       zoom: 5,
       // mapTypeId: 'terrain',
+      mapTypeControl: false,
       streetViewControl: false,
-      ZoomControlOptions: {
+      zoomControlOptions: {
         style: google.maps.ZoomControlStyle.LARGE,
         position: google.maps.ControlPosition.TOP_RIGHT
       },
@@ -71,6 +72,15 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
       innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
+    });
+
+    $('[data-toggle="tab"]').on('hide.bs.tab', function(e) {
+      $('#tooltip').removeClass('active');
+    });
+
+    innovatorMap.addListener('click', function() {
+      window.scrollTo(0, 0);
+      $("#tooltip").removeClass('active');
     });
   }
 
@@ -97,7 +107,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       var marker = new google.maps.Marker({
         position: location,
         icon: icons[reach].icon,
-        opacity: 0.7,
+        // opacity: 0.7,
         title: results.innovators[i].name,
         // animation: google.maps.Animation.DROP,
         map: innovatorMap
@@ -105,6 +115,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       marker.details = results.innovators[i];
       marker.addListener('click', function() {
         window.console.log(this.details);
+
         var d = this.details;
         $('#tooltip')
           .find('[data-content="innovator_name"]').text(d.name).end()
@@ -113,6 +124,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="innovator_category"]').text(d.innovator_category).end()
           .find('[data-content="food_recovery_hierarchy"]').text(d.food_recovery_hierarchy).end()
           .find('[data-content="innovator_reach"]').text(d.innovator_reach).end()
+          .find('.icon').addClass("icon-"+d.innovator_reach).end()
           .find('[data-content="innovator_website"]').text(d.website).attr('href', d.website).end()
           .find('[data-content="innovator_url"]').text(d.url).end()
           .addClass('active');
@@ -128,9 +140,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
   }
 
   $(window).on('searchLocation', function(event, location) {
-    window.console.log("MAP:", location);
+
       var searchLocation = new google.maps.LatLng(location.lat, location.lng);
-      window.console.log("MAP:", searchLocation);
       var marker = new google.maps.Marker({
         position: searchLocation,
         animation: google.maps.Animation.DROP,
