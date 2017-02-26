@@ -43,11 +43,11 @@ layout: tool
 
 {% contentfor sidebar %}
 <div class="container">
-  {% unless page.subcategories == empty %}
+  {% unless page.innovator_subcategories == empty %}
   <div class="content">
       <h4>Tags</h4>
       <p class="innovator_tags">
-        {% for c in page.subcategories %}
+        {% for c in page.innovator_subcategories %}
           <span>{{ c | replace: '-', ' ' }}</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       </p>
