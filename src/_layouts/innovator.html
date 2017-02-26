@@ -12,24 +12,24 @@ layout: tool
           </div>
           <h1>{{ page.name }}</h1>
           <p class="innovator_details">
-            <span class="muted italic">Status:</span> {{ page.organization_status }}<br>
+            <span class="muted italic">Status:</span> {{ page.organization_classification }}<br>
             <span class="muted italic">Year Founded:</span> {{ page.founded }}<br>
-            <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_hierarchy }}<br>
-            {% unless page.categories == empty %}
-              <span class="muted italic">Categories:</span> {% for category in page.innovator_categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_category }}<br>
+            {% unless page.innovator_categories == empty %}
+              <span class="muted italic">Categories:</span> {% for category in page.innovator_categories %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}
             {% endunless %}
           </p>
-          <h5 class="innovator_reach"><i class="icon icon-{{ page.innovator_reach | slugify }}"></i> {{ page.innovator_reach }} <span>Organization</span></h5>
+          <h5 class="innovator_reach_category"><i class="icon icon-{{ page.innovator_reach_category | slugify }}"></i> {{ page.innovator_reach_category }} <span>Organization</span></h5>
           <p>{{ page.description }}</p>
           <div class="row">
             {% if page.email %}
             <div class="col-xs-12 col-sm-6">
-              <a href="mailto:{{ page.email }}" class="button inverse">Contact Innovator</a>
+              <a href="mailto:{{ page.email }}" class="button">Contact Innovator</a>
             </div>
             {% endif %}
             {% if page.website %}
             <div class="col-xs-12 col-sm-6">
-              <a href="{{ page.website }}" target="_blank" class="button inverse">Website</a>
+              <a href="{{ page.website }}" target="_blank" class="button">Website</a>
             </div>
             {% endif %}
           </div>
@@ -58,7 +58,7 @@ layout: tool
       <h4>Related Solutions</h4>
       <ul class="innovator_solutions">
         {% for solution in page.solutions %}
-        <li><a href="{{ solution.url }}">{{ solution.title | replace: '-', ' ' }}</a></li>
+        <li><a href="{{ solution.url }}">{{ solution | replace: '-', ' ' }}</a></li>
         {% endfor %}
       </ul>
     </div>

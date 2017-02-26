@@ -103,7 +103,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     for (var i = 0; i < results.innovators.length; i++) {
       var geolocation = results.innovators[i].geolocation;
       var location = new google.maps.LatLng(geolocation[0],geolocation[1]);
-      var reach = results.innovators[i].innovator_reach;
+      var reach = results.innovators[i].innovator_reach_category;
       var marker = new google.maps.Marker({
         position: location,
         icon: icons[reach].icon,
@@ -120,11 +120,11 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         $('#tooltip')
           .find('[data-content="innovator_name"]').text(d.name).end()
           .find('[data-content="innovator_description"]').text(d.description).end()
-          .find('[data-content="organization_status"]').text(d.organization_status).end()
-          .find('[data-content="innovator_category"]').text(d.innovator_category).end()
-          .find('[data-content="food_recovery_hierarchy"]').text(d.food_recovery_hierarchy).end()
-          .find('[data-content="innovator_reach"]').text(d.innovator_reach).end()
-          .find('.icon').addClass("icon-"+d.innovator_reach).end()
+          .find('[data-content="organization_classification"]').text(d.organization_classification).end()
+          .find('[data-content="innovator_categories"]').text(d.innovator_categories).end()
+          .find('[data-content="food_recovery_category"]').text(d.food_recovery_category).end()
+          .find('[data-content="innovator_reach_category"]').text(d.innovator_reach_category).end()
+          .find('.icon').addClass("icon-"+d.innovator_reach_category).end()
           .find('[data-content="innovator_website"]').text(d.website).attr('href', d.website).end()
           .find('[data-content="innovator_url"]').text(d.url).end()
           .addClass('active');

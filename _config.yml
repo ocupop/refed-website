@@ -84,9 +84,9 @@ food_recovery_hierarchy:
   - recovery
   - recycle
 
-organization_status:
-  - forprofit
-  - nonprofit
+organization_classification:
+  - "For-Profit"
+  - "Nonprofit"
 
 innovator_categories:
   - secondary marketplace

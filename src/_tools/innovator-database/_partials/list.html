@@ -26,9 +26,9 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
       {% for innovator in site.innovators %}
         <li class="innovator mix"
             data-title="{{ innovator.name }}"
-            data-category="{{ innovator.innovator_category.first | slugify }}"
-            data-status="{{ innovator.organization_status | slugify }}"
-            data-hierarchy="{{ innovator.food_recovery_hierarchy | downcase }}"
+            data-category="{{ innovator.innovator_categories.first | slugify }}"
+            data-status="{{ innovator.organization_classification | slugify }}"
+            data-hierarchy="{{ innovator.food_recovery_category | downcase }}"
             data-lat="{{ innovator.lat }}"
             data-lng="{{ innovator.lng }}"
             data-distance="">
@@ -43,12 +43,12 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
             <div class="col-xs-12 col-sm-4">
               <div class="content">
                 <p class="innovator_details">
-                  <em>Status:</em>&nbsp;&nbsp;<strong>{{ innovator.organization_status | capitalize }}</strong><br>
+                  <em>Status:</em>&nbsp;&nbsp;<strong>{{ innovator.organization_classification | capitalize }}</strong><br>
                   <em>Category:</em>&nbsp;&nbsp;<strong>{{ innovator.innovator_category.first | replace: '-', ' ' | capitalize }}</strong><br>
-                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_hierarchy }}</strong><br>
+                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_category }}</strong><br>
                   <a href="{{ innovator.website }}">{{ innovator.website }}</a>
                 </p>
-                <h5 class="innovator_reach"><i class="icon icon-{{ innovator.innovator_reach | slugify }}"></i> {{ innovator.innovator_reach }} <span class="hidden-sm">Organization</span></h5>
+                <h5 class="innovator_reach_category"><i class="icon icon-{{ innovator.innovator_reach_category | slugify }}"></i> {{ innovator.innovator_reach_category }} <span class="hidden-sm">Organization</span></h5>
                 <p class="innovator_distance">Distance: <span class="distance">0</span> miles</p>
               </div>
             </div>
