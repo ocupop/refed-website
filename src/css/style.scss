@@ -46,11 +46,15 @@
 @import 'nav/toolnav';
 @import "nav/quicknav";
 
-// Components
+// Charts
+@import "components/charts/chartist.scss";
 @import "components/charts/charts_base";
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
 @import "components/charts/profit_chart";
+
+
+// Components
 @import 'components/siteSearch';
 @import "components/supplyChain";
 @import "components/lineClamp";

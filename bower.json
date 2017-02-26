@@ -48,6 +48,8 @@
     },
     "chartist": {
       "main": [
+        "dist/scss/settings/_chartist-settings.scss",
+        "dist/scss/chartist.scss",
         "dist/chartist.min.js",
         "dist/chartist.min.js.map",
         "dist/chartist.min.css"
@@ -59,17 +61,17 @@
         "dist/chartist-plugin-fill-donut.min.js.map"
       ]
     },
+    "jquery-behaviors": {
+      "main": [
+        "behaviors.js"
+      ]
+    },
     "lunr.js": {
       "main": ["lunr.min.js"]
     },
     "mixitup": {
       "main": [
         "build/jquery.mixitup.min.js"
-      ]
-    },
-    "jquery-behaviors": {
-      "main": [
-        "behaviors.js"
       ]
     },
     "waypoints": {
