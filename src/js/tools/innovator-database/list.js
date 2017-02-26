@@ -49,6 +49,11 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
         updateInnovatorDistances(list, searchLocation, mixer);
     });
 
+    $(window).on('noLocation', function(event) {
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
+        clearInnovatorDistances(list, mixer);
+    });
+
 
     list = $(list);
 
@@ -64,6 +69,12 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
     });
 
 
+  }
+
+  function clearInnovatorDistances(list, mixer) {
+    // TODO - Display a message here
+    list.find('.innovator_distance').fadeOut();
+    mixer.sort('default:asc');
   }
 
   function updateInnovatorDistances(list, searchLocation, mixer) {
