@@ -34,7 +34,7 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       },
       selectors: {
         target: '.innovator',
-        control: '[data-mixitup-control]'
+        control: '[data-mixitup-control], .mixitup-control'
       },
       pagination: {
         limit: 10,
@@ -52,7 +52,7 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
     list = $(list);
 
-    list.find('[data-sort]').on('click', function(){
+    $('[data-sort]').on('click', function(){
       var sort = $(this).attr('data-sort');
       mixer.sort(sort);
 

@@ -1,12 +1,26 @@
 #innovatorList {
   background-color: #fff;
+  button.sort {
+    .icon {
+      height: auto;
+      @include transition();
+    }
+    &[data-sort$=":desc"] {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+    &[data-sort$=":asc"] {
+      .icon {}
+    }
+  }
 }
 .innovatorDatabase_list, ul[class^="innovatordatabase_list"] {
   .fail-message {
     display: none;
     @include transition(1s);
   }
-  &.container-failed {
+  &.mixitup-container-failed {
     .fail-message {
       display: block;
     }
