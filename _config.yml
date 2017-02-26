@@ -75,11 +75,11 @@ gems:
 
 
 # Cloudcannon Editor
-reach: 
+innovator_reach_category: 
   - local
   - national
 
-food_recovery_hierarchy:
+food_recovery_category:
   - prevention
   - recovery
   - recycle
