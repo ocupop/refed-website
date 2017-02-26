@@ -32,26 +32,40 @@ collections:
     permalink: /content-hub/:path
 
 defaults:
-- type: 'states'
-  values:
-    layout: state
-    header: "<small>U.S. Food Waste</small>Policy Finder"
-- type: 'solutions'
-  values:
-    nextpage:
-      url: /stakeholder
-      title: Stakeholders
-    prevpage:
-      url: /solution
-      title: Solutions
-- type: 'stakeholders'
-  values:
-    nextpage:
-      url: /action
-      title: Action
-    prevpage:
-      url: /stakeholder
-      title: Stakeholders
+  - 
+    scope:
+      type: 'states'
+    values:
+      layout: state
+      header: "<small>U.S. Food Waste</small>Policy Finder"
+      tool_url: /tools/food-waste-policy-finder/
+  - 
+    scope:
+      type: 'innovators'
+    values:
+      layout: innovator
+      header: "<small>The Food Waste</small>Innovator Database"
+      tool_url: /tools/innovator-database/
+  - 
+    scope:
+      type: 'solutions'
+    values:
+      nextpage:
+        url: /stakeholder
+        title: Stakeholders
+      prevpage:
+        url: /solution
+        title: Solutions
+  - 
+    scope:
+      type: 'stakeholders'
+    values:
+      nextpage:
+        url: /action
+        title: Action
+      prevpage:
+        url: /stakeholder
+        title: Stakeholders
 
 
 
