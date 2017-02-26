@@ -30,6 +30,11 @@
       right: 0;
     }
   }
+
+  .tooltip-inner {
+      min-width: 200px;
+      padding: 8px;
+  }
 }
 
 .mixitup-page-list {
@@ -37,6 +42,8 @@
     padding: 0 10px;
   }
 }
+
+
 
 body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
   .innovatorDatabase_filters {

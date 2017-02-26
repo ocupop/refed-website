@@ -33,4 +33,7 @@ $(document).on('ready', function() {
   //   });
   // }
 
+  // TODO - Refactor and add to tooltip.js
+  $('[data-toggle="tooltip"]').tooltip();
+
 });
