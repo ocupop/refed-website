@@ -12,6 +12,7 @@ layout: tool
           </div>
           <h1>{{ page.name }}</h1>
           <p class="innovator_details">
+            <span class="muted italic">Location:</span> {% if page.city %}{{ page.city }} {{ page.state }}, {% endif %}{{ page.country }}<br>
             <span class="muted italic">Status:</span> {{ page.organization_classification }}<br>
             <span class="muted italic">Year Founded:</span> {{ page.founded }}<br>
             <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_category }}<br>
@@ -63,6 +64,18 @@ layout: tool
       </ul>
     </div>
   {% endunless %}
+
+  {% if page.facebook_url or page.twitter_url or page.linkedin_url %}
+  
+    <div class="content innovator_follow">
+      <h4>Follow {{ page.name }}</h4>
+      {% if page.facebook_url %}<a href="{{ page.facebook_url }}" title="Facebook"><i class="icon icon-facebook"></i></a>{% endif %}
+      {% if page.linkedin_url %}<a href="{{ page.linkedin_url }}" title="LinkedIn"><i class="icon icon-linkedin"></i></a>{% endif %}
+      {% if page.twitter_url %}<a href="{{ page.twitter_url }}" title="Twitter"><i class="icon icon-twitter"></i></a>{% endif %}
+    </div>
+
+  {% endif %}
+
   <div class="content">
     <h4>Spread the Word</h4>
     <button class="button inverse share"><i class="icon icon-share"></i> Share</button>

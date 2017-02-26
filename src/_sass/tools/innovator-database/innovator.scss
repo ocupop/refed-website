@@ -34,6 +34,22 @@
   .innovatorSidebar {
     padding-top: 50px;
   }
+
+  .innovator_follow {
+    a {
+      color: $button-color;
+      &:hover {
+        color: darken($button-color, 15%);
+      }
+    }
+    i {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 24px;
+    }
+  }
 }
 
 @media all and (max-width: $screen-md-max) {
