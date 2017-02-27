@@ -1,5 +1,5 @@
 {% assign tab = true %}
-{% if page.path contains 'index' %}
+{% if page.path contains 'index' or page.title == 'Suggest An Innovator' %}
   {% assign tab = false %}
 {% endif %}
 
