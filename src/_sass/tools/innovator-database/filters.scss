@@ -1,5 +1,6 @@
 .innovatorDatabase_filters {
   padding: 10px 0;
+  @include transition();
   h4 {
     font-size: 14px;
   }
@@ -35,6 +36,10 @@
       min-width: 200px;
       padding: 8px;
   }
+
+  .filterToggle {
+    display: none;
+  }
 }
 
 .mixitup-page-list {
@@ -65,6 +70,33 @@ body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
 
 @media all and (max-width: $screen-xs-max) {
   .innovatorDatabase_filters {
-
+    position: fixed;
+    top: 118px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    .filterToggle {
+      display: block;
+      i {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        line-height: 23px;
+        font-size: 12px;
+        margin-right: 5px;
+        transform: rotate(180deg);
+      }
+    }
+    &.open {
+      .hidden-xs {
+        display: block !important;
+      }
+      .filterToggle {
+        i {
+          transform: rotate(0deg);
+        }
+      }
+    }
   }
 }
