@@ -25,6 +25,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
       </li>
       {% for innovator in site.innovators %}
         <li class="innovator mix"
+            data-uid="uid_{{ forloop.index }}"
             data-title="{{ innovator.name }}"
             data-description="{{ innovator.description }}"
             data-innovator-category-options="{{ innovator.innovator_category_options.first }}"

@@ -89,7 +89,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
   // set of coordinates.
   window.load_innovatorMap = function(results) {
     // window.console.log("innovatorDatabase_map: Load Map",results);
-    // var markers = [];
 
     var iconBase = '/img/icons/maps/markers/';
     var icons = {
@@ -117,6 +116,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         // animation: google.maps.Animation.DROP,
         map: innovatorMap
       });
+      marker.id = innovator.data('uid');
       marker.details = innovator.data();
 
 
@@ -140,6 +140,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
       });
 
+      marker.addListener('hideMarker')
       
       markers.push(marker);
     });
@@ -198,7 +199,26 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
   });
 
   $(window).on('mixStart', function(event) {
-    window.console.log("Details:", event.detail.futureState);
+    var uids = $.map(event.detail.futureState.matching, function(i) {
+      return($(i).data('uid'));
+    });
+    var show = [];
+    var hide = [];
+
+    for (var i = 0; i < markers.length; i++) {
+      if(uids.includes(markers[i].id)) {
+        hide.push(markers[i]);
+        markers[i].setVisible(true);
+      } else {
+        show.push(markers[i]);
+        markers[i].setVisible(false);
+      }
+    }
+    // window.console.log("Event Details: ", event.detail);
+    // window.console.log("Markers: ", markers.length);
+    // window.console.log("UIDS: ", uids.length);
+    // window.console.log("SHOWING: ", show.length);
+    // window.console.log("HIDING: ", hide.length);
 
   });
 
