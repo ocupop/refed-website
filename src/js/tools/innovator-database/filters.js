@@ -23,10 +23,17 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 (function() {
 
 $.behaviors('.innovatorDatabase_filters', innovatorDatabase_filters);
+$.behaviors('.filterToggle', initToggle);
 
   var targetSelector = '.mix';
   var activeHash = '';
 
+  function initToggle(container) {
+    container = $(container);
+    container.on('click', function() {
+      $('.innovatorDatabase_filters').toggleClass('open');
+    });
+  }
 
   function innovatorDatabase_filters(filters) {
     filters = $(filters);
