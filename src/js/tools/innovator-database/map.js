@@ -107,7 +107,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       var innovator = $(this);
 
       var location = new google.maps.LatLng(innovator.data('lat'),innovator.data('lng'));
-      var reach = innovator.data('innovator-reach-category');
+      var reach = innovator.data('innovator-level');
 
       var marker = new google.maps.Marker({
         position: location,
@@ -127,9 +127,9 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         $('#tooltip')
           .find('[data-content="title"]').text(d.title).end()
           .find('[data-content="description"]').text(d.description).end()
-          .find('[data-content="organizationClassification"]').text(d.organizationClassification).end()
-          .find('[data-content="innovatorCategories"]').text(d.innovatorCategories).end()
-          .find('[data-content="foodRecoveryCategory"]').text(d.foodRecoveryCategory).end()
+          .find('[data-content="business-model"]').text(d.businessModel).end()
+          .find('[data-content="innovator-categories"]').text(d.innovatorCategories).end()
+          .find('[data-content="food-recovery-hierarchy-option"]').text(d.food_recovery_hierarchy_option).end()
           .find('[data-content="reach"]').text(d.innovatorReachCategory).end()
           .find('.icon').addClass("icon-"+d.innovatorReachCategory).end()
           .find('[data-content="website"]').text(d.website).attr('href', d.website).end()

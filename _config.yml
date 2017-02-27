@@ -97,7 +97,7 @@ innovator_levels:
   - local
   - national
 
-food_recovery_categories:
+food_recovery_hierarchy_options:
   - title: Prevention
     summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
   - title: Recovery

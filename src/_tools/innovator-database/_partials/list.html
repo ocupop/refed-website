@@ -28,9 +28,9 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
             data-title="{{ innovator.name }}"
             data-description="{{ innovator.description }}"
             data-innovator-categories="{{ innovator.innovator_categories.first }}"
-            data-organization-classification="{{ innovator.organization_classification }}"
-            data-food-recovery-category="{{ innovator.food_recovery_category }}"
-            data-innovator-reach-category="{{ innovator.innovator_reach_category }}"
+            data-business-model="{{ innovator.business_model }}"
+            data-food-recovery-hierarchy-option="{{ innovator.food_recovery_hierarchy_option }}"
+            data-innovator-level="{{ innovator.innovator_level }}"
             data-website="{{ innovator.website }}"
             data-url="{{ innovator.url }}"
             data-lat="{{ innovator.lat }}"
@@ -52,7 +52,8 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
                   <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_category }}</strong><br>
                   <a href="{{ innovator.website }}">{{ innovator.website }}</a>
                 </p>
-                <h5 class="innovator_reach_category"><i class="icon icon-{{ innovator.innovator_reach_category | slugify }}"></i> {{ innovator.innovator_reach_category }} <span class="hidden-sm">Organization</span></h5>
+                <!-- TODO - UPdate CSS names to match -->
+                <h5 class="innovator_reach_category"><i class="icon icon-{{ innovator.innovator_level | slugify }}"></i> {{ innovator.innovator_level }} <span class="hidden-sm">Organization</span></h5>
                 <p class="innovator_distance" style="display: none;">Distance: <span class="distance">0</span> miles</p>
               </div>
             </div>
