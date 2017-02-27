@@ -13,14 +13,15 @@ layout: tool
           <h1>{{ page.name }}</h1>
           <p class="innovator_details">
             <span class="muted italic">Location:</span> {% if page.city %}{{ page.city }} {{ page.state }}, {% endif %}{{ page.country }}<br>
-            <span class="muted italic">Status:</span> {{ page.organization_classification }}<br>
+            <span class="muted italic">Status:</span> {{ page.business_model }}<br>
             <span class="muted italic">Year Founded:</span> {{ page.founded }}<br>
-            <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_category }}<br>
-            {% unless page.innovator_categories == empty %}
-              <span class="muted italic">Categories:</span> {% for category in page.innovator_categories %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_hierarchy_option }}<br>
+            {% unless page.innovator_category_options == empty %}
+              <span class="muted italic">Categories:</span> {% for category in page.innovator_category_options %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}
             {% endunless %}
           </p>
-          <h5 class="innovator_reach_category"><i class="icon icon-{{ page.innovator_reach_category | slugify }}"></i> {{ page.innovator_reach_category }} <span>Organization</span></h5>
+          <!-- TODO - Swap CSS names -->
+          <h5 class="innovator_reach_category"><i class="icon icon-{{ page.innovator_level | slugify }}"></i> {{ page.innovator_level }} <span>Organization</span></h5>
           <p>{{ page.description }}</p>
           <div class="row">
             {% if page.email %}

@@ -113,29 +113,29 @@ business_models:
   - "For-Profit"
   - "Nonprofit"  
 
-innovator_categories:
+innovator_category_options:
   - title: Consumer Education
     summary: "Includes educational campaigns and resources that target wasted food, as well as tools and applications that enhance consumers' understanding of strategies to prevent food waste, including eating food before it spoils."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Campaigns
       - Tools/Applications
       - Improved Inventory Management (Consumer Level)
       - Smart Refrigerator
   - title: Supply Chain and Operational Efficiency
     summary: "Tools, technologies, and systems that decrease food loss and waste in the supply chain or in food business operations."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Cold Chain Management
       - Improved Inventory Management
       - Waste Tracking & Analytics
   - title: Shelf-Life Extension
     summary: "Any technology that physically enhances the ability of perishable food to remain fresh for longer, including food packaging."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Ethylene Inhibitor
       - Spoilage Prevention Packaging
       - Packaging Adjustments
   - title: Secondary Marketplaces
     summary: "A secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."    
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Brick and Mortar
       - Farm to Buyer
       - Business to Buyer
@@ -143,51 +143,51 @@ innovator_categories:
       - Consumer to Consumer
   - title: Food Product Creation
     summary: "Any commercial or nonprofit business converting edible food that is currently considered waste (e.g. surplus/cosmetically challenged produce; brewery waste; vegetable trimmings) into value-added consumer food products (e.g., juices, fruit snacks, energy bars)."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Surplus Produce
       - Food Scraps
       - Byproducts
   - title: Donation Coordination
     summary: "An organization or technology that enables any aspect of food donation, including matching food donors with food recipients in real-time, known as 'donation matching software'."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Donation Matching Software
       - Donation Coordinator
   - title: Donation Transportation
     summary: "An organization that is actively involved in the collection and distribution of donated food."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Donation Transportation
       - Consumer Food Recovery
   - title: Donated Food Processing
     summary: "An organization that collects, stores, and processes donated food for distribution to food insecure populations. This includes community kitchen models and the value-added processing of donated food"
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Donation Storage & Handling
       - Community Kitchen
       - Value-Added Processing
   - title: Renewable Energy from Organics (Anaerobic Digestion)
     summary: "An organization that generates renewable energy from organic material via anaerobic digestion, both on-site or at a centralized facility."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Centralized Anaerobic Digestion
       - Distributed Anaerobic Digestion
       - Small Scale Anaerobic Digestion
   - title: Composting
     summary: "An organization that processes food waste by composting on any scale at a designated location."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Community Composting
       - Centralized Composting
       - Home Composting
   - title: Animal Feed
     summary: "An organization that processes food waste by feeding the material to animals."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Livestock
       - Black Soldier Fly Larvae
   - title: On-Site Processing Solutions
     summary: "A technology that enables an organization to process its food waste on-site."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - In-Vessel Composting
       - Commercial Greywater
   - title: Specialty Recycled Products
     summary: "Any organization that is recycling inedible food waste into value-added products for consumers (e.g., dog treats; clothing) or other products like bioplastics."
-    innovator_subcategories:
+    innovator_subcategory_options:
       - Consumer Products
       - Industrial Products
       - Agricultural Products

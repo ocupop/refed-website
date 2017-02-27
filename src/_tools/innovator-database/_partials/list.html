@@ -27,7 +27,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
         <li class="innovator mix"
             data-title="{{ innovator.name }}"
             data-description="{{ innovator.description }}"
-            data-innovator-categories="{{ innovator.innovator_categories.first }}"
+            data-innovator-category-options="{{ innovator.innovator_category_options.first }}"
             data-business-model="{{ innovator.business_model }}"
             data-food-recovery-hierarchy-option="{{ innovator.food_recovery_hierarchy_option }}"
             data-innovator-level="{{ innovator.innovator_level }}"
@@ -47,9 +47,13 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
             <div class="col-xs-12 col-sm-4">
               <div class="content">
                 <p class="innovator_details">
-                  <em>Status:</em>&nbsp;&nbsp;<strong>{{ innovator.organization_classification | capitalize }}</strong><br>
-                  <em>Category:</em>&nbsp;&nbsp;<strong>{{ innovator.innovator_categories.first | replace: '-', ' ' | capitalize }}</strong><br>
-                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_category }}</strong><br>
+                  <em>Status:</em>&nbsp;&nbsp;<strong>{{ innovator.business_model | capitalize }}</strong><br>
+                  <em>Categories:</em>&nbsp;&nbsp;
+                    {% for c in innovator.innovator_category_options %}
+                      <strong>{{ c.title }}</strong>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                    <br>
+                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_hierarchy_option }}</strong><br>
                   <a href="{{ innovator.website }}">{{ innovator.website }}</a>
                 </p>
                 <!-- TODO - UPdate CSS names to match -->
