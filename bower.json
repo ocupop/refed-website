@@ -52,7 +52,7 @@
         "dist/scss/chartist.scss",
         "dist/chartist.min.js",
         "dist/chartist.min.js.map",
-        "dist/chartist.min.css"
+        "dist/chartist.css"
       ]
     },
     "chartist-plugin-fill-donut": {
