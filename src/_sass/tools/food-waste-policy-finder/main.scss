@@ -166,10 +166,13 @@ body.policy_tool-layout {
     }
   }
   .flex-table {
+    font-size: 12px;
     .flex-table-item {
-      width: calc(30% - 10px);
+      padding: 5px;
+      margin-bottom: 5px;
+      width: calc(30% - 5px);
       &.item-large {
-        width: calc(70% - 10px);
+        width: calc(70% - 5px);
       }
     }
   }
