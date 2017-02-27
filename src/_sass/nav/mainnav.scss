@@ -137,6 +137,17 @@ body.condensed-header {
 
 @media all and (max-width: $screen-xs-max) {
   #mainnav {
-
+    nav {
+      ul {
+        li {
+          a {
+            color: $gray-lighter;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 }
