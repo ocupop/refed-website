@@ -101,40 +101,84 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       }
     };
 
-    for (var i = 0; i < results.innovators.length; i++) {
-      var geolocation = results.innovators[i].geolocation;
-      var location = new google.maps.LatLng(geolocation[0],geolocation[1]);
-      var reach = results.innovators[i].innovator_reach_category;
+    var innovators = $('.innovatorDatabase_list .innovator');
+
+    innovators.each(function() {
+      var innovator = $(this);
+
+      var location = new google.maps.LatLng(innovator.data('lat'),innovator.data('lng'));
+      var reach = innovator.data('innovator-reach-category');
+
       var marker = new google.maps.Marker({
         position: location,
         icon: icons[reach].icon,
         // opacity: 0.7,
-        title: results.innovators[i].name,
+        title: innovator.data('title'),
         // animation: google.maps.Animation.DROP,
         map: innovatorMap
       });
-      marker.details = results.innovators[i];
-      marker.addListener('click', function() {
-        window.console.log(this.details);
+      marker.details = innovator.data();
 
+
+      marker.addListener('click', function() {
         var d = this.details;
+
+        window.console.log("Innovator Object: ", d);
         $('#tooltip')
-          .find('[data-content="innovator_name"]').text(d.name).end()
-          .find('[data-content="innovator_description"]').text(d.description).end()
-          .find('[data-content="organization_classification"]').text(d.organization_classification).end()
-          .find('[data-content="innovator_categories"]').text(d.innovator_categories).end()
-          .find('[data-content="food_recovery_category"]').text(d.food_recovery_category).end()
-          .find('[data-content="innovator_reach_category"]').text(d.innovator_reach_category).end()
-          .find('.icon').addClass("icon-"+d.innovator_reach_category).end()
-          .find('[data-content="innovator_website"]').text(d.website).attr('href', d.website).end()
-          .find('[data-content="innovator_url"]').attr('href', d.url).end()
+          .find('[data-content="title"]').text(d.title).end()
+          .find('[data-content="description"]').text(d.description).end()
+          .find('[data-content="organizationClassification"]').text(d.organizationClassification).end()
+          .find('[data-content="innovatorCategories"]').text(d.innovatorCategories).end()
+          .find('[data-content="foodRecoveryCategory"]').text(d.foodRecoveryCategory).end()
+          .find('[data-content="reach"]').text(d.innovatorReachCategory).end()
+          .find('.icon').addClass("icon-"+d.innovatorReachCategory).end()
+          .find('[data-content="website"]').text(d.website).attr('href', d.website).end()
+          .find('[data-content="url"]').attr('href', d.url).end()
           .addClass('active');
         innovatorMap.setZoom(8);
         innovatorMap.setCenter(this.getPosition());
 
       });
+
+      
       markers.push(marker);
-    }
+    });
+
+    // If we decide to go to a single dataset instead of using the DOM... use this logic to replace the .each()
+    // for (var i = 0; i < results.innovators.length; i++) {
+    //   var geolocation = results.innovators[i].geolocation;
+    //   var location = new google.maps.LatLng(geolocation[0],geolocation[1]);
+    //   var reach = results.innovators[i].innovator_reach_category;
+    //   var marker = new google.maps.Marker({
+    //     position: location,
+    //     icon: icons[reach].icon,
+    //     // opacity: 0.7,
+    //     title: results.innovators[i].name,
+    //     // animation: google.maps.Animation.DROP,
+    //     map: innovatorMap
+    //   });
+    //   marker.details = results.innovators[i];
+    //   marker.addListener('click', function() {
+    //     window.console.log(this.details);
+
+    //     var d = this.details;
+    //     $('#tooltip')
+    //       .find('[data-content="innovator_name"]').text(d.name).end()
+    //       .find('[data-content="innovator_description"]').text(d.description).end()
+    //       .find('[data-content="organization_classification"]').text(d.organization_classification).end()
+    //       .find('[data-content="innovator_categories"]').text(d.innovator_categories).end()
+    //       .find('[data-content="food_recovery_category"]').text(d.food_recovery_category).end()
+    //       .find('[data-content="innovator_reach_category"]').text(d.innovator_reach_category).end()
+    //       .find('.icon').addClass("icon-"+d.innovator_reach_category).end()
+    //       .find('[data-content="innovator_website"]').text(d.website).attr('href', d.website).end()
+    //       .find('[data-content="innovator_url"]').attr('href', d.url).end()
+    //       .addClass('active');
+    //     innovatorMap.setZoom(8);
+    //     innovatorMap.setCenter(this.getPosition());
+
+    //   });
+    //   markers.push(marker);
+    // }
 
     // Add a marker clusterer to manage the markers.
     // var markerCluster = new MarkerClusterer(innovatorMap, markers, {imagePath: '/img/innovator-database/markers/m'});
@@ -151,6 +195,11 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
       innovatorMap.setZoom(8);
       innovatorMap.setCenter(searchLocation);
+  });
+
+  $(window).on('mixStart', function(event) {
+    window.console.log("Details:", event.detail.futureState);
+
   });
 
 })();
