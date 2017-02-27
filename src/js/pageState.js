@@ -43,9 +43,13 @@ window.addEventListener('popstate', function(event) {
     if (hash) {
       // TODO - Refactor for all page content scenarios
       pageScroll('#pageContent', 120);
+      
+      var activeTab = "activeTab_"+ hash.replace('#', '');
+      $('body').addClass(activeTab);
+
       $(hash).addClass('active');
 
-      $('[href$="'+hash+'"]').addClass('active');
+      $('[href$="'+hash+'"]').parent().addClass('active');
       // $.scrollTo(location.hash);
     } else {
       $('[data-toggle="tab"]').first().trigger('click');

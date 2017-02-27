@@ -97,8 +97,8 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     $('a[href$="#innovatorAnalysis"]').on('show.bs.tab', function(e) {
       // $(window).trigger('resize');
-      window.fireEvent('resize');
-      // window.dispatchEvent(new Event('resize'));
+      // window.fireEvent('resize');
+      window.dispatchEvent(new Event('resize'));
     });
 
   }
