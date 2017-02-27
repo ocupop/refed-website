@@ -19,11 +19,11 @@
                         data-mixitup-control>
                         Status
                         </option>
-                <option value="[data-status='nonprofit']"
+                <option value="[data-organization-classification='nonprofit']"
                         data-mixitup-control>
                         Nonprofit
                         </option>
-                <option value="[data-status='forprofit']"
+                <option value="[data-organization-classification='for-profit']"
                         data-mixitup-control>
                         For-Profit
                         </option>
@@ -35,7 +35,7 @@
               <select>
                 <option value="">Category</option>
                 {% for category in site.innovator_categories %}
-                  <option value="[data-category='{{ category.title | slugify }}']"
+                  <option value="[data-innovator-categories='{{ category.title | slugify }}']"
                            data-mixitup-control>
                            {{ category.title }}
                           </option>

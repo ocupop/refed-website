@@ -26,8 +26,8 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
       {% for innovator in site.innovators %}
         <li class="innovator mix"
             data-title="{{ innovator.name }}"
-            data-category="{{ innovator.innovator_categories.first | slugify }}"
-            data-status="{{ innovator.organization_classification | slugify }}"
+            data-innovator-categories="{{ innovator.innovator_categories.first | slugify }}"
+            data-organization-classification="{{ innovator.organization_classification | slugify }}"
             data-hierarchy="{{ innovator.food_recovery_category | downcase }}"
             data-lat="{{ innovator.lat }}"
             data-lng="{{ innovator.lng }}"

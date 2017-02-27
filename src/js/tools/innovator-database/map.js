@@ -36,7 +36,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         window.console.log("Gotta load google maps");
         // lazyLoadGoogleMaps();
     } else {                
-        window.console.log("Google Maps is already loaded: Initialize autocomplete");
+        // window.console.log("Google Maps is already loaded: Initialize autocomplete");
         // googleMapsLoaded();
         initMap(container);
     }

@@ -22,7 +22,6 @@
 $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function innovatorDatabase_list(list) {
-    window.console.log("Innovator Database: List");
 
     var mixer = mixitup(list, {
       multifilter: {
@@ -40,7 +39,7 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
         limit: 10,
         // maintainActivePage: false,
         // loop: true,
-        // hidePageListIfSinglePage: true
+        hidePageListIfSinglePage: true
       }
     });
 
@@ -61,10 +60,10 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       var sort = $(this).attr('data-sort');
       mixer.sort(sort);
 
-      if(sort == 'date:asc'){
-        $(this).attr('data-sort', 'date:desc');
+      if(sort == 'default:asc'){
+        $(this).attr('data-sort', 'default:desc');
       } else {
-        $(this).attr('data-sort', 'date:asc');
+        $(this).attr('data-sort', 'default:asc');
       }
     });
 
@@ -79,6 +78,8 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function updateInnovatorDistances(list, searchLocation, mixer) {
 
+    mixer.sort('default:asc', false);
+
     list.find('.innovator').each(function() {
         var lat = $(this).data('lat')/1,
             lng = $(this).data('lng')/1,
@@ -91,7 +92,11 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
                .attr('data-distance', distance);
     });
 
-    mixer.sort('distance:asc');
+    mixer.sort('distance:asc')
+        .then(function(state) {
+            console.log(state.activeSort.sortString); // 'price:desc'
+        });
+
   }
   function calcDistance(p1, p2) {
     return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) * 0.000621371).toFixed(0);
