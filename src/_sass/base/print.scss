@@ -1,8 +1,13 @@
 @media print {
-  #toolnav, .mobilenav {
+  #toolnav, .mobilenav, .hidden-for-print, #toolFooter {
     display: none;
   }
-  .hidden-print {
-    display: none;
+  #toolHeader {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  #pageContent {
+    margin-top: 0 !important;
   }
 }
