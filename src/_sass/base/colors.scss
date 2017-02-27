@@ -11,6 +11,9 @@
 .teal {
   @include palette($button-color, $cream-lighter);
 }
+.turquoise {
+  @include palette($link-color, $cream-lighter);
+}
 .gray-lighter {
   @include palette($gray-lighter, $text-color);
 }

@@ -132,11 +132,11 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           filter = $(this).val(),
           filtered = $(filter),
           total_count = filtered.length;
-          forprofit = filtered.filter("[data-organization-classification='nonprofit']").length,
-          nonprofit = filtered.filter("[data-organization-classification='for-profit']").length,
-          prevention = filtered.filter("[data-hierarchy='prevention']").length,
-          recovery = filtered.filter("[data-hierarchy='recovery']").length,
-          recycling = filtered.filter("[data-hierarchy='recycling']").length;
+          forprofit = filtered.filter("[data-business-model='Nonprofit']").length,
+          nonprofit = filtered.filter("[data-business-model='For-Profit']").length,
+          prevention = filtered.filter("[data-food-recovery-hierarchy-option='Prevention']").length,
+          recovery = filtered.filter("[data-food-recovery-hierarchy-option='Recovery']").length,
+          recycling = filtered.filter("[data-food-recovery-hierarchy-option='Recycling']").length;
 
       data.labels.push(label);
       data.category.total_count.push(total_count);

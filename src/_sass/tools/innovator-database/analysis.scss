@@ -27,12 +27,19 @@
       display: inline-block;
       padding: 0 20px;
     }
+    i {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
   }
   .analysisChart {
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 250px);
     top: 0;
     left: 0;
     background: $cream-lighter;
@@ -44,6 +51,19 @@
   }
   .ct-label.ct-vertical.ct-start {
     display: none;
+  }
+  .ct-chart-bar .ct-label.ct-horizontal.ct-end {
+    width: 400px !important;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    font-family: "Trade Gothic W01", sans-serif;
+    text-transform: uppercase;
+    transform-origin: 10px -20px;
+    transform: rotate(-90deg);
+    justify-content: flex-start;
+    align-items: center;
+    text-indent: 10px;
   }
 }
 
