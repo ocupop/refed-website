@@ -71,5 +71,12 @@
     .close {
       top: 10px;
     }
+    &.active {
+      &:after {
+        display: none;
+        // optimization would be to figure out positioning of overlay for mobile, right now it's overlapping on top of share content
+      }
+    }
+    
   }
 }

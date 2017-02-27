@@ -166,20 +166,29 @@ body.policy_tool-layout {
     }
   }
   .flex-table {
+    font-size: 12px;
     .flex-table-item {
-      width: calc(30% - 10px);
+      padding: 5px;
+      margin-bottom: 5px;
+      width: calc(30% - 5px);
       &.item-large {
-        width: calc(70% - 10px);
+        width: calc(70% - 5px);
       }
     }
   }
 
   .dl-policy {
+    dt, dd {
+      padding: 5px;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
     dt {
       width: 30%;
       margin-bottom: 10px;
       font-weight: 300;
       text-transform: none;
+      
     }
     dd {
       width: calc(70% - 10px);
