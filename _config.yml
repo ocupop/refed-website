@@ -89,7 +89,7 @@ gems:
 
 
 # Cloudcannon Editor
-innovator_reach_category: 
+innovator_reach_categories: 
   - local
   - national
 
@@ -101,7 +101,7 @@ food_recovery_category:
   - title: recycling
     summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
 
-organization_classification:
+organization_classifications:
   - "For-Profit"
   - "Nonprofit"
 
