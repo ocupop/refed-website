@@ -178,11 +178,17 @@ body.policy_tool-layout {
   }
 
   .dl-policy {
+    dt, dd {
+      padding: 5px;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
     dt {
       width: 30%;
       margin-bottom: 10px;
       font-weight: 300;
       text-transform: none;
+      
     }
     dd {
       width: calc(70% - 10px);
