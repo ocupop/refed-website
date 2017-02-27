@@ -5,14 +5,90 @@
   .button {
     height: 32px;
     font-size: 14px;
-    margin-top: 25px;
     letter-spacing: 0;
     text-transform: none;
     &.cream {
       color: $text-color;
     }
+    &.active {
+      background-color: $button-color;
+      color: #fff;
+    }
   }
 }
+
+.innovatorDatabase_analysisCharts {
+  position: relative;
+  min-height: 500px;
+  .key {
+    list-style: none;
+    text-align: right;
+    li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+  .analysisChart {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $cream-lighter;
+    opacity: 0;
+    @include transition();
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+#analysisChart_category {
+  position: relative;
+  .ct-series-a {
+    .ct-bar {
+      stroke: $button-color;
+    }
+  }
+}
+
+#analysisChart_status {
+  .ct-series-a {
+    .ct-bar {
+      stroke: $link-color;
+    }
+  }
+  .ct-series-b {
+    .ct-bar {
+      stroke: $button-color;
+    }
+  }
+  .ct-series-c {
+    .ct-bar {
+      stroke: $cream;
+    }
+  }
+}
+
+#analysisChart_hierarchy {
+  .ct-series-a {
+    .ct-bar {
+      stroke: $prevention-color;
+    }
+  }
+  .ct-series-b {
+    .ct-bar {
+      stroke: $recovery-color;
+    }
+  }
+  .ct-series-c {
+    .ct-bar {
+      stroke: $recycle-color;
+    }
+  }
+}
+
 
 @media all and (max-width: $screen-md-max) {
   .innovatorDatabase_categories  {

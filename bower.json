@@ -50,9 +50,10 @@
       "main": [
         "dist/scss/settings/_chartist-settings.scss",
         "dist/scss/chartist.scss",
-        "dist/chartist.min.js",
-        "dist/chartist.min.js.map",
-        "dist/chartist.css"
+        "dist/chartist.js",
+        "dist/chartist.js.map",
+        "dist/chartist.css",
+        "dist/chartist.css.map"
       ]
     },
     "chartist-plugin-fill-donut": {

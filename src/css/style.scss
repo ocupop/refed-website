@@ -47,8 +47,7 @@
 @import "nav/quicknav";
 
 // Charts
-// @import "components/charts/chartist.scss";
-// @import "components/charts/charts_base";
+@import "components/charts/charts_base";
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
 @import "components/charts/profit_chart";

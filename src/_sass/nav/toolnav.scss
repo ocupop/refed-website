@@ -21,8 +21,14 @@
           border: none;
           background-image: none;
           background-color: transparent;
-          &:hover, &:focus, &:active, &.active {
+          &:hover, &:focus, &:active {
             color: #fff;
+          }
+        }
+        &.active {
+          a {
+            color: #fff;
+            cursor: default;
           }
         }
         &.divider {

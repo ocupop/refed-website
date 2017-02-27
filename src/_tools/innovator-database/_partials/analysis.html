@@ -1,18 +1,18 @@
 <section class="alt-bg innovatorDatabase_categories">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-4">
+      <div class="col-xs-12 col-sm-6">
         <h3>Innovators in each category</h3>
       </div>
-      <div class="col-xs-12 col-sm-9 col-md-8">
+      <div class="col-xs-12 col-sm-6">
         <div class="row">
-          <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-2">
-            <button class="button cream">Organization status</button>
+          <div class="col-xs-12 col-sm-5">
+            <button class="button cream" data-chart="#analysisChart_status">Organization status</button>
           </div>
-          <div class="col-xs-12 col-sm-5 col-md-4">
-            <button class="button cream">Innovator group</button>
+          <div class="col-xs-12 col-sm-5">
+            <button class="button cream" data-chart="#analysisChart_hierarchy">Innovator group</button>
           </div>
-          <div class="col-xs-12 col-sm-2 col-md-2">
+          <div class="col-xs-12 col-sm-2">
             <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
           </div>
         </div>
@@ -20,13 +20,41 @@
     </div>
   </div>
 </section>
-<section>
+<section class="innovatorDatabase_analysisCharts fullbleed">
   <div class="container">
-    <div class="row">
+    <div id="analysisChart_category" class="row analysisChart active">
       <div class="col-xs-12">
         <div class="content">
-          <h1>CHART</h1>
-          <div class="innovatorDatabase_analysisChart ct-chart ct-golden-section"></div>
+          <ul class='key'>
+            <li class="transparent"><i class="icon"></i> Category Information</li>
+          </ul>
+          <div class="ct-chart ct-golden-section"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="analysisChart_status" class="row analysisChart">
+      <div class="col-xs-12">
+        <div class="content">
+          <ul class='key'>
+            <li><i class="icon"></i> For-Profit Innovators</li>
+            <li><i class="icon"></i> Nonprofit Innovators</li>
+            <li><i class="icon"></i> Not Specified</li>
+          </ul>
+          <div class="ct-chart ct-golden-section"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="analysisChart_hierarchy" class="row analysisChart">
+      <div class="col-xs-12">
+        <div class="content">
+          <ul class='key'>
+            <li><i class="icon"></i> Prevention</li>
+            <li><i class="icon"></i> Recovery</li>
+            <li><i class="icon"></i> Recycling</li>
+          </ul>
+          <div class="ct-chart ct-golden-section"></div>
         </div>
       </div>
     </div>
