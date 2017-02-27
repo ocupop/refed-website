@@ -93,6 +93,10 @@ innovator_reach_categories:
   - local
   - national
 
+innovator_levels:
+  - local
+  - national
+
 food_recovery_category:
   - title: prevention
     summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
