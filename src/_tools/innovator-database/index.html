@@ -74,6 +74,12 @@ breadcrumb: true
           <h2>Navigating the Food Waste Innovator Database</h2>
           <p>Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
         </div>
+        {% assign options = site.food_recovery_hierarchy_options %}
+        {% for object in options %}
+          <h3>{{ object.title }}</h3>
+          <p>{{ object.summary }}</p>
+        {% endfor %}
+
         <div class="content editable">
           <h5>TODO - Content Needed for each category</h5>
         </div>
