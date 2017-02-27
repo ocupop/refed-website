@@ -34,7 +34,7 @@
             <div data-filter-group class="select">
               <select id="innovator_categories">
                 <option value="">Category</option>
-                {% for category in site.innovator_categories %}
+                {% for category in site.innovator_category_options %}
                   <option value="[data-innovator-category-options='{{ category.title | slugify }}']"
                            data-mixitup-control>{{ category.title }}</option>
                 {% endfor %}
