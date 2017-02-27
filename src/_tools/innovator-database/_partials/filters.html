@@ -32,20 +32,12 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <div data-filter-group class="select">
-              {% assign categories =  "" | split: "," %}
-              {% for innovator in site.innovators %}
-                {% for category in innovator.innovator_category %}
-                {% assign categories = categories | push: category %}
-                {% endfor %}
-              {% endfor %}
-
-              {% assign categories_uniq = categories | uniq %}
               <select>
                 <option value="">Category</option>
-                {% for category in categories_uniq %}
-                  <option value="[data-category='{{ category }}']"
+                {% for category in site.innovator_categories %}
+                  <option value="[data-category='{{ category.title | slugify }}']"
                            data-mixitup-control>
-                           {{ category | replace: '-', ' ' }}
+                           {{ category.title }}
                           </option>
                 {% endfor %}
               </select>

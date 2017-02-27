@@ -7,6 +7,7 @@ load_innovatorMap({
  {
    "id": "{{ forloop.index }}",
    "name": "{{ innovator.name }}",
+   "url": "{{ innovator.url }}",
    "city": "{{ innovator.city }}",
    "state": "{{ innovator.state }}",
    "country": "{{ innovator.country }}",

@@ -49,6 +49,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       // mapTypeId: 'terrain',
       mapTypeControl: false,
       streetViewControl: false,
+      zoomControl: true,
       zoomControlOptions: {
         style: google.maps.ZoomControlStyle.LARGE,
         position: google.maps.ControlPosition.TOP_RIGHT
@@ -126,7 +127,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="innovator_reach_category"]').text(d.innovator_reach_category).end()
           .find('.icon').addClass("icon-"+d.innovator_reach_category).end()
           .find('[data-content="innovator_website"]').text(d.website).attr('href', d.website).end()
-          .find('[data-content="innovator_url"]').text(d.url).end()
+          .find('[data-content="innovator_url"]').attr('href', d.url).end()
           .addClass('active');
         innovatorMap.setZoom(8);
         innovatorMap.setCenter(this.getPosition());

@@ -44,7 +44,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
               <div class="content">
                 <p class="innovator_details">
                   <em>Status:</em>&nbsp;&nbsp;<strong>{{ innovator.organization_classification | capitalize }}</strong><br>
-                  <em>Category:</em>&nbsp;&nbsp;<strong>{{ innovator.innovator_category.first | replace: '-', ' ' | capitalize }}</strong><br>
+                  <em>Category:</em>&nbsp;&nbsp;<strong>{{ innovator.innovator_categories.first | replace: '-', ' ' | capitalize }}</strong><br>
                   <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_category }}</strong><br>
                   <a href="{{ innovator.website }}">{{ innovator.website }}</a>
                 </p>

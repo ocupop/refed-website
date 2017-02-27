@@ -11,6 +11,7 @@
   width: 100%;
   background-color: transparent;
   z-index: 9;
+  pointer-events: none;
   .content {
     display: flex;
     flex-wrap: nowrap;
