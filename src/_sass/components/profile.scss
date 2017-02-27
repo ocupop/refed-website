@@ -20,6 +20,7 @@
   }
 }
 
+// TODO - Refactor into seperate style sheet (messaging)
 #thanks {
   display: none;
   position: fixed;
@@ -28,6 +29,7 @@
   background: white;
   height: 100%;
   width: 100%;
+  padding-top: 130px;
   text-align: center;
   img {
     width: 250px;

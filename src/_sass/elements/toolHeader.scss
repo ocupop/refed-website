@@ -129,7 +129,24 @@ body.condensed-header {
 
 @media all and (max-width: $screen-xs-max) {
   #toolHeader {
-
+    .brand {
+      padding: 15px 40px;
+    }
+    &.active {
+      position: fixed;
+      #toolnav {
+        .menu {
+          right: 0;
+        }
+      }
+    }
+  }
+  .toolHeader-title {
+    padding: 5px 20px 8px 20px;
+    small {
+      display: block;
+      line-height: 1;
+    }
   }
 }
 

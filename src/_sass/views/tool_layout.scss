@@ -29,7 +29,12 @@
 @media all and (max-width: $screen-xs-max) {
   .tool-layout, .state-layout {
     #pageContent {
-      margin-top: 75px;
+      margin-top: 120px;
+    }
+    &.food-waste-policy-tool, &.spotlight-on-date-labeling-regulations {
+      #pageContent {
+        margin-top: 75px;
+      }
     }
   }
 }
