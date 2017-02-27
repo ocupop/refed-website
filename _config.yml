@@ -105,6 +105,10 @@ organization_classifications:
   - "For-Profit"
   - "Nonprofit"
 
+business_models:
+  - "For-Profit"
+  - "Nonprofit"  
+
 innovator_categories:
   - title: Consumer Education
     summary: "Includes educational campaigns and resources that target wasted food, as well as tools and applications that enhance consumers' understanding of strategies to prevent food waste, including eating food before it spoils."
