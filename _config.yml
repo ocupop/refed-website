@@ -89,21 +89,29 @@ gems:
 
 
 # Cloudcannon Editor
-innovator_reach_category: 
+# innovator_reach_categories: 
+#   - local
+#   - national
+
+innovator_levels:
   - local
   - national
 
-food_recovery_category:
-  - title: prevention
+food_recovery_categories:
+  - title: Prevention
     summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
-  - title: recovery
+  - title: Recovery
     summary: "Recovery captures edible food that would otherwise go to waste on farms or in consumer-facing businesses, and redistributes it to food insecure populations."
-  - title: recycling
+  - title: Recycling
     summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
 
-organization_classification:
+# organization_classifications:
+#   - "For-Profit"
+#   - "Nonprofit"
+
+business_models:
   - "For-Profit"
-  - "Nonprofit"
+  - "Nonprofit"  
 
 innovator_categories:
   - title: Consumer Education
