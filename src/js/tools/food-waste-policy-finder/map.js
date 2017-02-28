@@ -317,6 +317,7 @@ $.behaviors('.mapnav', initMapNav);
     
     // check url and trigger clicks in mapnav
     window.console.log('#'+urlParams['category']);
+
     mapnav.find('#'+urlParams['category']).collapse('show');
 
     if(urlParams['filters']) {

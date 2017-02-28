@@ -53,17 +53,15 @@
     display: none;
   }
   .ct-chart-bar .ct-label.ct-horizontal.ct-end {
-    width: 400px !important;
-    height: 28px;
-    line-height: 28px;
+    white-space: nowrap;
+    overflow: visible;
     font-size: 15px;
     font-family: "Trade Gothic W01", sans-serif;
     text-transform: uppercase;
-    transform-origin: 10px -20px;
     transform: rotate(-90deg);
     justify-content: flex-start;
     align-items: center;
-    text-indent: 10px;
+    text-indent: 70px;
   }
 }
 

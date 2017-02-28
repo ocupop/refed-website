@@ -24,15 +24,14 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
   function innovatorDatabase_categories(container) {
-    window.console.log("Hello:");
 
     $('[data-chart]').on('click', function() {
-      $('[data-chart]').removeClass('active');
-      $(this).addClass('active');
+      $('[data-chart]').not(this).removeClass('active');
+      $(this).toggleClass('active');
 
       var chart = $(this).attr('data-chart');
-      $('.analysisChart').removeClass('active');
-      $(chart).addClass('active');
+      $('.analysisChart').not(chart).not('#analysisChart_category').removeClass('active');
+      $(chart).toggleClass('active');
     });
 
   }
@@ -51,12 +50,56 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       series: [data.category.total_count]
 
     }, {
-      // axisY: {
-      //   labelInterpolationFnc: function(value) {
-      //     return (value / 1000) + 'k';
-      //   }
-      // }
-    }).on('draw', function(data) {
+      axisY: {
+        // labelInterpolationFnc: function(value) {
+        //   return (value / 1000) + 'k';
+        // },
+        showLabel: false,
+        showGrid: true
+      },
+      axisX: {
+        // labelInterpolationFnc: function(value) {
+        //   return (value / 1000) + 'k';
+        // },
+        showLabel: true,
+        showGrid: true
+      },
+      stackBars: true,
+      showGridBackground: false,
+      height: 500
+    }, [
+      // Options override for media > 400px
+      ['screen and (max-width: 767px)', {
+        horizontalBars: true,
+        stackBars: true,
+        axisY: {
+          // labelInterpolationFnc: function(value) {
+          //   return (value / 1000) + 'k';
+          // },
+          // showLabel: false,
+          // showGrid: true
+        },
+        axisX: {
+          // labelInterpolationFnc: function(value) {
+          //   return (value / 1000) + 'k';
+          // },
+          // showLabel: false,
+          // showGrid: true
+        }
+      }]
+      // Options override for media > 800px
+      // ['screen and (min-width: 800px)', {
+      //   stackBars: false,
+      //   seriesBarDistance: 10
+      // }],
+      // Options override for media > 1000px
+      // ['screen and (min-width: 1000px)', {
+      //   reverseData: false,
+      //   horizontalBars: false,
+      //   seriesBarDistance: 15
+      // }]
+    ]).on('draw', function(data) {
+      window.console.log("Data:", data);
       if(data.type === 'bar') {
         data.element.attr({
           style: 'stroke-width: 40px'
@@ -70,8 +113,41 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       series: [data.status.forprofit, data.status.nonprofit]
 
     }, {
+      axisY: {
+        showLabel: false,
+        showGrid: true
+      },
+      axisX: {
+        showLabel: true,
+        showGrid: true
+      },
       stackBars: true,
-    }).on('draw', function(data) {
+      showGridBackground: false,
+      height: 500
+    }, [
+      // Options override for media > 400px
+      ['screen and (max-width: 767px)', {
+        horizontalBars: true,
+        stackBars: true,
+        axisX: {
+          // labelInterpolationFnc: Chartist.noop
+        },
+        axisY: {
+          // offset: 60
+        }
+      }]
+      // Options override for media > 800px
+      // ['screen and (min-width: 800px)', {
+      //   stackBars: false,
+      //   seriesBarDistance: 10
+      // }],
+      // Options override for media > 1000px
+      // ['screen and (min-width: 1000px)', {
+      //   reverseData: false,
+      //   horizontalBars: false,
+      //   seriesBarDistance: 15
+      // }]
+    ]).on('draw', function(data) {
       if(data.type === 'bar') {
         data.element.attr({
           style: 'stroke-width: 40px'
@@ -85,7 +161,17 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       series: [data.hierarchy.prevention, data.hierarchy.recovery, data.hierarchy.recycling]
 
     }, {
+      axisY: {
+        showLabel: false,
+        showGrid: true
+      },
+      axisX: {
+        showLabel: true,
+        showGrid: true
+      },
       stackBars: true,
+      showGridBackground: false,
+      height: 500
     }).on('draw', function(data) {
       if(data.type === 'bar') {
         data.element.attr({
@@ -148,7 +234,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     });
 
 
-    window.console.log("DATA: ", data);
+    window.console.log("Analysis Data: ", data);
 
     // return {
     //   labels: ['Q1', 'Q2', 'Q3', 'Q4'],
