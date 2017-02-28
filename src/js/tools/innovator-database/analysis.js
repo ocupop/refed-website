@@ -36,6 +36,10 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     });
 
     $('a[href$="#innovatorAnalysis"]').on('shown.bs.tab', function(e) {
+      $(e.currentTarget.hash).find('.ct-chart').each(function(el, tab) {
+        tab.__chartist__.update();
+      });
+
       $('.innovatorDatabase_menu section').removeClass('active');
       menu.addClass('active');
     });

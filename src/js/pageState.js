@@ -22,13 +22,12 @@ $.behaviors('body', pageState);
 
 // Revert to a previously saved state
 window.addEventListener('popstate', function(event) {
-  window.console.log("pageState: popstate", window.location);
+  // window.console.log("pageState: popstate", event);
   var hash = window.location.hash;
   
   if(hash) {
-    window.console.log("pageState: popstate", window.location);
-    activateTab(window.location.hash);
-
+    window.console.log("popstate: Activating Tabs", hash);
+    activateTab(hash);
     return;
   }
 });
@@ -37,6 +36,7 @@ window.addEventListener('popstate', function(event) {
     var hash = location.hash;
     window.console.log("pageState: Initialized");
     if (hash) {
+      window.console.log("pageState: Activating Tab");
       activateTab(hash);
     }
 
@@ -49,12 +49,11 @@ window.addEventListener('popstate', function(event) {
   }
 
   window.activateTab = function(hash) {
-    window.console.log("Activating Tab: ", hash);
-
+    // window.console.log("Activating Tab: ", hash);
     var tabClass = "activeTab_" + hash.replace("#","");
-    var data = {
-      activeTab: hash
-    };
+
+    // TODO - Examine this method. Potential refactor?
+    pageScroll('#pageContent', 120);
 
     // Is there a tab button?
     // If so... activate the tab
@@ -73,7 +72,8 @@ window.addEventListener('popstate', function(event) {
 
     if (typeof hash != 'undefined' && hash != '') {
       if (history && history.pushState) {
-        window.history.pushState(data, 'ReFED', window.location.pathname + window.location.search + hash);
+        // window.console.log("DATA:", data);
+        window.history.pushState('', 'ReFED', window.location.pathname + window.location.search + hash);
       } else {
         scrollV = document.body.scrollTop;
         scrollH = document.body.scrollLeft;
