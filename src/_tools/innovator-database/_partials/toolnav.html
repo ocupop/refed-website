@@ -1,5 +1,5 @@
 {% assign tab = true %}
-{% if page.path contains 'index' %}
+{% if page.path contains 'index' or page.title == 'Suggest An Innovator' %}
   {% assign tab = false %}
 {% endif %}
 
@@ -30,8 +30,7 @@
     </li>
     <li class="divider"></li>
     <li>
-      <a {% if tab %}data-toggle="tab"{% endif %}
-         href="/tools/innovator-database/innovators#innovatorSearch">
+      <a href="/tools/innovator-database/innovators#innovatorList" class="disabled">
         <i class="icon icon-search"></i>
         <span>Search</span>
       </a>

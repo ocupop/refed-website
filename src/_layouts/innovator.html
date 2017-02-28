@@ -1,8 +1,89 @@
 ---
 layout: tool
 ---
-<section class="border cream-border">
+
+<section>
   <div class="container">
-    <h1>{{ page.name }}</h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <div>
+            <small><a href="/tools/innovator-database/innovators#innovatorList" class="italic muted">&lt;&nbsp;Full List of Innovators</a></small>
+          </div>
+          <h1>{{ page.name }}</h1>
+          <p class="innovator_details">
+            <span class="muted italic">Location:</span> {% if page.city %}{{ page.city }} {{ page.state }}, {% endif %}{{ page.country }}<br>
+            <span class="muted italic">Status:</span> {{ page.business_model }}<br>
+            <span class="muted italic">Year Founded:</span> {{ page.founded }}<br>
+            <span class="muted italic">Food Recovery Hierarchy:</span> {{ page.food_recovery_hierarchy_option }}<br>
+            {% unless page.innovator_category_options == empty %}
+              <span class="muted italic">Categories:</span> {% for category in page.innovator_category_options %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% endunless %}
+          </p>
+          <!-- TODO - Swap CSS names -->
+          <h5 class="innovator_reach_category"><i class="icon icon-{{ page.innovator_level | slugify }}"></i> {{ page.innovator_level }} <span>Organization</span></h5>
+          <p>{{ page.description }}</p>
+          <div class="row">
+            {% if page.email %}
+            <div class="col-xs-12 col-sm-6">
+              <a href="mailto:{{ page.email }}" class="button">Contact Innovator</a>
+            </div>
+            {% endif %}
+            {% if page.website %}
+            <div class="col-xs-12 col-sm-6">
+              <a href="{{ page.website }}" target="_blank" class="button">Website</a>
+            </div>
+            {% endif %}
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              {% if page.facebook_url or page.twitter_url or page.linkedin_url %}
+              
+                <div class="content innovator_follow">
+                  <h4>Follow {{ page.name }}</h4>
+                  {% if page.facebook_url %}<a href="{{ page.facebook_url }}" title="Facebook" target="_blank"><i class="icon icon-facebook"></i></a>{% endif %}
+                  {% if page.linkedin_url %}<a href="{{ page.linkedin_url }}" title="LinkedIn" target="_blank"><i class="icon icon-linkedin"></i></a>{% endif %}
+                  {% if page.twitter_url %}<a href="{{ page.twitter_url }}" title="Twitter" target="_blank"><i class="icon icon-twitter"></i></a>{% endif %}
+                </div>
+
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+
+{% contentfor sidebar %}
+<div class="container">
+  {% unless page.innovator_subcategories == empty %}
+  <div class="content">
+      <h4>Tags</h4>
+      <p class="innovator_tags">
+        {% for c in page.innovator_subcategories %}
+          <span>{{ c | replace: '-', ' ' }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+  </div>
+  {% endunless %}
+
+  {% unless page.solutions == empty %}
+    <div class="content">
+      <h4>Related Solutions</h4>
+      <ul class="innovator_solutions">
+        {% for solution in page.solutions %}
+        <li><a href="{{ solution.url }}">{{ solution | replace: '-', ' ' }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endunless %}
+
+  <div class="content">
+    <h4>Spread the Word</h4>
+    <button class="button inverse share"><i class="icon icon-share"></i> Share</button>
+  </div>
+</div>
+
+{% endcontentfor %}

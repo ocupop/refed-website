@@ -38,10 +38,6 @@
     font-size: 12px;
   }
   .close {
-    font-weight: 100;
-    color: #36383A;
-    text-shadow: none;
-    opacity: 1;
     position: absolute;
     right: 30px;
     top: 15px;
@@ -62,7 +58,6 @@
   #share-instructions {
     padding: 10px 20px;
     height: 200px;
-    top: -200px;
     h3 {
       margin-top: 0;
     }
@@ -76,5 +71,12 @@
     .close {
       top: 10px;
     }
+    &.active {
+      &:after {
+        display: none;
+        // optimization would be to figure out positioning of overlay for mobile, right now it's overlapping on top of share content
+      }
+    }
+    
   }
 }

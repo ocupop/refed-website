@@ -21,44 +21,23 @@
           border: none;
           background-image: none;
           background-color: transparent;
-          &:hover, &:focus, &:active, &.active {
+          &:hover, &:focus, &:active {
             color: #fff;
+          }
+        }
+        &.active {
+          a {
+            color: #fff;
+            cursor: default;
           }
         }
         &.divider {
           height: 20px;
           border-right: 1px solid $gray;
         }
-        &.update {
-          padding: 10px 20px;
-          margin-left: auto;
-          color: $gray-light;
-          white-space: nowrap;
-          a {
-            padding: 0;
-            color: $gray-lighter;
-            border-right: none;
-            &:hover, &:focus, &:active {
-              color: #fff;
-            }
-          }
-        }
-        &.next {
-          display: table-cell;
-          margin: 0;
-          margin-left: auto;
-          padding: 10px 30px;
-          text-align: center;
-          background: $cream;
-          a {
-            padding: 0;
-            color: $text-color;
-            white-space: normal;
-            &:hover, &:focus, &:active {
-              color: $gray-base;
-            }
-          }
-        }
+      }
+      &.drawer {
+        display: none;
       }
     }
     i {
@@ -89,6 +68,8 @@
   }
 }
 
+
+
 @media all and (max-width: $screen-md-max) {
   #toolnav {
     
@@ -97,87 +78,108 @@
 
 @media all and (max-width: $screen-sm-max) {
   #toolnav {
-    // height: 50px;
     .container { width: 100%; }
     .menu {
       i {
         font-size: 20px;
-      }
-      ul {
-        li.next { display: none; }
-        li.update { display: none; }
       }
     }
   }
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .toolHeader-title {
-    padding: 5px 20px 8px 20px;
-    small {
-      display: block;
-      line-height: 1;
-    }
-  }
-  #toolHeader {
-    .brand {
-      padding: 15px 40px;
-    }
-    &.active {
-      position: fixed;
-      #toolnav {
-        .menu {
-          right: 0;
-        }
-      }
-    }
-  }
-  #toolnav {
-    .menu-toggle {
-      display: block;
-      top: -44px;
-      background-color: $cream;
-      padding: 0 5px;
-      left: 0;
-      i {
-        line-height: 44px;
-        height: 44px;
-        color: $text-color;
-      }
-      &:hover {
-        i {
-          color: $cream-lighter;
-        }
-      }
-    }
-    .menu {
-      width: 320px;
-      position: fixed;
-      right: -320px;
-      top: 74px;
-      height: 100%;
-      background-color: $gray;
-      @include transition(.5s);
-      ul {
+
+  .food-waste-policy-finder, .spotlight-on-date-labeling-regulations, .state-layout {
+    #toolnav {
+      .menu-toggle {
         display: block;
-        padding: 30px 0 30px 20px;
-        li {
-          display: block;
-          line-height: 30px;
-          height: auto;
-          margin: 0 .5em;
-          padding: 9px 0;
-          &.divider {
-            display: none;
+        top: -44px;
+        background-color: $cream;
+        padding: 0 5px;
+        left: 0;
+        i {
+          line-height: 44px;
+          height: 44px;
+          color: $text-color;
+        }
+        &:hover {
+          i {
+            color: $cream-lighter;
           }
-          a {
-            font-size: 16px;
-            font-weight: 500;
-            color: $gray-light;
+        }
+      }
+      .menu {
+        width: 320px;
+        position: fixed;
+        right: -320px;
+        top: 74px;
+        height: 100%;
+        background-color: $gray;
+        @include transition(.5s);
+        ul {
+          display: block;
+          padding: 30px 0 30px 20px;
+          li {
+            display: block;
+            line-height: 30px;
+            height: auto;
+            margin: 0 .5em;
+            padding: 9px 0;
+            &.divider {
+              display: none;
+            }
+            a {
+              font-size: 16px;
+              font-weight: 500;
+              color: $gray-lighter;
+              padding: 0;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+        ul.drawer {
+          display: block;
+          padding: 0;
+          margin: 0;
+          li {
+            width: 100%;
             padding: 0;
+            margin: 0;
+            a, button {
+              display: inline-block;
+              height: auto;
+              padding: 20px 10px;
+              margin-bottom: 0;
+              font-size: 15px;
+              font-weight: 200;
+              white-space: normal;
+              line-height: 1.15em;
+              color: $gray-dark;
+              text-align: left;
+              &.inverse {
+                background-color: $gray-dark;
+                color: $cream-lighter;
+              }
+            }
           }
         }
       }
     }
   }
+
+
+  .innovator-layout, .innovator-database {
+    #toolnav {
+      .menu {
+        li {
+          a {
+            span { display: none; }
+          }
+        }
+      }
+    }
+  }
+
 }

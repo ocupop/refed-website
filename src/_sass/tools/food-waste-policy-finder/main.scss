@@ -122,70 +122,6 @@ body.policy_tool-layout {
   display: block;
 }
 
-// remove once we make sure these are working as expected
-// @media(min-width: 992px) and (max-width: 1300px){
-//   #policy-tool {
-//     .container {
-//       max-width: 90%;
-//     }
-//   }
-// }
-
-// @media(max-width: 1300px) {
-//   #state-federal-navigation {
-//     .button {
-//       &.inverse {
-//         max-width: none;
-//         margin: 0 1% 0 1%;
-//       }
-//     }
-//   }
-// }
-
-
-// @media(max-width: 768px) {
-//   #policy-tool {
-//     min-height: none;
-//   }
-//   #map, #map-instructions {
-//     display: none;
-//   }
-
-//   #policy-intro {
-//     svg {
-//       display: block;
-//       margin: 0 auto;
-//       max-width: 25%;
-//     }   
-//   }
-  
-//   section {
-//     &.border {
-//       border: none;
-//     }
-//   }
-//   .flex-table {
-//     .flex-table-item {
-//       width: calc(30% - 10px);
-//       &.item-large {
-//         width: calc(70% - 10px);
-//       }
-//     }
-//   }
-
-//   .dl-policy {
-//     dt {
-//       width: 30%;
-//       margin-bottom: 10px;
-//       font-weight: 300;
-//       text-transform: none;
-//     }
-//     dd {
-//       width: calc(70% - 10px);
-//     }
-//   }
-// }
-
 @media all and (max-width: $screen-md-max) {
   #state-federal-navigation {
     .button {
@@ -230,20 +166,29 @@ body.policy_tool-layout {
     }
   }
   .flex-table {
+    font-size: 12px;
     .flex-table-item {
-      width: calc(30% - 10px);
+      padding: 5px;
+      margin-bottom: 5px;
+      width: calc(30% - 5px);
       &.item-large {
-        width: calc(70% - 10px);
+        width: calc(70% - 5px);
       }
     }
   }
 
   .dl-policy {
+    dt, dd {
+      padding: 5px;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
     dt {
       width: 30%;
       margin-bottom: 10px;
       font-weight: 300;
       text-transform: none;
+      
     }
     dd {
       width: calc(70% - 10px);

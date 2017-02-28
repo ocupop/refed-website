@@ -67,16 +67,6 @@ body.condensed-header {
           margin: 0 auto;
         }
       }
-      // aside {
-      //   width: 320px;
-      //   position: absolute;
-      //   top: 0;
-      //   left: -350px;
-      //   height: 100%;
-      //   .content {
-      //     max-width: none;
-      //   }
-      // }
       aside.defaultSidebar {
         width: 100%;
         position: relative;
@@ -94,5 +84,7 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-xs-max) {
+
+
 
 }

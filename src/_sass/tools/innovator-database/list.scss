@@ -1,7 +1,30 @@
 #innovatorList {
   background-color: #fff;
+  button.sort {
+    .icon {
+      height: auto;
+      @include transition();
+    }
+    &[data-sort$=":desc"] {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+    &[data-sort$=":asc"] {
+      .icon {}
+    }
+  }
 }
-.innovatorDatabase_list {
+.innovatorDatabase_list, ul[class^="innovatordatabase_list"] {
+  .fail-message {
+    display: none;
+    @include transition(1s);
+  }
+  &.mixitup-container-failed {
+    .fail-message {
+      display: block;
+    }
+  }
   .innovator {
     padding: 20px 0;
     hr {
@@ -25,7 +48,7 @@
         color: $gray-light;
       }
     }
-    .innovator_reach {
+    .innovator_reach_category {
       margin-top: 20px;
       i {
         display: inline-block;
@@ -49,6 +72,6 @@
 
 @media all and (max-width: $screen-xs-max) {
   .innovatorDatabase_list {
-
+    padding-top: 40px;
   }
 }

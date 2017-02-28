@@ -1,9 +1,9 @@
 /**
  * [jQuery-stickit]{@link https://github.com/emn178/jquery-stickit}
  *
- * @version 0.2.11
+ * @version 0.2.13
  * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2014-2016
+ * @copyright Chen, Yi-Cyuan 2014-2017
  * @license MIT
  */
 (function ($) {
@@ -12,7 +12,6 @@
   var SELECTOR = ':' + KEY;
   var IE7 = navigator.userAgent.indexOf('MSIE 7.0') != -1;
   var OFFSET = IE7 ? -2 : 0;
-  var LOCATIING_KEY = KEY + '-locating';
   var MUTATION = window.MutationObserver !== undefined;
   var animationend = 'animationend webkitAnimationEnd oAnimationEnd';
   var transitionend = 'transitionend webkitTransitionEnd oTransitionEnd';
@@ -29,30 +28,7 @@
     Absolute: 2
   };
 
-  var init = false;
-
-  function throttle(func) {
-    var delay = 10;
-    var lastTime = 0;
-    var timer;
-    return function () {
-      var self = this, args = arguments;
-      var exec = function () {
-        lastTime = new Date();
-        func.apply(self, args);
-      };
-      if (timer) {
-        clearTimeout(timer);
-        timer = null;
-      }
-      var diff = new Date() - lastTime;
-      if (diff > delay) {
-        exec();
-      } else {
-        timer = setTimeout(exec, delay - diff);
-      }
-    };
-  }
+  var init = false, lock = false;
 
   $.expr[':'][KEY] = function (element) {
     return !!$(element).data(KEY);
@@ -320,7 +296,6 @@
       return;
     }
     var rect, top, left, element = this.element, spacer = this.spacer;
-    element.data(LOCATIING_KEY, true);
     switch (this.stick) {
       case Stick.Fixed:
         rect = spacer[0].getBoundingClientRect();
@@ -394,8 +369,8 @@
     if (this.lastValues.width != spacer.width()) {
       element.width(this.lastValues.width = spacer.width());
     }
-    if (this.lastValues.height != spacer.height()) {
-      spacer.height(this.lastValues.height = spacer.height());
+    if (this.lastValues.height != element.height()) {
+      spacer.height(this.lastValues.height = element.height());
     }
     if (this.stick == Stick.Fixed) {
       var rect = this.spacer[0].getBoundingClientRect();
@@ -428,14 +403,22 @@
   }
 
   function refresh() {
+    lock = true;
     $(SELECTOR).each(function () {
       $(this).data(KEY).refresh();
+    });
+    setTimeout(function () {
+      lock = false;
     });
   }
 
   function scroll() {
+    lock = true;
     $(SELECTOR).each(function () {
       $(this).data(KEY).locate();
+    });
+    setTimeout(function () {
+      lock = false;
     });
   };
 
@@ -446,19 +429,9 @@
     });
   }
 
-  var throttleRefresh = throttle(refresh);
-
   function mutationUpdate(records) {
-    var notAllLocating = records.some(function (record) {
-      var element = $(record.target);
-      var locating = element.data(LOCATIING_KEY);
-      if (locating) {
-        element.removeData(LOCATIING_KEY);
-      }
-      return !element.hasClass(SPACER_KEY) && !locating;
-    });
-    if (notAllLocating) {
-      throttleRefresh();
+    if (!lock) {
+      refresh();
     }
   }
 

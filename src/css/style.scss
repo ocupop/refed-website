@@ -46,23 +46,28 @@
 @import 'nav/toolnav';
 @import "nav/quicknav";
 
-// Components
+// Charts
 @import "components/charts/charts_base";
 @import "components/charts/cost_curve";
 @import "components/charts/reduction_chart";
 @import "components/charts/profit_chart";
+
+
+// Components
 @import 'components/siteSearch';
 @import "components/supplyChain";
 @import "components/lineClamp";
 @import "components/hero";
 
-@import "components/signup";
+@import "components/profile";
 @import "components/site_tour";
 @import "components/embed";
 @import "components/share";
 
 @import "components/article";
 @import "components/video";
+
+@import "components/tooltip";
 
 
 // Tools
@@ -72,18 +77,19 @@
 @import "tools/food-waste-policy-finder/map_nav";
 @import "tools/food-waste-policy-finder/state";
 @import "tools/food-waste-policy-finder/header";
-@import "tools/food-waste-policy-finder/tooltip";
 @import "tools/food-waste-policy-finder/federal_policy";
 
 @import "tools/spotlight-on-date-labeling-regulations/date_labels";
 @import "tools/spotlight-on-date-labeling-regulations/carousel";
 @import "tools/spotlight-on-date-labeling-regulations/quiz";
 
+@import "tools/innovator-database/innovator";
 @import "tools/innovator-database/about";
 @import "tools/innovator-database/map";
 @import "tools/innovator-database/list";
-@import "tools/innovator-database/filters";
 @import "tools/innovator-database/analysis";
+@import "tools/innovator-database/menu";
+@import "tools/innovator-database/tooltip";
 
 // Views
 @import "views/page_layout";

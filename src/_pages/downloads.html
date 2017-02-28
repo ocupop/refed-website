@@ -10,24 +10,63 @@ prevpage:
   url: /resources
   title: Resources
 ---
-{% include components/signup.html %}
+<section>
+  <div class="container">
+    <div class="row profileMessage active" data-message="">
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <h2>To access downloads,<br>Please submit this form</h2>
+          <p>As part of our continuing research efforts, we’d like to know who the ReFED report report is reaching. Please submit this form to access all report content and to sign up for our newsletter.</p>
+          {% include components/forms/signupForm.html %}
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="content">
+          <div class="well">
+            <h2>Returning user?</h2>
+            <p>If you have already signed up for access to ReFED downloads, enter your email address to regain access.</p>
+            {% include components/forms/signinForm.html action = 'download' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row profileMessage" data-message="member_signup_form">
+      <div class="col-xs-12">
+        <div class="content">
+          <h2>Thank You!</h2>
+          <p class="lead">You now have access to all downloadable content below. Help us continue our research by <a href="/profile">updating your information</a>. We will never share your information and will use it only to keep you updated on new information, resources, and ways to get involved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row profileMessage" data-message="member_signin_form">
+      <div class="col-xs-12">
+        <div class="content">
+          <h2>You now have access to all downloads below</h2>
+          <p class="lead">Help us continue our research by <a href="/profile">updating your information</a>. We will never share your information and will use it only to keep you updated on new information, resources, and ways to get involved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 {% assign chapters = site.data.report %}
 {% for chapter in chapters %}
-  <section id="{{ chapter.title | slugify }}" class="chapter {% cycle 'alternate', '' %}">
+  <section id="{{ chapter.title | slugify }}" class="chapter {% cycle 'alt-bg', '' %}">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 {% if forloop.first %}col-sm-4{% else %}col-sm-3 col-sm-offset-1{% endif %}">
           <div class="content text-right">
             <img src="/img/downloads/{{ chapter.thumbnail }}" class="img-responsive">
           </div>
         </div>
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 {% if forloop.first %}col-sm-8{% else %}col-sm-7{% endif %}">
           <div class="content">
             <h2>{{ chapter.title }}</h2>
             <p><em>{{ chapter.summary }}</em></p>
             <a href="/downloads/{{ chapter.download }}" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" target="_blank"><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
-            <p class="message">To enable downloads, please fill out the above <a href="#signup-form">form</a></p>
+            <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-sm-4">
       <div class="content">
         {% assign cat_list = '' | split: ","%}
         {% for article in site.articles %}
@@ -17,7 +17,10 @@
             {% endfor %}
           </select>
         </div>
-
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-sm-push-4">
+      <div class="content">
         <p class="sort-articles" data-sort="date:desc" data-mixitup-control>Sort by date <span class="caret"></span></p>
       </div>
     </div>

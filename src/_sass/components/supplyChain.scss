@@ -206,7 +206,11 @@
 }
 
 @media all and (max-width: $screen-md-max) {
-
+  #supply-chain {
+    .chain {
+      margin-top: -25px;
+    }
+  }
 }
 
 @media all and (max-width: $screen-sm-max) {

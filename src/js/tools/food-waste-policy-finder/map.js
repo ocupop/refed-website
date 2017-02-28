@@ -57,9 +57,9 @@ $.behaviors('.mapnav', initMapNav);
         .append("path")
         .attr("d", path)
         .attr('class', 'states')
-        .attr('id', function(d) { return d.properties.name.trim(); })
+        .attr('id', function(d) { return d.properties.name.replaceAll(" ", "-").toLowerCase(); })
         .on('click', function(d) {
-          var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.trim();
+          var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
           window.location.href = url;
         });
 
@@ -132,6 +132,7 @@ $.behaviors('.mapnav', initMapNav);
 
 
     $('.map-filter, .map-subfilter').on('change', function(e) {
+      window.console.log("updated filter");
       var checked = $(this).prop("checked"),
           container = $(this).parent(),
           siblings = container.siblings();
@@ -285,11 +286,13 @@ $.behaviors('.mapnav', initMapNav);
   }
 
   function getLevel(array, state) {
-    window.console.log("map.js: troubleshooting getlevel method");
+    // window.console.log("map.js: troubleshooting getlevel method");
     // return array.filter(item => item == state).length;
-    return array.filter(function(item) {
+    var level = array.filter(function(item) {
       return item == state;
     }).length;
+
+    return level;
   }
 
   function updateMapLevels() {
@@ -297,15 +300,16 @@ $.behaviors('.mapnav', initMapNav);
     $(".map-subfilter").each(function() {
       if($(this).is(':checked')) {
         var states = $(this).data('states');
+
         states.forEach(function(state) {
           activeStates.push(state);
         });
+
       }
     });
     clearLevels();
     activeStates.forEach(function(state) {
-      $('#'+state).addClass('level-'+getLevel(activeStates, state));
-      // console.log(state, getLevel(activeStates, state));
+      $('#'+ state).addClass('level-'+getLevel(activeStates, state));
     });
   }
 
@@ -317,6 +321,7 @@ $.behaviors('.mapnav', initMapNav);
     
     // check url and trigger clicks in mapnav
     window.console.log('#'+urlParams['category']);
+
     mapnav.find('#'+urlParams['category']).collapse('show');
 
     if(urlParams['filters']) {
@@ -347,33 +352,33 @@ $.behaviors('.mapnav', initMapNav);
         wizard.attr( "class", "mapWizard step1" ).dequeue();
         mapnav.find('.step1').trigger('click');
       })
-      .delay(2000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step2" ).dequeue();
         mapnav.find('.step2').trigger('click');
       })
-      .delay(2000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step3" ).dequeue();
         mapnav.find('.step3').trigger('click');
       })
-      .delay(2000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step4" ).dequeue();
         mapnav.find('.step4').trigger('click');
       })
-      .delay(2000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step5" ).dequeue();
         mapnav.find('.step5').trigger('click');
       })
-      .delay(2000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step6" ).dequeue();
         mapnav.find('.step6').trigger('click');
         $('#statenav').slideDown();
       })
-      .delay(2000)
+      .delay(500)
       .queue(function() {
         wizard.attr( "class", "mapWizard" ).stop().finish();
       })

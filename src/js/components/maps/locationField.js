@@ -53,7 +53,8 @@ $.behaviors('.locationField', locationField);
     if (!place.geometry) {
       // Get the geometry from another API request
       // http://maps.googleapis.com/maps/api/geocode/xml?address=
-      alert('TODO: Add error message when Google API does not return proper Geometry');
+      window.console.log("Cleared the field or had an issue with the location");
+      $('body').trigger('noLocation');
       return;
     } else {
       var location = {

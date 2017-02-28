@@ -1,40 +1,47 @@
-<section>
-  <div class="container">
-    <h1>SIGNUP FORM:</h1>
-    <h3>Currently refactoring</h3>
-  </div>
-</section>
 
-<section class="hide">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
- <!--          <h2>Please fill out the form to access downloads</h2>
-          <p>As part of our continuing research efforts, we’d love to know who the report is reaching. Please submit the form to access all ReFED report content.</p> -->
-          {% include components/signup_form.html %}
-        </div>
+<!-- <div class="container">
+  <div id="sign-in-up" class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="content">
+        {% if page.url == '/download' %}
+          <h2>To access downloads,<br>Please submit this form</h2>
+          <p>As part of our continuing research efforts, we’d like to know who the ReFED report report is reaching. Please submit this form to access all report content and to sign up for our newsletter.</p>
+        {% endif %}
+        {% include components/signup_form.html %}
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
-          <div class="well">
-<!--             <h2>Are you a returning user?</h2>
-            <p>If you have already signed up for access to the downloads just enter your email address below to regain access.</p> -->
-            {% include components/signin_form.html %}
-          </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="content">
+        <div class="well">
+          {% if page.url == '/download' %}
+            <h2>Returning user?</h2>
+            <p>If you have already signed up for access to ReFED downloads, enter your email address to regain access.</p>
+          {% endif %}
+          {% include components/signin_form.html action = 'download'%}
         </div>
       </div>
     </div>
   </div>
-  <div id="profile" class="container">
-    <div class="row center-xs middle-xs">
-      <div class="col-xs-12">
-        <div class="content">
-<!--           <h2>Thank You!</h2>
-          <p class="lead">You have access to all downloadable content below. Help us continue our research by answering the questions below. We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</p> -->
-          {% include components/update_form.html %}
-        </div>
+</div>
+<div id="profile" class="container formMessage_success">
+  <div class="row center-xs middle-xs">
+    <div class="col-xs-12">
+      <div class="content">
+         <h2>Thank You!</h2>
+        <p class="lead">You have access to all downloadable content below. Help us continue our research by answering the questions below. We will never share your information and will use it only to keep you updated on new information, resources, or ways to get involved.</p>
+        <h2>You are Signed In</h2>
+        {% if page.url == '/download' %}
+        <small>Downloadable content available</small>
+        {% endif %}
+        <p>You can make updates to your profile details below
+
+          {% unless page.url == '/download' %}
+            <br>
+            <small>Downloadloadable content available <a href="/download">here</a></small>
+          {% endunless %}
+        </p>
+        {% include components/update_form.html %}
       </div>
     </div>
   </div>
-</section>
+</div> -->

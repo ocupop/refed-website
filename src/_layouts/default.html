@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-{% if page.layout == 'state' %}
-  {% assign sidebar = 'state' %}
-{% else %}
-  {% assign sidebar = page.sidebar %}
-{% endif %}
+{% case page.layout %}
+  {% when "state" %}
+    {% assign sidebar = 'state' %}
+  {% when "innovator" %}
+    {% assign sidebar = 'innovator' %}
+  {% else %}
+    {% assign sidebar = page.sidebar %}
+{% endcase %}
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
@@ -26,7 +29,7 @@
       </main>
 
       {% if sidebar %}
-        <aside class="{{ page.sidebar }}Sidebar">
+        <aside class="{{ sidebar }}Sidebar">
           {% if sidebar == 'toc' %}
             <div class="sticky" data-offset-top="120">
               <div class="content">
@@ -49,7 +52,6 @@
     {% include elements/pageHelp.html %}
     
     {% include thanks.html %}
-    <!-- TODO - Include the policy tool tooltip -->
     {% include analytics.html %}
   </body>
 </html>

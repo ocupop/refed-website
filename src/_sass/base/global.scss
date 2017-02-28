@@ -89,16 +89,16 @@ a {
     outline: none;
     text-decoration: none;
   }
-  &.muted {
-    color: $gray-light;
-    font-size: 18px;
-  }
   &.disabled {
     cursor: default;
     opacity: 0.3;
     pointer-events: none;
   }
 }
+b, strong {
+  font-weight: 500;
+}
+
 i {
   display: block;
   width: 40px;

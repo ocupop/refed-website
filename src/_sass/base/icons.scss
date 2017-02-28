@@ -166,6 +166,22 @@ i {
    Icons
 ----------------------------------------- */
 
+.icon-help {
+  display: inline-block;
+  position: absolute;
+  right: -17px;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  background-color: $cream;
+  color: $gray-dark;
+  text-align: center;
+  &:before {
+    content: "?";
+  }
+}
+
 .icon-circle {
   border-radius: 50%;
 }

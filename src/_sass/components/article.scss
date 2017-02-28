@@ -60,16 +60,6 @@
   }
 }
 
-#news {
-  .select {
-    width: 160px;
-    display: inline-block;
-    select {
-      background-color: $cream;
-    }
-  }
-}
-
 .recent-news {
   .article {
     margin-bottom: 30px;
@@ -85,5 +75,10 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
-
+  .article {
+    .article-image {
+      height: 180px;
+        background-size: contain;
+    }
+  }
 }

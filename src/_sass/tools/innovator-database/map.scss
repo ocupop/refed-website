@@ -2,7 +2,7 @@
   position: relative;
 }
 .innovatorDatabase_map {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 280px);
 }
 .innovatorDatabase_mapKey {
   position: absolute;
@@ -10,7 +10,8 @@
   left: 0;
   width: 100%;
   background-color: transparent;
-  z-index: 99;
+  z-index: 9;
+  pointer-events: none;
   .content {
     display: flex;
     flex-wrap: nowrap;
@@ -32,10 +33,18 @@
       vertical-align: middle;
     }
     small {
+      display: block;
       font-size: 9px;
-      float: right;
       margin-top: -10px;
+      margin-left: 45px;
     }
+  }
+}
+.innovator_reach_category {
+  margin-bottom: 20px;
+  i {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -49,10 +58,13 @@
   .innovatorDatabase_map  {
     
   }
+  .innovatorDatabase_mapKey {
+    display: none;
+  }
 }
 
 @media all and (max-width: $screen-xs-max) {
   .innovatorDatabase_map {
-
+    padding-top: 40px;
   }
 }

@@ -16,59 +16,76 @@
  * along with this program.  If not, see
  * http://www.gnu.org/licenses/agpl-3.0.html.
 
-
-Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
-
-FOR SOLUTION CARDS AND BLOG ARTICLE FILTERS
-import mixitup from 'mixitup';
-import $ from 'jquery';
-
-mixitup.use($);
-
-// MixItUp can now be used as a jQuery plugin, as per the v2 API
-
-$('.container').mixitup();
-
  */
 (function() {
 
 $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function innovatorDatabase_list(list) {
-    list = $(list);
-    $(window).on('searchLocation', function(event, location) {
 
-        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
-        updateInnovatorDistances(list, searchLocation);
-
+    var mixer = mixitup(list, {
+      multifilter: {
+        enable: true,
+        minSearchLength: 2
+      },
+      load: {
+        sort: 'random'
+      },
+      selectors: {
+        target: '.innovator',
+        control: '[data-mixitup-control], .mixitup-control'
+      },
+      pagination: {
+        limit: 10,
+        // maintainActivePage: false,
+        // loop: true,
+        hidePageListIfSinglePage: true
+      }
     });
-    // list.mixItUp({
-    //   controls: {
-    //     enable: false 
-    //     // as we are interacting via the API, we can disable default controls to increase performance
-    //   },
-    //   load: {
-    //     filter: urlParams["filter"],
-    //     sort: "name:desc"
-    //   },
-    //   callbacks: {
-    //     onMixEnd: function(state){
-    //       window.console.log("/tools/innovator-database.list.js: ", state);
-    //     }
-    //   },
-    //   selectors: {
-    //     target: '.row',
-    //     filter: '.filter',
-    //     sort: '.sort'
-    //   }
-    //   // ,pagination: {
-    //   //   limit: limit
-    //   // }
-    // });
+
+    $(window).on('searchLocation', function(event, location) {
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
+        updateInnovatorDistances(list, searchLocation, mixer);
+    });
+
+    $(window).on('noLocation', function(event) {
+        var searchLocation = new google.maps.LatLng(location.lat, location.lng);
+        clearInnovatorDistances(list, mixer);
+    });
+
+
+    list = $(list);
+
+    $('[data-sort]').on('click', function(){
+      var sort = $(this).attr('data-sort');
+      mixer.sort(sort);
+
+      if(sort == 'default:asc'){
+        $(this).attr('data-sort', 'default:desc');
+      } else {
+        $(this).attr('data-sort', 'default:asc');
+      }
+    });
+
+    $('a[href$="#innovatorList"]').on('shown.bs.tab', function(e) {
+      $('.innovatorDatabase_menu section').removeClass('active');
+      $('.innovatorDatabase_filters').addClass('active');
+    });
+    $('a[href$="#innovatorList"]').on('hide.bs.tab', function(e) {
+      $('.innovatorDatabase_filters').removeClass('active');
+    });
 
   }
 
-  function updateInnovatorDistances(list, searchLocation) {
+  function clearInnovatorDistances(list, mixer) {
+    // TODO - Display a message here
+    list.find('.innovator_distance').fadeOut();
+    mixer.sort('default:asc');
+  }
+
+  function updateInnovatorDistances(list, searchLocation, mixer) {
+
+    mixer.sort('default:asc', false);
 
     list.find('.innovator').each(function() {
         var lat = $(this).data('lat')/1,
@@ -77,10 +94,16 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
         var distance = calcDistance(position, searchLocation);
 
-        $(this).find('.distance').text(distance);
-        $(this).attr('data-distance', distance);
-        // list.mixItUp({});
+        $(this).find('.distance').text(distance).end()
+               .find('.innovator_distance').show().end()
+               .attr('data-distance', distance);
     });
+
+    mixer.sort('distance:asc')
+        .then(function(state) {
+            console.log(state.activeSort.sortString); // 'price:desc'
+        });
+
   }
   function calcDistance(p1, p2) {
     return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) * 0.000621371).toFixed(0);

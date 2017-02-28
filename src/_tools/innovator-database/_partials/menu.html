@@ -1,0 +1,134 @@
+<div class="innovatorDatabase_menu">
+
+  <section class="alt-bg innovatorDatabase_filters active">
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="col-xs-12 col-md-3">
+          <h4>Search by location</h4>
+          <div class="locationSearch">
+            <i class="icon icon-search"></i>
+            <input id="autocomplete" placeholder="Enter your address"
+                     onFocus="geolocate()" type="text" class="locationField"></input>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <h4>Filter by details</h4>
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div data-filter-group class="select">
+                <select>
+                  <option value=""
+                          data-mixitup-control>
+                          Status
+                          </option>
+                  <option value="[data-business-model='Nonprofit']"
+                          data-mixitup-control>
+                          Nonprofit
+                          </option>
+                  <option value="[data-business-model='For-Profit']"
+                          data-mixitup-control>
+                          For-Profit
+                          </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div data-filter-group class="select">
+                <select id="innovator_categories">
+                  <option value="">Category</option>
+                  {% for category in site.innovator_category_options %}
+                    <option value="[data-innovator-category-options='{{ category.title | slugify }}']"
+                            data-summary="{{ category.summary }}"
+                             data-mixitup-control>{{ category.title }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div data-filter-group class="select">
+                <select>
+                  <option value=""
+                          data-mixitup-control>
+                          Food Recovery Hierarchy
+                          </option>
+                  <option value="[data-food-recovery-hierarchy-option='Prevention']"
+                          data-mixitup-control>
+                          Prevention
+                          </option>
+                  <option value="[data-food-recovery-hierarchy-option='Recovery']"
+                          data-mixitup-control>
+                          Recovery
+                          </option>
+                  <option value="[data-food-recovery-hierarchy-option='Recycling']"
+                          data-mixitup-control>
+                          Recycling
+                          </option>
+                </select>
+                <i class="icon icon-help" data-toggle="tooltip" data-placement="bottom" title="The database adopted the Environmental Protection Agency (EPA) Food Recovery Hierarchy framework to categorize the innovators to reduce food waste, prioritizing prevention first, then recovery, and finally recycling, to maximize economic, social, and environmental benefits."></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row visible-xs">
+        <div class="col-xs-12">
+          <div class="filterToggle">
+            <h4><i class="icon icon-caret-up"></i> Filters <span class="mixitup-page-stats muted visible-xs pull-right" data-mixitup-control></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg innovatorDatabase_categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+          <h4>Innovators in each category</h4>
+        </div>
+        <div class="col-xs-12 col-md-7">
+          <div class="row">
+            <div class="col-xs-6">
+              <button class="button cream" data-chart="#analysisChart_status">Organization status</button>
+            </div>
+            <div class="col-xs-6">
+              <button class="button cream" data-chart="#analysisChart_hierarchy">Innovator group</button>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg innovatorDatabase_search">
+    <div class="container">
+      <div class="row">
+        <div class="hidden-xs col-sm-2">
+          <h2>Search</h2>
+        </div>
+        <div class="col-xs-12 col-sm-10">
+          <div class="search-group">
+            <i class="icon icon-search"></i>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="innovatorDatabase_sort">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+            <button type="button" class="sort" data-sort="default:desc" data-mixitup-control>Sort A-Z <i class="icon icon-caret-up"></i></button>
+        </div>
+        <div class="col-xs-6">
+          <div class="text-right">
+            <div class="mixitup-page-stats muted" data-mixitup-control></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

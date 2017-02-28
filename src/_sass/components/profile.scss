@@ -1,3 +1,14 @@
+#member_signup_form {}
+#member_signin_form {}
+#member_update_form {}
+
+.profileMessage {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 #profile {
   #confirm_zip_code {
     width: 49%;
@@ -9,6 +20,7 @@
   }
 }
 
+// TODO - Refactor into seperate style sheet (messaging)
 #thanks {
   display: none;
   position: fixed;
@@ -17,6 +29,7 @@
   background: white;
   height: 100%;
   width: 100%;
+  padding-top: 130px;
   text-align: center;
   img {
     width: 250px;
