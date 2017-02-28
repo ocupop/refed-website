@@ -22,39 +22,22 @@ $.behaviors('body', pageState);
 
 // Revert to a previously saved state
 window.addEventListener('popstate', function(event) {
-
-  if(location.hash) {
-    // The user has typed the hash and hit enter
-    var data = {
-      activeTab: location.hash
-    }
-    updateContent(data);
+  // window.console.log("pageState: popstate", event);
+  var hash = window.location.hash;
+  
+  if(hash) {
+    window.console.log("popstate: Activating Tabs", hash);
+    activateTab(hash);
     return;
   }
-
-  updateContent(event.state);
-
 });
 
   function pageState(body) {
-    body = $('body');
     var hash = location.hash;
-
+    window.console.log("pageState: Initialized");
     if (hash) {
-      // TODO - Refactor for all page content scenarios
-      pageScroll('#pageContent', 120);
-      
-      var activeTab = "activeTab_"+ hash.replace('#', '');
-      $('body').addClass(activeTab);
-
-      $(hash).addClass('active');
-
-      $('[href$="'+hash+'"]').parent().addClass('active');
-      // $.scrollTo(location.hash);
-    } else {
-      $('[data-toggle="tab"]').first().trigger('click');
-
-      // window.console.log("pageState.js: Checked for hash but did not find one.");
+      window.console.log("pageState: Activating Tab");
+      activateTab(hash);
     }
 
   }
@@ -63,6 +46,42 @@ window.addEventListener('popstate', function(event) {
     // Set activeTab
     $(data.activeTab).addClass('active').siblings().removeClass('active');
 
+  }
+
+  window.activateTab = function(hash) {
+    // window.console.log("Activating Tab: ", hash);
+    var tabClass = "activeTab_" + hash.replace("#","");
+
+    // TODO - Examine this method. Potential refactor?
+    pageScroll('#pageContent', 120);
+
+    // Is there a tab button?
+    // If so... activate the tab
+    // otherwise look for an anchor and scroll to there.
+
+    // Activate Matching Bootstrap Tab
+    $('[data-toggle="tab"]').filter('[href$="'+hash+'"]').tab("show");
+
+
+
+    // Update URL and push a history state
+    $('body').removeClass(function(index, className) {
+                return (className.match (/(^|\s)activeTab_\S+/g) || []).join(' ');
+              })
+             .addClass(tabClass);
+
+    if (typeof hash != 'undefined' && hash != '') {
+      if (history && history.pushState) {
+        // window.console.log("DATA:", data);
+        window.history.pushState('', 'ReFED', window.location.pathname + window.location.search + hash);
+      } else {
+        scrollV = document.body.scrollTop;
+        scrollH = document.body.scrollLeft;
+        window.location.hash = hash;
+        document.body.scrollTop = scrollV;
+        document.body.scrollLeft = scrollH;
+      }
+    }
   }
 
 })();
