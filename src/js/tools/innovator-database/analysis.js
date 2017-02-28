@@ -51,16 +51,10 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     }, {
       axisY: {
-        // labelInterpolationFnc: function(value) {
-        //   return (value / 1000) + 'k';
-        // },
         showLabel: false,
         showGrid: true
       },
       axisX: {
-        // labelInterpolationFnc: function(value) {
-        //   return (value / 1000) + 'k';
-        // },
         showLabel: true,
         showGrid: true
       },
@@ -98,11 +92,39 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       //   horizontalBars: false,
       //   seriesBarDistance: 15
       // }]
-    ]).on('draw', function(data) {
-      window.console.log("Data:", data);
-      if(data.type === 'bar') {
-        data.element.attr({
-          style: 'stroke-width: 40px'
+    ]).on('draw', function(d) {
+
+      if(d.type === 'bar') {
+        // window.console.log("Data:", d);
+        // window.console.log("Data Blah:", data.labels[d.index]);
+
+        $('.ct-bar').on('click', function() {
+          window.console.log("Click", data.labels[d.index]);
+          // $('#tooltip').html('<b>Selected Value: </b>' + $(this).attr('ct:value'));
+        });
+
+        // var x = d.type === 'bar' ? d.x2 : d.x;
+        // var y = d.type === 'bar' ? d.y2 : d.y;
+        
+        // d.group.elem('text', {
+        //   x: x + 10,
+        //   y: y + 5,
+        //   transform: 'rotate(-90, ' + x + ', ' + y + ')'
+        // }, 'ct-label').text(data.labels[d.index]);
+
+
+        // d.group.elem('rect', {
+        //   x: x + 10,
+        //   y: y + 5,
+        //   width: 50,
+        //   height: 50,
+        //   transform: 'rotate(-90, ' + x + ', ' + y + ')'
+        // }, 'ct-blah');
+
+
+        d.element.attr({
+          style: 'stroke-width: 40px',
+          title: data.labels[d.index]
         });
       }
     });
@@ -124,30 +146,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       stackBars: true,
       showGridBackground: false,
       height: 500
-    }, [
-      // Options override for media > 400px
-      ['screen and (max-width: 767px)', {
-        horizontalBars: true,
-        stackBars: true,
-        axisX: {
-          // labelInterpolationFnc: Chartist.noop
-        },
-        axisY: {
-          // offset: 60
-        }
-      }]
-      // Options override for media > 800px
-      // ['screen and (min-width: 800px)', {
-      //   stackBars: false,
-      //   seriesBarDistance: 10
-      // }],
-      // Options override for media > 1000px
-      // ['screen and (min-width: 1000px)', {
-      //   reverseData: false,
-      //   horizontalBars: false,
-      //   seriesBarDistance: 15
-      // }]
-    ]).on('draw', function(data) {
+    }).on('draw', function(data) {
       if(data.type === 'bar') {
         data.element.attr({
           style: 'stroke-width: 40px'
@@ -186,6 +185,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       // window.fireEvent('resize');
       window.dispatchEvent(new Event('resize'));
     });
+
 
   }
 
@@ -247,5 +247,6 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     return data;
     // window.console.log("RECYCLE INNOVATORS: ", $("[data-innovator-categories='secondary-marketplace']").length);
   }
+
 
 })();
