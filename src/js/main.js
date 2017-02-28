@@ -8,9 +8,13 @@ $(document).on('ready', function() {
     $("#thanks").fadeIn(500);
 
     setTimeout(function() {
-      $('#thanks').fadeOut('slow');
-    }, 1500);
+      $("#thanks").fadeOut('slow');
+    }, 3500);
   }
+
+  $("#thanks .close").on('click', function(){
+    $("#thanks").fadeOut('slow');
+  });
 
   // TODO - Refactor into component
   // Make all external links open in another window.

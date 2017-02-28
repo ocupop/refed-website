@@ -122,7 +122,7 @@ $.behaviors('.profile', initSignup);
 
     setTimeout(function() {
       $('#thanks').fadeOut('slow');
-    }, 3000);
+    }, 4000);
   }
 
 
