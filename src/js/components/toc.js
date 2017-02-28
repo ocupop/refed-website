@@ -33,7 +33,7 @@ $.behaviors('[class^="toc-entry"]', tocLink);
           label_class = "toc-entry toc-"+ heading_type,
           assign_label = label ? label : text,
           id = heading.attr('id'),
-          new_id = id ? id : text.trim();
+          new_id = id ? id : text.replaceAll(" ", "-").toLowerCase();
       
       heading.attr('id', new_id);
       if(heading.data('label-class')){ 
