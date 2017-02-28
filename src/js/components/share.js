@@ -26,9 +26,10 @@ $.behaviors('.share', initShare);
     var share = {};
     share.title = button.data('title') || document.querySelector("title").innerHTML;
     share.summary = document.querySelector('meta[name="description"]')["content"];
-    share.url = button.data('link') || window.location.href;
+    share.url = button.data('link') || window.location;
 
     button.on('click', function(e){
+      window.console.log('share.js: share url', share.url)
       e.preventDefault();
       build_urls(share);
     });
