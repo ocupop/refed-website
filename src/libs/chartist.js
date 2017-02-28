@@ -3807,7 +3807,7 @@ var Chartist = {
         'ct:meta': Chartist.serialize(series.meta)
       });
 
-      // TB: Sort out where the replace statement is coming from // Use series class from series data or if not set generate one
+      // Use series class from series data or if not set generate one
       seriesElement.addClass([
         options.classNames.series,
         (series.className || options.classNames.series + '-' + Chartist.alphaNumerate(seriesIndex))

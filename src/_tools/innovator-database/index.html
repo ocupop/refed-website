@@ -68,14 +68,60 @@ breadcrumb: true
         </div>
       </div>
     </div>
-    <div class="row">
+    <div id="navigating-the-database" class="row">
       <div class="col-xs-12">
-        <div class="content editable">
-          <h2>Navigating the Food Waste Innovator Database</h2>
-          <p>Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
-        </div>
-        <div class="content editable">
-          <h5>TODO - Content Needed for each category</h5>
+        <div class="content">
+          <h2 class="editable">Navigating the Food Waste Innovator Database</h2>
+          <p class="editable">Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
+          {% assign options = site.food_recovery_hierarchy_options %}
+          {% for option in options %}
+            <h4 data-toggle="collapse" data-target="#collapse-{{ option.title | slugify }}" href="#collapse-{{ option.title | slugify }}">View {{ option.title }} Categories <span class="caret"></span></h4>
+            <p>{{ option.summary }}</p>
+            {% if option.title == "Prevention" %}
+              <div class="collapse" id="collapse-prevention">
+                <ul class="content">
+                  {% assign category_options = site.innovator_category_options %}
+                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Prevention"%}
+                  {% for category in filtered %}
+                    <li>
+                      <h4><strong>{{ category.title }}</strong></h4>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
+                      
+                    </li>
+                  {% endfor %}
+                </ul>
+                
+              </div>
+            {% endif %}
+            {% if option.title == "Recovery" %}
+              <div class="collapse" id="collapse-recovery">
+                <ul class="content">
+                  {% assign category_options = site.innovator_category_options %}
+                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Recovery"%}
+                  {% for category in filtered %}
+                    <li>
+                      <h4><strong>{{ category.title }}</strong></h4>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+            {% if option.title == "Recycling" %}
+              <div class="collapse" id="collapse-recycling">
+                <ul class="content">
+                  {% assign category_options = site.innovator_category_options %}
+                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Recycling"%}
+                  {% for category in filtered %}
+                    <li>
+                      <h4><strong>{{ category.title }}</strong></h4>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
         <div class="content editable">
           <h2>Related food waste databases</h2>
