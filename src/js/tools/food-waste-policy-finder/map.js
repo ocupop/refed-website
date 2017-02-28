@@ -384,16 +384,8 @@ $.behaviors('.mapnav', initMapNav);
       })
   }
 
-  window.onhashchange = function() {
-
-      var hash        = window.location.hash;
-      window.console.log("map.js: window.onhashchange()");
-
-      // Compare new hash with active hash
-      // if (hash === activeHash) return; // no change
-
-      // activeHash = hash;
-      // filterMixerByGroupsState(groupsState, true);
+  window.onhashchange = function(e) {
+    window.console.log("map.js: window.onhashchange()", e);
   };
 
 })();
