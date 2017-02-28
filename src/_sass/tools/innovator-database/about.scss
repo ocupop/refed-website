@@ -12,6 +12,16 @@
       background-color: darken($button-color, 15%);
     }
   }
+  [data-toggle="collapse"]{
+    .caret {
+      @include transition(.5s);
+    }
+    &.active {
+      .caret {
+        transform: rotate(-180deg);
+      }
+    }
+  }
 }
 
 @media all and (max-width: $screen-md-max) {
