@@ -67,6 +67,13 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       }
     });
 
+    $('a[href$="#innovatorList"]').on('shown.bs.tab', function(e) {
+      $('.innovatorDatabase_menu section').removeClass('active');
+      $('.innovatorDatabase_filters').addClass('active');
+    });
+    $('a[href$="#innovatorList"]').on('hide.bs.tab', function(e) {
+      $('.innovatorDatabase_filters').removeClass('active');
+    });
 
   }
 

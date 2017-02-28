@@ -1,3 +1,38 @@
+.innovatorDatabase_menu {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+  // height: 110px;
+  z-index: 99;
+  section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    min-height: 110px;
+    width: 100%;
+    padding: 20px 0;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(1s);
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.innovatorDatabase_sort {
+  display: none !important;
+}
+
+.innovatorDatabase_search {
+  .search-group {
+    margin-bottom: 0;
+  }
+}
+
 .innovatorDatabase_filters {
   padding: 10px 0;
   @include transition();
@@ -42,23 +77,45 @@
   }
 }
 
+.innovatorDatabase_categories {
+  h3 {
+    margin-top: 0;
+  }
+  .button {
+    font-size: 14px;
+    &.active {
+      background-color: $button-color !important;
+      color: #fff;
+    }
+  }
+}
+
 .mixitup-page-list {
   button {
     padding: 0 10px;
   }
 }
 
+// Page States
 
 
-body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
-  .innovatorDatabase_filters {
-    margin-top: -100px;
+
+body.condensed-header {
+  .innovatorDatabase_menu {
+    section.active {
+      opacity: 0;
+    }
   }
 }
 
 @media all and (max-width: $screen-md-max) {
   .innovatorDatabase_filters  {
 
+  }
+  .innovatorDatabase_categories {
+    h3 {
+      font-size: 18px;
+    }
   }
 }
 
@@ -70,12 +127,11 @@ body.activeTab_innovatorSearch, .activeTab_innovatorAnalysis {
 
 @media all and (max-width: $screen-xs-max) {
   .innovatorDatabase_filters {
-    position: fixed;
-    top: 118px;
-    left: 0;
-    width: 100%;
     height: auto;
     z-index: 99;
+    .container {
+      width: 100%;
+    }
     .filterToggle {
       display: block;
       i {

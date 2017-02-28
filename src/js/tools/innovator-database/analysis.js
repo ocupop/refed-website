@@ -23,7 +23,8 @@ $.behaviors('.innovatorDatabase_categories', innovatorDatabase_categories);
 $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
-  function innovatorDatabase_categories(container) {
+  function innovatorDatabase_categories(menu) {
+    menu = $(menu);
 
     $('[data-chart]').on('click', function() {
       $('[data-chart]').not(this).removeClass('active');
@@ -33,6 +34,15 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       $('.analysisChart').not(chart).not('#analysisChart_category').removeClass('active');
       $(chart).toggleClass('active');
     });
+
+    $('a[href$="#innovatorAnalysis"]').on('shown.bs.tab', function(e) {
+      $('.innovatorDatabase_menu section').removeClass('active');
+      menu.addClass('active');
+    });
+    $('a[href$="#innovatorAnalysis"]').on('hide.bs.tab', function(e) {
+      menu.removeClass('active');
+    });
+
 
   }
 
@@ -98,11 +108,6 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
         // window.console.log("Data:", d);
         // window.console.log("Data Blah:", data.labels[d.index]);
 
-        $('.ct-bar').on('click', function() {
-          window.console.log("Click", data.labels[d.index]);
-          // $('#tooltip').html('<b>Selected Value: </b>' + $(this).attr('ct:value'));
-        });
-
         // var x = d.type === 'bar' ? d.x2 : d.x;
         // var y = d.type === 'bar' ? d.y2 : d.y;
         
@@ -112,19 +117,11 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
         //   transform: 'rotate(-90, ' + x + ', ' + y + ')'
         // }, 'ct-label').text(data.labels[d.index]);
 
-
-        // d.group.elem('rect', {
-        //   x: x + 10,
-        //   y: y + 5,
-        //   width: 50,
-        //   height: 50,
-        //   transform: 'rotate(-90, ' + x + ', ' + y + ')'
-        // }, 'ct-blah');
-
-
         d.element.attr({
           style: 'stroke-width: 40px',
-          title: data.labels[d.index]
+          title: data.labels[d.index],
+          summary: data.details[d.index],
+          onclick: "showAnalysisDetails(this)"
         });
       }
     });
@@ -186,13 +183,13 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       window.dispatchEvent(new Event('resize'));
     });
 
-
   }
 
   function buildChartData() {
     var options = $('#innovator_categories option').not(":eq(0)");
     var data = {
       labels: [],
+      details: [],
       category: {
         total_count: []
       },
@@ -215,6 +212,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     options.each(function() {
       var label = $(this).text().replace(/ [ \r\n]+/gm, ""),
+          summary = $(this).attr('data-summary');
           filter = $(this).val(),
           filtered = $(filter),
           total_count = filtered.length;
@@ -225,6 +223,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           recycling = filtered.filter("[data-food-recovery-hierarchy-option='Recycling']").length;
 
       data.labels.push(label);
+      data.details.push(summary);
       data.category.total_count.push(total_count);
       data.status.forprofit.push(forprofit);
       data.status.nonprofit.push(nonprofit);
@@ -235,17 +234,22 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
     window.console.log("Analysis Data: ", data);
-
-    // return {
-    //   labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-    //   series: [
-    //     [800000, 1200000, 1400000, 1300000],
-    //     [200000, 400000, 500000, 300000],
-    //     [100000, 200000, 400000, 600000]
-    //   ]
-    // };
     return data;
-    // window.console.log("RECYCLE INNOVATORS: ", $("[data-innovator-categories='secondary-marketplace']").length);
+
+  }
+
+
+  window.showAnalysisDetails = function(el) {
+    window.console.log("showAnalysisDetails:", el);
+
+    el = $(el);
+
+    $('#tooltip')
+      .find('[data-content="title"]').text(el.attr('title')).end()
+      .find('[data-content="description"]').text(el.attr('summary')).end()
+      .find('.innovator_details').hide().end()
+      .find('.analysis_details').show().end()
+      .addClass('active');
   }
 
 

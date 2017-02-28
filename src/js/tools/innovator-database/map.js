@@ -41,6 +41,14 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         initMap(container);
     }
 
+    $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
+      $('.innovatorDatabase_menu section').removeClass('active');
+      $('.innovatorDatabase_filters').addClass('active');
+    });
+    $('a[href$="#innovatorMap"]').on('hide.bs.tab', function(e) {
+      $('.innovatorDatabase_filters').removeClass('active');
+    });
+
   }
 
   function initMap(container) {
@@ -130,10 +138,12 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="business-model"]').text(d.businessModel).end()
           .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions).end()
           .find('[data-content="food-recovery-hierarchy-option"]').text(d.foodRecoveryHierarchyOption).end()
-          .find('[data-content="reach"]').text(d.innovatorReachCategory).end()
-          .find('.icon').addClass("icon-"+d.innovatorReachCategory).end()
+          .find('[data-content="reach"]').text(d.innovatorLevel).end()
+          .find('.icon').addClass("icon-"+d.innovatorLevel).end()
           .find('[data-content="website"]').text(d.website).attr('href', d.website).end()
           .find('[data-content="url"]').attr('href', d.url).end()
+          .find('.innovator_details').show().end()
+          .find('.analysis_details').hide().end()
           .addClass('active');
         innovatorMap.setZoom(8);
         innovatorMap.setCenter(this.getPosition());
