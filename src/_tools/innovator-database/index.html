@@ -85,7 +85,7 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="#" class="italic">View Innovators in this Category</a></p>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
                       
                     </li>
                   {% endfor %}
@@ -101,7 +101,7 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="#" class="italic">View Innovators in this Category</a></p>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
                     </li>
                   {% endfor %}
                 </ul>
@@ -115,7 +115,7 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="#" class="italic">View Innovators in this Category</a></p>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
                     </li>
                   {% endfor %}
                 </ul>
