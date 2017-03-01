@@ -115,6 +115,7 @@ body.condensed-header {
   .innovatorDatabase_menu {
     section.active {
       opacity: 0;
+      pointer-events: none;
     }
   }
 }

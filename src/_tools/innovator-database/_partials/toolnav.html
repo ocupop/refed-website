@@ -28,12 +28,14 @@
         <span>Analysis</span>
       </a>
     </li>
-    <li class="divider"></li>
-    <li>
-      <button class="searchLink">
-        <i class="icon icon-search"></i>
-        <span>Search</span>
-      </button>
-    </li>
+    {% if tab %}
+      <li class="divider"></li>
+      <li>
+        <button class="searchLink">
+          <i class="icon icon-search"></i>
+          <span>Search</span>
+        </button>
+      </li>
+    {% endif %}
   </ul>
 </div>
