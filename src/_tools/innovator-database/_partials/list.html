@@ -13,7 +13,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
         </div>
       </li>
       {% for innovator in site.innovators %}
-        <li class="innovator mix"
+        <li class="innovator mix {{ innovator.food_recovery_hierarchy_option | downcase }}-hierarchy {{ innovator.business_model | slugify }} {% for c in innovator.innovator_category_options %}{{ c | slugify }} {% endfor %}"
             data-uid="uid_{{ forloop.index }}"
             data-title="{{ innovator.name }}"
             data-description="{{ innovator.description }}"

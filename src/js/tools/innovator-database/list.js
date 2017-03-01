@@ -23,25 +23,7 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
   function innovatorDatabase_list(list) {
 
-    var mixer = mixitup(list, {
-      multifilter: {
-        enable: true,
-        minSearchLength: 2
-      },
-      load: {
-        sort: 'random'
-      },
-      selectors: {
-        target: '.innovator',
-        control: '[data-mixitup-control], .mixitup-control'
-      },
-      pagination: {
-        limit: 10,
-        // maintainActivePage: false,
-        // loop: true,
-        hidePageListIfSinglePage: true
-      }
-    });
+
 
     $(window).on('searchLocation', function(event, location) {
         var searchLocation = new google.maps.LatLng(location.lat, location.lng);
