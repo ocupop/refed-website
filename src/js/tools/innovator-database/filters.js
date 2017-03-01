@@ -192,13 +192,13 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
         activeSearch = '';
 
-        history.pushState(null, document.title, window.location.pathname); // or `history.replaceState()`
+        history.replaceState(null, document.title, window.location.pathname); // or `history.replaceState()`
     } else if (newSearch !== window.location.search && selector !== targetSelector) {
         // Change the search
 
         activeSearch = newSearch;
 
-        history.pushState(null, document.title, window.location.pathname + newSearch); // or `history.replaceState()`
+        history.replaceState(null, document.title, window.location.pathname + newSearch); // or `history.replaceState()`
     }
   }
 
