@@ -352,27 +352,27 @@ $.behaviors('.mapnav', initMapNav);
         wizard.attr( "class", "mapWizard step1" ).dequeue();
         mapnav.find('.step1').trigger('click');
       })
-      .delay(4000)
+      .delay(5000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step2" ).dequeue();
         mapnav.find('.step2').trigger('click');
       })
-      .delay(4000)
+      .delay(5000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step3" ).dequeue();
         mapnav.find('.step3').trigger('click');
       })
-      .delay(4000)
+      .delay(5000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step4" ).dequeue();
         mapnav.find('.step4').trigger('click');
       })
-      .delay(4000)
+      .delay(5000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step5" ).dequeue();
         mapnav.find('.step5').trigger('click');
       })
-      .delay(4000)
+      .delay(5000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step6" ).dequeue();
         mapnav.find('.step6').trigger('click');
