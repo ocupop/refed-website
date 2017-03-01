@@ -40,6 +40,29 @@
       pointer-events: all;
     }
   }
+  .ct-chart-bar.ct-horizontal-bars {
+    .ct-grid {
+      display: none;
+    }
+    .ct-labels {
+      display: none;
+    }
+    .ct-bar {
+      stroke-width: 30px !important;
+    }
+    .ct-label {
+      display: flex;
+      font-size: 1.2em;
+    }
+  }
+  .ct-label {
+    display: none;
+  }
+
+  .ct-label.ct-horizontal.ct-end {
+    display: flex;
+  }
+
   .ct-label.ct-vertical.ct-start {
     display: none;
   }
@@ -59,9 +82,19 @@
 
 #analysisChart_category {
   position: relative;
+  opacity: 1;
+  background-color: transparent;
   .ct-series-a {
     .ct-bar {
+      opacity: 0;
       stroke: $button-color;
+    }
+  }
+  &.active {
+    .ct-series-a {
+      .ct-bar {
+        opacity: 1;
+      }
     }
   }
 }
@@ -112,6 +145,9 @@
 @media all and (max-width: $screen-sm-max) {
   .innovatorDatabase_categories  {
     
+  }
+  .innovatorDatabase_analysisCharts {
+    min-height: 570px;
   }
 }
 

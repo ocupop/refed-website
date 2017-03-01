@@ -27,12 +27,23 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     menu = $(menu);
 
     $('[data-chart]').on('click', function() {
-      $('[data-chart]').not(this).removeClass('active');
-      $(this).toggleClass('active');
-
       var chart = $(this).attr('data-chart');
-      $('.analysisChart').not(chart).not('#analysisChart_category').removeClass('active');
-      $(chart).toggleClass('active');
+
+      if($(this).hasClass('active')) {
+        $('#analysisChart_category').addClass('active');
+        $(chart).removeClass('active');
+
+        $(this).removeClass('active');
+        $(chart).removeClass('active');
+      } else {
+        $('[data-chart]').not(this).removeClass('active');
+        $(this).addClass('active');
+
+        $('.analysisChart').not(chart).removeClass('active');
+        $(chart).addClass('active');
+      }
+
+      
     });
 
     $('a[href$="#innovatorAnalysis"]').on('shown.bs.tab', function(e) {
@@ -76,50 +87,25 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       showGridBackground: false,
       height: 500
     }, [
-      // Options override for media > 400px
+      // Options override for media > mobile
       ['screen and (max-width: 767px)', {
         horizontalBars: true,
-        stackBars: true,
-        axisY: {
-          // labelInterpolationFnc: function(value) {
-          //   return (value / 1000) + 'k';
-          // },
-          // showLabel: false,
-          // showGrid: true
-        },
-        axisX: {
-          // labelInterpolationFnc: function(value) {
-          //   return (value / 1000) + 'k';
-          // },
-          // showLabel: false,
-          // showGrid: true
-        }
+        stackBars: true
       }]
-      // Options override for media > 800px
-      // ['screen and (min-width: 800px)', {
-      //   stackBars: false,
-      //   seriesBarDistance: 10
-      // }],
-      // Options override for media > 1000px
-      // ['screen and (min-width: 1000px)', {
-      //   reverseData: false,
-      //   horizontalBars: false,
-      //   seriesBarDistance: 15
-      // }]
     ]).on('draw', function(d) {
 
       if(d.type === 'bar') {
         // window.console.log("Data:", d);
         // window.console.log("Data Blah:", data.labels[d.index]);
 
-        // var x = d.type === 'bar' ? d.x2 : d.x;
-        // var y = d.type === 'bar' ? d.y2 : d.y;
+        var x = d.type === 'bar' ? d.x1 : d.x;
+        var y = d.type === 'bar' ? d.y1 : d.y;
         
-        // d.group.elem('text', {
-        //   x: x + 10,
-        //   y: y + 5,
-        //   transform: 'rotate(-90, ' + x + ', ' + y + ')'
-        // }, 'ct-label').text(data.labels[d.index]);
+        d.group.elem('text', {
+          x: x + 10,
+          y: y + 5
+          // transform: 'rotate(-90, ' + x + ', ' + y + ')'
+        }, 'ct-label').text(data.labels[d.index]);
 
         d.element.attr({
           style: 'stroke-width: 40px',
@@ -148,8 +134,15 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       stackBars: true,
       showGridBackground: false,
       height: 500
-    }).on('draw', function(d) {
+    }, [
+      // Options override for media > mobile
+      ['screen and (max-width: 767px)', {
+        horizontalBars: true,
+        stackBars: true
+      }]
+    ]).on('draw', function(d) {
       if(d.type === 'bar') {
+
         d.element.attr({
           style: 'stroke-width: 40px',
           title: data.labels[d.index],
@@ -177,7 +170,13 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       stackBars: true,
       showGridBackground: false,
       height: 500
-    }).on('draw', function(d) {
+    }, [
+      // Options override for media > mobile
+      ['screen and (max-width: 767px)', {
+        horizontalBars: true,
+        stackBars: true
+      }]
+    ]).on('draw', function(d) {
       if(d.type === 'bar') {
         d.element.attr({
           style: 'stroke-width: 40px',
