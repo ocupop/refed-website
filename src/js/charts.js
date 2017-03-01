@@ -30,7 +30,7 @@
 
     function updateCostCurve(key) {
       var l = window.location.pathname + "?sort="+key;
-      window.history.pushState('', 'Cost Curve: '+key+' Solutions', l);
+      window.history.replaceState('', 'Cost Curve: '+key+' Solutions', l);
       $("#instructions input").val(window.location.href);
 
       var p = [];

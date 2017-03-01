@@ -129,7 +129,7 @@ function hideCards(impact) {
 function sortCards(impact) {
   // window.console.log("/components/solutionCards.js: SHOULD SORT", impact);
   var l = window.location.pathname + "?sort="+impact + window.location.hash;
-  window.history.pushState('', '{{ site.title }}: Solutions', l);
+  window.history.replaceState('', '{{ site.title }}: Solutions', l);
 
   $('.card .stat').hide().filter("."+impact).show();
 

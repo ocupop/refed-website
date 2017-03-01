@@ -263,7 +263,7 @@ $.behaviors('.mapnav', initMapNav);
           filters.push($(this).attr('id'));
         });
         var new_url = replaceUrlParam(window.location.href, 'filters', filters );
-        window.history.pushState('', 'ReFED - State Policy Map', new_url);
+        window.history.replaceState('', 'ReFED - State Policy Map', new_url);
 
       });
 
@@ -274,7 +274,7 @@ $.behaviors('.mapnav', initMapNav);
 
     mapnav.find('.filters').on('shown.bs.collapse', function () {
       var new_url = replaceUrlParam(window.location.href, 'category', $(this).attr('id') );
-      window.history.pushState('', 'ReFED - State Policy Map', new_url);
+      window.history.replaceState('', 'ReFED - State Policy Map', new_url);
     });
 
   }
