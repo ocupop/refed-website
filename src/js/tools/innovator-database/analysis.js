@@ -125,6 +125,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           style: 'stroke-width: 40px',
           title: data.labels[d.index],
           summary: data.details[d.index],
+          category: data.labels[d.index].toLowerCase().replace(' ', '-'),
           onclick: "showAnalysisDetails(this)"
         });
       }
@@ -147,10 +148,14 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       stackBars: true,
       showGridBackground: false,
       height: 500
-    }).on('draw', function(data) {
-      if(data.type === 'bar') {
-        data.element.attr({
-          style: 'stroke-width: 40px'
+    }).on('draw', function(d) {
+      if(d.type === 'bar') {
+        d.element.attr({
+          style: 'stroke-width: 40px',
+          title: data.labels[d.index],
+          summary: data.details[d.index],
+          category: data.labels[d.index].toLowerCase().replace(' ', '-'),
+          onclick: "showAnalysisDetails(this, '.status')"
         });
       }
     });
@@ -172,10 +177,14 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       stackBars: true,
       showGridBackground: false,
       height: 500
-    }).on('draw', function(data) {
-      if(data.type === 'bar') {
-        data.element.attr({
-          style: 'stroke-width: 40px'
+    }).on('draw', function(d) {
+      if(d.type === 'bar') {
+        d.element.attr({
+          style: 'stroke-width: 40px',
+          title: data.labels[d.index],
+          summary: data.details[d.index],
+          category: data.labels[d.index].toLowerCase().replace(' ', '-'),
+          onclick: "showAnalysisDetails(this, '.hierarchy')"
         });
       }
     });
@@ -243,16 +252,25 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
   }
 
 
-  window.showAnalysisDetails = function(el) {
+  window.showAnalysisDetails = function(el, view) {
     window.console.log("showAnalysisDetails:", el);
 
     el = $(el);
 
+
     $('#tooltip')
+      .find('.status, .hierarchy').hide().end()
       .find('[data-content="title"]').text(el.attr('title')).end()
       .find('[data-content="description"]').text(el.attr('summary')).end()
       .find('.innovator_details').hide().end()
       .find('.analysis_details').show().end()
+      .find('.analysis_details a').each(function() {
+        var h = $(this).attr('href').replace(/innovator_category=.*/,'innovator_category=');
+        window.console.log("HREF:", h);
+        h += el.attr('category');
+        $(this).attr('href', h);
+      }).show().end()
+      .find(view).show().end()
       .addClass('active');
   }
 

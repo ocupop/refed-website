@@ -30,10 +30,19 @@
   .title {
     font-weight: 600;
   }
-  .button {
-    margin-bottom: 0;
-    &.recovery { display: none; }
-    &.recycle { display: none; }
+  // .content {
+  //   width: 300px;
+  // }
+}
+
+.food-waste-policy-finder {
+  #tooltip {
+    .button {
+      margin-bottom: 0;
+      &.recovery { display: none; }
+      &.recycle { display: none; }
+    }
+
   }
 }
 
