@@ -33,16 +33,36 @@ $.behaviors('.share', initShare);
       window.console.log('share.js: share title', share.title);
       e.preventDefault();
       build_urls(share);
+
     });
 
     // $(window).bind('hashchange', function() {
     //   window.console.log("share.js: hashchange");
     // }); 
-
+    // if($('#share-instructions').hasClass('active')){
+    //   window.console.log('share.js: share instructions active');
+      
+    // }
+    // if ($("#share-instructions.active")[0]){
+    //  window.console.log('share active'); 
+    //   $('#pageContent').on('click', function(){
+    //     window.console.log('share.js share is active');
+    //     $('#share-instructions').removeClass('active');
+    //   });
+    // }
+    $('#pageContent').mouseup(function (e)
+    {
+        var container = $("#share-instructions.active");
+        // window.console.log('clicked');
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.removeClass('active');
+        }
+    });
   }
 
   function build_urls(share) {
-    window.console.log('share:', share);
     var facebook_url = "http://www.facebook.com/sharer.php?u=" + share.url,
         twitter_url = "https://twitter.com/intent/tweet?url="+share.url+"&text="+share.title+"+%7C+Rethink+Food+Waste&amp;hashtags=refed",
         linkedin_url = "https://www.linkedin.com/shareArticle?mini=true&url="+share.url+"&title="+share.title+"&summary="+share.summary+"&source=",
@@ -59,10 +79,6 @@ $.behaviors('.share', initShare);
                       .addClass('active');
 
     close.on('click', function(){
-      share_instructions.removeClass('active');
-    });
-
-    $('#pageContent').on('click', function(){
       share_instructions.removeClass('active');
     });
   }
