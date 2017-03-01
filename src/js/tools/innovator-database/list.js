@@ -40,9 +40,21 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
     $('[data-sort]').on('click', function(){
       var sort = $(this).attr('data-sort');
-      window.console.log(mixer.getState());
-      
-      // mixer.sort(sort);
+      // window.console.log(mixer.getState());
+      // var filterState = mixer.parseFilterGroups();
+      // window.console.log(mixer.parseFilterGroups());
+      var status = mixer.getFilterGroupSelectors('business_model');
+      var hierarchy = mixer.getFilterGroupSelectors('hierarchy');
+      var category = mixer.getFilterGroupSelectors('innovator_category');
+
+      mixer.sort(sort)
+        .then(function(state) {
+            mixer.setFilterGroupSelectors('hierarchy', hierarchy);
+            mixer.setFilterGroupSelectors('business_model', status);
+            mixer.setFilterGroupSelectors('innovator_category', category);
+
+            mixer.parseFilterGroups();
+        });
 
       if(sort == 'default:asc'){
         $(this).attr('data-sort', 'default:desc');
