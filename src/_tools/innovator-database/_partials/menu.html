@@ -1,6 +1,25 @@
 <div class="innovatorDatabase_menu">
+  <div class="container" style="z-index: 9;">
+    <div class="mixitup-page-stats muted" data-mixitup-control></div>
+  </div>
 
-  <section class="alt-bg innovatorDatabase_filters {% unless page.url == '/tools/innovator-database//suggest-an-innovator' %}active{% endunless %}">
+  <section class="alt-bg innovatorDatabase_search">
+    <div class="container">
+      <div class="row">
+        <div class="hidden-xs col-sm-2">
+          <h2>Search</h2>
+        </div>
+        <div class="col-xs-12 col-sm-10">
+          <div class="search-group">
+            <i class="icon icon-search"></i>
+            <input type="text" placeholder="Search for Innovators" id="searchFilter" data-mixitup-control>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg innovatorDatabase_filters active">
     <div class="container">
       <div class="row hidden-xs">
         <div class="col-xs-12 col-md-3">
@@ -96,37 +115,6 @@
             </div>
           </div>
         </div>    
-      </div>
-    </div>
-  </section>
-
-  <section class="alt-bg innovatorDatabase_search {% if page.url == '/tools/innovator-database/suggest-an-innovator'%}active{% endif %}">
-    <div class="container">
-      <div class="row">
-        <div class="hidden-xs col-sm-2">
-          <h2>Search</h2>
-        </div>
-        <div class="col-xs-12 col-sm-10">
-          <div class="search-group">
-            <i class="icon icon-search"></i>
-            <input type="text">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="innovatorDatabase_sort">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-            <button type="button" class="sort" data-sort="default:desc" data-mixitup-control>Sort A-Z <i class="icon icon-caret-up"></i></button>
-        </div>
-        <div class="col-xs-6">
-          <div class="text-right">
-            <div class="mixitup-page-stats muted" data-mixitup-control></div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

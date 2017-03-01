@@ -24,9 +24,20 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 
 $.behaviors('.innovatorDatabase_filters', innovatorDatabase_filters);
 $.behaviors('.filterToggle', initToggle);
+$.behaviors('.innovatorDatabase_menu', initMenu);
 
   var targetSelector = '.innovator';
   var activeHash = '';
+
+  function initMenu(menu) {
+    menu = $(menu);
+    // window.console.log('initMenu: Loaded menu');
+    
+    $('.searchLink').on('click', function() {
+      $('.innovatorDatabase_categories, .innovatorDatabase_filters').removeClass('active');
+      $('.innovatorDatabase_search').addClass('active');
+    });
+  }
 
   function initToggle(container) {
     container = $(container);
@@ -68,6 +79,18 @@ $.behaviors('.filterToggle', initToggle);
         // If a valid groupsState object is present on page load, filter the mixer
         filterMixerByGroupsState(groupsState);
     }
+
+    input = $('#searchFilter');
+
+    input.on('keyup', function() {
+      var val = $(this).val();
+      if(val.length >= 2) {
+        searchFilter(val, mixer);
+      } else {
+        searchFilter('', mixer);
+      }
+
+    });
 
   }
 
@@ -236,7 +259,7 @@ $.behaviors('.filterToggle', initToggle);
 
   window.onhashchange = function() {
       var groupsState = deserializeSearch();
-      var search        = window.location.search;
+      var search      = window.location.search;
 
       // Compare new hash with active hash
 
@@ -246,6 +269,16 @@ $.behaviors('.filterToggle', initToggle);
 
       filterMixerByGroupsState(groupsState, true);
   };
+
+  function searchFilter(input, mixer) {
+    var state = mixer.getState();
+
+    var filtered = state.targets.filter(function(el, index){
+      return $(el).data('title').toLowerCase().indexOf( input.toLowerCase().trim() ) >= 0;
+    });
+
+    mixer.filter(filtered);
+  }
 
 })();
 
