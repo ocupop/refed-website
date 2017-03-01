@@ -40,7 +40,9 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
     $('[data-sort]').on('click', function(){
       var sort = $(this).attr('data-sort');
-      mixer.sort(sort);
+      window.console.log(mixer.getState());
+      
+      // mixer.sort(sort);
 
       if(sort == 'default:asc'){
         $(this).attr('data-sort', 'default:desc');
