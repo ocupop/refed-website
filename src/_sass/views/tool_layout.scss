@@ -11,6 +11,11 @@
     #pageContent main {
       padding-top: 110px;
     }
+    &.index {
+      #pageContent main {
+        padding-top: 0;
+      }
+    }
   }
 }
 

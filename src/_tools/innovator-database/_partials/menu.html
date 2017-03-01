@@ -1,6 +1,6 @@
 <div class="innovatorDatabase_menu">
 
-  <section class="alt-bg innovatorDatabase_filters active">
+  <section class="alt-bg innovatorDatabase_filters {% unless page.url == '/tools/innovator-database//suggest-an-innovator' %}active{% endunless %}">
     <div class="container">
       <div class="row hidden-xs">
         <div class="col-xs-12 col-md-3">
@@ -100,7 +100,7 @@
     </div>
   </section>
 
-  <section class="alt-bg innovatorDatabase_search">
+  <section class="alt-bg innovatorDatabase_search {% if page.url == '/tools/innovator-database/suggest-an-innovator'%}active{% endif %}">
     <div class="container">
       <div class="row">
         <div class="hidden-xs col-sm-2">

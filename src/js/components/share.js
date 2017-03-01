@@ -24,12 +24,13 @@ $.behaviors('.share', initShare);
     button = $(button);
 
     var share = {};
-    share.title = button.data('title') || document.querySelector("title").innerHTML;
+    share.title = button.data('title') || document.querySelector("title").innerHTML.replace(/[^a-z0-9\s]/gi, ' ');
     share.summary = document.querySelector('meta[name="description"]')["content"];
     share.url = button.data('link') || window.location;
 
     button.on('click', function(e){
-      window.console.log('share.js: share url', share.url)
+      // window.console.log('share.js: share url', share.url)
+      window.console.log('share.js: share title', share.title);
       e.preventDefault();
       build_urls(share);
     });
@@ -45,7 +46,7 @@ $.behaviors('.share', initShare);
     var facebook_url = "http://www.facebook.com/sharer.php?u=" + share.url,
         twitter_url = "https://twitter.com/intent/tweet?url="+share.url+"&text="+share.title+"+%7C+Rethink+Food+Waste&amp;hashtags=refed",
         linkedin_url = "https://www.linkedin.com/shareArticle?mini=true&url="+share.url+"&title="+share.title+"&summary="+share.summary+"&source=",
-        mail_url = "mailto:?subject=ReFED - "+share.title;
+        mail_url = 'mailto:?subject= ' + share.title;
 
     var close = $('#share-instructions .close');
     var share_instructions = $('#share-instructions');
@@ -58,6 +59,10 @@ $.behaviors('.share', initShare);
                       .addClass('active');
 
     close.on('click', function(){
+      share_instructions.removeClass('active');
+    });
+
+    $('#pageContent').on('click', function(){
       share_instructions.removeClass('active');
     });
   }
