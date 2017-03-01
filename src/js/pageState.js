@@ -36,6 +36,7 @@ window.addEventListener('popstate', function(event) {
     var hash = location.hash;
     window.console.log("pageState: Initialized");
     if (hash) {
+      // run a check to see if there are any tabs with matching href
       window.console.log("pageState: Activating Tab");
       activateTab(hash);
     }
@@ -52,8 +53,8 @@ window.addEventListener('popstate', function(event) {
     // window.console.log("Activating Tab: ", hash);
     var tabClass = "activeTab_" + hash.replace("#","");
 
-    // TODO - Examine this method. Potential refactor?
-    pageScroll('#pageContent', 120);
+    // TODO - Examine this method. Potential refactor? - Look at this with Innovator Database.
+    // pageScroll('#pageContent', 120);
 
     // Is there a tab button?
     // If so... activate the tab
