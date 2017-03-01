@@ -3,6 +3,10 @@
   top: 120px;
   width: 100%;
   z-index: 99;
+  &:before, &:after {
+    display: table;
+    content: " ";
+  }
   section {
     position: absolute;
     display: flex;
@@ -100,11 +104,11 @@
   right: 5px;
 }
 
-.activeTab_innovatorAnalysis {
-  .mixitup-page-stats {
-    display: none;
-  }
-}
+// .activeTab_innovatorAnalysis {
+//   .mixitup-page-stats {
+//     display: none;
+//   }
+// }
 
 // Page States
 
@@ -136,6 +140,9 @@ body.condensed-header {
   }
   .innovatorDatabase_menu section {
     min-height: 0;
+    .container {
+      width: 100%;
+    }
   }
 }
 
