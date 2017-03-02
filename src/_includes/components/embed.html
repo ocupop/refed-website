@@ -1,16 +1,15 @@
 <div id="sharing-is-caring" class="">
   <menu>
     <a class="button" href="{{ '/downloads/ReFED-Data-Set.xlsx' | prepend: site.baseurl }}" download>Download Data Set <i class="icon icon-download"></i></a>
-    <button id="share-button" class="button">Share Data Set <i class="icon icon-share"></i></button>
+    <button id="share-button" class="button share">Share Data Set <i class="icon icon-share"></i></button>
   </menu>
-  <div id="instructions" class="content">
-    <!-- Nav tabs -->
+  <!-- <div id="instructions" class="content">
+  
     <ul role="tablist" class="hide">
       <li role="presentation"><a href="#" rel="#share-instructions" aria-controls="share-instruction" role="tab" data-toggle="tab">Share</a></li>
       <li role="presentation" class="active"><a href="#" rel="#embed-instructions" aria-controls="embed-instruction" role="tab" data-toggle="tab">Embed</a></li>
       <li role="presentation"><a href="#" rel="#email-instructions" aria-controls="email-instruction" role="tab" data-toggle="tab">Email</a></li>
     </ul>
-    <!-- Tab panes -->
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="share-instructions">
         {% include nav/sharenav.html %}
@@ -21,14 +20,14 @@
       </div>
       <div role="tabpanel" class="tab-pane" id="email-instructions">...</div>
     </div>
-  </div>
+  </div> -->
 </div>
 <script type="text/javascript">
-  $("#share-button").on('click', function() {
-    $("#instructions").toggle();
-    $(this).toggleClass('active');
-  });
-  $("#instructions input").on("click", function () {
-    $(this).select();
-  });
+  // $("#share-button").on('click', function() {
+  //   $("#instructions").toggle();
+  //   $(this).toggleClass('active');
+  // });
+  // $("#instructions input").on("click", function () {
+  //   $(this).select();
+  // });
 </script>

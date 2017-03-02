@@ -81,6 +81,9 @@ $.behaviors('.share', initShare);
     close.on('click', function(){
       share_instructions.removeClass('active');
     });
+    $("#share-instructions input").on("click", function () {
+      $(this).select();
+    });
   }
 
 })();
