@@ -12,7 +12,7 @@
               <li><a href="{{ '/about#foundations-list' | prepend: site.baseurl }}">Foundations List</a></li>
             </ul>
           </li>
-          <li><a href="{{ '/resources' | prepend: site.baseurl }}">Resources</a></li>
+          <li><a href="{{ '/content-hub/#news' | prepend: site.baseurl }}">Resources</a></li>
         </ul>
       </div>
     </div>
@@ -57,7 +57,7 @@
               </ul>
             </li>
             <li>
-              <a href="{{ '/solution' | prepend: site.baseurl }}">Solutions</a>
+              <a href="{{ '/solutions' | prepend: site.baseurl }}">Solutions</a>
               <ul>
                 {% for tab in site.data.tabs %}
                 {% capture link %}/solution?sort={{ tab.slug }}#cards{% endcapture %}
@@ -68,7 +68,7 @@
           </ul>
           <ul class="report-sitemap">
             <li>
-              <a href="/stakeholder">Stakeholders</a>
+              <a href="/stakeholders">Stakeholders</a>
               <ul>
                 {% for stakeholder in site.stakeholders %}
                 <li><a href="{{ stakeholder.url | prepend:site.baseurl }}">{{ stakeholder.title }}</a></li>
