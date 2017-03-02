@@ -52,10 +52,11 @@
   margin-top: 10px;
   .caret {
     @include transition(.5s);
+    transform: rotate(-180deg);
   }
   &[data-sort="date:desc"] {
     .caret {
-      transform: rotate(-180deg);
+      transform: rotate(0deg);
     }
   }
 }
