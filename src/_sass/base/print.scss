@@ -1,14 +1,26 @@
 @media print {
-  #toolnav, .mobilenav, .hidden-for-print, #toolFooter {
+  #toolnav, 
+  .mobilenav,
+  #toolHeader,
+  #toolFooter, 
+  #mainNav,
+  #pageHeader,
+  #pageFooter,
+  #share-instructions,
+  #thanks,
+  .button,
+  .unclamp {
     display: none;
-  }
-  #toolHeader {
-    position: relative;
-    top: auto;
-    left: auto;
   }
   
   #pageContent {
     margin-top: 0 !important;
+  }
+
+  .lineClamp {
+    height: auto;
+    &:after {
+      display: none;
+    }
   }
 }
