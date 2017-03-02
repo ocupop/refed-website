@@ -79,11 +79,24 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .article {
-    padding: 20px;
-    .article-image {
-      height: 180px;
-        background-size: contain;
+  .card {
+    &.article-card {
+      padding-bottom: 0;
+      margin:0;
     }
   }
+  .article {
+    &.single-article{
+      .article-image {
+        height: 200px;
+      }
+    }
+    .article-image {
+      height: 180px;
+    }
+  }
+  .sort-articles {
+    margin-top: 0;
+  }
+
 }
