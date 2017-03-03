@@ -112,6 +112,7 @@ var active_category;
     if(testing) {
 
       // ========== Temporarily deactivate the wizard for testing
+      window.console.log("TESTING MODE: MAPNAV");
       activateMap(mapnav, search);
 
     } else {
@@ -161,14 +162,14 @@ var active_category;
 
       nav_category.find('.study-filter').on('click', function(e) {
 
-        window.console.log("TOGGLING A STUDY FILTER");
+        // window.console.log("TOGGLING A STUDY FILTER");
         toggleStudyFilter($(this));
 
       });
 
       // Hide all of the collapsible items in the other categories when you first open a category
       nav_category.find('.filters').on('show.bs.collapse', function() {
-        window.console.log("FILTER ACCORDION");
+        // window.console.log("FILTER ACCORDION");
         $('.filters').not($(this)).collapse('hide');
       });
       
@@ -187,11 +188,22 @@ var active_category;
 
   function getActiveCategory() {
     return $('.policyFinder_map').attr('data-category');
-
-    // return $('.policyFinder_map').attr('data-category');
+  }
+  function getActiveStudies() {
+    return $('.policyFinder_map').attr('data-studies');
   }
   function setActiveCategory(category) {
     window.console.log("SETTING ACTIVE CATEGORY", category);
+    // Clear all input on other categories
+    $('.nav_category').each(function() {
+      var nav_category = $(this).data('category');
+      if(nav_category != category) {
+        $(this).find('input').prop({
+          checked: false,
+          disabled: false
+        });
+      }
+    });
     $('.policyFinder_map').attr('data-category', category);
 
   }
@@ -212,9 +224,15 @@ var active_category;
     var subfilters = input.parent().find('.subfilters');
     var category = input.closest('.nav_category').data('category');
     var key = input.data('key');
+    var active_studies = getActiveStudies();
 
     // Set the active category
     setActiveCategory(category);
+
+    if(category != active_studies) {
+      // Remove the active studies
+      clearStudies();
+    }
 
     // Set the active key
     setActiveKey(key);
@@ -243,9 +261,15 @@ var active_category;
   function setSubFilter(input) {
     var category = input.closest('.nav_category').data('category');
     var key = input.data('key');
+    var active_studies = getActiveStudies();
 
     // Set the active category
     setActiveCategory(category);
+
+    if(category != active_studies) {
+      // Remove the active studies
+      clearStudies();
+    }
 
     // Set the active key
     setActiveKey(key);
@@ -282,7 +306,7 @@ var active_category;
   }
 
   function clearStudies() {
-    window.console.log("CLEARING STUDIES");
+    // window.console.log("CLEARING STUDIES");
     $('.study-filter').prop({
       checked: false
     });
