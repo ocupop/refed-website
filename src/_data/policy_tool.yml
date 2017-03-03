@@ -188,8 +188,8 @@ animal_feed:
     - title: Connecticut Animal Feed Regulations
       summary: 'Even though the practice of feeding food scraps to animals is safe for human and animal health, several states either ban the feeding of all food scraps, animal-derived food scraps, and/or vegetable-derived food scraps to animals, specifically swine. Connecticut is one of many states that provide a good model for regulating feeding food scraps to animals. Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and is fed by a licensed facility. All other waste, including vegetable waste, may be fed to swine without heat treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit. As long as food scraps are properly handled according to applicable federal food safety laws and regulations, feeding food scraps to animals can be a safe and beneficial practice.'
       state: connecticut
-      lat: 41.5184211
-      long: -74.2192854
+      lat: 42.5184211
+      long: -72.5192854
     - title: North Carolina Animal Feed Regulations
       summary: 'Several states require the heat treatment of non-animal derived waste, yet most of this waste is generally safe for consumption by most animals. The cost of heat-treatment equipment or services may discourage farms from feeding food scraps to animals. North Carolina, the second-largest producer of swine, is one of many states that provide a good model for regulating feeding food scraps to animals. It allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, such as vegetable-derived waste, may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals.'
       state: north-carolina
@@ -293,7 +293,7 @@ organics_recycling_mandates:
     - title: New York City Mandates on Food Scraps and Recycling
       summary: 'New York City’s organic recycling mandate, which went into effect in July 2016, requires certain food service establishments in hotels, arenas and stadiums, and certain food manufacturers and wholesalers source-separate their organic material and either arrange for the transportation of organic waste material, including food waste, to an appropriate processing facility, or to process the food waste on-site.'
       state: new-york
-      lat: '40.7128'
+      lat: '41.7128'
       long: '-75.0059'
     - title: Austin Restaurants to Recycle Food Scraps
       summary: 'Austin, Texas, amended its organic waste recycling law, the Universal Recycling Ordinance, so as to require all restaurants 5,000 square feet and larger to compost food scraps by 2017. This amendment to the existing ordinance was passed as part of the city’s Zero Waste Initiative, which seeks to reduce the amount of trash sent to the city’s landfills by 90% by 2040.'
