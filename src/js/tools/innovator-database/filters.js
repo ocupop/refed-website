@@ -45,11 +45,11 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         menu.attr('data-menu', '');
       } else {
         // Set the menu to search
-        $(this).find('.close').on('click', function() {
-          menu.attr('data-menu', '');
-        });
         menu.attr('data-menu', 'search');
       }
+    });
+    $('.innovatorDatabase_searchMenu .close').on('click', function() {
+      menu.attr('data-menu', '');
     });
   }
 
@@ -190,6 +190,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function setFilters(state) {
+    window.console.log("setFilters");
     var selector = state.activeFilter.selector;
 
     // Construct an object representing the current state of each
@@ -197,9 +198,10 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
     var filters = getFilters();
 
-    // Create a URL search string by serializing the filters object
+    var hashState = deserializeHash();
 
-    var newSearch = '#' + serializeFiltersState(filters);
+    // Create a URL search string by serializing the filters object
+    var newSearch = '#active_tab=' + hashState.active_tab + '&' + serializeFiltersState(filters);
 
     if (selector === targetSelector && window.location.search) {
         // Equivalent to filter "all", remove the search
