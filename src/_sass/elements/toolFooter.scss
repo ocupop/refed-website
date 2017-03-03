@@ -41,7 +41,7 @@
     height: 40px;
   }
   .socialnav {
-    height: 44px;
+    height: 66px;
     a {
       padding: 0;
       color: #fff;
@@ -57,12 +57,12 @@
 
 
 @media all and (max-width: $screen-md-max) {
-  #toolFooter {
-    .socialnav {
-      margin-bottom: 0;
-      height: 66px;
-    }
-  }
+  // #toolFooter {
+  //   .socialnav {
+  //     margin-bottom: 0;
+  //     height: 66px;
+  //   }
+  // }
 }
 
 @media all and (max-width: $screen-sm-max) {
@@ -90,7 +90,7 @@
     }
     .socialnav {
       margin-bottom: 0;
-      height: 44px;
+      //height: 44px;
     }
   }
 }
