@@ -245,7 +245,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     });
 
 
-    window.console.log("Analysis Data: ", data);
+    // window.console.log("Analysis Data: ", data);
     return data;
 
   }

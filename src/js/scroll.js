@@ -9,13 +9,13 @@ $.extend($.scrollTo.defaults, {
   }
 });
 
-$(window).on('load', function (e){
-  if (window.location.hash) {
-    var h = window.location.hash.slice(0,-1) 
-    // window.console.log("scroll.js:", h);
-    $.scrollTo($(h));
-  }
-});
+// $(window).on('load', function (e){
+//   if (window.location.hash) {
+//     var h = window.location.hash.slice(0,-1) 
+//     // window.console.log("scroll.js:", h);
+//     $.scrollTo($(h));
+//   }
+// });
 
 // When a user scrolls to 50px add class  condensed-header to body
 $(window).scroll(function(){

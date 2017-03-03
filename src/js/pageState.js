@@ -33,12 +33,18 @@ $.behaviors('body', pageState);
 // });
 
   function pageState(body) {
-    var hash = location.hash;
+    // var hash = location.hash;
     window.console.log("pageState: Initialized");
-    if (hash) {
-      // run a check to see if there are any tabs with matching href
-      window.console.log("pageState: Activating Tab");
-      activateTab(hash);
+    // if (hash) {
+    //   // run a check to see if there are any tabs with matching href
+    //   window.console.log("pageState: Activating Tab");
+    //   activateTab(hash);
+    // }
+    var hashState = deserializeHash();
+    window.console.log(hashState);
+
+    if(hashState.active_tab) {
+      activateTab(hashState.active_tab);
     }
 
   }
@@ -49,40 +55,56 @@ $.behaviors('body', pageState);
 
   }
 
-  window.activateTab = function(hash) {
-    // window.console.log("Activating Tab: ", hash);
-    var tabClass = "activeTab_" + hash.replace("#","");
+  function deserializeHash() {
+      var hash    = window.location.hash.replace(/^#/g, '');
+      window.console.log(hash);
+      var obj     = null;
+      var groups  = [];
 
-    // TODO - Examine this method. Potential refactor? - Look at this with Innovator Database.
-    // pageScroll('#pageContent', 120);
+      if (!hash) return obj;
 
-    // Is there a tab button?
-    // If so... activate the tab
-    // otherwise look for an anchor and scroll to there.
+      obj = {};
+      groups = hash.split('&');
 
-    // Activate Matching Bootstrap Tab
-    $('[data-toggle="tab"]').filter('[href$="'+hash+'"]').tab("show");
+      window.console.log(groups);
+
+      groups.forEach(function(group) {
+          var pair = group.split('=');
+          var groupName = pair[0];
+
+          obj[groupName] = pair[1].split(',');
+      });
+
+      return obj;
+  }
 
 
 
-    // Update URL and push a history state
+  window.activateTab = function(tab) {
+    var tabClass = "activeTab_" + tab;
+
+    // Activate Matching Tab
+    $('[data-toggle="tab"]').filter('[href$="'+tab+'"]').tab("show");
+
+    // Update the body class to reflect the active tab
     $('body').removeClass(function(index, className) {
-                return (className.match (/(^|\s)activeTab_\S+/g) || []).join(' ');
-              })
-             .addClass(tabClass);
+        return (className.match (/(^|\s)activeTab_\S+/g) || []).join(' ');
+      })
+     .addClass(tabClass);
 
-    if (typeof hash != 'undefined' && hash != '') {
-      if (history && history.pushState) {
-        // window.console.log("DATA:", data);
-        window.history.pushState('', 'ReFED', window.location.pathname + window.location.search + hash);
-      } else {
-        scrollV = document.body.scrollTop;
-        scrollH = document.body.scrollLeft;
-        window.location.hash = hash;
-        document.body.scrollTop = scrollV;
-        document.body.scrollLeft = scrollH;
-      }
-    }
+
+    // if (typeof hash != 'undefined' && hash != '') {
+    //   if (history && history.pushState) {
+    //     // window.console.log("DATA:", data);
+    //     window.history.pushState('', 'ReFED', window.location.pathname + window.location.search + hash);
+    //   } else {
+    //     scrollV = document.body.scrollTop;
+    //     scrollH = document.body.scrollLeft;
+    //     window.location.hash = hash;
+    //     document.body.scrollTop = scrollV;
+    //     document.body.scrollLeft = scrollH;
+    //   }
+    // }
   }
 
 })();
