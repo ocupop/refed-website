@@ -32,7 +32,8 @@
     "mixitup": "^2.1.11",
     "underscore": "^1.8.3",
     "waypoints": "^4.0.0",
-    "lunr.js": "lunr#^0.7.2"
+    "lunr.js": "lunr#^0.7.2",
+    "d3-tip": "^0.7.1"
   },
   "overrides": {
     "bootstrap-multiselect": {
@@ -68,7 +69,9 @@
       ]
     },
     "lunr.js": {
-      "main": ["lunr.min.js"]
+      "main": [
+        "lunr.min.js"
+      ]
     },
     "mixitup": {
       "main": [

@@ -137,24 +137,15 @@
 
 
 @media all and (max-width: $screen-md-max) {
-  .innovatorDatabase_categories  {
 
-  }
 }
 
 @media all and (max-width: $screen-sm-max) {
-  .innovatorDatabase_categories  {
-    
-  }
   .innovatorDatabase_analysisCharts {
     min-height: 570px;
   }
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .innovatorDatabase_categories {
-    .button {
-      margin-top: 0;
-    }
-  }
+
 }

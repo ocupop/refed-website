@@ -19,11 +19,11 @@
  */
 (function() {
 
-$.behaviors('.innovatorDatabase_categories', innovatorDatabase_categories);
+$.behaviors('.innovatorDatabase_analysisMenu', innovatorDatabase_analysisMenu);
 $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
-  function innovatorDatabase_categories(menu) {
+  function innovatorDatabase_analysisMenu(menu) {
     menu = $(menu);
 
     $('[data-chart]').on('click', function() {
@@ -48,21 +48,18 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     $('[data-target="#innovatorAnalysis"]')
         .on('shown.bs.tab', function(e) {
+          // Scroll to top
           window.scrollTo(0, 0);
+          // Set active menu
+          $('.innovatorDatabase_menu').attr('data-menu', 'analysis');
+
           // Fix for hidden content in tab
           var target = "#" + $(this).attr('data-target').replace(/^#/g, '');
           $(target).find('.ct-chart').each(function(el, tab) {
             // Resize Charts on tab load
             tab.__chartist__.update();
           });
-
-          $('.innovatorDatabase_menu section').removeClass('active');
-          menu.addClass('active');
-        })
-        .on('hide.bs.tab', function(e) {
-          menu.removeClass('active');
         });
-
   }
 
 

@@ -39,6 +39,10 @@
   // }
 }
 
+.tooltip {
+  z-index: 9999;
+}
+
 .food-waste-policy-finder {
   #tooltip {
     .button {

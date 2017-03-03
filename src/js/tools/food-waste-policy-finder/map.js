@@ -73,7 +73,14 @@ var active_category;
         .attr("height", 28)
         .attr("opacity", 0.7)
         .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
-        .attr('class', function(d) { return "muni "+d.category; });
+        .attr('class', function(d) { return "muni "+d.category; })
+        .attr('data-toggle', "tooltip")
+        .attr('data-placement', "bottom")
+        .attr('title', function(d) { return d.properties.title; })
+        .on('click', function(d) {
+          // window.console.log($(this), this);
+          $(this).tooltip();
+        });
         // .append("path")
         // .attr('d', path.pointRadius(10))
         // .attr('class', "municipality");

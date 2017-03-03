@@ -22,7 +22,7 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
  */
 (function() {
 
-$.behaviors('.innovatorDatabase_filters', innovatorDatabase_filters);
+$.behaviors('.innovatorDatabase_filtersMenu', innovatorDatabase_filtersMenu);
 $.behaviors('.filterToggle', initToggle);
 $.behaviors('.innovatorDatabase_menu', initMenu);
 
@@ -39,19 +39,28 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     }
     
     $('.searchLink').on('click', function() {
-      $('.innovatorDatabase_categories, .innovatorDatabase_filters').removeClass('active');
-      $('.innovatorDatabase_search').addClass('active');
+      var search = menu.attr('data-menu');
+      if(search == 'search') {
+        // Remove the attribute value so that the styles fallback to the body class for active tab
+        menu.attr('data-menu', '');
+      } else {
+        // Set the menu to search
+        $(this).find('.close').on('click', function() {
+          menu.attr('data-menu', '');
+        });
+        menu.attr('data-menu', 'search');
+      }
     });
   }
 
   function initToggle(container) {
     container = $(container);
     container.on('click', function() {
-      $('.innovatorDatabase_filters').toggleClass('open');
+      $('.innovatorDatabase_filtersMenu').toggleClass('open');
     });
   }
 
-  function innovatorDatabase_filters(filters) {
+  function innovatorDatabase_filtersMenu(filters) {
     filters = $(filters);
     var list = $('.innovatorDatabase_list').first();
 
