@@ -491,9 +491,6 @@ var active_category;
       })
   }
 
-  window.onhashchange = function(e) {
-    window.console.log("map.js: window.onhashchange()", e);
-  };
 
 })();
 

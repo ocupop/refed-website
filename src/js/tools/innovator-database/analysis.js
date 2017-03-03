@@ -46,24 +46,27 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       
     });
 
-    $('a[href$="#innovatorAnalysis"]').on('shown.bs.tab', function(e) {
-      $(e.currentTarget.hash).find('.ct-chart').each(function(el, tab) {
-        tab.__chartist__.update();
-      });
+    $('[data-target="#innovatorAnalysis"]')
+        .on('shown.bs.tab', function(e) {
+          window.scrollTo(0, 0);
+          // Fix for hidden content in tab
+          var target = "#" + $(this).attr('data-target').replace(/^#/g, '');
+          $(target).find('.ct-chart').each(function(el, tab) {
+            // Resize Charts on tab load
+            tab.__chartist__.update();
+          });
 
-      $('.innovatorDatabase_menu section').removeClass('active');
-      menu.addClass('active');
-    });
-    $('a[href$="#innovatorAnalysis"]').on('hide.bs.tab', function(e) {
-      menu.removeClass('active');
-    });
-
+          $('.innovatorDatabase_menu section').removeClass('active');
+          menu.addClass('active');
+        })
+        .on('hide.bs.tab', function(e) {
+          menu.removeClass('active');
+        });
 
   }
 
 
   function initCharts(container) {
-    // container = $(container);
 
     var data = buildChartData();
 
@@ -189,12 +192,6 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     });
 
 
-    $('a[href$="#innovatorAnalysis"]').on('show.bs.tab', function(e) {
-      // $(window).trigger('resize');
-      // window.fireEvent('resize');
-      window.dispatchEvent(new Event('resize'));
-    });
-
   }
 
   function buildChartData() {
@@ -265,7 +262,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       .find('.analysis_details').show().end()
       .find('.analysis_details a').each(function() {
         var h = $(this).attr('href').replace(/innovator_category=.*/,'innovator_category=');
-        window.console.log("HREF:", h);
+        // window.console.log("HREF:", h);
         h += el.attr('category');
         $(this).attr('href', h);
       }).show().end()

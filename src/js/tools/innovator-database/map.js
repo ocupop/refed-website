@@ -41,13 +41,15 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         initMap(container);
     }
 
-    $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
-      $('.innovatorDatabase_menu section').removeClass('active');
-      $('.innovatorDatabase_filters').addClass('active');
-    });
-    $('a[href$="#innovatorMap"]').on('hide.bs.tab', function(e) {
-      $('.innovatorDatabase_filters').removeClass('active');
-    });
+    $('[data-target="#innovatorMap"]')
+      .on('shown.bs.tab', function(e) {
+        window.scrollTo(0, 0);
+        $('.innovatorDatabase_menu section').removeClass('active');
+        $('.innovatorDatabase_filters').addClass('active');
+      })
+      .on('hide.bs.tab', function(e) {
+        $('.innovatorDatabase_filters').removeClass('active');
+      });
 
     $(window).on('mixStart', function(event) {
       
@@ -102,7 +104,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     script.src = '/data/innovators.js';
     document.getElementsByTagName('head')[0].appendChild(script);
 
-    $('a[href$="#innovatorMap"]').on('shown.bs.tab', function(e) {
+    $('[data-target="#innovatorMap"]').on('shown.bs.tab', function(e) {
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
       innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});

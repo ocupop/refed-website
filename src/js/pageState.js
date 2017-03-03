@@ -32,32 +32,24 @@ $.behaviors('body', pageState);
 //   }
 // });
 
-  function pageState(body) {
-    // var hash = location.hash;
-    window.console.log("pageState: Initialized");
-    // if (hash) {
-    //   // run a check to see if there are any tabs with matching href
-    //   window.console.log("pageState: Activating Tab");
-    //   activateTab(hash);
-    // }
-    var hashState = deserializeHash();
-    window.console.log(hashState);
 
-    if(hashState.active_tab) {
+  function pageState(body) {
+    window.console.log("pageState: Initialized");
+    // Deserialize the hash on page load
+    var hashState = deserializeHash();
+    // window.console.log("DETERMINE HASH STATE ON PAGE LOAD:", hashState);
+    
+    // Activate Tabs
+    if(hashState && hashState.active_tab) {
       activateTab(hashState.active_tab);
     }
 
   }
 
-  function updateContent(data) {
-    // Set activeTab
-    $(data.activeTab).addClass('active').siblings().removeClass('active');
 
-  }
-
-  function deserializeHash() {
+  window.deserializeHash = function() {
       var hash    = window.location.hash.replace(/^#/g, '');
-      window.console.log(hash);
+      window.console.log("deserializeHash:", hash);
       var obj     = null;
       var groups  = [];
 
@@ -66,45 +58,108 @@ $.behaviors('body', pageState);
       obj = {};
       groups = hash.split('&');
 
-      window.console.log(groups);
+      window.console.log("DESERIALIZE HASH: ", groups);
 
       groups.forEach(function(group) {
           var pair = group.split('=');
+          window.console.log("DESERIALIZE HASH: pair ");
           var groupName = pair[0];
-
-          obj[groupName] = pair[1].split(',');
+          // TODO - Avoiding errors on simple anchors - Needs refactor
+          if(pair[1]) {
+            obj[groupName] = pair[1].split(',');
+          }
       });
 
       return obj;
   }
 
 
+  function serializeHashState(state) {
+      var output = '';
 
-  window.activateTab = function(tab) {
+      for (var key in state) {
+        // window.console.log("KEY/VALUE:", key, state[key]);
+          var values = state[key];
+
+          if (!values.length) continue;
+
+          output += key + '=';
+          output += values.join(',');
+          output += '&';
+      };
+
+      output = output.replace(/&$/g, '');
+
+      return output;
+  }
+
+  window.setHash = function(state) {
+    // Create a URL hash string by serializing the state object
+    var newHash = '#' + serializeHashState(state);
+
+    // window.console.log("NEW HASH STATE: ", newHash);
+
+
+    if (history && history.pushState) {
+      // window.console.log("DATA:", data);
+      window.history.pushState(null, document.title, window.location.pathname + window.location.search + newHash);
+    } else {
+      // TODO - Understand this case scenario
+      scrollV = document.body.scrollTop;
+      scrollH = document.body.scrollLeft;
+      window.location.hash = newHash;
+      document.body.scrollTop = scrollV;
+      document.body.scrollLeft = scrollH;
+    }
+
+  }
+
+  window.setActiveTabInHash = function(tab) {
+    var currentState = deserializeHash();
+    newState = currentState ? currentState : {};
+
+    newState.active_tab = [tab];
+    setHash(newState);
+
+  }
+
+  window.setTabClass = function(tab) {
+    // TODO - Update CSS so that we can just add a class of tab value to the body.
     var tabClass = "activeTab_" + tab;
-
-    // Activate Matching Tab
-    $('[data-toggle="tab"]').filter('[href$="'+tab+'"]').tab("show");
+    // window.console.log("tabClass:", tabClass);
 
     // Update the body class to reflect the active tab
     $('body').removeClass(function(index, className) {
         return (className.match (/(^|\s)activeTab_\S+/g) || []).join(' ');
       })
      .addClass(tabClass);
-
-
-    // if (typeof hash != 'undefined' && hash != '') {
-    //   if (history && history.pushState) {
-    //     // window.console.log("DATA:", data);
-    //     window.history.pushState('', 'ReFED', window.location.pathname + window.location.search + hash);
-    //   } else {
-    //     scrollV = document.body.scrollTop;
-    //     scrollH = document.body.scrollLeft;
-    //     window.location.hash = hash;
-    //     document.body.scrollTop = scrollV;
-    //     document.body.scrollLeft = scrollH;
-    //   }
-    // }
   }
+
+  activateTab = function(tab) {
+    window.console.log("activateTab: ", tab);
+    var link = $('[data-target="#'+tab+'"]');
+
+    // Show the tab content
+    link.tab('show');
+
+    // Set the body class
+    setTabClass(tab);
+  }
+
+  window.onhashchange = function(e) {
+    window.console.log("HASH CHANGE: update activeTab", e);
+    // window.console.log("HASH CHANGE: current_url", window.location);
+    // location.reload();
+      // var groupsState = deserializeSearch();
+      // var search      = window.location.search;
+
+      // // Compare new hash with active hash
+
+      // if (search === activeSearch) return; // no change
+
+      // activeSearch = search;
+
+      // filterMixerByHashState(groupsState, true);
+  };
 
 })();

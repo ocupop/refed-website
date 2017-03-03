@@ -32,6 +32,11 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
   function initMenu(menu) {
     menu = $(menu);
     // window.console.log('initMenu: Loaded menu');
+
+    // if no hash exists here then activate the first tab
+    if(!location.hash) {
+      $(('[data-toggle="tab"]:first')).tab('show');
+    }
     
     $('.searchLink').on('click', function() {
       $('.innovatorDatabase_categories, .innovatorDatabase_filters').removeClass('active');
@@ -69,15 +74,15 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         hidePageListIfSinglePage: true
       },
       callbacks: {
-          onMixEnd: setSearch // Call the setSearch() method at the end of each operation
+          onMixEnd: setFilters // Call the setFilters() method at the end of each operation
       }
     });
 
-    var groupsState = deserializeSearch();
+    var hashState = deserializeHash();
 
-    if (groupsState) {
+    if (hashState && hashState.filters) {
         // If a valid groupsState object is present on page load, filter the mixer
-        filterMixerByGroupsState(groupsState);
+        filterMixerByHashState(hashState.filters);
     }
 
     input = $('#searchFilter');
@@ -101,26 +106,26 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    * @return {object|null}
    */
 
-   function deserializeSearch() {
-       // var hash    = window.location.hash.replace(/^#/g, '');
-       var search  = window.location.search.replace(/^\?/g, '');
-       var obj     = null;
-       var groups  = [];
+   // function deserializeSearch() {
+   //     // var hash    = window.location.hash.replace(/^#/g, '');
+   //     var search  = window.location.search.replace(/^\?/g, '');
+   //     var obj     = null;
+   //     var groups  = [];
 
-       if (!search) return obj;
+   //     if (!search) return obj;
 
-       obj = {};
-       groups = search.split('&');
+   //     obj = {};
+   //     groups = search.split('&');
 
-       groups.forEach(function(group) {
-           var pair = group.split('=');
-           var groupName = pair[0];
+   //     groups.forEach(function(group) {
+   //         var pair = group.split('=');
+   //         var groupName = pair[0];
 
-           obj[groupName] = pair[1].split(',');
-       });
+   //         obj[groupName] = pair[1].split(',');
+   //     });
 
-       return obj;
-   }
+   //     return obj;
+   // }
 
   /**
    * Serializes a groupsState object into a string.
@@ -129,11 +134,11 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    * @return  {string}
    */
 
-  function serializeGroupsState(groupsState) {
+  function serializeFiltersState(filters) {
       var output = '';
 
-      for (var key in groupsState) {
-          var values = groupsState[key];
+      for (var key in filters) {
+          var values = filters[key];
 
           if (!values.length) continue;
 
@@ -154,18 +159,18 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    * @return {object}
    */
 
-  function getGroupsState() {
+  function getFilters() {
       // NB: You will need to rename the object keys to match the names of
       // your project's filter groups – these should match those defined
       // in your HTML.
 
-      var groupsState = {
+      var filters = {
         business_model: mixer.getFilterGroupSelectors('business_model').map(getValueFromSelector),
         innovator_category: mixer.getFilterGroupSelectors('innovator_category').map(getValueFromSelector),
         hierarchy: mixer.getFilterGroupSelectors('hierarchy').map(getValueFromSelector)
       };
 
-      return groupsState;
+      return filters;
   }
 
   /**
@@ -175,17 +180,17 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    * @return  {void}
    */
 
-  function setSearch(state) {
+  function setFilters(state) {
     var selector = state.activeFilter.selector;
 
     // Construct an object representing the current state of each
     // filter group
 
-    var groupsState = getGroupsState();
+    var filters = getFilters();
 
-    // Create a URL search string by serializing the groupsState object
+    // Create a URL search string by serializing the filters object
 
-    var newSearch = '?' + serializeGroupsState(groupsState);
+    var newSearch = '#' + serializeFiltersState(filters);
 
     if (selector === targetSelector && window.location.search) {
         // Equivalent to filter "all", remove the search
@@ -204,18 +209,18 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
   /**
    * Filters the mixer and updates the multifilter UI using a provided
-   * groupsState object.
+   * filters object.
    *
-   * @param  {object|null}    groupsState
+   * @param  {object|null}    filters
    * @param  {boolean}        [animate]
    * @return {Promise}
    */
 
-  function filterMixerByGroupsState(groupsState, animate) {
+  function filterMixerByHashState(filters, animate) {
 
-      var business_model = (groupsState && groupsState.business_model) ? groupsState.business_model : [];
-      var innovator_category = (groupsState && groupsState.innovator_category) ? groupsState.innovator_category : [];
-      var hierarchy = (groupsState && groupsState.hierarchy) ? groupsState.hierarchy : [];
+      var business_model = (filters && filters.business_model) ? filters.business_model : [];
+      var innovator_category = (filters && filters.innovator_category) ? filters.innovator_category : [];
+      var hierarchy = (filters && filters.hierarchy) ? filters.hierarchy : [];
 
       mixer.setFilterGroupSelectors('business_model', business_model.map(getSelectorFromValue));
       mixer.setFilterGroupSelectors('innovator_category', innovator_category.map(getSelectorFromValue));
@@ -254,21 +259,25 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
   // TB: This may or may not be the desired behavior for your project. If you don't
   // want MixItUp operations to count as individual history items, simply use
-  // `history.replaceState()` instead of `history.pushState()` within the `setSearch()`
+  // `history.replaceState()` instead of `history.pushState()` within the `setFilters()`
   // function above. In which case this handler would no longer be neccessary.
 
-  window.onhashchange = function() {
-      var groupsState = deserializeSearch();
-      var search      = window.location.search;
 
-      // Compare new hash with active hash
+  // window.onhashchange = function(e) {
+  //   window.console.log("HASH CHANGE: update activeFilters", e);
+  //   // window.console.log("HASH CHANGE: current_url", window.location);
+  //   // location.reload();
+  //     // var groupsState = deserializeSearch();
+  //     // var search      = window.location.search;
 
-      if (search === activeSearch) return; // no change
+  //     // // Compare new hash with active hash
 
-      activeSearch = search;
+  //     // if (search === activeSearch) return; // no change
 
-      filterMixerByGroupsState(groupsState, true);
-  };
+  //     // activeSearch = search;
+
+  //     // filterMixerByHashState(groupsState, true);
+  // };
 
   function searchFilter(input, mixer) {
     var state = mixer.getState();

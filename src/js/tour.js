@@ -106,7 +106,7 @@ $.behaviors('.start-tour', start_tour);
 
     });
     tour_backdrop.on('click', function() {
-      alert('clicked');
+      // alert('clicked');
       // tour.end();
     });
   }

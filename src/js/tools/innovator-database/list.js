@@ -63,13 +63,15 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
       }
     });
 
-    $('a[href$="#innovatorList"]').on('shown.bs.tab', function(e) {
-      $('.innovatorDatabase_menu section').removeClass('active');
-      $('.innovatorDatabase_filters').addClass('active');
-    });
-    $('a[href$="#innovatorList"]').on('hide.bs.tab', function(e) {
-      $('.innovatorDatabase_filters').removeClass('active');
-    });
+    $('[data-target="#innovatorList"]')
+      .on('shown.bs.tab', function(e) {
+        window.scrollTo(0, 0);
+        $('.innovatorDatabase_menu section').removeClass('active');
+        $('.innovatorDatabase_filters').addClass('active');
+      })
+      .on('hide.bs.tab', function(e) {
+        $('.innovatorDatabase_filters').removeClass('active');
+      });
 
   }
 

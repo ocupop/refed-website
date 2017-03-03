@@ -1,13 +1,13 @@
 //initiate localscroll
-$.localScroll();
+// $.localScroll();
 
-$.extend($.scrollTo.defaults, {
-  axis: 'y',
-  duration: 800,
-  offset: {
-    top: -130
-  }
-});
+// $.extend($.scrollTo.defaults, {
+//   axis: 'y',
+//   duration: 800,
+//   offset: {
+//     top: -130
+//   }
+// });
 
 // $(window).on('load', function (e){
 //   if (window.location.hash) {

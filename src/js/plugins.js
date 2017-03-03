@@ -36,10 +36,6 @@ if (!Modernizr.input.placeholder) {
   })
 }
 
-// TODO - Figure out why this was causing issues with the Chartist library - AAARGGGGHHHH.
-// String.prototype.trim = function(){
-//   return this.replaceAll(" ", "-").toLowerCase();
-// };
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;

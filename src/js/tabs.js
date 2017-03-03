@@ -21,12 +21,21 @@
 $.behaviors('[data-toggle="tab"]', initTab);
 
   function initTab(tab) {
+    // window.console.log("initTab: tab on page");
     tab = $(tab);
 
     tab.on('shown.bs.tab', function (e) {
-      var hash = e.target.hash;
-      activateTab(hash);
+      var target = $(this).attr('data-target').replace(/^#/g, '');
+      // window.console.log("shown.tab: ", target);
+
+      // Update the body class
+      setTabClass(target);
+
+      // Update the hash
+      setActiveTabInHash(target);
+
     });
   }
+
 
 })();
