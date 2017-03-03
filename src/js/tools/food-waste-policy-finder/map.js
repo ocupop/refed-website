@@ -23,6 +23,7 @@
 $.behaviors('.policyFinder_map', initMap);
 $.behaviors('.mapnav', initMapNav);
 
+var active_category;
 
   function initMap(map) {
 
@@ -105,177 +106,232 @@ $.behaviors('.mapnav', initMapNav);
 
   function initMapNav(mapnav) {
     mapnav = $(mapnav);
-    var targetMap = $(mapnav.data('target'));
     var search = window.location.search;
-
-    startMapWizard(mapnav);
-
-    if(search) {
-      activateMap(mapnav, search);
-    } else {
-      mapnav.on('click', function(e) {
-        if(e.hasOwnProperty('originalEvent')) {
-          activateMap(mapnav);
-        } else {
-          // window.console.log("map.js: initMapNav(); - Program Click");
-        }
-      });
-    }
-
-    // Add listeners to activate map
-    $('.show0, .mapInstructions').on('click', function() {
-      activateMap(mapnav);
-    });
+    var testing = false;
     
+    if(testing) {
 
+      // ========== Temporarily deactivate the wizard for testing
+      activateMap(mapnav, search);
 
+    } else {
 
+      startMapWizard(mapnav);
 
-    $('.map-filter, .map-subfilter').on('change', function(e) {
-      window.console.log("updated filter");
-      var checked = $(this).prop("checked"),
-          container = $(this).parent(),
-          siblings = container.siblings();
-      // window.console.log("mapnav.js: CONTAINER: ", container);
-
-      container.find('input[type="checkbox"]').prop({
-        indeterminate: false,
-        checked: checked
-      });
-
-      function checkSiblings(el) {
-
-        var parent = el.parent().parent(),
-            all = true;
-
-        el.siblings().each(function() {
-          return all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+      if(search) {
+        activateMap(mapnav, search);
+      } else {
+        mapnav.on('click', function(e) {
+          if(e.hasOwnProperty('originalEvent')) {
+            activateMap(mapnav);
+          } else {
+            // window.console.log("map.js: initMapNav(); - Program Click");
+          }
         });
-
-        if (all && checked) {
-
-          parent.children('input[type="checkbox"]').prop({
-            indeterminate: false,
-            checked: checked
-          });
-
-          checkSiblings(parent);
-
-        } else if (all && !checked) {
-
-          parent.children('input[type="checkbox"]').prop("checked", checked);
-          parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
-          checkSiblings(parent);
-
-        } else {
-
-          el.parents("li").children('input[type="checkbox"]').prop({
-            indeterminate: true,
-            checked: false
-          });
-
-        }
-
       }
 
-      checkSiblings(container);
-      updateMapLevels();
-    });
+      // Add listeners to activate map
+      $('.show0, .mapInstructions').on('click', function() {
+        activateMap(mapnav);
+      });
+
+    }
+
+
+    // ========== Setup mapnav listeners
 
     $(".nav_category").each(function() {
-      var $el = $(this),
-          cat = $el.data('category');
 
-      $el.find('.map-filter, .map-subfilter, .study-filter').on('click', function() {
+      var nav_category = $(this),
+          nav_category_label = nav_category.data('category');
 
-        var checked = this.checked ? true : false;
-        var bp = $(this).hasClass('study-filter');
-        var sf = $(this).hasClass('map-subfilter');
-        var activeNav = $el.find('.map-filter:checked, .map-subfilter:checked').length;
-        // window.console.log ("mapnav.js:", $(this), bp);
-        if(checked) {
-          var showStudies = $el.find('.study-filter:checked').length;
-          var section = $(this).closest('.section_root').attr('data-section');
-          var activeClass = "policyFinder_map active " + cat + " " + section;
-          
-          $(this).siblings('.collapse').each(function() {
-            var children = $(this).find('.map-subfilter');
-            if (children.length > 1) {
-              $(this).collapse('show');
-            }
-          });
+      nav_category.find('.map-filter').on('click', function(e) {
 
-          $el.siblings('.nav_category').find('input[type="checkbox"]').prop({
-            indeterminate: false,
-            checked: false
-          });
-          if(!bp) {
-            if(sf) {
-              $el.find('.map-filter').not($(this).closest('.map-filter')).prop({
-                indeterminate: false,
-                checked: false
-              });
-              // select only a single subfilter
-              var parent = $(this).closest('ul');
-              parent.find('.map-subfilter').not($(this)).prop({
-                indeterminate: false,
-                checked: false
-              });
-
-            } else {
-              $el.find('.map-filter, .map-subfilter').not(this).prop({
-                indeterminate: false,
-                checked: false
-              });
-            }
-          }
-
-          if(showStudies) {
-            activeClass += " show-studies";
-          }
-          if(!activeNav) {
-            clearLevels();
-          }
-
-          $(targetMap).attr('class', activeClass);
-
-        } else {
-          if(bp) { 
-            $(targetMap).removeClass('show-studies');
-          } else {
-            if(sf) {
-              var parent = $(this).closest('ul');
-              parent.find('.map-subfilter').not($(this)).prop({
-                indeterminate: false,
-                checked: false
-              });
-              $(this).prop({
-                indeterminate: false,
-                checked: true
-              });
-            }
-            clearLevels();
-          }
-        }
-
-        var filters = [];
-        $el.find('input:checked').each(function() {
-          filters.push($(this).attr('id'));
-        });
-        var new_url = replaceUrlParam(window.location.href, 'filters', filters );
-        window.history.replaceState('', 'ReFED - State Policy Map', new_url);
+        // window.console.log("CLICKING ON AN ACTIVE CHECKBOX");
+        setFilter($(this));
 
       });
 
-      $el.find('.collapse').on('show.bs.collapse', function() {
-        $el.siblings('.nav_category').find('.collapse').collapse('hide');
+      nav_category.find('.map-subfilter').on('click', function(e) {
+
+        // window.console.log("CLICKING ON AN ACTIVE SUBFILTER");
+        setSubFilter($(this));
+
       });
+
+      nav_category.find('.study-filter').on('click', function(e) {
+
+        window.console.log("TOGGLING A STUDY FILTER");
+        toggleStudyFilter($(this));
+
+      });
+
+      // Hide all of the collapsible items in the other categories when you first open a category
+      nav_category.find('.filters').on('show.bs.collapse', function() {
+        window.console.log("FILTER ACCORDION");
+        $('.filters').not($(this)).collapse('hide');
+      });
+      
     });
 
-    mapnav.find('.filters').on('shown.bs.collapse', function () {
-      var new_url = replaceUrlParam(window.location.href, 'category', $(this).attr('id') );
-      window.history.replaceState('', 'ReFED - State Policy Map', new_url);
+    // mapnav.find('.filters').on('shown.bs.collapse', function () {
+    //   var new_url = replaceUrlParam(window.location.href, 'category', $(this).attr('id') );
+    //   window.history.replaceState('', 'ReFED - State Policy Map', new_url);
+    // });
+
+  }
+
+  // function getCategory() {}
+  // function getFilter() {}
+  // function getSubFilter() {}
+
+  function getActiveCategory() {
+    return $('.policyFinder_map').attr('data-category');
+
+    // return $('.policyFinder_map').attr('data-category');
+  }
+  function setActiveCategory(category) {
+    window.console.log("SETTING ACTIVE CATEGORY", category);
+    $('.policyFinder_map').attr('data-category', category);
+
+  }
+
+  function setActiveKey(key) {
+    window.console.log("SETTING ACTIVE KEY", key);
+    $('.policyFinder_map').attr('data-key', key);
+  }
+
+  function setActiveStudies(category) {
+    window.console.log("SETTING ACTIVE STUDIES", category);
+    $('.policyFinder_map').attr('data-studies', category);
+
+  }
+
+
+  function setFilter(input) {
+    var subfilters = input.parent().find('.subfilters');
+    var category = input.closest('.nav_category').data('category');
+    var key = input.data('key');
+
+    // Set the active category
+    setActiveCategory(category);
+
+    // Set the active key
+    setActiveKey(key);
+
+    // Clear all other filter checkboxes
+    clearFilters();
+    // Collapse subfilters of other filters
+    $('.subfilters').not(subfilters).collapse('hide');
+
+    // Set input prop checked to true & disable input
+    input.prop({
+      checked: true,
+      disabled: true
     });
+    // Set all child inputs prop checked to true
+    input.parent().find('.map-subfilter').prop({
+      checked: true,
+      disabled: false
+    });
+    // Open Collapsed subfilter list if it exists
+    input.parent().find('.collapse.subfilters').collapse('show');
+    // update map levels (this includes a reset of map)
+    setMapLevels();
+  }
+
+  function setSubFilter(input) {
+    var category = input.closest('.nav_category').data('category');
+    var key = input.data('key');
+
+    // Set the active category
+    setActiveCategory(category);
+
+    // Set the active key
+    setActiveKey(key);
+
+    // Clear all other filter checkboxes
+    clearFilters();
+
+    // Set all other subfilters properties
+    input.closest('.subfilters').find('.map-subfilter').prop({
+      checked: false,
+      disabled: false
+    });
+    // Set parent filter properties
+    input.closest('.map-filter').prop({
+      checked: false,
+      indeterminate: true,
+      disabled: false
+    });
+    // Set input properties
+    // => We moved this down in the order to allow browser to complete UI update. This seems fragile to me.
+    input.prop({
+      checked: true,
+      disabled: true
+    });
+    // update map levels (this includes a reset of map)
+    setMapLevels();
+  }
+
+  function clearFilters() {
+    $('.map-filter, .map-subfilter').prop({
+      checked: false,
+      disabled: false
+    });
+  }
+
+  function clearStudies() {
+    window.console.log("CLEARING STUDIES");
+    $('.study-filter').prop({
+      checked: false
+    });
+
+    $('.policyFinder_map').attr('data-studies', '');
+  }
+
+  function toggleStudyFilter(input) {
+
+    if(input.prop('checked')) {
+      var category = input.val();
+      var active_category = getActiveCategory();
+      var key = input.data('key');
+
+      // Clear all other study checkboxes
+      clearStudies();
+
+      // Set the active studies
+      setActiveStudies(category);
+
+      if(category != active_category) {
+        // Set a new active category
+        clearLevels();
+        setActiveCategory(input.val());
+      }
+
+      // Set the active key
+      setActiveKey(key);
+
+      // Set the properties
+      input.prop({
+        checked: true,
+        disabled: false
+      });
+
+    } else {
+
+      setActiveStudies(false);
+
+      // Set the properties
+      input.prop({
+        checked: false,
+        disabled: false
+      });
+
+    }
+
+    
+
 
   }
 
@@ -286,7 +342,7 @@ $.behaviors('.mapnav', initMapNav);
   }
 
   function getLevel(array, state) {
-    // window.console.log("map.js: troubleshooting getlevel method");
+    // Filter the aray by state to see how many times a state is included
     // return array.filter(item => item == state).length;
     var level = array.filter(function(item) {
       return item == state;
@@ -295,32 +351,59 @@ $.behaviors('.mapnav', initMapNav);
     return level;
   }
 
-  function updateMapLevels() {
+  function setMapLevels() {
+    window.console.log("UPDATING MAP LEVELS");
     var activeStates = [];
-    $(".map-subfilter").each(function() {
-      if($(this).is(':checked')) {
-        var states = $(this).data('states');
 
+    $(".map-subfilter").each(function() {
+      if($(this).prop('checked')) {
+        var states = $(this).data('states');
+        // window.console.log("ADDING A LEVEL FOR: ", states);
         states.forEach(function(state) {
           activeStates.push(state);
         });
 
       }
     });
+
     clearLevels();
+
     activeStates.forEach(function(state) {
       $('#'+ state).addClass('level-'+getLevel(activeStates, state));
     });
   }
 
+
+  // function updateMapLevels() {
+  //   var activeStates = [];
+  //   $(".map-subfilter").each(function() {
+  //     if($(this).is(':checked')) {
+  //       var states = $(this).data('states');
+
+  //       states.forEach(function(state) {
+  //         activeStates.push(state);
+  //       });
+
+  //     }
+  //   });
+  //   clearLevels();
+  //   activeStates.forEach(function(state) {
+  //     $('#'+ state).addClass('level-'+getLevel(activeStates, state));
+  //   });
+  // }
+
+
+  // Map Loading & Activation
+
   function activateMap(mapnav, search) {
+    mapnav.removeClass('bottom');
     map = $(mapnav.data('target'));
     map.parent().finish().removeClass('mapWizard');
 
     $('#statenav').slideDown();
     
     // check url and trigger clicks in mapnav
-    window.console.log('#'+urlParams['category']);
+    // window.console.log('#'+urlParams['category']);
 
     mapnav.find('#'+urlParams['category']).collapse('show');
 
@@ -352,27 +435,27 @@ $.behaviors('.mapnav', initMapNav);
         wizard.attr( "class", "mapWizard step1" ).dequeue();
         mapnav.find('.step1').trigger('click');
       })
-      .delay(5000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step2" ).dequeue();
         mapnav.find('.step2').trigger('click');
       })
-      .delay(5000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step3" ).dequeue();
         mapnav.find('.step3').trigger('click');
       })
-      .delay(5000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step4" ).dequeue();
         mapnav.find('.step4').trigger('click');
       })
-      .delay(5000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step5" ).dequeue();
         mapnav.find('.step5').trigger('click');
       })
-      .delay(5000)
+      .delay(4000)
       .queue(function() {
         wizard.attr( "class", "mapWizard step6" ).dequeue();
         mapnav.find('.step6').trigger('click');

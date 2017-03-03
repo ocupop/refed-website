@@ -1,10 +1,10 @@
 <!-- Desktop: Map Filters -->
-<div class="mapnav bottom" data-target=".policyFinder_map">
+<div id="mapnav" class="mapnav bottom" data-target=".policyFinder_map">
   <div class="nav_category" data-category="prevention">
     <h4 id="show_prevention_policy"
         class="prevention step5"
         data-toggle="collapse"
-        data-parent="#policynav"
+        data-parent="#mapnav"
         href="#prevention_filters">
         Prevention Policy
         <span class="caret"></span>
@@ -32,7 +32,7 @@
     <h4 id="show_recovery_policy"
         class="recovery step3"
         data-toggle="collapse"
-        data-parent="#policynav"
+        data-parent="#mapnav"
         href="#recovery_filters">
         Recovery Policy
         <span class="caret"></span>
@@ -65,7 +65,7 @@
     <h4 id="show_recycling_policy"
         class="recycling step1"
         data-toggle="collapse"
-        data-parent="#policynav"
+        data-parent="#mapnav"
         href="#recycling_filters">
         Recycling Policy
         <span class="caret"></span>
@@ -77,7 +77,7 @@
         <input id='recycling_studies'
           type='checkbox'
           class='study-filter'
-          value="recovery">
+          value="recycle">
         <label for="recycling_studies" class="text-recycle">
           <span></span>
           <img src="/img/icons/policy/recycle_study_icon.svg">
