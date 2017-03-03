@@ -24,9 +24,9 @@ breadcrumb: true
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-5 col-lg-offset-0">
-        <div class="content">
+        <div id="start-slides" class="content">
           <img src="/img/maps/map_date-label-intro-end.svg" style="padding: 60px 0;">
-          <button id="start-slides" class="button">Explore the map &gt;</button>
+          <button class="button">Explore the map &gt;</button>
         </div>
       </div>
     </div>
@@ -113,43 +113,5 @@ breadcrumb: true
     </div>
   </div>
 </section>
-
-<script>
-// TODO refactor into seperate js
-  $('#carousel-date-label').on('slid.bs.carousel', function (e) {
-    var direction = e.direction;
-    var progress = $(e.relatedTarget).data("progress");
-    var current_map = $(e.relatedTarget).data("map");
-
-    $('.map-datelabel').removeClass('active');
-    $(current_map).addClass('active');
-
-    $('.progress-bar').css("width", progress + "%").attr("aria-valuenow", progress);
-    if(progress == 100) {
-      $('.right').addClass('hide');
-    }else{
-      $('.right').removeClass('hide');
-    }
-  });
-
-  $('#start-slides').click(function(){
-    $('#labeling-carousel-intro').hide();
-    $('.carousel-datelabel').fadeIn();
-  });
-
-  $('[data-slide="prev"]').on('click', function(){
-    var progress = $('#carousel-date-label .active').data("progress");
-    if(progress == 25){
-      $('#labeling-carousel-intro').fadeIn();
-      $('.carousel-datelabel').hide();
-    }
-  });
-
-  $(window).on('hide.bs.tab', function(e) {
-    $('#labeling-carousel-intro').fadeIn();
-    $('.carousel-datelabel').hide();
-  });
-   
-</script>
 
 {% include_relative _partials/shared-content.html %}

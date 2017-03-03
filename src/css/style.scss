@@ -23,7 +23,7 @@
 @import 'base/crumbs';
 @import 'base/bootstrap-overwrites';
 @import 'base/editable-regions';
-@import 'base/print';
+
 @import 'base/thanks';
 
 @import '_fixes';
@@ -70,7 +70,6 @@
 
 @import "components/tooltip";
 
-
 // Tools
 @import "tools/food-waste-policy-finder/main";
 @import "tools/food-waste-policy-finder/map";
@@ -108,7 +107,5 @@
 @import "views/sections/spread_the_word";
 @import "views/sections/connected_solutions";
 
-
-
-
-
+//Print
+@import 'base/print';

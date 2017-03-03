@@ -52,10 +52,11 @@
   margin-top: 10px;
   .caret {
     @include transition(.5s);
+    transform: rotate(-180deg);
   }
   &[data-sort="date:desc"] {
     .caret {
-      transform: rotate(-180deg);
+      transform: rotate(0deg);
     }
   }
 }
@@ -63,6 +64,9 @@
 .recent-news {
   .article {
     margin-bottom: 30px;
+    .article-image {
+      height: 140px;
+    }
   }
 }
 
@@ -75,10 +79,24 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .article {
-    .article-image {
-      height: 180px;
-        background-size: contain;
+  .card {
+    &.article-card {
+      padding-bottom: 0;
+      margin:0;
     }
   }
+  .article {
+    &.single-article{
+      .article-image {
+        height: 200px;
+      }
+    }
+    .article-image {
+      height: 180px;
+    }
+  }
+  .sort-articles {
+    margin-top: 0;
+  }
+
 }
