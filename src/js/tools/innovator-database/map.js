@@ -49,6 +49,31 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       $('.innovatorDatabase_filters').removeClass('active');
     });
 
+    $(window).on('mixStart', function(event) {
+      
+      var uids = $.map(event.detail.futureState.matching, function(i) {
+        return($(i).data('uid'));
+      });
+      var show = [];
+      var hide = [];
+
+      for (var i = 0; i < markers.length; i++) {
+        if(uids.includes(markers[i].id)) {
+          hide.push(markers[i]);
+          markers[i].setVisible(true);
+        } else {
+          show.push(markers[i]);
+          markers[i].setVisible(false);
+        }
+      }
+      // window.console.log("Event Details: ", event.detail);
+      // window.console.log("Markers: ", markers.length);
+      // window.console.log("UIDS: ", uids.length);
+      // window.console.log("SHOWING: ", show.length);
+      // window.console.log("HIDING: ", hide.length);
+
+    });
+
   }
 
   function initMap(container) {
@@ -206,30 +231,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
       innovatorMap.setZoom(8);
       innovatorMap.setCenter(searchLocation);
-  });
-
-  $(window).on('mixStart', function(event) {
-    var uids = $.map(event.detail.futureState.matching, function(i) {
-      return($(i).data('uid'));
-    });
-    var show = [];
-    var hide = [];
-
-    for (var i = 0; i < markers.length; i++) {
-      if(uids.includes(markers[i].id)) {
-        hide.push(markers[i]);
-        markers[i].setVisible(true);
-      } else {
-        show.push(markers[i]);
-        markers[i].setVisible(false);
-      }
-    }
-    // window.console.log("Event Details: ", event.detail);
-    // window.console.log("Markers: ", markers.length);
-    // window.console.log("UIDS: ", uids.length);
-    // window.console.log("SHOWING: ", show.length);
-    // window.console.log("HIDING: ", hide.length);
-
   });
 
 })();

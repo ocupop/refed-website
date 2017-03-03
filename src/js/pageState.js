@@ -21,16 +21,16 @@
 $.behaviors('body', pageState);
 
 // Revert to a previously saved state
-window.addEventListener('popstate', function(event) {
-  // window.console.log("pageState: popstate", event);
-  var hash = window.location.hash;
+// window.addEventListener('popstate', function(event) {
+//   // window.console.log("pageState: popstate", event);
+//   var hash = window.location.hash;
   
-  if(hash) {
-    window.console.log("popstate: Activating Tabs", hash);
-    activateTab(hash);
-    return;
-  }
-});
+//   if(hash) {
+//     window.console.log("popstate: Activating Tabs", hash);
+//     activateTab(hash);
+//     return;
+//   }
+// });
 
   function pageState(body) {
     var hash = location.hash;

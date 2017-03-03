@@ -308,6 +308,7 @@ organics_recycling_mandates:
         - connecticut
         - massachusetts
         - rhode-island
+        - vermont
       municipalities:
         - title: San Francisco
           state: california
