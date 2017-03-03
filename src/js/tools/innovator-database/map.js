@@ -163,7 +163,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="title"]').text(d.title).end()
           .find('[data-content="description"]').text(d.description).end()
           .find('[data-content="business-model"]').text(d.businessModel).end()
-          .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions).end()
+          .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions.replaceAll('-', ' ').replace(/\b\w/g, function(l){ return l.toUpperCase() })).end()
           .find('[data-content="food-recovery-hierarchy-option"]').text(d.foodRecoveryHierarchyOption).end()
           .find('[data-content="reach"]').text(d.innovatorLevel).end()
           .find('.icon').addClass("icon-"+d.innovatorLevel).end()
