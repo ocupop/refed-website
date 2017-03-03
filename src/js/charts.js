@@ -36,12 +36,15 @@
       var p = [];
       p = getPercentages(solution_data, key);
       $('#cost-curve .solution').popover('hide');
-      $('#cost-curve ul').each(function() {
+      $('#chart').each(function() {
         var orientation = $(this).attr('class');
+        window.console.log("updateCostCurve", orientation);
         $(this).find('.progress').each(function(index) {
-          if(orientation == 'vertical') {
+          if(orientation.includes('vertical')) {
+            // window.console.log("SETTING HEIGHT", p[index]);
             $(this).css('height', p[index]+'%');
           } else {
+            // window.console.log("SETTING WIDTH", p[index]);
             $(this).css('width', p[index]+'%');
           }
         });
