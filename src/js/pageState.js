@@ -49,7 +49,6 @@ $.behaviors('body', pageState);
 
   window.deserializeHash = function() {
       var hash    = window.location.hash.replace(/^#/g, '');
-      window.console.log("deserializeHash:", hash);
       var obj     = null;
       var groups  = [];
 
@@ -58,11 +57,9 @@ $.behaviors('body', pageState);
       obj = {};
       groups = hash.split('&');
 
-      window.console.log("DESERIALIZE HASH: ", groups);
-
       groups.forEach(function(group) {
           var pair = group.split('=');
-          window.console.log("DESERIALIZE HASH: pair ");
+          // window.console.log("DESERIALIZE HASH: pair ");
           var groupName = pair[0];
           // TODO - Avoiding errors on simple anchors - Needs refactor
           if(pair[1]) {
@@ -135,8 +132,8 @@ $.behaviors('body', pageState);
      .addClass(tabClass);
   }
 
-  activateTab = function(tab) {
-    window.console.log("activateTab: ", tab);
+  window.activateTab = function(tab) {
+    // window.console.log("activateTab: ", tab);
     var link = $('[data-target="#'+tab+'"]');
 
     // Show the tab content
@@ -146,23 +143,5 @@ $.behaviors('body', pageState);
     setTabClass(tab);
   }
 
-  window.onhashchange = function(e) {
-    window.console.log("HASH CHANGE: update activeTab", e);
-    window.console.log("HASH CHANGE: current_url", window.location.hash);
-    var hashState = deserializeHash(window.location.hash);
-
-    activateTab(hashState.active_tab);
-    // location.reload();
-      // var groupsState = deserializeSearch();
-      // var search      = window.location.search;
-
-      // // Compare new hash with active hash
-
-      // if (search === activeSearch) return; // no change
-
-      // activeSearch = search;
-
-      // filterMixerByHashState(groupsState, true);
-  };
 
 })();

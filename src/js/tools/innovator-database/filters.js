@@ -88,10 +88,9 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     });
 
     var hashState = deserializeHash();
-
-    if (hashState && hashState.filters) {
+    if (hashState) {
         // If a valid groupsState object is present on page load, filter the mixer
-        filterMixerByHashState(hashState.filters);
+        filterMixerByHashState(hashState);
     }
 
     input = $('#searchFilter');
@@ -107,34 +106,6 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     });
 
   }
-
-
-  /**
-   * Deserializes a hash segment (if present) into in an object.
-   *
-   * @return {object|null}
-   */
-
-   // function deserializeSearch() {
-   //     // var hash    = window.location.hash.replace(/^#/g, '');
-   //     var search  = window.location.search.replace(/^\?/g, '');
-   //     var obj     = null;
-   //     var groups  = [];
-
-   //     if (!search) return obj;
-
-   //     obj = {};
-   //     groups = search.split('&');
-
-   //     groups.forEach(function(group) {
-   //         var pair = group.split('=');
-   //         var groupName = pair[0];
-
-   //         obj[groupName] = pair[1].split(',');
-   //     });
-
-   //     return obj;
-   // }
 
   /**
    * Serializes a groupsState object into a string.
@@ -190,7 +161,6 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function setFilters(state) {
-    window.console.log("setFilters");
     var selector = state.activeFilter.selector;
 
     // Construct an object representing the current state of each
@@ -274,21 +244,20 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
   // function above. In which case this handler would no longer be neccessary.
 
 
-  // window.onhashchange = function(e) {
-  //   window.console.log("HASH CHANGE: update activeFilters", e);
-  //   // window.console.log("HASH CHANGE: current_url", window.location);
-  //   // location.reload();
-  //     // var groupsState = deserializeSearch();
-  //     // var search      = window.location.search;
+  window.onhashchange = function(e) {
+    // window.console.log("HASH CHANGE: current_url", window.location);
+    var hashState = deserializeHash();
+    var hash      = window.location.hash;
 
-  //     // // Compare new hash with active hash
+    // Compare new hash with active hash
 
-  //     // if (search === activeSearch) return; // no change
+    if (hash === activeHash) return; // no change
 
-  //     // activeSearch = search;
-
-  //     // filterMixerByHashState(groupsState, true);
-  // };
+    activeHash = hash;
+    
+    activateTab(hashState.active_tab);
+    filterMixerByHashState(hashState, true);
+  };
 
   function searchFilter(input, mixer) {
     var state = mixer.getState();
