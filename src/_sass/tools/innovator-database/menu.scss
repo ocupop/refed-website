@@ -7,6 +7,11 @@
     display: table;
     content: " ";
   }
+  .mixitup-page-stats {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
   section {
     position: absolute;
     display: flex;
@@ -154,17 +159,11 @@
     padding: 0 10px;
   }
 }
-.mixitup-page-stats {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
 
 
 body.condensed-header {
   .innovatorDatabase_menu {
-    section.active {
+    section {
       opacity: 0;
       pointer-events: none;
     }

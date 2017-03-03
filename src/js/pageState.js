@@ -148,7 +148,10 @@ $.behaviors('body', pageState);
 
   window.onhashchange = function(e) {
     window.console.log("HASH CHANGE: update activeTab", e);
-    // window.console.log("HASH CHANGE: current_url", window.location);
+    window.console.log("HASH CHANGE: current_url", window.location.hash);
+    var hashState = deserializeHash(window.location.hash);
+
+    activateTab(hashState.active_tab);
     // location.reload();
       // var groupsState = deserializeSearch();
       // var search      = window.location.search;
