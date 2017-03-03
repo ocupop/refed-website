@@ -7,11 +7,6 @@
     display: table;
     content: " ";
   }
-  .mixitup-page-stats {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
   section {
     position: absolute;
     display: flex;
@@ -45,7 +40,6 @@
       opacity: 1;
       pointer-events: all;
     }
-    .mixitup-page-stats { display: none; }
   }
   &[data-menu="search"] {
     section {

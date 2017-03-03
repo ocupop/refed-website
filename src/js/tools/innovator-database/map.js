@@ -41,16 +41,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         initMap(container);
     }
 
-    $('[data-target="#innovatorMap"]')
-      .on('shown.bs.tab', function(e) {
-        // Scroll to top
-        window.scrollTo(0, 0);
-        // Set active menu
-        $('.innovatorDatabase_menu').attr('data-menu', 'filter');
-      });
-
     $(window).on('mixStart', function(event) {
-      
+      window.console.log('HELLO');
       var uids = $.map(event.detail.futureState.matching, function(i) {
         return($(i).data('uid'));
       });
@@ -66,11 +58,11 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           markers[i].setVisible(false);
         }
       }
-      // window.console.log("Event Details: ", event.detail);
-      // window.console.log("Markers: ", markers.length);
-      // window.console.log("UIDS: ", uids.length);
-      // window.console.log("SHOWING: ", show.length);
-      // window.console.log("HIDING: ", hide.length);
+      window.console.log("Event Details: ", event.detail);
+      window.console.log("Markers: ", markers.length);
+      window.console.log("UIDS: ", uids.length);
+      window.console.log("SHOWING: ", show.length);
+      window.console.log("HIDING: ", hide.length);
 
     });
 
@@ -103,9 +95,17 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     document.getElementsByTagName('head')[0].appendChild(script);
 
     $('[data-target="#innovatorMap"]').on('shown.bs.tab', function(e) {
+      // Scroll to top
+      window.scrollTo(0, 0);
+      // Set active menu
+      $('.innovatorDatabase_menu').attr('data-menu', 'filter');
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
-      innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
+      var searchLocation = $('#autocomplete').val();
+      if(!searchLocation) {
+        innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
+        innovatorMap.setZoom(4.5);
+      }
     });
 
     $('[data-toggle="tab"]').on('hide.bs.tab', function(e) {
