@@ -188,8 +188,8 @@ animal_feed:
     - title: Connecticut Animal Feed Regulations
       summary: 'Even though the practice of feeding food scraps to animals is safe for human and animal health, several states either ban the feeding of all food scraps, animal-derived food scraps, and/or vegetable-derived food scraps to animals, specifically swine. Connecticut is one of many states that provide a good model for regulating feeding food scraps to animals. Connecticut allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and is fed by a licensed facility. All other waste, including vegetable waste, may be fed to swine without heat treatment. Individuals may feed household garbage to their own swine without heat-treating it and without obtaining a permit. As long as food scraps are properly handled according to applicable federal food safety laws and regulations, feeding food scraps to animals can be a safe and beneficial practice.'
       state: connecticut
-      lat: 41.5153735
-      long: -73.8784879
+      lat: 41.5184211
+      long: -74.2192854
     - title: North Carolina Animal Feed Regulations
       summary: 'Several states require the heat treatment of non-animal derived waste, yet most of this waste is generally safe for consumption by most animals. The cost of heat-treatment equipment or services may discourage farms from feeding food scraps to animals. North Carolina, the second-largest producer of swine, is one of many states that provide a good model for regulating feeding food scraps to animals. It allows the feeding of animal-derived waste to swine provided that it has been properly heat-treated and fed by a licensed facility. All other waste, such as vegetable-derived waste, may be fed to swine without heat-treatment. This is the rule in the majority of states that allow food scraps to be fed to animals.'
       state: north-carolina
