@@ -247,6 +247,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
   window.showAnalysisDetails = function(el, view) {
     window.console.log("showAnalysisDetails:", el);
+    window.scrollTo(0,0);
 
     el = $(el);
 
