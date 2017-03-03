@@ -66,7 +66,7 @@ $.behaviors('.share', initShare);
     var facebook_url = "http://www.facebook.com/sharer.php?u=" + share.url,
         twitter_url = "https://twitter.com/intent/tweet?url="+share.url+"&text="+share.title+"+%7C+Rethink+Food+Waste&amp;hashtags=refed",
         linkedin_url = "https://www.linkedin.com/shareArticle?mini=true&url="+share.url+"&title="+share.title+"&summary="+share.summary+"&source=",
-        mail_url = 'mailto:?subject= ' + share.title;
+        mail_url = 'mailto:?subject= ' + share.title + '&body=' + share.url;
 
     var close = $('#share-instructions .close');
     var share_instructions = $('#share-instructions');
