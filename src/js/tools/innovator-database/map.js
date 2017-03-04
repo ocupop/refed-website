@@ -104,7 +104,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       var searchLocation = $('#autocomplete').val();
       if(!searchLocation) {
         innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
-        innovatorMap.setZoom(4.5);
+        innovatorMap.setZoom(4);
       }
     });
 
