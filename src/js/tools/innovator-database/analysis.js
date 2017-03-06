@@ -85,7 +85,8 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       },
       stackBars: true,
       showGridBackground: false,
-      height: 500
+      height: 500,
+      low: 0
     }, [
       // Options override for media > mobile
       ['screen and (max-width: 767px)', {
