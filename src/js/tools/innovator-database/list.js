@@ -65,12 +65,10 @@ $.behaviors('.innovatorDatabase_list', innovatorDatabase_list);
 
     $('[data-target="#innovatorList"]')
       .on('shown.bs.tab', function(e) {
+        // Scroll to top
         window.scrollTo(0, 0);
-        $('.innovatorDatabase_menu section').removeClass('active');
-        $('.innovatorDatabase_filters').addClass('active');
-      })
-      .on('hide.bs.tab', function(e) {
-        $('.innovatorDatabase_filters').removeClass('active');
+        // Set active menu
+        $('.innovatorDatabase_menu').attr('data-menu', 'filter');
       });
 
   }

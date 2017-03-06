@@ -41,18 +41,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         initMap(container);
     }
 
-    $('[data-target="#innovatorMap"]')
-      .on('shown.bs.tab', function(e) {
-        window.scrollTo(0, 0);
-        $('.innovatorDatabase_menu section').removeClass('active');
-        $('.innovatorDatabase_filters').addClass('active');
-      })
-      .on('hide.bs.tab', function(e) {
-        $('.innovatorDatabase_filters').removeClass('active');
-      });
-
     $(window).on('mixStart', function(event) {
-      
+      window.console.log('HELLO');
       var uids = $.map(event.detail.futureState.matching, function(i) {
         return($(i).data('uid'));
       });
@@ -68,11 +58,11 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           markers[i].setVisible(false);
         }
       }
-      // window.console.log("Event Details: ", event.detail);
-      // window.console.log("Markers: ", markers.length);
-      // window.console.log("UIDS: ", uids.length);
-      // window.console.log("SHOWING: ", show.length);
-      // window.console.log("HIDING: ", hide.length);
+      window.console.log("Event Details: ", event.detail);
+      window.console.log("Markers: ", markers.length);
+      window.console.log("UIDS: ", uids.length);
+      window.console.log("SHOWING: ", show.length);
+      window.console.log("HIDING: ", hide.length);
 
     });
 
@@ -105,9 +95,17 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     document.getElementsByTagName('head')[0].appendChild(script);
 
     $('[data-target="#innovatorMap"]').on('shown.bs.tab', function(e) {
+      // Scroll to top
+      window.scrollTo(0, 0);
+      // Set active menu
+      $('.innovatorDatabase_menu').attr('data-menu', 'filter');
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
-      innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
+      var searchLocation = $('#autocomplete').val();
+      if(!searchLocation) {
+        innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
+        innovatorMap.setZoom(4);
+      }
     });
 
     $('[data-toggle="tab"]').on('hide.bs.tab', function(e) {
@@ -163,7 +161,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="title"]').text(d.title).end()
           .find('[data-content="description"]').text(d.description).end()
           .find('[data-content="business-model"]').text(d.businessModel).end()
-          .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions).end()
+          .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions.replaceAll('-', ' ').replace(/\b\w/g, function(l){ return l.toUpperCase() })).end()
           .find('[data-content="food-recovery-hierarchy-option"]').text(d.foodRecoveryHierarchyOption).end()
           .find('[data-content="reach"]').text(d.innovatorLevel).end()
           .find('.icon').addClass("icon-"+d.innovatorLevel).end()

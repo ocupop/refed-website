@@ -19,11 +19,11 @@
  */
 (function() {
 
-$.behaviors('.innovatorDatabase_categories', innovatorDatabase_categories);
+$.behaviors('.innovatorDatabase_analysisMenu', innovatorDatabase_analysisMenu);
 $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
-  function innovatorDatabase_categories(menu) {
+  function innovatorDatabase_analysisMenu(menu) {
     menu = $(menu);
 
     $('[data-chart]').on('click', function() {
@@ -48,21 +48,18 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     $('[data-target="#innovatorAnalysis"]')
         .on('shown.bs.tab', function(e) {
+          // Scroll to top
           window.scrollTo(0, 0);
+          // Set active menu
+          $('.innovatorDatabase_menu').attr('data-menu', 'analysis');
+
           // Fix for hidden content in tab
           var target = "#" + $(this).attr('data-target').replace(/^#/g, '');
           $(target).find('.ct-chart').each(function(el, tab) {
             // Resize Charts on tab load
             tab.__chartist__.update();
           });
-
-          $('.innovatorDatabase_menu section').removeClass('active');
-          menu.addClass('active');
-        })
-        .on('hide.bs.tab', function(e) {
-          menu.removeClass('active');
         });
-
   }
 
 
@@ -88,7 +85,8 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
       },
       stackBars: true,
       showGridBackground: false,
-      height: 500
+      height: 500,
+      low: 0
     }, [
       // Options override for media > mobile
       ['screen and (max-width: 767px)', {
@@ -225,8 +223,8 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           filter = $(this).val(),
           filtered = $(filter),
           total_count = filtered.length;
-          forprofit = filtered.filter("[data-business-model='Nonprofit']").length,
-          nonprofit = filtered.filter("[data-business-model='For-Profit']").length,
+          nonprofit = filtered.filter("[data-business-model='Nonprofit']").length,
+          forprofit = filtered.filter("[data-business-model='For-Profit']").length,
           prevention = filtered.filter("[data-food-recovery-hierarchy-option='Prevention']").length,
           recovery = filtered.filter("[data-food-recovery-hierarchy-option='Recovery']").length,
           recycling = filtered.filter("[data-food-recovery-hierarchy-option='Recycling']").length;
@@ -250,6 +248,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
   window.showAnalysisDetails = function(el, view) {
     window.console.log("showAnalysisDetails:", el);
+    window.scrollTo(0,0);
 
     el = $(el);
 

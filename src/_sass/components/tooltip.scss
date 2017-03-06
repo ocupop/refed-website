@@ -16,6 +16,7 @@
   }
   .content {
     width: 500px;
+    top: 0;
   }
   &:before {
     content: "";
@@ -36,6 +37,10 @@
   // .content {
   //   width: 300px;
   // }
+}
+
+.tooltip {
+  z-index: 9999;
 }
 
 .food-waste-policy-finder {

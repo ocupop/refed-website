@@ -22,7 +22,7 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
  */
 (function() {
 
-$.behaviors('.innovatorDatabase_filters', innovatorDatabase_filters);
+$.behaviors('.innovatorDatabase_filtersMenu', innovatorDatabase_filtersMenu);
 $.behaviors('.filterToggle', initToggle);
 $.behaviors('.innovatorDatabase_menu', initMenu);
 
@@ -39,19 +39,28 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     }
     
     $('.searchLink').on('click', function() {
-      $('.innovatorDatabase_categories, .innovatorDatabase_filters').removeClass('active');
-      $('.innovatorDatabase_search').addClass('active');
+      var search = menu.attr('data-menu');
+      if(search == 'search') {
+        // Remove the attribute value so that the styles fallback to the body class for active tab
+        menu.attr('data-menu', '');
+      } else {
+        // Set the menu to search
+        menu.attr('data-menu', 'search');
+      }
+    });
+    $('.innovatorDatabase_searchMenu .close').on('click', function() {
+      menu.attr('data-menu', '');
     });
   }
 
   function initToggle(container) {
     container = $(container);
     container.on('click', function() {
-      $('.innovatorDatabase_filters').toggleClass('open');
+      $('.innovatorDatabase_filtersMenu').toggleClass('open');
     });
   }
 
-  function innovatorDatabase_filters(filters) {
+  function innovatorDatabase_filtersMenu(filters) {
     filters = $(filters);
     var list = $('.innovatorDatabase_list').first();
 
@@ -79,10 +88,9 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     });
 
     var hashState = deserializeHash();
-
-    if (hashState && hashState.filters) {
+    if (hashState) {
         // If a valid groupsState object is present on page load, filter the mixer
-        filterMixerByHashState(hashState.filters);
+        filterMixerByHashState(hashState);
     }
 
     input = $('#searchFilter');
@@ -98,34 +106,6 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     });
 
   }
-
-
-  /**
-   * Deserializes a hash segment (if present) into in an object.
-   *
-   * @return {object|null}
-   */
-
-   // function deserializeSearch() {
-   //     // var hash    = window.location.hash.replace(/^#/g, '');
-   //     var search  = window.location.search.replace(/^\?/g, '');
-   //     var obj     = null;
-   //     var groups  = [];
-
-   //     if (!search) return obj;
-
-   //     obj = {};
-   //     groups = search.split('&');
-
-   //     groups.forEach(function(group) {
-   //         var pair = group.split('=');
-   //         var groupName = pair[0];
-
-   //         obj[groupName] = pair[1].split(',');
-   //     });
-
-   //     return obj;
-   // }
 
   /**
    * Serializes a groupsState object into a string.
@@ -188,9 +168,10 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
     var filters = getFilters();
 
-    // Create a URL search string by serializing the filters object
+    var hashState = deserializeHash();
 
-    var newSearch = '#' + serializeFiltersState(filters);
+    // Create a URL search string by serializing the filters object
+    var newSearch = '#active_tab=' + hashState.active_tab + '&' + serializeFiltersState(filters);
 
     if (selector === targetSelector && window.location.search) {
         // Equivalent to filter "all", remove the search
@@ -263,21 +244,20 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
   // function above. In which case this handler would no longer be neccessary.
 
 
-  // window.onhashchange = function(e) {
-  //   window.console.log("HASH CHANGE: update activeFilters", e);
-  //   // window.console.log("HASH CHANGE: current_url", window.location);
-  //   // location.reload();
-  //     // var groupsState = deserializeSearch();
-  //     // var search      = window.location.search;
+  window.onhashchange = function(e) {
+    // window.console.log("HASH CHANGE: current_url", window.location);
+    var hashState = deserializeHash();
+    var hash      = window.location.hash;
 
-  //     // // Compare new hash with active hash
+    // Compare new hash with active hash
 
-  //     // if (search === activeSearch) return; // no change
+    if (hash === activeHash) return; // no change
 
-  //     // activeSearch = search;
-
-  //     // filterMixerByHashState(groupsState, true);
-  // };
+    activeHash = hash;
+    
+    activateTab(hashState.active_tab);
+    filterMixerByHashState(hashState, true);
+  };
 
   function searchFilter(input, mixer) {
     var state = mixer.getState();

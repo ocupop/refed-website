@@ -19,24 +19,78 @@
     opacity: 0;
     pointer-events: none;
     @include transition(1s);
-    &.active {
+    // &.active {
+    //   opacity: 1;
+    //   pointer-events: all;
+    // }
+  }
+  &[data-menu="sort"] .activeTab_innovatorMap {
+    .innovatorDatabase_sortMenu {
+
+    }
+  }
+  &[data-menu="filter"] {
+    .innovatorDatabase_filtersMenu {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  &[data-menu="analysis"] {
+    .innovatorDatabase_analysisMenu {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  &[data-menu="search"] {
+    section {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .innovatorDatabase_searchMenu {
       opacity: 1;
       pointer-events: all;
     }
   }
 }
 
-.innovatorDatabase_sort {
-  display: none !important;
-}
-
-.innovatorDatabase_search {
-  .search-group {
-    margin-bottom: 0;
+// Set menu visibliity based on active tab class
+.activeTab_innovatorMap,
+.activeTab_innovatorList {
+  .innovatorDatabase_filtersMenu {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
-.innovatorDatabase_filters {
+.activeTab_innovatorAnalysis {
+  .innovatorDatabase_analysisMenu {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .mixitup-page-stats { display: none; }
+}
+
+
+
+
+.innovatorDatabase_sortMenu {
+  display: none !important;
+}
+
+.innovatorDatabase_searchMenu {
+  margin-bottom: 0;
+  .search-group {
+    margin: 5px 0;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+.innovatorDatabase_filtersMenu {
   padding: 10px 0;
   @include transition();
   h4 {
@@ -80,7 +134,7 @@
   }
 }
 
-.innovatorDatabase_categories {
+.innovatorDatabase_analysisMenu {
   h3 {
     margin-top: 0;
   }
@@ -93,30 +147,17 @@
   }
 }
 
+// Mixitup details... these should probably go somewhere else?
 .mixitup-page-list {
   button {
     padding: 0 10px;
   }
 }
-.mixitup-page-stats {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-// .activeTab_innovatorAnalysis {
-//   .mixitup-page-stats {
-//     display: none;
-//   }
-// }
-
-// Page States
-
 
 
 body.condensed-header {
   .innovatorDatabase_menu {
-    section.active {
+    section {
       opacity: 0;
       pointer-events: none;
     }
@@ -124,10 +165,8 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-md-max) {
-  .innovatorDatabase_filters  {
 
-  }
-  .innovatorDatabase_categories {
+  .innovatorDatabase_analysisMenu {
     h3 {
       font-size: 18px;
     }
@@ -135,9 +174,7 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-sm-max) {
-  .innovatorDatabase_filters  {
-    
-  }
+
   .innovatorDatabase_menu section {
     min-height: 0;
     .container {
@@ -147,7 +184,7 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .innovatorDatabase_filters {
+  .innovatorDatabase_filtersMenu {
     height: auto;
     z-index: 99;
     .container {
@@ -174,6 +211,11 @@ body.condensed-header {
           transform: rotate(0deg);
         }
       }
+    }
+  }
+  .innovatorDatabase_analysisMenu {
+    .button {
+      margin-top: 0;
     }
   }
 }
