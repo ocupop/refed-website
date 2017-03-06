@@ -101,7 +101,7 @@ food_recovery_hierarchy_options:
   - title: Prevention
     summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
   - title: Recovery
-    summary: "Recovery captures edible food that would otherwise go to waste on farms or in consumer-facing businesses, and redistributes it to food insecure populations."
+    summary: " Recovery captures edible food that would otherwise go to waste on farms, within the supply chain, or in consumer-facing businesses, and redistributes it to food insecure populations."
   - title: Recycling
     summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
 
@@ -115,7 +115,7 @@ business_models:
 
 innovator_category_options:
   - title: Consumer Education
-    summary: "Includes educational campaigns and resources that target wasted food, as well as tools and applications that enhance consumers' understanding of strategies to prevent food waste, including eating food before it spoils."
+    summary: "An organization that operates educational campaigns and/or offers educational resources that target wasted food, as well as tools and applications that enhance consumers' understanding of strategies to prevent food waste, including eating food before it spoils."
     food_recovery_hierarchy_option: Prevention
     innovator_subcategory_options:
       - Campaigns
@@ -123,21 +123,21 @@ innovator_category_options:
       - Improved Inventory Management (Consumer Level)
       - Smart Refrigerator
   - title: Supply Chain and Operational Efficiency
-    summary: "Tools, technologies, and systems that decrease food loss and waste in the supply chain or in food business operations."
+    summary: "An organization that offers tools, technologies, and systems that decrease food loss and waste in the supply chain or in food business operations."
     food_recovery_hierarchy_option: Prevention
     innovator_subcategory_options:
       - Cold Chain Management
       - Improved Inventory Management
       - Waste Tracking & Analytics
   - title: Shelf-Life Extension
-    summary: "Any technology that physically enhances the ability of perishable food to remain fresh for longer, including food packaging."
+    summary: "An organization that offers any technology that physically enhances the ability of perishable food to remain fresh for longer, including food packaging."
     food_recovery_hierarchy_option: Prevention
     innovator_subcategory_options:
       - Ethylene Inhibitor
       - Spoilage Prevention Packaging
       - Packaging Adjustments
   - title: Secondary Marketplaces
-    summary: "A secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."    
+    summary: "An organization that operates a secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."    
     food_recovery_hierarchy_option: Prevention
     innovator_subcategory_options:
       - Brick and Mortar
@@ -146,7 +146,7 @@ innovator_category_options:
       - Business to Business
       - Consumer to Consumer
   - title: Food Product Creation
-    summary: "Any commercial or nonprofit business converting edible food that is currently considered waste (e.g. surplus/cosmetically challenged produce; brewery waste; vegetable trimmings) into value-added consumer food products (e.g., juices, fruit snacks, energy bars)."
+    summary: "An organization that converts edible food that is currently considered waste (e.g., surplus/cosmetically challenged produce, brewery waste, vegetable trimmings) into value-added consumer food products (e.g., juices, fruit snacks, energy bars)."
     food_recovery_hierarchy_option: Prevention
     innovator_subcategory_options:
       - Surplus Produce
