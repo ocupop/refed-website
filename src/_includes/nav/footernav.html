@@ -45,7 +45,7 @@
               <a href="{{ '/solutions' | prepend: site.baseurl }}">Solutions</a>
               <ul>
                 {% for tab in site.data.tabs %}
-                {% capture link %}/solution?sort={{ tab.slug }}#cards{% endcapture %}
+                {% capture link %}/solutions?sort={{ tab.slug }}#cards{% endcapture %}
                 <li><a href="{{ link | prepend: site.baseurl }}">{{ tab.title }}</a></li>
                 {% endfor %}
               </ul>
