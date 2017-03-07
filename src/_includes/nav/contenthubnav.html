@@ -9,9 +9,9 @@
       <div class="content">
         <h1>News &amp; Resources</h1>
         <ul class="nav nav-tabs tabs-right">
-          <li><a {% if tab %}data-toggle="tab" role="tab"{% endif %}
-          href="/content-hub#news"><span class="hidden-xs">Most Recent </span>News</a></li>
-          <li><a {% if tab %}data-toggle="tab" role="tab"{% endif %} href="/content-hub#resources"><span class="nocase hidden-xs">ReFed</span> Resources</span></a></li>
+          <li><a {% if tab %}data-toggle="tab" data-target="#news" role="tab"{% endif %}
+          href="/content-hub#active_tab=news"><span class="hidden-xs">Most Recent </span>News</a></li>
+          <li><a {% if tab %}data-toggle="tab" data-target="#resources" role="tab"{% endif %} href="/content-hub#active_tab=resources"><span class="nocase hidden-xs">ReFed</span> Resources</span></a></li>
         </ul>
       </div>
     </div>
