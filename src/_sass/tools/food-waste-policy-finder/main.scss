@@ -16,6 +16,14 @@ body.policy_tool-layout {
   }
 }
 
+body.food-waste-policy-finder, body.state-layout {
+  #toolFooter {
+    .socialnav {
+      height: 44px;
+    }
+  }
+}
+
 
 .map-tooltip {
   position: absolute;
