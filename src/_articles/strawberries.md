@@ -1,6 +1,6 @@
 ---
 layout: article
-date: 2016-06-27 00:00:00
+date: 2017-03-08 00:00:00
 title: Strawberries
 categories:
   - article
