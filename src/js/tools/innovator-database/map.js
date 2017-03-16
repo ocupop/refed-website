@@ -70,7 +70,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   function initMap(container) {
     var options = {
-      zoom: 5,
+      zoom: 4,
       // mapTypeId: 'terrain',
       mapTypeControl: false,
       streetViewControl: false,
