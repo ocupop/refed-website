@@ -12,6 +12,7 @@ form {
   cursor: pointer;
   select {
     -webkit-appearance: none;
+    -moz-appearance: none;
     color: $gray-light;
     &:focus {
      outline: none;
