@@ -70,7 +70,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   function initMap(container) {
     var options = {
-      zoom: 5,
+      zoom: 4,
       // mapTypeId: 'terrain',
       mapTypeControl: false,
       streetViewControl: false,
@@ -163,8 +163,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
           .find('[data-content="business-model"]').text(d.businessModel).end()
           .find('[data-content="innovator-category-options"]').text(d.innovatorCategoryOptions.replaceAll('-', ' ').replace(/\b\w/g, function(l){ return l.toUpperCase() })).end()
           .find('[data-content="food-recovery-hierarchy-option"]').text(d.foodRecoveryHierarchyOption).end()
-          .find('[data-content="reach"]').text(d.innovatorLevel).end()
-          .find('.icon').addClass("icon-"+d.innovatorLevel).end()
+          .find('[data-content="innovator-level"]').text(d.innovatorLevel).end()
+          .find('.icon').removeClass('icon-local').removeClass('icon-national').addClass("icon-"+d.innovatorLevel).end()
           .find('[data-content="website"]').text(d.website).attr('href', d.website).end()
           .find('[data-content="url"]').attr('href', d.url).end()
           .find('.innovator_details').show().end()

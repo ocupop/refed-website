@@ -165,7 +165,7 @@ innovator_category_options:
       - Donation Transportation
       - Consumer Food Recovery
   - title: Donated Food Processing
-    summary: "An organization that collects, stores, and processes donated food for distribution to food insecure populations. This includes community kitchen models and the value-added processing of donated food"
+    summary: "An organization that collects, stores, and processes donated food for distribution to food insecure populations. This includes community kitchen models and the value-added processing of donated food."
     food_recovery_hierarchy_option: Recovery
     innovator_subcategory_options:
       - Donation Storage & Handling
