@@ -96,7 +96,7 @@ body.state-policy {
     display: none;
     cursor: pointer;
   }
-  .muni { opacity: 0; }
+  .muni { opacity: 0; cursor: crosshair; }
 
   // Showing State levels
   &[data-category="prevention"] { 
@@ -157,6 +157,16 @@ body.state-policy {
     cursor: pointer;
   }
 
+}
+
+.mapTip {
+  position: absolute;
+  display: inline;
+  background-color: rgba(0,0,0,0.4);
+  color: $cream;
+  padding: 0 10px;
+  margin-top: -20px;
+  pointer-events: none;
 }
 
 @media all and (max-width: $screen-md-max) {
