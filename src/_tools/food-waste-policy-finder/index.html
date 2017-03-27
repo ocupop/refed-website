@@ -1,128 +1,63 @@
 ---
 layout: tool
-title: Food Waste Policy Finder
+title: State Policy
 slug: food-waste-policy-finder
 
-header: '<small>U.S. Food Waste</small>Policy Finder'
-tool_url:
-sidebar: default
-breadcrumb: true
+header: <small>U.S. Food Waste</small>Policy Finder
+tool_url: /tools/food-waste-policy-finder/
+
+sidebar: map
 ---
-{% contentfor sidebar %}
-  {% include elements/toolSidebar.html %}
-{% endcontentfor %}
+{% include_relative _partials/tooltip.html %}
+
+{% include_relative _partials/mobilenav.html %}
+
+<section id="statenav" class="alt-bg fullbleed" style="display:none;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content flex-content center">
+          <div><h5 style="margin-top: -5px; margin-right: 20px;">Explore food waste policy by state</h5></div>
+          <div class="break-50">{% include nav/quicknav.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h1>{{ page.title }}</h1>
-          <p class="editable">The ReFED Food Waste Policy Finder is an interactive tool for exploring federal and state policies that affect food waste reduction and diversion. Find out which states have effective policy to encourage food donation, learn about states that are leading on recycling policy, and discover how proposed federal policy could clear up consumer confusion around date labeling.</p>
+  <div class="content mapWizard">
+    <div class="policyFinder_map">
+      {% include_relative _partials/map_legend.html %}
+      <div class="mapInstructions">
+        <div class="col-xs-12 col-md-4">
+          <div class="content">
+            <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="content border border-left">
+            <h4>U.S. Food Waste Policy Finder</h4>
+            <p class="editable">Use this tool to research current food waste policy at the federal and state levels and to discover best practices and recommendations for policy improvements that will support more food waste prevention, recovery and recycling.</p>
+            <h5 class="show1">Learn about...<br><span class="text-recycle">state policies that hinder food waste recycling.</span></h5>
+            <h5 class="show2">Learn about...<br><span class="text-recycle">states and municipalities that have enacted Organic Waste Bans &amp; Waste Recycling Laws.</span></h5>
+
+            <h5 class="show3">Learn about...<br><span class="text-recovery">states that offer liability protection.</span></h5>
+            <h5 class="show4">Learn about...<br><span class="text-recovery">states that offer additional tax incentives beyond federal incentives.</span></h5>
+
+            <h5 class="show5">Learn about...<br><span class="text-prevention">date labeling policies that hinder food waste prevention.</span></h5>
+
+            <button class="show6 button">Start Now</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="row-header">
-        <h3>Explore State Policy</h3>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="content">
-          <a href="/tools/food-waste-policy-finder/state-policy" title="State Policy Map" class="hidden-print">
-            <img src="/img/tools/food-waste-policy-finder/Policy_thumb-fw-state.png" class="img-responsive" />
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <div class="content">
-          <p class="editable">Policy treatment of food waste diversion differs dramatically throughout the country. Use this tool to to compare current state policies, identify best practices, and examine recommendations for improvements.</p>
-          <a href="/tools/food-waste-policy-finder/state-policy" class="hidden-print" title="State Policy Map">Open State Policy Tool &gt;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="row-header">
-        <h3>Understand Federal Policy</h3>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="content">
-          <a href="/tools/food-waste-policy-finder/federal-policy" class="hidden-print" title="Current Federal Policy">
-            <img src="/img/tools/food-waste-policy-finder/Policy_thumb-fw-fed.png" class="img-responsive" />
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <div class="content">
-          <p class="editable">Reaching long-term food waste reduction goals will likely require comprehensive federal food waste policy that sets national guidelines. Use this tool to understand the current federal policy landscape and explore proposals and recommendations for strengthening those policies.</p>
-          <a href="/tools/food-waste-policy-finder/federal-policy" class="hidden-print" title="Current Federal Policy">Open Federal Policy Tool &gt;</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="alt-bg hidden-print">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <p><strong>Explore Food Waste Policy by State</strong></p>
-          {% include nav/quicknav.html %}
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="hidden-print">
-  <div class="container">
-
-    <div class="row">
-      <div class="row-header">
-        <h3>Spotlight on Date Labeling Regulations</h3>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="content">
-          <a href="/tools/food-waste-policy-finder/spotlight-on-date-labeling/" title="Spotlight on Date Labeling Regulations">
-            <img src="/img/tools/food-waste-policy-finder/Policy_thumb-fw-dl.png" class="img-responsive" />
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <div class="content">
-          <p class="editable">A patchwork of state regulations around date labeling causes confusion that results in the significant waste of safe, wholesome food. Learn about the issues, compare state regulations, and find potential solutions to date labeling policy.</p>
-          <a href="/tools/food-waste-policy-finder/spotlight-on-date-labeling/" title="Spotlight on Date Labeling Regulations" class="button">Learn More &gt;</a>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
 
-<section class="alt-bg">
-  <div class="container">
-
-    <div class="row">
-      <div class="row-header">
-        <h3>About This Tool</h3>
-      </div>
-      <div class="col-xs-12">
-        <div class="content">
-          <p class="editable">ReFED and the Harvard Law School Food Law and Policy Clinic collaborated to develop the Food Waste Policy Finder, with state date labeling information provided by the Natural Resources Defense Council and animal feed policy information provided by the University of Arkansas School of Law.</p>
-          <a href="/tools/food-waste-policy-finder/about" title="About the Policy Tool Finder" class="button">About</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
-  
-
-
-
+{% contentfor sidebar %}
+  {% include_relative _partials/mapnav.html %}
+{% endcontentfor %}
