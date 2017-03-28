@@ -97,12 +97,15 @@ innovator_levels:
   - national
 
 food_recovery_hierarchy_options:
-  - prevention
-      summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
-  - recovery
-      summary: " Recovery captures edible food that would otherwise go to waste on farms, within the supply chain, or in consumer-facing businesses, and redistributes it to food insecure populations."
-  - recycling
-      summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
+  prevention: 
+    title: Prevention
+    summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
+  recovery:
+    title: Recovery
+    summary: " Recovery captures edible food that would otherwise go to waste on farms, within the supply chain, or in consumer-facing businesses, and redistributes it to food insecure populations."
+  recycling:
+    title: Recycling
+    summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
 
 business_models:
   - "For-Profit"
