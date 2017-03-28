@@ -42,7 +42,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     }
 
     $(window).on('mixStart', function(event) {
-      window.console.log('HELLO');
       var uids = $.map(event.detail.futureState.matching, function(i) {
         return($(i).data('uid'));
       });
