@@ -10,7 +10,7 @@ business_model: For-Profit
 food_recovery_hierarchy_option: prevention
 innovator_category_options:
   - Secondary Marketplaces
-innovator_subcategory_options:
+_innovator_subcategory_options:
   - business-to-buyer
 solutions:
   - secondary-resellers
