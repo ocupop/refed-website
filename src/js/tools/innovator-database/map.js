@@ -35,6 +35,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     if (typeof google === "undefined") {
         window.console.log("Gotta load google maps");
         // lazyLoadGoogleMaps();
+        setTimeout(function(){ initMap(container); }, 3000);
+
     } else {                
         // window.console.log("Google Maps is already loaded: Initialize autocomplete");
         // googleMapsLoaded();
@@ -42,7 +44,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
     }
 
     $(window).on('mixStart', function(event) {
-      window.console.log('HELLO');
       var uids = $.map(event.detail.futureState.matching, function(i) {
         return($(i).data('uid'));
       });

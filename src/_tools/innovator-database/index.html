@@ -86,8 +86,8 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
-                      
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
+                      <!-- /tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList -->
                     </li>
                   {% endfor %}
                 </ul>
@@ -102,7 +102,8 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
+                      <!-- /tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList -->
                     </li>
                   {% endfor %}
                 </ul>
@@ -116,7 +117,7 @@ breadcrumb: true
                   {% for category in filtered %}
                     <li>
                       <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList" class="italic">View Innovators in this Category</a></p>
+                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
                     </li>
                   {% endfor %}
                 </ul>

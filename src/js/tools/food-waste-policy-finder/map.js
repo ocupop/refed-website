@@ -42,6 +42,10 @@ var active_category;
     var path = d3.geo.path()
       .projection(projection);
 
+    var tag = d3.select("body").append("div")
+        .attr("class", "mapTip")
+        .style("display", "none");
+
     // Append Div for tooltip to SVG
     var tip = d3.select("#tooltip");
     queue()
@@ -59,6 +63,21 @@ var active_category;
         .attr("d", path)
         .attr('class', 'states')
         .attr('id', function(d) { return d.properties.name.replaceAll(" ", "-").toLowerCase(); })
+        .on('mouseover', function(d) {
+          // var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
+          // window.location.href = url;
+          // window.console.log("D:", d.properties.name, d.properties, d3.event.pageX, d3.event.pageY);
+          tag.style("display", "inline");
+        })
+        .on("mousemove", function(d) {
+          tag
+              .text(d.properties.name)
+              .style("left", (d3.event.pageX) + "px")
+              .style("top", (d3.event.pageY) + "px");
+        })
+        .on("mouseout", function(d) {
+          tag.style("display", "none");
+        })
         .on('click', function(d) {
           var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
           window.location.href = url;
@@ -74,12 +93,22 @@ var active_category;
         .attr("opacity", 0.7)
         .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
         .attr('class', function(d) { return "muni "+d.category; })
-        .attr('data-toggle', "tooltip")
-        .attr('data-placement', "bottom")
-        .attr('title', function(d) { return d.properties.title; })
-        .on('click', function(d) {
-          // window.console.log($(this), this);
-          $(this).tooltip();
+        .on('mouseover', function(d) {
+          // var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
+          // window.location.href = url;
+          // window.console.log("D:", d.properties.name, d.properties, d3.event.pageX, d3.event.pageY);
+          tag.style("display", "inline");
+        })
+        .on("mousemove", function(d) {
+          $(this).css("opacity", 1);
+          tag
+              .text(d.properties.title)
+              .style("left", (d3.event.pageX) + "px")
+              .style("top", (d3.event.pageY) + "px");
+        })
+        .on("mouseout", function(d) {
+          $(this).css("opacity", 0.7);
+          tag.style("display", "none");
         });
         // .append("path")
         // .attr('d', path.pointRadius(10))
