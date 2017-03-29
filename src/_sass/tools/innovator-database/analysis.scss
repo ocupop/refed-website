@@ -57,6 +57,7 @@
       transform: translateX(-50px);
     }
   }
+
   .ct-label {
     display: none;
   }
@@ -66,7 +67,7 @@
   }
 
   .ct-label.ct-vertical.ct-start {
-    display: none;
+    display: inline-block;
   }
   .ct-chart-bar .ct-label.ct-horizontal.ct-end {
     white-space: nowrap;

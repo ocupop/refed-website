@@ -76,7 +76,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
     }, {
       axisY: {
-        showLabel: false,
+        showLabel: true,
         showGrid: true
       },
       axisX: {
