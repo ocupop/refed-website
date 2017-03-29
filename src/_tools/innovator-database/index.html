@@ -76,53 +76,22 @@ breadcrumb: true
           <p class="editable">Innovators are grouped by where they fall in the food recovery hierarchy (prevention, recovery, and recycling), and then placed into one of 13 Innovator Database categories.</p>
           {% assign options = site.food_recovery_hierarchy_options %}
           {% for option in options %}
-            <h4 data-toggle="collapse" data-target="#collapse-{{ option.title | slugify }}" href="#collapse-{{ option.title | slugify }}">View {{ option.title }} Categories <span class="caret"></span></h4>
-            <p>{{ option.summary }}</p>
-            {% if option.title == "Prevention" %}
-              <div class="collapse" id="collapse-prevention">
-                <ul class="content">
-                  {% assign category_options = site.innovator_category_options %}
-                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Prevention"%}
-                  {% for category in filtered %}
-                    <li>
-                      <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
-                      <!-- /tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList -->
-                    </li>
-                  {% endfor %}
-                </ul>
-                
-              </div>
-            {% endif %}
-            {% if option.title == "Recovery" %}
-              <div class="collapse" id="collapse-recovery">
-                <ul class="content">
-                  {% assign category_options = site.innovator_category_options %}
-                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Recovery"%}
-                  {% for category in filtered %}
-                    <li>
-                      <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
-                      <!-- /tools/innovator-database/innovators?innovator_category={{ category.title | slugify }}#innovatorList -->
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-            {% if option.title == "Recycling" %}
-              <div class="collapse" id="collapse-recycling">
-                <ul class="content">
-                  {% assign category_options = site.innovator_category_options %}
-                  {% assign filtered = category_options | where: "food_recovery_hierarchy_option", "Recycling"%}
-                  {% for category in filtered %}
-                    <li>
-                      <h4><strong>{{ category.title }}</strong></h4>
-                      <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
+            <h4 data-toggle="collapse" data-target="#collapse-{{ option[0] }}" href="#collapse-{{ option[0] }}">View {{ option[1].title }} Categories <span class="caret"></span></h4>
+
+            <p>{{ option[1].summary }}</p>
+            <div class="collapse" id="collapse-{{ option[0] }}">
+              <ul class="content">
+                {% assign category_options = site.innovator_category_options %}
+                {% assign filtered = category_options | where: "food_recovery_hierarchy_option", option[0] %}
+                {% for category in filtered %}
+                  <li>
+                    <h4><strong>{{ category.title }}</strong></h4>
+                    <p>{{ category.summary }} <a href="/tools/innovator-database/innovators#active_tab=innovatorList&innovator_category={{ category.title | slugify }}" class="italic">View Innovators in this Category</a></p>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
           {% endfor %}
         </div>
         <div class="content editable">
