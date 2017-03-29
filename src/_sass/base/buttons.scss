@@ -80,7 +80,13 @@ button {
       color: $gray-darker;
     }
   }
-
+  &.cream {
+    color: $gray-darker;
+    &:hover, &.active {
+      background-color: darken($cream, 15%) !important;
+      color: $gray-base;
+    }
+  }
   &.prevention {
     color: $cream-lighter;
     &:hover, &:focus, &:active {
