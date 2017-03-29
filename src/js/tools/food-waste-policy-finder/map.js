@@ -90,7 +90,6 @@ var active_category;
         .attr("xlink:href", function(d) { return "/img/icons/policy/muni_icon.svg"; })
         .attr("width", 28)
         .attr("height", 28)
-        .attr("opacity", 0.7)
         .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
         .attr('class', function(d) { return "muni "+d.category; })
         .on('mouseover', function(d) {
@@ -100,14 +99,12 @@ var active_category;
           tag.style("display", "inline");
         })
         .on("mousemove", function(d) {
-          $(this).css("opacity", 1);
           tag
               .text(d.properties.title)
               .style("left", (d3.event.pageX) + "px")
               .style("top", (d3.event.pageY) + "px");
         })
         .on("mouseout", function(d) {
-          $(this).css("opacity", 0.7);
           tag.style("display", "none");
         });
         // .append("path")
@@ -369,8 +366,10 @@ var active_category;
         setActiveCategory(input.val());
       }
 
-      // Set the active key
-      setActiveKey(key);
+      if(key) {
+        // Set the active key
+        setActiveKey(key);
+      }
 
       // Set the properties
       input.prop({
