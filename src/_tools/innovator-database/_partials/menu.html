@@ -56,9 +56,9 @@
                 <select id="innovator_categories">
                   <option value="">Category</option>
                   {% for category in site.innovator_category_options %}
-                    <option value=".{{ category.title | slugify }}"
-                            data-summary="{{ category.summary }}"
-                             data-mixitup-control>{{ category.title }}</option>
+                    <option value=".{{ category[0] }}"
+                            data-summary="{{ category[1].summary }}"
+                             data-mixitup-control>{{ category[1].title }}</option>
                   {% endfor %}
                 </select>
               </div>

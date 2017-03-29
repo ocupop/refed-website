@@ -225,9 +225,9 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           total_count = filtered.length;
           nonprofit = filtered.filter("[data-business-model='Nonprofit']").length,
           forprofit = filtered.filter("[data-business-model='For-Profit']").length,
-          prevention = filtered.filter("[data-food-recovery-hierarchy-option='Prevention']").length,
-          recovery = filtered.filter("[data-food-recovery-hierarchy-option='Recovery']").length,
-          recycling = filtered.filter("[data-food-recovery-hierarchy-option='Recycling']").length;
+          prevention = filtered.filter("[data-food-recovery-hierarchy-option='prevention']").length,
+          recovery = filtered.filter("[data-food-recovery-hierarchy-option='recovery']").length,
+          recycling = filtered.filter("[data-food-recovery-hierarchy-option='recycling']").length;
 
       data.labels.push(label);
       data.details.push(summary);
