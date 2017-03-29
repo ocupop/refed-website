@@ -64,7 +64,7 @@ var active_category;
         .attr('class', 'states')
         .attr('id', function(d) { return d.properties.name.replaceAll(" ", "-").toLowerCase(); })
         .on('mouseover', function(d) {
-          // var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
+          // var url = "/tools/food-waste-policy-finder/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
           // window.location.href = url;
           // window.console.log("D:", d.properties.name, d.properties, d3.event.pageX, d3.event.pageY);
           tag.style("display", "inline");
@@ -79,7 +79,7 @@ var active_category;
           tag.style("display", "none");
         })
         .on('click', function(d) {
-          var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
+          var url = "/tools/food-waste-policy-finder/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
           window.location.href = url;
         });
 
@@ -93,7 +93,7 @@ var active_category;
         .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
         .attr('class', function(d) { return "muni "+d.category; })
         .on('mouseover', function(d) {
-          // var url = "/tools/food-waste-policy-finder/states/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
+          // var url = "/tools/food-waste-policy-finder/"+d.properties.name.replaceAll(" ", "-").toLowerCase();
           // window.location.href = url;
           // window.console.log("D:", d.properties.name, d.properties, d3.event.pageX, d3.event.pageY);
           tag.style("display", "inline");

@@ -1,29 +1,22 @@
 <div class="menu">
   <ul>
     <li>
-      <a href="/tools/food-waste-policy-finder">
-        <span>About</span>
-      </a></li>
-    <li class="divider"></li>
-    <li>
-      <a href="/tools/food-waste-policy-finder/state-policy">
-        <!-- <i class="icon icon-circle"></i> -->
+      <a href="/tools/food-waste-policy-finder/"
+         {% if page.url =='/tools/food-waste-policy-finder/' %}class="active"{% endif %}>
         <span>State Policy</span>
       </a></li>
     <li class="divider"></li>
     <li>
-      <a href="/tools/food-waste-policy-finder/federal-policy">
-        <!-- <i class="icon icon-circle"></i> -->
+      <a href="/tools/food-waste-policy-finder/federal-policy"
+        {% if page.url =='/tools/food-waste-policy-finder/federal-policy' %}class="active"{% endif %}>
         <span>Federal Policy</span>
       </a></li>
-
-    <!-- <li class="next hide">
-      <a href="/tools/spotlight-on-date-labeling-regulation/">Spolight on<br>date labeling regulations &gt;</a>
-    </li>
-    <li class="update hide">
-      Have an update for us?<br>
-      <a href="mailto:info@refed.com">Submit it here &gt;</a>
-    </li> -->
+    <li class="divider"></li>
+    <li>
+      <a href="/tools/food-waste-policy-finder/about"
+         {% if page.url =='/tools/food-waste-policy-finder/about' %}class="active"{% endif %}>
+        <span>About</span>
+      </a></li>
   </ul>
   <ul class="drawer">
     <li>
