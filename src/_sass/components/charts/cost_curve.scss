@@ -106,6 +106,7 @@ TODO - Enter example
           background-color: rgba($button-color, .75);
           height: 100% !important;
           width: 40px;
+          border-radius: 0;
           animation: draw 1s ease-in-out;
           @include transition(1s);
         }
