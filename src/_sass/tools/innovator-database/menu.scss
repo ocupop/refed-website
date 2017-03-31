@@ -1,6 +1,6 @@
 .innovatorDatabase_menu {
   position: fixed;
-  top: 120px;
+  top: 157px;
   width: 100%;
   z-index: 99;
   &:before, &:after {
@@ -157,6 +157,7 @@
 
 body.condensed-header {
   .innovatorDatabase_menu {
+    top: 120px;
     section {
       opacity: 0;
       pointer-events: none;
