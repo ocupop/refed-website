@@ -96,12 +96,12 @@ body.state-policy {
     display: none;
     cursor: pointer;
   }
-  .muni { opacity: 0; cursor: crosshair; }
+  .muni { opacity: 0; cursor: crosshair;  pointer-events: none; }
 
   // Showing State levels
   &[data-category="prevention"] { 
-    .level-1 { fill: $prevention-color; }
-    .level-2 { fill: $prevention-color; }
+    .level-1 { fill: darken($cream, 15%); }
+    .level-2 { fill: $button-color; }
     .level-3 { fill: $prevention-color; }
     .level-4 { fill: $prevention-color; }
     .level-5 { fill: $prevention-color; }
@@ -123,13 +123,13 @@ body.state-policy {
 
   // Showing Case Studies
   &[data-studies="prevention"] {
-    .study.prevention { display: block; }
+    .study.prevention { display: block; pointer-events: all; }
   }
   &[data-studies="recovery"] {
-    .study.recovery { display: block; }
+    .study.recovery { display: block; pointer-events: all; }
   }
   &[data-studies="recycle"] {
-    .study.recycle { display: block; }
+    .study.recycle { display: block; pointer-events: all;}
   }
 
   // Showing Map Keys
@@ -148,7 +148,7 @@ body.state-policy {
   }
   &[data-key="organic-waste-bans-waste-recycling-laws"] {
     .level-1 { fill: $recycle-color; }
-    .muni { opacity: 0.6; }
+    .muni { opacity: 0.6;  pointer-events: all; }
     .organic-waste-bans-waste-recycling-laws-key { display: block; }
   }
 

@@ -21,6 +21,7 @@
           type='checkbox'
           class='map-subfilter'
           data-key="{{ section.title | slugify }}"
+          {% if section.title == 'Date Labeling' %}data-baselevel="{{ forloop.index }}"{% endif %}
           data-states='{{ filter.states | jsonify }}'>
         <label for="{{ section.title | slugify }}_filter_{{ forloop.index }}">
           <span></span>

@@ -11,21 +11,23 @@
     </h4>
     <div id="prevention_filters" class="filters collapse">
       <p>Policy changes related to date labeling have the potential to prevent 398,000 tons of waste per year</p>
-      <ul class="section_root" data-section="date-labeling">
-        <li class="checkbox">
-          <input id="date_labeling_studies"
-            type="checkbox"
-            class="study-filter"
-            data-key="date-labeling"
-            value="prevention">
-          <label for="date_labeling_studies">
-            <span></span>
-            Date Labeling
-            <small>Reveal positive and negative policy examples</small>
-          </label>
-        </li>
+      <div class="case-studies-filter checkbox">
+        <input id='prevention_studies'
+          type='checkbox'
+          class='study-filter'
+          data-key=""
+          value="prevention">
+        <label for="prevention_studies" class="text-prevention">
+          <span></span>
+          <img src="/img/icons/policy/prevention_study_icon.svg">
+          Reveal positive and negative policy examples
+        </label>
+      </div>
+      {% assign section = site.data.policy_tool['date_labeling'] %}
+      <ul class="section_root" data-section="{{ section.title | slugify }}">
+        {% include_relative _partials/policy_tool_filter.html section=section %}
       </ul>
-      <a href="/tools/food-waste-policy-finder/spotlight-on-date-labeling/" class="button inverse">Explore date labeling policy issues in depth&nbsp;&gt;</a>
+      <a href="/tools/food-waste-policy-finder/spotlight-on-date-labeling/" class="button prevention">Explore date labeling policy issues in depth&nbsp;&gt;</a>
     </div>
   </div>
 

@@ -60,6 +60,8 @@ date_labeling:
     - title: Date labels required for certain foods. Regulations on sales after those dates.
       definition: 'Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted.'
       states:
+        - alabama
+        - illinois
         - colorado
         - florida
         - georgia
@@ -78,11 +80,6 @@ date_labeling:
         - virginia
         - washington
         - wisconsin
-    - title: No date label regulations. Regulations on sales after dates if date labels are voluntarily applied.
-      definition: 'Of the 41 states that require at least some foods to have date labels, 20 of them and the District of Columbia also restrict sales past the date. Because date labels are generally unrelated to food safety, restricting the donation or sale of past-date food means that some wholesome food that could have been sold or gone to those in need is unnecessarily wasted.'
-      states:
-        - alabama
-        - illinois
 liability_protection:
   title: Liability Protection
   definition: Reveal states that offer liability protection

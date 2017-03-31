@@ -249,6 +249,14 @@ var active_category;
   function setActiveStudies(category) {
     window.console.log("SETTING ACTIVE STUDIES", category);
     $('.policyFinder_map').attr('data-studies', category);
+    
+    // var current_category = $('.policyFinder_map').attr('category');
+    // if(category == current_category) {
+    //   $('.policyFinder_map').attr('data-studies', category);
+    // } else {
+    //   $('.policyFinder_map').attr('data-studies', category);
+    //   $('.policyFinder_map').attr('data-studies', category);
+    // }
 
   }
 
@@ -347,6 +355,10 @@ var active_category;
     $('.policyFinder_map').attr('data-studies', '');
   }
 
+  function clearKey() {
+    setActiveKey('');
+  }
+
   function toggleStudyFilter(input) {
 
     if(input.prop('checked')) {
@@ -363,6 +375,7 @@ var active_category;
       if(category != active_category) {
         // Set a new active category
         clearLevels();
+        clearKey();
         setActiveCategory(input.val());
       }
 
@@ -417,9 +430,14 @@ var active_category;
     $(".map-subfilter").each(function() {
       if($(this).prop('checked')) {
         var states = $(this).data('states');
+        var baseLevel = $(this).data('baselevel') || 1;
+
+        window.console.log("ADDING A BASELEVEL FOR: ", baseLevel);
         // window.console.log("ADDING A LEVEL FOR: ", states);
         states.forEach(function(state) {
-          activeStates.push(state);
+          for (var i = 0; i < baseLevel; i++) {
+            activeStates.push(state);
+          }
         });
 
       }
@@ -487,7 +505,7 @@ var active_category;
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
 
-    pageScroll('#pageContent', 120);
+    pageScroll('#pageContent', 157);
     mapnav.removeClass('bottom');
     wizard.delay(500)
       .queue(function() { 
