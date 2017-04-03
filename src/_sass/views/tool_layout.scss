@@ -13,6 +13,16 @@
     }
   }
 }
+.food-waste-policy-finder {
+  #pageContent {
+    margin-top: 254px;
+  }
+  &.condensed-header {
+    #pageContent {
+      margin-top: 217px;
+    }
+  }
+}
 
 @media all and (max-width: $screen-md-max) {
   .tool-layout, .state-layout {

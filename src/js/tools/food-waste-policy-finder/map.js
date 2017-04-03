@@ -484,7 +484,8 @@ var active_category;
     map.parent().finish().removeClass('mapWizard');
 
     $('#statenav').slideDown();
-    
+    pageScroll('#pageContent', 254);
+
     // check url and trigger clicks in mapnav
     // window.console.log('#'+urlParams['category']);
 
