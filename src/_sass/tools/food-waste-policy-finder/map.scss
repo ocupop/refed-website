@@ -139,12 +139,18 @@ body.state-policy {
   &[data-key="liability-protection"] {
     .liability-protection-key { display: block; }
   }
+  &[data-key="liability-protection-subfilter"] {
+    .liability-protection-subfilter-key { display: block; }
+  }
   &[data-key="tax-incentives"] {
     .level-1 { fill: $recovery-color; }
     .tax-incentives-key { display: block; }
   }
   &[data-key="animal-feed"] {
     .animal-feed-key { display: block; }
+  }
+  &[data-key="animal-feed-subfilter"] {
+    .animal-feed-subfilter-key { display: block; }
   }
   &[data-key="organic-waste-bans-waste-recycling-laws"] {
     .level-1 { fill: $recycle-color; }
