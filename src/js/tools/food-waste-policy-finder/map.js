@@ -90,7 +90,13 @@ var active_category;
         .attr("xlink:href", function(d) { return "/img/icons/policy/muni_icon.svg"; })
         .attr("width", 28)
         .attr("height", 28)
-        .attr("transform", function(d) { return "translate(" + projection(d.properties.geometry.coordinates) + ")"; })
+        .attr("transform", function(d) {
+          var translate = projection(d.properties.geometry.coordinates);
+          var translateX = translate[0] - 10;
+          var translateY = translate[1] - 10;
+
+          return "translate(" + translateX +","+ translateY + ")";
+        })
         .attr('class', function(d) { return "muni "+d.category; })
         .on('mouseover', function(d) {
           // var url = "/tools/food-waste-policy-finder/"+d.properties.name.replaceAll(" ", "-").toLowerCase();

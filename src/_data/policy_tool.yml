@@ -309,25 +309,25 @@ organics_recycling_mandates:
       municipalities:
         - title: San Francisco
           state: california
-          lat: 37.757815
-          long: -123.5076395
+          lat: 37.7749300
+          long: -122.4194160
         - title: Boulder
           state: colorado
-          lat: 40.014984
-          long: -105.270546
+          lat: 40.0149860
+          long: -105.2705460
         - title: 'Minneapolis & Hennepin County'
           state: minnesota
           lat: 44.975918
           long: -93.273079
         - title: New York City
           state: new-york
-          lat: 40.73061
-          long: -74.935242
+          lat: 40.7127840
+          long: -74.0059410
         - title: Austin
           state: texas
-          lat: 30.2672
-          long: -97.7431
+          lat: 30.2671530
+          long: -97.7430610
         - title: Seattle
           state: washington
-          lat: 47.6063
-          long: -122.3321
+          lat: 47.6062100
+          long: -122.3320710
