@@ -321,7 +321,7 @@ organics_recycling_mandates:
           long: -93.273079
         - title: New York City
           state: new-york
-          lat: 40.7127840
+          lat: 41.1127840
           long: -74.0059410
         - title: Austin
           state: texas
