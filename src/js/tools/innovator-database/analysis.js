@@ -112,7 +112,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           style: 'stroke-width: 40px',
           title: data.labels[d.index],
           summary: data.details[d.index],
-          category: data.labels[d.index].toLowerCase().replace(' ', '-'),
+          category: data.labels[d.index].toLowerCase().replaceAll(' ', '-'),
           onclick: "showAnalysisDetails(this)"
         });
       }
@@ -183,7 +183,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           style: 'stroke-width: 40px',
           title: data.labels[d.index],
           summary: data.details[d.index],
-          category: data.labels[d.index].toLowerCase().replace(' ', '-'),
+          category: data.labels[d.index].toLowerCase().replaceAll(' ', '-'),
           onclick: "showAnalysisDetails(this, '.hierarchy')"
         });
       }
