@@ -83,6 +83,9 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         hidePageListIfSinglePage: true
       },
       callbacks: {
+          onMixStart: function() {
+            pageScroll('body',0);
+          },
           onMixEnd: setFilters // Call the setFilters() method at the end of each operation
       }
     });
