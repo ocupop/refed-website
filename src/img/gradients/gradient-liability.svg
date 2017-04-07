@@ -1,9 +1,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 364.1 10.9" style="enable-background:new 0 0 364.1 10.9;" xml:space="preserve">
-  <style type="text/css">
-    .st0{fill:url(#SVGID_1_);}
-  </style>
-  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="5.4531" x2="364.1002" y2="5.4531">
+   viewBox="0 0 364.1 10.9" xml:space="preserve" preserveAspectRatio="none">
+  <linearGradient id="liability_gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop  offset="0" style="stop-color:#E2DCCA"/>
     <stop  offset="8.455575e-02" style="stop-color:#CFD2C1"/>
     <stop  offset="0.4096" style="stop-color:#8AB0A1"/>
@@ -11,5 +8,5 @@
     <stop  offset="0.886" style="stop-color:#38887B"/>
     <stop  offset="1" style="stop-color:#2C8276"/>
   </linearGradient>
-  <rect class="st0" width="364.1" height="10.9"/>
+  <rect class="st0" width="100%" height="100%" fill="url(#liability_gradient)"/>
 </svg>
