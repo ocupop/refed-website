@@ -79,6 +79,9 @@ body.condensed-header {
       aside.mapSidebar, aside.tocSidebar, aside.stateSidebar {
         display: none;
       }
+      aside.innovatorSidebar {
+        width: 100%;
+      }
     }
   }
 }
