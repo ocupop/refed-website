@@ -40,6 +40,12 @@
       }
     }
   }
+  #statenav {
+    display: none;
+    opacity: 1;
+    pointer-events: all;
+    @include transition();
+  }
   .brand {
     display: inline-block;
     width: 26%;
@@ -126,6 +132,10 @@ body.condensed-header {
       img {
 
       }
+    }
+    #statenav {
+      opacity: 0;
+      pointer-events: none;
     }
     // #topnav {
     //   // display: none;
