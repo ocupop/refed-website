@@ -25,6 +25,7 @@ Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   var innovatorMap;
+  var initBounds;
   // var infowindow = new google.maps.InfoWindow();
   var marker,
       markers = [],
@@ -71,8 +72,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
   function initMap(container) {
     var options = {
-      zoom: 4,
-      // mapTypeId: 'terrain',
       mapTypeControl: false,
       streetViewControl: false,
       zoomControl: true,
@@ -82,12 +81,18 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       },
       scrollwheel: false,
       gestureHandling: 'none',
-      styles: {},
-      // center: new google.maps.LatLng(41.850033, -100.6500523)
-      center: {lat: 41.850033, lng: -95.6500523}
+      styles: {}
     };
 
     innovatorMap = new google.maps.Map(container, options);
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({'address': 'US'}, function (results, status) {
+       var ne = results[0].geometry.viewport.getNorthEast();
+       var sw = results[0].geometry.viewport.getSouthWest();
+       initBounds = results[0].geometry.viewport;
+       innovatorMap.fitBounds(initBounds);
+    });
 
     // Create a <script> tag and set the Innovator Database URL as the source.
     var script = document.createElement('script');
@@ -102,10 +107,10 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       $('.innovatorDatabase_menu').attr('data-menu', 'filter');
       // Update this with some type of default page load logic. Need to know how to track the state of teh map accross page refresh.
       google.maps.event.trigger(innovatorMap, 'resize');
+
       var searchLocation = $('#autocomplete').val();
       if(!searchLocation) {
-        innovatorMap.setCenter({lat: 41.850033, lng: -95.6500523});
-        innovatorMap.setZoom(4);
+        innovatorMap.fitBounds(initBounds);
       }
     });
 
