@@ -80,7 +80,7 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
         position: google.maps.ControlPosition.TOP_RIGHT
       },
       scrollwheel: false,
-      gestureHandling: 'none',
+      gestureHandling: 'cooperative', // set to none if needed
       styles: {}
     };
 
