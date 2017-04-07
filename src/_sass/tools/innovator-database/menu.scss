@@ -60,6 +60,7 @@
     opacity: 1;
     pointer-events: all;
   }
+  .mixitup-page-stats { margin: 0 20px; }
 }
 
 .activeTab_innovatorAnalysis {
@@ -93,6 +94,9 @@
 .innovatorDatabase_filtersMenu {
   padding: 10px 0;
   @include transition();
+  .row {
+    margin: 0;
+  }
   h4 {
     font-size: 14px;
   }
@@ -176,10 +180,13 @@ body.condensed-header {
 
 @media all and (max-width: $screen-sm-max) {
 
-  .innovatorDatabase_menu section {
-    min-height: 0;
-    .container {
-      width: 100%;
+  .innovatorDatabase_menu {
+    top: 120px;
+    section {
+      min-height: 0;
+      .container {
+        width: 100%;
+      }
     }
   }
 }
