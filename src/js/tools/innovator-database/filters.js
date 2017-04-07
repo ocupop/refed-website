@@ -84,7 +84,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
       },
       callbacks: {
           onMixStart: function() {
-            pageScroll('body',0);
+            window.scrollTo(0, 0);
           },
           onMixEnd: setFilters // Call the setFilters() method at the end of each operation
       }

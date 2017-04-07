@@ -163,8 +163,8 @@ body.condensed-header {
   .innovatorDatabase_menu {
     top: 120px;
     section {
-      opacity: 0;
-      pointer-events: none;
+      opacity: 0 !important;
+      pointer-events: none !important;
     }
   }
 }
