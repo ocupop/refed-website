@@ -1,4 +1,4 @@
-.tool-layout, .state-layout {
+.tool-layout, .state-layout, .innovator-layout {
   #pageContent {
     margin-top: 157px;
   }
@@ -25,7 +25,7 @@
 }
 
 @media all and (max-width: $screen-md-max) {
-  .tool-layout, .state-layout {
+  .tool-layout, .state-layout, .innovator-layout {
     #pageContent {
       // margin-top: 138px;
     }
@@ -34,7 +34,7 @@
 
 
 @media all and (max-width: $screen-sm-max) {
-  .tool-layout, .state-layout {
+  .tool-layout, .state-layout, .innovator-layout {
     #pageContent {
       margin-top: 138px;
     }
@@ -47,7 +47,7 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
-  .tool-layout, .state-layout {
+  .tool-layout, .state-layout, .innovator-layout {
     #pageContent {
       margin-top: 120px;
     }
