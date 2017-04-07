@@ -395,4 +395,9 @@ select[multiple] {
 
 @media all and (max-width: $screen-sm-max) {}
 
-@media all and (max-width: $screen-xs-max) {}
+@media all and (max-width: $screen-xs-max) {
+  input, select {
+    font-size: 16px;
+  }
+
+}
