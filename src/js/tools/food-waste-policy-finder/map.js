@@ -408,9 +408,6 @@ var active_category;
 
     }
 
-    
-
-
   }
 
   function clearLevels() {
@@ -454,26 +451,9 @@ var active_category;
     activeStates.forEach(function(state) {
       $('#'+ state).addClass('level-'+getLevel(activeStates, state));
     });
+
   }
 
-
-  // function updateMapLevels() {
-  //   var activeStates = [];
-  //   $(".map-subfilter").each(function() {
-  //     if($(this).is(':checked')) {
-  //       var states = $(this).data('states');
-
-  //       states.forEach(function(state) {
-  //         activeStates.push(state);
-  //       });
-
-  //     }
-  //   });
-  //   clearLevels();
-  //   activeStates.forEach(function(state) {
-  //     $('#'+ state).addClass('level-'+getLevel(activeStates, state));
-  //   });
-  // }
 
 
   // Map Loading & Activation
@@ -512,7 +492,7 @@ var active_category;
   function startMapWizard(mapnav) {
     var wizard = $('.mapWizard');
 
-    pageScroll('#pageContent', 157);
+    // pageScroll('#pageContent', 157);
     mapnav.removeClass('bottom');
     wizard.delay(500)
       .queue(function() { 
@@ -543,7 +523,7 @@ var active_category;
       .queue(function() {
         wizard.attr( "class", "mapWizard step6" ).dequeue();
         mapnav.find('.step6').trigger('click');
-        $('#statenav').slideDown();
+        // $('#statenav').slideDown();
       })
       .delay(500)
       .queue(function() {
