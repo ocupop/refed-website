@@ -5,7 +5,7 @@ title: On the Road to Reduction
 categories:
   - article
 featured_image:
-summary: Short summary of article content.
+summary: 'Today, the United States wastes 63 million tons of food annually at a cost of $218 billion. ReFED is working to move the food system from acting on instinct to using insights and collaboration to solve our national food waste problem.'
 references:
 photo_credit:
 ---
