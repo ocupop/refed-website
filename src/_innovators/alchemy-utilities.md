@@ -1,25 +1,27 @@
 ---
 layout: innovator
 name: Alchemy Utilities
-city:
+city: Dublin
 state:
-country: Singapore
-innovator_level: local
-description: '11th Hour app, which allows food and beverage (F&B) businesses to offer last-minute deals to customers. Merchants offer at least a 30 percent discount to draw more customers during lull periods of the day, or to reduce the amount of unsold food that would go to waste.'
+country: Ireland
+innovator_level: national
+description: 'The Alchemy Thermophilic Digester (TD) is a revolutionary biogas system that uses a next generation dry digestion process, improving the energy efficiency typically associated with traditional Anaerobic Digestion (AD) systems. The system is a modular and scalable solution for efficient conversion of organic wastes into biogas and high quality dry pelletised or granulated fertilisers.'
 business_model: For-Profit
-food_recovery_hierarchy_option: prevention
+food_recovery_hierarchy_option: recycling
 innovator_category_options:
-  - secondary-marketplaces
+  - renewable-energy-from-organics-anaerobic-digestion
 innovator_subcategory_options:
   - business-to-buyer
 solutions:
-  - secondary-resellers
-founded: 2016
-website: www.facebook.com/get11thhour
-facebook_url:
-twitter_url:
+  - centralized-anaerobic-digestion
+founded:
+website: 'http://alchemyutilities.ie/'
+facebook_url: 'https://www.facebook.com/AlchemyUtilities/'
+twitter_url: 'https://twitter.com/alchemyutility?lang=en'
 linkedin_url:
-email:
-lat: 1.352083
-lng: 103.819836
+email: info@alchemyutilities.ie
+lat: 53.34155
+lng: -6.243799
 ---
+
+
