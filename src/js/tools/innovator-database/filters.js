@@ -262,7 +262,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     filterMixerByHashState(hashState, true);
   };
 
-  function searchFilter(input, mixer) {
+  window.searchFilter = function(input, mixer) {
     var state = mixer.getState();
 
     var filtered = state.targets.filter(function(el, index){

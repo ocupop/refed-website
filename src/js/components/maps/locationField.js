@@ -49,12 +49,19 @@ $.behaviors('.locationField', locationField);
 
     // Get the place details from the autocomplete object.
     var place = autocomplete.getPlace();
-    window.console.log(place);
+
     if (!place.geometry) {
       // Get the geometry from another API request
       // http://maps.googleapis.com/maps/api/geocode/xml?address=
-      window.console.log("Cleared the field or had an issue with the location");
-      $('body').trigger('noLocation');
+      // window.console.log("Cleared the field or had an issue with the location");
+      if (place.name == '') {
+        $('body').trigger('noLocation');
+      } else {
+        // Leave a message with instructions
+        alert('Valid location was not selected. Searching by keyterm "'+place.name+'" instead');
+        searchFilter(place.name, mixer);
+      }
+
       return;
     } else {
       var location = {
@@ -69,20 +76,20 @@ $.behaviors('.locationField', locationField);
 
   // Bias the autocomplete object to the user's geographical location,
   // as supplied by the browser's 'navigator.geolocation' object.
-  // window.geolocate = function() {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(function(position) {
-  //       var geolocation = {
-  //         lat: position.coords.latitude,
-  //         lng: position.coords.longitude
-  //       };
-  //       var circle = new google.maps.Circle({
-  //         center: geolocation,
-  //         radius: position.coords.accuracy
-  //       });
-  //       autocomplete.setBounds(circle.getBounds());
-  //     });
-  //   }
-  // }
+  window.geolocate = function() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var geolocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+        var circle = new google.maps.Circle({
+          center: geolocation,
+          radius: position.coords.accuracy
+        });
+        autocomplete.setBounds(circle.getBounds());
+      });
+    }
+  }
 
 })();
