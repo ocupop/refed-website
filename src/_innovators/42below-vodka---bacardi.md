@@ -1,0 +1,25 @@
+---
+layout: innovator
+name: 42Below Vodka - Bacardi
+city:
+state:
+country: Singapore
+innovator_level: local
+description: '11th Hour app, which allows food and beverage (F&B) businesses to offer last-minute deals to customers. Merchants offer at least a 30 percent discount to draw more customers during lull periods of the day, or to reduce the amount of unsold food that would go to waste.'
+business_model: For-Profit
+food_recovery_hierarchy_option: prevention
+innovator_category_options:
+  - secondary-marketplaces
+innovator_subcategory_options:
+  - business-to-buyer
+solutions:
+  - secondary-resellers
+founded: 2016
+website: www.facebook.com/get11thhour
+facebook_url:
+twitter_url:
+linkedin_url:
+email:
+lat: 1.352083
+lng: 103.819836
+---
