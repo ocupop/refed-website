@@ -83,10 +83,10 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         hidePageListIfSinglePage: true
       },
       callbacks: {
-          onMixStart: function() {
+          onMixEnd: function() {
             window.scrollTo(0, 0);
-          },
-          onMixEnd: setFilters // Call the setFilters() method at the end of each operation
+            setFilters // Call the setFilters() method at the end of each operation
+          }
       }
     });
 
