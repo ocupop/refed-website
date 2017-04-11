@@ -11,7 +11,7 @@ food_recovery_hierarchy_option: prevention
 innovator_category_options:
   - food-product-creation
 innovator_subcategory_options:
-  - business-to-buyer
+  - Surplus Produce
 solutions:
   - value-added-processing
 founded:
