@@ -216,6 +216,45 @@ innovator_category_options:
       - Industrial Products
       - Agricultural Products
 
+
+innovator_subcategory_options:
+  - Campaigns
+  - Tools/Applications
+  - Improved Inventory Management (Consumer Level)
+  - Smart Refrigerator
+  - Cold Chain Management
+  - Improved Inventory Management
+  - Waste Tracking & Analytics
+  - Ethylene Inhibitor
+  - Spoilage Prevention Packaging
+  - Packaging Adjustments
+  - Brick and Mortar
+  - Farm to Buyer
+  - Business to Buyer
+  - Business to Business
+  - Consumer to Consumer
+  - Surplus Produce
+  - Food Scraps
+  - Byproducts
+  - Donation Matching Software
+  - Donation Coordinator
+  - Donation Storage & Handling
+  - Community Kitchen
+  - Value-Added Processing
+  - Centralized Anaerobic Digestion
+  - Distributed Anaerobic Digestion
+  - Small Scale Anaerobic Digestion
+  - Community Composting
+  - Centralized Composting
+  - Home Composting
+  - Livestock
+  - Black Soldier Fly Larvae
+  - In-Vessel Composting
+  - Commercial Greywater
+  - Consumer Products
+  - Industrial Products
+  - Agricultural Products
+
 date_labels_required_for:
   - bakery
   - dairy
