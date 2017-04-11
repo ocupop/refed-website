@@ -9,8 +9,8 @@ description: '11th Hour app, which allows food and beverage (F&B) businesses to 
 business_model: For-Profit
 food_recovery_hierarchy_option: prevention
 innovator_category_options:
-  - Secondary Marketplaces
-_innovator_subcategory_options:
+  - secondary-marketplaces
+innovator_subcategory_options:
   - business-to-buyer
 solutions:
   - secondary-resellers
