@@ -11,7 +11,7 @@ food_recovery_hierarchy_option: recycling
 innovator_category_options:
   - renewable-energy-from-organics-anaerobic-digestion
 innovator_subcategory_options:
-  - business-to-buyer
+  - Centralized Anaerobic Digestion
 solutions:
   - centralized-anaerobic-digestion
 founded:
