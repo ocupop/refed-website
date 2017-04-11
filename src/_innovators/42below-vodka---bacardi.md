@@ -3,23 +3,24 @@ layout: innovator
 name: 42Below Vodka - Bacardi
 city:
 state:
-country: Singapore
-innovator_level: local
-description: '11th Hour app, which allows food and beverage (F&B) businesses to offer last-minute deals to customers. Merchants offer at least a 30 percent discount to draw more customers during lull periods of the day, or to reduce the amount of unsold food that would go to waste.'
+country: New Zealand
+innovator_level: national
+description: 'Bacardi’s 42Below Vodka brand’s circular economy initiative — the project collects used lemons, martini olives and other fruit waste from bars, turns it into liquid soap and sends it back to the bars for free — has diverted 400 kilograms of fruit waste from landfills since it launched in December 2016.'
 business_model: For-Profit
-food_recovery_hierarchy_option: prevention
+food_recovery_hierarchy_option: recycling
 innovator_category_options:
-  - secondary-marketplaces
+  - specialty-recycled-products
 innovator_subcategory_options:
-  - business-to-buyer
+  - Consumer Products
 solutions:
-  - secondary-resellers
 founded: 2016
-website: www.facebook.com/get11thhour
-facebook_url:
-twitter_url:
+website: 'http://www.42below.com/'
+facebook_url: 'http://www.facebook.com/42BELOW'
+twitter_url: 'http://www.twitter.com/42BELOW'
 linkedin_url:
 email:
-lat: 1.352083
-lng: 103.819836
+lat: -40.900557
+lng: 174.885971
 ---
+
+
