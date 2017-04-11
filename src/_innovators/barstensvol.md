@@ -1,25 +1,27 @@
 ---
 layout: innovator
 name: 'Barstensvol!'
-city:
+city: Veghel
 state:
-country: Singapore
-innovator_level: local
-description: '11th Hour app, which allows food and beverage (F&B) businesses to offer last-minute deals to customers. Merchants offer at least a 30 percent discount to draw more customers during lull periods of the day, or to reduce the amount of unsold food that would go to waste.'
+country: Netherlands
+innovator_level: national
+description: 'In The Waste Factory we use rescued vegetables as the base for the tasty product that you hold in your hands! We do this under the name Bursting. Because the new products are packed with good ingredients.'
 business_model: For-Profit
 food_recovery_hierarchy_option: prevention
 innovator_category_options:
-  - secondary-marketplaces
+  - food-product-creation
 innovator_subcategory_options:
   - business-to-buyer
 solutions:
-  - secondary-resellers
-founded: 2016
-website: www.facebook.com/get11thhour
-facebook_url:
+  - value-added-processing
+founded:
+website: 'http://barstensvol.nl/'
+facebook_url: 'https://de-de.facebook.com/Barstensvol/?ref=page_internal'
 twitter_url:
 linkedin_url:
-email:
-lat: 1.352083
-lng: 103.819836
+email: info@barstensvol.nl
+lat: 51.614524
+lng: 5.510399
 ---
+
+
