@@ -113,10 +113,11 @@
       position: relative;
       top: auto;
       right: auto;
-      margin-left: -15px;
       li {
+        width: 100%;
+        margin: 0;
         a {
-          font-size: 12px;
+          font-size: 16px;
         }
       }
     }
