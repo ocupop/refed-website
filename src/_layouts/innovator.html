@@ -49,11 +49,11 @@ layout: tool
 
 {% contentfor sidebar %}
 <div class="container">
-  {% unless page._innovator_subcategory_options == empty %}
+  {% unless page.innovator_subcategory_options == empty %}
   <div class="content">
       <h4>Tags</h4>
       <p class="innovator_tags">
-        {% for c in page._innovator_subcategory_options %}
+        {% for c in page.innovator_subcategory_options %}
           <span>{{ c | replace: '-', ' ' }}</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       </p>
