@@ -49,6 +49,21 @@
     opacity: 1;
     pointer-events: all;
     @include transition();
+    .content {
+      padding:  10px 20px;
+    }
+    .select {
+      select {
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+      &:after {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
   }
   .brand {
     display: inline-block;
@@ -199,7 +214,7 @@ body.condensed-header {
     }
   }
 
-  #toolPrint {
+  #toolPrint, #statenav {
     display: none;
   }
 }
