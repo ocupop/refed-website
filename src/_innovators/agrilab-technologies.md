@@ -7,7 +7,7 @@ country: USA
 innovator_level: national
 description: 'Agrilab Technologies, Inc. is a Vermont-based company lead by innovators who have pioneered compost aeration and heat recovery technology since 2006. Our patented technology is the most advanced compost processing system available in terms of energy efficiency, computerized process control and energy yield.'
 business_model: For-Profit
-food_recovery_hierarchy_option: recycling
+food_recovery_hierarchy_options: recycling
 innovator_category_options:
   - composting
   - on-site-processing-solutions

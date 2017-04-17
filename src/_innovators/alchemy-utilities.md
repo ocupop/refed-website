@@ -7,7 +7,7 @@ country: Ireland
 innovator_level: national
 description: 'The Alchemy Thermophilic Digester (TD) is a revolutionary biogas system that uses a next generation dry digestion process, improving the energy efficiency typically associated with traditional Anaerobic Digestion (AD) systems. The system is a modular and scalable solution for efficient conversion of organic wastes into biogas and high quality dry pelletised or granulated fertilisers.'
 business_model: For-Profit
-food_recovery_hierarchy_option: recycling
+food_recovery_hierarchy_options: recycling
 innovator_category_options:
   - renewable-energy-from-organics-anaerobic-digestion
 innovator_subcategory_options:

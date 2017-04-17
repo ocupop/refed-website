@@ -7,7 +7,7 @@ country: Netherlands
 innovator_level: national
 description: 'In The Waste Factory we use rescued vegetables as the base for the tasty product that you hold in your hands! We do this under the name Bursting. Because the new products are packed with good ingredients.'
 business_model: For-Profit
-food_recovery_hierarchy_option: prevention
+food_recovery_hierarchy_options: prevention
 innovator_category_options:
   - food-product-creation
 innovator_subcategory_options:
