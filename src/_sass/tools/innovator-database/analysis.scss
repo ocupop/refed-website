@@ -170,6 +170,18 @@
         }
       }
     }
+
+    // TODO - Update the way that the charts are drawn. Currently the position makes it unusable
+    // .ct-chart-bar.ct-horizontal-bars .ct-labels {
+    //   display: block;
+    // }
+    // .ct-chart-bar .ct-label.ct-vertical.ct-start {
+    //   display: none;
+    // }
+    // .ct-chart-bar .ct-label.ct-horizontal.ct-end {
+    //   text-indent: 5px;
+    //   transform: rotate(0deg);
+    // }
     .ct-chart-bar.ct-horizontal-bars {
       .ct-label {
         font-size: 12px;
