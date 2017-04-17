@@ -15,7 +15,7 @@ layout: tool
             <span class="muted italic">Location:</span>{% if page.city %}<span class="capitalize">&nbsp;{{ page.city }}</span>{% endif %}{% if page.state %}<span class="capitalize">&nbsp;{{ page.state }}</span>{% endif %}{% if page.country %}<span class="capitalize">,&nbsp;{{ page.country }}</span>{% endif %}<br>
             <span class="muted italic">Status:</span> {{ page.business_model }}<br>
             <span class="muted italic">Year Founded:</span> {{ page.founded }}<br>
-            <span class="muted italic">Food Recovery Hierarchy:</span> <span class="capitalize">{{ page.food_recovery_hierarchy_option }}</span><br>
+            <span class="muted italic">Food Recovery Hierarchy:</span> <span class="capitalize">{% for category in page.food_recovery_hierarchy_options %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span><br>
             {% unless page.innovator_category_options == empty %}
               <span class="muted italic">Categories:</span> <span class="capitalize">{% for category in page.innovator_category_options %}{{ category | replace: '-', ' ' | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
             {% endunless %}

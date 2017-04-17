@@ -21,7 +21,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
             data-description="{{ innovator.description }}"
             data-innovator-category-options="[{% for c in innovator.innovator_category_options %}{{ c | slugify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]"
             data-business-model="{{ innovator.business_model }}"
-            data-food-recovery-hierarchy-option="{{ innovator.food_recovery_hierarchy_option }}"
+            data-food-recovery-hierarchy-option="{{ innovator.food_recovery_hierarchy_options }}"
             data-innovator-level="{{ innovator.innovator_level }}"
             data-website="{{ innovator.website }}"
             data-url="{{ innovator.url }}"
@@ -47,7 +47,7 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
                     {% endfor %}
 
                     <br>
-                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{{ innovator.food_recovery_hierarchy_option }}</strong><br>
+                  <em>Food Recovery Hierarchy:</em>&nbsp;&nbsp;<strong>{% for category in innovator.food_recovery_hierarchy_options %}{{ category | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}</strong><br>
                   <a href="{{ innovator.website }}" target="_blank">{{ innovator.website }}</a>
                 </p>
                 <!-- TODO - UPdate CSS names to match -->
