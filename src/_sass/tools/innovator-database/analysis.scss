@@ -55,6 +55,7 @@
       display: flex;
       font-size: 1.2em;
       transform: translateX(-50px);
+      pointer-events: none;
     }
   }
 
@@ -172,6 +173,7 @@
     .ct-chart-bar.ct-horizontal-bars {
       .ct-label {
         font-size: 12px;
+        pointer-events: none;
       }
     }
   }
