@@ -46,7 +46,9 @@ $.behaviors('.locationField', locationField);
   }
 
   function filterResults() {
-
+    // TODO - Must add the logic for incomplete process
+    // http://stackoverflow.com/questions/7865446/google-maps-places-api-v3-autocomplete-select-first-option-on-enter
+    
     // Get the place details from the autocomplete object.
     var place = autocomplete.getPlace();
 
