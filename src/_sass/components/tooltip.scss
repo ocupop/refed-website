@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 500px;
+  max-width: 100%;
   height: 100%;
   background-color: #fff;
   box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
@@ -58,10 +59,15 @@
 }
 
 @media all and (max-width: $screen-sm-max) {
-  #tooltip {
-    display: none !important;
-  }
+
 }
 
 @media all and (max-width: $screen-xs-max) {
+  #tooltip {
+    // display: none !important;
+    width: 300px;
+    .content {
+      width: 280px;
+    }
+  }
 }
