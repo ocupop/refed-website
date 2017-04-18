@@ -4,7 +4,7 @@ date: 2017-04-17 11:00:00
 title: 'Press Release: New ReFED Innovation and Policy Tools'
 categories:
   - article
-featured_image: /uploads/innovator-300dpi-full-tool-generic.jpg
+featured_image: /uploads/refedpolicyfinder.png
 summary: 'Today, ReFED unveiled two new tools: a database of innovative food waste solutions, and an interactive map that centralizes federal- and state-level food waste policy to assist advocates and policymakers.'
 references:
 photo_credit:
@@ -46,6 +46,6 @@ Learn more about ReFED and explore the tools [here](http://refed.com/).
 <br>Eva Goulbourne
 <br>Associate Director of Programs & Communications, ReFED
 <br>1-978-290-1681
-<br>[&#101;&#118;&#097;&#046;&#103;&#111;&#117;&#108;&#098;&#111;&#117;&#114;&#110;&#101;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;](&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#118;&#097;&#046;&#103;&#111;&#117;&#108;&#098;&#111;&#117;&#114;&#110;&#101;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;)
+<br>[eva.goulbourne@refed.com](&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#118;&#097;&#046;&#103;&#111;&#117;&#108;&#098;&#111;&#117;&#114;&#110;&#101;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;)
 
 *# # # #*
