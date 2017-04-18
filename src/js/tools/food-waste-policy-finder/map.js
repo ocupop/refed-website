@@ -250,6 +250,7 @@ var active_category;
   function setActiveKey(key) {
     window.console.log("SETTING ACTIVE KEY", key);
     $('.policyFinder_map').attr('data-key', key);
+    ga('send', 'event', 'setting filters', 'food-waste-policy-finder', key);
   }
 
   function setActiveStudies(category) {
