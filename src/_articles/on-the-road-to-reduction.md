@@ -1,6 +1,6 @@
 ---
 layout: article
-date: 2017-04-10 00:00:00
+date: 2017-04-17 18:00:00
 title: On the Road to Reduction
 categories:
   - article
