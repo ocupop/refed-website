@@ -83,7 +83,7 @@ breadcrumb: true
             <div class="collapse" id="collapse-{{ option[0] }}">
               <ul class="content">
                 {% assign category_options = site.innovator_category_options %}
-                {% assign filtered = category_options | where: "food_recovery_hierarchy_option", option[0] %}
+                {% assign filtered = category_options | where: "food_recovery_hierarchy_options", option[0] %}
                 {% for category in filtered %}
                   <li>
                     <h4><strong>{{ category.title }}</strong></h4>
