@@ -11,7 +11,7 @@ photo_credit:
 ---
 
 
-**New ReFED Innovation and Policy Tools prove food waste reduction****creates businesses and jobs; reveal opportunity to simplify regulation**
+**New ReFED Innovation and Policy Tools prove food waste reduction&nbsp;****creates businesses and jobs; reveal opportunity to simplify regulation**
 
 * *Innovator Database tracks more than 400 commercial and nonprofit organizations that fight food waste while creating more than 2,000 new jobs. Over the last 5 years, more than 200 organizations have been founded, doubling the pace of innovation in food waste reduction.*
 * *Policy Finder identifies opportunities to simplify federal and state policy to prevent food waste. For example, 43 states could remove burdensome date labeling restrictions, saving consumers and businesses more than $29 billion per year*.
@@ -32,7 +32,7 @@ The tool affords unique insight into the state-level policy landscape, revealing
 
 “Tools like the Innovator Database and Policy Finder give public and private sector stakeholders the insights they need to make smart decisions that generate the most impact,” said Devon Klatell, Associate Director at The Rockefeller Foundation. “Food is wasted at every broken link in the supply chain, giving all of us a role to play in tackling this critical issue. Repairing those links depends on collaboration across sectors, and we need organizations like ReFED to identify and encourage the opportunities to do so.”
 
-The new ReFED tools will build upon existing resources by more clearly identifying opportunities for impact. For example, the ReFED *Roadmap*estimates that of the $18 billion in new financing needed to achieve a 20% food waste reduction in the U.S., $800 million will come from private early-stage and growth equity, and $1 billion from philanthropic impact investments.
+The new ReFED tools will build upon existing resources by more clearly identifying opportunities for impact. For example, the ReFED&nbsp;*Roadmap*estimates that of the $18 billion in new financing needed to achieve a 20% food waste reduction in the U.S., $800 million will come from private early-stage and growth equity, and $1 billion from philanthropic impact investments.
 
 “Meeting our national food waste reduction goal depends on the entrepreneurial spirit of innovators, action across the food system, and the strong commitment of funders like The Rockefeller Foundation and Walmart Foundation, and many others. We hope these tools will convene stakeholders who haven’t – or otherwise wouldn’t – collaborate on food system challenges, and guide them to use insights, backed by robust economics and data analysis, to identify proven solutions to immediately cut food waste,” said Cochran.
 
@@ -46,6 +46,6 @@ Learn more about ReFED and explore the tools [here](http://refed.com/).
 <br>Eva Goulbourne
 <br>Associate Director of Programs & Communications, ReFED
 <br>1-978-290-1681
-<br>[eva.goulbourne@refed.com](&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#118;&#097;&#046;&#103;&#111;&#117;&#108;&#098;&#111;&#117;&#114;&#110;&#101;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;)
+<br>[eva.goulbourne@refed.com](mailto:eva.goulbourne@refed.com)
 
 *# # # #*
