@@ -30,9 +30,11 @@ $.behaviors('.share', initShare);
 
     button.on('click', function(e){
       // window.console.log('share.js: share url', share.url)
-      window.console.log('share.js: share title', share.title);
+      // window.console.log('share.js: share title', share.title);
       e.preventDefault();
       build_urls(share);
+
+      ga('send', 'event', 'share', 'refed', share.url);
 
     });
 

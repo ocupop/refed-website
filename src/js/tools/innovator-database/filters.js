@@ -46,6 +46,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
       } else {
         // Set the menu to search
         menu.attr('data-menu', 'search');
+        ga('send', 'event', 'search', 'innovator-database', 'Activate Search');
       }
     });
     $('.innovatorDatabase_searchMenu .close').on('click', function() {
@@ -182,6 +183,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         activeSearch = '';
 
         history.replaceState(null, document.title, window.location.pathname); // or `history.replaceState()`
+
     } else if (newSearch !== window.location.search && selector !== targetSelector) {
         // Change the search
 
@@ -189,6 +191,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
 
         history.replaceState(null, document.title, window.location.pathname + newSearch); // or `history.replaceState()`
     }
+    ga('send', 'event', 'filter', 'innovator-database', newSearch);
   }
 
   /**

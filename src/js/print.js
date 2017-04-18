@@ -24,7 +24,8 @@ $.behaviors('.print', print);
     
     container = $(container);
     container.on('click', function(){
-      window.print();  
+      window.print();
+      ga('send', 'event', 'print', 'refed', window.location);
     })
   }
 

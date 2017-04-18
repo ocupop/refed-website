@@ -67,6 +67,9 @@ $.behaviors('.quiz', quiz);
 
     // Mark as complete
     $('#date_label_quiz').addClass("complete");
+
+    ga('send', 'event', 'quiz', 'Spotlight on Date Labeling', score);
+
   }
   function checkAnswer($question) {
     var $guess = $question.find('input[type="checkbox"]:checked');

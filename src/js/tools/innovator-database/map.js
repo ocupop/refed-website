@@ -237,6 +237,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
 
       innovatorMap.setZoom(8);
       innovatorMap.setCenter(searchLocation);
+
+      ga('send', 'event', 'searchLocation', 'innovator-database', location);
   });
 
 })();
