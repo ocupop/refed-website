@@ -4,7 +4,7 @@ date: 2017-04-17 00:01:00
 title: Going Barnanas for new ways to use food
 categories:
   - article
-featured_image: /uploads/snacks-organic-gingersnap-banana-brittle-1.jpg
+featured_image: /uploads/snacks-organic-gingersnap-banana-brittle-1 (1).jpg
 summary: "ReFED recently caught up with Caue Suplicy, Founder and CEO of Barnana, to learn what its like being a pioneer in the 'edible upcycling' industry."
 references:
 photo_credit: www.barnana.com
