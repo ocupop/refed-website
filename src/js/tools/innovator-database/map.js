@@ -94,11 +94,6 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
        innovatorMap.fitBounds(initBounds);
     });
 
-    // Create a <script> tag and set the Innovator Database URL as the source.
-    var script = document.createElement('script');
-    // This example uses a jsonp data source from the jekyll built
-    script.src = '/data/innovators.js';
-    document.getElementsByTagName('head')[0].appendChild(script);
 
     $('[data-target="#innovatorMap"]').on('shown.bs.tab', function(e) {
       // Scroll to top
@@ -122,11 +117,20 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       window.scrollTo(0, 0);
       $("#tooltip").removeClass('active');
     });
+
+    // TODO - Test to confirm that this does not effect the creation of the map then remove
+    // // Create a <script> tag and set the Innovator Database URL as the source.
+    // var script = document.createElement('script');
+    // // This example uses a jsonp data source from the jekyll built
+    // script.src = '/data/innovators.js';
+    // document.getElementsByTagName('head')[0].appendChild(script);
+    load_innovatorMap();
+    
   }
 
   // Loop through the results array and place a marker for each
   // set of coordinates.
-  window.load_innovatorMap = function(results) {
+  window.load_innovatorMap = function() {
     // window.console.log("innovatorDatabase_map: Load Map",results);
 
     var iconBase = '/img/icons/maps/markers/';
