@@ -20,6 +20,8 @@
 
 $.behaviors('.locationField', locationField);
 
+  var placeSearch, autocomplete;
+
   function locationField(field) {
     // field = $(field);
 
@@ -60,8 +62,9 @@ $.behaviors('.locationField', locationField);
         $('body').trigger('noLocation');
       } else {
         // Leave a message with instructions
-        alert('Valid location was not selected. Searching by keyterm "'+place.name+'" instead');
-        searchFilter(place.name, mixer);
+        alert("WHAT TO DO NOW???");
+        // alert('Valid location was not selected. Searching by keyterm "'+place.name+'" instead');
+        // searchFilter(place.name, mixer);
       }
 
       return;
@@ -93,5 +96,11 @@ $.behaviors('.locationField', locationField);
       });
     }
   }
+
+  $(document).on({
+      'DOMNodeInserted': function() {
+          $('.pac-item, .pac-item span', this).addClass('needsclick');
+      }
+  }, '.pac-container');
 
 })();
