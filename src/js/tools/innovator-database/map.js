@@ -52,7 +52,8 @@ $.behaviors('.innovatorDatabase_map', innovatorDatabase_map);
       var hide = [];
 
       for (var i = 0; i < markers.length; i++) {
-        if(uids.includes(markers[i].id)) {
+        if(uids.indexOf(markers[i].id) >= 0) {
+        // if(uids.includes(markers[i].id)) {
           hide.push(markers[i]);
           markers[i].setVisible(true);
         } else {
