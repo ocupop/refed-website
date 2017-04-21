@@ -81,16 +81,7 @@ $.behaviors('.start-tour', start_tour);
         placement: 'bottom'
       }],
       backdrop: true,
-      template: `<div class='popover tour'>
-                  <div class='arrow'></div>
-                  <button class='close' data-role='end'><span aria-hidden='true'>&times;</span></button>
-                  <div class='popover-content'></div>
-                  <div class='popover-navigation'>
-                    <button data-role='prev'>&lt;&nbsp;Prev</button>
-                    <button data-role='next'>Next&nbsp;&gt;</button>
-                  </div>
-                  <button class='end hide' data-role='end'>End tour</button>
-                </div>`
+      template: "<div class='popover tour'><div class='arrow'></div><button class='close' data-role='end'><span aria-hidden='true'>&times;</span></button><div class='popover-content'></div><div class='popover-navigation'><button data-role='prev'>&lt;&nbsp;Prev</button><button data-role='next'>Next&nbsp;&gt;</button></div><button class='end hide' data-role='end'>End tour</button></div>"
     });
 
 
