@@ -16,9 +16,9 @@ someone you know should be included in ReFED's Innovator Database, <a href="mail
       </li>
       {% for innovator in site.innovators %}
         <li class="innovator mix {% for h in innovator.food_recovery_hierarchy_options %}{{ h | | downcase }}-hierarchy{% endfor %} {{ innovator.business_model | slugify }} {% for c in innovator.innovator_category_options %}{{ c | slugify }} {% endfor %}"
-            data-uid="uid_{{ forloop.index }}"
-            data-title="{{ innovator.name }}"
-            data-description="{{ innovator.description }}"
+            data-uid='uid_{{ forloop.index }}'
+            data-title="{{ innovator.name | xml_escape }}"
+            data-description="{{ innovator.description | xml_escape }}"
             data-innovator-category-options="[{% for c in innovator.innovator_category_options %}{{ c | slugify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]"
             data-business-model="{{ innovator.business_model }}"
             data-food-recovery-hierarchy-option="[{% for c in innovator.food_recovery_hierarchy_options %}{{ c | slugify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]"
