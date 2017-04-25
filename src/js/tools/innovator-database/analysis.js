@@ -69,7 +69,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
 
 
 
-    new Chartist.Bar('#analysisChart_category .ct-chart', {
+    var categoryChart = new Chartist.Bar('#analysisChart_category .ct-chart', {
       
       labels: data.labels,
       series: [data.category.total_count]
@@ -96,7 +96,7 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
     ]).on('draw', function(d) {
 
       if(d.type === 'bar') {
-        // window.console.log("Data:", d);
+        // window.console.log("Data:", d.group.elem('text'));
         // window.console.log("Data Blah:", data.labels[d.index]);
 
         var x = d.type === 'bar' ? d.x1 : d.x;
@@ -109,16 +109,27 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
         }, 'ct-label').text(data.labels[d.index]);
 
         d.element.attr({
-          style: 'stroke-width: 40px',
+          style: 'stroke-width: 40px;',
           title: data.labels[d.index],
           summary: data.details[d.index],
           category: data.labels[d.index].toLowerCase().replaceAll(' ', '-'),
           onclick: "showAnalysisDetails(this)"
         });
       }
+      if(d.type === 'label') {
+        if(!categoryChart.supportsForeignObject && data.labels.indexOf(d.text) >= 0) {
+          d.element.attr({
+            x: d.x + 40,
+            y: d.y + (d.width * 0.5) + (d.height * 0.25),
+            transform: 'rotate(-90, ' + d.x + ', ' + d.y + ')'
+          });
+        }
+      }
     });
 
-    new Chartist.Bar('#analysisChart_status .ct-chart', {
+    // categoryChart.supportsForeignObject = false;
+
+    var statusChart = new Chartist.Bar('#analysisChart_status .ct-chart', {
       
       labels: data.labels,
       series: [data.status.forprofit, data.status.nonprofit]
@@ -152,9 +163,18 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           onclick: "showAnalysisDetails(this, '.status')"
         });
       }
+      if(d.type === 'label') {
+        if(!categoryChart.supportsForeignObject && data.labels.indexOf(d.text) >= 0) {
+          d.element.attr({
+            x: d.x + 40,
+            y: d.y + (d.width * 0.5) + (d.height * 0.25),
+            transform: 'rotate(-90, ' + d.x + ', ' + d.y + ')'
+          });
+        }
+      }
     });
 
-    new Chartist.Bar('#analysisChart_hierarchy .ct-chart', {
+    var hierarchyChart = new Chartist.Bar('#analysisChart_hierarchy .ct-chart', {
       
       labels: data.labels,
       series: [data.hierarchy.prevention, data.hierarchy.recovery, data.hierarchy.recycling]
@@ -186,6 +206,16 @@ $.behaviors('.innovatorDatabase_analysisCharts', initCharts);
           category: data.labels[d.index].toLowerCase().replaceAll(' ', '-'),
           onclick: "showAnalysisDetails(this, '.hierarchy')"
         });
+      }
+
+      if(d.type === 'label') {
+        if(!categoryChart.supportsForeignObject && data.labels.indexOf(d.text) >= 0) {
+          d.element.attr({
+            x: d.x + 40,
+            y: d.y + (d.width * 0.5) + (d.height * 0.25),
+            transform: 'rotate(-90, ' + d.x + ', ' + d.y + ')'
+          });
+        }
       }
     });
 
