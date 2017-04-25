@@ -42,6 +42,9 @@
     }
   }
   &[data-menu="search"] {
+    // Uncomment if we decide to limit height on search state
+    // height: 80px;
+    // overflow: hidden;
     section {
       opacity: 0;
       pointer-events: none;
@@ -49,6 +52,7 @@
     .innovatorDatabase_searchMenu {
       opacity: 1;
       pointer-events: all;
+      z-index: 999;
     }
   }
 }
@@ -79,14 +83,16 @@
 }
 
 .innovatorDatabase_searchMenu {
+  height: 100%;
   margin-bottom: 0;
   .search-group {
-    margin: 5px 0;
+    margin: 10px;
+    margin-right: 20px;
   }
   .close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -172,10 +178,11 @@
 
 body.condensed-header {
   .innovatorDatabase_menu {
-    top: 120px;
-    section {
-      opacity: 0 !important;
-      pointer-events: none !important;
+    section,
+    section.innovatorDatabase_filtersMenu,
+    section.innovatorDatabase_analysisMenu {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 }
@@ -222,6 +229,18 @@ body.condensed-header {
 }
 
 @media all and (max-width: $screen-xs-max) {
+  .innovatorDatabase_menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 74px;
+    z-index: 99;
+    &:before, &:after {
+      display: table;
+      content: " ";
+    }
+  }
   .innovatorDatabase_filtersMenu {
     height: auto;
     z-index: 99;
@@ -254,6 +273,33 @@ body.condensed-header {
   .innovatorDatabase_analysisMenu {
     .button {
       margin-top: 0;
+    }
+  }
+
+  .activeTab_innovatorMap,
+  .activeTab_innovatorList {
+    .innovatorDatabase_filtersMenu {
+      position: relative;
+      opacity: 1 !important;
+      pointer-events: all !important;
+    }
+    .innovatorDatabase_analysisMenu {
+      position: absolute;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  }
+
+  .activeTab_innovatorAnalysis {
+    .innovatorDatabase_analysisMenu {
+      position: relative;
+      opacity: 1 !important;
+      pointer-events: all !important;
+    }
+    .innovatorDatabase_filtersMenu {
+      position: absolute;
+      opacity: 0 !important;
+      pointer-events: none !important;
     }
   }
 }

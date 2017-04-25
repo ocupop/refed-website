@@ -20,8 +20,11 @@
 
 $.behaviors('.locationField', locationField);
 
+  var placeSearch, autocomplete;
+
   function locationField(field) {
     // field = $(field);
+    placeSearch = $(field);
 
     if (typeof google === "undefined") {
         window.console.log("Gotta load google maps");
@@ -34,6 +37,7 @@ $.behaviors('.locationField', locationField);
   }
 
   function initAutocomplete(field) {
+
     // Create the autocomplete object, restricting the search to geographical
     // location types.
     autocomplete = new google.maps.places.Autocomplete(
@@ -43,6 +47,7 @@ $.behaviors('.locationField', locationField);
     // When the user selects an address from the dropdown, populate the address
     // fields in the form.
     autocomplete.addListener('place_changed', filterResults);
+
   }
 
   function filterResults() {
@@ -60,19 +65,20 @@ $.behaviors('.locationField', locationField);
         $('body').trigger('noLocation');
       } else {
         // Leave a message with instructions
-        alert('Valid location was not selected. Searching by keyterm "'+place.name+'" instead');
-        searchFilter(place.name, mixer);
+        // alert("Please select location from the list below");
+        // alert('Valid location was not selected. Searching by keyterm "'+place.name+'" instead');
+        // searchFilter(place.name, mixer);
+        queryAutocomplete(place.name);
       }
-
       return;
+
     } else {
       var location = {
         lat: place.geometry.location.lat(),
         lng: place.geometry.location.lng()
       }
+      $('body').trigger('searchLocation', [location]);
     }
-
-    $('body').trigger('searchLocation', [location]);
 
   }
 
@@ -93,5 +99,70 @@ $.behaviors('.locationField', locationField);
       });
     }
   }
+
+
+  function autoCallback(predictions, status) {
+      // *Callback from async google places call
+      if (status != google.maps.places.PlacesServiceStatus.OK) {
+          // show that this address is an error
+          placeSearch.className = 'error';
+          return;
+      }
+
+      // Show a successful return
+      placeSearch.className = 'success';
+      // placeSearch.value = predictions[0].description;
+
+      // Show new value in field
+      placeSearch.val(predictions[0].description);
+
+      // Get details of the first place
+      var request = {
+        placeId: predictions[0].place_id
+      };
+
+      var service = new google.maps.places.PlacesService(document.createElement('div'));
+      service.getDetails(request, firstPlace);
+
+  }
+
+  function firstPlace(place, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+      window.console.log("PLACE:", place);
+      var location = {
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng()
+      }
+      $('body').trigger('searchLocation', [location]);
+    }
+  }
+
+  function queryAutocomplete(input) {
+      // *Uses Google's autocomplete service to select an address
+      var service = new google.maps.places.AutocompleteService();
+      service.getPlacePredictions({
+          input: input
+      }, autoCallback);
+  }
+
+  function handleTabbingOnInput(evt) {
+      // *Handles Tab event on delivery-location input
+      if (evt.target.id == "pac-input") {
+          // Remove active class
+          evt.target.className = '';
+
+          // Check if a tab was pressed
+          if (evt.which == 9 || evt.keyCode == 9) {
+              queryAutocomplete(evt.target.value);
+          }
+      }
+  }
+
+
+  $(document).on({
+      'DOMNodeInserted': function() {
+          $('.pac-item, .pac-item span', this).addClass('needsclick');
+      }
+  }, '.pac-container');
 
 })();
