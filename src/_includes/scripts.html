@@ -1,68 +1,92 @@
 <!-- Scripts -->
+<!-- TODO - Optimize by compiling and minimizing. Less requests! -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/libs/bootstrap-multiselect.js"></script>
+<script src="{{ site.baseurl }}/libs/bootstrap-tour.min.js"></script>
+
+<script src="{{ site.baseurl }}/libs/chartist.min.js"></script>
+<script src="{{ site.baseurl }}/libs/chartist-plugin-fill-donut.min.js"></script>
+
+<script src="{{ site.baseurl }}/libs/behaviors.js"></script>
+
+<script src="{{ site.baseurl }}/libs/jquery.cookie.js"></script>
+<script src="{{ site.baseurl }}/libs/jquery.form.js"></script>
+
+<script src="{{ site.baseurl }}/libs/jquery.stickit.js"></script>
+
+<script src="{{ site.baseurl }}/libs/jquery.scrollTo.js"></script>
+<script src="{{ site.baseurl }}/libs/jquery.localScroll.js"></script>
+
+<script src="{{ site.baseurl }}/libs/lunr.min.js"></script>
+
+<script src="{{ site.baseurl }}/libs/jquery.waypoints.min.js"></script>
+<script src="{{ site.baseurl }}/libs/inview.min.js"></script>
+
+
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM&libraries=places,geometry"
         async defer></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 
+<script src="/js/plugins.js"></script>
 
-{% minibundle js %}
-source_dir: js
-destination_path: assets/site
-baseurl: '{{ site.baseurl }}/'
-assets:
-  - libs/bootstrap-multiselect
-  - libs/bootstrap-tour.min
-  - libs/chartist.min
-  - libs/chartist-plugin-fill-donut.min
-  - libs/behaviors
-  - libs/jquery.cookie
-  - libs/jquery.form
-  - libs/jquery.stickit
-  - libs/jquery.scrollTo
-  - libs/jquery.localScroll
-  - libs/lunr.min
-  - libs/jquery.waypoints.min
-  - libs/inview.min
-  - plugins
-  - tour
-  - scroll
-  - pageState
-  - disabled
-  - tabs
-  - sticky
-  - video
-  - print
-  - lineClamp
-  - nav/quicknav
-  - nav/toolnav
-  - components/share
-  - components/solutionCards
-  - components/supplyChain
-  - components/siteSearch
-  - components/pageHelp
-  - components/articles
-  - components/menuToggle
-  - components/toc
-  - components/profile
-  - components/download
-  - charts
-  - components/charts/cost_curve
-  - components/charts/reduction_chart
-  - components/maps/locationField
-  - tools/innovator-database/map
-  - tools/innovator-database/list
-  - tools/innovator-database/filters
-  - tools/innovator-database/analysis
-  - tools/innovator-database/about
-  - tools/food-waste-policy-finder/map
-  - tools/spotlight-on-date-labeling/quiz
-  - tools/spotlight-on-date-labeling/carousel-date-label
-  - main
-attributes:
-  id: refed-scripts
-  async:
-{% endminibundle %}
+<script src="/js/tour.js"></script>
+<script src="/js/scroll.js"></script>
 
+<!-- Behaviors -->
+<script src="/js/pageState.js"></script>
+<script src="/js/disabled.js"></script>
+<script src="/js/tabs.js"></script>
+<script src="/js/sticky.js"></script>
+<script src="/js/video.js"></script>
+<script src="/js/print.js"></script>
+
+<!-- TODO - Uncomment this for overview statements -->
+<script src="/js/lineClamp.js"></script>
+
+<!-- Nav -->
+<script src="/js/nav/quicknav.js"></script>
+<script src="/js/nav/toolnav.js"></script>
+<!-- <script src="/js/nav/subnav.js"></script> -->
+
+
+
+
+
+<!-- Components -->
+<script src="/js/components/share.js"></script>
+<script src="/js/components/solutionCards.js"></script>
+<script src="/js/components/supplyChain.js"></script>
+<script src="/js/components/siteSearch.js"></script>
+<script src="/js/components/pageHelp.js"></script>
+<script src="/js/components/articles.js"></script>
+<script src="/js/components/menuToggle.js"></script>
+<script src="/js/components/toc.js"></script>
+<script src="/js/components/profile.js"></script>
+<script src="/js/components/download.js"></script>
+
+<!-- Charts -->
+<script src="/js/charts.js"></script>
+<script src="/js/components/charts/cost_curve.js"></script>
+<script src="/js/components/charts/reduction_chart.js"></script>
+
+<!-- Maps -->
+<script src="/js/components/maps/locationField.js"></script>
+
+<!-- Tools -->
+<script src="/js/tools/innovator-database/map.js"></script>
+<script src="/js/tools/innovator-database/list.js"></script>
+<script src="/js/tools/innovator-database/filters.js"></script>
+<script src="/js/tools/innovator-database/analysis.js"></script>
+<script src="/js/tools/innovator-database/about.js"></script>
+
+<script src="/js/tools/food-waste-policy-finder/map.js"></script>
+
+<script src="/js/tools/spotlight-on-date-labeling/quiz.js"></script>
+<script src="/js/tools/spotlight-on-date-labeling/carousel-date-label.js"></script>
+
+<script src="/js/main.js"></script>
