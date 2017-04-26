@@ -5,9 +5,9 @@ description:  "A data-driven guide for businesses, government, funders, and nonp
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.refed.com" # the base hostname & protocol for your site
 
-minibundle:
-  minifier_commands:
-    js: ../node_modules/.bin/uglifyjs
+# minibundle:
+#   minifier_commands:
+#     js: ../node_modules/.bin/uglifyjs
 
 collections:
   solutions:
