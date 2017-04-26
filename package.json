@@ -18,5 +18,8 @@
     "hologram-github-theme": "^0.1.4",
     "main-bower-files": "^2.13.1",
     "require-dir": "^0.3.0"
+  },
+  "dependencies": {
+    "uglify-js": "^2.8.22"
   }
 }
