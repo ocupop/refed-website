@@ -20,30 +20,11 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--   
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
- -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/animate.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/libs/bootstrap-tour.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/bootstrap-tour.min.css">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
 
   <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-
-  {% if page.layout == 'tool' or page.url contains 'content-hub' %}
-    <!-- ver 3.0 -->
-    <script src="{{ site.baseurl }}/js/vendor/mixitup.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/mixitup-pagination.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/mixitup-multifilter.min.js"></script>
-  {% else %}
-    <!-- TODO - Refactor for ver3.0 -->
-    <script src="{{ site.baseurl }}/libs/jquery.mixitup.min.js"></script>
-    <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup-pagination.min.js"></script>
-  {% endif %}
-
-
   {% include scripts.html %}
 
 </head>

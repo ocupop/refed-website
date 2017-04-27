@@ -16,21 +16,10 @@
  * along with this program.  If not, see
  * http://www.gnu.org/licenses/agpl-3.0.html.
  */
+
 (function() {
 
 $.behaviors('body', pageState);
-
-// Revert to a previously saved state
-// window.addEventListener('popstate', function(event) {
-//   // window.console.log("pageState: popstate", event);
-//   var hash = window.location.hash;
-  
-//   if(hash) {
-//     window.console.log("popstate: Activating Tabs", hash);
-//     activateTab(hash);
-//     return;
-//   }
-// });
 
 
   function pageState(body) {
