@@ -1,4 +1,17 @@
 <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+{% if page.layout == 'tool' or page.url contains 'content-hub' %}
+  <!-- ver 3.0 -->
+  <script src="{{ site.baseurl }}/js/vendor/mixitup.min.js"></script>
+  <script src="{{ site.baseurl }}/js/vendor/mixitup-pagination.min.js"></script>
+  <script src="{{ site.baseurl }}/js/vendor/mixitup-multifilter.min.js"></script>
+{% else %}
+  <!-- TODO - Refactor for ver3.0 -->
+  <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup.min.js"></script>
+  <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup-pagination.min.js"></script>
+{% endif %}
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM&libraries=places,geometry"
         async defer></script>
@@ -7,62 +20,5 @@
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 
-
-{% minibundle js %}
-source_dir: js
-destination_path: assets/site
-baseurl: '{{ site.baseurl }}/'
-assets:
-  - libs/bootstrap-multiselect
-  - libs/bootstrap-tour.min
-  - libs/chartist.min
-  - libs/chartist-plugin-fill-donut.min
-  - libs/behaviors
-  - libs/jquery.cookie
-  - libs/jquery.form
-  - libs/jquery.stickit
-  - libs/jquery.scrollTo
-  - libs/jquery.localScroll
-  - libs/lunr.min
-  - libs/jquery.waypoints.min
-  - libs/inview.min
-  - plugins
-  - tour
-  - scroll
-  - pageState
-  - disabled
-  - tabs
-  - sticky
-  - video
-  - print
-  - lineClamp
-  - nav/quicknav
-  - nav/toolnav
-  - components/share
-  - components/solutionCards
-  - components/supplyChain
-  - components/siteSearch
-  - components/pageHelp
-  - components/articles
-  - components/menuToggle
-  - components/toc
-  - components/profile
-  - components/download
-  - charts
-  - components/charts/cost_curve
-  - components/charts/reduction_chart
-  - components/maps/locationField
-  - tools/innovator-database/map
-  - tools/innovator-database/list
-  - tools/innovator-database/filters
-  - tools/innovator-database/analysis
-  - tools/innovator-database/about
-  - tools/food-waste-policy-finder/map
-  - tools/spotlight-on-date-labeling/quiz
-  - tools/spotlight-on-date-labeling/carousel-date-label
-  - main
-attributes:
-  id: refed-scripts
-  async:
-{% endminibundle %}
+<script src="/js/main.js"></script>
 
