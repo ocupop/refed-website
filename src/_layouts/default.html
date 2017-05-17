@@ -12,7 +12,7 @@
   <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
 
     {% include components/share.html %}
-    {% if page.url contains 'tool' %}
+    {% if page.url contains 'tools/' %}
       {% include elements/toolHeader.html %}
     {% else %}
       {% include elements/pageHeader.html %}
@@ -43,7 +43,7 @@
       {% endif %}
 
     </div>
-    {% if page.url contains 'tool' %}
+    {% if page.url contains 'tools/' %}
       {% include elements/toolFooter.html %}
     {% else %}
       {% include elements/pageFooter.html %}
