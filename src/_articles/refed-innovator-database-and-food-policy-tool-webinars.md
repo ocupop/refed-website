@@ -1,7 +1,7 @@
 ---
 layout: article
 date: 2017-05-16 00:00:00
-title: ReFED Innovator Database and Food Policy Tool Webinars
+title: ReFED Innovator Database Webinar
 categories:
   - article
 featured_image: /uploads/screen-shot-2017-01-23-at-11-27-36-pm.jpg
