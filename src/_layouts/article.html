@@ -17,6 +17,9 @@ permalink: /posts/:title.html
             <h4>{{ page.title }}</h4>
             <p class="article-date">Published {{ page.date | date: "%B %-d, %Y" }}</p>
             {{ page.content }}
+            {% if page.video_id %}
+              <iframe width="730" height="420" src="https://www.youtube.com/embed/{{ page.video_id }}" frameborder=”0” allowfullscreen></iframe>
+            {% endif %}
             {% if page.references.size %}
             <div class="well">
               <h4>References</h4>
