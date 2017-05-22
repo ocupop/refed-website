@@ -1,7 +1,7 @@
 ---
 layout: article
 date: 2017-05-15 00:00:00
-title: ReFED Policy Finder
+title: ReFED Policy Finder Webinar
 categories:
   - article
 featured_image: /uploads/refedpolicyfinder.png
