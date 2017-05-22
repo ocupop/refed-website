@@ -12,4 +12,4 @@ video_id: iDnrhFtQuYE
 ---
 
 
-This webinar provides an overview of ReFED's newly released [Innovator Database](refed.), along with some key insights about the state of food waste innovation in the U.S. You can also watch our [Food Waste Policy Finder webinar](/content-hub/refed-policy-finder).
+This webinar provides an overview of ReFED's newly released [Innovator Database](http://www.refed.com/tools/innovator-database/), along with some key insights about the state of food waste innovation in the U.S. You can also watch our [Food Waste Policy Finder webinar](/content-hub/refed-policy-finder).
