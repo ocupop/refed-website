@@ -19,10 +19,10 @@
 (function() {
 
 $.behaviors('.downloads', download);
+$.behaviors('#member_signup_form', validateForm);
 
   function download(container) {
 
-    window.console.log('downloads.js ready');
     if ($.cookie('memberEmail')) {
       window.console.log('/components/profile.js: cookie is set');
       $('.chapter').find('.message').fadeOut().end()
@@ -31,5 +31,29 @@ $.behaviors('.downloads', download);
       $('[data-message="member_signin_form"]').addClass('active');
     }
   }
+
+  function validateForm(form) {
+    form = $(form);
+    var fields = form.find('input');
+    var required_fields = form.find('input[required]');
+    var submit_button = form.find('input[type="submit"]');
+
+    // Make sure that a user fills out all of the required fields in the member sign up form in order to enable the submit button
+    fields.keyup(function() {
+        var empty = false;
+        required_fields.each(function() {
+          if ($(this).val() == '') {
+            empty = true;
+          }
+        });
+
+        if (empty) {
+            submit_button.attr('disabled', 'disabled');
+        } else {
+            submit_button.removeAttr('disabled').removeClass('disabled');
+        }
+    });
+  }
+
 
 })();
