@@ -54,6 +54,11 @@ button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  &.disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: default;
+    pointer-events: none;
+  }
   &.external {
     padding: 0 20px;
   }

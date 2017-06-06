@@ -11,16 +11,16 @@
     <label class="sr">Email</label>
     <input type="text" id="email" name="email" placeholder="Email *" required>
     <label class="sr">Organization Name</label>
-    <input type="text" id="organization" name="organization" placeholder="Organization Name">
+    <input type="text" id="organization" name="organization" placeholder="Organization Name *" required>
     <label class="sr">Title</label>
-    <input type="text" id="title" name="title" placeholder="Title / Position">
+    <input type="text" id="title" name="title" placeholder="Title / Position *" required>
     <div class="select">
-      <select id="stakeholders" name="stakeholders">
+      <select id="stakeholders" name="stakeholders" required>
         {% for stakeholder in site.stakeholders %}
-        <option value="{{ stakeholder.title }}">{{ stakeholder.title }}</option>
+        <option value="{{ stakeholder.title }}" {% if forloop.first %}selected{% endif %}>{{ stakeholder.title }}</option>
         {% endfor %}
       </select>
     </div>
-    <input type="submit" value="Submit" class="button">
+    <input type="submit" value="Submit" class="button disabled" disabled>
   </div>
 </form>
