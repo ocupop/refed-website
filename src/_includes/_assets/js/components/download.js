@@ -37,6 +37,9 @@ $.behaviors('#member_signup_form', validateForm);
     var fields = form.find('input');
     var required_fields = form.find('input[required]');
     var submit_button = form.find('input[type="submit"]');
+    submit_button.on('click', function() {
+      form.submit();
+    });
 
     // Make sure that a user fills out all of the required fields in the member sign up form in order to enable the submit button
     fields.keyup(function() {
@@ -48,11 +51,14 @@ $.behaviors('#member_signup_form', validateForm);
         });
 
         if (empty) {
-            submit_button.attr('disabled', 'disabled');
+          submit_button.addClass('disabled');
+            // submit_button.attr('disabled', 'disabled');
         } else {
-            submit_button.removeAttr('disabled').removeClass('disabled');
+            submit_button.removeClass('disabled');
         }
     });
+
+
   }
 
 
