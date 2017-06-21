@@ -1,0 +1,4 @@
+/policy /tools/food-waste-policy-finder/
+/innovators /tools/innovator-database/
+/roadmap /download
+/foundations /stakeholders/foundations
