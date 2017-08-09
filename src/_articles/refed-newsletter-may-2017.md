@@ -1,11 +1,11 @@
 ---
 layout: article
-date:
+date: 2017-05-24 00:00:00
 title: 'ReFED Newsletter: May 2017'
 categories:
   - article
-featured_image:
-summary: Short summary of article content.
+featured_image: /uploads/refed-logo-stacked-tagline.jpg
+summary: "Last month, ReFED launched groundbreaking tools around two of the four Roadmap levers of action: innovation and policy. The\_Food Waste Innovator Database\_highlights over 400 innovators who are building new industries to reduce wasted food. The\_Food Waste Policy Finder\_identifies leading and lagging state policies that enable or block food waste reduction."
 references:
 photo_credit:
 video_id:
