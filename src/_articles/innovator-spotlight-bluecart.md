@@ -14,7 +14,7 @@ video_id:
 
 Every so often, we unintentionally discover something truly valuable; either as a complete accident (think Penicillin) or as a byproduct of intended actions. It is no coincidence that entrepreneurs addressing inefficiencies at various nodes throughout the food system often end up addressing wasted food. Such is the case with Konstantin Zvereff, CEO and Co-Founder of [BlueCart](https://www.bluecart.com/), a procurement platform for buyers and suppliers that is helping to digitize an industry and enable lean operation models for thousands of food businesses. ReFED had the opportunity to speak with [Konstantin Zvereff](https://www.bluecart.com/team.html)&nbsp;about what it takes to be a successful entrepreneur in the burgeoning ecosystem of food waste solutions.
 
-ReFED:&nbsp; How often did you think about food waste five years ago?
+**ReFED**:&nbsp;*How often did you think about food waste five years ago?*
 
 KZ:&nbsp; We didn’t, we thought we would waste less in terms of return orders, thought we would reduce emissions.
 
