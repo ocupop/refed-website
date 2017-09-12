@@ -30,19 +30,17 @@ Like several of the nearly 450 innovators in [ReFED’s Food Waste Innovator Dat
 
 ![](/uploads/versions/bluecart-1-1---x----512-358x---.png)
 
-ReFED:How did the [Zero Waste Kitchen initiative](https://www.bluecart.com/zwk.html) begin and what were the outcomes?
+```
+**ReFED:** *How did the [Zero Waste Kitchen initiative](https://www.bluecart.com/zwk.html) begin and what were the outcomes?*
+**KZ:***We realized there is more to this – we know we aren’t subject matter experts in food waste, we know that we ourselves cannot solve this food waste issue, but we do have a community of 30,000 businesses. Why don’t we create a two-month program and follow three chefs across the U.S. - onboard yourself, enjoy, we will track your metrics, you share strategies. We asked the community to share strategies on a weekly basis and went from thousands of impressions to millions of impressions.*
+**KZ:***We realized there were other initiatives taking place to connect with and got in touch with [WastED](http://www.wastedlondon.com/history) – learned that much of the food waste doesn’t take place at the kitchen level but at the supplier level. What if we gave them a platform to sell below-retail grade products? We are now repurposing existing platforms to promote these items. It was surprising to see how much information we actually have. Our community has the best ideas. Seeing the amount of ideas and content our community has to share was really spectacular and really inspiring.*
+**
+ReFED:** *Do you know how big of an impact you’ve made so far?*
+**KZ:***We do not have that data, but feel like this is just the tip of the iceberg. Based on a survey we ran, BlueCart users are wasting 52% less food than nonusers on average. We have plans to actively track data on food waste reduction – and make that data available.*
 
-KZ:We realized there is more to this – we know we aren’t subject matter experts in food waste, we know that we ourselves cannot solve this food waste issue, but we do have a community of 30,000 businesses. Why don’t we create a two-month program and follow three chefs across the U.S. - onboard yourself, enjoy, we will track your metrics, you share strategies. We asked the community to share strategies on a weekly basis and went from thousands of impressions to millions of impressions.
-
-KZ:We realized there were other initiatives taking place to connect with and got in touch with [WastED](http://www.wastedlondon.com/history) – learned that much of the food waste doesn’t take place at the kitchen level but at the supplier level. What if we gave them a platform to sell below-retail grade products? We are now repurposing existing platforms to promote these items. It was surprising to see how much information we actually have. Our community has the best ideas. Seeing the amount of ideas and content our community has to share was really spectacular and really inspiring.
-
-ReFED:Do you know how big of an impact you’ve made so far?
-
-KZ:We do not have that data, but feel like this is just the tip of the iceberg. Based on a survey we ran, BlueCart users are wasting 52% less food than nonusers on average. We have plans to actively track data on food waste reduction – and make that data available.
-
-ReFED:What makes BlueCart innovative?
-
-KZ:\* It is important to hire people who are aggressive learners who come in with the willingness to learn as much as possible every day. And we exercise extreme empathy. Making sure to understand our clients’ needs without knowing the answer is invaluable. We listen and understand, and based on that address the problem they have, not the problem we think they have.\*
+**ReFED:** *What makes BlueCart innovative?*
+**KZ:***It is important to hire people who are aggressive learners who come in with the willingness to learn as much as possible every day. And we exercise extreme empathy. Making sure to understand our clients’ needs without knowing the answer is invaluable. We listen and understand, and based on that address the problem they have, not the problem we think they have.\**
+```
 
 ![](/uploads/versions/bluecart-3---x----808-658x---.png)
 
