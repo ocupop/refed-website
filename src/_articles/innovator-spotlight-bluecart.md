@@ -18,15 +18,15 @@ Every so often, we unintentionally discover something truly valuable; either as 
 
 **KZ:&nbsp;***We didn’t, we thought we would waste less in terms of return orders, thought we would reduce emissions.*
 
-**ReFED:&nbsp;**How often do you think about food waste today?
+**ReFED:&nbsp;***Ho**w often do you think about food waste today?*
 
-**KZ:** *Food waste will make or break the company.*
+**KZ:&nbsp;***Food waste will make or break the company.*
 
 Like several of the nearly 450 innovators in [ReFED’s Food Waste Innovator Database](http://www.refed.com/tools/innovator-database/), BlueCart’s origin story didn’t involve food waste. The company started as a grad school project seven years ago to address inefficiencies in inventory management. In the early 2010’s, before NRDC published the landmark [Wasted](https://www.nrdc.org/sites/default/files/wasted-food-IP.pdf) report, food waste and wasted food were not yet permanent fixtures in most of our lexicons.
 
-**ReFED:***Why did BlueCart start thinking about food waste?*
+**ReFED:***&nbsp; Why did BlueCart start thinking about food waste?*
 
-**KZ:**\* We sampled over 12,000 users and non-users to compare metrics (not specifically about food waste) and discovered that users waste 52% less food. This got the entire company really excited – **we aren’t working to digitize an industry anymore; we’re working to create a more sustainable world.**We went back to users and asked why they were wasting less food - BlueCart enables lean operational models and helps avoid perishability.\*
+**KZ:&nbsp;***We sampled over 12,000 users and non-users to compare metrics (not specifically about food waste) and discovered that users waste 52% less food. This got the entire company really excited – **we aren’t working to digitize an industry anymore; we’re working to create a more sustainable world.**We went back to users and asked why they were wasting less food - BlueCart enables lean operational models and helps avoid perishability*.
 
 ![](/uploads/versions/bluecart-1-1---x----512-358x---.png)
 
