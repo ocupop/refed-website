@@ -14,11 +14,11 @@ video_id:
 
 Every so often, we unintentionally discover something truly valuable; either as a complete accident (think Penicillin) or as a byproduct of intended actions. It is no coincidence that entrepreneurs addressing inefficiencies at various nodes throughout the food system often end up addressing wasted food. Such is the case with Konstantin Zvereff, CEO and Co-Founder of [BlueCart](https://www.bluecart.com/), a procurement platform for buyers and suppliers that is helping to digitize an industry and enable lean operation models for thousands of food businesses. ReFED had the opportunity to speak with [Konstantin Zvereff](https://www.bluecart.com/team.html)&nbsp;about what it takes to be a successful entrepreneur in the burgeoning ecosystem of food waste solutions.
 
-**ReFED:***How often did you think about food waste five years ago?*
+**ReFED:***&nbsp; How often did you think about food waste five years ago?*
 
-**KZ:***We didn’t, we thought we would waste less in terms of return orders, thought we would reduce emissions.*
+**KZ:&nbsp;***We didn’t, we thought we would waste less in terms of return orders, thought we would reduce emissions.*
 
-**ReFED:*** How often do you think about food waste today?*
+**ReFED:&nbsp;**How often do you think about food waste today?
 
 **KZ:** *Food waste will make or break the company.*
 
@@ -26,7 +26,7 @@ Like several of the nearly 450 innovators in [ReFED’s Food Waste Innovator Dat
 
 **ReFED:***Why did BlueCart start thinking about food waste?*
 
-**KZ:*** We sampled over 12,000 users and non-users to compare metrics (not specifically about food waste) and discovered that users waste 52% less food. This got the entire company really excited – **we aren’t working to digitize an industry anymore; we’re working to create a more sustainable world.**We went back to users and asked why they were wasting less food - BlueCart enables lean operational models and helps avoid perishability.*
+**KZ:**\* We sampled over 12,000 users and non-users to compare metrics (not specifically about food waste) and discovered that users waste 52% less food. This got the entire company really excited – **we aren’t working to digitize an industry anymore; we’re working to create a more sustainable world.**We went back to users and asked why they were wasting less food - BlueCart enables lean operational models and helps avoid perishability.\*
 
 ![](/uploads/versions/bluecart-1-1---x----512-358x---.png)
 
