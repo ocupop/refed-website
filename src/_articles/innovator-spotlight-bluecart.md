@@ -32,7 +32,7 @@ Like several of the nearly 450 innovators in [ReFED’s Food Waste Innovator Dat
 
 ![](/uploads/versions/bluecart-3---x----808-658x---.png)
 
-**ReFED:&nbsp;***If you had to pick one way to address food waste, what would you do or encourage others to do?*<br>**KZ:&nbsp;***Pay attention to your own data. Your own data speaks volumes of what you can do.****If you look at how much food you actually waste, you will start to be really sensitive. It’s one of these data points that can move the needle across the entire industry.*&nbsp;***You can make more money and operate in a much more sustainable way.*
+**ReFED:&nbsp;***If you had to pick one way to address food waste, what would you do or encourage others to do?*<br>**KZ:&nbsp;***Pay attention to your own data. Your own data speaks volumes of what you can do. &nbsp;****If you look at how much food you actually waste, you will start to be really sensitive. It’s one of these data points that can move the needle across the entire industry.*&nbsp;***You can make more money and operate in a much more sustainable way.*
 
 **ReFED:&nbsp;***How has BlueCart implemented this thinking?*<br>**KZ:&nbsp;***We are collecting and circling market data back to users in real time to notify them that they’re buying more than their peers during disruptions in service, whether for major events or severe weather, effectively crowdsourcing user data for the user benefit.*
 
