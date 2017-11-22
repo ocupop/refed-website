@@ -5,7 +5,10 @@ title: 'Press Release: New ReFED Innovation and Policy Tools'
 categories:
   - article
 featured_image: /uploads/refedpolicyfinder.png
-summary: 'Today, ReFED unveiled two new tools: a database of innovative food waste solutions, and an interactive map that centralizes federal- and state-level food waste policy to assist advocates and policymakers.'
+summary: >-
+  Today, ReFED unveiled two new tools: a database of innovative food waste
+  solutions, and an interactive map that centralizes federal- and state-level
+  food waste policy to assist advocates and policymakers.
 references:
 photo_credit:
 ---
@@ -41,11 +44,5 @@ The new ReFED tools will build upon existing resources by more clearly identifyi
 ReFED is a multi-stakeholder nonprofit, powered by an influential network of the nation’s leading business, nonprofit, foundation and government leaders committed to reducing U.S. food waste. It takes a data-driven approach to move the food system from acting on instinct to insights to solve our national food waste problem. Solutions already exist to cut food waste by 20% nationwide as identified from the [*Roadmap to Reduce US Food Waste*](http://refed.com/roadmap). ReFED has revolutionized the way the industry looks at food waste, by going beyond challenges to identify concrete opportunities to save money and resources, feed people and create jobs. In addition to the *Roadmap,* ReFED’s tools and resources help businesses, nonprofits, government, and investors put the most impactful solutions to reduce food waste into action and makes it easier for the food supply chain to meet the national 50% reduction goal by 2030.
 
 Learn more about ReFED and explore the tools [here](http://refed.com/).
-
-**Media Contact:**
-<br>Eva Goulbourne
-<br>Associate Director of Programs & Communications, ReFED
-<br>1-978-290-1681
-<br>[eva.goulbourne@refed.com](mailto:eva.goulbourne@refed.com)
 
 *# # # #*
