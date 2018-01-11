@@ -17,7 +17,13 @@
             {% if page.url =='/stakeholders/' %}class="active"{% endif %}>
             <a href="/stakeholders/" title="Stakeholders">Stakeholders</a>
         </li>
+
+        <li id="engage-link"
+            {% if page.url =='/engage-with-us/' %}class="active"{% endif %}>
+            <a href="/engage-with-us/" title="Engage with us">Engage with us</a>
+        </li>
         
+        <!--         
         <li id="policy-link"
             {% if page.url =='/tools/food-waste-policy-finder/' %}class="active"{% endif %}>
             <a href="/tools/food-waste-policy-finder/" title="Foodwaste Policy Finder">Policy</a>
@@ -28,13 +34,14 @@
             {% if page.url =='/tools/innovator-database/' %}class="active"{% endif %}>
             <a href="/tools/innovator-database/" title="Innovator Database">Innovators</a>
         </li>
-        
+        -->
+
       </ul>
       <ul class="drawer">
         <li><a href="/about">About</a></li>
         <li><a href="/share">Share / Follow</a></li>
-        <li><a href="/content-hub#active_tab=news">News &amp; Resources</a></li>
-        <li><a href="{{ '/careers' | prepend: site.baseurl }}">Careers</a></li>
+        <li><a href="/content-hub#active_tab=news">News</a></li>
+        <li><a href="/content-hub#active_tab=resources">Resources</a></li>
         <li><a href="/download" title="Download the Report" >Download the Report <i class="icon-download"></i></a></li>
       </ul>
     </nav>
