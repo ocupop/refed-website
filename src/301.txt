@@ -1,4 +1,8 @@
-/policy /tools/food-waste-policy-finder/
-/innovators /tools/innovator-database/
-/roadmap /download
-/foundations /stakeholders/foundations
+/policy/ /tools/food-waste-policy-finder/
+/innovators/ /tools/innovator-database/
+/roadmap/ /download
+/foundations/ /stakeholders/foundations
+/jobs/director-capital-innovation/ /downloads/jobs/Director-Capital-Innovation.pdf
+/jobs/manager-capital-innovation/ /downloads/jobs/Manager-Capital-Innovation.pdf
+/jobs/manager-communications/ /downloads/jobs/Manager-Communications.pdf
+
