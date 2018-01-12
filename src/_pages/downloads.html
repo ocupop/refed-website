@@ -49,32 +49,97 @@ prevpage:
   </div>
 </section>
 
-
-
-{% assign chapters = site.data.report %}
-{% for chapter in chapters %}
-  <section id="{{ chapter.title | slugify }}" class="chapter {% cycle 'alt-bg', '' %}">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 {% if forloop.first %}col-sm-4{% else %}col-sm-3 col-sm-offset-1{% endif %}">
-          <div class="content text-right">
-            <img src="/img/downloads/{{ chapter.thumbnail }}" class="img-responsive">
-          </div>
+<section id="the-full-report" class="chapter alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="content text-right">
+          <img src="/img/downloads/the-full-report-cover.jpg" class="img-responsive">
         </div>
-        <div class="col-xs-12 {% if forloop.first %}col-sm-8{% else %}col-sm-7{% endif %}">
-          <div class="content">
-            <h2>{{ chapter.title }}</h2>
-            <p><em>{{ chapter.summary }}</em></p>
-            <a href="/downloads/{{ chapter.download }}" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '{{ chapter.title }}');" target="_blank"><i class="icon icon-download"></i>Download {{ chapter.title }}</a><br>
-            <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
-          </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="content">
+          <h2>The Full Report</h2>
+          <p><em>The <em>Roadmap to Reduce U.S. Food Waste by 20 Percent</em> is the first ever national economic study and action plan to reduce food waste at scale. It identifies the most cost-effective solutions and defines research priorities in an effort to spur multi-stakeholder action.</em></p>
+          <a href="/downloads/ReFED_Report_2016.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'The Full Report');" target="_blank"><i class="icon icon-download"></i>Download The Full Report</a><br>
+
+          <a href="/downloads/Executive-Summary.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Executive Summary');" target="_blank"><i class="icon icon-download"></i>Download The Executive Summary</a><br>
+
+          <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
         </div>
       </div>
     </div>
-  </section>
-{% endfor %}
+  </div>
+</section>
 
-<section id="technical-appendix">
+<section id="retail-guide" class="chapter">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="content text-right">
+          <img src="/img/downloads/retail-guide.png" class="img-responsive editable">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="content">
+          <h2>Retail Food Waste Action Guide</h2>
+          <p>Produced in partnership with leading grocery retailers and trade associations, this guide is designed to help retailers develop and implement food waste solutions.</p>
+          <a href="/downloads/Retail_Guide.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Retail Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Retail Food Waste Action Guide</a><br>
+
+
+          <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="restaurant-guide" class="chapter alt-bg hide">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="content text-right">
+          <img src="/img/downloads/restaurant-guide.png" class="img-responsive editable">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="content">
+          <h2>Restaurant Food Waste Action Guide</h2>
+          <p>Produced in partnership with leading restaurants and trade associations, this guide is designed to help restaurants develop and implement food waste solutions.</p>
+          <a href="/downloads/Restaurant_Guide.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Restaurant Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Restaurant Food Waste Action Guide</a><br>
+
+
+          <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="foodservice-guide" class="chapter hide">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="content text-right">
+          <img src="/img/downloads/foodservice-guide.png" class="img-responsive editable">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="content">
+          <h2>Foodservice Food Waste Action Guide</h2>
+          <p>Produced in partnership with the four largest U.S. foodservice providers and trade associations, this guide is designed to help foodservice providers develop and implement food waste solutions.</p>
+          <a href="/downloads/Foodservice_Guide.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Foodservice Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Foodservice Food Waste Action Guide</a><br>
+
+
+          <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="technical-appendix" class="alt-bg">
   <div class="container">
     <div class="row middle-xs">
       <div class="col-xs-12 col-sm-6">
