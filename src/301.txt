@@ -6,3 +6,7 @@
 /jobs/manager-capital-innovation/ /downloads/jobs/Manager-Capital-Innovation.pdf
 /jobs/manager-communications/ /downloads/jobs/Manager-Communications.pdf
 
+/foodservice /download#foodservice-guide
+/restaurant /download#restaurant-guide
+/retail /download#retail-guide
+
