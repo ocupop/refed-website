@@ -33,14 +33,15 @@ nav.pagenav {
   position: relative;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  background-color: $cream-dark;
+  background-color: #DED8C6;
   @include transition();
   ul { margin-right: auto; }
   a {
     text-transform: uppercase;
-    color: $cream-lighter;
+    font-size: 16px;
+    color: $text-color;
     &:hover {
-      color: #ffffff;
+      color: $gray-dark;
     }
   }
 }
