@@ -3,24 +3,20 @@
     <nav>
       <ul>
 
-        <li id="analysis-link"
-            {% if page.url =='/analysis' %}class="active"{% endif %}>
+        <li id="analysis-link" class="{% if page.url =='/analysis' %}active{% endif %}">
             <a href="/analysis" title="Analysis">Analysis</a>
         </li>
 
-        <li id="solutions-link"
-            {% if page.url =='/solutions/' %}class="active"{% endif %}>
+        <li id="solutions-link" class="{% if page.url =='/solutions/' %}active{% endif %}">
             <a href="/solutions/?sort=economic-value-per-ton" title="Solutions">Solutions</a>
         </li>
 
-        <li id="stakeholders-link"
-            {% if page.url =='/stakeholders/' %}class="active"{% endif %}>
+        <li id="stakeholders-link" class="{% if page.url =='/stakeholders/' %}active{% endif %}">
             <a href="/stakeholders/" title="Stakeholders">Stakeholders</a>
         </li>
 
-        <li id="engage-link"
-            {% if page.url =='/engage-with-us' %}class="active"{% endif %}>
-            <a href="/engage-with-us" title="Engage with us">Engage</a>
+        <li id="engage-link" class="{% if page.url =='/engage-with-us' %}active{% endif %}">
+            <a href="/engage-with-us" title="Engage with us" style="color: #69B2A9;">Engage</a>
         </li>
 
       </ul>
@@ -29,7 +25,7 @@
         <li><a href="/share">Share / Follow</a></li>
         <li><a href="/news">News</a></li>
         <li><a href="/resources">Resources</a></li>
-        <li><a href="/download" title="Download the Report" >Download the Roadmap <i class="icon-download"></i></a></li>
+        <li><a href="/download" title="Download the Roadmap" >Download the Roadmap <i class="icon-download"></i></a></li>
       </ul>
     </nav>
   </div>
