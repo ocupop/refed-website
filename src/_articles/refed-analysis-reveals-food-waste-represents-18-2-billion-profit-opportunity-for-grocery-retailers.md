@@ -8,8 +8,10 @@ categories:
   - article
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 summary: >-
-  ReFED has partnered with the retail industry to accelerate food waste
-  solutions by launching the Retail Food Waste Action Guide.
+  ReFED collaborated with major grocery retailers, industry trade associations,
+  and more than 30 expert contributors to create the Retail Food Waste Action
+  Guide to support retailers in developing and implementing food waste
+  solutions.
 references:
 photo_credit:
 video_id:
