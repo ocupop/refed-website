@@ -1,11 +1,13 @@
 ---
 layout: article
-date:
-title: "ReFED Analysis Reveals Food Waste Represents \L$18.2 Billion Profit Opportunity for Grocery Retailers"
+date: 2018-01-22 00:00:00
+title: >-
+  ReFED Analysis Reveals Food Waste Represents $18.2 Billion Profit Opportunity
+  for Grocery Retailers
 categories:
   - article
 featured_image:
-summary: Short summary of article content.
+summary: ReFED
 references:
 photo_credit:
 video_id:
@@ -14,7 +16,7 @@ video_id:
 
 **FOR RELEASE: TUESDAY, JAN. 23, 2018, 7AM PACIFIC TIME**
 
-Contact: Melody Serafino,[media@refed.com](mailto:media@refed.com)
+Contact: Melody Serafino,&nbsp;[media@refed.com](mailto:media@refed.com)
 
 **ReFED Analysis Reveals****Food Waste Represents<br>$18.2 Billion Profit Opportunity for Grocery Retailers**
 
