@@ -7,7 +7,9 @@ title: >-
 categories:
   - article
 featured_image:
-summary: ReFED
+summary: >-
+  ReFED has partnered with the retail industry to accelerate food waste
+  solutions by launching the Retail Food Waste Action Guide.
 references:
 photo_credit:
 video_id:
@@ -16,7 +18,7 @@ video_id:
 
 **FOR RELEASE: TUESDAY, JAN. 23, 2018, 7AM PACIFIC TIME**
 
-Contact: Melody Serafino,&nbsp;[media@refed.com](mailto:media@refed.com)
+Contact: Melody Serafino, [&#109;&#101;&#100;&#105;&#097;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;](&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#101;&#100;&#105;&#097;&#064;&#114;&#101;&#102;&#101;&#100;&#046;&#099;&#111;&#109;)
 
 **ReFED Analysis Reveals****Food Waste Represents<br>$18.2 Billion Profit Opportunity for Grocery Retailers**
 
@@ -44,15 +46,15 @@ ReFED led the development of the *Retail Food Waste Action Guide* in partnership
 
 “Today’s release of ReFED’s *Retail Food Waste Action Guide* offers a fresh opportunity for companies already deeply engaged on the issue of food waste, as well as those just starting out, to take a 360-degree view of their operations in search of new approaches and solutions,” **said Andrew Harig, senior director of sustainability, tax and trade with the Food Marketing Institute, on behalf of the Food Waste Reduction Alliance**. “The *Guide* is undoubtedly an important new tool in retailers’ efforts to reduce food waste across the entire supply chain. The Food Waste Reduction Alliance’s collaboration with ReFED has offered exciting new insights into the importance of active engagement to reduce food loss and we couldn’t be more pleased that the guide is the first product of this effort.”
 
-“The Grocery Manufacturers Association (GMA) is committed to reducing food waste and eliminating hunger across the country,” **said** **Meghan Stasz, GMA Senior Director of Sustainability and a leader of the Food Waste Reduction Alliance, a partnership between grocers, retailers, and the restaurant industry**. “The Food Waste Reduction Alliance was formed to encourage the sharing of best practices within and across industry segments. We’re pleased to partner with ReFED in offering these new guides, which provide actionable advice for operators at all levels of the food waste reduction journey.”&nbsp;
+“The Grocery Manufacturers Association (GMA) is committed to reducing food waste and eliminating hunger across the country,” **said** **Meghan Stasz, GMA Senior Director of Sustainability and a leader of the Food Waste Reduction Alliance, a partnership between grocers, retailers, and the restaurant industry**. “The Food Waste Reduction Alliance was formed to encourage the sharing of best practices within and across industry segments. We’re pleased to partner with ReFED in offering these new guides, which provide actionable advice for operators at all levels of the food waste reduction journey.”
 
-"Reducing food waste has become a key strategy for businesses to reduce cost while helping people become food secure,” **said** **Kathleen McLaughlin, chief sustainability officer for Walmart Stores, Inc., and president of the Walmart Foundation**. “The&nbsp;*Retail Food Waste Action Guide*&nbsp;aligns with Walmart and the Walmart Foundation’s work to reduce waste, including Walmart’s goal to achieve zero waste in the U.S. by 2025, and to provide 4 billion meals to individuals in need by 2020 through food donations from stores and grants to charitable organizations.&nbsp; We were proud to contribute insights and philanthropic funding to the production of the&nbsp;*Guide*."
+"Reducing food waste has become a key strategy for businesses to reduce cost while helping people become food secure,” **said** **Kathleen McLaughlin, chief sustainability officer for Walmart Stores, Inc., and president of the Walmart Foundation**. “The *Retail Food Waste Action Guide* aligns with Walmart and the Walmart Foundation’s work to reduce waste, including Walmart’s goal to achieve zero waste in the U.S. by 2025, and to provide 4 billion meals to individuals in need by 2020 through food donations from stores and grants to charitable organizations.  We were proud to contribute insights and philanthropic funding to the production of the *Guide*."
 
 "The sustainable retailing team at Retail Business Services, an Ahold Delhaize USA company, partnered with Ahold Delhaize US brands Stop & Shop, Giant/Martin's and Giant to work alongside ReFED from the beginning and provided valuable input into the Roadmap as a result of experiencing firsthand the impact of this valuable tool. We look forward to continuing our collaboration with ReFED and to help to set a clear path for food waste reduction across the grocery retail industry," **said Christine Gallagher, Environmental Sustainability Manager, Retail Business Services, an Ahold Delhaize USA company**.
 
-“Grocery retailers have a great opportunity to lead the way in curbing food waste through the implementation of best practices,” **said Darcie Renn,****Senior Sustainability Manager, Albertsons Companies**. “As we continue to reduce waste in our operations, Albertsons Companies is pleased to have contributed to ReFED’s guide that will support all retailers in their efforts to tackle this issue.”&nbsp;
+“Grocery retailers have a great opportunity to lead the way in curbing food waste through the implementation of best practices,” **said Darcie Renn,****Senior Sustainability Manager, Albertsons Companies**. “As we continue to reduce waste in our operations, Albertsons Companies is pleased to have contributed to ReFED’s guide that will support all retailers in their efforts to tackle this issue.”
 
-For a direct link to the *Retail Food Waste Action Guide*, key insights, and relevant infographics and resources, visit&nbsp;[refed.com/retail](http://www.refed.com).
+For a direct link to the *Retail Food Waste Action Guide*, key insights, and relevant infographics and resources, visit [refed.com/retail](http://www.refed.com).
 
 **About ReFED**
 
