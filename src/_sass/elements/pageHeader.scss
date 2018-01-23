@@ -29,6 +29,23 @@
   }
 }
 
+nav.pagenav {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  background-color: #DED8C6;
+  @include transition();
+  ul { margin-right: auto; }
+  a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $text-color;
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}
+
 
 body.condensed-header {
 
@@ -38,6 +55,12 @@ body.condensed-header {
       @include transition();
     }
   }
+
+  // nav.pagenav {
+  //   position: fixed;
+  //   top: 50px;
+  //   z-index: 999;
+  // }
 
 }
 
@@ -71,6 +94,12 @@ body.condensed-header {
       nav {
         right: 0;
       }
+    }
+  }
+  nav.pagenav {
+    display: block;
+    li {
+      width: 100%;
     }
   }
 }

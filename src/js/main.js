@@ -27,6 +27,7 @@
 {% include _assets/js/lineClamp.js %}
 {% include _assets/js/nav/quicknav.js %}
 {% include _assets/js/nav/toolnav.js %}
+{% include _assets/js/nav/pagenav.js %}
 {% include _assets/js/components/share.js %}
 {% include _assets/js/components/solutionCards.js %}
 {% include _assets/js/components/supplyChain.js %}

@@ -35,6 +35,44 @@
         </div>
       </div>
       <div class="item">
+        <div class="hero hero-slider" style="background-image: url(/img/carousel/refed-sliderretail-100.jpg)">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <a href="/download">
+                      <h1 class="editable">Retail Food Waste Action Guide</h1>
+                      <p class="editable">ReFED collaborated with major grocery retailers, industry trade associations, and more than 30 expert contributors to create this resource to support retailers in developing and implementing food waste solutions.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- For release 2/5
+      <div class="item">
+        <div class="hero hero-slider" style="background-image: url(/img/carousel/refed-sliderall-guides-100.jpg)">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <a href="/download">
+                      <h1 class="editable">Retail, Restaurant, and Foodservice Food Waste Action Guides</h1>
+                      <p class="editable">ReFED collaborated with major grocery retailers, restaurants, foodservice providers, industry trade associations, and more than 100 expert contributors to create action guides designed to help food businesses develop and implement food waste solutions.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="item">
         <div class="hero hero-slider" style="background-image: url(/img/Slider_image-2.jpg)">
           <div class="hero-content">
             <div class="container">
@@ -120,7 +158,7 @@
 {% endif %}
 {% if page.hero %}
   {% if page.hero.image %}
-  <div class="hero" style="background-image: url({{ site.baseurl }}/img/{{ page.hero.image }});">
+  <div class="hero {{ page.hero.class }}" style="background-image: url({{ site.baseurl }}/img/{{ page.hero.image }});">
   {% else %}
    <div class="hero" style="background-image: url('http://placehold.it/2500x800/565759/DED8C6?text=+');">
   {% endif %}
