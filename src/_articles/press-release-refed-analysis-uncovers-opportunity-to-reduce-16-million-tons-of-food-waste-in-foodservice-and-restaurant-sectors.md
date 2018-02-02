@@ -10,7 +10,7 @@ featured_image: /uploads/post-restaurant-1.jpg
 summary: >-
   ReFED collaborated with the four largest foodservice providers, major
   restaurants, industry trade associations, and more than 60 expert contributors
-  to create the Restaurant and Foodservice Food Waste Action Guide to support
+  to create the Restaurant and Foodservice Food Waste Action Guides to support
   businesses in developing and implementing food waste solutions.
 references:
 photo_credit:
