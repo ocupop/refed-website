@@ -1,4 +1,6 @@
-<form id="contact_form" class="profile" name="contact_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="">
+<form id="contact_form" class="profile" name="contact_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="http://refed.com">
+  <input type="text" name="_gotcha" style="display: none;">
+  <input type="hidden" name="_to" value="tom@ocupop.com">
   <div class="form-group">
     <label class="sr">First Name</label>
     <input type="text" id="name" name="name" placeholder="Name" required>
@@ -13,3 +15,44 @@
     <input type="submit" value="Submit" class="button">
   </div>
 </form>
+<script>
+  // Helper function to get form data in the supported format
+function getFormDataString(formEl) {
+  var formData = new FormData(formEl),
+      data = [];
+
+  for (var keyValue of formData) {
+    data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+  }
+
+  return data.join("&");
+}
+
+// Fetch the form element
+var formEl = document.getElementById("contact_form");
+
+// Override the submit event
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  if (grecaptcha) {
+    var recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+      return false;
+    }
+  }
+
+  var request = new XMLHttpRequest();
+
+  request.addEventListener("load", function () {
+    if (request.status === 302) { // CloudCannon redirects on success
+      // It worked
+      alert("Thank you for your submission. We will be in touch shortly");
+    }
+  });
+
+  request.open(formEl.method, formEl.action);
+  request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  request.send(getFormDataString(formEl));
+});
+</script>
