@@ -1,4 +1,4 @@
-<form id="contact_form" class="profile" name="contact_form" method="post" action="/thanks">
+<form id="contact_form" class="" name="contact_form" method="post" action="/">
   <input type="text" name="_gotcha" style="display: none;">
   <input type="hidden" name="_to" value="tom@ocupop.com">
   <div class="form-group">
@@ -16,3 +16,45 @@
   </div>
   <!-- <div class="g-recaptcha" data-sitekey="6LcQ8EUUAAAAAKJw_fxKO_qTYSYSAlYmgknHvY8O"></div> -->
 </form>
+<script>
+  // Helper function to get form data in the supported format
+  function getFormDataString(formEl) {
+    var formData = new FormData(formEl),
+        data = [];
+
+    for (var keyValue of formData) {
+      data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+    }
+
+    return data.join("&");
+  }
+
+  // Fetch the form element
+  var formEl = document.getElementById("contact_form");
+
+  // Override the submit event
+  formEl.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // if (grecaptcha) {
+    //   var recaptchaResponse = grecaptcha.getResponse();
+    //   if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+    //     return false;
+    //   }
+    // }
+
+    var request = new XMLHttpRequest();
+
+    request.addEventListener("load", function () {
+      if (request.status === 302) { // CloudCannon redirects on success
+        // It worked
+        console.log("Thanks");
+        alert("Thank you for your submission. We will be in touch shortly");
+      }
+    });
+
+    request.open(formEl.method, formEl.action);
+    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    request.send(getFormDataString(formEl));
+  });
+</script>
