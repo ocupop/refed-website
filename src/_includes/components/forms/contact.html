@@ -1,6 +1,6 @@
-<form id="" class="" name="contact_form" method="post" action="/thanks">
+<form id="{{input.contact}}_form" name="{{input.contact}}_form" method="post" action="/thanks">
   <input type="text" name="_gotcha" style="display: none;">
-  <input type="hidden" name="_to" value="info@refed.com">
+  <input type="hidden" name="_to" value="{{input.contact}}@refed.com">
   <div class="form-group">
     <label class="sr">First Name</label>
     <input type="text" id="name" name="name" placeholder="Name" required>
@@ -30,7 +30,7 @@
   }
 
   // Fetch the form element
-  var formEl = document.getElementById("contact_form");
+  var formEl = document.getElementById("{{input.contact}}_form");
 
   // Override the submit event
   formEl.addEventListener("submit", function (e) {
