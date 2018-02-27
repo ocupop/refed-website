@@ -1,0 +1,6 @@
+---
+layout: null
+---
+name,email,website,state,country
+{% for innovator in site.innovators %}{{ innovator.name | replace: ',', '","' }},{{ innovator.email }},{{ innovator.website }},{{ innovator.state }},{{ innovator.country }}
+{% endfor %} 
