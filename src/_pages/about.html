@@ -28,41 +28,27 @@ prevpage:
   <div class='container'>
     <div class="row">
       <div class="col-xs-12">
-        <div class="content editable">
+        <div class="content">
           <h2>ReFED Team</h2>
-          <h4>Chris Cochran</h4>
-          <h6>Executive Director</h6>
-          <p>Chris Cochran is the Executive Director of ReFED. Previously, Chris was the Senior Manager of Sustainability at Walmart where he developed a farm to consumer view of food waste while leading sustainability for Walmart&rsquo;s global produce business. Chris&rsquo;s experience with tackling food waste from multiple points in the value chain helps ReFED bring together new collaborators on food system challenges.</p>
-          <h4>Alexandria Coari</h4>
-          <h6>Capital and Innovation Director</h6>
-          <p>Alexandria (Alex) serves as ReFED&rsquo;s Capital and Innovation Director. She brings 10 years of business development, impact investing, and strategy consulting experience with startups, for-profits and nonprofits in the U.S. and Latin America, including time at Agora Partnerships and Fair Trade USA. She is passionate about helping mission-driven companies grow their impact and believes in the power of market-based approaches to solving today's biggest challenges.</p>
-          <h4>Philip Curtis</h4>
-          <h6>insights and analytics Manager</h6>
-          <p>Philip Curtis is ReFED&rsquo;s Insights and Analytics Manager, providing data analysis and support across the organization. Before joining ReFED, Philip served as a researcher and geospatial analyst for The Sustainability Consortium (TSC). While there, he developed new methods and tools to help food businesses estimate and map risk in their global commodity supply chains. As part of this work, Philip worked closely with companies to strengthen internal data-sharing capacity and improve the flow of information between procurement and sustainability teams.</p>
-          <h4>Katy Franklin</h4>
-          <h6>Operations Manager</h6>
-          <p>Katy Franklin serves as ReFED&rsquo;s Operations Manager, supporting organizational development and designing systems for effective program implementation and management. Previously, Katy managed operations at Sustainable America, where she gained a deep understanding of successful food waste reduction programs with consumers, food service providers, private firms, and at major events. Katy also helped develop Further with Food, a public-private partnership convened to address food loss and waste.</p>
-          <h4>Chris Hunt</h4>
-          <h6>Communications Director</h6>
-          <p>Chris Hunt serves as Communications Director for ReFED, providing oversight of the organization's communications, and strategic input on programs, stakeholder engagement, and policy development. Before joining ReFED, Chris worked at the GRACE Communications Foundation, shaping the organization&rsquo;s promotion of sustainable agriculture by developing campaign strategy, building collaborative partnerships, and serving as the foundation&rsquo;s primary spokesperson on food and agriculture issues.</p>
-          <h4>Caroline Powell</h4>
-          <h6>Director of insights and analytics</h6>
-          <p>Caroline Powell serves as ReFED's Director of Insights and Analytics, managing projects related to data analytics, information security, and software development. Prior to ReFED, Caroline was a consultant for the Walmart Sustainability team and worked with the food sourcing teams on several projects including food waste. Previously she spent time at The Sustainability Consortium, helping to develop sustainability performance metrics for food businesses. Caroline recently graduated from the Turing School of Software &amp; Design and worked for a custom software design firm, Cuttlesoft, supporting a healthcare organization on application updates, secure infrastructure, and performance monitoring. She is an active software developer and solutions architect.</p>
-          <h4>Nicole Sturzenberger</h4>
-          <h6>Communications Manager</h6>
-          <p>Nicole serves as ReFED&rsquo;s Communications Manager working on program and stakeholder engagement. She brings over a decade of food and agricultural marketing/ communications experience, including time with the California Department of Food and Agriculture and University of California Davis College of Agriculture. She holds a Masters in Communications from the Universit&agrave; di Scienze Gastronomiche in Italy.</p>
-          <h4>jackie suggitt</h4>
-          <h6>Multistakeholder Initiatives Director</h6>
-          <p>Jackie serve as ReFED&rsquo;s Multistakeholder Initiatives Director. In her position, she works with a diverse set of industry leaders to tackle complex food waste issues, including standardized date labeling and innovative packaging. Before joining ReFED, Jackie worked as Senior Manager of Sustainability at Walmart where she led a number of sustainable food and nutrition programs for Walmart's private brand business.</p>
-          <h4>Sarah Vared</h4>
-          <h6>Strategic Advisor</h6>
-          <p>Sarah Vared is a strategic advisor to ReFED. Sarah led the design and creation of ReFED&rsquo;s <em>Roadmap to Reduce U.S. Food Waste</em> and served as ReFED&rsquo;s Interim Director from its inception in 2015 through March 2017. Sarah supports ReFED through her role as a Principal at MissionPoint Partners, an impact investment advisor and manager, leveraging her background in philanthropy and impact investing to provide programmatic support and strategic insight on how to catalyze the action and investment needed to scale solutions to reduce food waste.</p>
-          <h4>angel veza</h4>
-          <h6>business engagement manager</h6>
-          <p>Angel Veza is ReFED's Business Engagement Manager, focusing on food waste solutions implementation for leading businesses in the retail, restaurant, and foodservice industries. Prior to joining ReFED, Angel was a chef at Google NYC, where she spearheaded food waste reduction strategy and programs and developed zero-waste recipes utilizing food waste prevention techniques. She also worked with World Wildlife Fund in creating the Hotel Kitchen Toolkit, which presents innovative strategies to engage staff, partners, and guests in cutting waste from hotel kitchens.</p>
         </div>
       </div>
     </div>
+    {% for member in site.data.team %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="content">
+          <img src="{{ member.image }}" alt="{{ member.name }}" class="img-responsive" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="content">
+          <h4>{{ member.name }}</h4>
+          <h6>{{ member.title }}</h6>
+          <p>{{ member.summary }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>
 
@@ -70,7 +56,10 @@ prevpage:
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="content editable"><h2>Steering Committee and Advisory Council</h2><p>ReFED&rsquo;s Steering Committee and Advisory Council are comprised of more than 40 business, nonprofit, foundation, and government leaders who inform the organization&rsquo;s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p></div>
+        <div class="content editable">
+          <h2>Steering Committee and Advisory Council</h2>
+          <p>ReFED&rsquo;s Steering Committee and Advisory Council are comprised of more than 50 business, nonprofit, foundation, and government leaders who inform the organization&rsquo;s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+        </div>
       </div>
     </div>
     <div id="refed-steering-comittee" class="row">
@@ -78,26 +67,12 @@ prevpage:
         <div class="content">
           <p class="editable"><strong>ReFED STEERING COMMITTEE</strong></p>
           <div class="editable">
-          <ul>
-            <li>
-              Jesse Fink<br />
-              <em>Chair,</em> ReFED Steering Committee<br />
-              <em>Non-Executive Chairman and Co-Founder,</em> MissionPoint Partners<br />
-              <em>Trustee,</em> Fink Family Foundation
-            </li>
-            <li>
-              Dana Gunders<br />
-              <em>Senior Scientist, Food & Agriculture Program,</em> Natural Resources Defense Council
-            </li>
-            <li>
-              Rob Kaplan<br />
-              <em>Managing Director,</em> Closed Loop Fund
-            </li>
-            <li>
-              Devon Klatell<br />
-              <em>Associate Director,</em> Rockefeller Foundation
-            </li>
-          </ul>
+            <ul>
+              <li>Jesse Fink<br /><em>Chair,</em> ReFED Steering Committee<br /><em>Non-Executive Chairman and Co-Founder,</em> MissionPoint Partners<br /><em>Trustee,</em> Fink Family Foundation</li>
+              <li>Dana Gunders<br /><em>Author, Food Waste Expert, and Founder, Next Course, LLC</em></li>
+              <li>Rob Kaplan<br /><em>Managing Director,</em> Closed Loop Fund</li>
+              <li>Devon Klatell<br /><em>Associate Director,</em> Rockefeller Foundation</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -108,176 +83,57 @@ prevpage:
           <p class="editable"><strong>ReFED ADVISORY COUNCIL</strong></p>
           <div class="col3 editable">
             <ul>
-              <li>
-                Elizabeth Balkan<br />
-                <em>Director of Policy and Senior Advisor to the Commissioner,</em> NYC Department of Sanitation (DSNY)
-              </li>
-              <li>
-                Jay Bassett<br />
-                <em>Chief, Materials Management,</em> U.S. Environmental Protection Agency, Region 4
-              </li>
-              <li>
-                JoAnne Berkenkamp<br />
-                <em>Senior Advocate,</em> Natural Resources Defense Council
-              </li>
-              <li>
-                Jonathan Bloom<br />
-                <em>Independent Journalist and Speaker</em><br />
-                <em>Author of American Wasteland</em>
-              </li>
-              <li>
-                Emily Broad Leib<br />
-                <em>Assistant Clinical Professor of Law,</em><br />
-                <em>Director,</em> Harvard Law School Food Law and Policy Clinic
-              </li>
-              <li>
-                Bill Caesar<br />
-                <em>CEO,</em> WCA Waste Corporation
-              </li>
-              <li>
-                Jeff Canavan<br />
-                <em>Deputy Directory, Labeling and Program Delivery Staff,</em> U.S. Department of Agriculture, Food Safety Inspection Service
-              </li>
-              <li>
-                Melanie Condon<br />
-                <em>External Affairs, Sustainable Business Communications,</em> Unilever
-              </li>
-              <li>
-                Christy Cook<br />
-                <em>Director of Performance and Sustainability Field Support,</em> Sodexo
-              </li>
-              <li>
-                Scott Cullen<br />
-                <em>Executive Director,</em> GRACE Communications Foundation
-              </li>
-              <li>
-                Claire Cummings<br />
-                <em>Waste Programs Manager,</em> Bon Appétit Management Company
-              </li>
-              <li>
-                Nicola Dixon<br />
-                <em>Associate Director,</em> General Mills Foundation
-              </li>
-              <li>
-                Liz Fikejs<br />
-                <em>Conservation Program Manager,</em> City of Seattle, Seattle Public Utilities
-              </li>
-              <li>
-                John Fisk<br />
-                <em>Director,</em> Wallace Center at Winrock International
-              </li>
-              <li>
-                Christine Gallagher<br />
-                <em>Manager, Sustainable Retailing,</em> Ahold USA
-              </li>
-              <li>
-                Nora Goldstein<br />
-                <em>Editor,</em> BioCycle
-              </li>
-              <li>
-                Karen Hanner<br />
-                <em>Managing Director Manufacturing Product Sourcing,</em> Feeding America
-              </li>
-              <li>
-                Andy Harig<br />
-                <em>Senior Director, Sustainability, Tax and Trade,</em> Food Marketing Institute
-              </li>
-              <li>
-                Michael Hewett<br />
-                <em>Director of Environmental and Sustainability Programs,</em> Publix
-              </li>
-              <li>
-                Darby Hoover<br />
-                <em>Senior Resource Specialist,</em> Natural Resources Defense Council
-              </li>
-              <li>
-                Eric Kessler<br />
-                <em>Founder, Senior Managing Director,</em> Arabella Advisors
-              </li>
-              <li>
-                Brian Lipinski<br />
-                <em>Associate,</em> World Resources Institute
-              </li>
-              <li>
-                John Mandyck<br />
-                <em>Chief Sustainability Officer,</em> United Technologies Corporation
-              </li>
-              <li>
-                Craig McNamara<br />
-                <em>President,</em> California State Board of Food and Agriculture and Sierra Orchards
-              </li>
-              <li>
-                Thomas McQuillan<br />
-                <em>Director of Food Service Sales and Sustainability,</em> Baldor Specialty Foods, Inc.
-              </li>
-              <li>
-                Katherine Miller<br />
-                <em>Executive Director,</em> James Beard Foundation/Chef Action Network
-              </li>
-              <li>
-                Kristopher Moon<br />
-                <em>Vice President,</em> James Beard Foundation
-              </li>
-              <li>
-                Danielle Nierenberg<br />
-                <em>President,</em> Food Tank
-              </li>
-              <li>
-                Regina Northouse<br />
-                <em>Executive Director,</em> Food Recovery Network
-              </li>
-              <li>
-                Thomas O'Donnell, PhD<br />
-                <em>Sustainability Coordinator and Educator,</em> U.S. Environmental Protection Agency, Region 3 and Cabrini University
-              </li>
-              <li>
-                Pete Pearson<br />
-                <em>Director, Food Waste U.S.,</em> World Wildlife Fund
-              </li>
-              <li>
-                Dennis Pittman<br />
-                <em>Senior Director of Hunger Relief,</em> Smithfield Foods
-              </li>
-              <li>
-                Kristen Rainey<br />
-                <em>Global Procurement & Resource Utilization Manager,</em> Google Food
-              </li>
-              <li>
-                Susan Robinson<br />
-                <em>Senior Federal Public Affairs Director,</em> Waste Management
-              </li>
-              <li>
-                Jessica Rosen<br />
-                <em>Associate Manager, Sustainability,</em> Yum! Brands
-              </li>
-              <li>
-                Rick Schnieders<br />
-                <em>CEO,</em> MoGro, LLC and Shiso Investments, LLC
-              </li>
-              <li>
-                Andrew Shakman<br />
-                <em>CEO,</em> LeanPath
-              </li>
-              <li>
-                Meghan Stasz<br />
-                <em>Senior Director, Sustainability,</em> Grocery Manufacturers Association
-              </li>
-              <li>
-                John Trujillo<br />
-                <em>Director,</em> City of Phoenix, Public Works
-              </li>
-              <li>
-                Ron Vance<br />
-                <em>Chief, Materials Conservation and Recycling Branch,</em> U.S. Environmental Protection Agency
-              </li>
-              <li>
-                Kate Worley<br />
-                <em>Senior Manager, Solid Waste and Recycling,</em> Walmart Stores Inc.
-              </li>
-              <li>
-                Ashley Zanolli<br />
-                <em>Senior Policy and Program Advisor,</em> Oregon DEQ Materials Management Program and U.S. EPA
-              </li>
+              <li>Elizabeth Balkan<br /><em>Director of Policy and Senior Advisor to the Commissioner,</em> NYC Department of Sanitation (DSNY)</li>
+              <li>Jay Bassett<br /><em>Chief, Materials Management,</em> U.S. Environmental Protection Agency, Region 4</li>
+              <li>JoAnne Berkenkamp<br /><em>Senior Advocate,</em> Natural Resources Defense Council</li>
+              <li>Jonathan Bloom<br /><em>Independent Journalist and Speaker,</em><br /><em>Author of American Wasteland</em></li>
+              <li>Emily Broad Leib<br /><em>Assistant Clinical Professor of Law,</em><br /><em>Director,</em> Harvard Law School Food Law and Policy Clinic</li>
+              <li>Bill Caesar<br /><em>CEO,</em> WCA Waste Corporation</li>
+              <li>Jeff Canavan<br /><em>Deputy Directory, Labeling and Program Delivery Staff,</em> U.S. Department of Agriculture, Food Safety Inspection Service</li>
+              <li>Melanie Condon<br /><em>External Affairs, Sustainable Business Communications,</em> Unilever</li>
+              <li>Christy Cook<br /><em>Global Account Director,</em> LeanPath</li>
+              <li>Scott Cullen<br /><em>Executive Director,</em> GRACE Communications Foundation</li>
+              <li>Claire Cummings<br /><em>Waste Programs Manager,</em> Bon App&eacute;tit Management Company</li>
+              <li>Nicola Dixon<br /><em>Associate Director,</em> General Mills Foundation</li>
+              <li><em></em>Melissa Donnelly<br /><em>Manager Sustainability Integration and Metrics,</em>&nbsp;Campbell Soup Company</li>
+              <li>Liz Fikejs<br /><em>Conservation Program Manager,</em> City of Seattle, Seattle Public Utilities</li>
+              <li>Steve Finn<br /><em>Affiliated Faculty, Global Innovation for Sustainability,</em> University of Pennsylvania</li>
+              <li>John Fisk<br /><em>Director,</em> Wallace Center at Winrock International</li>
+              <li>Nell Fry<br /><em>Senior Manager of Sustainability Field Support,</em> Sodexo</li>
+              <li>Christine Gallagher<br /><em>Manager, Sustainable Retailing,</em> Ahold USA</li>
+              <li>Nora Goldstein<br /><em>Editor,</em> BioCycle</li>
+              <li>Karen Hanner<br /><em>Managing Director Manufacturing Product Sourcing,</em> Feeding America</li>
+              <li>Andy Harig<br /><em>Senior Director, Sustainability, Tax and Trade,</em> Food Marketing Institute</li>
+              <li>Michael Hewett<br /><em>Director of Environmental and Sustainability Programs,</em> Publix</li>
+              <li>Darby Hoover<br /><em>Senior Resource Specialist,</em> Natural Resources Defense Council</li>
+              <li>Eric Kessler<br /><em>Founder, Senior Managing Director,</em> Arabella Advisors</li>
+              <li>Sharon Lerman<br /><em>Food Policy Advisor,</em> City of Seattle&nbsp;</li>
+              <li>Brian Lipinski<br /><em>Associate,</em> World Resources Institute</li>
+              <li>John Mandyck<br /><em>Chief Sustainability Officer,</em> United Technologies Corporation</li>
+              <li>Craig McNamara<br /><em>President,</em> California State Board of Food and Agriculture and Sierra Orchards</li>
+              <li>Thomas McQuillan<br /><em>Director of Food Service Sales and Sustainability,</em> Baldor Specialty Foods, Inc.</li>
+              <li>Katherine Miller<br /><em>Executive Director,</em> James Beard Foundation/Chef Action Network</li>
+              <li>Kristopher Moon<br /><em>Vice President,</em> James Beard Foundation</li>
+              <li>Roni Neff<br /><em>Assistant Professor,</em> Johns Hopkins Bloomberg School of Public Health</li>
+              <li>Brad Nelson<br /><em>Vice President Global Discipline Leader,</em> Marriott International</li>
+              <li>Danielle Nierenberg<br /><em>President,</em> Food Tank</li>
+              <li>Regina Northouse<br /><em>Executive Director,</em> Food Recovery Network</li>
+              <li>Thomas O'Donnell, PhD<br /><em>Sustainability Coordinator and Educator,</em> U.S. Environmental Protection Agency, Region 3 and Cabrini University</li>
+              <li>Pete Pearson<br /><em>Director, Food Waste U.S.,</em> World Wildlife Fund</li>
+              <li>Dennis Pittman<br /><em>Senior Director of Hunger Relief,</em> Smithfield Foods</li>
+              <li>Kristen Rainey<br /><em>Global Procurement &amp; Resource Utilization Manager,</em> Google Food</li>
+              <li>Kai Robertson<br /><em>Senior Corporate Sustainability Advisor,</em> World Resources Institute</li>
+              <li>Susan Robinson<br /><em>Senior Federal Public Affairs Director,</em> Waste Management</li>
+              <li>Jessica Rosen<br /><em>Associate Manager, Sustainability,</em> Yum! Brands</li>
+              <li>Rick Schnieders<br /><em>CEO,</em> MoGro, LLC and Shiso Investments, LLC</li>
+              <li>Andrew Shakman<br /><em>CEO,</em> LeanPath</li>
+              <li>Kevin Smith<br /><em>Consumer Safety Officer,</em> Federal Food &amp; Drug Administration</li>
+              <li>Meghan Stasz<br /><em>Senior Director, Sustainability,</em> Grocery Manufacturers Association</li>
+              <li>Ron Vance<br /><em>Chief, Materials Conservation and Recycling Branch,</em> U.S. Environmental Protection Agency</li>
+              <li>Anna Vinogradova<br /><em>Sustainability Senior Manager II,</em> Walmart</li>
+              <li>Kent Wilson<br /><em>Director, Government Affairs,</em> Target&nbsp;</li>
+              <li>Kate Worley<br /><em>Senior Manager, Solid Waste and Recycling,</em> Walmart Stores Inc.</li>
+              <li>Ashley Zanolli<br /><em>Senior Policy and Program Advisor,</em> Oregon DEQ Materials Management Program and U.S. EPA</li>
             </ul>
           </div>
         </div>
