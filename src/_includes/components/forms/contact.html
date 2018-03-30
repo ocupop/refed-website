@@ -1,6 +1,6 @@
 <form id="{{include.contact}}_form" name="{{include.contact}}_form" method="post" action="/thanks">
   <input type="text" name="_gotcha" style="display: none;">
-  <input type="hidden" name="_to" value="{{input.contact}}@refed.com">
+  <input type="hidden" name="_to" value="{{include.contact}}@refed.com">
   <div class="form-group">
     <label class="sr">First Name</label>
     <input type="text" id="name" name="name" placeholder="Name" required>
