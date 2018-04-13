@@ -1,6 +1,6 @@
 ---
 layout: null
 ---
-name,email,website,state,country
-{% for innovator in site.innovators %}{{ innovator.name | replace: ',', '","' }},{{ innovator.email }},{{ innovator.website }},{{ innovator.state }},{{ innovator.country }}
+Name,City,State,Country,Innovator Level,Description,Business Model,Food Recovery Hierarchy,Innovator Category,Innovator Subcategory,Solutions,Year Founded,Website,Facebook URL,Twitter URL,LinkedIn URL,Email,Latitude,Longitude
+{% for innovator in site.innovators %}{{ innovator.name | replace: ',', '","' }},{{ innovator.city }},{{ innovator.state }},{{ innovator.country }},{{ innovator.innovator_level }},{{innovator.description | replace: ',', '","' }},{{ innovator.business_model }},{{ innovator.food_recovery_hierarchy_options }},{{ innovator.innovator_category_options }},{{ innovator.innovator_subcategory_options }},{{ innovator.solutions }},{{ innovator.founded }},{{ innovator.website }},{{ innovator.facebook_url }},{{ innovator.twitter_url }},{{ innovator.linkedin_url }},{{ innovator.email }},{{ innovator.lat }},{{ innovator.lng }}
 {% endfor %} 
