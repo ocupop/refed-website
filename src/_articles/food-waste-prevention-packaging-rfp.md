@@ -4,7 +4,7 @@ date: 2018-05-01 00:00:00
 title: Food Waste Prevention Packaging RFP
 categories:
   - article
-featured_image: /uploads/refed-logo-stacked.jpg
+featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 summary: >-
   ReFED is currently accepting proposals to develop a multistakeholder project
   plan to address food waste prevention packaging. All proposals in response to
