@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: article
 date: 2018-05-01 00:00:00
 title: Food Waste Prevention Packaging RFP
 categories:
