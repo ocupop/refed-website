@@ -9,6 +9,7 @@
     "url": ""
   },
   "scripts": {
+    "start": "jekyll serve --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ocupop",
