@@ -1,6 +1,6 @@
 ---
 layout: article
-date:
+date: 2018-05-09 00:00:00
 title: New blog post
 categories:
   - article
@@ -10,3 +10,5 @@ references:
 photo_credit:
 video_id:
 ---
+
+type tyepe type
