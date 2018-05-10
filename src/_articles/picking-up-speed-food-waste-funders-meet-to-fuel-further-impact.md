@@ -23,7 +23,11 @@ Growth was the focus of the conversation, driven by the diversity of the group, 
 
 ![Dylan Bondy from Imperfect Produce and Dana Frasz from Food Shift present their innovations](/uploads/imperfect-refed-3.jpg "Dylan Bondy from Imperfect Produce and Dana Frasz from Food Shift present their innovations")
 
+&nbsp;
+
 A number of key insights came out of the discussion. One finding was the volume of new funding that has come into the space, exemplified by three food waste specific multi-year commitments totaling approximately $250 million &nbsp;- [Rockefeller Foundation’s $130M YieldWise Initiative](https://www.rockefellerfoundation.org/our-work/initiatives/yieldwisefood-waste/){: target="_blank"} to fight food loss and food waste around the world, [Kroger Co. Foundation’s Zero Hunger | Zero Waste $10M Innovation Fund](https://www.prnewswire.com/news-releases/kroger-partners-with-refed-to-create-strategy-for-zero-hunger--zero-waste-10-million-innovation-fund-300586286.html){: target="_blank"}, and [CalRecycle’s $100M in climate investments](http://www.calrecycle.ca.gov/climate/grantsloans/FoodWaste/default.htm){: target="_blank"} which include approximately $90M for food waste prevention, recovery, and recycling innovations. Other notable funding highlighted by the group includes[ DBL Partners’ investment into Apeel Sciences](http://www.dblpartners.vc/Portfolio/apeel-sciences/){: target="_blank"}, [Draper Richards Kaplan Foundation’s $300k grant to Food Forward](https://www.drkfoundation.org/organization/food-forward/){: target="_blank"}, and Atticus Trust’s place-based funding to drive Nashville’s food recovery and recycling ecosystem.
+
+&nbsp;
 
 ![Group tour through the Imperfect warehouse](/uploads/Imperfect 3.jpg "Group tour through the Imperfect warehouse")
 
