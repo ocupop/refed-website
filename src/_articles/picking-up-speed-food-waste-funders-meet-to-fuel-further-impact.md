@@ -23,13 +23,19 @@ Growth was the focus of the conversation, driven by the diversity of the group, 
 
 ![Dylan Bondy from Imperfect Produce and Dana Frasz from Food Shift present their innovations](/uploads/imperfect-refed-3.jpg "Dylan Bondy from Imperfect Produce and Dana Frasz from Food Shift present their innovations")
 
+*Dylan Bondy from Imperfect Produce and Dana Frasz from Food Shift present their innovations*
+
 A number of key insights came out of the discussion. One finding was the volume of new funding that has come into the space, exemplified by three food waste specific multi-year commitments totaling approximately $250 million &nbsp;- [Rockefeller Foundation’s $130M YieldWise Initiative](https://www.rockefellerfoundation.org/our-work/initiatives/yieldwisefood-waste/){: target="_blank"} to fight food loss and food waste around the world, [Kroger Co. Foundation’s Zero Hunger Zero Waste $10M Innovation Fund](https://www.prnewswire.com/news-releases/kroger-partners-with-refed-to-create-strategy-for-zero-hunger--zero-waste-10-million-innovation-fund-300586286.html){: target="_blank"}, and [CalRecycle’s $100M in climate investments](http://www.calrecycle.ca.gov/climate/grantsloans/FoodWaste/default.htm){: target="_blank"} which include approximately $90M for food waste prevention, recovery, and recycling innovations. Other notable funding highlighted by the group includes [DBL Partners’ investment into Apeel Sciences](http://www.dblpartners.vc/Portfolio/apeel-sciences/){: target="_blank"}, [Draper Richards Kaplan Foundation’s $300k grant to Food Forward](https://www.drkfoundation.org/organization/food-forward/){: target="_blank"}, and Atticus Trust’s place-based funding to drive Nashville’s food recovery and recycling ecosystem.
 
 ![Group tour through the Imperfect warehouse](/uploads/Imperfect 3.jpg "Group tour through the Imperfect warehouse")
 
+*Group tour through the Imperfect warehouse*
+
 A second insight was that many of the food waste innovators who were just starting out a few years ago are quickly hitting their stride. &nbsp;Imperfect Produce is proof of this. The company has grown from 3 founders in 2015 to over 400 employees. The company also recently moved into a larger facility in the emerging Bayview District. The field trip was a great way for funders to see food waste innovation up-close while learning about the drivers of food waste on farms. Attendees toured the warehouse, witnessing firsthand the process of packing produce items for delivery. The company’s model focuses on purchasing cosmetically imperfect produce from farms and shipping directly to customers at a fraction of retail prices. Head of Outreach, Dylan Bondy, reiterated for the group that Imperfect resonates with consumers for its food waste impact, but that there are additional key factors driving market adoption, including their low-cost price point, convenience/customization, approachable branding, and focus on customer service.
 
 ![Boxing up “ugly” produce](/uploads/Imperfect 4.jpg "Boxing up “ugly” produce")
+
+*Boxing up “ugly” produce*
 
 A presentation from [Food Shift](http://foodshift.net/){: target="_blank"} founder and director, Dana Frasz, shined light on the potential for new approaches to community kitchens and food banks via unique social enterprise models that not only reduce food waste, but drive other social and economic benefits such as job creation and hunger alleviation. With a keen eye towards scalability, last-mile delivery and the right unit economics, the funders acknowledged the power of social enterprises to possibly exceed the estimated 15k new jobs to be created with a reduction of food waste by 20% over the next decade as provided in ReFED’s 2016 [Roadmap](http://www.refed.com/download){: target="_blank"}.
 
