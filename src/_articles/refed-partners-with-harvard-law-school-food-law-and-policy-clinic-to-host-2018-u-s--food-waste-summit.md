@@ -1,6 +1,6 @@
 ---
 layout: article
-date: 2018-07-23 00:00:00
+date: 2018-06-25 00:00:00
 title: >-
   ReFED Partners with Harvard Law School Food Law and Policy Clinic to  Host
   2018 U.S. Food Waste Summit
@@ -17,7 +17,7 @@ photo_credit:
 video_id:
 ---
 
-**San Francisco, CA** (June 25, 2018) – ReFED, an entrepreneurial nonprofit initiative working with leaders across the food system to reduce waste, has partnered with [Harvard Law School Food Law and Policy Clinic](https://www.chlpi.org/flpc){: target="_blank"} to organize the U.S. Food Waste Summit. Taking place June 26-27 at Harvard Law School in Cambridge, MA, the Summit will convene more than 300 leaders from across the public, private and nonprofit sectors to accelerate solutions to food waste and achieve the national goal to cut food waste in half by 2030. &nbsp;
+**San Francisco, CA** (June 25, 2018) – ReFED, an entrepreneurial nonprofit initiative working with leaders across the food system to reduce waste, has partnered with [Harvard Law School Food Law and Policy Clinic](https://www.chlpi.org/flpc){: target="_blank"} to organize the U.S. Food Waste Summit. Taking place June 26-27 at Harvard Law School in Cambridge, MA, the Summit will convene more than 300 leaders from across the public, private and nonprofit sectors to accelerate solutions to food waste and achieve the national goal to cut food waste in half by 2030.  
 
 Today, the United States wastes up to 40%, or $218 billion, of food annually. Food waste is becoming an elevated priority for food business executives, innovators, and funders. Reducing it increases food security, spurs economic growth, and creates local jobs.
 
@@ -35,4 +35,4 @@ The U.S. Food Waste Summit was made possible by the generous support of sponsors
 
 The full Summit agenda can be found [here](https://www.chlpi.org/wp-content/uploads/2018/04/USFW-Agenda.pdf){: target="_blank"}.
 
-**About ReFED**<br>ReFED is an entrepreneurial nonprofit initiative that works with decision-makers from across the food system to reduce food waste. Our mission is to accelerate solutions to food waste that will spur economic growth, increase food security and protect the environment. For more about ReFED’s work, visit [www.refed.com](www.refed.com). &nbsp;
+**About ReFED**<br>ReFED is an entrepreneurial nonprofit initiative that works with decision-makers from across the food system to reduce food waste. Our mission is to accelerate solutions to food waste that will spur economic growth, increase food security and protect the environment. For more about ReFED’s work, visit [www.refed.com](www.refed.com).
