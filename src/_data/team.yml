@@ -11,8 +11,8 @@
 - name: Alexandria Coari
   title: Capital and Innovation Director
   summary: >-
-    Alexandria (Alex) serves as ReFED&rsquo;s Capital and Innovation Director.
-    She brings 10 years of business development, impact investing, and strategy
+    Alexandria (Alex) serves as ReFED's Capital and Innovation Director. She
+    brings 10 years of business development, impact investing, and strategy
     consulting experience with startups, for-profits and nonprofits in the U.S.
     and Latin America, including time at Agora Partnerships and Fair Trade USA.
     She is passionate about helping mission-driven companies grow their impact
@@ -20,7 +20,7 @@
     biggest challenges.
   image: /uploads/coari-hs-web-1.jpg
 - name: Philip Curtis
-  title: insights and analytics Manager
+  title: Insights and Analytics Manager
   summary: >-
     Philip Curtis is ReFED's Insights and Analytics Manager, providing data
     analysis and support across the organization. Before joining ReFED, Philip
@@ -34,14 +34,38 @@
 - name: Katy Franklin
   title: Operations Manager
   summary: >-
-    Katy Franklin serves as ReFED&rsquo;s Operations Manager, supporting
+    Katy Franklin serves as ReFED's Operations Manager, supporting
     organizational development and designing systems for effective program
     implementation and management. Previously, Katy managed operations at
     Sustainable America, where she gained a deep understanding of successful
     food waste reduction programs with consumers, food service providers,
     private firms, and at major events. Katy also helped develop Further with
     Food, a public-private partnership convened to address food loss and waste.
-  image: /uploads/katy-web.jpg
+  image: /uploads/katyfranklin.jpg
+- name: Emily Gousen
+  title: Capital and Innovation Manager
+  summary: >-
+    Emily Gousen is ReFED's Capital and Innovation Manager, supporting
+    innovators fighting food waste by helping them scale their businesses and
+    get the funding they need to grow their impact. Emily is passionate about
+    using economics and data to find sustainable solutions that make smart
+    business sense, and brings 10 years of experience working in academia,
+    government, nonprofit, and private business sectors. Emily brings with her a
+    depth of knowledge in food waste tracking and measurement, agricultural
+    production and sustainability, strategic sourcing, and innovation mentorship
+    to food-based startups. She holds an M.S. in Agricultural Economics and an
+    M.S. in International Agricultural Development from the University of
+    California, Davis.
+  image: /uploads/emilygousen.jpg
+- name: Lily Herd
+  title: Administrative Assistant
+  summary: >-
+    Lily Herd serves as ReFED’s Administrative Assistant, supporting the
+    Executive Director and members across the team. She brings 10+ years of
+    administrative experience across both nonprofits and for-profits in the
+    food, health, and agricultural sectors. Lily holds an M.S. in Food Security
+    from the University of Edinburgh in Scotland.
+  image: /uploads/lilyherd.jpg
 - name: Chris Hunt
   title: Communications Director
   summary: >-
@@ -68,20 +92,10 @@
     updates, secure infrastructure, and performance monitoring. She is an active
     software developer and solutions architect.
   image: /uploads/powell-hs-.jpg
-- name: Nicole Sturzenberger
-  title: Communications Manager
-  summary: >-
-    Nicole serves as ReFED&rsquo;s Communications Manager working on program and
-    stakeholder engagement. She brings over a decade of food and agricultural
-    marketing/ communications experience, including time with the California
-    Department of Food and Agriculture and University of California Davis
-    College of Agriculture. She holds a Masters in Communications from the
-    Universit&agrave; di Scienze Gastronomiche in Italy.
-  image: /uploads/sturzenberger-hs-web.jpg
 - name: Jackie Suggitt
   title: Multistakeholder Initiatives Director
   summary: >-
-    Jackie serve as ReFED&rsquo;s Multistakeholder Initiatives Director. In her
+    Jackie serves as ReFED's Multistakeholder Initiatives Director. In her
     position, she works with a diverse set of industry leaders to tackle complex
     food waste issues, including standardized date labeling and innovative
     packaging. Before joining ReFED, Jackie worked as Senior Manager of
@@ -101,7 +115,7 @@
     needed to scale solutions to reduce food waste.
   image: /uploads/vared-hs-web-copy.jpg
 - name: Angel Veza
-  title: business engagement manager
+  title: Business Engagement Manager
   summary: >-
     Angel Veza is ReFED's Business Engagement Manager, focusing on food waste
     solutions implementation for leading businesses in the retail, restaurant,
