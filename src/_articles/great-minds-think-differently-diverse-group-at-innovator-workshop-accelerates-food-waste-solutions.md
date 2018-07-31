@@ -7,7 +7,10 @@ title: >-
 categories:
   - article
 featured_image:
-summary: Short summary of article content.
+summary: >-
+  Our takeaways from the U.S. Food Waste Summit Innovator Workshop, which
+  convened food waste innovators, food businesses, funders, and policymakers to
+  shape the future of food waste solutions provision.
 references:
 photo_credit:
 video_id:
