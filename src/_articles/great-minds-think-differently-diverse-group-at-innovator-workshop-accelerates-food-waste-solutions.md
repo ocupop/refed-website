@@ -17,7 +17,7 @@ By Emily Gousen
 
 [PHOTO]
 
-Last month, a diverse group of 50 food waste innovators joined 30 food businesses, funders, and policymakers at an Innovator Workshop ahead of the [U.S. Food Waste Summit](https://www.chlpi.org/food-law-and-policy/major-events/u-s-food-waste-summit-2018/){: target="_blank"}. Co-hosted by [ReFED](refed.com), [Harvard Law School Food Law and Policy Clinic (FLPC)](https://hls.harvard.edu/dept/clinical/clinics/food-law-and-policy-clinic-of-the-center-for-health-law-and-policy-innovation/?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, and the [Harvard Business School Business and Environment Initiative](https://www.hbs.edu/environment/Pages/default.aspx?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, the event convened leaders working to implement innovative solutions that turn wasted food into jobs, hunger relief, and environmental stewardship.
+Last month, a diverse group of 50 food waste innovators joined 30 food businesses, funders, and policymakers at an Innovator Workshop ahead of the [U.S. Food Waste Summit](https://www.chlpi.org/food-law-and-policy/major-events/u-s-food-waste-summit-2018/){: target="_blank"}. Co-hosted by [ReFED](https://www.refed.com/?sort=economic-value-per-ton), [Harvard Law School Food Law and Policy Clinic (FLPC)](https://hls.harvard.edu/dept/clinical/clinics/food-law-and-policy-clinic-of-the-center-for-health-law-and-policy-innovation/?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, and the [Harvard Business School Business and Environment Initiative](https://www.hbs.edu/environment/Pages/default.aspx?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, the event convened leaders working to implement innovative solutions that turn wasted food into jobs, hunger relief, and environmental stewardship.
 
 Realizing that food waste presents a relatively untapped $2 billion market opportunity, entrepreneurs, investors, and corporations are increasingly noticing the impact potential for changing the food waste status quo. The workshop provided a unique opportunity for exploration of emerging trends and barriers in the sector, enabling innovators, food businesses, investors, and foundations to discuss collaborative strategies for scaling their individual and collective impact.
 
@@ -39,7 +39,7 @@ Though the workshop convened innovators from across the U.S., mission and soluti
 
 [PHOTO]
 
-For example, ReFED’s [Innovator Database](refed.com/innovators) identifies more than 10 recovery innovators that focus exclusively on donation coordination at the national level. Workshops like these enable similar, yet geographically dispersed, groups to coordinate efforts and learn how best to scale their operations as part of a broader food waste ecosystem.
+For example, ReFED’s [Innovator Database](https://www.refed.com/tools/innovator-database/) identifies more than 10 recovery innovators that focus exclusively on donation coordination at the national level. Workshops like these enable similar, yet geographically dispersed, groups to coordinate efforts and learn how best to scale their operations as part of a broader food waste ecosystem.
 
 ### Big Business Is Paying Attention to Food Waste
 
@@ -71,4 +71,4 @@ ReFED came away from the workshop with renewed excitement for the future of food
 
 **Food Companies**: Learn about our detailed research and suggestions for reducing food waste in our [*Retail Food Waste Action Guide*](https://www.refed.com/downloads/Retail_Guide_Web.pdf), [*Foodservice Food Waste Action Guide*](https://www.refed.com/downloads/Foodservice_Guide_Web.pdf), and [*Restaurant Food Waste Action Guide*](https://www.refed.com/downloads/Restaurant_Guide_Web.pdf).
 
-**Investors**: Take a look at the 450+ innovators around the country registered in the [Innovator Database](www.refed.com/innovators) and consider investing in a company that creates value from food waste.
+**Investors**: Take a look at the 450+ innovators around the country registered in the [Innovator Database](https://www.refed.com/tools/innovator-database/) and consider investing in a company that creates value from food waste.
