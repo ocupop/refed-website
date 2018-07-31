@@ -13,7 +13,7 @@ photo_credit:
 video_id:
 ---
 
-by Emily Gousen
+By Emily Gousen
 
 [PHOTO]
 
