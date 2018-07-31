@@ -28,3 +28,9 @@ There’s significant value in bringing together the many players in the food wa
 [PHOTO]
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
+
+[PHOTO]
+
+### Duplication Persists Across the Solution Spectrum
+
+Though the workshop convened innovators from across the U.S., mission and solutions model overlap was common, particularly in the food recovery sector. While a degree of duplication is inevitable given the place-based nature of food recovery, there’s ample opportunity for future consolidation or partnerships within the sector.
