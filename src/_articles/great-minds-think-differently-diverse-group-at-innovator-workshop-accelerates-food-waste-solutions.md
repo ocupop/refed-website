@@ -34,3 +34,25 @@ This workshop also demonstrated that curated connections multiply collective imp
 ### Duplication Persists Across the Solution Spectrum
 
 Though the workshop convened innovators from across the U.S., mission and solutions model overlap was common, particularly in the food recovery sector. While a degree of duplication is inevitable given the place-based nature of food recovery, there’s ample opportunity for future consolidation or partnerships within the sector.
+
+[PHOTO]
+
+For example, ReFED’s [Innovator Database](refed.com/innovators) identifies more than 10 recovery innovators that focus exclusively on donation coordination at the national level. Workshops like these enable similar, yet geographically dispersed, groups to coordinate efforts and learn how best to scale their operations as part of a broader food waste ecosystem.
+
+### Big Business Is Paying Attention to Food Waste
+
+Representation from major food companies including McDonalds, General Mills, The Kroger Co., and Whole Foods Market demonstrated the value that food waste reduction can create for businesses. Looking at food waste as a pre-competitive issue creates space for collaboration. Investing in projects that help everyone, like standardized date labels or improved food recovery infrastructure, makes good business sense.
+
+Prioritizing food waste empowers top food companies to adopt proven solutions driven by a diverse and ever-growing group of innovators.
+
+[PHOTO]
+
+### Emerging Public Policies Promote Food Waste Innovation
+
+In the past year, 91 pieces of food waste-related legislation were proposed in 30 states, 22 of which have already been passed into law. Policies like [organic waste bans](http://blog.spoileralert.com/food-waste-bans){: target="_blank"}, [food safety guidance for donations](https://www.chlpi.org/wp-content/uploads/2013/12/50-State-Food-Regs_March-2018_V2.pdf){: target="_blank"}, [tax incentives](https://www.chlpi.org/wp-content/uploads/2013/12/Food-Donation-Fed-Tax-Guide-for-Pub-2.pdf){: target="_blank"}, and [liability protections](https://www.refed.com/tools/food-waste-policy-finder/federal-policy/federal-liability-protection){: target="_blank"} were especially popular, and are expected to be proposed in additional states in the future.
+
+At the federal level, existing legislation continues to support food recovery. For instance, the [2015 PATH Act](https://rsmus.com/what-we-do/industries/consumer-products/retail/know-the-rules-for-tax-deductions-on-charitable-donations-of-inventory.html){: target="_blank"} enables businesses to claim deductions of up to 15% of income for food donations, while the [Bill Emerson Good Samaritan Food Donation Act](https://www.refed.com/tools/food-waste-policy-finder/federal-policy/federal-liability-protection) shields food donors from liability except in cases of gross negligence or intentional misconduct. In fact, as of June 2018, not a single food donation liability case has ever been brought to court.
+
+FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
+
+&nbsp;
