@@ -13,6 +13,8 @@ photo_credit:
 video_id:
 ---
 
+by Emily Gousen
+
 [PHOTO]
 
 Last month, a diverse group of 50 food waste innovators joined 30 food businesses, funders, and policymakers at an Innovator Workshop ahead of the [U.S. Food Waste Summit](https://www.chlpi.org/food-law-and-policy/major-events/u-s-food-waste-summit-2018/){: target="_blank"}. Co-hosted by [ReFED](refed.com), [Harvard Law School Food Law and Policy Clinic (FLPC)](https://hls.harvard.edu/dept/clinical/clinics/food-law-and-policy-clinic-of-the-center-for-health-law-and-policy-innovation/?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, and the [Harvard Business School Business and Environment Initiative](https://www.hbs.edu/environment/Pages/default.aspx?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, the event convened leaders working to implement innovative solutions that turn wasted food into jobs, hunger relief, and environmental stewardship.
@@ -55,4 +57,18 @@ At the federal level, existing legislation continues to support food recovery. F
 
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
-&nbsp;
+[PHOTO]
+
+### The Road Ahead
+
+ReFED came away from the workshop with renewed excitement for the future of food waste and a reaffirmed understanding that effective solutions rely heavily on collaboration, collective action, and innovation. As one participant put it, “It was an overwhelmingly wonderful experience to be able to hear from people of all sides of food waste and to meet those who are doing work that inspire my own.” Now, it’s time to kick the action into high gear and get to work solving this very solvable issue.
+
+### Get Involved!
+
+**Innovators**: [Register for ReFED’s Innovator Database](https://www.refed.com/tools/innovator-database/suggest-an-innovator) to join the growing network of food waste solutions providers, and attend future ReFED events to build your network.
+
+**Foundations**: Use ReFED’s *[Foundation Action Guide](https://www.refed.com/download#foundation-action-guide)* to learn about the biggest opportunities for philanthropy, and stay tuned for our Foundation Investment Report to be published October 2018.
+
+**Food Companies**: Learn about our detailed research and suggestions for reducing food waste in our [*Retail Food Waste Action Guide*](https://www.refed.com/downloads/Retail_Guide_Web.pdf), [*Foodservice Food Waste Action Guide*](https://www.refed.com/downloads/Foodservice_Guide_Web.pdf), and [*Restaurant Food Waste Action Guide*](https://www.refed.com/downloads/Restaurant_Guide_Web.pdf).
+
+**Investors**: Take a look at the 450+ innovators around the country registered in the [Innovator Database](www.refed.com/innovators) and consider investing in a company that creates value from food waste.
