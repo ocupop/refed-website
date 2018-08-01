@@ -30,8 +30,9 @@ Our key takeaways:
 
 There’s significant value in bringing together the many players in the food waste space. The workshop afforded innovators the opportunity to share best practices, identify complementary initiatives, and forge partnerships to maximize impact. One Berkeley-based innovator shared that he’d never had such meaningful conversations with so many individuals at a single conference.
 
-<div markdown="1" style="float:right; margin-left: 10px;">
-![](/uploads/article2.jpg)<br>*Innovator Daniel Kurzrock of Regrained pitches to an investor*
+<div markdown="1" style="width:300px;float:right; margin-left: 10px;">
+<img src="/uploads/article2.jpg" style="width: 300px;">
+<br>*Innovator Daniel Kurzrock of Regrained pitches to an investor*
 </div>
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
@@ -39,6 +40,8 @@ This workshop also demonstrated that curated connections multiply collective imp
 <hr>
 
 *![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
+
+<hr>
 
 ### Duplication Persists Across the Solution Spectrum
 
@@ -56,6 +59,8 @@ Prioritizing food waste empowers top food companies to adopt proven solutions dr
 
 ![](/uploads/us-food-waste-innovator-workshop-2018---lookbook---final-3-1.jpg)
 
+<hr>
+
 ### Emerging Public Policies Promote Food Waste Innovation
 
 In the past year, 91 pieces of food waste-related legislation were proposed in 30 states, 22 of which have already been passed into law. Policies like [organic waste bans](http://blog.spoileralert.com/food-waste-bans){: target="_blank"}, [food safety guidance for donations](https://www.chlpi.org/wp-content/uploads/2013/12/50-State-Food-Regs_March-2018_V2.pdf){: target="_blank"}, [tax incentives](https://www.chlpi.org/wp-content/uploads/2013/12/Food-Donation-Fed-Tax-Guide-for-Pub-2.pdf){: target="_blank"}, and [liability protections](https://www.refed.com/tools/food-waste-policy-finder/federal-policy/federal-liability-protection){: target="_blank"} were especially popular, and are expected to be proposed in additional states in the future.
@@ -65,8 +70,10 @@ At the federal level, existing legislation continues to support food recovery. F
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
 
-<div markdown="1" style="float:left; margin-right: 10px;">
-*![](/uploads/article3.jpg)<br>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
+
+<div markdown="1" style="width:300px;float:right; margin-left: 10px;">
+<img src="/uploads/article3.jpg" style="width: 300px;">
+<br>*Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
 </div>
 
 ### The Road Ahead
