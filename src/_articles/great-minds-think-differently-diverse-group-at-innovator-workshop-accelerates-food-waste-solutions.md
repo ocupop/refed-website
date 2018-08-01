@@ -18,7 +18,7 @@ video_id:
 
 By Emily Gousen
 
-[PHOTO]
+![](/uploads/article1.jpg)
 
 Last month, a diverse group of 50 food waste innovators joined 30 food businesses, funders, and policymakers at an Innovator Workshop ahead of the [U.S. Food Waste Summit](https://www.chlpi.org/food-law-and-policy/major-events/u-s-food-waste-summit-2018/){: target="_blank"}. Co-hosted by [ReFED](https://www.refed.com/?sort=economic-value-per-ton), [Harvard Law School Food Law and Policy Clinic (FLPC)](https://hls.harvard.edu/dept/clinical/clinics/food-law-and-policy-clinic-of-the-center-for-health-law-and-policy-innovation/?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, and the [Harvard Business School Business and Environment Initiative](https://www.hbs.edu/environment/Pages/default.aspx?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, the event convened leaders working to implement innovative solutions that turn wasted food into jobs, hunger relief, and environmental stewardship.
 
@@ -30,17 +30,17 @@ Our key takeaways:
 
 There’s significant value in bringing together the many players in the food waste space. The workshop afforded innovators the opportunity to share best practices, identify complementary initiatives, and forge partnerships to maximize impact. One Berkeley-based innovator shared that he’d never had such meaningful conversations with so many individuals at a single conference.
 
-[PHOTO] caption:&nbsp;*Innovator Daniel Kurzrock of Regrained pitches to an investor*
+![](/uploads/article2.jpg)<br>*Innovator Daniel Kurzrock of Regrained pitches to an investor*
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
-[Pie Chart image] caption:&nbsp;*Breakdown of workshop participants, by solution sector*
+*![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
 
 ### Duplication Persists Across the Solution Spectrum
 
 Though the workshop convened innovators from across the U.S., mission and solutions model overlap was common, particularly in the food recovery sector. While a degree of duplication is inevitable given the place-based nature of food recovery, there’s ample opportunity for future consolidation or partnerships within the sector.
 
-[Innovator Database screenshot] caption:&nbsp;*Geographic location of innovators in ReFED’s Innovator Database*
+*![](/uploads/screen-shot-2018-07-18-at-4-56-55-pm.png)<br>Geographic location of innovators in ReFED’s Innovator Database*
 
 For example, ReFED’s [Innovator Database](https://www.refed.com/tools/innovator-database/) identifies more than 10 recovery innovators that focus exclusively on donation coordination at the national level. Workshops like these enable similar, yet geographically dispersed, groups to coordinate efforts and learn how best to scale their operations as part of a broader food waste ecosystem.
 
@@ -50,7 +50,7 @@ Representation from major food companies including McDonalds, General Mills, The
 
 Prioritizing food waste empowers top food companies to adopt proven solutions driven by a diverse and ever-growing group of innovators.
 
-[PHOTO]
+![](/uploads/us-food-waste-innovator-workshop-2018---lookbook---final-3-1.jpg)
 
 ### Emerging Public Policies Promote Food Waste Innovation
 
@@ -60,7 +60,7 @@ At the federal level, existing legislation continues to support food recovery. F
 
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
-[PHOTO] caption:&nbsp;*Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
+*![](/uploads/article3.jpg)<br>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
 
 ### The Road Ahead
 
