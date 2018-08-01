@@ -6,7 +6,7 @@ title: >-
   food waste solutions
 categories:
   - article
-featured_image:
+featured_image: /uploads/image-from-ios.jpg
 summary: >-
   Our takeaways from the U.S. Food Waste Summit Innovator Workshop, which
   convened food waste innovators, food businesses, funders, and policymakers to
@@ -30,23 +30,26 @@ Our key takeaways:
 
 There’s significant value in bringing together the many players in the food waste space. The workshop afforded innovators the opportunity to share best practices, identify complementary initiatives, and forge partnerships to maximize impact. One Berkeley-based innovator shared that he’d never had such meaningful conversations with so many individuals at a single conference.
 
-<div markdown="1" style="width:400px;float:right; margin-left: 10px;">
-<img src="/uploads/article2.jpg" style="width: 400px;">
-<br>*Innovator Daniel Kurzrock of Regrained pitches to an investor*
-<br>
+<div style="width:400px;float:right; margin-left: 10px;">
+  <p><img src="/uploads/article2.jpg" style="width: 400px;" />
+<br /><em>Innovator Daniel Kurzrock of Regrained pitches to an investor</em>
+<br /></p>
 </div>
-
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
 <br>
-<hr>
+
+---
+
 <br>
 
 *![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
 
 <br>
-<hr>
+
+---
+
 <br>
 
 ### Duplication Persists Across the Solution Spectrum
@@ -66,7 +69,9 @@ Prioritizing food waste empowers top food companies to adopt proven solutions dr
 ![](/uploads/us-food-waste-innovator-workshop-2018---lookbook---final-3-1.jpg)
 
 <br>
-<hr>
+
+---
+
 <br>
 
 ### Emerging Public Policies Promote Food Waste Innovation
@@ -77,11 +82,9 @@ At the federal level, existing legislation continues to support food recovery. F
 
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
-
-
-<div markdown="1" style="width:300px;float:right; margin-left: 10px;">
-<img src="/uploads/article3.jpg" style="width: 300px;">
-<br>*Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
+<div style="width:300px;float:right; margin-left: 10px;">
+  <p><img src="/uploads/article3.jpg" style="width: 300px;" />
+<br /><em>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights</em></p>
 </div>
 
 ### The Road Ahead
