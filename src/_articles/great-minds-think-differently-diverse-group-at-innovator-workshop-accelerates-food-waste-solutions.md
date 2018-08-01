@@ -36,7 +36,6 @@ There’s significant value in bringing together the many players in the food wa
 <br>
 </div>
 
-<hr>
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
