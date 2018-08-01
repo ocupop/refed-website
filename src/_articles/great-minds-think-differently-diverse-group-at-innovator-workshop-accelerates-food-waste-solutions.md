@@ -36,6 +36,8 @@ There’s significant value in bringing together the many players in the food wa
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
+<hr>
+
 *![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
 
 ### Duplication Persists Across the Solution Spectrum
@@ -62,7 +64,10 @@ At the federal level, existing legislation continues to support food recovery. F
 
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
+
+<div markdown="1" style="float:left; margin-right: 10px;">
 *![](/uploads/article3.jpg)<br>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights*
+</div>
 
 ### The Road Ahead
 
