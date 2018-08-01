@@ -6,7 +6,7 @@ title: >-
   food waste solutions
 categories:
   - article
-featured_image: /uploads/image-from-ios.jpg
+featured_image: /uploads/article1.jpg
 summary: >-
   Our takeaways from the U.S. Food Waste Summit Innovator Workshop, which
   convened food waste innovators, food businesses, funders, and policymakers to
@@ -18,7 +18,7 @@ video_id:
 
 By Emily Gousen
 
-![](/uploads/article1.jpg)
+&nbsp;
 
 Last month, a diverse group of 50 food waste innovators joined 30 food businesses, funders, and policymakers at an Innovator Workshop ahead of the [U.S. Food Waste Summit](https://www.chlpi.org/food-law-and-policy/major-events/u-s-food-waste-summit-2018/){: target="_blank"}. Co-hosted by [ReFED](https://www.refed.com/?sort=economic-value-per-ton), [Harvard Law School Food Law and Policy Clinic (FLPC)](https://hls.harvard.edu/dept/clinical/clinics/food-law-and-policy-clinic-of-the-center-for-health-law-and-policy-innovation/?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, and the [Harvard Business School Business and Environment Initiative](https://www.hbs.edu/environment/Pages/default.aspx?mc_cid=0ad8db9cfa&amp;mc_eid=%5BUNIQID%5D){: target="_blank"}, the event convened leaders working to implement innovative solutions that turn wasted food into jobs, hunger relief, and environmental stewardship.
 
@@ -30,27 +30,23 @@ Our key takeaways:
 
 There’s significant value in bringing together the many players in the food waste space. The workshop afforded innovators the opportunity to share best practices, identify complementary initiatives, and forge partnerships to maximize impact. One Berkeley-based innovator shared that he’d never had such meaningful conversations with so many individuals at a single conference.
 
-<div style="width:400px;float:right; margin-left: 10px;">
-  <p><img src="/uploads/article2.jpg" style="width: 400px;" />
-<br /><em>Innovator Daniel Kurzrock of Regrained pitches to an investor</em>
-<br /></p>
-</div>
+<div style="width:400px;float:right; margin-left: 10px;"><p><img style="width: 400px;" src="/uploads/article2.jpg" /><br /><em>Innovator Daniel Kurzrock of Regrained pitches to an investor</em></p></div>
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
-<br>
+&nbsp;
 
 ---
 
-<br>
+&nbsp;
 
 *![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
 
-<br>
+&nbsp;
 
 ---
 
-<br>
+&nbsp;
 
 ### Duplication Persists Across the Solution Spectrum
 
@@ -68,11 +64,11 @@ Prioritizing food waste empowers top food companies to adopt proven solutions dr
 
 ![](/uploads/us-food-waste-innovator-workshop-2018---lookbook---final-3-1.jpg)
 
-<br>
+&nbsp;
 
 ---
 
-<br>
+&nbsp;
 
 ### Emerging Public Policies Promote Food Waste Innovation
 
@@ -82,10 +78,7 @@ At the federal level, existing legislation continues to support food recovery. F
 
 FLPC also discussed the new bipartisan [Congressional Food Waste Caucus](https://www.wastedive.com/news/congress-food-waste-caucus/522693/){: target="_blank"} driving federal-level policies and provided updates on food waste-related provisions included in the [2018 Farm Bill](https://www.chlpi.org/senate-farm-bill-includes-important-measures-address-food-waste/), most notably the $25 million in annual funding for composting and food waste reduction pilots, food waste research, spoilage prevention, national milk donation program, and an amendment to create an Interagency Biogas Opportunity Task Force.
 
-<div style="width:300px;float:right; margin-left: 10px;">
-  <p><img src="/uploads/article3.jpg" style="width: 300px;" />
-<br /><em>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights</em></p>
-</div>
+<div style="width:300px;float:right; margin-left: 10px;"><p><img style="width: 300px;" src="/uploads/article3.jpg" /><br /><em>Harvard Law School Food Law and Policy Clinic Director Emily Broad Leib shares food waste policy insights</em></p></div>
 
 ### The Road Ahead
 
