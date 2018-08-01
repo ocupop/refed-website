@@ -30,7 +30,9 @@ Our key takeaways:
 
 There’s significant value in bringing together the many players in the food waste space. The workshop afforded innovators the opportunity to share best practices, identify complementary initiatives, and forge partnerships to maximize impact. One Berkeley-based innovator shared that he’d never had such meaningful conversations with so many individuals at a single conference.
 
+<div markdown="1" style="float:right; margin-left: 10px;">
 ![](/uploads/article2.jpg)<br>*Innovator Daniel Kurzrock of Regrained pitches to an investor*
+</div>
 
 This workshop also demonstrated that curated connections multiply collective impact. Group discussions are valuable, but hand-selected pairings can accelerate specific projects and partnerships. This was exemplified during the workshop’s “speed-dating” session, when ReFED matched innovators with funders and food businesses to pitch their solutions and receive detailed advice.
 
