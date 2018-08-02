@@ -38,7 +38,7 @@ This workshop also demonstrated that curated connections multiply collective imp
 
 &nbsp;
 
-*![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants, by solution sector*
+*![](/uploads/screen-shot-2018-07-31-at-11-31-36-am.png)<br>Breakdown of workshop participants by solution sector*
 
 &nbsp;
 
@@ -50,7 +50,7 @@ This workshop also demonstrated that curated connections multiply collective imp
 
 Though the workshop convened innovators from across the U.S., mission and solutions model overlap was common, particularly in the food recovery sector. While a degree of duplication is inevitable given the place-based nature of food recovery, there’s ample opportunity for future consolidation or partnerships within the sector.
 
-*![](/uploads/screen-shot-2018-07-18-at-4-56-55-pm.png)<br>Geographic location of innovators in ReFED’s Innovator Database*
+*![](/uploads/screen-shot-2018-08-01-at-2-49-05-pm.png)<br>Geographic location of innovators in ReFED’s Innovator Database*
 
 For example, ReFED’s [Innovator Database](https://www.refed.com/tools/innovator-database/) identifies more than 10 recovery innovators that focus exclusively on donation coordination at the national level. Workshops like these enable similar, yet geographically dispersed, groups to coordinate efforts and learn how best to scale their operations as part of a broader food waste ecosystem.
 
