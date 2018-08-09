@@ -1,13 +1,13 @@
 ---
 layout: article
-date:
+date: 2018-08-09 00:00:00
 title: 'More Feast, Less Footprint'
 categories:
   - article
 featured_image: /uploads/refed-logo-stacked.jpg
 summary: >-
   Join ReFED and partners for this Global Climate Change Action Summit event
-  exploring the connection between food waste and climate.
+  exploring the connection between food waste and climate change.
 references:
 photo_credit:
 video_id:
@@ -35,7 +35,7 @@ Action to reduce wasted food is exploding.
 
 * Governor Jay Inslee (Washington State)
 * Mayor Durkan (Seattle)
-* Mayor Robertson (City of Vancouver BC)&nbsp;
+* Mayor Robertson (City of Vancouver BC) 
 * Ted Monk, VP Corporate Responsibility, Sodexo
 * TBD, VP Corporate Responsibility, Hilton Worldwide
 * Kathleen McLaughlin, Walmart Foundation
