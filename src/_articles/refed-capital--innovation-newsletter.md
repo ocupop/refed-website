@@ -19,7 +19,7 @@ Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quart
 
 <br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
 
-### Emily Gousen Joins ReFED as Capital & Innovation Manager
+##### Emily Gousen Joins ReFED as Capital & Innovation Manager
 
 We’re excited to welcome Emily as the newest member of the organization. In her role, she will be supporting innovators fighting food waste by helping them scale their businesses and get the funding they need to grow their impact. Emily is passionate about using economics and data to find sustainable solutions that make smart business sense, and brings 10 years of experience working in academia, government, nonprofit, and private business sectors. Emily brings with her a depth of knowledge in food waste tracking and measurement, agricultural production and sustainability, strategic sourcing, and innovation mentorship to food-based startups.
 
