@@ -15,7 +15,7 @@ Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quart
 
 # Updates From ReFED
 
-### Great Minds Think Differently: Diverse Group at Innovator Workshop Accelerates Food Waste Solutions
+#### Great Minds Think Differently: Diverse Group at Innovator Workshop Accelerates Food Waste Solutions
 
 <br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
 
