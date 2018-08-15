@@ -5,19 +5,21 @@ title: 'ReFED Capital & Innovation Newsletter: August 2018'
 categories:
   - article
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
-summary: A quarterly update on the entrepreneurs and investors fighting food waste
+summary: >-
+  ReFED's quarterly update on the entrepreneurs and investors fighting food
+  waste.
 references:
 photo_credit:
 video_id:
 ---
 
-Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quarterly Capital & Innovation newsletters!<br><br>There’s a lot going on in the fight against food waste. It’s our mission to keep you up to speed on all the latest developments within the ecosystem.<br><br>What you can expect from these newsletters: the latest happenings at ReFED, opportunities for capital providers and innovators to get involved, important news from the field, and more.<br><br>As a member of our community, your input is incredibly valuable. This newsletter is a work in progress so if you have any suggestions, feedback, or news you’d like highlighted in the future, don’t hesitate to reach out.<br><br>Keep up the good fight!<br><br>Alexandria Coari, Capital & Innovation Director<br><br><br>(Please let us know if any of your colleagues would like to be added to our email list, or if you'd rather not receive our messages in the future, you can unsubscribe below.)
+Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quarterly Capital & Innovation newsletters!<br><br>There’s a lot going on in the fight against food waste. It’s our mission to keep you up to speed on all the latest developments within the ecosystem.<br><br>What you can expect from these newsletters: the latest happenings at ReFED, opportunities for capital providers and innovators to get involved, important news from the field, and more.<br><br>As a member of our community, your input is incredibly valuable. This newsletter is a work in progress so if you have any suggestions, feedback, or news you’d like highlighted in the future, don’t hesitate to reach out.<br><br>Keep up the good fight!<br><br>Alexandria Coari, Capital & Innovation Director<br>&nbsp;
 
 # Updates From ReFED
 
 #### Great Minds Think Differently: Diverse Group at Innovator Workshop Accelerates Food Waste Solutions
 
-<br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
+![](/uploads/optimized-summit.png)<br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
 
 #### Emily Gousen Joins ReFED as Capital & Innovation Manager
 
@@ -62,3 +64,5 @@ John Kohler, executive fellow and director of financial innovation programs at t
 #### [From Research to Real-World Application: A New Approach to Slippery Packaging Aims to Cut Food Waste](https://www.manufacturing.net/news/2018/08/new-approach-slippery-packaging-aims-cut-food-waste?mc_cid=0d9102b7cf&amp;mc_eid=411fa807ad){: target="_blank"}
 
 New research out of Virginia Tech develops a novel technology that helps sticky foods come out of their packaging much more easily, and now can be applied to everyday packaging materials.
+
+Join our [mailing list](https://www.refed.com/share) to receive future ReFED newsletters.
