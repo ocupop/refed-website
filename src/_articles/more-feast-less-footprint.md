@@ -53,7 +53,7 @@ Eat, drink, and commune overlooking City Hall with food and cocktails that featu
 
 **Registration**
 
-Please register separately for the program and the reception.
+Please register separately for the program and the reception:
 
 [Program Registration](https://www.eventbrite.com/e/more-feast-less-footprint-new-goals-progress-towards-wasting-less-food-tickets-49154133336){: target="_blank"}
 
