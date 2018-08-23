@@ -4,7 +4,7 @@ date: 2018-08-09 00:00:00
 title: 'More Feast, Less Footprint: New Goals & Progress Towards Wasting Less Food'
 categories:
   - article
-featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
+featured_image: /uploads/ReFED-Feast-Footprintweb-covers-100.jpg
 summary: >-
   Join ReFED and partners for this Global Climate Change Action Summit event
   exploring the connection between food waste and climate change.
