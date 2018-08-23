@@ -17,7 +17,7 @@ video_id:
 
 **Program**: 1:00-4:00 pm, San Francisco Public Library (Koret Auditorium), 100 Larkin Street, San Francisco, CA 94102
 
-**Reception**: 5-7pm, War Memorial Green Room, 401 Van Ness Avenue, San Francisco, CA
+**Reception**: 4:30-6:30 pm, War Memorial Green Room, 401 Van Ness Avenue, San Francisco, CA 94102
 
 **Description**
 
@@ -46,6 +46,10 @@ An announcement by the Pacific Coast Collaborative, a partnership between Govern
 * Maxime Verstraete, VP Corporate Responsibility, Hilton Worldwide
 * Scott Smithline, Director, CalRecycle
 * John Dannan, Generate Capital
+
+**Reception**
+
+Eat, drink, and commune overlooking City Hall with food and cocktails that feature opportunities to create a more efficient food system. Featuring creatively reused ingredients prepared by locally renowned Chef Nicolaus Balla of Bar Tartine, this reception will highlight delectable opportunities to use up more of the food we produce.&nbsp;
 
 **Registration**
 
