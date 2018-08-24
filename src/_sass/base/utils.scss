@@ -184,6 +184,7 @@ $border-color: $gray-lighter;
 }
 
 @media all and (max-width: $screen-sm-max) {
+  .border-left { border-width: 0; }
   .flush {
     padding: 0;
     .row {
