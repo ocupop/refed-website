@@ -10,6 +10,11 @@
 /* -----------------------------------------
    Utility Classes
 ----------------------------------------- */
+ul.styled {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
 .hide {
   display: none !important;
   visibility: hidden !important;
