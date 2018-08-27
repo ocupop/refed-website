@@ -2,6 +2,9 @@
    Color Palette
 ----------------------------------------- */
 
+.bg-white {
+  @include palette(#ffffff, $text-color);
+}
 .cream {
   @include palette($cream, $text-color);
 }
