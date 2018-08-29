@@ -21,7 +21,7 @@ video_id:
 
 **Description**
 
-Join Paul Hawken, mayors from across the West Coast, CalRecycle Director, and business leaders from Sodexo, Hilton and more to learn more about the huge climate opportunity of wasting less food.
+Join Project Drawdown, mayors from across the West Coast, CalRecycle Director, and business leaders from Sodexo, Hilton and more to learn more about the huge climate opportunity of wasting less food.
 
 The impacts of wasted food are truly jaw dropping—approximately one third of food around the world goes uneaten. Because of its huge climate footprint, wasting less food is ranked the # 3 solution for carbon impact by Project Drawdown—higher than building solar farms or planting trees. Addressing wasted food also reduces pressure on land and water resources and creates opportunities to relieve food insecurity. It is a global problem that touches everyone, and solutions can help to address environmental, hunger, and climate change challenges.
 
@@ -36,7 +36,7 @@ An announcement by the Pacific Coast Collaborative, a partnership between Govern
 
 **Invited speakers include:**
 
-* Paul Hawken, Project Drawdown
+* Katherine Wilkinson, Project Drawdown
 * Governor Jay Inslee (Washington State)
 * Mayor Durkan (Seattle)
 * Mayor Robertson (Vancouver, BC)
