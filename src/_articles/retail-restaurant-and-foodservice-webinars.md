@@ -1,10 +1,10 @@
 ---
 layout: article
-date:
+date: 2018-08-22 00:00:00
 title: 'Retail, Restaurant, and Foodservice Webinars'
 categories:
   - article
-featured_image:
+featured_image: /uploads/post-retail.jpg
 summary: Short summary of article content.
 references:
 photo_credit:
