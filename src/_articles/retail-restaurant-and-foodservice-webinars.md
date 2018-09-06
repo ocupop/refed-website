@@ -15,6 +15,6 @@ In early 2018, ReFED published a series of sector-specific Food Waste Action Gui
 
 In these webinars, ReFED hosts grocery, restaurant, and foodservice leaders to discuss insights from the Food Waste Action Guides as well as the business case for and the successes they've seen from implementing food waste solutions.&nbsp;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/m6rvFE4tz1Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;<br>&nbsp;
+[Retail Webinar](https://www.youtube.com/watch?v=m6rvFE4tz1Q&amp;feature=youtu.be)
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DSklCF109bY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+[Restaurant and Foodservice webinar](https://www.youtube.com/watch?v=DSklCF109bY&amp;feature=youtu.be)
