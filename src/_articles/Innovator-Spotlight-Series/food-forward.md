@@ -1,7 +1,7 @@
 ---
 layout: article
-date: 2018-10-15 00:00:00
-title: 'Innovator Spotlight: Food Forward'
+date:
+title: 'ReFED''s Innovator Spotlight: Food Forward'
 categories:
   - article
 featured_image: /uploads/Food Forward Wholesale Truck w_ staff.jpg
@@ -11,13 +11,17 @@ photo_credit: Food Forward
 video_id:
 ---
 
-Food recovery is an important component of reducing food waste in the United States, since the majority of food that ends up in landfills is fit for human consumption. According to Feeding America, up to 72% of food distributed by food banks is donated or recovered food. Operating at a large scale, and managing perishable fruits and vegetables, is no easy task for food recovery organizations, but one that provides great benefits to the community and local economy. ReFED spoke with Food Forward’s Founder and Executive Director Rick Nahmais, an innovator based in Southern California dedicated to rescuing hundreds of thousands of pounds of fresh produce each year, to learn more about this impressive and highly impactful organization.
+&nbsp;
+
+Food recovery is an important component of reducing food waste in the United States, since the majority of food that ends up in landfills is fit for human consumption. According to Feeding America, up to 72% of food distributed by food banks is donated or recovered food. ReFED's[ *Roadmap to Reduce U.S. Food Waste by 20 Percent*](https://www.refed.com/downloads/ReFED_Report_2016.pdf){: target="_blank"} shows that food recovery solutions can recover 1.8B meals, create an economic value of $2.4B to society, and create 4,000 jobs annually.
+
+While operating at a large scale and managing perishable fruits and vegetables is no easy task for food recovery organizations, doing so provides great benefits to the community and local economy. ReFED spoke with **Food Forward’s Founder and Executive Director Rick Nahmais**, a Southern California innovator dedicated to rescuing hundreds of thousands of pounds of fresh produce each year, to learn more about this impressive and highly impactful organization.
 
 ![](/uploads/ricknahmias-photo.jpg)
 
 **ReFED:***What does your organization do and who do you serve?*
 
-**RN:** Food Forward staff and volunteers currently recover upwards of 400,000 pounds of surplus produce each week from residential fruit trees, farmers markets, and the Los Angeles Wholesale Produce Market and its surrounding district. 100% of these fresh fruits and vegetables are donated free of charge, directly and indirectly, to over 1,800 hunger relief agencies across 8 counties in Southern California.
+**RN:** Food Forward staff and volunteers currently recover upwards of 400,000 pounds of surplus produce each week from residential fruit trees, farmers markets, and the Los Angeles Wholesale Produce Market and its surrounding district. 100% of these fresh fruits and vegetables are donated free of charge, directly and indirectly, to over 1,800 hunger relief agencies across eight counties in Southern California.
 
 **ReFED:***How does your innovation reduce food waste in the U.S.?*
 
@@ -51,8 +55,8 @@ Unrestricted, multi-year funding provides proven organizations like Food Forward
 
 While our internal operations are hugely focused on the Depot project, we are also growing our public-facing initiatives. We have had the opportunity to create fun and highly efficient direct produce distributions in underserved neighborhoods in collaboration with community partners. This innovative distribution model allows us to do what we do best: procure massive amounts of fresh produce and harness the passion and skill of our volunteer corps, while relying on our partners for public outreach and site coordination.
 
-A major strategic planning process is now underway, and, in the coming years, we will continue to scale our work. Food Forward will grow deeper roots in the communities we serve; strengthen our programs’ efficiencies; and reach new geographies in the Western and Southwestern US with rescued fruits and vegetables – serving more food insecure individuals than ever before.
+A major strategic planning process is now underway, and, in the coming years, we will continue to scale our work. Food Forward will grow deeper roots in the communities we serve, strengthen our programs’ efficiencies, and reach new geographies in the Western and Southwestern U.S. with rescued fruits and vegetables – serving more food insecure individuals than ever before.
 
 **Want to get in touch with Food Forward?**
 
-Please visit their [website](www.foodforward.org), sign-up for their [bi-weekly newsletter](foodforward.org/signup), or reach out directly to info@foodforward.org.
+Please visit their [website](www.foodforward.org), sign-up for their [bi-weekly newsletter](foodforward.org/signup), or reach out directly to [info@foodforward.org](mailto:info@foodforward.org).
