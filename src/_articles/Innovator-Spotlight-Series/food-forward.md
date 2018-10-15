@@ -1,17 +1,17 @@
 ---
 layout: article
-date:
+date: 2018-10-16 00:00:00
 title: 'ReFED''s Innovator Spotlight: Food Forward'
 categories:
   - article
 featured_image: /uploads/Food Forward Wholesale Truck w_ staff.jpg
-summary: Short summary of article content.
+summary: >-
+  ReFED interviews Southern California food recovery organization Food Forward
+  to learn how they plan to grow their operations and scale their impact.
 references:
 photo_credit: Food Forward
 video_id:
 ---
-
-&nbsp;
 
 Food recovery is an important component of reducing food waste in the United States, since the majority of food that ends up in landfills is fit for human consumption. According to Feeding America, up to 72% of food distributed by food banks is donated or recovered food. ReFED's[ *Roadmap to Reduce U.S. Food Waste by 20 Percent*](https://www.refed.com/downloads/ReFED_Report_2016.pdf){: target="_blank"} shows that food recovery solutions can recover 1.8B meals, create an economic value of $2.4B to society, and create 4,000 jobs annually.
 
