@@ -1,6 +1,6 @@
 ---
 layout: article
-date:
+date: 2018-10-15 00:00:00
 title: 'Innovator Spotlight: Food Forward'
 categories:
   - article
@@ -10,8 +10,6 @@ references:
 photo_credit: Food Forward
 video_id:
 ---
-
-&nbsp;
 
 Food recovery is an important component of reducing food waste in the United States, since the majority of food that ends up in landfills is fit for human consumption. According to Feeding America, up to 72% of food distributed by food banks is donated or recovered food. Operating at a large scale, and managing perishable fruits and vegetables, is no easy task for food recovery organizations, but one that provides great benefits to the community and local economy. ReFED spoke with Food Forward’s Founder and Executive Director Rick Nahmais, an innovator based in Southern California dedicated to rescuing hundreds of thousands of pounds of fresh produce each year, to learn more about this impressive and highly impactful organization.
 
