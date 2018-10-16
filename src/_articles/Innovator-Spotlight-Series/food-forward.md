@@ -19,15 +19,15 @@ While operating at a large scale and managing perishable fruits and vegetables i
 
 ![Food Forward's Executive Director Rick Nahmias](/uploads/ricknahmias-photo.jpg)
 
-**ReFED:***What does your organization do and who do you serve?*
+**ReFED:** *What does your organization do and who do you serve?*
 
 **RN:** Food Forward staff and volunteers currently recover upwards of 400,000 pounds of surplus produce each week from residential fruit trees, farmers markets, and the Los Angeles Wholesale Produce Market and its surrounding district. 100% of these fresh fruits and vegetables are donated free of charge, directly and indirectly, to over 1,800 hunger relief agencies across eight counties in Southern California.
 
-**ReFED:***How does your innovation reduce food waste in the U.S.?*
+**ReFED:** *How does your innovation reduce food waste in the U.S.?*
 
 **RN:** Food Forward sees its work as a two-sided coin that efficiently diverts perfectly edible food to people, rather than dumping it in landfills. During our first year, we exclusively harvested from backyards and orchards, managing to recover over 100,000 pounds of fruit. Currently, through all three of our programs combined, we can rescue upwards of 100,000 pounds per day. Though in the beginning there were few verifiable measures of our environmental impact, we now know from winning three consecutive Food Recovery Challenge Awards from the Environmental Protection Agency that we are offsetting 7,580 metric tons of CO2 annually, the equivalent of taking 1,600 cars off the road each year.
 
-**ReFED:***What are some of the major obstacles you've faced as Food Forward continues to grow? Any lessons learned from these experiences?*
+**ReFED:** *What are some of the major obstacles you've faced as Food Forward continues to grow? Any lessons learned from these experiences?*
 
 **RN:** From our very first year to now, our single biggest problem has been one of capacity: there is far more surplus produce being offered to us than we can rescue, and far more need than we can feed. Our food rescue capacity continues to grow exponentially but there are still weeks when bumper crops or other market circumstances leave us with hundreds of thousands of pounds of wholesale produce we cannot feasibly recover or place with an agency.
 
@@ -35,23 +35,23 @@ In light of the near-constant opportunities, a key lesson has been to force ours
 
 <div style="width:320px; float:left; margin-right:20px;"><p><img style="width:320px; height:auto;" src="/uploads/huntington-gardens---backyard-harvest-1.jpg" /><br /><em>Food Forward volunteers celebrate harvesting oranges from a local orchard.</em></p></div>
 
-**ReFED:***What would you like impact investors and other funders to know about food waste organizations like yours?*
+**ReFED:** *What would you like impact investors and other funders to know about food waste organizations like yours?*
 
 **RN:** Food Forward’s organizational cost to recover food averages just $.09 per pound – about one third of the cost of most major food banks. That said, many of the grants available for food recovery come with significant restrictions or without a holistic understanding of all that goes into the work we do. For it to be most effective, funding should be geared towards multi-year general operating support.
 
 Unrestricted, multi-year funding provides proven organizations like Food Forward the opportunity to spend less time fundraising, be more strategic, operate sustainably, and pay for the true cost of our work. Recently, we have also found several funders in our field prioritizing seed or start-up funding with only a few of them offering long-term, sustainable dollars. While we love the opportunity to partake in innovative grant programs, once these ideas are proven, funders need to understand we will need continued support to maintain the programs and work they have helped launch.
 
-**ReFED:***For your organization to continue growing and making an impact, what major milestones would you like to see happen across the food waste ecosystem?*
+**ReFED:** *For your organization to continue growing and making an impact, what major milestones would you like to see happen across the food waste ecosystem?*
 
 **RN:** Although the government has implemented a [United States Food Loss & Waste 2030 Reduction Goal](https://www.epa.gov/sustainable-management-food/united-states-2030-food-loss-and-waste-reduction-goal){: target="_blank"}, it would be gratifying to see entities like the EPA and USDA start funding high-volume food recovery in a substantial way. The government has the ability to quickly and significantly move the needle on this issue. It would also be great to see local governments and municipalities approach food waste with the same gusto they tackled recycling with in the 90s.
 
 ![Food Forward distributes fresh produce in Inglewood, CA](/uploads/inglewood-distribution---food-forward-1.jpg)
 
-**ReFED:***What advice do you have for future innovators hoping to make an impact in this space?*
+**ReFED:** *What advice do you have for future innovators hoping to make an impact in this space?*
 
 **RN:** First and foremost, innovators should look for what is NOT being done before striking out in the food recovery field. There is a fair amount of redundancy in the food recovery space right now – although there are still holes to fill. It’s a huge lift to get a successful organization off the ground, so it's beneficial to do research to learn what already exists and where there may be potential for collaboration, rather than diving in as a solo player.
 
-**ReFED:***What is the vision for your organization for the next 1, 5, and 20 years?*
+**ReFED:** *What is the vision for your organization for the next 1, 5, and 20 years?*
 
 **RN:** We are currently working diligently towards opening a Produce Depot in the coming months. This will allow us to double the amount of produce we recover and donate annually to upwards of 40 million pounds by mid-2020 to share across SoCal and beyond. Initiated by an anchor grant from [CalRecycle](https://www.calrecycle.ca.gov/){: target="_blank"}, we are currently securing the physical site, designing workflows, and raising the substantial matching funds needed.
 
