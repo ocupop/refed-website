@@ -17,7 +17,7 @@ Food recovery is an important component of reducing food waste in the United Sta
 
 While operating at a large scale and managing perishable fruits and vegetables is no easy task for food recovery organizations, doing so provides great benefits to the community and local economy. ReFED spoke with **[Food Forward](https://foodforward.org/){: target="_blank"}’s Founder and Executive Director Rick Nahmais**, a Southern California innovator dedicated to rescuing hundreds of thousands of pounds of fresh produce each year, to learn more about this impressive and highly impactful organization.
 
-![Food Forward's Executive Director Rick Nahmias](/uploads/ricknahmias-photo.jpg)
+<div style="width:320px; float:right; margin-left:20px;"><p><img style="width:320px; height:auto;" src="/uploads/ricknahmias-photo.jpg" /><br /><em>Food Forward's Executive Director Rick Nahmias</em></p></div>
 
 **ReFED:** *What does your organization do and who do you serve?*
 
@@ -45,7 +45,7 @@ Unrestricted, multi-year funding provides proven organizations like Food Forward
 
 **RN:** Although the government has implemented a [United States Food Loss & Waste 2030 Reduction Goal](https://www.epa.gov/sustainable-management-food/united-states-2030-food-loss-and-waste-reduction-goal){: target="_blank"}, it would be gratifying to see entities like the EPA and USDA start funding high-volume food recovery in a substantial way. The government has the ability to quickly and significantly move the needle on this issue. It would also be great to see local governments and municipalities approach food waste with the same gusto they tackled recycling with in the 90s.
 
-![Food Forward distributes fresh produce in Inglewood, CA](/uploads/inglewood-distribution---food-forward-1.jpg)
+<div style="width:320px; float:right; margin-left:20px;"><p><img style="width:320px; height:auto;" src="/uploads/inglewood-distribution---food-forward-1.jpg" /><br /><em>Food Forward distributes fresh produce in Inglewood, CA</em></p></div>
 
 **ReFED:** *What advice do you have for future innovators hoping to make an impact in this space?*
 
