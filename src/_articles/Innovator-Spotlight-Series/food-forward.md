@@ -61,4 +61,4 @@ A major strategic planning process is now underway, and, in the coming years, we
 
 **Want to get in touch with Food Forward?**
 
-Please visit their [website](www.foodforward.org), sign-up for their [bi-weekly newsletter](foodforward.org/signup), or reach out directly to [info@foodforward.org](mailto:info@foodforward.org).
+Please visit their [website](https://www.foodforward.org){: target="_blank"}, sign-up for their [bi-weekly newsletter](https://foodforward.org/signup){: target="_blank"}, or reach out directly to [info@foodforward.org](mailto:info@foodforward.org).
