@@ -10,3 +10,4 @@
 /retail/ /download#retail-guide
 /2018investmentreport/ /download#food-waste-investment-report
 /2018InvestmentReport/Technical_Appendix/ /downloads/Technical-Appendix-ReFED-Food-Waste-Investment-Report-Spotlight-on-Foundation-Funding.pdf
+/2018InvestmentReport/ /download#food-waste-investment-report
