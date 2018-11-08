@@ -15,9 +15,13 @@ photo_credit:
 video_id:
 ---
 
-On October 24 and ahead of the release of the 2018 U.S. Food Waste Investment Report, six disruptive circular economy of food innovators shared with a packed room of more than 150 investors, foundations, corporates, and entrepreneurs how they turn wasted food into business profits, hunger relief, and environmental stewardship at ReFED’s first-ever Innovation Demo Day at SOCAP.
+![](/uploads/blog1-1.png)
 
-Goodr an Atlanta-based startup using blockchain technology to recovery surplus food from corporations, won first place; awarded one of the coveted spots at ReFED’s next Innovator Workshop and U.S. Food Waste Summit. The Runner Up was Pulp Pantry, an LA-based CPG company transforming forgotten, nutrient-rich ingredients into delicious, healthy snacks.
+On October 24 and ahead of the release of the [2018 U.S. Food Waste Investment Report](https://www.refed.com/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf){: target="_blank"}, six disruptive circular economy of food innovators shared with a packed room of more than 150 investors, foundations, corporates, and entrepreneurs how they turn wasted food into business profits, hunger relief, and environmental stewardship at ReFED’s first-ever Innovation Demo Day at [SOCAP](https://socialcapitalmarkets.net/){: target="_blank"}.
+
+[Goodr](https://goodr.co/){: target="_blank"}, an Atlanta-based startup using blockchain technology to recovery surplus food from corporations, won first place; awarded one of the coveted spots at ReFED’s next [Innovator Workshop and U.S. Food Waste Summit](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions){: target="_blank"}. The Runner Up was [Pulp Pantry](https://pulppantry.com/){: target="_blank"}, an LA-based CPG company transforming forgotten, nutrient-rich ingredients into delicious, healthy snacks.
+
+![](/uploads/blog2-1.png)
 
 ![](/uploads/blog2.png)
 
@@ -25,11 +29,13 @@ Goodr an Atlanta-based startup using blockchain technology to recovery surplus f
 
 Solving the challenge of food waste is a means to multiple ends and completely achievable given coordination and collaboration between food businesses, funders, solution providers, and policymakers.
 
-In the U.S., we spend over $218 billion each year growing, processing, transporting, and disposing of food that is never eaten. ReFED’s Roadmap to Reduce U.S. Food Waste estimates that an $18 billion investment from a combination of public, private, and philanthropic capital sources into 27 cost-effective, scalable solutions could generate more than $100 billion of economic value while reducing U.S. food waste by 20 percent.
+In the U.S., we spend over $218 billion each year growing, processing, transporting, and disposing of food that is never eaten. ReFED’s [Roadmap to Reduce U.S. Food Waste](https://www.refed.com/downloads/ReFED_Report_2016.pdf){: target="_blank"} estimates that an $18 billion investment from a combination of public, private, and philanthropic capital sources into 27 cost-effective, scalable solutions could generate more than $100 billion of economic value while reducing U.S. food waste by 20 percent.
+
+![](/uploads/blog3-1.png)
 
 ![](/uploads/blog3.png)
 
-To that end and as detailed in the 2018 U.S. Food Waste Investment Report, ReFED is seeing multiple signs of positive momentum as new market-based innovations continue to emerge and begin to scale and as a full spectrum of interconnected capital types is being deployed.
+To that end and as detailed in the [2018 U.S. Food Waste Investment Report](https://www.refed.com/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf){: target="_blank"}, ReFED is seeing multiple signs of positive momentum as new market-based innovations continue to emerge and begin to scale and as a full spectrum of interconnected capital types is being deployed.
 
 In an effort to bring awareness to this exciting momentum, ReFED designed and executed the Demo Day with the help of key innovator and investor stakeholders.
 
@@ -37,47 +43,38 @@ In an effort to bring awareness to this exciting momentum, ReFED designed and ex
 
 ![](/uploads/blog4.png)
 
-Prevention Solutions (stopping food waste from occurring in the first place)Grant Carlson, Co-founder and CEO of Ugly Juice (CA)
+![](/uploads/blog4-1.png)
 
-Cold-pressed juice company that transforms "ugly produce" into fresh juice. They deliver juice to homes, offices, and events via bicycle courier.
-
-Ashley Miyasaki, Co-founder of Pulp Pantry (CA)
-
-CPG company dedicated to transforming forgotten, nutrient-rich ingredients such as high-fiber juice pulp into delicious, healthy snacks.
-
-Recovery Solutions (redistributing edible, excess food to people)Komal Ahmad, Founder and CEO of Copia (CA)
-
-Connects businesses with excess food to those who need it using a proprietary algorithm to match food donations to nearby nonprofits.
-
-Jasmine Crowe, Founder and CEO of Goodr (GA)
-
-Uses blockchain technology to pick up surplus food from corporations and provide detailed data analytics on waste diversion.
-
-Recycling Solutions (repurposing waste as energy, agricultural, and other products)Amanda Weeks, Co-founder and CEO of Industrial/Organic (NY)
-
-Recovers water, energy, and nutrients from food waste to produce high-value products such as organic fertilizers, animal feed, and clean energy.
-
-Tinia Pina, Founder and CEO of Re-Nuble (NY)
-
-Uses a capital-light, patent pending process to transform food waste into an organic-based liquid fertilizer.
+* *Prevention Solutions (stopping food waste from occurring in the first place)*
+  * Grant Carlson, Co-founder and CEO of Ugly Juice (CA)
+    * Cold-pressed juice company that transforms "ugly produce" into fresh juice. They deliver juice to homes, offices, and events via bicycle courier.
+  * Ashley Miyasaki, Co-founder of Pulp Pantry (CA)
+    * CPG company dedicated to transforming forgotten, nutrient-rich ingredients such as high-fiber juice pulp into delicious, healthy snacks.
+* *Recovery Solutions (redistributing edible, excess food to people)*
+  * Komal Ahmad, Founder and CEO of Copia (CA)
+    * Connects businesses with excess food to those who need it using a proprietary algorithm to match food donations to nearby nonprofits.
+  * Jasmine Crowe, Founder and CEO of Goodr (GA)
+    * Uses blockchain technology to pick up surplus food from corporations and provide detailed data analytics on waste diversion.
+* *Recycling Solutions (repurposing waste as energy, agricultural, and other products)*
+  * Amanda Weeks, Co-founder and CEO of Industrial/Organic (NY)
+    * Recovers water, energy, and nutrients from food waste to produce high-value products such as organic fertilizers, animal feed, and clean energy.
+  * Tinia Pina, Founder and CEO of Re-Nuble (NY)
+    * Uses a capital-light, patent pending process to transform food waste into an organic-based liquid fertilizer.
 
 ##### **The Judges Panel at ReFED’s Demo Day**
 
 An esteemed panel of judges included well-known impact investors and food/ag tech funds:
 
-Chuck Templeton, S2G Ventures
-
-Lisa Sebesta, Fresh Source Capital
-
-Patrick Sagisi, Double Bottom Line Venture Capital
-
-Regina Escamilla, Kapor Capital
-
-Rob Trice, Better Food Ventures
-
-Sydney Thomas, Precursor Ventures
+* Chuck Templeton, S2G Ventures
+* Lisa Sebesta, Fresh Source Capital
+* Patrick Sagisi, Double Bottom Line Venture Capital
+* Regina Escamilla, Kapor Capital
+* Rob Trice, Better Food Ventures
+* Sydney Thomas, Precursor Ventures
 
 Judges evaluated innovators based on five criteria: business opportunity, value proposition, growth strategy, innovation and impact, and overall presentation.
+
+![](/uploads/blog5-1.png)
 
 ![](/uploads/blog5.png)
 
@@ -89,15 +86,15 @@ The pitches also demonstrated the complementary benefits that arise when these n
 
 There seems to be no limit to the impact that technology, innovation, and boots-on-the-ground hard work can have on transforming food waste into jobs, hunger relief, and sustainable business profits.
 
-Want to stay up-to-date on the latest developments in the fight against food waste?
+##### Want to stay up-to-date on the latest developments in the fight against food waste?
 
-Sign up for ReFED’s Capital & Innovation mailing list for access to future reports, newsletters, and opportunities for collaboration.
+Sign up for ReFED’s [Capital & Innovation mailing list](https://www.refed.com/share){: target="_blank"} for access to future reports, newsletters, and opportunities for collaboration.
 
-Funders: Join ReFED’s Food Waste Funder Initiative, a network of 100+ philanthropic, public, and private investors and associated events. Invest in food waste innovation; use ReFED’s Innovator Database to find 500+ for-profits and nonprofits across the U.S. creating value from wasted food.
+Funders: Join ReFED’s [Food Waste Funder Initiative](https://www.refed.com/content-hub/picking-up-speed-food-waste-funders-meet-to-fuel-further-impact){: target="_blank"}, a network of 100+ philanthropic, public, and private investors and associated events. Invest in food waste innovation; use ReFED’s Innovator Database to find 500+ for-profits and nonprofits across the U.S. creating value from wasted food.
 
-Innovators: Register for ReFED’s Innovator Database to join the growing network of food waste solution providers and attend future ReFED events.
+Innovators: Register for ReFED’s [Innovator Database](https://www.refed.com/tools/innovator-database/suggest-an-innovator){: target="_blank"} to join the growing network of food waste solution providers and attend future ReFED events.
 
-Inquiries? capital@refed.com
+Inquiries? [capital@refed.com](mailto:capital@refed.com)
 
 &nbsp;
 
