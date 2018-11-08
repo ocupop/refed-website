@@ -2,7 +2,7 @@
 layout: article
 date:
 title: >-
-  GoodR and Pulp Pantry Take First Place and Runner Up at ReFED's Food Waste
+  Goodr and Pulp Pantry Take First Place and Runner Up at ReFED's Food Waste
   Innovation Demo Day
 categories:
   - article
@@ -46,31 +46,31 @@ In an effort to bring awareness to this exciting momentum, ReFED designed and ex
 ![](/uploads/blog4-1.png)
 
 * *Prevention Solutions (stopping food waste from occurring in the first place)*
-  * Grant Carlson, Co-founder and CEO of Ugly Juice (CA)
+  * Grant Carlson, Co-founder and CEO of [Ugly Juice](https://www.drinkuglyjuice.com/){: target="_blank"} (CA)
     * Cold-pressed juice company that transforms "ugly produce" into fresh juice. They deliver juice to homes, offices, and events via bicycle courier.
-  * Ashley Miyasaki, Co-founder of Pulp Pantry (CA)
+  * Ashley Miyasaki, Co-founder of [Pulp Pantry](https://pulppantry.com/){: target="_blank"} (CA)
     * CPG company dedicated to transforming forgotten, nutrient-rich ingredients such as high-fiber juice pulp into delicious, healthy snacks.
 * *Recovery Solutions (redistributing edible, excess food to people)*
-  * Komal Ahmad, Founder and CEO of Copia (CA)
+  * Komal Ahmad, Founder and CEO of [Copia](https://www.gocopia.com/){: target="_blank"} (CA)
     * Connects businesses with excess food to those who need it using a proprietary algorithm to match food donations to nearby nonprofits.
-  * Jasmine Crowe, Founder and CEO of Goodr (GA)
+  * Jasmine Crowe, Founder and CEO of [Goodr](https://goodr.co/){: target="_blank"} (GA)
     * Uses blockchain technology to pick up surplus food from corporations and provide detailed data analytics on waste diversion.
 * *Recycling Solutions (repurposing waste as energy, agricultural, and other products)*
-  * Amanda Weeks, Co-founder and CEO of Industrial/Organic (NY)
+  * Amanda Weeks, Co-founder and CEO of [Industrial/Organic](https://industrialorganic.com/){: target="_blank"} (NY)
     * Recovers water, energy, and nutrients from food waste to produce high-value products such as organic fertilizers, animal feed, and clean energy.
-  * Tinia Pina, Founder and CEO of Re-Nuble (NY)
+  * Tinia Pina, Founder and CEO of [Re-Nuble](https://www.re-nuble.com/){: target="_blank"} (NY)
     * Uses a capital-light, patent pending process to transform food waste into an organic-based liquid fertilizer.
 
 ##### **The Judges Panel at ReFED’s Demo Day**
 
 An esteemed panel of judges included well-known impact investors and food/ag tech funds:
 
-* Chuck Templeton, S2G Ventures
-* Lisa Sebesta, Fresh Source Capital
-* Patrick Sagisi, Double Bottom Line Venture Capital
-* Regina Escamilla, Kapor Capital
-* Rob Trice, Better Food Ventures
-* Sydney Thomas, Precursor Ventures
+* Chuck Templeton, [S2G Ventures](https://s2gventures.com/){: target="_blank"}
+* Lisa Sebesta, [Fresh Source Capital](https://www.freshsourcecapital.com/){: target="_blank"}
+* Patrick Sagisi, [Double Bottom Line Venture Capital](http://www.dblpartners.vc/){: target="_blank"}
+* Regina Escamilla, [Kapor Capital](https://www.kaporcapital.com/){: target="_blank"}
+* Rob Trice, [Better Food Ventures](http://betterfoodventures.com/){: target="_blank"}
+* Sydney Thomas, [Precursor Ventures](https://precursorvc.com/){: target="_blank"}
 
 Judges evaluated innovators based on five criteria: business opportunity, value proposition, growth strategy, innovation and impact, and overall presentation.
 
