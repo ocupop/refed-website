@@ -1,6 +1,6 @@
 ---
 layout: article
-date:
+date: 2018-11-09 00:00:00
 title: >-
   Goodr and Pulp Pantry Take First Place and Runner Up at ReFED's Food Waste
   Innovation Demo Day
@@ -95,13 +95,3 @@ Funders: Join ReFED’s [Food Waste Funder Initiative](https://www.refed.com/con
 Innovators: Register for ReFED’s [Innovator Database](https://www.refed.com/tools/innovator-database/suggest-an-innovator){: target="_blank"} to join the growing network of food waste solution providers and attend future ReFED events.
 
 Inquiries? [capital@refed.com](mailto:capital@refed.com)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
