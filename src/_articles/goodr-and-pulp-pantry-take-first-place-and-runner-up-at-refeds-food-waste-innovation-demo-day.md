@@ -15,13 +15,10 @@ photo_credit:
 video_id:
 ---
 
-![](/uploads/blog1-1.png)
 
 On October 24 and ahead of the release of the [2018 U.S. Food Waste Investment Report](https://www.refed.com/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf){: target="_blank"}, six disruptive circular economy of food innovators shared with a packed room of more than 150 investors, foundations, corporates, and entrepreneurs how they turn wasted food into business profits, hunger relief, and environmental stewardship at ReFED’s first-ever Innovation Demo Day at [SOCAP](https://socialcapitalmarkets.net/){: target="_blank"}.
 
 [Goodr](https://goodr.co/){: target="_blank"}, an Atlanta-based startup using blockchain technology to recovery surplus food from corporations, won first place; awarded one of the coveted spots at ReFED’s next [Innovator Workshop and U.S. Food Waste Summit](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions){: target="_blank"}. The Runner Up was [Pulp Pantry](https://pulppantry.com/){: target="_blank"}, an LA-based CPG company transforming forgotten, nutrient-rich ingredients into delicious, healthy snacks.
-
-![](/uploads/blog2-1.png)
 
 ![](/uploads/blog2.png)
 
@@ -30,8 +27,6 @@ On October 24 and ahead of the release of the [2018 U.S. Food Waste Investment R
 Solving the challenge of food waste is a means to multiple ends and completely achievable given coordination and collaboration between food businesses, funders, solution providers, and policymakers.
 
 In the U.S., we spend over $218 billion each year growing, processing, transporting, and disposing of food that is never eaten. ReFED’s [Roadmap to Reduce U.S. Food Waste](https://www.refed.com/downloads/ReFED_Report_2016.pdf){: target="_blank"} estimates that an $18 billion investment from a combination of public, private, and philanthropic capital sources into 27 cost-effective, scalable solutions could generate more than $100 billion of economic value while reducing U.S. food waste by 20 percent.
-
-![](/uploads/blog3-1.png)
 
 ![](/uploads/blog3.png)
 
@@ -42,8 +37,6 @@ In an effort to bring awareness to this exciting momentum, ReFED designed and ex
 ##### **The Innovators at ReFED’s Demo Day**
 
 ![](/uploads/blog4.png)
-
-![](/uploads/blog4-1.png)
 
 * *Prevention Solutions (stopping food waste from occurring in the first place)*
   * Grant Carlson, Co-founder and CEO of [Ugly Juice](https://www.drinkuglyjuice.com/){: target="_blank"} (CA)
@@ -73,8 +66,6 @@ An esteemed panel of judges included well-known impact investors and food/ag tec
 * Sydney Thomas, [Precursor Ventures](https://precursorvc.com/){: target="_blank"}
 
 Judges evaluated innovators based on five criteria: business opportunity, value proposition, growth strategy, innovation and impact, and overall presentation.
-
-![](/uploads/blog5-1.png)
 
 ![](/uploads/blog5.png)
 
