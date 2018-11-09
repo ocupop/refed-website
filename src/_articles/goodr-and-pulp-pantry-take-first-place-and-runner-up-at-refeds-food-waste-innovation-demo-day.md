@@ -33,9 +33,9 @@ To that end and as detailed in the [2018 U.S. Food Waste Investment Report](http
 
 In an effort to bring awareness to this exciting momentum, ReFED designed and executed the Demo Day with the help of key innovator and investor stakeholders.
 
-### **The Innovators at ReFED’s Demo Day**
+###### &nbsp;
 
-&nbsp;
+### **The Innovators at ReFED’s Demo Day**
 
 ![](/uploads/blog4.png)
 
@@ -61,6 +61,8 @@ In an effort to bring awareness to this exciting momentum, ReFED designed and ex
   * Tinia Pina, Founder and CEO of [Re-Nuble](https://www.re-nuble.com/){: target="_blank"} (NY)
     * Uses a capital-light, patent pending process to transform food waste into an organic-based liquid fertilizer.
 
+###### &nbsp;
+
 ### **The Judges Panel at ReFED’s Demo Day**
 
 An esteemed panel of judges included well-known impact investors and food/ag tech funds:
@@ -83,6 +85,8 @@ Thanks to the innovators’ first-hand knowledge and judges’ insightful questi
 The pitches also demonstrated the complementary benefits that arise when these new innovations and technologies work together. For instance, the byproduct of juicing ugly produce can be transformed into healthy snacks. Edible, excess prepared food can be posted on a food recovery app and used to feed the hungry. And at the end of the supply chain, uneaten food can be used to create nutrient-dense hydroponic organic fertilizers.
 
 There seems to be no limit to the impact that technology, innovation, and boots-on-the-ground hard work can have on transforming food waste into jobs, hunger relief, and sustainable business profits.
+
+###### &nbsp;
 
 ### Want to stay up-to-date on the latest developments in the fight against food waste?
 
