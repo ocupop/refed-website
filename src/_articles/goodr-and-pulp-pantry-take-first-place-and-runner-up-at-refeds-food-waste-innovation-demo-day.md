@@ -78,7 +78,7 @@ Judges evaluated innovators based on five criteria: business opportunity, value 
 
 ![](/uploads/blog5.png)
 
-### Food Waste Is A Shared Challenge and Shared Opportunity
+### **Food Waste Is A Shared Challenge And Shared Opportunity**
 
 Thanks to the innovators’ first-hand knowledge and judges’ insightful questions, attendees gained a clearer understanding of the tremendous business opportunity in capturing and repurposing food that might otherwise be discarded in landfills.
 
@@ -88,7 +88,7 @@ There seems to be no limit to the impact that technology, innovation, and boots-
 
 ###### &nbsp;
 
-### Want to stay up-to-date on the latest developments in the fight against food waste?
+### **Want To Stay Up-To-Date On The Latest Developments In The Fight Against Food Waste?**
 
 Sign up for ReFED’s [Capital & Innovation mailing list](https://www.refed.com/share){: target="_blank"} for access to future reports, newsletters, and opportunities for collaboration.
 
