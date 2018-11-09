@@ -15,6 +15,8 @@ photo_credit:
 video_id:
 ---
 
+By Alexandria Coari
+
 On October 24 and ahead of the release of the [2018 U.S. Food Waste Investment Report](https://www.refed.com/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf){: target="_blank"}, six disruptive circular economy of food innovators shared with a packed room of more than 150 investors, foundations, corporates, and entrepreneurs how they turn wasted food into business profits, hunger relief, and environmental stewardship at ReFED’s first-ever Innovation Demo Day at [SOCAP](https://socialcapitalmarkets.net/){: target="_blank"}.
 
 [Goodr](https://goodr.co/){: target="_blank"}, an Atlanta-based startup using blockchain technology to recovery surplus food from corporations, won first place; awarded one of the coveted spots at ReFED’s next [Innovator Workshop and U.S. Food Waste Summit](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions){: target="_blank"}. The Runner Up was [Pulp Pantry](https://pulppantry.com/){: target="_blank"}, an LA-based CPG company transforming forgotten, nutrient-rich ingredients into delicious, healthy snacks.
