@@ -34,7 +34,7 @@ Key *2018 U.S. Food Waste Investment Report* insights include:
 * More than $125 million of venture capital and private equity funding in the first ten months of 2018 has been invested in food waste startups, driven by VC funders such as Andreessen Horowitz, S2G Ventures, Cultivian Sandbox Ventures, and DBL Partners. Continued interest in agtech and foodtech innovations from private investors could lead to the crowning of food waste’s first unicorn company ($1 billion valuation) in the next few years.
   * Apeel Sciences announced $70 million in new financing led by Viking Global Investors, with Andreessen Horowitz, Upfront Ventures, S2G Ventures, and others. Walter Robb, former co-CEO of Whole Foods Market, will join Apeel Sciences’ Board of Directors and advise the company as it scales to meet demand in the U.S. and internationally.
   * Imperfect Produce, a startup selling ugly fruits and vegetables, just received a major investment from NBA all-star Kevin Durant.
-* Food waste is a burgeoning innovation sector. ReFED's [Innovator Database](refed.com/innovators)&nbsp;tracks approximately 500 innovators, half of which were founded since 2012.
+* Food waste is a burgeoning innovation sector. ReFED's [Innovator Database](https://refed.com/innovators)&nbsp;tracks approximately 500 innovators, half of which were founded since 2012.
 
 "Food waste is a huge problem hidden in plain sight,” **noted Chuck Templeton, Managing Director, S2G Ventures**. “Investing in it is one of the best economic and environmental opportunities in the food system."
 
@@ -55,7 +55,7 @@ Key *Special Report on Foundation Funding* insights include:
 
 “If we are able to advance a more sustainable, less wasteful food system, we will preserve precious planetary resources and create more opportunities to nourish the 41 million Americans that currently lack consistent access to food,” **said Devon Klatell, Food Strategy Lead and Senior Associate Director at The Rockefeller Foundation**. “Philanthropic funding is especially important, as it can bridge the gap between public- and private-sector support, backing solutions that might otherwise go overlooked, building capacity on the ground, and encouraging key stakeholders to move beyond commitment and take action.”
 
-A direct link to the *2018 U.S. Food Waste Investment Report* and accompanying *Special Report on Foundation Funding* can be found at: [refed.com/2018investmentreport](https://www.refed.com/2018investmentreport).
+A direct link to the *2018 U.S. Food Waste Investment Report* and accompanying *Special Report on Foundation Funding* can be found at: [https://](https://www.refed.com/2018investmentreport)[refed.com/2018investmentreport](https://www.refed.com/2018investmentreport).
 
 For more information about the innovators around the country creating value from food waste, visit ReFED’s [Innovator Database](https://www.refed.com/innovators).
 
