@@ -20,9 +20,9 @@ video_id:
 
 Contact: Melody Serafino, media@refed.com
 
-**San Francisco, CA** (November 14, 2018) – Today, ReFED, an entrepreneurial nonprofit committed to reducing the $218 billion of food waste in the United States, released the *[2018 U.S. Food Waste Investment Report](refed.com/2018investmentreport)*. The report tracks key trends in the dynamic food waste investment space, identifying $125M in VC funding in 2018. The report also includes a *Special Report on Foundation Funding* section revealing that foundation food waste funding reached $134 million in 2016, increasing 70% over five years.
+**San Francisco, CA** (November 14, 2018) – Today, ReFED, an entrepreneurial nonprofit committed to reducing the $218 billion of food waste in the United States, released the *[2018 U.S. Food Waste Investment Report](https://refed.com/2018investmentreport)*. The report tracks key trends in the dynamic food waste investment space, identifying $125M in VC funding in 2018. The report also includes a *Special Report on Foundation Funding* section revealing that foundation food waste funding reached $134 million in 2016, increasing 70% over five years.
 
-ReFED’s 2016 *[Roadmap to Reduce U.S. Food Waste](www.refed.com/roadmap)* estimates that $18 billion in funding is needed to reduce U.S. food waste by 20% over the next ten years and would yield $100 billion in societal economic value. The *2018 U.S. Food Waste Investment Report* draws on ReFED’s in-depth fieldwork with partners and highlights specific examples of philanthropic, public, and private investment over the past two years.
+ReFED’s 2016 *[Roadmap to Reduce U.S. Food Waste](https://www.refed.com/roadmap)* estimates that $18 billion in funding is needed to reduce U.S. food waste by 20% over the next ten years and would yield $100 billion in societal economic value. The *2018 U.S. Food Waste Investment Report* draws on ReFED’s in-depth fieldwork with partners and highlights specific examples of philanthropic, public, and private investment over the past two years.
 
 “As food waste has become a global priority, we’re excited to see rapid acceleration in the number of new products and services addressing food system efficiency,” **said Alexandria Coari, Capital & Innovation Director, ReFED**. “These innovators are turning food waste into jobs, hunger relief, and critical environmental benefits.”
 
@@ -55,10 +55,10 @@ Key *Special Report on Foundation Funding* insights include:
 
 “If we are able to advance a more sustainable, less wasteful food system, we will preserve precious planetary resources and create more opportunities to nourish the 41 million Americans that currently lack consistent access to food,” **said Devon Klatell, Food Strategy Lead and Senior Associate Director at The Rockefeller Foundation**. “Philanthropic funding is especially important, as it can bridge the gap between public- and private-sector support, backing solutions that might otherwise go overlooked, building capacity on the ground, and encouraging key stakeholders to move beyond commitment and take action.”
 
-A direct link to the *2018 U.S. Food Waste Investment Report* and accompanying *Special Report on Foundation Funding* can be found at: [refed.com/2018investmentreport](www.refed.com/2018investmentreport).
+A direct link to the *2018 U.S. Food Waste Investment Report* and accompanying *Special Report on Foundation Funding* can be found at: [refed.com/2018investmentreport](https://www.refed.com/2018investmentreport).
 
-For more information about the innovators around the country creating value from food waste, visit ReFED’s [Innovator Database](www.refed.com/innovators).
+For more information about the innovators around the country creating value from food waste, visit ReFED’s [Innovator Database](https://www.refed.com/innovators).
 
 **About ReFED**
 
-ReFED is a nonprofit that works with decision-makers across the food system to reduce U.S. food waste. ReFED promotes individual and collective solutions by convening, connecting and advising food system leaders to take actions that spur economic growth, increase food security and protect the environment. For more information, visit [refed.com](www.refed.com).
+ReFED is a nonprofit that works with decision-makers across the food system to reduce U.S. food waste. ReFED promotes individual and collective solutions by convening, connecting and advising food system leaders to take actions that spur economic growth, increase food security and protect the environment. For more information, visit [refed.com](https://www.refed.com).
