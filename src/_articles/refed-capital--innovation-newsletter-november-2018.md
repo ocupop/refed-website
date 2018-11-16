@@ -5,7 +5,9 @@ title: 'REFED CAPITAL & INNOVATION NEWSLETTER: NOVEMBER 2018'
 categories:
   - article
 featured_image: /uploads/innovator-infographic-05-1.jpg
-summary: Short summary of article content.
+summary: >-
+  ReFED's quarterly update on the entrepreneurs and investors fighting food
+  waste.
 references:
 photo_credit:
 video_id:
