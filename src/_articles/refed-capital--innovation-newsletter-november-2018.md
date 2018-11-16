@@ -4,8 +4,10 @@ date: 2018-11-15 00:00:00
 title: 'REFED CAPITAL & INNOVATION NEWSLETTER: NOVEMBER 2018'
 categories:
   - article
-featured_image:
-summary: Short summary of article content.
+featured_image: /uploads/innovator-infographic-05-1.jpg
+summary: >-
+  ReFED's quarterly update on the entrepreneurs and investors fighting food
+  waste.
 references:
 photo_credit:
 video_id:
@@ -47,7 +49,7 @@ FoodShot Global is supporting mission-driven, scalable, accelerated for-profit b
 
 #### [Hello Fresh Tackles Food Waste In The U.S.](http://blog.spoileralert.com/hellofresh-tackles-food-waste?utm_source=hs_automation&amp;utm_medium=email&amp;utm_content=64582482&amp;_hsenc=p2ANqtz-_5AzVosoebwiT2EUWcp69z6gEFJmRpdrWMvsDvQtTv24QTIyMozfFMuMcXRHSHeKEHWhVRAjN0dsnAwkUTudDr0ZjVYA&amp;_hsmi=64582482){: target="_blank"}
 
-The world's leading meal kit company partnered with software and data technology company Spoiler Alert to better manage unsold inventory and donate over one million nutritious meals to food insecure populations since July 2017.&nbsp;
+The world's leading meal kit company partnered with software and data technology company Spoiler Alert to better manage unsold inventory and donate over one million nutritious meals to food insecure populations since July 2017. 
 
 #### [Imperfect Produce Receives Major Investment From NBA- All Star Kevin Durant To Expand Into East Coast Market](https://www.businessinsider.com/kevin-durant-imperfect-ugly-fruits-vegetables-2018-10){: target="_blank"}
 
