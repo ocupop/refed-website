@@ -38,7 +38,7 @@ Key *2018 U.S. Food Waste Investment Report* insights include:
 
 "Food waste is a huge problem hidden in plain sight,” **noted Chuck Templeton, Managing Director, S2G Ventures**. “Investing in it is one of the best economic and environmental opportunities in the food system."
 
-“VC funding can help accelerate the development, deployment, and growth of promising new technologies and solutions,” a**dded Patrick Sagisi, Venture Capitalist, DBL Capital**. “Within our own portfolio, we’re proud to be working with Apeel Sciences, and actively looking to make new investments in this sector.”
+“VC funding can help accelerate the development, deployment, and growth of promising new technologies and solutions,” **a****dded Patrick Sagisi, Venture Capitalist, DBL Partners**. “Within our own portfolio, we’re proud to be working with Apeel Sciences, and actively looking to make new investments in this sector.”
 
 ReFED estimates that $290 million of the $1.8 billion annual total investment needed to reduce U.S. food waste by 20% should come in the form of philanthropic funding from private, public, and corporate foundations, family offices, and impact investments. The *2018 U.S. Food Waste Investment Report* includes an in-depth *Special Report on Foundation Funding* that will help inform funding decisions to fill important gaps and maximize impact for 2019 and beyond. The report provides general insights, lists top funders and recipients, and shares funding trends across the categories of prevention, recovery, and recycling.
 
