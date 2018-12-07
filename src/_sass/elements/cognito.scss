@@ -5,8 +5,15 @@
   .c-forms-form {
     max-width: 100% !important;
     font-family: $font-family-base !important;
+   
     .c-forms-heading {
       display: none;
+    }
+
+    p {
+       font-size: 0.875em !important;
+      color: #555759 !important;
+      line-height: 1.3em !important;
     }
 
     a {
