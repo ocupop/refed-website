@@ -1,0 +1,126 @@
+.cognito {
+
+  font-family: $font-family-base !important;
+
+  .c-forms-form {
+    max-width: 100% !important;
+    font-family: $font-family-base !important;
+   
+    .c-forms-heading {
+      display: none;
+    }
+
+    p {
+      font-family: $font-family-base !important;
+      font-size: 1em !important;
+      color: #555759 !important;
+      line-height: 1.3em !important;
+    }
+
+    a {
+      font-family: $font-family-base !important;
+    }
+    .c-label {
+      display:block !important;
+      margin-bottom:10px !important;
+      font-family: $font-family-base !important;
+      label {
+        font-weight:normal !important;
+        font-family: $font-family-base !important;
+      }
+    }
+    .c-editor {
+      padding-left: 0;
+      font-family: $font-family-base !important;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      padding: 0px;
+      border: 0;
+      font-family: $font-family-base !important;
+    }
+
+    .cognito [class^="icon-"], .cognito [class*=" icon-"] {
+      font-family: FontAwesome !important;
+    }
+
+    .c-validation {
+      border-radius: 0;
+      margin: 0 8px 0 0;
+      padding: 3px 5px;
+      background: transparent !important;
+    }
+
+    .c-forms-confirmation-message {
+      padding: 30px !important;
+      text-align: center;
+      font-size: 21px !important;
+      font-family: $font-family-base;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    ::placeholder {
+      font-family: $font-family-base;
+      font-family: $font-family-base !important;
+    }
+  }
+
+  #c-submit-button {
+    @extend .btn;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    text-transform:uppercase;
+    font-family: $font-family-base !important;
+  }
+
+  button {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0 !important;
+    text-transform:uppercase;   
+    font-family: $font-family-base !important;
+  }
+}
+
+/* Set the preloader to be invisible by default */
+.preloader {
+  display: none;
+}
+
+/* Override the default invisibility if the preloader doesn't have a form after it. */
+.preloader:last-child {
+  display: flex;
+  align-items: center;
+}
+
+/* Create a spinning animation and name it "spin" */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+  Apply "spin" animation to the image inside the preloader.
+   -  animation-duration is set to "3s" and so each 
+      rotation will last 3 seconds.
+   -  animation-timing-function is set to "linear" 
+      and so the speed of rotation is constant.
+   -  animation-iteration-count is set to "infinite"
+      which means what it says.
+*/
+.preloader img {
+  display: block;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
