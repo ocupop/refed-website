@@ -12,4 +12,5 @@
 /2018InvestmentReport/Technical_Appendix/ /downloads/Technical-Appendix-ReFED-Food-Waste-Investment-Report-Spotlight-on-Foundation-Funding.pdf
 /2018InvestmentReport/ /download#food-waste-investment-report
 /tools/innovator-database/suggest-an-innovator /tools/innovator-database/apply-to-innovator-database
+/tools/innovator-database/apply-to-innovator-database/ /tools/innovator-database/apply-to-innovator-database
 
