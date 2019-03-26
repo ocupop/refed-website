@@ -9,17 +9,13 @@ policy_data:
         applies_to_food_type: Eggs
         purpose_of_law: Definition (Expiration date)
         excerpted_language_from_the_law: >-
-          13. “Expiration date” means the words “sell by” or “buy thru” followed
-          by a date, including
-
-          the month and day, that is not more than twenty-four days after the
-          eggs were candled and that includes the date the eggs were candled.
-        legal_citation: Ariz. Rev. Stat. Ann. § 3-701 (2013).
+          13. “Expiration date” means (a) For eggs that are marked grade AA, the words “sell by” or “buy thru” followed by a date, including the month and day, that is not more than twenty-four days after the eggs were candled and that includes the date the eggs were candled. (b) For eggs that are marked grade A, the words “best by” or “use by” followed by a date, including the month and day, that is not more than forty-five days after the eggs were candled and includes the date the eggs were candled.
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-701.
       - title: Reg 2
         applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: 'E. Cases, half cases, cartons or containers marked grade AA or grade A shall be marked with an expiration date. F. The expiration date marked on a case, half case or container holding fifteen dozen eggs or more shall be plainly and conspicuously marked in bold-faced type not less than three-eighths inch in height on one outward end of the case or container. G. The expiration date marked on a carton or container holding less than fifteen dozen eggs shall be plainly and conspicuously marked in bold-faced type not less than one-eighth inch in height on one end of the outward top face of each carton and on one outward end or the outward top of each container.'
-        legal_citation: Ariz. Rev. Stat. Ann. § 3-719 (2013).
+        legal_citation: Ariz. Rev. Stat. Ann. § 3-719.
     label_regulation:
       date_labels_required_for:
         - eggs
@@ -54,19 +50,19 @@ policy_data:
         eligible_recipients: Nonprofits located in Arizona whose use of the crop is related to their tax-exempt status
   animal_feed:
     legislation:
-      - title: Ariz. Rev. Stat. §§ 3-2661–69 (2015)
+      - title: Ariz. Rev. Stat. §§ 3-2661–69
         animals_covered: Swine
-        definition_of_garbage: 'Waste consisting in whole or in part of animal waste resulting from handling, preparing, cooking and consuming of foods, including the offal from animal or poultry carcasses or parts thereof. § 3-2661 (2015).'
-        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 3-2661–69 (2015).
-        licensure_requirements: No person shall feed garbage to swine without first obtaining an annual permit from the associate director. § 3-2664 (2015).
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 3-2667 (2015).
+        definition_of_garbage: 'Waste consisting in whole or in part of animal waste resulting from handling, preparing, cooking and consuming of foods, including the offal from animal or poultry carcasses or parts thereof. § 3-2661.'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 3-2661–69.
+        licensure_requirements: No person shall feed garbage to swine without first obtaining an annual permit from the associate director. § 3-2664.
+        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. § 3-2667.
         enforcement: >-
           If an individual or facility violates the garbage-feeding rule, the
           state may revoke or refuse to issue a permit to that individual or
-          facility. § 3-2663 (2015). Such individual or facility is also guilty
+          facility. § 3-2663. Such individual or facility is also guilty
           of a class 2 misdemeanor and may be enjoined from continuing the
           violation. Each day upon which the violation occurs counts as
-          a separate offense. § 3-2669 (2015).
+          a separate offense. § 3-2669.
 
 
 

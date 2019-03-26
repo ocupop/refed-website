@@ -19,7 +19,7 @@ policy_data:
           shucked for packages with a
 
           capacity of 1.89 L (one-half gallon) or more
-        legal_citation: Ark. Code Ann. § 007- 04-8 3-202.17 (2013).
+        legal_citation: 007-04-8 Ark. Code R. § 3-202.17 .
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -50,22 +50,21 @@ policy_data:
     legislation:
       - title: 'Arkansas Livestock & Poultry Commission, Reg. No. 14 §§ 1–8 (2015)'
         animals_covered: Swine
-        definition_of_garbage: 'Any animal or vegetable waste resulting from handling, preparation, cooking and consumption of foods, including parts of animal carcasses, or contents of offal. Reg. No. 15 § 1 (2015).'
-        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. Reg. No. 14 §§ 1–8 (2015).
-        licensure_requirements: Each garbage-feeding establishment shall be required to obtain a feeding permit. Reg. No. 14 § 2 (2015).
-        treatment_requirements: All garbage must be thoroughly heated to at least 212 degrees for at least 30 minutes before being fed to swine. Reg. No. 14 § 5 (2015).
+        definition_of_garbage: 'Any animal or vegetable waste resulting from handling, preparation, cooking and consumption of foods, including parts of animal carcasses, or contents of offal. Reg. No. 15 § 1.'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. Reg. No. 14 §§ 1–8.
+        licensure_requirements: Each garbage-feeding establishment shall be required to obtain a feeding permit. Reg. No. 14 § 2.
+        treatment_requirements: All garbage must be thoroughly heated to at least 212 degrees for at least 30 minutes before being fed to swine. Reg. No. 14 § 5.
         enforcement: >-
           The state may revoke or refuse to issue garbage-feeding permits to any
           individual or facility that violates the garbage-feeding rule. Reg. No.
-          14 § 4 (2015).
+          14 § 4.
 
           An authorized representative of the livestock and poultry commission
           may inspect at reasonable times any private property to determine that
-          the garbage-feeding rule is being followed. Reg. No. 14 § 6 (2015).
+          the garbage-feeding rule is being followed. Reg. No. 14 § 6.
 
           The livestock and poultry commission may quarantine for 30 days swine
-          that have been fed improperly cooked or raw garbage. Reg. No. 14 § 7
-          (2015).
+          that have been fed improperly cooked or raw garbage. Reg. No. 14 § 7.
         relevant_state_regulatory_body: 'Arkansas Livestock & Poultry Commission, <a href="http://alpc.arkansas.gov/Pages/default.aspx" target="_blank">http://alpc.arkansas.gov/Pages/default.aspx</a>.'
   organics_recycling_mandates:
     legislation:

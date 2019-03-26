@@ -14,22 +14,22 @@ policy_data:
         applies_to_food_type: General
         purpose_of_law: Definition (quality assurance period)
         excerpted_language_from_the_law: '“Quality assurance period” means the period of time following the completion of normal manufacturing, processing, and packaging procedures during which a food product subjected to normal conditions of exposure will maintain conformity with all of the characteristics normally associated with the food product and will provide the benefits for which the food product is normally purchased. Food product characteristics include, but are not limited to, taste, texture, smell, nutritional value, and reaction value with other food products if used as an ingredient with other food products.'
-        legal_citation: Ohio Rev. Code Ann. § 3715.171 (2013).
+        legal_citation: Ohio Rev. Code Ann. § 3715.171.
       - title: Reg 3
         applies_to_food_type: General
         purpose_of_law: Definition (sale date)
         excerpted_language_from_the_law: '“Sale date” means the date by which the manufacturer, processor, or packager of a packaged food product recommends that the food product be sold for consumption based on the food product’s quality assurance period.'
-        legal_citation: Ohio Rev. Code Ann. § 3715.171 (2013).
+        legal_citation: Ohio Rev. Code Ann. § 3715.171.
       - title: Reg 4
         applies_to_food_type: Packaged Perishable Foods
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(A) Except as provided in division (B) of this section, no person shall knowingly sell or offer to sell in this state any packaged perishable food product that has a quality assurance period of thirty days or less, unless the package is clearly marked by the packager with its sale date. The sale date shall be legible and understandable to the consumer. The director of agriculture shall make rules in accordance with Chapter 119. of the Revised Code establishing the manner in which the sale date shall be affixed to food products. (B) The provisions of this section do not apply to fresh fruits and vegetables or to meat, including poultry, whether packaged or unpackaged, nor do they apply to packaged perishable food products when sold or offered for sale at any place of business where less than one hundred thousand dollars of all products were sold during the preceding year.'
-        legal_citation: Ohio Rev. Code Ann. § 3715.171 (2013).
+        legal_citation: Ohio Rev. Code Ann. § 3715.171.
       - title: Reg 5
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(F)(iii)(d) The dealer shall assure that each package containing less than sixty-four fluid ounces of fresh or frozen shellfish shall have: . . . (ii) A “Sell by date” which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date when the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year will be added to the date.'
-        legal_citation: 'Ohio Admin. Code 901:3-8-03 (2013).'
+        excerpted_language_from_the_law: '(F)(d) The dealer shall assure that each package containing less than sixty-four fluid ounces of fresh or frozen shellfish shall have: . . . (ii) A “Sell by date” which provides a reasonable subsequent shelf-life or the words “Best if used by” followed by a date when the product would be expected to reach the end of its shelf-life. The date shall consist of the abbreviation for the month and number of the day of the month. For frozen shellfish, the year will be added to the date.'
+        legal_citation: 'Ohio Admin. Code 901:3-8-03.'
     label_regulation:
       date_labels_required_for:
         - perishables
@@ -63,14 +63,14 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Ohio Rev. Code Ann. §§ 942.01–.99 (2015)
+      - title: Ohio Rev. Code Ann. §§ 942.01–.99
         animals_covered: Swine
         definition_of_garbage: >-
           All waste material derived in whole or in part from the meat of any
           animal, including fish and poultry, or other animal material, and other
           refuse of any character that has been associated with such waste
           material resulting from the handling, preparation, cooking, or
-          consumption of food. § 942.01 (2015).
+          consumption of food. § 942.01.
 
 
 

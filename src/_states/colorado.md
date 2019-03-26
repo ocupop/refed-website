@@ -13,22 +13,22 @@ policy_data:
           establishment or
 
           manufacturers’ label, it shall not be concealed or altered.
-        legal_citation: '6 Colo. Code Regs. § 1010-2:3-701 (2013).'
+        legal_citation: '6 Colo. Code Regs. § 1010-2:3-701.'
       - title: Reg 2
         applies_to_food_type: Eggs
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '3.2 PACK DATE REQUIREMENTS Every case, carton, or container of shell eggs at the time of packing shall have legibly printed thereon, in numerals not less than one-eighth inch in height, the date the eggs are first packed, which shall be referred to in these rules as the “pack date.” The pack date shall be stated numerically by month and day (e.g., 1/15), or by the numbered consecutive day of the year (e.g., 123, being the 123rd consecutive day of the year).'
-        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0.'
       - title: Reg 3
         applies_to_food_type: Eggs
         purpose_of_law: Further date labeling optional (formatting specified if used)
         excerpted_language_from_the_law: '3.3 SELL-BY DATE REQUIREMENTS Every case, carton, or container of shell eggs may, but need not have legibly printed thereon, . . . a date by which the eggs must be sold, which shall be referred to in these rules as the “sell-by date.” The sell-by date shall be no more than 30 days after the pack date. It shall be stated by month and day using the three-letter abbreviation of the month followed by the numerical day of the month (e.g., Jan 15), and preceded by the term SELL BY or EXP.'
-        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0 (2013).'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:3.0.'
       - title: Reg 4
         applies_to_food_type: Eggs
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: 4.1 No shell eggs may be offered for sale or sold to a consumer or restaurant more than 45 days after the pack date.
-        legal_citation: '8 Colo. Code Regs. § 1202-10:4.0 (2013).'
+        legal_citation: '8 Colo. Code Regs. § 1202-10:4.0.'
     label_regulation:
       date_labels_required_for:
         - eggs
@@ -68,27 +68,26 @@ policy_data:
         eligible_recipients: 'Charitable organizations that do not collect money, other property, or services in exchange for product'
   animal_feed:
     legislation:
-      - title: Colo. Rev. Stat. § 35-52-101–115 (2015); 8 CCR 1201-1 (2015)
+      - title: Colo. Rev. Stat. § 35-52-101–115; 8 CCR 1201-1
         animals_covered: Swine
-        definition_of_garbage: 'All refuse, animal or vegetable, and includes all waste material, byproducts of a kitchen, restaurant, hospital, hotel, or slaughterhouse, and every refuse accumulation of animal, fruit, or vegetable matter, liquid or otherwise but excludes such vegetable products as leaves and tops of vegetable plants which have not been mixed with or exposed to or which do not contain any other garbage or waste product prior to feeding to swine. § 35-52-101 (2015). “Garbage” excludes waste from ordinary household operations that is fed directly to swine on the same premises. 8 CCR 1201-1 (2015).'
-        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 35-52-114 (2015).
-        licensure_requirements: An individual or facility must obtain a permit from the state before feeding garbage to swine. § 35-52-114; 8 CCR 1201-1 (2015).
-        treatment_requirements: All garbage must be heated for at least 30 minutes or else treated in some other manner approved by the state. § 35-52-113 (2015).
+        definition_of_garbage: 'All refuse, animal or vegetable, and includes all waste material, byproducts of a kitchen, restaurant, hospital, hotel, or slaughterhouse, and every refuse accumulation of animal, fruit, or vegetable matter, liquid or otherwise but excludes such vegetable products as leaves and tops of vegetable plants which have not been mixed with or exposed to or which do not contain any other garbage or waste product prior to feeding to swine. § 35-52-101. “Garbage” excludes waste from ordinary household operations that is fed directly to swine on the same premises. 8 CCR 1201-1.'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 35-52-114.
+        licensure_requirements: An individual or facility must obtain a permit from the state before feeding garbage to swine. § 35-52-114; 8 CCR 1201-1.
+        treatment_requirements: All garbage must be heated for at least 30 minutes or else treated in some other manner approved by the state. § 35-52-113.
         enforcement: >-
           Any individual or facility that violates this law will lose their
-          permit following a hearing. § 35-52-115 (2015). Such individual or
+          permit following a hearing. § 35-52-115. Such individual or
           facility is also guilty of a misdemeanor and will be fined $500 or
-          less. § 35-52-111 (2015). Such individual or facility may further be
-          subject to a civil penalty to be determined in court. § 35-52-111.1
-          (2015).
+          less. § 35-52-111. Such individual or facility may further be
+          subject to a civil penalty to be determined in court. § 35-52-111.1.
 
           The agricultural commissioner is responsible for enforcement of this
           law, and he or she may issue a cease and desist order, seek
-          a restraining order, or seek an injunction. § 35-52-111.2 (2015).
-        relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118 (2015)), <a href="https://www.colorado.gov/agmain" target="_blank">https://www.colorado.gov/agmain</a>.'
+          a restraining order, or seek an injunction. § 35-52-111.2.
+        relevant_state_regulatory_body: 'Colorado Department of Agriculture (§ 35-52-118), <a href="https://www.colorado.gov/agmain" target="_blank">https://www.colorado.gov/agmain</a>.'
   organics_recycling_mandates:
     legislation:
-      - title: BOULDER MUN. CODE 6-3-13 to 6-3-18 (2017)
+      - title: BOULDER MUN. CODE 6-3-13 to 6-3-18
         generators_covered: 'Any business (including educational institutions, and charitable or nonprofit organizations), single family homeowner or other property owner or manager, or special event permit holder.'
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
