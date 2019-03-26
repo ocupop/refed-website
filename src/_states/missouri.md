@@ -34,26 +34,26 @@ policy_data:
         benefit: '50% of food or cash donation, up to $2,500 annually'
         eligible_donors: All taxpayers
         eligible_food: Cash or food that is not past-date
-        eligible_recipients: Local food pantries in the area where the donor resides in MO
+        eligible_recipients: Local food pantries, homeless shelters, and soup kitchens in the area where the donor resides in MO
   animal_feed:
     legislation:
-      - title: 'Mo. Rev. Stat. §§ 261.020, 266.410–.460 (2015)'
+      - title: 'Mo. Rev. Stat. §§ 261.020, 266.410–.460'
         animals_covered: Swine
         definition_of_garbage: 'All refuse matter, animal or vegetable, and shall include all waste material, byproducts of a kitchen, restaurant, or slaughterhouse, every refuse accumulation of animal, fruit, or vegetable matter, liquid or otherwise. § 266.410 (2015).'
-        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 266.420–.430 (2015).
-        licensure_requirements: No individual or facility may feed garbage to swine without first obtaining an annual permit from the department of agriculture. § 266.430 (2015).
-        treatment_requirements: Garbage fed to swine must be heated to a temperature of 212 degrees Fahrenheit. An individual may feed household garbage to his or her own swine. § 266.420 (2015).
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 266.420–.430.
+        licensure_requirements: No individual or facility may feed garbage to swine without first obtaining an annual permit from the department of agriculture. § 266.430.
+        treatment_requirements: Garbage fed to swine must be heated to a temperature of 212 degrees Fahrenheit. An individual may feed household garbage to his or her own swine. § 266.420.
         enforcement: >-
           Violation of the garbage-feeding rule is a misdemeanor. Each day of the
-          violation counts as a separate offense. § 266.460 (2015).
+          violation counts as a separate offense. § 266.460.
 
 
 
 
 
           The state may seek an injunction to restrain violations of the rule.
-          § 266.450 (2015).
-        relevant_state_regulatory_body: 'Missouri Department of Agriculture (§ 261.020 (2015)), <a href="http://agriculture.mo.gov/" target="_blank">http://agriculture.mo.gov/</a>.'
+          § 266.450.
+        relevant_state_regulatory_body: 'Missouri Department of Agriculture (§ 261.020), <a href="http://agriculture.mo.gov/" target="_blank">http://agriculture.mo.gov/</a>.'
   organics_recycling_mandates:
     legislation:
       - title:

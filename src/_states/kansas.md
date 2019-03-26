@@ -14,7 +14,7 @@ policy_data:
 
           expiration date which shall be preceded by “exp,” “sell by,” “use by”
           or similar language.
-        legal_citation: Kan. Stat. Ann. § 2-2509 (2013).
+        legal_citation: Kan. Stat. Ann. § 2-2509.
     label_regulation:
       date_labels_required_for:
         - eggs
@@ -43,15 +43,15 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Kan. Stat. Ann. §§ 47-1301–05 (2015)
+      - title: Kan. Stat. Ann. §§ 47-1301–05
         animals_covered: All animals; exception for swine
-        definition_of_garbage: 'All waste material derived in whole or in part from the meat of any animal, including fish and poultry, other waste animal material, and other refuse of any character whatsoever that has been associated with any such material, resulting from the handling, preparation, cooking or consumption of food. Garbage does not include pasteurized dairy products. § 47-1301 (2015).'
-        prohibitions: No feeding garbage to animals. Exception for individuals feeding household garbage to swine. § 47-1302 (2015).
+        definition_of_garbage: 'All waste material derived in whole or in part from the meat of any animal, including fish and poultry, other waste animal material, and other refuse of any character whatsoever that has been associated with any such material, resulting from the handling, preparation, cooking or consumption of food. Garbage does not include pasteurized dairy products. § 47-1301.'
+        prohibitions: No feeding garbage to animals. Exception for individuals feeding household garbage to swine. § 47-1302.
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: >-
           The state animal health commissioner is authorized to enforce the
-          garbage-feeding ban. § 47-1304 (2015).
+          garbage-feeding ban. § 47-1304.
 
 
 

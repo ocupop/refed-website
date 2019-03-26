@@ -26,17 +26,17 @@ policy_data:
           prohibit relabeling of meat, meat products, poultry, or seafood that
           has had its shelf life extended through freezing, cooking, or other
           additional processing that extends the shelf life of the product.
-        legal_citation: N.C. Gen. Stat. Ann. § 106-130 (2013).
+        legal_citation: N.C. Gen. Stat. Ann. § 106-130.
       - title: Reg 2
         applies_to_food_type: Shellfish
         purpose_of_law: Definition (sell by date)
         excerpted_language_from_the_law: (26) “SELL BY date” means a date conspicuously placed on a container or tag by which a consumer is informed of the latest date the product will remain suitable for sale.
-        legal_citation: 15A N.C. Admin. Code 18A.0301 (2013).
+        legal_citation: 15A N.C. Admin. Code 18A.0301.
       - title: Reg 3
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: (c) Any container of shucked shellfish which has a capacity of 64 fluid ounces or more shall be dated as of the date shucked on both the lid and sidewall or bottom. Any container of shucked shellfish which has a capacity of less than 64 fluid ounces shall indicate a SELL BY date.
-        legal_citation: 15A N.C. Admin. Code 18A.0614 (2013).
+        legal_citation: 15A N.C. Admin. Code 18A.0614.
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -67,12 +67,12 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: N.C. Gen. Stat. Ann. §§ 106-405.1–.9 (2015)
+      - title: N.C. Gen. Stat. Ann. §§ 106-405.1–.9
         animals_covered: Swine
-        definition_of_garbage: 'Consisting in whole or in part of animal waste resulting from handling, preparing, cooking and consuming food, including the offal from or parts thereof. § 106-405.1 (2015).'
+        definition_of_garbage: 'Consisting in whole or in part of animal waste resulting from handling, preparing, cooking and consuming food, including the offal from or parts thereof. § 106-405.1.'
         prohibitions: >-
           No feeding untreated garbage to swine. Exception for individuals
-          feeding household garbage to swine. § 106-405.2 (2015).
+          feeding household garbage to swine. § 106-405.2.
 
 
 
@@ -87,12 +87,12 @@ policy_data:
           garbage to be removed from the premises unless the individual moving
           the garage has a valid garbage-feeding permit or is otherwise
           authorized by the department of agriculture to remove the garbage.
-          § 106-405.7 (2015).
-        licensure_requirements: No individual or facility may feed garbage to swine without first securing an annual permit from the commissioner of agriculture. An individual who feeds household garbage to his or her own swine need not secure a permit. § 106-405.2 (2015).
-        treatment_requirements: Garbage fed to swine must be heated to at least 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner of agriculture. § 106-405.6 (2015).
+          § 106-405.7.
+        licensure_requirements: No individual or facility may feed garbage to swine without first securing an annual permit from the commissioner of agriculture. An individual who feeds household garbage to his or her own swine need not secure a permit. § 106-405.2.
+        treatment_requirements: Garbage fed to swine must be heated to at least 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner of agriculture. § 106-405.6.
         enforcement: >-
           The commissioner of agriculture is charged with enforcing the
-          garbage-feeding rule. § 106-405.8 (2015).
+          garbage-feeding rule. § 106-405.8.
 
 
 

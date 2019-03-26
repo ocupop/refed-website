@@ -41,22 +41,22 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
-      - title:
-        deduction_or_credit:
-        benefit:
-        eligible_donors:
-        eligible_food:
-        eligible_recipients:
+      - title: 'W. Va. Code, § 11-13DD-1—7'
+        deduction_or_credit: 'Credit'
+        benefit: '10% of the value of the donated edible agricultural products, up to $2,500'
+        eligible_donors: 'Farming West Virginia taxpayers with at least $1,000 in income from raising edible agricultural products'
+        eligible_food: 'Edible agricultural products, including fruits, vegetables, beef, poultry, pork, and fish, raised or grown in West Virginia'
+        eligible_recipients: 'Nonprofit food programs that collect and distribute food to persons in need'
   animal_feed:
     legislation:
-      - title: W. Va. Code R. §§ 19-9A-1–8 (2015)
+      - title: W. Va. Code §§ 19-9A-1–8
         animals_covered: Swine
-        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 19-9A-1 (2015).'
-        prohibitions: No feeding untreated garbage to swine. Exception for individual feeding household garbage. § 19-9A-2 (2015).
-        licensure_requirements: No individual or facility may feed garbage to swine without first obtaining an annual license from the state. § 19-9A-2 (2015).
-        treatment_requirements: All garbage fed to swine must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner. § 19-9A-5 (2015).
+        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 19-9A-1.'
+        prohibitions: No feeding untreated garbage to swine. Exception for individual feeding household garbage. § 19-9A-2.
+        licensure_requirements: No individual or facility may feed garbage to swine without first obtaining an annual license from the state. § 19-9A-2.
+        treatment_requirements: All garbage fed to swine must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner. § 19-9A-5.
         enforcement: >-
-          The commissioner enforces the garbage-feeding rule. § 19-9A-7 (2015).
+          The commissioner enforces the garbage-feeding rule. § 19-9A-7.
 
 
 

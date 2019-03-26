@@ -16,12 +16,12 @@ policy_data:
           the expiration date,
 
           which may not exceed forty-five days from the date packed
-        legal_citation: S.C. Code Ann. § 39- 39-140 (2013).
+        legal_citation: S.C. Code Ann. § 39- 39-140.
       - title: Reg 2
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(2) Packages containing less than sixty-four (64) fluid ounces shall include: (a) The words “SELL BY” or “BEST IF USED BY” followed by a reasonable date when the product would be expected to reach the end of its shelf life; (b) The date as a month and day of the month; and (c) For fresh frozen shellfish, the year shall be added to the date.'
-        legal_citation: S.C. Code Ann. Regs. 61-47 (2013).
+        legal_citation: S.C. Code Ann. Regs. 61-47.
     label_regulation:
       date_labels_required_for:
         - eggs
@@ -51,15 +51,15 @@ policy_data:
         eligible_recipients: Nonprofits engaged in distributing food to needy; no portion of deer can be sold
   animal_feed:
     legislation:
-      - title: S.C. Code Ann. §§ 47-15-3–130 (2015)
+      - title: S.C. Code Ann. §§ 47-4-130, 47-15-10—80 
         animals_covered: Swine
-        definition_of_garbage: 'Any animal wastes resulting from handling, preparation, cooking, or consumption of foods, including animal carcasses, parts of animal carcasses, or contents of offal. Unpasteurized milk and unpasteurized milk products are animal waste. § 47-15-10 (2015).'
-        prohibitions: 'No feeding garbage to swine. Exception for individuals feeding household garbage to swine. §§ 47-15-20, 60 (2015).'
+        definition_of_garbage: 'Any animal wastes resulting from handling, preparation, cooking, or consumption of foods, including animal carcasses, parts of animal carcasses, or contents of offal. Unpasteurized milk and unpasteurized milk products are animal waste. § 47-15-10.'
+        prohibitions: 'No feeding garbage to swine. Exception for individuals feeding household garbage to swine. §§ 47-15-20, 60.'
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: >-
           The state livestock-poultry health commission is charged with enforcing
-          the garbage-feeding ban. § 47-15-70 (2015).
+          the garbage-feeding ban. § 47-15-70.
 
 
 

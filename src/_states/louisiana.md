@@ -13,7 +13,7 @@ policy_data:
           following:
 
           2. the date when packed;
-        legal_citation: 'La. Admin. Code tit. 7, pt. V § 929 (2013).'
+        legal_citation: 'La. Admin. Code tit. 7, pt. V § 929.'
     label_regulation:
       date_labels_required_for:
         - eggs
@@ -21,7 +21,7 @@ policy_data:
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
-      - title: 'La. Rev. Stat. Ann. § 9:2799'
+      - title: 'La. Stat. Ann. § 9:2799'
         type_of_protection: Civil
         when_protection_will_not_apply: 'Intentional act or omission, or gross negligence'
         who_is_protected: >-
@@ -45,14 +45,14 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701 (2015)'
+      - title: '51 La. Admin. Code pt. XXVII, §§ 101, 105, 1701'
         animals_covered: Swine
-        definition_of_garbage: 'The putrescible components of refuse which are subject to spoilage, rot, or decomposition. It includes wastes from the preparation and consumption of food, vegetable matter, and animal offal and carcasses. § 101 (2015).'
-        prohibitions: No feeding garbage to swine. § 105 (2015).
+        definition_of_garbage: 'The putrescible components of refuse which are subject to spoilage, rot, or decomposition. It includes wastes from the preparation and consumption of food, vegetable matter, and animal offal and carcasses. § 101.'
+        prohibitions: No feeding garbage to swine. § 105.
         licensure_requirements: N/A
         treatment_requirements: N/A
-        enforcement: The Office of Public Health enforces the garbage-feeding rule. § 1701 (2015).
-        relevant_state_regulatory_body: 'Louisiana Department of Health and Hospitals, Office of Public Health (§ 1701 (2015)), <a href="http://www.dhh.state.la.us/index.cfm/subhome/16/n/330" target="_blank">http://www.dhh.state.la.us/index.cfm/subhome/16/n/330</a>.'
+        enforcement: The Office of Public Health enforces the garbage-feeding rule. § 1701.
+        relevant_state_regulatory_body: 'Louisiana Department of Health and Hospitals, Office of Public Health (§ 1701), <a href="http://www.dhh.state.la.us/index.cfm/subhome/16/n/330" target="_blank">http://www.dhh.state.la.us/index.cfm/subhome/16/n/330</a>.'
   organics_recycling_mandates:
     legislation:
       - title:
