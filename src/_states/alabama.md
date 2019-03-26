@@ -14,7 +14,7 @@ policy_data:
         applies_to_food_type: General
         purpose_of_law: Definition (open-date statement)
         excerpted_language_from_the_law: (14) Open-date statement. Terms “Sell By”; “Freeze By”; “Sell or Freeze By”; “Not to be Sold After”; “Best if Used By”; “Expiration”; or other terms as defined by rules or regulations; or a date without additional words shall be considered an open-date statement
-        legal_citation: Ala. Code § 20-1-20 (2013).
+        legal_citation: Ala. Code § 20-1-20.
       - title: Reg 3
         applies_to_food_type: General
         purpose_of_law: Additional descriptive terms (opendate statement)
