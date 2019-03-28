@@ -8,75 +8,29 @@
     multiple points in the value chain helps ReFED bring together new
     collaborators on food system challenges.
   image: /uploads/cochran-hs-web.jpg
-- name: Alexandria Coari
-  title: Capital and Innovation Director
-  summary: >-
-    Alexandria (Alex) serves as ReFED's Capital and Innovation Director. She
-    brings 10 years of business development, impact investing, and strategy
-    consulting experience with startups, for-profits and nonprofits in the U.S.
-    and Latin America, including time at Agora Partnerships and Fair Trade USA.
-    She is passionate about helping mission-driven companies grow their impact
-    and believes in the power of market-based approaches to solving today's
-    biggest challenges.
-  image: /uploads/coari-hs-web-1.jpg
-- name: Philip Curtis
-  title: Insights and Analytics Manager
-  summary: >-
-    Philip Curtis is ReFED's Insights and Analytics Manager, providing data
-    analysis and support across the organization. Before joining ReFED, Philip
-    served as a researcher and geospatial analyst for The Sustainability
-    Consortium (TSC). While there, he developed new methods and tools to help
-    food businesses estimate and map risk in their global commodity supply
-    chains. As part of this work, Philip worked closely with companies to
-    strengthen internal data-sharing capacity and improve the flow of
-    information between procurement and sustainability teams.
-  image: /uploads/curtis-hs-web.jpg
 - name: Katy Franklin
-  title: Operations Manager
+  title: Chief of Staff
   summary: >-
-    Katy Franklin serves as ReFED's Operations Manager, supporting
-    organizational development and designing systems for effective program
+    Katy Franklin serves as ReFED's Chief of Staff, supporting organizational
+    development and strategy and designing systems for effective program
     implementation and management. Previously, Katy managed operations at
     Sustainable America, where she gained a deep understanding of successful
     food waste reduction programs with consumers, food service providers,
-    private firms, and at major events. Katy also helped develop Further with
-    Food, a public-private partnership convened to address food loss and waste.
+    private firms, and at major events. Katy has authored industry and academic
+    research on food waste and opportunities to solve this global challenge.
+    Katy also helped develop Further with Food, a public-private partnership
+    convened to address food loss and waste.
   image: /uploads/katyfranklin.jpg
-- name: Emily Gousen
-  title: Capital and Innovation Manager
-  summary: >-
-    Emily Gousen is ReFED's Capital and Innovation Manager, supporting
-    innovators fighting food waste by helping them scale their businesses and
-    get the funding they need to grow their impact. Emily is passionate about
-    using economics and data to find sustainable solutions that make smart
-    business sense, and brings 10 years of experience working in academia,
-    government, nonprofit, and private business sectors. Emily brings with her a
-    depth of knowledge in food waste tracking and measurement, agricultural
-    production and sustainability, strategic sourcing, and innovation mentorship
-    to food-based startups. She holds an M.S. in Agricultural Economics and an
-    M.S. in International Agricultural Development from the University of
-    California, Davis.
-  image: /uploads/emilygousen.jpg
 - name: Lily Herd
-  title: Administrative Assistant
+  title: Operations Manager
   summary: >-
-    Lily Herd serves as ReFED’s Administrative Assistant, supporting the
-    Executive Director and members across the team. She brings 10+ years of
-    administrative experience across both nonprofits and for-profits in the
-    food, health, and agricultural sectors. Lily holds an M.S. in Food Security
-    from the University of Edinburgh in Scotland.
+    Lily Herd serves as ReFED’s Operations Manager, supporting the Executive
+    Director and members across the team to drive operational efficiencies and
+    excellence. She brings 10+ years of administrative experience across both
+    nonprofits and for-profits in the food, health, and agricultural sectors.
+    Lily holds an M.S. in Food Security from the University of Edinburgh in
+    Scotland.
   image: /uploads/lilyherd.jpg
-- name: Chris Hunt
-  title: Communications Director
-  summary: >-
-    Chris Hunt serves as Communications Director for ReFED, providing oversight
-    of the organization's communications, and strategic input on programs,
-    stakeholder engagement, and policy development. Before joining ReFED, Chris
-    worked at the GRACE Communications Foundation, shaping the
-    organization&rsquo;s promotion of sustainable agriculture by developing
-    campaign strategy, building collaborative partnerships, and serving as the
-    foundation's primary spokesperson on food and agriculture issues.
-  image: /uploads/hunt-hs-web.jpg
 - name: Caroline Powell
   title: Insights and Analytics Director
   summary: >-
@@ -92,6 +46,44 @@
     updates, secure infrastructure, and performance monitoring. She is an active
     software developer and solutions architect.
   image: /uploads/powell-hs-.jpg
+- name: Philip Curtis
+  title: Insights and Analytics Manager
+  summary: >-
+    Philip Curtis is ReFED's Insights and Analytics Manager, providing data
+    analysis and support across the organization. Before joining ReFED, Philip
+    served as a researcher and geospatial analyst for The Sustainability
+    Consortium (TSC). While there, he developed new methods and tools to help
+    food businesses estimate and map risk in their global commodity supply
+    chains. As part of this work, Philip worked closely with companies to
+    strengthen internal data-sharing capacity and improve the flow of
+    information between procurement and sustainability teams.
+  image: /uploads/curtis-hs-web.jpg
+- name: Alexandria Coari
+  title: Capital and Innovation Director
+  summary: >-
+    Alexandria (Alex) serves as ReFED's Capital and Innovation Director. She
+    brings 10 years of business development, impact investing, and strategy
+    consulting experience with startups, for-profits and nonprofits in the U.S.
+    and Latin America, including time at Agora Partnerships and Fair Trade USA.
+    She is passionate about helping mission-driven companies grow their impact
+    and believes in the power of market-based approaches to solving today's
+    biggest challenges.
+  image: /uploads/coari-hs-web-1.jpg
+- name: Emily Gousen
+  title: Capital and Innovation Manager
+  summary: >-
+    Emily Gousen is ReFED's Capital and Innovation Manager, supporting
+    innovators fighting food waste by helping them scale their businesses and
+    get the funding they need to grow their impact. Emily is passionate about
+    using economics and data to find sustainable solutions that make smart
+    business sense, and brings 10 years of experience working in academia,
+    government, nonprofit, and private business sectors. Emily brings with her a
+    depth of knowledge in food waste tracking and measurement, agricultural
+    production and sustainability, strategic sourcing, and innovation mentorship
+    to food-based startups. She holds an M.S. in Agricultural Economics and an
+    M.S. in International Agricultural Development from the University of
+    California, Davis.
+  image: /uploads/emilygousen.jpg
 - name: Jackie Suggitt
   title: Multistakeholder Initiatives Director
   summary: >-
@@ -103,9 +95,9 @@
     nutrition programs for Walmart's private brand business.
   image: /uploads/suggit-hs-web.jpg
 - name: Sarah Vared
-  title: Founder and Strategic Advisor
+  title: Founder
   summary: >-
-    Sarah Vared is a strategic advisor to ReFED. Sarah led the design and
+    Sarah Vared founded and helped build ReFED. Sarah led the design and
     creation of ReFED&rsquo;s <em>Roadmap to Reduce U.S. Food Waste</em> and
     served as ReFED&rsquo;s Interim Director from its inception in 2015 through
     March 2017. Sarah supports ReFED through her role as a Principal at
@@ -114,15 +106,3 @@
     support and strategic insight on how to catalyze the action and investment
     needed to scale solutions to reduce food waste.
   image: /uploads/vared-hs-web-copy.jpg
-- name: Angel Veza
-  title: Business Engagement Manager
-  summary: >-
-    Angel Veza is ReFED's Business Engagement Manager, focusing on food waste
-    solutions implementation for leading businesses in the retail, restaurant,
-    and foodservice industries. Prior to joining ReFED, Angel was a chef at
-    Google NYC, where she spearheaded food waste reduction strategy and programs
-    and developed zero-waste recipes utilizing food waste prevention techniques.
-    She also worked with World Wildlife Fund in creating the Hotel Kitchen
-    Toolkit, which presents innovative strategies to engage staff, partners, and
-    guests in cutting waste from hotel kitchens.
-  image: /uploads/veza-hs-web.jpg
