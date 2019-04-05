@@ -9,6 +9,7 @@
     collaborators on food system challenges.
   image: /uploads/cochran-hs-web.jpg
   phone: 501.207.1007
+  active: active
 - name: Katy Franklin
   title: Chief of Staff
   summary: >-
@@ -23,6 +24,7 @@
     convened to address food loss and waste.
   image: /uploads/katyfranklin.jpg
   phone: 512.947.2176
+  active: active
 - name: Lily Herd
   title: Operations Manager
   summary: >-
@@ -34,6 +36,7 @@
     Scotland.
   image: /uploads/lilyherd.jpg
   phone: 
+  active: active
 - name: Caroline Powell
   title: Insights and Analytics Director
   summary: >-
@@ -50,6 +53,7 @@
     software developer and solutions architect.
   image: /uploads/powell-hs-.jpg
   phone: 501.499.0418
+  active: active
 - name: Philip Curtis
   title: Insights and Analytics Manager
   summary: >-
@@ -63,6 +67,7 @@
     information between procurement and sustainability teams.
   image: /uploads/curtis-hs-web.jpg
   phone: 814.470.7367
+  active: active
 - name: Alexandria Coari
   title: Capital and Innovation Director
   summary: >-
@@ -75,6 +80,7 @@
     biggest challenges.
   image: /uploads/coari-hs-web-1.jpg
   phone: 630.640.4074
+  active: active
 - name: Emily Gousen
   title: Capital and Innovation Manager
   summary: >-
@@ -91,6 +97,7 @@
     California, Davis.
   image: /uploads/emilygousen.jpg
   phone: 
+  active: active
 - name: Jackie Suggitt
   title: Business Initiatives Director
   summary: >-
@@ -102,6 +109,7 @@
     for Walmart's private brand business.
   image: /uploads/suggit-hs-web.jpg
   phone: 604.741.8968
+  active: active
 - name: Sarah Vared
   title: Founder
   summary: >-
@@ -115,3 +123,4 @@
     needed to scale solutions to reduce food waste.
   image: /uploads/vared-hs-web-copy.jpg
   phone:
+  active: active
