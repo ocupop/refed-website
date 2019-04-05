@@ -34,6 +34,7 @@ prevpage:
       </div>
     </div>
     {% for member in site.data.team %}
+    {% if member.active == "active" %}
     <div class="row">
       <div class="col-xs-12 col-sm-3">
         <div class="content">
@@ -48,6 +49,7 @@ prevpage:
         </div>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
