@@ -35,7 +35,7 @@
     Lily holds an M.S. in Food Security from the University of Edinburgh in
     Scotland.
   image: /uploads/lilyherd.jpg
-  phone: 
+  phone:
   active: active
 - name: Caroline Powell
   title: Insights and Analytics Director
@@ -96,7 +96,7 @@
     M.S. in International Agricultural Development from the University of
     California, Davis.
   image: /uploads/emilygousen.jpg
-  phone: 
+  phone:
   active: active
 - name: Jackie Suggitt
   title: Business Initiatives Director
@@ -124,3 +124,9 @@
   image: /uploads/vared-hs-web-copy.jpg
   phone:
   active: active
+- name: Nicole Sturzenberger
+  title: Communications Fellow
+  summary:
+  image:
+  phone: Test
+  active: 'Yes'
