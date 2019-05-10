@@ -34,6 +34,7 @@ prevpage:
       </div>
     </div>
     {% for member in site.data.team %}
+    {% if member.active == "active" %}
     <div class="row">
       <div class="col-xs-12 col-sm-3">
         <div class="content">
@@ -48,6 +49,7 @@ prevpage:
         </div>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
@@ -57,22 +59,70 @@ prevpage:
     <div class="row">
       <div class="col-xs-12">
         <div class="content editable">
-          <h2>Steering Committee and Advisory Council</h2>
-          <p>ReFED&rsquo;s Steering Committee and Advisory Council are comprised of more than 50 business, nonprofit, foundation, and government leaders who inform the organization&rsquo;s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+          <h2>Board of directors and Advisory Council</h2>
+          <p>ReFED&rsquo;s Board of Directors and Advisory Council are comprised of more than 50 business, nonprofit, foundation, and government leaders who inform the organization&rsquo;s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
         </div>
       </div>
     </div>
     <div id="refed-steering-comittee" class="row">
       <div class="col-xs-12">
         <div class="content">
-          <p class="editable"><strong>ReFED STEERING COMMITTEE</strong></p>
-          <div class="editable">
-            <ul>
-              <li>Jesse Fink<br /><em>Chair,</em> ReFED Steering Committee<br /><em>Non-Executive Chairman and Co-Founder,</em> MissionPoint Partners<br /><em>Trustee,</em> Fink Family Foundation</li>
-              <li>Dana Gunders<br /><em>Author, Food Waste Expert, and Founder, Next Course, LLC</em></li>
-              <li>Rob Kaplan<br /><em>Managing Director,</em> Closed Loop Fund</li>
-              <li>Devon Klatell<br /><em>Associate Director,</em> Rockefeller Foundation</li>
-            </ul>
+          <p class="editable">
+            <strong>BOARD OF DIRECTORS</strong>
+          </p>
+          <div class="row editable">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 col-sm-6 col-lg-4">
+                  <img src="/img/Jesse-Fink-resize.jpg" alt="Jesse Fink" class="img-responsive"><br /><br />
+                </div>
+                <div class="col-xs-8 col-sm-6 col-lg-8">
+                  <strong>Jesse Fink</strong><br /><em>Chair,</em> ReFED Board of Directors<br /><em>Non-Executive Chairman and
+                    Co-Founder,</em>
+                  MissionPoint Partners<br /><em>Trustee,</em> Fink Family Foundation<br /><br />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 col-sm-6 col-lg-4">
+                  <img src="/img/R-Kaplan-High-Resize.jpg" alt="Rob Kaplan" class="img-responsive"><br /><br />
+                </div>
+                <div class="col-xs-8 col-sm-6 col-lg-8">
+                  <strong>Rob Kaplan</strong><br /><em>Treasurer,</em> ReFED Board of Directors<br /><em>Founder and CEO,</em>&nbsp;Circulate Capital<br /><br />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 col-sm-6 col-lg-4">
+                  <img src="/img/Dana-Gunders-resize.jpg" alt="Dana Gunders" class="img-responsive"><br/><br/>
+                </div>
+                <div class="col-xs-8 col-sm-6 col-lg-8">
+                  <strong>Dana Gunders</strong><br /><em>Secretary,</em> ReFED Board of Directors<br /><em></em><em>Author, Food Waste Expert, and Founder,
+                  </em>Next Course, LLC<br /><br />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 col-sm-6 col-lg-4">
+                  <img src="/img/Nicola-Dixon-resize.jpg" alt="Nicola Dixon" class="img-responsive"><br /><br />
+                </div>
+                <div class="col-xs-8 col-sm-6 col-lg-8">
+                  <strong>Nicola Dixon</strong><br /><em>Executive Director,</em> General Mills Foundation<br /><br />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 col-sm-6 col-lg-4">
+                  <img src="/img/Steve-Headshot-resize.jpg" alt="Steve Swartz" class="img-responsive"><br /><br />
+                </div>
+                <div class="col-xs-8 col-sm-6 col-lg-8">
+                  <strong>Steve Swartz</strong><br /><em>Chief Strategy Officer,</em> The Wonderful Company<br /><br />
+                </div>
+            </div>
           </div>
         </div>
       </div>
