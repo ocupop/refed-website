@@ -38,15 +38,15 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: 'Del. Code Ann. tit. 3, §§ 7101, 7108'
+      - title: 'Del. Code Ann. 3. 71, §§ 7101, 7108 (2015)'
         animals_covered: Swine
-        definition_of_garbage: 'Putrescible animal and vegetable waste resulting from the handling, preparation, cooking and consumption of foods, swine carcasses and parts thereof, but not waste exclusively vegetable in nature. § 7108.'
-        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage. § 7108.
+        definition_of_garbage: 'Putrescible animal and vegetable waste resulting from the handling, preparation, cooking and consumption of foods, swine carcasses and parts thereof, but not waste exclusively vegetable in nature. § 7108 (2015).'
+        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage. § 7108 (2015).
         licensure_requirements: N/A
         treatment_requirements: N/A
-        enforcement: Any individual or facility that willfully violates the garbage-feeding ban shall be fined not less than $200 and not more than $500. Each day’s violation will be considered a separate offense. § 7108.
+        enforcement: Any individual or facility that willfully violates the garbage-feeding ban shall be fined not less than $200 and not more than $500. Each day’s violation will be considered a separate offense. § 7108 (2015).
         relevant_state_regulatory_body: |-
-          Delaware Department of Agriculture (§ 7101),
+          Delaware Department of Agriculture (§ 7101 (2015)),
           <a href="http://dda.delaware.gov/">http://dda.delaware.gov/<a>.
   organics_recycling_mandates:
     legislation:

@@ -39,22 +39,22 @@ policy_data:
           mean MAY; JN shall mean JUNE and JL
 
           shall mean JULY.
-        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23.'
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
       - title: Reg 2
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: 'No fluid milk product listed in this section shall be sold or offered for sale after 11:59 p.m. of the date appearing on the containers so marked.'
-        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23.'
+        legal_citation: 'N.J. Stat. Ann. § 24:10-57.23 (2013).'
       - title: Reg 3
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: '(d) No milk product referred to in this regulation shall be sold or offered for sale after 11:59 P.M. of the date appearing on the package or container. Products delivered prior to the “shelflife expiration date” may be consumed on the premises beyond the date appearing thereon.'
-        legal_citation: 'N.J. Admin. Code § 8:21-10.20.'
+        legal_citation: 'N.J. Admin. Code § 8:21-10.20 (2013).'
       - title: Reg 4
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(n)(1) Raw shucked shellfish, packaging and identification requirements include the following: . . . ii. The “sell by” date for packages with a capacity of less than one-half gallon or the date shucked for packages with a capacity of one-half gallon or more.'
-        legal_citation: 'N.J. Admin. Code § 8:24-3.2.'
+        legal_citation: 'N.J. Admin. Code § 8:24-3.2 (2013).'
     label_regulation:
       date_labels_required_for:
         - dairy
@@ -69,14 +69,14 @@ policy_data:
         when_protection_will_not_apply: 'Gross negligence, recklessness, or knowing misconduct'
         who_is_protected: >-
           Donor: Includes, but is not limited to, any farmer, processor,
-          distributor, wholesaler, or retailer of perishable or prepared food, a public or non-public school or higher education
-          institute, or gleaner<br>
+          distributor, wholesaler, or retailer of food, higher education
+          institute, or gleaner nonprofits, food banks, and their agents<br>
 
           Distributor: Food bank or nonprofit organization
         eligible_recipients:
-        standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus, or passage of the "best by" or other open date; protection applies regardless of compliance with regulations on the quality or labeling of food.'
+        standards_for_donated_food: 'Includes food not readily marketable due to appearance, freshness, grade, or surplus'
         protections_apply_when_recipient_pays_for_donated_food: 'Yes'
-        protections_apply_to_direct_donations: 'Yes'
+        protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
     legislation:
@@ -88,19 +88,19 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: '4 N.J. Stat. Ann. §§ 4:4-22–23, 4:5-106.1–.14'
+      - title: '4 N.J. Stat. Ann. §§ 2:2-4.11, 4:4-22–23, 4:5-106.1–.14 (2015)'
         animals_covered: Farm animals; exception for swine
-        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking and consumption of foods including animal carcasses or parts thereof; but the term “garbage” shall not apply to waste materials from slaughterhouses which go directly to rendering plants for processing. § 4:5-106.1.'
-        prohibitions: 'No feeding untreated garbage to swine or unpasteurized dairy products to farm animals. Exception for individuals feeding household garbage to swine. §§ 4:5-106.1, .4; 4:4-22.'
-        licensure_requirements: 'No individual or facility may operate a garbage-feeding hog farm without first obtaining an annual license. An individual who feeds household garbage to swine raised for the individual’s own use need not obtain a license. §§ 4:5-106.4, 4:5-106.7.'
+        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking and consumption of foods including animal carcasses or parts thereof; but the term “garbage” shall not apply to waste materials from slaughterhouses which go directly to rendering plants for processing. § 4:5-106.1 (2015).'
+        prohibitions: 'No feeding untreated garbage to swine or unpasteurized dairy products to farm animals. Exception for individuals feeding household garbage to swine. §§ 4:5-106.1, .4; 4:4-22 (2015).'
+        licensure_requirements: 'No individual or facility may operate a garbage-feeding hog farm without first obtaining an annual license. An individual who feeds household garbage to swine raised for the individual’s own use need not obtain a license. §§ 4:5-106.4, 4:5-106.7 (2015).'
         treatment_requirements: >-
           Garbage must be heated either on the premises of the garbage-feeding
           hog farm where such garbage will be fed or at a location approved by
           the department of agriculture. The garbage must be heated to
           a temperature high enough and for long enough to kill disease
-          organisms. § 4:5-106.1. Garbage must be heat-treated within 48
+          organisms. § 4:5-106.1 (2015). Garbage must be heat-treated within 48
           of receipt of the garbage and fed to swine within 72 hours of cooking.
-          § 2:2-4.11.
+          § 2:2-4.11 (2015).
 
 
 
@@ -114,10 +114,10 @@ policy_data:
           Fahrenheit and held at that temperature for at least 30 minutes, or
           heated to 185 degrees without holding. By byproducts from cheese
           factories or creameries that pasteurize milk or cream prior to
-          manufacturer need not be re-heated. § 4:4-22.
+          manufacturer need not be re-heated. § 4:4-22 (2015).
         enforcement: >-
           The department of agriculture licenses garbage-feeding hog farms and
-          enforces the garbage-feeding rule. § 4:5-106.3.
+          enforces the garbage-feeding rule. § 4:5-106.3 (2015).
 
 
 
@@ -128,7 +128,7 @@ policy_data:
 
 
           The department will inspect the premises of each licensee as often as
-          it deems necessary and at least once per year. § 4:5-106.11.
+          it deems necessary and at least once per year. § 4:5-106.11 (2015).
 
 
 
@@ -140,7 +140,7 @@ policy_data:
 
           An authorized representative of the department may examine records
           pertaining to garbage-feeding operations. Copies of such records shall
-          be submitted to the department upon request. § 4:5-106.12.
+          be submitted to the department upon request. § 4:5-106.12 (2015).
 
 
 
@@ -152,7 +152,7 @@ policy_data:
 
           The department may refuse to issue or restore, or to revoke or suspend
           the license of an individual or facility that violates the
-          garbage-feeding rule. § 4:5-106.13.
+          garbage-feeding rule. § 4:5-106.13 (2015).
 
 
 
@@ -164,7 +164,7 @@ policy_data:
 
           Any individual or facility that violates the garbage-feeding rule will
           be fined up to $100 for the first penalty and $200 for each subsequent
-          penalty. § 4:5-106.14.
+          penalty. § 4:5-106.14 (2015).
 
 
 
@@ -176,8 +176,8 @@ policy_data:
 
           Any individual or facility that violates the pasteurization rule will
           be fined up to $50 for the first offense and up to $100 for each
-          subsequent offense. § 4:4-23.
-        relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3), <a href="http://www.nj.gov/agriculture/" target="_blank">http://www.nj.gov/agriculture/</a>.'
+          subsequent offense. § 4:4-23 (2015).
+        relevant_state_regulatory_body: 'New Jersey Department of Agriculture (§ 4:5-106.3 (2015)), <a href="http://www.nj.gov/agriculture/" target="_blank">http://www.nj.gov/agriculture/</a>.'
   organics_recycling_mandates:
     legislation:
       - title:

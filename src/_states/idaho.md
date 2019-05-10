@@ -16,7 +16,7 @@ policy_data:
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
-      - title: Idaho Code §§ 6-1301—1302
+      - title: Idaho Code Ann. § 6-1301—1302
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Gross negligence, recklessness, or intentional misconduct'
         who_is_protected: >-
@@ -40,7 +40,7 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Idaho Code Ann. § 25-234; Idaho Admin. Code r. 02.04.03.400
+      - title: Idaho Code Ann. § 25-234 (2015); Idaho Admin. Code r. 02.04.03.400 (2015)
         animals_covered: Swine
         definition_of_garbage: >-
           Putrescible animal or vegetable wastes containing animal parts,

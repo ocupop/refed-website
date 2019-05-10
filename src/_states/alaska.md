@@ -17,7 +17,7 @@ policy_data:
           a single-use container with a label that identifies the name, address,
           and permit number of the shucker-packer or repacker of the molluscan
           shellfish, and either the sell-by date or the date shucked;
-        legal_citation: 'Alaska Admin. Code tit. 18, §31.200.'
+        legal_citation: 'Alaska Admin. Code tit. 18, §31.200 (2013).'
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -25,13 +25,13 @@ policy_data:
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
-      - title: Alaska Stat. § 17.20.345-47
+      - title: Alaska Stat. § 17.20.346
         type_of_protection: Civil and Criminal
         when_protection_will_not_apply: 'Negligence, recklessness, or intentional misconduct'
-        who_is_protected: 'Donor: Person, Farmer, Retailer, Delicatessen, Restaurant, Hotel, Store, Slaughterhouse under state supervision, Freight Company, Distributor, Wholesaler, Meat Processor, Seafood Processer, Manufacturer, Packer, Processor, Bottler<br> Distributor: Food bank or charitable organization'
+        who_is_protected: 'Donor: Gleaner<br> Distributor: Food bank'
         eligible_recipients: Food bank
-        standards_for_donated_food: 'Apparently fit for human consumption; includes items with missing labels or misbranded items, and food not readily marketable due to appearance, grade, or surplus, and food that is past-date'
-        protections_apply_when_recipient_pays_for_donated_food: 'No'
+        standards_for_donated_food: 'Apparently fit for human consumption; includes items with missing labels or misbranded items, and food not readily marketable due to appearance, grade, or surplus; food must be apparently fit for human consumption.'
+        protections_apply_when_recipient_pays_for_donated_food: 'Yes'
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:

@@ -8,8 +8,18 @@ policy_data:
       - title: Reg 1
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(adopting the 2013 FDA Food Code) 3-202.17 Shucked Shellfish, Packaging and Identification. (A) Raw SHUCKED SHELLFISH shall be obtained in nonreturnable packages which bear a legible label that identifies: … (2) The "sell by" or "best if used by" date for packages with a capacity of less than 1.89 L (one-half gallon) or the date shucked for packages with a capacity of 1.89 L (one-half gallon) or more.'
-        legal_citation: N.D. Admin. Code 33-33-04.1-0.1.
+        excerpted_language_from_the_law: >-
+          1. Raw shucked shellfish shall be obtained in nonreturnable packages
+          which bear a legible
+
+          label that identifies . . .
+
+          (b) The sell by date for packages with a capacity of less than 1.87
+          L (one-half gallon) or the
+
+          date shucked for packages with a capacity of 1.87 L (one-half gallon)
+          or more.
+        legal_citation: N.D. Admin. Code 33- 33-04-03.1 (2013).
     label_regulation:
       date_labels_required_for:
         - shellfish

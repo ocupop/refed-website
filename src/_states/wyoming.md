@@ -19,7 +19,7 @@ policy_data:
           a capacity of one-half (2)
 
           gallon (1.87 1) or more.
-        legal_citation: AGR FSF 3 Wyo. Code R. § 11.
+        legal_citation: AGR FSF 3 Wyo. Code R. § 11 (2013).
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -48,9 +48,9 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Wyo. Stat. Ann. §§ 11-27-101–107
+      - title: Wyo. Stat. Ann. §§ 11-27-101–107 (2015)
         animals_covered: Swine
-        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 11-27-101.'
+        definition_of_garbage: 'Putrescible animal and vegetable wastes resulting from the handling, preparation, cooking, and consumption of foods including animal carcasses or parts thereof. § 11-27-101 (2015).'
         prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. § 11-27-106 (2015).
         licensure_requirements: An individual or facility must obtain an annual permit to feed garbage to swine. § 11-27-103 (2015). But individuals that feed household garbage to swine on their own premises need not obtain a permit. § 11-27-104 (2015).
         treatment_requirements: All garbage fed to swine must be thoroughly heated to 212 degrees Fahrenheit for at least 30 minutes or else treated in some other manner approved by the commissioner. § 11-27-106 (2015).

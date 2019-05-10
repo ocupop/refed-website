@@ -12,37 +12,37 @@ policy_data:
           (a) “Date” means 1 of the following:
           (i) For perishable food, the recommended last day of sale.
           (ii) For nonperishable food, the recommended last day of sale or consumption, if any.
-        legal_citation: Mich. Comp. Laws Ann. § 289.8107.
+        legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
       - title: Reg 2
         applies_to_food_type: Prepackaged Perishable Foods
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(2) A retail food establishment shall not sell or offer for sale a prepackaged perishable food unless the package bears a label with a date identified by month and day, except that bakery products with a shelf life of 7 days or less may be dated with a day of the week or an abbreviation. A retail food establishment may sell or offer for sale a prepackaged nonperishable food with or without a label that bears a date.'
-        legal_citation: Mich. Comp. Laws Ann. § 289.8107.
+        legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
       - title: Reg 3
         applies_to_food_type: Prepackaged Perishable Foods
         purpose_of_law: Date labeling required
-        excerpted_language_from_the_law: '(3) The date for prepackaged perishable food may be displayed with or without explanatory terms. If explanatory terms are used, the terms shall be limited to 1 of the following: “Sell by _____”, “Sell before _____”, “Last date of sale _____”, “Recommended last date of sale _____”, or “Recommended sale date _____”. Other meaningful terms may be used if specifically approved by the department.'
-        legal_citation: Mich. Comp. Laws Ann. § 289.8107.
+        excerpted_language_from_the_law: '(b)(c)(3) The date for prepackaged perishable food may be displayed with or without explanatory terms. If explanatory terms are used, the terms shall be limited to 1 of the following: “Sell by _____”, “Sell before _____”, “Last date of sale _____”, “Recommended last date of sale _____”, or “Recommended sale date _____”. Other meaningful terms may be used if specifically approved by the department.'
+        legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
       - title: Reg 4
         applies_to_food_type: Prepackaged Perishable Foods
         purpose_of_law: Sale after date not permitted
-        excerpted_language_from_the_law: '(4) A retail food establishment shall not sell or offer for sale any of the following foods under the following circumstances . . . (b) After the date, nonperishable food or prepackaged perishable food unless the food is wholesome and sound and is clearly identified as having passed the date. (c) Nonperishable food that is no longer wholesome or sound.'
+        excerpted_language_from_the_law: '(b)(c)(4) . . . A retail food establishment shall not sell or offer for sale any of the following foods under the following circumstances . . . (b) After the date, nonperishable food or prepackaged perishable food unless the food is wholesome and sound and is clearly identified as having passed the date. (c) Nonperishable food that is no longer wholesome or sound.'
         legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
       - title: Reg 5
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: 'Sec. 69 (1) Each processor and manufacturer of milk and milk products sold in this state shall place on each container of milk and milk products a recommended last day of sale by month and date. (2) The sell-by date shall be expressed by the first 3 letters of the month followed by the numeral designating the appropriate calendar day or by expressing the calendar month numerically followed by a numeral designating the calendar day. (3) The sell-by date shall appear on that part of the container that is most likely to be displayed, presented, or shown under customary display conditions of sale. However, a cup container may have the sell-by date placed on the bottom.'
-        legal_citation: Mich. Comp. Laws Ann. § 288.539.
+        legal_citation: Mich. Comp. Laws Ann. § 288.539 (2013).
       - title: Reg 6
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Sale after date not permitted (with exemptions)
         excerpted_language_from_the_law: Sec. 69 (9) Milk and milk products shall not be offered for sale after the sell-by date unless they are advertised to the final consumer in a prominent manner as being beyond the recommended last day of sale.
-        legal_citation: Mich. Comp. Laws Ann. § 288.539.
+        legal_citation: Mich. Comp. Laws Ann. § 288.539 (2013).
       - title: Reg 7
         applies_to_food_type: Meat
         purpose_of_law: Sale after date not permitted (with exemptions)
         excerpted_language_from_the_law: '(4) A retail food establishment shall not sell or offer for sale any of the following foods under the following circumstances: (a) After the date, meat that has been removed from a federally inspected retail package. (9) If the date is the recommended last day of sale, the date shall be calculated to allow a reasonable period for the subsequent consumption of the food, but shall not allow for a period which would result in a health nuisance as described in section 2107.'
-        legal_citation: Mich. Comp. Laws Ann. § 289.8107.
+        legal_citation: Mich. Comp. Laws Ann. § 289.8107 (2013).
     label_regulation:
       date_labels_required_for:
         - dairy
@@ -77,7 +77,7 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538'
+      - title: 'Mich. Comp. Laws Ann. §§ 287.704, 287.717a, 288.538 (2015)'
         animals_covered: Farm animals; exception for swine
         definition_of_garbage: >-
           Any animal origin products, including those of poultry and fish origin,
@@ -86,7 +86,8 @@ policy_data:
           is not limited to, any refuse of any type that has been associated with
           any such material at any time during the handling, preparation,
           cooking, or consumption of food. Garbage does not include rendered
-          products or manure (both of which may be fed to swine). § 287.704.
+          products or manure (both of which may be fed to swine). § 287.704
+          (2015).
 
 
 

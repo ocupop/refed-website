@@ -28,13 +28,13 @@ policy_data:
         protections_apply_to_direct_donations: 'No'
         additional_protections:
   tax_incentives:
-    legislation: 
-      - title: 'N.Y. TAX LAW §210-B(52)'
-        deduction_or_credit: 'Credit'
-        benefit: '25% of the fair market value of the qualified donations, not to exceed $5,000 per tax year'
-        eligible_donors: 'Farmers'
-        eligible_food: 'Apparently wholesome food that meets all quality and labeling standards, even though the food may not be readily marketable due to appearance, age, freshness, grade, size, surplus, or other conditions; includes fresh fruits, vegetables, eggs, and meat products grown or produced in New York State'
-        eligible_recipients: 'Food banks, food pantries, or other emergency food programs operating in New York State that qualify for tax exempt status under IRC § 501(c)(3)'
+    legislation:
+      - title:
+        deduction_or_credit:
+        benefit:
+        eligible_donors:
+        eligible_food:
+        eligible_recipients:
   animal_feed:
     legislation:
       - title: 'N.Y. AGM. Law §§ 72-a, 76 (2015)'
