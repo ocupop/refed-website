@@ -14,7 +14,7 @@ photo_credit:
 video_id:
 ---
 
-ReFED is seeking a seasoned packaging professional to develop a multistakeholder project plan for food waste prevention packaging. Contracted work includes but is not limited to:
+ReFED is seeking a seasoned packaging professional to develop a multistakeholder project plan for food waste prevention packaging. Contracted work includes but is not limited to:&nbsp;
 
 * <u>Consider</u>&nbsp;current landscape and literature to inform the design of the initiative and identify key stakeholders
 * <u>Identify, analyze, and prioritize</u>&nbsp;packaging solutions with high-volume and/or high-value food waste diversion potential. Final analysis should include the following:
