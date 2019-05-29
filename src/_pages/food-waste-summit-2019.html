@@ -25,15 +25,19 @@ hero:
             nonprofits, government, solution providers, and academia who have a shared interest in sustainable food systems.</p>
           </div>
         </div>
-        {% if site.summit_registration_url %}
+
         <div class="row">
           <div class="col-md-6">
             <div class="content">
+              {% if site.summit_registration_url %}
               <a href="{{site.summit_registration_url}}" class="button" target="_blank">Register Here</a>
+              {% else %}
+              <p><em>Event Registration Coming Soon</em></p>
+              {% endif %}
             </div>
           </div>
         </div>
-        {% endif %}
+
       </div>
     </div>
   </div>
