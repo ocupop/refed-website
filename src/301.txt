@@ -13,9 +13,5 @@
 /2018InvestmentReport/ /download#food-waste-investment-report
 /tools/innovator-database/suggest-an-innovator/ /tools/innovator-database/apply-to-innovator-database
 /tools/innovator-database/suggest-an-innovator /tools/innovator-database/apply-to-innovator-database
-<<<<<<< HEAD
 /tools/innovator-database/apply-to-innovator-database/ /tools/innovator-database/apply-to-innovator-database
-
-=======
-/tools/innovator-database/apply-to-innovator-database/ /tools/innovator-database/apply-to-innovator-database
->>>>>>> remotes/origin/staging
+/food-waste-summit-2019/ /
