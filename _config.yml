@@ -36,21 +36,21 @@ collections:
     permalink: /content-hub/:path
 
 defaults:
-  - 
+  -
     scope:
       type: 'states'
     values:
       layout: state
       header: "<small>U.S. Food Waste</small>Policy Finder"
       tool_url: /tools/food-waste-policy-finder/
-  - 
+  -
     scope:
       type: 'innovators'
     values:
       layout: innovator
       header: "<small>The Food Waste</small>Innovator Database"
       tool_url: /tools/innovator-database/
-  - 
+  -
     scope:
       type: 'solutions'
     values:
@@ -60,7 +60,7 @@ defaults:
       prevpage:
         url: /solutions
         title: Solutions
-  - 
+  -
     scope:
       type: 'stakeholders'
     values:
@@ -82,7 +82,7 @@ source: src
 markdown: kramdown
 
 include: ["_pages"]
-exclude: 
+exclude:
   - _tools/food-waste-policy-finder/_partials
   - _tools/innovator-database/_partials
   - _tools/spotlight-on-date-labeling-regulations/_partials
@@ -102,7 +102,7 @@ innovator_levels:
   - national
 
 food_recovery_hierarchy_options:
-  prevention: 
+  prevention:
     title: Prevention
     summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
   recovery:
@@ -114,7 +114,7 @@ food_recovery_hierarchy_options:
 
 business_models:
   - "For-Profit"
-  - "Nonprofit"  
+  - "Nonprofit"
 
 innovator_category_options:
   consumer-education:
@@ -144,7 +144,7 @@ innovator_category_options:
       - Packaging Adjustments
   secondary-marketplaces:
     title: Secondary Marketplaces
-    summary: "An organization that operates a secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."    
+    summary: "An organization that operates a secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."
     food_recovery_hierarchy_options: prevention
     innovator_subcategory_options:
       - Brick and Mortar
@@ -290,3 +290,7 @@ restricted_donations_on_expired_labels:
   - perishables
   - sandwiches
   - shellfish
+
+
+# EVENTS
+summit_registration_url: https://www.eventbrite.com/e/2019-us-food-waste-summit-registration-62383318184
