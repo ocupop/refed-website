@@ -1,0 +1,34 @@
+#accelerator-hero {
+  h1 {
+    color: $gray-light;
+    text-shadow: none;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+  h2 {
+    text-shadow: none;
+    color: $gray-light;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+}
+
+#accelerator-how {
+  img {
+    width: 150px;
+  }
+}
+
+#accelerator-eligibility {
+  img {
+    width: 150px;
+  }
+}
+
+#accelerator-timeline {
+  img {
+    margin: 0 auto 40px;
+  }
+}
