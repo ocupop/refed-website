@@ -14,4 +14,3 @@
 /tools/innovator-database/suggest-an-innovator/ /tools/innovator-database/apply-to-innovator-database
 /tools/innovator-database/suggest-an-innovator /tools/innovator-database/apply-to-innovator-database
 /tools/innovator-database/apply-to-innovator-database/ /tools/innovator-database/apply-to-innovator-database
-/food-waste-summit-2019/ /
