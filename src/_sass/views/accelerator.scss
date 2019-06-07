@@ -1,13 +1,9 @@
 #accelerator-hero {
   h1 {
-    color: $gray-light;
-    text-shadow: none;
     text-transform: none;
     margin-bottom: 20px;
   }
   h2 {
-    text-shadow: none;
-    color: $gray-light;
     font-size: 25px;
     text-transform: uppercase;
     line-height: 1;
@@ -41,9 +37,14 @@
 
 @media all and (max-width: $screen-sm-max) {
   #accelerator-hero {
-    h1,
+    h1 {
+      font-size: 27px;
+    }
+    
+  }
+  .the-refed-nonprofit-food-recovery-accelerator {
     h2 {
-      color: white;
+      font-size: 23px;
     }
   }
   .accelerator-logos {
