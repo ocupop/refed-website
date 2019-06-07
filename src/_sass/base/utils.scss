@@ -242,3 +242,13 @@ $border-color: $gray-lighter;
     column-count: 1;
   }
 }
+
+@media all and (min-width: $screen-sm-max) {
+  .text-md-center {
+    text-align: center;
+  }
+  .center-md-block {
+    margin: 0 auto;
+    display: block;
+  }
+}
