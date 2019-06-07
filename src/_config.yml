@@ -4,6 +4,7 @@ email: info@refed.com
 description:  "A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale. Together, we can reduce U.S. food waste by 50% by 2030."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.refed.com" # the base hostname & protocol for your site
+permalink: pretty
 
 minibundle:
   minifier_commands:
@@ -78,17 +79,15 @@ defaults:
 
 # Build settings
 safe: false
-source: src
 markdown: kramdown
 
-include: ["_pages"]
 exclude:
   - _tools/food-waste-policy-finder/_partials
   - _tools/innovator-database/_partials
   - _tools/spotlight-on-date-labeling-regulations/_partials
 
 
-gems:
+plugins:
   - jekyll-last-modified-at
   - jekyll-contentblocks
   - jekyll/minibundle

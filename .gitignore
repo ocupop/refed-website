@@ -1,12 +1,15 @@
+.DS-Store
 .sass-cache
-src/.asset-cache
+.bundle
 .jekyll-metadata
 
-src/_assets/bower
-node_modules
-publish
-_holding
-_site
-bower_components
+# Site build & Distribution
+dist
+
+# Logs
 *.log
-notes.txt
+
+# Packages
+node_modules
+
+vendor/bundle
