@@ -101,8 +101,15 @@ ul.styled {
   text-transform: none !important;
 }
 
+.text-dark {
+  color: $gray !important;
+}
+.text-light {
+  color: #ffffff !important;
+}
 
-// column wrap 
+
+// column wrap
 .col2 {
   column-count: 2;
   column-gap: 40px;
@@ -234,7 +241,7 @@ $border-color: $gray-lighter;
     width: 100% !important;
   }
 
-  // columns stop wrapping 
+  // columns stop wrapping
   .col2 {
     column-count: 1;
   }
