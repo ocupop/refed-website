@@ -1,0 +1,58 @@
+---
+layout: page
+title: News
+slug: news
+---
+<section class="alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="content">
+          <h1><span class="nocase">ReFED</span> News</h1>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="content">
+          {% assign cat_list = '' | split: ","%}
+          {% for article in site.articles %}
+            {% for category in article.categories %}
+              {% assign cat_list = cat_list | push: category %}
+            {% endfor %}
+          {% endfor %}
+          {% assign uniq_cat_list = cat_list | uniq %}
+          <div data-filter-group class="select">
+            <select name="filter-articles" id="filter-articles">
+              <option value="all">View All</option>
+              {% for category in uniq_cat_list %}
+                <option value="[data-type='{{ category }}']" data-mixitup-control>{{ category | capitalize }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row hide">
+      <div class="col-xs-12">
+        <div class="content">
+          <p class="sort-articles" data-sort="date:desc" data-mixitup-control>Sort by date <span class="caret"></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <div class="grid row articles">
+            {% for article in site.articles reversed %}
+            <div class="card article-card article mix" data-date="{{ article.date }}" data-type="{{ article.categories | join: ' '}}">
+              <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
+              <h4>{{ article.title }}</h4>
+              <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+              <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a></p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
