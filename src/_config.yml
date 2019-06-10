@@ -14,27 +14,27 @@ collections:
   solutions:
     output: true
     layout: default
-    permalink: /solutions/:path
+    permalink: /solutions/:path/
   stakeholders:
     output: true
     layout: default
-    permalink: /stakeholders/:path
+    permalink: /stakeholders/:path/
   tools:
     output: true
     layout: tool
-    permalink: /tools/:path
+    permalink: /tools/:path/
   states:
     output: true
     layout: state
-    permalink: /tools/food-waste-policy-finder/:path
+    permalink: /tools/food-waste-policy-finder/:path/
   innovators:
     output: true
     layout: innovator
-    permalink: /tools/innovator-database/:path
+    permalink: /tools/innovator-database/:path/
   articles:
     output: true
     layout: article
-    permalink: /content-hub/:path
+    permalink: /content-hub/:path/
 
 defaults:
   -
@@ -56,20 +56,20 @@ defaults:
       type: 'solutions'
     values:
       nextpage:
-        url: /stakeholders
+        url: /stakeholders/
         title: Stakeholders
       prevpage:
-        url: /solutions
+        url: /solutions/
         title: Solutions
   -
     scope:
       type: 'stakeholders'
     values:
       nextpage:
-        url: /tools/food-waste-policy-finder
+        url: /tools/food-waste-policy-finder/
         title: Policy
       prevpage:
-        url: /solutions
+        url: /solutions/
         title: Solutions
 
 
