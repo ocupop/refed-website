@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: $cream-lighter;
+  background-color: $gray-dark;
   color: #fff;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   &.skinny {
@@ -21,27 +21,31 @@
     display: table-cell;
     width: 100%;
     height: 100%;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 0;
     color: #fff;
     text-align: left;
     vertical-align: middle;
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     .content {
       padding-left: 50px;
     }
     a {
       color: #ffffff;
     }
-    h1, h2, h3 { 
+    h1,
+    h2,
+    h3 {
       color: #ffffff;
       font-size: 40px;
       font-weight: 100;
       line-height: 1.25em;
       letter-spacing: 0.05em;
       margin: 0;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
       small {
         font-weight: 300;
         letter-spacing: 0.1em;
@@ -69,10 +73,13 @@
 // styles for carousel controls
 .carousel-control {
   width: 6%;
-  &.left, &.right {
+  &.left,
+  &.right {
     background-color: transparent;
     background-image: none;
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: transparent;
       background-image: none;
     }
@@ -92,7 +99,7 @@
 
 .carousel-indicators {
   li {
-    background-color: rgba(255,255,255, .3);
+    background-color: rgba(255, 255, 255, 0.3);
     border: none;
     margin: 1px 10px;
     &.active {
@@ -103,25 +110,25 @@
 
 // Hero banners on action pages
 #education-hero {
-  @include palette(#9BC9C0, $cream-lighter);
+  @include palette(#9bc9c0, $cream-lighter);
   a {
     color: #fff;
   }
 }
 #policy-hero {
-  @include palette(#912A46, $cream-lighter);
+  @include palette(#912a46, $cream-lighter);
   a {
     color: #fff;
   }
 }
 #financing-hero {
-  @include palette(#78A783, $cream-lighter);
+  @include palette(#78a783, $cream-lighter);
   a {
     color: #fff;
   }
 }
 #innovation-hero {
-  @include palette(#E8AD6C, $cream-lighter);
+  @include palette(#e8ad6c, $cream-lighter);
   a {
     color: #fff;
   }
@@ -129,13 +136,11 @@
 
 @media all and (max-width: $screen-md-max) {
   .hero {
-    
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
   .hero {
-    
   }
 }
 
@@ -144,10 +149,10 @@
     height: 250px;
     min-height: 0;
     .hero-content {
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0, 0, 0, 0.4);
       h1 {
         font-size: 25px !important;
-      }      
+      }
       p {
         font-size: 14px;
       }
