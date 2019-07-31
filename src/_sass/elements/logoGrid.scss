@@ -24,6 +24,14 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
+    p {
+      color: $gray-darker;
+      font-size: 13px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
   }
 }
 
