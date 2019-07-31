@@ -11,9 +11,15 @@
     padding: 30px;
     border: 1px solid $gray-lighter;
     margin: -1px 0 0 -1px;
+    position: relative;
+    height: 0;
     img {
       display: block;
-      width: 100%;
+      width: 75%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 }
@@ -22,6 +28,7 @@
   .logo-grid {
     .logo-item {
       width: 33%;
+      padding-top: 25%;
     }
   }
 }
