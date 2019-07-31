@@ -1,7 +1,7 @@
 <div class="logo-grid">
-  {% for i in (1..30) %}
-  <a href="#" class="logo-item">
-    <img src="https://via.placeholder.com/175" class="img-fluid" alt="">
+  {% for expert in page.experts %}
+  <a href="{{ expert.link }}" class="logo-item">
+    <img src="{{ expert.logo_image }}" class="img-fluid" alt="{{ expert.name }} logo">
   </a>
   {% endfor %}
 </div>
