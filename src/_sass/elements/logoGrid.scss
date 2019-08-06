@@ -4,16 +4,16 @@
   flex-wrap: wrap;
   margin-bottom: 20px;
   .logo-item {
-    width: 16.66%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid $gray-lighter;
     margin: -1px 0 0 -1px;
     position: relative;
     height: 0;
-    padding-top: 13%;
+    padding-top: 8%;
     background-color: $white;
     img {
       display: block;
@@ -38,8 +38,11 @@
 @media (max-width: $screen-xs-max) {
   .logo-grid {
     .logo-item {
-      width: 33%;
-      padding-top: 25%;
+      width: 20%;
+      padding-top: 11%;
+      p {
+        font-size: 10px;
+      }
     }
   }
 }
