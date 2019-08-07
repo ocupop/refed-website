@@ -26,17 +26,17 @@ policy_data:
 
           said board may incorporate by reference The Nutritional Education and
           Labeling Act, 21 CFR 101.
-        legal_citation: Conn. Gen. Stat. Ann. § 22-197b.
+        legal_citation: Conn. Gen. Stat. Ann. § 22-197b (2013).
       - title: Reg 2
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: '(b) Products not manufactured, packaged and heat treated in a manner that makes the product safe to store at room temperature shall be conspicuously labeled with a last sale date. The last sale date shall be shown in contrasting color with the background. The last sale date shall be expressed as “sell by”, “last sale date” or “must be sold by”.'
-        legal_citation: Conn. Agencies Regs. §22-133-131.
+        legal_citation: Conn. Agencies Regs. §22-133-131 (2013).
       - title: Reg 3
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Alteration of date labels not permitted
         excerpted_language_from_the_law: (f) The manufacturer’s last sale date or expiration date shall not be altered in any way.
-        legal_citation: Conn. Agencies Regs. § 22-133-123.
+        legal_citation: Conn. Agencies Regs. § 22-133-123 (2013).
     label_regulation:
       date_labels_required_for:
         - dairy
@@ -68,20 +68,20 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Conn. Gen. Stat. §§ 22-320a–g
+      - title: Conn. Gen. Stat. §§ 22-320a–g (2015)
         animals_covered: Swine
-        definition_of_garbage: 'Any material containing meat resulting from the handling, preparation, cooking and consumption of foods including animal carcasses or parts thereof, but the term “garbage” shall not apply to waste materials from slaughterhouses which go directly to rendering plants for processing. § 22-320a.'
-        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 22-320a–g.
-        licensure_requirements: An individual or facility must register with the state before feeding garbage to swine. § 22-320c.
-        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. §§ 22-320b–g.
+        definition_of_garbage: 'Any material containing meat resulting from the handling, preparation, cooking and consumption of foods including animal carcasses or parts thereof, but the term “garbage” shall not apply to waste materials from slaughterhouses which go directly to rendering plants for processing. § 22-320a (2015).'
+        prohibitions: No feeding untreated garbage to swine. Exception for individuals feeding household garbage. §§ 22-320a–g (2015).
+        licensure_requirements: An individual or facility must register with the state before feeding garbage to swine. § 22-320c (2015).
+        treatment_requirements: All garbage must be heated to at least 212 degrees Fahrenheit or boiling point for at least 30 minutes or else treated in some other manner approved by the state. §§ 22-320b–g (2015).
         enforcement: >-
           Any individual or facility that violates the garbage-feeding rule will
           be fined $100 or less for a first offense and $200 or less for a second
-          offense. § 22-320h.
+          offense. § 22-320h (2015).
 
           Violation of the garbage-feeding rule also may result in the department
           of agriculture suspending, revoking, or withholding registration from
-          a garbage-feeding swine farm. § 22-320d.
+          a garbage-feeding swine farm. § 22-320d (2015).
         relevant_state_regulatory_body: 'Connecticut Department of Agriculture (§ 22-320a), <a href="http://www.ct.gov/doag/site/default.asp" target="_blank">http://www.ct.gov/doag/site/default.asp</a>.'
   organics_recycling_mandates:
     legislation:

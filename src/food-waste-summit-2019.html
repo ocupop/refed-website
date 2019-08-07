@@ -1,0 +1,125 @@
+---
+layout: page
+title: Food Waste Summit 2019
+slug: food-waste-summit-2019
+hero:
+  image: ReFED-2019-Summit-header.jpg
+  title: 2019 Food Waste Summit<br>Hosted by <span class="brand">ReFED</span>
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h2 class="editable">
+            About the Summit
+          </h2>
+          <p><em class="editable">October 28-30th | City View at METREON, San Francisco, CA</em></p>
+          <div class="editable">
+            <p>The 2019 Food Waste Summit, hosted by ReFED, is this year&rsquo;s premier event that will gather influential thought leaders and decision-makers from across sectors, who have a shared interest in sustainable food systems, including food businesses, investors, foundations, national nonprofits, governments, innovators and academics.</p>
+            <p>Invited attendees will share and discuss strategies to achieve our common goal to cut food waste in half by 2030, and the opportunities to generate profits, increase food security, spur economic growth and protect the environment. Drawing on ReFED&rsquo;s data-driven, solutions-oriented analysis and multistakeholder network, the 2019 Food Waste Summit is the only event that brings together the necessary stakeholders to unlock this $100 billion+ opportunity.</p>
+            <p><strong>Agenda coming soon</strong></p>
+            <p>Pricing</p>
+            <ul>
+              <li>General Registration $900</li>
+              <li>Government/Nonprofit Registration $600</li>
+              <li>Limited Scholarships Available</li>
+            </ul>
+            <p><strong>This is an invitation only event. Please follow the link below to apply.</strong></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content">
+              {% if site.summit_registration_url %}
+                <a href="{{site.summit_registration_url}}" class="button" target="_blank">Apply Here</a>
+              {% else %}
+                <p><em>Agenda and Application coming soon</em></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <h2>Organizing Partners</h2>
+          <div class="text-center">
+            <div class="hidden-xs">
+              <img src="/img/events/ReFED-2019-Summit-logos.jpg" class="img-responsive" />
+            </div>
+            <div class="visible-xs">
+              <img src="/img/events/ReFED-2019-Summit-logos-mobile.jpg" class="img-responsive" alt="About logos" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content editable">
+          <h2>Contact <span class="nocase">ReFED</span></h2>
+          <form id="info_form" name="info_form" method="post" action="/thanks"><input type="text" style="display: none;" name="_gotcha" />
+            <div class="form-group"><label class="sr">First Name</label> <input type="text" id="name" placeholder="Name" required="" name="name" /> <label class="sr">Email</label> <input type="text" id="email" placeholder="Email" required="" name="email" /> <label class="sr">Organization Name</label> <input type="text" id="organization" placeholder="Organization Name" name="organization" /> <label class="sr">Title</label> <input type="text" id="title" placeholder="Title / Position" name="title" /> <label for="comment" class="sr">Comments</label><textarea name="comment" id="comment" rows="5" cols="1" placeholder="Comments"></textarea> <input type="submit" value="Submit" class="button" /></div>
+            <!--base32-40y68ubp41hprrbkecyj4ttde9jp6rbgehhpgr9241j62x315ntpjx35ddjqjf926t666m9r8nanaga1850m2juaexfpcy2b9xfq2n2tadcn6gbcb5ppeuve91v5je2f48z3rbv4d5v3w80-base32--><input type="hidden" style="display: none;" value="554384889a4402fc386ac5bf9af9417cf58892b9b44f255efe7f" name="_encrypted_details" />&nbsp;</form>
+          <script>
+            // Helper function to get form data in the supported format
+            function getFormDataString(formEl) {
+              var formData = new FormData(formEl),
+                  data = [];
+
+              for (var keyValue of formData) {
+                data.push(encodeURIComponent(keyValue[0]) + "=" + encodeURIComponent(keyValue[1]));
+              }
+
+              return data.join("&");
+            }
+
+            // Fetch the form element
+            var formEl = document.getElementById("_form");
+
+            // Override the submit event
+            formEl.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              // if (grecaptcha) {
+              //   var recaptchaResponse = grecaptcha.getResponse();
+              //   if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+              //     return false;
+              //   }
+              // }
+
+              var request = new XMLHttpRequest();
+
+              request.addEventListener("load", function () {
+                if (request.status === 302) { // CloudCannon redirects on success
+                  // It worked
+                  console.log("Thanks");
+                  alert("Thank you for your submission. We will be in touch shortly");
+                }
+              });
+
+              request.open(formEl.method, formEl.action);
+              request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              request.send(getFormDataString(formEl));
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,4 +1,4 @@
-var requireDir = require('require-dir');
+const gulp = require("gulp");
+const suite = require("@cloudcannon/suite");
 
-// Require all tasks in gulp/tasks, including subfolders
-requireDir('./gulp/tasks', { recurse: true });
+suite.dev(gulp);

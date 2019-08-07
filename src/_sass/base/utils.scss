@@ -101,8 +101,15 @@ ul.styled {
   text-transform: none !important;
 }
 
+.text-dark {
+  color: $gray !important;
+}
+.text-light {
+  color: #ffffff !important;
+}
 
-// column wrap 
+
+// column wrap
 .col2 {
   column-count: 2;
   column-gap: 40px;
@@ -234,11 +241,25 @@ $border-color: $gray-lighter;
     width: 100% !important;
   }
 
-  // columns stop wrapping 
+  // columns stop wrapping
   .col2 {
     column-count: 1;
   }
   .col3 {
     column-count: 1;
+  }
+}
+
+.text-white {
+  color: #fff;
+}
+
+@media all and (min-width: $screen-sm-max) {
+  .text-md-center {
+    text-align: center;
+  }
+  .center-md-block {
+    margin: 0 auto;
+    display: block;
   }
 }

@@ -3,6 +3,7 @@
   <meta http-equiv="Content-Language" content="en_US" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include newrelic.html %}
   <title>{{ page.title }} : {{ site.title }}</title>
   <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
@@ -20,7 +21,7 @@
   <meta property="og:image" content="{{ site.baseurl }}/img/logo-meta.jpg" />
 
   <!-- FONTS -->
-  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
+  <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

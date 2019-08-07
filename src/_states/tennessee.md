@@ -37,15 +37,15 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Tenn. Code Ann. §§ 44-2-401–08
+      - title: Tenn. Code Ann. §§ 44-2-401–08 (2015)
         animals_covered: Swine
-        definition_of_garbage: 'Animal or plant waste resulting from the handling, preparation, cooking or consumption of foods, including animal and fowl carcasses or parts thereof, and all waste material and byproducts of a kitchen, restaurant, hospital, hotel, motel, or slaughterhouse; except, however, bakery waste, whey, or other dairy waste from milk processing plants shall not be included in this definition. § 44-2-402.'
-        prohibitions: No feeding unprocessed garbage to swine. Exception for individuals feeding household garbage. § 44-2-404.
+        definition_of_garbage: 'Animal or plant waste resulting from the handling, preparation, cooking or consumption of foods, including animal and fowl carcasses or parts thereof, and all waste material and byproducts of a kitchen, restaurant, hospital, hotel, motel, or slaughterhouse; except, however, bakery waste, whey, or other dairy waste from milk processing plants shall not be included in this definition. § 44-2-402 (2015).'
+        prohibitions: No feeding unprocessed garbage to swine. Exception for individuals feeding household garbage. § 44-2-404 (2015).
         licensure_requirements: N/A
         treatment_requirements: >-
           Garbage must be processed in accordance with federal law, meaning that
           garbage must be boiled (212 degrees Fahrenheit/100 degrees Celsius at
-          sea level) for at least 30 minutes. 9 C.F.R. § 166.
+          sea level) for at least 30 minutes. 9 C.F.R. § 166 (2015).
 
 
 
@@ -54,28 +54,29 @@ policy_data:
           Garbage must be processed in a manner prescribed and approved by the
           commissioner, meaning that feeders must submit a written plan to the
           commissioner detailing treatment of garbage in a manner prescribed
-          under 9 C.F.R. § 166. § 44-2-404.
+          under 9 C.F.R. § 166. § 44-2-404 (2015).
         enforcement: >-
           The commissioner of agriculture enforces the garbage-feeding rule.
-          § 44-2-403.
+          § 44-2-403 (2015).
 
           The commissioner or an authorized representative may investigate any
           public or private premises to determine whether the garbage-feeding
-          rule has been violated. § 44-2-406.
+          rule has been violated. § 44-2-406 (2015).
 
 
 
 
 
           A violation of the garbage-feeding rule is a Class C misdemeanor. Each
-          illegal feeding of garbage counts as a separate offense. § 44-2-407.
+          illegal feeding of garbage counts as a separate offense. § 44-2-407
+          (2015).
 
 
 
 
 
           The commissioner may seek to enjoin any individual or facility that
-          violates the garbage-feeding rule. § 44-2-408.
+          violates the garbage-feeding rule. § 44-2-408 (2015).
         relevant_state_regulatory_body: 'Tennessee Department of Agriculture (§ 44-2-403 (2015)), <a href="https://www.tn.gov/agriculture/" target="_blank">https://www.tn.gov/agriculture/</a>.'
   organics_recycling_mandates:
     legislation:

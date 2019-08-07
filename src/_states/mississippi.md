@@ -34,7 +34,7 @@ policy_data:
           product labeled with the wording “SELL BY” followed by a date expressed
           as a month, day and year, not to exceed seventeen (17) days from the
           date shucked.
-        legal_citation: 22-000 Miss. Code R. § 017.1.12:11 
+        legal_citation: 43-46 MISS. CODE R. § 17 (LexisNexis 2013).
     label_regulation:
       date_labels_required_for:
         - shellfish
@@ -65,10 +65,10 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: Miss. Code Ann. §§ 69-11-3–15
+      - title: Miss. Code Ann. §§ 69-11-3–15 (2015)
         animals_covered: Swine
-        definition_of_garbage: 'Putrescible animal and vegetable waste resulting from the handling, preparation, cooking and consumption of foods including animal and fowl carcasses or parts thereof. § 69-11-3.'
-        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage to swine. § 69-11-5.
+        definition_of_garbage: 'Putrescible animal and vegetable waste resulting from the handling, preparation, cooking and consumption of foods including animal and fowl carcasses or parts thereof. § 69-11-3 (2015).'
+        prohibitions: No feeding garbage to swine. Exception for individuals feeding household garbage to swine. § 69-11-5 (2015).
         licensure_requirements: N/A
         treatment_requirements: N/A
         enforcement: >-
@@ -77,7 +77,8 @@ policy_data:
           or public property to inspect and investigate conditions relating to
           the feeding of swine to determine whether there has been a violation of
           the garbage-feeding rule. § 69-11-11 (2015). Either official also may
-          quarantine any premises on which swine are fed garbage. § 69-11-13.
+          quarantine any premises on which swine are fed garbage. § 69-11-13
+          (2015).
 
 
 
@@ -209,8 +210,8 @@ policy_data:
 
           Whoever violates the garbage-feeding rule is guilty of a misdemeanor
           and shall be fined $50-$250 dollars and may also be imprisoned for
-          a period not to exceed 90 days. § 69-11-15.
-        relevant_state_regulatory_body: 'Mississippi Board of Animal Health, <a href="http://www.mbah.ms.gov/" target="_blank">http://www.mbah.ms.gov/</a>; Mississippi Department of Agriculture & Commerce, <a href="https://www.mdac.ms.gov" target="_blank">https://www.mdac.ms.gov</a> (§ 69-11-11).'
+          a period not to exceed 90 days. § 69-11-15 (2015).
+        relevant_state_regulatory_body: 'Mississippi Board of Animal Health, <a href="http://www.mbah.ms.gov/" target="_blank">http://www.mbah.ms.gov/</a>; Mississippi Department of Agriculture & Commerce, <a href="https://www.mdac.ms.gov" target="_blank">https://www.mdac.ms.gov</a> (§ 69-11-11 (2015)).'
   organics_recycling_mandates:
     legislation:
       - title:

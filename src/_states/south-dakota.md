@@ -37,12 +37,12 @@ policy_data:
         eligible_recipients:
   animal_feed:
     legislation:
-      - title: 'A.R.S.D. 12:79:03:06; H.B. 1058, 2013 Leg., 88th Sess. (S.D.)'
+      - title: 'A.R.S.D. 12:79:03:06 (2015); H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013)'
         animals_covered: Cattle
         definition_of_garbage: N/A
-        prohibitions: 'Cattle that are certified and enrolled in the Dakota Certified Beef Program may not be fed any feed products containing food processing waste, restaurant food waste, dried poultry waste, dried poultry litter, dried ruminant waste, dried swine waste, undried processed animal waste products, or processed animal waste. A.R.S.D. 12:79:03:06.'
+        prohibitions: 'Cattle that are certified and enrolled in the Dakota Certified Beef Program may not be fed any feed products containing food processing waste, restaurant food waste, dried poultry waste, dried poultry litter, dried ruminant waste, dried swine waste, undried processed animal waste products, or processed animal waste. A.R.S.D. 12:79:03:06 (2015).'
         licensure_requirements: N/A
-        treatment_requirements: 'South Dakota repealed many of its laws pertaining to garbage feeding. Before the repeal, these laws prohibited the feeding of garbage to swine and livestock; there was no exception for heat-treated garbage. The state decided to repeal this law in order to loosen the reigns on animal disease control generally, as many animal diseases have been eradicated and better managed in recent years. H.B. 1058, 2013 Leg., 88th Sess. (S.D.).'
+        treatment_requirements: 'South Dakota repealed many of its laws pertaining to garbage feeding. Before the repeal, these laws prohibited the feeding of garbage to swine and livestock; there was no exception for heat-treated garbage. The state decided to repeal this law in order to loosen the reigns on animal disease control generally, as many animal diseases have been eradicated and better managed in recent years. H.B. 1058, 2013 Leg., 88th Sess. (S.D. 2013).'
         enforcement: N/A
         relevant_state_regulatory_body: 'South Dakota Department of Agriculture, <a href="https://sdda.sd.gov/" target="_blank">https://sdda.sd.gov/</a>.'
   organics_recycling_mandates:

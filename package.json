@@ -1,7 +1,7 @@
 {
-  "name": "ReFED",
-  "version": "0.1.0",
-  "description": "ReFED Project",
+  "name": "refed-website",
+  "version": "1.0.0",
+  "description": "ReFED Website Project",
   "private": true,
   "main": "gulpfile.js",
   "repository": {
@@ -9,18 +9,13 @@
     "url": ""
   },
   "scripts": {
-    "start": "jekyll serve --watch",
+    "start": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ocupop",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "hologram-github-theme": "^0.1.4",
-    "main-bower-files": "^2.13.1",
-    "require-dir": "^0.3.0"
-  },
   "dependencies": {
-    "uglify-js": "^2.8.22"
+    "@cloudcannon/suite": "^2.0.0-rc5",
+    "gulp": "^4.0.0"
   }
 }
