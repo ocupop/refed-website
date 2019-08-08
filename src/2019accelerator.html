@@ -176,14 +176,14 @@ experts:
     </div>
   </div>
 </div>
-<section>
+<section id="accelerator-articles">
   <div class="container">
     <div class="row justify-content-center">
       {% for object in page.articles %}
       {% assign article = site.articles | where: 'slug', object | first %}
       <div class="col-lg-4">
         <div class="content">
-          <div class="card article-card article mix" data-date="{{ article.date }}"
+          <div class="card article-card article"
             data-type="{{ article.categories | join: ' '}}">
             <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});"
               title="{{ article.title }}">View More</a>

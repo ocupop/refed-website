@@ -57,6 +57,15 @@
   justify-content: center;
 }
 
+#accelerator-articles {
+  .card {
+    &.article-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 @media all and (max-width: $screen-sm-max) {
   #accelerator-hero {
     h1 {
