@@ -5,6 +5,7 @@ permalink: /2019accelerator/
 hero: false
 nextpage: false
 prevpage: false
+articles:
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -175,6 +176,28 @@ experts:
     </div>
   </div>
 </div>
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      {% for object in page.articles %}
+      {% assign article = site.articles | where: 'slug', object | first %}
+      <div class="col-lg-4">
+        <div class="content">
+          <div class="card article-card article mix" data-date="{{ article.date }}"
+            data-type="{{ article.categories | join: ' '}}">
+            <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});"
+              title="{{ article.title }}">View More</a>
+            <h4>{{ article.title }}</h4>
+            <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+            <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 <section class="alt-bg">
   <div class="container">
     <div class="row">
