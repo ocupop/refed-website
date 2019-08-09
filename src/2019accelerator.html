@@ -7,6 +7,12 @@ nextpage: false
 prevpage: false
 articles:
   - a-helpful-move-on-food-date-labels
+cohorts:
+  - name: Test Name
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere incidunt
+    delectus id facilis doloremque pariatur'
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: https://www.google.com/
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -208,7 +214,7 @@ experts:
     <div class="row">
       <div class="col-12">
         <div class="content text-center">
-          <h2 class="editable">Recent News</h2>
+          <h2 class="editable">Accelerator News</h2>
         </div>
       </div>
     </div>
@@ -242,12 +248,12 @@ experts:
       </div>
     </div>
     <div class="row">
-      {% for i in (1..8) %}
+      {% for cohort in page.cohorts %}
         <div class="col-lg-3">
           <div class="content">
-            <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/500x300)"></div>
-            <h4>Title Headline</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere incidunt delectus id facilis doloremque pariatur!</p>
+            <a href="{{ cohort.link }}" class="bg-image aspect-4x3" style="background-image: url({{ cohort.logo_image }})"></a>
+            <h4>{{ cohort.name }}</h4>
+            <p>{{ cohort.description }}</p>
           </div>
         </div>
       {% endfor %}
