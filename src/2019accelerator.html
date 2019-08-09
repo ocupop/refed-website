@@ -7,8 +7,6 @@ nextpage: false
 prevpage: false
 articles:
   - a-helpful-move-on-food-date-labels
-  - behind-the-plate-eva-fowler
-  - creating-taste-from-what-would-be-waste
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -179,28 +177,6 @@ experts:
     </div>
   </div>
 </div>
-<section id="accelerator-articles">
-  <div class="container">
-    <div class="row justify-content-center">
-      {% for object in page.articles %}
-      {% assign article = site.articles | where: 'slug', object | first %}
-      <div class="col-lg-4">
-        <div class="content">
-          <div class="card article-card article"
-            data-type="{{ article.categories | join: ' '}}">
-            <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});"
-              title="{{ article.title }}">View More</a>
-            <h4>{{ article.title }}</h4>
-            <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
-            <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
 <section class="alt-bg">
   <div class="container">
     <div class="row">
@@ -224,6 +200,57 @@ experts:
           <p>By immersing a cohort of 10 nonprofit recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs that focus on leveraging earned revenue models, technology solutions, and human-centered design, ReFED aims to catalyze ideas and inspire actions that will lead to a doubling of healthy food available to the 40 million Americans facing food insecurity.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<section id="accelerator-articles">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2 class="editable">Recent News</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {% for object in page.articles %}
+      {% assign article = site.articles | where: 'slug', object | first %}
+      <div class="col-lg-4">
+        <div class="content">
+          <div class="card article-card article">
+            <a href="{{ article.url }}" class="article-image"
+              style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
+            <h4>{{ article.title }}</h4>
+            <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+            <p>{{ article.summary | truncate: 400 }} <a class="view-more"
+                href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content text-center">
+          <h2>Cohort Announcement</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for i in (1..8) %}
+        <div class="col-lg-3">
+          <div class="content">
+            <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/500x300)"></div>
+            <h4>Title Headline</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere incidunt delectus id facilis doloremque pariatur!</p>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
