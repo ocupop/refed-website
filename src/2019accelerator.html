@@ -13,6 +13,21 @@ cohorts:
     delectus id facilis doloremque pariatur'
     logo_image: 'https://via.placeholder.com/500x300'
     link: https://www.google.com/
+  - name: Test Name
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere
+    incidunt delectus id facilis doloremque pariatur'
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: https://www.google.com/
+  - name: Test Name
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere
+    incidunt delectus id facilis doloremque pariatur'
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: https://www.google.com/
+  - name: Test Name
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt, quod alias consequuntur facere
+    incidunt delectus id facilis doloremque pariatur'
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: https://www.google.com/
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -218,24 +233,67 @@ experts:
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-      {% for object in page.articles %}
-      {% assign article = site.articles | where: 'slug', object | first %}
-      <div class="col-lg-4">
-        <div class="content">
-          <div class="card article-card article">
-            <a href="{{ article.url }}" class="article-image"
-              style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
+    {% if page.articles.size == 1 %}
+      <div class="row">
+        {% for object in page.articles %}
+        {% assign article = site.articles | where: 'slug', object | first %}
+        <div class="col-lg-6">
+          <div class="content">
+            <a href="{{ article.url }}" class="bg-image aspect-4x3" style="background-image: url({{ article.featured_image }});"
+              title="{{ article.title }}"></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content">
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
-            <p>{{ article.summary | truncate: 400 }} <a class="view-more"
-                href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
+            <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
             </p>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
+    {% endif %}
+    {% if page.articles.size == 2 %}
+      <div class="row justify-content-center">
+        {% for object in page.articles %}
+        {% assign article = site.articles | where: 'slug', object | first %}
+        <div class="col-lg-6">
+          <div class="content">
+            <div class="card article-card article">
+              <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});"
+                title="{{ article.title }}">View More</a>
+              <h4>{{ article.title }}</h4>
+              <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+              <p>{{ article.summary | truncate: 400 }} <a class="view-more"
+                  href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.articles.size >= 3 %}
+      <div class="row justify-content-center">
+        {% for object in page.articles %}
+        {% assign article = site.articles | where: 'slug', object | first %}
+        <div class="col-lg-4">
+          <div class="content">
+            <div class="card article-card article">
+              <a href="{{ article.url }}" class="article-image"
+                style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
+              <h4>{{ article.title }}</h4>
+              <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+              <p>{{ article.summary | truncate: 400 }} <a class="view-more"
+                  href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </section>
 <section class="alt-bg">
