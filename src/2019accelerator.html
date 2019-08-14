@@ -276,7 +276,7 @@ experts:
     {% endif %}
     {% if page.articles.size >= 3 %}
       <div class="row justify-content-center">
-        {% for object in page.articles %}
+        {% for object in page.articles limit: 3 %}
         {% assign article = site.articles | where: 'slug', object | first %}
         <div class="col-lg-4">
           <div class="content">
