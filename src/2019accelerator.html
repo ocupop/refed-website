@@ -36,6 +36,48 @@ cohorts:
       pariatur
     logo_image: 'https://via.placeholder.com/500x300'
     link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
+  - name: Test Name
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt,
+      quod alias consequuntur facere incidunt delectus id facilis doloremque
+      pariatur
+    logo_image: 'https://via.placeholder.com/500x300'
+    link: 'https://www.google.com/'
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -247,12 +289,12 @@ experts:
       <div class="row">
         {% for object in page.articles %}
         {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-lg-6">
+        <div class="col-xs-6 col-sm-3">
           <div class="content">
             <a href="{{ article.url }}" class="bg-image aspect-4x3" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}"></a>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-xs-12 col-sm-9">
           <div class="content">
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
@@ -267,7 +309,7 @@ experts:
       <div class="row justify-content-center">
         {% for object in page.articles %}
         {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-lg-6">
+        <div class="col-xs-6">
           <div class="content">
             <div class="card article-card article">
               <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
@@ -285,7 +327,7 @@ experts:
       <div class="row justify-content-center">
         {% for object in page.articles limit: 3 %}
         {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-lg-4">
+        <div class="col-xs-6 col-sm-4">
           <div class="content">
             <div class="card article-card article">
               <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
@@ -301,25 +343,29 @@ experts:
     {% endif %}
   </div>
 </section>
-<section class="alt-bg">
+<section id="nonprofit-cohort" class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="content text-center">
-          <h2>Cohort Announcement</h2>
+          <h2>2019 Nonprofit Cohort</h2>
         </div>
       </div>
     </div>
     <div class="row">
-      {% for cohort in page.cohorts %}
-        <div class="col-lg-3">
-          <div class="content">
-            <a href="{{ cohort.link }}" class="bg-image aspect-4x3" style="background-image: url({{ cohort.logo_image }})"></a>
-            <h4>{{ cohort.name }}</h4>
-            <p>{{ cohort.description }}</p>
+      <div class="col-xs-12">
+        <div class="content">
+          <div class="grid">
+            {% for cohort in page.cohorts %}
+              <div class="grid-item">
+                <a href="{{ cohort.link }}" class="bg-image aspect-4x3" style="background-image: url({{ cohort.logo_image }})"></a>
+                <h4>{{ cohort.name }}</h4>
+                <p>{{ cohort.description }}</p>
+              </div>
+            {% endfor %}
           </div>
         </div>
-      {% endfor %}
+      </div>
     </div>
   </div>
 </section>
