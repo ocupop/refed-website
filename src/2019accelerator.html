@@ -296,69 +296,26 @@ experts:
         </div>
       </div>
     </div>
-    {% if page.articles.size == 1 %}
-      <div class="row">
-        {% for object in page.articles %}
-        {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-xs-6 col-sm-3">
-          <div class="content">
-            <a href="{{ article.url }}" class="bg-image aspect-4x3" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}"></a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-9">
-          <div class="content">
+    <div class="row justify-content-center">
+      {% for object in page.articles %}
+      {% assign article = site.articles | where: 'slug', object | first %}
+      <div class="col-12">
+        <div class="content">
+          <a href="{{ article.date }}" class="article">
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
-            <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
-            </p>
-          </div>
+          </a>
         </div>
-        {% endfor %}
       </div>
-    {% endif %}
-    {% if page.articles.size == 2 %}
-      <div class="row justify-content-center">
-        {% for object in page.articles %}
-        {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-xs-6">
-          <div class="content">
-            <div class="card article-card article">
-              <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
-              <h4>{{ article.title }}</h4>
-              <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
-              <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-    {% if page.articles.size >= 3 %}
-      <div class="row justify-content-center">
-        {% for object in page.articles limit: 3 %}
-        {% assign article = site.articles | where: 'slug', object | first %}
-        <div class="col-xs-6 col-sm-4">
-          <div class="content">
-            <div class="card article-card article">
-              <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
-              <h4>{{ article.title }}</h4>
-              <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
-              <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 <section id="nonprofit-cohort" class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="content text-center">
+        <div class="content editable text-center">
           <h2>2019 Nonprofit Cohort</h2>
         </div>
       </div>
@@ -372,7 +329,9 @@ experts:
                 <a href="{{ cohort.link }}" class="grid-item-image" style="background-image: url()">
                   <img src="{{ cohort.logo_image }}" class="img-fluid">
                 </a>
-                <h4>{{ cohort.name }}</h4>
+                <a href="{{ cohort.link }}">
+                  <h4 class="text-center">{{ cohort.name }}</h4>
+                </a>
                 <p>{{ cohort.description }}</p>
               </div>
             {% endfor %}
