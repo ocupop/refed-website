@@ -329,10 +329,12 @@ experts:
                 <a href="{{ cohort.link }}" class="grid-item-image" style="background-image: url()">
                   <img src="{{ cohort.logo_image }}" class="img-fluid">
                 </a>
-                <a href="{{ cohort.link }}">
-                  <h4 class="text-center">{{ cohort.name }}</h4>
-                </a>
-                <p class="hidden-xs hidden-sm">{{ cohort.description }}</p>
+                <div class="cohort-content">
+                  <a href="{{ cohort.link }}">
+                    <h4 class="text-center">{{ cohort.name }}</h4>
+                  </a>
+                  <p class="hidden-xs hidden-sm">{{ cohort.description }}</p>
+                </div>
               </div>
             {% endfor %}
           </div>
