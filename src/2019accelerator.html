@@ -369,7 +369,9 @@ experts:
           <div class="grid">
             {% for cohort in page.cohorts %}
               <div class="grid-item">
-                <a href="{{ cohort.link }}" class="bg-image aspect-4x3" style="background-image: url({{ cohort.logo_image }})"></a>
+                <a href="{{ cohort.link }}" class="grid-item-image" style="background-image: url()">
+                  <img src="{{ cohort.logo_image }}" class="img-fluid">
+                </a>
                 <h4>{{ cohort.name }}</h4>
                 <p>{{ cohort.description }}</p>
               </div>
