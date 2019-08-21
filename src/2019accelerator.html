@@ -305,7 +305,7 @@ experts:
       {% assign article = site.articles | where: 'slug', object | first %}
       <div class="col-xs-12">
         <div class="content">
-          <a href="{{ article.date }}" class="article">
+          <a href="{{ article.url }}" class="article">
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
           </a>
@@ -327,7 +327,7 @@ experts:
           {% assign article = site.articles | where: 'slug', object | first %}
           <div class="col-xs-12">
             <div class="content">
-              <a href="{{ article.date }}" class="article">
+              <a href="{{ article.url }}" class="article">
                 <h4>{{ article.title }}</h4>
                 <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
               </a>
