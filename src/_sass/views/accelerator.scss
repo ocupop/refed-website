@@ -2,9 +2,6 @@
   section {
     padding: 30px 0;
   }
-  .content {
-    padding: 0 20px;
-  }
   .p-5 {
     padding: 20px;
   }
@@ -15,6 +12,12 @@
     .content {
       padding: 20px;
     }
+  }
+}
+
+#accelerator-intro {
+  .content {
+    padding: 0 20px;
   }
 }
 
@@ -57,6 +60,66 @@
   justify-content: center;
 }
 
+#accelerator-articles {
+  h4 {
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .content {
+    padding: 10px 20px;
+  }
+  .article-date {
+    margin-bottom: 0;
+  }
+  button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nonprofit-cohort {
+  .grid {
+    .grid-item {
+      width: 20%;
+      .grid-item-image {
+        display: flex;
+        width: 100%;
+        height: 0;
+        padding-top: 50%;
+        position: relative;
+        background-color: $white;
+        img {
+          display: block;
+          width: auto;
+          max-width: 50%;
+          position: absolute;
+          padding: 4px;
+          top: 50%;
+          left: 50%;
+          transform:translateY(-50%) translateX(-50%);
+        }
+      }
+      h4 {
+        height: 33px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .cohort-content {
+      padding: 0 5px;
+    }
+  }
+}
+
+@media all and (max-width: $screen-md-max) {
+  
+}
+
 @media all and (max-width: $screen-sm-max) {
   #accelerator-hero {
     h1 {
@@ -80,4 +143,28 @@
       margin: 0 auto;
     }
   }
+  #nonprofit-cohort {
+    .grid {
+      .grid-item {
+        width: 50%;
+        padding: 5px;
+        h4 {
+          height: auto;
+        }
+      }
+    }
+  }
 }
+
+@media all and (max-width: $screen-xs-max) {
+  #nonprofit-cohort {
+    .grid {
+      .grid-item {
+        width: 50%;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+

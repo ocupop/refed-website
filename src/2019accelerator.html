@@ -5,6 +5,94 @@ permalink: /2019accelerator/
 hero: false
 nextpage: false
 prevpage: false
+articles:
+  - 2019-accelerator-cohort-announcement
+  - 2019-accelerator-open-call-analytics
+  - 2019-accelerator
+  - new-ingredients-key-to-sustainable-growth
+cohorts:
+  - name: 412 Food Rescue
+    description: >-
+      412 Food Rescue’s Food Rescue Hero is a real-world solution combining
+      technology, last-mile logistics and community engagement to create a new
+      food recovery and redistribution network that responds to the donation
+      challenges of food retailers and the food access barriers of those
+      experiencing hunger.
+    logo_image: /uploads/screen-shot-2019-08-28-at-1-51-07-pm.png
+    link: 'https://412foodrescue.org/'
+  - name: Boston Area Gleaners
+    description: >-
+      Boston Area Gleaners’ Surplus Commodity Crop Program (SCCP) is the only
+      gleaning model in the country that compensates farmers for making timely
+      donations by charging a service fee to food banks, who still receive high
+      quality product at a lower price compared to the wholesale market.
+    logo_image: /uploads/bag-goooo.jpg
+    link: 'https://www.bostonareagleaners.org/'
+  - name: Brighter Bites
+    description: >-
+      Brighter Bites sources fresh, seasonal, and primarily donated produce, and
+      systematically distributes it to underserved communities using
+      evidence-based nutrition education and fun food experiences.
+    logo_image: /uploads/bblogo-stacked-rgb-r.png
+    link: 'https://www.brighterbites.org/'
+  - name: Community Food Bank of Southern Arizona
+    description: >-
+      Community Food Bank of Southern Arizona is exploring technology solutions
+      to manage inventory, logistics, and data flow to move 100 million lbs of
+      produce from donors in Nogales, AZ (a major port of entry) to food banks
+      nationwide.
+    logo_image: /uploads/screen-shot-2019-08-28-at-1-52-31-pm.png
+    link: 'https://www.communityfoodbank.org/'
+  - name: Eat Greater Des Moines
+    description: >-
+      Eat Greater Des Moines’ initiative combines software, shared-use
+      refrigerated vans, and a paid-driver program to make the food rescue
+      network more dynamic, effective, and equitable while providing support to
+      organizations throughout the food system.
+    logo_image: /uploads/eatgreaterdsm-rgb-hrz-1-1.jpg
+    link: 'https://www.eatgreaterdesmoines.org/'
+  - name: Philabundance
+    description: >-
+      Philabundance reduces hunger and food insecurity by providing food access
+      to approximately 90,000 people per week in the region. An established food
+      bank operating since 1984, the organization aims to transform the
+      traditional food banking model by leveraging both the scale of the
+      established system and the flexibility of new technology startups.
+    logo_image: /uploads/philabundance.jpg
+    link: 'https://www.philabundance.org/'
+  - name: Plentiful
+    description: >-
+      Plentiful is a digital platform improving client dignity and efficiency at
+      food pantries. Plentiful eliminates lines through reservations, reduces
+      data redundancies, and creates access to real-time service information so
+      more food can be recovered and delivered effectively.
+    logo_image: /uploads/plentiful-1.png
+    link: 'https://www.plentifulapp.com/'
+  - name: Replate
+    description: >-
+      Replate’s technology platform enables businesses to schedule on-demand
+      pickups for their surplus food and the organization’s paid food rescuers
+      bring the donated food directly to those experiencing food insecurity in
+      the community.
+    logo_image: /uploads/replate-logo-1.png
+    link: 'https://www.re-plate.org/'
+  - name: Rescuing Leftover Cuisine
+    description: >-
+      Rescuing Leftover Cuisine is a national nonprofit organization with a
+      mission to rescue and donate food that would otherwise be wasted. The
+      organization charges only $20/pickup with no weight minimum, and employs a
+      web application to engage members of the community to volunteer and be a
+      transportation solution.
+    logo_image: /uploads/screen-shot-2019-08-29-at-2-27-40-pm.png
+    link: 'https://www.rescuingleftovercuisine.org/'
+  - name: Seeds That Feed
+    description: >-
+      Working with regional farmers and healthcare providers, the Seeds That
+      Feed ‘pHed’ initiative (pronounced ‘fed’) provides direct-to-door access
+      to free fresh produce and other healthy foods for home-bound and at-risk
+      populations experiencing chronic illness.
+    logo_image: /uploads/stflogo.png
+    link: 'http://seedsfeed.org/'
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -201,6 +289,89 @@ experts:
     </div>
   </div>
 </section>
+<section id="accelerator-articles">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content text-center">
+          <h2 class="editable">
+            Accelerator News
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% assign featured = page.articles | sort: 'date' %}
+      {% for object in featured limit: 3  %}
+      {% assign article = site.articles | where: 'slug', object | first %}
+      <div class="col-xs-12 col-md-4">
+        <div class="content text-center">
+          <a href="{{ article.url }}" class="article">
+            <h4>{{ article.title }}</h4>
+            <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if featured.size > 3 %}
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content text-center">
+            <button type="button" data-toggle="collapse" data-target="#collapse-articles" aria-expanded="false" aria-controls="collapse-articles">See All</button>
+          </div>
+        </div>
+      </div>
+      <div id="collapse-articles" class="collapse">
+        <div class="row">
+          {% for object in featured offset: 3  %}
+          {% assign article = site.articles | where: 'slug', object | first %}
+          <div class="col-xs-12 col-md-4">
+            <div class="content text-center">
+              <a href="{{ article.url }}" class="article">
+                <h4>{{ article.title }}</h4>
+                <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+<section id="nonprofit-cohort" class="alt-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content editable text-center">
+          <h2>2019 Nonprofit Cohort</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <div class="grid">
+            {% for cohort in page.cohorts %}
+              <div class="grid-item">
+                <a href="{{ cohort.link }}" class="grid-item-image" style="background-image: url()">
+                  <img src="{{ cohort.logo_image }}" class="img-fluid" />
+                </a>
+                <div class="cohort-content">
+                  <a href="{{ cohort.link }}">
+                    <h4 class="text-center">{{ cohort.name }}</h4>
+                  </a>
+                  <p class="hidden-xs hidden-sm">{{ cohort.description }}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="accelerator-how">
   <div class="container">
     <div class="row">
@@ -232,7 +403,7 @@ experts:
       <div class="col-md-10">
         <div class="editable content">
           <h4><strong>Equity-Free Funding</strong></h4>
-          <p>Each organization will receive $25,000 for participating and a travel stipend, plus an additional $100,000 will be awarded to selected winner(s).</p>
+          <p>Each participating organization will receive $30,000, plus an additional $100,000 will be awarded to a selected winner at the end of the Accelerator.</p>
         </div>
       </div>
     </div>
@@ -402,7 +573,7 @@ experts:
         </div>
         <div class="editable content">
           <p>If you are a food recovery innovator, register for <a href="/tools/innovator-database/apply-to-innovator-database">ReFED&rsquo;s Innovator Database</a> to join the growing network of solution providers and learn about upcoming opportunities to grow your impact.</p>
-          <p>If you have a question related to the Accelerator, please email <a href="mailto:accelerator@plusacumen.org.">accelerator@plusacumen.org</a>.</p>
+          <p>If you have a question related to the Accelerator, please email <a href="mailto:acceleration@refed.com">acceleration@refed.com</a>.</p>
         </div>
       </div>
     </div>

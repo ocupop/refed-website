@@ -4,7 +4,7 @@ date: 2018-05-10 00:00:00
 title: 'Picking up Speed: Food Waste Funders Meet to Fuel Further Impact'
 categories:
   - article
-featured_image: /uploads/Imperfect Feature.jpg
+featured_image: /uploads/Imperfect-Feature.jpg
 summary: >-
   Last month 16 food waste thought leaders met in an industrial corner of San
   Francisco to discuss the future of food waste capital and innovation. The
