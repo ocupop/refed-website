@@ -35,6 +35,12 @@ collections:
     output: true
     layout: article
     permalink: /content-hub/:path/
+  innocvs:
+    output: true
+    source: writers-clean.csv
+    id_key: name
+    layout: innovator  
+    permalink: /tools/innovator-database/:path/
 
 defaults:
   -
@@ -91,6 +97,7 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-contentblocks
   - jekyll/minibundle
+  - pagemaster
 # - jekyll-lunr-js-search
 
 
