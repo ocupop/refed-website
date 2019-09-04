@@ -15,8 +15,6 @@ This project uses Gulp, Jekyll, Cloudcannon Suite. It is meant for hosting on Cl
 ## Deployment to ghPages ##
 1. `cd` to project directory
 2. Start environment: `npm run deploy`
-
-
 =================
 Notes for minibundle
 
