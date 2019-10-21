@@ -3,7 +3,7 @@ name: Infield Market
 city: San Diego
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: The iNFIELD MARKET platform is a secure B2B Multi Storefront e Commerce
   site built to display product and connect buyers and sellers. We offer this service
   to qualified Food and Beverage, Nutraceutical and Animal Feed manufacturers and

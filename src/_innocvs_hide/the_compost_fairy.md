@@ -3,7 +3,7 @@ name: The Compost Fairy
 city: Memphis
 state: TN
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Compost Fairy is a 501c3 tasked with diverting organic material from
   the landfill, as well as processing and returning that material to the community
   as soil building compost. We also focus on cultural change, educating the community

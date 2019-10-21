@@ -3,7 +3,7 @@ name: PLANETARIANS
 city: Palo Alto
 state: CA
 country: USA
-innovator_level: Local
+innovator_level: local
 description: We up-cycle the oilcakes (dry matter left after oil extracted from seeds)
   into human food (chips). Historically, oil cakes have only been used in animal feed
   due to their hard, wood chip-like texture. This hard texture rendered them unappetizing

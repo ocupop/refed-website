@@ -3,7 +3,7 @@ name: Last Call
 city: Washington
 state: DC
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Two George Washington University students, Erin McGeoy and Chloe King,
   started Last Call in 2018 as a way to provide more affordable meal options to their
   community of college students, all while helping local businesses reduce their food

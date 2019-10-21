@@ -3,7 +3,7 @@ name: Cambridge Crops
 city: Somerville
 state: MA
 country: USA
-innovator_level: National
+innovator_level: national
 description: Natural and edible solutions for extending the shelf life of perishable
   foods
 business_model: For-Profit

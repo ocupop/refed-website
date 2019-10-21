@@ -3,7 +3,7 @@ name: Heaven's Windows
 city: Spring Valley
 state: CA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: We aid families, seniors, homeless individuals, and children with emergency
   food, summer  and after school meals and snacks, hot meals delivered to homebound
   seniors, congregate hot meals served, community free food distribution site, and

@@ -3,7 +3,7 @@ name: ORCA Digesters
 city: Toronto
 state: 'ON'
 country: Canada
-innovator_level: National
+innovator_level: national
 description: ORCA diverts unavoidable food waste, like prep waste and leftovers, from
   landfill where it would decompose and release methane into the air. ORCA uses microbiology
   and aerobic digestion to turn the food waste into an effluent that is discharged

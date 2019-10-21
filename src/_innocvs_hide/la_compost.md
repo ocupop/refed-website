@@ -3,7 +3,7 @@ name: LA Compost
 city: Los Angeles
 state: CA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: The mission of L.A. Compost is to connect the people of LA to the soil,
   and each other.
 business_model: Nonprofit

@@ -3,7 +3,7 @@ name: Heartside Gleaning Initiative
 city: Grand Rapids
 state: MI
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Heartside Gleaning Initiative (HGI) empowers Grand Rapid's Heartside
   and surrounding communities to become healthier through increased access to healthy
   foods and nutrition education. We do this by collecting excess produce from farmers'

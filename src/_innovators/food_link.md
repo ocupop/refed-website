@@ -3,7 +3,7 @@ name: Food Link
 city: Arlington
 state: MA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Food Link works with grocery stores, cafe's, and food producers to redistribute
   wholesome product that would otherwise be wasted to non-profit and social service
   agencies in the community. We have close relationships with our recipient agencies

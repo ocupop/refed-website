@@ -3,7 +3,7 @@ name: GrubTubs
 city: Austin
 state: TX
 country: USA
-innovator_level: Local
+innovator_level: local
 description: GrubTubs Inc. is dedicated to reconnecting communities with local family
   farms. Our job is to repurpose the food waste coming from restaurants and grocery
   stores into nutrient-rich animal feed that is affordable for the local farmer. By

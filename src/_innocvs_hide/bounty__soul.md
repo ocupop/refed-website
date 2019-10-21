@@ -3,7 +3,7 @@ name: BOUNTY & SOUL
 city: Black Mountain
 state: NC
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Bounty & Soul co-creates healthy communities through a cooperative model
   that provides access to whole foods, nutrition literacy, and wellness resources.
   Bounty & Soul rescues hundreds of thousands of pounds of nutritious food from fields

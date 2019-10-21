@@ -3,7 +3,7 @@ name: Hibbert's Foods LLC
 city: Boulder
 state: CO
 country: USA
-innovator_level: National
+innovator_level: national
 description: Hibbert's Foods believes in collecting food right before it reaches the
   end of its lifecycle and upcycling it for reuse. Hibbert's creates consumer packaged
   food products from otherwise-wasted food to accelerate the transition to a circular

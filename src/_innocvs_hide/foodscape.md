@@ -3,7 +3,7 @@ name: foodSCAPE
 city: East Greenwich
 state: RI
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: foodSCAPE works with schools, students, parents and food service providers
   to reduce food waste by focusing on healthy choices for students, donating useable
   food to people in need, and diverting the rest of the food from the landfill to

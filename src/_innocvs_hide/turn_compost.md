@@ -3,7 +3,7 @@ name: Turn Compost
 city: Dallas
 state: TX
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Turn Compost provides residential and commercial food waste pickup, data
   tracking, educational programs, and donations to urban and local agriculture systems.
 business_model: For-Profit

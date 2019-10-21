@@ -3,7 +3,7 @@ name: Ecoverse, Tiger Depackaging System
 city: Cleveland
 state: OH
 country: USA
-innovator_level: Local
+innovator_level: local
 description: Ecoverse represents the Tiger Depackaging System. The Tiger Depack helps
   divert organic waste from landfills and provides valuable nutrients to compost facilities
   and animal nutrition while also providing energy feedstock to renewable energy outlets

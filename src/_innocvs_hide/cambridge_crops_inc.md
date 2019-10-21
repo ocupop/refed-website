@@ -3,7 +3,7 @@ name: Cambridge Crops, Inc.
 city: Somerville
 state: MA
 country: USA
-innovator_level: National
+innovator_level: national
 description: Through the implementation of a natural and edible solutions that extend
   shelf life of perishable goods, Cambridge Crops is addressing the broader societal
   need for reducing food waste.  Cambridge Crops' technology ultimately offers customers

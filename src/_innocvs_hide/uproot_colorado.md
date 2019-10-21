@@ -3,7 +3,7 @@ name: UpRoot Colorado
 city: Carbondale
 state: CO
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: 'UpRoot Colorado (UpRoot) is working to reduce on-farm food loss statewide
   through gleaning, experiential education, research and legislative advocacy, with
   a vision to co-create a healthier, more connected, and just foodshed in Colorado

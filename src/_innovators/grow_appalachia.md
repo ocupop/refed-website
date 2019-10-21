@@ -3,7 +3,7 @@ name: Grow Appalachia
 city: Berea
 state: KY
 country: USA
-innovator_level: Regional
+innovator_level: local
 description: 'Grow Appalachia partners with community organizations throughout Central
   Appalachia to strengthen local food systems and economies on the household and commercial
   scale. Many of the partnering sites engage their communities in food recovery efforts,

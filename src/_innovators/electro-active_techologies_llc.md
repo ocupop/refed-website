@@ -3,7 +3,7 @@ name: Electro-Active Techologies, LLC
 city: Knoxville
 state: TN
 country: USA
-innovator_level: National
+innovator_level: national
 description: 'Electro-Active Technologies is developing a food waste conversion technology
   to produce zero emission fuel (H2) and a by-product which can be used either as
   a soil additive or as an animal feed. Electro-Active Technologies fights food waste

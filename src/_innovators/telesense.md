@@ -3,7 +3,7 @@ name: TeleSense
 city: Sunnyvale
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: TeleSense is a Silicon Valley-based Internet of Things (IoT) company
   providing cost-effective environmental monitoring and control solutions with the
   goal of increasing efficiency and public safety. Our self-configuring hardware can

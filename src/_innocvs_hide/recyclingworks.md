@@ -3,7 +3,7 @@ name: RecyclingWorks
 city: Boston
 state: MA
 country: USA
-innovator_level: Local
+innovator_level: local
 description: RecyclingWorks in Massachusetts is a recycling assistance program that
   helps businesses and institutions maximize recycling, reuse, and food waste diversion
   opportunities. RecyclingWorks in Massachusetts can provide the tools you need to

@@ -3,7 +3,7 @@ name: The Nashville Food Project
 city: Nashville
 state: TN
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: The Nashville Food Project's (TNFP's) mission is to bring people together
   to grow, cook and share nourishing food with the goals of cultivating community
   and alleviating hunger in our city.  TNFP receives rescued and donated food from

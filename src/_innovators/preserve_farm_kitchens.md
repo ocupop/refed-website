@@ -3,7 +3,7 @@ name: PRESERVE Farm Kitchens
 city: Petaluma
 state: CA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: On-farm food waste can be between 20 to 40% of the farm's production.
   Preserve Farm Kitchens works with local farmers to utilize the "whole harvest,"
   including food that is cosmetically imperfect or food that is simply overproduced.

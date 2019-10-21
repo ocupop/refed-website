@@ -3,7 +3,7 @@ name: Center for EcoTechnology Wasted Food Solutions
 city: Northampton
 state: MA
 country: USA
-innovator_level: Local
+innovator_level: local
 description: The Center for EcoTechnology (CET) helps people and businesses save energy
   and reduce waste. CET acts as a catalyst to accelerate the development of a vibrant
   marketplace to divert wasted food from the commercial and institutional sectors.

@@ -3,7 +3,7 @@ name: EatOrToss
 city: Washington
 state: DC
 country: USA
-innovator_level: National
+innovator_level: national
 description: Is it OK to eat? With loads of images and quick, science-based explanations,
   EatOrToss helps give you peace of mind about all the things that go bump in your
   kitchen. The website's mission is to take the �doubt� out of �when in doubt, throw

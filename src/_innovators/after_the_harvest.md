@@ -3,7 +3,7 @@ name: After the Harvest
 city: Kansas City
 state: MO
 country: USA
-innovator_level: Regional
+innovator_level: local
 description: After the Harvest rescues nutritious fruits and vegetables from going
   to waste and donates them to agencies that serve hungry people, primarily in Greater
   Kansas City. Our volunteers glean after the harvest, picking what's left in farmers'
