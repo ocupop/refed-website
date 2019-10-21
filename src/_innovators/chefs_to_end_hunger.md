@@ -3,7 +3,7 @@ name: Chefs to End Hunger
 city: Los Angeles
 state: CA
 country: USA
-innovator_level: Local
+innovator_level: local
 description: Chefs to End Hunger was started in 2012 by LA&SF Specialty, with the
   mission to facilitate the redistribution of prepared food from hotel, restaurant
   and other food service customers, to local charitable organizations that serve meals

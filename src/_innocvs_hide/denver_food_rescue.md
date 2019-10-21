@@ -3,7 +3,7 @@ name: Denver Food Rescue
 city: Denver
 state: CO
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Denver Food Rescue recovers mainly fresh produce from grocery stores,
   wholesale distributors, and farmers markets, and distributes it to low-income schools
   and community centers in the Denver Metro Area. DFR also cofounded Fresh Food Connect

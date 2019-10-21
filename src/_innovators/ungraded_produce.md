@@ -3,7 +3,7 @@ name: Ungraded Produce
 city: Hillsborough
 state: NC
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Ungraded Produce is a subscription-based produce delivery service on
   a mission to fight food waste and improve food access in North Carolina. We reintegrate
   food waste back into the system by incentivizing farmers to pick and sell their

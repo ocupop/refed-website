@@ -3,7 +3,7 @@ name: Collaborative for Fresh Produce
 city: Richardson
 state: TX
 country: USA
-innovator_level: Regional
+innovator_level: local
 description: 'The Collaborative for Fresh Produce''s (CFP) vision is that everyone
   has access to the fresh produce they need to support a healthy lifestyle.  CFP''s
   mission is to fight hunger by fighting food waste through partnerships with America''s

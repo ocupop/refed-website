@@ -3,7 +3,7 @@ name: IoTShipping
 city: Paris
 state: Other
 country: France
-innovator_level: National
+innovator_level: national
 description: Using smart sensors connected to an IoT network with global coverage,
   we track and trace perishables by temperature, movement and geo-location. Our Internet
   of Things supply chain logistics assures that you can always independently and autonomously

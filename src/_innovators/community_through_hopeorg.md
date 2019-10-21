@@ -3,7 +3,7 @@ name: Community Through Hope.org
 city: Chula Vista
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: We are mid scale redistribution hub /food bank that serves through distribution,
   food recovery, gardening and gleaning of nutrition.
 business_model: Nonprofit

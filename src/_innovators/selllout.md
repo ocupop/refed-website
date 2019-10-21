@@ -3,7 +3,7 @@ name: Selllout
 city: Las Vegas
 state: NV
 country: USA
-innovator_level: National
+innovator_level: national
 description: Selllout is an online marketplace for sellers and buyers of food that
   goes unsold, approaches "best by" dates, or reaches the end of daily business. These
   foods are sold to the public using a dutch style auction, meaning as time progresses,

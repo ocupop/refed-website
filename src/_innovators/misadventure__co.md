@@ -3,7 +3,7 @@ name: Misadventure & Co.
 city: Vista
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: Misadventure & Co. is the first distillery in the world to make high
   quality spirits from surplus baked goods. All of our feed stock is currently sourced
   from the San Diego Food Bank.

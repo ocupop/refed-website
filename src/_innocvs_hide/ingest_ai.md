@@ -3,7 +3,7 @@ name: Ingest AI
 city: New York
 state: NY
 country: USA
-innovator_level: National
+innovator_level: national
 description: Ingest.AI brings artificial intelligence to the restaurant industry.
   By effectively predicting operational needs and forecasting demand,�Ingest.AI helps
   restaurants reduce food waste, improve supply chain functionality, and hone logistics.

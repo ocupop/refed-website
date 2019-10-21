@@ -3,7 +3,7 @@ name: Galley Solutions
 city: La Jolla
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: Galley takes an approach that our customers have said is the only �right
   way.� We deliver beautiful and easy-to-use tools that empower chefs and their teams
   to provide  & maintain the core data of recipes,  menus,  and inventory, reducing

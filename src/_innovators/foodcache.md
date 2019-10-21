@@ -3,7 +3,7 @@ name: FoodCache
 city: Fremont
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: FoodCache, division of Rakshati is mobile platform that will help households
   manage food inventory, measure and reduce their food waste. Users build food inventories,
   then receive prompts to use that food up. Analytics provide insights into food that

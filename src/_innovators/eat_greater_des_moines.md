@@ -3,7 +3,7 @@ name: Eat Greater Des Moines
 city: Des Moines
 state: IA
 country: USA
-innovator_level: Local
+innovator_level: local
 description: Eat Greater Des Moines (EGDM) is a central Iowa-based non-profit organization
   that facilitates and builds connections to strengthen the area's food system. Through
   expanded partnerships, EGDM is bringing more healthy, edible unsellable food to

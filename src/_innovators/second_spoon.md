@@ -3,7 +3,7 @@ name: Second Spoon
 city: Miami
 state: FL
 country: USA
-innovator_level: Local
+innovator_level: local
 description: Second Spoon collects healthy surplus foods from local vendors before
   redistributing them to the homeless out of food trucks. The truck allows them to
   mobilize and target concentrated areas where food banks cannot. They raise awareness

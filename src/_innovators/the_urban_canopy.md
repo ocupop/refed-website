@@ -3,7 +3,7 @@ name: The Urban Canopy
 city: Chicago
 state: IL
 country: USA
-innovator_level: Regional
+innovator_level: local
 description: Our vision is to show how urban agriculture is part of creating a sustainable
   and equitable food system. Our indoor and outdoor farms within Chicago grow Wheatgrass
   and fresh produce, which is sold directly to consumers through farmers markets and

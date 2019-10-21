@@ -3,7 +3,7 @@ name: Holy Apostles Soup Kitchen
 city: New York
 state: NY
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Holy Apostles Soup Kitchen is NYC's largest emergency food program with
   several outreach programs. Through our continued zero waste efforts, we've diverted
   25 tons of organic waste from landfills to compostable and renewable energy annually.  This

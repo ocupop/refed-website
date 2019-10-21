@@ -3,7 +3,7 @@ name: The Gleaning Project of South Central Pennsylvania
 city: Gettysburg
 state: PA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: 'The Gleaning Project is South Central Pennsylvania''s collaborative,
   nonprofit effort to reduce food loss on local farms, and increase food security
   in our communities. We are part of South Central Community Action Programs (SCCAP).

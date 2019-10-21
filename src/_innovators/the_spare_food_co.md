@@ -3,7 +3,7 @@ name: The Spare Food Co.
 city: Sausalito
 state: CA
 country: USA
-innovator_level: National
+innovator_level: national
 description: 'The Spare Food Co. designs waste out of the food system. Our world-renowned
   team blends culinary innovation with experience design to change the way food professionals
   see, think, plan and cook. Our approach is threefold: supply-chain audits identify

@@ -3,7 +3,7 @@ name: Fresh Food Connect
 city: Denver
 state: CO
 country: USA
-innovator_level: National
+innovator_level: national
 description: Fresh Food Connect is a app based platform that unlocks the power of
   homegrown food, by creating a platform for backyard and community gardeners to sell,
   trade, or donate their bounty. FFC seeks to reduce food waste and increase access

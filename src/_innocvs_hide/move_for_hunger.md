@@ -3,7 +3,7 @@ name: Move For Hunger
 city: Red Bank
 state: NJ
 country: USA
-innovator_level: National
+innovator_level: national
 description: Established in 2009, Move For Hunger is the first and only non-profit
   mobilizing relocation professionals to simultaneously fight hunger and food waste
   by collecting unopened, non-perishable food from people who are moving and delivering

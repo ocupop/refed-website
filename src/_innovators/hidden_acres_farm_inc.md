@@ -3,7 +3,7 @@ name: Hidden Acres Farm, Inc.
 city: Tolland
 state: CT
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: Hidden Acres Farm, Inc is an incorporated non-profit based in rural Connecticut
   that is committed to seed, water and food sovereignty. We are piloting a food waste
   diversion project in Hartford and Litchfield counties that aims to process approximately

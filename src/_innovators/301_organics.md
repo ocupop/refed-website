@@ -3,7 +3,7 @@ name: 301 Organics
 city: Pasadena
 state: CA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: 301 Organics is an environmental consulting company specializing in Zero-waste
   planning, food recovery, composting and landfill alternative solutions.  We are
   a team of environmental planning, composting and community engagements specialists

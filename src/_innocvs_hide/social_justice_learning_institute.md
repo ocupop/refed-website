@@ -3,7 +3,7 @@ name: Social Justice Learning Institute
 city: Inglewood
 state: CA
 country: USA
-innovator_level: 'Local'
+innovator_level: local
 description: The Social Justice Learning Institute (SJLI) is dedicated to improving
   the education, health, and wellbeing of youth and communities of color by empowering
   them to enact social change through research, training, and community mobilization.

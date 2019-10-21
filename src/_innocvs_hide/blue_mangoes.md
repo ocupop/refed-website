@@ -3,7 +3,7 @@ name: Blue Mangoes
 city: Milwaukee
 state: WI
 country: USA
-innovator_level: National
+innovator_level: national
 description: Blue Mangoes designs solar fruit dehydrators which work without any electricity
   generation. These technologies are employed across the world and American urban
   farmers, transforming would-be overabundant and wasted fruits into all-natural and

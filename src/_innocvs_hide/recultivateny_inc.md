@@ -3,7 +3,7 @@ name: ReCultivateNY, Inc.
 city: Tarrytown
 state: NY
 country: USA
-innovator_level: Local
+innovator_level: local
 description: ReCultivateNY, Inc. has re-imagined how to process source sorted organics
   and brown organics in New York state by creating a de-centralized compost and soil
   processing model. As a service provider, ReCultivateNY produces both local and city
