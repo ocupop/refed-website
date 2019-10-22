@@ -11,21 +11,21 @@
   phone: 501.207.1007
   active: active
 - name: Warren Adams
-  title: Managing Director of Programs (Interim)
+  title: Strategic Advisor
   summary: >-
-    Warren Adams serves as ReFED’s interim Managing Director of Programs,
-    overseeing the successful execution of our priority projects for the year
-    and contributing decades of organizational expertise to ReFED’s development.
-    A pioneer in the field of social networking, Warren founded PlanetAll, which
-    Amazon.com acquired in 1998. Upon leaving Amazon, Warren turned his
-    professional attention to advising and investing in early-stage
-    entrepreneurial enterprises through his fund, Vineyard Ventures. After
-    traveling in Patagonia, Warren was motivated by the region’s incredible
-    natural beauty to apply his business acumen toward acquiring, conserving,
-    and protecting large tracts of pristine land there, culminating in the 2007
-    establishment of Patagonia Sur. Warren received a BA from Colgate University
-    and an MBA from Harvard Business School.
-  image: /uploads/wa---headshot.png
+    Warren Adams serves as ReFED’s Strategic Advisor, overseeing the successful
+    execution of our priority projects for the year and contributing decades of
+    organizational expertise to ReFED’s development. A pioneer in the field of
+    social networking, Warren founded PlanetAll, which Amazon.com acquired in
+    1998. Upon leaving Amazon, Warren turned his professional attention to
+    advising and investing in early-stage entrepreneurial enterprises through
+    his fund, Vineyard Ventures. After traveling in Patagonia, Warren was
+    motivated by the region’s incredible natural beauty to apply his business
+    acumen toward acquiring, conserving, and protecting large tracts of pristine
+    land there, culminating in the 2007 establishment of Patagonia Sur. Warren
+    received a BA from Colgate University and an MBA from Harvard Business
+    School.
+  image:
   phone: 617.356.5359
   active: active
 - name: Katy Franklin
@@ -66,7 +66,7 @@
     Department of Food and Agriculture. She holds a Bachelors in Economics and
     French from Dalhousie University and a Masters in Communications from the
     University of Gastronomic Sciences in Italy.
-  image: /uploads/ns---headshot.jpg
+  image:
   phone: 530.574.7902
   active: active
 - name: Caroline Powell
@@ -99,30 +99,6 @@
     procurement and sustainability teams.
   image: /uploads/curtis-hs-web.jpg
   phone: 814.470.7367
-  active: active
-- name: Nithya Sowrirajan
-  title: Roadmap Fellow
-  summary: >-
-    Nithya Sowrirajan is serving as a 2019 Roadmap Fellow, offering strategic
-    insights on communication strategy and data development. Nithya has been at
-    Google for 11 years, currently in the role of Director, Global Brand
-    Measurement. She began her career in media at the New York Times monetizing
-    premium editorial content, and then spearheaded digital sales for movie
-    studios as Digital Advertising Director. She moved to Google to lead east
-    coast sales for DoubleClick. Since 2013 she has been leading Brand
-    Measurement Strategy and Commercialization globally. Her team partners with
-    Product Management and Engineering to build both time-trusted and
-    new-to-world brand metrics that prove the efficacy of advertisers’ media
-    investments on Google, and namely, YouTube. Nithya is passionate about
-    diversity and has a track record of hiring and retaining women and
-    minorities, actively sponsoring top performers and creating a culture of
-    psychological safety. In addition, She serves on the Google Women@NY
-    Steering Committee where she co-leads the Social Impact pillar dedicated to
-    increasing the pipeline of tech talent in underserved communities. Outside
-    of Google, Nithya sits on the board of Citizens Committee of NY and advises
-    start-ups in the sustainability space.
-  image: /uploads/nss---headshot.png
-  phone:
   active: active
 - name: Alexandria Coari
   title: Capital and Innovation Director
@@ -192,6 +168,30 @@
     strategy, and a startup.
   image: /uploads/nl---headshot.jpg
   phone: 812.237.2316
+  active: active
+- name: Nithya Sowrirajan
+  title: Communications Advisor
+  summary: >-
+    Nithya Sowrirajan is serving as ReFED's Communications Advisor, offering
+    strategic insights on communication strategy and data development. Nithya
+    has been at Google for 11 years, currently in the role of Director, Global
+    Brand Measurement. She began her career in media at the New York Times
+    monetizing premium editorial content, and then spearheaded digital sales for
+    movie studios as Digital Advertising Director. She moved to Google to lead
+    east coast sales for DoubleClick. Since 2013 she has been leading Brand
+    Measurement Strategy and Commercialization globally. Her team partners with
+    Product Management and Engineering to build both time-trusted and
+    new-to-world brand metrics that prove the efficacy of advertisers’ media
+    investments on Google, and namely, YouTube. Nithya is passionate about
+    diversity and has a track record of hiring and retaining women and
+    minorities, actively sponsoring top performers and creating a culture of
+    psychological safety. In addition, She serves on the Google Women@NY
+    Steering Committee where she co-leads the Social Impact pillar dedicated to
+    increasing the pipeline of tech talent in underserved communities. Outside
+    of Google, Nithya sits on the board of Citizens Committee of NY and advises
+    start-ups in the sustainability space.
+  image:
+  phone:
   active: active
 - name: Vanessa Mukhebi
   title: Communications Fellow
