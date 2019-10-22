@@ -27,7 +27,7 @@
     and an MBA from Harvard Business School.
   image: /uploads/wa---headshot.png
   phone: 617.356.5359
-  active:
+  active: active
 - name: Katy Franklin
   title: Operations Director
   summary: >-
@@ -68,7 +68,7 @@
     University of Gastronomic Sciences in Italy.
   image: /uploads/ns---headshot.jpg
   phone: 530.574.7902
-  active:
+  active: active
 - name: Caroline Powell
   title: Data and Insights Director
   summary: >-
@@ -123,7 +123,7 @@
     start-ups in the sustainability space.
   image: /uploads/nss---headshot.png
   phone:
-  active:
+  active: active
 - name: Alexandria Coari
   title: Capital and Innovation Director
   summary: >-
@@ -168,7 +168,7 @@
     environmental crisis.
   image: /uploads/ph---headshot.png
   phone:
-  active:
+  active: active
 - name: Jackie Suggitt
   title: Stakeholder Engagement Director
   summary: >-
@@ -192,7 +192,7 @@
     strategy, and a startup.
   image: /uploads/nl---headshot.jpg
   phone: 812.237.2316
-  active:
+  active: active
 - name: Vanessa Mukhebi
   title: Communications Fellow
   summary: >-
@@ -206,7 +206,7 @@
     from the University of Sydney in Australia
   image: /uploads/vm---headshot.jpg
   phone: 312.662.3624
-  active:
+  active: active
 - name: Sarah Vared
   title: Founder
   summary: >-
