@@ -76,6 +76,29 @@ ul.styled {
   }
 }
 
+.bg-image {
+  display: block;
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &.aspect-1x1 {
+    padding-top: 100%;
+  }
+  &.aspect-2x1 {
+    padding-top: 50%;
+  }
+  &.aspect-4x3 {
+    padding-top: 75%;
+  }
+  &.aspect-16x9 {
+    padding-top: 56.25%;
+  }
+  &.aspect-post-hero {
+    padding-top: 30%;
+  }
+}
+
 .break-50 {
   width: 50% !important;
 }
