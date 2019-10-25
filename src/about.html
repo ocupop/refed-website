@@ -37,7 +37,13 @@ prevpage:
     <div class="row">
       <div class="col-xs-12 col-sm-3">
         <div class="content">
-          <img src="{{ member.image }}" alt="{{ member.name }}" class="img-responsive" />
+          {% if member.image %}
+            <img src="{{ member.image  }}" alt="{{ member.name }}" class="img-responsive" />
+          {% else %}
+          <div style="padding:50px 20px;">
+            <img src="/img/logo-wordmark.svg" alt="{{ member.name }}" class="img-responsive" style="opacity: 0.5;" />
+          </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-xs-12 col-sm-9">
