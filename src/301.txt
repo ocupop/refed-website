@@ -15,3 +15,4 @@
 /downloads/Food_Waste_and_GHG_Factors_for_Standardized_Date_Labeling_Impact_Framework_Methodology_vBETA%202019.07.25.xlsx /downloads/Food_Waste_and_GHG_Factors_for_Standardized_Date_Labeling_Impact_Methodology_vBETA_2019.07.05.xlsx
 /food-waste-summit-2019/ https://summit.refed.com
 /accelerator-expert-network-knowledge-series/ /download#accelerator-expert-network-knowledge-series
+/ReFED-Insights-Engine-Glossy/ /downoads/ReFED-insight-engine-glossy.pdf
