@@ -30,12 +30,14 @@
       <div class="content">
         <div class="grid row articles">
           {% for article in site.articles reversed %}
+          {% unless !article.published %}
           <div class="card article-card article mix" data-date="{{ article.date }}" data-type="{{ article.categories | join: ' '}}">
             <a href="{{ article.url }}" class="article-image" style="background-image: url({{ article.featured_image }});" title="{{ article.title }}">View More</a>
             <h4>{{ article.title }}</h4>
             <p class="article-date">Published {{ article.date | date: "%B %-d, %Y" }}</p>
             <p>{{ article.summary | truncate: 400 }} <a class="view-more" href="{{ article.url }}">View&nbsp;more&nbsp;&gt;</a></p>
           </div>
+          {% endunless %}
           {% endfor %}
         </div>
       </div>
