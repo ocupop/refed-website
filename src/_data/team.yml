@@ -130,7 +130,7 @@
     social entrepreneurship, food system design, and business development. He
     believes that business has the power to implement solutions to the
     environmental crisis.
-  image: /uploads/ph---headshot.png
+  image: /uploads/parker-hughes-headshot.jpg
   phone:
   active: active
 - name: Jackie Suggitt
@@ -154,7 +154,7 @@
     operations, and strategy at Indiana University. which led him to a career in
     the food and beverage industry across management consulting, corporate
     strategy, and a startup.
-  image: /uploads/nl---headshot.jpg
+  image: /uploads/nathan-lorhmann-headshot.jpg
   phone: 812.237.2316
   active: active
 - name: Nithya Sowrirajan
@@ -178,7 +178,7 @@
     increasing the pipeline of tech talent in underserved communities. Outside
     of Google, Nithya sits on the board of Citizens Committee of NY and advises
     start-ups in the sustainability space.
-  image:
+  image: /uploads/nithya-sowrirajan-headshot.png
   phone:
   active: active
 - name: Vanessa Mukhebi
@@ -192,7 +192,7 @@
     in rural communities. She holds an M.A. in Anthropology from the University
     of Chicago and a B.A in Media and Communication, Sociology and Anthropology
     from the University of Sydney in Australia
-  image: /uploads/vm---headshot.jpg
+  image: /uploads/vanessa-mukhebi-headshot.jpg
   phone: 312.662.3624
   active: active
 - name: Chris Cochran
@@ -222,4 +222,19 @@
     needed to scale solutions to reduce food waste.
   image: /uploads/vared-hs-web-copy.jpg
   phone:
+  active: active
+- name: Interim Executive Director
+  title: Dana Gunders
+  summary: >-
+    Dana Gunders serves as ReFED’s Interim Executive Director.  Dana is a
+    national expert and one of the first to bring to light just how much food is
+    wasted across the country. For almost a decade, she was a Senior Scientist
+    at the Natural Resources Defense Council (NRDC). She then launched Next
+    Course, LLC to strategically advise on the topic. Some of her career
+    highlights include authoring the landmark Wasted report andWaste Free
+    Kitchen Handbook, launching the Save the Food campaign, testifying in
+    Congress, consulting to Google, appearing on John Oliver, and perhaps most
+    importantly, being a founding Board Member of ReFED.
+  image: /uploads/dana-gunders-headshot.jpg
+  phone: 503.475.5803
   active: active
