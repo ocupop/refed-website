@@ -1,3 +1,18 @@
+- name: Dana Gunders
+  title: Interim Executive Director
+  summary: >-
+    Dana Gunders serves as ReFED’s Interim Executive Director.  Dana is a
+    national expert and one of the first to bring to light just how much food is
+    wasted across the country. For almost a decade, she was a Senior Scientist
+    at the Natural Resources Defense Council (NRDC). She then launched Next
+    Course, LLC to strategically advise on the topic. Some of her career
+    highlights include authoring the landmark Wasted report andWaste Free
+    Kitchen Handbook, launching the Save the Food campaign, testifying in
+    Congress, consulting to Google, appearing on John Oliver, and perhaps most
+    importantly, being a founding Board Member of ReFED.
+  image: /uploads/dana-gunders-headshot.jpg
+  phone: 503.475.5803
+  active: active
 - name: Warren Adams
   title: Strategic Advisor
   summary: >-
@@ -222,19 +237,4 @@
     needed to scale solutions to reduce food waste.
   image: /uploads/vared-hs-web-copy.jpg
   phone:
-  active: active
-- name: Interim Executive Director
-  title: Dana Gunders
-  summary: >-
-    Dana Gunders serves as ReFED’s Interim Executive Director.  Dana is a
-    national expert and one of the first to bring to light just how much food is
-    wasted across the country. For almost a decade, she was a Senior Scientist
-    at the Natural Resources Defense Council (NRDC). She then launched Next
-    Course, LLC to strategically advise on the topic. Some of her career
-    highlights include authoring the landmark Wasted report andWaste Free
-    Kitchen Handbook, launching the Save the Food campaign, testifying in
-    Congress, consulting to Google, appearing on John Oliver, and perhaps most
-    importantly, being a founding Board Member of ReFED.
-  image: /uploads/dana-gunders-headshot.jpg
-  phone: 503.475.5803
   active: active
