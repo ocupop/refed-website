@@ -1,14 +1,17 @@
-- name: Chris Cochran
-  title: Executive Director
+- name: Dana Gunders
+  title: Interim Executive Director
   summary: >-
-    Chris Cochran is the Executive Director of ReFED. Previously, Chris was the
-    Senior Manager of Sustainability at Walmart where he developed a farm to
-    consumer view of food waste while leading sustainability for Walmart’s
-    global produce business. Chris’s experience with tackling food waste from
-    multiple points in the value chain helps ReFED bring together new
-    collaborators on food system challenges.
-  image: /uploads/cochran-hs-web.jpg
-  phone: 501.207.1007
+    Dana Gunders serves as ReFED’s Interim Executive Director.  Dana is a
+    national expert and one of the first to bring to light just how much food is
+    wasted across the country. For almost a decade, she was a Senior Scientist
+    at the Natural Resources Defense Council (NRDC). She then launched Next
+    Course, LLC to strategically advise on the topic. Some of her career
+    highlights include authoring the landmark Wasted report andWaste Free
+    Kitchen Handbook, launching the Save the Food campaign, testifying in
+    Congress, consulting to Google, appearing on John Oliver, and perhaps most
+    importantly, being a founding Board Member of ReFED.
+  image: /uploads/dana-gunders-headshot-2.jpg
+  phone: 503.475.5803
   active: active
 - name: Warren Adams
   title: Strategic Advisor
@@ -25,7 +28,7 @@
     land there, culminating in the 2007 establishment of Patagonia Sur. Warren
     received a BA from Colgate University and an MBA from Harvard Business
     School.
-  image:
+  image: /uploads/warren-adams-headshot-2.jpg
   phone: 617.356.5359
   active: active
 - name: Katy Franklin
@@ -66,7 +69,7 @@
     Department of Food and Agriculture. She holds a Bachelors in Economics and
     French from Dalhousie University and a Masters in Communications from the
     University of Gastronomic Sciences in Italy.
-  image:
+  image: /uploads/nicole-sturzenberger-headshot-1.jpg
   phone: 530.574.7902
   active: active
 - name: Caroline Powell
@@ -142,7 +145,7 @@
     social entrepreneurship, food system design, and business development. He
     believes that business has the power to implement solutions to the
     environmental crisis.
-  image: /uploads/ph---headshot.png
+  image: /uploads/parker-hughes-headshot-1.jpg
   phone:
   active: active
 - name: Jackie Suggitt
@@ -166,31 +169,29 @@
     operations, and strategy at Indiana University. which led him to a career in
     the food and beverage industry across management consulting, corporate
     strategy, and a startup.
-  image: /uploads/nl---headshot.jpg
+  image: /uploads/nathan-lorhmann-headshot-1.jpg
   phone: 812.237.2316
   active: active
 - name: Nithya Sowrirajan
   title: Communications Advisor
   summary: >-
-    Nithya Sowrirajan is serving as ReFED's Communications Advisor, offering
-    strategic insights on communication strategy and data development. Nithya
-    has been at Google for 11 years, currently in the role of Director, Global
-    Brand Measurement. She began her career in media at the New York Times
-    monetizing premium editorial content, and then spearheaded digital sales for
-    movie studios as Digital Advertising Director. She moved to Google to lead
-    east coast sales for DoubleClick. Since 2013 she has been leading Brand
-    Measurement Strategy and Commercialization globally. Her team partners with
-    Product Management and Engineering to build both time-trusted and
-    new-to-world brand metrics that prove the efficacy of advertisers’ media
-    investments on Google, and namely, YouTube. Nithya is passionate about
-    diversity and has a track record of hiring and retaining women and
-    minorities, actively sponsoring top performers and creating a culture of
-    psychological safety. In addition, She serves on the Google Women@NY
-    Steering Committee where she co-leads the Social Impact pillar dedicated to
-    increasing the pipeline of tech talent in underserved communities. Outside
-    of Google, Nithya sits on the board of Citizens Committee of NY and advises
-    start-ups in the sustainability space.
-  image:
+    Nithya serves as ReFED's Communications Advisor, consulting on strategic
+    marketing and communications of ReFED's marquee programs focused on reducing
+    food waste. Nithya Sowrirajan is a leader in the media and technology space
+    with over a decade at Google and currently in the role of Director, Global
+    Product Solutions. At Google and YouTube, she leads strategy, go-to-market
+    and expansion of advertising products to 100+ countries with the goal of
+    successfully monetizing YouTube and creating value for advertisers. Nithya
+    has spent the bulk of her career in the high-tech industry scaling
+    new-to-world digital products and building high performing global teams. 
+    Nithya is committed to diversity and inclusion and serves on the Google
+    Women@NY Steering Committee where she co-leads the Social Impact pillar
+    dedicated to increasing the pipeline of tech talent from underserved
+    communities. In addition, she advises early stage cleantech startups in the
+    waste management and battery intelligence space. She is also part of the
+    Expert Network at SJF Ventures, a VC firm that invests in impact-driven
+    entrepreneurs.
+  image: /uploads/nithya-sowrirajan-headshot.jpg
   phone:
   active: active
 - name: Vanessa Mukhebi
@@ -204,8 +205,22 @@
     in rural communities. She holds an M.A. in Anthropology from the University
     of Chicago and a B.A in Media and Communication, Sociology and Anthropology
     from the University of Sydney in Australia
-  image: /uploads/vm---headshot.jpg
+  image: /uploads/vanessa-mukhebi-headshot-1.jpg
   phone: 312.662.3624
+  active: active
+- name: Chris Cochran
+  title: Transition Advisor
+  summary: >-
+    Chris Cochran served as the inaugural Executive Director of ReFED for two
+    and a half years from 2017-2019. Chris continues to support ReFED as
+    Transition Advisor. Previously, Chris was the Senior Manager of
+    Sustainability at Walmart where he developed a farm to consumer view of food
+    waste while leading sustainability for Walmart’s global produce business.
+    Chris’s experience with tackling food waste from multiple points in the
+    value chain helps ReFED bring together new collaborators on food system
+    challenges.
+  image: /uploads/cochran-hs-web.jpg
+  phone: 501.207.1007
   active: active
 - name: Sarah Vared
   title: Founder
