@@ -145,7 +145,7 @@
     social entrepreneurship, food system design, and business development. He
     believes that business has the power to implement solutions to the
     environmental crisis.
-  image: /uploads/parker-hughes-headshot.jpg
+  image:
   phone:
   active: active
 - name: Jackie Suggitt
@@ -169,7 +169,7 @@
     operations, and strategy at Indiana University. which led him to a career in
     the food and beverage industry across management consulting, corporate
     strategy, and a startup.
-  image: /uploads/nathan-lorhmann-headshot.jpg
+  image:
   phone: 812.237.2316
   active: active
 - name: Nithya Sowrirajan
@@ -205,7 +205,7 @@
     in rural communities. She holds an M.A. in Anthropology from the University
     of Chicago and a B.A in Media and Communication, Sociology and Anthropology
     from the University of Sydney in Australia
-  image: /uploads/vanessa-mukhebi-headshot.jpg
+  image:
   phone: 312.662.3624
   active: active
 - name: Chris Cochran
