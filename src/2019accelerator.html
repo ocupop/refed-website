@@ -37,6 +37,8 @@ cohorts:
       experiencing hunger.
     logo_image: /uploads/screen-shot-2019-08-28-at-1-51-07-pm.png
     link: 'https://412foodrescue.org/'
+    pitch_deck: /downloads/412-Food-Rescue-Inc-PitchDeck.pdf
+    video_link: 'https://youtu.be/ZD5J7jBDH8g'
   - name: Boston Area Gleaners
     description: >-
       Boston Area Gleaners’ Surplus Commodity Crop Program (SCCP) is the only
@@ -45,6 +47,8 @@ cohorts:
       quality product at a lower price compared to the wholesale market.
     logo_image: /uploads/bag-goooo.jpg
     link: 'https://www.bostonareagleaners.org/'
+    pitch_deck: /downloads/Boston-Area-Gleaners-PitchDeck.pdf
+    video_link: 'https://youtu.be/1tVf41pRFu0'
   - name: Brighter Bites
     description: >-
       Brighter Bites sources fresh, seasonal, and primarily donated produce, and
@@ -52,6 +56,8 @@ cohorts:
       evidence-based nutrition education and fun food experiences.
     logo_image: /uploads/bblogo-stacked-rgb-r.png
     link: 'https://www.brighterbites.org/'
+    pitch_deck: /downloads/Brighter-Bites-PitchDeck.pdf
+    video_link: 'https://youtu.be/QlKJLF4Pi1I'
   - name: Community Food Bank of Southern Arizona
     description: >-
       Community Food Bank of Southern Arizona is exploring technology solutions
@@ -60,6 +66,8 @@ cohorts:
       nationwide.
     logo_image: /uploads/screen-shot-2019-08-28-at-1-52-31-pm.png
     link: 'https://www.communityfoodbank.org/'
+    pitch_deck: /downloads/Community-Food-Bank-of-Southern-Arizona-PitchDeck.pdf
+    video_link: 'https://youtu.be/HNV84xRpMyM'
   - name: Eat Greater Des Moines
     description: >-
       Eat Greater Des Moines’ initiative combines software, shared-use
@@ -68,6 +76,8 @@ cohorts:
       organizations throughout the food system.
     logo_image: /uploads/eatgreaterdsm-rgb-hrz-1-1.jpg
     link: 'https://www.eatgreaterdesmoines.org/'
+    pitch_deck: /downloads/Eat-Greater-Des-Moines-PitchDeck.pdf
+    video_link: 'https://youtu.be/sQ19QBDo2pM'
   - name: Philabundance
     description: >-
       Philabundance reduces hunger and food insecurity by providing food access
@@ -77,6 +87,8 @@ cohorts:
       established system and the flexibility of new technology startups.
     logo_image: /uploads/philabundance.jpg
     link: 'https://www.philabundance.org/'
+    pitch_deck: /downloads/Philabundance-PitchDeck.pdf
+    video_link: 'https://youtu.be/JjXeAXHFusA'
   - name: Plentiful
     description: >-
       Plentiful is a digital platform improving client dignity and efficiency at
@@ -85,6 +97,8 @@ cohorts:
       more food can be recovered and delivered effectively.
     logo_image: /uploads/plentiful-1.png
     link: 'https://www.plentifulapp.com/'
+    pitch_deck: /downloads/Plentiful-PitchDeck.pdf
+    video_link: 'https://youtu.be/w8ZTxnvYAE4'
   - name: Replate
     description: >-
       Replate’s technology platform enables businesses to schedule on-demand
@@ -93,6 +107,8 @@ cohorts:
       the community.
     logo_image: /uploads/replate-logo-1.png
     link: 'https://www.re-plate.org/'
+    pitch_deck: /downloads/Replate-PitchDeck.pdf
+    video_link: 'https://youtu.be/6InomRmUGho'
   - name: Rescuing Leftover Cuisine
     description: >-
       Rescuing Leftover Cuisine is a national nonprofit organization with a
@@ -102,6 +118,8 @@ cohorts:
       transportation solution.
     logo_image: /uploads/screen-shot-2019-08-29-at-2-27-40-pm.png
     link: 'https://www.rescuingleftovercuisine.org/'
+    pitch_deck: /downloads/Rescuing-Leftover-Cuisine-PitchDeck.pdf
+    video_link: 'https://youtu.be/hwVMkph8uCA'
   - name: Seeds That Feed
     description: >-
       Working with regional farmers and healthcare providers, the Seeds That
@@ -110,6 +128,8 @@ cohorts:
       populations experiencing chronic illness.
     logo_image: /uploads/stflogo.png
     link: 'http://seedsfeed.org/'
+    pitch_deck: /downloads/Seeds-That-Feed-PitchDeck.pdf
+    video_link: 'https://youtu.be/wuJ3Wc96EUE'
 experts:
   - name: Afresh
     logo_image: /uploads/afresh-from-refed.png
@@ -380,6 +400,7 @@ experts:
                     <h4 class="text-center">{{ cohort.name }}</h4>
                   </a>
                   <p class="hidden-xs hidden-sm">{{ cohort.description }}</p>
+                  <p class="hidden-xs hidden-sm"><a href="{{ cohort.pitch_deck }}" title="{{ cohort.name }} Pitch Deck">Pitch Deck</a> | <a href="{{ cohort.video_link }}" title="{{ cohort.name }} Video">Video</a></p>
                 </div>
               </div>
             {% endfor %}
