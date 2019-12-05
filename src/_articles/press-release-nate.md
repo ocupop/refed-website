@@ -1,15 +1,60 @@
 ---
 layout: article
 date: 2019-12-05 11:00:00
-title: 'Press Release Nate'
+title: >-
+  ReFED announces Plentiful as $100,000 Winner of Industry-First Nonprofit Food
+  Recovery Accelerator
 categories:
   - article
-featured_image: 
+featured_image: /uploads/i-78dN5WJ-X3.jpg
 summary: >-
-  Add a Summary
+  The three-month program concluded with an in-person Showcase co-hosted by
+  Feeding America and a commitment from DoorDash to support food recovery.
 references:
 photo_credit:
 ---
 
+*The three-month program concluded with an in-person Showcase co-hosted by Feeding America and a commitment from DoorDash to support food recovery.*
 
-New Press Release Here. Test.
+**San Francisco, CA** (December 05, 2019) — Yesterday, ReFED, the only U.S. based nonprofit wholly dedicated to food waste reduction, announced that Plentiful, a digital platform improving client dignity and efficiency at food pantries in New York City, is the $100,000 prize winner of ReFED’s Nonprofit Food Recovery Accelerator. Plentiful eliminates lines through reservations, reduces data redundancies, and creates access to real-time service information so more food can be recovered and delivered effectively. Thanks to the generous support of the Walmart Foundation and in partnership with +Acumen, the three-month Accelerator sent ten nonprofit food recovery organizations through a series of virtual and in-person ReFED Learning Labs aimed at building the knowledge, network and capital needed to help double the amount of healthy food available to the 40 million food insecure Americans.&nbsp;
+
+“When we started this project, we knew we had ten diverse and unique organizations at very different stages of development offering a range of recovery solutions — all with the potential to significantly impact how much food is recovered in America,” **notes Alexandria Coari, director of capital and innovation at ReFED.** “Ultimately, ReFED, along with the Accelerator’s world-class 50-member Expert Network chose Plentiful as the $100,000 prize winner because of the organization’s innovative offering, promising traction as a scalable concept, and compelling vision for using the $100,000 to create transformational change both within their own operations and the entire food recovery space.”&nbsp;
+
+The $100,000 Showcase, co-hosted with Feeding America, gathered over 125 attendees to honor all ten cohort members, the dedicated Expert Network, and a broad group of key stakeholders who contributed towards making the Accelerator a major success. “The Accelerator has been invaluable for helping us understand our potential,” **explains Rebeckah Piotrowski, director of institutional partnerships at City Harvest**, **New York City’s largest food rescue organization**. “When City Harvest and United Way of New York City rolled Plentiful out in our service area, we saw the impact it could have — but thinking about how to scale it across the country required hope and guidance, which we gained from the Accelerator and its Expert Network.” Ms. Piotrowski also described how Plentiful will utilize the prize money. “The $100,000 will help us as we pilot Plentiful in three new markets. New York City is a very unique place and we want to make sure the platform meets the need of other communities. We also plan to work on integrating Plentiful into other systems that food banks and food pantries are already using to remove the burden on our platform users.”
+
+Other cohort members also spoke to the clear value of the three-month program:
+
+* *This has been a massive learning experience in such a short period of time. We’ve done what probably would have taken a year or more, in just a few short months*. **Alyssa Snyder, Seeds That Feed**
+* *The education platform, the relationships built, plus the exposure gained from this Accelerator have been invaluable. I would recommend this to any organization — not just food recovery leaders*. **Jennifer Boone, Brighter Bites**
+* *It has been really helpful to have our assumptions tested and to learn different ways of looking at the same problem. It’s more and more important for nonprofits to think like businesses and know how to communicate as such*. **Kait Bowdler, Philabundance**
+* *The Accelerator gave us the time, space, and resources to dig deeper into our solution. It challenged us to explain why it does (or doesn’t) work*. **Aubrey Alvarez, Eat Greater Des Moines**
+
+“As the largest domestic hunger-relief organization in the country, one of Feeding America’s priorities is to increase the capacity of our network member food banks and partner pantries to rescue more healthy food,” **notes Liz Baldridge, director of sustainability and food waste initiatives at Feeding America.** “The growth of these ten nonprofits in just three months is inspiring and motivates us to continue to seek out and partner with innovative organizations that can help us increase our impact for the 40 million people we serve.”&nbsp;&nbsp;
+
+“Supporting programs that expand access to healthier food is critical for improving the health of communities,” **states Eileen Hyde, director of strategic initiatives for Walmart.org.** “The results of the ReFED Accelerator program demonstrate the incredible amount of innovation each of these organizations brings to this issue, and show the kinds of impact that can be created when they are given the tools and resources to move fast and make change."&nbsp;
+
+In addition to announcing the $100,000 Accelerator winner, ReFED also shared that they will be partnering with [DoorDash](https://www.doordash.com/), the nation’s leading on-demand food delivery platform, to launch an open call for in-kind logistics support for food recovery organizations. This is part of Project DASH, the company’s initiative to advance social good through last-mile logistics, which has already helped rescue over 1.5 million pounds of surplus food in partnership with food recovery organizations nationwide. After participating as a member of the Accelerator Expert Network, DoorDash is excited to continue growing its efforts.
+
+“At DoorDash, we launched Project DASH to leverage our scale and logistics expertise to tackle the wasted food problem and build the capacity of food recovery organizations,” **explains Sueli Shaw, who leads social impact at DoorDash**. “The ReFED Accelerator deepened our understanding of the food recovery landscape today. We’re honored to partner with ReFED to help support the organizations driving innovation to address this important issue.”
+
+To apply for in-kind logistics support and learn more about the DoorDash and ReFED partnership, [click here](https://medium.com/@DoorDash/8cbb312e8e54). To learn about all ten members of the first-ever Nonprofit Food Recovery Accelerator and the impactful work they’re doing, [check out the videos and additional resources here](https://www.refed.com/2019accelerator).&nbsp;
+
+**About ReFED**
+
+ReFED is a think tank that works with decision-makers across the food system to reduce U.S. food waste using a systems approach and economic analysis. As the only U.S. nonprofit wholly dedicated to reducing food waste, it is ReFED’s vision to eliminate food waste in order to increase food security, spur economic growth and protect the environment. For more information, visit [www.refed.com](https://www.refed.com/?sort=economic-value-per-ton). For access to ReFED's Innovator Database, which tracks 500 innovators, including more than 100 recovery innovators in the U.S., visit [www.refed.com/innovators](https://www.refed.com/tools/innovator-database/).
+
+**About +Acumen**
+
+\+Acumen is a university, reimagined. Since 2012, Acumen has trained over 500 leaders through in-person leadership development programs. +Acumen offers an online learning platform to accelerate and amplify the impact of social entrepreneurs and intrapreneurs globally. +Acumen’s online accelerators guide select cohorts of innovators through structured programs to develop new initiatives on a rapid timeline. These programs reach over 450,000 people in 190+ countries around the world.
+
+**About Philanthropy at Walmart**
+
+Walmart.org represents the philanthropic efforts of Walmart and the Walmart Foundation. By leaning in where our business has unique strengths, we work to tackle key social issues and collaborate with others to spark long-lasting systemic change. Walmart has stores in 27 countries, employing more than 2 million associates and doing business with thousands of suppliers who, in turn, employ millions of people. Walmart.org is helping people live better by supporting programs that work to accelerate upward job mobility for frontline workers, address hunger and make healthier, more sustainably-grown food a reality, and build strong communities where Walmart operates. To learn more, visit www.walmart.org or find us on Twitter @Walmartorg.
+
+**About DoorDash**
+
+DoorDash is a technology company that connects customers with their favorite local and national businesses in more than 4,000 cities and all 50 states across the United States, Canada, and Australia. Founded in 2013, DoorDash empowers merchants to grow their businesses by offering on-demand delivery, data-driven insights, and better in-store efficiency, providing delightful experiences from door to door. By building the last-mile delivery infrastructure for local cities, DoorDash is bringing communities closer, one doorstep at a time. Read more on the DoorDash blog or at [www.doordash.com](https://www.doordash.com/).&nbsp;
+
+**About Feeding America**
+
+Feeding America&reg; is the largest hunger-relief organization in the United States. Through a network of 200 food banks and 60,000 food pantries and meal programs, we provide meals to more than 40 million people each year. Feeding America also supports programs that prevent food waste and improve food security among the people we serve; educates the public about the problem of hunger; and advocates for legislation that protects people from going hungry. Individuals, charities, businesses and government all have a role in ending hunger. Donate. Volunteer. Advocate. Educate. Together we can solve hunger. Visit [www.feedingamerica.org](https://www.feedingamerica.org/), find us on [Facebook](https://www.facebook.com/FeedingAmerica) or follow us on [Twitter](https://twitter.com/FeedingAmerica).
