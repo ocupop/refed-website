@@ -9,7 +9,8 @@ categories:
 featured_image: /uploads/i-78dN5WJ-X3.jpg
 summary: >-
   The three-month program concluded with an in-person Showcase co-hosted by
-  Feeding America and a commitment from DoorDash to support food recovery.
+  ReFED and Feeding America and a commitment from DoorDash to support food
+  recovery.
 references:
 photo_credit:
 ---
