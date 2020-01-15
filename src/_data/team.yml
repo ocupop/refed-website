@@ -13,37 +13,6 @@
   image: /uploads/dana-gunders-headshot-2.jpg
   phone: 503.475.5803
   active: active
-- name: Caroline Powell
-  title: Data and Insights Director
-  summary: >-
-    Caroline Powell serves as ReFED's Data and Insights Director, managing
-    projects related to data analytics, information security, and software
-    development. Prior to ReFED, Caroline was a consultant for the Walmart
-    Sustainability team and worked with the food sourcing teams on several
-    projects including food waste. Previously she spent time at The
-    Sustainability Consortium, helping to develop sustainability performance
-    metrics for food businesses. Caroline recently graduated from the Turing
-    School of Software &amp; Design and worked for a custom software design
-    firm, Cuttlesoft, supporting a healthcare organization on application
-    updates, secure infrastructure, and performance monitoring. She is an active
-    software developer and solutions architect.
-  image: /uploads/powell-hs-.jpg
-  phone: 501.499.0418
-  active: active
-- name: Philip Curtis
-  title: Data and Insights Manager
-  summary: >-
-    Philip Curtis is ReFED's Data and Insights Manager, providing data analysis
-    and support across the organization. Before joining ReFED, Philip served as
-    a researcher and geospatial analyst for The Sustainability Consortium (TSC).
-    While there, he developed new methods and tools to help food businesses
-    estimate and map risk in their global commodity supply chains. As part of
-    this work, Philip worked closely with companies to strengthen internal
-    data-sharing capacity and improve the flow of information between
-    procurement and sustainability teams.
-  image: /uploads/curtis-hs-web.jpg
-  phone: 814.470.7367
-  active: active
 - name: Alexandria Coari
   title: Capital and Innovation Director
   summary: >-
