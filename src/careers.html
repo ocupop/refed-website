@@ -1,13 +1,32 @@
 ---
 layout: page
-title: Careers
+title: About
 slug: careers
 nextpage:
-url: /resources
-title: Resources
-prevpage:
 url: /about
-title: About
+prevpage:
+positions:
+  - title: Data & Insights Director
+    label:
+    summary_html: >-
+      <p>ReFED is looking for a Data &amp; Insights Director to lead our core
+      program and manage development of the Insights Engine. The Director will
+      also set the vision for how to use insights from this data to create
+      action in food waste reduction. For more information and to apply for this
+      position, please click <a
+      href="https://app.trinethire.com/companies/24083-refed-inc/jobs/22904-data-insights-director">here</a>.</p>
+    download_path: /uploads/refed-data--insights-director---2020-01-21.pdf
+  - title: Capital & Innovation Manager
+    label:
+    summary_html: >-
+      <p>ReFED is seeking a Capital &amp; Innovation Manager who will play a
+      critical role in influencing a variety of wealth holders and asset
+      classes, as well as a growing network of innovators in order to increase
+      capital flows to viable, scalable food waste solutions. For more
+      information and to apply for this position, please click <a
+      target="_blank"
+      href="https://app.trinethire.com/companies/24083-refed-inc/jobs/22499-capital-and-innovation-manager">here</a>.</p>
+    download_path: /downloads/jobs/Capital_Innovation_Manager_final.pdf
 ---
 
 <section id="job-listings">
@@ -20,20 +39,27 @@ title: About
       </div>
     </div>
     <div class="row">
+      {% for position in page.positions %}
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <h4 class="editable">Capital & Innovation Manager</h4>
-          <small class="editable"></small>
-          <!-- <p class="editable hide">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> -->
-          <p>ReFED is seeking a Capital & Innovation Manager who will play a critical role in influencing a variety of wealth holders
-          and asset classes, as well as a growing network of innovators in order to increase capital flows to viable, scalable
-          food waste solutions. For more information and to apply for this position, please click <a href="https://app.trinethire.com/companies/24083-refed-inc/jobs/22499-capital-and-innovation-manager" target="_blank">here</a>.</p>
-          <a href="/downloads/jobs/Capital_Innovation_Manager_final.pdf" class="button cms-no-rewrite" download>Download Information</a>
+          <h4>{{ position.title }}</h4>
+          <small>{{ position.label }}</small>
+          {{ position.summary_html }}
+          
+          <a href="{{ position.download_path }}" class="button cms-no-rewrite" download>Download Information</a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
-          <!-- <p class="editable hide">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> -->
+      {% endfor %}
+      {% if page.positions.size == 0 %}
+        <div class="col-12">
+          <p class="content editable">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> 
+        </div>
+      {% endif %}
+     </div>
+     <hr />
+     <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-10 col-sm-offset1">
+        <div class="content editable text-center">
           <p>ReFED is a 501(c)(3) public charity that leads the nation to reduce food waste in order to increase food
             security, spur
             economic growth and protect the environment. ReFED, Inc. is committed to attracting, developing, and retaining
