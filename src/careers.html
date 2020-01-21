@@ -8,6 +8,10 @@ title: Resources
 prevpage:
 url: /about
 title: About
+positions:
+ - title: Capital & Innovation Manager
+   summary_html: "<p>ReFED is seeking a Capital & Innovation Manager who will play a critical role in influencing a variety of wealth holders and asset classes, as well as a growing network of innovators in order to increase capital flows to viable, scalable food waste solutions. For more information and to apply for this position, please click <a href='https://app.trinethire.com/companies/24083-refed-inc/jobs/22499-capital-and-innovation-manager' target='_blank'>here</a>.</p>"
+   download_url: "/downloads/jobs/Capital_Innovation_Manager_final.pdf"
 ---
 
 <section id="job-listings">
@@ -20,20 +24,29 @@ title: About
       </div>
     </div>
     <div class="row">
+      {% for position in page.positions %}
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <h4 class="editable">Capital & Innovation Manager</h4>
+          <h4 class="editable">{{ position.title }}</h4>
           <small class="editable"></small>
-          <!-- <p class="editable hide">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> -->
+          {{ position.summary_html }}
           <p>ReFED is seeking a Capital & Innovation Manager who will play a critical role in influencing a variety of wealth holders
           and asset classes, as well as a growing network of innovators in order to increase capital flows to viable, scalable
           food waste solutions. For more information and to apply for this position, please click <a href="https://app.trinethire.com/companies/24083-refed-inc/jobs/22499-capital-and-innovation-manager" target="_blank">here</a>.</p>
-          <a href="/downloads/jobs/Capital_Innovation_Manager_final.pdf" class="button cms-no-rewrite" download>Download Information</a>
+          
+          <a href="{{ position.download_url }}" class="button cms-no-rewrite" download>Download Information</a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="content">
-          <!-- <p class="editable hide">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> -->
+      {% endfor %}
+      {% if page.positions.size == 0 %}
+        <div class="col-12">
+          <p class="content editable">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> 
+        </div>
+      {% endif %
+     </div>
+     <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-8">
+        <div class="content editable">
           <p>ReFED is a 501(c)(3) public charity that leads the nation to reduce food waste in order to increase food
             security, spur
             economic growth and protect the environment. ReFED, Inc. is committed to attracting, developing, and retaining
