@@ -10,6 +10,7 @@ url: /about
 title: About
 positions:
  - title: Capital & Innovation Manager
+   label:
    summary_html: "<p>ReFED is seeking a Capital & Innovation Manager who will play a critical role in influencing a variety of wealth holders and asset classes, as well as a growing network of innovators in order to increase capital flows to viable, scalable food waste solutions. For more information and to apply for this position, please click <a href='https://app.trinethire.com/companies/24083-refed-inc/jobs/22499-capital-and-innovation-manager' target='_blank'>here</a>.</p>"
    download_url: "/downloads/jobs/Capital_Innovation_Manager_final.pdf"
 ---
@@ -27,8 +28,8 @@ positions:
       {% for position in page.positions %}
       <div class="col-xs-12 col-sm-6">
         <div class="content">
-          <h4 class="editable">{{ position.title }}</h4>
-          <small class="editable"></small>
+          <h4>{{ position.title }}</h4>
+          <small>{{ position.label }}</small>
           {{ position.summary_html }}
           
           <a href="{{ position.download_url }}" class="button cms-no-rewrite" download>Download Information</a>
