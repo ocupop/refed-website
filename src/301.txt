@@ -16,3 +16,4 @@
 /food-waste-summit-2019/ https://summit.refed.com
 /accelerator-expert-network-knowledge-series/ /download#accelerator-expert-network-knowledge-series
 /ReFED-insights-engine-glossy/ /downloads/ReFED-insights-engine-glossy.pdf
+/api/policy/ /api/policy.json
