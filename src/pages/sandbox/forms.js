@@ -2,27 +2,21 @@ import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 
-import {
-  TextInput,
-  TextArea,
-  SwitchInput,
-  SelectInput,
-  RadioInput,
-} from '../../common/fields'
+import { TextInput, TextArea, SwitchInput, SelectInput } from '../../common/fields'
 
 import FormikDebug from '../../common/utils/FormikDebug'
 
 const mockSelectData = [
   { value: 'select1', label: 'Select One' },
   { value: 'select2', label: 'Select Two' },
-  { value: 'select3', label: 'Select Three' },
+  { value: 'select3', label: 'Select Three' }
 ]
 
 const ValidationSchema = Yup.object().shape({
   content: Yup.string()
     .min(10, 'Too Short!')
     .max(100, 'Too Long!')
-    .required('Required'),
+    .required('Required')
 })
 
 const FormSandbox = () => {
@@ -30,7 +24,7 @@ const FormSandbox = () => {
     description: '',
     switch: true,
     featuredProduct: {},
-    richDescription: '',
+    richDescription: ''
   }
 
   return (
@@ -44,10 +38,10 @@ const FormSandbox = () => {
                 enableReinitialize
                 initialValues={initialValues}
                 validationSchema={ValidationSchema}
-              // onSubmit={(values, { resetForm }) => {
-              //   dispatch(testForm({ firestore }, values))
-              //   resetForm()
-              // }}
+                // onSubmit={(values, { resetForm }) => {
+                //   dispatch(testForm({ firestore }, values))
+                //   resetForm()
+                // }}
               >
                 {({ values, setFieldValue }) => (
                   <Form>
@@ -86,7 +80,7 @@ const FormSandbox = () => {
                         label="radio-opt-1"
                         value="radio-opt-1"
                         onChange={(e, val) => {
-                          setFieldValue("radioExample", val.value);
+                          setFieldValue('radioExample', val.value)
                         }}
                       />
                       <Field
@@ -96,7 +90,7 @@ const FormSandbox = () => {
                         label="radio-opt-2"
                         value="radio-opt-2"
                         onChange={(e, val) => {
-                          setFieldValue("radioExample", val.value);
+                          setFieldValue('radioExample', val.value)
                         }}
                       />
                     </div>
@@ -110,7 +104,9 @@ const FormSandbox = () => {
                       onChange={value => setFieldValue('featuredProduct', value)}
                       label="Select Featured Product"
                     />
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">
+                      Submit
+                    </button>
                     <FormikDebug />
                   </Form>
                 )}

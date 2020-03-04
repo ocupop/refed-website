@@ -1,9 +1,9 @@
 # Site settings
 title: ReFED | Rethink Food Waste
 email: info@refed.com
-description:  "A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale. Together, we can reduce U.S. food waste by 50% by 2030."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.refed.com" # the base hostname & protocol for your site
+description: 'A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale. Together, we can reduce U.S. food waste by 50% by 2030.'
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'http://www.refed.com' # the base hostname & protocol for your site
 permalink: pretty
 
 minibundle:
@@ -39,26 +39,25 @@ collections:
     output: true
     source: writers-clean.csv
     id_key: name
-    layout: innovator  
+    layout: innovator
     permalink: /tools/innovator-database/:path/
+  elements:
+    output: false
 
 defaults:
-  -
-    scope:
+  - scope:
       type: 'states'
     values:
       layout: state
-      header: "<small>U.S. Food Waste</small>Policy Finder"
+      header: '<small>U.S. Food Waste</small>Policy Finder'
       tool_url: /tools/food-waste-policy-finder/
-  -
-    scope:
+  - scope:
       type: 'innovators'
     values:
       layout: innovator
-      header: "<small>The Food Waste</small>Innovator Database"
+      header: '<small>The Food Waste</small>Innovator Database'
       tool_url: /tools/innovator-database/
-  -
-    scope:
+  - scope:
       type: 'solutions'
     values:
       nextpage:
@@ -67,8 +66,7 @@ defaults:
       prevpage:
         url: /solutions/
         title: Solutions
-  -
-    scope:
+  - scope:
       type: 'stakeholders'
     values:
       nextpage:
@@ -78,13 +76,11 @@ defaults:
         url: /solutions/
         title: Solutions
 
-
-
-
-
-
 # Build settings
 safe: false
+sass:
+  # style: compressed
+  sass_dir: _scss
 markdown: kramdown
 
 exclude:
@@ -92,14 +88,12 @@ exclude:
   - _tools/innovator-database/_partials
   - _tools/spotlight-on-date-labeling-regulations/_partials
 
-
 plugins:
   - jekyll-last-modified-at
   - jekyll-contentblocks
   - jekyll/minibundle
   - pagemaster
 # - jekyll-lunr-js-search
-
 
 # Cloudcannon Editor
 
@@ -110,17 +104,17 @@ innovator_levels:
 food_recovery_hierarchy_options:
   prevention:
     title: Prevention
-    summary: "Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well."
+    summary: 'Prevention stops waste before it can occur, saving all the natural resources and other inputs embedded in food from going to waste as well.'
   recovery:
     title: Recovery
-    summary: " Recovery captures edible food that would otherwise go to waste on farms, within the supply chain, or in consumer-facing businesses, and redistributes it to food insecure populations."
+    summary: ' Recovery captures edible food that would otherwise go to waste on farms, within the supply chain, or in consumer-facing businesses, and redistributes it to food insecure populations.'
   recycling:
     title: Recycling
-    summary: "Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product."
+    summary: 'Recycling gives a higher purpose to the inedible food scraps that remain after preventing or recovering as much as possible, either as a direct source of nutrition for animals, or by converting the material into a value-added product.'
 
 business_models:
-  - "For-Profit"
-  - "Nonprofit"
+  - 'For-Profit'
+  - 'Nonprofit'
 
 innovator_category_options:
   consumer-education:
@@ -134,7 +128,7 @@ innovator_category_options:
       - Smart Refrigerator
   supply-chain-and-operational-efficiency:
     title: Supply Chain and Operational Efficiency
-    summary: "An organization that offers tools, technologies, and systems that decrease food loss and waste in the supply chain or in food business operations."
+    summary: 'An organization that offers tools, technologies, and systems that decrease food loss and waste in the supply chain or in food business operations.'
     food_recovery_hierarchy_options: prevention
     innovator_subcategory_options:
       - Cold Chain Management
@@ -142,7 +136,7 @@ innovator_category_options:
       - Waste Tracking & Analytics
   shelf-life-extension:
     title: Shelf-Life Extension
-    summary: "An organization that offers any technology that physically enhances the ability of perishable food to remain fresh for longer, including food packaging."
+    summary: 'An organization that offers any technology that physically enhances the ability of perishable food to remain fresh for longer, including food packaging.'
     food_recovery_hierarchy_options: prevention
     innovator_subcategory_options:
       - Ethylene Inhibitor
@@ -150,7 +144,7 @@ innovator_category_options:
       - Packaging Adjustments
   secondary-marketplaces:
     title: Secondary Marketplaces
-    summary: "An organization that operates a secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants."
+    summary: 'An organization that operates a secondary marketplace that connects surplus food (food that would otherwise be wasted) to buyers. This includes brick-and-mortar entities, platforms to facilitate the purchase of surplus produce from farms, and platforms to facilitate the purchase of surplus food from restaurants.'
     food_recovery_hierarchy_options: prevention
     innovator_subcategory_options:
       - Brick and Mortar
@@ -160,7 +154,7 @@ innovator_category_options:
       - Consumer to Consumer
   food-product-creation:
     title: Food Product Creation
-    summary: "An organization that converts edible food that is currently considered waste (e.g., surplus/cosmetically challenged produce, brewery waste, vegetable trimmings) into value-added consumer food products (e.g., juices, fruit snacks, energy bars)."
+    summary: 'An organization that converts edible food that is currently considered waste (e.g., surplus/cosmetically challenged produce, brewery waste, vegetable trimmings) into value-added consumer food products (e.g., juices, fruit snacks, energy bars).'
     food_recovery_hierarchy_options: prevention
     innovator_subcategory_options:
       - Surplus Produce
@@ -175,14 +169,14 @@ innovator_category_options:
       - Donation Coordinator
   donation-transportation:
     title: Donation Transportation
-    summary: "An organization that is actively involved in the collection and distribution of donated food."
+    summary: 'An organization that is actively involved in the collection and distribution of donated food.'
     food_recovery_hierarchy_options: recovery
     innovator_subcategory_options:
       - Donation Transportation
       - Consumer Food Recovery
   donated-food-processing:
     title: Donated Food Processing
-    summary: "An organization that collects, stores, and processes donated food for distribution to food insecure populations. This includes community kitchen models and the value-added processing of donated food."
+    summary: 'An organization that collects, stores, and processes donated food for distribution to food insecure populations. This includes community kitchen models and the value-added processing of donated food.'
     food_recovery_hierarchy_options: recovery
     innovator_subcategory_options:
       - Donation Storage & Handling
@@ -190,7 +184,7 @@ innovator_category_options:
       - Value-Added Processing
   renewable-energy-from-organics-anaerobic-digestion:
     title: Renewable Energy from Organics (Anaerobic Digestion)
-    summary: "An organization that generates renewable energy from organic material via anaerobic digestion, both on-site or at a centralized facility."
+    summary: 'An organization that generates renewable energy from organic material via anaerobic digestion, both on-site or at a centralized facility.'
     food_recovery_hierarchy_options: recycling
     innovator_subcategory_options:
       - Centralized Anaerobic Digestion
@@ -198,7 +192,7 @@ innovator_category_options:
       - Small Scale Anaerobic Digestion
   composting:
     title: Composting
-    summary: "An organization that processes food waste by composting on any scale at a designated location."
+    summary: 'An organization that processes food waste by composting on any scale at a designated location.'
     food_recovery_hierarchy_options: recycling
     innovator_subcategory_options:
       - Community Composting
@@ -206,27 +200,26 @@ innovator_category_options:
       - Home Composting
   animal-feed:
     title: Animal Feed
-    summary: "An organization that processes food waste by feeding the material to animals."
+    summary: 'An organization that processes food waste by feeding the material to animals.'
     food_recovery_hierarchy_options: recycling
     innovator_subcategory_options:
       - Livestock
       - Black Soldier Fly Larvae
   on-site-processing-solutions:
     title: On-Site Processing Solutions
-    summary: "A technology that enables an organization to process its food waste on-site."
+    summary: 'A technology that enables an organization to process its food waste on-site.'
     food_recovery_hierarchy_options: recycling
     innovator_subcategory_options:
       - In-Vessel Composting
       - Commercial Greywater
   specialty-recycled-products:
     title: Specialty Recycled Products
-    summary: "Any organization that is recycling inedible food waste into value-added products for consumers (e.g., dog treats; clothing) or other products like bioplastics."
+    summary: 'Any organization that is recycling inedible food waste into value-added products for consumers (e.g., dog treats; clothing) or other products like bioplastics.'
     food_recovery_hierarchy_options: recycling
     innovator_subcategory_options:
       - Consumer Products
       - Industrial Products
       - Agricultural Products
-
 
 innovator_subcategory_options:
   - Campaigns
@@ -296,7 +289,6 @@ restricted_donations_on_expired_labels:
   - perishables
   - sandwiches
   - shellfish
-
 
 # EVENTS
 summit_registration_url: https://www.eventbrite.com/e/application-for-2019-food-waste-summit-hosted-by-refed-registration-62694350490

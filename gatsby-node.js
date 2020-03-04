@@ -18,39 +18,62 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
 // ------------------------
 // CREATE PAGES
 // ------------------------
-// exports.createPages = async ({ graphql, actions: { createPage } }) => {
-//   await graphql(`
-//     query {
-//       allPosts {
-//         edges {
-//           node {
-//             id
-//             url
-//             layout
-//           }
-//         }
-//       }
-//     }
-//   `).then(
-//     ({
-//       data: {
-//         allPosts: { edges: posts }
-//       }
-//     }) => {
-//       const collections = [...posts]
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
+  await graphql(`
+    query {
+      allPages {
+        edges {
+          node {
+            id
+            pageUrl
+            layout
+          }
+        }
+      }
+      allPosts {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+    }
+  `).then(
+    ({
+      data: {
+        allPages: { edges: pages },
+        allPosts: { edges: posts }
+      }
+    }) => {
+      const collections = [...posts]
 
-//       // Build Collection Pages
-//       collections.forEach(({ node: { layout, url, id } }) => {
-//         const component = path.resolve(`./src/templates/${layout}.jsx`)
+      // Build Web Pages
+      pages.forEach(({ node: { layout, pageUrl, id } }) => {
+        const component = path.resolve(`./src/templates/${layout}.jsx`)
 
-//         createPage({
-//           component,
-//           path: url,
-//           context: {
-//             id
-//           }
-//         })
-//       })
-//     }
-//   )
-// }
+        createPage({
+          component,
+          path: pageUrl,
+          context: {
+            id
+          }
+        })
+      })
+
+      // Build Collection Pages
+      collections.forEach(({ node: { layout, url, id } }) => {
+        const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+        createPage({
+          component,
+          path: url,
+          context: {
+            id
+          }
+        })
+      })
+    }
+  )
+}

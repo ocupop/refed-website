@@ -28,26 +28,56 @@ module.exports = {
         name: 'images'
       }
     },
-
-    // Example: Getting Posts
-    // {
-    //   resolve: 'gatsby-source-custom-api',
-    //   options: {
-    //     url: `${process.env.CMS_BASE_URL}/api/posts.json`,
-    //     rootKey: 'posts',
-    //     schemas: {
-    //       posts: `
-    //         output: String
-    //         url: String
-    //         layout: String
-    //         title: String
-    //         post_date: String
-    //         date: String
-    //         slug: String
-    //       `
-    //     }
-    //   }
-    // },
+    // Getting UI Elements
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/ui.json`,
+        // imageKeys: ["images"],
+        rootKey: 'elements',
+        schemas: {
+          elements: `
+            slug: String!
+            output: String!
+          `
+        }
+      }
+    },
+    // Getting pages
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/pages.json`,
+        // imageKeys: ["images"],
+        rootKey: 'pages',
+        schemas: {
+          pages: `
+            layout: String
+            title: String
+            content: String
+          `
+        }
+      }
+    },
+    // Getting Posts
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/posts.json`,
+        rootKey: 'posts',
+        schemas: {
+          posts: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            post_date: String
+            date: String
+            slug: String
+          `
+        }
+      }
+    },
 
     // TODO: Add this back once assets are available
     // {
@@ -102,18 +132,18 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     'gatsby-plugin-netlify' // make sure to keep it last in the array
-  ],
+  ]
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  developMiddleware: app => {
-    app.use(
-      '/.netlify/functions/',
-      proxy({
-        target: 'http://localhost:9000',
-        pathRewrite: {
-          '/.netlify/functions/': ''
-        }
-      })
-    )
-  }
+  // developMiddleware: app => {
+  //   app.use(
+  //     '/.netlify/functions/',
+  //     proxy({
+  //       target: 'http://localhost:9000',
+  //       pathRewrite: {
+  //         '/.netlify/functions/': ''
+  //       }
+  //     })
+  //   )
+  // }
 }
