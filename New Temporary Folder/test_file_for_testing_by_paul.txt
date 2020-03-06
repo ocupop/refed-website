@@ -1,5 +1,0 @@
-This is a test file for testing commit/push/pull functionality in GIT. Created 3/6/2020 by Paul Stroot.
-
-This line was added later, in a separate commit.
-
-Another new line added. Testing git from the command line.
