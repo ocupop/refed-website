@@ -1,3 +1,5 @@
 Just another test file. It will be deleted shortly. Please disregard.
 
 Second line added
+
+Testing a commit from the command line without staging it.
