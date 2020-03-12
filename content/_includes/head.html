@@ -1,36 +1,29 @@
 <head>
-  <meta charset="utf-8">
+  <meta name="google" content="notranslate" />
   <meta http-equiv="Content-Language" content="en_US" />
+  <meta charset="utf-8">
+  
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include newrelic.html %}
-  <title>{{ page.title }} : {{ site.title }}</title>
-  <meta name="description" content="{% if page.summary %}{{ page.summary | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% include socialshare.html %}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff">
-  <!-- Place favicon.ico in the root directory -->
-
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="og:site_name" content="{{ site.title }}"/>
-  <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:description" content="{{ site.description }}" />
-  <meta property="og:image" content="{{ site.baseurl }}/img/logo-meta.jpg" />
 
   <!-- FONTS -->
   <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/b6599149-00f3-45ff-9c12-4018c4c156b5.css"/>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/animate.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/bootstrap-tour.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/main.css' }}">
 
-  <!-- JS -->
-  {% include scripts.html %}
+  <!-- Analytics -->
+  {% include analytics.html %}
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>

@@ -1,57 +1,12 @@
 <!DOCTYPE html>
-{% case page.layout %}
-  {% when "state" %}
-    {% assign sidebar = 'state' %}
-  {% when "innovator" %}
-    {% assign sidebar = 'innovator' %}
-  {% else %}
-    {% assign sidebar = page.sidebar %}
-{% endcase %}
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}-layout {{ page.title | slugify }} {{ page.slug }}">
-
-    {% include components/share.html %}
-    {% if page.url contains 'tools/' %}
-      {% include elements/toolHeader.html %}
-    {% else %}
-      {% include elements/pageHeader.html %}
-    {% endif %}
-
-    {% include search-results.html %}
-
-    <div id="pageContent" class="{% if sidebar %}sidebar{% endif %}">
-      <main>
-        {% if page.breadcrumb %}
-          {% include elements/breadCrumbs.html%}
-        {% endif %}
-        {{ content }}
-      </main>
-
-      {% if sidebar %}
-        <aside class="{{ sidebar }}Sidebar">
-          {% if sidebar == 'toc' %}
-            <div class="sticky" data-offset-top="157">
-              <div class="content">
-                <ul class="nav tableofcontents"></ul>
-              </div>
-            </div>
-          {% else %}
-            {% contentblock sidebar %}
-          {% endif %}
-        </aside>
-      {% endif %}
-
-    </div>
-    {% if page.url contains 'tools/' %}
-      {% include elements/toolFooter.html %}
-    {% else %}
-      {% include elements/pageFooter.html %}
-    {% endif %}
-
-    {% include elements/pageHelp.html %}
-    
-    {% include thanks.html %}
-    {% include analytics.html %}
+  <body class="{{ page.layout }}">
+    {% include header.html %}
+    <main id="pageContent">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
   </body>
 </html>

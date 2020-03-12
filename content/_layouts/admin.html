@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  {% include scripts.html %}
-  <body class="{{ page.slug }} {{ page.collection }}">
-    {% include elements/pageHeader.html %}
-    {% include search-results.html %}
+
+  <body>
+    {% include header.html %}
     <main>
       {{ content }}
     </main>

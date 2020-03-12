@@ -1,0 +1,14 @@
+
+---
+---
+
+@import "settings";
+@import "vendor/bootstrap/scss/bootstrap"; // Copied from node_modules and committed to source to allow Bootstrap to compile during build
+
+// Global
+@import "global/mixins";
+@import "global/utilities";
+@import "global/base";
+@import "global/layout";
+@import "global/typography";
+@import "global/animations";

@@ -1,9 +1,0 @@
-{% unless include.inline %}
-<div id="solution-cards"
-     class="grid row start-xs"
-     data-limit="{{ include.limit }}">
-  {% for solution in site.solutions %}
-    {% include card.html %}
-  {% endfor %}
-</div>
-{% endunless %}
