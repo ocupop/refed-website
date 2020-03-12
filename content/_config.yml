@@ -11,6 +11,8 @@ collections:
   examples:
     output: true
     permalink: /examples/:path/
+  elements:
+    output: false  
 
 defaults:
   -
