@@ -3,6 +3,9 @@ section {
   &.alt-bg {
     @include palette($cream-light, $text-color);
   }
+  &.third-bg {
+    @include palette($cream, $text-color);
+  }
 
   // Borders
   &.border {
