@@ -1,36 +1,61 @@
 // Color Palette
-$white:    #ffffff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
+$white:    #ffffff;
+$gray-100: #d9dadc;
+$gray-200: #bdbec0;
+$gray-300: #6f6f71;
+$gray-400: #555759;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000000 !default;
+$gray-700: #3f4041;
+$gray-800: #292a2b;
+$gray-900: #111111;
+$black:    #000000;
 
-$blue:    #25b0e8;
+$blue:    #225577;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #990000;
 $orange:  #fd7e14 !default;
 $yellow:  #f5C938;
-$green:   #87a63e;
-$teal:    #20c997 !default;
+$green:   #67a9a8;
+$lime:    #7a9c49;
+$teal:    #2A8175;
 $cyan:    #7dd0e8 !default;
 
-$primary:       $blue;
-$secondary:     #23405e;
+$tan-lighter:#F7F5F0;
+$tan-light:  #F1EDE4;
+$tan:        #DED8C6;
+$tan-dark:   #C4BA98;
+$tan-darker: #C4BA98;
+
+$primary:       $green;
+$secondary:     $blue;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100;
-$dark:          $gray-700;
+$mid:           $gray-400;
+$dark:          $gray-800;
 
+$theme-colors: (
+  'primary': $green,
+  'secondary': $blue,
+  'success': $primary,
+  'info': $info,
+  'warning': $yellow,
+  'danger': $red,
+  'light': $light,
+  'mid': $mid,
+  'dark': $dark,
+  'white': $white,
+  'black': $black,
+  'gray': $gray-400,
+  'tan': $tan,
+  'teal': $teal,
+  'green': $green,
+);
 
 $body-bg:               $white;
 $body-color:            $dark;
