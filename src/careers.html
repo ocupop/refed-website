@@ -29,11 +29,11 @@ positions:
         </div>
       </div>
       {% endfor %}
-      {% if page.positions.size == 0 %}
+      {% unless page.positions %}
         <div class="col-12">
-          <p class="content editable">Thank you for your interest in working at ReFED. There are no current openings. Please check back soon for future opportunities.</p> 
+          <p class="content editable">Thank you for you interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p> 
         </div>
-      {% endif %}
+      {% endunless %}
      </div>
      <hr />
      <div class="row justify-content-center">
