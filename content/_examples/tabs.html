@@ -1,14 +1,12 @@
 ---
 layout: sandbox
 title: tabs
-
 tabs:
-- Foo 
-- Bar
-- Stuff
-- Things
+  - Foo
+  - Bar
+  - Things
+  - Stuff
 activetab: 1
-
 ---
 
 <ul class="nav nav-tabs" id="my-tab" role="tablist">
@@ -35,32 +33,28 @@ activetab: 1
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img src="{{ '/img/logo-signature.png' | prepend: site.url }}" class="img-fluid" alt="Refed Logo">
+        <img src="{{ '/img/logo-signature.png' | prepend: site.url }}" class="img-fluid" alt="Refed Logo" />
         <h1>Test Tab Component</h1>
         <div class="editable">
           <p>This component was created by Paul to test how CloudCannon can edit elements in a repeating loop.</p>
-          
           <component-tabs-with-child-content>
-            <h2  class="pt-3">Testing a tab component</h2>
+            <h2 class="pt-3">Testing a tab component</h2>
             <p>Everything inside of this box is enclosed inside of the "component-tabs-with-child-content" element. <i>Nested HTML elements</i> and <i>attributes</i> are okay.</p>
-           
             <ul class="nav nav-tabs" id="my-tab" role="tablist">
-              {% for item in page.tabs %}                
-              <li class="nav-item">
-                <a key={{forloop.index0}} class="nav-link {% if page.activetab == forloop.index0 %}active{% endif %}" id="tab-{{ forloop.index0 }}" data-toggle="tab" href="#tab-contact-{{ forloop.index0 }}" role="tab" aria-controls="content-{{ forloop.index0 }}" aria-selected="false">{{ item }}</a>
-              </li>
-              {% endfor %}
+              <li class="nav-item"><a key="0" class="nav-link" id="tab-0" data-toggle="tab" role="tab" aria-controls="content-0" aria-selected="false" href="#tab-contact-0">Foo</a></li>
+              <li class="nav-item"><a key="1" class="nav-link" id="tab-1" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="false" href="#tab-contact-1">Bar</a></li>
+              <li class="nav-item"><a key="2" class="nav-link" id="tab-2" data-toggle="tab" role="tab" aria-controls="content-2" aria-selected="false" href="#tab-contact-2">Stuff</a></li>
+              <li class="nav-item"><a key="3" class="nav-link active" id="tab-3" data-toggle="tab" role="tab" aria-controls="content-3" aria-selected="true" href="#tab-contact-3">Things</a></li>
             </ul>
-
             <div class="tab-content" id="my-tabcontent">
-              {% for item in page.tabs %} 
-                <div key={{forloop.index0}} class="p-3 tab-pane fade {% if page.activetab == forloop.index0 %}show active{% endif %} editable" id="tab-contact-{{ forloop.index0 }}"    role="tabpanel" aria-labelledby="tab-{{ forloop.index0 }}">Content for the {{ item }} tab</div>
-              {% endfor %}
+              <div key="0" class="p-3 tab-pane fade" id="tab-contact-0" role="tabpanel" aria-labelledby="tab-0">Content for the Foo tab</div>
+              <div key="1" class="p-3 tab-pane fade" id="tab-contact-1" role="tabpanel" aria-labelledby="tab-1">Content for the Bar tab goes here</div>
+              <div key="2" class="p-3 tab-pane fade" id="tab-contact-2" role="tabpanel" aria-labelledby="tab-2">Content for the Stuff tab.&nbsp;</div>
+              <div key="2" class="p-3 tab-pane fade active show" role="tabpanel" aria-labelledby="tab-2">This can have multiple <strong>lines </strong>and paragraphs.</div>
+              <div key="3" class="p-3 tab-pane fade active show" id="tab-contact-3" role="tabpanel" aria-labelledby="tab-3">Content for the Things tab</div>
             </div>
           </component-tabs-with-child-content>
-
-
-
+          <p>&nbsp;</p>
         </div>
       </div>
     </div>
