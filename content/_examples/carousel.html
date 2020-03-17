@@ -1,9 +1,22 @@
 ---
 layout: sandbox
 title: Carousel
+
+
+carousel: carousel1
+showCarouselControls: true
+showCarouselIndicators: true
+
 ---
 
 <div id="carousel">
   <h2>Carousel Example</h2>
+  
+  
+  <component-carousel-from-collection category='{{ page.carousel }}' {% if page.showCarouselControls %}showControls{% endif %} {% if page.showCarouselIndicators %}showIndicators{% endif %} >
+     Carousel Placeholder "{{ page.carousel }}"
+  </component-carousel-from-collection>
+          
+          
 </div>
 
