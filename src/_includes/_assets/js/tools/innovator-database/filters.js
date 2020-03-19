@@ -1,7 +1,7 @@
 /* Copyright (C) 2017 Ocupop
- * 
+ *
  * http://www.ocupop.com
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
@@ -20,50 +20,50 @@
 Google API key: AIzaSyDwNUfXSzS2DIWfUsYhhbIM22xUtNJ4DtM
 
  */
-(function() {
+(function () {
+  $.behaviors(".innovatorDatabase_filtersMenu", innovatorDatabase_filtersMenu);
+  $.behaviors(".filterToggle", initToggle);
+  $.behaviors(".innovatorDatabase_menu", initMenu);
 
-$.behaviors('.innovatorDatabase_filtersMenu', innovatorDatabase_filtersMenu);
-$.behaviors('.filterToggle', initToggle);
-$.behaviors('.innovatorDatabase_menu', initMenu);
-
-  var targetSelector = '.innovator';
-  var activeHash = '';
+  var targetSelector = ".innovator";
+  var activeHash = "";
 
   function initMenu(menu) {
     menu = $(menu);
     // window.console.log('initMenu: Loaded menu');
 
     // if no hash exists here then activate the first tab
-    if(!location.hash) {
-      $(('[data-toggle="tab"]:first')).tab('show');
+    if (!location.hash) {
+      $('[data-toggle="tab"]:first').tab("show");
     }
-    
-    $('.searchLink').on('click', function() {
-      var search = menu.attr('data-menu');
-      if(search == 'search') {
+
+    $(".searchLink").on("click", function () {
+      var search = menu.attr("data-menu");
+      if (search == "search") {
         // Remove the attribute value so that the styles fallback to the body class for active tab
-        menu.attr('data-menu', '');
+        menu.attr("data-menu", "");
       } else {
         // Set the menu to search
-        menu.attr('data-menu', 'search');
-        ga('send', 'event', 'search', 'innovator-database', 'Activate Search');
+        menu.attr("data-menu", "search");
+        ga("send", "event", "search", "innovator-database", "Activate Search");
       }
     });
-    $('.innovatorDatabase_searchMenu .close').on('click', function() {
-      menu.attr('data-menu', '');
+    $(".innovatorDatabase_searchMenu .close").on("click", function () {
+      menu.attr("data-menu", "");
     });
   }
 
   function initToggle(container) {
     container = $(container);
-    container.on('click', function() {
-      $('.innovatorDatabase_filtersMenu').toggleClass('open');
+    container.on("click", function () {
+      $(".innovatorDatabase_filtersMenu").toggleClass("open");
     });
   }
 
   function innovatorDatabase_filtersMenu(filters) {
+    console.log("MOM:", location.hash)
     filters = $(filters);
-    var list = $('.innovatorDatabase_list').first();
+    var list = $(".innovatorDatabase_list").first();
 
     window.mixer = mixitup(list, {
       multifilter: {
@@ -71,11 +71,12 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         minSearchLength: 2
       },
       load: {
-        sort: 'random'
+        // filter: ".recovery-hierarchy",
+        sort: "random"
       },
       selectors: {
-        target: '.innovator',
-        control: '[data-mixitup-control], .mixitup-control'
+        target: ".innovator",
+        control: "[data-mixitup-control], .mixitup-control"
       },
       pagination: {
         limit: 10,
@@ -84,31 +85,30 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
         hidePageListIfSinglePage: true
       },
       callbacks: {
-          onMixEnd: function() {
-            window.scrollTo(0, 0);
-            setFilters // Call the setFilters() method at the end of each operation
-          }
+        onMixEnd: function (state) {
+          console.log("STATE", state.activeFilter)
+          window.scrollTo(0, 0);
+          setFilters(state); // Call the setFilters() method at the end of each operation
+        }
       }
     });
 
     var hashState = deserializeHash();
     if (hashState) {
-        // If a valid groupsState object is present on page load, filter the mixer
-        filterMixerByHashState(hashState);
+      // If a valid groupsState object is present on page load, filter the mixer
+      filterMixerByHashState(hashState);
     }
 
-    input = $('#searchFilter');
+    input = $("#searchFilter");
 
-    input.on('keyup', function() {
+    input.on("keyup", function () {
       var val = $(this).val();
-      if(val.length >= 2) {
+      if (val.length >= 2) {
         searchFilter(val, mixer);
       } else {
-        searchFilter('', mixer);
+        searchFilter("", mixer);
       }
-
     });
-
   }
 
   /**
@@ -119,21 +119,21 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function serializeFiltersState(filters) {
-      var output = '';
+    var output = "";
 
-      for (var key in filters) {
-          var values = filters[key];
+    for (var key in filters) {
+      var values = filters[key];
 
-          if (!values.length) continue;
+      if (!values.length) continue;
 
-          output += key + '=';
-          output += values.join(',');
-          output += '&';
-      };
+      output += key + "=";
+      output += values.join(",");
+      output += "&";
+    }
 
-      output = output.replace(/&$/g, '');
+    output = output.replace(/&$/g, "");
 
-      return output;
+    return output;
   }
 
   /**
@@ -144,17 +144,23 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function getFilters() {
-      // NB: You will need to rename the object keys to match the names of
-      // your project's filter groups – these should match those defined
-      // in your HTML.
+    // NB: You will need to rename the object keys to match the names of
+    // your project's filter groups – these should match those defined
+    // in your HTML.
 
-      var filters = {
-        business_model: mixer.getFilterGroupSelectors('business_model').map(getValueFromSelector),
-        innovator_category: mixer.getFilterGroupSelectors('innovator_category').map(getValueFromSelector),
-        hierarchy: mixer.getFilterGroupSelectors('hierarchy').map(getValueFromSelector)
-      };
+    var filters = {
+      business_model: mixer
+        .getFilterGroupSelectors("business_model")
+        .map(getValueFromSelector),
+      innovator_category: mixer
+        .getFilterGroupSelectors("innovator_category")
+        .map(getValueFromSelector),
+      hierarchy: mixer
+        .getFilterGroupSelectors("hierarchy")
+        .map(getValueFromSelector)
+    };
 
-      return filters;
+    return filters;
   }
 
   /**
@@ -171,27 +177,38 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
     // filter group
 
     var filters = getFilters();
+    console.log("FILTERS:", filters)
 
     var hashState = deserializeHash();
 
     // Create a URL search string by serializing the filters object
-    var newSearch = '#active_tab=' + hashState.active_tab + '&' + serializeFiltersState(filters);
+    var newSearch =
+      "#active_tab=" +
+      hashState.active_tab +
+      "&" +
+      serializeFiltersState(filters);
 
     if (selector === targetSelector && window.location.search) {
-        // Equivalent to filter "all", remove the search
+      // Equivalent to filter "all", remove the search
 
-        activeSearch = '';
+      activeSearch = "";
 
-        history.replaceState(null, document.title, window.location.pathname); // or `history.replaceState()`
+      history.replaceState(null, document.title, window.location.pathname); // or `history.replaceState()`
+    } else if (
+      newSearch !== window.location.search &&
+      selector !== targetSelector
+    ) {
+      // Change the search
 
-    } else if (newSearch !== window.location.search && selector !== targetSelector) {
-        // Change the search
+      activeSearch = newSearch;
 
-        activeSearch = newSearch;
-
-        history.replaceState(null, document.title, window.location.pathname + newSearch); // or `history.replaceState()`
+      history.replaceState(
+        null,
+        document.title,
+        window.location.pathname + newSearch
+      ); // or `history.replaceState()`
     }
-    ga('send', 'event', 'filter', 'innovator-database', newSearch);
+    ga("send", "event", "filter", "innovator-database", newSearch);
   }
 
   /**
@@ -204,18 +221,28 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function filterMixerByHashState(filters, animate) {
+    var business_model =
+      filters && filters.business_model ? filters.business_model : [];
+    var innovator_category =
+      filters && filters.innovator_category ? filters.innovator_category : [];
+    var hierarchy = filters && filters.hierarchy ? filters.hierarchy : [];
 
-      var business_model = (filters && filters.business_model) ? filters.business_model : [];
-      var innovator_category = (filters && filters.innovator_category) ? filters.innovator_category : [];
-      var hierarchy = (filters && filters.hierarchy) ? filters.hierarchy : [];
+    mixer.setFilterGroupSelectors(
+      "business_model",
+      business_model.map(getSelectorFromValue)
+    );
+    mixer.setFilterGroupSelectors(
+      "innovator_category",
+      innovator_category.map(getSelectorFromValue)
+    );
+    mixer.setFilterGroupSelectors(
+      "hierarchy",
+      hierarchy.map(getSelectorFromValue)
+    );
 
-      mixer.setFilterGroupSelectors('business_model', business_model.map(getSelectorFromValue));
-      mixer.setFilterGroupSelectors('innovator_category', innovator_category.map(getSelectorFromValue));
-      mixer.setFilterGroupSelectors('hierarchy', hierarchy.map(getSelectorFromValue));
+    // Parse the filter groups (passing `false` will perform no animation)
 
-      // Parse the filter groups (passing `false` will perform no animation)
-
-      return mixer.parseFilterGroups(animate ? true : false);
+    return mixer.parseFilterGroups(animate ? true : false);
   }
 
   /**
@@ -226,7 +253,7 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function getValueFromSelector(selector) {
-      return selector.replace(/^./, '');
+    return selector.replace(/^./, "");
   }
 
   /**
@@ -237,9 +264,8 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
    */
 
   function getSelectorFromValue(value) {
-      return '.' + value;
+    return "." + value;
   }
-
 
   // Add an "onhashchange" handler to keep the mixer in sync as the user goes
   // back and forward through their history.
@@ -249,32 +275,33 @@ $.behaviors('.innovatorDatabase_menu', initMenu);
   // `history.replaceState()` instead of `history.pushState()` within the `setFilters()`
   // function above. In which case this handler would no longer be neccessary.
 
-
-  window.onhashchange = function(e) {
+  window.onhashchange = function (e) {
     // window.console.log("HASH CHANGE: current_url", window.location);
     var hashState = deserializeHash();
-    var hash      = window.location.hash;
+    var hash = window.location.hash;
 
     // Compare new hash with active hash
 
     if (hash === activeHash) return; // no change
 
     activeHash = hash;
-    
+
     activateTab(hashState.active_tab);
     filterMixerByHashState(hashState, true);
   };
 
-  window.searchFilter = function(input, mixer) {
+  window.searchFilter = function (input, mixer) {
     var state = mixer.getState();
 
-    var filtered = state.targets.filter(function(el, index){
-      return $(el).data('title').toLowerCase().indexOf( input.toLowerCase().trim() ) >= 0;
+    var filtered = state.targets.filter(function (el, index) {
+      return (
+        $(el)
+          .data("title")
+          .toLowerCase()
+          .indexOf(input.toLowerCase().trim()) >= 0
+      );
     });
 
     mixer.filter(filtered);
-  }
-
+  };
 })();
-
-
