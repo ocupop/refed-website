@@ -186,13 +186,12 @@
   text-align: center;
   background: $red;
   color: $cream;
-
-  p {
+    
+  a {
+    color: $cream;
     font-size: 16px;
-    a {
-      color: $cream;
-      text-decoration: underline;
-    }
+    display: block;
+    width: 100%;
   }
 
 }
