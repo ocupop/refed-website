@@ -1,7 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
-import { Modal, Button } from 'react-bootstrap'
 import { closeModal } from './modalActions'
 
 
@@ -10,15 +9,31 @@ const TestModal = ({heading}) => {
 
   return (
     <>
-      <Modal show onHide={() => dispatch(closeModal())}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal {heading}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => dispatch(closeModal())}>Close</Button>
-        </Modal.Footer>
-      </Modal>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onClick={() => dispatch(closeModal())}>
+        Open modal
+      </button>
+
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h4 class="modal-title">Modal {heading}</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              Woohoo, you are reading this text in a modal!
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
     </>
   )
 }
