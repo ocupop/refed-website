@@ -28,7 +28,7 @@ activeslide: 1
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img src="{{ '/img/logo-signature.png' | prepend: site.url }}" class="img-fluid" alt="Refed Logo">
+        <img src="{{ '/img/logo-signature.png' | prepend: site.url }}" class="img-fluid" alt="Refed Logo" />
         <h1>Test Page</h1>
         <div class="editable">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus tenetur aperiam, nam quas tempora quisquam consequuntur debitis nemo iusto tempore in. Ratione maiores distinctio beatae corrupti excepturi delectus voluptatem modi.</p>
@@ -56,7 +56,9 @@ activeslide: 1
     <!-- Tab panes -->
     <div class="tab-content mt-3">
       {% for item in page.tabs %} 
-        <div class="tab-pane container editable fade {% if page.activetab == forloop.index0 %}active show{% endif %}" id="panel-{{forloop.index0}}">Content for "{{ item }}" Tab.</div>
+        <div class="tab-pane container editable fade {% if page.activetab == forloop.index0 %}active show{% endif %}" id="panel-{{forloop.index0}}">
+         <p>Auctor urna nunc id cursus metus. Vestibulum morbi blandit cursus risus at ultrices mi. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Nibh sit amet commodo nulla facilisi nullam. Massa tempor nec feugiat nisl pretium fusce id velit. In fermentum posuere urna nec tincidunt. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl purus in mollis nunc sed id semper. A diam sollicitudin tempor id eu nisl nunc. Eget arcu dictum varius duis at consectetur. Etiam tempor orci eu lobortis. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. In nibh mauris cursus mattis molestie. Mauris sit amet massa vitae tortor. Senectus et netus et malesuada. Convallis convallis tellus id interdum. Sit amet cursus sit amet dictum sit amet. Donec ultrices tincidunt arcu non sodales neque. Nibh cras pulvinar mattis nunc sed.</p>
+       </div>
       {% endfor %}
     </div>
 
@@ -84,10 +86,14 @@ activeslide: 1
       <div class="carousel-inner">
         {% for item in page.slides %} 
         <div class="carousel-item {% if page.activeslide == forloop.index0 %}active{% endif %}">
-          <img src="{{item.image}}" class="editable d-block w-100" alt="{{item.headline}}" />
+          <img src="https://unsplash.it/837/300?image=210" class="editable d-block w-100" alt="Third slide headline goes here." />
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="editable">{{item.headline}}</h5>
-            <p class="editable">{{item.copy}}</p>
+            <h5 class="editable">
+              Third slide headline goes here.
+            </h5>
+            <p class="editable">
+              Place copy for this slide here.
+            </p>
           </div>
         </div>
         {% endfor %}
@@ -125,13 +131,15 @@ activeslide: 1
 
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title editable">Modal Heading</h4>
+            <h4 class="modal-title editable">
+              Modal Heading
+            </h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
 
           <!-- Modal body -->
           <div class="modal-body editable">
-            Modal body..
+            <p>Modal body..</p>
           </div>
 
           <!-- Modal footer -->
