@@ -1,0 +1,14 @@
+diff --git a/node_modules/@cloudcannon/suite/packages/jekyll-dev/index.js b/node_modules/@cloudcannon/suite/packages/jekyll-dev/index.js
+index acc6827..b953aa6 100644
+--- a/node_modules/@cloudcannon/suite/packages/jekyll-dev/index.js
++++ b/node_modules/@cloudcannon/suite/packages/jekyll-dev/index.js
+@@ -115,7 +115,8 @@ module.exports = function (gulp, config) {
+ 		};
+ 
+ 		var child = childProcess.spawn("bundle", commands, {
+-				cwd: config.jekyll.src
++				cwd: config.jekyll.src,
++				shell: true
+ 			}).on("close", function () {
+ 				done(null, output);
+ 			});
