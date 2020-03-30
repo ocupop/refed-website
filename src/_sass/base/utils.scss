@@ -1,11 +1,21 @@
 // Bleeds
-.flush { padding: 0 !important; }
-.flush-bottom { padding-bottom: 0 !important; }
+.flush {
+  padding: 0 !important;
+}
+.flush-bottom {
+  padding-bottom: 0 !important;
+}
 
 // Bleeds
-.fullbleed { padding: 0 !important; }
-.bottombleed { padding-bottom: 0 !important; }
-.topbleed { padding-top: 0 !important; }
+.fullbleed {
+  padding: 0 !important;
+}
+.bottombleed {
+  padding-bottom: 0 !important;
+}
+.topbleed {
+  padding-top: 0 !important;
+}
 
 /* -----------------------------------------
    Utility Classes
@@ -131,7 +141,6 @@ ul.styled {
   color: #ffffff !important;
 }
 
-
 // column wrap
 .col2 {
   column-count: 2;
@@ -159,16 +168,16 @@ ul.styled {
   font-style: italic;
 }
 
-.muted, .faded {
+.muted,
+.faded {
   opacity: 0.5;
 }
-
 
 // External Links
 a.external {
   position: relative;
   &:after {
-    font-family: 'refed' !important;
+    font-family: "refed" !important;
     content: "\e913";
     position: relative;
     top: 2px;
@@ -200,26 +209,36 @@ a.external {
   margin-right: 10px;
 }
 
-
-
-
 // Borders
 // Borders
 $border-width: 1px;
 $border-color: $gray-lighter;
-.border { border: 0 solid $border-color; }
-.border-all { border-width: $border-width; }
-.border-top { border-top-width: $border-width; }
-.border-right { border-right-width: $border-width; }
-.border-bottom { border-bottom-width: $border-width;}
-.border-left { border-left-width: $border-width; }
+.border {
+  border: 0 solid $border-color;
+}
+.border-all {
+  border-width: $border-width;
+}
+.border-top {
+  border-top-width: $border-width;
+}
+.border-right {
+  border-right-width: $border-width;
+}
+.border-bottom {
+  border-bottom-width: $border-width;
+}
+.border-left {
+  border-left-width: $border-width;
+}
 
 @media all and (max-width: $screen-md-max) {
-
 }
 
 @media all and (max-width: $screen-sm-max) {
-  .border-left { border-width: 0; }
+  .border-left {
+    border-width: 0;
+  }
   .flush {
     padding: 0;
     .row {
@@ -235,7 +254,7 @@ $border-color: $gray-lighter;
       [class^="col-"] {
         padding: 0;
         .content {
-           padding: $content-padding;
+          padding: $content-padding;
         }
       }
       [class^="col-"]:first-child {
@@ -260,7 +279,7 @@ $border-color: $gray-lighter;
   .break-60,
   .break-70,
   .break-80,
-  .break-90, {
+  .break-90 {
     width: 100% !important;
   }
 
@@ -284,5 +303,18 @@ $border-color: $gray-lighter;
   .center-md-block {
     margin: 0 auto;
     display: block;
+  }
+}
+
+.embed-responsive-6by4 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  &::before {
+    padding-top: 78.8%;
+  }
+  iframe {
+    border: 0px;
   }
 }
