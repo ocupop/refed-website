@@ -136,6 +136,9 @@ ul.styled {
 
 .text-dark {
   color: $gray !important;
+  @media (max-width: $screen-sm-min) {
+    color: $white !important ;
+  }
 }
 .text-light {
   color: #ffffff !important;
