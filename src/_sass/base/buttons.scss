@@ -62,8 +62,11 @@ button {
   &.external {
     padding: 0 20px;
   }
-  &:visited { color: $cream-lighter; }
-  &:hover, &:focus {
+  &:visited {
+    color: $cream-lighter;
+  }
+  &:hover,
+  &:focus {
     background-color: darken($button-color, 10%);
     color: $cream-lighter;
   }
@@ -80,21 +83,25 @@ button {
   &.inverse {
     background-color: $gray-dark;
     color: $cream-light;
-    &:hover, &.active {
+    &:hover,
+    &.active {
       background-color: $cream;
       color: $gray-darker;
     }
   }
   &.cream {
     color: $gray-darker;
-    &:hover, &.active {
+    &:hover,
+    &.active {
       background-color: darken($cream, 15%) !important;
       color: $gray-base;
     }
   }
   &.prevention {
     color: $cream-lighter;
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background-color: darken($prevention-color, 10%);
       color: $cream-lighter;
     }
@@ -106,10 +113,10 @@ button {
     padding-right: 40px;
     font-size: 32.5px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
     border: 1px solid $cream-lighter;
     // box-shadow: inset 0 0 2px rgba(246,245,240,1);
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     &:hover {
       color: #ffffff;
     }
@@ -121,7 +128,7 @@ button {
       margin: auto;
       float: right;
       line-height: $base-line-height * 2.5;
-      text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+      text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
     }
   }
   &.btn-half {
@@ -148,13 +155,11 @@ button {
 
 @media all and (max-width: $screen-md-max) {
   .button {
-
   }
 }
 
 @media all and (max-width: $screen-sm-max) {
   .button {
-
   }
 }
 
