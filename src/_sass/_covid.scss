@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 0;
+  width: auto;
+  background-color: $white;
+  color: $gray-base !important;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.text-mega {
+  font-family: $font-family-serif;
+  font-style: italic;
+  text-transform: none;
+  margin-bottom: 5px;
+}

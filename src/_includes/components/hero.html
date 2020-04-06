@@ -1,7 +1,7 @@
 {% if page.url == "/" %}
   <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="5000">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- <ol class="carousel-indicators">
       <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-home" data-slide-to="1"></li>
       <li data-target="#carousel-home" data-slide-to="2"></li>
@@ -9,11 +9,29 @@
       <li data-target="#carousel-home" data-slide-to="4"></li>
       <li data-target="#carousel-home" data-slide-to="5"></li>
       <li data-target="#carousel-home" data-slide-to="6"></li>
-    </ol>
+    </ol> -->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
+        <div class="hero hero-slider" style="background-image: url(/img/Homepage_Slider_COVID.jpg);">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="content">
+                    <h1>COVID-19</h1>
+                    <h2 class="text-mega">How It's Impacting <br>Our Food System</h2>
+                    <p>Resources, Best Practices and Ideas to Respond</p>
+                    <a href="/news" class="btn btn-white btn-lg text-dark">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item active">
         <div class="hero hero-slider" style="background-image: url(/img/Slider_image-1.jpg);">
           <div class="hero-content">
             <div class="container">
@@ -196,18 +214,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+    <!-- <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
       <i class="icon-arrow-left"></i>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
       <i class="icon-arrow-right"></i>
       <span class="sr-only">Next</span>
-    </a>
+    </a> -->
   </div>
 {% endif %}
 
@@ -249,6 +267,6 @@
   </div>
 </div>
 {% endif %}</div>
-<div class="alert" role="alert">
+<div class="alert" role="alert" style="border-radius: 0;">
   <a class="editable" href="/content-hub/food-waste-resources-during-the-covid-19-pandemic/">Learn How You Can Support Communities Affected By The COVID-19 Pandemic Here</a>
 </div>
