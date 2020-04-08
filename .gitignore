@@ -2,6 +2,9 @@
 .sass-cache
 .bundle
 .jekyll-metadata
+*.jekyll-cache
+
+.env.development
 
 # Site build & Distribution
 dist
