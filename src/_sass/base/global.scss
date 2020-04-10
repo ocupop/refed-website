@@ -1,7 +1,10 @@
 /* -----------------------------------------
    Global
 ----------------------------------------- */
-html {}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 55px;
+}
 body {
   font-family: $font-family-base;
   background-color: $cream-lighter;
