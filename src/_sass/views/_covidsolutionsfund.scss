@@ -38,6 +38,13 @@
   }
 }
 
+.partner-logos {
+  flex-direction: column;
+  img {
+    margin-bottom: 20px;
+  }
+}
+
 .footer-cta {
   display: flex;
   .w-50 {
@@ -134,7 +141,7 @@
           width: auto;
           max-width: 50%;
           position: absolute;
-          padding: 4px;
+          padding: 10px;
           top: 50%;
           left: 50%;
           transform: translateY(-50%) translateX(-50%);
@@ -220,6 +227,18 @@
       .content {
         padding: 0 20px;
       }
+    }
+  }
+
+  .partner-logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      display: block;
+      width: 50%;
+    }
+    img {
+      padding: 20px;
     }
   }
 

@@ -324,3 +324,9 @@ $border-color: $gray-lighter;
 .d-flex {
   display: flex;
 }
+
+.cms-editor-active {
+  [data-cms-editor-link] {
+    outline: 3px solid #f7e064;
+  }
+}
