@@ -136,13 +136,15 @@ grant_application_evalutation_criteria:
       </div>
       <div class="col-lg-3">
         <div class="content bg-white">
-          <p><em>In collaboration with</em></p>
-          <div class="d-flex partner-logos">
+          <div class="partner-logos">
+            <p><em>In collaboration with</em></p>
+            <div class="d-flex">
             {% for partner in page.collaboration_partners %}
-              <a href="{{ partner.link }}">
-                <img src="{{ partner.image }}" class="img-responsive" alt="{{ partner.title }} logo">
-              </a>
+            <a href="{{ partner.link }}">
+              <img src="{{ partner.image }}" class="img-responsive" alt="{{ partner.title }} logo">
+            </a>
             {% endfor %}
+            </div>
           </div>
         </div>
       </div>
