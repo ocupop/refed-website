@@ -275,18 +275,18 @@ grant_application_evalutation_criteria:
           <div class="grid">
             {% for grant in page.solutions_fund_grants %}
             <div class="grid-item">
-              <a href="{{ grant.link }}" class="grid-item-image" style="background-image: url()">
+              <a href="{{ grant.link }}" class="grid-item-image" target="_blank" rel="noopener">
                 <img src="{{ grant.logo_image }}" class="img-responsive" />
               </a>
               <div class="grant-content">
-                <a href="{{ grant.link }}">
+                <a href="{{ grant.link }}" target="_blank" rel="noopener">
                   <h4 style="justify-content: left;"><strong>{{ grant.name }}</strong></h4>
                 </a>
                 <p class="hidden-xs hidden-sm">{{ grant.description }}</p>
                 <p class="hidden-xs hidden-sm"><strong>COVID-19 Response</strong> {{ grant.covide_response_description }}</p>
                 <p>
                   <a href="{{ grant.link }}" title="{{ grant.name }} website"
-                    target="blank">Website</a></p>
+                    target="blank" rel="noopener">Website</a></p>
               </div>
             </div> 
             {% endfor %}
