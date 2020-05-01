@@ -20,6 +20,9 @@
       max-width: 100%;
     }
   }
+  hr {
+    border-top-color: $gray-light;
+  }
   .button,
   button {
     &.inline {
