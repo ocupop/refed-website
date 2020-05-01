@@ -29,13 +29,14 @@
       color: $gray;
     }
     i {
+      transform: rotate(180deg) scale(0.65);
       @include transition(0.4s);
       width: auto;
       height: auto;
     }
     &.collapsed {
       i {
-        transform: rotate(180deg);
+        transform: rotate(180deg) scale(0.65);
       }
     }
   }
@@ -115,7 +116,7 @@
     .content {
       position: relative;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 35px;
         right: 0;
@@ -127,7 +128,7 @@
   }
 }
 
-#fund-grants  {
+#fund-grants {
   .grid {
     .grid-item {
       width: 33%;
@@ -191,13 +192,13 @@
       position: relative;
       margin-bottom: 20px;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: -30px;
         top: 0;
         width: 23px;
         height: 23px;
-        background-image: url('/img/covid-solutions-fund/COVID-19-Food-Waste-Solution_checkbox.svg');
+        background-image: url("/img/covid-solutions-fund/COVID-19-Food-Waste-Solution_checkbox.svg");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -296,4 +297,12 @@
       }
     }
   }
+}
+
+// Utilities
+.d-flex {
+  display: flex !important;
+}
+.align-items-center {
+  align-items: center !important;
 }
