@@ -38,16 +38,16 @@ solutions_fund_grants:
     covide_response_description: >-
       Ramping up food recovery efforts and launching two new hunger relief initiatives - Restaurant Meal Programs and
       Community Kitchens.
-    logo_image: /uploads/screen-shot-2019-08-28-at-1-51-07-pm.png
-    link:
+    logo_image: /uploads/Logo-FoodRescue.jpeg
+    link: https://foodrescue.us/
   - name: Seashare
     description: >-
       SeaShare works closely with the US seafood industry to source high quality nutritious seafood and has sent over 3.5
       million servings of seafood to Feeding America affiliated food banks across the country since the onset of COVID-19.
     covide_response_description: >-
       Processing and distributing seafood donations from industry partners to those in need.
-    logo_image: /uploads/screen-shot-2019-08-28-at-1-51-07-pm.png
-    link:
+    logo_image: /uploads/Logo-SeaShare.jpg
+    link: https://www.seashare.org/
   - name: Boston Area Gleaners
     description: >-
       Boston Area Gleaners rescues surplus farm crops for people in need.
@@ -55,8 +55,28 @@ solutions_fund_grants:
       Boston Area Gleaners is supporting local emergency response efforts by providing the use of their refrigerated trucks,
       re-hiring seasonal staff and utilizing their cold storage capacity. They are also working on transporting rescued
       surplus fresh produce from CA and AZ to Massachusetts.
-    logo_image: /uploads/screen-shot-2019-08-28-at-1-51-07-pm.png
-    link:  
+    logo_image: https://via.placeholder.com/150
+    link: https://www.bostonareagleaners.org/
+grant_application_evalutation_criteria:
+  - title: Focus Area
+    description: >-
+      The solution aligns with at least one of the primary focus areas of the ReFED COVID-19 Food Waste Solutions Fund.
+  - title: Food Waste Impact
+    description: >-
+      The solution can prevent and/or reduce a significant amount of food, especially healthy and nutritious products, from
+      being wasted in the next 90 days (and hopefully beyond to increase resiliency of the food system long-term).
+  - title: Scalability
+    description: >-
+      Extraordinary vision to drive reach and scale in a sustainable way.
+  - title: Social Impact
+    description: >-
+      The solution meets the growing and dire needs of populations most heavily impacted by COVID-19, including but not
+      limited to certain geographic locations, the elderly, and workers in the agriculture, hospitality, and healthcare
+      industries. way.
+  - title: Team
+    description: >-
+      Well-positioned with relevant experience, expertise, and partners to succeed in meeting desired outcomes during the
+      COVID-19 crisis, with a preference for organizations that prioritize diversity, equity, and inclusion.
 ---
 <div class="hero " style="background-image: url(/img/covid-solutions-fund/image-header.jpg);">
   <div class="hero-content">
@@ -71,14 +91,14 @@ solutions_fund_grants:
       <div class="row">
         <div class="col-sm-6">
           <div class="content text-center">
-            <p class="lead">$1 Million Fund Launched</p>
-            <a href="#" class="button">Donate</a>
+            <p class="lead editable">$1 Million Fund Launched</p>
+            <a href="#donate" class="button">Donate</a>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="content text-center">
-            <p class="lead">National Open Call</p>
-            <a href="#" class="button">Apply</a>
+            <p class="lead editable">National Open Call</p>
+            <a href="https://www.surveymonkey.com/r/ReFEDCOVID-19FoodWasteSolutionsFund" class="button" target="_blank" rel="noopener">Apply</a>
           </div>
         </div>
       </div>  
@@ -113,7 +133,7 @@ solutions_fund_grants:
     </div>
   </div>
 </section>
-<section class="alt-bg">
+<section id="donate" class="alt-bg">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -132,7 +152,7 @@ solutions_fund_grants:
       <div class="col-xs-12">
         <div class="content text-center">
           <p>
-            <button class="collapsed inline text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="ways-to-donate" data-target="#ways-to-donate">
+            <button class="collapsed inline text-uppercase" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="ways-to-donate" data-target="#ways-to-donate">
               Additional ways to make a donation <i class="icon-caret-down"></i>
             </button>
           </p>
@@ -155,7 +175,7 @@ solutions_fund_grants:
           <img src="/img/covid-solutions-fund/COVID-19-Food-Waste-Solution_icon-credit.svg" class="img-responsive" alt="Check icon">
           <h4 class="editable"><strong>Credit Card or Paypal</strong></h4>
           <div class="editable">
-            <p>Please go to ReFED’s GoFundMe campaign <a href="#">Click here</a>.</p>
+            <p>Please go to ReFED’s GoFundMe campaign <a href="https://www.gofundme.com/f/refed-covid19-emergency-response-food-waste-fund" target="_blank">Click here</a>.</p>
           </div>
         </div>
       </div>
@@ -264,11 +284,11 @@ solutions_fund_grants:
                 </a>
                 <p class="hidden-xs hidden-sm">{{ grant.description }}</p>
                 <p class="hidden-xs hidden-sm"><strong>COVID-19 Response</strong> {{ grant.covide_response_description }}</p>
-                <p class="hidden-xs hidden-sm">
+                <p>
                   <a href="{{ grant.link }}" title="{{ grant.name }} website"
                     target="blank">Website</a></p>
               </div>
-            </div>
+            </div> 
             {% endfor %}
           </div>
         </div>
@@ -276,7 +296,7 @@ solutions_fund_grants:
     </div>
   </div>
 </section>
-<section id="accelerator-how">
+<section id="focus-areas">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -286,12 +306,12 @@ solutions_fund_grants:
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="p-5">
-          <img src="/img/accelerator/ReFED-Accelerator-icon-04.svg" alt="Accelerator Icon" />
+      <div class="col-md-4">
+        <div class="content">
+          <img src="/img/covid-solutions-fund/image-1.png" class="img-responsive" alt="Potatoes image" />
         </div>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-8">
         <div class="editable content">
           <h4><strong>Prevention and recovery of fresh and healthy otherwise wasted food, especially at the farm level</strong></h4>
             <p>Increase the preservation and rescue of food that would otherwise go to waste through new sales markets, donation
@@ -300,14 +320,14 @@ solutions_fund_grants:
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="p-5">
-          <img src="/img/accelerator/ReFED-Accelerator-icon-06.svg" alt="Accelerator Icon" />
+      <div class="col-md-4">
+        <div class="content">
+          <img src="/img/covid-solutions-fund/image-2.png" class="img-responsive" alt="Truck image" />
         </div>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-8">
         <div class="editable content">
-          <h4 class="editable"><strong>Elimination of logistical constraints along the entire food supply chain</strong></h4>
+          <h4><strong>Elimination of logistical constraints along the entire food supply chain</strong></h4>
           <p>Increase the coordination and distribution of otherwise wasted food on a more frequent basis and in ways that account
             for the requirements of particular food types and form factors – as well as leveraging idle, available capacity such
             as cold storage.</p>
@@ -315,25 +335,17 @@ solutions_fund_grants:
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="p-5">
-          <img src="/img/accelerator/ReFED-Accelerator-icon-05.svg" alt="Accelerator Icon" />
+      <div class="col-md-4">
+        <div class="content">
+          <img src="/img/covid-solutions-fund/image-3.png" class="img-responsive" alt="Apples image" />
         </div>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-8">
         <div class="editable content">
           <h4><strong>Added Perks</strong></h4>
           <p>Participants will have access to a range of tangible and intangible benefits, including publicity and brand
             exposure, access to ReFED staff and world-class mentors, as well as an invitation to the 2019 Food Waste
             Summit, hosted by ReFED.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="editable content text-center">
-          <p><em>For additional information, check out <a target="_blank" href="https://youtu.be/kAoaKBnqywo">the video
-                recording</a> of the Accelerator info session.</em></p>
         </div>
       </div>
     </div>
@@ -394,26 +406,11 @@ solutions_fund_grants:
       <div class="col-xs-12">
         <div class="content">
           <ul class="col2 list-checkmarks">
-            <li>
-              <strong class="text-uppercase">Focus Area:</strong> The solution aligns with at least one of the primary focus areas of the ReFED COVID-19 Food Waste Solutions Fund.
-            </li>
-            <li>
-              <strong class="text-uppercase">Food Waste Impact:</strong> The solution can prevent and/or reduce a significant amount of food, especially healthy and nutritious products, from
-              being wasted in the next 90 days (and hopefully beyond to increase resiliency of the food system long-term).
-            </li>
-            <li>
-              <strong class="text-uppercase">Scalability:</strong> Extraordinary vision to drive reach and scale in a sustainable way.
-            </li>
-            <li>
-              <strong class="text-uppercase">Social Impact:</strong> The solution meets the growing and dire needs of populations most heavily impacted by COVID-19, including but not
-              limited to certain geographic locations, the elderly, and workers in the agriculture, hospitality, and healthcare
-              industries.
-              way.
-            </li>
-            <li>
-              <strong class="text-uppercase">Team:</strong> Well-positioned with relevant experience, expertise, and partners to succeed in meeting desired outcomes during the
-              COVID-19 crisis, with a preference for organizations that prioritize diversity, equity, and inclusion.
-            </li>
+            {% for item in page.grant_application_evalutation_criteria %}
+              <li>
+                <strong class="text-uppercase">{{ item.title }}:</strong> {{ item.description }}
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -433,10 +430,10 @@ solutions_fund_grants:
           <h2 class="editable">Timeline</h2>
           <div class="editable">
             <p><em>ReFED will review submissions on a rolling basis and therefore highly encourages eligible solution providers to submit
-            applications as soon as possible. If interested in reviewing the full set of application questions before applying <a href="#">click here</a></em>,
+            applications as soon as possible. If interested in reviewing the full set of application questions before applying <a href="/uploads/ReFED-COVID-19-Food-Waste-Solutions-Fund-Application-Questions-2020-04-24.pdf" target="_blank" rel="noopener">click here</a></em>,
             .</p>
           </div>
-          <a href="#" class="button">Apply</a>
+          <a href="https://www.surveymonkey.com/r/ReFEDCOVID-19FoodWasteSolutionsFund" class="button" target="_blank" rel="noopener">Apply</a>
         </div>
       </div>
     </div>
@@ -445,9 +442,9 @@ solutions_fund_grants:
 <div class="footer-cta">
   <div class="w-50">
     <div class="content text-center">
-      <h2>FAQ</h2>
+      <h2 class="editable">FAQ</h2>
       <p class="editable lead">
-        <em>For a list of frequently asked questions, please <a href="#">click here</a> .
+        <em>For a list of frequently asked questions, please <a href="/uploads/ReFED-COVID-19-Food-Waste-Solution-Fund-FAQ-2020-04-24.pdf">click here</a>.
         For any outstanding questions about the Fund mechanics and the Natioinal Open Call, please email
         <a href="mailto:COVID-19SolutionsFund@refed.com">COVID-19SolutionsFund@refed.com</a>.</em>
       </p>

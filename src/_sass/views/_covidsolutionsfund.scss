@@ -22,6 +22,9 @@
   }
   .button,
   button {
+    &.inline {
+      color: $gray;
+    }
     i {
       @include transition(0.4s);
       width: auto;
@@ -157,6 +160,13 @@
   }
 }
 
+#focus-areas {
+  .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 #eligibility-criteria {
   img {
     width: 105px;
@@ -212,6 +222,17 @@
   #eligibility-criteria {
     img {
       margin-left: 0;
+    }
+  }
+
+  .list-checkmarks {
+    padding-left: 20px;
+  }
+
+  .footer-cta {
+    flex-wrap: wrap;
+    .w-50 {
+      width: 100%;
     }
   }
 }
