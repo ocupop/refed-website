@@ -209,6 +209,21 @@
 }
 
 @media all and (max-width: $screen-md-max) {
+  .covidsolutionsfund {
+    .hero {
+      padding-top: 0;
+      padding-bottom: 0;
+      .hero-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .content {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
   #how-it-works {
     .col-xs-12 {
       .content {
@@ -255,7 +270,7 @@
   #fund-grants {
     .grid {
       .grid-item {
-        width: 50%;
+        width: 100%;
         padding: 5px;
       }
     }
