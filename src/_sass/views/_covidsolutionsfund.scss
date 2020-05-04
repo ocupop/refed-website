@@ -207,6 +207,8 @@
   }
 }
 
+
+
 .text-green {
   color: $button-color;
 }
@@ -231,6 +233,12 @@
       .content {
         padding: 0 20px;
       }
+    }
+  }
+
+  #timeline {
+    .d-flex {
+      flex-wrap: wrap;
     }
   }
 
