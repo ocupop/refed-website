@@ -43,7 +43,9 @@
 }
 
 .partner-logos {
-  flex-direction: column !important;
+  .d-flex {
+    flex-direction: column !important;
+  }
   img {
     margin-bottom: 20px;
   }
@@ -243,8 +245,12 @@
   }
 
   .partner-logos {
-    flex-direction: row;
-    flex-wrap: wrap;
+    .d-flex {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
     p {
       text-align: center;
     }
