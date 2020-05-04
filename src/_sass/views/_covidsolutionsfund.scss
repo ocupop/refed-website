@@ -43,7 +43,7 @@
 }
 
 .partner-logos {
-  flex-direction: column;
+  flex-direction: column !important;
   img {
     margin-bottom: 20px;
   }
