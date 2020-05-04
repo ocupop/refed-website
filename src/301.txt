@@ -17,5 +17,3 @@
 /accelerator-expert-network-knowledge-series/ /download#accelerator-expert-network-knowledge-series
 /ReFED-insights-engine-glossy/ /downloads/ReFED-insights-engine-glossy.pdf
 /api/policy/ /api/policy.json
-/content-hub/announcing-our-covid-19-food-waste-solutions-fund/ /covidsolutionsfund/
-

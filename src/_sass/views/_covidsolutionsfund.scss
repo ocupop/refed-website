@@ -43,7 +43,9 @@
 }
 
 .partner-logos {
-  flex-direction: column;
+  .d-flex {
+    flex-direction: column !important;
+  }
   img {
     margin-bottom: 20px;
   }
@@ -207,6 +209,8 @@
   }
 }
 
+
+
 .text-green {
   color: $button-color;
 }
@@ -234,9 +238,19 @@
     }
   }
 
+  #timeline {
+    .d-flex {
+      flex-wrap: wrap;
+    }
+  }
+
   .partner-logos {
-    flex-direction: row;
-    flex-wrap: wrap;
+    .d-flex {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
     p {
       text-align: center;
     }
