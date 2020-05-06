@@ -14,8 +14,11 @@ collaboration_partners:
     image: /uploads/finallogo_foodtank_words-only_14797028503_o.jpg
     link: 'https://foodtank.com/'
   - title:
-    image: /uploads/gb-logo-blue-834x208.png
+    image: /uploads/greenbiz-group-logo-1-1.png
     link: 'https://www.greenbiz.com/'
+  - title:
+    image: /uploads/ideo-logo-2.png
+    link: 'https://www.ideo.com/'
 major_gift_contributors:
   - Ajana Foundation
   - Atticus Trust
@@ -237,7 +240,7 @@ grant_application_evalutation_criteria:
         <div class="content text-center editable">
           <h2>Donate to the fund</h2>
           <p>We are very appreciative of the many donors who have already contributed just-in-time capital needed during this extraordinary time. Through a generous gift from Betsy &amp; Jesse Fink that covers the Fund's administration costs, 100 percent of each donation will go where it's needed most.</p>
-          <p>If you have questions about donating or want to discuss a major gift, please email Alexandria Coari at <a href="mailto:alexandria.coari@refed.com">alexandria.coari@refed.com</a>.</p>
+          <p>If you have questions about donating or want to discuss a major gift, please email Alexandria Coari at <a href="mailto:alexandria.coari@refed.com">alexandria.coari@refed.com</a>. ReFED is a registered 501(c)(3) charity.</p>
         </div>
       </div>
     </div>
@@ -282,7 +285,7 @@ grant_application_evalutation_criteria:
             <strong>Other</strong>
           </h4>
           <div class="editable">
-            <p>We also accept donations via bank wire, donor advised fund, stock, and matching gifts. ReFED is a 501(c)3 registered charity.</p>
+            <p>We also accept donations via bank wire, donor advised fund, stock, and matching gifts.</p>
           </div>
         </div>
       </div>
@@ -298,11 +301,11 @@ grant_application_evalutation_criteria:
               {% endfor %}
             </ul>
           </div>
-          <button class="button cream collapsed" type="button" data-toggle="collapse" data-target="#collapse-donors" aria-expanded="false" aria-controls="collapse-donors">See More Donors <i class="icon-caret-down"></i></button>
+          <button class="button cream collapsed editable" type="button" data-toggle="collapse" data-target="#collapse-donors" aria-expanded="false" aria-controls="collapse-donors">See More Contributors <i class="icon-caret-down"></i></button>
           <div class="collapse" id="collapse-donors">
             <div class="content text-center">
               <h4 class="editable">
-                other Contributors
+                Other Contributors
               </h4>
             </div>
             <div class="content text-center">
@@ -327,7 +330,9 @@ grant_application_evalutation_criteria:
           <h2 class="editable">
             The R<span style="text-transform: lowercase;">E</span>FED COVID-19 Food Waste Solutions Fund
           </h2>
-          <p><em>Distributions made to date:</em></p>
+          <p class="editable">
+            <em>Grants made to date:</em>
+          </p>
         </div>
         <div class="content">
           <div class="grid">
@@ -342,8 +347,6 @@ grant_application_evalutation_criteria:
                 </a>
                 <p class="hidden-xs hidden-sm">{{ grant.description }}</p>
                 <p class="hidden-xs hidden-sm"><strong>COVID-19 Response</strong> {{ grant.covide_response_description }}</p>
-                <p>
-                  <a href="{{ grant.link }}" title="{{ grant.name }} website" target="blank" rel="noopener">View Website</a></p>
               </div>
             </div>
             {% endfor %}
