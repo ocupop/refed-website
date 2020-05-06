@@ -301,11 +301,11 @@ grant_application_evalutation_criteria:
               {% endfor %}
             </ul>
           </div>
-          <button class="button cream collapsed" type="button" data-toggle="collapse" data-target="#collapse-donors" aria-expanded="false" aria-controls="collapse-donors">See More Donors <i class="icon-caret-down"></i></button>
+          <button class="button cream collapsed editable" type="button" data-toggle="collapse" data-target="#collapse-donors" aria-expanded="false" aria-controls="collapse-donors">See More Contributors <i class="icon-caret-down"></i></button>
           <div class="collapse" id="collapse-donors">
             <div class="content text-center">
               <h4 class="editable">
-                other Contributors
+                Other Contributors
               </h4>
             </div>
             <div class="content text-center">
@@ -330,7 +330,7 @@ grant_application_evalutation_criteria:
           <h2 class="editable">
             The R<span style="text-transform: lowercase;">E</span>FED COVID-19 Food Waste Solutions Fund
           </h2>
-          <p><em>Distributions made to date:</em></p>
+          <p class="editable"><em>Grants made to date:</em></p>
         </div>
         <div class="content">
           <div class="grid">
@@ -345,8 +345,6 @@ grant_application_evalutation_criteria:
                 </a>
                 <p class="hidden-xs hidden-sm">{{ grant.description }}</p>
                 <p class="hidden-xs hidden-sm"><strong>COVID-19 Response</strong> {{ grant.covide_response_description }}</p>
-                <p>
-                  <a href="{{ grant.link }}" title="{{ grant.name }} website" target="blank" rel="noopener">View Website</a></p>
               </div>
             </div>
             {% endfor %}
