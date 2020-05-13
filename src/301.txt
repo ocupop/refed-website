@@ -18,4 +18,4 @@
 /ReFED-insights-engine-glossy/ /downloads/ReFED-insights-engine-glossy.pdf
 /api/policy/ /api/policy.json
 /covid/ https://covid.refed.com
-/covidsolutionsfund/ https://covid.refed.com
+/covidsolutionsfund/ https://covid.refed.com/covidsolutionsfund
