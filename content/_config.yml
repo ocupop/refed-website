@@ -39,6 +39,7 @@ _array_structures:
       value:
         link:
         title:
+        has_megamenu: false
         megamenu_navigation_links:
   megamenu_navigation_links:
     - label: Megamenu Navigation Links
