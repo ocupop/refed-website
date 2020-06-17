@@ -32,4 +32,26 @@ sass:
 plugins:
   - jekyll-sitemap
 
+_array_structures:
+  navigation_links:
+    - label: Navigation Links
+      icon: link
+      value:
+        link:
+        title:
+        megamenu_navigation_links:
+  megamenu_navigation_links:
+    - label: Megamenu Navigation Links
+      icon: link
+      value:
+        link:
+        title:
+        sub_navigation_links:
+  sub_navigation_links:
+    - label: Sub Navigation Links
+      icon: link
+      value:
+        link:
+        title:      
+
 # Cloudcannon Editor
