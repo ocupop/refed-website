@@ -8,13 +8,48 @@
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button">
-             About
-            </a>
+          <li class="nav-item">
+            {% for link in site.data.navigation.primary_navigation.navigation_links %}
+              {% if link.has_megamenu == true %}
+                <button class="btn nav-link btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{ link.title | slugify }}"
+                  aria-expanded="false" aria-controls="collapse-{{ link.title }}">
+                  {{ link.title }}
+                </button>
+              {% else %}
+                <a class="nav-link" href="{{ link.link}}" role="button">
+                  {{ link.title }}
+                </a>
+              {% endif %}
+            {% endfor %}
           </li>
         </ul>
       </div>
     </nav>
   </div>
+  {% for item in site.data.navigation.primary_navigation.navigation_links %}
+    {% if item.has_megamenu == true %}
+    <div id="collapse-{{ item.title | slugify }}" class="megamenu py-4 collapse">
+      <div class="container">
+        
+          <div class="d-flex justify-content-center">
+            {% for link in item.megamenu_navigation_links %}
+              <ul class="nav flex-column {% unless forloop.last %}border-right{% endunless %}">
+                <li class="nav-item">
+                  <a href="{{ link.link }}" class="nav-link">{{ link.title }}</a>
+                </li>
+                {% if link.sub_navigation_links %}
+                  {% for link in link.sub_navigation_links %}
+                    <li class="nav-item">
+                      <a href="" class="nav-link">{{ link.title}}</a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            {% endfor %}
+          </div>
+        
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
 </header>
