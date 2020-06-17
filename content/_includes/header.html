@@ -8,20 +8,22 @@
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            {% for link in site.data.navigation.primary_navigation.navigation_links %}
-              {% if link.has_megamenu == true %}
+          {% for link in site.data.navigation.primary_navigation.navigation_links %}
+            {% if link.has_megamenu == true %}
+              <li class="nav-item">
                 <button class="btn nav-link btn-link" type="button" data-toggle="collapse" data-target="#collapse-{{ link.title | slugify }}"
                   aria-expanded="false" aria-controls="collapse-{{ link.title }}">
                   {{ link.title }}
                 </button>
-              {% else %}
+              </li>  
+            {% else %}
+              <li>
                 <a class="nav-link" href="{{ link.link}}" role="button">
                   {{ link.title }}
                 </a>
-              {% endif %}
-            {% endfor %}
-          </li>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </nav>
