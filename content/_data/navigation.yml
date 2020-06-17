@@ -26,3 +26,21 @@ primary_navigation:
               title: Documents
             - link:
               title: Financials
+    - link:
+      title: Our Work
+      has_megamenu: true
+      megamenu_navigation_links:
+        - link: /our-work/
+          title: Our Work
+          sub_navigation_links:
+            - link:
+              title: Promote Solutions
+            - link:
+              title: Data & Insights
+        - link: /our-impact/
+          title: Our Impact
+          sub_navigation_links:
+            - link:
+              title: Case Studies
+            - link:
+              title: Testimonials
