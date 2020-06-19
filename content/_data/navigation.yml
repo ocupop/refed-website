@@ -1,47 +1,21 @@
-primary_navigation:
-  navigation_links:
-    - link:
-      title: About
-      has_megamenu: true
-      megamenu_navigation_links:
-        - link: /who-we-are/
-          title: Who We Are
-          sub_navigation_links:
-            - link:
-              title: Business Reporting
-        - link: /our-team/
-          title: Our Team
-          sub_navigation_links:
-            - link:
-              title: Leadership
-        - link: /our-donors/
-          title: Our Donors
-          sub_navigation_links:
-            - link:
-              title: Overview
-        - link: /work-with-us/
-          title: Work with Us
-          sub_navigation_links:
-            - link:
-              title: Documents
-            - link:
-              title: Financials
-    - link:
-      title: Our Work
-      has_megamenu: true
-      megamenu_navigation_links:
-        - link: /our-work/
-          title: Our Work
-          sub_navigation_links:
-            - link:
-              title: Promote Solutions
-            - link:
-              title: Data & Insights
-        - link: /our-impact/
-          title: Our Impact
-          sub_navigation_links:
-            - link:
-              title: Case Studies
-            - link:
-              title: Testimonials
-navigation:              
+
+navigation:
+links:
+    - title: About
+      link: /about
+      links: 
+        - title: Who We Are
+          link: /who-we-are/
+          links:
+            - title: 2030 Goals
+              link: /who-we-are/#2030-goals
+            - title: Current Situation
+              link: /who-we-are/#current-situation
+            - title: Impacts
+              link: /who-we-are/#impacts
+            - title: Policy Overview
+              link: /who-we-are/#policy-overview
+            - title: Funding Need
+              link: /who-we-are/#funding-need
+
+
