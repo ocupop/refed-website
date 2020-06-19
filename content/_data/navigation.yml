@@ -190,5 +190,8 @@ primary_navigation:
                 - title: Facebook
                   link: 'https://www.facebook.com/rethinkfoodwaste/'
                   links:
+    - title: Insights Engine
+      link:
+      links:
 footer_navigation:
   navigation:
