@@ -190,5 +190,8 @@ primary_navigation:
                       link: >-
                         https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
                       links:
+                - title: Facebook
+                  link: 'https://www.facebook.com/rethinkfoodwaste/'
+                  links:
 footer_navigation:
   navigation:
