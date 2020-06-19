@@ -57,7 +57,6 @@ _array_structures:
   navigation:
     - label: Navigation
       icon: link
-      title:
       value:
         link:
         title:

@@ -1,21 +1,27 @@
 
-navigation:
-links:
-    - title: About
-      link: /about
-      links: 
-        - title: Who We Are
-          link: /who-we-are/
-          links:
-            - title: 2030 Goals
-              link: /who-we-are/#2030-goals
-            - title: Current Situation
-              link: /who-we-are/#current-situation
-            - title: Impacts
-              link: /who-we-are/#impacts
-            - title: Policy Overview
-              link: /who-we-are/#policy-overview
-            - title: Funding Need
-              link: /who-we-are/#funding-need
+top_bar_navigation:
+  navigation:
+primary_navigation:
+  navigation:
+  links:
+      - title: About
+        link: /about
+        links: 
+          - title: Who We Are
+            link: /who-we-are/
+            links:
+              - title: 2030 Goals
+                link: /who-we-are/#2030-goals
+              - title: Current Situation
+                link: /who-we-are/#current-situation
+              - title: Impacts
+                link: /who-we-are/#impacts
+              - title: Policy Overview
+                link: /who-we-are/#policy-overview
+              - title: Funding Need
+                link: /who-we-are/#funding-need
+
+footer_navigation:
+  navigation:
 
 
