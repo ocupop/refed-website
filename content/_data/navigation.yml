@@ -1,59 +1,194 @@
-
 top_bar_navigation:
   navigation:
 primary_navigation:
   navigation:
   links:
-      - title: About
-        link: /about
-        links: 
-          - title: Who We Are
-            link: /who-we-are/
-            links:
-              - title: 2030 Goals
-                link: /who-we-are/#2030-goals
-              - title: Current Situation
-                link: /who-we-are/#current-situation
-              - title: Impacts
-                link: /who-we-are/#impacts
-              - title: Policy Overview
-                link: /who-we-are/#policy-overview
-              - title: Funding Need
-                link: /who-we-are/#funding-need
-          - title: Our Team
-            link: /our-team/
-            links:
-              - title: Leadership
-                link: /our-team/#leadership
-              - title: Staff
-                link: /our-team/#staff
-              - title: Board of Directors
-                link: /our-team/#board-of-directors
-              - title: Advisory Council
-                link: /our-team/#advisory-council
-              - title: Expert Network
-                link: /our-team/#expert-network
-          - title: Our Donors
-            link: /our-donors/
-            links:
-              - title: Overview
-                link: /our-donors/#overview
-              - title: Funder Impact
-                link: /our-donors/#funder-impact
-          - title: Work with Us
-            link: /work-with-us
-            links:
-              - title: Documents
-                link: /documents
-                links: 
-                  - title: Financials
-                    link: /documents/#financials
-                  - title: Annual Reports
-                    link: /documents/#annual-reports
-                  - title: Brand Guidelines
-                    link: /documents/#brand-guidelines
-
+    - title: About
+      link: /about
+      links:
+        - title: Who We Are
+          link: /who-we-are/
+          links:
+            - title: 2030 Goals
+              link: '/who-we-are/#2030-goals'
+            - title: Current Situation
+              link: '/who-we-are/#current-situation'
+            - title: Impacts
+              link: '/who-we-are/#impacts'
+            - title: Policy Overview
+              link: '/who-we-are/#policy-overview'
+            - title: Funding Need
+              link: '/who-we-are/#funding-need'
+        - title: Our Team
+          link: /our-team/
+          links:
+            - title: Leadership
+              link: '/our-team/#leadership'
+            - title: Staff
+              link: '/our-team/#staff'
+            - title: Board of Directors
+              link: '/our-team/#board-of-directors'
+            - title: Advisory Council
+              link: '/our-team/#advisory-council'
+            - title: Expert Network
+              link: '/our-team/#expert-network'
+        - title: Our Donors
+          link: /our-donors/
+          links:
+            - title: Overview
+              link: '/our-donors/#overview'
+            - title: Funder Impact
+              link: '/our-donors/#funder-impact'
+        - title: Work with Us
+          link: /work-with-us
+          links:
+            - title: Documents
+              link: /documents
+              links:
+                - title: Financials
+                  link: '/documents/#financials'
+                - title: Annual Reports
+                  link: '/documents/#annual-reports'
+                - title: Brand Guidelines
+                  link: '/documents/#brand-guidelines'
+    - title: Our Work
+      link: /our-work
+      links:
+        - title: Our Work
+          link: /our-work
+          links:
+            - title: Promote Solutions
+              link: '/our-work/#promote-solutions'
+              links:
+            - title: Data & Insights
+              link: '/our-work/#data-insights'
+              links:
+            - title: Stakeholder Engagement
+              link: '/our-work/#stakeholder-engagement'
+              links:
+            - title: Capitol & Innovation
+              link: /our-work/capitol-innovation
+              links:
+            - title: Raise Awareness
+              link: '/our-work/#raise-awareness'
+              links:
+            - title: Future Planning
+              link: '/our-work/#future-planning'
+              links:
+            - title: Covid-19
+              link: '/our-work/#covid-19'
+              links:
+        - title: Our Impact
+          link: /our-impact
+          links:
+            - title: Case Studies
+              link: '/our-impact/#case-studies'
+              links:
+            - title: Testimonials
+              link: '/our-impact/#testimonials'
+              links:
+    - title: Food Waste
+      link: /food-waste
+      links:
+        - title: Problem
+          link: /food-waste-problem
+          links:
+            - title: 2030 Goals
+              link: '/food-waste-problem/#2030-goals'
+              links:
+            - title: Current Situation
+              link: '/food-waste-problem/#current-situation'
+              links:
+            - title: Impacts
+              link: '/food-waste-problem/#impacts'
+              links:
+            - title: Policy Overview
+              link: '/food-waste-problem/#policy-overview'
+              links:
+            - title: Funding Need
+              link: '/food-waste-problem/#funding-need'
+              links:
+        - title: Solutions
+          link: /food-waste-solutions
+          links:
+            - title: Overview
+              link: '/food-waste-solutions/#overview'
+              links:
+            - title: Solutions Tracker
+              link: '/food-waste-solutions/#solutions-tracker'
+              links:
+            - title: Progress Reports
+              link: '/food-waste-solutions/#progress-reports'
+              links:
+        - title: Resources & Guides
+          link: /resources-guides
+          links:
+            - title: Insights Engine
+              link:
+              links:
+            - title: Food Waste Tracker
+              link:
+              links:
+            - title: Investment Tracker
+              link:
+              links:
+            - title: Solutions Tracker
+              link:
+              links:
+            - title: Impact Calculator
+              link:
+              links:
+            - title: Innovator Database
+              link:
+              links:
+            - title: Policy Tracker
+              link:
+              links:
+            - title: The Roadmap
+              link:
+              links:
+            - title: ReFED Reports
+              link:
+              links:
+            - title: Action Guides
+              link:
+              links:
+    - title: Engage
+      link: /engage
+      links:
+        - title: Ways to Engage
+          link: /engage
+          links:
+            - title: Business Reporting
+              link: '/engage/#business-reporting'
+              links:
+            - title: Partner with Us
+              link: /engage/partner-with-us
+              links:
+            - title: Call for Funders
+              link: '/engage/#call-for-funders'
+              links:
+        - title: Events
+          link: /events
+          links:
+            - title: Food Waste Summit
+              link: '/events/#food-waste-summit'
+              links:
+            - title: Webinars
+              link: '/events/#webinars'
+              links:
+            - title: Stay Connected
+              link: /social
+              links:
+                - title: Twitter
+                  link: 'https://twitter.com/refed'
+                  links:
+                - title: Instagram
+                  link: 'https://www.instagram.com/'
+                  links:
+                    - title: Linkedin
+                      link: >-
+                        https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
+                      links:
 footer_navigation:
   navigation:
-
-
