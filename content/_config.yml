@@ -53,6 +53,20 @@ _array_structures:
       icon: link
       value:
         link:
-        title:      
+        title:
+  navigation:
+    - label: Navigation
+      icon: link
+      value:
+        link:
+        title:
+        links:
+  links:
+    - label: Links
+      icon: link
+      value:
+        link:
+        title:
+        links:
 
 # Cloudcannon Editor
