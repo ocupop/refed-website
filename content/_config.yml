@@ -32,4 +32,20 @@ sass:
 plugins:
   - jekyll-sitemap
 
+_array_structures:
+  navigation:
+    - label: Navigation
+      icon: link
+      value:
+        link:
+        title:
+        links:
+  links:
+    - label: Links
+      icon: link
+      value:
+        title:
+        link:
+        links:
+
 # Cloudcannon Editor
