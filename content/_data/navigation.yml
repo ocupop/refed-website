@@ -20,6 +20,38 @@ primary_navigation:
                 link: /who-we-are/#policy-overview
               - title: Funding Need
                 link: /who-we-are/#funding-need
+          - title: Our Team
+            link: /our-team/
+            links:
+              - title: Leadership
+                link: /our-team/#leadership
+              - title: Staff
+                link: /our-team/#staff
+              - title: Board of Directors
+                link: /our-team/#board-of-directors
+              - title: Advisory Council
+                link: /our-team/#advisory-council
+              - title: Expert Network
+                link: /our-team/#expert-network
+          - title: Our Donors
+            link: /our-donors/
+            links:
+              - title: Overview
+                link: /our-donors/#overview
+              - title: Funder Impact
+                link: /our-donors/#funder-impact
+          - title: Work with Us
+            link: /work-with-us
+            links:
+              - title: Documents
+                link: /documents
+                links: 
+                  - title: Financials
+                    link: /documents/#financials
+                  - title: Annual Reports
+                    link: /documents/#annual-reports
+                  - title: Brand Guidelines
+                    link: /documents/#brand-guidelines
 
 footer_navigation:
   navigation:
