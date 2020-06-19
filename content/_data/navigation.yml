@@ -183,13 +183,10 @@ primary_navigation:
                 - title: Twitter
                   link: 'https://twitter.com/refed'
                   links:
-                - title: Instagram
-                  link: 'https://www.instagram.com/'
+                - title: LinkedIn
+                  link: >-
+                    https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
                   links:
-                    - title: Linkedin
-                      link: >-
-                        https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
-                      links:
                 - title: Facebook
                   link: 'https://www.facebook.com/rethinkfoodwaste/'
                   links:
