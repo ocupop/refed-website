@@ -65,8 +65,8 @@ _array_structures:
     - label: Links
       icon: link
       value:
-        link:
         title:
+        link:
         links:
 
 # Cloudcannon Editor
