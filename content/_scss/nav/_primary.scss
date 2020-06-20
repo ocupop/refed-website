@@ -1,0 +1,28 @@
+
+#mainnav{
+    padding-bottom:0;
+}
+#primarynav{
+    @media (min-width: 992px){
+        .navbar-nav li{
+            position:inherit;
+        }
+        .navbar-nav .dropdown-menu {
+            position: absolute;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            margin:0;
+            border:none;
+            background-color:#ccc;
+
+            top:inherit;
+        }
+    }
+
+    @media (min-width: 768px){
+        .navbar-nav .mega-dropdown:hover .mega-menu {
+            display: block;
+        }
+    }
+}
