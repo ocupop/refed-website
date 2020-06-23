@@ -31,5 +31,16 @@ layout: default
     </div>
   </section>
   {% endif %}
+  {% if section._type == 'single_column' %}
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            {{ section.section_html }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
 {% endfor %}
 {{ content }}
