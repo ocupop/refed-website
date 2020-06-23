@@ -64,7 +64,7 @@ _array_structures:
       value:
         _type: testimonials
         testimonials:
-  testimonial:
+  testimonials:
     - label: Testimonial
       icon: format_quote
       value:
