@@ -1,0 +1,18 @@
+
+main{flex: 1 0 auto;}
+#pageFooter{flex-shrink: none;}
+
+#pageFooter{
+    
+    .footer-brand{
+        display: block;
+        background-image:url(../img/logo-mobile.svg);
+        background-size:contain;
+        width:150px;
+        height:50px;
+        overflow:hidden;
+        background-repeat:no-repeat;
+        background-position:left center;
+        text-indent: -1000px;
+    }
+}

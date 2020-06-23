@@ -1,20 +1,104 @@
 <header id="pageHeader" class="bg-dark text-white">
   <div class="container">
-    <nav id="mainnav" class="navbar navbar-expand-md navbar-dark">
+    <div id="mainnav" class="navbar navbar-expand-md navbar-dark py-md-0">
+      
+      <!-- logo -->
       <a class="navbar-brand" href="/">{{ site.title }}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" 
+      aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="navbar-nav">  
-          <li>
-            <a class="nav-link" href="#" role="button">
-              Link title
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+
+        <!-- Start Primary Navigation -->
+        <nav class="collapse navbar-collapse flex-column-reverse" id="primarynav">
+
+          
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto ">
+
+            
+            {% for link in site.data.navigation.primary_navigation.links %}
+           
+
+            {% if link.links.size %}{% assign href_att = 'data-href' %}
+            {% else %}{% assign href_att = 'href' %}
+            {% endif %}
+
+            <li class="nav-item dropdown mega-dropdown">
+              <a class="nav-link {% if link.links.size %}dropdown-toggle{% endif %}" id="#collapse-{{ link.title | slugify }}" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" {{ href_att }}="{{ link.link }}"> {{ link.title }} 
+                <span class="sr-only">(current)</span>
+              </a>
+              
+              {% if link.links != nil %}
+              <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color p-sm-0 py-md-5" aria-labelledby="#collapse-{{ link.title | slugify }}">
+                <div class="container px-0 px-md-3">
+                  <div class="row">
+
+                    {% for sublink in link.links %}
+                    <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                      <h6 class="sub-title font-weight-bold white-text"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
+                      
+                      {% if sublink.links.size %}
+                      <ul class="list-unstyled">
+                        {% for subsublink in sublink.links %}
+                        <li>
+                          <a class="menu-item pl-0" href="{{ subsublink.link }}">
+                            {{ subsublink.title }}
+                          </a>
+
+                          {% if subsublink.links.size %}
+                          <ul class="list-unstyled">
+                          {% for subsubsublink in subsublink.links %}
+                          <li>
+                            <a class="menu-item pl-0" href="{{ subsubsublink.link }}">
+                              {{ subsubsublink.title }}
+                            </a>
+                          </li>
+                          {% endfor %}
+                          </ul>
+                          {% endif %}
+
+
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+
+                    </div>
+                    {% endfor %}
+
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+
+          <ul class="utility-links navbar-nav ml-auto ">
+            <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Newsroom</a></li>
+          </ul>
+
+
+
+        </nav>
+        <!-- END Primary Navigation -->
+
+      
+    </div>
+
+
+
+
+
+
+
   </div>
 </header>

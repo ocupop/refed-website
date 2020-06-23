@@ -1,0 +1,20 @@
+
+.navbar-brand{
+    background-image:url(../img/logo-mobile.svg);
+    background-size:contain;
+    width:150px;
+    height:50px;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-position:left center;
+    text-indent: -1000px;
+}
+
+
+@media screen and (min-width: 768px){
+    .navbar-brand{
+        background-image:url(../img/logo-signature.png);
+        width: 200px;
+        height: 70px;
+    }
+}

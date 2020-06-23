@@ -25,6 +25,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "bootstrap.native": "2.0.27",
     "browser-sync": "^2.26.7",
     "date-fns": "^2.4.1",
     "dotenv": "^8.1.0",
@@ -60,7 +61,6 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-places-autocomplete": "^7.2.1",
@@ -87,6 +87,7 @@
     "@cloudcannon/suite": "^2.0.0-rc6",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
+    "bootstrap.native-loader": "^2.0.0",
     "eslint": "^6.2.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.1.0",
