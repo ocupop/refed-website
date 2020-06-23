@@ -57,12 +57,13 @@ _array_structures:
   cards:
     - label: Cards
       icon: view_column
+      _comments: This is the card help text  
       value: 
         title:
         text:
         featured_image:
         link:
-        _comments: This is the card help text  
+        
 
         
         
