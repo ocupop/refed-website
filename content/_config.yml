@@ -59,6 +59,18 @@ _array_structures:
         _type: card_grid
         title:
         cards:
+    - label: Testimonials
+      icon: format_quote
+      value:
+        _type: testimonials
+        testimonials:
+  testimonial:
+    - label: Testimonial
+      icon: format_quote
+      value:
+        text:
+        author:
+        about_the_author:
   cards:
     - label: Cards
       icon: view_column

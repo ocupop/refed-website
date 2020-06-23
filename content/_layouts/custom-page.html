@@ -42,5 +42,20 @@ layout: default
       </div>
     </section>
   {% endif %}
+  {% if section._type == 'testimonial' %}
+    <section>
+      <div class="container">
+        {% for testimonial in section.testimonials %}
+          <div class="row">
+            <div class="col-12">
+              <p class="lead">{{ testimonial.text }}</p>
+              <p><em>{{ testimonial.author }}</em></p>
+              <p><small>{{ testimonial.about_the_author }}</small></p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 {% endfor %}
 {{ content }}
