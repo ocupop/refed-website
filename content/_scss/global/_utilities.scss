@@ -1,1 +1,63 @@
 // TODO: Add everyone's favorite utility classes.
+
+// Responsive Cards
+.responsive-card-deck {
+  @include make-responsive-cards();
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+// Background utlities
+.bg-image,
+.bg-video,
+.bg-iframe,
+.hero,
+.responsive-iframe {
+  position: relative;
+  display: block;
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: $black;
+  // background-image: url(https://via.placeholder.com/700x500/f2783c/f2783c?text=placeholder);
+  overflow: hidden;
+  &.aspect-1x1 {
+    padding-top: 100%;
+  }
+  &.aspect-2x1 {
+    padding-top: 50%;
+  }
+  &.aspect-3x1 {
+    padding-top: 33%;
+  }
+  &.aspect-4x3 {
+    padding-top: 75%;
+  }
+  &.aspect-5x7 {
+    padding-top: 120%;
+  }
+  &.aspect-16x9 {
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+  }
+}

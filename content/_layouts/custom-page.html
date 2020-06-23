@@ -13,14 +13,14 @@ layout: default
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="responsive-card-grid cards-lg-3">
+          <div class="responsive-card-deck cards-lg-3">
             {% for card in section.cards %}
               <div class="card">
                 <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
                 <div class="card-body">
                   <p>{{ card.text }}</p>
                   {% if card.link %}
-                    <a href="{{ card.link }}" class="btn btn-primary"></a>
+                    <a href="{{ card.link }}" class="btn btn-primary">{{ card.link_text | default: 'Read More'}}</a>
                   {% endif %}
                 </div>
               </div>
