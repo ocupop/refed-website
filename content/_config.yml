@@ -62,6 +62,8 @@ _array_structures:
         text:
         featured_image:
         link:
+        _comments: This is the card help text  
+
         
         
 placeholder_image: 'https://via.placeholder.com/1000'
