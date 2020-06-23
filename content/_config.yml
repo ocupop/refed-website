@@ -47,5 +47,27 @@ _array_structures:
         title:
         link:
         links:
+  page_sections:
+    - label: Card Grid
+      icon: web
+      value:
+        _type: card_grid
+        title:
+        cards:
+  cards:
+    - label: Cards
+      icon: view_column
+      value: 
+        title:
+        text:
+        featured_image:
+        link:
+        
+        
+
+
+
+
+
 
 # Cloudcannon Editor

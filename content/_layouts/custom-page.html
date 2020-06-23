@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% for section in page.page_sections %}
+  {% if section._type == 'card_grid' %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>{{ section.title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="responsive-card-grid cards-lg-3">
+            {% for card in section.cards %}
+              <div class="card">
+                <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                <div class="card-body">
+                  <p>{{ card.text }}</p>
+                  {% if card.link %}
+                    <a href="{{ card.link }}" class="btn btn-primary"></a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{{ content }}
