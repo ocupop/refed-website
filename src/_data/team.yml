@@ -76,6 +76,18 @@
   image: /uploads/nathan-lorhmann-headshot-1.jpg
   phone: 812.237.2316
   active: active
+- name: Jeffrey Costantino
+  title: Communications Director
+  summary: >-
+    Jeff Costantino serves as Communications Director, helping ReFED connect to
+    its key audiences with engaging and actionable content. Previously, he
+    oversaw communications and marketing at the Western Union Foundation, which
+    worked to empower refugees and other migrants with education and workforce
+    training. He has also served as Managing Director for Marketing at Truth
+    Initiative, a national public health nonprofit promoting tobacco-free lives.
+  image: /uploads/jeff-costantino.png
+  phone:
+  active: active
 - name: Vanessa Mukhebi
   title: Communications Manager
   summary: >-
@@ -187,15 +199,16 @@
   image: /uploads/vared-hs-web-copy.jpg
   phone:
   active:
-- name: Jeffrey Costantino
-  title: Communications Director
+- name: David Brooks
+  title: Insights Engine Product Manager
   summary: >-
-    Jeff Costantino serves as Communications Director, helping ReFED connect to
-    its key audiences with engaging and actionable content. Previously, he
-    oversaw communications and marketing at the Western Union Foundation, which
-    worked to empower refugees and other migrants with education and workforce
-    training. He has also served as Managing Director for Marketing at Truth
-    Initiative, a national public health nonprofit promoting tobacco-free lives.
-  image: /uploads/jeff-costantino.png
+    David serves as the Product Manager for ReFED's Insights Engine, providing
+    software and sustainability knowledge and overall project guidance. He has a
+    combined nine years of professional experience as an engineer, project
+    manager, and product manager for the development of ERP systems, a
+    commercial sustainability application, and business technology solutions for
+    several major food and beverage B2B distributors. David received his BS in
+    Environmental Engineering from the University of Florida.
+  image: /uploads/david-brooks.jpg
   phone:
   active: active
