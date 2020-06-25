@@ -53,6 +53,19 @@
   image: /uploads/parker-hughes-headshot-1.jpg
   phone:
   active: active
+- name: David Brooks
+  title: Insights Engine Product Manager
+  summary: >-
+    David serves as the Product Manager for ReFED's Insights Engine, providing
+    software and sustainability knowledge and overall project guidance. He has a
+    combined nine years of professional experience as an engineer, project
+    manager, and product manager for the development of ERP systems, a
+    commercial sustainability application, and business technology solutions for
+    several major food and beverage B2B distributors. David received his BS in
+    Environmental Engineering from the University of Florida.
+  image: /uploads/david-brooks.jpg
+  phone:
+  active: active
 - name: Jackie Suggitt
   title: Stakeholder Engagement Director
   summary: >-
@@ -199,16 +212,3 @@
   image: /uploads/vared-hs-web-copy.jpg
   phone:
   active:
-- name: David Brooks
-  title: Insights Engine Product Manager
-  summary: >-
-    David serves as the Product Manager for ReFED's Insights Engine, providing
-    software and sustainability knowledge and overall project guidance. He has a
-    combined nine years of professional experience as an engineer, project
-    manager, and product manager for the development of ERP systems, a
-    commercial sustainability application, and business technology solutions for
-    several major food and beverage B2B distributors. David received his BS in
-    Environmental Engineering from the University of Florida.
-  image: /uploads/david-brooks.jpg
-  phone:
-  active: active
