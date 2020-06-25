@@ -1,8 +1,8 @@
 ---
-name: IoT Logistics & Shipping
-city: Paris
-state:
-country: France
+name: 'IoT Logistics & Shipping, LLC'
+city: Orlando
+state: florida
+country: USA
 innovator_level: national
 description: >-
   Using smart sensors connected to an IoT network with global coverage, we track
