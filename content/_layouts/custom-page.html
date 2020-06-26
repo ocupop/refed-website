@@ -45,7 +45,7 @@ layout: default
   {% if section._type == 'testimonials' %}
     <section class="bg-light">
       <div class="container">
-        <div id="carousel-testimonials-{{ forloop.index }}" class="carousel slide" data-ride="carousel">
+        <div id="carousel-testimonials-{{ forloop.index }}" class="carousel slide pb-5" data-ride="carousel">
           <ol class="carousel-indicators">
             {% assign carousel_instance = forloop.index %}
             {% for slide in section.testimonials %}
