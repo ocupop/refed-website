@@ -11,6 +11,11 @@
 @import "global/header";
 @import "global/footer";
 
+@import "modules/hero";
+
 
 @import "nav/primary";
 @import "nav/utility";
+
+/* Just for wireframes!*/
+main section:nth-child(even){ background-color:#e2e2e2;}
