@@ -5,18 +5,20 @@ layout: default
 {% for section in page.page_sections %}
   {% if section._type == 'hero' %}
     <section class="hero bg-image aspect-16x9" style="background-image: url({{ section.image | default: site.placeholder_image }})">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            {% if section.title %}
+      <div class="hero-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              {% if section.title %}
               <h1>{{ section.title }}</h1>
-            {% endif %}
-            {% if section.description_html %}
+              {% endif %}
+              {% if section.description_html %}
               {{ section.description_html }}
-            {% endif %}
-            {% if section.link %}
+              {% endif %}
+              {% if section.link %}
               <a href="{{ section.link }}" class="btn btn-primary">{{ link.text | default: 'Learn More' }}</a>
-            {% endif %}
+              {% endif %}
+            </div>
           </div>
         </div>
       </div>
