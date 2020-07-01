@@ -3,33 +3,52 @@ layout: default
 ---
 
 {% for section in page.page_sections %}
-  {% if section._type == 'card_grid' %}
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-center mb-5">{{ section.title }}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="responsive-card-deck cards-lg-3">
-            {% for card in section.cards %}
-              <div class="card">
-                <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
-                <div class="card-body">
-                  <p>{{ card.text }}</p>
-                  {% if card.link %}
-                    <a href="{{ card.link }}" class="btn btn-primary">{{ card.link_text | default: 'Read More'}}</a>
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
+  {% if section._type == 'hero' %}
+    <section class="hero bg-image aspect-16x9" style="background-image: url({{ section.image | default: site.placeholder_image }})">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            {% if section.title %}
+              <h1>{{ section.title }}</h1>
+            {% endif %}
+            {% if section.description_html %}
+              {{ section.description_html }}
+            {% endif %}
+            {% if section.link %}
+              <a href="{{ section.link }}" class="btn btn-primary">{{ link.text | default: 'Learn More' }}</a>
+            {% endif %}
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
+  {% if section._type == 'card_grid' %}
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">{{ section.title }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="responsive-card-deck cards-lg-3">
+              {% for card in section.cards %}
+                <div class="card">
+                  <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                  <div class="card-body">
+                    <p>{{ card.text }}</p>
+                    {% if card.link %}
+                      <a href="{{ card.link }}" class="btn btn-primary">{{ card.link_text | default: 'Read More'}}</a>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   {% endif %}
   {% if section._type == 'single_column' %}
     <section>

@@ -64,6 +64,15 @@ _array_structures:
       value:
         _type: testimonials
         testimonials:
+    - label: Hero
+      icon: panorama
+      value:
+        _type: hero
+        title:
+        description_html:
+        image:
+        link:
+        link_text:
   testimonials:
     - label: Testimonial
       icon: format_quote
@@ -79,6 +88,14 @@ _array_structures:
         text:
         featured_image:
         link:
+  images:
+    - label: Images
+      icon: insert_photo
+      value:
+        image:
+        title:
+
+
 
 _comments:
   cards: page section for card grid that is not related to a collection          
