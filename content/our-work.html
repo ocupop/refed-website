@@ -1,58 +1,77 @@
 ---
 layout: default
-title: ReFED - Our Work
-preheader: 
+title: To advance data-driven solutions for food waste reduction
+preheader: Our Purpose
+hero-copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 hero-image: https://picsum.photos/id/106/1000/333
+
+wireframesections:
+    - id: promote-solutions
+      image: "https://picsum.photos/id/134/1000/333"
+      headline: Promote Solutions
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+      - label: Contact Us
+      - label: View Soutions Tracker
+      - label: View Insights Engine
+    - id: data-insights
+      image: "https://picsum.photos/id/132/1000/333"
+      headline: "Data & Insights"
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+      - label: See Solutions
+      - label: View Solutions Tracker
+      - label: View Insights Engine
+    - id: stakeholder-engagement
+      image: "https://picsum.photos/id/133/1000/333"
+      headline: Stakeholder Engagement
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+      - label: Learn More
+    - id: capital-innovation
+      image: "https://picsum.photos/id/135/1000/333"
+      headline: Capital & Innovation
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+      - label: Learn More
+    - id: raise-awareness
+      image: "https://picsum.photos/id/136/1000/333"
+      headline: Raise Awareness
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+      - label: Learn More
+    - id: future-planning
+      image: "https://picsum.photos/id/137/1000/333"
+      headline: Future Planning
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+        - label: Learn More
+    - id: covid-19
+      image: "https://picsum.photos/id/144/1000/333"
+      headline: Covid-19
+      copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      buttons:
+        - label: Learn More
+
 ---
 
 
 {% include modules/hero.html %}
 
-<section class="promote-solutions">
-    <a name="promote-solutions"></a>
+{% for section in page.wireframesections %}
+<section class="{{ section.id }} bg-white">
+    <a name="{{ section.id }}"></a>
     <div class="container">
-        <h2>Promote Solutions</h2>
+        <h2>{{ section.headline }}</h2>
+        <p>{{ section.copy }}</p>
+        <div class="bg-image" style="background-image: url({{ section.image }});background-position:center center;background-size:cover;height:0;padding-bottom:15%;"></div>
+        <div class="row mt-2">
+            {% for button in section.buttons %}
+            <div class="col-md-4 text-center">
+                <a class="btn btn-primary d-block" href="#">{{ button.label }}</a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
-
-<section class="data-insights">
-    <a name="data-insights"></a>
-    <div class="container">
-      <h2>Data & Insights</h2>
-    </div>
-</section>
-
-<section class="stakeholder-engagement">
-    <a name="stakeholder-engagement"></a>
-    <div class="container">
-        <h2>Stakeholder Engagement</h2>
-    </div>
-</section>
-
-<section class="capitol-innovation">
-    <a name="capitol-innovation"></a>
-    <div class="container">
-      <h2>Capitol & Innovation  (will this be it's own page?)</h2>
-    </div>
-</section>
-
-<section class="raise-awareness">
-    <a name="raise-awareness"></a>
-    <div class="container">
-        <h2>Raise Awareness</h2>
-    </div>
-</section>
-
-<section class="future-planning">
-    <a name="future-planning"></a>
-    <div class="container">
-      <h2>Future Planning</h2>
-    </div>
-</section>
-
-<section class="covid-19">
-    <a name="covid-19"></a>
-    <div class="container">
-      <h2>Covid-19</h2>
-    </div>
-</section>
+{% endfor %}

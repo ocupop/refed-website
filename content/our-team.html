@@ -1,44 +1,158 @@
 ---
 layout: default
-title: 'ReFED - Our Team'
+title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod tempor incididunt ut lablre ed dolore magna aliqua.'
 preheader: Our Team
 hero-image: https://picsum.photos/id/117/1000/333
+next-page-cta: 
+  headline: Learn about our donors and how they are creating positive impact
+  cta-label: See our Donors
+  cta-url: /our-donors
 ---
 
 
 {% include modules/hero.html %}
-
+<!--
 <section class="leadership">
     <a name="leadership"></a>
     <div class="container">
         <h2>Leadership</h2>
+        <div class="row">
+            {% for num in (1..3) %}
+            <div class="col-md-4">
+                <img class="d-block w-100" src="https://via.placeholder.com/400x300">
+                <h2>Name Goes Here</h2>
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            {% endfor %}           
+        </div>
     </div>
 </section>
+-->
 
 <section class="staff">
     <a name="staff"></a>
     <div class="container">
-      <h2>Staff</h2>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Staff</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-lg-3">
+                {% for num in (1..9) %}
+                    <div class="card">
+                    <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                    <div class="card-body">
+                        <h2>Name Goes Here</h2>
+                        <h5>Title</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                        <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
+                    </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <section class="board-of-directors">
     <a name="board-of-directors"></a>
     <div class="container">
-        <h2>Board of Directors</h2>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-5">Board of Directors and Advisory Council</h2>
+                <p>ReFED's strength has long rested in the power of the people who surroundReFED’s strength has long rested in the power of the people who surround, advise and contribute to our work. ReFED’s Board of Directors and Advisory Council are comprised of leaders in the business, nonprofit, foundation, and government sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-md-2">
+                {% for num in (1..8) %}
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
+                                &nbsp;
+                            </div>
+                            <div class="card-body col-6">
+                                <h3>Name Goes Here</h3>
+                                <h5>Title</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="advisory-council">
+
+
+<section class="advisory-council bg-light">
     <a name="advisory-council"></a>
     <div class="container">
-       <h2>Advisory Council</h2>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <h2 class="pb-3">Advisory Council</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-md-2">
+                {% for num in (1..8) %}
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
+                                &nbsp;
+                            </div>
+                            <div class="card-body col-6">
+                                <h3>Name Goes Here</h3>
+                                <h5>Title</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+
+
 
 <section class="expert-network">
     <a name="expert-network"></a>
     <div class="container">
-        <h2>Expert Network</h2>
+        <div class="row">
+            <div class="col-12 py-4">
+                <h2 class="pb-3">Expert Network</h2>
+                <p>ReFED’s strength has long rested in the power of the people who surround, advise and contribute to our work. ReFED’s Board of Directors and Advisory Council are comprised of leaders in the business, nonprofit, foundation, and government sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+                <a href="#" class="btn btn-primary">Become or Nominate a Participant</a>  
+            </div>
+        </div>
+
+        <div class="row">
+
+            {% for num in (1..15) %}
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <h5 class="mb-0">Name Goes Here</h5>
+                    <p>Title, Organization</p>                              
+                </div>
+            {% endfor %}
+                
+        </div>
     </div>
 </section>
+
+
+
+
+{% include modules/next-page-cta.html %}

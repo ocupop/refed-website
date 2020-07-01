@@ -1,24 +1,53 @@
 ---
 layout: default
-title: ReFED - Our Impact
-preheader: 
-hero-image: https://picsum.photos/id/105/1000/333
+title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+preheader: Our Impact
+hero-image: https://picsum.photos/id/104/1000/333
 ---
 
 
 {% include modules/hero.html %}
 
 
-<section class="case-studies">
+<section class="case-studies bg-white">
     <a name="case-studies"></a>
     <div class="container">
-        <h2>Case Studies</h2>
+
+        <div class="row pb-5">
+            <div class="col-md-6 py-4 my-5">
+                <h5>Case Studies</h5>
+                <h2>Case Study Title Here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi</p>                        
+                            
+                <a href="{{ card.link }}" class="btn btn-primary">Learn More</a>   
+            </div>
+            <div class="col-md-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
+                &nbsp;
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-lg-3">
+                {% for num in (1..9) %}
+                    <div class="card mb-3">
+                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                        <div class="card-body">
+                            <h2>Name Goes Here</h2>
+                            <h5>Sub Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                            <a href="{{ card.link }}" class="btn btn-primary">Learn More</a>                        
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="testimonials">
-    <a name="testimonials"></a>
-    <div class="container">
-      <h2>Testimonials</h2>
-    </div>
-</section>
+
+
+{% include modules/testimonials.html %}
