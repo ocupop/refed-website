@@ -28,6 +28,13 @@
         
         .sub-menu{
             border-right:1px solid grey;
+            &.two-col-sublinks{
+                flex: 0 0 50%;
+                max-width: 50%;
+                > ul{
+                    column-count: 2;
+                }
+            }
         }
         /*
         .navbar-nav .mega-dropdown:hover .mega-menu {

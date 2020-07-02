@@ -40,11 +40,11 @@
                   <div class="row">
 
                     {% for sublink in link.links %}
-                    <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                    <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 %}two-col-sublinks{% endif %}">
                       <h6 class="sub-title font-weight-bold white-text"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
                       
                       {% if sublink.links.size %}
-                      <ul class="list-unstyled">
+                      <ul class="list-unstyled"  >
                         {% for subsublink in sublink.links %}
                         <li>
                           <a class="menu-item pl-0" href="{{ subsublink.link }}">
@@ -80,11 +80,10 @@
             {% endfor %}
           </ul>
 
-          <ul class="utility-links navbar-nav ml-auto ">
-            <li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="/newsroom">Newsroom</a></li>
-            <li class="nav-item"><a class="nav-link" href="/stay-connected">Stay Connected</a></li>
+          <ul class="utility-links navbar-nav ml-auto ">            
+            {% for link in site.data.navigation.top_bar_navigation.links %}            
+            <li class="nav-item"><a class="nav-link" href="{{ link.link }} ">{{ link.title }} </a></li>
+            {% endfor %}            
           </ul>
 
 

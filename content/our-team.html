@@ -9,27 +9,7 @@ next-page-cta:
   cta-url: /our-donors
 ---
 
-
 {% include modules/hero.html %}
-<!--
-<section class="leadership">
-    <a name="leadership"></a>
-    <div class="container">
-        <h2>Leadership</h2>
-        <div class="row">
-            {% for num in (1..3) %}
-            <div class="col-md-4">
-                <img class="d-block w-100" src="https://via.placeholder.com/400x300">
-                <h2>Name Goes Here</h2>
-                <h5>Title</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-            {% endfor %}           
-        </div>
-    </div>
-</section>
--->
 
 <section class="staff">
     <a name="staff"></a>
@@ -43,14 +23,14 @@ next-page-cta:
             <div class="col-12">
                 <div class="responsive-card-deck cards-lg-3">
                 {% for num in (1..9) %}
-                    <div class="card">
-                    <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
-                    <div class="card-body">
-                        <h2>Name Goes Here</h2>
-                        <h5>Title</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                        <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
-                    </div>
+                    <div class="card mb-4">
+                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                        <div class="card-body">
+                            <h2>Name Goes Here</h2>
+                            <h5>Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                            <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
+                        </div>
                     </div>
                 {% endfor %}
                 </div>

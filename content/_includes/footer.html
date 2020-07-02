@@ -1,15 +1,44 @@
 </main>
 
-<footer id="pageFooter" class="bg-dark">
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- logo -->
-                <a class="footer-brand" href="/">{{ site.title }}</a>
+
+<footer id="pageFooter" >
+
+    <div class="logo-band bg-light py-3">            
+        <div class="container">        
+            <a class="footer-brand" href="/">{{ site.title }}</a>
+        </div>
+    </div>
+        
+    <div class="mega-footer bg-dark">   
+        <div class="container py-5">      
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="footer-links navbar-nav ml-auto ">         
+                        {% for link in site.data.navigation.footer_navigation.links %}            
+                        <li class="nav-item"><a class="nav-link" href="{{ link.link }} ">{{ link.title }} </a></li>
+                        {% endfor %}  
+                    </ul>    
+                </div>
+                <div class="col-md-6 text-light">
+                    <h3>Stay Connected with ReFED</h3>
+
+                    <ul class="p-0 my-3">
+                        {% for num in (1..5) %}
+                        <img class="mr-2 rounded-circle" src="https://via.placeholder.com/30x30" alt="Alt Tag...">
+                        {% endfor %}                         
+                    </ul>
+
+                    <p>Sign up for our newsletter and other email updates</p>
+
+                    <a href="#" class="btn btn-primary px-3">Subscribe</a>
+                </div>
             </div>
-            <div class="col-md-6">
-                This is the footer.
-            </div>
+
+
+
+            <ul class="utility-links navbar-nav ml-auto ">            
+                 
+          </ul>
         </div>
     </div>
 </footer>

@@ -7,7 +7,7 @@
         <div class="container p-4">
             {% if page.preheader %}<h2>{{ page.preheader }}</h2>{% endif %}
             {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-            <p class="editable">{{ page.hero-copy }}</p>
+            {% if page.hero-copy %}<p class="editable">{{ page.hero-copy }}</p>{% endif %}
         </div>
     </div>
 </section>

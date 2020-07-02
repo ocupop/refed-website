@@ -2,11 +2,11 @@
 layout: page
 title: Home
 hero_carousel:
+  - image: https://picsum.photos/id/132/1000/333
+    headline: We're on a mission to end food waste through data driven solutions
+    copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   - image: https://picsum.photos/id/134/1000/333
     headline: Together, we advance data-driven solutions for food waste reduction
-    copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  - image: https://picsum.photos/id/132/1000/333
-    headline: Another Headline Here
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   - image: https://picsum.photos/id/133/1000/333
     headline: This is the headline for the third slide
@@ -22,9 +22,9 @@ hero_carousel:
       {% for slide in page.hero_carousel %}
         <div class="carousel-item ">              
           <img class="d-block w-100" src="{{ slide.image }}" alt="First slide">
-          <div class="carousel-caption text-dark p-3" >
-            <div style="width:50%;background: rgb(255,255,255,0.8);padding: 15px;">              
-              <h5>{{ slide.headline }}</h5>
+          <div class="carousel-caption text-dark p-3" >       
+            <h1 class="text-white my-5" >{{ slide.headline }}</h1>
+            <div style="width:50%;background: rgb(255,255,255,0.8);padding: 15px;">       
               <p>{{ slide.copy }}</p>
             </div>
           </div>
@@ -58,8 +58,9 @@ hero_carousel:
         {% for num in (1..2) %}
         <article class="newsroom-{{ forloop.index }} col-md-6">
           <img class="d-block w-100 my-3" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-          <h3 class="my-3">Newsroom Headline</h3>
-          <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <date>June {{ forloop.index }}3, 2020</date>
+          <h3 class="my-3">News Headline</h3>
+          <a href="/newsroom" type="button" class="btn btn-primary editable my-3">Read More</a>
         </article>
         {% endfor %}   
         
@@ -188,12 +189,12 @@ hero_carousel:
     <div class="row">     
       <div class="col-md-12">
 
-        <h2 class="editable text-center">Donors & Funders</h2>  
+        <h2 class="editable text-center">Funders</h2>  
         
         <div class="flickity mb-5">   
           {% for num in (1..30) %}
           <img class="m-2" src="https://via.placeholder.com/100x100" alt="Alt Tag...">
-          <img class="m-2" style='border-radius:50%;' src="https://via.placeholder.com/100x100" alt="Alt Tag...">
+          <img class="m-2 rounded-circle" src="https://via.placeholder.com/100x100" alt="Alt Tag...">
           {% endfor %} 
         </div>    
 
