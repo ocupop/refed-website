@@ -40,13 +40,13 @@ primary_navigation:
               link: '/our-team/#advisory-council'
             - title: Expert Network
               link: '/our-team/#expert-network'
-        - title: Our Donors
-          link: /our-donors/
+        - title: Our Funders
+          link: /our-funders/
           links:
             - title: Overview
-              link: '/our-donors/#overview'
+              link: '/our-funders/#overview'
             - title: Funder Impact
-              link: '/our-donors/#funder-impact'
+              link: '/our-funders/#funder-impact'
         - title: Careers
           link: /careers
           links:
@@ -69,7 +69,7 @@ primary_navigation:
               link: '/our-work/#data-insights'
               links:
             - title: Capitol & Innovation
-              link: /our-work/capitol-innovation
+              link: /our-work/#capitol-innovation
               links:
             - title: Stakeholder Engagement
               link: '/our-work/#stakeholder-engagement'
@@ -96,19 +96,19 @@ primary_navigation:
           link: /food-waste-challenge
           links:
             - title: 2030 Goals
-              link: '/food-waste-problem/#2030-goals'
+              link: '/food-waste-challenge/#2030-goals'
               links:
             - title: Current Situation
-              link: '/food-waste-problem/#current-situation'
+              link: '/food-waste-challenge/#current-situation'
               links:
             - title: Impacts
-              link: '/food-waste-problem/#impacts'
+              link: '/food-waste-challenge/#impacts'
               links:
             - title: Policy Overview
-              link: '/food-waste-problem/#policy-overview'
+              link: '/food-waste-challenge/#policy-overview'
               links:
             - title: Funding Need
-              link: '/food-waste-problem/#funding-need'
+              link: '/food-waste-challenge/#funding-need'
               links:
         - title: Solutions
           link: /food-waste-solutions

@@ -6,7 +6,7 @@ hero-image: https://picsum.photos/id/117/1000/333
 next-page-cta: 
   headline: Learn about our donors and how they are creating positive impact
   cta-label: See our Donors
-  cta-url: /our-donors
+  cta-url: /our-funders
 ---
 
 {% include modules/hero.html %}
@@ -29,7 +29,7 @@ next-page-cta:
                             <h2>Name Goes Here</h2>
                             <h5>Title</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                            <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
+                            <a href="/single-person" class="btn btn-primary">Read More</a>                        
                         </div>
                     </div>
                 {% endfor %}
@@ -54,16 +54,18 @@ next-page-cta:
                 <div class="responsive-card-deck cards-md-2">
                 {% for num in (1..8) %}
                     <div class="card mb-3">
-                        <div class="row">
-                            <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
-                                &nbsp;
+                        <a href="/single-person">
+                            <div class="row">
+                                <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
+                                    &nbsp;
+                                </div>
+                                <div class="card-body col-6">
+                                    <h3>Name Goes Here</h3>
+                                    <h5>Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
+                                </div>
                             </div>
-                            <div class="card-body col-6">
-                                <h3>Name Goes Here</h3>
-                                <h5>Title</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 {% endfor %}
                 </div>
@@ -87,16 +89,18 @@ next-page-cta:
                 <div class="responsive-card-deck cards-md-2">
                 {% for num in (1..8) %}
                     <div class="card mb-3">
-                        <div class="row">
-                            <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
-                                &nbsp;
+                        <a href="/single-person">
+                            <div class="row">
+                                <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
+                                    &nbsp;
+                                </div>
+                                <div class="card-body col-6">
+                                    <h3>Name Goes Here</h3>
+                                    <h5>Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
+                                </div>
                             </div>
-                            <div class="card-body col-6">
-                                <h3>Name Goes Here</h3>
-                                <h5>Title</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 {% endfor %}
                 </div>

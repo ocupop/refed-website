@@ -3,6 +3,8 @@ layout: default
 title: Ways to Engage with ReFED
 preheader: Work with us
 hero-image: https://picsum.photos/seed/picsum/1000/333
+hero-copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+
 ---
 
 
@@ -10,23 +12,264 @@ hero-image: https://picsum.photos/seed/picsum/1000/333
 
 
 
-<section class="business-reporting">
-    <a name="business-reporting"></a>
+
+
+<section>
     <div class="container">
-        <h2>Business Reporting</h2>
+        <div class="row">
+            <div class="col-lg-3 col md-6">
+                <div class="p-5">
+                    <img class="w-100 rounded-circle" src="https://via.placeholder.com/200x200" alt="Alt Tag...">
+                </div>
+                <h4>Partner with us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+                <a href="#partner-with-us" type="button" class="btn btn-primary editable px-3 mt-3">Learn More</a>
+            </div>
+            <div class="col-lg-3 col md-6">
+                <div class="p-5">
+                    <img class="w-100 rounded-circle" src="https://via.placeholder.com/200x200" alt="Alt Tag...">
+                </div>
+                <h4>Business Reporting</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+                <a href="#business-reporting" type="button" class="btn btn-primary editable px-3 mt-3">Learn More</a>
+            </div>
+            <div class="col-lg-3 col md-6">
+                <div class="p-5">
+                    <img class="w-100 rounded-circle" src="https://via.placeholder.com/200x200" alt="Alt Tag...">
+                </div>
+                <h4>Call for funders</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+                <a href="#call-for-funders" type="button" class="btn btn-primary editable px-3 mt-3">Learn More</a>
+            </div>
+            <div class="col-lg-3 col md-6">
+                <div class="p-5">
+                    <img class="w-100 rounded-circle" src="https://via.placeholder.com/200x200" alt="Alt Tag...">
+                </div>
+                <h4>Fields of Influence</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+                <a href="#fields-of-influence" type="button" class="btn btn-primary editable px-3 mt-3">Learn More</a>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="partner-with-us">
+
+
+
+<section class="hero partner-with-us">
     <a name="partner-with-us"></a>
-    <div class="container">
-        <h2>Partner with us (will this be it's own page?)</h2>
+    <div class="hero-image aspect-3x1" style="background-image:url(https://via.placeholder.com/1000x333);"></div>
+    <div class="hero-copy">
+        <div class="container p-4">
+            <h1>Partner with Us</h1>
+            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+            <a href="/contact" type="button" class="btn btn-primary editable px-3 mt-3">Contact ReFED</a>
+        </div>
     </div>
 </section>
 
-<section class="call-for-funders">
-    <a name="call-for-funders"></a>
+<section class="">
     <div class="container">
-        <h2>Call for Funders</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-lg-3">
+                {% for num in (1..3) %}
+                    <div class="card mb-4">
+                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                        <div class="card-body">
+                            <h2>Partner Name Here</h2>
+                            <h5>Sub Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                            <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<section class="expert-network">
+    <a name="expert-network"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-4">
+                <h2 class="pb-3">Expert Network</h2>
+                <p>ReFED’s strength has long rested in the power of the people who surround, advise and contribute to our work. ReFED’s Board of Directors and Advisory Council are comprised of leaders in the business, nonprofit, foundation, and government sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+                <a href="#" class="btn btn-primary">Become or Nominate a Participant</a>  
+            </div>
+        </div>
+        <div class="row">
+            {% for num in (1..15) %}
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <h5 class="mb-0">Name Goes Here</h5>
+                    <p>Title, Organization</p>                              
+                </div>
+            {% endfor %}                
+        </div>
+    </div>
+</section>
+
+
+<section class="innovator-database">
+    <a name="innovator-database"></a>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-9">
+                <h2 class="mb-5">Innovator Database</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                <a href="#" class="btn btn-primary">Explore Innovation Database</a>     
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="responsive-card-deck cards-lg-3">
+                {% for num in (1..3) %}
+                    <div class="card mb-4">
+                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                        <div class="card-body">
+                            <h2>Innovator List</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                            <a href="{{ card.link }}" class="btn btn-primary">Read More</a>                        
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="hero business-reporting">
+    <a name="business-reporting"></a>
+    <div class="hero-image aspect-3x1" style="background-image:url(https://via.placeholder.com/1000x333);"></div>
+    <div class="hero-copy">
+        <div class="container p-4">
+            <h1>Business Reporting</h1>
+            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container">
+      <div class="row mb-5">
+        
+        <div class="col-md-6 py-5">
+          <h3 class="editable">Business Name Case Study</h3>
+          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+          <a href="/single-casestudy" type="button" class="btn btn-primary editable p-3">Learn More</a>
+        </div> 
+        
+        <div class="col-md-6">
+            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
+          </div>     
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <div class="responsive-card-deck cards-lg-3">
+            {% for num in (1..3) %}
+                <div class="card mb-4">
+                    <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                    <div class="card-body">
+                        <h2>Business Name Here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
+                        <a href="{{ card.link }}" class="btn btn-primary">Learn More</a>                        
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+      
+    </div>
+  
+  </section>
+
+
+
+
+
+
+<section class="hero call-for-funders">
+    <a name="call-for-funders"></a>
+    <div class="hero-image aspect-3x1" style="background-image:url(https://via.placeholder.com/1000x333);"></div>
+    <div class="hero-copy">
+        <div class="container p-4">
+            <h1>Call for Funders</h1>
+            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+            <a href="/contact" type="button" class="btn btn-primary editable px-3 mt-3">Contact ReFED</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="funder-impact-stories">
+    <a name="funder-impact-stories"></a>
+    <div class="featured-story-carousel">
+        {% for num in (1..4) %}
+        <div class="w-100">
+            <div class="container">
+                <div class="row">  
+                    <div class="col-md-6 py-5">
+                    <h4 class="editable">Funder Impact Stories</h4>
+                    <h2 class="editable">Funder #{{ forloop.index }} Name Here</h2>
+                    <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <a href="#" type="button" class="btn btn-primary editable p-3">Learn More</a>
+                    </div> 
+                    <div class="col-md-6">
+                    <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
+                    </div>     
+                </div>      
+            </div>
+        </div>
+        {% endfor %}
+    </div>  
+  </section>
+
+
+
+
+  <section class="hero fields-of-influence">
+      
+    <a name="fields-of-influence"></a>
+    <div class="hero-image aspect-3x1" style="background-image:url(https://via.placeholder.com/1000x333);"></div>
+    <div class="hero-copy">
+        <div class="container p-4">
+            <h1>Fields of Influence</h1>
+            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam,</p>
+        </div>
+    </div>
+
+    <div class="container fields-of-influence-carousel container overflow-hidden pt-5">        
+        <div class="row">  
+          <div class="col-12 three-card-carousel">   
+          {% for num in (1..8) %}
+          <article class="engage-{{ forloop.index }} col-md-4 py-3">
+            <img class="d-block w-100 my-3" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
+            <h3 class="editable my-3">Audience Path #{{ forloop.index }}</h3>
+            <p class="editable my-3">This section will be a carousel with more than 3 items. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <a href="#" class="btn btn-info" role="button" class="editable">Read More</a>
+          </article>
+          {% endfor %} 
+          </div>    
+        </div>    
+      </div>    
+
+  </section>
+
+
+
+
+  
+{% include modules/testimonials.html %}
+
