@@ -13,7 +13,7 @@ policy_data:
           package container of such product the date established by the
           processor as the date upon which, in order to insure quality, such
           product is normally removed from the shelf
-        legal_citation: Cal. Food & Agric. Code§ 36004 (2013)
+        legal_citation: Cal. Food & Agric. Code§ 36004 (2013).
       - title: Reg 2
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required (scope of law)
