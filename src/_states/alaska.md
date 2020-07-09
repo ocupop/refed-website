@@ -21,6 +21,7 @@ policy_data:
       date_labels_required_for:
         - shellfish
       restricted_sales_on_expired_labels:
+        - dairy
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
