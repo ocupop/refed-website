@@ -7,3 +7,60 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"
   defer></script> -->
 
+
+  <!-- Flickity Carousel Slider https://flickity.metafizzy.co/ -->
+  <!-- SEE head.html for the css include -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+<script>
+    
+var elem = document.querySelector('.three-card-carousel');
+if(elem){
+  var flkty_three_card = new Flickity( elem, {
+    cellAlign: 'left',
+    contain: true,
+    //"freeScroll": true,
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: true,
+    adaptiveHeight: true
+  });
+}
+
+var elem = document.querySelector('.three-card-carousel');
+if(elem){
+  var flkty_grouped = new Flickity( elem, {
+    groupCells: true,
+    contain: true,
+  });
+}
+
+var elem = document.querySelector('.featured-story-carousel');
+if(elem){
+  var flkty_featuredstory = new Flickity( elem, {
+    cellAlign: 'center',
+    prevNextButtons: false,
+    pageDots: true,
+    "wrapAround": true,
+    contain: true,
+  });
+}
+
+var elem = document.querySelector('.hero-style-carousel');
+if(elem){
+  var flkty_hero = new Flickity( '.hero-style-carousel', {
+    cellAlign: 'center',
+    prevNextButtons: true,
+    pageDots: false,
+    "wrapAround": true,
+    contain: true,
+  });
+}
+
+
+    
+
+    
+  </script>
+

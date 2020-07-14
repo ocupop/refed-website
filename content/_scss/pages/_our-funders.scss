@@ -1,0 +1,14 @@
+// This should actually be in a different scss folder. Maybe one for "carousels"
+.featured-story-carousel{
+    .flickity-page-dots{
+        top: 0;
+        max-width: 1140px;
+        padding-left: 7px;
+        padding-right: 15px;
+        bottom: inherit;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: left;
+    }   
+}

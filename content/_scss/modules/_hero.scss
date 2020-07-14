@@ -1,0 +1,21 @@
+.hero{
+    padding-top:0;
+    .hero-image{
+        background-size:cover;
+        background-position:center center;
+    }
+    .hero-copy{
+        .container{
+            background-color:#f8f8f8;
+            margin-top:-7vw;
+            position:relative;
+            z-index:1;
+            h2{
+                font-weight: 100;
+                font-size: 24px;
+            }
+            h1{}
+        }
+    }
+
+}

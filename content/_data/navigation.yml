@@ -1,5 +1,17 @@
 top_bar_navigation:
   navigation:
+  links:
+   - title: Search
+     link: /search
+   - title: Contact
+     link: /contact
+     links:
+   - title: Newsroom
+     link: /newsroom
+     links:
+   - title: Stay Connected
+     link: /stay-connected
+     links:
 primary_navigation:
   navigation:
   links:
@@ -9,21 +21,17 @@ primary_navigation:
         - title: Who We Are
           link: /who-we-are/
           links:
-            - title: 2030 Goals
-              link: '/who-we-are/#2030-goals'
-            - title: Current Situation
-              link: '/who-we-are/#current-situation'
-            - title: Impacts
-              link: '/who-we-are/#impacts'
-            - title: Policy Overview
-              link: '/who-we-are/#policy-overview'
-            - title: Funding Need
-              link: '/who-we-are/#funding-need'
+            - title: Our Mission
+              link: '/who-we-are/#our-mission'
+            - title: Our Vision
+              link: '/who-we-are/#our-vision'
+            - title: Our Values
+              link: '/who-we-are/#our-values'
+            - title: Our History
+              link: '/who-we-are/#our-history'           
         - title: Our Team
           link: /our-team/
           links:
-            - title: Leadership
-              link: '/our-team/#leadership'
             - title: Staff
               link: '/our-team/#staff'
             - title: Board of Directors
@@ -32,15 +40,15 @@ primary_navigation:
               link: '/our-team/#advisory-council'
             - title: Expert Network
               link: '/our-team/#expert-network'
-        - title: Our Donors
-          link: /our-donors/
+        - title: Our Funders
+          link: /our-funders/
           links:
             - title: Overview
-              link: '/our-donors/#overview'
+              link: '/our-funders/#overview'
             - title: Funder Impact
-              link: '/our-donors/#funder-impact'
-        - title: Work with Us
-          link: /work-with-us
+              link: '/our-funders/#funder-impact'
+        - title: Careers
+          link: /careers
           links:
             - title: Documents
               link: /documents
@@ -57,22 +65,16 @@ primary_navigation:
         - title: Our Work
           link: /our-work
           links:
-            - title: Promote Solutions
-              link: '/our-work/#promote-solutions'
-              links:
             - title: Data & Insights
               link: '/our-work/#data-insights'
+              links:
+            - title: Capitol & Innovation
+              link: /our-work/#capitol-innovation
               links:
             - title: Stakeholder Engagement
               link: '/our-work/#stakeholder-engagement'
               links:
-            - title: Capitol & Innovation
-              link: /our-work/capitol-innovation
-              links:
-            - title: Raise Awareness
-              link: '/our-work/#raise-awareness'
-              links:
-            - title: Future Planning
+            - title: Future Planning (TBD)
               link: '/our-work/#future-planning'
               links:
             - title: Covid-19
@@ -90,23 +92,23 @@ primary_navigation:
     - title: Food Waste
       link: /food-waste
       links:
-        - title: Problem
-          link: /food-waste-problem
+        - title: The Challenge
+          link: /food-waste-challenge
           links:
             - title: 2030 Goals
-              link: '/food-waste-problem/#2030-goals'
+              link: '/food-waste-challenge/#2030-goals'
               links:
             - title: Current Situation
-              link: '/food-waste-problem/#current-situation'
+              link: '/food-waste-challenge/#current-situation'
               links:
             - title: Impacts
-              link: '/food-waste-problem/#impacts'
+              link: '/food-waste-challenge/#impacts'
               links:
             - title: Policy Overview
-              link: '/food-waste-problem/#policy-overview'
+              link: '/food-waste-challenge/#policy-overview'
               links:
             - title: Funding Need
-              link: '/food-waste-problem/#funding-need'
+              link: '/food-waste-challenge/#funding-need'
               links:
         - title: Solutions
           link: /food-waste-solutions
@@ -124,34 +126,34 @@ primary_navigation:
           link: /resources-guides
           links:
             - title: Insights Engine
-              link:
+              link: '/resources-guides/#insights-engine'
               links:
             - title: Food Waste Tracker
-              link:
+              link: '/resources-guides/#food-waste-tracker'
               links:
             - title: Investment Tracker
-              link:
+              link: '/resources-guides/#investment-tracker'
               links:
             - title: Solutions Tracker
-              link:
+              link: '/resources-guides/#solutions-tracker'
               links:
             - title: Impact Calculator
-              link:
+              link: '/resources-guides/#impact-calculator'
               links:
             - title: Innovator Database
-              link:
+              link: '/resources-guides/#innovator-database'
               links:
             - title: Policy Tracker
-              link:
+              link: '/resources-guides/#policy-tracker'
               links:
             - title: The Roadmap
-              link:
+              link: '/resources-guides/#roadmap'
               links:
             - title: ReFED Reports
-              link:
+              link: '/resources-guides/#refed-reports'
               links:
             - title: Action Guides
-              link:
+              link: '/resources-guides/#action-guides'
               links:
     - title: Engage
       link: /engage
@@ -159,11 +161,11 @@ primary_navigation:
         - title: Ways to Engage
           link: /engage
           links:
-            - title: Business Reporting
-              link: '/engage/#business-reporting'
-              links:
             - title: Partner with Us
               link: /engage/partner-with-us
+              links:
+            - title: Business Reporting
+              link: '/engage/#business-reporting'
               links:
             - title: Call for Funders
               link: '/engage/#call-for-funders'
@@ -177,21 +179,33 @@ primary_navigation:
             - title: Webinars
               link: '/events/#webinars'
               links:
-            - title: Stay Connected
-              link: /social
+        - title: Stay Connected
+          link: /social
+          links:
+            - title: Twitter
+              link: 'https://twitter.com/refed'
               links:
-                - title: Twitter
-                  link: 'https://twitter.com/refed'
-                  links:
-                - title: LinkedIn
-                  link: >-
-                    https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
-                  links:
-                - title: Facebook
-                  link: 'https://www.facebook.com/rethinkfoodwaste/'
-                  links:
+            - title: LinkedIn
+              link: https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
+              links:
+            - title: Facebook
+              link: 'https://www.facebook.com/rethinkfoodwaste/'
+              links:
     - title: Insights Engine
       link:
       links:
 footer_navigation:
   navigation:
+  links:
+   - title: Careers
+     link: /careers
+   - title: Newsroom
+     link: /newsroom
+   - title: Media Inquiry
+     link: /#
+   - title: Terms of Use
+     link: /terms-of-use
+   - title: Privacy Policy
+     link: /privacy
+   - title: Contact ReFED
+     link: /contact
