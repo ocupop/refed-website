@@ -35,12 +35,11 @@ collections:
     output: true
     layout: article
     permalink: /content-hub/:path/
-  innocvs:
+  innovators_temp:
     output: true
-    source: writers-clean.csv
+    source: innovators-sheet.csv
     id_key: name
-    layout: innovator  
-    permalink: /tools/innovator-database/:path/
+    layout: innovator
 
 defaults:
   -
