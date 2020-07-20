@@ -20,3 +20,5 @@
 /covid/ https://covid.refed.com
 /covid-19/ https://covid.refed.com
 /covidsolutionsfund/ https://covid.refed.com/covidsolutionsfund
+/accelreport/ /resources/#accelerator-report
+
