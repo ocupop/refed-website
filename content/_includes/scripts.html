@@ -15,12 +15,52 @@
 
 <script>
     
+    // Navbar collapse sub-menu
+    var matches = document.querySelectorAll('.nav-back-button');
+    if(matches){
+      matches.forEach(function(btn) {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          var closestparent = btn.closest('.dropdown-menu');
+          element.classList.remove('show');
+        });
+      });
+    }
+
+
+
+
+/* CAROUSELS */
+/* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
+var elem = document.querySelector('.homepage-under-hero .news-carousel');
+if(elem){
+  var flkty_featurednews = new Flickity( elem, {
+    prevNextButtons: true,
+    pageDots: false,
+    "wrapAround": true,
+    cellAlign: 'left'
+  });
+}
+
+/* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
+var elem = document.querySelector('.full-width-carousel');
+if(elem){
+  var flkty_slide = new Flickity( elem, {
+    prevNextButtons: false,
+    pageDots: true,
+    "wrapAround": true,
+    cellAlign: 'left'
+  });
+}
+
+
+
+/* 3 cards at a time (Home page "What can I do to solve food waste") */
 var elem = document.querySelector('.three-card-carousel');
 if(elem){
   var flkty_three_card = new Flickity( elem, {
     cellAlign: 'left',
     contain: true,
-    //"freeScroll": true,
     "wrapAround": true,
     prevNextButtons: true,
     pageDots: true,
@@ -28,13 +68,41 @@ if(elem){
   });
 }
 
-var elem = document.querySelector('.three-card-carousel');
+
+/* Testimonials */
+var elem = document.querySelector('.carousel-testimonials');
 if(elem){
-  var flkty_grouped = new Flickity( elem, {
-    groupCells: true,
+  var flkty_three_card = new Flickity( elem, {
+    cellAlign: 'left',
     contain: true,
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: true,
+    adaptiveHeight: true
   });
 }
+
+
+/* Logo Carousel (Home Page Funders) */
+var elem = document.querySelector('.logo-carousel');
+if(elem){
+  var flkty_logos = new Flickity( elem, {
+    cellAlign: 'center',
+    contain: true,
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: false,
+    adaptiveHeight: false
+  });
+}
+
+
+
+
+
+
+
+
 
 var elem = document.querySelector('.featured-story-carousel');
 if(elem){

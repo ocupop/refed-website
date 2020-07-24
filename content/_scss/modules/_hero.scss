@@ -1,21 +1,86 @@
 .hero{
-    padding-top:0;
+    //height:0;
+    padding:0;
+    //padding-bottom:33%;
+    height:em(612);
+    position:relative;
+
+    
+
     .hero-image{
+        height:auto;
+        @include darken-bkg-image();
+        position:absolute;
+        top:0;left:0;bottom:0;right:0;
         background-size:cover;
         background-position:center center;
     }
-    .hero-copy{
-        .container{
-            background-color:#f8f8f8;
-            margin-top:-7vw;
-            position:relative;
-            z-index:1;
-            h2{
-                font-weight: 100;
-                font-size: 24px;
+    .hero-content{
+        position:relative;
+        display:flex;
+        align-items:center;
+        height:100%;        
+        .hero-copy{
+            .hero-p{
+                p:first-child{ margin-top:0;}
+                p:last-child{ margin-bottom:0;}
             }
-            h1{}
+        }
+        
+        .hero-social{
+            a{
+                display:inline-block;
+                width:38px;
+                height:38px;
+                margin-right:15px;
+                margin-top:15px;
+                background-color:#FFFFFF;
+            }
+            .linkedin{}
+            .twitter{}
         }
     }
+    &.image-overlaps-bottom .hero-content{ padding-bottom:120px;} 
+   
+    
+
+    @media screen and (max-width:  $screen-xl-min) {
+        height:em(550);
+    }
+
+    @media screen and (max-width: $screen-md-min){
+        height:em(450);
+        &.image-overlaps-bottom .hero-content{ padding-bottom:190px;} 
+    }
+    @media screen and (max-width: $screen-sm-min){
+        height:auto;    
+        &.image-overlaps-bottom .hero-content{ padding-bottom:95px;}     
+    }
+    
+    /* Desktop Only */
+    @media screen and (min-width:  $screen-md-min) {
+        .hero-content{
+            .hero-copy{
+                margin-right: 50px;
+                max-width:em(890);
+            }
+            .hero-social{
+                position:absolute;
+                right:0;
+                top:50%;
+                transform:translateY(-50%);
+                a{
+                    display:block;
+                    width:60px;
+                    height:60px;
+                    margin:15px 0;
+                    background-color:#FFFFFF;
+                }
+                .linkedin{}
+                .twitter{}
+            }
+        }
+    }
+
 
 }

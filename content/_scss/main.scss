@@ -3,15 +3,23 @@
 
 // Global
 @import "global/mixins";
+@import "global/functions";
 @import "global/utilities";
 @import "global/base";
 @import "global/layout";
+@import "global/buttons";
 @import "global/typography";
 @import "global/animations";
 @import "global/header";
 @import "global/footer";
 
+@import "modules/carousels";
+@import "modules/card";
 @import "modules/hero";
+@import "modules/homepage-under-hero";
+@import "modules/laptop-module";
+@import "modules/simple-copy-and-cta";
+@import "modules/testimonials";
 
 @import "pages/our-funders";
 

@@ -1,41 +1,23 @@
-
-{% assign carousel_instance = 'forloop-index-or-unique-id' %}
-
-<section class="testimonials bg-light">
-    <div class="container">
-      <div id="carousel-testimonials-{{ carousel_instance }}" class="carousel slide pb-5" data-ride="carousel">
-        <ol class="carousel-indicators">
-          
-          {% for num in (1..5) %}
-            <li data-target="#carousel-testimonials-{{ carousel_instance }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
-          {% endfor %}  
-        </ol>
-        <div class="carousel-inner">
-          
-          {% for num in (1..5) %}
-            
-            <div class="carousel-item text-center {% if forloop.first %}active{% endif %}">
-              <div class="row">
-                <div class="col-12">
-                  <p class="lead">"{{ forloop.index }}. This grant will give us much needed fnds to accelerate technology development to help us and all the organizations that use our platform quickly scale to new locations and new services - such as home delivery - in the fight against food waste and hunger."</p>
-                  <p><em>—Leah Lizarondo</em></p>
-                  <p><small>CEO and Co-Founder of 412 Food Rescue</small></p>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-  
+<section class="testimonials bg-primary text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
+  <div class="carousel-testimonials">    
+    {% for num in (1..5) %}     
+    <div class="testimonial w-100" >  
+      <div class="container">     
+        <div class="row">
+          <div class="col-12 text-center">
+            <blockquote>
+              "{{ forloop.index }}. This grant will give us much needed fnds to accelerate technology development to help us and all the organizations that use our platform quickly scale to new locations and new services - such as home delivery - in the fight against food waste and hunger."
+              <footer class="font-serif">
+                <div class='cite'>—Leah Lizarondo</div>
+                <div class='credentials font-italic'>CEO and Co-Founder of 412 Food Rescue</div>
+              </footer>
+            </blockquote>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel-testimonials-{{ carousel_instance }}" role="button" data-slide="prev">
-          <i class="ri-arrow-left-s-line text-dark"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-testimonials-{{ carousel_instance }}" role="button" data-slide="next">
-          <i class="ri-arrow-right-s-line text-dark"></i>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
-  </section>
+    {% endfor %}    
+  </div>
+</section>
   
   
