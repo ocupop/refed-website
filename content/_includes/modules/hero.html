@@ -10,11 +10,14 @@
                 {% if page.hero.title %}<h1>{{ page.hero.title }}</h1>{% endif %}
                 {% if page.hero.copy %}<div class="hero-p editable">{{ page.hero.copy }}</div>{% endif %}
 
-                {% if page.hero-buttons %}
-                {% for button in page.hero-buttons %}
-                    <a class="btn btn-primary block mr-3" href="{{ button.url }}">{{ button.label }}</a>
-                {% endfor %}
+                {% if page.hero.buttons %}
+                    <div class="hero-buttons mt-3">
+                        {% for button in page.hero.buttons %}
+                            <a class="btn btn-secondary block mr-3" href="{{ button.url }}">{{ button.label }}</a>
+                        {% endfor %}
+                    </div>
                 {% endif %}
+                {% if page.hero.footnote %}<div class="text-sm footnote">{{ page.hero.footnote }}</div>{% endif %}
             </div>
             
             <div class="hero-social">
