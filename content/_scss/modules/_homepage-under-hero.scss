@@ -1,0 +1,62 @@
+.homepage-under-hero{
+    padding-top:0;
+    .leftcol, .leftcol .stretched-inner{
+        background-color:$light;
+    }
+    .rightcol, .rightcol .stretched-inner{
+        background-color:$almost-white;
+    }
+    .leftcol{
+        padding:68px 68px 68px 0;
+        .btn{
+            margin-top: 50px;
+        }
+    }
+    .rightcol{
+        padding: 0 85px;
+        .news-carousel{
+            margin-top:-125px;
+        }
+    }
+    .flickity-prev-next-button{
+        top: 176px;
+    }
+
+   
+
+
+    .card{
+        .card-subtitle{
+            color:$mid;
+        }
+        .card-text{
+            font-size:em(25)
+        }
+        .card-link{
+            margin-top: 22px;
+        }
+    }
+}
+@media screen and (max-width: $screen-md-min){
+ 
+    .rightcol{
+        margin-top:0;
+        padding: 0 85px;
+        /* background-color:#FFF; */
+    }
+    .extend-to-browser-edge > .row{
+        display:flex;
+        .leftcol{
+            order:2;
+        }
+        .rightcol{
+            order:1;
+            padding: em(30) 0;
+            
+            .news-carousel{
+                padding-top:0;
+            }
+        }
+    }
+
+}
