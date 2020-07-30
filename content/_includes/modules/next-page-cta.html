@@ -1,7 +1,18 @@
-<section class="next-page-cta py-5 bg-light text-center">
-    <a name="next-page-cta"></a>
-    <div class="container">
-        <h2 class="py-3">{{ page.next-page-cta.headline }}</h2>
-        <a href="{{ page.next-page-cta.cta-url }}" class="btn btn-primary p-3">{{ page.next-page-cta.cta-label }}</a>        
+<section class="next-page-cta simple-copy-and-cta bg-lightest text-left">
+  <a name="next-page-cta"></a>
+  <div class="container container-less-wide">
+    <div class="row" >     
+      <div class="col-md-8">
+        <h2 class="h3 m-0 p-0">{{ page.next-page-cta.headline }}</h2>
+      </div>
+      <div class="col-md-4 text-right">
+        <a href="{{ page.next-page-cta.cta-url }}" class="btn btn-primary btn-lg font-serif editable text-nowrap">{{ page.next-page-cta.cta-label }}</a>    
+      </div>      
     </div>
+  </div>
+  {% if page.next-page-cta.colorbar != nil %}
+  <div class="section__colorbar {{ page.next-page-cta.colorbar.position }}" style="background-color:{{ page.next-page-cta.colorbar.color }}" />
+  {% endif %}
+
 </section>
+

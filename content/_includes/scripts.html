@@ -30,6 +30,8 @@
 
 
 
+
+
 /* CAROUSELS */
 /* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
 var elem = document.querySelector('.homepage-under-hero .news-carousel');
@@ -68,11 +70,47 @@ if(elem){
   });
 }
 
+/* This adds a class of "flickity-loaded" to carousels after they have initialized */
+Flickity.prototype._createResizeClass = function() {
+  var that = this;
+  setTimeout(function(){ 
+    that.element.classList.add('flickity-resize');
+  }, 1000);
+};
 
-/* Testimonials */
+Flickity.createMethods.push('_createResizeClass');
+
+var resize = Flickity.prototype.resize;
+Flickity.prototype.resize = function() {
+  this.element.classList.remove('flickity-resize');
+  resize.call( this );
+  this.element.classList.add('flickity-resize');
+};
+
+
+
+/* Layout is the same as the ".three-card-carousel", but there are no dots.  */
+/* Pages: Our Impact, Food Waste Solutions */
+var elem = document.querySelector('.horizontal-carousel-arrows-only');
+if(elem){
+  var flkty_arrowsonly = new Flickity( elem, {
+    cellAlign: 'left',
+    contain: true,
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: false,
+    adaptiveHeight: false
+  });
+}   
+
+
+
+
+
+/* Testimonials (Multiple Pages) */
 var elem = document.querySelector('.carousel-testimonials');
 if(elem){
-  var flkty_three_card = new Flickity( elem, {
+  var flkty_testimonials = new Flickity( elem, {
     cellAlign: 'left',
     contain: true,
     "wrapAround": true,
@@ -103,7 +141,7 @@ if(elem){
 
 
 
-
+/*
 var elem = document.querySelector('.featured-story-carousel');
 if(elem){
   var flkty_featuredstory = new Flickity( elem, {
@@ -117,7 +155,7 @@ if(elem){
 
 var elem = document.querySelector('.hero-style-carousel');
 if(elem){
-  var flkty_hero = new Flickity( '.hero-style-carousel', {
+  var flkty_hero = new Flickity( elem, {
     cellAlign: 'center',
     prevNextButtons: true,
     pageDots: false,
@@ -125,10 +163,106 @@ if(elem){
     contain: true,
   });
 }
+*/
 
+    
+
+
+/* BEGIN filterable list */
+var filtered_list = document.querySelectorAll('.list-with-filter'); // for each dropdown on the page
+if(filtered_list){
+  filtered_list.forEach(function(section) {
+    init_dropdown(section);
+    init_filter_buttons(section);
+  });
+}
+
+function init_dropdown(section){
+  var dropdown = section.querySelector('.dropdown');
+  var options = dropdown.querySelectorAll('.dropdown-item');
+  if(options){
+    options.forEach(function(btn) { // for each option in this dropdown
+      dropdown.querySelector('.dropdown-select').textContent = options[0].textContent;
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        var value = btn.getAttribute("data-value");
+        var list = section.querySelector('.filterable-list');
+
+        filterList(section,value);
+      }); 
+    });
+  }
+}
+
+
+function init_filter_buttons(section){
+  /* add event listeners to the CASE STUDIES category pill (on the "our Impact" page) */
+  var pills = section.querySelectorAll('.case-study-filter');
+  if(pills){
+    pills.forEach(function(pill) { // for each option in this dropdown
+      pill.style.cursor = 'pointer';
+      pill.addEventListener("click", (e) => {
+        e.preventDefault();
+        var filter = pill.getAttribute("data-filter");
+        var elem = pill.closest('.horizontal-carousel-arrows-only');
+        filterList(section,filter);
+
+      }); 
+    }); 
+  }
+}
+
+
+
+
+
+function filterList(section,filter){
+  console.log("FILTER = "+filter)
+  var dropdown = section.querySelector('.dropdown');
+  var list = section.querySelector('.filterable-list');
+
+  // SHOW/HIDE lements based on which filter is selected.
+  var listitems = list.querySelectorAll('.filterable-list-item');
+  for (var i=0; i < listitems.length; i++) {
+    listitems[i].style.display = '';
+  }
+  if(filter !== 'all'){
+    var listitems = list.querySelectorAll('.card:not(.'+filter+')');  
+    for (var i=0; i < listitems.length; i++) {
+        listitems[i].style.display = 'none';
+    }
+  }
+
+
+  // change the value of the dropdown menu as well.  
+  var options = dropdown.querySelectorAll('.dropdown-item');
+  for (var i=0; i < options.length; i++) {
+    var label = 'Select';
+    if(options[i].getAttribute('data-value') == filter){
+      var label = options[i].textContent;
+      break;
+    }
+  }  
+  dropdown.querySelector('.dropdown-select').textContent = label;
+  flkty_arrowsonly.resize(); // TODO: this should be variable.
+}
+
+/* END filterable list */
 
     
 
-    
-  </script>
+  var btns = document.querySelectorAll('.toggle-newsletter-modal');
+  if(btns){
+    btns.forEach(function(btn) { // for each option in this dropdown
+      btn.style.cursor = 'pointer';
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        var body = document.getElementsByTagName("BODY")[0]
+        body.classList.toggle("modal-open");
+      }); 
+    }); 
+  }
+
+</script>
 

@@ -11,6 +11,9 @@ next-page-cta:
   headline: Learn about our donors and how they are creating positive impact
   cta-label: See our Donors
   cta-url: /our-funders
+  colorbar:
+    color: "#e65e4a"
+    position: left
 ---
 
 {% include modules/hero.html %}
@@ -20,56 +23,60 @@ next-page-cta:
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center mb-5">Staff</h2>
+                <h2 class="preheader mb-5">Staff</h2>
+                <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <div class="responsive-card-deck cards-lg-3">
                 {% for num in (1..9) %}
-                    <div class="card mb-4">
-                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/417x404" alt="title">
+                        </div>
                         <div class="card-body">
-                            <h2>Name Goes Here</h2>
-                            <h5>Title</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                            <a href="/single-person" class="btn btn-primary">Read More</a>                        
+                            <h3 class="card-title">Name Goes Here</h2>
+                            <div class="card-text">
+                                <h5 class='title'>Title</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>    
+                            </div>               
                         </div>
                     </div>
-                {% endfor %}
                 </div>
-            </div>
+                {% endfor %}
+            
         </div>
     </div>
 </section>
 
 
-<section class="board-of-directors">
+<section class="board-of-directors bg-primary text-white">
     <a name="board-of-directors"></a>
     <div class="container">
-        <div class="row">
+        <div class="row mb-5 pb-5">
             <div class="col-12">
-                <h2 class="mb-5">Board of Directors and Advisory Council</h2>
-                <p>ReFED's strength has long rested in the power of the people who surroundReFED’s strength has long rested in the power of the people who surround, advise and contribute to our work. ReFED’s Board of Directors and Advisory Council are comprised of leaders in the business, nonprofit, foundation, and government sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
+                <div class="preheader">Board of Directors</div>
+                <p>ReFED’s strength has long rested in the power of the people who surround, advise, and contribute to our work. ReFED’s Board of Directors is comprised of leaders in the business and nonprofit sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="responsive-card-deck cards-md-2">
+                <div class="responsive-card-deck cards-md-2 staff-2">
                 {% for num in (1..8) %}
-                    <div class="card mb-3">
-                        <a href="/single-person">
-                            <div class="row">
-                                <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
-                                    &nbsp;
-                                </div>
-                                <div class="card-body col-6">
-                                    <h3>Name Goes Here</h3>
-                                    <h5>Title</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
-                                </div>
-                            </div>
-                        </a>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/295x285" alt="title">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Name Goes Here</h2>
+                            <div class="card-text">
+                                <h5 class='title font-serif'>Chair</h5>
+                                <p>ReFED Board of Directors</p>  
+                                
+                                <h5 class='title font-serif'>Executive Director,</h5>
+                                <p>General Mills Foundation</p>    
+                            </div>               
+                        </div>
                     </div>
                 {% endfor %}
                 </div>
@@ -84,27 +91,28 @@ next-page-cta:
     <a name="advisory-council"></a>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 py-4">
-                <h2 class="pb-3">Advisory Council</h2>
+            <div class="col-md-6 py-5 mb-2">
+                <div class="preheader ">Advisory Council</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="responsive-card-deck cards-md-2">
+                <div class="responsive-card-deck cards-md-2 staff-2">
                 {% for num in (1..8) %}
-                    <div class="card mb-3">
-                        <a href="/single-person">
-                            <div class="row">
-                                <div class="col-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
-                                    &nbsp;
-                                </div>
-                                <div class="card-body col-6">
-                                    <h3>Name Goes Here</h3>
-                                    <h5>Title</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                                
-                                </div>
-                            </div>
-                        </a>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/295x285" alt="title">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Name Goes Here</h2>
+                            <div class="card-text">
+                                <h5 class='title font-serif'>Chair</h5>
+                                <p>ReFED Board of Directors</p>  
+                                
+                                <h5 class='title font-serif'>Executive Director,</h5>
+                                <p>General Mills Foundation</p>    
+                            </div>               
+                        </div>
                     </div>
                 {% endfor %}
                 </div>
@@ -120,19 +128,19 @@ next-page-cta:
     <a name="expert-network"></a>
     <div class="container">
         <div class="row">
-            <div class="col-12 py-4">
-                <h2 class="pb-3">Expert Network</h2>
-                <p>ReFED’s strength has long rested in the power of the people who surround, advise and contribute to our work. ReFED’s Board of Directors and Advisory Council are comprised of leaders in the business, nonprofit, foundation, and government sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
-                <a href="#" class="btn btn-primary">Become or Nominate a Participant</a>  
+            <div class="col-12 pb-5">
+                <div class="preheader pb-3">Expert Network</div>
+                <p>The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
+                <a href="#" class="btn btn-secondary">Become or Nominate a Participant</a>  
             </div>
         </div>
 
-        <div class="row">
+        <div class="row pt-5">
 
-            {% for num in (1..15) %}
+            {% for num in (1..45) %}
                 <div class="col-md-6 col-lg-4 mb-3">
                     <h5 class="mb-0">Name Goes Here</h5>
-                    <p>Title, Organization</p>                              
+                    <p class=" gray">Title, Organization</p>                              
                 </div>
             {% endfor %}
                 

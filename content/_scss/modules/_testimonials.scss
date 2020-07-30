@@ -1,3 +1,19 @@
+.testimonial{
+    blockquote{
+        font-weight:$font-weight-normal;
+        footer{
+            margin-top: 1.3em;
+            font-size:em(30,40);
+            .cite{}
+            .credentials{
+                margin-top: 0.4em;
+                font-size:em(25,30);
+            }
+        }
+    }
+    
+}
+    
 section.testimonials{
     padding:em(137) 0 em(80) 0;
     //padding:10.4vw 0; // up to 1920 px wide?
@@ -8,22 +24,11 @@ section.testimonials{
 
     .carousel-testimonials{}
     .testimonial{
-        padding-top:em(62);
+        padding-top:em(62);  
         blockquote{
-            font-weight:$font-weight-normal;
             font-size:em(40);
             line-height:1.38;
-             footer{
-                margin-top: 1.3em;
-                font-size:em(30,40);
-                .cite{}
-                .credentials{
-                    margin-top: 0.4em;
-                    font-size:em(25,30);
-                }
-            }
-        }
-       
+        }     
     }
     .flickity-viewport {
         transition: height 0.2s;

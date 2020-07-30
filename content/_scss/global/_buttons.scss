@@ -19,6 +19,9 @@
         vertical-align: -4px;
     }
 }
-.card-link{
+
+.text-link, .card-link{
     @extend %text-btn;
 }
+
+

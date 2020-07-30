@@ -64,6 +64,20 @@
   }
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -83,6 +97,18 @@
 }
 .bg-lightest{ 
   background-color:$almost-white; 
+}
+
+
+
+.logo-farm{
+  margin-top:em(40);
+  margin-left:em(-20);
+  margin-right:em(-20);
+  img{
+    display:inline-block;
+    margin:em(20);
+  }
 }
 
 

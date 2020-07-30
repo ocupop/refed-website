@@ -11,149 +11,264 @@ next-page-cta:
   headline: ReFED offers a range of solutions for organizations to advance their own food waste iniatives. Our interactive tools, reports and strategic solutions can help your team get started.
   cta-label: See our solutions
   cta-url: /food-waste-solutions
+  colorbar:
+    color: "#e65e4a"
+    position: right
 ---
 
 
 {% include modules/hero.html %}
 
-<section class="2030-goals">
-    <a name="2030-goals"></a>
+
+
+
+<section class="food-waste-overview"> 
+  <a name="overview"></a>
+  <div class="container">
+    <div class="row">
+      {% comment %} for num in (1..3) {% endcomment %}
+          <div class="card solution-{{ forloop.index }} col-md-4" >
+            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
+            <span class="card-circle-icon bg-primary"></span>
+            <div class="card-body">
+              <h3 class="card-title">It impacts the climate.</h3>
+              <div class="card-text">Food waste is responsible for approximately 8 percent of global greenhouse gas emissions.</div>
+            </div>
+          </div>
+          
+          <div class="card solution-{{ forloop.index }} col-md-4" >
+            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
+            <span class='card-circle-icon bg-secondary'></span>
+            <div class="card-body">
+              <h3 class="card-title">It impacts people.</h3>
+              <div class="card-text">“Food waste” is actually perfectly good food that could have gone to the 40 million Americans who are struggling with food insecurity.</div>
+            </div>
+          </div>
+
+          <div class="card solution-{{ forloop.index }} col-md-4" >
+            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
+            <span class='card-circle-icon bg-success'></span>
+            <div class="card-body">
+              <h3 class="card-title">It impacts the economy.</h3>
+              <div class="card-text">Each year, food that goes uneaten costs farmers, manufacturers, businesses, and consumers a huge $218 billion.</div>
+            </div>
+          </div>
+      {% comment %} endfor {% endcomment %} 
+    </div>
+
+</div>
+</section>
+
+
+
+
+<section class="impact-areas">
+  <a name="impact-areas"></a>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-4 mb-5 mb-md-0">          
+          <img class="w-100 " src="https://via.placeholder.com/375x375" alt="" />
+      </div>
+      <div class="col-md-8">
+        <div class="h3 editable">
+          <p>Each year, <b>52.4 million tons of food</b> are thrown into landfills annually, and another <b>10.1 million tons</b> is estimated to be discarded or left unharvested on farms and in packinghouses.</p>
+          <p>This mountain of wasted calories, resources, and energy grows up to two times larger when you add in other food fit for human consumption yet still ends up being composted, converted into animal feed, or discarded in other ways.</p>
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+
+
+<section class="what-is-food-waste globe-module bg-primary text-white">
+    <a name="what-is-food-waste"></a>
     <div class="container">
-        <h2>What is Food Waste?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-    </div>
+    <div class="row">     
+      <div class="col-md-9 rightcolumn copy-column py-5">
+        <h2 class="editable">Food waste has recently emerged as an urgent global issue.</h2>
+        <p class="h3 font-serif editable">In 2012, the European Parliament passed a resolution to halve food waste in the European Union by 2025. In 2015, the U.S. government declared a similar national 50% food waste reduction goal by 2030. And as part of its Sustainable Development Goals, the United Nations agreed on the need to halve per capita food waste in the consumer and retail sectors and reduce food losses along production and supply chains by 2030.</p>
+      </div>
+      <div class="col-md-3 leftcolumn image-column ">
+        <img class="d-block" src="/img/globe.png" alt="Earth">
+      </div>      
+    </div>    
+  </div>
+</section>
+
+
+<section class=" bg-secondary text-white py-3">
+  <div class="container ">
+    <div class="row d-flex align-items-center">    
+      <div class="col-md-9">
+        <p class="h3 font-serif editable">Visit <a href="https://SaveTheFood.com" style="color:#00D1C3;">SaveTheFood.com</a> for free tools and resources to help you reduce food waste in your own kitchen.</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://SaveTheFood.com" target="_blank" class="btn btn-primary btn-lg font-serif">Learn More</a>
+      </div>      
+    </div>    
+  </div>
+</section>
+
+
+
+<section class="impact-areas">
+  <a name=""></a>
+  <div class="container container-less-wide">
+    <h2 class="preheader">Our Work Focuses On These Impact Areas:</h2>
+
+      <ul class="row circle-icon-list circle-icon-list--small-list p-0 w-100">
+          
+          <li>
+              <div class="d-md-flex">
+                <div class="circle-icon circle-icon-small rounded-circle bg-info"></div>
+                <div class="description col">
+                    <h2>Climate</h2>
+                </div>
+              </div>
+              <div class="h3 clearfix">
+                The Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
+              </div>
+              <div class="row">
+                <div class="col-md-4 p-3"><div class="font-serif">21%</div> Fresh Water</div>
+                <div class="col-md-4 p-3"><div class="font-serif">19%</div> Fertilizer</div>
+                <div class="col-md-4 p-3"><div class="font-serif">19%</div> Money</div>
+                <div class="col-md-4 p-3"><div class="font-serif">18%</div> Cropland</div>
+                <div class="col-md-4 p-3"><div class="font-serif">18%</div> Landfill Volume</div>
+                <div class="col-md-4 p-3"><div class="font-serif">8%</div> GHG Emissions</div>
+              </div>
+          </li>
+          
+          <li>
+              <div class="d-md-flex">
+                <div class="circle-icon circle-icon-small rounded-circle bg-info"></div>
+                <div class="description col">
+                    <h2>Food Insecurity</h2>
+                </div>
+              </div>
+              <div class="h3 clearfix">
+                One in seven Americans, many of them children, are food insecure and lack reliable access to sufficient, affordable, nutritious food. And because of the impact of COVID-19, the number of people facing food insecurity in 2020 could grow to 54 million, according to Feeding America
+              </div>
+              <img class="w-100 p-5" src="https://via.placeholder.com/700x450" alt="" />
+          </li>
+
+          
+          <li>
+              <div class="d-md-flex">
+                <div class="circle-icon circle-icon-small rounded-circle bg-info"></div>
+                <div class="description col">
+                    <h2>Economic</h2>
+                </div>
+              </div>
+              <div class="h3 clearfix">
+                Each year, the country spends $218 billion a year, or 1.3% of GDP, growing, processing, and transporting food that is never eaten.
+              </div>
+              <img class="w-100 p-5" src="https://via.placeholder.com/700x450" alt="" />
+          </li>
+      </ul>
+  </div>
 </section>
 
 
 
 
+<section class="what-is-food-waste strawberries-module bg-primary text-white">
+    <a name="what-is-food-waste"></a>
+    <div class="container">
+    <div class="row">     
+      <div class="col-md-9 rightcolumn copy-column py-5">
+        <h3 class="editable preheader">What is Food Waste?</h3>
+        <p class="editable font-weight-normal container-less-wide">Various organizations define food loss and waste in different ways. ReFED has adopted the U.S. Department of Agriculture definition of “food waste,” which refers to wasted food that happens anywhere along the supply chain and includes all types of food loss and waste as defined by other leading institutions. Food waste is a subset of organic waste, which includes anything biodegradable that comes from plants or animals, such as yard trimmings and manure. Food waste includes unavoidable scraps, such as bones and rinds that retain beneficial value for reuse. It does not include waste from crop varieties specifically grown for fuel, animal feed, or other commercial uses.</p>
+      </div>
+      <div class="col-md-3 leftcolumn image-column ">
+        <img class="d-block" src="/img/strawberries.png" alt="Strawberries">
+      </div>      
+    </div>    
+  </div>
+</section>
 
-<section class="current-situation">
-    <a name="current-situation"></a>
-    <div class="container text-center">
-        <h2>Current State of Food Waste</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <a href="#" class="btn btn-primary editable my-5 p-3">View Food Waste Tracker</a>
-        <img class="m-2 w-100" src="https://via.placeholder.com/1000x300" alt="Alt Tag...">
-    </div>
+
+<section class="where-does-food-waste-occur">
+    <a name="where-does-food-waste-occur"></a>
+    <div class="container">
+    
+        <h3 class="editable preheader">Where Does Food Waste Occur?</h3>
+        <p class="editable font-weight-normal container-less-wide">Addressable food waste can be found throughout the supply chain, which can be simplified into four segments: farms, food manufacturers, consumer-facing businesses (including distributors, retail grocers, restaurants, foodservice providers, and institutions), and homes (including all types of dwellings).</p>
+      
+        <img class="w-100 p-5" src="https://via.placeholder.com/700x450" alt="" />   
+    </div>    
+  </div>
+</section>
+
+
+<section class="laptop-module bg-light">
+  <div class="container solutions-featured">
+    <div class="row">     
+      <div class="col-md-6 rightcolumn copy-column py-5">
+        <h3 class="preheader editable">Learn the impacts of your own food waste footprint with the:</h3>
+        <h2 class="editable">ReFED Insights Engine</h2>
+        <p class="editable">A one-stop online data center featuring tools and resources, including an extensive analysis of dozens of potential solutions, to guide users from food waste awareness to action. Combining more than 50 public and proprietary datasets, plus self-reported data from food businesses, our Insights Engine enables users to:</p>
+        <a href="#" class="btn btn-secondary editable p-3">Stay Updated About Our November Launch</a>
+      </div>
+      <div class="col-md-6 leftcolumn image-column ">
+        <img class="d-block" src="/img/laptop.png" alt="Laptop showing ReFED Insights Engine">
+      </div>      
+    </div>    
+  </div>
 </section>
 
 
 
+<section class=" bg-secondary text-white py-3">
+  <div class="container ">
+    <div class="row d-flex align-items-center">     
+      <div class="col-md-9">
+        <p class="h3 font-serif editable">Download the ReFED Roadmap for more information and data</p>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="btn btn-primary btn-lg font-serif">Download</a>
+      </div>      
+    </div>    
+  </div>
+</section>
 
 
 
-<section>
+<section class="policy-overview">
+  <a name="policy-overview"></a>
+  <div class="container">          
     <div class="container">
       <div class="row">  
-        <div class="col-md-6 py-5">
-          <h2 class="editable">Headline Goes Here</h2>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" type="button" class="btn btn-primary editable p-3">Optional CTA button</a>
-        </div> 
-        <div class="col-md-6">
-          <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-        </div>     
-      </div>      
-    </div>  
-  </section>
+
+          <div class="col-md-6">
+              <img class="d-block w-100" src="https://via.placeholder.com/615x450" alt="Alt Tag...">
+          </div> 
+
+          <div class="col-md-6">
+              <h2 class="editable">Policy Overview</h2>
+              <p class="editable">Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.</p>
+              <a href="#" class="btn btn-secondary">View Policy Tracker</a>
+          </div>    
+
+      </div>   
+    </div>           
+  </div>
+</section>
+
+
+<section class="funding-needs">
+  <a name="funding-needs"></a>
+  <div class="container container-less-wide">
+    <h2 class="editable">Help Us Fund Solutions</h2>
+    <p class="editable">ReFED estimates that $18 billion in investment is needed to implement food waste reduction solutions, but that would unlock $100 billion of net societal economic value – including meals recovered, resources conserved, business profits, jobs created, and more.</p>
+    <img class="w-100 py-5" src="https://via.placeholder.com/975x450" alt="" /> 
+    <p class="h3 editable">To learn how ReFED can help you find the best way to contribute to the issue, visit our <a href="/engage">Engage</a> page for funding information.</p>
+    <a href="#" class="btn btn-secondary">Call for Funders</a>
+  </div>
+</section>
 
 
 
-
-  <section class='impacts bg-light'>
-    <a name="impacts"></a>
-    <div class="container text-center">
-     
-      <div class="row p-3">
-        <div class="col-8 mx-auto">
-            <h4 class="editable">Impact Areas</h4>
-            <h2 class="editable">Headline Goes Here</h2>
-            <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </row>
-    
-    <div class="row">
-        <div class="col-md-6 col-lg-3">            
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-            <h4 class="editable my-3">Climate</h4>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center">            
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-            <h4 class="editable my-3">Food</h4>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center">            
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-            <h4 class="editable my-3">Economic</h4>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center">            
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-            <h4 class="editable my-3">Public Health</h4>
-        </div>
-        <div class="col-12">
-            <a href="#" type="button" class="btn btn-primary editable p-3">View Impact Calculator</a>
-        </div>  
-      </div>      
-    </div>  
-  </section>
-
-
-
-  <section class="policy-overview">
-    <a name="policy-overview"></a>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-        </div> 
-        <div class="col-md-6 py-5">
-            <h4 class="editable">Policy Overview</h4>
-            <h2 class="editable">Headline Goes Here</h2>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" type="button" class="btn btn-primary editable p-3">View Policy Tracker</a>
-        </div>     
-      </div>      
-    </div>  
-  </section>
-
-
-  <section class="funding-needs">
-    <a name="funding-needs"></a>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 py-5">
-            <h4 class="editable">Funding Needs</h4>
-            <h2 class="editable">Headline Goes Here</h2>
-          <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" type="button" class="btn btn-primary editable p-3">View Invenstment Tracker</a>
-        </div>   
-        <div class="col-md-6">
-            <img class="d-block w-100" src="https://via.placeholder.com/400x300" alt="Alt Tag...">
-        </div>   
-      </div>      
-    </div>  
-  </section>
-
-
-
-  <section>   
-    <div class="container">
-      <div class="row" >     
-        <div class="col-md-8">
-          <h3 class="editable">Interested in becoming a funder or donor? Find ou the impact we can make with your support.</h3>
-        </div>
-        <div class="col-md-4">
-          <a href="/contact" type="button" class="btn btn-primary editable p-3">Contact ReFED</a>
-        </div>      
-      </div>
-    </div>
-  </section>
-
-
-
-
-  
+ 
 
 {% include modules/next-page-cta.html %}

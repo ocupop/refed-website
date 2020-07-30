@@ -29,6 +29,12 @@ h3, .h3{
   line-height: 1.5;
   font-weight:$font-weight-normal;
 }
+h4, .h4{
+  font-size:em(20);
+  line-height: 1.5;
+  color:$mid;
+  font-weight:$font-weight-normal;
+}
 
 
 .preheader{
@@ -36,7 +42,6 @@ h3, .h3{
   font-size:em(30);
   font-weight:$font-weight-normal;
 }
-
 
    
     @media screen and (max-width:  $screen-xl-min) {

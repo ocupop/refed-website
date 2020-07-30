@@ -70,6 +70,23 @@ $theme-colors: (
   'green': $green,
 );
 
+
+// add some extra background colors that are not covered by BootStrap
+.bg-light-blue{ background-color:$light-blue; }
+.bg-red-violet{ background-color:$red-violet; }
+.bg-red-orange{ background-color:$red-orange; }
+.bg-orange{ background-color:$orange; }
+.bg-yellow-orange{ background-color:$yellow-orange; }
+.bg-muted-green{ background-color:$muted-green; }
+.bg-blue-green{ background-color:$blue-green; }
+.bg-darkest-blue{ background-color:$darkest-blue; }
+// .bg-dark-blue = .bg-primary;
+// .bg-blue = .bg-secondary;
+// .bg-light-green = .bg-info
+// .bg-yellow = .bg-warning;
+// .bg-green = .bg-success;
+// .bg-red = .bg-danger
+
 $body-bg:               $white;
 $body-color:            $primary;
 
