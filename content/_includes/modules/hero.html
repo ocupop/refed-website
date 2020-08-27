@@ -4,7 +4,7 @@
     <div class="hero-image darken-bkg-image" style="background-image:url({{page.hero.image}});"></div>
 
     <div class="hero-content">
-        <div class="container p-4 text-white">
+        <div class="container py-5 text-white">
             <div class="hero-copy">
                 {% if page.hero.preheader %}<div class='preheader'>{{ page.hero.preheader }}</div>{% endif %}
                 {% if page.hero.title %}<h1>{{ page.hero.title }}</h1>{% endif %}
@@ -13,7 +13,11 @@
                 {% if page.hero.buttons %}
                     <div class="hero-buttons mt-3">
                         {% for button in page.hero.buttons %}
-                            <a class="btn btn-secondary block mr-3" href="{{ button.url }}">{{ button.label }}</a>
+                            {% if button.style == 'text' %}
+                                <a class="card-link block mr-3" href="{{ button.url }}">{{ button.label }}</a>
+                            {% else %}
+                                <a class="btn btn-secondary block mr-3" href="{{ button.url }}">{{ button.style }} {{ button.label }}</a>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 {% endif %}
