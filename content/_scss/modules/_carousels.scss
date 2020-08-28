@@ -56,6 +56,16 @@
     &.dots-left .flickity-page-dots{
         left: 0;
     } 
+    &.dots-left-in-container{
+        .flickity-page-dots{
+            left: 0;
+            max-width:#{map-get($container-max-widths, 'xl')};
+            padding-top:em(50);
+            // TODO: make responsive size max width;
+            width:100%;
+            margin:auto;
+        } 
+    }
     
     @media screen and (max-width: $screen-md-min){
         &.dots-right .flickity-page-dots{

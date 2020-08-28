@@ -11,20 +11,23 @@ hero:
 
 
 {% include modules/hero.html %}
+<section class="page-intro page-intro--homepage">
+  <div class="container">
+    <div class="h3 editable max-out-text-width" >
+      For us, success is a sustainable, resilient, and inclusive food system that allows the planet, people and the economy to thrive - a food system that is optimized to preserve water and land resources, minimize climate impacts, and make the best use of the food we grow.
+    </div>
+  </div>
+</section>
 
 
-<section class="homepage-under-hero">
-  <div class="container container-more-wide extend-to-browser-edge">
+
+
+
+<section class="homepage-newsfeed">
+  <div class="container">
     <div class="row">   
       
-      <div class="leftcol col-12 col-md-4 stretch-left">
-        <span class='stretched-inner'></span>
-        <div class="h3 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</div>
-        <a href="#" class="btn btn-primary btn-lg font-serif">Subscribe</a>
-      </div>
-      
-      <div class="rightcol col-12 col-md-8 stretch-right bg-lightest"> 
-          <span class='stretched-inner'></span>       
+      <div class="leftcol excerpts-column col-12 col-md-8 bg-lightest">       
           <div class="news-carousel">
               {% for num in (1..4) %}
               <div class="card news-{{ forloop.index }} col-md-6" >
@@ -40,9 +43,16 @@ hero:
           </div>          
       </div>
 
+      <div class="rightcol cta-column  col-12 col-md-4">
+        <span class='stretched-inner'></span>
+        <div class="h3 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</div>
+        <a href="#" class="btn btn-primary btn-lg font-serif">Subscribe</a>
+      </div>
+
     </div>
   </div>  
 </section>
+
 
 
 
@@ -77,6 +87,55 @@ hero:
 </section>
 
 
+<section class='food-waste-reduction-solutions' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-6'>
+        <h2>There Are Seven Action Areas of Food Waste Reduction Solutons</h2>
+      </div>
+
+      <div class='col-md-6'>
+        <p class='editable'>Solutions will go in three buckets - analyzed solutions "not analyzed" best practices, and "not analyzed" new and emerging solutions. All of these solutionhs would be listed on the website, but the "not analyzed" solutions (both types) might not appear in the Insights Engine (at this point, they're not).</p>
+        <a href="#" class='text-link'>Read More</a>
+      </div>
+    </div>
+
+    {% include modules/reduction-solutions-chart.html %}
+  </div>
+</section>
+
+
+
+
+
+<section class="what-can-i-do bg-primary">
+  <div class="container pt-5 text-white">
+    <div class="row mb-4">     
+      <div class="col-md-12">
+        <h2 class="editable text-center">Solve Food Waste</h2>
+      </div>
+    </div>
+    
+    <div class="row">  
+      <div class="col-12 three-card-carousel">   
+      {% for num in (1..8) %}
+        
+        <div class="card solution-{{ forloop.index }} col-md-4" >
+          <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
+          <div class="card-body">
+            <h3 class="card-title">I am a Government Leader</h3>
+            <div class="card-text">food recycling has the greatest growth potential and will have a major impact on further reducing waste in the coming decades. The reason lies in the efficiency of this approach. Since food scrap volume is tied to population density, large cities can have a proportionately large impact, lessening the need to scale programs nationwide.</div>
+            <a href="#" class="card-link">Learn More</a>
+          </div>
+        </div>
+       
+      {% endfor %} 
+      </div>    
+    </div>
+
+  </div>
+</section>
+
 
 
 <section class="insights-engine laptop-module bg-light">
@@ -86,7 +145,7 @@ hero:
         <h3 class="preheader editable">Our Newest Solution</h3>
         <h2 class="editable">ReFED Insights Engine</h2>
         <p class="editable">ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.</p>
-        <a href="#" class="btn btn-secondary editable p-3">Stay Updated About Our November Launch</a>
+        <a href="#" class="btn btn-secondary editable p-3">Launch ReFED Insights Engine</a>
       </div>
       <div class="col-md-6 leftcolumn image-column ">
         <img class="d-block" src="/img/laptop.png" alt="Laptop showing ReFED Insights Engine">
@@ -95,7 +154,7 @@ hero:
   </div>
 </section>
   
-
+<!--
 <section class="solutions"> 
   <div class="container solutions-in-action">
     <div class="row py-5">     
@@ -139,38 +198,7 @@ hero:
 
 </div>
 </section>
-
-
-<section class="what-can-i-do bg-primary">
-  <div class="container pt-5 text-white">
-    <div class="row mb-4">     
-      <div class="col-md-12">
-        <h2 class="editable text-center">What Can I Do to Solve Food Waste</h2>
-      </div>
-    </div>
-    
-    <div class="row">  
-      <div class="col-12 three-card-carousel">   
-      {% for num in (1..8) %}
-        
-        <div class="card solution-{{ forloop.index }} col-md-4" >
-          <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-          <div class="card-body">
-            <h3 class="card-title">I am a Government Leader</h3>
-            <div class="card-text">food recycling has the greatest growth potential and will have a major impact on further reducing waste in the coming decades. The reason lies in the efficiency of this approach. Since food scrap volume is tied to population density, large cities can have a proportionately large impact, lessening the need to scale programs nationwide.</div>
-            <a href="#" class="card-link">Learn More</a>
-          </div>
-        </div>
-       
-      {% endfor %} 
-      </div>    
-    </div>
-
-  </div>
-
-
-
-</section>
+-->
 
 
 
@@ -184,7 +212,7 @@ hero:
         <h2 class="h3 editable">Find out more how to engage with ReFED no matter what field you are in</h3>
       </div>
       <div class="col-md-6 text-right">
-        <button type="button" class="btn btn-primary btn-lg font-serif editable text-nowrap">Find more ways to engage</button>
+        <button type="button" class="btn btn-success btn-lg font-serif editable text-nowrap">Find more ways to engage</button>
       </div>      
     </div>
   </div>
@@ -232,7 +260,7 @@ hero:
         <h3 class="editable">Sign up for our newsletter and other email updates</h3>
       </div>
       <div class="col-md-4">
-        <a href="/contact" type="button" class="btn btn-primary btn-lg font-serif editable text-nowrap">Contact ReFED</a>
+        <a href="/contact" type="button" class="btn btn-info btn-lg font-serif editable text-nowrap">Subscribe</a>
       </div>      
     </div>
   </div>

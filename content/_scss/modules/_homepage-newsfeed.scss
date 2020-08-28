@@ -1,18 +1,12 @@
-.homepage-under-hero{
+.homepage-newsfeed{
 
-    .leftcol, .leftcol .stretched-inner{
-        background-color:$light;
-    }
-    .rightcol, .rightcol .stretched-inner{
-        background-color:$almost-white;
-    }
-    .leftcol{
-        padding:68px 68px 68px 0;
+    .excerpts-column{
+        padding-right:68px;
         .btn{
             margin-top: 50px;
         }
     }
-    .rightcol{
+    .cta-column{
         padding: 0 85px;
         .news-carousel{
 

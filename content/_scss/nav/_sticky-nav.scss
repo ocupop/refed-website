@@ -1,0 +1,17 @@
+.sticky-nav{
+    z-index:999;
+    .preheader{
+        font-size:18px;
+    }
+    ul{
+        width:100%;
+        justify-content: space-between ;
+        li{
+            a{
+                font-size:14px;
+                color:rgba(255,255,255,0.7);
+                &:hover{color:#FFFFFF;text-decoration:none;}
+            }
+        }
+    }
+}

@@ -29,6 +29,10 @@
             width: 185%;
         }
     }
+    &.laptop-module--within-top-bounds img{
+        bottom:unset;
+        margin-top:30px;
+    }
     @media screen and (max-width: $screen-md-min){
         margin-top: 14%;
         .image-column{     

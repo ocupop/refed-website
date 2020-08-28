@@ -111,7 +111,18 @@
   }
 }
 
+/* Two columns */
 
+@media screen and (min-width:  $screen-md-min) {  
+  .two-columns{
+    column-count: 2;
+    article{
+      -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+    }
+  }
+}
 /* STRETCH COLUMN content inside of a container all the way to the edge of the browser */
 /*
 SAMPLE

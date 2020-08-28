@@ -44,21 +44,26 @@ next-page-cta:
 
 
 {% include modules/hero.html %}
+<section class="page-intro page-intro--our-work">
+  <div class="container">
+    <div class="editable max-out-text-width" >
+      Rethinking food waste through economics and data &mdash; it is in our name and in our DNA. Along with hundreds of food system actors. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+</section>
 
 
 
 <section >
     <div class="container">
-       <h2 class="preheader">Our Values</h2>
-       <p class="max-out-text-width">Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy. At ReFED, we are committed to:</p>
-
+       <h2 class="preheader">Our Work Focuses On:</h2>
 
        <ul class="circle-icon-list circle-icon-list--large-list p-0">
         
         {% for section in page.wireframesections %}
         <li class="d-md-flex">
             <a name="{{ section.id }}"></a>
-            <div class="circle-icon circle-icon-large rounded-circle d-flex align-items-center justify-content-center" style="background-color:{{ section.icon_color }}"><img src="{{ section.icon }}"></div>
+            <div class="circle-icon circle-icon rounded-circle d-flex align-items-center justify-content-center" style="background-color:{{ section.icon_color }}"><img src="{{ section.icon }}"></div>
             <div class="description col">
                 <h2>{{ section.headline }}</h2>
                 <p class="h3">{{ section.copy }}</p>
