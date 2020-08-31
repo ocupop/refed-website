@@ -14,63 +14,6 @@ next-page-cta:
     color: "#e65e4a"
     position: right
 
-wireframes-categories:
-  - cat-1: Category A
-  - cat-2: Category B
-  - cat-3: Category C
-  - cat-4: Category D
-
-wireframes-casestudies:
-  - name: "Case study #1"
-    image: https://picsum.photos/id/112/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-4
-  - name: "Case study #2"
-    image: https://picsum.photos/id/106/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-1
-    - cat-2
-    - cat-4
-  - name: "Case study #3"
-    image: https://picsum.photos/id/107/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-2
-    - cat-3
-  - name: "Case study #4"
-    image: https://picsum.photos/id/108/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-1
-    - cat-4
-  - name: "Case study #5"
-    image: https://picsum.photos/id/109/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-1
-    - cat-2
-    - cat-4
-  - name: "Case study #6"
-    image: https://picsum.photos/id/110/1000/333
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreheorum.
-    cta-label: Learn More
-    cta-url: #
-    categories:
-    - cat-4
-    - cat-3
-
 ---
 
 
@@ -90,18 +33,18 @@ wireframes-casestudies:
   <a name="funder-impact"></a>
 
   <div class="full-width-carousel two-column-carousel dots-left-in-container">
-    {% for num in (1..4) %}
+    {% for casestudy in site.casestudies %}
     <div class="w-100">
       <div class="container extend-to-browser-edge">
         <div class="row">   
           <div class="py-5 col-12 col-md-5 stretch-left stretch-bkg">
             
               <div class="preheader pt-5">Funder Impact Stories</div>
-              <h2 class="editable">Crown Family Philanthropies</h2>
-              <p class="editable">[Why we became a funder, including help with strategic direction of funding food waste] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-              <a href="#" class="card-link">Learn More</a>
+              <h2 class="editable">{{ casestudy.title }}</h2>
+              <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
+              <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
           </div>
-          <div class="p-5 col-12 col-md-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/1{{ forloop.index }}7/1000/333)"></div>
+          <div class="p-5 col-12 col-md-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
         </div>
      
       </div>
@@ -118,49 +61,47 @@ wireframes-casestudies:
     <div class="container pt-5"> 
 
 
-    <!-- Default dropup button -->
-    <div class="btn-group dropdown mb-4 filter-case-studies">
+      {% assign thisCollection = site.casestudies %}	
+      {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+      
+  
+      <div class="btn-group dropdown mb-4 filter-case-studies">
+      
+          <label class="preheader mr-3" for="filter">View: </label>
+  
+          <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              View:
+          </button>
+          
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" data-value="all">All</a>
+              {% for eachCat in allCats %}                    
+                <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
+              {% endfor %} 
+          </div>
+      </div>
+
     
-        <label class="preheader mr-3" for="filter">View: </label>
-
-        <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            View:
-        </button>
-        
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#" data-value="all">All</a>
-            {% for cat_arr in page.wireframes-categories %}  
-            {% for cat in cat_arr %}            
-            <a class="dropdown-item" href="#" data-value="{{ cat[0] }}">{{ cat[1] }}</a>
-            {% endfor %} 
-            {% endfor %} 
-        </div>
-    </div>
-
 
     
     <div class="row">  
       <div class="col-12 horizontal-carousel-arrows-only filterable-list">   
       
-      {% for casestudy in page.wireframes-casestudies %}     
-        <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in casestudy.categories %}{{ cat }} {% endfor %}" >
+      {% for casestudy in site.casestudies %} 
+        <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
           <div class="card-body">
-            <h3 class="card-title">{{ casestudy.name }}</h3>
+            <h3 class="card-title">{{ casestudy.title }}</h3>
 
             <ul class="categories list-group list-group-horizontal">
-            {% for cat in casestudy.categories %}  
-                {% for cat_arr in page.wireframes-categories %}{% for cat2 in cat_arr %} 
-                    {% if cat2[0] == cat %}
-                    <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat2[0] }}'>{{ cat2[1] }}</span></li>
-                    {% endif %}
-                {% endfor %}{% endfor %} 
+            {% for cat in casestudy.categories %}                  
+                <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat | slugify }}'>{{ cat }}</span></li>
             {% endfor %} 
             </ul>
 
 
-            <div class="card-text">{{ casestudy.description }}</div>
-            <a href="{{ casestudy.cta-url }}" class="card-link">{{ casestudy.cta-label }}</a>
+            <div class="card-text">{{ casestudy.content | truncate: 80 }}</div>
+            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
           </div>
         </div>       
       {% endfor %} 

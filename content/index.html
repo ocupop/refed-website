@@ -20,33 +20,31 @@ hero:
 </section>
 
 
-
-
-
 <section class="homepage-newsfeed">
-  <div class="container">
+  <div class="container extend-to-browser-edge">
     <div class="row">   
       
-      <div class="leftcol excerpts-column col-12 col-md-8 bg-lightest">       
+      <div class="leftcol excerpts-column stretch-left stretch-bkg col-12 col-md-8 bg-lightest pt-5">       
+          <span class='stretched-inner bg-lightest'></span>
           <div class="news-carousel">
-              {% for num in (1..4) %}
+            {% for post in site.posts %}
               <div class="card news-{{ forloop.index }} col-md-6" >
-                <img class="card-img-top" src="https://via.placeholder.com/400x255" alt="Alt Tag...">
+                <div class="bg-image aspect-2x1" style="background-image:url({{ post.image }})"></div>
                 <div class="card-body">
                   <!--<h3 class="card-title">Card title</h3>-->
-                  <div class="card-subtitle mb-2 text-muted">June {{ forloop.index }}3, 2020</div>
-                  <p class="card-text">ReFED appoints Nocola Dixon as new board chair and announces new board member and executive committee.</p>
-                  <a href="#" class="card-link">Read More</a>
+                  <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>
+                  <p class="card-text">{{ post.title }}</p>
+                  <a href="{{ post.url }}" class="card-link">Read More</a>
                 </div>
               </div>
               {% endfor %}
           </div>          
       </div>
 
-      <div class="rightcol cta-column  col-12 col-md-4">
-        <span class='stretched-inner'></span>
+      <div class="rightcol cta-column stretch-right stretch-bkg col-12 col-md-4 pt-5">
+        <span class='stretched-inner bg-light'></span>
         <div class="h3 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</div>
-        <a href="#" class="btn btn-primary btn-lg font-serif">Subscribe</a>
+        <a href="/contact" class="btn btn-primary btn-lg font-serif">Subscribe</a>
       </div>
 
     </div>

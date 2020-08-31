@@ -1,15 +1,15 @@
 <section class="testimonials bg-primary text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
-  <div class="carousel-testimonials">    
-    {% for num in (1..5) %}     
+  <div class="carousel-testimonials">      
+    {% for testimonial in site.testimonials %}
     <div class="testimonial w-100" >  
       <div class="container">     
         <div class="row">
           <div class="col-12 text-center">
             <blockquote>
-              "{{ forloop.index }}. This grant will give us much needed fnds to accelerate technology development to help us and all the organizations that use our platform quickly scale to new locations and new services - such as home delivery - in the fight against food waste and hunger."
+              "{{ testimonial.content }}"
               <footer class="font-serif">
-                <div class='cite'>—Leah Lizarondo</div>
-                <div class='credentials font-italic'>CEO and Co-Founder of 412 Food Rescue</div>
+                <div class='cite'>—{{ testimonial.name }}</div>
+                <div class='credentials font-italic'>{{ testimonial.cite }}</div>
               </footer>
             </blockquote>
           </div>

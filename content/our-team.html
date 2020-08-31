@@ -13,16 +13,43 @@ next-page-cta:
   colorbar:
     color: "#e65e4a"
     position: left
+
+expert-network:
+  - name: John Doe
+    title: President
+    org: Test Co. Inc
+  - name: Jane Doe
+    title: CEO
+    org: Big Co. LTD.
+  - name: Marty Smith
+    title: Founder
+    org: Sprockets and Things
+  - name: Susan Johnson
+    title: Employee
+    org: Cogswell Cogs
+  - name: John Doe
+    title: President
+    org: Test Co. Inc
+  - name: Jane Doe
+    title: CEO
+    org: Big Co. LTD.
+  - name: Marty Smith
+    title: Founder
+    org: Sprockets and Things
+  - name: Susan Johnson
+    title: Employee
+    org: Cogswell Cogs
+
 ---
 
 {% include modules/hero.html %}
 <section class="page-intro page-intro--our-team">
     <div class="container">
-      <div class="h3 editable max-out-text-width" >
+        <div class="h3 editable max-out-text-width" >
         ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.
-      </div>
+        </div>
     </div>
-  </section>
+</section>
 
 
 
@@ -36,22 +63,25 @@ next-page-cta:
             </div>
         </div>
         <div class="row">
-                {% for num in (1..9) %}
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://via.placeholder.com/417x404" alt="title">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Name Goes Here</h2>
-                            <div class="card-text">
-                                <h5 class='title'>Title</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>    
-                            </div>               
-                        </div>
+            {% assign people = site.team | where: "category", "staff" %}  
+            {% for person in people %}
+            <div class="col-12">
+                <div class="card row">
+                    <div class="card-image col-md-3">
+                        <img src="{{person.image}}" alt="title">
+                    </div>
+                    <div class="card-body col-md-9">
+                        <h3 class="card-title">{{person.name}}</h2>
+                        <div class="card-text">
+                            {% for pos in person.positions %}
+                                <h5 class='title'>{{pos.position}} {{pos.company}}</h5>
+                            {% endfor %}
+                            <p>{{person.content}}</p>    
+                        </div>               
                     </div>
                 </div>
-                {% endfor %}
+            </div>
+            {% endfor %}
             
         </div>
     </div>
@@ -70,23 +100,23 @@ next-page-cta:
         <div class="row">
             <div class="col-12">
                 <div class="responsive-card-deck cards-md-2 staff-2">
-                {% for num in (1..7) %}
+                    {% assign people = site.team | where: "category", "board" %}  
+                    {% for person in people %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="https://via.placeholder.com/295x285" alt="title">
+                            <img src="{{person.image}}" alt="title">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Name Goes Here</h2>
+                            <h3 class="card-title">{{person.name}}</h2>
                             <div class="card-text">
-                                <h5 class='title font-serif'>Chair</h5>
-                                <p>ReFED Board of Directors</p>  
-                                
-                                <h5 class='title font-serif'>Executive Director,</h5>
-                                <p>General Mills Foundation</p>    
+                                {% for pos in person.positions %}
+                                    <h5 class='title font-serif'>{{pos.position}}</h5>
+                                    <p>{{pos.company}}</p>  
+                                {% endfor %} 
                             </div>               
                         </div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -106,19 +136,19 @@ next-page-cta:
         <div class="row">
             <div class="col-12">
                 <div class="responsive-card-deck cards-md-3 staff-2">
-                {% for num in (1..10) %}
+                    {% assign people = site.team | where: "category", "advisory counsil" %}  
+                    {% for person in people %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="https://via.placeholder.com/150x150" alt="title">
+                            <img src="{{ person.image }}" alt="title">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Name Goes Here</h2>
+                            <h3 class="card-title">{{ person.name }}</h2>
                             <div class="card-text">
-                                <h5 class='title font-serif'>Chair</h5>
-                                <p>ReFED Board of Directors</p>  
-                                
-                                <h5 class='title font-serif'>Executive Director,</h5>
-                                <p>General Mills Foundation</p>    
+                                {% for pos in person.positions %}
+                                    <h5 class='title font-serif'>{{pos.position}}</h5>
+                                    <p>{{pos.company}}</p>  
+                                {% endfor %} 
                             </div>               
                         </div>
                     </div>
@@ -137,18 +167,20 @@ next-page-cta:
     <div class="container">
         <div class="row">
             <div class="col-12 pb-5">
-                <div class="preheader pb-3">Expert Network</div>
-                <p>The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
-                <a href="#" class="btn btn-secondary">Become or Nominate a Participant</a>  
+                <div class="preheader editable pb-3">Expert Network</div>
+                <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
+                <a href="#" class="btn btn-secondary editable">Become or Nominate a Participant</a>  
             </div>
         </div>
 
         <div class="row pt-5">
 
-            {% for num in (1..45) %}
+            {% for person in page.expert-network %}
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <h5 class="mb-0">Name Goes Here</h5>
-                    <p class=" gray">Title, Organization</p>                              
+                    {% if person.name %}<h5 class="mb-0">{{person.name}}</h5>{% endif %}
+                    <p class=" gray">
+                        {% if person.title %}{{person.title}}{% endif %}{% if person.org %}, {{person.org}}{% endif %}
+                    </p>                              
                 </div>
             {% endfor %}
                 

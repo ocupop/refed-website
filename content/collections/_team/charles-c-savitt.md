@@ -1,0 +1,11 @@
+---
+name: Charles C. Savitt
+image: https://www.betaclub.org/uploads/scholarship-winners/FPO-portrait.jpg
+positions: 
+    - position: Director of Strategic Client Relationships
+      company: Sher Edling LLP
+    - position: Trustee and Treasurer
+      company: The WIndward Fund
+order: 6
+category: 'board'
+---

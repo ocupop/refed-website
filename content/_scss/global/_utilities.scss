@@ -146,7 +146,6 @@ SAMPLE
 .extend-to-browser-edge{
   .stretch-left .stretched-inner, 
   .stretch-right .stretched-inner{
-      background-color:transparent; // invisible by default. Add a background color to make it visible.
       position: absolute;
       content: '';
       top: 0;
@@ -207,3 +206,17 @@ SAMPLE
 }
 */
 /* END STRETCH COLUMN */
+
+
+
+.opacity-0{ opacity:0; }
+.opacity-1{ opacity:0.1; }
+.opacity-2{ opacity:0.2; }
+.opacity-3{ opacity:0.3; }
+.opacity-4{ opacity:0.4; }
+.opacity-5{ opacity:0.5; }
+.opacity-6{ opacity:0.6; }
+.opacity-7{ opacity:0.7; }
+.opacity-8{ opacity:0.8; }
+.opacity-9{ opacity:0.9; }
+.opacity-100{ opacity:1; }

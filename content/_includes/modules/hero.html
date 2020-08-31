@@ -1,13 +1,19 @@
 
 
-<section class="hero {% if page.hero.extra-class %}{{ page.hero.extra-class }}{% endif %} {% if page.hero.image-overlaps-bottom %}image-overlaps-bottom{% endif %}">
-    <div class="hero-image darken-bkg-image" style="background-image:url({{page.hero.image}});"></div>
+<section class="hero {% if page.hero.extra-class %}{{ page.hero.extra-class }}{% endif %} ">
+    <div class="hero-image darken-bkg-image" style="background-image:url({% if page.hero.image %}{{page.hero.image}}{% else if page.image %}{{page.image}}{% endif %});"></div>
 
     <div class="hero-content">
         <div class="container py-5 text-white">
             <div class="hero-copy">
                 {% if page.hero.preheader %}<div class='preheader'>{{ page.hero.preheader }}</div>{% endif %}
-                {% if page.hero.title %}<h1>{{ page.hero.title }}</h1>{% endif %}
+                
+                {% if page.hero.title %}
+                    <h1>{{ page.hero.title }}</h1>
+                {% else if page.title %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
+
                 {% if page.hero.copy %}<div class="hero-p editable">{{ page.hero.copy }}</div>{% endif %}
 
                 {% if page.hero.buttons %}
