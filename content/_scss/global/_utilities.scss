@@ -111,6 +111,15 @@
   }
 }
 
+@media screen and (min-width: $screen-md-min){
+  ul.two-column-list{
+    column-count: 2;
+    column-gap: 80px;
+    li{
+      -webkit-column-break-inside: avoid; 
+    }
+  }
+}
 
 /* STRETCH COLUMN content inside of a container all the way to the edge of the browser */
 /*

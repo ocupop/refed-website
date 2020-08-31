@@ -110,7 +110,7 @@ wireframes-solutions:
                 <a href="#" type="button" class="text-link editable">Download the Roadmap</a>
             </div> 
             <div class="col-md-5">
-                <img class="d-block" src="/img/roadmap.png" alt="Strawberries">
+                <img class="img-fluid" src="/img/roadmap.png" alt="Strawberries">
             </div>     
         </div>      
     </div>  
@@ -189,7 +189,7 @@ wireframes-solutions:
         <p>The solutions were analyzed using the EPA Food Recovery Hierarchy — which prioritizes prevention first, then recovery, and finally recycling — as a starting point. Additional filters of economic value and feasibility were incorporated to understand the potential for scaling solutions.</p>
       </div>
       <div class="col-md-6 leftcolumn image-column ">
-        <img class="d-block" src="https://via.placeholder.com/500x400" alt="Laptop showing ReFED Insights Engine">
+        <img class="d-block img-fluid" src="https://via.placeholder.com/500x400" alt="Laptop showing ReFED Insights Engine">
       </div>      
     </div>    
   </div>
@@ -318,12 +318,9 @@ wireframes-solutions:
                 </div>       
             {% endfor %} 
             </div>    
-            </div>
+        </div>
 
     </div>
-
-
-      
   </div>
 </section>
 
@@ -331,35 +328,38 @@ wireframes-solutions:
 
 
 
-<section class="progress-reports">
-    <a name="progress-reports"></a>   
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center mb-5">Recommended Solutions</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="responsive-card-deck cards-lg-3">
-                {% for num in (1..6) %}
-                    <div class="card mb-4">
-                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
-                        <div class="card-body">
-                            <h3>Solution Title Name</h3>
-                            <h5>Sector Area</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                            <a href="{{ card.link }}" class="btn btn-primary">Learn More</a>                        
-                        </div>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-{% include modules/testimonials.html %}
+
+<section class="from-the-newsroom bg-primary text-white">
+    <a name="from-the-newsroom"></a>   
+     <div class="container pt-5 text-white">
+    <div class="row mb-4">     
+      <div class="col-12 text-center container-less-wide mb-4 mx-auto">
+        <h2 class="mb-3">From the Newsroom</h2>
+        <p>ReFED has identified over 40 of the best opportunities to reduce food waste through a detailed economic analysis, which can be explored in the ReFED Insights Engine.</p>
+      </div>
+    </div>
+    
+    <div class="row">  
+      <div class="col-12 horizontal-carousel-arrows-only">   
+      {% for num in (1..8) %}
+        
+        <div class="card solution-{{ forloop.index }} col-md-4" >
+          <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
+          <div class="card-body">
+            <h3 class="card-title">Top 10 Solutions for entrepreneurs</h3>
+            <div class="card-text">“As I finish my tenure as Founding Board Chair, I wanted to express my deepest gratitude for all that you have done and continue to do to accelerate solutions to food waste.”</div>
+            <a href="#" class="card-link mt-4 d-inline-block">Read More</a>
+          </div>
+        </div>
+       
+      {% endfor %} 
+      </div>    
+    </div>
+
+  </div>
+
+</section>
 
 
 {% include modules/next-page-cta.html %}

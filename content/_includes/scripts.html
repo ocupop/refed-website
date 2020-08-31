@@ -45,15 +45,18 @@ if(elem){
 }
 
 /* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
-var elem = document.querySelector('.full-width-carousel');
-if(elem){
-  var flkty_slide = new Flickity( elem, {
-    prevNextButtons: false,
-    pageDots: true,
-    "wrapAround": true,
-    cellAlign: 'left'
+var elems = document.querySelectorAll('.full-width-carousel');
+if(elems){
+  elems.forEach(function(elem) {
+    var flkty_slide = new Flickity( elem, {
+      prevNextButtons: false,
+      pageDots: true,
+      "wrapAround": true,
+      cellAlign: 'left'
+    });
   });
-}
+}   
+
 
 
 
@@ -70,7 +73,7 @@ if(elem){
   });
 }
 
-/* This adds a class of "flickity-loaded" to carousels after they have initialized */
+/* This adds a class of "flickity-resize" to carousels after they have initialized */
 Flickity.prototype._createResizeClass = function() {
   var that = this;
   setTimeout(function(){ 
@@ -91,16 +94,18 @@ Flickity.prototype.resize = function() {
 
 /* Layout is the same as the ".three-card-carousel", but there are no dots.  */
 /* Pages: Our Impact, Food Waste Solutions */
-var elem = document.querySelector('.horizontal-carousel-arrows-only');
-if(elem){
-  var flkty_arrowsonly = new Flickity( elem, {
-    cellAlign: 'left',
-    contain: true,
-    "wrapAround": true,
-    prevNextButtons: true,
-    pageDots: false,
-    adaptiveHeight: false
-  });
+var elems = document.querySelectorAll('.horizontal-carousel-arrows-only');
+if(elems){
+  elems.forEach(function(elem) {
+    var flkty_arrowsonly = new Flickity( elem, {
+      cellAlign: 'left',
+      contain: true,
+      "wrapAround": true,
+      prevNextButtons: true,
+      pageDots: false,
+      adaptiveHeight: false
+    });
+  });  
 }   
 
 
@@ -245,7 +250,8 @@ function filterList(section,filter){
     }
   }  
   dropdown.querySelector('.dropdown-select').textContent = label;
-  flkty_arrowsonly.resize(); // TODO: this should be variable.
+  var flkty = Flickity.data( list )
+  flkty.resize(); // TODO: this should be variable.
 }
 
 /* END filterable list */
