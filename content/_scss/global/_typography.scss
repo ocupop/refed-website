@@ -42,7 +42,11 @@ h4, .h4{
   font-size:em(30);
   font-weight:$font-weight-normal;
 }
-
+label, .label{
+  font-size:14px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
    
     @media screen and (max-width:  $screen-xl-min) {
         h1, .h1{font-size:em(45);}

@@ -12,6 +12,9 @@
   <!-- SEE head.html for the css include -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+  <!-- ScrollMagic for sticky nav menus -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
 
 <script>
     
@@ -28,13 +31,23 @@
     }
 
 
+/* STICK TO TOP OF SCREEN WHEN SCROLLING PAST */
 
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#sticky-nav",
+          triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
+        })
+        .setPin("#sticky-nav")
+        
+        //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+        .addTo(controller);
 
 
 
 /* CAROUSELS */
 /* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
-var elem = document.querySelector('.homepage-under-hero .news-carousel');
+var elem = document.querySelector('.homepage-newsfeed .news-carousel');
 if(elem){
   var flkty_featurednews = new Flickity( elem, {
     prevNextButtons: true,

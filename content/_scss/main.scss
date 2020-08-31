@@ -16,7 +16,7 @@
 @import "modules/carousels";
 @import "modules/card";
 @import "modules/hero";
-@import "modules/homepage-under-hero";
+@import "modules/homepage-newsfeed";
 @import "modules/large-image-beyond-bounds-module";
 @import "modules/simple-copy-and-cta";
 @import "modules/testimonials";
@@ -25,6 +25,7 @@
 @import "modules/next-page-cta.scss";
 @import "modules/subscribe-form-overlay";
 @import "modules/featured-solutions";
+@import "modules/reduction-solutions-chart";
 
 @import "pages/our-funders";
 @import "pages/who-we-are";
@@ -34,4 +35,5 @@
 
 @import "nav/primary";
 @import "nav/utility";
+@import "nav/sticky-nav";
 

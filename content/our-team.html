@@ -5,11 +5,10 @@ title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod 
 hero:
   image: https://picsum.photos/id/117/1000/333
   title: We are powered by our team’s diverse expertise and experience.
-  copy: ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.
 
 next-page-cta: 
-  headline: Learn about our donors and how they are creating positive impact
-  cta-label: See our Donors
+  headline: ReFED's work is made possible with generous support from and in partnership with our funders.
+  cta-label: See Who is Funding Our Mission
   cta-url: /our-funders
   colorbar:
     color: "#e65e4a"
@@ -17,6 +16,15 @@ next-page-cta:
 ---
 
 {% include modules/hero.html %}
+<section class="page-intro page-intro--our-team">
+    <div class="container">
+      <div class="h3 editable max-out-text-width" >
+        ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.
+      </div>
+    </div>
+  </section>
+
+
 
 <section class="staff">
     <a name="staff"></a>
@@ -62,7 +70,7 @@ next-page-cta:
         <div class="row">
             <div class="col-12">
                 <div class="responsive-card-deck cards-md-2 staff-2">
-                {% for num in (1..8) %}
+                {% for num in (1..7) %}
                     <div class="card">
                         <div class="card-image">
                             <img src="https://via.placeholder.com/295x285" alt="title">
@@ -97,11 +105,11 @@ next-page-cta:
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="responsive-card-deck cards-md-2 staff-2">
-                {% for num in (1..8) %}
+                <div class="responsive-card-deck cards-md-3 staff-2">
+                {% for num in (1..10) %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="https://via.placeholder.com/295x285" alt="title">
+                            <img src="https://via.placeholder.com/150x150" alt="title">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Name Goes Here</h2>

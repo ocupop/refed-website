@@ -1,21 +1,15 @@
-.homepage-under-hero{
-    padding-top:0;
-    .leftcol, .leftcol .stretched-inner{
-        background-color:$light;
-    }
-    .rightcol, .rightcol .stretched-inner{
-        background-color:$almost-white;
-    }
-    .leftcol{
-        padding:68px 68px 68px 0;
+.homepage-newsfeed{
+
+    .excerpts-column{
+        padding-right:68px;
         .btn{
             margin-top: 50px;
         }
     }
-    .rightcol{
+    .cta-column{
         padding: 0 85px;
         .news-carousel{
-            margin-top:-125px;
+
         }
     }
     .flickity-prev-next-button{
