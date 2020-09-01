@@ -29,7 +29,7 @@ hero:
           <div class="news-carousel">
             {% for post in site.posts %}
               <div class="card news-{{ forloop.index }} col-md-6" >
-                <div class="bg-image aspect-2x1" style="background-image:url({{ post.image }})"></div>
+                <div class="bg-image aspect-2x1" style="background-image:url({{ post.image | default: site.placeholder_image }})"></div>
                 <div class="card-body">
                   <!--<h3 class="card-title">Card title</h3>-->
                   <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>

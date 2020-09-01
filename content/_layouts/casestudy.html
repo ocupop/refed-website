@@ -1,31 +1,21 @@
 ---
 layout: default
 ---
-
 {% include modules/hero.html %}
-
-
 <section>
-    <div class="container">
-
-        <div class="float-sm-right mb-sm-5 ml-sm-5 w-50">
-            <img src="{{ page.image }}" class="w-100">
-        </div>
-
-        <div class="preheader pb-3 pr-5 mb-3">Overview</div>
-
-        {{ content }}
-
-        
-        <div class="preheader pb-3 pr-5 mb-3">Impact</div>
-
-        <ul>
-            {% for impact in page.impacts %}
-            <li>{{ impact }}</li>
-            {% endfor %}
-        </ul>
-       
+  <div class="container">
+    <div class="float-sm-right mb-sm-5 ml-sm-5 w-50">
+      <img src="{{ page.image }}" class="w-100">
     </div>
+    <div class="preheader pb-3 pr-5 mb-3">Overview</div>
+    {{ content }}
+    <div class="preheader pb-3 pr-5 mb-3">Impact</div>
+    <ul>
+      {% for impact in page.impacts %}
+        <li>{{ impact.title }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 

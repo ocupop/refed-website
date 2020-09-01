@@ -28,10 +28,8 @@ collections:
   casestudies:
     output: true
 
-
 defaults:
-  - 
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -44,23 +42,20 @@ defaults:
         headline: Find more <a href='/blog'>news and updates</a> from the <a href='/blog'>ReFED blog</a>, including our <a href='/press'>press articles</a> and <a href='/archive'>newsletters</a>.
         cta-label: View more in the newsroom
         cta-url: /newsroom
-  - 
-    scope:
+  - scope:
       path: ""
       type: "casestudies"
     values:
       layout: "casestudy"
       cta-label: Learn More
-      categories: []
       hero:
         title: Case Study
       next-page-cta: 
         headline: From innovation accelerators to capital campaigns to convening leadership, learn about the impact we’ve brought to the food system and the work we are doing today.
         cta-label: See our impact
         cta-url: /our-impact
-  - 
-    scope:
-      type: 'archives'
+  - scope:
+      type: 'newsletters'
     values:
       layout: post
 
@@ -120,7 +115,8 @@ _array_structures:
       value:
         text:
         author:
-        about_the_author:
+        cite:
+        image:  
   cards:
     - label: Cards
       icon: view_column
@@ -136,15 +132,8 @@ _array_structures:
         image:
         title:      
 
-
-
 _comments:
-  cards: page section for card grid that is not related to a collection          
-        
-
-        
-
-        
+  cards: page section for card grid that is not related to a collection
         
 placeholder_image: 'https://via.placeholder.com/1000'
 
