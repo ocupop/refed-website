@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 author: Anonymous
 location: New York, NY
 title: "Refed’s Covid-19 Food Waste Solutions Fund Awards $1m to Organizations Rescuing Food and Delivering It to the Most Vulnerable Communities"

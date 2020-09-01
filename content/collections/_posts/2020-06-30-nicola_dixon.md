@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: ReFED Appoints Nicola Dixon As New Board Chair and Announces New Board Member and Executive Committee
 image: https://picsum.photos/id/134/1000/333
 image_credit: "(Photo: ReFED Board Chair Nicola Dixon (center) with ReFED’s Lily Herd and ReFED Board Member Yalmaz Siddiqui)"

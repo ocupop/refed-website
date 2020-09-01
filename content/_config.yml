@@ -19,13 +19,12 @@ collections:
     output: false
   press:
     output: false
-    layout: blog
+    layout: post
     sort_by: date
   archives:
     output: true
   team:
-    output: true
-    sort_by: order
+    output: false
   casestudies:
     output: true
 
@@ -135,7 +134,7 @@ _array_structures:
       icon: insert_photo
       value:
         image:
-        title:
+        title:      
 
 
 
