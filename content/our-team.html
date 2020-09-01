@@ -1,21 +1,25 @@
 ---
 layout: default
-title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod tempor incididunt ut lablre ed dolore magna aliqua.'
-
+title: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod tempor
+  incididunt ut lablre ed dolore magna aliqua.
 hero:
-  image: https://picsum.photos/id/117/1000/333
+  image: 'https://picsum.photos/id/117/1000/333'
   title: We are powered by our team’s diverse expertise and experience.
-
-next-page-cta: 
-  headline: ReFED's work is made possible with generous support from and in partnership with our funders.
+next-page-cta:
+  headline: >-
+    ReFED's work is made possible with generous support from and in partnership
+    with our funders.
   cta-label: See Who is Funding Our Mission
   cta-url: /our-funders
   colorbar:
-    color: "#e65e4a"
+    color: '#e65e4a'
     position: left
-
-team:    
-
+team:
+  - dana-gunders
+  - alexandria-coari
+  - alejandro-enamorado
+  - david-brooks
 expert-network:
   - name: John Doe
     title: President
@@ -41,13 +45,12 @@ expert-network:
   - name: Susan Johnson
     title: Employee
     org: Cogswell Cogs
-
 ---
 
 {% include modules/hero.html %}
 <section class="page-intro page-intro--our-team">
     <div class="container">
-        <div class="h3 editable max-out-text-width" >
+        <div class="h3 editable max-out-text-width">
         ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.
         </div>
     </div>
@@ -70,17 +73,17 @@ expert-network:
             <div class="col-12">
                 <div class="card row">
                     <div class="card-image col-md-3">
-                        <img src="{{person.image}}" alt="title">
+                        <img src="{{person.image}}" alt="title" />
                     </div>
                     <div class="card-body col-md-9">
-                        <h3 class="card-title">{{person.name}}</h2>
+                        <h3 class="card-title">{{person.name}}
                         <div class="card-text">
                             {% for pos in person.positions %}
                                 <h5 class='title'>{{pos.position}} {{pos.company}}</h5>
                             {% endfor %}
                             <p>{{person.content}}</p>    
                         </div>               
-                    </div>
+                    </h3></div>
                 </div>
             </div>
             {% endfor %}
@@ -106,17 +109,17 @@ expert-network:
                     {% for person in people %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{person.image}}" alt="title">
+                            <img src="{{person.image}}" alt="title" />
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">{{person.name}}</h2>
+                            <h3 class="card-title">{{person.name}}
                             <div class="card-text">
                                 {% for pos in person.positions %}
                                     <h5 class='title font-serif'>{{pos.position}}</h5>
                                     <p>{{pos.company}}</p>  
                                 {% endfor %} 
                             </div>               
-                        </div>
+                        </h3></div>
                     </div>
                     {% endfor %}
                 </div>
@@ -132,7 +135,7 @@ expert-network:
     <div class="container">
         <div class="row">
             <div class="col-md-6 py-5 mb-2">
-                <div class="preheader ">Advisory Council</h2>
+                <div class="preheader ">Advisory Council
             </div>
         </div>
         <div class="row">
@@ -142,24 +145,24 @@ expert-network:
                     {% for person in people %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{ person.image }}" alt="title">
+                            <img src="{{ person.image }}" alt="title" />
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">{{ person.name }}</h2>
+                            <h3 class="card-title">{{ person.name }}
                             <div class="card-text">
                                 {% for pos in person.positions %}
                                     <h5 class='title font-serif'>{{pos.position}}</h5>
                                     <p>{{pos.company}}</p>  
                                 {% endfor %} 
                             </div>               
-                        </div>
+                        </h3></div>
                     </div>
                 {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div></section>
 
 
 
