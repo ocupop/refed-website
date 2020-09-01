@@ -41,6 +41,8 @@
     padding-top: 56.25%;
   }
 
+
+
   iframe {
     position: absolute;
     top: 0;
@@ -62,6 +64,20 @@
   }
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -71,3 +87,136 @@
   display: flex;
   align-items: center;
 }
+
+.max-out-text-width{
+  max-width:em(900);
+}
+
+.font-serif{
+  font-family:$font-family-serif;
+}
+.bg-lightest{ 
+  background-color:$almost-white; 
+}
+
+
+
+.logo-farm{
+  margin-top:em(40);
+  margin-left:em(-20);
+  margin-right:em(-20);
+  img{
+    display:inline-block;
+    margin:em(20);
+  }
+}
+
+@media screen and (min-width: $screen-md-min){
+  ul.two-column-list{
+    column-count: 2;
+    column-gap: 80px;
+    li{
+      -webkit-column-break-inside: avoid; 
+    }
+  }
+}
+
+@media screen and (min-width:  $screen-md-min) {  
+  .two-columns{
+    column-count: 2;
+    article{
+      -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+    }
+  }
+}
+/* STRETCH COLUMN content inside of a container all the way to the edge of the browser */
+/*
+SAMPLE
+<section>
+  <div class="container extend-to-browser-edge">
+    <div class="row">   
+      <div class="p-5 col-12 col-md-8 stretch-right stretch-bkg" style="background-color:green;"><span class='stretched-inner' style="background-color:green;"></span>Content</div>
+      <div class="p-5 col-12 col-md-4 stretch-left stretch-image" style="background-color:blue;"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
+    </div>
+  </div>
+</section>
+*/
+.extend-to-browser-edge{
+  .stretch-left .stretched-inner, 
+  .stretch-right .stretched-inner{
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      display: block;  
+      z-index:-1;
+  }        
+  .stretch-image{
+      .stretched-inner{z-index:1}
+      > .stretched-inner{ background-size:cover;background-position:center center;}
+  }
+ 
+
+  /* Mobile Only */
+  @media screen and (max-width:  $screen-md-min - 1px) {    
+    .stretch-left .stretched-inner, 
+    .stretch-right .stretched-inner{
+        width: calc(100vw - 17px); 
+        left: 50%;
+        transform: translateX(-50%);         
+    }    
+  }
+
+  /* Desktop Only */
+  @media screen and (min-width:  $screen-md-min) {      
+    position: relative;
+    
+    .stretch-left .stretched-inner, 
+    .stretch-right .stretched-inner{
+        width: calc(100% + (((100vw - 17px) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
+        @media screen and (max-width:  $screen-xl-min) {
+            width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
+        }
+        @media screen and (max-width: $screen-lg-min){
+            width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'md')}) / 2));
+        }
+    }
+    
+    .stretch-left .stretched-inner{
+        right:0;
+    }
+    .stretch-right .stretched-inner{
+        left:0;
+    }      
+  }
+  
+}
+
+/*
+@media screen and (min-width:  $screen-xl-min) { 
+  // special spacing for the strata under the home page hero.  
+  &.container-more-wide {
+      .stretch-left .stretched-inner, 
+      .stretch-right .stretched-inner{
+        width: calc(100% + (((100vw - 17px) - 1374px ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
+      }
+    }
+}
+*/
+/* END STRETCH COLUMN */
+
+
+
+.opacity-0{ opacity:0; }
+.opacity-1{ opacity:0.1; }
+.opacity-2{ opacity:0.2; }
+.opacity-3{ opacity:0.3; }
+.opacity-4{ opacity:0.4; }
+.opacity-5{ opacity:0.5; }
+.opacity-6{ opacity:0.6; }
+.opacity-7{ opacity:0.7; }
+.opacity-8{ opacity:0.8; }
+.opacity-9{ opacity:0.9; }
+.opacity-100{ opacity:1; }

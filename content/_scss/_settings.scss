@@ -1,74 +1,104 @@
-// Color Palette
+$almost-white: #F8F8F7;
+$gray-100: #EDEBE9;
+$gray-300: #848484;
+$gray-800: #344955;
+$gray-900: #182024;
+$dark-red: #69003B;
+$red-violet: #C80072;
+$red: #DC354D;
+$red-orange: #FD4900;
+$orange: #FF724D;
+$yellow-orange: #FFAB00;
+$yellow: #FFC12A;
+$green: #00B982;
+$muted-green: #479D92;
+$light-green: #5CA958;
+$blue-green: #008574;
+$blue: #0092B7;
+$dark-blue: #003A52;
+$darkest-blue: #102334;
+$light-blue: #00D1C3;
+
 $white:    #ffffff;
-$gray-100: #d9dadc;
+$black:    #000000;
 $gray-200: #bdbec0;
-$gray-300: #6f6f71;
 $gray-400: #555759;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #3f4041;
-$gray-800: #292a2b;
-$gray-900: #111111;
-$black:    #000000;
 
-$blue:    #225577;
+/*
+// THESE COLORS HAVE BEEN REMOVED
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #990000;
-$orange:  #fd7e14 !default;
-$yellow:  #f5C938;
-$green:   #67a9a8;
 $lime:    #7a9c49;
 $teal:    #2A8175;
 $cyan:    #7dd0e8 !default;
-
 $tan-lighter:#F7F5F0;
 $tan-light:  #F1EDE4;
 $tan:        #DED8C6;
 $tan-dark:   #C4BA98;
 $tan-darker: #C4BA98;
+*/
 
-$primary:       $green;
+$primary:       $dark-blue;
 $secondary:     $blue;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $light-green !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100;
-$mid:           $gray-400;
+$mid:           $gray-300;
 $dark:          $gray-800;
 
 $theme-colors: (
-  'primary': $green,
-  'secondary': $blue,
-  'success': $primary,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
   'info': $info,
-  'warning': $yellow,
-  'danger': $red,
+  'warning': $warning,
+  'danger': $danger,
   'light': $light,
   'mid': $mid,
   'dark': $dark,
   'white': $white,
   'black': $black,
   'gray': $gray-400,
-  'tan': $tan,
-  'teal': $teal,
+  //'tan': $tan,
+  //'teal': $teal,
   'green': $green,
 );
 
-$body-bg:               $white;
-$body-color:            $dark;
 
+// add some extra background colors that are not covered by BootStrap
+.bg-light-blue{ background-color:$light-blue; }
+.bg-red-violet{ background-color:$red-violet; }
+.bg-red-orange{ background-color:$red-orange; }
+.bg-orange{ background-color:$orange; }
+.bg-yellow-orange{ background-color:$yellow-orange; }
+.bg-muted-green{ background-color:$muted-green; }
+.bg-blue-green{ background-color:$blue-green; }
+.bg-darkest-blue{ background-color:$darkest-blue; }
+// .bg-dark-blue = .bg-primary;
+// .bg-blue = .bg-secondary;
+// .bg-light-green = .bg-info
+// .bg-yellow = .bg-warning;
+// .bg-green = .bg-success;
+// .bg-red = .bg-danger
+
+$body-bg:               $white;
+$body-color:            $primary;
 
 $font-family-base: 'Open Sans', sans-serif;
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-base:              1.25rem !default; // 20px. Assumes the browser default, which is typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default; // 25px
+$font-size-sm:                ($font-size-base * .8) !default; // 16px
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
@@ -86,6 +116,7 @@ $headings-font-weight:        400;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
+$font-family-serif: 'Lora', serif;
 
 $border-radius:           0;
 
@@ -93,21 +124,55 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px
+  lg: 1040px,
+  xl: 1350px
 ) !default;
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 960px,
-  xl: 1140px
+  lg: 1000px,
+  xl: 1320px
 ) !default;
 
 $screen-sm-min:           576px;
 $screen-md-min:           768px;
-$screen-lg-min:           992px;
-$screen-xl-min:           1200px;
+$screen-lg-min:           1040px;
+$screen-xl-min:           1350px;
 
 $grid-columns: 12;
 $grid-gutter-width: 30px;
+
+@media screen and (max-width: $screen-md-min){
+  .container {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+}
+
+$mobile-header-height: 67;
+
+
+
+// Allows for customizing button radius independently from global border radius
+$btn-padding-y:               18px;
+$btn-padding-x:               22px;
+$btn-font-family:             20px;
+//$btn-font-size:               $input-btn-font-size !default;
+//$btn-line-height:             $input-btn-line-height !default;
+
+$btn-padding-y-sm:            2px;
+$btn-padding-x-sm:            2px;
+$btn-font-size-sm:            14px;
+//$btn-line-height-sm:          $input-btn-line-height-sm !default;
+
+$btn-padding-y-lg:            26px;
+$btn-padding-x-lg:            44px;
+$btn-font-size-lg:            30px;
+$btn-line-height-lg:          1.2;
+
+$btn-border-radius:           0;
+$btn-border-radius-lg:        0;
+$btn-border-radius-sm:        0;
+
+

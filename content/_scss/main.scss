@@ -3,19 +3,37 @@
 
 // Global
 @import "global/mixins";
+@import "global/functions";
 @import "global/utilities";
 @import "global/base";
 @import "global/layout";
+@import "global/buttons";
 @import "global/typography";
 @import "global/animations";
 @import "global/header";
 @import "global/footer";
 
+@import "modules/carousels";
+@import "modules/card";
 @import "modules/hero";
+@import "modules/homepage-newsfeed";
+@import "modules/large-image-beyond-bounds-module";
+@import "modules/simple-copy-and-cta";
+@import "modules/testimonials";
+@import "modules/circle-icon-list";
+@import "modules/staff";
+@import "modules/next-page-cta.scss";
+@import "modules/subscribe-form-overlay";
+@import "modules/featured-solutions";
+@import "modules/reduction-solutions-chart";
 
 @import "pages/our-funders";
+@import "pages/who-we-are";
+@import "pages/our-team";
+@import "pages/food-waste.scss";
 
 
 @import "nav/primary";
 @import "nav/utility";
+@import "nav/sticky-nav";
 

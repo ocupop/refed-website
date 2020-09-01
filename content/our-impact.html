@@ -1,53 +1,222 @@
 ---
 layout: default
-title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-preheader: Our Impact 
-hero-image: https://picsum.photos/id/104/1000/333
+title: Our Impact
+
+hero:
+  image: https://picsum.photos/id/104/1000/333
+  title: Our Impact 
+
+next-page-cta: 
+  headline: To learn how you can support our mission, please contact us via email.
+  cta-label: Contact Us
+  cta-url: /contact
+  colorbar:
+    color: "#e65e4a"
+    position: right
+
 ---
 
 
 {% include modules/hero.html %}
 
-
-<section class="case-studies bg-white">
-    <a name="case-studies"></a>
-    <div class="container">
-
-        <div class="row pb-5">
-            <div class="col-md-6 py-4 my-5">
-                <h5>Case Studies</h5>
-                <h2>Case Study Title Here</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi</p>                        
-                            
-                <a href="/single-casestudy" class="btn btn-primary">Learn More</a>   
-            </div>
-            <div class="col-md-6" style="background-image: url({{ card.featured_image | default: site.placeholder_image }});background-size:cover;background-position:center center;">
-                &nbsp;
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-12">
-                <div class="responsive-card-deck cards-lg-3">
-                {% for num in (1..9) %}
-                    <div class="card mb-4">
-                        <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
-                        <div class="card-body">
-                            <h3>Case Study Goes Here</h3>
-                            <h5>Sector/Topic</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                            <a href="/single-casestudy" class="btn btn-primary">Read More</a>                        
-                        </div>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
+<section class="page-intro page-intro--our-impact">
+  <div class="container">
+    <div class="h3 editable max-out-text-width" >
+      In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and on the most efficient solutions. ReFED's Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
     </div>
+  </div>
+</section>
+
+
+<!-- This module is repeated on the "Our Impact" page -->
+<section class="funder-impact bg-lightest p-0">
+  <a name="funder-impact"></a>
+
+  <div class="full-width-carousel two-column-carousel dots-left-in-container">
+    {% for casestudy in site.casestudies %}
+    <div class="w-100">
+      <div class="container extend-to-browser-edge">
+        <div class="row">   
+          <div class="py-5 col-12 col-md-5 stretch-left stretch-bkg">
+            
+              <div class="preheader pt-5">Funder Impact Stories</div>
+              <h2 class="editable">{{ casestudy.title }}</h2>
+              <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
+              <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
+          </div>
+          <div class="p-5 col-12 col-md-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
+        </div>
+     
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
 
 
 
-{% include modules/testimonials.html %}
+
+<section class="case-studies list-with-filter">
+    <a name="case-studies"></a>
+    <div class="container pt-5"> 
+
+
+      {% assign thisCollection = site.casestudies %}	
+      {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+      
+  
+      <div class="btn-group dropdown mb-4 filter-case-studies">
+      
+          <label class="preheader mr-3" for="filter">View: </label>
+  
+          <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              View:
+          </button>
+          
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" data-value="all">All</a>
+              {% for eachCat in allCats %}                    
+                <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
+              {% endfor %} 
+          </div>
+      </div>
+
+    
+
+    
+    <div class="row">  
+      <div class="col-12 horizontal-carousel-arrows-only filterable-list">   
+      
+      {% for casestudy in site.casestudies %} 
+        <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
+          <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
+          <div class="card-body">
+            <h3 class="card-title">{{ casestudy.title }}</h3>
+
+            <ul class="categories list-group list-group-horizontal">
+            {% for cat in casestudy.categories %}                  
+                <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat | slugify }}'>{{ cat }}</span></li>
+            {% endfor %} 
+            </ul>
+
+
+            <div class="card-text">{{ casestudy.content | truncate: 80 }}</div>
+            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
+          </div>
+        </div>       
+      {% endfor %} 
+      </div>    
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section class="testimonial testimonial-1 bg-primary text-white">
+  <a name="testimonials"></a>
+  <a name="testimonial-1"></a>
+  <div class="container">
+    <div class="row flex-md-row-reverse">    
+      <div class="col-md-4 mb-5 mb-md-0">          
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="h3 testimonial">
+          <blockquote class="pr-md-5">
+            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
+            <footer>
+              <div class="cite">
+                Eileen Hyde
+                <div class="credentials font-italic">CEO, Walmart.org</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+
+<section class="testimonial testimonial-2">
+  <a name="testimonial-2"></a>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-4 mb-5 mb-md-0">          
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="h3 testimonial">
+          <blockquote class="pl-md-5">
+            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
+            <footer>
+              <div class="cite">
+                Eileen Hyde
+                <div class="credentials font-italic">CEO, Walmart.org</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+
+
+
+<section class="testimonial testimonial-3 bg-lightest">
+  <a name="testimonial-3"></a>
+  <div class="container">
+    <div class="row flex-md-row-reverse">    
+      <div class="col-md-4 mb-5 mb-md-0">          
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="h3 testimonial">
+          <blockquote class="pr-md-5">
+            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
+            <footer>
+              <div class="cite">
+                Eileen Hyde
+                <div class="credentials font-italic">CEO, Walmart.org</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+
+
+<section class="testimonial testimonial-4 bg-primary text-white">
+  <a name="testimonial-4"></a>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-4 mb-5 mb-md-0">          
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="h3 testimonial">
+          <blockquote class="pl-md-5">
+            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
+            <footer>
+              <div class="cite">
+                Eileen Hyde
+                <div class="credentials font-italic">CEO, Walmart.org</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+{% include modules/next-page-cta.html %}

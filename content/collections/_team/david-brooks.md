@@ -1,0 +1,9 @@
+---
+name: David Brooks
+image: https://www.betaclub.org/uploads/scholarship-winners/FPO-portrait.jpg
+positions: 
+    - position: Insights Engine Product Manager
+order: 3
+category: 'staff'
+---
+David serves as the Product Manager for ReFED’s Insights Engine, providing software and sustainability knowledge and overall project guidance. He has a combined nine years of professional experience as an engineer, project manager, and product manager for the development of ERP systems, a commercial sustainability application, and business technology solutions for several major food and beverage B2B distributors. David received his BS in Environmental Engineering from the University of Florida.

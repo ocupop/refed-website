@@ -1,20 +1,41 @@
 
 
-<section class="hero">
-    <div class="hero-image aspect-3x1" style="background-image:url({{page.hero-image}});"></div>
+<section class="hero {% if page.hero.extra-class %}{{ page.hero.extra-class }}{% endif %} ">
+    <div class="hero-image darken-bkg-image" style="background-image:url({% if page.hero.image %}{{page.hero.image}}{% else if page.image %}{{page.image}}{% endif %});"></div>
 
-    <div class="hero-copy">
-        <div class="container p-4">
-            {% if page.preheader %}<h2>{{ page.preheader }}</h2>{% endif %}
-            {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-            {% if page.hero-copy %}<p class="editable">{{ page.hero-copy }}</p>{% endif %}
+    <div class="hero-content">
+        <div class="container py-5 text-white">
+            <div class="hero-copy">
+                {% if page.hero.preheader %}<div class='preheader'>{{ page.hero.preheader }}</div>{% endif %}
+                
+                {% if page.hero.title %}
+                    <h1>{{ page.hero.title }}</h1>
+                {% else if page.title %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
 
-            {% if page.hero-buttons %}
-            {% for button in page.hero-buttons %}
-                <a class="btn btn-primary block mr-3" href="{{ button.url }}">{{ button.label }}</a>
-            {% endfor %}
-            {% endif %}
-           
+                {% if page.hero.copy %}<div class="hero-p editable">{{ page.hero.copy }}</div>{% endif %}
+
+                {% if page.hero.buttons %}
+                    <div class="hero-buttons mt-3">
+                        {% for button in page.hero.buttons %}
+                            {% if button.style == 'text' %}
+                                <a class="card-link block mr-3" href="{{ button.url }}">{{ button.label }}</a>
+                            {% else %}
+                                <a class="btn btn-secondary block mr-3" href="{{ button.url }}">{{ button.style }} {{ button.label }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if page.hero.footnote %}<div class="text-sm footnote">{{ page.hero.footnote }}</div>{% endif %}
+            </div>
+            
+            <div class="hero-social">
+                <a href="#" class="linkedin"></a>
+                <a href="#" class="twitter"></a>              
+            </div>
         </div>
     </div>
+
+
 </section>

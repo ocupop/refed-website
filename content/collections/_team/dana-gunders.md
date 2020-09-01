@@ -1,0 +1,10 @@
+---
+name: Dana Gunders
+image: https://www.betaclub.org/uploads/scholarship-winners/FPO-portrait.jpg
+positions: 
+    - position: Executive Director
+      company: ReFED
+order: 1
+category: 'staff'
+---
+Dana Gunders serves as ReFED’s Executive Director. Dana is a national expert and one of the first to bring to light just how much food is wasted across the country. For almost a decade, she was a Senior Scientist at the Natural Resources Defense Council (NRDC). She then launched Next Course, LLC to strategically advise on the topic. Some of her career highlights include authoring the landmark Wasted report and Waste Free Kitchen Handbook, launching the Save the Food campaign, testifying in Congress, consulting to Google, appearing on John Oliver, and perhaps most importantly, being a founding Board Member of ReFED.

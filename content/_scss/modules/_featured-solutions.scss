@@ -1,0 +1,15 @@
+.featured-solutions{
+    .filterable-list{
+        .flickity-slider{
+            //display:flex;
+        }
+        .filterable-list-item{
+            //height:100%;
+        }
+    }
+}
+.horizontal-carousel-arrows-only.flickity-resize .filterable-list-item{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}

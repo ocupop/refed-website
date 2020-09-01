@@ -1,9 +1,21 @@
 ---
 layout: default
 title: "Refreshed Content: Consectetuer Adipiscing Elig, Ded Diam Nonummy Nibh Euismod"
+
+hero:
+  preheader: Blog
+  image: https://picsum.photos/id/435/1000/333
+  title: ReFED Appoints Nicola Dixon As New Board Chair
+  buttons:
+  - label: Read More
+    url: http://www.refed.com
+    style: text
+
+
 preheader: Newsroom
 hero-image: https://picsum.photos/id/432/1000/333
 hero-copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 next-page-cta: 
   headline: Check out ReFED related news and press articles
   cta-label: See Press
@@ -42,18 +54,18 @@ next-page-cta:
                     </div>
                 </div>
 
-                <div class="responsive-card-deck cards-lg-3">
-                {% for num in (1..9) %}
+                <div class="responsive-card-deck cards-lg-1">
+                    {% for post in site.posts %}
                     <div class="card mb-4">
-                        <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+                        <div class="bg-image " style="background-image: url({{ post.image }})"></div>
                         <div class="card-body">
-                            <h5>Date</h5>
-                            <h3>News Headline Here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-                            <a href="/single-post" class="btn btn-primary">Read More</a>                        
+                            <h5>{{ post.date | date: "%B %-d, %Y" }}</h5>
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.excerpt }}</p>                        
+                            <a href="{{ post.url }}" class="btn btn-primary">Read More</a>                        
                         </div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -72,7 +84,7 @@ next-page-cta:
         <h2>Subscribe to our MailingList</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
         
-        {% include modules/contactform.html %}           
+        {% include modules/form-contact.html %}           
     
     </div>
 </section>
