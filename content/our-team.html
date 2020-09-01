@@ -20,6 +20,23 @@ team:
   - alexandria-coari
   - alejandro-enamorado
   - david-brooks
+board_of_directors:
+  - name: Nicola Dixon
+    roles:
+      - title: Chair
+        organization: ReFED Board of Directors
+      - title: Executive Director
+        organization: General Mills Foundation  
+    image:
+  - name: Eduardo Romero
+    roles:
+      - title: Secretary
+        organization: ReFED Board of Directors
+      - title: President and CEO
+        organization: At Hana Group
+    image:  
+
+
 expert-network:
   - name: John Doe
     title: President
@@ -68,20 +85,20 @@ expert-network:
             </div>
         </div>
         <div class="row">
-            {% assign people = site.team | where: "category", "staff" %}  
-            {% for person in people %}
+            {% for object in page.team %}
+            {% assign team = site.team | where: 'slug', object | first %}
             <div class="col-12">
                 <div class="card row">
                     <div class="card-image col-md-3">
-                        <img src="{{person.image}}" alt="title" />
+                        <img src="{{team.image}}" alt="title" />
                     </div>
                     <div class="card-body col-md-9">
-                        <h3 class="card-title">{{person.name}}
+                        <h3 class="card-title">{{team.name}}
                         <div class="card-text">
-                            {% for pos in person.positions %}
+                            {% for pos in team.positions %}
                                 <h5 class='title'>{{pos.position}} {{pos.company}}</h5>
                             {% endfor %}
-                            <p>{{person.content}}</p>    
+                            <p>{{team.content}}</p>    
                         </div>               
                     </h3></div>
                 </div>
@@ -105,21 +122,21 @@ expert-network:
         <div class="row">
             <div class="col-12">
                 <div class="responsive-card-deck cards-md-2 staff-2">
-                    {% assign people = site.team | where: "category", "board" %}  
-                    {% for person in people %}
+                    
+                    {% for person in page.board_of_directors %}
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{person.image}}" alt="title" />
+                          <img src="{{person.image | default: site.placeholder_image }}" alt="title" />
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">{{person.name}}
+                            <h3 class="card-title">{{person.name}}</h3>
                             <div class="card-text">
-                                {% for pos in person.positions %}
-                                    <h5 class='title font-serif'>{{pos.position}}</h5>
-                                    <p>{{pos.company}}</p>  
-                                {% endfor %} 
+                              {% for role in person.roles %}
+                                <h5 class='title font-serif'>{{role.title}}</h5>
+                                <p>{{role.organization}}</p>  
+                              {% endfor %} 
                             </div>               
-                        </h3></div>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
@@ -150,10 +167,10 @@ expert-network:
                         <div class="card-body">
                             <h3 class="card-title">{{ person.name }}
                             <div class="card-text">
-                                {% for pos in person.positions %}
-                                    <h5 class='title font-serif'>{{pos.position}}</h5>
-                                    <p>{{pos.company}}</p>  
-                                {% endfor %} 
+                              {% for pos in person.positions %}
+                                  <h5 class='title font-serif'>{{pos.position}}</h5>
+                                  <p>{{pos.company}}</p>  
+                              {% endfor %} 
                             </div>               
                         </h3></div>
                     </div>

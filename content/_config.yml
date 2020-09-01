@@ -62,7 +62,7 @@ defaults:
     scope:
       type: 'archives'
     values:
-      layout: blog
+      layout: post
 
 # Build settings
 safe: false
