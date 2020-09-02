@@ -17,7 +17,7 @@ collections:
     sort_by: date
   newsletters:
     output: true
-  team:
+  team_members:
     output: false
   casestudies:
     output: true
