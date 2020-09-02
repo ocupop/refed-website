@@ -8,20 +8,14 @@ url: 'https://victorious-shoe.cloudvent.net'
 permalink: pretty
 
 # Collections
-collections_dir: collections
 collections:
-  #examples:
-  #  output: true
-  #  permalink: /examples/:path/
-  #elements:
-  #  output: false  
   testimonials:
     output: false
   press:
     output: false
     layout: post
     sort_by: date
-  archives:
+  newsletters:
     output: true
   team:
     output: false
@@ -30,7 +24,6 @@ collections:
 
 defaults:
   - scope:
-      path: ""
       type: "posts"
     values:
       layout: "blog"
@@ -38,26 +31,7 @@ defaults:
       location: Minneapolis, MN
       hero:
         preheader: Blog
-      next-page-cta: 
-        headline: Find more <a href='/blog'>news and updates</a> from the <a href='/blog'>ReFED blog</a>, including our <a href='/press'>press articles</a> and <a href='/archive'>newsletters</a>.
-        cta-label: View more in the newsroom
-        cta-url: /newsroom
-  - scope:
-      path: ""
-      type: "casestudies"
-    values:
-      layout: "casestudy"
-      cta-label: Learn More
-      hero:
-        title: Case Study
-      next-page-cta: 
-        headline: From innovation accelerators to capital campaigns to convening leadership, learn about the impact we’ve brought to the food system and the work we are doing today.
-        cta-label: See our impact
-        cta-url: /our-impact
-  - scope:
-      type: 'newsletters'
-    values:
-      layout: post
+      
 
 # Build settings
 safe: false
@@ -130,7 +104,17 @@ _array_structures:
       icon: insert_photo
       value:
         image:
-        title:      
+        title:
+  hero:
+    - label: Hero
+      icon: panorama
+      value:
+        title:
+        description_html:
+        image:
+        link:
+        link_text:        
+
 
 _comments:
   cards: page section for card grid that is not related to a collection
