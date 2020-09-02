@@ -181,6 +181,7 @@ primary_navigation:
               links:
         - title: Stay Connected
           link: /social
+          _stay_connected: true
           links:
             - title: Twitter
               link: 'https://twitter.com/refed'
@@ -191,6 +192,7 @@ primary_navigation:
             - title: Facebook
               link: 'https://www.facebook.com/rethinkfoodwaste/'
               links:
+
     - title: Insights Engine
       link:
       links:

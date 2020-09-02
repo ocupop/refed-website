@@ -22,16 +22,6 @@ collections:
   casestudies:
     output: true
 
-defaults:
-  - scope:
-      type: "posts"
-    values:
-      layout: "blog"
-      author: "unknown"
-      location: Minneapolis, MN
-      hero:
-        preheader: Blog
-      
 
 # Build settings
 safe: false
@@ -57,6 +47,7 @@ _array_structures:
         title:
         link:
         links:
+        _stay_connected: false
   page_sections:
     - label: Single Column
       icon: article
