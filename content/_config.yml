@@ -83,11 +83,7 @@ _array_structures:
       icon: panorama
       value:
         _type: hero
-        title:
-        description_html:
-        image:
-        link:
-        link_text:
+        hero:
   testimonials:
     - label: Testimonial
       icon: format_quote

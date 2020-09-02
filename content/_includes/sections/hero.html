@@ -6,20 +6,20 @@
     <div class="container py-5 text-white">
       <div class="hero-copy">
         {% if section.hero.subtitle %}
-        <div class='preheader'>{{ section.hero.subtitle }}</div>
+          <div class='preheader'>{{ section.hero.subtitle }}</div>
         {% endif %}
         {% if section.hero.title %}
-        <h1>{{ section.hero.title }}</h1>
+          <h1>{{ section.hero.title }}</h1>
         {% else if section.title %}
-        <h1>{{ section.title }}</h1>
+          <h1>{{ section.title }}</h1>
         {% endif %}
         {% if section.hero.description_html %}
-        <div class="hero-p">
-          {{ section.hero.description_html }}
-        </div>
+          <div class="hero-p">
+            {{ section.hero.description_html }}
+          </div>
         {% endif %}
         {% if section.hero.link %}
-        <a class="card-link block mr-3" href="{{ section.hero.link }}">{{ section.hero.link_text }}</a>
+          <a class="card-link block mr-3" href="{{ section.hero.link }}">{{ section.hero.link_text }}</a>
         {% endif %}
         {% if section.hero.buttons %}
         <div class="hero-buttons mt-3">
