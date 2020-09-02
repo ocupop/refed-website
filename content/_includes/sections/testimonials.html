@@ -1,0 +1,36 @@
+<section class="bg-light">
+  <div class="container">
+    <div id="carousel-testimonials-{{ forloop.index }}" class="carousel slide pb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        {% assign carousel_instance = forloop.index %}
+        {% for slide in section.testimonials %}
+        <li data-target="#carousel-testimonials-{{ carousel_instance }}" data-slide-to="{{ forloop.index0 }}"
+          class="{% if forloop.first %}active{% endif %}"></li>
+        {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+
+        {% for testimonial in section.testimonials %}
+
+        <div class="carousel-item text-center {% if forloop.first %}active{% endif %}">
+          <div class="row">
+            <div class="col-12">
+              <p class="lead">{{ testimonial.text }}</p>
+              <p><em>{{ testimonial.author }}</em></p>
+              <p><small>{{ testimonial.about_the_author }}</small></p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#carousel-testimonials-{{ forloop.index}}" role="button" data-slide="prev">
+        <i class="ri-arrow-left-s-line text-dark"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-testimonials-{{ forloop.index}}" role="button" data-slide="next">
+        <i class="ri-arrow-right-s-line text-dark"></i>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

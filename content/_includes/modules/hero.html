@@ -1,33 +1,31 @@
 <section class="hero {% if page.hero.extra-class %}{{ page.hero.extra-class }}{% endif %} ">
-  <div class="hero-image darken-bkg-image" style="background-image:url({% if page.hero.image %}{{page.hero.image}}{% else if page.image %}{{page.image}}{% endif %});"></div>
+  <div class="hero-image darken-bkg-image" style="background-image:url({% if page.hero.image %}{{page.hero.image}}{% else if page.image %}{{page.image | default: site.placeholder_image }}{% endif %});"></div>
   <div class="hero-content">
     <div class="container py-5 text-white">
       <div class="hero-copy">
-          {% if page.hero.preheader %}
-            <div class='preheader'>{{ page.hero.preheader }}</div>
+          {% if page.hero.subtitle %}
+            <div class='preheader'>{{ page.hero.subtitle }}</div>
           {% endif %}
           {% if page.hero.title %}
             <h1>{{ page.hero.title }}</h1>
           {% else if page.title %}
             <h1>{{ page.title }}</h1>
           {% endif %}
-          {% if page.hero.copy %}
+          {% if page.hero.description_html %}
             <div class="hero-p">
-              {{ page.hero.copy }}
+              {{ page.hero.description_html }}
             </div>
+          {% endif %}
+          {% if page.hero.link %}
+            <a class="card-link block mr-3" href="{{ page.hero.link }}">{{ page.hero.link_text }}</a>
           {% endif %}
           {% if page.hero.buttons %}
             <div class="hero-buttons mt-3">
               {% for button in page.hero.buttons %}
-                {% if button.style == 'text' %}
-                  <a class="card-link block mr-3" href="{{ button.url }}">{{ button.label }}</a>
-                {% else %}
-                  <a class="btn btn-secondary block mr-3" href="{{ button.url }}">{{ button.style }} {{ button.label }}</a>
-                {% endif %}
+                <a class="btn btn-secondary block mr-3" href="{{ button.link }}">{{ button.text }}</a>
               {% endfor %}
             </div>
           {% endif %}
-          {% if page.hero.footnote %}<div class="text-sm footnote">{{ page.hero.footnote }}</div>{% endif %}
       </div>
       <div class="hero-social">
         <a href="#" class="linkedin">
