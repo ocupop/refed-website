@@ -145,20 +145,24 @@ SAMPLE
 */
 .extend-to-browser-edge{
   .stretch-left .stretched-inner, 
-  .stretch-right .stretched-inner{
-      position: absolute;
-      content: '';
-      top: 0;
-      bottom: 0;
-      display: block;  
-      z-index:-1;
+  .stretch-right .stretched-inner {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    display: block;  
+    z-index:-1;
   }        
-  .stretch-image{
-      .stretched-inner{z-index:1}
-      > .stretched-inner{ background-size:cover;background-position:center center;}
+  .stretch-image {
+    .stretched-inner { 
+      z-index:1
+    }
+    > .stretched-inner { 
+      background-size:cover;
+      background-position:center center;
+    }
   }
  
-
   /* Mobile Only */
   @media screen and (max-width:  $screen-md-min - 1px) {    
     .stretch-left .stretched-inner, 

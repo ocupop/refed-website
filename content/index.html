@@ -2,99 +2,86 @@
 layout: page
 title: Home
 hero:
-  extra-class:
   image: /uploads/istockphoto-1222296683-1024x1024.png
   title: We're on a mission to end food waste through data-driven solutions
 ---
 
 {% include modules/hero.html %}
-<section class="page-intro page-intro--homepage">
+<section class="page-intro">
   <div class="container">
-    <div class="h3 editable max-out-text-width">
-      For us, success is a sustainable, resilient, and inclusive food system that allows the planet, people and the economy to thrive - a food system that is optimized to preserve water and land resources, minimize climate impacts, and make the best use of the food we grow.
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable">
+          <p>
+            For us, success is a sustainable, resilient, and inclusive food system that allows the planet, people and the economy
+            to thrive - a food system that is optimized to preserve water and land resources, minimize climate impacts, and make
+            the best use of the food we grow.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-
-<section class="homepage-newsfeed">
+<section class="homepage-newsfeed pt-0">
   <div class="container extend-to-browser-edge">
-    <div class="row">   
-      
-      <div class="leftcol excerpts-column stretch-left stretch-bkg col-12 col-md-8 bg-lightest pt-5">       
-          <span class='stretched-inner bg-lightest'></span>
-          <div class="news-carousel">
-            {% for post in site.posts %}
-              <div class="card news-{{ forloop.index }} col-md-6">
-                <div class="bg-image aspect-2x1" style="background-image:url({{ post.image | default: site.placeholder_image }})"></div>
-                <div class="card-body">
-                  <!--<h3 class="card-title">Card title</h3>-->
-                  <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>
-                  <p class="card-text">{{ post.title }}</p>
-                  <a href="{{ post.url }}" class="card-link">Read More</a>
-                </div>
+    <div class="row">
+      <div class="leftcol excerpts-column stretch-left stretch-bkg col-lg-8 bg-lightest pt-5">       
+        <span class='stretched-inner bg-lightest'></span>
+        <div class="news-carousel">
+          {% for post in site.posts %}
+            <div class="card news-{{ forloop.index }} col-lg-6">
+              <div class="bg-image aspect-2x1" style="background-image:url({{ post.image | default: site.placeholder_image }})"></div>
+              <div class="card-body">
+                <!--<h3 class="card-title">Card title</h3>-->
+                <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>
+                <p class="card-text">{{ post.title }}</p>
+                <a href="{{ post.url }}" class="card-link">Read More</a>
               </div>
-              {% endfor %}
-          </div>          
+            </div>
+            {% endfor %}
+        </div>          
       </div>
-
-      <div class="rightcol cta-column stretch-right stretch-bkg col-12 col-md-4 pt-5">
+      <div class="rightcol cta-column stretch-right stretch-bkg col-12 col-lg-4 pt-5">
         <span class='stretched-inner bg-light'></span>
-        <div class="h3 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</div>
+        <p class="lead editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</p>
         <a href="/contact" class="btn btn-primary btn-lg font-serif">Subscribe</a>
       </div>
-
     </div>
   </div>  
 </section>
-
-
-
-
-
-
 <section class="food-waste-goals">
   <div class="container">
       <div class="full-width-carousel two-column-carousel dots-right">
-          
-          {% for num in (1..4) %}
+        {% for num in (1..4) %}
           <div class="w-100">
             <div class="container">
               <div class="row">  
-              
-                  <div class="col-md-6">
-                      <img class="d-block w-100" src="https://via.placeholder.com/615x450" alt="Alt Tag..." />
-                  </div> 
-
-                  <div class="col-md-6 py-5">
-                      <h2 class="editable">The Multi-billion dollar food waste problem</h2>
-                      <p class="editable">Every year, American consumers, businesses, and farms spends $218 billion a year, or 1.3% of GDP, growing, processing, transporting, and disposing food that is never eaten. That’s 52 million tons of food sent to landfill annually, plus another 10 million tons that is discarded or left unharvested on farms. Meanwhile, one in seven Americans is food insecure.</p>
-                      <a href="#" class="btn btn-secondary">View our 2030 Food Waste Goals</a>
-                  </div>    
-
+                <div class="col-md-6">
+                  <img class="d-block w-100" src="https://via.placeholder.com/615x450" alt="Alt Tag..." />
+                </div> 
+                <div class="col-md-6 py-5">
+                  <h2 class="editable">The Multi-billion dollar food waste problem</h2>
+                  <p class="editable">Every year, American consumers, businesses, and farms spends $218 billion a year, or 1.3% of GDP, growing, processing, transporting, and disposing food that is never eaten. That’s 52 million tons of food sent to landfill annually, plus another 10 million tons that is discarded or left unharvested on farms. Meanwhile, one in seven Americans is food insecure.</p>
+                  <a href="#" class="btn btn-secondary">View our 2030 Food Waste Goals</a>
+                </div>    
               </div> <!-- END .row -->     
             </div><!-- END .container -->   
           </div><!-- END .w-100 -->   
-          {% endfor %}
-       
+        {% endfor %}
     </div>    
   </div>
 </section>
-
-
-<section class='food-waste-reduction-solutions'>
-  <div class='container'>
-    <div class='row'>
-      <div class='col-md-6'>
+<section class="food-waste-reduction-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
         <h2>There Are Seven Action Areas of Food Waste Reduction Solutons</h2>
       </div>
-
-      <div class='col-md-6'>
+      <div class="col-lg-6">
         <p class='editable'>Solutions will go in three buckets - analyzed solutions "not analyzed" best practices, and "not analyzed" new and emerging solutions. All of these solutionhs would be listed on the website, but the "not analyzed" solutions (both types) might not appear in the Insights Engine (at this point, they're not).</p>
         <a href="#" class='text-link'>Read More</a>
       </div>
     </div>
-
     {% include modules/reduction-solutions-chart.html %}
   </div>
 </section>

@@ -1,92 +1,93 @@
 .hero{
-    //height:0;
-    padding:0;
-    //padding-bottom:33%;
-    min-height:em(594);
+  //height:0;
+  padding:0;
+  //padding-bottom:33%;
+  min-height:em(594);
+  position:relative;
+  display: flex;
+  flex-direction: column-reverse;
+    
+  .hero-image{
+    height: auto;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero-content{
+    //@include darken-bkg-image();
     position:relative;
-    display: flex;
-    flex-direction: column-reverse;
-    
-    .hero-image{
-        height:auto;
-        position:absolute;
-        top:0;left:0;bottom:0;right:0;
-        background-size:cover;
-        background-position:center center;
+    display:flex;
+    align-items:center;
+    min-height:em(243);   
+    flex-direction:row-reverse;  
+    background-color:rgba($black, 0.5);   
+    .hero-copy{
+      h1{
+        //font-size:48px; // isthis really different than other places site wide? ~pstroot
+      }
+      .preheader{ font-size:em(40);}
+      .hero-p{
+        p:first-child{ margin-top:0;}
+        p:last-child{ margin-bottom:0;}
+      }
     }
-
-    .hero-content{
-        //@include darken-bkg-image();
-        position:relative;
-        display:flex;
-        align-items:center;
-        min-height:em(243);   
-        flex-direction:row-reverse;  
-        background-color:rgba(0,0,0,0.5);   
-        .hero-copy{
-            h1{
-                //font-size:48px; // isthis really different than other places site wide? ~pstroot
-            }
-            .preheader{ font-size:em(40);}
-            .hero-p{
-                p:first-child{ margin-top:0;}
-                p:last-child{ margin-bottom:0;}
-            }
-        }
-        
-        .hero-social{
-            a{
-                display:inline-block;
-                width:38px;
-                height:38px;
-                margin-right:15px;
-                margin-top:15px;
-                background-color:#FFFFFF;
-            }
-            .linkedin{}
-            .twitter{}
-        }
+      
+    .hero-social{
+      a {
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        margin-right: 15px;
+        margin-top: 15px;
+        background-color: $white;
+      }
+      .linkedin{}
+      .twitter{}
     }
+  }
    
-    
+  @include media-breakpoint-down(lg) {
+    height:em(550);
+  }
 
-    @media screen and (max-width:  $screen-xl-min) {
-        height:em(550);
-    }
-
-    @media screen and (max-width: $screen-md-min){
-        height:em(450);
-        &.image-overlaps-bottom .hero-content{ padding-bottom:190px;} 
-    }
-    @media screen and (max-width: $screen-sm-min){
-        height:auto;    
-        &.image-overlaps-bottom .hero-content{ padding-bottom:95px;}     
-    }
+  @include media-breakpoint-down(md) {
+      height:em(450);
+    &.image-overlaps-bottom .hero-content{ padding-bottom:190px;} 
+  }
+  @include media-breakpoint-down(sm) {
+    height:auto;    
+      &.image-overlaps-bottom .hero-content{ padding-bottom:95px;} 
+  }
     
-    /* Desktop Only */
-    @media screen and (min-width:  $screen-md-min) {
-        .hero-content{
-            .hero-copy{
-                margin-right: 50px;
-                max-width:em(1020);
-            }
-            .hero-social{
-                position:absolute;
-                right:0;
-                top:50%;
-                transform:translateY(-50%);
-                a{
-                    display:block;
-                    width:60px;
-                    height:60px;
-                    margin:15px 0;
-                    background-color:#FFFFFF;
-                }
-                .linkedin{}
-                .twitter{}
-            }
+  /* Desktop Only */
+  @include media-breakpoint-up(md) {
+    .hero-content{
+      .hero-copy{
+        margin-right: 50px;
+        max-width:em(1020);
+      }
+      .hero-social{
+        position:absolute;
+        right:0;
+        top:50%;
+        transform:translateY(-50%);
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width:60px;
+          height:60px;
+          margin:15px 0;
+          background-color: $white;
         }
+        .linkedin{}
+        .twitter{}
+      }
     }
-
-
+  }
 }

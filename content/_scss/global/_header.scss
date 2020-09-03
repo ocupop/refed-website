@@ -1,7 +1,12 @@
 
 
 #pageHeader{
-    border-bottom:9px solid $light
+  border-bottom:9px solid $light;
+  @include media-breakpoint-down(lg) {
+    .container {
+      max-width: 100%;
+    }
+  }
 }
 .navbar-brand{
     background-image:url(../img/logo-wordmark.png);

@@ -1,29 +1,29 @@
-<section class="hero {% if section.hero.extra-class %}{{ section.hero.extra-class }}{% endif %} ">
+<section class="hero {% if section.extra-class %}{{ section.extra-class }}{% endif %} ">
   <div class="hero-image darken-bkg-image"
-    style="background-image:url({% if section.hero.image %}{{section.hero.image}}{% else if section.image %}{{section.image | default: site.placeholder_image }}{% endif %});">
+    style="background-image:url({% if section.hero.image %}{{section.image}}{% else if section.image %}{{section.image | default: site.placeholder_image }}{% endif %});">
   </div>
   <div class="hero-content">
     <div class="container py-5 text-white">
       <div class="hero-copy">
-        {% if section.hero.subtitle %}
-          <div class='preheader'>{{ section.hero.subtitle }}</div>
+        {% if section.subtitle %}
+          <div class='preheader'>{{ section.subtitle }}</div>
         {% endif %}
-        {% if section.hero.title %}
-          <h1>{{ section.hero.title }}</h1>
+        {% if section.title %}
+          <h1>{{ section.title }}</h1>
         {% else if section.title %}
           <h1>{{ section.title }}</h1>
         {% endif %}
-        {% if section.hero.description_html %}
+        {% if section.description_html %}
           <div class="hero-p">
-            {{ section.hero.description_html }}
+            {{ section.description_html }}
           </div>
         {% endif %}
-        {% if section.hero.link %}
-          <a class="card-link block mr-3" href="{{ section.hero.link }}">{{ section.hero.link_text }}</a>
+        {% if section.link %}
+          <a class="card-link block mr-3" href="{{ section.link }}">{{ section.link_text }}</a>
         {% endif %}
-        {% if section.hero.buttons %}
+        {% if section.buttons %}
         <div class="hero-buttons mt-3">
-          {% for button in section.hero.buttons %}
+          {% for button in section.buttons %}
           <a class="btn btn-secondary block mr-3" href="{{ button.link }}">{{ button.text }}</a>
           {% endfor %}
         </div>
