@@ -1,12 +1,10 @@
 #pageHeader {
 }
 #pageContent {
+  overflow: hidden;
 }
 #pageFooter {
 }
-
-
-
 
 section {
   position:relative;
@@ -18,14 +16,14 @@ section {
   }
 }
 .section__colorbar{
-    position:absolute;
-    height:20px;
-    width:200px;
-    min-width:10%;
-    max-width:50%;
-    top:0;
-    &.right{ right:0; }
-    &.left{ left:0; }
+  position:absolute;
+  height:20px;
+  width:200px;
+  min-width:10%;
+  max-width:50%;
+  top:0;
+  &.right{ right:0; }
+  &.left{ left:0; }
 }
 
 .container-less-wide{
@@ -33,6 +31,6 @@ section {
 }
 .container-more-wide{
   max-width: 1596px;
-  padding-left:74px;
-  padding-right:74px;
+  padding-left: 74px;
+  padding-right: 74px;
 }

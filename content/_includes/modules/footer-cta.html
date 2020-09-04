@@ -1,0 +1,18 @@
+<section class="footer-cta bg-lightest text-left">
+  <a name="footer-cta"></a>
+  <div class="container">
+    <div class="row">     
+      <div class="col-lg-6">
+        <p class="lead m-0 p-0">{{ page.footer_cta.headline }}</p>
+      </div>
+      <div class="col-lg-4 text-lg-center ml-lg-auto">
+        <a href="{{ page.footer_cta.link }}" class="btn btn-success font-serif text-nowrap">{{ page.footer_cta.label }}</a>    
+      </div>      
+    </div>
+  </div>
+  {% if page.footer-cta.colorbar != nil %}
+    <div class="section__colorbar {{ page.footer_cta.colorbar.position }}" style="background-color:{{ page.footer_cta.colorbar.color }}">
+  {% endif %}
+  </div>
+</section>
+

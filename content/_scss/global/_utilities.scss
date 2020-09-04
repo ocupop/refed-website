@@ -41,8 +41,6 @@
     padding-top: 56.25%;
   }
 
-
-
   iframe {
     position: absolute;
     top: 0;
@@ -78,16 +76,6 @@
     position:absolute;
 }
 
-.hero-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
 .max-out-text-width{
   max-width:em(900);
 }
@@ -98,8 +86,6 @@
 .bg-lightest{ 
   background-color:$almost-white; 
 }
-
-
 
 .logo-farm{
   margin-top:em(40);
@@ -158,33 +144,32 @@ SAMPLE
       z-index:1
     }
     > .stretched-inner { 
-      background-size:cover;
-      background-position:center center;
+      background-size: cover;
+      background-position: center center;
     }
   }
  
   /* Mobile Only */
-  @media screen and (max-width:  $screen-md-min - 1px) {    
+  @include media-breakpoint-down(lg) {    
     .stretch-left .stretched-inner, 
     .stretch-right .stretched-inner{
-        width: calc(100vw - 17px); 
-        left: 50%;
-        transform: translateX(-50%);         
+      width: calc(100vw); 
+      left: 50%;
+      transform: translateX(-50%);         
     }    
   }
 
   /* Desktop Only */
-  @media screen and (min-width:  $screen-md-min) {      
+  @include media-breakpoint-up(xl) {      
     position: relative;
-    
     .stretch-left .stretched-inner, 
     .stretch-right .stretched-inner{
-        width: calc(100% + (((100vw - 17px) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
+        width: calc(100% + (((100vw) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
         @media screen and (max-width:  $screen-xl-min) {
             width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
         }
         @media screen and (max-width: $screen-lg-min){
-            width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'md')}) / 2));
+            width: calc(100% + (((100vw) - #{map-get($container-max-widths, 'md')}) / 2));
         }
     }
     

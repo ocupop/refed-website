@@ -6,12 +6,12 @@ title: >-
 hero:
   image: 'https://picsum.photos/id/117/1000/333'
   title: We are powered by our team’s diverse expertise and experience.
-next-page-cta:
+footer-cta:
   headline: >-
     ReFED's work is made possible with generous support from and in partnership
     with our funders.
-  cta-label: See Who is Funding Our Mission
-  cta-url: /our-funders
+  label: See Who is Funding Our Mission
+  link: /our-funders
   colorbar:
     color: '#e65e4a'
     position: left
@@ -20,195 +20,144 @@ team_members:
   - alexandria-coari
   - alejandro-enamorado
   - david-brooks
-board_of_directors:
-  - name: Nicola Dixon
-    roles:
-      - title: Chair
-        organization: ReFED Board of Directors
-      - title: Executive Director
-        organization: General Mills Foundation
-    image:
-  - name: Eduardo Romero
-    roles:
-      - title: Secretary
-        organization: ReFED Board of Directors
-      - title: President and CEO
-        organization: At Hana Group
-    image:
-expert-network:
-  - name: John Doe
-    title: President
-    org: Test Co. Inc
-  - name: Jane Doe
-    title: CEO
-    org: Big Co. LTD.
-  - name: Marty Smith
-    title: Founder
-    org: Sprockets and Things
-  - name: Susan Johnson
-    title: Employee
-    org: Cogswell Cogs
-  - name: John Doe
-    title: President
-    org: Test Co. Inc
-  - name: Jane Doe
-    title: CEO
-    org: Big Co. LTD.
-  - name: Marty Smith
-    title: Founder
-    org: Sprockets and Things
-  - name: Susan Johnson
-    title: Employee
-    org: Cogswell Cogs
 ---
 
 {% include modules/hero.html %}
-<section class="page-intro page-intro--our-team">
-    <div class="container">
-        <div class="h3 editable max-out-text-width">
-        ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable">
+          ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in
+          food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development,
+          and communications.
         </div>
+      </div>
     </div>
+  </div>
 </section>
-
-
-
 <section class="staff">
-    <a name="staff"></a>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="preheader mb-5">Staff</h2>
-                <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
-            </div>
-        </div>
-        <div class="row">
-            {% for object in page.team %}
-            {% assign team = site.team | where: 'slug', object | first %}
-            <div class="col-12">
-                <div class="card row">
-                    <div class="card-image col-md-3">
-                        <img src="{{team.image}}" alt="title" />
-                    </div>
-                    <div class="card-body col-md-9">
-                        <h3 class="card-title">{{team.name}}
-                        <div class="card-text">
-                            {% for pos in team.positions %}
-                                <h5 class='title'>{{pos.position}} {{pos.company}}</h5>
-                            {% endfor %}
-                            <p>{{team.content}}</p>    
-                        </div>               
-                    </h3></div>
-                </div>
-            </div>
-            {% endfor %}
-            
-        </div>
+  <a name="staff"></a>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="preheader">Staff</h2>
+        <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
+      </div>
     </div>
+    {% for object in page.team_members %}
+    {% assign team_member = site.team_members | where: 'slug', object | first %}
+      <div class="row mb-5">
+        <div class="col-lg-4">
+          <img src="{{team.image | default: site.placeholder_image}}" class="img-fluid" alt="title" />
+        </div>
+        <div class="col-lg-7 ml-lg-auto">
+          <h3>{{ team_member.name }}</h3>
+          {% for role in team_member.roles %}
+            <h5 class="text-mid d-inline-block border-top pt-2">{{role.title}} {{role.organization}}</h5>
+          {% endfor %}
+          <p>{{ team_member.content }}</p>       
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
-
 
 <section class="board-of-directors bg-primary text-white">
-    <a name="board-of-directors"></a>
-    <div class="container">
-        <div class="row mb-5 pb-5">
-            <div class="col-12">
-                <div class="preheader">Board of Directors</div>
-                <p>ReFED’s strength has long rested in the power of the people who surround, advise, and contribute to our work. ReFED’s Board of Directors is comprised of leaders in the business and nonprofit sectors who inform the organization’s strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and opportunities for food waste reduction.</p>
-            </div>
+  <a name="board-of-directors"></a>
+  <div class="container">
+    <div class="row mb-5 pb-5">
+      <div class="col-12">
+        <div class="editable">
+          <h2 class="preheader">Board of Directors</h2>
+          <p>ReFED’s strength has long rested in the power of the people who surround, advise, and contribute to our work. ReFED’s
+            Board of Directors is comprised of leaders in the business and nonprofit sectors who inform the organization’s
+            strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and
+            opportunities for food waste reduction.</p>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="responsive-card-deck cards-md-2 staff-2">
-                    
-                    {% for person in page.board_of_directors %}
-                    <div class="card">
-                        <div class="card-image">
-                          <img src="{{person.image | default: site.placeholder_image }}" alt="title" />
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">{{person.name}}</h3>
-                            <div class="card-text">
-                              {% for role in person.roles %}
-                                <h5 class='title font-serif'>{{role.title}}</h5>
-                                <p>{{role.organization}}</p>  
-                              {% endfor %} 
-                            </div>               
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-md-2 staff-2">  
+          {% for person in site.data.board_of_directors %}
+            <div class="card">
+              <div class="card-image">
+                <img src="{{person.image | default: site.placeholder_image }}" alt="title" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">{{person.name}}</h3>
+                <div class="card-text">
+                  {% for role in person.roles %}
+                    <h5 class='title font-serif'>{{role.title}}</h5>
+                    <p>{{role.organization}}</p>  
+                  {% endfor %} 
+                </div>               
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
 <section class="advisory-council bg-light">
-    <a name="advisory-council"></a>
+  <a name="advisory-council"></a>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 py-5 mb-2">
-                <div class="preheader ">Advisory Council
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="responsive-card-deck cards-md-3 staff-2">
-                    {% assign people = site.team | where: "category", "advisory counsil" %}  
-                    {% for person in people %}
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="{{ person.image }}" alt="title" />
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">{{ person.name }}
-                            <div class="card-text">
-                              {% for pos in person.positions %}
-                                  <h5 class='title font-serif'>{{pos.position}}</h5>
-                                  <p>{{pos.company}}</p>  
-                              {% endfor %} 
-                            </div>               
-                        </h3></div>
-                    </div>
-                {% endfor %}
+      <div class="row">
+        <div class="col-md-6 py-5 mb-2">
+          <h2 class="preheader">Advisory Council</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="responsive-card-deck cards-md-3 staff-2">
+              <!-- advisory council loop -->
+              {% for i in (1..10) %}
+                <div class="card align-items-center">
+                  <div class="card-image">
+                    <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid" alt="title" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Firstname Lastname</h3>
+                    <div class="card-text">
+                      {% for i in (1..2) %}
+                        <h5 class='title font-serif'>Rolename</h5>
+                        <p>Organization Name</p>  
+                      {% endfor %} 
+                    </div>               
+                  </div>
                 </div>
-            </div>
+              {% endfor %}
+          </div>
         </div>
+      </div>
     </div>
-</div></section>
-
-
+  </div>
+</section>
 
 <!-- this module is repeated on the Engage.html page -->
 <section class="expert-network">
     <a name="expert-network"></a>
     <div class="container">
-        <div class="row">
-            <div class="col-12 pb-5">
-                <div class="preheader editable pb-3">Expert Network</div>
-                <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
-                <a href="#" class="btn btn-secondary editable">Become or Nominate a Participant</a>  
-            </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2 class="preheader editable pb-3">Expert Network</h2>
+          <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
+          <a href="#" class="btn btn-secondary editable mt-4">Become or Nominate a Participant</a>  
         </div>
-
-        <div class="row pt-5">
-
-            {% for person in page.expert-network %}
-                <div class="col-md-6 col-lg-4 mb-3">
-                    {% if person.name %}<h5 class="mb-0">{{person.name}}</h5>{% endif %}
-                    <p class=" gray">
-                        {% if person.title %}{{person.title}}{% endif %}{% if person.org %}, {{person.org}}{% endif %}
-                    </p>                              
-                </div>
-            {% endfor %}
-                
-        </div>
+      </div>
+      <div class="row pt-5">
+        {% for person in site.data.expert_network %}
+          <div class="col-md-6 col-lg-4 mb-3">
+            {% if person.name %}<h5 class="mb-0">{{person.name}}</h5>{% endif %}
+            <p class=" gray">
+              {% if person.role %}{{person.role}}{% endif %}{% if person.organization %}, {{person.organization }}{% endif %}
+            </p>                              
+          </div>
+        {% endfor %}
+      </div>
     </div>
 </section>
 
-
-
-
-{% include modules/next-page-cta.html %}
+{% include modules/footer-cta.html %}

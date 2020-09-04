@@ -1,0 +1,23 @@
+.about-us{}
+
+.about-us--icons{
+  .row > div{
+    .icon{
+      max-width:em(205);
+      height:em(205);
+    }
+    &:nth-child(1) .icon{
+      background-color: $blue-green;
+    }
+    &:nth-child(2) .icon{
+      background-color: $light-blue;
+    }
+    &:nth-child(3) .icon{
+      background-color: $light-green;
+    }
+  }
+}
+
+.about-us--roadmap{}
+
+.about-us--visoin{}

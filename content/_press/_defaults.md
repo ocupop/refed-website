@@ -1,7 +1,7 @@
 ---
-layout: post
-source: 
 title:
+date:
+source:
 logo_image:
 link:
 categories:

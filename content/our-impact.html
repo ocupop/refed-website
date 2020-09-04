@@ -6,10 +6,10 @@ hero:
   image: https://picsum.photos/id/104/1000/333
   title: Our Impact 
 
-next-page-cta: 
+footer-cta: 
   headline: To learn how you can support our mission, please contact us via email.
-  cta-label: Contact Us
-  cta-url: /contact
+  label: Contact Us
+  link: /contact
   colorbar:
     color: "#e65e4a"
     position: right
@@ -42,7 +42,7 @@ next-page-cta:
               <div class="preheader pt-5">Funder Impact Stories</div>
               <h2 class="editable">{{ casestudy.title }}</h2>
               <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
-              <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
+              <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
           </div>
           <div class="p-5 col-12 col-md-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
         </div>
@@ -101,7 +101,7 @@ next-page-cta:
 
 
             <div class="card-text">{{ casestudy.content | truncate: 80 }}</div>
-            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.cta-label }}</a>
+            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
           </div>
         </div>       
       {% endfor %} 
@@ -219,4 +219,4 @@ next-page-cta:
   </div>
 </section>
 
-{% include modules/next-page-cta.html %}
+{% include modules/footer-cta.html %}

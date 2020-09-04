@@ -1,11 +1,10 @@
 ---
 layout: post
-author: 
-location:
 title:
+date:
+author: 
+hero:
+location:
 image:
-next_page_cta: 
-  headline:
-  cta_label: 
-  link: 
+footer_cta:
 ---

@@ -1,4 +1,4 @@
-<section class="hero {% if section.extra-class %}{{ section.extra-class }}{% endif %} ">
+<section class="hero">
   <div class="hero-image darken-bkg-image"
     style="background-image:url({% if section.hero.image %}{{section.image}}{% else if section.image %}{{section.image | default: site.placeholder_image }}{% endif %});">
   </div>

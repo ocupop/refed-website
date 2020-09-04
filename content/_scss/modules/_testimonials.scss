@@ -1,70 +1,66 @@
 .testimonial{
-    blockquote{
-        font-weight:$font-weight-normal;
-        footer{
-            margin-top: 1.3em;
-            font-size:em(30,40);
-            .cite{}
-            .credentials{
-                margin-top: 0.4em;
-                font-size:em(25,30);
-            }
-        }
+  blockquote{
+    font-weight:$font-weight-normal;
+    footer{
+      margin-top: 1.3em;
+      font-size:em(30,40);
+      .cite{}
+      .credentials{
+        margin-top: 0.4em;
+        font-size:em(25,30);
+      }
     }
-    
+  }
 }
     
-section.testimonials{
-    padding:em(137) 0 em(80) 0;
-    //padding:10.4vw 0; // up to 1920 px wide?
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    @include darken-bkg-image(0.8,$primary);
+.testimonials{
+  padding:em(137) 0 em(80) 0;
+  //padding:10.4vw 0; // up to 1920 px wide?
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include darken-bkg-image(0.8,$primary);
 
     .carousel-testimonials{}
     .testimonial{
-        padding-top:em(62);  
-        blockquote{
-            font-size:em(40);
-            line-height:1.38;
-        }     
+      padding-top:em(62);  
+      blockquote{
+        font-size:em(40);
+        line-height:1.38;
+      }     
     }
     .flickity-viewport {
-        transition: height 0.2s;
+      transition: height 0.2s;
     }
     .flickity-page-dots{
-        top:0;
-        bottom:inherit;
+      top: 0;
+      bottom: inherit;
     }
 
-
-    
     @media screen and (max-width:  $screen-xl-min) {
-        .testimonial{
-            font-size:0.8em;
-        }
+      .testimonial{
+        font-size:0.8em;
+      }
     }
     @media screen and (max-width:  $screen-lg-min) {
-        .testimonial{
-            font-size:0.7em;
-        }
+      .testimonial{
+        font-size:0.7em;
+      }
     }
     @media screen and (max-width:  $screen-md-min) {
-        padding:em(75) 0 em(55) 0;
-        .testimonial{
-            font-size:1em;
-            blockquote{
-                font-size:em(25);
-                footer{
-                    font-size:em(30,25);
-                    .cite{}
-                    .credentials{
-                        font-size:em(16,30);
-                    }
-                }
+      padding:em(75) 0 em(55) 0;
+      .testimonial{
+        font-size:1em;
+        blockquote{
+          font-size:em(25);
+          footer{
+            font-size:em(30,25);
+            .cite{}
+            .credentials{
+              font-size:em(16,30);
             }
-        
+          }
         }
+      }
     }
 }

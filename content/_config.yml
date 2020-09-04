@@ -7,7 +7,7 @@ url: 'https://victorious-shoe.cloudvent.net'
 # url: 'http://www.refed.com' # the base hostname & protocol for your site
 permalink: pretty
 
-insights_engine_url:
+insights_engine_url:  
 
 # Collections
 collections:
@@ -27,13 +27,13 @@ collections:
     output: false
   action_areas:
     output: true
-  sectors:
-    output: true
   stakeholders:
     output: true
   events:
     output: true
   reports_and_guides:
+    output: true
+  panelists:
     output: true  
 
 
@@ -114,6 +114,19 @@ _array_structures:
       value:
         image:
         title:
+  solution_types:
+    - label: Solution Types
+      icon: add_to_photos
+      value:
+        title:
+        description:
+        solutions:
+  solutions:
+    - label: Solutions
+      icon: assignment
+      value:
+        title:
+        api_endpoint:
   hero:
     - label: Hero
       icon: panorama
@@ -127,6 +140,10 @@ _array_structures:
         buttons:
           - button_text:
             link:
+  footer_cta: 
+    headline:
+    cta_label: 
+    link:             
 
 
           

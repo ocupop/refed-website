@@ -1,14 +1,8 @@
 <header id="pageHeader" class="">
   <div class="container">
-
-
     <div id="header-navigation-container" class="navbar navbar-expand-md py-md-0">
-      
       <!-- logo -->
-
-      
       <a class="navbar-brand" href="/">{{ site.title }}</a>
-
       <!-- Mobile Toggle -->
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -17,24 +11,14 @@
           <div class="bar3"></div>
         </span>
       </button>
-
-
-
         <!-- Start Primary Navigation -->
         <nav class="collapse navbar-collapse flex-column-reverse" id="primarynav">
-
-          
           <!-- Links -->
           <ul class="primary-nav-links navbar-nav ml-auto ">
-
-            
             {% for link in site.data.navigation.primary_navigation.links %}
-           
-
             {% if link.links.size %}{% assign href_att = 'data-href' %}
             {% else %}{% assign href_att = 'href' %}
             {% endif %}
-
             <li class="nav-item dropdown mega-dropdown">
               <a 
                 class="nav-link" 
@@ -44,12 +28,10 @@
                   aria-haspopup="true" 
                   aria-expanded="false"
                 {% endif %} 
-                {{ href_att }}="{{ link.link }}"
-              > 
+                {{ href_att }}="{{ link.link }}"> 
                 {{ link.title }} 
                 <span class="sr-only">(current)</span>
               </a>
-              
               {% if link.links != nil %}
               <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color p-sm-0 py-md-5" aria-labelledby="collapse-{{ link.title | slugify }}">
                 <div class="container container-less-wide px-0 px-md-3">
@@ -57,17 +39,14 @@
                     <a class="nav-back-button d-block d-md-none" href=""><span class="left-nav-arrow"></span> {{ link.title }} </a>
                     {% for sublink in link.links %}
                     <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 %}two-col-sublinks{% endif %}">
-                      
                       <h6 class="sub-title font-weight-bold white-text m-0"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
                       {% if sublink.links.size %}
-                      <ul class="list-unstyled"  >
-                        
+                      <ul class="list-unstyled">
                         {% for subsublink in sublink.links %}
                         <li class="nav-item">
                           <a class="menu-item" href="{{ subsublink.link }}">
                             {{ subsublink.title }}
                           </a>
-
                           {% if subsublink.links.size %}
                           <ul class="list-unstyled">
                           {% for subsubsublink in subsublink.links %}
@@ -79,16 +58,12 @@
                           {% endfor %}
                           </ul>
                           {% endif %}
-
-
                         </li>
                         {% endfor %}
                       </ul>
                       {% endif %}
-
                     </div>
                     {% endfor %}
-
                   </div>
                 </div>
               </div>
@@ -96,19 +71,14 @@
             </li>
             {% endfor %}
           </ul>
-
           <ul class="utility-links navbar-nav ml-auto ">            
             {% for link in site.data.navigation.top_bar_navigation.links %}            
             <li class="nav-item"><a class="nav-link" href="{{ link.link }} ">{{ link.title }} </a></li>
             {% endfor %}            
           </ul>
-
-
         </nav>
         <!-- END Primary Navigation -->
-
     </div>
-
   </div>
 </header>
 
