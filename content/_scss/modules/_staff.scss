@@ -4,27 +4,27 @@
         margin-top: em(50);
         margin-bottom: em(50);
         .bg-image{
-            width:33.33%;
-            height: auto;
+          width: 33.33%;
+          height: auto;
         }
         .card-image{
-            width: 43%;
-            img{
-                width: 100%;
-                padding-right: em(100);
-            }
+          width: 43%;
+          img{
+            width: 100%;
+            padding-right: em(100);
+          }
         }
         .card-body{
-            padding:0;  
-            .card-text{
-                margin-top:em(6);
-                padding-top:em(13);
-            }  
-            .title{
-                font-size:em(23);
-                margin-bottom:em(21,23);
-                color:$mid;
-            }
+          padding:0;  
+          .card-text{
+            margin-top: em(6);
+            padding-top: em(13);
+          }  
+          .title{
+            font-size: em(23);
+            margin-bottom: em(21,23);
+            color: $mid;
+          }
         }
     }
     
@@ -32,19 +32,19 @@
         .card{
             .card-image{
                 img{
-                    padding-right: em(50);
+                  padding-right: em(50);
                 }
             }
         }
     }
     @media screen and (max-width: $screen-lg-min){
-        .card{
-            .card-image{
-                img{
-                    padding-right: em(25);
-                }
-            }
+      .card{
+        .card-image{
+          img{
+            padding-right: em(25);
+          }
         }
+      }
     }
     @media screen and (max-width: $screen-md-min){
         .card{

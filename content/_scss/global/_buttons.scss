@@ -10,12 +10,12 @@
 }
 
 %text-btn {
-  font-weight:$font-weight-semibold;
-  color:$blue;
+  font-weight: $font-weight-semibold;
+  color: $blue;
   &:after{
-    content:'';
+    content: '';
     @include arrow(right,8px,$blue);
-    margin-left:12px;
+    margin-left: 12px;
     vertical-align: -4px;
   }
 }
