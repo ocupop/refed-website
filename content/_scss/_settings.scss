@@ -75,14 +75,14 @@ $theme-colors: (
 
 
 // add some extra background colors that are not covered by BootStrap
-.bg-light-blue{ background-color:$light-blue; }
-.bg-red-violet{ background-color:$red-violet; }
-.bg-red-orange{ background-color:$red-orange; }
-.bg-orange{ background-color:$orange; }
-.bg-yellow-orange{ background-color:$yellow-orange; }
-.bg-muted-green{ background-color:$muted-green; }
-.bg-blue-green{ background-color:$blue-green; }
-.bg-darkest-blue{ background-color:$darkest-blue; }
+.bg-light-blue { background-color:$light-blue; }
+.bg-red-violet { background-color:$red-violet; }
+.bg-red-orange { background-color:$red-orange; }
+.bg-orange { background-color:$orange; }
+.bg-yellow-orange { background-color:$yellow-orange; }
+.bg-muted-green { background-color:$muted-green; }
+.bg-blue-green { background-color:$blue-green; }
+.bg-darkest-blue { background-color:$darkest-blue; }
 // .bg-dark-blue = .bg-primary;
 // .bg-blue = .bg-secondary;
 // .bg-light-green = .bg-info
@@ -91,11 +91,11 @@ $theme-colors: (
 // .bg-red = .bg-danger
 
 $body-bg:               $white;
-$body-color:            $primary;
+$body-color:            $gray-800;
 
 $font-family-base: 'Open Sans', sans-serif;
 
-$font-size-base:              1.25rem !default; // 20px. Assumes the browser default, which is typically `16px`
+$font-size-base:              1.2rem; // 20px. Assumes the browser default, which is typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default; // 25px
 $font-size-sm:                ($font-size-base * .8) !default; // 16px
 
@@ -107,7 +107,7 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 2.2;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.2;
 $h4-font-size:                $font-size-base * 1.15;
@@ -154,8 +154,6 @@ $grid-gutter-width: 30px;
 }
 
 $mobile-header-height: 67;
-
-
 
 // Allows for customizing button radius independently from global border radius
 $btn-padding-y:               18px;
