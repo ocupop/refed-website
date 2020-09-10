@@ -6,11 +6,13 @@ layout: default
 <section>
   <div class="container">
     <div class="">
-      <div class="d-inline-block border-bottom border-dark pb-3 pr-5 mb-3">{{ page.location }} {{ page.date | date: "%B %-d, %Y" }}</div>
+      <div class="d-inline-block border-bottom border-dark pb-3 pr-5 mb-3">{{ page.label }} {{ page.date | date: "%B %-d, %Y" }}</div>
     </div>
-    <div class="float-sm-right mb-sm-5 ml-sm-5 w-50">
-      <img src="{{page.image}}" class="w-100">
-    </div>
+    {% if page.featured_image %}
+      <div class="float-md-right mt-3 mt-md-0 mb-3 ml-md-5 w-50">
+        <img src="{{page.featured_image}}" class="w-100">
+      </div>
+    {% endif %}
     {{ content }}
     <div class="image-credit text-muted">{{ page.image_credit }}</div>  
   </div>

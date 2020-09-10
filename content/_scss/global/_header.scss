@@ -9,29 +9,29 @@
   }
 }
 .navbar-brand{
-    background-image: url(../img/logo-wordmark.png);
-    background-size: contain;
+  background-image: url(../img/logo-wordmark.png);
+  background-size: contain;
 
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: left center;
-    text-indent: -1000px;
-    width: rem(242);
-    height: rem(67);
-    font-size: 0.6em;
-    
-    margin-top: rem(15);
-    margin-bottom: rem(15);
-    margin-left: rem(17);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-indent: -1000px;
+  width: rem(242);
+  height: rem(67);
+  font-size: 0.6em;
+  
+  margin-top: rem(15);
+  margin-bottom: rem(15);
+  margin-left: rem(17);
 
-    // * margin-top: em(15.12);
-    // * margin-bottom: em(20.12);
+  // * margin-top: em(15.12);
+  // * margin-bottom: em(20.12);
 }
 
 
 @media screen and (max-width: $screen-md-min){
   #pageHeader{
-    position: absolute;
+    // position: absolute;
     z-index: 11;
     width: 100%;
     > .container{
@@ -43,20 +43,20 @@
       background-color:$primary;
       color: $white;
       overflow: hidden;
-      left: 0;
-      right: 0;
-      position: absolute;
+      // left: 0;
+      // right: 0;
+      // position: absolute;
       z-index: 9999;
-      top: rem($mobile-header-height);
+      // top: rem($mobile-header-height);
       width: 100%;
       &.collapse{ }
       &.collapsing{ }
       &.collapse.show{ }
     }
   }
-  main {
-    margin-top: rem($mobile-header-height);
-  }
+  // main {
+  //   margin-top: rem($mobile-header-height);
+  // }
 }
 
 @media screen and (min-width: $screen-md-min){

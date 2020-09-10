@@ -1,12 +1,17 @@
 ---
 layout: post
 title: ReFED Appoints Nicola Dixon As New Board Chair and Announces New Board Member and Executive Committee
-image: https://picsum.photos/id/134/1000/333
-image_credit: "(Photo: ReFED Board Chair Nicola Dixon (center) with ReFED’s Lily Herd and ReFED Board Member Yalmaz Siddiqui)"
+label:
+post_date:
+news_type:
+author:
 hero:
   image: https://picsum.photos/id/134/1000/333
   title: "Buying more ugly food: an imperfect waste solution?"
+featured_image: https://picsum.photos/id/134/1000/333
+news_categories:
 ---
+
 Today, ReFED, a national nonprofit organization working to advance solutions to reduce food waste, announced that its Board of Directors has elected Nicola Dixon as the new Board Chair. Dixon, who is the Executive Director of the General Mills Foundation, succeeds ReFED Founder and inaugural Board Chair Jesse Fink, who will continue to serve on the Board of Directors as Chair of the Development Committee. 
 
 ReFED also announced a new Board member – Stacey Greene-Koehnke, Chief Operations Officer for the Atlanta Community Food Bank, whose term began in April. Additionally, ReFED has appointed Steve Swartz, Chief Strategy Officer of The Wonderful Company, as the new Board Treasurer and Eduardo Romero, President and CEO at Hana Group, as the new Board Secretary. Rob Kaplan, Founder and CEO of Circulate Capital, has completed his term as a Founding Board Member and retired from the Board.

@@ -1,56 +1,43 @@
 ---
 layout: default
 title: ReFED in the Press
-
 hero:
   image: https://picsum.photos/id/432/1000/333
-  preheader: Newsroom
+  subtitle: Newsroom
   title: ReFED in the Press
   buttons:
     - label: Download Media Assets
-      url: http://www.refed.com
+      link: http://www.refed.com
+      button_type: button
     - label: Download Brand Guide
-      url: http://www.refed.com
+      link: http://www.refed.com
+      button_type: button
     - label: Contact ReFED
-      url: /contact/
-
-
+      link: /contact/
+      button_type: button
 ---
 
-
 {% include modules/subnav-newsroom.html %}
-
-
 {% include modules/hero.html %}
-
-
-
-
-
-
-
-  <section class="press">
-    <a name="press"></a>
-    <div class="container">  
-      {% assign sorted = site.press | sort: 'date' | reverse %} 
-      {% for article in sorted %}    
-        <div class="row mb-5">
-            <div class="col-2 p-3">   
-              <div class="bg-image aspect-4x3 bg-white" style="background-image:url({{ article.logo }});background-size:contain;" ></div>
-            </div>
-            <div class="col-10">
-                <div class="card-body">
-                    <h5>{{ article.date | date: "%B %-d, %Y" }} </h5>
-                    <h3>{{ article.title }}</h3>
-                    <p>{{ article.content }}</p>                        
-                    <a href="{{ article.link }}" target="_blank" class="btn btn-primary">Read More</a>                        
-                </div> 
-            </div>           
+<section class="press">
+  <a name="press"></a>
+  <div class="container">  
+    {% assign sorted = site.press | sort: 'date' | reverse %} 
+    {% for press in sorted %}    
+      <div class="row mb-5">
+        <div class="col-lg-4">   
+          <div class="bg-image aspect-16x9 bg-white bg-contain" style="background-image:url({{ press.featured_image | default: site.placholder_image }});" ></div>
         </div>
-      {% endfor %} 
-    </div>
+        <div class="col-lg-8">
+          <h5>{{ press.date | date: "%B %-d, %Y" }} </h5>
+          <h3>{{ press.title }}</h3>
+          <p>{{ press.content }}</p>                        
+          <a href="{{ press.link }}" target="_blank" class="text-link">Read More</a>
+        </div>           
+      </div>
+    {% endfor %} 
+  </div>
 </section>
-
 
 <section class="mailing-list-form bg-primary text-white">
     <a name="mailing-list-form"></a>

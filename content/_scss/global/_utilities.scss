@@ -62,38 +62,42 @@
   }
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+  overflow:hidden;
+  padding-bottom: 56.25%;
+  position:relative;
+  height:0;
 }
 .video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .max-out-text-width{
-  max-width:em(900);
+  max-width: rem(900);
 }
 
 .font-serif{
-  font-family:$font-family-serif;
+  font-family: $font-family-serif;
 }
 .bg-lightest{ 
-  background-color:$almost-white; 
+  background-color: $almost-white; 
 }
 
 .logo-farm{
-  margin-top:em(40);
-  margin-left:em(-20);
-  margin-right:em(-20);
+  margin-top: rem(40);
+  margin-left: rem(-20);
+  margin-right: rem(-20);
   img{
-    display:inline-block;
-    margin:em(20);
+    display: inline-block;
+    margin: rem(20);
   }
 }
 

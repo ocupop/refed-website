@@ -1,11 +1,15 @@
 ---
 layout: post
-author: Anonymous
-location: New York, NY
 title: "Refed’s Covid-19 Food Waste Solutions Fund Awards $1m to Organizations Rescuing Food and Delivering It to the Most Vulnerable Communities"
-image: https://705628.smushcdn.com/1146977/wp-content/uploads/2019/07/food-waste.jpg?lossy=1&strip=1&webp=1
-# image_credit: "(Photo: ReFED Board Chair Nicola Dixon (center) with ReFED’s Lily Herd and ReFED Board Member Yalmaz Siddiqui)"
+label: New York, NY
+post_date:
+news_type:
+author: Anonymous
+hero:
+featured_image: https://705628.smushcdn.com/1146977/wp-content/uploads/2019/07/food-waste.jpg?lossy=1&strip=1&webp=1
+news_categories:
 ---
+
 As the Coronavirus Pandemic Continues to Disrupt the Food System, Much More Funding is Needed for These and Other Front-Line Organizations.
 
 ReFED also announced a new Board member – Stacey Greene-Koehnke, Chief Operations Officer for the Atlanta Community Food Bank, whose term began in April. Additionally, ReFED has appointed Steve Swartz, Chief Strategy Officer of The Wonderful Company, as the new Board Treasurer and Eduardo Romero, President and CEO at Hana Group, as the new Board Secretary. Rob Kaplan, Founder and CEO of Circulate Capital, has completed his term as a Founding Board Member and retired from the Board.

@@ -1,10 +1,14 @@
 ---
 layout: post
-author: Anonymous
-location: New York, NY
 title: "A Message from Jesse Fink, Refed’s Inaugural Board Chair"
-image: https://d1qmdf3vop2l07.cloudfront.net/vital-water.cloudvent.net/hash-store/c85d39483c78f0046018486bdeb011ad.jpg
-# image_credit: "(Photo: ReFED Board Chair Nicola Dixon (center) with ReFED’s Lily Herd and ReFED Board Member Yalmaz Siddiqui)"
+label: New York, NY
+post_date:
+
+news_type:
+author: Anonymous
+hero:
+featured_image: https://d1qmdf3vop2l07.cloudfront.net/vital-water.cloudvent.net/hash-store/c85d39483c78f0046018486bdeb011ad.jpg
+news_categories:
 ---
 “As I finish my tenure as Founding Board Chair, I wanted to express my deepest gratitude for all that you have done and continue to do to accelerate solutions to food waste.”
 

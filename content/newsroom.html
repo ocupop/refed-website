@@ -1,95 +1,74 @@
 ---
 layout: default
 title: "Refreshed Content: Consectetuer Adipiscing Elig, Ded Diam Nonummy Nibh Euismod"
-
 hero:
-  preheader: Blog
+  subtitle: Blog
   image: https://picsum.photos/id/435/1000/333
   title: ReFED Appoints Nicola Dixon As New Board Chair
   buttons:
   - label: Read More
     url: http://www.refed.com
-    style: text
-
-
-preheader: Newsroom
-hero-image: https://picsum.photos/id/432/1000/333
-hero-copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+    button_style: text
 footer-cta: 
   headline: Check out ReFED related news and press articles
   label: See Press
   link: /press
 ---
 
-
 {% include modules/subnav-newsroom.html %}
-
 
 {% include modules/hero.html %}
 
-
-
-
-
-
-
   <section class="staff">
     <a name="staff"></a>
-    <div class="container">        
-        <div class="row">
-            <div class="col-12">
-                
-                <div class="">
-                    <div class="form-group">
-                        <label for="jumpmenu">Blog Categories: </label>
-                        <select class="form-control d-inline-block" style="width:inherit;" id="jumpmenu" name="jumpmenu" onChange="alert('selecting a category from the dropdown will filter the results below')">
-                            <option value='#'>All</option>
-                            <option value='#'>Category A</option>
-                            <option value='#'>Category B</option>
-                            <option value='#'>Category C</option>
-                            <option value='#'>Category D</option>
-                            <option value='#'>Category E</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="responsive-card-deck cards-lg-1">
-                    {% for post in site.posts %}
-                    <div class="card mb-4">
-                        <div class="bg-image " style="background-image: url({{ post.image }})"></div>
-                        <div class="card-body">
-                            <h5>{{ post.date | date: "%B %-d, %Y" }}</h5>
-                            <h3>{{ post.title }}</h3>
-                            <p>{{ post.excerpt }}</p>                        
-                            <a href="{{ post.url }}" class="btn btn-primary">Read More</a>                        
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="jumpmenu">Blog Categories: </label>
+            <select class="form-control d-inline-block" style="width:inherit;" id="jumpmenu" name="jumpmenu" onChange="alert('selecting a category from the dropdown will filter the results below')">
+              <option value='#'>All</option>
+              <option value='#'>Category A</option>
+              <option value='#'>Category B</option>
+              <option value='#'>Category C</option>
+              <option value='#'>Category D</option>
+              <option value='#'>Category E</option>
+            </select>
+          </div>  
         </div>
+      </div>     
+      {% for post in site.posts %}
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-4">
+            <div class="bg-image aspect-16x9 mr-lg-5" style="background-image: url({{ post.featured_image }})"></div>
+          </div>
+          <div class="col-lg-8">
+            <h5>{{ post.post_date | date: "%B %-d, %Y" }}</h5>
+            <h3>{{ post.title }}</h3>
+            <hr>
+            <p>{{ post.excerpt }}</p>                        
+            <a href="{{ post.url }}" class="text-link">Read More</a>                        
+          </div>  
+        </div>
+      {% endfor %}
     </div>
 </section>
-
 
 {% include modules/footer-cta.html %}
 
-
-
 <section class="mailing-list-form">
     <a name="mailing-list-form"></a>
-    <div class="container" style="max-width: 800px;">
-        <h4>The latest to your Mailbox</h4>
-        <h2>Subscribe to our MailingList</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
-        
-        {% include modules/form-contact.html %}           
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mx-lg-auto">
+          <h4>The latest to your Mailbox</h4>
+          <h2>Subscribe to our MailingList</h2>
+          <p>Sign up to receive updates from ReFED</p>
+          {% include modules/form-contact.html %}    
+        </div>
+      </div>
     </div>
 </section>
-
-
 
 <section class="footer-cta py-5 bg-light text-center">
     <a name="footer-cta"></a>

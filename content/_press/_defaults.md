@@ -2,7 +2,7 @@
 title:
 date:
 source:
-logo_image:
+featured_image:
 link:
-categories:
+press_categories:
 ---

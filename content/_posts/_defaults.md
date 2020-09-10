@@ -1,10 +1,11 @@
 ---
 layout: post
 title:
-date:
+label:
+post_date:
+news_type:
 author: 
 hero:
-location:
-image:
-footer_cta:
+featured_image:
+news_categories:
 ---

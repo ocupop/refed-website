@@ -140,14 +140,20 @@ _array_structures:
         buttons:
           - button_text:
             link:
+            button_type:
   footer_cta: 
     headline:
     cta_label: 
     link:             
 
 
-          
+news_type:
+  - article
+  - newsletter
 
+button_style:
+  - text
+  - button  
 
 _comments:
   cards: page section for card grid that is not related to a collection
