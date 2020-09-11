@@ -70,10 +70,8 @@ advisory_council:
         </div>
         <div class="col-lg-7 ml-lg-auto">
           <h3>{{ team_member.name }}</h3>
-          {% for role in team_member.roles %}
-            <h5 class="text-mid d-inline-block border-top pt-2">{{role.title}} {{role.organization}}</h5>
-          {% endfor %}
-          <p>{{ team_member.content }}</p>       
+            <h5 class="text-mid d-inline-block border-top pt-2">{{ team_member.position }}</h5>
+          <p>{{ team_member.bio_summary_html }}</p>       
         </div>
       </div>
     {% endfor %}
@@ -97,18 +95,15 @@ advisory_council:
     <div class="row">
       <div class="col-12">
         <div class="responsive-card-deck cards-md-2 staff-2">  
-          {% for person in site.data.board_of_directors %}
+          {% for member in page.board_of_directors.members %}
             <div class="card">
               <div class="card-image">
                 <img src="{{person.image | default: site.placeholder_image }}" alt="title" />
               </div>
               <div class="card-body">
-                <h3 class="card-title">{{person.name}}</h3>
+                <h3 class="card-title">{{member.name}}</h3>
                 <div class="card-text">
-                  {% for role in person.roles %}
-                    <h5 class='title font-serif'>{{role.title}}</h5>
-                    <p>{{role.organization}}</p>  
-                  {% endfor %} 
+                  {{ member.summary_html }}
                 </div>               
               </div>
             </div>
@@ -130,18 +125,15 @@ advisory_council:
         <div class="col-12">
           <div class="responsive-card-deck cards-md-3 staff-2">
               <!-- advisory council loop -->
-              {% for i in (1..10) %}
+              {% for member in page.advisory_council.members %}
                 <div class="card align-items-center">
                   <div class="card-image">
                     <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid" alt="title" />
                   </div>
                   <div class="card-body">
-                    <h3 class="card-title">Firstname Lastname</h3>
+                    <h3 class="card-title">{{ member.name }}</h3>
                     <div class="card-text">
-                      {% for i in (1..2) %}
-                        <h5 class='title font-serif'>Rolename</h5>
-                        <p>Organization Name</p>  
-                      {% endfor %} 
+                      {{ member.summary_html }}
                     </div>               
                   </div>
                 </div>
@@ -168,7 +160,7 @@ advisory_council:
         {% for person in site.data.expert_network %}
           <div class="col-md-6 col-lg-4 mb-3">
             {% if person.name %}<h5 class="mb-0">{{person.name}}</h5>{% endif %}
-            <p class=" gray">
+            <p class="gray">
               {% if person.role %}{{person.role}}{% endif %}{% if person.organization %}, {{person.organization }}{% endif %}
             </p>                              
           </div>
