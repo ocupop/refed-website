@@ -160,7 +160,7 @@ _array_structures:
     link:             
 
 #hard coded select fields
-news_type:
+news_types:
   - article
   - newsletter
 
@@ -168,7 +168,7 @@ button_types:
   - text
   - button
 
-document_type:
+document_types:
   - featured
   - report
   - guide
