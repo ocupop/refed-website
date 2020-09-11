@@ -141,6 +141,10 @@ _array_structures:
           - button_text:
             link:
             button_type:
+  members:
+    name:
+    featured_image:
+    summary_html:            
   footer_cta: 
     headline:
     cta_label: 
