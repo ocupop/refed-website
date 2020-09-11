@@ -37,7 +37,7 @@ footer_cta:
               <div class="bg-image aspect-2x1" style="background-image:url({{ post.image | default: site.placeholder_image }})"></div>
               <div class="card-body">
                 <!--<h3 class="card-title">Card title</h3>-->
-                <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>
+                <div class="card-subtitle mb-2 text-muted">{{ post.post_date | date: "%B %-d, %Y" }}</div>
                 <p class="card-text">{{ post.title }}</p>
                 <a href="{{ post.url }}" class="card-link">Read More</a>
               </div>

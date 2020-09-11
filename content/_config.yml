@@ -11,6 +11,9 @@ insights_engine_url:
 
 # Collections
 collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
   press:
     output: false
     sort_by: date
@@ -161,7 +164,7 @@ news_type:
   - article
   - newsletter
 
-button_style:
+button_type:
   - text
   - button
 

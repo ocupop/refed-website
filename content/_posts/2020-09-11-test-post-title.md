@@ -23,7 +23,7 @@ hero:
     buttons:
       - button_text: This a button
         link: www.google.com
-        button_type:
+        button_type: text
 featured_image:
 news_categories:
 ---
