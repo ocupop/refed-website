@@ -151,9 +151,9 @@ _array_structures:
         summary_html:
         role:
         organization:
-  footer_cta: 
+  cta: 
     headline:
-    cta_label: 
+    label: 
     link:             
 
 #hard coded select fields

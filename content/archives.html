@@ -17,8 +17,10 @@ hero:
   <section class="press">
     <a name="press"></a>
     <div class="container">  
-      {% assign sorted = site.archives | sort_by: 'date' | reverse %} 
-      {% for article in sorted %}    
+      {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
+      
+      {% for article in sorted %}
+        {% if article.news_type == 'newsletter' %}
         <div class="row mb-5">
             <div class="col-2 p-3">   
               <div class="bg-image aspect-4x3" style="background-image:url({{article.image}});"></div>
@@ -32,7 +34,9 @@ hero:
                 </div> 
             </div>           
         </div>
+        {% endif %}
       {% endfor %} 
+      
     </div>
 </section>
 
