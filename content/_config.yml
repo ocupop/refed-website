@@ -164,7 +164,7 @@ news_type:
   - article
   - newsletter
 
-button_type:
+button_types:
   - text
   - button
 
