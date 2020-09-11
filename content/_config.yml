@@ -142,9 +142,12 @@ _array_structures:
             link:
             button_type:
   members:
-    name:
-    featured_image:
-    summary_html:            
+    - label: Members
+      icon: face
+      value:
+        name:
+        featured_image:
+        summary_html:            
   footer_cta: 
     headline:
     cta_label: 
