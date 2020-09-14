@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Test Post Title
+title: Test Post Title 2
 label: Test Post label
-post_date: 2020-09-01 00:00:00
-news_type: article
+post_date: 2020-09-02 00:00:00
+news_type: newsletter
 author: Jon Burr
 hero:
   - title: Hero Title

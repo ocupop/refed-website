@@ -29,18 +29,9 @@ cta:
         </div>
       </div>     
       {% for post in site.posts %}
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-4">
-            <div class="bg-image aspect-16x9 mr-lg-5" style="background-image: url({{ post.featured_image }})"></div>
-          </div>
-          <div class="col-lg-8">
-            <h5>{{ post.post_date | date: "%B %-d, %Y" }}</h5>
-            <h3>{{ post.title }}</h3>
-            <hr>
-            <p>{{ post.excerpt }}</p>                        
-            <a href="{{ post.url }}" class="text-link">Read More</a>                        
-          </div>  
-        </div>
+        {% if post.news_type == 'article' %}
+          {% include modules/post-list-item.html %}
+        {% endif %}
       {% endfor %}
     </div>
 </section>

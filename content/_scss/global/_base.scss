@@ -22,6 +22,6 @@ body {
 a{
   color:$blue;
 }
-.text-white a:not(.text-link):not(.card-link){
+.text-white a:not(.text-link):not(.card-link):not(.btn){
   color:$light-blue;
 }

@@ -10,18 +10,18 @@ hero:
   <a name="press"></a>
   <div class="container">  
     {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
-    {% for article in sorted %}
-      {% if article.news_type == 'newsletter' %}
+    {% for post in sorted %}
+      {% if post.news_type == 'newsletter' %}
       <div class="row mb-5">
-        <div class="col-2 p-3">   
-          <div class="bg-image aspect-4x3" style="background-image:url({{article.image}});"></div>
+        <div class="col-lg-4">   
+          <div class="bg-image aspect-4x3" style="background-image:url({{post.image}});"></div>
         </div>
-        <div class="col-10">
+        <div class="col-lg-8">
           <div class="card-body">
-            <h5 class="text-muted">Published {{ article.date | date: "%B %-d, %Y" }} </h5>
-            <h3>{{ article.title }}</h3>
-            <p>{{ article.content }}</p>                        
-            <a href="{{ article.url }}" class="btn btn-primary">Read More</a>                        
+            <h5 class="text-muted">Published {{ post.post_date | date: "%B %-d, %Y" }} </h5>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | truncatewords: 30 }}</p>                        
+            <a href="{{ post.url }}" class="text-link">Read More</a>                        
           </div> 
         </div>           
       </div>
@@ -30,12 +30,4 @@ hero:
   </div>
 </section>
 
-<section class="mailing-list-form bg-primary text-white">
-  <a name="mailing-list-form"></a>
-  <div class="container" style="max-width: 800px;">
-      <h4>The latest to your Mailbox</h4>
-      <h2>Subscribe to our MailingList</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
-      {% include modules/form-contact.html %}           
-  </div>
-</section>
+{% include modules/mailing-list-form.html %}

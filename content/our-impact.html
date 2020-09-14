@@ -11,7 +11,6 @@ cta:
     position: right
 ---
 
-
 {% include modules/hero.html %}
 
 <section class="page-intro page-intro--our-impact">
@@ -22,78 +21,62 @@ cta:
   </div>
 </section>
 
-
 <!-- This module is repeated on the "Our Impact" page -->
 <section class="funder-impact bg-lightest p-0">
   <a name="funder-impact"></a>
-
   <div class="full-width-carousel two-column-carousel dots-left-in-container">
     {% for casestudy in site.casestudies %}
     <div class="w-100">
       <div class="container extend-to-browser-edge">
         <div class="row">   
-          <div class="py-5 col-12 col-md-5 stretch-left stretch-bkg">
-            
-              <div class="preheader pt-5">Funder Impact Stories</div>
-              <h2 class="editable">{{ casestudy.title }}</h2>
-              <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
-              <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
+          <div class="py-5 col-12 col-lg-5 stretch-left stretch-bkg">
+            <div class="preheader pt-5">Funder Impact Stories</div>
+            <h2 class="editable">{{ casestudy.title }}</h2>
+            <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
+            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
           </div>
-          <div class="p-5 col-12 col-md-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
+          <div class="p-5 col-12 col-lg-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
         </div>
-     
       </div>
     </div>
     {% endfor %}
   </div>
 </section>
 
-
-
-
 <section class="case-studies list-with-filter">
-    <a name="case-studies"></a>
-    <div class="container pt-5"> 
-
-
-      {% assign thisCollection = site.casestudies %}	
-      {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
-      
-  
-      <div class="btn-group dropdown mb-4 filter-case-studies">
-      
+  <a name="case-studies"></a>
+  <div class="container pt-5"> 
+    {% assign thisCollection = site.casestudies %}	
+    {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+    <div class="row">
+      <div class="col-12">
+        <div class="btn-group dropdown mb-4 filter-case-studies">
           <label class="preheader mr-3" for="filter">View: </label>
-  
           <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              View:
+            View:
           </button>
-          
           <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" data-value="all">All</a>
-              {% for eachCat in allCats %}                    
-                <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
-              {% endfor %} 
+            <a class="dropdown-item" href="#" data-value="all">All</a>
+            {% for eachCat in allCats %}                    
+              <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
+            {% endfor %} 
           </div>
+        </div>
       </div>
-
-    
-
-    
+    </div>
+  
     <div class="row">  
-      <div class="col-12 horizontal-carousel-arrows-only filterable-list">   
-      
+      <div class="col-12 horizontal-carousel-arrows-only filterable-list">
       {% for casestudy in site.casestudies %} 
-        <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
+        <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
           <div class="card-body">
             <h3 class="card-title">{{ casestudy.title }}</h3>
-
             <ul class="categories list-group list-group-horizontal">
             {% for cat in casestudy.categories %}                  
                 <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat | slugify }}'>{{ cat }}</span></li>
             {% endfor %} 
             </ul>
-
 
             <div class="card-text">{{ casestudy.content | truncate: 80 }}</div>
             <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
@@ -102,26 +85,20 @@ cta:
       {% endfor %} 
       </div>    
     </div>
-
   </div>
-
 </section>
-
-
-
-
 
 <section class="testimonial testimonial-1 bg-primary text-white">
   <a name="testimonials"></a>
   <a name="testimonial-1"></a>
   <div class="container">
-    <div class="row flex-md-row-reverse">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+    <div class="row flex-lg-row-reverse">    
+      <div class="col-lg-4 mb-5 mb-lg-0">          
+        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="h3 testimonial">
-          <blockquote class="pr-md-5">
+          <blockquote class="pr-lg-5">
             “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
             <footer>
               <div class="cite">
@@ -135,18 +112,17 @@ cta:
     </div>    
   </div>
 </section>
-
 
 <section class="testimonial testimonial-2">
   <a name="testimonial-2"></a>
   <div class="container">
     <div class="row">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      <div class="col-lg-4 mb-5 mb-lg-0">          
+        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="h3 testimonial">
-          <blockquote class="pl-md-5">
+          <blockquote class="pl-lg-5">
             “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
             <footer>
               <div class="cite">
@@ -160,20 +136,17 @@ cta:
     </div>    
   </div>
 </section>
-
-
-
 
 <section class="testimonial testimonial-3 bg-lightest">
   <a name="testimonial-3"></a>
   <div class="container">
-    <div class="row flex-md-row-reverse">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+    <div class="row flex-lg-row-reverse">    
+      <div class="col-lg-4 mb-5 mb-lg-0">          
+        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="h3 testimonial">
-          <blockquote class="pr-md-5">
+          <blockquote class="pr-lg-5">
             “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
             <footer>
               <div class="cite">
@@ -187,19 +160,17 @@ cta:
     </div>    
   </div>
 </section>
-
-
 
 <section class="testimonial testimonial-4 bg-primary text-white">
   <a name="testimonial-4"></a>
   <div class="container">
     <div class="row">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
+      <div class="col-lg-4 mb-5 mb-lg-0">          
+        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="h3 testimonial">
-          <blockquote class="pl-md-5">
+          <blockquote class="pl-lg-5">
             “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
             <footer>
               <div class="cite">

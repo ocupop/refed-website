@@ -3,7 +3,15 @@
   <div class="hero-content">
     <div class="container py-5 text-white">
       <div class="hero-copy">
-        {% if hero.subtitle %}
+        <div class="preheader">Subtitle</div>
+        <h1>Title</h1>
+        <div class="hero-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum rerum consequatur dolorem. Alias unde provident dignissimos
+        </div>
+        <a class="card-link block mr-3" href="#">Link Text</a>
+
+        <!-- add back in logic once field names are established -->
+        <!-- {% if hero.subtitle %}
           <div class='preheader'>{{ hero.subtitle }}</div>
         {% endif %}
         {% if hero.title %}
@@ -25,7 +33,7 @@
               <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
             {% endfor %}
           </div>
-        {% endif %}
+        {% endif %} -->
       </div>
       <div class="hero-social">
         <a href="#" class="linkedin">
