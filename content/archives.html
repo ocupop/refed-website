@@ -2,53 +2,40 @@
 layout: default
 title: Newsletter Archive
 hero:
-  image: https://picsum.photos/id/435/1000/333
-  preheader: Newsroom
-  title: Newsletter Archive
 ---
-
-
 {% include modules/subnav-newsroom.html %}
-
-
 {% include modules/hero.html %}
 
-
-  <section class="press">
-    <a name="press"></a>
-    <div class="container">  
-      {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
-      
-      {% for article in sorted %}
-        {% if article.news_type == 'newsletter' %}
-        <div class="row mb-5">
-            <div class="col-2 p-3">   
-              <div class="bg-image aspect-4x3" style="background-image:url({{article.image}});"></div>
-            </div>
-            <div class="col-10">
-                <div class="card-body">
-                    <h5 class="text-muted">Published {{ article.date | date: "%B %-d, %Y" }} </h5>
-                    <h3>{{ article.title }}</h3>
-                    <p>{{ article.content }}</p>                        
-                    <a href="{{ article.url }}" class="btn btn-primary">Read More</a>                        
-                </div> 
-            </div>           
+<section class="press">
+  <a name="press"></a>
+  <div class="container">  
+    {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
+    {% for article in sorted %}
+      {% if article.news_type == 'newsletter' %}
+      <div class="row mb-5">
+        <div class="col-2 p-3">   
+          <div class="bg-image aspect-4x3" style="background-image:url({{article.image}});"></div>
         </div>
-        {% endif %}
-      {% endfor %} 
-      
-    </div>
+        <div class="col-10">
+          <div class="card-body">
+            <h5 class="text-muted">Published {{ article.date | date: "%B %-d, %Y" }} </h5>
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.content }}</p>                        
+            <a href="{{ article.url }}" class="btn btn-primary">Read More</a>                        
+          </div> 
+        </div>           
+      </div>
+      {% endif %}
+    {% endfor %} 
+  </div>
 </section>
 
-
 <section class="mailing-list-form bg-primary text-white">
-    <a name="mailing-list-form"></a>
-    <div class="container" style="max-width: 800px;">
-        <h4>The latest to your Mailbox</h4>
-        <h2>Subscribe to our MailingList</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
-        
-        {% include modules/form-contact.html %}           
-    
-    </div>
+  <a name="mailing-list-form"></a>
+  <div class="container" style="max-width: 800px;">
+      <h4>The latest to your Mailbox</h4>
+      <h2>Subscribe to our MailingList</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p> 
+      {% include modules/form-contact.html %}           
+  </div>
 </section>
