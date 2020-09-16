@@ -13,7 +13,7 @@ const SolutionDetail = ({ endpoint}) => {
   }, [])
   console.log('solution', solution)
   return (
-    <div>
+    <div className="bg-light text-dark mb-5 p-3">
       <p><strong>API Enpoint</strong> {endpoint}</p>
       <div>{solution && JSON.stringify(solution, null, 2)}</div>
     </div>
