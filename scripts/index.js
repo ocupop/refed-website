@@ -2,10 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
 import StakeholdersList from './StakeholdersList'
+import SolutionDetail from './SolutionDetail'
 
 const COMPONENTS = {
   HelloWorld,
-  StakeholdersList
+  StakeholdersList,
+  SolutionDetail
 }
 
 function renderComponentInElement(el) {
