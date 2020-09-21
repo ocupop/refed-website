@@ -56,8 +56,7 @@ wireframes-partner:
 
 {% include modules/hero.html %}
 
-<section class="overview">
-  <a name="overview"></a>
+<section>
   <div class="container">
     <ul class="row circle-icon-list circle-icon-list--small-list p-0 w-100">
       <li class="d-md-flex col-md-6">
@@ -96,8 +95,7 @@ wireframes-partner:
   </div>
 </section>
 
-<section class="call-for-funders bg-primary text-white">
-  <a name="call-for-funders"></a>
+<section class="bg-primary text-white">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -108,8 +106,8 @@ wireframes-partner:
   </div>  
 </section>
 
-<section class="help-us-find-solutions">
-  <div class="container ">
+<section>
+  <div class="container">
     <div class="row d-flex align-items-center">    
       <div class="col-md-12">
         <h2>Help Us Find Solutions</h2>
@@ -120,8 +118,7 @@ wireframes-partner:
   </div>
 </section>
 
-<section class="funder-impact-stories">
-  <a name="funder-impact-stories"></a>
+<section>
   <div class="container">
     <div class="full-width-carousel two-column-carousel dots-left">
       {% for num in (1..4) %}
@@ -147,8 +144,7 @@ wireframes-partner:
 
 {% include modules/cta.html %}
 
-<section class="partner-with-us bg-primary text-white">
-  <a name="partner-with-us"></a>
+<section class="bg-primary text-white">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -159,53 +155,42 @@ wireframes-partner:
   </div>  
 </section>
 
-
-
-
-
-
-
-
-<section class="case-studies list-with-filter">
-    <a name="case-studies"></a>
-    <div class="container pt-5"> 
-
-
-    <!-- Default dropup button -->
-    <div class="btn-group dropdown mb-4 filter-case-studies">
-    
-        <label class="preheader mr-3" for="filter">View: </label>
-
-        <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<section class="list-with-filter">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-12">
+        <!-- Default dropup button -->
+        <div class="btn-group dropdown mb-4 filter-case-studies">
+          <label class="preheader mr-3" for="filter">View: </label>
+          <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             View:
-        </button>
-        
-        <div class="dropdown-menu">
+          </button>
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="#" data-value="all">All</a>
             {% for cat_arr in page.wireframes-categories %}  
-            {% for cat in cat_arr %}            
-            <a class="dropdown-item" href="#" data-value="{{ cat[0] }}">{{ cat[1] }}</a>
+              {% for cat in cat_arr %}            
+                <a class="dropdown-item" href="#" data-value="{{ cat[0] }}">{{ cat[1] }}</a>
+              {% endfor %} 
             {% endfor %} 
-            {% endfor %} 
+          </div>
         </div>
-    </div>
-
+      </div>
+    </div> 
     <div class="row">  
       <div class="col-12 horizontal-carousel-arrows-only filterable-list">   
-      
       {% for partner in page.wireframes-partner %}     
         <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in partner.categories %}{{ cat }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ partner.image }})" ></div>
           <div class="card-body">
             <h3 class="card-title">{{ partner.name }}</h3>
             <ul class="categories list-group list-group-horizontal">
-            {% for cat in partner.categories %}  
+              {% for cat in partner.categories %}  
                 {% for cat_arr in page.wireframes-categories %}{% for cat2 in cat_arr %} 
-                    {% if cat2[0] == cat %}
+                  {% if cat2[0] == cat %}
                     <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat2[0] }}'>{{ cat2[1] }}</span></li>
-                    {% endif %}
+                  {% endif %}
                 {% endfor %}{% endfor %} 
-            {% endfor %} 
+              {% endfor %} 
             </ul>
             <div class="card-text">{{ partner.description }}</div>
           </div>
@@ -213,9 +198,7 @@ wireframes-partner:
       {% endfor %} 
       </div>    
     </div>
-
   </div>
-
 </section>
 
 

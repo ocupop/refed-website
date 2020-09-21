@@ -89,6 +89,7 @@ _array_structures:
         buttons:
           - button_text:
             link:
+            button_type:
   testimonials:
     - label: Testimonial
       icon: format_quote

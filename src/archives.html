@@ -7,7 +7,6 @@ hero:
 {% include modules/hero.html %}
 
 <section class="press">
-  <a name="press"></a>
   <div class="container">  
     {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
     {% for post in sorted %}
