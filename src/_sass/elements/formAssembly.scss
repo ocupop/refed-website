@@ -1,0 +1,45 @@
+.wFormContainer {
+  .wFormHeader {
+    display: none !important;
+  }
+  .wForm {
+    form {
+      padding: 0 !important;
+      > div.oneField {
+        border: 0;
+        padding: 2px 0;
+        margin-top: 5px;
+        &:nth-of-type(1) {
+          margin-top: 0;
+        }
+      }
+    }
+    .inputWrapper {
+      input[type="text"],
+      input[type="email"] {
+        border: 0 !important;
+        line-height: 48px !important;
+        height: 48px !important;
+        font-size: 13px !important;
+      }
+    }
+    .inputWrapper select:not([multiple]) {
+      height: 48px !important;
+      line-height: 48px !important;
+      border: 0 !important;
+    }
+    .actions {
+      padding: 0 !important;
+      border: 0;
+      .primaryAction {
+        padding: 0 16px !important;
+        height: 48px !important;
+        line-height: 48px !important;
+        margin-top: 0 !important;
+        text-transform: uppercase !important;
+        font-weight: 100 !important;
+      }
+    }
+  }
+  
+}
