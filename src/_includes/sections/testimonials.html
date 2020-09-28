@@ -1,4 +1,4 @@
-<section class="bg-light">
+<!-- <section class="bg-light">
   <div class="container">
     <div id="carousel-testimonials-{{ forloop.index }}" class="carousel slide pb-5" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -32,5 +32,26 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
+</section> -->
+<section class="testimonials bg-primary text-white darken-bkg-image" style="background-image:url({{ section.background_image | default: 'https://picsum.photos/id/155/1000/333' }});">
+  <div class="carousel-testimonials">      
+    {% for testimonial in section.testimonials %}
+    <div class="testimonial w-100" >  
+      <div class="container">     
+        <div class="row">
+          <div class="col-12 text-center">
+            <blockquote>
+              "{{ testimonial.content }}"
+              <footer class="font-serif">
+                <div class='cite'>—{{ testimonial.name }}</div>
+                <div class='credentials font-italic'>{{ testimonial.cite }}</div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}    
   </div>
 </section>

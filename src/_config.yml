@@ -75,6 +75,7 @@ _array_structures:
       icon: format_quote
       value:
         _type: testimonials
+        background_image:
         testimonials:
     - label: Hero
       icon: panorama
@@ -90,6 +91,7 @@ _array_structures:
           - button_text:
             link:
             button_type:
+
   testimonials:
     - label: Testimonial
       icon: format_quote
@@ -138,7 +140,7 @@ _array_structures:
         buttons:
           - button_text:
             link:
-            button_type:
+            button_type:       
   members:
     - label: Members
       icon: face
