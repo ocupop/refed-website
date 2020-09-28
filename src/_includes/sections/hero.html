@@ -1,7 +1,4 @@
-<section class="hero">
-  <div class="hero-image darken-bkg-image"
-    style="background-image:url({% if section.hero.image %}{{section.image}}{% else if section.image %}{{section.image | default: site.placeholder_image }}{% endif %});">
-  </div>
+<section class="hero bg-image" style="background-image: url({{ section.image | default: site.placeholder_image }});">
   <div class="hero-content">
     <div class="container py-5 text-white">
       <div class="hero-copy">
@@ -19,12 +16,12 @@
           </div>
         {% endif %}
         {% if section.link %}
-          <a class="card-link block mr-3" href="{{ section.link }}">{{ section.link_text }}</a>
+          <a class="card-link block mr-3" href="{{ section.link }}">{{ section.link_label }}</a>
         {% endif %}
         {% if section.buttons %}
         <div class="hero-buttons mt-3">
           {% for button in section.buttons %}
-          <a class="btn btn-secondary block mr-3" href="{{ button.link }}">{{ button.text }}</a>
+          <a class="btn btn-secondary block mr-3" href="{{ button.link }}">{{ button.link_label }}</a>
           {% endfor %}
         </div>
         {% endif %}

@@ -285,4 +285,37 @@ btns.forEach(function(btn) { // for each option in this dropdown
     body.classList.toggle("modal-open");
   }); 
 }); 
-}  
+}
+
+
+jQuery(function(){
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    navText: [
+      '<i class="ri-arrow-left-s-fill"></i>',
+      '<i class="ri-arrow-right-s-fill"></i>'
+    ],
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      500: {
+        items: 1
+      },
+      666: {
+        items: 1
+      },
+      991: {
+        items: 2
+      },
+      1156: {
+        items: 3
+      },
+    }
+  })
+})
+

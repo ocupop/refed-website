@@ -91,6 +91,13 @@ _array_structures:
           - button_text:
             link:
             button_type:
+    - label: Call to action
+      icon:
+      value:
+        _type: cta
+        description_html:
+        link_label:
+        link:            
 
   testimonials:
     - label: Testimonial

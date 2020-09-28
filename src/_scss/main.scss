@@ -25,6 +25,7 @@
 @import "modules/footer_cta.scss";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
+@import "modules/owl_carousel";
 @import "modules/reduction_solutions_chart";
 
 @import "pages/our_funders";
@@ -38,4 +39,6 @@
 @import "nav/sticky_nav";
 
 @import "vendor/bootstrap";
+@import "vendor/owl/theme.default";
+@import "vendor/owl/owl.carousel";
 
