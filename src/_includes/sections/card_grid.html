@@ -37,30 +37,24 @@
             </div>
           {% endfor %} 
         </div>
-        <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="owl-carousel">
-                  {% for card in section.cards %}
-                    <div class="card">
-                      <img class="card-img-top" src="{{ card.featured_image | default: site.placeholder_image }}" alt="{{ card.title }} image" />
-                      <div class="card-body">
-                        <h3 class="card-title">{{ card.title }}</h3>
-                        <div class="card-text">{{ card.text }}</div>
-                        {% if card.link %}
-                        <p class="mt-3">
-                          <a href="{{ card.link }}" class="card-link">{{ card.link_text | default: 'Read More'}}</a>
-                        </p>
-                        {% endif %}
-                      </div>
-                    </div>
-                  {% endfor %}
-                </div>
+        
+        <div class="owl-carousel">
+          {% for card in section.cards %}
+            <div class="card">
+              <img class="card-img-top" src="{{ card.featured_image | default: site.placeholder_image }}" alt="{{ card.title }} image" />
+              <div class="card-body">
+                <h3 class="card-title">{{ card.title }}</h3>
+                <div class="card-text">{{ card.text }}</div>
+                {% if card.link %}
+                <p class="mt-3">
+                  <a href="{{ card.link }}" class="card-link">{{ card.link_text | default: 'Read More'}}</a>
+                </p>
+                {% endif %}
               </div>
             </div>
-          </div>
-        </section> 
+          {% endfor %}
+        </div>
+       
       </div>
     </div>
   </div>
