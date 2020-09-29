@@ -25,7 +25,7 @@ cta:
 <section class="funder-impact bg-lightest p-0">
   <a name="funder-impact"></a>
   <div class="full-width-carousel two-column-carousel dots-left-in-container">
-    {% for casestudy in site.casestudies %}
+    {% for casestudy in site.case_studies %}
     <div class="w-100">
       <div class="container extend-to-browser-edge">
         <div class="row">   
@@ -46,7 +46,7 @@ cta:
 <section class="case-studies list-with-filter">
   <a name="case-studies"></a>
   <div class="container pt-5"> 
-    {% assign thisCollection = site.casestudies %}	
+    {% assign thisCollection = site.case_studies %}	
     {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
     <div class="row">
       <div class="col-12">
@@ -67,7 +67,7 @@ cta:
   
     <div class="row">  
       <div class="col-12 horizontal-carousel-arrows-only filterable-list">
-      {% for casestudy in site.casestudies %} 
+      {% for casestudy in site.case_studies %} 
         <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
           <div class="card-body">

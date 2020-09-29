@@ -86,18 +86,24 @@ _array_structures:
         description_html:
         image:
         link:
-        link_text:
+        link_label:
         buttons:
-          - button_text:
-            link:
+          - link:
+            link_label:
             button_type:
     - label: Call to action
-      icon:
+      icon: call_to_action
       value:
         _type: cta
         description_html:
+        link:
         link_label:
-        link:            
+    - label: Two Column Carousel
+      icon: view_carousel
+      value:
+        _type: carousel_two_column
+        two_column_slide:
+
 
   testimonials:
     - label: Testimonial
@@ -145,8 +151,8 @@ _array_structures:
         link:
         link_text:
         buttons:
-          - button_text:
-            link:
+          - link:
+            link_label:
             button_type:       
   members:
     - label: Members
@@ -164,10 +170,23 @@ _array_structures:
         summary_html:
         role:
         organization:
-  cta: 
-    headline:
-    label: 
-    link:             
+  cta:
+    - label: Call to action
+      icon: call_to_action
+      value:
+        description_html:
+        link:
+        link_label:
+  two_column_slide:
+    - label: Two Column Slide
+      icon: chrome_reader_mode
+      value:
+        image:
+        title:
+        description_html:
+        link:
+        link_label:
+        
 
 #hard coded select fields
 news_types:

@@ -72,7 +72,7 @@ var flkty_slide = new Flickity( elem, {
   cellAlign: 'left'
 });
 });
-}   
+}
 
 
 
@@ -80,13 +80,13 @@ var flkty_slide = new Flickity( elem, {
 /* 3 cards at a time (Home page "What can I do to solve food waste") */
 var elem = document.querySelector('.three-card-carousel');
 if(elem){
-var flkty_three_card = new Flickity( elem, {
-cellAlign: 'left',
-contain: true,
-"wrapAround": true,
-prevNextButtons: true,
-pageDots: true,
-adaptiveHeight: true
+  var flkty_three_card = new Flickity( elem, {
+  cellAlign: 'left',
+  contain: true,
+  "wrapAround": true,
+  prevNextButtons: true,
+  pageDots: true,
+  adaptiveHeight: false
 });
 }
 
@@ -108,7 +108,6 @@ this.element.classList.add('flickity-resize');
 };
 
 
-
 /* Layout is the same as the ".three-card-carousel", but there are no dots.  */
 /* Pages: Our Impact, Food Waste Solutions */
 var elems = document.querySelectorAll('.horizontal-carousel-arrows-only');
@@ -120,47 +119,40 @@ var flkty_arrowsonly = new Flickity( elem, {
   "wrapAround": true,
   prevNextButtons: true,
   pageDots: false,
-  adaptiveHeight: false
+  adaptiveHeight: true
 });
 });  
 }   
 
 
-
-
-
 /* Testimonials (Multiple Pages) */
 var elem = document.querySelector('.carousel-testimonials');
 if(elem){
-var flkty_testimonials = new Flickity( elem, {
-cellAlign: 'left',
-contain: true,
-"wrapAround": true,
-prevNextButtons: true,
-pageDots: true,
-adaptiveHeight: true
+  var flkty_testimonials = new Flickity( elem, {
+  cellAlign: 'left',
+  contain: true,
+  "wrapAround": true,
+  prevNextButtons: true,
+  pageDots: true,
+  adaptiveHeight: true
 });
 }
+
+
 
 
 /* Logo Carousel (Home Page Funders) */
 var elem = document.querySelector('.logo-carousel');
 if(elem){
-var flkty_logos = new Flickity( elem, {
-cellAlign: 'center',
-contain: true,
-"wrapAround": true,
-prevNextButtons: true,
-pageDots: false,
-adaptiveHeight: false
-});
+  var flkty_logos = new Flickity( elem, {
+  cellAlign: 'center',
+  contain: true,
+  "wrapAround": true,
+  prevNextButtons: true,
+  pageDots: false,
+  adaptiveHeight: true
+  });
 }
-
-
-
-
-
-
 
 
 /*
@@ -193,28 +185,28 @@ contain: true,
 /* BEGIN filterable list */
 var filtered_list = document.querySelectorAll('.list-with-filter'); // for each dropdown on the page
 if(filtered_list){
-filtered_list.forEach(function(section) {
-init_dropdown(section);
-init_filter_buttons(section);
-});
+  filtered_list.forEach(function(section) {
+  init_dropdown(section);
+  init_filter_buttons(section);
+  });
 }
 
 function init_dropdown(section){
 var dropdown = section.querySelector('.dropdown');
 var options = dropdown.querySelectorAll('.dropdown-item');
 if(options){
-options.forEach(function(btn) { // for each option in this dropdown
-  dropdown.querySelector('.dropdown-select').textContent = options[0].textContent;
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
+  options.forEach(function(btn) { // for each option in this dropdown
+    dropdown.querySelector('.dropdown-select').textContent = options[0].textContent;
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-    var value = btn.getAttribute("data-value");
-    var list = section.querySelector('.filterable-list');
+      var value = btn.getAttribute("data-value");
+      var list = section.querySelector('.filterable-list');
 
-    filterList(section,value);
-  }); 
-});
-}
+      filterList(section,value);
+    }); 
+  });
+  }
 }
 
 
@@ -250,21 +242,21 @@ for (var i=0; i < listitems.length; i++) {
 listitems[i].style.display = '';
 }
 if(filter !== 'all'){
-var listitems = list.querySelectorAll('.card:not(.'+filter+')');  
-for (var i=0; i < listitems.length; i++) {
-    listitems[i].style.display = 'none';
-}
+  var listitems = list.querySelectorAll('.card:not(.'+filter+')');  
+  for (var i=0; i < listitems.length; i++) {
+      listitems[i].style.display = 'none';
+  }
 }
 
 
 // change the value of the dropdown menu as well.  
 var options = dropdown.querySelectorAll('.dropdown-item');
 for (var i=0; i < options.length; i++) {
-var label = 'Select';
-if(options[i].getAttribute('data-value') == filter){
-  var label = options[i].textContent;
-  break;
-}
+  var label = 'Select';
+  if(options[i].getAttribute('data-value') == filter){
+    var label = options[i].textContent;
+    break;
+  }
 }  
 dropdown.querySelector('.dropdown-select').textContent = label;
 var flkty = Flickity.data( list )
@@ -272,7 +264,6 @@ flkty.resize(); // TODO: this should be variable.
 }
 
 /* END filterable list */
-
 
 
 var btns = document.querySelectorAll('.toggle-newsletter-modal');
@@ -286,36 +277,3 @@ btns.forEach(function(btn) { // for each option in this dropdown
   }); 
 }); 
 }
-
-
-jQuery(function(){
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    navText: [
-      '<i class="ri-arrow-left-s-fill"></i>',
-      '<i class="ri-arrow-right-s-fill"></i>'
-    ],
-    autoplay: true,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 1
-      },
-      666: {
-        items: 1
-      },
-      991: {
-        items: 2
-      },
-      1156: {
-        items: 3
-      },
-    }
-  })
-})
-
