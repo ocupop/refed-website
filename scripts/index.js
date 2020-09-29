@@ -145,11 +145,10 @@ if(elem){
 var elem = document.querySelector('.logo-carousel');
 if(elem){
   var flkty_logos = new Flickity( elem, {
-  cellAlign: 'center',
   contain: true,
+  cellAlign: 'left',
   "wrapAround": true,
   prevNextButtons: true,
-  items: 5,
   pageDots: false,
   adaptiveHeight: false
   });

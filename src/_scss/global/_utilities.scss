@@ -101,6 +101,11 @@
   }
 }
 
+.logo-item {
+  width: 20%;
+  padding: 20px;
+}
+
 @media screen and (min-width: $screen-md-min){
   ul.two-column-list{
     column-count: 2;
@@ -141,11 +146,11 @@ SAMPLE
     top: 0;
     bottom: 0;
     display: block;  
-    z-index:-1;
+    z-index: 0;
   }        
   .stretch-image {
     .stretched-inner { 
-      z-index:1
+      z-index: 1
     }
     > .stretched-inner { 
       background-size: cover;
@@ -169,19 +174,19 @@ SAMPLE
     .stretch-left .stretched-inner, 
     .stretch-right .stretched-inner{
         width: calc(100% + (((100vw) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-        @media screen and (max-width:  $screen-xl-min) {
-            width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
+        @media screen and (max-width:  $screen-lg-min) {
+          width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
         }
-        @media screen and (max-width: $screen-lg-min){
-            width: calc(100% + (((100vw) - #{map-get($container-max-widths, 'md')}) / 2));
+        @media screen and (max-width: $screen-md-min){
+          width: calc(100% + (((100vw) - #{map-get($container-max-widths, 'md')}) / 2));
         }
     }
     
     .stretch-left .stretched-inner{
-        right:0;
+      right: 0;
     }
     .stretch-right .stretched-inner{
-        left:0;
+      left: 0;
     }      
   }
   
