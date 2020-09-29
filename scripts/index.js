@@ -69,7 +69,8 @@ var flkty_slide = new Flickity( elem, {
   prevNextButtons: false,
   pageDots: true,
   "wrapAround": true,
-  cellAlign: 'left'
+  cellAlign: 'left',
+  adaptiveHeight: false
 });
 });
 }
