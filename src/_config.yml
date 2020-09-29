@@ -103,6 +103,11 @@ _array_structures:
       value:
         _type: carousel_two_column
         two_column_slide:
+    - label: Logo Carousel
+      icon: insert_photo
+      value:
+        _type: carousel_logos
+        logo:
 
 
   testimonials:
@@ -186,6 +191,13 @@ _array_structures:
         description_html:
         link:
         link_label:
+  logo:
+    - label: Logo
+      icon: insert_photo
+      value:
+        image:
+        link:
+        title:        
         
 
 #hard coded select fields

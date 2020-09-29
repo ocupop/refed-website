@@ -39,11 +39,10 @@ if(matches){
 
 var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({
-      triggerElement: "#sticky-nav",
-      triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
-    })
+    triggerElement: "#sticky-nav",
+    triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
+  })
     .setPin("#sticky-nav")
-    
     //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 
@@ -53,25 +52,25 @@ var scene = new ScrollMagic.Scene({
 /* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
 var elem = document.querySelector('.homepage-newsfeed .news-carousel');
 if(elem){
-var flkty_featurednews = new Flickity( elem, {
-prevNextButtons: true,
-pageDots: false,
-"wrapAround": true,
-cellAlign: 'left'
-});
+  var flkty_featurednews = new Flickity( elem, {
+    prevNextButtons: true,
+    pageDots: false,
+    "wrapAround": true,
+    cellAlign: 'left'
+  });
 }
 
 /* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
 var elems = document.querySelectorAll('.full-width-carousel');
 if(elems){
-elems.forEach(function(elem) {
-var flkty_slide = new Flickity( elem, {
-  prevNextButtons: false,
-  pageDots: true,
-  "wrapAround": true,
-  cellAlign: 'left',
-  adaptiveHeight: false
-});
+  elems.forEach(function(elem) {
+    var flkty_slide = new Flickity( elem, {
+    prevNextButtons: false,
+    pageDots: true,
+    "wrapAround": true,
+    cellAlign: 'left',
+    adaptiveHeight: false
+  });
 });
 }
 
