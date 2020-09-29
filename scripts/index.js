@@ -94,17 +94,17 @@ if(elem){
 Flickity.prototype._createResizeClass = function() {
 var that = this;
 setTimeout(function(){ 
-that.element.classList.add('flickity-resize');
-}, 1000);
+  that.element.classList.add('flickity-resize');
+  }, 1000);
 };
 
 Flickity.createMethods.push('_createResizeClass');
 
 var resize = Flickity.prototype.resize;
 Flickity.prototype.resize = function() {
-this.element.classList.remove('flickity-resize');
-resize.call( this );
-this.element.classList.add('flickity-resize');
+  this.element.classList.remove('flickity-resize');
+  resize.call( this );
+  this.element.classList.add('flickity-resize');
 };
 
 
@@ -120,7 +120,7 @@ var flkty_arrowsonly = new Flickity( elem, {
   prevNextButtons: true,
   pageDots: false,
   adaptiveHeight: true
-});
+  });
 });  
 }   
 
@@ -149,8 +149,9 @@ if(elem){
   contain: true,
   "wrapAround": true,
   prevNextButtons: true,
+  items: 5,
   pageDots: false,
-  adaptiveHeight: true
+  adaptiveHeight: false
   });
 }
 
