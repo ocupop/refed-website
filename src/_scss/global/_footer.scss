@@ -41,14 +41,17 @@
     }
   }
   .stay-connected-column {
-    //padding-left: 10%;
     h3 {
-      font-size: 30px;
       margin-bottom: 23px;
       font-weight: $font-weight-bold;
     }
-    .social-media-icons{
-
+    .social-icon{
+      font-size: 23px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .newsletter-signup {
       margin-top: 36px;
@@ -116,9 +119,6 @@
     }
     .stay-connected-column{
       padding-left: 10%;
-      h3 {
-        font-size: 30px;
-      }
     }
   }
 }

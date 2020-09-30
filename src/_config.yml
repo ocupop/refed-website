@@ -7,6 +7,9 @@ url: 'https://victorious-shoe.cloudvent.net'
 # url: 'http://www.refed.com' # the base hostname & protocol for your site
 permalink: pretty
 
+twitter_url: https://twitter.com/refed
+linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
+
 insights_engine_url:  
 
 # Collections
@@ -182,6 +185,9 @@ _array_structures:
         description_html:
         link:
         link_label:
+        colorbar:
+          color:
+          bar_position:  
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode
@@ -213,6 +219,10 @@ document_types:
   - featured
   - report
   - guide
+
+bar_position:
+  - left
+  - right  
 
 _comments:
   cards: page section for card grid that is not related to a collection

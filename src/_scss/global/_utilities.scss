@@ -146,7 +146,7 @@ SAMPLE
     top: 0;
     bottom: 0;
     display: block;  
-    z-index: 0;
+    z-index: -1;
   }        
   .stretch-image {
     .stretched-inner { 

@@ -2,13 +2,11 @@
 layout: page
 title: Home
 hero:
-  image: /uploads/istockphoto-1222296683-1024x1024.png
-  title: >-
-    We're on a mission to end food waste through data-driven solutions
-footer_cta:
-  headline: Find out more how to engage with ReFED no matter what field you are in
-  label: Find more ways to engage
-  link:   
+cta:
+  description_html: >-
+    <p>Find out more how to engage with ReFED no matter what field you are in</p>
+  link:
+  link_label: Find more ways to engage
 ---
 
 {% include modules/hero.html %}
@@ -30,7 +28,7 @@ footer_cta:
 <section class="homepage-newsfeed pt-0">
   <div class="container extend-to-browser-edge">
     <div class="row">
-      <div class="leftcol excerpts-column stretch-left stretch-bkg col-lg-8 bg-lightest pt-5">       
+      <div class="leftcol excerpts-column stretch-left stretch-bkg col-md-8 bg-lightest pt-5">       
         <span class="stretched-inner bg-lightest"></span>
         <div class="news-carousel">
           {% for post in site.posts %}
@@ -46,7 +44,7 @@ footer_cta:
             {% endfor %}
         </div>          
       </div>
-      <div class="rightcol cta-column stretch-right stretch-bkg col-12 col-lg-4 py-5 px-lg-5">
+      <div class="rightcol cta-column stretch-right stretch-bkg col-12 col-md-4 py-5 px-lg-5">
         <span class='stretched-inner bg-light'></span>
         <p class="lead editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</p>
         <a href="/contact" class="btn btn-success btn-lg font-serif mt-5">Subscribe</a>

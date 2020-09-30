@@ -1,31 +1,19 @@
 {% assign hero = page.hero.first %}
-<div class="hero bg-image" style="background-image:url({% if page.hero.image %}{{page.hero.image}}{% else if page.image %}{{page.image | default: site.placeholder_image }}{% endif %});">
+<div class="hero bg-image" style="background-image:url({{ hero.image | default: site.placeholder_image }});">
   <div class="hero-content">
     <div class="container py-5 text-white">
       <div class="hero-copy">
-        <div class="preheader">Subtitle</div>
-        <h1>Title</h1>
-        <div class="hero-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum rerum consequatur dolorem. Alias unde provident dignissimos
-        </div>
-        <a class="card-link block mr-3" href="#">Link Text</a>
-
-        <!-- add back in logic once field names are established -->
-        <!-- {% if hero.subtitle %}
-          <div class='preheader'>{{ hero.subtitle }}</div>
+        {% if hero.subtitle %}
+        <div class="preheader">{{ hero.subtitle }}</div>
         {% endif %}
         {% if hero.title %}
-          <h1>{{ hero.title }}</h1>
-        {% else if hero.title %}
-          <h1>{{ hero.title }}</h1>
+        <h1>{{ hero.title }}</h1>
         {% endif %}
         {% if hero.description_html %}
-          <div class="hero-p">
-            {{ hero.description_html }}
-          </div>
+          {{ hero.description_html }}
         {% endif %}
         {% if hero.link %}
-          <a class="card-link block mr-3" href="{{ hero.link }}">{{ hero.link_text }}</a>
+          <a class="card-link block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
         {% endif %}
         {% if hero.buttons %}
           <div class="hero-buttons mt-3">
@@ -33,13 +21,13 @@
               <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
             {% endfor %}
           </div>
-        {% endif %} -->
+        {% endif %}
       </div>
       <div class="hero-social">
-        <a href="#" class="linkedin">
+        <a href="{{ site.linkedin_url }}" class="linkedin" target="_blank" rel="noopener">
           <i class="ri-linkedin-fill"></i>
         </a>
-        <a href="#" class="twitter">
+        <a href="{{ site.twitter_url }}" class="twitter" target="_blank" rel="noopener">
           <i class="ri-twitter-fill"></i>
         </a>              
       </div>
