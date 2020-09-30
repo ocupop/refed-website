@@ -211,8 +211,8 @@ _array_structures:
         title:
         description_html:
         documents:
-          document_label:
-          document:
+          - document_label:
+            document:
         videos:
           title:
           embed_url:
