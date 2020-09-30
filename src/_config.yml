@@ -203,7 +203,19 @@ _array_structures:
       value:
         image:
         link:
-        title:        
+        title:
+  document:
+    - label: Document section
+      icon: article
+      value:
+        title:
+        description_html:
+        documents:
+          document_label:
+          document:
+        videos:
+          title:
+          embed_url:
         
 
 #hard coded select fields
