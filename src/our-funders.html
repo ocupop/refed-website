@@ -2,14 +2,28 @@
 layout: default
 title: Our Funders
 hero:
-cta: 
-  description_html: >- 
-    <p>To learn how you can support our mission, please contact us via email.</p>
+  - title: >-
+      Investing in ReFED is an investment in a sustainable, resilient, and
+      inclusive food system.
+    subtitle:
+    description_html:
+    image:
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
+cta:
+  description_html: >-
+    <p>To learn how you can support our mission, please contact us via
+    email.</p>
   link: /contact
   link_label: Contact Us
   colorbar:
-    color: "#e65e4a"
-    bar_position: left
+    color: '#e65e4a'
+    bar_position:
+      - left
 ---
 
 {% include modules/hero.html %}
@@ -40,10 +54,10 @@ cta:
       <div class="col-12">
         <div class="row flex-wrap align-items-center">
           {% for i in (1..20) %}
-            {% cycle '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>'
+            {% cycle '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>'
             %}
           {% endfor %}
         </div>
