@@ -1,99 +1,58 @@
 ---
 layout: default
-title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod tempor incididunt ut lablre ed dolore magna aliqua.'
+title: Our Funders
 hero:
 cta: 
-  headline: To learn how you can support our mission, please contact us via email.
-  label: Contact Us
+  description_html: >- 
+    <p>To learn how you can support our mission, please contact us via email.</p>
   link: /contact
+  link_label: Contact Us
   colorbar:
     color: "#e65e4a"
-    position: left
+    bar_position: left
 ---
 
 {% include modules/hero.html %}
 
-<section class="page-intro page-intro--our-funders">
+<section class="page-intro">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="lead editable" >
-          Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.
-        </div>
+      <div class="col-lg-10">
+        <p class="lead editable mb-0">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus alias minima consectetur? Consequuntur perferendis veniam expedita aut nisi qui, reprehenderit velit nobis iste fugiat commodi? Aperiam earum ea modi amet.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="overview">
-  <a name="overview"></a>
+<section class="bg-lightest">
   <div class="container">
     <div class="row">
+      <div class="col-lg-10">
+        <h2 class="preheader editable">Our Funders</h2>
+        <div class="editable">
+          <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-12">
-        <h2 class="preheader mb-5">Our Funders</h2>
-        <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
+        <div class="row flex-wrap align-items-center">
+          {% for i in (1..20) %}
+            {% cycle '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>',
+              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..."></div>'
+            %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- This module is repeated on the "Our Impact" page -->
-<section class="funder-impact bg-primary text-white p-0">
-  <a name="funder-impact"></a>
-  <div class="full-width-carousel two-column-carousel dots-left-in-container">
-    {% for num in (1..4) %}
-    <div class="w-100">
-      <div class="container extend-to-browser-edge">
-        <div class="row">   
-          <div class="py-5 col-12 col-lg-5 stretch-left stretch-bkg">
-            <div class="preheader pt-5">Funder Impact Stories</div>
-            <h2 class="editable">Crown Family Philanthropies</h2>
-            <p class="editable">[Why we became a funder, including help with strategic direction of funding food waste] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-            <a href="#" class="card-link">Learn More</a>
-          </div>
-          <div class="p-5 col-12 col-lg-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<!--
-  <section class="funder-impact"> 
-    <a name="funder-impact"></a>    
-    <div class="container">
-        
-        <div class="preheader">Our Funders</div>
-        <p >ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
-
-          <div class="logo-farm" >
-            <img src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-
-            <img style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-            <img style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-
-            <img src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  src="https://via.placeholder.com/250x115/f2f2f2/666666" alt="Alt Tag...">
-            <img src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-            <img  style='border-radius:50%;' src="https://via.placeholder.com/136x115/f2f2f2/666666" alt="Alt Tag...">
-          </div>
-       
-  
-  
-    </div>
-   </section>
--->
+{% include modules/split-carousel.html %}
    
 {% include modules/cta.html %}

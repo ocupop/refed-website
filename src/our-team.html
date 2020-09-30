@@ -21,8 +21,7 @@ cta:
   link_label: See Who is Funding Our Mission
   colorbar:
     color: '#e65e4a'
-    bar_position:
-      - left
+    bar_position: left
 team_members:
   - dana-gunders
   - alexandria-coari
@@ -62,10 +61,9 @@ advisory_council:
   </div>
 </section>
 <section class="staff">
-  <a name="staff"></a>
   <div class="container">
     <div class="row mb-5">
-      <div class="col-12">
+      <div class="col-lg-8">
         <h2 class="preheader">Staff</h2>
         <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
       </div>
@@ -73,10 +71,10 @@ advisory_council:
     {% for object in page.team_members %}
     {% assign team_member = site.team_members | where: 'slug', object | first %}
       <div class="row mb-5">
-        <div class="col-lg-4">
-          <img src="{{team.image | default: site.placeholder_image}}" class="img-fluid" alt="title" />
+        <div class="col-md-4">
+          <img src="{{team.image | default: site.placeholder_image}}" class="img-fluid mb-3 mb-lg-0" alt="title" />
         </div>
-        <div class="col-lg-7 ml-lg-auto">
+        <div class="col-md-7 ml-lg-auto">
           <h3>{{ team_member.name }}</h3>
             <h5 class="text-mid d-inline-block border-top pt-2">{{ team_member.position }}</h5>
           <p>{{ team_member.bio_summary_html }}</p>       
@@ -86,13 +84,12 @@ advisory_council:
   </div>
 </section>
 
-<section class="board-of-directors bg-primary text-white">
-  <a name="board-of-directors"></a>
+<section class="bg-primary text-white">
   <div class="container">
     <div class="row mb-5 pb-5">
-      <div class="col-12">
+      <div class="col-lg-8">
+        <h2 class="preheader editable">Board of Directors</h2>
         <div class="editable">
-          <h2 class="preheader">Board of Directors</h2>
           <p>ReFED’s strength has long rested in the power of the people who surround, advise, and contribute to our work. ReFED’s
             Board of Directors is comprised of leaders in the business and nonprofit sectors who inform the organization’s
             strategic initiatives, offer technical expertise, and collectively provide a holistic analysis of the challenges and
@@ -101,53 +98,50 @@ advisory_council:
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <div class="responsive-card-deck cards-md-2 staff-2">  
-          {% for member in page.board_of_directors.members %}
-            <div class="card">
-              <div class="card-image">
-                <img src="{{person.image | default: site.placeholder_image }}" alt="title" />
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">{{member.name}}</h3>
-                <div class="card-text">
-                  {{ member.summary_html }}
-                </div>               
+      {% for member in page.board_of_directors.members %}
+        <div class="col-lg-6">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid mb-3 mb-lg-0" alt="title" />
+            </div>
+            <div class="col-6">
+              <h3 class="mb-0">{{member.name}}</h3>
+              <div class="text-serif">
+                {{ member.summary_html }}
               </div>
             </div>
-          {% endfor %}
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="advisory-council bg-light">
-  <a name="advisory-council"></a>
+<section class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 py-5 mb-2">
-          <h2 class="preheader">Advisory Council</h2>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="responsive-card-deck cards-md-3 staff-2">
-              <!-- advisory council loop -->
-              {% for member in page.advisory_council.members %}
-                <div class="card align-items-center">
-                  <div class="card-image">
-                    <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid" alt="title" />
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title">{{ member.name }}</h3>
-                    <div class="card-text">
-                      {{ member.summary_html }}
-                    </div>               
-                  </div>
-                </div>
-              {% endfor %}
+        <div class="col-lg-6 py-5 mb-2">
+          <h2 class="preheader editable">Advisory Council</h2>
+          <div class="editable">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos commodi dolor sint, doloremque tenetur consequatur est qui dolore omnis ea facere ullam et sunt cupiditate rerum. Ipsa recusandae eos nostrum.</p>   
           </div>
-        </div>
+        </div>  
+      </div>
+      <div class="row align-items-center">
+        {% for member in page.advisory_council.members %}
+          <div class="col-6 col-lg-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid" alt="title" />
+              </div>
+              <div class="col-lg-8">
+                <h3 class="card-title">{{ member.name }}</h3>
+                <div class="font-serif">
+                  {{ member.summary_html }}
+                </div>  
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -166,10 +160,16 @@ advisory_council:
       </div>
       <div class="row pt-5">
         {% for person in site.data.expert_network %}
-          <div class="col-md-6 col-lg-4 mb-3">
-            {% if person.name %}<h5 class="mb-0">{{person.name}}</h5>{% endif %}
-            <p class="gray">
-              {% if person.role %}{{person.role}}{% endif %}{% if person.organization %}, {{person.organization }}{% endif %}
+          <div class="col-6 col-lg-4 mb-3">
+            {% if person.name %}<h5 class="mb-0">{{ person.name }}</h5>{% endif %}
+            <p class="text-mid">
+              <small>
+                {% if person.role %}
+                  {{ person.role }}
+                {% endif %}
+                  {% if person.organization %}, {{person.organization }}
+                {% endif %}
+              </small>
             </p>                              
           </div>
         {% endfor %}
