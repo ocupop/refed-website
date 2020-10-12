@@ -40,19 +40,6 @@
   image: /uploads/ae-linkedin-headshot-1-1.png
   phone:
   active: active
-- name: Parker Hughes
-  title: Capital and Innovation Fellow
-  summary: >-
-    Parker serves as ReFED's Capital and Innovation Fellow. Before joining
-    ReFED, Parker was a Cofounder of BRÜZD Foods, a food waste solution rescuing
-    imperfect produce from local MA farmers, and delivering it to homes and
-    restaurants at discounted prices. He brings with him a depth of knowledge in
-    social entrepreneurship, food system design, and business development. He
-    believes that business has the power to implement solutions to the
-    environmental crisis.
-  image: /uploads/parker-hughes-headshot-1.jpg
-  phone:
-  active:
 - name: David Brooks
   title: Insights Engine Product Manager
   summary: >-
@@ -77,17 +64,6 @@
     Walmart's global and private brand business.
   image: /uploads/suggit-hs-web.jpg
   phone: 604.741.8968
-  active: active
-- name: Nathan Lohrmann
-  title: Stakeholder Engagement Manager
-  summary: >-
-    Nathan Lohrmann serves as a Stakeholder Engagement Manager at ReFED,
-    supporting ReFED’s partnerships, networks, and the annual Food Waste Summit
-    hosted by ReFED. Nathan studied marketing, operations, and strategy at
-    Indiana University which led him to a career in the food and beverage
-    industry across management consulting, corporate strategy, and a startup.
-  image: /uploads/nathan-lorhmann-headshot-1.jpg
-  phone: 812.237.2316
   active: active
 - name: Jeffrey Costantino
   title: Communications Director
