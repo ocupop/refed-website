@@ -16,26 +16,26 @@
   "author": "Ocupop",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
-    "bootstrap": "^4.4.1",
-    "bootstrap.native": "2.0.27",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap.native": "3.0.13",
     "concurrently": "^5.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "remixicon": "^2.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-transform-runtime": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
     "@babel/preset-react": "^7.9.4",
-    "@babel/register": "^7.9.0",
-    "@cloudcannon/suite": "2.0.0-rc7",
+    "@babel/register": "^7.12.0",
+    "@cloudcannon/suite": "2.0.1",
     "babel-loader": "^8.1.0",
     "gulp": "^4.0.2",
     "patch-package": "^6.2.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.1.2",
+    "webpack-cli": "^4.0.0",
+    "webpack-stream": "^6.1.0"
   }
 }
