@@ -10,7 +10,7 @@ permalink: pretty
 twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
-insights_engine_url:  
+insights_engine_url: https://trusty-sanctuary.cloudvent.net
 
 # Collections
 collections:
@@ -120,11 +120,11 @@ _array_structures:
         text:
         author:
         cite:
-        image:  
+        image:
   cards:
     - label: Cards
       icon: view_column
-      value: 
+      value:
         title:
         text:
         featured_image:
@@ -161,7 +161,7 @@ _array_structures:
         buttons:
           - link:
             link_label:
-            button_type:       
+            button_type:
   members:
     - label: Members
       icon: face
@@ -187,7 +187,7 @@ _array_structures:
         link_label:
         colorbar:
           color:
-          bar_position:  
+          bar_position:
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode
@@ -216,7 +216,7 @@ _array_structures:
         videos:
           title:
           embed_url:
-        
+
 
 #hard coded select fields
 news_types:
@@ -234,11 +234,11 @@ document_types:
 
 bar_position:
   - left
-  - right  
+  - right
 
 _comments:
   cards: page section for card grid that is not related to a collection
-        
+
 placeholder_image: 'https://via.placeholder.com/1000'
 
 
