@@ -25,6 +25,11 @@
       margin-top: 22px;
     }
   }
+  .leftcol,
+  .rightcol {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 @media screen and (max-width: $screen-md-min){
   .rightcol{

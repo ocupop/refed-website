@@ -1,8 +1,11 @@
 .laptop-module,
 .globe-module,
 .strawberries-module{
-  .image-column img { 
-    position:absolute;
+  .image-column img {
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+    } 
+    
   }
     @media screen and (max-width: $screen-md-min) {
     .image-column{   
@@ -24,7 +27,7 @@
   .image-column{        
     img{
       bottom: -60px;
-      width: 185%;
+      width: 175%;
     }
   }
   &.laptop-module--within-top-bounds img{

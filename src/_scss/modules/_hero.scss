@@ -54,26 +54,6 @@
         }
       }
     }
-      
-    .hero-social {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 38px;
-        height: 38px;
-        margin: 15px 0;
-        background-color: $white;
-        i {
-          font-size: 23px;
-          color: $black;
-        }
-      }
-    }
   }
    
   // @include media-breakpoint-down(lg) {
@@ -107,5 +87,41 @@
         }
       }
     }
+  }
+}
+
+.hero-social {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  z-index: 100;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin: 15px 0;
+    background-color: $white;
+    i {
+      font-size: 23px;
+      color: $black;
+    }
+  }
+}
+
+#carousel-hero {
+  position: relative;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 7%;
+    height: 200px;
+    top: auto;
+  }
+
+  .carousel-control-next {
+    @include media-breakpoint-up(lg) {
+      right: 5%;
+    } 
   }
 }
