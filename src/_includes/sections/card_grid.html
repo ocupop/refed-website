@@ -22,15 +22,15 @@
           {% endfor %}
         </div> -->
         <div class="col-12 three-card-carousel">   
-          {% for card in section.cards) %}
+          {% for card in include.cards) %}
             <div class="card solution-{{ forloop.index }} col-lg-4">
               <img class="card-img-top" src="{{ card.featured_image | default: site.placeholder_image }}" alt="{{ card.title }} image" />
               <div class="card-body">
                 <h3 class="card-title">{{ card.title }}</h3>
-                <div class="card-text">{{ card.text }}</div>
-                {% if card.link %}
+                <div class="card-text">{{ card.text | default: card.content | truncatewords: 20 }}</div>
+                {% if card.link or card.url %}
                  <p class="mt-3">
-                  <a href="{{ card.link }}" class="card-link">{{ card.link_text | default: 'Read More'}}</a>
+                  <a href="{{ card.link | default: card.url }}" class="card-link">{{ card.link_text | default: 'Read More'}}</a>
                  </p>
                 {% endif %}
               </div>

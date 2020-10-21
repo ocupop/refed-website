@@ -6,7 +6,7 @@
         <p class="editable text-center mb-5 max-out-text-width mx-auto">Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders:</p>   -->
         <div class="logo-carousel mb-5">
 
-          {% for logo in section.logo %}
+          {% for logo in include.logo %}
             <div class="logo-item">
               <img src="{{ logo.image }}" class="img-fluid m-4" alt="{{ logo.title }} image" />
             </div>

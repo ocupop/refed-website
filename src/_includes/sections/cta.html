@@ -9,7 +9,7 @@
       </div>      
     </div>
   </div>
-  {% if page.cta.colorbar != nil %}
-    <div class="section__colorbar {{ page.cta.colorbar.bar_position }}" style="background-color:{{ page.cta.colorbar.color }}">
+  {% if include.cta.colorbar != nil %}
+    <div class="section__colorbar {{ include.cta.colorbar.bar_position }}" style="background-color:{{ include.cta.colorbar.color }}">
   {% endif %}
 </section>

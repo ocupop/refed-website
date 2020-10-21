@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% for section in page.page_sections %}
+{% comment %}{% for section in page.page_sections %}
   {% capture include_section %}sections/{{ section._type }}.html{% endcapture %}
   {% include {{include_section}} %}
 {% endfor %}
 {{ content }}
-
+{% endcomment %}
