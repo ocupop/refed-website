@@ -142,7 +142,7 @@ if(elem){
 
 
 /* Logo Carousel (Home Page Funders) */
-var elem = document.querySelector('.logo-carousel');
+var elem = document.querySelector('.carousel-logos');
 if(elem){
   var flkty_logos = new Flickity( elem, {
   contain: true,

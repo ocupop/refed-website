@@ -1,0 +1,14 @@
+.logo-wrapper {
+  width: 20%;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo-item {
+    max-width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+}
