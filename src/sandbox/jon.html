@@ -16,9 +16,30 @@ logo:
   - image: https://via.placeholder.com/100x450
     link: 'https://www.refed.com/?sort=economic-value-per-ton'
     title: refed
-  - image: /android-chrome-512x512.png
+  - image: https://via.placeholder.com/450x100
     link: 'https://www.refed.com/?sort=economic-value-per-ton'
     title: refed
+testimonials:
+  - text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+      sodales ligula in libero. Sed dignissim lacinia nunc.
+    author: Firstname Someothername
+    cite: 'Head of somecompany, Some other Info'
+  - text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+      sodales ligula in libero. Sed dignissim lacinia nunc.
+    author: Firstname Lastname
+    cite: CEO and Founder of Somecompanyname    
 ---
 <section class="pb-0">
   <div class="container">
@@ -30,3 +51,13 @@ logo:
   </div>
 </section>
 {% include sections/carousels/carousel_logos.html logo=page.logo %}
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Carousel Testimonials</h1>
+      </div>
+    </div>
+  </div>
+</section>
+{% include sections/carousels/carousel_testimonials.html testimonials=page.testimonials %}
