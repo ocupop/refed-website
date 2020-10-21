@@ -1,0 +1,29 @@
+#carousel-hero {
+  position: relative;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 7%;
+    height: 200px;
+    top: auto;
+  }
+  .carousel-control-next {
+    @include media-breakpoint-up(lg) {
+      right: 5%;
+    } 
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+  .carousel-control-prev-icon {
+    border-right: 18px solid $white;
+  }
+  .carousel-control-next-icon {
+    border-left: 18px solid $white;
+  }
+}

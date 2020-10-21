@@ -1,5 +1,26 @@
 ---
 layout: default
+hero:
+  - title: We're on a mission to end food waste through data-driven solutions
+    subtitle:
+    description_html:
+    image:
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+    subtitle:
+    description_html:
+    image:
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
 logo:
   - image: /img/globe.png
     link: 'https://www.refed.com/?sort=economic-value-per-ton'
@@ -41,6 +62,7 @@ testimonials:
     author: Firstname Lastname
     cite: CEO and Founder of Somecompanyname    
 ---
+{% include sections/carousels/carousel_hero.html hero=page.hero %}
 <section class="pb-0">
   <div class="container">
     <div class="row">

@@ -22,21 +22,22 @@
   //   background-position: center center;
   // }
 
-  .hero-content{
-    //@include darken-bkg-image();
+  .hero-content {
     position: relative;
     height: 100%;
     bottom: 0;
     left: 0;
     width: 100%;
-    display:flex;
-    align-items:center;
-    // min-height:em(243);   
-    flex-direction:row-reverse;  
-    background-color:rgba($black, 0.5);   
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;  
+    background-color:rgba($black, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
     @include media-breakpoint-up(lg) {
       position: absolute;
       height: auto;
+      padding: 0;
     }
     .hero-copy{
       h1{
@@ -73,7 +74,7 @@
   @include media-breakpoint-up(md) {
     .hero-content{
       .hero-copy{
-        margin-right: 50px;
+        // margin-right: 50px;
         // max-width:em(1020);
       }
       .hero-social{

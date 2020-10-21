@@ -42,4 +42,12 @@
     top: 0;
     bottom: inherit;
   }
+  .flickity-prev-next-button {
+    &.next {
+      right: 0;
+    }
+    &.prev {
+      left: 0;
+    }
+  }
 }
