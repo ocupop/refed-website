@@ -61,7 +61,7 @@ if(elem){
 }
 
 /* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
-var elems = document.querySelectorAll('.full-width-carousel');
+var elems = document.querySelectorAll('.carousel-full-width');
 if(elems){
   elems.forEach(function(elem) {
     var flkty_slide = new Flickity( elem, {
