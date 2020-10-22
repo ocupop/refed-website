@@ -130,7 +130,7 @@ _array_structures:
         cite:
         image:    
         section_background_color: 
-        reverse-testimonial-and-image: 
+        image_alignment: 
               
   cards:
     - label: Cards
@@ -260,10 +260,9 @@ section_background_color:
   - white
   - black    
 
-reverse-testimonial-and-image:
-  - reverse
-  - reverse-mobile-only
-  - reverse-desktop-only
+image_alignment:
+  - left
+  - right
 
 _comments:
   cards: page section for card grid that is not related to a collection

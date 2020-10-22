@@ -23,21 +23,15 @@
     color:$white;
   }
 
-  &.reverse > .container > .row{
+  &.right > .container > .row{
     flex-direction: row-reverse !important;
   }
   @include media-breakpoint-down(md) {
-    &.reverse > .container > .row,
-    &.reverse-mobile-only > .container > .row{
+    &.right > .container > .row,{
         flex-direction: column-reverse !important;
     }
   }
     
-  @include media-breakpoint-up(md) {
-    &.reverse-desktop-only > .container > .row{
-      flex-direction: row-reverse !important;
-    }
-  }
 
 
 
