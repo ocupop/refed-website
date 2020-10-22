@@ -111,18 +111,3 @@
   }
 }
 
-#carousel-hero {
-  position: relative;
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 7%;
-    height: 200px;
-    top: auto;
-  }
-
-  .carousel-control-next {
-    @include media-breakpoint-up(lg) {
-      right: 5%;
-    } 
-  }
-}

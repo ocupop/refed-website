@@ -7,7 +7,7 @@
     padding-bottom: 60px;
   }
   @include darken-bkg-image(0.8,$primary);
-  .testimonial {
+  .testimonial-slide {
     padding-top: 100px;
     @include media-breakpoint-down(md) {
       padding-top: 60px;
