@@ -203,6 +203,7 @@ _array_structures:
     - label: Call to action
       icon: call_to_action
       value:
+        title:
         description_html:
         link:
         link_label:

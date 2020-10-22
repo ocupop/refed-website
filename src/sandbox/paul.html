@@ -2,6 +2,15 @@
 layout: default
 author: Eileen Hyde
 
+cta:
+  title: Stay Connected with ReFED
+  description_html: Sign up for our newsletter and other email updates.
+  link: /contact
+  link_label: Subscribe
+  colorbar: 
+    color: primary
+    bar_position: left
+
 insights_engine:
   preheader: Our Newest Solution
   headline: ReFED Insights Engine
@@ -75,6 +84,7 @@ testimonials:
 
 
 
+
 <section class="pb-0">
     <div class="container">
       <div class="row">
@@ -91,3 +101,7 @@ testimonials:
 {% endfor %}    
 
 
+
+
+
+{% include sections/cta.html cta=page.cta id='refed-insights-engine' %}
