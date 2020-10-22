@@ -1,4 +1,4 @@
-.laptop-module,
+
 .globe-module,
 .strawberries-module{
   .image-column img {
@@ -19,30 +19,6 @@
     }
     .copy-column{
       order:2;     
-    }
-  }
-}
-
-.laptop-module{
-  .image-column{        
-    img{
-      bottom: -60px;
-      width: 175%;
-    }
-  }
-  &.laptop-module--within-top-bounds img{
-    bottom: unset;
-    margin-top: 30px;
-  }
-  @media screen and (max-width: $screen-md-min){
-    margin-top: 14%;
-    .image-column{     
-      img{
-        width: 180%;
-        margin-top: -26%;
-        margin-left: -1%;
-        margin-bottom: rem(10);
-      }
     }
   }
 }
