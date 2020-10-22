@@ -128,7 +128,10 @@ _array_structures:
         text:
         author:
         cite:
-        image:           
+        image:    
+        color: 
+        testimonial_reverse: 
+              
   cards:
     - label: Cards
       icon: view_column
@@ -243,6 +246,24 @@ document_types:
 bar_position:
   - left
   - right  
+
+color:
+  - primary
+  - secondary
+  - success
+  - info
+  - warning
+  - danger
+  - light
+  - mid
+  - dark
+  - white
+  - black    
+
+testimonial_reverse:
+  - reverse
+  - reverse-mobile-only
+  - reverse-desktop-only
 
 _comments:
   cards: page section for card grid that is not related to a collection
