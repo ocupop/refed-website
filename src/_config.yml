@@ -113,14 +113,22 @@ _array_structures:
         logo:
 
 
-  testimonials:
+  carousel_testimonial:
+    - label: Carousel Testimonial
+      icon: format_quote
+      value:
+        text:
+        author:
+        cite:
+        image:
+  testimonial:
     - label: Testimonial
       icon: format_quote
       value:
         text:
         author:
         cite:
-        image:  
+        image:           
   cards:
     - label: Cards
       icon: view_column
