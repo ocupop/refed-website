@@ -21,7 +21,7 @@ hero:
       - link:
         link_label:
         button_type:
-logo:
+images:
   - image: /img/globe.png
     link: 'https://www.refed.com/?sort=economic-value-per-ton'
     title: refed
@@ -87,7 +87,7 @@ carousel_cards:
         Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
         litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
         sodales ligula in libero. Sed dignissim lacinia nunc.
-      featured_image:
+      featured_image: 'https://via.placeholder.com/515x615'
       link: 'https://www.google.com/'
       link_label: Some Link Text
     - title: Card 2
@@ -95,7 +95,7 @@ carousel_cards:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
         odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-      featured_image:
+      featured_image: 'https://via.placeholder.com/1000x500'
       link: 'https://www.google.com/'
       link_label: Link Text
     - title: Card 3
@@ -105,7 +105,7 @@ carousel_cards:
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
         mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
         Vestibulum lacinia arcu eget nulla. Class aptent taciti
-      featured_image:
+      featured_image: 'https://via.placeholder.com/500x700'
       link: 'https://www.google.com/'
       link_label: Different Link
     - title: Card 4
@@ -115,7 +115,7 @@ carousel_cards:
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
         mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
         Vestibulum lacinia arcu eget nulla. Class aptent taciti
-      featured_image:
+      featured_image: 'https://via.placeholder.com/500x500'
       link: 'https://www.google.com/'
       link_label: Different Link    
 ---
@@ -133,12 +133,20 @@ carousel_cards:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Carousel Logos</h1>
+        <h1>Carousel Images</h1>
       </div>
     </div>
   </div>
 </section>
-{% include sections/carousels/carousel_logos.html logo=page.logo %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include sections/carousels/carousel_images.html items=page.images %}
+      </div>
+    </div>
+  </div>
+</section>
 <section class="pb-0">
   <div class="container">
     <div class="row">
@@ -168,6 +176,15 @@ carousel_cards:
     </div>
   </div>
 </section>
-{% include sections/carousels/carousel_cards.html cards=page.carousel_cards.cards %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include sections/carousels/carousel_cards.html items=page.carousel_cards.cards %}
+      </div>
+    </div>
+  </div>
+</section>
+
 
 

@@ -141,16 +141,33 @@ if(elem){
 
 
 
-/* Logo Carousel (Home Page Funders) */
-var elem = document.querySelector('.carousel-logos');
-if(elem){
-  var flkty_logos = new Flickity( elem, {
-  contain: true,
-  cellAlign: 'left',
-  "wrapAround": true,
-  prevNextButtons: true,
-  pageDots: false,
-  adaptiveHeight: false
+/* Carousels - no dots by default */
+var carousel = document.querySelectorAll('.carousel-refed');
+if(carousel){
+  carousel.forEach(function(carousel){
+    var flkty_logos = new Flickity( carousel, {
+    contain: true,
+    cellAlign: 'left',
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: false,
+    adaptiveHeight: false
+    })
+  });
+}
+
+/* Carousels - with dots */
+var carousel_with_dots = document.querySelectorAll('.carousel-refed.show-dots');
+if(carousel_with_dots){
+  carousel_with_dots.forEach(function(carousel_with_dots){
+    var flkty_logos = new Flickity( carousel_with_dots, {
+    contain: true,
+    cellAlign: 'left',
+    "wrapAround": true,
+    prevNextButtons: true,
+    pageDots: true,
+    adaptiveHeight: false
+    })
   });
 }
 
