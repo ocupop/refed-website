@@ -129,7 +129,7 @@ _array_structures:
         author:
         cite:
         image:    
-        color: 
+        section_background_color: 
         reverse-testimonial-and-image: 
               
   cards:
@@ -247,7 +247,7 @@ bar_position:
   - left
   - right  
 
-color:
+section_background_color:
   - primary
   - secondary
   - success
