@@ -130,7 +130,7 @@ _array_structures:
         cite:
         image:    
         color: 
-        testimonial_reverse: 
+        reverse-testimonial-and-image: 
               
   cards:
     - label: Cards
@@ -260,7 +260,7 @@ color:
   - white
   - black    
 
-testimonial_reverse:
+reverse-testimonial-and-image:
   - reverse
   - reverse-mobile-only
   - reverse-desktop-only
