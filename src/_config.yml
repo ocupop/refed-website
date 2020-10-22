@@ -68,10 +68,10 @@ _array_structures:
       value:
         _type: single_column
         section_html:
-    - label: Card Grid
+    - label: Carousel Cards
       icon: web
       value:
-        _type: card_grid
+        _type: carousel_card
         title:
         cards:
     - label: Testimonials
@@ -130,8 +130,7 @@ _array_structures:
         cite:
         image:    
         section_background_color: 
-        image_alignment: 
-              
+        image_alignment:
   cards:
     - label: Cards
       icon: view_column
