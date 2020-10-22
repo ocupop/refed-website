@@ -10,7 +10,7 @@ permalink: pretty
 twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
-insights_engine_url:  
+insights_engine_url:  https://www.insights-engine-fpo.com/
 
 # Collections
 collections:
@@ -129,7 +129,18 @@ _array_structures:
         cite:
         image:    
         section_background_color: 
-        image_alignment:
+        image_alignment: 
+  insights_engine:
+    - label: Insights Engine
+      icon: format_quote
+      value:
+        preheader:
+        headline:
+        text:
+        link:
+        link_label:
+        laptop_screen_image:
+              
   cards:
     - label: Cards
       icon: view_column
@@ -191,6 +202,7 @@ _array_structures:
     - label: Call to action
       icon: call_to_action
       value:
+        title:
         description_html:
         link:
         link_label:
