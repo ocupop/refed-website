@@ -1,0 +1,18 @@
+//styles for logo style wrapper
+.image-wrapper {
+  width: 33%;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(lg) {
+    width: 20%;
+  }
+  .image-item {
+    max-width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+}

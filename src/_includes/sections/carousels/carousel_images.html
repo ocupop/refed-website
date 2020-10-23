@@ -1,0 +1,9 @@
+<div class="carousel-refed mb-5">
+  {% for item in include.items %}
+    <div class="image-wrapper">
+      <div class="image-item">
+        <img src="{{ item.image }}" class="img-fluid m-4" alt="{{ item.title }} image" />
+      </div>
+    </div>
+  {% endfor %} 
+</div> 

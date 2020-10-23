@@ -19,10 +19,8 @@
 @import "modules/homepage_newsfeed";
 @import "modules/large_image_beyond_bounds_module";
 @import "modules/simple_copy_and_cta";
-@import "modules/testimonials";
 @import "modules/circle_icon_list";
 @import "modules/staff";
-@import "modules/cta.scss";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
 @import "modules/owl_carousel";
@@ -34,6 +32,13 @@
 @import "pages/our_team";
 @import "pages/food_waste.scss";
 
+@import "sections/card_grid";
+@import "sections/testimonial";
+@import "sections/carousels/carousel_images";
+@import "sections/carousels/carousel_hero";
+@import "sections/carousels/carousel_testimonials";
+@import "sections/cta";
+@import "sections/insights_engine";
 
 @import "nav/primary";
 @import "nav/utility";

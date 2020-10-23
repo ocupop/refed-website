@@ -11,6 +11,7 @@ twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
 insights_engine_url: https://trusty-sanctuary.cloudvent.net
+insights_engine_api_url:
 
 # Collections
 collections:
@@ -68,10 +69,10 @@ _array_structures:
       value:
         _type: single_column
         section_html:
-    - label: Card Grid
+    - label: Carousel Cards
       icon: web
       value:
-        _type: card_grid
+        _type: carousel_card
         title:
         cards:
     - label: Testimonials
@@ -112,8 +113,15 @@ _array_structures:
         _type: carousel_logos
         logo:
 
-
-  testimonials:
+  carousel_testimonial:
+    - label: Carousel Testimonial
+      icon: format_quote
+      value:
+        text:
+        author:
+        cite:
+        image:
+  testimonial:
     - label: Testimonial
       icon: format_quote
       value:
@@ -121,6 +129,19 @@ _array_structures:
         author:
         cite:
         image:
+        section_background_color:
+        image_alignment:
+  insights_engine:
+    - label: Insights Engine
+      icon: format_quote
+      value:
+        preheader:
+        headline:
+        text:
+        link:
+        link_label:
+        laptop_screen_image:
+
   cards:
     - label: Cards
       icon: view_column
@@ -182,6 +203,7 @@ _array_structures:
     - label: Call to action
       icon: call_to_action
       value:
+        title:
         description_html:
         link:
         link_label:
@@ -197,6 +219,11 @@ _array_structures:
         description_html:
         link:
         link_label:
+  carousel_logo:
+    - label: Carousel Logo
+      icon: view_carousel
+      value:
+        logo:
   logo:
     - label: Logo
       icon: insert_photo
@@ -235,6 +262,30 @@ document_types:
 bar_position:
   - left
   - right
+
+section_background_color:
+  - primary
+  - secondary
+  - success
+  - info
+  - warning
+  - danger
+  - light
+  - mid
+  - dark
+  - white
+  - black
+
+image_alignment:
+  - left
+  - right
+
+carousel_type:
+  - card
+  - hero
+  - two-column
+  - image
+  - split
 
 _comments:
   cards: page section for card grid that is not related to a collection

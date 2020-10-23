@@ -1,14 +1,14 @@
-<section class="testimonials bg-primary text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
+<section class="carousel-testimonials-section bg-primary text-white darken-bkg-image" style="background-image:url({{ section.background_image | default: 'https://picsum.photos/id/155/1000/333' }});">
   <div class="carousel-testimonials">      
-    {% for testimonial in page.testimonials %}
-    <div class="testimonial w-100" >  
+    {% for testimonial in include.testimonials %}
+    <div class="testimonial-slide w-100" >  
       <div class="container">     
         <div class="row">
           <div class="col-12 text-center">
             <blockquote>
-              "{{ testimonial.content }}"
+              "{{ testimonial.text }}"
               <footer class="font-serif">
-                <div class='cite'>—{{ testimonial.name }}</div>
+                <div class='cite'>—{{ testimonial.author }}</div>
                 <div class='credentials font-italic'>{{ testimonial.cite }}</div>
               </footer>
             </blockquote>
@@ -19,5 +19,3 @@
     {% endfor %}    
   </div>
 </section>
-  
-  
