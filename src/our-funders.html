@@ -25,9 +25,10 @@ cta:
     bar_position:
       - left
 
-logo-pile:
-  headline: Our Funders
-  text: Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.
+logo_pile:
+  title: Our Funders
+  description_html: >- 
+    <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
   logos:
     - link: http://www.refed.com
       alt_text: Refed Alt Tag
@@ -56,7 +57,7 @@ logo-pile:
 
 
 
-{% include sections/logo-pile.html headline=page.logo-pile.headline text=page.logo-pile.text logos=page.logo-pile.logos %}
+{% include sections/logo_pile.html logo_pile=page.logo_pile %}
 
 {% include modules/split-carousel.html %}
    
