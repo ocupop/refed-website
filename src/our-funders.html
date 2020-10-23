@@ -24,6 +24,20 @@ cta:
     color: '#e65e4a'
     bar_position:
       - left
+
+logo-pile:
+  headline: Our Funders
+  text: Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.
+  logos:
+    - link: http://www.refed.com
+      alt_text: Refed Alt Tag
+      image: https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
+    - link:  
+      alt_text: Refed Alt Tag
+      image: https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
+    - alt_text: Refed Alt Tag
+      image: https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
+
 ---
 
 {% include modules/hero.html %}
@@ -40,31 +54,9 @@ cta:
   </div>
 </section>
 
-<section class="bg-lightest">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10">
-        <h2 class="preheader editable">Our Funders</h2>
-        <div class="editable">
-          <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="row flex-wrap align-items-center">
-          {% for i in (1..20) %}
-            {% cycle '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/250x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>',
-              '<div class="col-3 col-md-2 text-center"><img src="https://via.placeholder.com/136x115/f2f2f2/666666" class="img-fluid" alt="Alt Tag..." /></div>'
-            %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+{% include sections/logo-pile.html headline=page.logo-pile.headline text=page.logo-pile.text logos=page.logo-pile.logos %}
 
 {% include modules/split-carousel.html %}
    

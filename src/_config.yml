@@ -132,7 +132,7 @@ _array_structures:
         image_alignment: 
   insights_engine:
     - label: Insights Engine
-      icon: format_quote
+      icon: computer
       value:
         preheader:
         headline:
@@ -140,7 +140,16 @@ _array_structures:
         link:
         link_label:
         laptop_screen_image:
-              
+  logo_pile:
+    - label: Logo Pile
+      icon: view_module
+      value:
+        headline:
+        text:
+        logos:
+          - link:
+            alt_text:
+            image:                 
   cards:
     - label: Cards
       icon: view_column
