@@ -4,14 +4,17 @@
     svg{ display: none; }
 }
 
-.flickity-prev-next-button.previous{
+.flickity-prev-next-button {
+  &.previous {
     @include arrow(left, 12px, $primary);
-    left:-58px;
-}
-.flickity-prev-next-button.next{
+    left: -58px;
+  }
+  &.next {
     @include arrow('right', 12px, $primary);
-    right:-58px;
+    right: -58px;
+  }
 }
+
 .flickity-page-dots{
   .dot{
     border: 1px solid $primary;
