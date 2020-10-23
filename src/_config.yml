@@ -163,6 +163,7 @@ _array_structures:
         text:
         featured_image:
         link:
+        link_label:
   images:
     - label: Images
       icon: insert_photo
@@ -227,7 +228,7 @@ _array_structures:
     - label: Two Column Slide
       icon: chrome_reader_mode
       value:
-        image:
+        featured_image:
         title:
         description_html:
         link:

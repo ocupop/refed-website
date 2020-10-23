@@ -256,7 +256,7 @@ wireframes-solutions:
     </div>
     
     <div class="row">  
-      <div class="col-12 three-card-carousel">   
+      <div class="col-12 carousel-refed-dots">   
       {% for num in (1..8) %}
         
         <div class="card solution-{{ forloop.index }} col-lg-4" >
@@ -434,7 +434,7 @@ wireframes-solutions:
         </div>
 
         <div class="row">  
-            <div class="col-12 horizontal-carousel-arrows-only filterable-list text-left">   
+            <div class="col-12 carousel-refed filterable-list text-left">   
             
             {% for solutions in page.wireframes-solutions %}     
                 <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-6 {% for cat in solutions.categories %}{{ cat }} {% endfor %}"  >
@@ -500,7 +500,7 @@ wireframes-solutions:
     </div>
     
     <div class="row">  
-      <div class="col-12 horizontal-carousel-arrows-only">   
+      <div class="col-12 carousel-refed">   
       {% for num in (1..8) %}
         
         <div class="card solution-{{ forloop.index }} col-lg-4" >

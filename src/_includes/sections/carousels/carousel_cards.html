@@ -1,9 +1,11 @@
-<div class="carousel-refed">   
+{% assign num_items = include.items | size %}
+<!-- test for number of items, instantiate carousel if over 3 items -->
+<div class="{% if num_items > 3%}carousel-refed{% else %}row{% endif %}">   
   {% for item in include.items %}
     <div class="card col-lg-4">
       {% if item.featured_image %}
-        {% if item.link %}
-          <a href="{{ item.link}}" class="bg-image aspect-4x3" style="background-image: url({{ item.featured_image | default: site.placeholder_image }})">
+        {% if item.link or item.url %}
+          <a href="{{ item.link | default: item.url }}" class="bg-image aspect-4x3" style="background-image: url({{ item.featured_image | default: site.placeholder_image }})">
           </a>        
         {% else %}
           <div class="bg-image aspect-4x3" style="background-image: url({{ item.featured_image | default: site.placeholder_image }})">
@@ -13,10 +15,12 @@
       {% if item.title or item.text %}
         <div class="card-body">
           <h3 class="card-title">{{ item.title }}</h3>
-          <div class="card-text">{{ item.text | default: item.content | truncatewords: 20 }}</div>
+          <div class="card-text">
+            {{ item.text | default: item.content | truncatewords: 20 }}
+          </div>
           {% if item.link or item.url %}
             <p class="mt-3">
-              <a href="{{ item.link | default: item.url }}" class="card-link">{{ item.link_text | default: 'Read More'}}</a>
+              <a href="{{ item.link | default: item.url }}" class="card-link">{{ item.link_label | default: 'Read More'}}</a>
             </p>
           {% endif %}
         </div>

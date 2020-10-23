@@ -120,7 +120,7 @@ wireframes-partner:
 
 <section>
   <div class="container">
-    <div class="carousel-full-width carousel-two-column dots-left">
+    <div class="carousel-refed carousel-two-column dots-left">
       {% for num in (1..4) %}
       <div class="w-100">
         <div class="container">
@@ -177,7 +177,7 @@ wireframes-partner:
       </div>
     </div> 
     <div class="row">  
-      <div class="col-12 horizontal-carousel-arrows-only filterable-list">   
+      <div class="col-12 carousel-refed filterable-list">   
       {% for partner in page.wireframes-partner %}     
         <div class="filterable-list-item card solution-{{ forloop.index }} col-md-4 {% for cat in partner.categories %}{{ cat }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ partner.image }})" ></div>
@@ -298,7 +298,7 @@ wireframes-partner:
 <section class="case-studies">
   <a name="case-studies"></a>
   <div class="container">
-    <div class="carousel-full-width carousel-two-column dots-left">
+    <div class="carousel-refed-dots carousel-two-column dots-left">
           
         {% for num in (1..4) %}
         <div class="w-100">
@@ -344,7 +344,7 @@ wireframes-partner:
     </div>
     
     <div class="row">  
-      <div class="col-12 horizontal-carousel-arrows-only">   
+      <div class="col-12 carousel-refed">   
       {% for num in (1..8) %}
         
         <div class="card solution-{{ forloop.index }} col-md-4" >

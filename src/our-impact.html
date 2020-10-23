@@ -66,7 +66,7 @@ cta:
     </div>
   
     <div class="row">  
-      <div class="col-12 horizontal-carousel-arrows-only filterable-list">
+      <div class="col-12 carousel-refed filterable-list">
       {% for casestudy in site.case_studies %} 
         <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
