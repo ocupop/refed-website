@@ -136,7 +136,66 @@ testimonials:
     image_alignment: right
     
   
+split_section:
+  item:
+    layout: post
+    title: Sample Post Title
+    description_html: COVID-19 has sent shock waves through our entire food system — from producers to end recipients — resulting in a surge of on-farm food loss, food business closures, labor shortages, and a growing number of food insecure individuals. By leveraging our central role as a convening organization within the food waste space, ReFED launched several funding initiatives, webinar series, and resource guides to inspire collaborations between businesses, innovators, funders, and, service organizations to help them adapt to this new reality.
+    label: This is a labe
+    post_date: 2020-12-22
+    news_type: News Type
+    author: Somebody McWhoever
+    hero: https://via.placeholder.com/410x410
+    featured_image: https://via.placeholder.com/410x410
+    news_categories: [cat1, cat2, cat3]
+    link: View our COVID_19 initiatives
+    link_url: #
+
+
+
 ---
+
+<section class="pb-0">
+  <div class="container">
+    <h1>Split Section</h1>
+    <h3>Showing different columns stretched to edge of browser.</h3>
+  </div>
+</section>
+
+
+{% include sections/split_section.html   
+  section_background_color='primary'  
+  image_width='25%' 
+  image_alignment='right'  
+  image_to_edge=false   
+  text_to_edge=false   
+  id='ID_OF_THIS_SECTION-1' 
+  item=page.split_section.item
+%}
+
+{% include sections/split_section.html   
+  section_background_color='secondary'  
+  image_width='33%' 
+  image_alignment='left' 
+  image_to_edge=true   
+  text_to_edge=true   
+  id='ID_OF_THIS_SECTION-2' 
+  item=page.split_section.item
+%}
+
+{% include sections/split_section.html   
+  section_background_color='light'  
+  image_width='50%' 
+  image_alignment='right'  
+  image_to_edge=true   
+  text_to_edge=false   
+  id='ID_OF_THIS_SECTION-3' 
+  item=page.split_section.item
+%}
+
+
+
+
 
 <section class="pb-0">
   <div class="container">

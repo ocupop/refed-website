@@ -1,0 +1,42 @@
+{% if include.image_width == '25%' %}
+  {% capture text-class %}col-md-3{% endcapture %}
+  {% capture image-class %}col-md-9{% endcapture %}
+{% elsif include.image_width == '33%' %}
+  {% capture text-class %}col-md-8{% endcapture %}
+  {% capture image-class %}col-md-4{% endcapture %}
+{% elsif include.image_width =='66%' %}
+  {% capture text-class %}col-md-4{% endcapture %}
+  {% capture image-class %}col-md-8{% endcapture %}
+{% elsif include.image_width == '75%' %}
+  {% capture text-class %}col-md-3{% endcapture %}
+  {% capture image-class %}col-md-9{% endcapture %}
+{% else %} 
+  {% capture text-class %}col-md-6{% endcapture %}
+  {% capture image-class %}col-md-6{% endcapture %}
+{% endif %}
+
+{% if include.text_to_edge %}
+  {% capture text-class %}{{ text-class }} text-to-browser-edge{% endcapture %}
+{%endif%}
+
+{% if include.image_to_edge %}
+  {% capture image-class %}{{ image-class }} image-to-browser-edge{% endcapture %}
+{%endif%}
+
+
+
+
+<section class="split-section image-{{include.image_alignment}} " id={{ include.id }}>
+    <div class="container split-section">
+      <div class="row">   
+        <div class="p-5 col-12 {{text-class}} column-{{include.section_background_color}}">
+            <span class='bkg '></span>
+            <h1>{{ include.item.title }}</h1>
+            <p>{{ include.item.description_html }}</p>
+        </div>
+        <div class="p-5 col-12 {{image-class}} column-{{include.section_background_color}}">
+            <span class='bkg ' style="background-image:url('{{ include.item.featured_image }}')"></span>
+        </div>
+      </div>
+    </div>
+  </section>
