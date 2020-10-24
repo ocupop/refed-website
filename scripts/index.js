@@ -61,34 +61,34 @@ if(elem){
 }
 
 /* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
-var elems = document.querySelectorAll('.carousel-full-width');
-if(elems){
-  elems.forEach(function(elem) {
-    var flkty_slide = new Flickity( elem, {
-    prevNextButtons: false,
-    pageDots: true,
-    "wrapAround": true,
-    cellAlign: 'left',
-    adaptiveHeight: false
-  });
-});
-}
+// var elems = document.querySelectorAll('.carousel-full-width');
+// if(elems){
+//   elems.forEach(function(elem) {
+//     var flkty_slide = new Flickity( elem, {
+//     prevNextButtons: false,
+//     pageDots: true,
+//     "wrapAround": true,
+//     cellAlign: 'left',
+//     adaptiveHeight: false
+//   });
+// });
+// }
 
 
 
 
 /* 3 cards at a time (Home page "What can I do to solve food waste") */
-var elem = document.querySelector('.three-card-carousel');
-if(elem){
-  var flkty_three_card = new Flickity( elem, {
-  cellAlign: 'left',
-  contain: true,
-  "wrapAround": true,
-  prevNextButtons: true,
-  pageDots: true,
-  adaptiveHeight: false
-});
-}
+// var elem = document.querySelector('.three-card-carousel');
+// if(elem){
+//   var flkty_three_card = new Flickity( elem, {
+//   cellAlign: 'left',
+//   contain: true,
+//   "wrapAround": true,
+//   prevNextButtons: true,
+//   pageDots: true,
+//   adaptiveHeight: false
+// });
+// }
 
 /* This adds a class of "flickity-resize" to carousels after they have initialized */
 Flickity.prototype._createResizeClass = function() {
@@ -108,38 +108,18 @@ Flickity.prototype.resize = function() {
 };
 
 
-/* Layout is the same as the ".three-card-carousel", but there are no dots.  */
-/* Pages: Our Impact, Food Waste Solutions */
-var elems = document.querySelectorAll('.horizontal-carousel-arrows-only');
-if(elems){
-elems.forEach(function(elem) {
-var flkty_arrowsonly = new Flickity( elem, {
-  cellAlign: 'left',
-  contain: true,
-  "wrapAround": true,
-  prevNextButtons: true,
-  pageDots: false,
-  adaptiveHeight: true
-  });
-});  
-}   
-
-
 /* Testimonials (Multiple Pages) */
-var elem = document.querySelector('.carousel-testimonials');
-if(elem){
-  var flkty_testimonials = new Flickity( elem, {
-  cellAlign: 'left',
-  contain: true,
-  "wrapAround": true,
-  prevNextButtons: true,
-  pageDots: true,
-  adaptiveHeight: true
-});
-}
-
-
-
+// var elem = document.querySelector('.carousel-testimonials');
+// if(elem){
+//   var flkty_testimonials = new Flickity( elem, {
+//   cellAlign: 'left',
+//   contain: true,
+//   "wrapAround": true,
+//   prevNextButtons: true,
+//   pageDots: true,
+//   adaptiveHeight: true
+// });
+// }
 
 /* Carousels - no dots by default */
 var carousel = document.querySelectorAll('.carousel-refed');
@@ -157,7 +137,7 @@ if(carousel){
 }
 
 /* Carousels - with dots */
-var carousel_with_dots = document.querySelectorAll('.carousel-refed.show-dots');
+var carousel_with_dots = document.querySelectorAll('.carousel-refed-dots');
 if(carousel_with_dots){
   carousel_with_dots.forEach(function(carousel_with_dots){
     var flkty_logos = new Flickity( carousel_with_dots, {

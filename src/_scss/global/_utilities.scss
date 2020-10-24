@@ -40,6 +40,9 @@
   &.aspect-16x9 {
     padding-top: 56.25%;
   }
+  &.aspect-auto {
+    height: auto;
+  }
 
   iframe {
     position: absolute;
