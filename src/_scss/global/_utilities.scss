@@ -126,84 +126,8 @@
     }
   }
 }
-/* STRETCH COLUMN content inside of a container all the way to the edge of the browser */
-/*
-SAMPLE
-<section>
-  <div class="container extend-to-browser-edge">
-    <div class="row">   
-      <div class="p-5 col-12 col-md-8 stretch-left stretch-bkg" style="background-color:green;"><span class='stretched-inner' style="background-color:green;"></span>Content</div>
-      <div class="p-5 col-12 col-md-4 stretch-right stretch-image" style="background-color:blue;"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
-    </div>
-  </div>
-</section>
-*/
-.extend-to-browser-edge{
-  .stretch-left .stretched-inner, 
-  .stretch-right .stretched-inner {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    display: block;  
-    z-index: -1;
-  }        
-  .stretch-image {
-    .stretched-inner { 
-      z-index: 1
-    }
-    > .stretched-inner { 
-      background-size: cover;
-      background-position: center center;
-    }
-  }
- 
-  /* Mobile Only */
-  @include media-breakpoint-down(lg) {    
-    .stretch-left .stretched-inner, 
-    .stretch-right .stretched-inner{
-      width: calc(100vw); 
-      left: 50%;
-      transform: translateX(-50%);         
-    }    
-  }
 
-  /* Desktop Only */
-  @include media-breakpoint-up(xl) {      
-    position: relative;
-    .stretch-left .stretched-inner, 
-    .stretch-right .stretched-inner{
-        width: calc(100% + (((100vw) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-        @media screen and (max-width:  $screen-lg-min) {
-          width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
-        }
-        @media screen and (max-width: $screen-md-min){
-          width: calc(100% + (((100vw) - #{map-get($container-max-widths, 'md')}) / 2));
-        }
-    }
-    
-    .stretch-left .stretched-inner{
-      right: 0;
-    }
-    .stretch-right .stretched-inner{
-      left: 0;
-    }      
-  }
-  
-}
 
-/*
-@media screen and (min-width:  $screen-xl-min) { 
-  // special spacing for the strata under the home page hero.  
-  &.container-more-wide {
-      .stretch-left .stretched-inner, 
-      .stretch-right .stretched-inner{
-        width: calc(100% + (((100vw - 17px) - 1374px ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-      }
-    }
-}
-*/
-/* END STRETCH COLUMN */
 
 
 
