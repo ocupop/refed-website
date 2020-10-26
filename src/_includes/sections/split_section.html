@@ -29,35 +29,33 @@
 
 
 
-<section class="split-section image-{{include.image_alignment | default: 'right'}} " id={{ include.id }}>
+<section class="split-section image-{{include.image_alignment | default: 'right'}} " id="{{ include.id }}">
     <div class="container split-section">
       <div class="row">   
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
-            <span class='bkg '></span>
+            <span class='bkg'></span>
             
             {% if item.preheader %}
-              <div class="mb-3 preheader editable">{{ item.preheader }}</div>
+              <div class="mb-3 preheader">{{ item.preheader }}</div>
             {% endif %}
             
             {% if item.title %}
-              <h2 class="mb-3 editable">
-              Our Founder
-            </h2>
+              <h2 class="mb-3">{{ item.title }}</h2>
             {% endif %}
 
-            <div class="mb-4 item-description editable">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...</p>
-            </div>
+            <div class="mb-4 item-description">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
 
             {% if item.url %}
-              <a class="m-0 editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="/about-us">Read More</a>
+              <a class="m-0 {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
             {% endif %}
 
         </div>
+
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-            <img class="editable" src="/uploads/3b7e4c3ccb38714fd460ce3f466add90.png" />
-            <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
+          <img src="{{ item.featured_image | item.hero }}">
+          <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
         </div>
+
       </div>
     </div>
   </section>
