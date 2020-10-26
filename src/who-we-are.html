@@ -14,14 +14,13 @@ hero:
       - link:
         link_label:
         button_type:
-our_values:
+work_focuses:
   - title: 'Data & Insights'
     description_html: 'Leveraging data and insights to highlight supply chain inefficiencies and economic opportunities'
     link: '/gotohere'
     button_text: 'Learn More'
     button_type: 'text'
     icon: ''
-    icon_size: 'small'
     icon_background_color: 'primary-500' 
   - title: 'Capital & Innovation'
     description_html: 'Catalyzing capital to spur innovation and scale high-impact initiatives'
@@ -29,7 +28,6 @@ our_values:
     button_text: 'Learn More'
     button_type: 'text'
     icon: ''
-    icon_size: 'small'
     icon_background_color: 'primary-200'
   - title: 'Stakeholder Engagement'
     description_html: 'Mobilizing and connecting people to take targeted action'
@@ -37,7 +35,6 @@ our_values:
     button_text: 'Learn More'
     button_type: 'text'
     icon: ''
-    icon_size: 'small'
     icon_background_color: 'primary-400' 
 
 our_founder:
@@ -87,7 +84,7 @@ cta:
         <div class="preheader editable">Our Work Focuses include:</div>
         <ul class="circle-icon-list p-0">
           
-          {% for item in page.our_values %}
+          {% for item in page.work_focuses %}
             {% include modules/icon-with-text.html 
               title=item.title
               description_html=item.description_html
@@ -96,7 +93,7 @@ cta:
               button_type=item.button_type
               element_type='li'
               icon=item.icon
-              icon_size=item.icon_size
+              icon_size='small'
               icon_background_color=item.icon_background_color
             %}
           {% endfor %}
