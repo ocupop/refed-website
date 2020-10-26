@@ -29,7 +29,7 @@
 
 
 
-<section class="split-section image-{{include.image_alignment | default: 'right'}} " id="{{ include.id }}">
+<section class="split-section image-{{include.image_alignment | default: 'right'}} {{ include.section_class }}" id="{{ include.id }}">
     <div class="container split-section">
       <div class="row">   
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
