@@ -36,17 +36,17 @@
             <span class='bkg '></span>
             
             {% if item.preheader %}
-              <div class="preheader editable">{{ item.preheader }}</div>
+              <div class="mb-3 preheader editable">{{ item.preheader }}</div>
             {% endif %}
             
             {% if item.title %}
-              <h2 class="editable">{{ item.title }}</h2>
+              <h2 class="mb-3 editable">{{ item.title }}</h2>
             {% endif %}
 
-            <div class="item-description editable">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
+            <div class="mb-3 item-description editable">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
 
             {% if item.url %}
-              <p><a class="editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a></p>
+              <a class="m-0 editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
             {% endif %}
 
         </div>
