@@ -26,8 +26,11 @@
   {% capture image-class %}{{ image-class }} image-to-browser-edge{% endcapture %}
 {%endif%}
 
-
-
+{% if item.summary %}
+  {% capture description %}item.summary{% endcapture %}
+{% elsif item.description_html  %}
+  {% capture description %}{{item.summary | truncatewords: 50}}{% endcapture %}
+{%endif%}
 
 <section class="split-section image-{{include.image_alignment | default: 'right'}} {{ include.section_class }}" id="{{ include.id }}">
     <div class="container split-section">
@@ -43,7 +46,7 @@
               <h2 class="mb-3">{{ item.title }}</h2>
             {% endif %}
 
-            <div class="mb-4 item-description">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
+            <div class="mb-4 item-description">{{ item.summary | item.description_html | truncatewords: 50 | default:item.content  }}</div>
 
             {% if item.url %}
               <a class="m-0 {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
