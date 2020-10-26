@@ -20,28 +20,25 @@ our_values:
     link: '/gotohere'
     button_text: 'Learn More'
     button_type: 'text'
-    element_type: 'li' 
     icon: ''
     icon_size: 'small'
-    icon_color: 'primary-500' 
+    icon_background_color: 'primary-500' 
   - title: 'Capital & Innovation'
     description_html: 'Catalyzing capital to spur innovation and scale high-impact initiatives'
     link: '/gotohere'
     button_text: 'Learn More'
     button_type: 'text'
-    element_type: 'li'
     icon: ''
     icon_size: 'small'
-    icon_color: 'primary-200'
+    icon_background_color: 'primary-200'
   - title: 'Stakeholder Engagement'
     description_html: 'Mobilizing and connecting people to take targeted action'
     link: '/gotohere'
     button_text: 'Learn More'
     button_type: 'text'
-    element_type: 'li'
     icon: ''
     icon_size: 'small'
-    icon_color: 'primary-400' 
+    icon_background_color: 'primary-400' 
 
 our_founder:
   type: custom
@@ -96,10 +93,10 @@ cta:
               link=item.link
               button_text=item.button_text
               button_type=item.button_type
-              element_type=item.element_type
+              element_type='li'
               icon=item.icon
               icon_size=item.icon_size
-              icon_color=item.icon_color
+              icon_background_color=item.icon_background_color
             %}
           {% endfor %}
         
@@ -140,7 +137,7 @@ cta:
             element_type='li'
             icon=''
             icon_size='medium'
-            icon_color='secondary-500' 
+            icon_background_color='secondary-500' 
           %}
           
           {% include modules/icon-with-text.html 
@@ -149,7 +146,7 @@ cta:
             element_type='li'
             icon=''
             icon_size='medium'
-            icon_color='secondary-400' 
+            icon_background_color='secondary-400' 
           %}
           
           {% include modules/icon-with-text.html 
@@ -158,7 +155,7 @@ cta:
             element_type='li'
             icon=''
             icon_size='medium'
-            icon_color='secondary-300' 
+            icon_background_color='secondary-300' 
           %}
           
           {% include modules/icon-with-text.html 
@@ -167,7 +164,7 @@ cta:
             element_type='li'
             icon=''
             icon_size='medium'
-            icon_color='secondary-200' 
+            icon_background_color='secondary-200' 
           %}
           
           {% include modules/icon-with-text.html 
@@ -176,7 +173,7 @@ cta:
             element_type='li'
             icon=''
             icon_size='medium'
-            icon_color='secondary-100' 
+            icon_background_color='secondary-100' 
           %}
 
           
@@ -224,19 +221,19 @@ cta:
             description_html='A total net societal “Economic Value” based on their cost-effectiveness per ton of waste.'
             icon=''
             icon_size='small'
-            icon_color='primary-400' 
+            icon_background_color='primary-400' 
           %}
           {% include modules/icon-with-text.html 
             description_html='The non-financial impacts of each solution – greenhouse gases reduced, water conserved, meals saved, and jobs created.'
             icon=''
             icon_size='small'
-            icon_color='primary-100' 
+            icon_background_color='primary-100' 
           %}
           {% include modules/icon-with-text.html 
             description_html='The business profit potential that the private sector could earn by investing in each solution.'
             icon=''
             icon_size='small'
-            icon_color='primary-600' 
+            icon_background_color='primary-600' 
           %}
 
           

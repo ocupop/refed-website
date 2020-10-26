@@ -1,6 +1,6 @@
 <{{ include.element_type | default: 'li' }} class="d-md-flex align-items-center">
 
-    {% include modules/icon.html icon=include.icon size=include.icon_size color=include.icon_color %}
+    {% include modules/icon.html icon=include.icon size=include.icon_size icon_background_color=include.icon_background_color %}
     
     <div class="description col">
       {% if include.title %}
