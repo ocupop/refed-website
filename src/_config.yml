@@ -311,6 +311,13 @@ carousel_type:
   - image
   - split
 
+image_width:
+  - 25%
+  - 33%
+  - 50%
+  - 66%
+  - 75%
+  
 _comments:
   cards: page section for card grid that is not related to a collection
         
