@@ -24,7 +24,7 @@
                     }
                 }
                 .dropdown-menu{
-                    background-color: $darkest-blue;
+                    background-color: $blue-darkest;
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -53,7 +53,7 @@
 
                  
                     .nav-back-button{
-                        background-color:$dark-blue;
+                        background-color:$primary-600;
                         .left-nav-arrow{
                             display:inline-block;
                         }
@@ -83,7 +83,7 @@
                 &:nth-child(2):hover{border-bottom: 9px solid $blue;}
                 &:nth-child(3):hover{border-bottom: 9px solid $green;}
                 &:nth-child(4):hover{border-bottom: 9px solid $orange;}
-                &:nth-child(5) a{background-color:$blue-green;color:$white;}
+                &:nth-child(5) a{background-color:$primary-500;color:$white;}
                 
                 padding-bottom: em(15);
                 a{
@@ -118,7 +118,7 @@
                             font-size:em(16.5);
                             &:hover{
                                 text-decoration:none;
-                                color:$light-green;
+                                color:$neutral-100;
                             }
                         }
                     }

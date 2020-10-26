@@ -16,14 +16,14 @@
         text-transform:uppercase;
         font-size:16px;
         font-weight:bold;
-        border-bottom:10px solid $darkest-blue;
+        border-bottom:10px solid $blue-darkest;
       }
-      &.prevention label{border-bottom-color:$darkest-blue;}
-      &.rescue label{border-bottom-color:$light-blue;}
+      &.prevention label{border-bottom-color:$blue-darkest;}
+      &.rescue label{border-bottom-color:$primary-400;}
       &.recycling label{border-bottom-color:$green;}
 
       .solutions{
-          border-right:1px solid $darkest-blue;
+          border-right:1px solid $blue-darkest;
           display:flex;
           flex:1;
           .solution{  
