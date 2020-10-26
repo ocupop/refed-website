@@ -36,22 +36,22 @@
             <span class='bkg '></span>
             
             {% if item.preheader %}
-              <div class="preheader">{{ item.preheader }}</div>
+              <div class="preheader editable">{{ item.preheader }}</div>
             {% endif %}
             
             {% if item.title %}
-              <h2>{{ item.title }}</h2>
+              <h2 class="editable">{{ item.title }}</h2>
             {% endif %}
 
-            <p>{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</p>
+            <div class="item-description editable">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
 
             {% if item.url %}
-              <p><a class="{% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a></p>
+              <p><a class="editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
 
         </div>
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-            <img src="{{ item.featured_image | item.hero }}">
+            <img class="editable" src="{{ item.featured_image | item.hero }}">
             <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
         </div>
       </div>
