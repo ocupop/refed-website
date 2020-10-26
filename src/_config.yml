@@ -154,7 +154,17 @@ _array_structures:
         logos:
           - link:
             alt_text:
-            image:                 
+            image:              
+  split_section:
+    - label: Split Section
+      icon: vertical_split
+      value:
+        section_background_color: primary
+        image_width: 25% 
+        image_alignment: right
+        image_to_edge: false   
+        text_to_edge: false   
+        item:
   cards:
     - label: Cards
       icon: view_column
