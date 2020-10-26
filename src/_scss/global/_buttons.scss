@@ -20,7 +20,8 @@
   }
 }
 
-.text-link, .card-link{
+.text-link,
+.card-link{
   @extend %text-btn;
 }
 
