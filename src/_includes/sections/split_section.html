@@ -40,18 +40,22 @@
             {% endif %}
             
             {% if item.title %}
-              <h2 class="mb-3 editable">{{ item.title }}</h2>
+              <h2 class="mb-3 editable">
+              Our Founder
+            </h2>
             {% endif %}
 
-            <div class="mb-4 item-description editable">{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</div>
+            <div class="mb-4 item-description editable">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat...</p>
+            </div>
 
             {% if item.url %}
-              <a class="m-0 editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
+              <a class="m-0 editable {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="/about-us">Read More</a>
             {% endif %}
 
         </div>
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-            <img class="editable" src="{{ item.featured_image | item.hero }}" />
+            <img class="editable" src="/uploads/3b7e4c3ccb38714fd460ce3f466add90.png" />
             <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
         </div>
       </div>
