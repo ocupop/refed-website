@@ -1,6 +1,9 @@
+
+{% assign item = include.item %}
+
 {% if include.image_width == '25%' %}
-  {% capture text-class %}col-md-3{% endcapture %}
-  {% capture image-class %}col-md-9{% endcapture %}
+  {% capture text-class %}col-md-9{% endcapture %}
+  {% capture image-class %}col-md-3{% endcapture %}
 {% elsif include.image_width == '33%' %}
   {% capture text-class %}col-md-8{% endcapture %}
   {% capture image-class %}col-md-4{% endcapture %}
@@ -26,16 +29,30 @@
 
 
 
-<section class="split-section image-{{include.image_alignment}} " id={{ include.id }}>
+<section class="split-section image-{{include.image_alignment | default: 'right'}} " id={{ include.id }}>
     <div class="container split-section">
       <div class="row">   
-        <div class="p-5 col-12 {{text-class}} column-{{include.section_background_color}}">
+        <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
             <span class='bkg '></span>
-            <h1>{{ include.item.title }}</h1>
-            <p>{{ include.item.description_html }}</p>
+            
+            {% if item.preheader %}
+              <div class="preheader">{{ item.preheader }}</div>
+            {% endif %}
+            
+            {% if item.title %}
+              <h2>{{ item.title }}</h2>
+            {% endif %}
+
+            <p>{{ item.summary | item.description_html | default:item.content | truncatewords: 50 }}</p>
+
+            {% if item.url %}
+              <p><a class="{% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a></p>
+            {% endif %}
+
         </div>
-        <div class="p-5 col-12 {{image-class}} column-{{include.section_background_color}}">
-            <span class='bkg ' style="background-image:url('{{ include.item.featured_image }}')"></span>
+        <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
+            <img src="{{ item.featured_image | item.hero }}">
+            <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
         </div>
       </div>
     </div>

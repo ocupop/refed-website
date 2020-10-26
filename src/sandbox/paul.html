@@ -136,20 +136,32 @@ testimonials:
     image_alignment: right
     
   
-split_section:
-  item:
-    layout: post
-    title: Sample Post Title
-    description_html: COVID-19 has sent shock waves through our entire food system — from producers to end recipients — resulting in a surge of on-farm food loss, food business closures, labor shortages, and a growing number of food insecure individuals. By leveraging our central role as a convening organization within the food waste space, ReFED launched several funding initiatives, webinar series, and resource guides to inspire collaborations between businesses, innovators, funders, and, service organizations to help them adapt to this new reality.
-    label: This is a labe
-    post_date: 2020-12-22
-    news_type: News Type
-    author: Somebody McWhoever
-    hero: https://via.placeholder.com/410x410
-    featured_image: https://via.placeholder.com/410x410
-    news_categories: [cat1, cat2, cat3]
-    link: View our COVID_19 initiatives
-    link_url: #
+custom_split_section_item:
+  type: custom
+  preheader: The Role of Policy in Food Waste Recovery
+  title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  featured_image: https://via.placeholder.com/410x410
+  link_label: See Solutions
+  url: /go-to-here
+
+custom_split_section_item_2:
+  type: custom
+  preheader: Global Crisis
+  title: Covid-19
+  summary: COVID-19 has sent shock waves through our entire food system — from producers to end recipients — resulting in a surge of on-farm food loss, food business closures, labor shortages, and a growing number of food insecure individuals. By leveraging our central role as a convening organization within the food waste space, ReFED launched several funding initiatives, webinar series, and resource guides to inspire collaborations between businesses, innovators, funders, and, service organizations to help them adapt to this new reality.
+  featured_image: https://via.placeholder.com/410x410
+  link_label: View our COVID_19 initiatives
+  url: go-to-here
+
+custom_split_section_item_3:
+  type: custom
+  title: Our Founder
+  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in.” culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in.” culpa qui officia deserunt mollit anim id est laborum.
+  featured_image: https://via.placeholder.com/410x410
+  link_label: Read More
+  url: /about-us
+  button_type: text
 
 
 
@@ -158,21 +170,27 @@ split_section:
 <section class="pb-0">
   <div class="container">
     <h1>Split Section</h1>
-    <h3>Showing different columns stretched to edge of browser.</h3>
+    <h3>Case Study</h3>
   </div>
 </section>
 
-
+{% assign item = site.case_studies | first %}
 {% include sections/split_section.html   
   section_background_color='primary'  
-  image_width='25%' 
+  image_width='50%' 
   image_alignment='right'  
-  image_to_edge=false   
-  text_to_edge=false   
+  image_to_edge=true   
+  text_to_edge=true   
   id='ID_OF_THIS_SECTION-1' 
-  item=page.split_section.item
+  item=item
 %}
+<section class="pb-0">
+  <div class="container">
+    <h3>Split Section: Post</h3>
+  </div>
+</section>
 
+{% assign item = site.posts | first %}
 {% include sections/split_section.html   
   section_background_color='secondary'  
   image_width='33%' 
@@ -180,17 +198,54 @@ split_section:
   image_to_edge=true   
   text_to_edge=true   
   id='ID_OF_THIS_SECTION-2' 
-  item=page.split_section.item
+  item=item
 %}
+<section class="pb-0">
+  <div class="container">
+    <h3>Split Section: Press</h3>
+  </div>
+</section>
+{% assign item = site.press | first %}
+{% include sections/split_section.html item=item %}
+
+
+
+<section class="pb-0">
+  <div class="container">
+    <h3>Split Section: Custom Sections</h3>
+  </div>
+</section>
+{% include sections/split_section.html   
+  section_background_color='primary'  
+  image_width='25%' 
+  image_alignment='right'  
+  image_to_edge=false   
+  text_to_edge=true   
+  id='ID_OF_THIS_SECTION-3' 
+  item=page.custom_split_section_item
+%}
+
+
+{% include sections/split_section.html   
+  section_background_color='primary'  
+  image_width='25%' 
+  image_alignment='right'  
+  image_to_edge=false   
+  text_to_edge=true   
+  id='ID_OF_THIS_SECTION-3' 
+  item=page.custom_split_section_item_2
+%}
+
+
 
 {% include sections/split_section.html   
   section_background_color='light'  
   image_width='50%' 
-  image_alignment='right'  
-  image_to_edge=true   
-  text_to_edge=false   
+  image_alignment='left'  
+  image_to_edge=false   
+  text_to_edge=true   
   id='ID_OF_THIS_SECTION-3' 
-  item=page.split_section.item
+  item=page.custom_split_section_item_3
 %}
 
 

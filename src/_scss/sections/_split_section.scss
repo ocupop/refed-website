@@ -12,6 +12,22 @@ SAMPLE
 </section>
 */
 .split-section{
+  .col-text{
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
+  .col-image{
+    padding:0;
+  }
+  
+  @include media-breakpoint-up(md) { 
+    &.image-left .col-text{
+      padding-left:7rem;
+    }
+    &.image-right .col-text{
+      padding-right:7rem;
+    }
+  }
   .bkg{
         position: absolute;
         display: block; 
@@ -26,22 +42,47 @@ SAMPLE
 
   /* Mobile Only */
   @include media-breakpoint-down(sm) {    
-    .text-to-browser-edge, 
-    .image-to-browser-edge{
+    .col-text, 
+    .col-image{
       .bkg{
         width: calc(100vw); 
         left: 50%;
         transform: translateX(-50%);
-      }         
+      }
+    }
+    .col-image {
+      width: calc(100vw);
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: unset;
+      img{
+        width: 100vw;
+      } 
     }    
+    .col-text{
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+
+    .image-to-browser-edge{
+
+    }
   }
 
   /* Desktop Only */
   @include media-breakpoint-up(md) {      
     position: relative;
+    .col-image{
+      img{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        object-fit:cover;
+      }
+    }
     .text-to-browser-edge, 
     .image-to-browser-edge{
-      .bkg{       
+      .bkg, img{       
         width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'md')}) / 2));    // width of the column plus the width of the gutter, minus 17px for the scrollbar width.     
       }
     }
@@ -49,19 +90,23 @@ SAMPLE
         right: 0;
         left: auto;
     }
-    .image-to-browser-edge .bkg{
+    .image-to-browser-edge{
+      img{
         left: 0;
         right: auto;
     }  
+    }
     &.image-left{
         > .container > .row{
             flex-direction: row-reverse;     
         }   
-        .text-to-browser-edge .bkg{
+        .text-to-browser-edge{
+          .bkg{
             left: 0;
             right: auto;
+          }
         }
-        .image-to-browser-edge .bkg{
+        .image-to-browser-edge img{
             right: 0;
             left: auto;
         }  
@@ -72,9 +117,9 @@ SAMPLE
   
 
   @include media-breakpoint-up(lg) { 
-    .text-to-browser-edge,, 
+    .text-to-browser-edge,
     .image-to-browser-edge{
-      .bkg{       
+      .bkg, img{       
         width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2)); 
       }
     } 
@@ -83,7 +128,7 @@ SAMPLE
   @include media-breakpoint-up(xl) { 
     .text-to-browser-edge, 
     .image-to-browser-edge{
-      .bkg{
+      .bkg, img{
         width: calc(100% + (((100vw - 17px) -  #{map-get($container-max-widths, 'xl')} ) / 2)); 
       }
     }
@@ -113,6 +158,10 @@ SAMPLE
   .column-dark,
   .column-black{
     color:$white;
+  }
+  
+  .column-info .btn-info{
+    background-color: $primary;
   }
 
 }
