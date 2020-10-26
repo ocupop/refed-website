@@ -4,15 +4,15 @@
     
     <div class="description col">
       {% if include.title %}
-        <h3 class="editable">{{ include.title }}</h3>
+        <h3 class="editable mb-2">{{ include.title }}</h3>
       {% endif %}
 
       {% if include.description_html %}
-        <div class="description_html editable">{{ include.description_html }}</div>
+        <div class="description_html my-2 editable">{{ include.description_html }}</div>
       {% endif %}
 
       {% if include.link %}
-        <a class="editable {% if include.button_type == 'button' %}btn btn-secondary{% endif %}{% if include.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ include.link }}">{{ include.button_text | default: 'Learn More' }}</a>
+        <a class="editable mt-2 {% if include.button_type == 'button' %}btn btn-secondary{% endif %}{% if include.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ include.link }}">{{ include.button_text | default: 'Learn More' }}</a>
       {% endif %}
 
     </div>
