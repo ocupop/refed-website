@@ -4,19 +4,19 @@
     
     <div class="description col">
       {% if include.title %}
-        <h3 class="editable mb-2">
-        Tangible Outcomes
-      </h3>
+        <h3 class="mb-2">
+            {{ include.title }}
+        </h3>
       {% endif %}
 
       {% if include.description_html %}
-        <div class="description_html my-2 editable">
-        <p>The business profit potential that the private sector could earn by investing in each solution.</p>
+        <div class="description_html my-2">
+        {{ include.description_html }}
       </div>
       {% endif %}
 
       {% if include.link %}
-        <a class="editable mt-2 {% if include.button_type == 'button' %}btn btn-secondary{% endif %}{% if include.button_type == 'text' %}text-link{% endif %} block mr-3" href="/gotohere">Learn More</a>
+        <a class="mt-2 {% if include.button_type == 'button' %}btn btn-secondary{% endif %}{% if include.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ include.link }}">{{ include.button_text }}</a>
       {% endif %}
 
     </div>
