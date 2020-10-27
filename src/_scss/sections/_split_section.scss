@@ -147,6 +147,8 @@ SAMPLE
   .column-dark .bkg      { background-color:$dark; }
   .column-white .bkg     { background-color:$white; }
   .column-black .bkg     { background-color:$black; }
+  .column-neutral-100 .bkg { background-color: $neutral-100; }
+  .column-neutral-200 .bkg { background-color: $neutral-200; }
   
   .column-primary,
   .column-secondary,
