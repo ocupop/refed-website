@@ -81,7 +81,14 @@ testimonials:
     section_background_color:
       - white
     image_alignment:
-      - left       
+      - left
+cta_buttons:
+  - link: /our-work
+    link_label: Learn about Our Work
+  - link: /data-insights
+    link_label: Data & Insights
+  - link: capital-innovation  
+    link_label: See Capital & Innovation
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -157,11 +164,7 @@ testimonials:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="d-flex mt-4 justify-content-center align-items-center">
-          <a href="/our-work" class="btn btn-green mx-2">Learn About Our Work</a>
-          <a href="/our-work" class="btn btn-green mx-2">Learn About Our Work</a>
-          <a href="/our-work" class="btn btn-green mx-2">Learn About Our Work</a>
-        </div>
+        {% include sections/cta_buttons.html items=page.cta_buttons %}
       </div>
     </div>
   </div>
