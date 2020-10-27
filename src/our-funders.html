@@ -57,6 +57,6 @@ logo_pile:
 
 {% include sections/logo_pile.html logo_pile=page.logo_pile %}
 
-{% include modules/split-carousel.html %}
+{% include sections/carousels/carousel_split.html items=site.posts section_background_color='primary' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
    
 {% include sections/cta.html cta=page.cta %}

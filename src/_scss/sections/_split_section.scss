@@ -19,6 +19,11 @@ SAMPLE
   .col-image{
     padding:0;
   }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
   
   @include media-breakpoint-up(md) { 
     &.image-left .col-text{
@@ -128,7 +133,7 @@ SAMPLE
   @include media-breakpoint-up(xl) { 
     .text-to-browser-edge, 
     .image-to-browser-edge{
-      .bkg, img{
+      .bkg, img, .bg-image{
         width: calc(100% + (((100vw - 17px) -  #{map-get($container-max-widths, 'xl')} ) / 2)); 
       }
     }

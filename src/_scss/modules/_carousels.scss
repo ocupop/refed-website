@@ -29,6 +29,17 @@
   }
 }
 
+.dots-white {
+  .flickity-page-dots {
+    .dot{
+      border: 1px solid $white;
+      &.is-selected{
+        background-color: $white;
+      }
+    }
+  }
+}
+
 .text-light,
 .text-white {
   .flickity-prev-next-button.previous {
@@ -49,7 +60,7 @@
 
 
 .carousel-refed-dots {
-  margin-top: 40px;
+  
   .flickity-page-dots {
     top: -40px;
     bottom: inherit;
@@ -87,42 +98,44 @@
     &.dots-right .flickity-page-dots{
       left: 50%;
     } 
-      &.dots-left .flickity-page-dots{
+    &.dots-left .flickity-page-dots{
+      left: 0;
+    } 
+    &.dots-left-in-container{
+      .flickity-page-dots{
         left: 0;
+        max-width:#{map-get($container-max-widths, 'xl')};
+        padding-top:em(50);
+        // TODO: make responsive size max width;
+        width:100%;
+        margin:auto;
       } 
-      &.dots-left-in-container{
-        .flickity-page-dots{
-          left: 0;
-          max-width:#{map-get($container-max-widths, 'xl')};
-          padding-top:em(50);
-          // TODO: make responsive size max width;
-          width:100%;
-          margin:auto;
-        } 
+    }
+    
+    
+    @media screen and (max-width: $screen-md-min){
+      &.dots-right .flickity-page-dots{
+        left: 0;
       }
-      
-      
-      @media screen and (max-width: $screen-md-min){
-        &.dots-right .flickity-page-dots{
-          left: 0;
-        }
-        .flickity-page-dots{
-          top: 375px;
-        }
+      .flickity-page-dots{
+        top: 375px;
       }
-      @media screen and (max-width: $screen-sm-min){
-        .flickity-page-dots{
-          top: 67vw;
-          &:after{
-            content:'need to find a solution for the placement of these dots.';
-            background-color: pink;
-            padding: 4px;
-            display: block;
-            font-size: 12px;
-            width: 180%;
-            opacity: 0.8;
-          }
+    }
+    @media screen and (max-width: $screen-sm-min){
+      .flickity-page-dots{
+        top: 67vw;
+        &:after{
+          content:'need to find a solution for the placement of these dots.';
+          background-color: pink;
+          padding: 4px;
+          display: block;
+          font-size: 12px;
+          width: 180%;
+          opacity: 0.8;
         }
       }
+    }
   }
 }
+
+
