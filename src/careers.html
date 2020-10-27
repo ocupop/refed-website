@@ -14,11 +14,44 @@ hero:
 perks_and_benefits:
   - title: Competitive medical benefits package for individuals and families
     icon_image: /img/icons/careers/careers_medicalbenefits.svg
+  - title: 401(k) plans with generous employer matching
+    icon_image: /img/icons/careers/careers_401k.svg
+  - title: Optional dental and vision coverage
+    icon_image: /img/icons/careers/careers_vision.svg
+  - title: Professional Development Opportunities and Mentor Program
+    icon_image: /img/icons/careers/careers_professionaldev.svg
+  - title: Short-term and long-term disability coverage
+    icon_image: /img/icons/careers/careers_disability.svg
+  - title: 'Paid holidays, vacation, sick, and family leave'
+    icon_image: /img/icons/careers/careers_holiday.svg
+  - title: Term life insurance
+    icon_image: /img/icons/careers/careers_lifeinsurance.svg
+  - title: Flexible work environment
+    icon_image: /img/icons/careers/careers_workenvironment.svg
 operation_principles:
   - title: We are guided by integrity
     list_items:
-      - title:
-    icon_image:          
+      - title: We ensure our work advances our mission
+      - title: We go where the facts take us
+      - title: We prioritize the team over individuals
+      - title: We make sure our work is reliable
+      - title: We work efficiently
+      - title: We hold ourselves accountable
+      - title: We use the newspaper test
+    icon_image: /img/icons/operating_principles/operatingprinciples_integrity.svg
+  - title: We make our teammates feel good
+    list_items:
+      - title: We are flexible
+      - title: We create space for true time off
+      - title: We keep things in perspective
+      - title: We make work fun
+    icon_image: /img/icons/operating_principles/operatingprinciples_team.svg
+  - title: We communicate clearly
+    list_items:
+      - title: We use shared and simple language
+      - title: We expect and respect everyones’ opinions
+      - title: We communicate directly
+    icon_image: /img/icons/operating_principles/operatingprinciples_communicate.svg
 cta:
   description_html: >-
     <p>ReFED's work is made possible with generous support from and in
@@ -54,7 +87,7 @@ cta:
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
 
         <p class="h3 font-serif font-weight-light my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
-        <hr>
+        <hr />
       </div>
     </div>
     
@@ -103,7 +136,7 @@ cta:
       {% for benefit in page.perks_and_benefits %}
         <li class="d-md-flex col-md-6 align-items-center">
           <div class="circle-icon circle-icon-small rounded-circle bg-info">
-            <img src="{{ benefit.icon_image }}" class="img-fluid" alt="{{ benefit.title}} icon">
+            <img src="{{ benefit.icon_image }}" class="img-fluid" alt="{{ benefit.title}} icon" />
           </div>
           <div class="description col">
             <p class="lead">{{ benefit.title }}</p>
@@ -190,7 +223,7 @@ cta:
     <div class="row">
       {% for principle in page.operation_principles %}
         <div class="col-lg-6">
-          <img src="{{ principle.icon_image }}" class="img-fluid" alt="{{ principle.title }}">
+          <img src="{{ principle.icon_image }}" class="img-fluid" alt="{{ principle.title }}" />
           <h4>{{ principle.title }}</h4>
           <ul>
             {% for item in principle.list_items %}
