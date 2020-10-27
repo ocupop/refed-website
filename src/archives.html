@@ -4,7 +4,9 @@ title: Newsletter Archive
 hero:
 ---
 {% include modules/subnav-newsroom.html %}
-{% include modules/hero.html %}
+{% if page.hero %}
+  {% include sections/carousels/carousel_hero items=page.hero %}
+{% endif %}  
 
 <section class="press">
   <div class="container">  

@@ -1,15 +1,40 @@
 ---
 layout: default
 hero:
-cta: 
-  headline_h: "Learn more about ReFED, our values, and our mission. <a href='/contact'>Contact us</a> if you think you are a good match."
-  label: See About Us
-  link: /who-we-are/
+  - title: Discover the difference and make your mark with us at ReFED
+    subtitle:
+    description_html:
+    image: /img/careers/careers_header_image.jpg
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
+perks_and_benefits:
+  - title: Competitive medical benefits package for individuals and families
+    icon_image: /img/icons/careers/careers_medicalbenefits.svg
+operation_principles:
+  - title: We are guided by integrity
+    list_items:
+      - title:
+    icon_image:          
+cta:
+  description_html: >-
+    <p>ReFED's work is made possible with generous support from and in
+    partnership
+      with our funders.</p>
+  link: /our-funders
+  link_label: See Who is Funding Our Mission
+  colorbar:
+    color: '#e65e4a'
+    bar_position:
+      - left
 ---
 
-{% include modules/hero.html %}
+{% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section class="page-intro page-intro--our-funders">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -21,7 +46,43 @@ cta:
   </div>
 </section>
 
-<section class="bg-lightest">
+<section class="bg-neutral-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="preheader editable">Current Vacancies</h2>
+        <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
+
+        <p class="h3 font-serif font-weight-light my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
+        <hr>
+      </div>
+    </div>
+    
+    {% for i in (1..3) %}
+      <div class="row my-5">
+        <div class="col-12">
+          <h3>Job Title</h3>
+          <h5 class="mb-3">Job Location</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="btn btn-secondary mt-5" href="#">Apply Now</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="cta bg-primary text-white">
+  <div class="container">
+    <div class="row">     
+      <div class="col-lg-7 mb-3 mb-lg-0">
+        <p class="lead editable">Don’t see a match? We would still love to connect with you if you have something to bring to the table</p>
+      </div>
+      <div class="col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
+        <a href="#" class="btn btn-success font-serif text-nowrap btn-lg">Submit a Resume</a>    
+      </div> 
+    </div>
+  </div>
+</section>
+<section class="bg-neutral-100">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -39,41 +100,51 @@ cta:
     <p>ReFED offers a competitive benefits package, opportunities for professional development, and policies and programs that encourage a healthy work-life balance. Join our ReFED family and help us drive purposeful action to reduce wasted food in the U.S.</p>
     <ul class="row circle-icon-list circle-icon-list--small-list p-0 w-100">
       <!-- repeat this one. Remove the other ones. background color and icon will be dynamic -->
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-info"></div>
-        <div class="description col">
-          <p class="h3">Competitive medical benefits package for individuals/families</p>
-        </div>
-      </li>
+      {% for benefit in page.perks_and_benefits %}
+        <li class="d-md-flex col-md-6 align-items-center">
+          <div class="circle-icon circle-icon-small rounded-circle bg-info">
+            <img src="{{ benefit.icon_image }}" class="img-fluid" alt="{{ benefit.title}} icon">
+          </div>
+          <div class="description col">
+            <p class="lead">{{ benefit.title }}</p>
+          </div>
+        </li>
+      {% endfor %}
       <!-- END repeat comment -->
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-info"></div>
+      <!-- <li class="d-md-flex col-md-6 align-items-center">
+        <div class="circle-icon circle-icon-small rounded-circle bg-info">
+          <img src="/img/icons/careers/careers_401k.svg" class="img-fluid" alt="401k icon">
+        </div>
         <div class="description col">
-          <p class="h3">Generous 401(K) plans</p>
+          <p class="lead editable">401(k) plans with generous employer matching</p>
         </div>
       </li>
       <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-primary"></div>
+        <div class="circle-icon circle-icon-small rounded-circle bg-primary">
+          <img src="/img/icons/careers/careers_vision.svg" class="img-fluid" alt="Vision and Dental icon">
+        </div>
         <div class="description col">
-          <p class="h3">Option dental and vision coverage</p>
+          <p class="lead editable">Option dental and vision coverage</p>
         </div>
       </li>
       <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-primary"></div>
+        <div class="circle-icon circle-icon-small rounded-circle bg-primary">
+          <img src="/img/icons/careers/careers_professionaldev.svg" class="img-fluid" alt="Professional Dev icon">
+        </div>
         <div class="description col">
-          <p class="h3">Tuition reimbursement</p>
+          <p class="lead editable">Professional Development Opportunities and Mentor Program</p>
         </div>
       </li>
       <li class="d-md-flex col-md-6 align-items-center">
         <div class="circle-icon circle-icon-small rounded-circle bg-secondary"></div>
         <div class="description col">
-          <p class="h3">Short-term and long-term disability coverage</p>
+          <p class="lead editable">Short-term and long-term disability coverage</p>
         </div>
       </li>
       <li class="d-md-flex col-md-6 align-items-center">
         <div class="circle-icon circle-icon-small rounded-circle bg-secondary"></div>
         <div class="description col">
-          <p class="h3">Paid holidays, vacation, sick, and personal time.</p>
+          <p class="lead editable">Paid holidays, vacation, sick, and personal time.</p>
         </div>
       </li>
       <li class="d-md-flex col-md-6 align-items-center">
@@ -87,31 +158,8 @@ cta:
         <div class="description col">
           <p class="h3">Flexible work environment</p>
         </div>
-      </li>
+      </li> -->
     </ul>
-  </div>
-</section>
-
-<section class="bg-lightest">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="preheader">Vacancies</h2>
-        <h3>We Want You to Become a Food Waste Champion!</h3>
-        <p class="h2 font-serif font-weight-light my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
-      </div>
-    </div>
-    
-    {% for i in (1..3) %}
-      <div class="row my-5">
-        <div class="col-12">
-          <h3>Job Title</h3>
-          <h4>Job Location</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="btn btn-secondary" href="#">Apply Now</a>
-        </div>
-      </div>
-    {% endfor %}
   </div>
 </section>
 
@@ -135,81 +183,23 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="preheader">Working at ReFED:</h2>
-        <ul class="circle-icon-list circle-icon-list--large-list p-0">
-          <!-- repeat this one. Remove the other ones. background color and icon will be dynamic -->
-          <li class="d-md-flex">
-            <div class="circle-icon circle-icon-large rounded-circle bg-primary mb-5 mb-md-0"></div>
-            <div class="description col">
-              <h2>We Take Inspiration From Design Thinking</h2>
-              <p class="h3">We hire incredible people with a ‘can-do’ attitude that are hungry, passionate, and love new challenges. We embrace the idea that if we’re not continuously iterating and adapting — we are not evolving. Ultimately, “progress not perfection” is what we strive for by fostering a culture of innovation and continuous improvement.</p>
-            </div>
-          </li>
-          <!-- end repeat comment -->
-          <li class="d-md-flex ">
-            <div class="circle-icon circle-icon-large rounded-circle bg-secondary mb-5 mb-md-0"></div>
-            <div class="description col">
-              <h2>We Encourage Mutual Respect and Recognition</h2>
-              <p class="h3">Respect is the hallmark of working at ReFED. We use the platinum rule: do unto others as they would have you do unto them. In doing so, we recognize that the best decisions are made when a diverse range of voices are heard and acknowledged. Hence, we aim to understand and apply our teammates’ expertise and experience, as well as actively seeking ways to help each other grow.</p>
-            </div>
-          </li>
-          <li class="d-md-flex">
-            <div class="circle-icon circle-icon-large rounded-circle bg-success mb-5 mb-md-0"></div>
-            <div class="description col">
-              <h2>We Work as a Team and Lift Up Our Teammates</h2>
-              <p class="h3">Above all, we thrive because we work as a team and celebrate success as a team.</p>
-              <p class="h3">That means we show up for each other, act with empathy, and bring our authentic selves to work every day. We empower our employees in a work environment that is flexible and conducive to creating space for true time off, and that fosters a sense of belonging, participation, and commitment among employees.</p>
-            </div>
-          </li>
-        </ul>
+        <h2>Operation Principles at ReFED:</h2>
+     
       </div>
     </div>
-  </div>
-</section>
-
-<section class="bg-primary text-white">
-  <div class="container">
-    <div class="row flex-md-row-reverse">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-md-8">
-        <div class="h3 testimonial">
-          <blockquote class="pr-md-5">
-            <p>“Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
-            <footer>
-              <div class="cite">
-                Eileen Hyde
-                <div class="credentials font-italic">CEO, Walmart.org</div>
-              </div>
-            </footer>
-          </blockquote>
+    <div class="row">
+      {% for principle in page.operation_principles %}
+        <div class="col-lg-6">
+          <img src="{{ principle.icon_image }}" class="img-fluid" alt="{{ principle.title }}">
+          <h4>{{ principle.title }}</h4>
+          <ul>
+            {% for item in principle.list_items %}
+              <li>{{ item.title }}</li>
+            {% endfor %}
+          </ul>
         </div>
-      </div>
-    </div>    
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row">    
-      <div class="col-md-4 mb-5 mb-md-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-md-8">
-        <div class="h3 testimonial">
-          <blockquote class="pl-md-5">
-            <p>“The ReFED team has been an incredible strategic partner in our journey to end hunger and waste. ReFED’s insights and guidance helped shape the strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s Innovation Fund and its open call for innovative solutions. Kroger values ReFED’s deep knowledge and leadership in food waste reduction, and we’ve never been more excited and hopeful that together we can truly change our food system.”</p>
-            <footer>
-              <div class="cite">
-                Denise Osterhues
-                <div class="credentials font-italic">The Kroger Co.,</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>    
+      {% endfor %}
+    </div>
   </div>
 </section>
 
