@@ -1,25 +1,17 @@
 
 
-.food-waste-solutions-overview{
-    padding-bottom:0;
-}
 
-.food-waste-solutions-laptop{
-    img{
-    }
-     @media screen and (max-width: $screen-md-min){
 
-        .image-column{   
-            order:inherit; 
-            img{
-                top: 0;  
-                position: inherit;              
-            } 
-        }
-        .copy-column{
-            order:inherit;     
-        }
-     }
+.food-waste-consumes{
+  .media{
+      .media-body{
+          font-size:1.4375rem;
+          line-height: 1.1;
+          .stat{
+            font-size:3.75rem;
+          }
+      }
+  }
 }
 
 /* RESOURCES AND GUIDES  PAGE */

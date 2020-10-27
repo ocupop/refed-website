@@ -42,6 +42,7 @@ var scene = new ScrollMagic.Scene({
     triggerElement: "#sticky-nav",
     triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
   })
+    .setClassToggle("#sticky-nav", "minimized") // add class toggle
     .setPin("#sticky-nav")
     //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
