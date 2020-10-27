@@ -1,6 +1,6 @@
-{% assign num_slides = include.hero | size %}
+{% assign num_slides = include.items | size %}
 {% if num_slides == 1 %}
-{% assign hero = include.hero.first %}
+{% assign hero = include.items.first %}
 <div class="position-relative">
   <div class="hero bg-image w-100" style="background-image:url({{ hero.image | default: site.placeholder_image }});">
     <div class="hero-content">
@@ -43,7 +43,7 @@
 {% if num_slides > 1 %}
   <div class="position-relative">
     <div id="carousel-hero" class="carousel-refed">
-      {% for hero in include.hero %}
+      {% for hero in include.items %}
         <div class="hero bg-image w-100" style="background-image:url({{ hero.image | default: hero.featured_image }});">
           <div class="hero-content">
             <div class="container py-5 text-white">
