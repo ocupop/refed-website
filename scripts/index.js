@@ -107,20 +107,6 @@ Flickity.prototype.resize = function() {
   this.element.classList.add('flickity-resize');
 };
 
-
-/* Testimonials (Multiple Pages) */
-// var elem = document.querySelector('.carousel-testimonials');
-// if(elem){
-//   var flkty_testimonials = new Flickity( elem, {
-//   cellAlign: 'left',
-//   contain: true,
-//   "wrapAround": true,
-//   prevNextButtons: true,
-//   pageDots: true,
-//   adaptiveHeight: true
-// });
-// }
-
 /* Carousels - no dots by default */
 var carousel = document.querySelectorAll('.carousel-refed');
 if(carousel){
@@ -145,6 +131,21 @@ if(carousel_with_dots){
     cellAlign: 'left',
     "wrapAround": true,
     prevNextButtons: true,
+    pageDots: true,
+    adaptiveHeight: false
+    })
+  });
+}
+
+/* Carousels - with dots */
+var carousel_dots_only = document.querySelectorAll('.carousel-refed-dots-only');
+if(carousel_dots_only){
+  carousel_dots_only.forEach(function(carousel_dots_only){
+    var flkty_logos = new Flickity(carousel_dots_only, {
+    contain: true,
+    cellAlign: 'left',
+    "wrapAround": true,
+    prevNextButtons: false,
     pageDots: true,
     adaptiveHeight: false
     })

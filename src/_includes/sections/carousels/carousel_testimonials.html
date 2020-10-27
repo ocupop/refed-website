@@ -1,5 +1,6 @@
+{% assign num_items = include.items | size %}
 <section class="carousel-testimonials-section bg-primary text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
-  <div class="carousel-refed-dots carousel-testimonials">      
+  <div class="{% if num_items > 1 %}carousel-refed-dots{% endif %} carousel-testimonials">      
     {% for testimonial in include.items %}
     <div class="testimonial-slide w-100" >  
       <div class="container">     
