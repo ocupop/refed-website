@@ -2,56 +2,77 @@
 layout: default
 title: We Can Reduce Waste by 50%
 hero:
-cta: 
-  description_html: >-
-    <p>ReFED offers a range of solutions for organizations to advance their own food waste iniatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
+  - title: In the US, approximately 40% of all food goes uneaten.
+    subtitle:
+    description_html:
+    image: /img/food_waste_challenge/food_waste_challenge_header_image.png
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
+
+split_section_good_news:
+  type: custom
+  preheader: The good news?
+  title: Food waste is a solvable problem – and we know how to do it.
+  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  featured_image: /img/food_waste_challenge/tractor.png
+  link_label: See Solutions
+  url: /food-waste-solutions
+
+split_section_what_is_food_waste:
+  type: custom
+  preheader: What is Food Waste?
+  title: 
+  summary: >-
+    <p>Various organizations define food loss and waste in different ways. ReFED has adopted the U.S. Department 
+      of Agriculture definition of “food waste,” which refers to wasted food that happens anywhere along the supply 
+      chain and includes all types of food loss and waste as defined by other leading institutions.</p>
+    <p> Food waste is a subset of organic waste, which includes anything biodegradable that comes from plants or 
+      animals, such as yard trimmings and manure. Food waste includes unavoidable scraps, such as bones and rinds 
+      that retain beneficial value for reuse. It does not include waste from crop varieties specifically grown for 
+      fuel, animal feed, or other commercial uses.</p>
+  featured_image: /img/food_waste_challenge/what_is_food_waste.png
+
+split_section_what_is_the_impact:
+  type: custom
+  preheader: What is the Impact of Food Waste?
+  title: 
+  summary: When you consider what it takes to grow, transport, cool, cook, and serve food, the impacts of wasting food are truly staggering. If all of our country’s uneaten food was grown in one place, this “mega-farm” would cover roughly 80 million acres, over three-quarters of the entire state of California – all for food that is never eaten.
+  featured_image: https://via.placeholder.com/650x650
+  
+split_section_policy_overview:
+  type: custom
+  title: Policy Overview
+  summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
+  featured_image: /img/food_waste_challenge/policy_overview.png
+  link_label: View Policy Tracker
+  url: '#'
+
+
+                
+cta_insights_engine:
+  preheader: Our Newest Solution
+  title: ReFED Insights Engine
+  description_html: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
+  link: 'https://www.insights-engine-fpo.com/'
+  link_label: Launch ReFED Insights Engine
+  laptop_screen_image: /img/laptop-screen-fpo.jpg
+
+cta:
+  description_html: ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.
   link: /food-waste-solutions
-  link_label: See our solutions
+  link_label: See Our Solutions
   colorbar:
-    color: "#e65e4a"
-    bar_position: right
+    color: '#e65e4a'
+    bar_position:
+      - right
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<!--
-<section class="food-waste-overview"> 
-  <a name="overview"></a>
-  <div class="container">
-    <div class="row">
-      {% comment %} for num in (1..3) {% endcomment %}
-          <div class="card solution-{{ forloop.index }} col-lg-4" >
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class="card-circle-icon bg-primary"></span>
-            <div class="card-body">
-              <h3 class="card-title">It impacts the climate.</h3>
-              <div class="card-text">Food waste is responsible for approximately 8 percent of global greenhouse gas emissions.</div>
-            </div>
-          </div>
-          
-          <div class="card solution-{{ forloop.index }} col-lg-4" >
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class='card-circle-icon bg-secondary'></span>
-            <div class="card-body">
-              <h3 class="card-title">It impacts people.</h3>
-              <div class="card-text">“Food waste” is actually perfectly good food that could have gone to the 40 million Americans who are struggling with food insecurity.</div>
-            </div>
-          </div>
-
-          <div class="card solution-{{ forloop.index }} col-lg-4" >
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class='card-circle-icon bg-success'></span>
-            <div class="card-body">
-              <h3 class="card-title">It impacts the economy.</h3>
-              <div class="card-text">Each year, food that goes uneaten costs farmers, manufacturers, businesses, and consumers a huge $218 billion.</div>
-            </div>
-          </div>
-      {% comment %} endfor {% endcomment %} 
-    </div>
-
-</div>
-</section>
--->
 
 <section>
   <div class="container">
@@ -60,51 +81,35 @@ cta:
         <img class="w-100 " src="https://via.placeholder.com/375x375" alt="" />
       </div>
       <div class="col-lg-8">
-        <div class="h3 editable">
-          <p>Each year, <b>52.4 million tons of food</b> are thrown into landfills annually, and another <b>10.1 million tons</b> is estimated to be discarded or left unharvested on farms and in packinghouses.</p>
-          <p>This mountain of wasted calories, resources, and energy grows up to two times larger when you add in other food fit for human consumption yet still ends up being composted, converted into animal feed, or discarded in other ways.</p>
-        </div>
+        <div>
+          <p class="editable lead">Each year, XX million tons of food never get eaten in the U.S. In fact, food is the number one product entering landfills today.</p>
+          <div class="editable">
+            <p>Not only is that a huge waste of nutrition with enormous resource and climate impacts, it’s also an urgent global issue. The United Nations, European Parliament, U.S. Government, and global business coalitions such as the Consumer Goods Forum have all set goals to cut food waste in half by 2025 or 2030.</p>
+          </div>
       </div>
     </div>    
   </div>
 </section>
 
-<section class="globe-module bg-primary text-white">
-  <div class="container">
-    <div class="row">     
-      <div class="col-lg-9 rightcolumn copy-column py-5">
-        <div class="preheader editable">The good news?</div>
-        <h2 class="editable">Food waste is a solvable problem &mdash; And we know how to do it.</h2>
-        <a href="#" class="btn btn-success">See Solutions</a>
-      </div>
-      <div class="col-lg-3 leftcolumn image-column ">
-        <img class="d-block" src="/img/globe.png" alt="Earth">
-      </div>      
-    </div>    
-  </div>
-</section>
+{% include sections/split_section.html 
+  id='good-news'   
+  section_background_color='primary'  
+  image_width='33%' 
+  image_alignment='right'  
+  image_to_edge=true   
+  text_to_edge=true   
+  section_class='py-0'
+  item=page.split_section_good_news
+%}
 
-<!--
-<section class=" bg-secondary text-white py-3">
-  <div class="container ">
-    <div class="row d-flex align-items-center">    
-      <div class="col-lg-9">
-        <p class="h3 font-serif editable">Visit <a href="https://SaveTheFood.com" style="color:#00D1C3;">SaveTheFood.com</a> for free tools and resources to help you reduce food waste in your own kitchen.</p>
-      </div>
-      <div class="col-lg-3">
-        <a href="https://SaveTheFood.com" target="_blank" class="btn btn-primary btn-lg font-serif">Learn More</a>
-      </div>      
-    </div>    
-  </div>
-</section>
--->
+
 <a name="explore-food-waste"></a>
-<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-blue-green text-white py-4" id="sticky-nav">
+<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4 " id="sticky-nav">
   <div class="container">
-    <div class="preheader">Explore this issue</div>
+    <div class="preheader mb-3">Explore this issue</div>
     <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold">
       <li class="nav-item" >
-        <a href="#what-is-food-waste">What is food waste?</a>
+        <a href="#what-is-food-waste text-white">What is food waste?</a>
       </li>
       <li class="nav-item">
         <a href="#what-is-the-impact">What is the impact?</a>
@@ -122,21 +127,26 @@ cta:
   </div>
 </nav>
 
-<section class="what-is-food-waste">
-  <a name="what-is-food-waste"></a>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="w-100 " src="https://via.placeholder.com/500x500" alt="" />
-      </div>
-      <div class="col-lg-8 pl-5>">
-        <h2 class="preheader">What is Food Waste?</h2>
-        <h3>Various Organizations define food loss and waste...</h3>
-        <p>Food waste is a subset...</p>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/split_section.html 
+  id='what-is-food-waste'   
+  section_background_color='light'  
+  image_width='33%' 
+  image_alignment='left'  
+  image_to_edge=true   
+  text_to_edge=true   
+  section_class='py-0'
+  item=page.split_section_what_is_food_waste
+%}
+
+{% include sections/split_section.html 
+  id='impacts'   
+  section_background_color='white'  
+  image_width='33%' 
+  image_alignment='right'  
+  image_to_edge=false   
+  text_to_edge=false   
+  item=page.split_section_what_is_the_impact
+%}
 
 
 
@@ -145,15 +155,7 @@ cta:
 <section class="what-is-the-impact">
   <a name="what-is-the-impact"></a>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 pl-5>">
-        <h2 class="preheader">What is the impact of food waste?</h2>
-        <h3>When you consider what it takes to grow, tgransport, cook, cool and serve fod, the impacts of wasting food are truly staggering. if all of our ...</h3>
-      </div>
-      <div class="col-lg-4">
-        <img class="w-100 " src="https://via.placeholder.com/500x500" alt="" />
-      </div>
-    </div>
+    
 
     <div class="row pt-5">
       <div class="col-12">
@@ -293,7 +295,7 @@ cta:
   <a name="what-causes-food-waste"></a>
   <div class="container">
     <h2 class="preheader editable ">What causes food waste?</h2>
-    <p class="editable max-out-text-width" >Addressable food waste can be found throughout the supply chain, which can be simplified into four segments: farms, food manufacturers, consumer-facing businesses (including distributors, retail grocers, restaurants, foodservice providers, and institutions), and homes (including all types of dwellings).</p>
+    <p class="editable max-out-text-width" >The reasons for food waste are numerous and complex across the food value chain. Here are some examples of why it occurs:</p>
     
     {% for num in (1..5) %}     
     <div class="row my-5">  
@@ -348,35 +350,19 @@ cta:
   </div>
 </section>
 
-<section class="laptop-module bg-light">
-  <div class="container solutions-featured">
-    <div class="row">     
-      <div class="col-lg-6 rightcolumn copy-column py-5">
-        <h3 class="preheader editable">Our Newest Solution:</h3>
-        <h2 class="editable">ReFED Insights Engine</h2>
-        <p class="editable">A one-stop online data center featuring tools and resources, including an extensive analysis of dozens of potential solutions, to guide users from food waste awareness to action. Combining more than 50 public and proprietary datasets, plus self-reported data from food businesses, our Insights Engine enables users to:</p>
-        <a href="#" class="btn btn-secondary editable p-3">Launch ReFED Insights Engine</a>
-      </div>
-      <div class="col-lg-6 leftcolumn image-column ">
-        <img class="d-block" src="/img/laptop.png" alt="Laptop showing ReFED Insights Engine">
-      </div>      
-    </div>    
-  </div>
-  <div class="section__colorbar left" style="background-color:#e65e4a;" />
-</section>
 
-<section class="policy-overview">
-  <a name="policy-overview"></a>
-  <div class="container extend-to-browser-edge">
-    <div class="row">   
-      <div class="p-5 col-12 col-lg-6 stretch-left stretch-image"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/54/1000/333)"></div>
-      <div class="p-5 col-12 col-lg-6 stretch-right stretch-bkg">
-        <h2>Policy Overview</h2>
-        <p>Public policy at the federal, state and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p>
-        <a href="#" class="btn btn-secondary">View Policy Traker</a>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/split_section.html 
+  id='covid-19'   
+  section_background_color='white'  
+  image_width='50%' 
+  image_alignment='left'  
+  image_to_edge=true   
+  text_to_edge=false   
+  section_class='py-0'
+  item=page.split_section_policy_overview
+%}
+
+{% include sections/cta_insights_engine.html data=page.cta_insights_engine id='refed-insights-engine' %}
+
 
 {% include sections/cta.html cta=page.cta %}

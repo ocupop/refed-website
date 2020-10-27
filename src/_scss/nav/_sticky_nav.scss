@@ -1,16 +1,52 @@
 .sticky-nav{
     z-index:999;
-    .preheader{
-        font-size:18px;
-    }
+    padding-top:2.3rem !important;
+    padding-bottom:3.2rem !important;
+
     ul{
         width:100%;
         justify-content: space-between ;
         li{
+            margin-right:2em;
+            &:last-item{ margin-right:0;}
             a{
-                font-size:14px;
-                color:rgba(255,255,255,0.7);
-                &:hover{color:#FFFFFF;text-decoration:none;}
+                font-weight:$font-weight-semibold;
+                font-size:1.125rem;
+                color:$neutral-100  !important;
+                line-height: 1;
+                &:hover{
+                    opacity:1;
+                    text-decoration:none;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        ul{
+            li{
+                a{
+                    //border:1px solid red;
+                    //font-size:1rem;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        ul{
+            li{
+                margin-right:1rem;
+                a{
+                    font-size:0.9rem;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        ul{
+            li{
+                margin-right:0;
             }
         }
     }

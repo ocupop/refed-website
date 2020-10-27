@@ -76,26 +76,7 @@ cta:
 
 
 <!-- This section needs work -->
-<section class="funder-impact bg-lightest p-0">
-  <a name="funder-impact"></a>
-  <div class="carousel-full-width carousel-two-column dots-left-in-container">
-    {% for casestudy in site.case_studies %}
-    <div class="w-100">
-      <div class="container extend-to-browser-edge">
-        <div class="row">   
-          <div class="py-5 col-12 col-lg-5 stretch-left stretch-bkg">
-            <div class="preheader pt-5">Funder Impact Stories</div>
-            <h2 class="editable">{{ casestudy.title }}</h2>
-            <p class="editable">{{ casestudy.content | truncate: 400 }}</p>
-            <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
-          </div>
-          <div class="p-5 col-12 col-lg-7 stretch-right stretch-image"><span class='stretched-inner' style="background-image:url({{ casestudy.image }})"></div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
+{% include modules/split-carousel.html %}
 
 <!-- This section needs work -->
 <section class="case-studies list-with-filter">
