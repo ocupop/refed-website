@@ -5,7 +5,7 @@ hero:
   - title: We are powered by our team's diverse expertise and experience
     subtitle:
     description_html:
-    image:
+    image: /img/team/ourteam_header_image.jpg
     link:
     link_text:
     buttons:
@@ -108,7 +108,7 @@ advisory_council:
       summary_html: '<p>Chief Operating Officer, 84.51&deg;</p>'
 ---
 
-{% include modules/hero.html %}
+{% include sections/carousels/carousel_hero.html items=page.hero %}
 <section class="pb-0">
   <div class="container">
     <div class="row">
@@ -125,9 +125,9 @@ advisory_council:
 <section class="staff">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-lg-8">
-        <h2 class="preheader">Staff</h2>
-        <p>ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
+      <div class="col-12">
+        <h2 class="preheader editable">Staff</h2>
+        <p class="lead editable">ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
       </div>
     </div>
     {% for object in page.team_members %}
@@ -162,13 +162,13 @@ advisory_council:
     <div class="row">
       {% for member in page.board_of_directors.members %}
         <div class="col-lg-6">
-          <div class="row align-items-center">
+          <div class="row align-items-center mb-4">
             <div class="col-6">
               <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid mb-3 mb-lg-0" alt="title" />
             </div>
             <div class="col-6">
-              <h3 class="mb-0">{{member.name}}</h3>
-              <div class="text-serif">
+              <h4 class="mb-0">{{member.name}}</h4>
+              <div class="font-serif">
                 {{ member.summary_html }}
               </div>
             </div>
@@ -192,15 +192,16 @@ advisory_council:
       <div class="row align-items-center">
         {% for member in page.advisory_council.members %}
           <div class="col-6 col-lg-4">
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-4">
               <div class="col-lg-4">
                 <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid" alt="title" />
               </div>
               <div class="col-lg-8">
-                <h3 class="card-title">{{ member.name }}</h3>
+                <h4 class="card-title">{{ member.name }}</h4>
                 <div class="font-serif">
                   {{ member.summary_html }}
-                </div>  
+                </div> 
+              </div>   
             </div>
           </div>
         {% endfor %}
@@ -214,7 +215,7 @@ advisory_council:
     <a name="expert-network"></a>
     <div class="container">
       <div class="row mb-5">
-        <div class="col-12">
+        <div class="col-lg-8">
           <h2 class="preheader editable pb-3">Expert Network</h2>
           <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
           <a href="#" class="btn btn-secondary editable mt-4">Become or Nominate a Participant</a>  
