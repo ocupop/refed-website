@@ -2,26 +2,80 @@
 layout: default
 title: Our Impact
 hero:
-cta: 
-  headline: To learn how you can support our mission, please contact us via email.
-  label: Contact Us
+  - title: Our Impact
+    subtitle:
+    description_html:
+    image: /img/our_impact/our_impact_header_image.png
+    link:
+    link_text:
+    buttons:
+      - link:
+        link_label:
+        button_type:
+
+cta_featured_organizations:
+  description_html: See how the ReFED efforts have inspired action and efforts in these featured organizations and companies.
+  link: '#'
+  link_label: See Featured Organizations
+  section_background_color: primary
+
+carousel_testimonial:
+  - text: >-
+      “The ReFED team has been an incredible strategic partner in our journey to
+      end hunger and waste. ReFED’s insights and guidance helped shape the
+      strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
+      Innovation Fund and its open call for innovative solutions. Kroger values
+      ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
+      never been more excited and hopeful that together we can truly change our
+      food system.”
+    author: Denise Oserhues
+    cite: The Kroger Co.
+    image:
+
+cta:
+  description_html: To learn how you can support our mission, please contact us via email.
   link: /contact
+  link_label: See our impact
   colorbar:
-    color: "#e65e4a"
-    position: right
+    color: '#e65e4a'
+    bar_position:
+      - right
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
 <section class="page-intro page-intro--our-impact">
   <div class="container">
-    <div class="h3 editable max-out-text-width" >
-      In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and on the most efficient solutions. ReFED's Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable" >
+          In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and on the most effective solutions. ReFED’s Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+
+
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="preheader editable">Theory of Change</div>
+        <div class="lead editable" >
+          Our vision is a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow. Our mission to get there is to end food loss and waste across the food system by advancing data-driven solutions.
+        </div>
+        <img src="https://via.placeholder.com/1000x400" class="w-100 d-block">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- This module is repeated on the "Our Impact" page -->
+
+
+
+<!-- This section needs work -->
 <section class="funder-impact bg-lightest p-0">
   <a name="funder-impact"></a>
   <div class="carousel-full-width carousel-two-column dots-left-in-container">
@@ -43,6 +97,7 @@ cta:
   </div>
 </section>
 
+<!-- This section needs work -->
 <section class="case-studies list-with-filter">
   <a name="case-studies"></a>
   <div class="container pt-5"> 
@@ -88,101 +143,11 @@ cta:
   </div>
 </section>
 
-<section class="testimonial testimonial-1 bg-primary text-white">
-  <a name="testimonials"></a>
-  <a name="testimonial-1"></a>
-  <div class="container">
-    <div class="row flex-lg-row-reverse">    
-      <div class="col-lg-4 mb-5 mb-lg-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-lg-8">
-        <div class="h3 testimonial">
-          <blockquote class="pr-lg-5">
-            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
-            <footer>
-              <div class="cite">
-                Eileen Hyde
-                <div class="credentials font-italic">CEO, Walmart.org</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>    
-  </div>
-</section>
 
-<section class="testimonial testimonial-2">
-  <a name="testimonial-2"></a>
-  <div class="container">
-    <div class="row">    
-      <div class="col-lg-4 mb-5 mb-lg-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-lg-8">
-        <div class="h3 testimonial">
-          <blockquote class="pl-lg-5">
-            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
-            <footer>
-              <div class="cite">
-                Eileen Hyde
-                <div class="credentials font-italic">CEO, Walmart.org</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>    
-  </div>
-</section>
+{% include sections/cta.html cta=page.cta_featured_organizations %}
 
-<section class="testimonial testimonial-3 bg-lightest">
-  <a name="testimonial-3"></a>
-  <div class="container">
-    <div class="row flex-lg-row-reverse">    
-      <div class="col-lg-4 mb-5 mb-lg-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-lg-8">
-        <div class="h3 testimonial">
-          <blockquote class="pr-lg-5">
-            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
-            <footer>
-              <div class="cite">
-                Eileen Hyde
-                <div class="credentials font-italic">CEO, Walmart.org</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>    
-  </div>
-</section>
 
-<section class="testimonial testimonial-4 bg-primary text-white">
-  <a name="testimonial-4"></a>
-  <div class="container">
-    <div class="row">    
-      <div class="col-lg-4 mb-5 mb-lg-0">          
-        <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url(https://via.placeholder.com/400x400)"></div>
-      </div>
-      <div class="col-lg-8">
-        <div class="h3 testimonial">
-          <blockquote class="pl-lg-5">
-            “Supporting programs that expand access to healthier food is criticalfor improving the health of communities. The results of the ReFED Accelerator program demonstrate the incredible amount of innovationeach of these organizations brings to this issue and show the kindsof impact that can be created when they are given the tools and resources to move fast and make change.”</p>
-            <footer>
-              <div class="cite">
-                Eileen Hyde
-                <div class="credentials font-italic">CEO, Walmart.org</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>    
-  </div>
-</section>
+{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
+
 
 {% include sections/cta.html cta=page.cta %}

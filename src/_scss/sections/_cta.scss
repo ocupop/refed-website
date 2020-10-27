@@ -1,1 +1,5 @@
-.cta {}
+.cta {
+    &.bg-primary{
+        color:$white;
+    }
+}
