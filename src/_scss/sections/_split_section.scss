@@ -20,12 +20,12 @@ SAMPLE
     padding:0;
   }
 
-  .container {
-    padding-right: 0;
-    padding-left: 0;
-  }
+  // .container {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  // }
   
-  @include media-breakpoint-up(md) { 
+  @include media-breakpoint-up(lg) { 
     &.image-left .col-text{
       padding-left:7rem;
     }
@@ -46,7 +46,7 @@ SAMPLE
   }
 
   /* Mobile Only */
-  @include media-breakpoint-down(sm) {    
+  @include media-breakpoint-down(md) {    
     .col-text, 
     .col-image{
       .bkg{
@@ -75,7 +75,7 @@ SAMPLE
   }
 
   /* Desktop Only */
-  @include media-breakpoint-up(md) {      
+  @include media-breakpoint-up(lg) {      
     position: relative;
     .col-image{
       img{
