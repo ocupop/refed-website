@@ -1,53 +1,64 @@
 .sticky-nav{
-    z-index:999;
-    padding-top:2.3rem !important;
-    padding-bottom:3.2rem !important;
-
+  z-index:999;
+  padding-top:2.3rem !important;
+  padding-bottom:3.2rem !important;
+  ul{
+    width:100%;
+    justify-content: space-between ;
+    li{
+      margin-right:2em;
+      &:last-item{ margin-right:0;}
+      a{
+        font-weight:$font-weight-semibold;
+        font-size:1.125rem;
+        color:$neutral-100  !important;
+        line-height: 1;
+        opacity:0.5;
+        &:hover{
+          opacity:1;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  .preheader{
+    height: 2.67rem;
+    overflow: hidden;
+    transition:height .2s ease-out;
+  }
+  &.minimized{
+    padding-top:1rem !important;
+    padding-bottom:1.3rem !important;
+    .preheader{
+      height: 0;
+    } 
+  }
+  @include media-breakpoint-down(lg) {
     ul{
-        width:100%;
-        justify-content: space-between ;
-        li{
-            margin-right:2em;
-            &:last-item{ margin-right:0;}
-            a{
-                font-weight:$font-weight-semibold;
-                font-size:1.125rem;
-                color:$neutral-100  !important;
-                line-height: 1;
-                &:hover{
-                    opacity:1;
-                    text-decoration:none;
-                }
-            }
+      li{
+        a{
+          //font-size:1rem;
         }
+      }
     }
-    @include media-breakpoint-down(lg) {
-        ul{
-            li{
-                a{
-                    //border:1px solid red;
-                    //font-size:1rem;
-                }
-            }
+  }
+  @include media-breakpoint-down(md) {
+    ul{
+      li{
+        margin-right:1rem;
+        a{
+          font-size:0.9rem;
         }
+      }
     }
-    @include media-breakpoint-down(md) {
-        ul{
-            li{
-                margin-right:1rem;
-                a{
-                    font-size:0.9rem;
-                }
-            }
-        }
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    ul{
+      li{
+        margin-right:0;
+      }
     }
-    @include media-breakpoint-down(sm) {
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
-        ul{
-            li{
-                margin-right:0;
-            }
-        }
-    }
+  }
 }

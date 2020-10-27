@@ -1,0 +1,39 @@
+.accordion{
+    .accordian-label{
+        font-size: 1.5625rem;
+        color:$primary-400;
+        .toggle{
+            width: 1.7rem;
+            float: right;
+            svg{
+                max-width:100%;
+                transform:rotate(180deg);
+                transform-origin: 50% 65%;
+                transition:transform 0.2s linear;
+                polygon{fill:#FFFFFF;}
+                path{fill:transparent;}
+            }
+        }
+        &.collapsed{
+            color:$white;
+            &:hover{
+                color:$primary-400; 
+                .toggle{
+                    svg{
+                        polygon{fill:transparent;}
+                        path{fill:$primary-400;}
+                    }
+                }
+            }
+            .toggle{
+                svg{
+                    max-width:100%;
+                    transform:rotate(0deg);
+                    polygon{fill:transparent;}
+                    path{fill:#FFFFFF;}
+                }
+            }
+        }
+    }
+    .accordian-content{}
+}
