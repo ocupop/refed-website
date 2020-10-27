@@ -108,7 +108,7 @@ $red: $secondary-300;
 $orange: $secondary-200;
 $yellow: $secondary-100;
 $green: $primary-200;
-$blue: #0092B7;
+$blue: $primary-300;
 
 $white:    #ffffff;
 $black:    #000000;
@@ -136,6 +136,11 @@ $theme-colors: (
   'white': $white,
   'black': $black,
   'gray': $gray-400,
+  'green': $success,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+
   'primary-100': $primary-100,
   'primary-110': $primary-110,
   'primary-120': $primary-120,
@@ -286,9 +291,9 @@ $grid-gutter-width: 30px;
 // $mobile-header-height: 67;
 
 // Allows for customizing button radius independently from global border radius
-$btn-padding-y:               15px;
-$btn-padding-x:               22px;
-$btn-font-family:             20px;
+$btn-padding-y:               12px;
+$btn-padding-x:               30px;
+$btn-font-family:             $font-family-base;
 //$btn-font-size:               $input-btn-font-size !default;
 //$btn-line-height:             $input-btn-line-height !default;
 

@@ -2,7 +2,7 @@
 <!-- test for number of items, instantiate carousel if over 3 items -->
 <div class="{% if num_items > 3%}carousel-refed{% else %}row{% endif %}">   
   {% for item in include.items %}
-    <div class="card col-lg-4">
+    <div class="card {% if include.numcols == 2 %}col-lg-6{% else %}col-lg-4{% endif %}">
       {% if item.featured_image %}
         {% if item.link or item.url %}
           <a href="{{ item.link | default: item.url }}" class="bg-image aspect-4x3" style="background-image: url({{ item.featured_image | default: site.placeholder_image }})">
@@ -15,6 +15,9 @@
       {% if item.title or item.text %}
         <div class="card-body">
           <h3 class="card-title">{{ item.title }}</h3>
+          {% if item.date %}
+            {{ item.date | date: '%B %-d, %Y' }}
+          {% endif %}
           <div class="card-text">
             {{ item.text | default: item.content | truncatewords: 20 }}
           </div>
