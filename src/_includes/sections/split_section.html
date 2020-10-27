@@ -51,7 +51,7 @@
             <div class="mb-4 item-description">{{ description }}</div>
 
             {% if item.url %}
-              <a class="m-0 {% if item.button_type == 'text' %}text-link{% else %}btn btn-info{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
+              <a class="m-0 {% if item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
             {% endif %}
 
         </div>
