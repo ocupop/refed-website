@@ -66,7 +66,7 @@ primary_navigation:
           link: /our-work
           links:
             - title: Data & Insights
-              link: '/our-work/#data-insights'
+              link: '/data-insights'
               links:
             - title: Capitol & Innovation
               link: /our-work/#capital-innovation

@@ -2,20 +2,20 @@
 {% assign item = include.item %}
 
 {% if include.image_width == '25%' %}
-  {% capture text-class %}col-md-9{% endcapture %}
-  {% capture image-class %}col-md-3{% endcapture %}
+  {% capture text-class %}col-lg-9{% endcapture %}
+  {% capture image-class %}col-lg-3{% endcapture %}
 {% elsif include.image_width == '33%' %}
-  {% capture text-class %}col-md-8{% endcapture %}
-  {% capture image-class %}col-md-4{% endcapture %}
+  {% capture text-class %}col-lg-8{% endcapture %}
+  {% capture image-class %}col-lg-4{% endcapture %}
 {% elsif include.image_width =='66%' %}
-  {% capture text-class %}col-md-4{% endcapture %}
-  {% capture image-class %}col-md-8{% endcapture %}
+  {% capture text-class %}col-lg-4{% endcapture %}
+  {% capture image-class %}col-lg-8{% endcapture %}
 {% elsif include.image_width == '75%' %}
-  {% capture text-class %}col-md-3{% endcapture %}
-  {% capture image-class %}col-md-9{% endcapture %}
+  {% capture text-class %}col-lg-3{% endcapture %}
+  {% capture image-class %}col-lg-9{% endcapture %}
 {% else %} 
-  {% capture text-class %}col-md-6{% endcapture %}
-  {% capture image-class %}col-md-6{% endcapture %}
+  {% capture text-class %}col-lg-6{% endcapture %}
+  {% capture image-class %}col-lg-6{% endcapture %}
 {% endif %}
 
 {% if include.text_to_edge %}
@@ -39,7 +39,7 @@
       <div class="row">   
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
             <span class='bkg'></span>
-            
+
             {% if item.preheader %}
               <div class="mb-3 preheader">{{ item.preheader }}</div>
             {% endif %}

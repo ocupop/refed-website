@@ -19,8 +19,13 @@ SAMPLE
   .col-image{
     padding:0;
   }
+
+  // .container {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  // }
   
-  @include media-breakpoint-up(md) { 
+  @include media-breakpoint-up(lg) { 
     &.image-left .col-text{
       padding-left:7rem;
     }
@@ -41,7 +46,7 @@ SAMPLE
   }
 
   /* Mobile Only */
-  @include media-breakpoint-down(sm) {    
+  @include media-breakpoint-down(md) {    
     .col-text, 
     .col-image{
       .bkg{
@@ -70,7 +75,7 @@ SAMPLE
   }
 
   /* Desktop Only */
-  @include media-breakpoint-up(md) {      
+  @include media-breakpoint-up(lg) {      
     position: relative;
     .col-image{
       img{
@@ -128,7 +133,7 @@ SAMPLE
   @include media-breakpoint-up(xl) { 
     .text-to-browser-edge, 
     .image-to-browser-edge{
-      .bkg, img{
+      .bkg, img, .bg-image{
         width: calc(100% + (((100vw - 17px) -  #{map-get($container-max-widths, 'xl')} ) / 2)); 
       }
     }

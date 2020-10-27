@@ -66,21 +66,17 @@ cta:
         <div class="lead editable" >
           Our vision is a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow. Our mission to get there is to end food loss and waste across the food system by advancing data-driven solutions.
         </div>
-        <img src="https://via.placeholder.com/1000x400" class="w-100 d-block">
+        <img src="https://via.placeholder.com/1000x400" class="w-100 d-block mt-5">
       </div>
     </div>
   </div>
 </section>
 
-
-
+<!-- This section needs work -->
+{% include sections/carousels/carousel_split.html items=site.posts section_background_color='white' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
 
 <!-- This section needs work -->
-{% include modules/split-carousel.html %}
-
-<!-- This section needs work -->
-<section class="case-studies list-with-filter">
-  <a name="case-studies"></a>
+<section class="list-with-filter">
   <div class="container pt-5"> 
     {% assign thisCollection = site.case_studies %}	
     {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
@@ -100,7 +96,7 @@ cta:
         </div>
       </div>
     </div>
-  
+    {% comment %}
     <div class="row">  
       <div class="col-12 carousel-refed filterable-list">
       {% for casestudy in site.case_studies %} 
@@ -121,14 +117,15 @@ cta:
       {% endfor %} 
       </div>    
     </div>
+    {% endcomment %}
+
+    {% include sections/carousels/carousel_cards.html items=site.case_studies %}
+
   </div>
 </section>
 
-
 {% include sections/cta.html cta=page.cta_featured_organizations %}
 
-
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
-
 
 {% include sections/cta.html cta=page.cta %}
