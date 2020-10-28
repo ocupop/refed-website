@@ -34,6 +34,14 @@ h4, .h4{
   line-height: 1.5;
   font-weight:$font-weight-normal;
 }
+h5, .h5{
+}
+h6, .h6{
+  font-weight:$font-weight-semibold;
+  line-height: 1.3;
+  color:$mid;
+  text-transform:uppercase;
+}
 
 
 .preheader{
