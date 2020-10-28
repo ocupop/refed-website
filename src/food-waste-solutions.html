@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Food Waste Solutions
+title: >-
+  ReFED combines data, economics and access to capital to mobilize solutions
+  across the food system.
 hero:
   - title: Food waste is a solvable problem – here’s how to do it.
     subtitle:
@@ -35,7 +37,47 @@ levers:
       dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
       sed diam nonumy eirmod tempor invidunt ut labore et dolore
       magna.</li></ul>
-    icon_image:
+    icon_image: /img/icons/levers/levers_policy.svg
+  - title: Innovation
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+    icon_image: /img/icons/levers/levers_innovation.svg
+  - title: Financing
+    description_html: >-
+      <ul><li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore
+      magna.</li><li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+      magna.</li><li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+      magna.</li></ul>
+    icon_image: /img/icons/levers/levers_financing.svg
+  - title: Communications
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+    icon_image: /img/icons/levers/levers_communication.svg
 cta:
   description_html: >-
     <p>ReFED offers a range of solutions for organizations to advance their own
@@ -221,7 +263,7 @@ cta:
     {% for lever in page.levers %}
       <div class="row">
         <div class="col-md-auto">
-          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3" alt="">
+          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3" alt="" />
         </div>
         <div class="col">
           {{ lever.description_html }}
