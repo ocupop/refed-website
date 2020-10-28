@@ -85,6 +85,7 @@ cta:
     solutions can help your team get started.</p>
   link: /resources-guides
   link_label: See all Resources
+  section_background_color:  'neutral-100'
   colorbar:
     color:
     bar_position:
@@ -177,7 +178,7 @@ cta:
     {% for num in (1..2) %}
       <div class="row my-5 py-5">
         <div class="col-md-auto">
-          <img src="/img/icons/action_areas/actionarea_harvesteverythinggrown.svg" class="img-fluid icon-img-lg mb-3" alt="" />
+          <img src="/img/icons/action_areas/actionarea_harvesteverythinggrown.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
         </div>
         <div class="col">
           <h3 class="font-serif">Harvest Everything Grown</h3>
@@ -189,7 +190,7 @@ cta:
     {% for num in (1..2) %}
       <div class="row my-5 py-5">
         <div class="col-md-auto">
-          <img src="/img/icons/action_areas/actionarea_harvesteverythinggrown.svg" class="img-fluid icon-img-lg mb-3" alt="" />
+          <img src="/img/icons/action_areas/actionarea_harvesteverythinggrown.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
         </div>
         <div class="col">
           <h3 class="font-serif">Harvest Everything Grown muchlongername Lorem ipsum dolor sit amet.</h3>
@@ -254,18 +255,19 @@ cta:
 </section>
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <h2 class="editable">Levers</h2>
         <p class="preheader">Everyone has a role to play in reducing food waste – even if you’re not directly connected to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</p>
       </div>
     </div>
     {% for lever in page.levers %}
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-md-auto">
-          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3" alt="" />
+          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
         </div>
         <div class="col">
+          <h4>{{ lever.title }}</h4>
           {{ lever.description_html }}
         </div>
       </div>
