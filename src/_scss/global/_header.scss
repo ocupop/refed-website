@@ -16,9 +16,10 @@
   background-repeat: no-repeat;
   background-position: left center;
   text-indent: -1000px;
-  width: rem(242);
+  width: 50%;
+  max-width: 175px;
   height: rem(67);
-  font-size: 0.6em;
+  font-size: 15px;
   
   margin-top: rem(15);
   margin-bottom: rem(15);
@@ -63,6 +64,7 @@
   .navbar-brand{
     background-image:url(../img/logo-wordmark.png);
     width: rem(242);
+    max-width: 350px;
     height: rem(67);
     font-size: 1rem;
     margin-top: rem(15.12);

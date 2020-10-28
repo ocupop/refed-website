@@ -69,7 +69,7 @@ primary_navigation:
               link: '/data-and-insights'
               links:
             - title: Capitol & Innovation
-              link: /our-work/#capital-innovation
+              link: /capital-and-innovation
               links:
             - title: Stakeholder Engagement
               link: '/our-work/#stakeholder-engagement'
@@ -123,37 +123,37 @@ primary_navigation:
               link: '/food-waste-solutions/#progress-reports'
               links:
         - title: Resources & Guides
-          link: /resources-guides
+          link: /resources-and-guides
           links:
             - title: Insights Engine
-              link: '/resources-guides/#insights-engine'
+              link: '/resources-and-guides/#insights-engine'
               links:
             - title: Food Waste Tracker
-              link: '/resources-guides/#food-waste-tracker'
+              link: '/resources-and-guides/#food-waste-tracker'
               links:
             - title: Investment Tracker
-              link: '/resources-guides/#investment-tracker'
+              link: '/resources-and-guides/#investment-tracker'
               links:
             - title: Solutions Tracker
-              link: '/resources-guides/#solutions-tracker'
+              link: '/resources-and-guides/#solutions-tracker'
               links:
             - title: Impact Calculator
-              link: '/resources-guides/#impact-calculator'
+              link: '/resources-and-guides/#impact-calculator'
               links:
             - title: Innovator Database
-              link: '/resources-guides/#innovator-database'
+              link: '/resources-and-guides/#innovator-database'
               links:
             - title: Policy Tracker
-              link: '/resources-guides/#policy-tracker'
+              link: '/resources-and-guides/#policy-tracker'
               links:
             - title: The Roadmap
-              link: '/resources-guides/#roadmap'
+              link: '/resources-and-guides/#roadmap'
               links:
             - title: ReFED Reports
-              link: '/resources-guides/#refed-reports'
+              link: '/resources-and-guides/#refed-reports'
               links:
             - title: Action Guides
-              link: '/resources-guides/#action-guides'
+              link: '/resources-and-guides/#action-guides'
               links:
     - title: Engage
       link: /engage

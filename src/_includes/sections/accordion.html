@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col">
+
+    <div class="accordion" id="refedAccordian">
+
+      {% for item in include.items %} 
+      <div class="border-bottom border-light py-4">            
+        
+        <div class="" id="heading-{{ forloop.index }}">
+          <div class="accordian-label collapsed font-serif" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+              {{ item.title }}  
+              <span class="toggle">
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 14" style="enable-background:new 0 0 16 14;" >
+                  <polygon points="8.07,0.5 0.13,14 15.87,14 "/>
+                  <path d="M0.13,14h15.74L8.07,0.5L0.13,14z M1.87,13L8.06,2.48L14.13,13H1.87z"/>
+                </svg>
+              </span>              
+          </div>
+        </div>
+    
+        <div class="accordian-content collapse pt-4 max-out-text-width" id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
+          {{ item.description_html }}
+          {% if item.link %}
+            <a href="{{ item.link }}">{{ item.link_label | default: 'See More'}}</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor  %}  
+
+      <!--
+      <ul class="list-unstyled">
+        {% for barrier in page.barriers_to_solutions_implementation %} 
+          <li class="border-top border-bottom border-light py-4 font-serif">{{ barrier }}</li>
+        {% endfor  %}     
+      </ul>
+      -->
+    </div>
+  </div>
+</div>
