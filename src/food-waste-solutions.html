@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ReFED combines data, economics and access to capital to mobilize solutions across the food system.
+title: Food Waste Solutions
 hero:
   - title: Food waste is a solvable problem – here’s how to do it.
     subtitle: 
@@ -197,6 +197,16 @@ cta:
         <p class="preheader">Everyone has a role to play in reducing food waste – even if you’re not directly connected to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</p>
       </div>
     </div>
+    {% for lever in page.levers %}
+      <div class="row">
+        <div class="col-md-auto">
+          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3" alt="">
+        </div>
+        <div class="col">
+          {{ lever.description_html }}
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 <section class="bg-primary text-white">
