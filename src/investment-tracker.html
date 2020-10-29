@@ -2,7 +2,7 @@
 layout: default
 hero:
   - title: Investment Tracker
-    subtitle: 
+    subtitle:
     description_html:
     image: /img/investment_tracker/investmenttracker_header_image.jpg
     link:
@@ -14,29 +14,47 @@ hero:
 trend_reports:
   - title: Foundation Funding Trends
     description_html: >-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-    featured_image: 
-    document_path: 
-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum</p>
+    featured_image:
+    document_path: /uploads/placeholder-pdf.pdf
 partner_resources:
   - title: Save The Food
     description_html: >-
-      <p>Save the Food is a national public service campaign to combat food waste developed in partnership between the Ad Council & the Natural Resources Defense Council (NRDC).</p>
+      <p>Save the Food is a national public service campaign to combat food
+      waste developed in partnership between the Ad Council & the Natural
+      Resources Defense Council (NRDC).</p>
     link: 'https://savethefood.com/'
     link_label:
   - title: Lorem Resource Title
     description_html: >-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores inventore reiciendis veniam accusantium vero impedit delectus? Neque dolor cum error totam, ut nisi illum modi voluptas tempora quas sit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+      asperiores inventore reiciendis veniam accusantium vero impedit delectus?
+      Neque dolor cum error totam, ut nisi illum modi voluptas tempora quas
+      sit.</p>
     link: 'https://google.com'
     link_label:
-cta: 
-  description_html: ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.
+cta:
+  description_html: >-
+    ReFED offers a range of solutions for organizations to advance their own
+    food waste initiatives. Our interactive tools, reports and strategic
+    solutions can help your team get started.
   link: /food-waste-solutions
   link_label: See All Solutions
-  section_background_color: neutral-100
+  section_background_color:
   colorbar:
-    color: "#e65e4a"
-    bar_position: right   
+    color: '#e65e4a'
+    bar_position:
+      - right
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -79,7 +97,7 @@ cta:
       <div class="col-lg-5">
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6">
             <h6>Public</h6>
@@ -90,7 +108,7 @@ cta:
         </div>
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6">
             <h6>Private</h6>
@@ -101,7 +119,7 @@ cta:
         </div>
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6">
             <h6>Philanthropic</h6>
@@ -158,7 +176,7 @@ cta:
         <div class="col-lg-8">
           <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam nam commodi? Nostrum cum atque co</h4>
           <p class="h6">Month XX, 20XX</p>
-          <hr>
+          <hr />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius labore quibusdam fugiat aliquid quo eum temporibus vero cumque, ab at nisi quam fuga iusto accusamus nobis? Inventore, nemo laboriosam.</p>
           <a href="#" class="text-link">Read More</a>
         </div>
@@ -207,7 +225,7 @@ cta:
         </div>
       </div>
       {% unless forloop.last %}
-        <hr class="my-4 border-white">
+        <hr class="my-4 border-white" />
       {% endunless %}
     {% endfor %}
   </div>
