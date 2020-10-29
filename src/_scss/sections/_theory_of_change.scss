@@ -1,0 +1,20 @@
+.theory-of-change{
+    h6{
+        font-size:15px;
+        color:$primary;
+        text-transform:none;
+        border-bottom-width: 5px !important;
+        padding-bottom: 0.5rem;
+    }
+    .col-12{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+    .block{
+        background-color:$light;
+        margin:0 0 10px 0;
+        padding:1rem;
+        flex: 1;
+    }
+}
