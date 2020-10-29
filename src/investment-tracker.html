@@ -165,7 +165,7 @@ cta:
     <div class="row mb-5">
       <div class="col-12">
         <h3 class="font-serif editable">Year to Date Funding Highlights</h3>
-
+        <p class="text-danger">Are these posts?</p>
       </div>
     </div>
     {% for i in (1..2) %}
@@ -214,6 +214,11 @@ cta:
 {% include sections/carousels/carousel_split.html items=site.case_studies section_background_color='neutral-200' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
 <section class="bg-primary text-white">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="editable font-serif">Partner Resources</h3>
+      </div>
+    </div>
     {% for resource in page.partner_resources %}
       <div class="row">
         <div class="col-12">

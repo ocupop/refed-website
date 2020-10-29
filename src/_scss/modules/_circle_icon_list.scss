@@ -15,14 +15,22 @@
     height: rem(91);
     margin-right: rem(20);
   }
+  &.circle-icon-smaller {
+    width: rem(65);
+    height: rem(65);
+  }
   &.circle-icon-smallest{
     width: rem(58);
     height: rem(58);
     margin-right: rem(20);
   }
-  svg{
+  svg,
+  img {
     width: 50%;
     max-height: 50%;
+  }
+  i {
+    font-size: 30px;
   }
 }
 
