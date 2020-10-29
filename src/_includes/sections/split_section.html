@@ -40,8 +40,8 @@
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
             <span class='bkg'></span>
 
-            {% if item.preheader %}
-              <div class="mb-3 preheader">{{ item.preheader }}</div>
+            {% if include.preheader || item.preheader %}
+              <div class="mb-3 preheader">{{ include.preheader | item.preheader }}</div>
             {% endif %}
             
             {% if item.title %}
