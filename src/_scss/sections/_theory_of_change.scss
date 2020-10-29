@@ -1,20 +1,208 @@
+$toc-col-padding: 0.7rem;
+$toc-line-color: $gray-500;
 .theory-of-change{
-    h6{
-        font-size:15px;
-        color:$primary;
-        text-transform:none;
-        border-bottom-width: 5px !important;
-        padding-bottom: 0.5rem;
+  h6{
+    cursor:pointer;
+    font-size:1rem;
+    color:$primary;
+    text-transform:none;
+    border-bottom-width: 0.6rem !important;
+    padding-bottom: 0.5rem;
+    background-color: $light;
+    padding: 1rem;
+    &:hover{
+        background-color:$neutral-100;
     }
-    .col-12{
-        display: flex;
-        flex-direction: column;
-        padding: 0 5px;
+    .toggle{
+        width: 1rem;
+        float: right;
+        svg{
+            max-width:100%;
+            transform:rotate(0deg);
+            transform-origin: 50% 65%;
+            transition:transform 0.2s linear;
+            polygon{fill:$primary;}
+            path{fill:$primary;}
+        }
+    }
+    &.collapsed{
+        .toggle{
+            svg{
+                max-width:100%;
+                transform:rotate(180deg);
+            }
+        }
+    }
+  }
+  .col-12{
+    display: flex;
+    flex-direction: column;
+    padding: 0 $toc-col-padding;
+  }
+
+  .block{
+    background-color:$light;
+    margin:0 0 10px 0;
+    padding:1rem;
+    width: 100%;
+    p:first-child{margin-top:0;}
+    p:last-child{margin-bottom:0;} 
+  }
+    
+  @include media-breakpoint-up(lg) {
+    h6{
+      cursor:default;
+      pointer-events:none;
+      background-color: transparent;
+      padding: 0 0 0.9rem 0;
+      .toggle{display:none;}
+      &:hover{
+        background-color:inherit;
+      }
+    }
+    .block-container{
+      flex: 1;
+      flex-direction:column;
+      display:flex;
     }
     .block{
-        background-color:$light;
-        margin:0 0 10px 0;
-        padding:1rem;
-        flex: 1;
+      flex:1;
+      display:flex;
+      align-items:center;
+      position:relative;
+ 
+      /* BEGIN CONNECTING LINES */
+      &#col1-block2,
+      &#col3-block2,
+      &#col3-block3,
+      &#col3-block4,
+      &#col3-block5{ 
+        &:before{
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          height:0;
+          width:$toc-col-padding;
+          top:50%;
+          left:100%;
+        }
+      }
+      &#col3-block2,
+      &#col3-block4,
+      &#col3-block6,
+      &#col4-block1{ 
+        &:after{
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          height:0;
+          width:$toc-col-padding;
+          top:50%;
+          left:calc(-1 * #{$toc-col-padding});
+        }
+      }
+      &#col3-block6:after{top:20%;}
+
+        
+      &#col1-block1,
+      &#col1-block3,
+      &#col2-block1,
+      &#col2-block2,
+      &#col2-block3,
+      &#col4-block1{
+        &:before{
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          height:0;
+          width:calc(#{$toc-col-padding} * 2);
+          top:50%;
+          left:100%;
+        }
+      }
+        
+      &#col1-block2{
+        &:after{
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          border-bottom:1px solid $toc-line-color;
+          border-left:1px solid $toc-line-color;
+          height:70%;
+          top:15%;
+          width:$toc-col-padding; // should match column padding
+          left:calc(100% + #{$toc-col-padding});
+        }
+      }
+        &#col2-block1{
+          &:after{
+            content:'';
+            position:absolute;
+            border-top:1px solid $toc-line-color;
+            border-bottom:1px solid $toc-line-color;
+            border-right:1px solid $toc-line-color;
+            height:60%;
+            top:70%;
+            width:$toc-col-padding; // should match column padding
+            left:100% ;
+          }
+        }
+        &#col2-block2{
+          &:after{
+            content:'';
+            position:absolute;
+            border-top:1px solid $toc-line-color;
+            border-bottom:1px solid $toc-line-color;
+            border-right:1px solid $toc-line-color;
+            height:60%;
+            top:70%;
+            width:$toc-col-padding; // should match column padding
+            left:100%;
+          }
+        }
+        &#col2-block4{
+          &:after{
+            content:'';
+            position:absolute;
+            border-top:1px solid $toc-line-color;
+            border-bottom:1px solid $toc-line-color;
+            border-right:1px solid $toc-line-color;
+            height:80%;
+            bottom:40%;
+            width:$toc-col-padding; // should match column padding
+            left:100% ;
+          }
+        }
+        
+        &#col2-block1:before{ top:33%; }
+        &#col2-block3:before{ top:66%; }
+
+        &#col3-block1:after{ 
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          border-bottom:1px solid $toc-line-color;
+          border-right:1px solid $toc-line-color;
+          height:530%;
+          top:50%;
+          width:$toc-col-padding; // should match column padding
+          left:100%;
+        }
+        &#col5-block2:before{
+          content:'';
+          position:absolute;
+          border-top:1px solid $toc-line-color;
+          border-bottom:1px solid $toc-line-color;
+          border-left:1px solid $toc-line-color;
+          height:210%;
+          top:50%;
+          transform:translateY(-50%);
+          width:$toc-col-padding; // should match column padding
+          right:100%;
+        }
+        /* END CONNECTING LINES */
+        
+
     }
+  }
 }
