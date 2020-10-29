@@ -12,6 +12,41 @@ hero:
       - link:
         link_label:
         button_type:
+resources_and_tools:
+  - title: Solutions Database
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>       
+    link: www.link.com
+    link_label: See Solutions database
+  - title: Solution Fact Sheets
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>       
+    link: www.link.com
+    link_label: See Solution Fact Sheets
+  - title: Solutions Provider Database
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>       
+    link: www.link.com
+    link_label: See Solution Provider Database
+  - title: Investment Tracker
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>       
+    link: www.link.com
+    link_label: See Solutions database  
+
+advisory_services:
+  - title: 'The Kroger Co. Zero Hunger | Zero Waste Foundation Innovation Fund'
+    description_html: >-
+      <p>ReFED served as a strategic advisor to and oversaw the development and execution of The KZHZWF Innovation Fund, which aims to help fill the gap in philanthropic funding needed to support entrepreneurs and creative thinkers with solutions to improve food security and prevent food waste.</p>
+    featured_image:
+    link:
+    link_label:
+  - title: 'DoorDash Project Dash In-Kind Grants Program'
+    description_html: >-
+      <p>DoorDash launched Project Dash in 2018 as a way to use their logistics platform to facilitate deliveries for food recovery organizations - connecting donated surplus food to hunger relief nonprofits. DoorDash partnered with ReFED to advise on the selection of their 2020 food recovery partners.</p>
+    featured_image:
+    link:
+    link_label:        
 program_at_a_glance_stats:
   - title: Nonprofit Organizations
     stat: 10
@@ -23,6 +58,38 @@ program_at_a_glance_stats:
     stat: $400K
   - title: Part Knowledge Series
     stat: 20+
+solution_providers:
+  - title: The ReFED COVID-19 Food Waste Solutions Fund
+    description_html: >-
+      <p>The COVID-19 pandemic completely disrupted the food supply chain, resulting in a surge of on-farm food loss, food business closures, and a growing number of food insecure individuals. In response to these challenges ReFED launched the COVID-19 Food Waste Solutions Fund to quickly deliver vital funding to mid-sized organizations across the U.S. that could rapidly scale food waste reduction and hunger relief efforts, with a particular focus on the rescue of fresh, healthy food from farms and dignified, convenient last-mile delivery to the increased number of Americans facing food insecurity.</p>
+    link: 
+    link_label:
+  - title: The Wonderful Company POM Innovation Challenge
+    description_html: >-
+      <p>50,000 tons of pomegranate husks, called pomace, are created in POM Wonderful facilities annually. The Wonderful Company (TWC) is looking for creative, sustainable solutions to turn this pomace into a value-added resource that will positively impact its business and the planet. Leveraging ReFED’s expertise, TWC brought on ReFED to lead the development and execution of the Challenge.</p>
+    link: 
+    link_label:  
+convenings:
+  - title: Innovation Workshops
+    description_html: >-
+      <p>ReFED’s Capital & Innovation team hosts the Innovator Excellence Day, ahead of the annual Food Waste Summit. This event is an opportunity for solution providers to learn from and connect with other leaders in the food waste space.</p>
+    link: 
+    link_label:
+  - title: Innovator Demo Day
+    description_html: >-
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis id minima corporis? Nesciunt error nobis vero dolores possimus maiores, quidem atque aliquid architecto autem veniam. Repellat assumenda natus voluptatem itaque?</p>
+    link: 
+    link_label:
+  - title: Speed Networking
+    description_html: >-
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis id minima corporis? Nesciunt error nobis vero dolores possimus maiores, quidem atque aliquid architecto autem veniam. Repellat assumenda natus voluptatem itaque?</p>
+    link: 
+    link_label:
+  - title: The Boston Funder Food Waste Initiative
+    description_html: >-
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis id minima corporis? Nesciunt error nobis vero dolores possimus maiores, quidem atque aliquid architecto autem veniam. Repellat assumenda natus voluptatem itaque?</p>
+    link: 
+    link_label:   
 testimonials:
   - text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -100,10 +167,8 @@ _assets:
 <section id="investment-and-innovation" class="bg-neutral-100">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-auto">
-        <div class="circle-icon circle-icon-small rounded-circle">
-          <img class="w-100 d-block" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
-        </div>  
+      <div class="col-md-auto mr-md-3">
+        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
       </div>
       <div class="col">
         <h3 class="editable font-serif">Investment and Innovation</h3>
@@ -111,58 +176,32 @@ _assets:
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-lg-4">
+      {% for resource in page.resources_and_tools %}
+      <div class="col-lg-4 mb-5">
         <div class="pr-lg-5">
           <div class="editable">
-            <h4>Solutions Database</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores ipsa et. Eaque amet rerum, exercitationem odio deleniti vel, nisi beatae labore et, doloribus laborum. Perspiciatis quibusdam culpa ullam. Id!</p>
+            <h4>{{ resource.title }}</h4>
+            {{ resource.description_html }}
           </div>
-          <a href="#" class="text-link editable">See Solutions Database</a>
+          <a href="{{ resource.link }}" class="text-link">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="pl-lg-5">
-          <div class="editable">
-            <h4>Solutions Fact Sheets</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores ipsa et. Eaque amet rerum, exercitationem odio deleniti vel, nisi beatae labore et, doloribus laborum. Perspiciatis quibusdam culpa ullam. Id!</p>
-          </div>
-          <a href="#" class="text-link editable">See Solutions Fact Sheets</a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="pr-lg-5">
-          <div class="editable">
-            <h4>Solutions Provider Database</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores ipsa et. Eaque amet rerum, exercitationem odio deleniti vel, nisi beatae labore et, doloribus laborum. Perspiciatis quibusdam culpa ullam. Id!</p>
-          </div>
-          <a href="#" class="text-link editable">See Solutions Provider Database</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="pl-lg-5">
-          <div class="editable">
-            <h4>Investment Tracker</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores ipsa et. Eaque amet rerum, exercitationem odio deleniti vel, nisi beatae labore et, doloribus laborum. Perspiciatis quibusdam culpa ullam. Id!</p>
-          </div>
-          <a href="#" class="text-link editable">See Investment Tracker</a>
-        </div>
-      </div>
+      <div class="col-lg-1"></div>
+      {% endfor %}
     </div>
   </div>
 </section>
 <section id="advisory-services">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-auto">
-        <div class="circle-icon circle-icon-small rounded-circle">
-          <img class="w-100 d-block" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
-        </div>  
+      <div class="col-md-auto mr-lg-3">
+        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
       </div>
       <div class="col">
         <h3 class="editable font-serif">Advisory Services</h3>
-        <p>Leveraging the expertise and knowledge of the Capital & Innovation team, ReFED offers direct advisory services to food businesses, capital providers, technology companies, and many others on food waste reduction programs and investment strategies.</p>
+        <div class="editable">
+          <p>Leveraging the expertise and knowledge of the Capital & Innovation team, ReFED offers direct advisory services to food businesses, capital providers, technology companies, and many others on food waste reduction programs and investment strategies.</p>
+        </div>
       </div>
     </div>
     <div class="row mb-5">
@@ -173,28 +212,27 @@ _assets:
         </div>
       </div>
     </div>
-    <p>not sure if this is collection or not</p>
-    {% for i in (1..2) %}
-      <div class="row align-items-center mb-4">
+    {% for service in page.advisory_services %}
+      <div class="row align-items-center mb-5">
         <div class="col-lg-4">
-          <div class="bg-image aspect-16x9 bg-dark"></div>
+          <div class="bg-image aspect-16x9 bg-dark" style="background-image: url({{ service.featured_image }})"></div>
         </div>
         <div class="col-lg-8">
-          <h4>The Kroger Co. Zero Hunger | Zero Waste Foundation Innovation Fund</h4>
-          <p>ReFED served as a strategic advisor to and oversaw the development and execution of The KZHZWF Innovation Fund, which aims to help fill the gap in philanthropic funding needed to support entrepreneurs and creative thinkers with solutions to improve food security and prevent food waste.</p>
-
+          <h4>{{ service.title }}</h4>
+          {{ service.description_html }}
+          {% if service.link %}
+            <a href="{{ service.link }}" class="text-link">{{ service.link_label | default: 'Learn More' }}</a>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
   </div>
 </section>
-<section class="bg-neutral-100">
+<section id="solution-challenge-platform" class="bg-neutral-100">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-auto">
-        <div class="circle-icon circle-icon-small rounded-circle">
-          <img class="w-100 d-block" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
-        </div>  
+      <div class="col-md-auto mr-lg-3">
+        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
       </div>
       <div class="col">
         <h3 class="editable font-serif">Solution Challenge Platform</h3>
@@ -209,7 +247,8 @@ _assets:
           <p>ReFED saw this opportunity and in the Fall of 2019 launched its Nonprofit Food Recovery Accelerator with support from the Walmart Foundation and in partnership with +Acumen.</p>
           <p>The Accelerator immersed 10 nonprofit food recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs. Its focus was on leveraging earned revenue models, technology solutions, and human-centered design to catalyze ideas and inspire actions that could help the organizations overcome challenges that have limited their ability to scale solutions to increase the amount of healthy food available to food insecure Americans.</p>
         </div>
-        <a href="#" class="text-link editable">Learn More</a>
+
+        <a href="#" class="text-link editable">Learn More <span class="text-danger">* add link *</span></a>
       </div>
       <div class="col-lg-4 ml-lg-auto">
         <h6 class="editable text-uppercase text-mid mt-5">Program at a Glance</h6>
@@ -220,8 +259,6 @@ _assets:
         </ul>
       </div>
     </div>
-    <p class="text-danger">will this always be 4 images or does it need to be flexible?</p>
-    
     <div class="row mt-5">
       <div class="col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[0].image }}')"></div>
@@ -236,51 +273,41 @@ _assets:
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[3].image }}')"></div>
       </div>
     </div>
-    <p class="text-danger">not sure if this is collection or not</p>
-    
-    {% for i in (1..2) %}
-      <div class="row align-items-center mb-4">
-        <div class="col-lg-4">
-          <div class="bg-image aspect-1x1 bg-dark"></div>
+    {% for solution in page.solution_providers %}
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-3">
+          <div class="bg-image aspect-5x7 bg-dark" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
-        <div class="col-lg-8">
-          <h4>The ReFED COVID-19 Food Waste Solutions Fund</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni tempora ex corporis distinctio dolorum numquam maxime itaque quidem. Asperiores vitae repudiandae rem aliquam ex dolor veritatis ratione iure voluptatum!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni tempora ex corporis distinctio dolorum numquam maxime itaque quidem. Asperiores vitae repudiandae rem aliquam ex dolor veritatis ratione iure voluptatum!
-          </p>
-          <a href="#" class="text-link">Learn More</a>
+        <div class="col-lg-9">
+          <h4>{{ solution.title }}</h4>
+          {{ solution.description_html }}
+          {% if solution.link %}
+            <a href="{{ solution.link }}" class="text-link">{{ solution.link_label | default: 'Learn More' }}</a>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
   </div>
 </section>
-<section>
+<section id="convenings">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-auto">
-        <div class="circle-icon circle-icon-small rounded-circle">
-          <img class="w-100 d-block" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
-        </div>  
+      <div class="col-md-auto mr-lg-3">
+        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
       </div>
       <div class="col">
-        <h3 class="editable font-serif">Covenings</h3>
+        <h3 class="editable font-serif">Convenings</h3>
         <div class="editable">
           <p>The Capital & Innovation Team’s hosts a wide range of convenings to foster collaboration and solutions-oriented synergies between food businesses, capital providers, and food waste solution providers.</p>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-danger">
-        is this events, or instances unique to this page?
-      </div>
-    </div>
-    <div class="row">
-      
-      {% for i in (1..4) %}
+      {% for convening in page.convenings %}
         <div class="col-lg-6 mb-5">
-          <h4>Innovation Workshops</h4>
-          <p>ReFED’s Capital & Innovation team hosts the Innovator Excellence Day, ahead of the annual Food Waste Summit. This event is an opportunity for solution providers to learn from and connect with other leaders in the food waste space.</p>
-          <a href="#" class="text-link">Learn More</a>
+          <h4>{{ convening.title }}</h4>
+          {{ convening.description_html }}
+          <a href="{{ convening.link }}" class="text-link">{{ convening.link_label | default: 'Learn More'}}</a>
         </div>
       {% endfor %}
     </div>
@@ -305,7 +332,7 @@ _assets:
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
 {% include sections/cta_insights_engine.html %}
-<section>
+<section class="bg-neutral-100">
   <div class="container">
     <div class="row">
       <div class="col-12">
