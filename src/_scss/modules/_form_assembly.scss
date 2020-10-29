@@ -1,4 +1,5 @@
 .wFormContainer {
+  max-width: 100% !important;
   .wFormHeader,
   .wFormTitle {
     display: none !important;
@@ -30,16 +31,16 @@
       input[type="email"],
       textarea {
         border: 0 !important;
-        line-height: 35px !important;
-        height: 35px !important;
+        line-height: 38px !important;
+        height: 38px !important;
         font-size: 13px !important;
         background-color: $neutral-100 !important;
         width: 100% !important
       }
     }
     .inputWrapper select:not([multiple]) {
-      height: 35px !important;
-      line-height: 35px !important;
+      height: 38px !important;
+      line-height: 38px !important;
       border: 0 !important;
     }
     .actions {
