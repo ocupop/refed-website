@@ -331,11 +331,12 @@ cta:
   <div class="container">
     <div class="row d-flex align-items-center">    
       <div class="col-md-12">
-        <h5 class="text-danger">This form needs to be styled. We may want to set up some global form styles.</h5>
         <div class='preheader'>The Latest to your Mailbox</p>
         <h2>Subscribe to our Mailing List</h2>
         <p class="lead mb-5">Sign up to receive updates from ReFED</p>
-        {% include modules/form_subscribe.html cta=page.cta %}
+        <div class="form-theme-dark">
+          {% include modules/form_subscribe.html cta=page.cta %}
+        </div>
       </div>      
     </div>    
   </div>
