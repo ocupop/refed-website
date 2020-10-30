@@ -7,7 +7,7 @@
             float: right;
             svg{
                 max-width:100%;
-                transform:rotate(180deg);
+                transform:rotate(0deg);
                 transform-origin: 50% 65%;
                 transition:transform 0.2s linear;
                 polygon{fill:#FFFFFF;}
@@ -28,7 +28,7 @@
             .toggle{
                 svg{
                     max-width:100%;
-                    transform:rotate(0deg);
+                    transform:rotate(180deg);
                     polygon{fill:transparent;}
                     path{fill:#FFFFFF;}
                 }
@@ -47,11 +47,11 @@
             width: rem(40);
             height: rem(40);
             background-color:$primary;
-            padding: 0.6rem;
+            padding: 0.7rem 0.6rem;
             transition:background-color 0.2s linear;
             svg{
                 width:100%;
-                transform:rotate(180deg);
+                transform:rotate(0deg);
                 transform-origin: 50% 56%;
                 transition:transform 0.3s linear;
                 polygon{fill:#FFFFFF;}
@@ -71,7 +71,7 @@
                 background-color:transparent;
                 svg{
                     max-width:100%;
-                    transform:rotate(0deg);
+                    transform:rotate(180deg);
                     polygon{fill:$primary;}
                     path{fill:$primary;}
                 }
