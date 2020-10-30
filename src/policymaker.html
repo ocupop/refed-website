@@ -24,18 +24,26 @@ role_of_food_waste_recovery:
 
 policy_recommendations:
   - title: Harvest Everything Grown
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_harvesteverythinggrown.svg
   - title: Streamline Supply Chains
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_supplychain.svg
   - title: Perfecting Inventory Management
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_inventorymanagement.svg
   - title: Maximizing Product Utilization
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_foodrescue.svg
   - title: Reshape Consumer Environments
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_consumerenvironments.svg
   - title: Strengthen Food Rescue
-    description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
-
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionarea_foodrescue.svg
+  - title: Recycle Food Scraps
+    description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: /img/icons/action_areas/actionareas_recyclefoodscraps.svg
 
 
 
@@ -110,8 +118,8 @@ cta:
     <div class="container">
       <div class="row">
         <div class="col-12">
+          <div class="text-danger">(This section needs to have the expandable content populated. Will it be edited inline or will it be frontmatter?)</div>
           <h2 class="editable">Policy Recommendations </h2>
-          <h3>(This section needs work)</h3>
           <div class="editable">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
@@ -119,8 +127,37 @@ cta:
       </div>
 
       <div class="row">
-        <div class="col-12">
-          {% include sections/accordion.html items=page.policy_recommendations %}
+        <div class="col-12 accordion-theme-2" id="refedAccordian"> 
+          
+          {% for item in page.policy_recommendations %} 
+          <div class="border-bottom border-med">
+            <!-- BEGIN HEADING -->
+            <div class="accordian-label collapsed font-serif color-primary" id="heading-{{ forloop.index }}" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+              <div class="row py-3">
+                <div class="col-md-auto">
+                  <img src="{{ item.icon }}" class="img-fluid icon-img-md mr-md-3" alt="" />
+                </div>
+                <div class="col align-items-center d-flex justify-content-between">
+                  <h3 class="editable text-primary d-inline-block">{{ item.title }} </h3>
+                  <span class="toggle rounded-circle float-right d-flex">
+                    {% include icons/arrow.svg  %}
+                  </span>    
+                </div>
+              </div>
+            </div>            
+            <!-- END HEADING -->
+
+            <!-- END EXPANDABLE CONTENT -->
+            <div class="accordian-content collapse bg-lightest " id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
+              <div class="py-4 px-5 max-out-text-width">
+                {{ item.description_html }}
+              </div>
+            </div>
+
+          </div>
+          {% endfor  %}  
+
+
         </div>
       </div>
     </div>
