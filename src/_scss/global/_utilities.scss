@@ -174,3 +174,16 @@
   justify-content: center;
 }
 
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  &.arrow-up {
+    border-bottom: 10px solid $white;
+  }
+  &.arrow-down {
+    border-top: 10px solid $white;
+  }
+}
+
