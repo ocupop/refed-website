@@ -122,6 +122,9 @@ $danger:        $red;
 $light:         $gray-100;
 $mid:           $gray-300;
 $dark:          $gray-800;
+$prevention: $primary-600;
+$rescue: $primary-400;
+$recycling: $primary-100;
 
 $theme-colors: (
   'primary': $primary,
@@ -221,7 +224,10 @@ $theme-colors: (
   'neutral-100': $neutral-100,
   'neutral-200': $neutral-200,
   'neutral-300': $neutral-300,
-  'neutral-400': $neutral-400
+  'neutral-400': $neutral-400,
+  'prevention': $primary-600,
+  'rescue': $primary-400,
+  'recycling': $primary-100
 );
 
 
