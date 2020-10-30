@@ -1,0 +1,101 @@
+$arrow-header-desktop-height: 10rem;
+
+#solution-adoption{
+  .row.arrow-header {
+    position:relative;
+   
+    .arrow{
+        transform:rotate(180deg);
+        width: 100%;
+        height: 4rem;
+        svg{
+            polygon, path{ fill: $primary-500; }
+            height: 100%;
+            width: 100%;
+        }
+        &:after{
+            content:'';
+            border:1px solid transparent; // the arrow wasn't being displayed without this.
+        }
+    }
+  }
+
+  .row.statistics{
+    background-color:$white;
+    .stat{ 
+      line-height: 1.2;
+      .number{
+        font-size:rem(31);
+      }
+      label{
+        font-size:rem(12);
+      }
+    }
+  }
+  
+  
+  @include media-breakpoint-up(md) {
+    .row.arrow-header {
+      height: $arrow-header-desktop-height;
+      .arrow{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 3rem;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-style: solid;
+        border-width: calc(#{$arrow-header-desktop-height} / 2) 0 calc(#{$arrow-header-desktop-height} / 2) 4rem;
+        border-color: transparent transparent transparent #168374;
+        svg{display:none;}
+      }
+      .col:first-child{
+        height: auto;
+      }
+      .col:last-child{
+        height: auto;
+      }    
+    }   
+    .row.statistics{
+        background-color:$white;
+    }
+
+    // medium and large width only
+    @include media-breakpoint-down(lg) {
+        .icon-img-md{
+            max-width:rem(55)
+        }
+        .row.statistics{
+            .stat{
+                flex-direction: column !important;
+                align-items: start !important;
+            }
+        }
+    }
+    // large width only
+    @include media-breakpoint-down(lg) {
+        .icon-img-md{
+            max-width:rem(70)
+        }
+    }
+    
+    
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .row.statistics{
+        background-color:$white;
+        .stat{ 
+          .number{
+            font-size:rem(50);
+          }
+          label{
+            font-size:rem(17);
+          }
+        }
+      }
+  }
+  
+}
