@@ -44,31 +44,7 @@ hero:
     </div>
   </div>
 </section>
-<section class="bg-neutral-200">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-lg-auto">
-        <div class="editable text-center">
-          <h2>$XX Opportunity to be Unlocked with $XX Capital</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-danger">Funding Pipeline Chart</p>
-        <div class="bg-image aspect-2x1 bg-dark"></div>
-      </div>
-    </div>
-    <div class="row my-5">
-      <div class="col-12">
-        <div class="text-center">
-          <a href="#" class="btn btn-secondary">Explore the Solution Provider Directory</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include modules/funding-pipeline.html %}
 <section>
   <div class="container">
     <div class="row">
@@ -124,78 +100,6 @@ hero:
         <img src="{{ site.placeholder_image}}" class="img-fluid" alt="">
       </div>
     </div>
-    {% for i in (1..4) %}
-    <a href="#collapse-{{ forloop.index }}" class="row pb-3 align-items-center row-solutions row-prevention" data-toggle="collapse">
-      <div class="col-lg-auto flex-lg-grow-1">
-        <div class="row align-items-center">
-          <div class="col-auto">
-            <img src="/img/icons/action_areas/actionarea_harvesteverythinggrown.svg" class="icon-img-sm" alt="">
-          </div>
-          <div class="col">
-            <h4 class="mb-0">Harvest Everything Grown</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-auto ml-lg-auto">
-        <div class="d-flex align-items-center">
-          <div class="d-flex flex-column flex-lg-row align-items-center pr-4">
-            <span class="stat-number">
-              2
-            </span>
-            <span class="stat-text">Modeled<br>Solutions</span>
-          </div>
-          <div class="d-flex flex-column flex-lg-row align-items-center pl-4 border-left">
-            <span class="stat-number">
-              $XX
-            </span>
-            <span class="stat-text">Financial Investment<br>Needed</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-auto">
-        <div class="collapse-trigger mt-3 mt-lg-0 bg-primary-600">
-          <span>Explore<br class="d-none d-lg-block"> Solutions</span>
-          <span class="arrow arrow-down"></span>
-        </div>
-      </div>
-    </a>
-    <div class="collapse collapse-solution" id="collapse-{{ forloop.index }}">
-      <section class="collapse-section bg-neutral-200 text-prevention">
-        <div class="collapse-container">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="font-serif">Overview</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quaerat incidunt soluta dolore veritatis iste odit? Magnam aut qui excepturi illum odit laboriosam at. Quaerat porro quidem illo eaque!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="collapse-section">
-        <div class="collapse-container">
-          <div class="row">
-            <div class="col-4 col-lg-1">
-              <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0" style="background-image: url({{ site.placeholder_image }})"></div>
-            </div>
-            <div class="col-lg-11">
-              <h6>Modeled Solution</h6>
-              <h4>Example: Buyer Spec Acceptance</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel praesentium ad deleniti qui alias similique unde, quaerat laudantium obcaecati.</p>
-              <h6>Innovation Opportunities</h6>
-              <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat quae inventore aspernatur fuga obcaecati officia suscipit, officiis alias corrupti similique doloremque, ad earum accusantium nam voluptate eum quidem sed!</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat quae inventore aspernatur fuga obcaecati officia suscipit, officiis alias corrupti similique doloremque, ad earum accusantium nam voluptate eum quidem sed!</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat quae inventore aspernatur fuga obcaecati officia suscipit, officiis alias corrupti similique doloremque, ad earum accusantium nam voluptate eum quidem sed!</li>
-              </ul>
-              <div class="d-flex flex-column flex-lg-row">
-                <a href="#" class="text-link mr-4">See Solution Factsheet</a>
-                <a href="#" class="text-link">See Solution Provider Database</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    </div>
-    {% endfor %}
+    {% include sections/collapse_solutions.html %}
   </div>
 </section>
