@@ -82,7 +82,7 @@ primary_navigation:
               link: '/our-impact/#case-studies'
               links:
             - title: Featured Organizations
-              link: '/our-impact/#testimonials'
+              link: '/our-impact/#featured-organizations'
               links:
     - title: Food Waste
       link: /food-waste

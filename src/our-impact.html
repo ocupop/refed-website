@@ -186,7 +186,17 @@ cta:
 
 <!-- This section needs work -->
 <div class="text-danger text-center mt-5">Jon needs to take a look at this section below after he finalizes the split-section-carousel</div>
-{% include sections/carousels/carousel_split.html items=site.case_studies section_background_color='white' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
+{% include sections/carousels/carousel_split.html 
+  id='case-studies'
+  preheader='Impact Stories'
+  items=site.case_studies 
+  section_background_color='white' 
+  image_width='50%' 
+  image_alignment='right' 
+  image_to_edge=true 
+  text_to_edge=true 
+  section_class='p-0' 
+%}
 
 <!-- This section needs work -->
 
@@ -239,7 +249,7 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta_featured_organizations %}
+{% include sections/cta.html cta=page.cta_featured_organizations id='featured-organizations' %}
 
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
 

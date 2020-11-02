@@ -43,7 +43,7 @@ logo_pile:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section class="page-intro">
+<section class="page-intro" id="overview">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -57,6 +57,16 @@ logo_pile:
 
 {% include sections/logo_pile.html logo_pile=page.logo_pile %}
 
-{% include sections/carousels/carousel_split.html items=site.posts section_background_color='primary' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
+{% include sections/carousels/carousel_split.html 
+  items=site.posts 
+  preheader='Funder Impact Stories'
+  id="funder-impact"
+  section_background_color='primary' 
+  image_width='50%' 
+  image_alignment='right' 
+  image_to_edge=true 
+  text_to_edge=true 
+  section_class='p-0' 
+%}
    
 {% include sections/cta.html cta=page.cta %}

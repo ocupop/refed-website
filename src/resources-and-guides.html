@@ -36,7 +36,7 @@ food_waste_tools:
     link_label: Learn More
     link: "#"
   - title: Solution Provider Database
-    id: solution-provider-database
+    id: solutions-provider-database
     icon_image: /img/icons/food_waste/refedtools_solutionproviderdatabase.svg
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
@@ -106,7 +106,7 @@ partner_resources:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section>
+<section id="overview">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4">
@@ -122,7 +122,7 @@ partner_resources:
   </div>
 </section>
 
-{% include sections/cta_insights_engine.html data=page.cta_insights_engine %}
+{% include sections/cta_insights_engine.html data=page.cta_insights_engine id='insights-engine' %}
 
 {% comment %}<div class="my-3">
   <div class="float-left circle-icon circle-icon-smallest rounded-circle d-flex align-items-center justify-content-center bg-success" >{% include icons/logo-icon.svg %}</div>
@@ -155,7 +155,8 @@ partner_resources:
     {% endfor %} 
   </div>
 </section>
-<section class="bg-neutral-200">
+
+<section class="bg-neutral-200" id="reports-and-guides">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -166,7 +167,7 @@ partner_resources:
   </div>
 </section>
 <section>
-  <div class="container">
+  <div class="container" id="roadmap-2030">
     <div class="row align-items-center">
       <div class="col-lg-4">
         <div class="bg-image aspect-5x7 bg-dark"></div>
@@ -179,6 +180,7 @@ partner_resources:
     </div>
   </div>
 </section>
+
 <section>
   <div class="container">
     <div class="row">  
@@ -197,7 +199,7 @@ partner_resources:
   </div>
 </section>
 
-<section class="bg-primary text-white">  
+<section class="bg-primary text-white" id="partner-resources">  
   <div class="container">
     <div class="row">
       <div class="col-12">

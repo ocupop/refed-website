@@ -54,7 +54,7 @@ document_sections:
 </section>
 
 {% for section in page.document_sections %}
-<section class="{% cycle '', 'bg-lightest' %}">
+<section class="{% cycle '', 'bg-lightest' %}" id="{{ section.title | slugify }}">
   <div class="container">
     <div class="row">
       <div class="col-12">
