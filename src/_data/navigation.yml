@@ -21,10 +21,8 @@ primary_navigation:
         - title: Who We Are
           link: /who-we-are/
           links:
-            - title: Our Mission
-              link: '/who-we-are/#our-mission'
-            - title: Our Vision
-              link: '/who-we-are/#our-vision'
+            - title: About Us
+              link: '/who-we-are/#about-us'
             - title: Our Values
               link: '/who-we-are/#our-values'
             - title: Our History
@@ -53,10 +51,10 @@ primary_navigation:
             - title: Documents
               link: /documents
               links:
-                - title: Financials
-                  link: '/documents/#financials'
                 - title: Annual Reports
                   link: '/documents/#annual-reports'
+                - title: Financials
+                  link: '/documents/#financials'
                 - title: Brand Guidelines
                   link: '/documents/#brand-guidelines'
     - title: Our Work
@@ -74,9 +72,6 @@ primary_navigation:
             - title: Stakeholder Engagement
               link: '/stakeholder-engagement'
               links:
-            - title: Future Planning (TBD)
-              link: '/our-work/#future-planning'
-              links:
             - title: Covid-19
               link: '/our-work/#covid-19'
               links:
@@ -86,7 +81,7 @@ primary_navigation:
             - title: Case Studies
               link: '/our-impact/#case-studies'
               links:
-            - title: Testimonials
+            - title: Featured Organizations
               link: '/our-impact/#testimonials'
               links:
     - title: Food Waste
@@ -95,20 +90,17 @@ primary_navigation:
         - title: The Challenge
           link: /food-waste-challenge
           links:
-            - title: 2030 Goals
-              link: '/food-waste-challenge/#2030-goals'
+            - title: Overview
+              link: '/food-waste-challenge/#overview'
               links:
-            - title: Current Situation
-              link: '/food-waste-challenge/#current-situation'
+            - title: Explore Food Waste
+              link: '/food-waste-challenge/#explore-food-waste'
               links:
-            - title: Impacts
-              link: '/food-waste-challenge/#impacts'
+            - title: Barriers to Solutions
+              link: '/food-waste-challenge/#barriers-to-solutions'
               links:
             - title: Policy Overview
               link: '/food-waste-challenge/#policy-overview'
-              links:
-            - title: Funding Need
-              link: '/food-waste-challenge/#funding-need'
               links:
         - title: Solutions
           link: /food-waste-solutions
@@ -116,65 +108,65 @@ primary_navigation:
             - title: Overview
               link: '/food-waste-solutions/#overview'
               links:
-            - title: Solutions Tracker
-              link: '/food-waste-solutions/#solutions-tracker'
+            - title: Roadmap 2020
+              link: '/food-waste-solutions/#roadmap-2020'
               links:
-            - title: Progress Reports
-              link: '/food-waste-solutions/#progress-reports'
+            - title: Seven Action Areas
+              link: '/food-waste-solutions/#seven-action-areas'
+              links:
+            - title: Key Levers
+              link: '/food-waste-solutions/#key-levers'
               links:
         - title: Resources & Guides
           link: /resources-and-guides
           links:
-            - title: Insights Engine
+            - title: The Roadmap 2030
+              link: '/resources-and-guides/#roadmap-2030'
+              links:
+            - title: ReFED Insights Engine
               link: '/resources-and-guides/#insights-engine'
               links:
-            - title: Food Waste Tracker
-              link: '/resources-and-guides/#food-waste-tracker'
-              links:
-            - title: Investment Tracker
-              link: '/resources-and-guides/#investment-tracker'
-              links:
-            - title: Solutions Tracker
-              link: '/resources-and-guides/#solutions-tracker'
+            - title: Solutions Database
+              link: '/resources-and-guides/#solutions-database'
               links:
             - title: Impact Calculator
               link: '/resources-and-guides/#impact-calculator'
               links:
-            - title: Innovator Database
-              link: '/resources-and-guides/#innovator-database'
+            - title: Solutions Provider Database
+              link: '/resources-and-guides/#solutions-provider-database'
               links:
-            - title: Policy Tracker
-              link: '/resources-and-guides/#policy-tracker'
+            - title: Investment Tracker
+              link: '/resources-and-guides/#investment-tracker'
               links:
-            - title: The Roadmap
-              link: '/resources-and-guides/#roadmap'
+            - title: Reports and Guides
+              link: '/resources-and-guides/#reports-and-guides'
               links:
-            - title: ReFED Reports
-              link: '/resources-and-guides/#refed-reports'
-              links:
-            - title: Action Guides
-              link: '/resources-and-guides/#action-guides'
-              links:
+            - title: Partner Resources
+              link: '/resources-and-guides/#partner-resources'
+              links:           
     - title: Engage
       link: /engage
       links:
         - title: Ways to Engage
           link: /engage
           links:
-            - title: Partner with Us
-              link: /engage/partner-with-us
-              links:
-            - title: Business Reporting
-              link: '/engage/#business-reporting'
+            - title: Stakeholder Actions
+              link: /engage/#stakeholder-actions
               links:
             - title: Call for Funders
               link: '/engage/#call-for-funders'
               links:
+            - title: Partner with Us
+              link: /engage/#partner-with-us
+              links:
+            - title: Collaborate with Us
+              link: '/engage/#collaborate'
+              links:
         - title: Events
           link: /events
           links:
-            - title: Food Waste Summit
-              link: '/events/#food-waste-summit'
+            - title: In-person Events
+              link: '/events/#in-person'
               links:
             - title: Webinars
               link: '/events/#webinars'
@@ -192,7 +184,6 @@ primary_navigation:
             - title: Facebook
               link: 'https://www.facebook.com/rethinkfoodwaste/'
               links:
-
     - title: Insights Engine
       link:
       links:
