@@ -1,8 +1,6 @@
 top_bar_navigation:
   navigation:
   links:
-   - title: Search
-     link: /search
    - title: Contact
      link: /contact
      links:

@@ -35,17 +35,52 @@ if(matches){
 }
 
 
-/* STICK TO TOP OF SCREEN WHEN SCROLLING PAST */
+/* BEGIN Sticky Sub-Navigation with ScrollMagick */
+var w = window.innerWidth;
+var controller;
+var size = w > 768 ? "big" : "small";
+if (size === "big") {
+  makeScrollMagic();
+}
 
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({
-    triggerElement: "#sticky-nav",
+function makeScrollMagic() {
+  controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".sticky-nav",
     triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
   })
-    .setClassToggle("#sticky-nav", "minimized") // add class toggle
-    .setPin("#sticky-nav")
+    .setClassToggle(".sticky-nav", "minimized") // add class toggle
+    .setClassToggle(".scrollmagic-pin-spacer", "minimized") // add class toggle
+    .setPin(".sticky-nav")
     //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
+}
+
+function sizeIt() {
+  w = window.innerWidth;
+  var newSize = w > 768 ? "big" : "small";
+  if (newSize != size) {
+    size = newSize;
+    if (newSize === "small") {
+      //console.log("The screen is now small");
+      if(controller){
+        controller.destroy(true);
+        //console.log("ScrollMagic has been destroyed by aliens.");
+      }
+    } else {
+      //console.log("The screen is now large - ScrollMagic is active.");
+      makeScrollMagic();
+    }
+  }
+}
+window.addEventListener("resize", sizeIt);
+/* END Sticky Sub-Navigation with ScrollMagick */
+
+
+
+
+
+
 
 
 
@@ -231,35 +266,35 @@ pills.forEach(function(pill) { // for each option in this dropdown
 
 
 function filterList(section,filter){
-console.log("FILTER = "+filter)
-var dropdown = section.querySelector('.dropdown');
-var list = section.querySelector('.filterable-list');
+  console.log("FILTER = "+filter)
+  var dropdown = section.querySelector('.dropdown');
+  var list = section.querySelector('.filterable-list');
 
-// SHOW/HIDE lements based on which filter is selected.
-var listitems = list.querySelectorAll('.filterable-list-item');
-for (var i=0; i < listitems.length; i++) {
-listitems[i].style.display = '';
-}
-if(filter !== 'all'){
-  var listitems = list.querySelectorAll('.card:not(.'+filter+')');  
+  // SHOW/HIDE lements based on which filter is selected.
+  var listitems = list.querySelectorAll('.filterable-list-item');
   for (var i=0; i < listitems.length; i++) {
-      listitems[i].style.display = 'none';
+    listitems[i].style.display = '';
   }
-}
+  if(filter !== 'all'){
+    var listitems = list.querySelectorAll('.card:not(.'+filter+')');  
+    for (var i=0; i < listitems.length; i++) {
+        listitems[i].style.display = 'none';
+    }
+  }
 
 
-// change the value of the dropdown menu as well.  
-var options = dropdown.querySelectorAll('.dropdown-item');
-for (var i=0; i < options.length; i++) {
-  var label = 'Select';
-  if(options[i].getAttribute('data-value') == filter){
-    var label = options[i].textContent;
-    break;
-  }
-}  
-dropdown.querySelector('.dropdown-select').textContent = label;
-var flkty = Flickity.data( list )
-flkty.resize(); // TODO: this should be variable.
+  // change the value of the dropdown menu as well.  
+  var options = dropdown.querySelectorAll('.dropdown-item');
+  for (var i=0; i < options.length; i++) {
+    var label = 'Select';
+    if(options[i].getAttribute('data-value') == filter){
+      var label = options[i].textContent;
+      break;
+    }
+  }  
+  dropdown.querySelector('.dropdown-select').textContent = label;
+  var flkty = Flickity.data( list )
+  flkty.resize(); // TODO: this should be variable.
 }
 
 /* END filterable list */

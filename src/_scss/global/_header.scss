@@ -3,9 +3,7 @@
 #pageHeader{
   border-bottom:9px solid $light;
   @include media-breakpoint-down(lg) {
-    .container {
-      max-width: 100%;
-    }
+    > .container { max-width: 100%; }
   }
 }
 .navbar-brand{
@@ -30,7 +28,8 @@
 }
 
 
-@media screen and (max-width: $screen-md-min){
+  /* MOBILE NAV */
+  @include media-breakpoint-down(md) {
   #pageHeader{
     // position: absolute;
     z-index: 11;
@@ -44,20 +43,14 @@
       background-color:$primary;
       color: $white;
       overflow: hidden;
-      // left: 0;
-      // right: 0;
-      // position: absolute;
       z-index: 9999;
-      // top: rem($mobile-header-height);
       width: 100%;
       &.collapse{ }
       &.collapsing{ }
       &.collapse.show{ }
     }
   }
-  // main {
-  //   margin-top: rem($mobile-header-height);
-  // }
+
 }
 
 @media screen and (min-width: $screen-md-min){
