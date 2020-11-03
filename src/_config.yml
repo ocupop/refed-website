@@ -39,7 +39,7 @@ collections:
 #   - scope: 
 #       type: events
 #     values:
-#       date: modified_time
+#       date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
       
 
 # Build settings
