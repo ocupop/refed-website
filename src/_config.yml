@@ -272,6 +272,10 @@ news_types:
   - article
   - newsletter
 
+event_types:
+  - in_person
+  - webinar  
+
 button_types:
   - text
   - button
