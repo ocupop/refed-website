@@ -35,6 +35,13 @@ collections:
   reports_and_guides:
     output: true
 
+# defaults:
+#   - scope: 
+#       type: events
+#     values:
+#       date: modified_time
+      
+
 # Build settings
 safe: false
 sass:
