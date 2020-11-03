@@ -1,0 +1,112 @@
+---
+layout: blog
+title: Stay Connected
+hero:
+  - title: ReFED in the Press
+    subtitle: Newsroom
+    image: /img/newsroom/press_header_image.jpg
+    buttons:
+      - link: '#'
+        button_text: Download Media Assets
+        button_type: button
+      - link: '#'
+        button_text: Download Brand Guide
+        button_type: button
+      - link: '/contact'
+        button_text: Contact ReFED
+        button_type: button
+cta:
+  description_html: >-
+    <p>See past newsletters in the newsletter archive</p>
+  link: /archives
+  link_label: See Newsletter Archive
+  colorbar:
+    color: '#e65e4a'
+    bar_position:
+      - right
+
+---
+
+
+{% include modules/subnav-newsroom.html %}
+{% include sections/carousels/carousel_hero.html items=page.hero %}
+
+<section class="bg-lightest py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text-danger">(TODO: design and implement filter with keyword search and date search)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+                  
+        <div class="text-danger">(TODO: design and implement this view filter)</div>
+        <label for="view-filter" class="preheader ">
+          View:
+        </label>
+        <select name="view-filter" class="selectpicker">
+          <option>All</option>
+          <option>Featured</option>
+          {% for i in (1..3) %}                 
+            <a class="dropdown-item" href="#" data-value="{{ 'Item' | slugify }}">Item</a>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+                
+    
+    {% for i in (1..4) %}
+      <div class="row my-5">
+        
+        {% if forloop.index != 3 %}<!-- if the image exists -->
+        <div class="col-6 col-md-4 col-lg-3 mx-auto d-flex align-items-center">
+          <img src="https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg" class="w-100 mb-3 mb-md-0 mr-md-3" alt="" />
+        </div>
+        {% endif %}
+
+        <div class="col-12 col-md">
+          <h3 class="editable font-serif">With US$3+ Million in Grants, ReFED’s COVID-19 Fund is Saving Food Waste and Feeding People</h3>
+          <h6>FOODTANK | JULY 22, 2020</h6>
+          <div class="mt-4 editable">
+            <p>When the COVID-19 pandemic began, farmer Blake Place and her husband, Andrew, faced a problem: the goats on their upstate New York farm were still producing 100 gallons of milk a day, but the restaurants and creameries they sold to had shut down. With the markets for their goat cheese and goat milk gelato gone, the Places felt they had no choice but to dump 95 percent of the milk they produced each day.</p>
+          </div>
+          <a href="/single-press" class="editable mt-3 text-link">Read More</a>
+        </div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+<section class="bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mx-lg-auto ">
+          <h4 class="preheader editable">The Latest to your Mailbox</h4>
+          <h2 class="editable">Subscribe to our Mailing List</h2>
+          <p class="lead editable">Sign up to receive updates from ReFED</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 col-lg-8 mx-lg-auto ">
+          <div class="form-theme-dark">
+            {% include modules/form_subscribe.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% include sections/cta.html cta=page.cta %}

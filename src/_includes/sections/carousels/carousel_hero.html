@@ -6,18 +6,20 @@
     <div class="hero-content">
       <div class="container py-5 text-white">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="">
             {% if hero.subtitle %}
               <div class="preheader">{{ hero.subtitle }}</div>
             {% endif %}
             {% if hero.title %}
               <h1>{{ hero.title }}</h1>
             {% endif %}
-            {{ hero.description_html | default: hero.content | truncatewords: 30 }}
+            <div class="max-out-text-width">
+              {{ hero.description_html | default: hero.content | truncatewords: 30 }}
+            </div>
             {% if hero.link %}
               <p><a class="card-link block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
-            {% if hero.buttons.link %}
+            {% if hero.buttons %}
               <div class="hero-buttons mt-3">
                 {% for button in hero.buttons %}
                   <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
