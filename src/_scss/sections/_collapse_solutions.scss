@@ -86,6 +86,20 @@
   }
 }
 
+.row-rescue {
+  color: $rescue;
+  &::before {
+    background-color: $rescue;
+  }
+}
+
+.row-recycling {
+  color: $recycling;
+  &::before {
+    background-color: $recycling;
+  }
+}
+
 .collapse-solution {
   position: relative;
   margin: 20px 0 100px;
