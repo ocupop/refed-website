@@ -72,10 +72,10 @@
   }
   .flickity-prev-next-button {
     &.previous {
-      left: 25px;
+      left: -25px;
     }
     &.next {
-      right: 25px;
+      right: -25px;
     }
   }
   &.carousel-two-column {

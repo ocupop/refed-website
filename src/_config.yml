@@ -35,6 +35,13 @@ collections:
   reports_and_guides:
     output: true
 
+# defaults:
+#   - scope: 
+#       type: events
+#     values:
+#       date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
+      
+
 # Build settings
 safe: false
 sass:
@@ -271,6 +278,10 @@ _array_structures:
 news_types:
   - article
   - newsletter
+
+event_types:
+  - in_person
+  - webinar  
 
 button_types:
   - text
