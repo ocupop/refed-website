@@ -154,7 +154,12 @@ if(carousel){
     prevNextButtons: true,
     arrowShape: { x0: 15,x1: 80, y1: 50,x2: 80, y2: 50,x3: 80},
     pageDots: false,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    on: {
+      ready: function() {
+        this.element.classList.add('flickity-init')
+      }
+    }
     })
   });
 }
@@ -170,7 +175,12 @@ if(carousel_with_dots){
     prevNextButtons: true,
     arrowShape: { x0: 15,x1: 80, y1: 50,x2: 80, y2: 50,x3: 80},
     pageDots: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    on: {
+      ready: function() {
+        this.element.classList.add('flickity-init')
+      }
+    }
     })
   });
 }
@@ -179,16 +189,22 @@ if(carousel_with_dots){
 var carousel_dots_only = document.querySelectorAll('.carousel-refed-dots-only');
 if(carousel_dots_only){
   carousel_dots_only.forEach(function(carousel_dots_only){
-    var flkty_logos = new Flickity(carousel_dots_only, {
+    var refed_dots_only = new Flickity(carousel_dots_only, {
     contain: true,
     cellAlign: 'left',
     "wrapAround": true,
     prevNextButtons: false,
     pageDots: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    on: {
+      ready: function() {
+        this.element.classList.add('flickity-init')
+      }
+    }
     })
   });
 }
+
 
 
 /*
