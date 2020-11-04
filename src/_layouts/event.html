@@ -4,4 +4,71 @@ layout: default
 {% assign title = page.title %}
 {% assign summary = page.summary %}
 {% include sections/hero.html title="Event Title Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, praesentium?" subtitle="Event Subtitle" description_html=summary %}
-{{ page.date }}
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>Tuesday July 28, 2020 3PM EST</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        {% for i in (1..3) %}
+          <h6>Panelists</h6>
+          <h4 class="font-serif">Firstname Lastname</h4>
+          <p>Role Lorem ipsum dolor sit amet.</p>
+          <a href="">See Bio for Details</a>
+        {% endfor %}
+        <div class="d-flex mb-5 mt-5 mb-lg-0">
+          <a href="" class="btn btn-secondary mr-4">Register</a>
+          <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h6>Key Takeaways</h6>
+        {% for i in (1..2) %}
+          <p class="font-weight-bold mb-0">Takeaway Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iste sit deserunt molestias provident optio amet porro veniam necessitatibus officia! Earum iusto recusandae facilis iste magni quibusdam beatae a exercitationem.</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="video-responsive mt-5">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jMmmcDVzmo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-neutral-200">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>Upcoming Schedule</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-danger">Add upcoming events collection</p>
+        {% include sections/carousels/carousel_cards.html %}
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>Browse Past Events</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-danger">Add past events collection - TODO does this show all types of events or just webinars</p>
+        {% include sections/carousels/carousel_cards.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% include events/event_calendar_modal.html %}

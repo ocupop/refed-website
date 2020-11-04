@@ -307,7 +307,23 @@ btns.forEach(function(btn) { // for each option in this dropdown
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     var body = document.getElementsByTagName("BODY")[0]
-    body.classList.toggle("modal-open");
+    body.classList.toggle("show-subscribe-form");
   }); 
 }); 
 }
+
+//generate ics file to download
+$('.ics-download').on('click', function(){
+  cal_single = ics();
+  var subject = $(this).data('subject');
+  var description = $(this).data('description');
+  var location = $(this).data('location');
+  var event_begin = moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');
+  console.log($(this).data('begin'));
+  var event_end = moment($(this).data('end'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');
+  console.log('moment', moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss'));
+  console.log(subject, description, location, event_begin, event_end)
+  // cal_single.addEvent('Best Day', 'This is the best day to demonstrate a single event.', 'New York', '11/12/1987', '11/12/1987');
+  cal_single.addEvent(subject, description, location, event_begin, event_end);
+  cal_single.download(subject)
+})
