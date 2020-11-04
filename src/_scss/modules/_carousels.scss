@@ -100,13 +100,8 @@
       }
     }
     
-    &.dots-right .flickity-page-dots{
-      left: 50%;
-    } 
-    &.dots-left .flickity-page-dots{
-      left: 0;
-    } 
-    &.dots-left-in-container{
+    
+    &.carousel-image-right{
       .flickity-page-dots{
         left: 0;
         max-width:#{map-get($container-max-widths, 'xl')};

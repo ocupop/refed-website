@@ -27,42 +27,86 @@
     text-align: left;
     margin-left: 7px;
   }  
-  &.dots-right .flickity-page-dots{
-    left: 50%;
-  } 
-  &.dots-left .flickity-page-dots{
-    left: 0;
-  } 
-  &.dots-left-in-container{
+
+  
+  @include media-breakpoint-up(lg) {
     .flickity-page-dots{
-      left: 0;
-      max-width:#{map-get($container-max-widths, 'xl')};
-      padding-top:em(50);
-      // TODO: make responsive size max width;
       width:100%;
       margin:auto;
-    } 
+      top: 5rem;
+    }
+    &.carousel-image-right{
+      .flickity-page-dots{
+        left: 0;
+        padding-left: 7px;
+        max-width:#{map-get($container-max-widths, 'lg')};
+        @include media-breakpoint-up(xl) {
+          max-width:#{map-get($container-max-widths, 'xl')};
+        }
+      } 
+    }
+    &.carousel-image-left{
+      .flickity-page-dots{
+        right: 0;
+        padding-left: calc(7rem - 8px); // 8px is the left margin on the dot
+        max-width:unset;
+        width:50%;
+        left:50%;
+        margin:unset;
+      } 
+    }
   }
+
+ 
+  @include media-breakpoint-down(md) {
+    
+    .container > .row{
+      //flex-direction: column;
+      flex-wrap: nowrap;
+      flex-direction:column-reverse;
+    }
+    .col-image{ flex:inherit;}
+    .col-text{ 
+      //order:2;
+      flex:1;
+      padding-bottom: rem(64) !important;}
+
+    .flickity-page-dots{
+      margin: auto;
+      max-width:#{map-get($container-max-widths, 'md')} !important;
+      width: 100% !important;
+      padding-left: -8px !important;
+      top: unset;
+      left: 0 !important;
+      bottom: 1rem;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .flickity-page-dots{
+      max-width:#{map-get($container-max-widths, 'sm')} !important;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .flickity-page-dots{
+      width: initial !important;
+      max-width: inherit !important;
+      margin: 0 rem(20);
+    }
+  }
+
   
-  @media screen and (max-width: $screen-md-min){
-    &.dots-right .flickity-page-dots{
-      left: 0;
-    }
+
+
+  // DOT COLORS
+  // default theme is .theme-light
+  &.theme-dark{
     .flickity-page-dots{
-      top: 375px;
-    }
-  }
-  @media screen and (max-width: $screen-sm-min){
-    .flickity-page-dots{
-      top: 67vw;
-      &:after{
-        content:'need to find a solution for the placement of these dots.';
-        background-color: pink;
-        padding: 4px;
-        display: block;
-        font-size: 12px;
-        width: 180%;
-        opacity: 0.8;
+      .dot{
+        border: 1px solid $white;
+      }
+      .dot.is-selected{
+        border: 1px solid $white;
+        background-color:$white;
       }
     }
   }

@@ -1,4 +1,7 @@
-<div class="carousel-refed-dots-only dots-left-in-container carousel-split">
+
+
+
+<div class="carousel-refed-dots-only carousel-image-{{include.image_alignment | default: 'right'}} carousel-split theme-{{ include.theme | default: 'dark' }}">
   {% for item in include.items %}
     {% include sections/split_section.html %}
   {% endfor %}

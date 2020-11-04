@@ -34,12 +34,15 @@
   {% capture description %}{{item.content | truncatewords: 50}}{% endcapture %}
 {%endif%}
 
+
+
+
 <section class="split-section image-{{include.image_alignment | default: 'right'}} {{ include.section_class }}" id="{{ include.id }}">
     <div class="container split-section">
       <div class="row">   
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
-            <span class='bkg'></span>
-
+          <span class='bkg'></span>
+          <div class="col-text-content">
             {% if include.preheader or item.preheader %}
               <div class="mb-3 preheader">{{ include.preheader | default: item.preheader  }}</div>
             {% endif %}
@@ -51,13 +54,13 @@
             <div class="mb-4 item-description">{{ description }}</div>
 
             {% if item.url %}
-              <a class="m-0 {% if item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
+              <a class="m-0 {% if include.button_type or item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
             {% endif %}
-
+          </div>
         </div>
 
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-          <img src="{{ item.featured_image | item.hero }}">
+          <img src="{{ item.featured_image | item.hero }}" alt="" class="d-block">
           <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
         </div>
 

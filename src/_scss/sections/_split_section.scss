@@ -47,6 +47,9 @@ SAMPLE
 
   /* Mobile Only */
   @include media-breakpoint-down(md) {    
+    .container{
+      max-width:initial;
+    }
     .col-text, 
     .col-image{
       .bkg{
@@ -56,15 +59,24 @@ SAMPLE
       }
     }
     .col-image {
-      width: calc(100vw);
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: unset;
+      width:100%;
       img{
-        width: 100vw;
+        width: 100%;
       } 
     }    
-    .col-text{
+    .col-text{   
+      .col-text-content{ 
+        margin:auto;  
+        padding-left:rem(15);
+        padding-right:rem(15);
+        max-width:#{map-get($container-max-widths, 'md')} !important;        
+        @include media-breakpoint-down(sm) {   
+          max-width:#{map-get($container-max-widths, 'sm')} !important;
+        }     
+        @include media-breakpoint-down(xs) {   
+          max-width:#{map-get($container-max-widths, 'xs')} !important;
+        }
+      }
       padding-bottom: 2rem;
       padding-top: 2rem;
     }
