@@ -2,6 +2,18 @@
 layout: default
 title: 'Promote Solutions'
 hero:
+carousel_testimonial:
+  - text: >-
+      “The ReFED team has been an incredible strategic partner in our journey to
+      end hunger and waste. ReFED’s insights and guidance helped shape the
+      strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
+      Innovation Fund and its open call for innovative solutions. Kroger values
+      ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
+      never been more excited and hopeful that together we can truly change our
+      food system.”
+    author: Denise Oserhues
+    cite: The Kroger Co.
+    image:
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -46,4 +58,4 @@ hero:
   </div>
 </section>
 
-{% include modules/carousel_testimonial.html %}
+{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}

@@ -5,12 +5,69 @@
     bottom: 15%;
     transform: translateY(-50%);
     &.previous {
-      @include arrow('left', 12px, $white);
       left: 0;
     }
     &.next {
-      @include arrow('right', 12px, $white);
       right: 10%;
+    }
+  }
+}
+
+
+
+
+
+#carousel-hero.carousel-hero-in-container{
+  .flickity-button:disabled{ display:none; }
+  .flickity-prev-next-button {
+    top: auto;
+    bottom: calc(50% - 12px);
+    transform: translateY(-50%) ;
+    
+    &.previous {
+      left: rem(16);
+    }
+    &.next {
+      right: rem(16);
+    }
+    svg { color: $white; }
+    
+    @include media-breakpoint-up(sm) { 
+      svg { color: $primary; }
+      &.previous { 
+        left: 50%;
+        transform:translateX(-320px);
+      }
+      &.next     { 
+        right: 50%;
+        transform:translateX(320px); 
+      }
+    }
+    @include media-breakpoint-up(md) { 
+      &.previous { transform:translateX(-405px);}
+      &.next     { transform:translateX(405px); }
+    }
+    @include media-breakpoint-up(lg) { 
+      &.previous { transform:translateX(-540px);}
+      &.next     { transform:translateX(540px); }
+    }
+    @include media-breakpoint-up(xl) { 
+      &.previous { transform:translateX(-696px);}
+      &.next     { transform:translateX(696px); }
+    }
+    @media screen and (min-width: 1470px){
+      &.previous { transform:translateX(-725px);}
+      &.next     { transform:translateX(725px); }
+    }
+
+    // for some screen sizes, the arrows go off the edge of the screen. In these cases, move them in so they are over the image, and turn them white.
+    @media screen and (min-width: $screen-sm-min) and (max-width: 655px),
+                      (min-width: $screen-md-min) and (max-width: 825px),
+                      (min-width: $screen-lg-min) and (max-width: 1095px),
+                      (min-width: $screen-xl-min) and (max-width: 1405px){
+      svg { color: $white; }
+      &.previous { margin-left: 60px;  }
+      &.next     { margin-right: 60px; }
     }
   }
 }

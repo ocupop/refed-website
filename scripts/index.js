@@ -152,6 +152,7 @@ if(carousel){
     cellAlign: 'left',
     "wrapAround": true,
     prevNextButtons: true,
+    arrowShape: { x0: 15,x1: 80, y1: 50,x2: 80, y2: 50,x3: 80},
     pageDots: false,
     adaptiveHeight: false
     })
@@ -167,6 +168,7 @@ if(carousel_with_dots){
     cellAlign: 'left',
     "wrapAround": true,
     prevNextButtons: true,
+    arrowShape: { x0: 15,x1: 80, y1: 50,x2: 80, y2: 50,x3: 80},
     pageDots: true,
     adaptiveHeight: false
     })

@@ -6,7 +6,7 @@ hero:
     subtitle: Blog
     description_html:
     image: /img/home/homepage_header_image_01.jpg
-    link: /single_blog
+    link: /single-post
     link_text: Learn More
   - title: >-
       ReFED Insights Engine: an online data center designed to serve as the next
@@ -14,7 +14,7 @@ hero:
     subtitle: Blog
     description_html:
     image: /img/home/homepage_header_image_02.jpg
-    link: /single_blog
+    link: /single-post
     link_text: Learn More
   - title: >-
       2020 ReFED Roadmap: The next steps to reach our goal of reducing food
@@ -22,13 +22,13 @@ hero:
     subtitle: Blog
     description_html:
     image: /img/home/homepage_header_image_03.jpg
-    link: /single_blog
+    link: /single-post
     link_text: Learn More
   - title: Headline for the newest update ReFED has to share with the community.
     subtitle: Blog
     description_html:
     image: /img/home/homepage_header_image_04.jpg
-    link: /single_blog
+    link: /single-post
     link_text: Learn More
 
 cta_press: 
@@ -47,17 +47,9 @@ cta_newsletter:
 
 ---
 
-{% include modules/subnav-newsroom.html %}
+{% include modules/subnav_newsroom.html %}
 
-<section class="bg-lightest py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="text-danger">(TODO: design and implement filter with keyword search and date search)</div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/newsroom_filter.html %}
 
 {% include sections/carousels/carousel_hero_in_container.html items=page.hero %}
 
