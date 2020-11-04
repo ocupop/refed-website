@@ -1,0 +1,28 @@
+{% assign start = page.start_time | downcase %}
+{% assign end = page.end_time | downcase %}
+{% assign is_afternoon_start = false %}
+{% assign is_afternoon_end = false %}
+{% if start contains 'pm' %}
+  {% assign is_afternoon_start = true %}
+{% endif  %}
+{% if end contains 'pm' %}
+  {% assign is_afternoon_end = true %}
+{% endif  %}
+{% assign startTime = start | remove: ':' | remove: 'am' | remove: 'pm' %}
+{% assign endTime = end | remove: ':' | remove: 'am' | remove: 'pm' %}
+{% assign checkStartTime = startTime | split:'12' %}
+{% assign checkEndTime = endTime | split:'12' %}
+{% if is_afternoon_start and checkStartTime[0] != empty %}
+  {% assign startTime = startTime | plus: 1200 %}
+{% endif %}
+{% if is_afternoon_end and checkEndTime[0] != empty %}
+  {% assign endTime = endTime | plus: 1200 %}
+{% endif %}
+{% if is_afternoon_start == false and checkStartTime[0] == empty %}
+  {% assign startTime = startTime | minus: 1200 %}
+{% endif %}
+{% if is_afternoon_end == false and checkEndTime[0] == empty %}
+  {% assign endTime = endTime | minus: 1200 %}
+{% endif %}
+<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ page.title }}&dates={{ page.item_date | date: '%Y%m%d'}}T{{startTime}}00/{{ page.event_date | date: '%Y%m%d'}}T{{endTime}}00&details={{ page.description_html }}"
+  class="btn btn-secondary" target="_blank" rel="noopener">Google Calendar</a>

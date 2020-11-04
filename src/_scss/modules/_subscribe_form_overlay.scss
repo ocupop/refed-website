@@ -1,5 +1,5 @@
-body.modal-open{
-    overflow:hidden;
+body.show-subscribe-form {
+  overflow:hidden;
 }
 
 .subscribe-form-overlay{
@@ -38,7 +38,7 @@ body.modal-open{
     }
 }
 
-body.modal-open{
+body.show-subscribe-form{
     overflow:hidden;
     .subscribe-form-overlay{
         transform: translateX(0);
