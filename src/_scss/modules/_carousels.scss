@@ -7,17 +7,17 @@
     border-radius: unset;
     background-color: transparent;
     svg { 
-      display: none; 
+      color:$primary;
     }
 }
 
 .flickity-prev-next-button {
   &.previous {
-    @include arrow(left, 12px, $primary);
+    //@include arrow(left, 12px, $primary);
     left: -58px;
   }
   &.next {
-    @include arrow('right', 12px, $primary);
+    //@include arrow('right', 12px, $primary);
     right: -58px;
   }
 }

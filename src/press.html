@@ -28,18 +28,11 @@ cta:
 ---
 
 
-{% include modules/subnav-newsroom.html %}
+{% include modules/subnav_newsroom.html %}
+
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section class="bg-lightest py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="text-danger">(TODO: design and implement filter with keyword search and date search)</div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/newsroom_filter.html %}
 
    
 <section>

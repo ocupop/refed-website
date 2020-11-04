@@ -1,33 +1,35 @@
 {% assign num_slides = include.items | size %}
-<div class="carousel-hero-in-container pt-5">
+<div class=" pt-5">
 
 
   <div class="position-relative">
-    <div id="carousel-hero" class="carousel-refed">
+    <div id="carousel-hero" class="carousel-refed carousel-hero-in-container">
     {% for hero in include.items %}
       <div class="w-100">
-        <div class="container hero bg-image w-100" style="background-image:url({{ hero.image | default: hero.featured_image }});">
-          <div class="hero-content">
-            <div class="p-5 text-white w-100">
-              <div class="row">
-                <div class="col-lg-8">
-                {% if hero.subtitle %}
-                    <div class="preheader">{{ hero.subtitle }}</div>
-                {% endif %}
-                {% if hero.title %}
-                  <h1>{{ hero.title }}</h1>
-                {% endif %}
-                {{ hero.description_html | default: hero.content | truncatewords: 20 }}
-                {% if hero.link %}
-                    <a class="card-link block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
-                {% endif %}
-                {% if hero.buttons.link %}
-                    <div class="hero-buttons mt-3">
-                    {% for button in hero.buttons %}
-                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
-                    {% endfor %}
-                    </div>
-                {% endif %}
+        <div class="container" >
+          <div class="hero bg-image w-100 px-0" style="background-image:url({{ hero.image | default: hero.featured_image }});">
+            <div class="hero-content">
+              <div class="p-5 text-white w-100">
+                <div class="row">
+                  <div class="col-lg-8">
+                  {% if hero.subtitle %}
+                      <div class="preheader">{{ hero.subtitle }}</div>
+                  {% endif %}
+                  {% if hero.title %}
+                    <h1>{{ hero.title }}</h1>
+                  {% endif %}
+                  {{ hero.description_html | default: hero.content | truncatewords: 20 }}
+                  {% if hero.link %}
+                      <a class="card-link block mr-3 text-primary-400" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                  {% endif %}
+                  {% if hero.buttons.link %}
+                      <div class="hero-buttons mt-3">
+                      {% for button in hero.buttons %}
+                          <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                      {% endfor %}
+                      </div>
+                  {% endif %}
+                  </div>
                 </div>
               </div>
             </div>

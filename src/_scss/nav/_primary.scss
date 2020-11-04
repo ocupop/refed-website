@@ -224,8 +224,9 @@
     .primary-nav-links.navbar-nav{
       > li.nav-item{
         font-size:1em;
-        a{
+        > a{
           padding: 6px 18px;
+
         }
       }
     }
