@@ -1,27 +1,132 @@
-<form id="member_signup_form" class="profile" data-action="{{ include.action }}" name="signup_form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ancient-wave-20081.herokuapp.com/signup">
-  <div class="hide">
-    <label for="comment">Comments</label>
-    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-  </div>
-  <div class="form-group">
-    <label class="sr">First Name</label>
-    <input type="text" id="first_name" name="first_name" placeholder="First Name *" required>
-    <label class="sr">Last Name</label>
-    <input type="text" id="last_name" name="last_name" placeholder="Last Name *" required>
-    <label class="sr">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email *" required>
-    <label class="sr">Organization Name</label>
-    <input type="text" id="organization" name="organization" placeholder="Organization Name *" required>
-    <label class="sr">Title</label>
-    <input type="text" id="title" name="title" placeholder="Title / Position *" required>
-    <div class="select">
-      <select id="stakeholders" name="stakeholders" required>
-        {% for stakeholder in site.stakeholders %}
-        <option value="{{ stakeholder.title }}" {% if forloop.first %}selected{% endif %}>{{ stakeholder.title }}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <input type="submit" value="Submit" class="button disabled">
-    <p><em>Newsletter sign up includes subscription to ReFED's general newsletter as well as our quarterly Capital & Innovation newsletter.</em></p>
-  </div>
+<!-- FORM: HEAD SECTION -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="no-referrer-when-downgrade">
+        <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
+        const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+        let formElement = document.getElementById("tfa_0");
+        if (null === formElement) {
+            formElement = document.getElementById("0");
+        }
+        let appendJsTimerElement = function(){
+            let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+            let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+            if (null !== cumulatedTimeElement) {
+                let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                if (null !== cumulatedTime && cumulatedTime > 0) {
+                    formTimeDiff += cumulatedTime;
+                }
+            }
+            let jsTimeInput = document.createElement("input");
+            jsTimeInput.setAttribute("type", "hidden");
+            jsTimeInput.setAttribute("value", formTimeDiff.toString());
+            jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+            jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+            jsTimeInput.setAttribute("autocomplete", "off");
+            if (null !== formElement) {
+                formElement.appendChild(jsTimeInput);
+            }
+        };
+        if (null !== formElement) {
+            if(formElement.addEventListener){
+                formElement.addEventListener('submit', appendJsTimerElement, false);
+            } else if(formElement.attachEvent){
+                formElement.attachEvent('onsubmit', appendJsTimerElement);
+            }
+        }
+    });
+</script>
+
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=aea7d54c44976582bd2f5f5816686fdccd62e076" rel="stylesheet" type="text/css" />
+
+<link href="https://www.tfaforms.com/uploads/themes/theme-71693.css" rel="stylesheet" type="text/css" />
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=aea7d54c44976582bd2f5f5816686fdccd62e076" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=aea7d54c44976582bd2f5f5816686fdccd62e076"></script>
+<script type="text/javascript">
+    wFORMS.behaviors.prefill.skip = false;
+</script>
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=aea7d54c44976582bd2f5f5816686fdccd62e076"></script>
+
+<!-- FORM: BODY SECTION -->
+<div class="wFormContainer" style="max-width: 100%; width:auto;">
+<div class="wFormHeader"></div>
+<style type="text/css">
+            #tfa_1,
+            *[id^="tfa_1["] {
+                width: 676px !important;
+            }
+            #tfa_1-D,
+            *[id^="tfa_1["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        
+            #tfa_3,
+            *[id^="tfa_3["] {
+                width: 696px !important;
+            }
+            #tfa_3-D,
+            *[id^="tfa_3["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        
+            #tfa_5,
+            *[id^="tfa_5["] {
+                width: 676px !important;
+            }
+            #tfa_5-D,
+            *[id^="tfa_5["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        
+            #tfa_7,
+            *[id^="tfa_7["] {
+                width: 656px !important;
+            }
+            #tfa_7-D,
+            *[id^="tfa_7["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        
+            #tfa_8,
+            *[id^="tfa_8["] {
+                width: 656px !important;
+            }
+            #tfa_8-D,
+            *[id^="tfa_8["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        
+            #tfa_9,
+            *[id^="tfa_9["] {
+                width: 676px !important;
+            }
+            #tfa_9-D,
+            *[id^="tfa_9["][class~="field-container-D"] {
+                width: auto !important;
+            }
+        </style><div class=""><div class="wForm" id="4850110-WRPR" dir="ltr">
+<div class="codesection" id="code-4850110"></div>
+<form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="4850110" role="form">
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_1-D"><div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" placeholder="First Name" aria-required="true" title="First Name" class="required"></div></div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_3-D"><div class="inputWrapper"><input type="text" id="tfa_3" name="tfa_3" value="" placeholder="Last Name" aria-required="true" title="Last Name" class="required"></div></div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_5-D"><div class="inputWrapper"><input type="text" id="tfa_5" name="tfa_5" value="" placeholder="Email" aria-required="true" title="Email" class="validate-email required"></div></div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_7-D"><div class="inputWrapper"><input type="text" id="tfa_7" name="tfa_7" value="" placeholder="Organization Name" aria-required="true" title="Organization Name" class="required"></div></div>
+<div class="oneField field-container-D  labelsRemoved  " id="tfa_8-D"><div class="inputWrapper"><input type="text" id="tfa_8" name="tfa_8" value="" placeholder="Title / Position" title="Title / Position" class=""></div></div>
+<div class="oneField field-container-D    " id="tfa_9-D">
+<label id="tfa_9-L" class="label preField " for="tfa_9">Which of these categories best describes you?</label><br><div class="inputWrapper"><select id="tfa_9" name="tfa_9" title="Which of these categories best describes you?" class=""><option value="">Please select...</option>
+<option value="tfa_10" id="tfa_10" class="">Business (producer, food business, grocery retailer, foodservice, restaurant, hospitality)</option>
+<option value="tfa_11" id="tfa_11" class="">Capital Provider (institutional investor, commercial or investment bank, venture capital or private equity firm, foundation)</option>
+<option value="tfa_12" id="tfa_12" class="">Solution Provider (for-profit, non-profit)</option>
+<option value="tfa_13" id="tfa_13" class="">Influencer (management consultant, academic or educator, industry association, media, celebrity, social media influencers)</option>
+<option value="tfa_14" id="tfa_14" class="">Government (federal, state, local)</option>
+<option value="tfa_15" id="tfa_15" class="">Consumer (other individuals)</option></select></div>
+</div>
+<div class="actions" id="4850110-A"><input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="4850110" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="2816242ae2b7a27503dcdf0bc131c692" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="13" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
 </form>
+</div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://www.tfaforms.com/forms/help/4850110">Contact Information</a><br></p></div>
+<p class="supportInfo" >
+  </p>
+</div>

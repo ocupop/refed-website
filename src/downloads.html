@@ -10,14 +10,14 @@ prevpage:
   url: /resources
   title: Resources
 ---
-<section>
+<!-- <section>
   <div class="container">
     <div class="row profileMessage active" data-message="">
       <div class="col-xs-12 col-sm-6">
         <div class="content">
           <h2>To access downloads,<br>Please submit this form</h2>
           <p>As part of our continuing research efforts, we’d like to know who the ReFED report report is reaching. Please submit this form to access all report content and to sign up for our newsletter.</p>
-          {% include components/forms/signupForm.html action = 'download' %}
+          {% comment %}{% include components/forms/signupForm.html action = 'download' %}{% endcomment %}
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -25,7 +25,7 @@ prevpage:
           <div class="well">
             <h2>Returning user?</h2>
             <p>If you have already signed up for access to ReFED downloads, enter your email address to regain access.</p>
-            {% include components/forms/signinForm.html action = 'download' %}
+            {% comment %}{% include components/forms/signinForm.html action = 'download' %}{% endcomment %}
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ prevpage:
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="the-full-report" class="chapter alt-bg">
   <div class="container">
@@ -61,11 +61,11 @@ prevpage:
         <div class="content">
           <h2>The Roadmap to Reduce U.S. Food Waste</h2>
           <p><em>The <em>Roadmap to Reduce U.S. Food Waste by 20 Percent</em> is the first ever national economic study and action plan to reduce food waste at scale. It identifies the most cost-effective solutions and defines research priorities in an effort to spur multi-stakeholder action.</em></p>
-          <a href="/downloads/ReFED_Report_2016.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'The Full Report');" target="_blank"><i class="icon icon-download"></i>Download The Full Report</a><br>
+          <a href="/downloads/ReFED_Report_2016.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'The Full Report');" target="_blank"><i class="icon icon-download"></i>Download The Full Report</a><br>
 
-          <a href="/downloads/Executive-Summary.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Executive Summary');" target="_blank"><i class="icon icon-download"></i>Download The Executive Summary</a><br>
+          <a href="/downloads/Executive-Summary.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Executive Summary');" target="_blank"><i class="icon icon-download"></i>Download The Executive Summary</a><br>
 
-          <a href="/downloads/ReFED_Technical_Appendix.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Full Report Technical Appendix');" target="_blank"><i class="icon icon-download"></i>Download Technical Appendix</a><br>
+          <a href="/downloads/ReFED_Technical_Appendix.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Full Report Technical Appendix');" target="_blank"><i class="icon icon-download"></i>Download Technical Appendix</a><br>
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
         </div>
@@ -83,7 +83,7 @@ prevpage:
           <p>2019 marked the transition from awareness to action. Checkout ReFED’s 2019 Annual Report below to discover
             our trusted
             history, what milestones we achieved, and what our 2020 objectives are.</p>
-          <a href="/downloads/ReFed_Annual_Report_2019-digital.pdf" class="cms-no-rewrite button disabled btn-half"
+          <a href="/downloads/ReFed_Annual_Report_2019-digital.pdf" class="cms-no-rewrite button btn-half"
             onClick="ga('send', 'event', 'button', 'pdf download', 'The 2019 Annual Report');" target="_blank"><i
               class="icon icon-download"></i>Download The Annual Report</a><br>
           <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:500px;"
@@ -112,7 +112,7 @@ prevpage:
           actions that will lead to a doubling of healthy food available to the 40 million Americans facing food insecurity, a new
           interview from an Expert Network member will be released each week throughout the course of the 3-month program, running
           from September - December, 2019.</p>
-          <a href="/accelerator-expert-network-knowledge-series-downloads/" class="cms-no-rewrite button disabled"
+          <a href="/accelerator-expert-network-knowledge-series-downloads/" class="cms-no-rewrite button"
             onClick="ga('send', 'event', 'button', 'download link', 'Accelerator Expert Network Knowledge Series - Link to Download Grids');"
             target="_blank"><i class="icon icon-download"></i>Download The Interviews</a><br>
 
@@ -136,8 +136,8 @@ prevpage:
         <div class="content">
           <h2>2018 U.S. Food Waste Investment Report</h2>
           <p>The 2018 U.S. Food Waste Investment Report details key trends in the capital and innovation landscape and highlights specific examples of philanthropic, public, and private food waste investment, including a Special Report on Foundation Funding.</p>
-          <a href="/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '2018 Food Waste Investment Report');" target="_blank"><i class="icon icon-download"></i>Download 2018 U.S. Food Waste Investment Report</a><br>
-          <a href="/downloads/Technical-Appendix-ReFED-Food-Waste-Investment-Report-Spotlight-on-Foundation-Funding.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', '2018 Special Report on Foundation Funding Technical Appendix');" target="_blank"><i class="icon icon-download"></i>Download Technical Appendix</a><br>
+          <a href="/downloads/ReFED-2018-US-Food-Waste-Investment-Report.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', '2018 Food Waste Investment Report');" target="_blank"><i class="icon icon-download"></i>Download 2018 U.S. Food Waste Investment Report</a><br>
+          <a href="/downloads/Technical-Appendix-ReFED-Food-Waste-Investment-Report-Spotlight-on-Foundation-Funding.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', '2018 Special Report on Foundation Funding Technical Appendix');" target="_blank"><i class="icon icon-download"></i>Download Technical Appendix</a><br>
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
         </div>
@@ -158,7 +158,7 @@ prevpage:
         <div class="content">
           <h2>Retail Food Waste Action Guide</h2>
           <p>Produced in partnership with leading grocery retailers and trade associations, this guide is designed to help retailers develop and implement food waste solutions.</p>
-          <a href="/downloads/Retail_Guide_Web.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Retail Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Retail Food Waste Action Guide</a><br>
+          <a href="/downloads/Retail_Guide_Web.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Retail Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Retail Food Waste Action Guide</a><br>
 
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
@@ -180,7 +180,7 @@ prevpage:
         <div class="content">
           <h2>Foundation Action Guide</h2>
           <p>Philanthropic support is critical to the successful implementation of Roadmap solutions. This guide demonstrates how food waste initiatives enable foundations to achieve mission objectives, and provides key insights to help funders maximize their impact.</p>
-          <a href="/downloads/Foundation_Action_Paper_Web.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Foundation Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Foundation Action Guide</a><br>
+          <a href="/downloads/Foundation_Action_Paper_Web.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Foundation Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Foundation Action Guide</a><br>
 
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
@@ -202,7 +202,7 @@ prevpage:
         <div class="content">
           <h2>Restaurant Food Waste Action Guide</h2>
           <p>Produced in partnership with leading restaurants and trade associations, this guide is designed to help restaurants develop and implement food waste solutions.</p>
-          <a href="/downloads/Restaurant_Guide_Web.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Restaurant Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Restaurant Food Waste Action Guide</a><br>
+          <a href="/downloads/Restaurant_Guide_Web.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Restaurant Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Restaurant Food Waste Action Guide</a><br>
 
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
@@ -224,7 +224,7 @@ prevpage:
         <div class="content">
           <h2>Foodservice Food Waste Action Guide</h2>
           <p>Produced in partnership with the four largest U.S. foodservice providers and trade associations, this guide is designed to help foodservice providers develop and implement food waste solutions.</p>
-          <a href="/downloads/Foodservice_Guide_Web.pdf" class="cms-no-rewrite button disabled" onClick="ga('send', 'event', 'button', 'pdf download', 'Foodservice Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Foodservice Food Waste Action Guide</a><br>
+          <a href="/downloads/Foodservice_Guide_Web.pdf" class="cms-no-rewrite button" onClick="ga('send', 'event', 'button', 'pdf download', 'Foodservice Food Waste Action Guide');" target="_blank"><i class="icon icon-download"></i>Download The Foodservice Food Waste Action Guide</a><br>
 
 
           <p class="message">To enable downloads, please fill out the above <a href="#pageContent">form</a></p>
