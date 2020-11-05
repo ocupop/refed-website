@@ -5,8 +5,8 @@ layout: default
 
 {% include modules/subnav_newsroom.html %}
 
-
-{% include sections/carousels/carousel_hero_in_container.html items=page.hero %}
+{% assign this_post = site.posts | where:"id",page.id | limit: 1 %}
+{% include sections/carousels/carousel_hero_in_container.html items=this_post %}
 
 <section>
   <div class="container">

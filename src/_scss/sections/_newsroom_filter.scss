@@ -1,3 +1,56 @@
 .newsroom-filter {
-   
+  input[type=text]{
+    background:transparent;
+    border:1px solid $primary;  ;
+    padding: rem(5) rem(8) rem(5) rem(26);
+    
+    @include media-breakpoint-only(lg) { 
+      width:rem(168);  
+    }
+  }
+  
+  .ri-search-line{
+    position:absolute;
+    color:$primary;
+    top: 5px;
+    left: 20px;
+  }
+
+  input[type=date]{
+    border:none;
+    border-bottom:1px solid $primary;
+    background:transparent;
+  }
+  input[type="date"] {
+    position: relative;
+    padding: rem(10) 0px;
+  }
+    
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+    
+  input[type="date"]:before {
+    content: "\ea4d";
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: -6px;
+    color: $primary;
+    font-size: rem(36);
+    transform: scaleY(1.4);
+    &:hover, &:focus{ border:none; outline:none; }
+    //&:focus{ content:"\ea77"; }
+  }   
+  
+  .date-pickers{
+    label{
+        text-transform:none;
+        font-weight:normal;
+        padding-right: 0;
+    }
+  }
 }

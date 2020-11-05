@@ -1,33 +1,43 @@
 <section class="newsroom-filter bg-lightest py-4">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="text-danger mb-4">(TODO: Style this component. Design and implement filter with keyword search and date search. )</div>
+      
+      <div class="row flex-lg-nowrap">
+        <div class="col-12 col-md-4 col-lg-auto">
+          <i class="ri-search-line"></i>
+          <input type="text" name="search" class="bg-white">
         </div>
-      </div>
-      <div class="row form-group row">
-        <div class="col-auto">
-          <input type="text" placeholder="Search">
-        </div>
-        <div class="col">
+        <div class="col-12 col-md-8 col-lg px-xl-5">
 
-          <div class="row form-group">
-            <div class="col-6">
-              <label class="col-2 col-form-label d-inline-block" for="date-from" class="max-width: inherit; width: auto;">From:</label>          
-              <input class="form-control d-inline-block" type="date" value="2011-08-19" id="date-from" style="max-width: 170px;">
+          <div class="row date-pickers flex-nowrap">
+            <div class="col-6">              
+              <div class="row flex-nowrap">
+                <label class="col-auto d-block col-form-label" for="date-from" >From:</label>    
+                <div class="col overflow-hidden">
+                  <input class="form-control" type="date" value="{{ 'now' | date: '%Y-%m-%d' }}" id="date-from">
+                </div>      
+              </div>
             </div>
             <div class="col-6">
-              <label class="col-2 col-form-label d-inline-block" for="date-to" class="max-width: inherit; width: auto;">To:</label>          
-              <input class="form-control d-inline-block" type="date" value="2011-08-19" id="date-to" style="max-width:170px;">
+              <div class="row flex-nowrap">
+                <label class="col-auto d-block col-form-label" for="date-to" >To:</label>    
+                <div class="col overflow-hidden">      
+                  <input class="w-100 form-control" type="date" value="{{ 'now' | date: '%Y-%m-%d' }}" id="date-to">
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
-        <div class="col-auto">
+        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
           <div class="btn-group" role="group" aria-label="Search Buttons">
             <button type="button" class="btn btn-secondary">Search</button>
             <button type="button" class="btn btn-primary">Reset</button>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="text-danger" style="position:absolute;background-color:rgba(183,0,0,0.2);font-size: 12px; padding: 4px;">(TODO: Design and implement filter with keyword search and date search. )</div>
         </div>
       </div>
     </div>

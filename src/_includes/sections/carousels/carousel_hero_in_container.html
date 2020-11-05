@@ -1,4 +1,8 @@
 {% assign num_slides = include.items | size %}
+
+
+
+
 <div class=" pt-5">
 
 
@@ -19,16 +23,20 @@
                     <h1>{{ hero.title }}</h1>
                   {% endif %}
                   {{ hero.description_html | default: hero.content | truncatewords: 20 }}
-                  {% if hero.link %}
-                      <a class="card-link block mr-3 text-primary-400" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
-                  {% endif %}
-                  {% if hero.buttons.link %}
+                  
+                  {% if page.layout != 'post' %}              
+                    {% if hero.url %}
+                      <a class="d-block card-link block mr-3 text-primary-400" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                    {% endif %}
+                    {% if hero.buttons.link %}
                       <div class="hero-buttons mt-3">
-                      {% for button in hero.buttons %}
-                          <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
-                      {% endfor %}
+                        {% for button in hero.buttons %}
+                            <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                        {% endfor %}
                       </div>
+                    {% endif %}
                   {% endif %}
+
                   </div>
                 </div>
               </div>

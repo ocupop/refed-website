@@ -18,6 +18,8 @@ hero:
 
 ---
 
+
+{% assign this_press = site.posts | where:"id",page.id | limit: 1 %}
 {% include sections/hero.html subtitle="Stakeholder" title="Title" featured_image=site.placeholder_image %}
 
 
