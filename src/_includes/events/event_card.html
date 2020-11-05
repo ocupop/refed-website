@@ -1,10 +1,10 @@
 <div class="card mb-4">
-  <div class="bg-image aspect-4x3" style="background-image: url({{ card.featured_image | default: site.placeholder_image }})"></div>
+  <div class="bg-image aspect-4x3" style="background-image: url({{ event.featured_image | default: site.placeholder_image }})"></div>
   <div class="card-body">
-    <h4>Event Name Goes Here</h4>
-    <h6>Month XX, 20XX</h6>
+    <h4>{{ event.title }}</h4>
+    <h6>{{ event.item_date | date: '%B %-d, %Y' }}</h6>
     <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>                        
-    <a href="/single-event" class="text-link">Read More</a>                        
+    <p>{{ event.description_html }}</p>                        
+    <a href="{{ event.url }}" class="text-link">Read More</a>                        
   </div>
 </div>

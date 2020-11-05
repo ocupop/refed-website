@@ -8,8 +8,11 @@ layout: default
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2>Tuesday July 28, 2020 3PM EST</h2>
-        <p class="text-danger">Probably Need to account for location details or url for webinar</p>
+        <h2>{{ page.item_date | date: '%A %B %-d, %Y' }} {{ page.start_time }} *EST*</h2>
+        <p class="text-danger">
+          Are all events in est? may need to set timezone in config<br>
+          Probably Need to account for location details or url for webinar
+        </p>
       </div>
     </div>
     <div class="row">
@@ -22,7 +25,9 @@ layout: default
           <p class="text-danger">Should we do a modal for bio details?</p>
         {% endfor %}
         <div class="d-flex mb-5 mt-5 mb-lg-0">
-          <a href="" class="btn btn-secondary mr-4">Register</a>
+          {% if page.register_link %}
+            <a href="{{ page.register_link }}" class="btn btn-secondary mr-4" target="_blank">Register</a>
+          {% endif %}
           <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
         </div>
       </div>
@@ -52,8 +57,9 @@ layout: default
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-danger">Add upcoming events collection</p>
-        {% include sections/carousels/carousel_cards.html %}
+        <p class="text-danger">Add upcoming events collection, will this only show events of the type that the page is showing ie in person vs webinar?</p>
+        {% include events/upcoming_events_logic.html %}
+        {% include sections/carousels/carousel_cards.html items=upcoming_events_sorted %}
       </div>
     </div>
   </div>
@@ -67,8 +73,9 @@ layout: default
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-danger">Add past events collection - TODO does this show all types of events or just webinars</p>
-        {% include sections/carousels/carousel_cards.html %}
+        <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
+        {% include events/past_events_logic.html %}
+        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>
     </div>
   </div>

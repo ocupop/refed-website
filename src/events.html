@@ -12,6 +12,7 @@ hero:
       - link:
         link_label:
         button_type:
+featured_event: test-event-2    
 cta_webinars:
   description_html: >-
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas assumenda, doloremque optio ipsum</p>
@@ -25,7 +26,9 @@ cta_webinars:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-{% include events/featured_event.html %}
+{% if page.featured_event %}
+  {% include events/featured_event.html %}
+{% endif %}
 
 <section>
   <div class="container">
@@ -49,8 +52,14 @@ cta_webinars:
     <div class="row mt-5">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-        {% for num in (1..6) %}
+        {% assign upcoming_events = site.events | sort: 'item_date' | reversed %}
+        {% for event in upcoming_events %}
+          {% assign now = 'now' | date: '%s' | plus: 0 %}
+          {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+          {% if event_start >= now %}
+       
           {% include events/event_card.html %}
+        {% endif %}
         {% endfor %}
         </div>
       </div>
@@ -81,12 +90,9 @@ cta_webinars:
       </div>
     </div>
     <div class="row mb-5">  
-      <div class="col-12 carousel-refed-dots">   
-        {% for num in (1..8) %}
-          <div class="col-md-4 py-3">
-            {% include events/event_card.html %}         
-          </div>
-        {% endfor %} 
+      <div class="col-12">
+        {% include events/past_events_logic.html %}
+        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>    
     </div>   
   </div>

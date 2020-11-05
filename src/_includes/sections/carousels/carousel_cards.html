@@ -12,14 +12,18 @@
           </div>
         {% endif %}
       {% endif %}
-      {% if item.title or item.text %}
+      {% if item.title or item.text or item.description_html %}
         <div class="card-body">
           <h3 class="card-title">{{ item.title }}</h3>
-          {% if item.date %}
-            {{ item.date | date: '%B %-d, %Y' }}
+          {% if item.item_date or item.date %}
+            {{ item.item_date | date: '%B %-d, %Y' | default: item.date | date: '%B %-d, %Y' }}
           {% endif %}
           <div class="card-text">
-            {{ item.text | default: item.content | truncatewords: 20 }}
+            {% if item.text %}
+              {{ item.text | default: item.content | truncatewords: 20 }}
+            {% elsif item.description_html %}
+              {{ item.description_html }}
+            {% endif %}
           </div>
           {% if item.link or item.url %}
             <p class="mt-3">
