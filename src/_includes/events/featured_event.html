@@ -1,15 +1,14 @@
+{% assign featured = site.events | where: 'slug', page.featured_event | first %}
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h3 class="preheader mb-0">Featured Event</h3>
-        <h2>Food Waste Summit</h2>
-        <p class="h6">March 29-31, 2021</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-          in culpa qui</p>
-        <p><a href="/single-event" class="text-link editable">Learn more</a></p>  
+        <h2>{{ featured.title }}</h2>
+        <p class="h6">{{ featured.item_date | date: '%B %-d, %Y' }}</p>
+        {{ featured.description_html }}
+        <p><a href="{{ featured.url }}" class="text-link editable">Learn more</a></p>  
+        <p class="text-danger">Is this image an image and overlay, or will these be specifically managed / created image assets</p>
         <img class="img-fluid mt-5" src="https://via.placeholder.com/1800x600" alt="Alt Tag...">
       </div>
     </div>
