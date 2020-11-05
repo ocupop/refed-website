@@ -7,9 +7,10 @@
         <h2>{{ featured.title }}</h2>
         <p class="h6">{{ featured.item_date | date: '%B %-d, %Y' }}</p>
         {{ featured.description_html }}
-        <p><a href="{{ featured.url }}" class="text-link editable">Learn more</a></p>  
-        <p class="text-danger">Is this image an image and overlay, or will these be specifically managed / created image assets</p>
-        <img class="img-fluid mt-5" src="https://via.placeholder.com/1800x600" alt="Alt Tag...">
+        <p><a href="{{ featured.event_site_link | default: featured.url }}" class="text-link editable">Learn more</a></p>
+        {% if featured.featured_image %}
+          <img class="img-fluid mt-5" src="{{ featured.featured_image}}" alt="{{ featured.title }} image">
+        {% endif %}
       </div>
     </div>
     </div>

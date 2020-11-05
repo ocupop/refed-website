@@ -35,7 +35,7 @@ cta_webinars:
     <div class="row">
       <div class="col-12">
         <h2 class="mb-3">Upcoming In Person Events</h2>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="jumpmenu">Event Types: </label>
           <select class="form-control d-inline-block" style="width:inherit;" id="jumpmenu" name="jumpmenu"
             onChange="self.location=this.options[this.selectedIndex].value">
@@ -46,13 +46,13 @@ cta_webinars:
             <option value='#'>filter the results</option>
             <option value='#'>listed below</option>
           </select>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-        {% assign upcoming_events = site.events | sort: 'item_date' | reversed %}
+        {% assign upcoming_events = site.events | where: 'event_type', 'in_person' | sort: 'item_date' | reversed %}
         {% for event in upcoming_events %}
           {% assign now = 'now' | date: '%s' | plus: 0 %}
           {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
@@ -91,7 +91,7 @@ cta_webinars:
     </div>
     <div class="row mb-5">  
       <div class="col-12">
-        {% include events/past_events_logic.html %}
+        {% include events/past_events_logic.html event_type="in_person" %}
         {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>    
     </div>   

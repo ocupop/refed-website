@@ -161,13 +161,13 @@ primary_navigation:
               link: '/engage/#collaborate'
               links:
         - title: Events
-          link: /events
+          link: /in-person-events
           links:
             - title: In-person Events
-              link: '/events/#in-person'
+              link: '/in-person-events'
               links:
             - title: Webinars
-              link: '/events/#webinars'
+              link: '/webinar-events'
               links:
         - title: Stay Connected
           link: /social

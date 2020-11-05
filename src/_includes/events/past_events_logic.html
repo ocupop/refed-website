@@ -1,5 +1,9 @@
+{% if include.event_type %}
+  {% assign past_events = site.events | where: "event_type", include.event_type | sort: 'item_date' %}
+{% else %}
+  {% assign past_events = site.events | sort: 'item_date' %}
+{% endif %}
 
-{% assign past_events = site.events | sort: 'item_date' %}
 {% assign past_events_sorted = '' | split: ',' %}
 {% for event in past_events %}
 {% assign now = 'now' | date: '%s' | plus: 0 %}
