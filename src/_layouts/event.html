@@ -8,8 +8,11 @@ layout: default
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2>Tuesday July 28, 2020 3PM EST</h2>
-        <p class="text-danger">Probably Need to account for location details or url for webinar</p>
+        <h2>{{ page.date | date: '%A %B %-d, %Y' }} {{ page.start_time }} *EST*</h2>
+        <p class="text-danger">
+          Are all events in est? may need to set timezone in config<br>
+          Probably Need to account for location details or url for webinar
+        </p>
       </div>
     </div>
     <div class="row">
