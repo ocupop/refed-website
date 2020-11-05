@@ -332,7 +332,7 @@ btns.forEach(function(btn) { // for each option in this dropdown
 
 //generate ics file to download
 $('.ics-download').on('click', function(){
-  cal_single = ics();
+  var cal_single = ics();
   var subject = $(this).data('subject');
   var description = $(this).data('description');
   var location = $(this).data('location');

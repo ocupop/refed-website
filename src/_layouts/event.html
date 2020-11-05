@@ -3,21 +3,23 @@ layout: default
 ---
 {% assign title = page.title %}
 {% assign summary = page.summary %}
-{% include sections/hero.html title="Event Title Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, praesentium?" subtitle="Event Subtitle" description_html=summary %}
+{% include sections/hero.html title=title subtitle="Event Subtitle" description_html=summary %}
 <section>
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
         <h2>Tuesday July 28, 2020 3PM EST</h2>
+        <p class="text-danger">Probably Need to account for location details or url for webinar</p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6">
-        {% for i in (1..3) %}
-          <h6>Panelists</h6>
-          <h4 class="font-serif">Firstname Lastname</h4>
-          <p>Role Lorem ipsum dolor sit amet.</p>
+        <h6>Panelists</h6>
+        {% for panelist in page.panelists %}
+          <h4 class="font-serif mb-0">{{ panelist.name }}</h4>
+          <p class="mb-0">{{ panelist.role }}</p>
           <a href="">See Bio for Details</a>
+          <p class="text-danger">Should we do a modal for bio details?</p>
         {% endfor %}
         <div class="d-flex mb-5 mt-5 mb-lg-0">
           <a href="" class="btn btn-secondary mr-4">Register</a>
@@ -26,19 +28,19 @@ layout: default
       </div>
       <div class="col-lg-6">
         <h6>Key Takeaways</h6>
-        {% for i in (1..2) %}
-          <p class="font-weight-bold mb-0">Takeaway Title</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iste sit deserunt molestias provident optio amet porro veniam necessitatibus officia! Earum iusto recusandae facilis iste magni quibusdam beatae a exercitationem.</p>
+        {% for takeaway in page.key_takeaways %}
+          <p class="font-weight-bold mb-0">{{ takeaway.title }}</p>
+          {{ takeaway.description_html }}
         {% endfor %}
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-12">
+    {% if page.videos.first.embed_url  %}
+      {% for video in page.videos %}
         <div class="video-responsive mt-5">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/jMmmcDVzmo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="{{ video.embed_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
-    </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </section>
 <section class="bg-neutral-200">
