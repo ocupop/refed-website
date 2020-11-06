@@ -57,9 +57,14 @@ layout: default
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-danger">Add upcoming events collection, will this only show events of the type that the page is showing ie in person vs webinar?</p>
-        {% include events/upcoming_events_logic.html %}
-        {% include sections/carousels/carousel_cards.html items=upcoming_events_sorted %}
+        {% comment %}{% include events/upcoming_events_logic.html %}{% endcomment %}
+        {% assign series_events = '' | split: ',' %}
+        {% for object in page.series_events %}
+          {{ event.title }}
+          {% assign event = site.events | where: 'slug', event %}
+          {% assign series_events = series_events | push: event %}
+        {% endfor %}
+        {% include sections/carousels/carousel_cards.html items=series_events %}
       </div>
     </div>
   </div>

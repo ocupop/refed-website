@@ -16,7 +16,7 @@
             <div class="max-out-text-width">
               {{ hero.description_html | default: hero.content | truncatewords: 30 }}
             </div>
-            {% if hero.link %}
+            {% if hero.link != null %}
               <p><a class="card-link block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
             {% if hero.buttons %}
