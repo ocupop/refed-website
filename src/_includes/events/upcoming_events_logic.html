@@ -4,7 +4,7 @@
   {% for event in upcoming_events %}
     {% assign now = 'now' | date: '%s' | plus: 0 %}
     {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
-    {% if event_start >= now %}
+    {% if event_start >= now && event.slug != page.slug %}
       {% assign upcoming_events_sorted = past_events_sorted | push: event %}
       {% comment %}<div class="col-md-4 py-3">
         {% include events/event_card.html %}
