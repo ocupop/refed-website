@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{% assign title = page.title %}
+{% assign subtitle = page.subtitle %}
+{% assign description_html = page.description_html %}
+{% assign image = page.featured_image %}
+{% include sections/hero.html title=title subtitle=subtitle description_html=description_html image=image %}
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>{{ page.item_date | date: '%A %B %-d, %Y' }} {{ page.start_time }} EST</h2>
+        <p class="text-danger">
+          Are all events in est? may need to set timezone in config<br>
+          Probably Need to account for location details or url for webinar
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% if page.location %}
+          <h6>Location</h6>
+          {{ page.location }}
+        {% endif %}
+        {% if page.details_html %}
+          <h6>Details</h6>
+          {{ page.details_html }}
+        {% endif %}
+        <div class="d-flex mb-5 mt-5 mb-lg-0">
+          {% if page.register_link %}
+            <a href="{{ page.register_link }}" class="btn btn-secondary mr-4" target="_blank">Register</a>
+          {% endif %}
+          <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
+        </div>
+      </div>
+    </div>
+    {% if page.videos.first.embed_url  %}
+      {% for video in page.videos %}
+        <div class="video-responsive mt-5">
+          <iframe width="560" height="315" src="{{ video.embed_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2>Browse Past Events</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
+        {% include events/past_events_logic.html event_type="in_person" %}
+        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+      </div>
+    </div>
+  </div>
+</section>
+{% include events/event_calendar_modal.html %}

@@ -24,5 +24,5 @@
 {% if is_afternoon_end == false and checkEndTime[0] == empty %}
   {% assign endTime = endTime | minus: 1200 %}
 {% endif %}
-<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ page.title }}&dates={{ page.item_date | date: '%Y%m%d'}}T{{startTime}}00/{{ page.item_date | date: '%Y%m%d'}}T{{endTime}}00&details={{ page.summary }}"
+<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ page.title }}&dates={{ page.item_date | date: '%Y%m%d'}}T{{startTime}}00/{{ page.item_date | date: '%Y%m%d'}}T{{endTime}}00&details={{ page.description_html | strip_html }}"
   class="btn btn-secondary" target="_blank" rel="noopener">Google Calendar</a>

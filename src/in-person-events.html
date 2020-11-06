@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Connect and Learn with ReFED
+title: In Person Events
 hero:
   - title: In Person Events
     subtitle:
@@ -12,16 +12,17 @@ hero:
       - link:
         link_label:
         button_type:
-featured_event: test-event-2    
+featured_event: 2021-food-waste-summit 
 cta_webinars:
   description_html: >-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas assumenda, doloremque optio ipsum</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas
+    assumenda, doloremque optio ipsum</p>
   link: /
   link_label: Get to know us
   colorbar:
     color: '#e65e4a'
     bar_position:
-      - left        
+      - left
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -35,7 +36,7 @@ cta_webinars:
     <div class="row">
       <div class="col-12">
         <h2 class="mb-3">Upcoming In Person Events</h2>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="jumpmenu">Event Types: </label>
           <select class="form-control d-inline-block" style="width:inherit;" id="jumpmenu" name="jumpmenu"
             onChange="self.location=this.options[this.selectedIndex].value">
@@ -46,13 +47,13 @@ cta_webinars:
             <option value='#'>filter the results</option>
             <option value='#'>listed below</option>
           </select>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-        {% assign upcoming_events = site.events | sort: 'item_date' | reversed %}
+        {% assign upcoming_events = site.events | where: 'event_type', 'in_person' | sort: 'item_date' | reversed %}
         {% for event in upcoming_events %}
           {% assign now = 'now' | date: '%s' | plus: 0 %}
           {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
@@ -76,7 +77,7 @@ cta_webinars:
         </div>
       </div>
       <div class="col-lg-4 ml-lg-auto">
-        <a href="#" class="btn btn-primary-100">See Webinars</a>
+        <a href="/webinar-events" class="btn btn-primary-100">See Webinars</a>
       </div>
     </div>
   </div>
@@ -91,7 +92,7 @@ cta_webinars:
     </div>
     <div class="row mb-5">  
       <div class="col-12">
-        {% include events/past_events_logic.html %}
+        {% include events/past_events_logic.html event_type="in_person" %}
         {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>    
     </div>   
