@@ -9,7 +9,9 @@
       </div>
       <div class="modal-body">
         {% include events/google_calendar_link.html %}
-        {% include events/ics_calendar_link.html %}
+        {% if page.start_time%}
+          {% include events/ics_calendar_link.html %}
+        {% endif %}
       </div>
     </div>
   </div>
