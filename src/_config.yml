@@ -331,6 +331,11 @@ image_width:
   
 _comments:
   cards: page section for card grid that is not related to a collection
+
+_options:
+  featured_image:
+    uploads_dir: "/uploads/:title"
+    
         
 placeholder_image: 'https://via.placeholder.com/1000'
 
