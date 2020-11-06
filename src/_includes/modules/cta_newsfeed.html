@@ -1,17 +1,22 @@
+{% assign num_items = include.items | length %}
 <section class="homepage-newsfeed py-0">
   <div class="container">
     <div class="row">
       <div class="leftcol excerpts-column stretch-left col-lg-8 bg-neutral-100">
         <div class="z-index-100">
-          <h2 class="ml-3 mb-3">News &amp; Updates</h2>
-          <div class="news-carousel">
-            {% for post in site.posts %}
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-3">News &amp; Updates</h2>
+            </div>
+          </div>
+          <div class="{% if num_items > 2 %}news-carousel{% else %}row{% endif %}">
+            {% for item in include.items %}
               <div class="card news-{{ forloop.index }} col-lg-6">
-                <div class="bg-image aspect-2x1" style="background-image:url({{ post.image | default: site.placeholder_image }})"></div>
+                <div class="bg-image aspect-2x1" style="background-image:url({{ item.featured_image | default: site.placeholder_image }})"></div>
                 <div class="card-body">
-                  <div class="card-subtitle mb-2 text-muted">{{ post.date | date: "%B %-d, %Y" }}</div>
-                  <p class="card-text">{{ post.title }}</p>
-                  <a href="{{ post.url }}" class="card-link">Read More</a>
+                  <div class="card-subtitle mb-2 text-muted">{{ item.date | date: "%B %-d, %Y" }}</div>
+                  <p class="card-text">{{ item.title }}</p>
+                  <a href="{{ item.url }}" class="card-link">Read More</a>
                 </div>
               </div>
               {% endfor %}

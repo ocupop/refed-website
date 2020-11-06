@@ -46,19 +46,6 @@ hero:
       - link:
         link_label:
         button_type:
-cta_insights_engine:
-  preheader: Our Newest Solution
-  title: ReFED Insights Engine
-  description_html: >-
-    <p>ReFED Insights Engine is an online data center designed to serve as the
-    next generation of data, insights, and guidance on U.S. food waste. With
-    more granular 
-      data, more extensive analysis, more customized views, and the ability to be 
-      updated regularly, we see this tool as laying the foundation for action around 
-      our 2030 national goal to reduce food waste by 50 percent.</p>
-  link: 'https://www.insights-engine-fpo.com/'
-  link_label: Launch ReFED Insights Engine
-  laptop_screen_image: /img/laptop-screen-fpo.jpg
 two_column_slide:
   - featured_image:
     title: The Multi-Billion Dollar Food Waste Problem
@@ -78,6 +65,21 @@ two_column_slide:
       actionable solutions to reduce the amount of food that goes uneaten.</p>
     link: /food-waste-problem
     link_label:
+cta_insights_engine:
+  preheader: Our Newest Solution
+  title: ReFED Insights Engine
+  description_html: >-
+    <p>ReFED Insights Engine is an online data center designed to serve as the
+    next generation of data, insights, and guidance on U.S. food waste. With
+    more granular 
+      data, more extensive analysis, more customized views, and the ability to be 
+      updated regularly, we see this tool as laying the foundation for action around 
+      our 2030 national goal to reduce food waste by 50 percent.</p>
+  link: 'https://www.insights-engine-fpo.com/'
+  link_label: Launch ReFED Insights Engine
+  laptop_screen_image: /img/laptop-screen-fpo.jpg
+funder_images:
+  images:      
 carousel_testimonial:
   - text: >-
       “The ReFED team has been an incredible strategic partner in our journey to
@@ -90,10 +92,11 @@ carousel_testimonial:
     author: Denise Oserhues
     cite: The Kroger Co.
     image:
+cta:    
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
-<section class="page-intro">
+<section class="pb-0">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -108,31 +111,7 @@ carousel_testimonial:
     </div>
   </div>
 </section>
-<section class="pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="carousel-refed-dots carousel-two-column dots-right">
-          {% for num in (1..4) %}
-            <div class="w-100">
-              <div class="row align-items-center">  
-                <div class="col-lg-5">
-                  <img class="d-block w-100 img-fluid" src="https://via.placeholder.com/615x615" alt="Alt Tag..." />
-                </div> 
-                <div class="col-lg-6 ml-lg-auto py-5">
-                  <h2 class="editable">The Multi-billion dollar food waste problem</h2>
-                  <p class="editable">Every year, American consumers, businesses, and farms spends $218 billion a year, or 1.3% of GDP, growing, processing, transporting, and disposing food that is never eaten. That’s 52 million tons of food sent to landfill annually, plus another 10 million tons that is discarded or left unharvested on farms. Meanwhile, one in seven Americans is food insecure.</p>
-                  <a href="#" class="btn btn-secondary mt-4">View our 2030 Food Waste Goals</a>
-                </div>    
-              </div>  
-            </div>
-          {% endfor %}
-        </div>  
-      </div>
-    </div>    
-  </div>
-</section>
-
+{% include sections/carousels/carousel_two_column.html items=page.two_column_slide %}
 <section class="bg-lightest">
   <div class="container">
     <div class="row">
@@ -150,8 +129,10 @@ carousel_testimonial:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <h3>Dive into Our Solutions</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti deserunt numquam, non eos autem quisquam temporibus impedit. Facere, iure voluptate?</p>
+        <h3 class="editable">Dive into Our Solutions</h3>
+        <div class="editable lead">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti deserunt numquam, non eos autem quisquam temporibus impedit. Facere, iure voluptate?</p>
+        </div>
       </div>
       <div class="col-lg-4">
         <div class="text-lg-right">
@@ -174,86 +155,18 @@ carousel_testimonial:
     <hr class="border-white" />
     <div class="row mt-5">
       <div class="col-lg-6">
-        <p class="lead">Find out how to engage with ReFED no matter what field you are in.</p>
+        <p class="lead editable">Find out how to engage with ReFED no matter what field you are in.</p>
       </div>
       <div class="col-lg-6">
         <div class="text-lg-right">
-          <a href="#" class="btn btn-lg btn-success">Find out more ways to engage</a>
+          <a href="/engage" class="btn btn-lg btn-success">Find out more ways to engage</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-{% include modules/cta_newsfeed.html %}
-<section class="donors-and-funders">    
-  <div class="container">
-    <div class="row">     
-      <div class="col-lg-12">
-        <h2 class="editable text-center">Funders</h2>
-        <p class="editable text-center mb-5 max-out-text-width mx-auto">Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders:</p>  
-        <div class="carousel-refed mb-5">   
-          {% for num in (1..30) %}
-          <div class="image-wrapper">
-            <div class="image-item">
-              <img src="{% cycle 'https://via.placeholder.com/200x200', 'https://via.placeholder.com/300x100', 'https://via.placeholder.com/100x300' %}" class="img-fluid m-4" alt="image" />
-            </div>
-          </div>
-          {% endfor %} 
-        </div>    
-        <div class="text-center">
-          <a href="#" class="btn btn-secondary editable">Learn more about funding</a>
-        </div>
-      </div>
-    </div>
-  </div>
- </section>
- {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
- {% include modules/stay_connected.html %}
-
-  
-<!--
-<section class="solutions"> 
-  <div class="container solutions-in-action">
-    <div class="row py-5">     
-      <div class="col-lg-12">
-        <h2 class="editable text-center">Solutions in Action</h2>
-      </div>
-    </div>
-    <div class="row">
-      {% comment %} for num in (1..3) {% endcomment %}
-          <div class="card solution-{{ forloop.index }} col-lg-4">
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class="colorbar bg-primary"></span>
-            <div class="card-body">
-              <h3 class="card-title">Solutions for Prevention</h3>
-              <div class="card-text">Solutions that prevent food from being wasted in the first place, such as standardized date labeling, consumer education campaigns, and packaging adjustments, require relatively little capital to reap great gains. Other prevention strategies proposed may require a bit more initial capital, but have the power to make large-scale impacts over time.</div>
-              <a href="#" class="card-link">Learn More</a>
-            </div>
-          </div>
-          
-          <div class="card solution-{{ forloop.index }} col-lg-4">
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class='colorbar bg-secondary'></span>
-            <div class="card-body">
-              <h3 class="card-title">Solutions for Recovery</h3>
-              <div class="card-text">The three most effective are donation tax incentives, standardized donation regulation, and software that matches food donations with recipient organizations in need. These solutions require both legislative and technological support, but they can make a big difference in ensuring surplus food gets to the people who need it.</div>
-              <a href="#" class="card-link">Learn More</a>
-            </div>
-          </div>
-
-          <div class="card solution-{{ forloop.index }} col-lg-4">
-            <img class="card-img-top" src="https://via.placeholder.com/420x280" alt="Alt Tag..." />
-            <span class='colorbar bg-success'></span>
-            <div class="card-body">
-              <h3 class="card-title">Solution for Recycling</h3>
-              <div class="card-text">food recycling has the greatest growth potential and will have a major impact on further reducing waste in the coming decades. The reason lies in the efficiency of this approach. Since food scrap volume is tied to population density, large cities can have a proportionately large impact, lessening the need to scale programs nationwide.</div>
-              <a href="#" class="card-link">Learn More</a>
-            </div>
-          </div>
-      {% comment %} endfor {% endcomment %} 
-    
--->
-
-
-
+{% include modules/cta_newsfeed.html items=site.posts %}
+{% include sections/carousels/carousel_images.html items=page.funder_images.images %}
+{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
+{% include modules/stay_connected.html %}
