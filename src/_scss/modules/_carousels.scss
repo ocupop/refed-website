@@ -88,6 +88,12 @@
       text-align: left;
       margin-left: 7px;
     }
+    &.dots-right {
+      .flickity-page-dots {
+        left: auto;
+        right: 0;
+      }
+    }
   
     .flickity-prev-next-button {
       &.previous {
@@ -111,11 +117,21 @@
         margin:auto;
       } 
     }
+
+    .dots-right {
+      .flickity-page-dots {
+        @include media-breakpoint-up(lg) {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
     
     
     @media screen and (max-width: $screen-md-min){
       &.dots-right .flickity-page-dots{
         left: 0;
+        right: auto;
       }
       .flickity-page-dots{
         top: 375px;
