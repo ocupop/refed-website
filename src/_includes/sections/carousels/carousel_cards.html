@@ -19,10 +19,12 @@
             {{ item.item_date | date: '%B %-d, %Y' | default: item.date | date: '%B %-d, %Y' }}
           {% endif %}
           <div class="card-text">
-            {% if item.text or item.content %}
-              {{ item.text | default: item.content | truncatewords: 20 }}
+            {% if item.text %}
+              {{ item.text | truncatewords: 20 }}
             {% elsif item.description_html %}
               {{ item.description_html }}
+            {% elsif item.content %}  
+              {{ item.content | truncatewords: 20 }}
             {% endif %}
           </div>
           {% if item.link or item.url %}

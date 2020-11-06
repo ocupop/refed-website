@@ -1,34 +1,34 @@
 ---
 layout: default
 ---
+
+{% assign subtitle = page.subtitle %}
 {% assign title = page.title %}
-{% assign summary = page.summary %}
-{% include sections/hero.html title=title subtitle="Event Subtitle" description_html=summary %}
+{% assign description_html = page.description_html %}
+{% include sections/hero.html title=title subtitle=subtitle description_html=description_html image=page.featured_image %}
 <section>
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2>{{ page.item_date | date: '%A %B %-d, %Y' }} {{ page.start_time }} *EST*</h2>
-        <p class="text-danger">
-          Are all events in est? may need to set timezone in config<br>
-          Probably Need to account for location details or url for webinar
-        </p>
+        <h2>{{ page.item_date | date: '%A %B %-d, %Y' }} {{ page.start_time }} EST</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6">
         <h6>Panelists</h6>
+        <p class="text-danger">Should we do a modal for bio details?</p>
         {% for panelist in page.panelists %}
-          <h4 class="font-serif mb-0">{{ panelist.name }}</h4>
-          <p class="mb-0">{{ panelist.role }}</p>
-          <a href="">See Bio for Details</a>
-          <p class="text-danger">Should we do a modal for bio details?</p>
+          <div class="mb-4">
+            <h4 class="font-serif mb-0">{{ panelist.name }}</h4>
+            <p class="mb-0">{{ panelist.role }}</p>
+            <a href="">See Bio for Details</a>
+          </div>
         {% endfor %}
         <div class="d-flex mb-5 mt-5 mb-lg-0">
           {% if page.register_link %}
             <a href="{{ page.register_link }}" class="btn btn-secondary mr-4" target="_blank">Register</a>
           {% endif %}
-          <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
+          <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
         </div>
       </div>
       <div class="col-lg-6">
@@ -48,22 +48,28 @@ layout: default
     {% endif %}
   </div>
 </section>
-<section class="bg-neutral-200">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2>Upcoming Schedule</h2>
+{% if page.series_events %}
+  <section class="bg-neutral-200">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2>Upcoming Schedule</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {% comment %}{% include events/upcoming_events_logic.html %}{% endcomment %}
+          {% assign series_events = '' | split: ',' %}
+          {% for object in page.series_events %}
+            {% assign event = site.events | where: 'slug', object | first %}
+            {% assign series_events = series_events | push: event %}
+          {% endfor %}
+          {% include sections/carousels/carousel_cards.html items=series_events %}
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-danger">Add upcoming events collection, will this only show events of the type that the page is showing ie in person vs webinar?</p>
-        {% include events/upcoming_events_logic.html %}
-        {% include sections/carousels/carousel_cards.html items=upcoming_events_sorted %}
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+{% endif %}
 <section>
   <div class="container">
     <div class="row mb-5">
@@ -74,7 +80,7 @@ layout: default
     <div class="row">
       <div class="col-12">
         <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
-        {% include events/past_events_logic.html %}
+        {% include events/past_events_logic.html event_type="webinar" %}
         {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>
     </div>
