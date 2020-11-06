@@ -39,27 +39,29 @@ cta:
   <div class="container">
 
     <div class="row">
-      <div class="col">                  
-        <div class="text-danger">(TODO: design and implement this view filter)</div>
-        <label for="view-filter" class="preheader ">
+      <div class="col">
+
+        <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
           View:
         </label>
-        <select name="view-filter" class="selectpicker">
-          <option>All</option>
-          <option>Featured</option>
-          {% for i in (1..3) %}                 
-            abc<a class="dropdown-item" href="#" data-value="{{ 'Item' | slugify }}">Item</a>
-          {% endfor %}
+        <select class="form-control d-inline w-auto" id="jumpmenu" name="jumpmenu" onChange="self.location=this.options[this.selectedIndex].value">
+          <option value='#'>All</option>
+          <option value='#invenstment-tracker'>Webinars</option>
+          <option value='#'>Other</option>
+          <option value='#'>These options will</option>
+          <option value='#'>filter the results</option>
+          <option value='#'>listed below</option>
         </select>
-      </div>
-    </div>
+ 
+      </div>  
+    </div> 
 
     <div class="row">
       </div>
         <div class="press-list">
           {% assign sorted = site.press | sort_by: 'date' | reverse %} 
           {% for post in sorted %}
-            {% include modules/card_horizontal.html image_size='contain' %}  
+            {% include modules/card_horizontal.html image_size='contain' url=post.link link_target='_blank' %}  
           {% endfor %}
         </div>
       </div>

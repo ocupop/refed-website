@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Test Post Title 2
-label: Test Post label
-date: 2020-09-02 00:00:00
+title: Test Newsletter Item
 news_type: newsletter
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
 author: Jon Burr
 featured_image: /uploads/istockphoto-1222296683-1024x1024.png
+content_image: https://via.placeholder.com/1000
 news_categories:
 ---
 
