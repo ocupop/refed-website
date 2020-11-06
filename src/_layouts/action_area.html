@@ -2,4 +2,365 @@
 layout: default
 ---
 
-{{ content }}
+{% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="row align-items-center">
+          <div class="col-md-auto">
+            <img
+              src="{{ page.icon_image }}"
+              class="icon-img-lg"
+              alt="{{ page.title }} icon"
+            />
+          </div>
+          <div class="col">
+            <h6 class="mb-0 editable">Action Area</h6>
+            <h2>{{ page.title }}</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <h6>Summary</h6>
+            {{ page.summary }}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 ml-lg-auto">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h6>Addressable waste</h6>
+            <p class="display-4 font-serif">5M Tons</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <h6>Key Indicators</h6>
+
+            <div class="row">
+              {% for item in page.key_indicators %}
+              <div class="col-12 col-sm-6 mb-4">
+                <span class="stat-number d-block">{{ item.number }}</span>
+                <h6 class="stat-text text-primary">{{ item.text }}</h6>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav
+  class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4"
+  id="explore-food-waste"
+>
+  <div class="container">
+    <div class="preheader mb-3">
+      Explore this Action Area: {{ page.title }}
+    </div>
+    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold">
+      <li class="nav-item">
+        <a href="#modeled-solutions">Modeled solutions</a>
+      </li>
+      <li class="nav-item">
+        <a href="#new-and-emerging-solutions">New & emerging solutions</a>
+      </li>
+      <li class="nav-item">
+        <a href="#best-practices">Best Practices</a>
+      </li>
+      <li class="nav-item">
+        <a href="#levers">Levers</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="pb-0" id="modeled-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable">Modeled Solutions</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis
+        </p>
+      </div>
+    </div>
+
+    <hr class="bg-neutral-300" />
+
+    {% for i in (1..3) %}
+    <div class="row my-5">
+      <div class="col-4 col-lg-1">
+        <div
+          class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0"
+          style="background-image: url(https://via.placeholder.com/1000)"
+        ></div>
+      </div>
+      <div class="col-lg-11">
+        <h4>Example: Buyer Spec Acceptance</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam
+          aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
+          praesentium ad deleniti qui alias similique unde, quaerat laudantium
+          obcaecati.
+        </p>
+        
+        <div class="d-flex align-items-center bg-lightest p-3 text-neutral-300 mb-4">
+          <div class="d-flex flex-column flex-lg-row align-items-center pr-4">
+            <div class='stat-text m-0'>Key<br />Indicators</div>
+          </div>
+
+          <div class="d-flex flex-column pl-4 pr-4 border-left">
+            <span class="stat-number d-block lead">3M Tons</span>
+            <span class="stat-text d-block">Emissions Reduction</span>
+          </div>
+
+          <div class="d-flex flex-column pl-4 border-left">
+            <span class="stat-number d-block lead">$123M</span>
+            <span class="stat-text d-block">Investment Needed</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="#" class="text-link mr-4">See Solution Factsheet</a>
+          <a href="#" class="text-link">See Solution Provider Database</a>
+        </div>
+      </div>
+    </div>
+    
+    {% endfor %}
+
+  </div>
+</section>
+
+<section class="pb-0" id="new-and-emerging-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable">New & Emerging Solutions</h2>
+        <div class="editable">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis 
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-neutral-300" />
+
+    {% for i in (1..2) %}
+    <div class="row my-5">
+      <div class="col-4 col-lg-1">
+        <div
+          class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0"
+          style="background-image: url(https://via.placeholder.com/1000)"
+        ></div>
+      </div>
+      <div class="col-lg-11">
+        <h4>Solution Name</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam
+          aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
+          praesentium ad deleniti qui alias similique unde, quaerat laudantium
+          obcaecati.
+        </p>   
+
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="#" class="text-link mr-4">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+    
+    {% endfor %}
+  </div>
+</section>
+
+<section class="pb-0" id="best-practices">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable">Best Practices</h2>
+        <div class="editable">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-neutral-300" />
+
+    {% for i in (1..3) %}
+    <div class="row my-5">
+      <div class="col-12">
+        <h4>Best Practice Title</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam
+          aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
+          praesentium ad deleniti qui alias similique unde, quaerat laudantium
+          obcaecati.
+        </p>  
+      </div>
+    </div>    
+    {% endfor %}
+  </div>
+</section>
+
+
+<section class="bg-lightest" id="levers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable">Levers</h2>
+      </div>
+    </div>
+
+    <div class="row my-5 pb-4">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_financing.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+      </div>
+      <div class="col">
+        <h2 class="font-serif mb-2 font-weight-normal mb-4">Top Financing Recommendations</h2>
+        <div class="row">
+          <div class="col-12 col-lg-6 pr-md-4">
+            <div class="description_html my-2">
+                <h4 class="mb-2">Policy Recommendation Name</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-6 pl-lg-5">
+                    <div class="circle-icon circle-icon-xl rounded-circle bg-primary-200 text-white " style='padding-bottom:100%;height:0;'><span style="position:absolute;top:50%;left:50%;transform:translateX(-44px) translateY(-50%);">Circle Graph</span></div>
+                </div>
+                <div class="col-6 col-md-8 col-lg-6 d-flex align-items-center">
+                    <div>
+                        <h6>Public</h6>
+                        <div class="stat-number d-block text-primary">$6.6B</div>
+                        <small class="d-block mt-3 text-primary">
+                            Corporate Finance - <span class='text-primary-200'>$5.2B</span><br /> 
+                            Private Equity - <span class='text-primary-260'>$0.8B</span><br />
+                            Project Finance - <span class='text-primary-240'>$0.5B</span>
+                        </small>
+                    </div>
+                </div>
+            </div>  
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-5 pb-4">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_policy.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+      </div>
+      <div class="col">
+        <h2 class="font-serif mb-2 font-weight-normal mb-4">Top Policy Recommendations</h2>
+        <div class="row">
+          <div class="col-12 ">
+            <div class="description_html my-2">
+                
+                <h4 class="mb-2">Policy Recommendation Name</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</li>
+                    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </li>
+                    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-5 pb-4">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_communication.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+      </div>
+      <div class="col">
+        <h2 class="font-serif mb-2 font-weight-normal mb-4">Top Comms Recommendations</h2>
+        <div class="row">
+          <div class="col-12 ">
+            <div class="description_html my-2">
+              <h4 class="mb-2">Policy Recommendation Name</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <h4 class="mb-2">Policy Recommendation Name</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <div class="row mt-5">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_innovation.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+      </div>
+      <div class="col">
+        <h2 class="font-serif mb-2 font-weight-normal mb-4">Top Innovation Recommendations</h2>
+        <div class="row">
+          <div class="col-12 ">
+            <div class="description_html my-2">
+            <h4 class="mb-2">Policy Recommendation Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            <h4 class="mb-2">Policy Recommendation Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center ">
+        <div class="preheader">Stakeholder Recommendations</div>
+        <h2 class="editable">What Can I Do To Solve Food Waste?</h2>
+      </div>
+    </div>
+    {% include solutions/solutions-grid.html %}   
+  </div>
+</section>
+
+{% include sections/cta_insights_engine.html data=page.cta_insights_engine %}
+
+<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+  {% for featured_slug in page.case_studies %} 
+    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %} 
+    {% include sections/split_section.html 
+        item=featured 
+        section_background_color='primary'
+        preheader='Impact Stories' 
+        section_background_color='white' 
+        image_width='50%'
+        image_alignment='right' 
+        image_to_edge=true 
+        text_to_edge=true
+        button_type='text' 
+        section_class='p-0 mt-5'
+    %} 
+  {% endfor %}
+</div>
+
+{% include sections/cta.html cta=page.cta %}
