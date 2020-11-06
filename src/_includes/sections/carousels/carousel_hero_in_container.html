@@ -16,13 +16,17 @@
               <div class="p-5 text-white w-100">
                 <div class="row">
                   <div class="col-lg-8">
-                  {% if hero.subtitle %}
-                      <div class="preheader">{{ hero.subtitle }}</div>
+                  {% if include.subtitle or hero.subtitle %}
+                      <div class="preheader">{{ include.subtitle | default: hero.subtitle }}</div>
                   {% endif %}
+
                   {% if hero.title %}
                     <h1>{{ hero.title }}</h1>
                   {% endif %}
-                  {{ hero.description_html | default: hero.content | truncatewords: 20 }}
+                  
+                  {% if page.layout != 'post' %}    
+                    {{ hero.description_html | default: hero.content | truncatewords: 20 }}
+                  {% endif %}
                   
                   {% if page.layout != 'post' %}              
                     {% if hero.url %}

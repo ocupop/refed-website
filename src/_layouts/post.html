@@ -2,25 +2,35 @@
 layout: default
 ---
 
+{% if page.news_type == 'newsletter' %}
+  {% capture hero_preheader %}Newsletter{% endcapture %}
+{% else %} 
+  {% capture hero_preheader %}Blog{% endcapture %}
+{% endif %}
+
 
 {% include modules/subnav_newsroom.html %}
 
-{% assign this_post = site.posts | where:"id",page.id | limit: 1 %}
-{% include sections/carousels/carousel_hero_in_container.html items=this_post %}
+{% assign this_post = site.posts | where:"id",page.id | first %}
+{% include sections/carousels/carousel_hero_in_container.html 
+  subtitle=hero_preheader
+  items=this_post 
+%}
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="meta border-bottom border-color-primary d-inline-block mb-4 pb-2">
-          New York, NY (July 15, 2020)
+          {{ page.location }} 
+          {% if page.date %}( {{ page.date | date: '%B %-d, %Y' }}){% endif %}
         </div>
         <div class="content">
-          <img src="https://via.placeholder.com/1000" alt="" class="w-100 float-right px-0 col col-sm-6 col-md-4 ml-sm-4 ml-sm-5 mb-4 mb-md-5 ">
+          <img src="{{ page.content_image }}" alt="" class="w-100 float-right px-0 col col-sm-6 col-md-4 ml-sm-4 ml-sm-5 mb-4 mb-md-5 ">
           {{content}}
         </div>
-        <div class="photocredit text-neutral-100">
-          (Photo: ReFED Board Chair Nicola Dixon (center) with ReFED’s Lily Herd and ReFED Board Member Yalmaz Siddiqui)
+        <div class="photocredit text-neutral-300 mt-5">
+          {{ page.photocredit }}
         </div>
       </div>
     </div>
