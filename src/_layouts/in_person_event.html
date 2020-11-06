@@ -36,7 +36,7 @@ layout: default
           {% assign now = 'now' | date: '%s' | plus: 0 %}
           {% assign event_start = page.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
           {% unless event_start < now %}
-            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
+            <a href="#" class="btn btn-secondary mr-3" data-toggle="modal" data-target="#modal-calendar">Add to Calendar</a>
           {% endunless %}
           {% if page.event_site_link %}
             <a href="{{ page.event_site_link }}" class="btn btn-secondary" target="_blank">View Event Site</a>
