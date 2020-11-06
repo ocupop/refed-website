@@ -58,8 +58,8 @@ cta:
       </div>
         <div class="press-list">
           {% assign sorted = site.press | sort_by: 'date' | reverse %} 
-          {% for post in sorted %}     
-            {% include modules/list_item_press.html %}           
+          {% for post in sorted %}
+            {% include modules/card_horizontal.html image_size='contain' %}  
           {% endfor %}
         </div>
       </div>
