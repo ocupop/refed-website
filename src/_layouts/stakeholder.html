@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign title =  page.title %}
 {% include sections/hero.html subtitle="Stakeholder" title=title featured_image=site.placeholder_image %}
 
@@ -10,7 +11,7 @@ layout: default
       <div class="col-lg-5">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <img src="/img/icons/global/financing.svg" class="icon-img-lg" alt="Financing icon">
+            <img src="/img/icons/global/financing.svg" class="icon-img-lg" alt="Financing icon" />
           </div>
           <div class="col">
             <h6 class="mb-0 editable">Stakeholder</h6>
@@ -30,18 +31,18 @@ layout: default
         <div class="row align-items-center">
           <div class="col-6">
             <p class="text-danger">Tonnage graphic</p>
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
             <h6>Total Waste by **Title**</h6>
-            <hr>
+            <hr />
             <p class="display-4 font-serif">XX Tons</p>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12">
             <h6>Causes</h6>
-            <hr>
+            <hr />
             {% for i in (1..3) %}
               <p class="lead font-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
             {% endfor  %}
@@ -51,7 +52,7 @@ layout: default
         <div class="row mt-5">
           <div class="col-12">
             <h6>Destinations</h6>
-            <hr>
+            <hr />
             {% for i in (1..3) %}
               <p class="lead font-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
             {% endfor  %}
@@ -72,7 +73,7 @@ layout: default
       </div>
       <div class="col-lg-3">
         <p class="text-danger">Investment Needed Chart</p>
-        <img src="{{ site.placeholder_image}}" class="img-fluid" alt="">
+        <img src="{{ site.placeholder_image}}" class="img-fluid" alt="" />
       </div>
     </div>
     {% include sections/collapse_solutions.html %}
