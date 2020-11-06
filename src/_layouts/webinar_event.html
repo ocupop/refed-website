@@ -48,27 +48,29 @@ layout: default
     {% endif %}
   </div>
 </section>
-<section class="bg-neutral-200">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2>Upcoming Schedule</h2>
+{% if page.series_events %}
+  <section class="bg-neutral-200">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2>Upcoming Schedule</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {% comment %}{% include events/upcoming_events_logic.html %}{% endcomment %}
+          {% assign series_events = '' | split: ',' %}
+          {% for object in page.series_events %}
+            {{ event.title }}
+            {% assign event = site.events | where: 'slug', event %}
+            {% assign series_events = series_events | push: event %}
+          {% endfor %}
+          {% include sections/carousels/carousel_cards.html items=series_events %}
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        {% comment %}{% include events/upcoming_events_logic.html %}{% endcomment %}
-        {% assign series_events = '' | split: ',' %}
-        {% for object in page.series_events %}
-          {{ event.title }}
-          {% assign event = site.events | where: 'slug', event %}
-          {% assign series_events = series_events | push: event %}
-        {% endfor %}
-        {% include sections/carousels/carousel_cards.html items=series_events %}
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+{% endif %}
 <section>
   <div class="container">
     <div class="row mb-5">
