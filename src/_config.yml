@@ -38,6 +38,14 @@ collections:
   reports_and_guides:
     output: true
 
+
+defaults:
+  - scope:
+      type: "action_areas"
+    values:
+      layout: action_area
+      permalink: /action/:title/
+
 # Build settings
 safe: false
 sass:
@@ -131,17 +139,42 @@ _array_structures:
         image:
         section_background_color:
         image_alignment:
-  insights_engine:
+  cta_insights_engine:
     - label: Insights Engine
-      icon: format_quote
+      icon: computer
+      value:
+        preheader: Our Newest Solution
+        title: ReFED Insights Engine
+        description_html: >-
+          <p>ReFED Insights Engine is an online data center designed to serve as the next
+            generation of data, insights, and guidance on U.S. food waste. With more granular
+            data, more extensive analysis, more customized views, and the ability to be
+            updated regularly, we see this tool as laying the foundation for action around
+            our 2030 national goal to reduce food waste by 50 percent.</p>
+        link: 'https://www.insights-engine-fpo.com/'
+        link_label:
+        laptop_screen_image: /img/laptop-screen-fpo.jpg
+  logo_pile:
+    - label: Logo Pile
+      icon: view_module
       value:
         preheader:
         headline:
         text:
-        link:
-        link_label:
-        laptop_screen_image:
-
+        logos:
+          - link:
+            alt_text:
+            image:
+  split_section:
+    - label: Split Section
+      icon: vertical_split
+      value:
+        section_background_color: primary
+        image_width: 25%
+        image_alignment: right
+        image_to_edge: false
+        text_to_edge: false
+        item:
   cards:
     - label: Cards
       icon: view_column
@@ -286,6 +319,13 @@ carousel_type:
   - two-column
   - image
   - split
+
+image_width:
+  - 25%
+  - 33%
+  - 50%
+  - 66%
+  - 75%
 
 _comments:
   cards: page section for card grid that is not related to a collection

@@ -66,13 +66,13 @@
   background-size: contain;
 }
 
-.video-responsive{
-  overflow:hidden;
+.video-responsive {
+  overflow: hidden;
   padding-bottom: 56.25%;
-  position:relative;
-  height:0;
+  position: relative;
+  height: 0;
 }
-.video-responsive iframe{
+.video-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -80,46 +80,67 @@
   position: absolute;
 }
 
-.max-out-text-width{
+.max-out-text-width {
   max-width: rem(900);
 }
 
-.font-serif{
+// TODO: This should use Bootstrap syntax of "text-" instead of "font-"
+.font-serif {
   font-family: $font-family-serif;
 }
-.bg-lightest{ 
-  background-color: $almost-white; 
+
+// TODO: Let's use Bootstrap color maps in _settings.scss to accomplish
+.bg-lightest {
+  background-color: $almost-white;
 }
 
-.logo-farm{
+.logo-farm {
   margin-top: rem(40);
   margin-left: rem(-20);
   margin-right: rem(-20);
-  img{
+  img {
     display: inline-block;
     margin: rem(20);
   }
 }
 
+.icon-img-xl {
+  max-width: 8.5rem;
+  width: 8.5rem;
+}
 
+.icon-img-lg {
+  max-width: 100px;
+  width: 100%;
+}
 
-@media screen and (min-width: $screen-md-min){
-  ul.two-column-list{
+.icon-img-md {
+  max-width: 80px;
+  width: 100%;
+}
+
+.icon-img-sm {
+  max-width: 60px;
+  width: 100%;
+}
+
+@media screen and (min-width: $screen-md-min) {
+  ul.two-column-list {
     column-count: 2;
     column-gap: 80px;
-    li{
-      -webkit-column-break-inside: avoid; 
+    li {
+      -webkit-column-break-inside: avoid;
     }
   }
 }
 
-@media screen and (min-width:  $screen-md-min) {  
-  .two-columns{
+@media screen and (min-width: $screen-md-min) {
+  .two-columns {
     column-count: 2;
-    article{
+    article {
       -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-          page-break-inside: avoid; /* Firefox */
-               break-inside: avoid; /* IE 10+ */
+      page-break-inside: avoid; /* Firefox */
+      break-inside: avoid; /* IE 10+ */
     }
   }
 }
@@ -128,72 +149,73 @@
 SAMPLE
 <section>
   <div class="container extend-to-browser-edge">
-    <div class="row">   
+    <div class="row">
       <div class="p-5 col-12 col-md-8 stretch-left stretch-bkg" style="background-color:green;"><span class='stretched-inner' style="background-color:green;"></span>Content</div>
       <div class="p-5 col-12 col-md-4 stretch-right stretch-image" style="background-color:blue;"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
     </div>
   </div>
 </section>
 */
-.extend-to-browser-edge{
-  .stretch-left .stretched-inner, 
+.extend-to-browser-edge {
+  .stretch-left .stretched-inner,
   .stretch-right .stretched-inner {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     bottom: 0;
-    display: block;  
+    display: block;
     z-index: -1;
-  }        
+  }
   .stretch-image {
-    .stretched-inner { 
-      z-index: 1
+    .stretched-inner {
+      z-index: 1;
     }
-    > .stretched-inner { 
+    > .stretched-inner {
       background-size: cover;
       background-position: center center;
     }
   }
- 
+
   /* Mobile Only */
-  @include media-breakpoint-down(lg) {    
-    .stretch-left .stretched-inner, 
-    .stretch-right .stretched-inner{
-      width: calc(100vw); 
+  @include media-breakpoint-down(lg) {
+    .stretch-left .stretched-inner,
+    .stretch-right .stretched-inner {
+      width: calc(100vw);
       left: 50%;
-      transform: translateX(-50%);         
-    }    
+      transform: translateX(-50%);
+    }
   }
 
   /* Desktop Only */
-  @include media-breakpoint-up(xl) {      
+  @include media-breakpoint-up(xl) {
     position: relative;
-    .stretch-left .stretched-inner, 
-    .stretch-right .stretched-inner{
-        width: calc(100% + (((100vw) -  #{map-get($container-max-widths, 'xl')} ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-        @media screen and (max-width:  $screen-lg-min) {
-          width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'lg')}) / 2));
-        }
-        @media screen and (max-width: $screen-md-min){
-          width: calc(100% + (((100vw) - #{map-get($container-max-widths, 'md')}) / 2));
-        }
+    .stretch-left .stretched-inner,
+    .stretch-right .stretched-inner {
+      width: calc(
+        100% + (((100vw) - #{map-get($container-max-widths, "xl")}) / 2)
+      ); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
+      @media screen and (max-width: $screen-lg-min) {
+        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "lg")}) / 2));
+      }
+      @media screen and (max-width: $screen-md-min) {
+        width: calc(100% + (((100vw) - #{map-get($container-max-widths, "md")}) / 2));
+      }
     }
-    
-    .stretch-left .stretched-inner{
+
+    .stretch-left .stretched-inner {
       right: 0;
     }
-    .stretch-right .stretched-inner{
+    .stretch-right .stretched-inner {
       left: 0;
-    }      
+    }
   }
-  
 }
 
 /*
-@media screen and (min-width:  $screen-xl-min) { 
-  // special spacing for the strata under the home page hero.  
+@media screen and (min-width:  $screen-xl-min) {
+  // special spacing for the strata under the home page hero.
   &.container-more-wide {
-      .stretch-left .stretched-inner, 
+      .stretch-left .stretched-inner,
       .stretch-right .stretched-inner{
         width: calc(100% + (((100vw - 17px) - 1374px ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
       }
@@ -202,19 +224,39 @@ SAMPLE
 */
 /* END STRETCH COLUMN */
 
-
-
-.opacity-0{ opacity:0; }
-.opacity-1{ opacity:0.1; }
-.opacity-2{ opacity:0.2; }
-.opacity-3{ opacity:0.3; }
-.opacity-4{ opacity:0.4; }
-.opacity-5{ opacity:0.5; }
-.opacity-6{ opacity:0.6; }
-.opacity-7{ opacity:0.7; }
-.opacity-8{ opacity:0.8; }
-.opacity-9{ opacity:0.9; }
-.opacity-100{ opacity:1; }
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 0.1;
+}
+.opacity-2 {
+  opacity: 0.2;
+}
+.opacity-3 {
+  opacity: 0.3;
+}
+.opacity-4 {
+  opacity: 0.4;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-6 {
+  opacity: 0.6;
+}
+.opacity-7 {
+  opacity: 0.7;
+}
+.opacity-8 {
+  opacity: 0.8;
+}
+.opacity-9 {
+  opacity: 0.9;
+}
+.opacity-100 {
+  opacity: 1;
+}
 
 .overlay {
   position: absolute;

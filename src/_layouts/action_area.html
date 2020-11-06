@@ -1,5 +1,25 @@
 ---
 layout: default
 ---
+{% include sections/hero.html %}
 
 {{ content }}
+
+{% include sections/carousels/carousel_two_column.html items=page.case-studies %}
+<section class="bg-lightest">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <p class="editable lead">
+          ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools,
+          reports and strategic solutions can help your team get started.
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="text-center">
+          <a href="/solutions" class="editable btn btn-primary-100 btn-lg font-serif">See All Solutions</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
