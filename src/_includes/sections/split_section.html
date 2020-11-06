@@ -36,6 +36,13 @@
   {% capture description %}{{item.content | truncatewords: 50}}{% endcapture %}
 {%endif%}
 
+{% if include.image %}
+  {% capture image %}{{ include.image }}{% endcapture %}
+{% elsif item.hero %}
+    {% capture image %}{{ item.hero }}{% endcapture %}
+{% else %}
+    {% capture image %}{{ item.featured_image }}{% endcapture %}
+{%endif%}
 
 
 
@@ -64,8 +71,8 @@
         </div>
 
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-          <img src="{{ item.featured_image | item.hero }}" alt="" class="d-block">
-          <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
+          <img src="{{ image }}" alt="" class="d-block">
+          <!--<span class='bkg ' style="background-image:url('{{ image }}')"></span>-->
         </div>
 
       </div>
