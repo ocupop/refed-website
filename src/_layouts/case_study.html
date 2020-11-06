@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-{% include sections/hero.html title=title image=page.featured_image %}
+{% include sections/hero.html title=page.title image=page.featured_image %}
 
 {% include sections/split_section.html   
   image_width='50%' 
@@ -11,7 +11,7 @@ layout: default
   image_to_edge=true   
   text_to_edge=false   
   omit_cta=true
-  item=page.overview
+  item=page
 %}
 
 {% for testimonial in page.testimonials %}
