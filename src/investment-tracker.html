@@ -169,6 +169,20 @@ cta:
       </div>
     </div>
     {% for i in (1..2) %}
+      {% include modules/card_horizontal.html 
+        image_size='cover' 
+        featured_image='https://via.placeholder.com/1000'
+        aspect_ratio='4x3'
+        title='Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam nam commodi? Nostrum cum atque co'
+        excerpt='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius labore quibusdam fugiat aliquid quo eum temporibus vero cumque, ab at nisi quam fuga iusto accusamus nobis? Inventore, nemo laboriosam.'
+        date='01-06-2020'
+        left_col_size=4
+        url='/#'
+      %}
+
+    
+    <!-- Converted this to an include. It is used on Engage, Investment tracker, Press, Blog and Archives -->
+
       <div class="row align-items-center mb-5">
         <div class="col-lg-4">
           <div class="bg-image aspect-4x3 bg-dark"></div>

@@ -52,8 +52,8 @@ cta_newsletter:
           {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
           {% for post in sorted %}
             {% if post.news_type == 'article' %}
-              {% for i in (1..4) %}  
-              {% include modules/list_item_post.html template_override='article' %}                
+              {% for i in (1..4) %} <!-- repeat just for testing until we get some more data -->           
+                {% include modules/card_horizontal.html %}               
               {% endfor %}
             {% endif %}               
           {% endfor %}
