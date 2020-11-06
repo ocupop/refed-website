@@ -81,7 +81,7 @@ layout: default
     <div class="row">
       <div class="col-12">
         <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
-        {% include events/past_events_logic.html %}
+        {% include events/past_events_logic.html event_type="webinar" %}
         {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
       </div>
     </div>
