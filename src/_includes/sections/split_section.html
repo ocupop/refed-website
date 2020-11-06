@@ -26,13 +26,24 @@
   {% capture image-class %}{{ image-class }} image-to-browser-edge{% endcapture %}
 {%endif%}
 
-{% if item.summary %}
+{% if include.description %}
+  {% capture description %}{{ include.description }}{% endcapture %}
+{% elsif item.summary %}
   {% capture description %}{{ item.summary }}{% endcapture %}
 {% elsif item.description_html  %}
   {% capture description %}{{item.summary | truncatewords: 50}}{% endcapture %}
-{% else  %}
+{% else %}
   {% capture description %}{{item.content | truncatewords: 50}}{% endcapture %}
 {%endif%}
+
+{% if include.image %}
+  {% capture image %}{{ include.image }}{% endcapture %}
+{% elsif item.hero %}
+  {% capture image %}{{ item.hero }}{% endcapture %}
+{% else %}
+  {% capture image %}{{ item.featured_image }}{% endcapture %}
+{%endif%}
+
 
 
 
@@ -47,21 +58,23 @@
               <div class="mb-3 preheader">{{ include.preheader | default: item.preheader  }}</div>
             {% endif %}
             
-            {% if item.title %}
-              <h2 class="mb-3">{{ item.title }}</h2>
+            {% if include.title or item.title %}
+              <h2 class="mb-3">{{ include.title | default: item.title  }}</h2>
             {% endif %}
 
             <div class="mb-4 item-description">{{ description }}</div>
-
-            {% if include.omit_cta != true and item.url %}
-              <a class="m-0 {% if include.button_type or item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ item.url }}">{{ item.link_label | default: 'Learn More'}}</a>
+ 
+            {% if include.omit_url != true %}
+              {% if item.url or include.url %}
+                <a class="m-0 {% if include.button_type == 'text' or item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ include.url | default: item.url  }}">{{ include.link_label | item.link_label | default: 'Learn More'}}</a>
+              {% endif %}
             {% endif %}
           </div>
         </div>
 
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'primary'}}">
-          <img src="{{ item.featured_image | item.hero }}" alt="" class="d-block">
-          <!--<span class='bkg ' style="background-image:url('{{ item.featured_image | item.hero }}')"></span>-->
+          <img src="{{ image }}" alt="" class="d-block">
+          <!--<span class='bkg ' style="background-image:url('{{ image }}')"></span>-->
         </div>
 
       </div>
