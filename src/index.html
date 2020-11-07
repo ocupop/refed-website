@@ -88,8 +88,8 @@ funder_images:
       title: Test Logo 3
     - image: /android-chrome-192x192.png
       title: Test Logo 4
-    - image: /img/icons/levers/levers_communication.svg
-      title: Test Logo 5
+    - image: /img/logo-meta.jpg
+      title: Test 1  
 carousel_testimonial:
   - text: >-
       “The ReFED team has been an incredible strategic partner in our journey to
@@ -102,15 +102,6 @@ carousel_testimonial:
     author: Denise Oserhues
     cite: The Kroger Co.
     image:
-cta:
-  - title: Stay Connected with ReFED
-    description_html: <p>Sign up for our newsletter and other email updates</p>
-    link:
-    link_label: Subscribe
-    colorbar:
-      color:
-      bar_position:
-        - left
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -191,6 +182,22 @@ cta:
 </section>
 
 {% include modules/cta_newsfeed.html items=site.posts %}
-{% include sections/carousels/carousel_images.html items=page.funder_images.images %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto mb-5">
+        <div class="text-center editable">
+          <h2>Funders</h2>
+          <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders:</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% include sections/carousels/carousel_images.html items=page.funder_images.images %}
+      </div>  
+    </div>
+  </div>
+</section>
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
 {% include modules/stay_connected.html %}
