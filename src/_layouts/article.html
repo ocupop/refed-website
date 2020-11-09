@@ -1,7 +1,8 @@
 ---
 layout: default
 cta:
-  description_html: Find more <a href='/newsroom'>news and updates</a> from the <a href='/newsroom'>ReFED blog</a>, including our href='#/press'>press articles</a> and <a href='/newsletter-archive'>newsletters</a>.
+  description_html: >-
+    <p>Find more <a href="/newsroom">news and updates</a> from the <a href='/newsroom'>ReFED blog</a>, including our <a href='#/press'>press articles</a> and <a href="/newsletter-archive">newsletters</a>.</p>
   link: /newsroom
   link_label: View More in the Newsroom
   colorbar:
@@ -9,40 +10,31 @@ cta:
     bar_position: right
 ---
 
-{% if page.news_type == 'newsletter' %}
-  {% capture hero_preheader %}Newsletter{% endcapture %}
-{% else %} 
-  {% capture hero_preheader %}Blog{% endcapture %}
-{% endif %}
-
-
 {% include modules/subnav_newsroom.html %}
 
-{% assign this_post = site.posts | where:"id",page.id | first %}
-{% include sections/carousels/carousel_hero_in_container.html 
-  subtitle=hero_preheader
-  items=this_post 
-%}
+<section class="pb-0 hide-social">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include sections/hero.html title=page.title image=page.featured_image subtitle="Blog" %}
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="meta border-bottom border-color-primary d-inline-block mb-4 pb-2">
-          {{ page.location }} 
-          {% if page.date %}( {{ page.date | date: '%B %-d, %Y' }}){% endif %}
+          {% if page.item_date %}( {{ page.item_date | date: '%B %-d, %Y' }}){% endif %}
         </div>
         <div class="content">
-          <img src="{{ page.content_image }}" alt="" class="w-100 float-right px-0 col col-sm-6 col-md-4 ml-sm-4 ml-sm-5 mb-4 mb-md-5 ">
-          {{content}}
-        </div>
-        <div class="photocredit text-neutral-300 mt-5">
-          {{ page.photocredit }}
+          {{ content }}
         </div>
       </div>
     </div>
   </div>
-
 </div>
 </section>
 
@@ -52,7 +44,7 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col">
-        <p class="m-0">ReFED is a national nonprofit working to end food loss and waste across the food system by advancing data-driven solutions to the problem. ReFED leverages data and insights to highlight supply chain inefficiencies and economic opportunities; mobilizes and connects people to take targeted action; and catalyzes capital to spur innovation and scale high-impact initiatives. ReFED’s goal is a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow.</p>
+        <p class="m-0 editable">ReFED is a national nonprofit working to end food loss and waste across the food system by advancing data-driven solutions to the problem. ReFED leverages data and insights to highlight supply chain inefficiencies and economic opportunities; mobilizes and connects people to take targeted action; and catalyzes capital to spur innovation and scale high-impact initiatives. ReFED’s goal is a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow.</p>
       </div>
     </div>
   </div>

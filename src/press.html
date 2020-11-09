@@ -38,7 +38,7 @@ cta:
 <section>
   <div class="container">
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
 
         <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
@@ -54,14 +54,14 @@ cta:
         </select>
  
       </div>  
-    </div> 
+    </div>  -->
 
     <div class="row">
       </div>
         <div class="press-list">
           {% assign sorted = site.press | sort_by: 'date' | reverse %} 
-          {% for post in sorted %}
-            {% include modules/card_horizontal.html image_size='contain' url=post.link link_target='_blank' %}  
+          {% for item in sorted %}
+            {% include modules/card_horizontal.html image_size='contain' url=press.link link_target='_blank' %}  
           {% endfor %}
         </div>
       </div>

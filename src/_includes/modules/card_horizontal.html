@@ -1,38 +1,37 @@
 <div class="horizontal-card row my-5 {{ post.news_type | slugify }}">
 
-    {% if include.featured_image or post.featured_image %}
+    {% if include.featured_image or item.featured_image %}
       {% if include.image_size == 'contain' %}
         <div class="col-6 col-md-4 col-lg-{{left_col_size | default: 3}} mx-auto d-flex align-items-center">
-          <img src="{{include.featured_image | default: post.featured_image}}" class="w-100 mb-3 mb-md-0 mr-md-3" alt="" />
+          <img src="{{include.featured_image | default: item.featured_image}}" class="w-100 mb-3 mb-md-0 mr-md-3" alt="" />
         </div>
       {% else %}
         <div class="col-12 col-sm-9 col-md-4 col-lg-{{ include.left_col_size | default: 3}}  d-flex mx-md-auto mb-3 mb-md-0 mt-md-2">
-          <div class="bg-image aspect-{{ include.aspect_ratio | default: '4x3' }} bg-dark flex-grow-1 flex-shrink-1" style="background-image:url('{{ include.featured_image | default: post.featured_image}}');"></div>
+          <div class="bg-image aspect-{{ include.aspect_ratio | default: '4x3' }} bg-dark flex-grow-1 flex-shrink-1" style="background-image:url('{{ include.featured_image | default: item.featured_image}}');"></div>
         </div>
       {% endif %}
     {% endif %}
   
     <div class="col-12 col-md d-flex flex-column justify-content-center">
-      <h4>{{ include.title | default: post.title }}</h4>
+      <h4>{{ include.title | default: item.title }}</h4>
   
-      {% if include.date or post.date %}
+      {% if include.item_date or item.item_date %}
         <h6 class="meta"> 
-            {% if post.news_type == 'newsletter' %}Published {% endif %}  
-            {% if include.source or post.source %}{{ include.source | default: post.source }} | {% endif %}  
-            {{ include.date | default: post.date | date: "%B %-d, %Y" }}
+            {% if include.source or item.source %}{{ include.source | default: item.source }} | {% endif %}  
+            {{ include.item_date | default: item.item_date | date: "%B %-d, %Y" }}
         </h6>
       {% endif %}  
 
       <div  class="card-text border-top border-color-mid pt-3 mt-3">
-        {{ include.excerpt | default: post.excerpt | truncatewords: 50 }}
+        {{ include.excerpt | default: item.summary | truncatewords: 50 }}
       </div> 
 
-      {% if include.url or post.url %}
-        <a href="{{ include.url | default: post.url }}" class="mt-3 text-link d-inline-block" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
+      {% if item.link %}
+      <a href="{{ include.link | default: item.link }}" class="mt-3 text-link d-inline-block" target="_blank">{{ include.link_label | default: 'Read More' }}</a>
+      {% elsif include.url or item.url %}
+        <a href="{{ include.url | default: item.url }}" class="mt-3 text-link d-inline-block" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
       {% endif %}
     </div>
-  
-  
   </div>
 
 
@@ -51,15 +50,15 @@
     link_target (default: '_self')
     excerpt
     source
-    post:
+    item:
       news_type ('newsletter', 'press' or 'archive')
       featured_image
       aspect_ratio (default: 4x3)
       title
       excerpt
-      date 'dd-mm-yyyy'
+      item_date 'dd-mm-yyyy'
       url
-      excerpt
+      summary
       source
       
   {% endcomment %}

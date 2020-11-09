@@ -9,7 +9,7 @@
             <div class="hero-content">
               <div class="p-5 text-white w-100">
                 <div class="row">
-                  <div class="col-lg-8">
+                  <div class="col-12">
                   {% if include.subtitle or hero.subtitle %}
                       <div class="preheader">{{ include.subtitle | default: hero.subtitle }}</div>
                   {% endif %}
@@ -17,10 +17,9 @@
                   {% if hero.title %}
                     <h1>{{ hero.title }}</h1>
                   {% endif %}
-                  
-                  {% if page.layout != 'post' %}    
+                  {% unless include.description_html == false %}    
                     {{ hero.description_html | default: hero.content | truncatewords: 20 }}
-                  {% endif %}
+                  {% endunless %}
                   
                   {% if page.layout != 'post' %}              
                     {% if hero.url %}

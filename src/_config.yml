@@ -16,9 +16,9 @@ insights_engine_url:  https://www.insights-engine-fpo.com/
 
 # Collections
 collections:
-  posts:
+  articles:
     output: true
-    permalink: /posts/:title/
+    permalink: /articles/:title/
   press:
     output: false
     sort_by: date
