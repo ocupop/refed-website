@@ -13,6 +13,11 @@ hero:
         link_label:
         button_type:
 
+case_studies:
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+
 cta_featured_organizations:
   description_html: See how the ReFED efforts have inspired action and efforts in these featured organizations and companies.
   link: '#'
@@ -186,19 +191,27 @@ cta:
 
 <!-- This section needs work -->
 
-{% include sections/carousels/carousel_split.html 
-  id='case-studies'
-  preheader='Impact Stories'
-  items=site.case_studies 
-  section_background_color='white' 
-  image_width='50%' 
-  image_alignment='right' 
-  image_to_edge=true 
-  text_to_edge=true 
-  theme='light'
-  button_type='text'
-  section_class='p-0' 
-%}
+
+
+<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+  {% for featured_slug in page.case_studies %} 
+    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %} 
+    {% include sections/split_section.html 
+        item=featured 
+        section_background_color='primary'
+        preheader='Impact Stories' 
+        section_background_color='white' 
+        image_width='50%'
+        image_alignment='right' 
+        image_to_edge=true 
+        text_to_edge=true
+        button_type='text' 
+        section_class='p-0 mt-5'
+    %} 
+  {% endfor %}
+</div>
+
+
 
 <!-- This section needs work -->
 

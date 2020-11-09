@@ -266,14 +266,43 @@ _sticky_nav:
 
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3">
-        {% assign upcoming_events = site.events | where: 'event_type', 'in_person' | sort: 'item_date' | reversed %}
-        {% for event in upcoming_events %}
-          {% assign now = 'now' | date: '%s' | plus: 0 %}
-          {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
-          {% if event_start >= now %}
-            {% include events/event_card.html %}
-          {% endif %}
-        {% endfor %}
+
+          <div class="card mb-4">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+            <div class="card-body">
+              <h4 class="editable">Food Waste Summit</h4>
+              <hr>
+              <div class="editable">
+                <p> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>                
+              </div>
+              <a href="" class="editable text-link">Learn More</a>                        
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+            <div class="card-body">
+              <h4 class="editable">Webinars</h4>
+              <hr>
+              <div class="editable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in </p>                
+              </div>
+              <a href="/webinar-events" class="editable text-link">Learn More</a>                        
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="bg-image aspect-4x3 editable" style="background-image: url({{ site.placeholder_image }})"></div>
+            <div class="card-body">
+              <h4 class="editable">In Person Events</h4>
+              <hr>
+              <div class="editable">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit Agreement.</p>                
+              </div>
+              <a href="/in-person-events/" class="editable text-link">Learn More</a>                        
+            </div>
+          </div>
+
         </div>
       </div>
 

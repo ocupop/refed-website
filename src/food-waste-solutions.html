@@ -89,6 +89,17 @@ cta:
   colorbar:
     color:
     bar_position:
+
+_sticky_nav:
+  - link: '#priority-action-areas'
+    link_label: 'Priority action areas'
+  - link: '#solutions'
+    link_label: 'Solutions'
+  - link: '#levers'
+    link_label: 'Levers'
+  - link: '#stakeholder-recommendations'
+    link_label: 'Stakeholder recommendations'
+    
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -144,26 +155,7 @@ cta:
   </div>
 </section>
 
-<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4" id="sticky-nav">
-  <div class="container">
-    <div class="preheader mb-3">Explore Solution Areas</div>
-    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold justify-content-between">
-      <li class="nav-item">
-        <a href="#priority-action-areas">Priority action areas</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="#solutions">Solutions</a>
-      </li>
-      <li class="nav-item">
-        <a href="#levers">Levers</a>
-      </li>
-      <li class="nav-item">
-        <a href="#stakeholder-recommendations">Stakeholder recommendations</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+{% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore Solution Areas" %}
 
 <section id="seven-action-areas">
   <div class="container">

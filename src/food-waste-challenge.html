@@ -106,6 +106,18 @@ _assets:
 - image: /img/food_waste_challenge/foodwaste_causes_image_03.jpg
 - image: /img/food_waste_challenge/foodwaste_causes_image_04.jpg
 - image: /img/food_waste_challenge/foodwaste_causes_image_05.jpg
+
+_sticky_nav:
+  - link: '#what-is-food-waste'
+    link_label: 'What is food waste?'
+  - link: '#impacts'
+    link_label: 'What is the impact?'
+  - link: '#where-does-food-waste-occur'
+    link_label: 'Where does food waste occur?'
+  - link: '#which-foods-get-wasted'
+    link_label: 'Which foods get wasted?'
+  - link: '#what-causes-food-waste'
+    link_label: 'What causes food waste?'
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -140,28 +152,7 @@ _assets:
   item=page.split_section_good_news
 %}
 
-<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4 " id="explore-food-waste">
-  <div class="container">
-    <div class="preheader mb-3">Explore this issue</div>
-    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold">
-      <li class="nav-item" >
-        <a href="#what-is-food-waste">What is food waste?</a>
-      </li>
-      <li class="nav-item">
-        <a href="#impacts">What is the impact?</a>
-      </li>
-      <li class="nav-item">
-        <a href="#where-does-food-waste-occur">Where does food waste occur?</a>
-      </li>
-      <li class="nav-item">
-        <a href="#which-foods-get-wasted">Which foods get wasted?</a>
-      </li>
-      <li class="nav-item">
-        <a href="#what-causes-food-waste">What causes food waste?</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+{% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore this issue" %}
 
 {% include sections/split_section.html 
   id='what-is-food-waste'   
