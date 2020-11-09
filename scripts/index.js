@@ -39,9 +39,9 @@ if(matches){
 var w = window.innerWidth;
 var controller;
 var size = w > 768 ? "big" : "small";
-if (size === "big") {
+//if (size === "big") {
   makeScrollMagic();
-}
+//}
 
 function makeScrollMagic() {
   controller = new ScrollMagic.Controller();
@@ -55,7 +55,8 @@ function makeScrollMagic() {
     //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
 }
-
+/*
+// THIS FUNCTION ALLOWED FOR SCROLLMAGICK ONLY TO ACTIVATE ON DESKTOP SIZES, NOT MOBILE.
 function sizeIt() {
   w = window.innerWidth;
   var newSize = w > 768 ? "big" : "small";
@@ -74,6 +75,7 @@ function sizeIt() {
   }
 }
 window.addEventListener("resize", sizeIt);
+*/
 /* END Sticky Sub-Navigation with ScrollMagick */
 
 
