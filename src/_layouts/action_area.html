@@ -1,5 +1,14 @@
 ---
 layout: default
+cta: 
+  description_html: >-
+    <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
+  link: /food-waste-solutions
+  link_label: See All Solutions
+  section_background_color: neutral-100
+  colorbar:
+    color: "#e65e4a"
+    bar_position: right
 ---
 
 {% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %}
@@ -24,7 +33,7 @@ layout: default
         <div class="row mt-5">
           <div class="col-12">
             <h6>Summary</h6>
-            {{ page.summary }}
+            {{ page.description_html }}
           </div>
         </div>
       </div>
@@ -323,7 +332,7 @@ layout: default
   </div>
 </section>
 
-{% include sections/cta_insights_engine.html data=page.cta_insights_engine %}
+{% include sections/cta_insights_engine.html data=layout.cta_insights_engine %}
 
 <div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
   {% for featured_slug in page.case_studies %} 
@@ -343,4 +352,4 @@ layout: default
   {% endfor %}
 </div>
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html cta=layout.cta %}

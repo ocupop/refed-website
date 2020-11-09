@@ -77,7 +77,7 @@ primary_navigation:
           link: /our-impact
           links:
             - title: Case Studies
-              link: '/our-impact/#case-studies'
+              link: '/case-studies'
               links:
             - title: Featured Organizations
               link: '/our-impact/#featured-organizations'
