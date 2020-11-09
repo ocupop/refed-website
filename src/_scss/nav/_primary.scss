@@ -90,9 +90,25 @@
               }
             }
             
-          .sub-menu{ margin-bottom:0 !important; padding-left:0;padding-right:0;}
-
-          ul{ display:none; }
+          .sub-menu{ 
+            margin-bottom:0 !important; padding-left:0;padding-right:0;
+            ul{ 
+              display:none; 
+              li{
+                a{
+                  font-size:rem(16);
+                  padding:em(12) em(75);
+                  color:$neutral-300;
+                  &:hover{
+                    color:$white;
+                  }
+                }
+              }
+            }
+            &.sublink-our-work ul{
+              display:block;
+            }
+          }
 
             
           .nav-back-button{

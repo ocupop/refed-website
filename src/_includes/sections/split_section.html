@@ -66,7 +66,7 @@
  
             {% if include.omit_url != true %}
               {% if item.url or include.url %}
-                <a class="m-0 {% if include.button_type == 'text' or item.button_type == 'text' %}text-link{% else %}btn btn-secondary{% endif %} " href="{{ include.url | default: item.url  }}">{{ include.link_label | item.link_label | default: 'Learn More'}}</a>
+                <a class="m-0 {% if include.button_type == 'text' or item.button_type == 'text' %}text-link{% else %}btn {{ include.button_class | default: 'btn-secondary' }}{% endif %} " href="{{ include.url | default: item.url  }}">{{ include.link_label | default: item.link_label | default: 'Learn More'}}</a>
               {% endif %}
             {% endif %}
           </div>

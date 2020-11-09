@@ -187,7 +187,7 @@ sample_events:
 
 <section class="bg-lightest" id="partnerships"> 
   <div class="container">              
-    <div class="row">
+    <div class="row pb-5">
       <div class="col-md-auto">
         <img src="/img/icons/stakeholder_engagement/stakeholderengagement_partnerships.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
@@ -198,7 +198,7 @@ sample_events:
     </div> 
 
     {% for partner in page.partnerships %}
-      <div class="row my-5">
+      <div class="row py-5">
         <div class="col-12 col-xl-10 mr-xl-auto mb-5">            
           <p class="h3 editable">{{ partner.title }}</p>
           <div class="editable">
@@ -270,40 +270,18 @@ sample_events:
     
     <div class="row mt-5">
 
-      {% for event in page.sample_events %}
-
-        <div class="card {% if include.numcols == 2 %}col-lg-6{% else %}col-lg-4{% endif %}">
-          
-          {% if event.featured_image %}
-            {% if event.link or item.url %}
-              <a href="{{ event.link | default: event.url }}" class="bg-image aspect-4x3" style="background-image: url({{ event.featured_image | default: site.placeholder_image }})">
-              </a>        
-            {% else %}
-              <div class="bg-image aspect-4x3" style="background-image: url({{ event.featured_image | default: site.placeholder_image }})">
-              </div>
-            {% endif %}
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3">
+        {% assign upcoming_events = site.events | where: 'event_type', 'in_person' | sort: 'item_date' | reversed %}
+        {% for event in upcoming_events %}
+          {% assign now = 'now' | date: '%s' | plus: 0 %}
+          {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+          {% if event_start >= now %}
+            {% include events/event_card.html %}
           {% endif %}
-
-          {% if event.title or event.summary %}
-            <div class="card-body">
-              <h3 class="card-title">{{ event.title }}</h3>
-              {% if event.date %}
-                {{ event.date | date: '%B %-d, %Y' }}
-              {% endif %}
-              <div class="card-text">
-                {{ event.summary | default: event.content | truncatewords: 20 }}
-              </div>
-              {% if event.link or event.url %}
-                <p class="mt-3">
-                <a href="{{ event.link | default: event.url }}" class="card-link">{{ event.link_label | default: 'Read More'}}</a>
-                </p>
-              {% endif %}
-            </div>    
-          {% endif %}
-
-        </div> 
-
-      {% endfor %}
+        {% endfor %}
+        </div>
+      </div>
 
 
     </div>
