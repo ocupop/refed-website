@@ -1,19 +1,22 @@
 ---
 layout: default
-title: "ReFED Newsroom"
+title: ReFED Newsroom
 featured_posts:
-cta_press: 
+  - 2020-09-11-test-blog-post
+  - 2020-09-12-test-newsletter
+cta_press:
   description_html: <p>Check out ReFED in the news and other press articles</p>
   link: /archive
   link_label: See Press Articles
-  section_background_color: primary-500
-cta_newsletter: 
+  section_background_color:
+cta_newsletter:
   description_html: See past newsletters in the newsletter archive
   link: /newsletter
   link_label: See Newsletter Archive
   colorbar:
-    color: "#e65e4a"
-    bar_position: right
+    color: '#e65e4a'
+    bar_position:
+      - right
 ---
 
 {% include modules/subnav_newsroom.html %}
@@ -36,7 +39,7 @@ cta_newsletter:
         <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
           View:
         </label>
-        <select class="form-control d-inline w-auto" id="jumpmenu" name="jumpmenu" onChange="self.location=this.options[this.selectedIndex].value">
+        <select class="form-control d-inline w-auto" id="jumpmenu" name="jumpmenu" onchange="self.location=this.options[this.selectedIndex].value">
           <option value='#'>All</option>
           <option value='#invenstment-tracker'>Webinars</option>
           <option value='#'>Other</option>
