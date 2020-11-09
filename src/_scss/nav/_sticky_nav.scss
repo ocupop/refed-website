@@ -47,8 +47,10 @@
     padding-top:1rem !important;
     padding-bottom:1.3rem !important;
     .preheader{
+      margin-bottom:0 !important;
     } 
   }
+
   @include media-breakpoint-up(lg) {
     &.minimized{
       .preheader{
@@ -56,13 +58,16 @@
       } 
     }
   }
+
   @include media-breakpoint-down(lg) {
     padding-top:2rem !important;
     padding-bottom:2rem !important;
     ul{
+     
       li{
         a{
-          //font-size:1rem;
+          display:block;
+          padding-bottom:rem(8);
         }
       }
     }
@@ -71,9 +76,9 @@
   @include media-breakpoint-down(md) {
     ul{
       li{
-        margin-right:1rem;
+        //margin-right:1rem;
         a{
-          font-size:0.9rem;
+         // font-size:0.9rem;
         }
       }
     }
@@ -83,7 +88,7 @@
     padding-bottom: 2rem !important;
     ul{
       li{
-        margin-right:0;
+        //margin-right:0;
       }
     }
   }
