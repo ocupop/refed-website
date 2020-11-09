@@ -16,7 +16,7 @@ hero:
 <section class="press-list">
   <div class="container"> 
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
 
         <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
@@ -32,26 +32,20 @@ hero:
         </select>
  
       </div>  
-    </div> 
+    </div>  -->
     
     <div class="row">
       <div class="col">     
         <div class="post-list">
-          {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
-          {% for post in sorted %}
-            {% if post.news_type == 'newsletter' %}         
-              {% for i in (1..4) %}  <!-- repeat just for testing until we get some more data -->   
-                {% include modules/card_horizontal.html %}     
-              {% endfor %}
-            {% endif %}
+          {% assign sorted = site.newsletters | sort_by: 'date' | reverse %} 
+          {% for item in sorted %}
+            {% include modules/card_horizontal.html %}     
           {% endfor %}
         </div>
       </div>
     </div>
-
   </div>
 </section>
-
 
 <section class="bg-primary text-white">
   <div class="container">

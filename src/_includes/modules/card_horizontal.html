@@ -23,7 +23,7 @@
       {% endif %}  
 
       <div  class="card-text border-top border-color-mid pt-3 mt-3">
-        {{ include.excerpt | default: item.summary | truncatewords: 50 }}
+        {{ item.summary | default: item.description_html | truncatewords: 50 }}
       </div> 
 
       {% if item.link %}
