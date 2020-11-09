@@ -54,30 +54,9 @@ layout: default
   </div>
 </section>
 
-<nav
-  class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4"
-  id="explore-food-waste"
->
-  <div class="container">
-    <div class="preheader mb-3">
-      Explore this Action Area: {{ page.title }}
-    </div>
-    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold">
-      <li class="nav-item">
-        <a href="#modeled-solutions">Modeled solutions</a>
-      </li>
-      <li class="nav-item">
-        <a href="#new-and-emerging-solutions">New & emerging solutions</a>
-      </li>
-      <li class="nav-item">
-        <a href="#best-practices">Best Practices</a>
-      </li>
-      <li class="nav-item">
-        <a href="#levers">Levers</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
+{% include modules/sticky_nav.html navigation=page._sticky_nav header=page._sticky_nav_headline %}
+
 
 <section class="pb-0" id="modeled-solutions">
   <div class="container">

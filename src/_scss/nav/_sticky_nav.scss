@@ -47,11 +47,18 @@
     padding-top:1rem !important;
     padding-bottom:1.3rem !important;
     .preheader{
-      height: 0;   
-      margin-bottom: 0 !important;
     } 
   }
+  @include media-breakpoint-up(lg) {
+    &.minimized{
+      .preheader{
+        height: 0;   
+      } 
+    }
+  }
   @include media-breakpoint-down(lg) {
+    padding-top:2rem !important;
+    padding-bottom:2rem !important;
     ul{
       li{
         a{
@@ -59,6 +66,7 @@
         }
       }
     }
+    
   }
   @include media-breakpoint-down(md) {
     ul{

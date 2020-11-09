@@ -124,6 +124,17 @@ _assets:
   - image: /img/who_we_are/aboutus_image_02.jpg
   - image: /img/who_we_are/aboutus_image_03.jpg
   - image: /img/who_we_are/aboutus_image_04.jpg  
+
+_sticky_nav:
+  - link: '#investment-and-innovation'
+    link_label: 'Investment and Innovation'
+  - link: '#advisory-services'
+    link_label: 'Advisory Services'
+  - link: '#solution-challenge-platform'
+    link_label: 'Solution Challenge Platform'
+  - link: '#convenings'
+    link_label: 'Convenings'
+  
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -145,25 +156,9 @@ _assets:
   </div>
 </section>
 
-<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4 " id="">
-  <div class="container">
-    <div class="preheader editable mb-3">Key Program Areas</div>
-    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold">
-      <li class="nav-item" >
-        <a href="#investment-and-innovation">Investment and Innovation</a>
-      </li>
-      <li class="nav-item">
-        <a href="#advisory-services">Advisory Services</a>
-      </li>
-      <li class="nav-item">
-        <a href="#solution-challenge-platform">Solution Challenge Platform</a>
-      </li>
-      <li class="nav-item">
-        <a href="#convenings">Convenings</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+{% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
+
+
 <section id="investment-and-innovation" class="bg-neutral-100">
   <div class="container">
     <div class="row mb-5">
