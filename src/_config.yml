@@ -22,6 +22,8 @@ collections:
   press:
     output: false
     sort_by: date
+  newsletters:
+    output: false  
   case_studies:
     output: true
   careers:
@@ -275,9 +277,6 @@ _array_structures:
         
 
 #hard coded select fields
-news_types:
-  - article
-  - newsletter
 
 event_types:
   - in_person
