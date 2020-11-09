@@ -19,7 +19,7 @@ split_section_good_news:
   title: Food waste is a solvable problem – and we know how to do it.
   summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   featured_image: /img/food_waste_challenge/foodwaste_image_01.jpg
-  link_label: See Solutions
+  link_label: 'See Solutions'
   url: /food-waste-solutions
 
 split_section_what_is_food_waste:
@@ -86,7 +86,7 @@ barriers_to_solutions_implementation:
 cta_insights_engine:
   preheader: Our Newest Solution
   title: ReFED Insights Engine
-  description_html: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
+  description_html: <p>ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.</p>
   link: 'https://www.insights-engine-fpo.com/'
   link_label: Launch ReFED Insights Engine
   laptop_screen_image: /img/laptop-screen-fpo.jpg
@@ -117,7 +117,7 @@ _assets:
       <div class="col-lg-4 mb-5 mb-lg-0">          
         <img class="w-100 " src="https://via.placeholder.com/375x375" alt="" />
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-5">
         <div>
           <p class="editable lead">Each year, XX million tons of food never get eaten in the U.S. In fact, food is the number one product entering landfills today.</p>
           <div class="editable">
@@ -135,6 +135,7 @@ _assets:
   image_alignment='right'  
   image_to_edge=true   
   text_to_edge=true   
+  button_class='btn-primary-100'
   section_class='py-0'
   item=page.split_section_good_news
 %}
@@ -187,7 +188,7 @@ _assets:
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-auto">
+      <div class="col-12 col-sm-auto">
         <img src="/img/icons/food_waste/foodwaste_workenvironment.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
@@ -268,28 +269,28 @@ _assets:
 
 
     <div class="row">
-      <div class="col-auto">
+      <div class="col-12 col-sm-auto">
         <img src="/img/icons/food_waste/foodwaste_medicalbenefits.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
         <p class="h3 editable">Food Insecurity</p>
         <p class="editable">One in seven Americans, many of them children, are food insecure and lack reliable access to sufficient, affordable, nutritious food. And because of the impact of COVID-19, the number of people facing food insecurity in 2020 could grow to 54 million, according to Feeding America. Yet, we waste XX times the amount of food it would take to feed all of those people.</p>
-        <div class="text-center p-5">
-          <img src="/img/food_waste_challenge/1-in-7-americans-are-insecure.gif" alt="1 in 7 Americans are food insecure">
+        <div class="text-center p-0 p-lg-5">
+          <img src="/img/food_waste_challenge/1-in-7-americans-are-insecure.gif" alt="1 in 7 Americans are food insecure" class="w-100">
           <br/><small class="text-danger">(NOTE: this is a gif image. We may want to make it a dynamic svg graphic)</small>
         </div>
       </div>
     </div><!-- END .row -->
     
     <div class="row">
-      <div class="col-auto">
+      <div class="col-12 col-sm-auto">
         <img src="/img/icons/food_waste/foodwaste_economicvalue.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
         <p class="h3 editable">Economy</p>
         <p class="editable">The financial cost of food waste is greatest for consumers since they pay retail prices for food, while consumer-facing businesses pay lower wholesale rates.</p>
-        <div class="text-center p-5">
-          <img src="/img/food_waste_challenge/billion-dollars-wasted.gif" alt="$218 Billion Dollars Wasted">
+        <div class="text-center p-0 p-lg-5">
+          <img src="/img/food_waste_challenge/billion-dollars-wasted.gif" alt="$218 Billion Dollars Wasted" class="w-100">
           <br/><small class="text-danger">(NOTE: this is a gif image. We may want to make it a dynamic svg graphic)</small>
 
         </div>
@@ -304,10 +305,10 @@ _assets:
       <div class="col-12">
         <h2 class="preheader editable">Where does food waste occur?</h2>
         <p class="editable">Addressable food waste can be found throughout the supply chain, which can be simplified into four segments: farms, food manufacturers, consumer-facing businesses (including distributors, retail grocers, restaurants, foodservice providers, and institutions), and homes (including all types of dwellings).</p>
-        <p class="editable lead text-center"><span class='text-serif' style="font-size:1.43em;">85%</span> of food waste occurring downstream at consumer-facing businesses and homes</p>
-        <img class="w-100" src="https://via.placeholder.com/1300x300" alt="" />
+        <p class="editable lead text-center my-5"><span class='text-serif' style="font-size:1.43em;">85%</span> of food waste occurring downstream at consumer-facing businesses and homes</p>
+        <img class="w-100 d-block" src="/img/food_waste_challenge/where-does-food-waste-occur.gif" alt="Where does food waste occur?" />
         <br/>
-        <small>(Graphic showing where food waste occurs)</small>      
+        <small class='text-danger'>(TODO: Temporary graphic until we can get approved data)</small>      
       </div>   
     </div>   
   </div>  
@@ -318,15 +319,17 @@ _assets:
     <div class="row">  
       <div class="col-lg-6">
         <img class="d-block w-100" src="https://via.placeholder.com/615x450" alt="Alt Tag...">
-        <br/><small>( Circle graph showing types of food wastes)</small>
+        <small class='text-danger' style='position: absolute;margin-top: -64px;padding: 15px;'><br/>(TODO: Temporary graphic until we can get approved data)</small>
       </div> 
 
-      <div class="col-lg-6">
-        <h2 class="preheader editable">Which foods get wasted</h2>
-        <div class="editable">
-          <p>Nearly 80% of food waste comes from perishable foods, which include fruits and vegetables, meats, prepared fresh deli items,seafood, milk and dairy, and some grain products such as bread and bakery items. In contrast, non-perishable foods — pastas, canned goods, and highly processed, shelf-stable products — are generally wasted less because they don’t spoil as easily. Perishables often get discarded because they are inexpensive and quickly go bad. Pound per pound, fruits and vegetables are among the least expensive and fastest spoiling foods, constituting over 40% of total food waste. Conversely, seafood and meats are the two least wasted and most expensive food types.</p>
-        </div>
-        <a class="text-link editable" href="#">Dive Deeper into the Data in the Insights</a>
+      <div class="col-lg-6 d-flex align-items-center">
+        <div>
+          <h2 class="preheader editable">Which foods get wasted</h2>
+          <div class="editable">
+            <p>Nearly 80% of food waste comes from perishable foods, which include fruits and vegetables, meats, prepared fresh deli items,seafood, milk and dairy, and some grain products such as bread and bakery items. In contrast, non-perishable foods — pastas, canned goods, and highly processed, shelf-stable products — are generally wasted less because they don’t spoil as easily. Perishables often get discarded because they are inexpensive and quickly go bad. Pound per pound, fruits and vegetables are among the least expensive and fastest spoiling foods, constituting over 40% of total food waste. Conversely, seafood and meats are the two least wasted and most expensive food types.</p>
+          </div>
+          <a class="text-link editable" href="#">Dive Deeper into the Data in the Insights</a>
+          </div>
       </div>   
     </div>   
   </div>  

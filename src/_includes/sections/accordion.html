@@ -4,12 +4,12 @@
     <div class="accordion" id="refedAccordian">
 
       {% for item in include.items %} 
-      <div class="border-bottom border-light py-4">            
+      <div class="border-bottom border-lightest py-4">            
         
         <div class="" id="heading-{{ forloop.index }}">
-          <div class="accordian-label collapsed font-serif" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+          <div class="accordian-label collapsed font-serif position-relative pr-4" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
               {{ item.title }}  
-              <span class="toggle">
+              <span class="toggle position-absolute">
                 {% include icons/arrow.svg  %}  
               </span>              
           </div>

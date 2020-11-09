@@ -4,8 +4,13 @@
         color:$primary-400;
         .toggle{
             width: 1.7rem;
-            float: right;
+            float:right;
+            right:0;
+            top:50%;
+            transform:translateY(-50%);
+            padding-bottom: rem(13);
             svg{
+                display:block;
                 max-width:100%;
                 transform:rotate(0deg);
                 transform-origin: 50% 65%;
@@ -30,7 +35,7 @@
                     max-width:100%;
                     transform:rotate(180deg);
                     polygon{fill:transparent;}
-                    path{fill:#FFFFFF;}
+                    path{fill:$neutral-300;}
                 }
             }
         }
