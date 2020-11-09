@@ -98,11 +98,11 @@
     .flickity-prev-next-button {
       &.previous {
         @include arrow(left, 12px, $primary);
-        left: -58px;
+        left: 0;
       }
       &.next {
         @include arrow('right', 12px, $primary);
-        right: -58px;
+        right: 0;
       }
     }
     

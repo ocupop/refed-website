@@ -86,7 +86,7 @@ window.addEventListener("resize", sizeIt);
 
 /* CAROUSELS */
 /* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
-var elem = document.querySelector('.homepage-newsfeed .news-carousel');
+var elem = document.querySelector('.news-carousel');
 if(elem){
   var flkty_featurednews = new Flickity( elem, {
     prevNextButtons: true,
