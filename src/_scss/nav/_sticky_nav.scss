@@ -52,6 +52,12 @@
   }
 
   @include media-breakpoint-up(lg) {
+    ul{
+      margin-bottom:rem(-10);
+      li{
+        margin-bottom:rem(10); // provides some vertical space in cases where the navigation wraps.
+      }
+    }
     &.minimized{
       .preheader{
         height: 0;   
