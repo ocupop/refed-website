@@ -142,6 +142,14 @@ sample_events:
     featured_image: 'https://via.placeholder.com/410x410'
     url: '#'
    
+_sticky_nav:
+  - link: '#partnerships'
+    link_label: 'Partnerships'
+  - link: '#networks'
+    link_label: 'Networks'
+  - link: '#events'
+    link_label: 'Events'
+
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -166,23 +174,9 @@ sample_events:
 </section>
 
 
-<nav class="navbar navbar-light sticky-nav sticy-nav--foodwaste bg-primary-500 text-white py-4  " id="sticky-nav">
-  <div class="container">
-    <div class="preheader mb-3">Key Program Areas</div>
-    <ul class="navbar-nav navbar-expand-md text-uppercase font-weight-bold justify-content-start">
-    <li class="nav-item">
-        <a href="#partnerships">Partnerships</a>
-    </li>
-    <li class="nav-item">
-        <a href="#networks">Networks</a>
-    </li>
-    <li class="nav-item">
-        <a href="#events">Events</a>
-    </li>
-    </ul>
-  </div>
-</nav>
-  
+
+{% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
+ 
 
 
 <section class="bg-lightest" id="partnerships"> 
