@@ -1,13 +1,12 @@
 ---
 layout: default
 title: "ReFED Newsroom"
-
+featured_posts:
 cta_press: 
   description_html: <p>Check out ReFED in the news and other press articles</p>
   link: /archive
   link_label: See Press Articles
   section_background_color: primary-500
-
 cta_newsletter: 
   description_html: See past newsletters in the newsletter archive
   link: /newsletter
@@ -15,15 +14,19 @@ cta_newsletter:
   colorbar:
     color: "#e65e4a"
     bar_position: right
-
 ---
 
 {% include modules/subnav_newsroom.html %}
 
 {% include sections/newsroom_filter.html %}
 
-{% include sections/carousels/carousel_hero_in_container.html items=site.posts preheader='Blog' %}
+{% assign featured = '' | split: ',' %}
+{% for object in page.featured_posts %}
+  {% assign item = site.posts | where: 'slug', object | first %}
+  {% assign featured = featured | push: item %}
+{% endfor %}
 
+{% include sections/carousels/carousel_hero_in_container.html items=featured preheader='Blog' %}
 
 <section>
   <div class="container">
@@ -50,10 +53,8 @@ cta_newsletter:
         <div class="post-list">
           {% assign sorted = site.posts | sort_by: 'date' | reverse %} 
           {% for post in sorted %}
-            {% if post.news_type == 'article' %}
-              {% for i in (1..4) %} <!-- repeat just for testing until we get some more data -->           
-                {% include modules/card_horizontal.html %}               
-              {% endfor %}
+            {% if post.news_type == 'article' %}          
+              {% include modules/card_horizontal.html %}
             {% endif %}               
           {% endfor %}
         </div>
@@ -64,7 +65,6 @@ cta_newsletter:
 </section>
 
 {% include sections/cta.html cta=page.cta_press %}
-
 
 <section class="bg-primary text-white">
   <div class="container">
