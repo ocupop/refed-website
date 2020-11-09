@@ -22,8 +22,6 @@ collections:
   press:
     output: false
     sort_by: date
-  newsletters:
-    output: true
   case_studies:
     output: true
   careers:
