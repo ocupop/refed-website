@@ -27,6 +27,7 @@
     text-align: left;
     margin-left: 7px;
   }  
+  &.no-carousel .flickity-page-dots{ display:none; }
 
   
   @include media-breakpoint-up(lg) {
@@ -66,33 +67,34 @@
       flex-direction:column-reverse;
     }
     .col-image{ flex:inherit;}
-    .col-text{ 
-      //order:2;
-      flex:1;
-      padding-bottom: rem(64) !important;}
+    .col-text{ flex:1; }
+    &.has-carousel .col-text{ padding-top: rem(64) !important; }
 
     .flickity-page-dots{
       margin: auto;
       max-width:#{map-get($container-max-widths, 'md')} !important;
+      @include media-breakpoint-down(sm) {   
+        max-width:#{map-get($container-max-widths, 'sm')} !important;
+      }     
+      @include media-breakpoint-down(xs) {   
+        max-width:initial !important;
+      }
+
       width: 100% !important;
-      padding-left: -8px !important;
-      top: unset;
+      //padding-left: -8px !important;
+      //top: calc(100vw * .6);
+      margin-top: percentage(9/16); // this will place it exactly at the bottom of a 16:9 image
+      padding-top: rem(30);
       left: 0 !important;
-      bottom: 1rem;
+      //bottom: 1rem;
+      padding-left: 15px;
+      padding-right: 15px;
+      li:first-child{margin-left:0;}
+      pointer-events:none;
+      li{ pointer-events:auto; } // is cross-browser compatible to set the parent to "none" and the child to "auto"?
     }
   }
-  @include media-breakpoint-down(sm) {
-    .flickity-page-dots{
-      max-width:#{map-get($container-max-widths, 'sm')} !important;
-    }
-  }
-  @include media-breakpoint-down(xs) {
-    .flickity-page-dots{
-      width: initial !important;
-      max-width: inherit !important;
-      margin: 0 rem(20);
-    }
-  }
+ 
 
   
 

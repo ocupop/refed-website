@@ -1,16 +1,6 @@
 
 /* SPLIT SECTION content inside of a container all the way to the edge of the browser */
-/*
-SAMPLE
-<section class="split-section">
-  <div class="container split-section">
-    <div class="row">   
-      <div class="p-5 col-12 col-md-8 stretch-left stretch-bkg" style="background-color:green;"><span class='stretched-inner' style="background-color:green;"></span>Content</div>
-      <div class="p-5 col-12 col-md-4 stretch-right stretch-image" style="background-color:blue;"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
-    </div>
-  </div>
-</section>
-*/
+
 .split-section{
   .col-text{
     padding-top:7rem;
@@ -20,51 +10,35 @@ SAMPLE
     padding:0;
   }
 
-  // .container {
-  //   padding-right: 0;
-  //   padding-left: 0;
-  // }
-  
-  @include media-breakpoint-up(lg) { 
-    &.image-left .col-text{
-      padding-left:7rem;
-    }
-    &.image-right .col-text{
-      padding-right:7rem;
-    }
-  }
+
   .bkg{
-        position: absolute;
-        display: block; 
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-size: cover;
-        background-position: center center;
+    position: absolute;
+    display: block; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
   }
 
   /* Mobile Only */
   @include media-breakpoint-down(md) {    
     .container{
       max-width:initial;
-    }
-    .col-text, 
-    .col-image{
-      .bkg{
-        width: calc(100vw); 
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
+    }    
     .col-image {
       width:100%;
-      img{
+      padding-bottom: percentage(9/16); //make mobile image 16:9 aspect ratio
+      .bkg, img{
         width: 100%;
       } 
     }    
     .col-text{   
+      padding-left:0;
+      padding-right:0;
       .col-text-content{ 
         margin:auto;  
         padding-left:rem(15);
@@ -74,7 +48,7 @@ SAMPLE
           max-width:#{map-get($container-max-widths, 'sm')} !important;
         }     
         @include media-breakpoint-down(xs) {   
-          max-width:#{map-get($container-max-widths, 'xs')} !important;
+          max-width:initial !important;
         }
       }
       padding-bottom: 2rem;
@@ -82,12 +56,19 @@ SAMPLE
     }
 
     .image-to-browser-edge{
-
     }
   }
 
   /* Desktop Only */
-  @include media-breakpoint-up(lg) {      
+  
+  // desktop only 
+  @include media-breakpoint-up(lg) { 
+    &.image-left .col-text{
+      padding-left:7rem;
+    }
+    &.image-right .col-text{
+      padding-right:7rem;
+    }   
     position: relative;
     .col-image{
       img{
@@ -97,12 +78,7 @@ SAMPLE
         object-fit:cover;
       }
     }
-    .text-to-browser-edge, 
-    .image-to-browser-edge{
-      .bkg, img{       
-        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, 'md')}) / 2));    // width of the column plus the width of the gutter, minus 17px for the scrollbar width.     
-      }
-    }
+
     .text-to-browser-edge .bkg{
         right: 0;
         left: auto;
@@ -123,7 +99,7 @@ SAMPLE
             right: auto;
           }
         }
-        .image-to-browser-edge img{
+        .image-to-browser-edge .bkg{
             right: 0;
             left: auto;
         }  
