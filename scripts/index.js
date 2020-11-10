@@ -56,7 +56,11 @@ function makeScrollMagic() {
     .addTo(controller);
 }
 /*
-// THIS FUNCTION ALLOWED FOR SCROLLMAGICK ONLY TO ACTIVATE ON DESKTOP SIZES, NOT MOBILE.
+ THIS FUNCTION ALLOWED FOR SCROLLMAGICK ONLY TO ACTIVATE ON DESKTOP SIZES, NOT MOBILE.
+NOTE: after writing this, I later discovered the "WatchCSS" option for flickity, which is a more elegant solution:
+watchCSS
+*/
+/*
 function sizeIt() {
   w = window.innerWidth;
   var newSize = w > 768 ? "big" : "small";

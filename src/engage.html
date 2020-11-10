@@ -21,8 +21,14 @@ join_our_team:
   url: /careers
   
 featured_articles:
-  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
-  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+- refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+- refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+
+
+featured_case_studies:
+  - crown-family-philanthropies
+  - sample-case-study
+  - crown-family-philanthropies
 
 cta: 
   description_html: To learn how you can support our mission, please contact us via email.
@@ -129,7 +135,7 @@ cta:
       {% assign item = site.articles | where: 'slug', object | first %}
       {% include modules/card_horizontal.html item=item %}
     {% endfor %}
-    
+
   </div> 
 </section>
 
@@ -226,8 +232,15 @@ cta:
   </div>
 </section>
 
+
+{% assign featured = '' | split: ',' %}
+{% for object in page.featured_case_studies %}
+  {% assign item = site.case_studies | where: 'slug', object | first %}
+  {% assign featured = featured | push: item %}
+{% endfor %}
+
 {% include sections/carousels/carousel_split.html 
-  items=site.case_studies 
+  items=featured 
   preheader='Impact Stories'
   section_background_color='primary'
   theme='dark' 
