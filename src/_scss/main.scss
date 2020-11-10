@@ -14,26 +14,27 @@
 @import "global/footer";
 
 @import "modules/card";
-@import "modules/hero";
-@import "modules/homepage_newsfeed";
 @import "modules/form_assembly";
-@import "modules/large_image_beyond_bounds_module";
-@import "modules/simple_copy_and_cta";
+//@import "modules/large_image_beyond_bounds_module";
+//@import "modules/simple_copy_and_cta";
 @import "modules/circle_icon_list";
-@import "modules/staff";
+//@import "modules/staff";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
 @import "modules/reduction_solutions_chart";
-@import "modules/solution_adoption.scss";
-@import "modules/key_indicators_box.scss";
-@import "modules/horizontal_card.scss";
+@import "modules/solution_adoption";
+@import "modules/key_indicators_box";
+@import "modules/horizontal_card";
 
 @import "pages/our_funders";
 @import "pages/who_we_are";
 @import "pages/our_team";
-@import "pages/food_waste.scss";
-@import "pages/newsroom.scss";
+@import "pages/food_waste";
+@import "pages/newsroom";
+@import "pages/engage";
 
+@import "sections/hero";
+@import "sections/cta_newsfeed";
 @import "sections/card_grid";
 @import "sections/testimonial";
 @import "sections/carousels/all_carousels";
