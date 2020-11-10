@@ -19,6 +19,11 @@ join_our_team:
   featured_image: 'https://via.placeholder.com/410x410'
   link_label: See Careers
   url: /careers
+  
+featured_articles:
+  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+
 cta: 
   description_html: To learn how you can support our mission, please contact us via email.
   link: /contact
@@ -120,33 +125,11 @@ cta:
       </div>
     </div> 
     
-    <!-- need to know what collection this will pull from -->
-    {% for i in (1..2) %}
-      {% include modules/card_horizontal.html 
-        image_size='cover' 
-        featured_image='https://via.placeholder.com/1000'
-        aspect_ratio='16x9'
-        title='The ReFED COVID-19 Food Waste Solutions Fund'
-        excerpt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni tempora ex corporis distinctio dolorum numquam maxime itaque quidem. Asperiores vitae repudiandae rem aliquam ex dolor veritatis ratione iure voluptatum! '
-        date='02-12-2019'
-      %}
-
-      {% comment %}
-      <!-- Converted this to an include. It is used on Engage, Investment tracker, Press, Blog and Archives -->
-      <div class="row align-items-center mb-4">
-        <div class="col-lg-3">
-          <div class="bg-image aspect-16x9 bg-dark"></div>
-        </div>
-        <div class="col-lg-9">
-          <h4>The ReFED COVID-19 Food Waste Solutions Fund</h4>
-          <h6>MONTH XX, 20XX</h6>
-          <div  class="card-text border-top border-color-mid pt-3 mt-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni tempora ex corporis distinctio dolorum numquam maxime itaque quidem. Asperiores vitae repudiandae rem aliquam ex dolor veritatis ratione iure voluptatum! </p>
-          </div>
-        </div>
-      </div>
-      {% endcomment %}
+    {% for object in page.featured_articles %}
+      {% assign item = site.articles | where: 'slug', object | first %}
+      {% include modules/card_horizontal.html item=item %}
     {% endfor %}
+    
   </div> 
 </section>
 
