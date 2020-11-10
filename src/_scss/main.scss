@@ -13,7 +13,6 @@
 @import "global/header";
 @import "global/footer";
 
-@import "modules/carousels";
 @import "modules/card";
 @import "modules/hero";
 @import "modules/homepage_newsfeed";
@@ -37,6 +36,7 @@
 
 @import "sections/card_grid";
 @import "sections/testimonial";
+@import "sections/carousels/all_carousels";
 @import "sections/carousels/carousel_images";
 @import "sections/carousels/carousel_hero";
 @import "sections/carousels/carousel_split";

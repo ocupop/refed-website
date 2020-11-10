@@ -3,21 +3,17 @@
   margin-right: - 15px;
 }
 
-.flickity-prev-next-button{
-    border-radius: unset;
-    background-color: transparent;
-    svg { 
-      color:$primary;
-    }
-}
 
 .flickity-prev-next-button {
+  border-radius: unset;
+  background-color: transparent;
+  svg { 
+    color:$primary;
+  }
   &.previous {
-    //@include arrow(left, 12px, $primary);
     left: -58px;
   }
   &.next {
-    //@include arrow('right', 12px, $primary);
     right: -58px;
   }
 }
@@ -47,12 +43,15 @@
 
 .text-light,
 .text-white {
-  .flickity-prev-next-button.previous {
-    @include arrow(left, 12px, $white);
+  .flickity-button{
+    opacity:0.8;
+    svg path{ fill: $white; }
+    &:hover{
+      background: transparent;
+      opacity:1;
+    }
   }
-  .flickity-prev-next-button.next {
-    @include arrow('right', 12px, $white);
-  }
+  
   .flickity-page-dots {
     .dot{
       border-color: $white;
@@ -97,11 +96,11 @@
   
     .flickity-prev-next-button {
       &.previous {
-        @include arrow(left, 12px, $primary);
+        //@include arrow(left, 12px, $primary);
         left: 0;
       }
       &.next {
-        @include arrow('right', 12px, $primary);
+        //@include arrow('right', 12px, $primary);
         right: 0;
       }
     }

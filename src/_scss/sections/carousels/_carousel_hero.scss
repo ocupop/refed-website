@@ -1,15 +1,51 @@
 #carousel-hero {
   position: relative;
-  .flickity-prev-next-button {
-    top: auto;
-    bottom: 15%;
-    transform: translateY(-50%);
-    &.previous {
-      left: 15px;
+  &.flickity-init{
+    height:100%;
+    position: relative;
+    .hero {
+      height:100%;
     }
-    &.next {
-      right: 10%;
+  }
+  
+  
+  @include media-breakpoint-down(md) { 
+    .hero-content{
+      // add some extra space for the carousel arrows
+      padding-left: rem(40);
+      padding-right: rem(40);
     }
+    .flickity-prev-next-button {
+      &.previous {
+        left: rem(15);
+      }
+      &.next {
+        right: rem(15);
+      }
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    h1{
+      font-size:rem(30);
+    }
+  }
+  @include media-breakpoint-up(lg) { 
+    .flickity-prev-next-button {
+      top:70%;
+      &.previous {
+        left: 15px;
+      }
+      &.next {
+        right: 10%;
+      }
+    }
+  }
+  // for some screen sizes, the arrows overlap the headline text. In these cases, give the headline a little extra padding.
+  @media screen and (min-width: $screen-sm-min) and (max-width: 655px),
+  (min-width: $screen-md-min) and (max-width: 825px),
+  (min-width: $screen-lg-min) and (max-width: 1095px),
+  (min-width: $screen-xl-min) and (max-width: 1405px){
+    .hero-content .container{padding:0 rem(50);}
   }
 }
 
