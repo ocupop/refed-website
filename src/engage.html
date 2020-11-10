@@ -12,7 +12,6 @@ hero:
       - link:
         link_label:
         button_type:
-        
 join_our_team:
   preheader: Join Our Team
   title: 
@@ -20,8 +19,6 @@ join_our_team:
   featured_image: 'https://via.placeholder.com/410x410'
   link_label: See Careers
   url: /careers
-
-
 cta: 
   description_html: To learn how you can support our mission, please contact us via email.
   link: /contact
@@ -36,7 +33,6 @@ cta:
 
 <section>
   <div class="container">
-
     <div class="row">
       <div class="col-lg-6 mb-5">
         <div class="row">
@@ -89,12 +85,9 @@ cta:
           </div>
         </div>
       </div> 
-
-
     </div>
   </div>
 </section>
-
 
 <section class="bg-primary text-white" id="stakeholder-actions">
   <div class="container">
@@ -108,11 +101,8 @@ cta:
   </div>
 </section>
 
-
-
 <section id="call-for-funders">
   <div class="container">
-    
     <div class="row mb-4 align-items-center">
       <div class="col-md-auto">
         <img src="/img/icons/engage/engage_funders.svg" class="img-fluid icon-img-lg " alt="" />
@@ -121,7 +111,6 @@ cta:
         <h2>Call for Funders</h2>        
       </div>
     </div>
-  
     <div class="row mb-4">
       <div class="col">
         <p class="lead editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
@@ -131,6 +120,7 @@ cta:
       </div>
     </div> 
     
+    <!-- need to know what collection this will pull from -->
     {% for i in (1..2) %}
       {% include modules/card_horizontal.html 
         image_size='cover' 
@@ -157,11 +147,8 @@ cta:
       </div>
       {% endcomment %}
     {% endfor %}
-
   </div> 
 </section>
-
-
 
 <section class="bg-light" id="solution-adoption">
   <div class="container">
@@ -252,15 +239,12 @@ cta:
           </div>
         </div> <!-- END .row -->       
       </div><!-- END .col -->
-
     </div><!-- END .row.statistics -->
-
   </div>
 </section>
 
-
 {% include sections/carousels/carousel_split.html 
-  items=site.posts 
+  items=site.case_studies 
   preheader='Impact Stories'
   section_background_color='primary'
   theme='dark' 
@@ -271,11 +255,8 @@ cta:
   text_to_edge=true 
   section_class='p-0' 
 %}
-   
 
 {% include sections/cta.html cta=page.cta %}
-
-
 
 <section class="" id="partner-with-us">
   <div class="container">
@@ -312,7 +293,6 @@ cta:
   item=page.join_our_team
 %}
 
-
 <section class="bg-lightest">
   <div class="container">
     <div class="row">
@@ -338,7 +318,6 @@ cta:
   </div>
 </section>
 
-
 <section class="bg-primary text-white">
   <div class="container">
     <div class="row d-flex align-items-center">    
@@ -353,9 +332,6 @@ cta:
     </div>    
   </div>
 </section>
-
-
-
   
 {% include sections/cta.html cta=page.cta %}
 
