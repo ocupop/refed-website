@@ -1,12 +1,12 @@
 /*********************
 FONT SIZE TO EM OR REM
 *********************/
-$browser-context: 20; 
+$browser-context: 20;
 
-@function em($pixels, $context: $browser-context) {	
-	@return  #{$pixels/$context}em;
+@function em($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}em;
 }
 
-@function rem($pixels) {	
+@function rem($pixels) {
 	@return #{$pixels/16}rem;
 }

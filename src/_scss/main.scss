@@ -13,6 +13,12 @@
 @import "global/header";
 @import "global/footer";
 
+// Nav
+@import "nav/socialnav";
+@import "nav/primary";
+@import "nav/utility";
+@import "nav/sticky_nav";
+
 @import "modules/card";
 @import "modules/form_assembly";
 //@import "modules/large_image_beyond_bounds_module";
@@ -31,6 +37,7 @@
 @import "pages/food_waste";
 @import "pages/newsroom";
 @import "pages/engage";
+@import "pages/settings";
 
 @import "sections/hero";
 @import "sections/cta_newsfeed";
@@ -51,10 +58,4 @@
 @import "sections/collapse_solutions";
 @import "sections/newsroom_filter";
 
-@import "nav/primary";
-@import "nav/utility";
-@import "nav/sticky_nav";
-
 @import "vendor/bootstrap";
-
-

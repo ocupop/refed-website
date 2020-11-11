@@ -1,0 +1,29 @@
+#project-settings-page {
+  .heading {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background-color: $primary;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .subheading {
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: $gray-200;
+    color: $body-color;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+  }
+
+  .info {
+    font-size: 80%;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: $gray-100;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+  }
+}

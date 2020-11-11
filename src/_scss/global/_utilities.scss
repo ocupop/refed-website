@@ -12,9 +12,10 @@
 .bg-video,
 .bg-iframe,
 .hero-image,
+.bg-color-info,
 .responsive-iframe {
   position: relative;
-  display: block;
+  display: flex;
   height: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,17 +66,64 @@
   }
 }
 
+.bg-color-info {
+  &::before {
+    // TODO: Add logic to map through and add hex values based on color map
+    // content: "#{$primary}";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    display: flex;
+  }
+}
+
 .bg-contain {
   background-size: contain;
 }
 
-.video-responsive{
-  overflow:hidden;
-  padding-bottom: 56.25%;
-  position:relative;
-  height:0;
+.bg-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.video-responsive iframe{
+
+.bg-full {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-half {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-third {
+  min-height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -83,22 +131,24 @@
   position: absolute;
 }
 
-.max-out-text-width{
+.max-out-text-width {
   max-width: rem(900);
 }
 
-.font-serif{
-  font-family: $font-family-serif;
-}
-.bg-lightest{ 
-  background-color: $neutral-100; 
+.font-serif,
+.text-serif {
+  font-family: $font-family-serif !important;
 }
 
-.logo-farm{
+.bg-lightest {
+  background-color: $neutral-100;
+}
+
+.logo-farm {
   margin-top: rem(40);
   margin-left: rem(-20);
   margin-right: rem(-20);
-  img{
+  img {
     display: inline-block;
     margin: rem(20);
   }
@@ -124,44 +174,60 @@
   width: 100%;
 }
 
-
-
-@media screen and (min-width: $screen-md-min){
-  ul.two-column-list{
+@media screen and (min-width: $screen-md-min) {
+  ul.two-column-list {
     column-count: 2;
     column-gap: 80px;
-    li{
-      -webkit-column-break-inside: avoid; 
+    li {
+      -webkit-column-break-inside: avoid;
     }
   }
 }
 
-@media screen and (min-width:  $screen-md-min) {  
-  .two-columns{
+@media screen and (min-width: $screen-md-min) {
+  .two-columns {
     column-count: 2;
-    article{
+    article {
       -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-          page-break-inside: avoid; /* Firefox */
-               break-inside: avoid; /* IE 10+ */
+      page-break-inside: avoid; /* Firefox */
+      break-inside: avoid; /* IE 10+ */
     }
   }
 }
 
-
-
-
-
-.opacity-0{ opacity:0; }
-.opacity-1{ opacity:0.1; }
-.opacity-2{ opacity:0.2; }
-.opacity-3{ opacity:0.3; }
-.opacity-4{ opacity:0.4; }
-.opacity-5{ opacity:0.5; }
-.opacity-6{ opacity:0.6; }
-.opacity-7{ opacity:0.7; }
-.opacity-8{ opacity:0.8; }
-.opacity-9{ opacity:0.9; }
-.opacity-100{ opacity:1; }
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 0.1;
+}
+.opacity-2 {
+  opacity: 0.2;
+}
+.opacity-3 {
+  opacity: 0.3;
+}
+.opacity-4 {
+  opacity: 0.4;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-6 {
+  opacity: 0.6;
+}
+.opacity-7 {
+  opacity: 0.7;
+}
+.opacity-8 {
+  opacity: 0.8;
+}
+.opacity-9 {
+  opacity: 0.9;
+}
+.opacity-100 {
+  opacity: 1;
+}
 
 .overlay {
   position: absolute;
@@ -175,8 +241,8 @@
 }
 
 .arrow {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   &.arrow-up {
@@ -186,4 +252,3 @@
     border-top: 10px solid $white;
   }
 }
-

@@ -1,0 +1,107 @@
+---
+layout: page
+title: Project Settings
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">Typography</p>
+        <p class="subheading">Headings</p>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="info">Base Styles</div>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="info">Adding the <code>.text-serif</code> modifier class</div>
+            <div class="text-serif">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+          </div>
+        </div>
+        <p class="subheading mt-5">Text Utilities</p>
+        <div class="info d-flex">
+          <span class="text-uppercase">Uppercase Text</span>
+          <code>.text-uppercase</code>
+        </div>
+        <div class="info d-flex">
+          <span class="text-lowercase">Lowercase Text</span>
+          <code>.text-lowercase</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">Color Palette</p>
+        <div class="row row-cols-1 row-cols-md-6">
+          <div class="col my-2">
+            <div class="bg-color-info aspect-2x1 bg-primary"></div>
+            <div class="info py-2">
+              <code>$primary</code>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="bg-image aspect-2x1 bg-secondary"></div>
+            <div class="info py-2">
+              <code>$secondary</code>
+            </div>
+          </div>
+          <!-- TODO: Add color palette -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">Settings</p>
+        <p class="subheading">General</p>
+        <p>
+          <strong>Client:</strong> {{ site.client | default: 'incomplete' }}<br />
+          <strong>Project Title:</strong> {{ site.title | default: 'incomplete' }}<br />
+          <strong>Analytics:</strong> {{ site.analytics.default | default: 'incomplete' }}<br />
+          <strong>Permalink Pattern:</strong> {{ site.permalink | default: 'incomplete' }}<br />
+          <strong>Plugins:</strong> {{ site.plugins | default: 'incomplete' }}<br />
+        </p>
+
+        <p class="subheading">Social Sharing</p>
+        <p>
+          <strong>Description:</strong><br />
+          {{ site.description | default: 'incomplete' }}
+        </p>
+        <p>
+          <strong>Default Share Image:</strong><br />
+          <img
+            src="{{ site.socialshare.featured_image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+            alt="{{ site.socialshare.featured_image | default: 'incomplete' }}" class="img-fluid">
+        </p>
+        <p>
+          <strong>Twitter:</strong> {{ site.socialshare.twitter.username | default: 'incomplete' }}<br />
+          <img
+            src="{{ site.socialshare.twitter.image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+            alt="{{ site.socialshare.twitter.image | default: 'incomplete' }}" class="img-fluid">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

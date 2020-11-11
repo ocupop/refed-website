@@ -1,0 +1,32 @@
+.socialnav {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  z-index: 100;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin: 15px 0;
+    background-color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+    i {
+      font-size: 23px;
+      color: $black;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    a {
+      width: 40px;
+      height: 40px;
+      background-color: $white;
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -5,23 +5,41 @@ html {
   }
 }
 
-body {}
-
-ul {
-  padding-left: 20px;
+body {
+  background-color: $body-bg;
+  color: $body-color;
 }
 
-.clearfix{
-  &::before {
-    display: block;
-    content: "";
-    clear: both;
+a {
+  &:hover {
+    text-decoration: none;
   }
 }
 
-a{
-  color:$blue;
-}
-.text-white a:not(.text-link):not(.card-link):not(.btn){
-  color:$primary-400;
-}
+// section {
+//   padding: 30px 0;
+//   @include media-breakpoint-up(md) {
+//     padding: 60px 0;
+//   }
+// }
+
+// ul {
+//   padding-left: 20px;
+// }
+
+// .clearfix{
+//   &::before {
+//     display: block;
+//     content: "";
+//     clear: both;
+//   }
+// }
+
+// a{
+//   color:$blue;
+// }
+
+// What the fuck is this?
+// .text-white a:not(.text-link):not(.card-link):not(.btn){
+//   color:$primary-400;
+// }
