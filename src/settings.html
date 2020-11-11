@@ -2,6 +2,7 @@
 layout: page
 title: Project Settings
 ---
+<!-- TYPOGRAPHY -->
 <section>
   <div class="container">
     <div class="row">
@@ -20,7 +21,7 @@ title: Project Settings
           </div>
 
           <div class="col-12 col-md-6">
-            <div class="info">Adding the <code>.text-serif</code> modifier class</div>
+            <div class="info d-block">Adding the <code>.text-serif</code> modifier class</div>
             <div class="text-serif">
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
@@ -32,11 +33,16 @@ title: Project Settings
           </div>
         </div>
         <p class="subheading mt-5">Text Utilities</p>
-        <div class="info d-flex">
+        <div class="info">
+          <span class="preheader">Please Refactor</span>
+          <code>.preheader</code>
+        </div>
+
+        <div class="info">
           <span class="text-uppercase">Uppercase Text</span>
           <code>.text-uppercase</code>
         </div>
-        <div class="info d-flex">
+        <div class="info">
           <span class="text-lowercase">Lowercase Text</span>
           <code>.text-lowercase</code>
         </div>
@@ -45,11 +51,37 @@ title: Project Settings
   </div>
 </section>
 
+<!-- COLOR PALETTE -->
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <p class="heading">Color Palette</p>
+
+        <p class="subheading">Grays</p>
+        <div class="row row-cols-1 row-cols-md-6">
+          <!-- TODO: Add color palette -->
+          <div class="col my-2">
+            <div class="bg-image aspect-2x1 bg-light"></div>
+            <div class="info py-2">
+              <code>$light</code>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="bg-image aspect-2x1 bg-mid"></div>
+            <div class="info py-2">
+              <code>$mid</code>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="bg-image aspect-2x1 bg-dark"></div>
+            <div class="info py-2">
+              <code>$dark</code>
+            </div>
+          </div>
+        </div>
+
+        <p class="subheading">Brand Colors</p>
         <div class="row row-cols-1 row-cols-md-6">
           <div class="col my-2">
             <div class="bg-color-info aspect-2x1 bg-primary"></div>
@@ -63,12 +95,61 @@ title: Project Settings
               <code>$secondary</code>
             </div>
           </div>
+        </div>
+
+        <p class="subheading">Action Areas</p>
+        <div class="row row-cols-1 row-cols-md-4">
           <!-- TODO: Add color palette -->
+          <div class="col my-2">
+            <div class="bg-image aspect-2x1 bg-secondary-100"></div>
+            <div class="info d-block py-2">
+              <code>$secondary-100</code><br/>
+              <small>Harvest Everything Grown</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- BUTTONS -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">Buttons</p>
+        <p class="subheading">Default Styles</p>
+        <div class="info">
+          <button class="btn">Button</button>
+          <code>.btn</code>
+        </div>
+        <div class="info">
+          <button class="btn btn-primary">Button</button>
+          <code>.btn.btn-primary</code>
+        </div>
+        <div class="info">
+          <button class="btn btn-secondary">Button</button>
+          <code>.btn.btn-secondary</code>
+        </div>
+        <p class="subheading mt-3">Custom Styles</p>
+        <div class="info">
+          <a class="text-link">Button</a>
+          <code>.text-link</code>
+        </div>
+        <div class="info">
+          <a class="card-link">Button</a>
+          <code>.card-link</code>
+        </div>
+        <div class="info">
+          <a class="download-link">Button</a>
+          <code>.download-link</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section>
   <div class="container">

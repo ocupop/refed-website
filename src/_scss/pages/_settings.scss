@@ -2,7 +2,7 @@
   .heading {
     font-weight: bolder;
     font-size: 1.4rem;
-    background-color: $primary;
+    background-color: $dark;
     color: $white;
     text-transform: uppercase;
     margin: 0;
@@ -24,6 +24,8 @@
     padding: 1rem;
     background-color: $gray-100;
     margin-bottom: 0.25rem;
+    display: flex;
     justify-content: space-between;
+    // align-items: center;
   }
 }
