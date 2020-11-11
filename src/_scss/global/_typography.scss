@@ -18,23 +18,20 @@ a {
 
 h1,
 .h1 {
-  // font-size:em(55);
   font-weight: $font-weight-bold;
 }
 h2,
 .h2 {
-  // font-size:em(55);
   font-weight: $font-weight-semibold;
 }
 h3,
 .h3 {
-  // font-size:em(30);
+  font-family: $font-family-serif;
   line-height: 1.5;
   font-weight: $font-weight-normal;
 }
 h4,
 .h4 {
-  // font-size:em(20);
   line-height: 1.5;
   font-weight: $font-weight-normal;
 }
@@ -45,15 +42,7 @@ h6,
 .h6 {
   font-weight: $font-weight-semibold;
   line-height: 1.3;
-  color: $mid;
   text-transform: uppercase;
-}
-
-// TODO: Remove. This should be replaced with a standard h3 tag
-.preheader {
-  font-family: $font-family-serif;
-  font-size: 1.8rem;
-  font-weight: $font-weight-normal;
 }
 
 label,
@@ -61,27 +50,4 @@ label,
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-// TODO: Please avoid this pattern for media queries. Also... clean up code!
-@media screen and (max-width: $screen-xl-min) {
-  // h1, .h1{font-size:em(45);}
-  // h2, .h2{font-size:em(45);}
-  // h3, .h3{font-size:em(38);}
-  // p { font-size: em(18); }
-}
-
-@media screen and (max-width: $screen-md-min) {
-  // h1, .h1{font-size:em(40);}
-  // h2, .h2{font-size:em(40);}
-  // h3, .h3{font-size:em(26);}
-}
-@media screen and (max-width: $screen-sm-min) {
-  // h1, .h1{font-size:em(35);}
-  // h2, .h2{font-size:em(30);}
-  // h3, .h3{font-size:em(25);}
-  // p { font-size: em(15); }
-  // .preheader{
-  //   font-size:em(20);
-  // }
 }
