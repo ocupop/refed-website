@@ -80,3 +80,30 @@
       </div>
     </div>
   </section>
+
+
+
+{% comment %}
+
+  ** THESE ARE ALL OF THE POSSIBLE VARIABLES THAT CAN BE PASSED INTO THIS INCLUDE
+
+  item (a collection item. See each variable below for possible child variables)
+  title or item.title
+  preheader or item.preheader 
+  description or item.description_html ir item.content 
+  url or item.url 
+  link_label or item.link_label (default: 'Learn More')
+  image or item.hero or item.featured_image 
+  omit_url (Omits the link under the content, even if it is passed in with the item)
+  button_class (an extra class to add to the button to help define color. (default: 'btn-secondary') 
+  button_type or item.button_type (passing a value of 'text' will make it a text link. No value makes it a button link)
+  image_width (The width of the image column. possible values: '25%', '33%', '50%', '66%', '75%')  (default: '50%')
+  text_to_edge (true or false. Default: false)
+  image_to_edge (true or false. Default: false)
+  image_alignment (right or left. Default: right)
+  section_class (an additional class to add to the section element)
+  id (assign an ID to the section element)
+  section_background_color (default: transparent )
+
+
+{% endcomment %}
