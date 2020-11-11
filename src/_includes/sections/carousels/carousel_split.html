@@ -3,7 +3,8 @@
 
 
 
-<div class="carousel-refed-dots-only carousel-image-{{include.image_alignment | default: 'right'}} carousel-split theme-{{ include.theme | default: 'dark' }} {% if nbr_items <= 1 %}no-carousel{% else %}has-carousel{% endif %}">
+
+<div class=" carousel-image-{{include.image_alignment | default: 'right'}} carousel-split {% if include.include_arrows == true %}carousel-refed-dots{% else %}carousel-refed-dots-only{% endif %} theme-{{ include.theme | default: 'dark' }} {% if nbr_items <= 1 %}no-carousel{% else %}has-carousel{% endif %}">
   {% for item in include.items %}
     {% include sections/split_section.html %}
   {% endfor %}

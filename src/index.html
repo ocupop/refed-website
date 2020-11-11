@@ -47,7 +47,7 @@ hero:
         link_label:
         button_type:
 two_column_slide:
-  - featured_image:
+  - featured_image: /img/home/homepage_header_image_02.jpg
     title: The Multi-Billion Dollar Food Waste Problem
     description_html: >-
       <p>52 million tons of food sent to landfill annually, plus another 10
@@ -58,7 +58,7 @@ two_column_slide:
       is never eaten.</p>
     link: /food-waste-challenge
     link_label:
-  - featured_image:
+  - featured_image: /img/home/homepage_header_image_01.jpg
     title: It Effects Our Climate & Resources
     description_html: >-
       <p>The Data and Insights team uses economics and data to generate
@@ -105,7 +105,7 @@ carousel_testimonial:
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
-<section class="pb-0">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -116,7 +116,24 @@ carousel_testimonial:
     </div>
   </div>
 </section>
+
+{% include sections/carousels/carousel_split.html 
+  items=page.two_column_slide 
+  include_arrows=true
+  theme='light'
+  section_background_color='white' 
+  image_width='50%' 
+  image_alignment='left' 
+  image_to_edge=false 
+  text_to_edge=false  
+  image_width="50%" 
+  section_class='p-0' 
+%}
+
+{% comment %}
 {% include sections/carousels/carousel_two_column.html items=page.two_column_slide %}
+{% endcomment %}
+
 <section class="bg-lightest">
   <div class="container">
     <div class="row">
