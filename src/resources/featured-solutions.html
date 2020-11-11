@@ -78,7 +78,7 @@ wireframes-solutions:
     <p>ReFED has identified over 40 of the best opportunities to reduce food waste through a detailed economic analysis, which can be explored in the ReFED Insights Engine.</p>
 
     <div class="list-with-filter">
-        
+
         <div class="btn-group dropdown mb-4 filter-case-studies">
             <label class="preheader mr-3" for="filter">View: </label>
 
@@ -87,46 +87,46 @@ wireframes-solutions:
             </button>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#" data-value="all">All</a>
-                {% for cat_arr in page.wireframes-categories %}  
-                {% for cat in cat_arr %}            
+                {% for cat_arr in page.wireframes-categories %}
+                {% for cat in cat_arr %}
                 <a class="dropdown-item" href="#" data-value="{{ cat[0] }}">{{ cat[1] }}</a>
-                {% endfor %} 
-                {% endfor %} 
+                {% endfor %}
+                {% endfor %}
             </div>
         </div>
 
-        <div class="row">  
-            <div class="col-12 carousel-refed filterable-list text-left">   
-            
-            {% for solutions in page.wireframes-solutions %}     
+        <div class="row">
+            <div class="col-12 carousel-refed filterable-list text-left">
+
+            {% for solutions in page.wireframes-solutions %}
                 <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-6 {% for cat in solutions.categories %}{{ cat }} {% endfor %}"  >
                     <div class="card-body p-4 bg-white">
                         <h3 class="card-title mb-3" style="font-weight:600">{{ solutions.name }}</h3>
 
                         <div class="taxonomies mb-3">
                             <ul class="row list-group list-group-horizontal list-unstyled">
-                            {% for tax in solutions.taxonomy %}  
+                            {% for tax in solutions.taxonomy %}
                                 <li class="col-6">
                                     <label class="h4">{{ tax.name }}</label>
                                     <div class="">
                                         <div class="circle-icon rounded-circle bg-{{ tax.color }} d-inline-block mr-2" style="width:27px;height:27px;"></div>
-                                        <span class="text-{{ tax.color }} font-serif " style="font-size:25px;">{{ tax.label }}</span>
+                                        <span class="text-{{ tax.color }} text-serif " style="font-size:25px;">{{ tax.label }}</span>
                                     </div>
                                 </li>
-                            {% endfor %}  
-                            </ul> 
+                            {% endfor %}
+                            </ul>
                         </div>
 
                         <div class="categories mb-3">
                             <label class="h4 my-2">Categories</label>
                             <ul class="list-group list-group-horizontal list-unstyled">
-                            {% for cat in solutions.categories %}  
-                                {% for cat_arr in page.wireframes-categories %}{% for cat2 in cat_arr %} 
+                            {% for cat in solutions.categories %}
+                                {% for cat_arr in page.wireframes-categories %}{% for cat2 in cat_arr %}
                                     {% if cat2[0] == cat %}
                                     <li class="p-0 pr-2 list-group-item border-0 bg-transparent"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat2[0] }}'>{{ cat2[1] }}</span></li>
                                     {% endif %}
-                                {% endfor %}{% endfor %} 
-                            {% endfor %} 
+                                {% endfor %}{% endfor %}
+                            {% endfor %}
                             </ul>
                         </div>
 
@@ -136,9 +136,9 @@ wireframes-solutions:
                     <div class="cta ">
                         <a href="{{ solutions.cta.url }}" class="d-block w-100 btn btn-{{ solutions.cta.color }}">{{ solutions.cta.label }}</a>
                     </div>
-                </div>       
-            {% endfor %} 
-            </div>    
+                </div>
+            {% endfor %}
+            </div>
         </div>
 
     </div>

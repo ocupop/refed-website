@@ -54,8 +54,8 @@ policy_in_action:
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   featured_image: /img/stakeholder_pages/policymaker/stakeholder_policymaker_image_02.jpg
-  
-      
+
+
 policy_tracker:
   title: Policy Tracker
   summary: >-
@@ -89,7 +89,7 @@ cta:
           </div>
           <div class="col mt-2">
             <p class="h5 text-neutral-300 font-weight-bold">STAKEHOLDER</p>
-            <p class="h2 text-dark">Policymaker</p> 
+            <p class="h2 text-dark">Policymaker</p>
           </div>
         </div>
 
@@ -106,13 +106,13 @@ cta:
   </div>
 </section>
 
-{% include sections/split_section.html   
+{% include sections/split_section.html
     id='policy-in-action'
-    section_background_color='primary'  
-    image_width='33%' 
-    image_alignment='right'  
-    image_to_edge=true   
-    text_to_edge=true    
+    section_background_color='primary'
+    image_width='33%'
+    image_alignment='right'
+    image_to_edge=true
+    text_to_edge=true
     item=page.role_of_food_waste_recovery
     section_class='p-0'
   %}
@@ -130,12 +130,12 @@ cta:
       </div>
 
       <div class="row">
-        <div class="col-12 accordion-theme-2" id="refedAccordian"> 
-          
-          {% for item in page.policy_recommendations %} 
+        <div class="col-12 accordion-theme-2" id="refedAccordian">
+
+          {% for item in page.policy_recommendations %}
           <div class="border-bottom border-med">
             <!-- BEGIN HEADING -->
-            <div class="accordian-label collapsed font-serif color-primary" id="heading-{{ forloop.index }}" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+            <div class="accordian-label collapsed text-serif color-primary" id="heading-{{ forloop.index }}" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
               <div class="row py-3">
                 <div class="col-md-auto">
                   <img src="{{ item.icon }}" class="img-fluid icon-img-md mr-md-3" alt="" />
@@ -144,21 +144,21 @@ cta:
                   <h3 class="editable text-primary d-inline-block">{{ item.title }} </h3>
                   <span class="toggle rounded-circle float-right d-flex">
                     {% include icons/arrow.svg  %}
-                  </span>    
+                  </span>
                 </div>
               </div>
-            </div>            
+            </div>
             <!-- END HEADING -->
 
             <!-- END EXPANDABLE CONTENT -->
-            <div class="accordian-content collapse bg-lightest " id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
+            <div class="accordian-content collapse bg-light " id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
               <div class="py-4 px-5 max-out-text-width">
                 {{ item.description_html }}
               </div>
             </div>
 
           </div>
-          {% endfor  %}  
+          {% endfor  %}
 
 
         </div>
@@ -167,29 +167,29 @@ cta:
   </section>
 
 
-{% include sections/split_section.html   
+{% include sections/split_section.html
     id='policy-in-action'
-    section_background_color='primary'  
-    image_width='50%' 
-    image_alignment='right'  
-    image_to_edge=true   
-    text_to_edge=true    
+    section_background_color='primary'
+    image_width='50%'
+    image_alignment='right'
+    image_to_edge=true
+    text_to_edge=true
     item=page.policy_in_action
     section_class='p-0'
   %}
 
-  
 
-{% include sections/split_section.html   
+
+{% include sections/split_section.html
     id='policy-tracker'
-    section_background_color='white'  
-    image_width='50%' 
-    image_alignment='left'  
-    image_to_edge=true   
-    text_to_edge=true    
+    section_background_color='white'
+    image_width='50%'
+    image_alignment='left'
+    image_to_edge=true
+    text_to_edge=true
     item=page.policy_tracker
     section_class='p-0'
   %}
-  
+
 
 {% include sections/cta.html cta=page.cta %}

@@ -57,13 +57,13 @@ cta:
           In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and on the most effective solutions. ReFED’s Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>
 
 
 
-<section class="bg-lightest">
+<section class="bg-light">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
@@ -73,16 +73,16 @@ cta:
         </div>
       </div>
     </div>
-        
+
 
     <div class="row theory-of-change ">
 
-      <div class="col-12 col-lg accordion" id="accordion-col-1"> 
+      <div class="col-12 col-lg accordion" id="accordion-col-1">
         <h6 class="border-bottom border-primary collapsed" id="heading-1" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
           <span class="editable">Strategies</span>
           <span class="toggle">
-            {% include icons/arrow.svg  %}  
-          </span> 
+            {% include icons/arrow.svg  %}
+          </span>
         </h6>
         <div id="collapse-1" class="block-container collapse" aria-labelledby="heading-1" data-parent="#accordion-col-1">
           <div class="block" id="col1-block1">
@@ -97,12 +97,12 @@ cta:
         </div>
       </div>
 
-      <div class="col-12 col-lg accordion" id="accordion-col-2"> 
+      <div class="col-12 col-lg accordion" id="accordion-col-2">
         <h6 class="border-bottom border-primary-500 collapsed" id="heading-2" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
           <span class="editable">Activities</span>
           <span class="toggle">
-            {% include icons/arrow.svg  %}  
-          </span> 
+            {% include icons/arrow.svg  %}
+          </span>
         </h6>
         <div id="collapse-2" class="block-container collapse" aria-labelledby="heading-2" data-parent="#accordion-col-2">
           <div class="block" id="col2-block1">
@@ -120,13 +120,13 @@ cta:
         </div>
       </div>
 
-      
-      <div class="col-12 col-lg accordion" id="accordion-col-3"> 
+
+      <div class="col-12 col-lg accordion" id="accordion-col-3">
         <h6 class="border-bottom border-primary-100 collapsed" id="heading-3" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
           <span class="editable">Near-term Outcomes</span>
           <span class="toggle">
-            {% include icons/arrow.svg  %}  
-          </span> 
+            {% include icons/arrow.svg  %}
+          </span>
         </h6>
         <div id="collapse-3" class="block-container collapse" aria-labelledby="heading-3" data-parent="#accordion-col-3">
           <div class="block" id="col3-block1">
@@ -150,12 +150,12 @@ cta:
         </div>
       </div>
 
-      <div class="col-12 col-lg accordion" id="accordion-col-4"> 
+      <div class="col-12 col-lg accordion" id="accordion-col-4">
         <h6 class="border-bottom border-primary-400 collapsed" id="heading-4" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
           <span class="editable">Long-term Outcomes</span>
           <span class="toggle">
-            {% include icons/arrow.svg  %}  
-          </span> 
+            {% include icons/arrow.svg  %}
+          </span>
         </h6>
         <div id="collapse-4" class="block-container collapse" aria-labelledby="heading-3" data-parent="#accordion-col-4">
           <div class="block" id="col4-block1">
@@ -164,13 +164,13 @@ cta:
         </div>
       </div>
 
-      
-      <div class="col-12 col-lg accordion" id="accordion-col-5"> 
+
+      <div class="col-12 col-lg accordion" id="accordion-col-5">
         <h6 class="border-bottom border-secondary-200 collapsed" id="heading-5" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
           <span class="editable">Impacts</span>
           <span class="toggle">
-            {% include icons/arrow.svg  %}  
-          </span> 
+            {% include icons/arrow.svg  %}
+          </span>
         </h6>
         <div id="collapse-5" class="block-container collapse" aria-labelledby="heading-3" data-parent="#accordion-col-5">
           <div class="block" id="col5-block1">
@@ -194,20 +194,20 @@ cta:
 
 
 <div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
-  {% for featured_slug in page.case_studies %} 
-    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %} 
-    {% include sections/split_section.html 
-        item=featured 
+  {% for featured_slug in page.case_studies %}
+    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %}
+    {% include sections/split_section.html
+        item=featured
         section_background_color='primary'
-        preheader='Impact Stories' 
-        section_background_color='white' 
+        preheader='Impact Stories'
+        section_background_color='white'
         image_width='50%'
-        image_alignment='right' 
-        image_to_edge=true 
+        image_alignment='right'
+        image_to_edge=true
         text_to_edge=true
-        button_type='text' 
+        button_type='text'
         section_class='p-0 mt-5'
-    %} 
+    %}
   {% endfor %}
 </div>
 
@@ -217,8 +217,8 @@ cta:
 
 <div class="text-danger text-center mt-5"> This section below needs work. We may need some more articles in order to work on the functionality.</div>
 <section class="list-with-filter">
-  <div class="container pt-5"> 
-    {% assign thisCollection = site.case_studies %}	
+  <div class="container pt-5">
+    {% assign thisCollection = site.case_studies %}
     {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
     <div class="row">
       <div class="col-12">
@@ -229,33 +229,33 @@ cta:
           </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#" data-value="all">All</a>
-            {% for eachCat in allCats %}                    
+            {% for eachCat in allCats %}
               <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
-            {% endfor %} 
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
     {% comment %}
-    <div class="row">  
+    <div class="row">
       <div class="col-12 carousel-refed filterable-list">
-      {% for casestudy in site.case_studies %} 
+      {% for casestudy in site.case_studies %}
         <div class="filterable-list-item card solution-{{ forloop.index }} col-lg-4 {% for cat in casestudy.categories %}{{ cat | slugify }} {% endfor %}" >
           <div class="card-img-top bg-image aspect-2x1" style="background-image:url({{ casestudy.image }})" ></div>
           <div class="card-body">
             <h3 class="card-title">{{ casestudy.title }}</h3>
             <ul class="categories list-group list-group-horizontal">
-            {% for cat in casestudy.categories %}                  
+            {% for cat in casestudy.categories %}
                 <li class="p-0 pr-2 list-group-item border-0"><span class="badge badge-secondary badge-pill font-weight-light case-study-filter" data-filter='{{ cat | slugify }}'>{{ cat }}</span></li>
-            {% endfor %} 
+            {% endfor %}
             </ul>
 
             <div class="card-text">{{ casestudy.content | truncate: 80 }}</div>
             <a href="{{ casestudy.url }}" class="card-link">{{ casestudy.label }}</a>
           </div>
-        </div>       
-      {% endfor %} 
-      </div>    
+        </div>
+      {% endfor %}
+      </div>
     </div>
     {% endcomment %}
 

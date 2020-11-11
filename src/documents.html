@@ -54,7 +54,7 @@ document_sections:
 </section>
 
 {% for section in page.document_sections %}
-<section class="{% cycle '', 'bg-lightest' %}" id="{{ section.title | slugify }}">
+<section class="{% cycle '', 'bg-light' %}" id="{{ section.title | slugify }}">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -78,7 +78,7 @@ document_sections:
   </div>
 </section>
 {% endfor %}
-<section class="bg-lightest">
+<section class="bg-light">
   <div class="container">
     <h2 class="preheader">Financials</h2>
     <p class="max-out-text-width">Access our current and historical financial documents, including our IRS Form 990:</p>

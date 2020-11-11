@@ -42,16 +42,16 @@ cta:
           <option value='#'>filter the results</option>
           <option value='#'>listed below</option>
         </select>
- 
-      </div>  
+
+      </div>
     </div>  -->
-  
+
     <div class="row">
       <div class="col">
         <div class="post-list">
-          {% assign sorted = site.articles | sort_by: 'item_date' | reverse %} 
+          {% assign sorted = site.articles | sort_by: 'item_date' | reverse %}
           {% for item in sorted %}
-            {% include modules/card_horizontal.html %}         
+            {% include modules/card_horizontal.html %}
           {% endfor %}
         </div>
       </div>
@@ -64,7 +64,7 @@ cta:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7">
-        <div class="text-white editable lead font-serif">
+        <div class="text-white editable lead text-serif">
           <p>Check out ReFED in the news and other press articles</p>
         </div>
       </div>

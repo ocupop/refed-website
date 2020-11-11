@@ -227,7 +227,7 @@ cta:
   colorbar:
     color: '#e65e4a'
     bar_position:
-      - left      
+      - left
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
@@ -260,7 +260,7 @@ cta:
         <div class="col-md-7 ml-lg-auto">
           <h3>{{ team_member.name }}</h3>
             <h5 class="text-mid d-inline-block border-top pt-2">{{ team_member.position }}</h5>
-          <p>{{ team_member.bio_summary_html }}</p>       
+          <p>{{ team_member.bio_summary_html }}</p>
         </div>
       </div>
     {% endfor %}
@@ -289,7 +289,7 @@ cta:
             </div>
             <div class="col-6">
               <h4 class="mb-0">{{member.name}}</h4>
-              <div class="font-serif">
+              <div class="text-serif">
                 {{ member.summary_html }}
               </div>
             </div>
@@ -306,9 +306,9 @@ cta:
         <div class="col-lg-6 py-5 mb-2">
           <h2 class="preheader editable">Advisory Council</h2>
           <div class="editable">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos commodi dolor sint, doloremque tenetur consequatur est qui dolore omnis ea facere ullam et sunt cupiditate rerum. Ipsa recusandae eos nostrum.</p>   
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos commodi dolor sint, doloremque tenetur consequatur est qui dolore omnis ea facere ullam et sunt cupiditate rerum. Ipsa recusandae eos nostrum.</p>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="row align-items-center">
         {% for member in page.advisory_council.members %}
@@ -319,10 +319,10 @@ cta:
               </div>
               <div class="col-lg-8">
                 <h4 class="card-title">{{ member.name }}</h4>
-                <div class="font-serif">
+                <div class="text-serif">
                   {{ member.summary_html }}
-                </div> 
-              </div>   
+                </div>
+              </div>
             </div>
           </div>
         {% endfor %}
@@ -339,7 +339,7 @@ cta:
         <div class="col-lg-8">
           <h2 class="preheader editable pb-3">Expert Network</h2>
           <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
-          <a href="#" class="btn btn-secondary editable mt-4">Become or Nominate a Participant</a>  
+          <a href="#" class="btn btn-secondary editable mt-4">Become or Nominate a Participant</a>
         </div>
       </div>
       <div class="row pt-5">
@@ -354,7 +354,7 @@ cta:
                   {% if person.organization %}, {{person.organization }}
                 {% endif %}
               </small>
-            </p>                              
+            </p>
           </div>
         {% endfor %}
       </div>

@@ -3,7 +3,7 @@ layout: default
 title: Ways to Engage with ReFED
 hero:
   - title: Join the Mission to End Food Waste
-    subtitle: 
+    subtitle:
     description_html:
     image: /img/engage/engage_header_image.jpg
     link:
@@ -14,12 +14,12 @@ hero:
         button_type:
 join_our_team:
   preheader: Join Our Team
-  title: 
+  title:
   summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
   featured_image: 'https://via.placeholder.com/410x410'
   link_label: See Careers
   url: /careers
-  
+
 featured_articles:
 - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
@@ -28,7 +28,7 @@ featured_articles:
 featured_case_studies:
   - crown-family-philanthropies
 
-cta: 
+cta:
   description_html: To learn how you can support our mission, please contact us via email.
   link: /contact
   link_label: Contact Us
@@ -49,12 +49,12 @@ cta:
             <img src="/img/icons/engage/engage_stakeholder.svg" class="img-fluid icon-img-md mb-3 mr-md-3" alt="" />
           </div>
           <div class="col">
-            <h3 class="editable font-serif">What can I do so solve food waste?</h3>
+            <h3 class="editable text-serif">What can I do so solve food waste?</h3>
             <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             <a href="#stakeholder-actions" class="editable mt-3 text-link">Learn More</a>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div class="col-lg-6 mb-5">
         <div class="row">
@@ -62,12 +62,12 @@ cta:
             <img src="/img/icons/engage/engage_partner.svg" class="img-fluid icon-img-md mb-3 mr-md-3" alt="" />
           </div>
           <div class="col">
-            <h3 class="editable font-serif">Partner with us?</h3>
+            <h3 class="editable text-serif">Partner with us?</h3>
             <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             <a href="/engage/#partner-with-us" class="editable mt-3 text-link">Learn More</a>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div class="col-lg-6 mb-5">
         <div class="row">
@@ -75,12 +75,12 @@ cta:
             <img src="/img/icons/engage/engage_funders.svg" class="img-fluid icon-img-md mb-3 mr-md-3" alt="" />
           </div>
           <div class="col">
-            <h3 class="editable font-serif">Call for Funders</h3>
+            <h3 class="editable text-serif">Call for Funders</h3>
             <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             <a href="#call-for-funders" class="editable mt-3 text-link">Learn More</a>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div class="col-lg-6 mb-5">
         <div class="row">
@@ -88,12 +88,12 @@ cta:
             <img src="/img/icons/engage/engage_newsletter.svg" class="img-fluid icon-img-md mb-3 mr-md-3" alt="" />
           </div>
           <div class="col">
-            <h3 class="editable font-serif">Sign Up for our newsletter</h3>
+            <h3 class="editable text-serif">Sign Up for our newsletter</h3>
             <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             <a href="#" class="editable mt-3 text-link toggle-newsletter-modal">Learn More</a>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 </section>
@@ -106,7 +106,7 @@ cta:
       </div>
     </div>
     {% include stakeholders/stakeholders-grid.html %}
-    
+
   </div>
 </section>
 
@@ -117,7 +117,7 @@ cta:
         <img src="/img/icons/engage/engage_funders.svg" class="img-fluid icon-img-lg " alt="" />
       </div>
       <div class="col">
-        <h2>Call for Funders</h2>        
+        <h2>Call for Funders</h2>
       </div>
     </div>
     <div class="row mb-4">
@@ -127,104 +127,104 @@ cta:
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-    </div> 
-    
+    </div>
+
     {% for object in page.featured_articles %}
       {% assign item = site.articles | where: 'slug', object | first %}
       {% include modules/card_horizontal.html item=item %}
     {% endfor %}
 
-  </div> 
+  </div>
 </section>
 
 <section class="bg-light" id="solution-adoption">
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="font-serif font-weight-normal">Help Us Drive Solution Adoption</h2>
+        <h2 class="text-serif font-weight-normal">Help Us Drive Solution Adoption</h2>
         <p>ReFED estimates that $18 billion in investment is needed to implement food waste reduction solutions, but that would unlock $100 billion of net societal economic value – including meals recovered, resources conserved, business profits, jobs created, and more.</p>
       </div>
     </div>
 
     <div class="row arrow-header text-white overflow-hidden">
       <div class="col col-12 col-md pt-4 pb-2 text-center d-flex flex-column justify-content-center  bg-primary-500">
-        <span class='editable d-block h1 m-0 font-serif font-weight-normal'>$18B</span>
+        <span class='editable d-block h1 m-0 text-serif font-weight-normal'>$18B</span>
         <span class='editable d-block h3 m-0 font-weight-bold'>Total Investment</span>
       </div>
       <div class="arrow col col-md-1 p-0 bg-primary-550">
-        {% include icons/arrow.svg  %}        
+        {% include icons/arrow.svg  %}
       </div>
       <div class="col col-12 col-md pt-4 pb-4 text-center d-flex flex-column justify-content-center bg-primary-550" style="margin-top:-1px;" >
-        <span class='editable d-block h1 m-0 font-serif font-weight-normal'>$100B</span>
-        <span class='editable d-block h3 m-0 font-weight-bold'>Total Investment</span>     
+        <span class='editable d-block h1 m-0 text-serif font-weight-normal'>$100B</span>
+        <span class='editable d-block h3 m-0 font-weight-bold'>Total Investment</span>
       </div>
     </div>
 
     <div class="row statistics">
-      <div class="col-12 col-md-4">                  
+      <div class="col-12 col-md-4">
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_profit.svg" class="img-fluid icon-img-md " alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light">$2B</div> 
+            <div class="editable number mr-2 text-serif font-weight-light">$2B</div>
             <label class='editable my-1'>Business Profit</label>
           </div>
         </div><!-- END .row -->
-        
+
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_savings.svg" class="img-fluid icon-img-md " alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light">$6B</div> 
+            <div class="editable number mr-2 text-serif font-weight-light">$6B</div>
             <label class='editable my-1'>Consumer Savings</label>
           </div>
         </div><!-- END .row -->
       </div><!-- END .col -->
 
-      <div class="col-12 col-md-4">                  
+      <div class="col-12 col-md-4">
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_meals.svg" class="img-fluid icon-img-md " alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light text-uppercase d-inline-block">1.8B</div>  
+            <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">1.8B</div>
             <label class='editable my-1'>Meals Recovered</label>
           </div>
         </div> <!-- END .row -->
-        
+
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_jobs.svg" class="img-fluid icon-img-md " alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light text-uppercase d-inline-block">15K</div>  
+            <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">15K</div>
             <label class='editable my-1'>Jobs Created</label>
           </div>
         </div><!-- END .row -->
       </div><!-- END .col -->
 
-      <div class="col-12 col-md-4 ">                  
+      <div class="col-12 col-md-4 ">
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_water.svg" class="img-fluid icon-img-md " alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light text-uppercase d-inline-block">1.6T</div>  
+            <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">1.6T</div>
             <label class='editable my-1'>Gallons of water conserved</label>
           </div>
-        </div> <!-- END .row -->       
-          
+        </div> <!-- END .row -->
+
         <div class="row py-3">
           <div class="col-auto">
             <img src="/img/icons/engage/refed_engage_emissions.svg" class="img-fluid icon-img-md" alt="" />
           </div>
           <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
-            <div class="editable number mr-2 font-serif font-weight-light text-uppercase d-inline-block">18M</div>  
+            <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">18M</div>
             <label class='editable my-1'>Tons greenhouse gas emissions reduced</label>
           </div>
-        </div> <!-- END .row -->       
+        </div> <!-- END .row -->
       </div><!-- END .col -->
     </div><!-- END .row.statistics -->
   </div>
@@ -237,33 +237,33 @@ cta:
   {% assign featured = featured | push: item %}
 {% endfor %}
 
-{% include sections/carousels/carousel_split.html 
-  items=featured 
+{% include sections/carousels/carousel_split.html
+  items=featured
   preheader='Impact Stories'
   section_background_color='primary'
-  theme='dark' 
+  theme='dark'
   button_type='text'
-  image_width='50%' 
-  image_alignment='right' 
-  image_to_edge=true 
-  text_to_edge=true 
-  section_class='p-0' 
+  image_width='50%'
+  image_alignment='right'
+  image_to_edge=true
+  text_to_edge=true
+  section_class='p-0'
 %}
 
 {% include sections/cta.html cta=page.cta %}
 
 <section class="" id="partner-with-us">
   <div class="container">
-    
+
     <div class="row mb-4 align-items-center">
       <div class="col-md-auto">
         <img src="/img/icons/engage/engage_partner.svg" class="img-fluid icon-img-lg " alt="" />
       </div>
       <div class="col">
-        <h2>Partner with Us</h2>        
+        <h2>Partner with Us</h2>
       </div>
     </div>
-  
+
     <div class="row">
       <div class="col">
         <p class="lead editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -271,27 +271,27 @@ cta:
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-    </div> 
-    
-  </div> 
+    </div>
+
+  </div>
 </section>
 
-{% include sections/split_section.html   
-  section_background_color='light'  
-  image_width='50%' 
-  image_alignment='left'  
-  image_to_edge=true   
-  text_to_edge=true   
-  id='join-our-team' 
+{% include sections/split_section.html
+  section_background_color='light'
+  image_width='50%'
+  image_alignment='left'
+  image_to_edge=true
+  text_to_edge=true
+  id='join-our-team'
   section_class='py-0'
   item=page.join_our_team
 %}
 
-<section class="bg-lightest">
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col max-out-text-width">
-        <h2 class="font-serif font-weight-normal">Join Our Solution Providers Directory</h2>
+        <h2 class="text-serif font-weight-normal">Join Our Solution Providers Directory</h2>
         <p>Explore the dynamic, expanding food waste innovation sector, broken down by food waste solution type, organizational status, and geographic reach. The ReFED Food Waste Innovator Database is a living compilation of commercial and nonprofit entities turning the food waste problem into an opportunity for economic, social, and environmental impacts. To get a perspective on the measureable impacts of the broader Innovator Categories, visit the ‘Related Solution(s)’ pages linked to each ‘Innovator Detail’ page.</p>
         <a href="#" class="btn btn-secondary mt-3 mr-3">Explore Solution Providers Directory</a>
       </div>
@@ -303,7 +303,7 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col max-out-text-width">
-        <h2 class="font-serif font-weight-normal">Join Our Expert Network</h2>
+        <h2 class="text-serif font-weight-normal">Join Our Expert Network</h2>
         <p>Explore the dynamic, expanding food waste innovation sector, broken down by food waste solution type, organizational status, and geographic reach. The ReFED Food Waste Innovator Database is a living compilation of commercial and nonprofit entities turning the food waste problem into an opportunity for economic, social, and environmental impacts. To get a perspective on the measureable impacts of the broader Innovator Categories, visit the ‘Related Solution(s)’ pages linked to each ‘Innovator Detail’ page.</p>
         <a href="#" class="btn btn-secondary mt-3 mr-3">See Full List of our Expert Network</a>
         <a href="#" class="btn btn-secondary mt-3 mr-3">Become or Nominate a Participant</a>
@@ -314,7 +314,7 @@ cta:
 
 <section class="bg-primary text-white">
   <div class="container">
-    <div class="row d-flex align-items-center">    
+    <div class="row d-flex align-items-center">
       <div class="col-md-12">
         <div class='preheader'>The Latest to your Mailbox</p>
         <h2>Subscribe to our Mailing List</h2>
@@ -322,10 +322,10 @@ cta:
         <div class="form-theme-dark">
           {% include modules/form_subscribe.html cta=page.cta %}
         </div>
-      </div>      
-    </div>    
+      </div>
+    </div>
   </div>
 </section>
-  
+
 {% include sections/cta.html cta=page.cta %}
 

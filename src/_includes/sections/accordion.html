@@ -3,18 +3,18 @@
 
     <div class="accordion" id="refedAccordian">
 
-      {% for item in include.items %} 
-      <div class="border-bottom border-lightest py-4">            
-        
+      {% for item in include.items %}
+      <div class="border-bottom border-lightest py-4">
+
         <div class="" id="heading-{{ forloop.index }}">
-          <div class="accordian-label collapsed font-serif position-relative pr-4" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
-              {{ item.title }}  
+          <div class="accordian-label collapsed text-serif position-relative pr-4" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+              {{ item.title }}
               <span class="toggle position-absolute">
-                {% include icons/arrow.svg  %}  
-              </span>              
+                {% include icons/arrow.svg  %}
+              </span>
           </div>
         </div>
-    
+
         <div class="accordian-content collapse pt-4 max-out-text-width" id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
           {{ item.description_html }}
           {% if item.link %}
@@ -22,13 +22,13 @@
           {% endif %}
         </div>
       </div>
-      {% endfor  %}  
+      {% endfor  %}
 
       <!--
       <ul class="list-unstyled">
-        {% for barrier in page.barriers_to_solutions_implementation %} 
-          <li class="border-top border-bottom border-light py-4 font-serif">{{ barrier }}</li>
-        {% endfor  %}     
+        {% for barrier in page.barriers_to_solutions_implementation %}
+          <li class="border-top border-bottom border-light py-4 text-serif">{{ barrier }}</li>
+        {% endfor  %}
       </ul>
       -->
     </div>

@@ -101,7 +101,7 @@ cta:
           </div>
           <div class="col-lg-6">
             <h6>Public</h6>
-            <p class="display-4 font-serif mb-2">$6.6B</p>
+            <p class="display-4 text-serif mb-2">$6.6B</p>
             <p class="mb-0"><small>Corporate Finance - <span class="text-primary-100 font-weight-bold">$5.2B</span></small> </p>
             <p class="mb-0"><small>Private Equity - <span class="text-primary-130 font-weight-bold">$0.8B</span></small> </p>
           </div>
@@ -112,7 +112,7 @@ cta:
           </div>
           <div class="col-lg-6">
             <h6>Private</h6>
-            <p class="display-4 font-serif mb-2">$8.2B</p>
+            <p class="display-4 text-serif mb-2">$8.2B</p>
             <p class="mb-0"><small>Tax Subsidy - <span class="text-primary-560 font-weight-bold">$7.2B</span></small> </p>
             <p class="mb-0"><small>Project Finance - <span class="text-primary-530 font-weight-bold">$1.1B</span></small> </p>
           </div>
@@ -123,7 +123,7 @@ cta:
           </div>
           <div class="col-lg-6">
             <h6>Philanthropic</h6>
-            <p class="display-4 font-serif mb-2">$3B</p>
+            <p class="display-4 text-serif mb-2">$3B</p>
             <p class="mb-0"><small>Grants - <span class="text-primary-300 font-weight-bold">$7.2B</span></small> </p>
             <p class="mb-0"><small>Impact Investments - <span class="text-primary-330 font-weight-bold">$1.1B</span></small> </p>
           </div>
@@ -150,7 +150,7 @@ cta:
           <div class="bg-image aspect-5x7 bg-dark"></div>
         </div>
         <div class="col-lg-9">
-          <h3 class="font-serif">{{ report.title }}</h3>
+          <h3 class="text-serif">{{ report.title }}</h3>
           {{ report.description_html }}
           {% if report.document_path %}
             <a href="{{ report.document_path }}" class="download-link">{{ report.link_label | default: 'Download Trend Report' }} <i class="ri-download-line"></i></a>
@@ -164,13 +164,13 @@ cta:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h3 class="font-serif editable">Year to Date Funding Highlights</h3>
+        <h3 class="text-serif editable">Year to Date Funding Highlights</h3>
         <p class="text-danger">Are these posts?</p>
       </div>
     </div>
     {% for i in (1..2) %}
-      {% include modules/card_horizontal.html 
-        image_size='cover' 
+      {% include modules/card_horizontal.html
+        image_size='cover'
         featured_image='https://via.placeholder.com/1000'
         aspect_ratio='4x3'
         title='Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam nam commodi? Nostrum cum atque co'
@@ -180,7 +180,7 @@ cta:
         url='/#'
       %}
 
-    
+
       <!-- Converted this to an include. It is used on Engage, Investment tracker, Press, Blog and Archives -->
       {% comment %}
       <!-- Old code from before converting to an include above. Okay to delete this if we're confident everything is working properly -->
@@ -219,7 +219,7 @@ cta:
     </div>
     <div class="row my-5">
       <div class="col-lg-10 mx-lg-auto">
-        <h3 class="font-serif editable">What Does it Do?</h3>
+        <h3 class="text-serif editable">What Does it Do?</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam a nostrum, dolore odio ullam deleniti mollitia. Excepturi ea et id consectetur impedit incidunt iste dolorem accusamus minima. Voluptate, dolore suscipit?</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod vel delectus, veniam numquam quos vitae, repudiandae totam maiores saepe nulla deleniti. Quaerat optio officiis nisi sequi exercitationem eaque nobis hic!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, maiores a? Repudiandae quae dolorem laboriosam dolores dignissimos eos, sequi ex non, sit voluptates magnam architecto delectus nisi pariatur! Nobis, doloribus.</p>
@@ -232,13 +232,13 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="editable font-serif">Partner Resources</h3>
+        <h3 class="editable text-serif">Partner Resources</h3>
       </div>
     </div>
     {% for resource in page.partner_resources %}
       <div class="row">
         <div class="col-12">
-          <h4 class="font-serif">{{ resource.title }}</h4>
+          <h4 class="text-serif">{{ resource.title }}</h4>
           {{ resource.description_html }}
           {% if resource.link %}
             <a href="{{ resource.link }}" class="text-link">{{ resource.link_label | default: 'See More'}}</a>

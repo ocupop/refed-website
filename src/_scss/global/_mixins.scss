@@ -1,8 +1,8 @@
-@mixin transition($duration: .3s, $property: all, $effect: ease-in-out) {
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
   transition: $property $duration $effect;
 }
 
-@mixin animation($effect: fadeIn, $duration: .5s, $delay: 0s) {
+@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s) {
   animation-name: $effect;
   animation-duration: $duration;
   animation-fill-mode: both;
@@ -11,12 +11,12 @@
 
 @mixin make-responsive-cards($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   // Common properties for all breakpoints
- 
+
   display: flex;
   flex-flow: row wrap;
   margin-right: $gutter / 2;
   margin-left: $gutter / 2;
-  
+
   @each $breakpoint in map-keys($breakpoints) {
     $infix: breakpoint-infix($breakpoint, $breakpoints);
     .card {
@@ -29,7 +29,7 @@
       @for $i from 1 through $columns {
         &.cards#{$infix}-#{$i} {
           .card {
-            flex: 0 0 calc(#{100/$i}% - #{$grid-gutter-width});
+            flex: 0 0 calc(#{100 / $i}% - #{$grid-gutter-width});
             margin-left: $gutter / 2;
             margin-right: $gutter / 2;
           }
@@ -39,57 +39,51 @@
   }
 }
 
-
-
-
-
-
+// TODO: Confirm the use of the arrow mixin.
 /*  ARROW WITH FOUR OPTIONAL DIRECTIONS  */
 @mixin arrow($direction: down, $size: 5px, $color: #555) {
   width: 0;
   height: 0;
   display: inline-block;
   @if ($direction == left) {
-     border-top: $size solid transparent;
-     border-bottom: $size solid transparent; 
-     border-right: ($size*1.5) solid $color;
-  }
-  @else if ($direction == right) {
-     border-top: $size solid transparent;
-     border-bottom: $size solid transparent; 
-     border-left: ($size*1.5) solid $color;
-  }
-  @else if ($direction == down) {
-     border-left: $size solid transparent;
-     border-right: $size solid transparent;
-     border-top: ($size*1.5) solid $color;
-  }
-  @else {
-     border-left: $size solid transparent;
-     border-right: $size solid transparent;
-     border-bottom: ($size*1.5) solid $color;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: ($size * 1.5) solid $color;
+  } @else if ($direction == right) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: ($size * 1.5) solid $color;
+  } @else if ($direction == down) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: ($size * 1.5) solid $color;
+  } @else {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: ($size * 1.5) solid $color;
   }
 }
 
-.left-nav-arrow{
-  @include arrow($direction: left, $size: 10px, $color: #FFF);
+.left-nav-arrow {
+  @include arrow($direction: left, $size: 10px, $color: #fff);
   width: 0;
-    border-right: 17px solid #FFF;
-    display: inline-block;
-    margin-right: 18px;
-    vertical-align: -2px;
-    margin-left: -42px;
+  border-right: 17px solid #fff;
+  display: inline-block;
+  margin-right: 18px;
+  vertical-align: -2px;
+  margin-left: -42px;
 }
-
-
 
 @mixin darken-bkg-image($opacity: 0.67, $color: $gray-900) {
-  position:relative;
-  &:before{
-      content:'';
-      background-color:$color;
-      opacity:$opacity;
-      position:absolute;
-      top:0;left:0;bottom:0;right:0;
+  position: relative;
+  &:before {
+    content: "";
+    background-color: $color;
+    opacity: $opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }

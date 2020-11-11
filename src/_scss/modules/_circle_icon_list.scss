@@ -1,16 +1,17 @@
-.circle-icon{
+// TODO: This should probably be handled via utility classes and markup, but it would help to run through the usage here to better understand.
+.circle-icon {
   width: rem(133);
   height: rem(133);
   margin-right: rem(40);
   display: flex;
   align-items: center;
   justify-content: center;
-  &.circle-icon-large{
+  &.circle-icon-large {
     width: rem(205);
     height: rem(205);
     margin-right: rem(90);
   }
-  &.circle-icon-small{
+  &.circle-icon-small {
     width: rem(91);
     height: rem(91);
     margin-right: rem(20);
@@ -19,7 +20,7 @@
     width: rem(65);
     height: rem(65);
   }
-  &.circle-icon-smallest{
+  &.circle-icon-smallest {
     width: rem(58);
     height: rem(58);
     margin-right: rem(20);
@@ -34,33 +35,34 @@
   }
 }
 
-.circle-icon-list{
-  li{
-    clear:left;
-    list-style:none;
-    margin-bottom:em(50);
-    margin-top:em(50);
-    .circle-icon{
+.circle-icon-list {
+  li {
+    clear: left;
+    list-style: none;
+    margin-bottom: em(50);
+    margin-top: em(50);
+    .circle-icon {
     }
-    .description{
-      h2{}
+    .description {
+      h2 {
+      }
       p {
-        &:last-child{
-          margin-bottom:0;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
   }
-  &.circle-icon-list--large-list{
-    li{
+  &.circle-icon-list--large-list {
+    li {
       margin-bottom: rem(100);
       margin-top: rem(100);
     }
   }
-  &.circle-icon-list--small-list{
-    li{
-      margin-bottom:em(30);
-      margin-top:em(30);
+  &.circle-icon-list--small-list {
+    li {
+      margin-bottom: em(30);
+      margin-top: em(30);
     }
   }
 
@@ -84,19 +86,16 @@
   }
   */
 
-  
-  @media screen and (max-width: $screen-md-min){
-    li{
+  @media screen and (max-width: $screen-md-min) {
+    li {
       margin-bottom: em(20);
       text-align: center;
-      .circle-icon{
+      .circle-icon {
         margin-left: auto;
         margin-right: auto;
       }
-      .description{
-
+      .description {
       }
     }
   }
 }
-

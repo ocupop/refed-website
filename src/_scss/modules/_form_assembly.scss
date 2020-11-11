@@ -1,3 +1,4 @@
+// TODO: This file belongs in the vendor folder
 .wFormContainer {
   max-width: 100% !important;
   .wFormHeader,
@@ -35,7 +36,7 @@
         height: 38px !important;
         font-size: 13px !important;
         background-color: $neutral-100 !important;
-        width: 100% !important
+        width: 100% !important;
       }
     }
     .inputWrapper select:not([multiple]) {
@@ -100,7 +101,6 @@
       }
     }
   }
-  
 }
 
 .form-theme-dark {
@@ -173,6 +173,5 @@
         }
       }
     }
-    
   }
 }

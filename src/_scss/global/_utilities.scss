@@ -135,25 +135,12 @@
   max-width: rem(900);
 }
 
-.font-serif,
+// Text Utilities
 .text-serif {
   font-family: $font-family-serif !important;
 }
 
-.bg-lightest {
-  background-color: $neutral-100;
-}
-
-.logo-farm {
-  margin-top: rem(40);
-  margin-left: rem(-20);
-  margin-right: rem(-20);
-  img {
-    display: inline-block;
-    margin: rem(20);
-  }
-}
-
+// Icon Utiltities
 .icon-img-xl {
   max-width: 8.5rem;
   width: 8.5rem;
@@ -240,6 +227,7 @@
   justify-content: center;
 }
 
+// TODO: How does this fit in with the mixin?
 .arrow {
   width: 0;
   height: 0;

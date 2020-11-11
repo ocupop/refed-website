@@ -12,7 +12,7 @@ hero:
       - link:
         link_label:
         button_type:
-featured_event: 2021-food-waste-summit 
+featured_event: 2021-food-waste-summit
 cta_webinars:
   description_html: >-
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas
@@ -58,7 +58,7 @@ cta_webinars:
           {% assign now = 'now' | date: '%s' | plus: 0 %}
           {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
           {% if event_start >= now %}
-       
+
           {% include events/event_card.html %}
         {% endif %}
         {% endfor %}
@@ -72,7 +72,7 @@ cta_webinars:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7">
-        <div class="text-white editable lead font-serif">
+        <div class="text-white editable lead text-serif">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas assumenda, doloremque optio ipsum</p>
         </div>
       </div>
@@ -90,11 +90,11 @@ cta_webinars:
         <h2 class="text-center mb-5">Past Events</h2>
       </div>
     </div>
-    <div class="row mb-5">  
+    <div class="row mb-5">
       <div class="col-12">
         {% include events/past_events_logic.html event_type="in_person" %}
         {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
-      </div>    
-    </div>   
+      </div>
+    </div>
   </div>
 </section>

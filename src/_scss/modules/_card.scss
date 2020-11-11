@@ -1,28 +1,32 @@
-.card{
+// TODO: If the intent is to override Bootstrap's default styles then this should go in the Vendor folder
+.card {
   .card-body {
     padding: $card-spacer-x 0;
   }
 
-  .card-text{
+  .card-text {
     border-top: 1px solid $primary;
     padding-top: rem(21);
     margin-top: 13px;
   }
-  .colorbar{
+  .colorbar {
     display: inline-block;
     height: rem(20);
     width: 66%;
   }
-  .card-circle-icon{
+  .card-circle-icon {
     width: rem(122);
     height: rem(122);
-    border-radius:50%;
-    margin-left:-5%;
-    margin-top:-17%;
+    border-radius: 50%;
+    margin-left: -5%;
+    margin-top: -17%;
   }
 }
-.text-light, .text-white{
-  .card .card-text{
-    border-top:1px solid $white;
+
+// TODO: This is not an intuitive approach to overwriting card styles. Please use "inherit" if that is the intention
+.text-light,
+.text-white {
+  .card .card-text {
+    border-top: 1px solid $white;
   }
 }
