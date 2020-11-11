@@ -268,14 +268,14 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 1040px,
-  xl: 1350px,
+  lg: 1024px,
+  xl: 1440px,
 ) !default;
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 1000px,
+  lg: 992px,
   xl: 1320px,
 ) !default;
 
@@ -285,14 +285,7 @@ $screen-lg-min: 1040px;
 $screen-xl-min: 1350px;
 
 $grid-columns: 12;
-$grid-gutter-width: 30px;
-
-// @media screen and (max-width: $screen-md-min){
-//   .container {
-//     padding-right: 40px !important;
-//     padding-left: 40px !important;
-//   }
-// }
+$grid-gutter-width: 2rem;
 
 // $mobile-header-height: 67;
 
@@ -300,7 +293,7 @@ $grid-gutter-width: 30px;
 $btn-padding-y: 12px;
 $btn-padding-x: 30px;
 $btn-font-family: $font-family-base;
-//$btn-font-size:               $input-btn-font-size !default;
+// $btn-font-size: $input-btn-font-size !default;
 //$btn-line-height:             $input-btn-line-height !default;
 
 $btn-padding-y-sm: 2px;
