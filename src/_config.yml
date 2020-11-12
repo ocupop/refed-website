@@ -23,7 +23,7 @@ collections:
     output: false
     sort_by: date
   newsletters:
-    output: false  
+    output: false
   case_studies:
     output: true
   careers:
@@ -38,11 +38,11 @@ collections:
     output: true
 
 # defaults:
-#   - scope: 
+#   - scope:
 #       type: events
 #     values:
 #       date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
-      
+
 
 # Build settings
 safe: false
@@ -54,6 +54,27 @@ plugins:
   - jekyll-sitemap
 
 _array_structures:
+  sections:
+    - label: Standard
+      icon: article
+      value:
+        _type: single_column
+        title:
+        section_html:
+    - label: Hero
+      icon: panorama
+      value:
+        _type: hero
+        title:
+        subtitle:
+        description_html:
+        image:
+        link:
+        link_label:
+        buttons:
+          - link:
+            link_label:
+            button_type:
   navigation:
     - label: Navigation
       icon: link
@@ -134,9 +155,9 @@ _array_structures:
         text:
         author:
         cite:
-        image:    
-        section_background_color: 
-        image_alignment: 
+        image:
+        section_background_color:
+        image_alignment:
   cta_insights_engine:
     - label: Insights Engine
       icon: computer
@@ -144,13 +165,13 @@ _array_structures:
         preheader: Our Newest Solution
         title: ReFED Insights Engine
         description_html: >-
-          <p>ReFED Insights Engine is an online data center designed to serve as the next 
-            generation of data, insights, and guidance on U.S. food waste. With more granular 
-            data, more extensive analysis, more customized views, and the ability to be 
-            updated regularly, we see this tool as laying the foundation for action around 
+          <p>ReFED Insights Engine is an online data center designed to serve as the next
+            generation of data, insights, and guidance on U.S. food waste. With more granular
+            data, more extensive analysis, more customized views, and the ability to be
+            updated regularly, we see this tool as laying the foundation for action around
             our 2030 national goal to reduce food waste by 50 percent.</p>
         link: 'https://www.insights-engine-fpo.com/'
-        link_label: 
+        link_label:
         laptop_screen_image: /img/laptop-screen-fpo.jpg
   logo_pile:
     - label: Logo Pile
@@ -161,21 +182,21 @@ _array_structures:
         logos:
           - link:
             alt_text:
-            image:              
+            image:
   split_section:
     - label: Split Section
       icon: vertical_split
       value:
         section_background_color: primary
-        image_width: 25% 
+        image_width: 25%
         image_alignment: right
-        image_to_edge: false   
-        text_to_edge: false   
+        image_to_edge: false
+        text_to_edge: false
         item:
   cards:
     - label: Cards
       icon: view_column
-      value: 
+      value:
         title:
         text:
         featured_image:
@@ -213,7 +234,7 @@ _array_structures:
         buttons:
           - link:
             link_label:
-            button_type:       
+            button_type:
   members:
     - label: Members
       icon: face
@@ -240,7 +261,7 @@ _array_structures:
         link_label:
         colorbar:
           color:
-          bar_position:  
+          bar_position:
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode
@@ -261,7 +282,7 @@ _array_structures:
       value:
         image:
         link:
-        title:        
+        title:
   document_sections:
     - label: Document sections
       icon: article
@@ -274,13 +295,13 @@ _array_structures:
         videos:
           title:
           embed_url:
-        
+
 
 #hard coded select fields
 
 event_types:
   - in_person
-  - webinar  
+  - webinar
 
 button_types:
   - text
@@ -293,7 +314,7 @@ document_types:
 
 bar_position:
   - left
-  - right  
+  - right
 
 section_background_color:
   - primary
@@ -306,7 +327,7 @@ section_background_color:
   - mid
   - dark
   - white
-  - black 
+  - black
 
 image_alignment:
   - left
@@ -325,15 +346,15 @@ image_width:
   - 50%
   - 66%
   - 75%
-  
+
 _comments:
   cards: page section for card grid that is not related to a collection
 
 _options:
   featured_image:
     uploads_dir: "/uploads/:title"
-    
-        
+
+
 placeholder_image: 'https://via.placeholder.com/1000'
 
 
