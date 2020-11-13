@@ -1,22 +1,21 @@
+<nav class="navbar-expand-lg navbar navbar-light sticky-nav bg-primary-500 text-white py-4 my-0">
+  <div class="container flex-lg-column align-items-lg-start">
 
-<nav class=" navbar-expand-lg navbar navbar-light sticky-nav bg-primary-500 text-white py-4 my-0">
-    <div class="container flex-lg-column align-items-lg-start">
-  
-      <div class="preheader mb-lg-3">{{ include.header }}</div>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon d-flex align-items-center justify-content-end"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-uppercase flex-wrap ">
-          
-          {% for item in include.navigation %}
-          <li class="nav-item">
-            <a href="{{ item.link}}" class="">{{ item.link_label}}</a>
-          </li>
-          {% endfor %}
-  
-        </ul>
-      </div>
+    <div class="preheader mb-lg-3">{{ include.header }}</div>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon d-flex align-items-center justify-content-end"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto text-uppercase flex-wrap ">
+
+        {% for item in include.navigation %}
+        <li class="nav-item">
+          <a href="{{ item.link}}" class="">{{ item.link_label}}</a>
+        </li>
+        {% endfor %}
+
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>

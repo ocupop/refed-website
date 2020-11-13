@@ -143,7 +143,7 @@ _sticky_nav:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="text-serif editable">Overview</h3>
+        <h3 class="editable">Overview</h3>
         <div class="lead editable">
           <p>ReFED’s Capital and Innovation team works to catalyze the $18 billion investment of public, private and philanthropic investment needed in food waste solutions to reduce greenhouse gas emissions (GHG) emissions, conserve natural resources, and recover meals for those in need.</p>
         </div>
@@ -156,7 +156,9 @@ _sticky_nav:
   </div>
 </section>
 
-{% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
+{% include nav/subnav.html %}
+
+<!-- {% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %} -->
 
 
 <section id="investment-and-innovation" class="bg-light">
@@ -284,6 +286,7 @@ _sticky_nav:
     {% endfor %}
   </div>
 </section>
+
 <section id="convenings">
   <div class="container">
     <div class="row mb-5">
@@ -322,6 +325,7 @@ _sticky_nav:
     </div>
   </div>
 </section>
+
 {% for testimonial in page.testimonials %}
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}

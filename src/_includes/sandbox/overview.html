@@ -1,0 +1,16 @@
+<section id="{{ include.slug }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ section.title }}</h2>
+        <p class="lead">{{ section.lead }}</p>
+        {{ section.content_html }}
+        <div class="d-flex align-items-center">
+          {% for link in section.links %}
+          <a href="{{ link.url }}" class="btn btn-secondary">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

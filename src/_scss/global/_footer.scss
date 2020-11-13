@@ -1,6 +1,5 @@
-
 // main{flex: 1 0 auto;}
-#pageFooter { 
+#pageFooter {
   flex-shrink: none;
 }
 
@@ -11,7 +10,7 @@
   .footer-brand {
     display: block;
     background-image: url(../img/logo-wordmark.svg);
-    background-size:contain;
+    background-size: contain;
     width: 190px;
     height: 50px;
     overflow: hidden;
@@ -45,7 +44,7 @@
       margin-bottom: 23px;
       font-weight: $font-weight-bold;
     }
-    .social-icon{
+    .social-icon {
       font-size: 23px;
       width: 35px;
       height: 35px;
@@ -58,66 +57,66 @@
       font-size: $font-size-lg;
     }
     .newsletter-signup-cta {
-      font-family:$font-family-serif;
+      font-family: $font-family-serif;
       font-size: $font-size-lg;
     }
   }
 
   /* Mobile Only */
-  @media screen and (max-width: $screen-md-min){
-    .mega-footer{
-      > .container{
+  @include media-breakpoint-down(sm) {
+    .mega-footer {
+      > .container {
         max-width: inherit;
       }
     }
   }
 
   /* Medium size and above*/
-  @media screen and (min-width: $screen-md-min){
-    .mega-footer{
+  @include media-breakpoint-up(md) {
+    .mega-footer {
       &:before,
-      &:after{
-        content: '';
+      &:after {
+        content: "";
         display: block;
-        position:absolute;
+        position: absolute;
         top: 0;
         bottom: 0;
         width: 35%;
       }
-      &:before{            
+      &:before {
         background-color: $primary;
-        left: 0; 
+        left: 0;
       }
-      &:after{
-        background-color:$secondary;
-        right:0; 
+      &:after {
+        background-color: $secondary;
+        right: 0;
       }
-      > .container{
+      > .container {
         position: relative;
         z-index: 1;
       }
     }
 
     .footer-links-column,
-    .stay-connected-column{
+    .stay-connected-column {
       padding-top: rem(87);
       padding-bottom: rem(110);
     }
 
-    .footer-links-column{
-      padding-left:0;
-      .footer-links{
-        font-size:$font-size-lg;
+    .footer-links-column {
+      padding-left: 0;
+      .footer-links {
+        font-size: $font-size-lg;
         //margin-top:-22px;
         //margin-bottom:-22px;
-        .nav-item{
-          a.nav-link{
+        .nav-item {
+          a.nav-link {
             //padding:22px 0;
           }
         }
       }
     }
-    .stay-connected-column{
+    .stay-connected-column {
       padding-left: 10%;
     }
   }

@@ -1,12 +1,13 @@
-
-
-#pageHeader{
-  border-bottom:9px solid $light;
+// TODO: Refactor Page Header
+#pageHeader {
+  border-bottom: 9px solid $light;
   @include media-breakpoint-down(lg) {
-    > .container { max-width: 100%; }
+    > .container {
+      max-width: 100%;
+    }
   }
 }
-.navbar-brand{
+.navbar-brand {
   background-image: url(../img/logo-wordmark.png);
   background-size: contain;
 
@@ -18,44 +19,13 @@
   max-width: 175px;
   height: rem(67);
   font-size: 15px;
-  
+
   margin-top: rem(15);
   margin-bottom: rem(15);
   margin-left: rem(17);
 
-  // * margin-top: em(15.12);
-  // * margin-bottom: em(20.12);
-}
-
-
-  /* MOBILE NAV */
-  @include media-breakpoint-down(md) {
-  #pageHeader{
-    // position: absolute;
-    z-index: 11;
-    width: 100%;
-    > .container{
-      max-width: inherit;
-      width: 100%;
-      padding: 0;
-    }
-    .navbar-collapse{
-      background-color:$primary;
-      color: $white;
-      overflow: hidden;
-      z-index: 9999;
-      width: 100%;
-      &.collapse{ }
-      &.collapsing{ }
-      &.collapse.show{ }
-    }
-  }
-
-}
-
-@media screen and (min-width: $screen-md-min){
-  .navbar-brand{
-    background-image:url(../img/logo-wordmark.png);
+  @include media-breakpoint-up(md) {
+    background-image: url(../img/logo-wordmark.png);
     width: rem(242);
     max-width: 350px;
     height: rem(67);
@@ -65,14 +35,39 @@
   }
 }
 
-
-.navbar-collapse{
+/* MOBILE NAV */
+@include media-breakpoint-down(md) {
+  #pageHeader {
+    // position: absolute;
+    z-index: 11;
+    width: 100%;
+    > .container {
+      max-width: inherit;
+      width: 100%;
+      padding: 0;
+    }
+    .navbar-collapse {
+      background-color: $primary;
+      color: $white;
+      overflow: hidden;
+      z-index: 9999;
+      width: 100%;
+      &.collapse {
+      }
+      &.collapsing {
+      }
+      &.collapse.show {
+      }
+    }
+  }
 }
 
 /* MOBLIE TOGGLE BUTTON */
 
-.navbar-toggler{
-  &:focus{outline:none;} 
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
   .navbar-toggler-icon {
     display: inline-block;
     cursor: pointer;
@@ -89,27 +84,27 @@
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-8px, 7px);
     }
-    
+
     .bar2 {
       opacity: 0;
     }
-    
+
     .bar3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-8px, -8px);
     }
   }
-  &.collapsed{
-    .navbar-toggler-icon{
+  &.collapsed {
+    .navbar-toggler-icon {
       .bar1 {
         -webkit-transform: none;
         transform: none;
       }
-      
+
       .bar2 {
         opacity: 1;
       }
-      
+
       .bar3 {
         -webkit-transform: none;
         transform: none;
@@ -117,4 +112,3 @@
     }
   }
 }
-  

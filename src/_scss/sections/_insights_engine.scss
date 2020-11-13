@@ -1,24 +1,22 @@
-
-
 /* This section for ".laptop-container" just places the screen inside of the laptop. It could potentially be used outside of the insights_engine section. */
-.laptop-container{
-  width:100%;
-  position:relative;
-  .laptop{
-    position:relative;
-    width:100%;
-    height:0;
-    padding-bottom:63.19%;
+.laptop-container {
+  width: 100%;
+  position: relative;
+  .laptop {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 63.19%;
     z-index: 1;
-    img{
-      width:100%;
+    img {
+      width: 100%;
     }
   }
-  .screen{
-    top:0;
-    left:0;
+  .screen {
+    top: 0;
+    left: 0;
     z-index: 0;
-    position:absolute;
+    position: absolute;
     width: 80.7%;
     height: 80%;
     left: 9.6%;
@@ -28,33 +26,27 @@
   }
 }
 
-
-
-
-
-
-
-.cta-insights-engine{
-  .image-column{  
-    .laptop-container{
+.cta-insights-engine {
+  .image-column {
+    .laptop-container {
       position: relative;
       width: 150%;
       bottom: 0;
       margin-left: auto;
-      margin-right: auto;   
+      margin-right: auto;
     }
   }
 
-  @media screen and (min-width: $screen-lg-min){
-    .copy-column{
+  @include media-breakpoint-up(lg) {
+    .copy-column {
       min-height: 23.2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    
-    .image-column{  
-      .laptop-container{
+
+    .image-column {
+      .laptop-container {
         position: absolute;
         bottom: -60px;
         width: 175%;
@@ -62,11 +54,9 @@
     }
   }
 
-  @media screen and (min-width: $screen-xl-min){
-    .copy-column{
-        min-height: 33.6rem;
+  @include media-breakpoint-up(xl) {
+    .copy-column {
+      min-height: 33.6rem;
     }
   }
-  
 }
-

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body id="{{ page.title | slugify }}-page" class="{{ page.layout }}-layout">
+  <body
+    id="{{ page.title | slugify }}-page"
+    class="{{ page.layout }}-layout"
+    data-spy="scroll" data-target=".subnav">
     {% include header.html %}
     <main id="pageContent">
       {{ content }}

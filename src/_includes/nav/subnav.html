@@ -1,0 +1,18 @@
+<div class="subnav">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <span class="mr-3">Key Program Areas:</span>
+        <nav class="navbar">
+          <ul class="nav">
+            {% for item in include.items %}
+            <li class="nav-item">
+              <a href="#{{ item.title | slugify }}" class="nav-link">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

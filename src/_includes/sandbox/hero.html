@@ -1,0 +1,39 @@
+<section class="hero bg-image" style="background-image: url({{ include.image | default: site.placeholder_image }});">
+  <div class="hero-content">
+    <div class="container py-5 text-white">
+      <div class="hero-copy">
+        {% if include.subtitle %}
+        <div class='preheader'>{{ include.subtitle }}</div>
+        {% endif %}
+        {% if include.title %}
+        <h1>{{ include.title }}</h1>
+        {% else if include.title %}
+        <h1>{{ include.title }}</h1>
+        {% endif %}
+        {% if include.description_html %}
+        <div class="hero-p">
+          {{ include.description_html }}
+        </div>
+        {% endif %}
+        {% if include.link %}
+        <a class="card-link block mr-3" href="{{ include.link }}">{{ include.link_label }}</a>
+        {% endif %}
+        {% if include.buttons %}
+        <div class="hero-buttons mt-3">
+          {% for button in include.buttons %}
+          <a class="btn btn-secondary block mr-3" href="{{ button.link }}">{{ button.link_label }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="hero-social">
+        <a href="#" class="linkedin">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="#" class="twitter">
+          <i class="ri-twitter-fill"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

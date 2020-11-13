@@ -1,24 +1,37 @@
 ---
 layout: default
+show_summary:
+show_footer:
 ---
 
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-2">
-        <div class="content">
-          <ul class="nav flex-column">
-            {% for example in site.examples %}
-              {% unless example.url == '/examples/' %}
-              <li class="nav-item"><a class="nav-link{% if example.url == page.url %} active{% endif %}" href="{{ example.url }}">{{ example.title }}</a></li>
-              {% endunless %}
-            {% endfor %}
-          </ul>
+      <div class="col-12">
+        <div class="editable">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate porro iste fugit eveniet sapiente illo animi ea, sint corporis itaque id similique esse nostrum voluptatem ab neque ipsum repudiandae!
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-10">
-        <div class="content">{{ content }}</div>
       </div>
     </div>
   </div>
 </section>
+{% if page.subnav %}
+  {% include nav/subnav.html items=page.sections %}
+{% endif %}
+
+{% for section in page.sections %}
+  {% capture include %}sandbox/{{ section._type }}.html{% endcapture %}
+  {% assign slug = section.title | slugify %}
+  {% include {{include}} slug=slug %}
+{% endfor %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+      </div>
+    </div>
+  </div>
+</section>
+

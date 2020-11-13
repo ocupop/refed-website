@@ -164,27 +164,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: $screen-md-min) {
-  ul.two-column-list {
-    column-count: 2;
-    column-gap: 80px;
-    li {
-      -webkit-column-break-inside: avoid;
-    }
-  }
-}
-
-@media screen and (min-width: $screen-md-min) {
-  .two-columns {
-    column-count: 2;
-    article {
-      -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-      page-break-inside: avoid; /* Firefox */
-      break-inside: avoid; /* IE 10+ */
-    }
-  }
-}
-
 .opacity-0 {
   opacity: 0;
 }
