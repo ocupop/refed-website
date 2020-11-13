@@ -351,3 +351,31 @@ $('.ics-download').on('click', function(){
   cal_single.addEvent(subject, description, location, event_begin, event_end);
   cal_single.download(subject)
 })
+
+
+
+
+/**
+ * Upcoming fix for resizing the carousels:
+ * 
+ * Place in each carousel function like so:
+ 
+ var flkty_logos = new Flickity( carousel, {
+      ...
+      on: {
+        ready: function() {
+          flickity_recalculate_heights(this);
+        }
+      }
+    });      
+    flkty_logos.onresize = function(event) { 
+      flickity_recalculate_heights(this);
+    }; 
+
+ * This resets the content of each flickity slide to 100% height, allowing for full height background images even if slide content is different heights.
+ */
+function flickity_recalculate_heights(obj){
+  obj.element.classList.remove('flickity-init')
+  obj.resize();
+  obj.element.classList.add('flickity-init')
+}

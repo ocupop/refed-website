@@ -118,6 +118,12 @@ cta_buttons:
   </div>
 </section>
 
+{% comment %}
+  carousel_split.html is currently not working properly. 
+  It is not passing include variables to the child, 
+  resulting in the defaults being used instead.
+{% endcomment %}
+
 {% include sections/carousels/carousel_split.html 
   items=site.case_studies 
   theme='light'
