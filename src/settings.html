@@ -1,6 +1,67 @@
 ---
 layout: page
 title: Project Settings
+palette:
+  - label: Grays
+    colors:
+      - variable: lighter
+      - variable: light
+      - variable: mid
+      - variable: dark
+      - variable: darker
+  - label: Base Colors
+    colors:
+      - variable: blue
+      - variable: indigo
+      - variable: purple
+      - variable: pink
+      - variable: red
+      - variable: orange
+      - variable: yellow
+      - variable: green
+      - variable: teal
+      - variable: cyan
+  - label: Brand Colors
+    colors:
+      - variable: primary
+      - variable: secondary
+      - variable: prevention
+      - variable: rescue
+      - variable: recycle
+  - label: Action Areas
+    colors:
+      - variable: optimize
+        label: Optimize the Harvest [ prevention-600 ]
+      - variable: enhance
+        label: Enhance Product Distribution
+      - variable: refine
+        label: Refine Product Management
+      - variable: maximize
+        label: Maximize Product Utilization
+      - variable: reshape
+        label: Reshape Consumer Environments
+      - variable: strengthen
+        label: Strengthen Food Rescue
+      - variable: recycle
+        label: Recycle Anything Remaining
+
+  - label: Stakeholders
+    colors:
+      - variable: producers
+        label: Producers
+      - variable: manufacturing
+        label: Manufacturing
+      - variable: retail
+        label: Retail
+      - variable: foodservice
+        label: Restaurant & Foodservice
+      - variable: policymakers
+        label: Policymakers
+      - variable: capital
+        label: Capital Providers
+
+
+
 ---
 <!-- TYPOGRAPHY -->
 <section>
@@ -64,166 +125,27 @@ title: Project Settings
 </section>
 
 <!-- COLOR PALETTE -->
-<section>
+<section id="colorPalette">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <p class="heading">Color Palette</p>
-
-        <p class="subheading">Grays</p>
-        <div class="row row-cols-1 row-cols-md-6">
-          <!-- TODO: Add color palette -->
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-lighter"></div>
-            <div class="info py-2">
-              <code>$lighter</code>
-            </div>
+        {% for category in page.palette %}
+          <p class="subheading">{{ category.label }}</p>
+          <div class="row row-cols-1 {% if category.colors.first.label %}row-cols-md-4{% else %}row-cols-md-6{% endif %}">
+            {% for color in category.colors %}
+              <div class="col my-2">
+                <div class="bg-image aspect-2x1 bg-{{ color.variable }}"></div>
+                <div class="info py-2">
+                  <code>${{ color.variable }}</code>
+                  {% if color.label %}
+                    <small>{{ color.label }}</small>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
           </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-light"></div>
-            <div class="info py-2">
-              <code>$light</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-mid"></div>
-            <div class="info py-2">
-              <code>$mid</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-dark"></div>
-            <div class="info py-2">
-              <code>$dark</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-darker"></div>
-            <div class="info py-2">
-              <code>$darker</code>
-            </div>
-          </div>
-        </div>
-
-        <p class="subheading">Base Colors</p>
-        <div class="row row-cols-1 row-cols-md-6">
-          <div class="col my-2">
-            <div class="bg-color-info aspect-2x1 bg-primary"></div>
-            <div class="info py-2">
-              <code>$primary</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-secondary"></div>
-            <div class="info py-2">
-              <code>$secondary</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-blue"></div>
-            <div class="info py-2">
-              <code>$blue</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-indigo"></div>
-            <div class="info py-2">
-              <code>$indigo</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-purple"></div>
-            <div class="info py-2">
-              <code>$purple</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-pink"></div>
-            <div class="info py-2">
-              <code>$pink</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-red"></div>
-            <div class="info py-2">
-              <code>$red</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-orange"></div>
-            <div class="info py-2">
-              <code>$orange</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-yellow"></div>
-            <div class="info py-2">
-              <code>$yellow</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-green"></div>
-            <div class="info py-2">
-              <code>$green</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-teal"></div>
-            <div class="info py-2">
-              <code>$teal</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-cyan"></div>
-            <div class="info py-2">
-              <code>$cyan</code>
-            </div>
-          </div>
-        </div>
-
-        <p class="subheading">Brand Colors</p>
-        <div class="row row-cols-1 row-cols-md-6">
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-prevention"></div>
-            <div class="info py-2">
-              <code>$prevention</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-rescue"></div>
-            <div class="info py-2">
-              <code>$rescue</code>
-            </div>
-          </div>
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-recycle"></div>
-            <div class="info py-2">
-              <code>$recycle</code>
-            </div>
-          </div>
-        </div>
-
-        <p class="subheading">Action Areas</p>
-        <div class="row row-cols-1 row-cols-md-4">
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-prevention-600"></div>
-            <div class="info d-block py-2">
-              <code>$prevention-600</code><br/>
-              <small>Optimize the Harvest</small><br/>
-            </div>
-          </div>
-        </div>
-
-        <p class="subheading">Stakeholders</p>
-        <div class="row row-cols-1 row-cols-md-4">
-          <div class="col my-2">
-            <div class="bg-image aspect-2x1 bg-yellow"></div>
-            <div class="info d-block py-2">
-              <code>$yellow</code><br />
-              <small>Harvest Everything Grown</small><br />
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
