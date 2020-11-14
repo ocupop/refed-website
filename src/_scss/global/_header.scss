@@ -1,6 +1,12 @@
 // TODO: Refactor Page Header
 #pageHeader {
   border-bottom: 9px solid $light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 1000;
   @include media-breakpoint-down(lg) {
     > .container {
       max-width: 100%;
@@ -8,31 +14,14 @@
   }
 }
 .navbar-brand {
-  background-image: url(../img/logo-wordmark.png);
-  background-size: contain;
-
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: left center;
-  text-indent: -1000px;
-  width: 50%;
   max-width: 175px;
-  height: rem(67);
-  font-size: 15px;
-
-  margin-top: rem(15);
-  margin-bottom: rem(15);
-  margin-left: rem(17);
-
   @include media-breakpoint-up(md) {
-    background-image: url(../img/logo-wordmark.png);
-    width: rem(242);
-    max-width: 350px;
-    height: rem(67);
-    font-size: 1rem;
-    margin-top: rem(15.12);
-    margin-bottom: rem(20.12);
+    max-width: 190px;
   }
+}
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* MOBILE NAV */
@@ -75,38 +64,30 @@
     .bar2,
     .bar3 {
       width: 35px;
-      height: 5px;
+      height: 3px;
       background-color: $gray-800;
       margin: 6px 0;
       transition: 0.4s;
     }
     .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-8px, 7px);
+      transform: rotate(-45deg) translate(-8px, 8px);
     }
-
     .bar2 {
       opacity: 0;
     }
-
     .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-5px, -5px);
     }
   }
   &.collapsed {
     .navbar-toggler-icon {
       .bar1 {
-        -webkit-transform: none;
         transform: none;
       }
-
       .bar2 {
         opacity: 1;
       }
-
       .bar3 {
-        -webkit-transform: none;
         transform: none;
       }
     }

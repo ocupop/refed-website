@@ -65,13 +65,11 @@
 }
 
 .left-nav-arrow {
-  @include arrow($direction: left, $size: 10px, $color: #fff);
+  @include arrow($direction: left, $size: 10px, $color: $white);
   width: 0;
-  border-right: 17px solid #fff;
+  border-right: 17px solid $white;
   display: inline-block;
-  margin-right: 18px;
   vertical-align: -2px;
-  margin-left: -42px;
 }
 
 @mixin darken-bkg-image($opacity: 0.67, $color: $gray-900) {
