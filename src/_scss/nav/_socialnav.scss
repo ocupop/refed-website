@@ -1,7 +1,9 @@
 .socialnav {
-  position: absolute;
-  right: 0;
-  bottom: 30px;
+  // will need to move these to be component specific, ie hero 
+  // position: absolute;
+  // right: 0;
+  // bottom: 30px;
+  display: flex;
   z-index: 100;
   a {
     display: flex;

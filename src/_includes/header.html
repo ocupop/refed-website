@@ -1,8 +1,8 @@
-<header id="pageHeader" class="">
+<header id="pageHeader">
   <div class="container">
-    <div id="header-navigation-container" class="navbar navbar-expand-lg py-lg-0">
+    <div class="navbar navbar-expand-lg py-lg-0">
       <!-- logo -->
-      <a class="navbar-brand" href="/">{{ site.title }}</a>
+      <a class="navbar-brand" href="/" title="{{ site.title }}"><img src="/img/logo-wordmark.png" class="img-fluid" alt="ReFED logo"></a>
       <!-- Mobile Toggle -->
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -29,80 +29,63 @@
                   aria-expanded="false"
                 {% endif %} 
                 {{ href_att }}="{{ link.link }}"> 
-                <div class="constrain-width">
-                  {{ link.title }} 
-                  <span class="arrow d-block float-right d-lg-none">{% include icons/arrow.svg  %}</span>
-                  <span class="sr-only">(current)</span>
-                </div>
+                {{ link.title }} 
+                <span class="arrow d-inline-block d-lg-none">{% include icons/arrow.svg  %}</span>
+                <span class="sr-only">(current)</span>
               </a>
               {% if link.links != nil %}
-              <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color p-sm-0 py-md-5" aria-labelledby="collapse-{{ link.title | slugify }}">
-                <div class="container max-out-text-width px-0 px-md-3">
-                  <div class="row">
-                    <a class="nav-back-button d-block d-lg-none" href="">{{ link.title }} <span class="left-nav-arrow"></span> </a>
-                    {% for sublink in link.links %}
-                    <div class="col-md-6 col-lg-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 or link.links.size == 3 and forloop.last == true %}two-col-sublinks{% endif %} sublink-{{ sublink.title | slugify}}">
-                     
-                      <h6 class="sub-title font-weight-bold white-text m-0"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
-
-                      {% if sublink.link contains  '/social' %}
-
-                        {% include modules/nav_stay_connected.html %}
-
-                      {% elsif sublink.links.size %}
-                        <ul class="list-unstyled">
-                          {% for subsublink in sublink.links %}
+              <div class="dropdown-menu mega-menu v-2 z-depth-1 p-sm-0 py-md-5" aria-labelledby="collapse-{{ link.title | slugify }}">
+                <div class="row justify-content-lg-center">
+                  <a class="nav-back-button d-flex d-lg-none" href="#">{{ link.title }} <span class="left-nav-arrow ml-4"></span> </a>
+                  {% for sublink in link.links %}
+                  <div class="col-12 col-lg-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 or link.links.size == 3 and forloop.last == true %}two-col-sublinks{% endif %} sublink-{{ sublink.title | slugify}}">
+                    <h6 class="sub-title font-weight-bold white-text m-0"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
+                    {% if sublink.link contains  '/social' %}
+                      {% include modules/nav_stay_connected.html %}
+                    {% elsif sublink.links.size %}
+                      <ul class="list-unstyled">
+                        {% for subsublink in sublink.links %}
+                        <li class="nav-item">
+                          <a class="menu-item" href="{{ subsublink.link }}">
+                            {{ subsublink.title }}
+                          </a>
+                          {% if subsublink.links.size %}
+                          <ul class="list-unstyled">
+                          {% for subsubsublink in subsublink.links %}
                           <li class="nav-item">
-                            <a class="menu-item" href="{{ subsublink.link }}">
-                              {{ subsublink.title }}
+                            <a class="menu-item" href="{{ subsubsublink.link }}">
+                              {{ subsubsublink.title }}
                             </a>
-                            {% if subsublink.links.size %}
-                            <ul class="list-unstyled">
-                            {% for subsubsublink in subsublink.links %}
-                            <li class="nav-item">
-                              <a class="menu-item" href="{{ subsubsublink.link }}">
-                                {{ subsubsublink.title }}
-                              </a>
-                            </li>
-                            {% endfor %}
-                            </ul>
-                            {% endif %}
                           </li>
                           {% endfor %}
-                        </ul>
-                      {% endif %}
-                    </div>
-                    {% endfor %}
+                          </ul>
+                          {% endif %}
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                   </div>
+                  {% endfor %}
                 </div>
               </div>
               {% endif %}
             </li>
             {% endfor %}
           </ul>
-          <ul class="utility-links navbar-nav ml-auto ">   
-
-          
+          <ul class="utility-links navbar-nav ml-auto">   
             <li class="nav-item search">
-              <a class="nav-link" href="/search ">
-                <div class="constrain-width">
-                  {{ link.title }}                 
-                  <i class="ri-search-line"></i>
-                </div>
+              <a class="nav-link" href="/search">
+                {{ link.title }}                 
+                <i class="ri-search-line"></i>
               </a>
             </li>
-
             {% for link in site.data.navigation.top_bar_navigation.links %}   
-            
-         
-            <li class="nav-item">
-              <a class="nav-link" href="{{ link.link }} ">
-                <div class="constrain-width">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ link.link }}">
                   {{ link.title }}                 
-                  <span class="arrow d-block float-right d-lg-none">{% include icons/arrow.svg  %}</span>
-                </div>
-              </a>
-            </li>
+                    <span class="arrow d-inline-block d-lg-none">{% include icons/arrow.svg  %}</span>
+                </a>
+              </li>
             {% endfor %}            
           </ul>
         </nav>
