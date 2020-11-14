@@ -17,7 +17,7 @@
               {{ hero.description_html | default: hero.content | truncatewords: 30 }}
             </div>
             {% if hero.link != nil %}
-              <p><a class="text-link text-primary-450 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
+              <p><a class="text-link text-rescue block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
             {% if hero.buttons.first.link %}
               <div class="hero-buttons mt-3">
@@ -37,7 +37,7 @@
     </a>
     <a href="{{ site.twitter_url }}" class="twitter" target="_blank" rel="noopener">
       <i class="ri-twitter-fill"></i>
-    </a>              
+    </a>
   </div>
 </div>
 
@@ -59,7 +59,7 @@
                   {% endif %}
                   {{ hero.description_html | default: hero.content | truncatewords: 20 }}
                   {% if hero.link != nil %}
-                    <a class="text-link text-primary-400 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                    <a class="text-link text-rescue-400 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
                   {% endif %}
                   {% if hero.buttons.link %}
                     <div class="hero-buttons mt-3">
@@ -81,7 +81,7 @@
       </a>
       <a href="{{ site.twitter_url }}" class="twitter" target="_blank" rel="noopener">
         <i class="ri-twitter-fill"></i>
-      </a>              
+      </a>
     </div>
   </div>
 {% endif %}

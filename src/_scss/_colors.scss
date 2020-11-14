@@ -1,133 +1,145 @@
-// Primary color system
-$primary-100: #5ca958;
-$primary-110: #d1ecc1;
-$primary-120: #badeab;
-$primary-130: #a3d097;
-$primary-140: #75c46c;
-$primary-150: $primary-100;
-$primary-160: #3d8944;
-
-$primary-200: #00b982;
-$primary-210: #afeece;
-$primary-220: #92e4bf;
-$primary-230: #77d8af;
-$primary-240: #5ecd8f;
-$primary-250: $primary-200;
-$primary-260: #00b982;
-
-$primary-300: #0092b7;
-$primary-310: #a6e8f1;
-$primary-320: #7cd6e5;
-$primary-330: #59c5d9;
-$primary-340: #50b4ce;
-$primary-350: #47a2c1;
-$primary-360: $primary-300;
-
-$primary-400: #00d1c3;
-$primary-410: #b5f1eb;
-$primary-420: #93eae2;
-$primary-430: #6fe4db;
-$primary-440: #65dcd2;
-$primary-450: #61d6ca;
-$primary-460: $primary-400;
-
-$primary-500: #168374;
-$primary-510: #afeee3;
-$primary-520: #89d8cc;
-$primary-530: #61c4b5;
-$primary-540: #4eae9f;
-$primary-550: #449989;
-$primary-560: $primary-500;
-
-$primary-600: #003950;
-$primary-610: #b5e3f3;
-$primary-620: #8cc1d2;
-$primary-630: #679eb1;
-$primary-640: #4d7e92;
-$primary-650: #275b71;
-$primary-660: $primary-600;
-
-// Secondary color system
-$secondary-110: #fae4c0;
-$secondary-120: #f9d99b;
-$secondary-130: #f7cc78;
-$secondary-140: #ffc432;
-$secondary-150: #f4b53f;
-$secondary-160: #f2a83c;
-$secondary-100: $secondary-140;
-
-$secondary-200: #ff7f12;
-$secondary-210: #ffcca9;
-$secondary-220: #fab687;
-$secondary-230: #f6a065;
-$secondary-240: $secondary-200;
-$secondary-250: #ea6a00;
-$secondary-260: #e05a00;
-
-$secondary-300: #dc354d;
-$secondary-310: #f9aab6;
-$secondary-320: #f28b97;
-$secondary-330: #f4697d;
-$secondary-340: $secondary-300;
-$secondary-350: #cf3339;
-$secondary-360: #a12b2f;
-
-$secondary-400: #b40863;
-$secondary-410: #f9bbe4;
-$secondary-420: #f09dce;
-$secondary-430: #ed7dbd;
-$secondary-440: #eb57aa;
-$secondary-450: #d53184;
-$secondary-460: $secondary-400;
-
-$secondary-500: #630a53;
-$secondary-510: #ebd0f4;
-$secondary-520: #dda9db;
-$secondary-530: #bf71ba;
-$secondary-540: #a0479a;
-$secondary-550: #7f1876;
-$secondary-560: $secondary-500;
-
-//Neutral color system
-$neutral-100: #f8f8f7;
-$neutral-200: #eceae8;
-$neutral-300: #6d8089;
-$neutral-400: #344955;
-
-$gray-100: $neutral-200;
-$gray-200: #bdbec0;
-$gray-300: #848484;
-$gray-400: #555759;
+// Base Color Palette
+$gray-100: #f8f8f7; // Lighter
+$gray-200: #eceae8; // Light
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #3f4041;
-$gray-800: $neutral-400;
-$gray-900: #182024;
+$gray-600: #6d8089; // Mid
+$gray-700: #344955; // Dark
+$gray-800: #343a40 !default;
+$gray-900: #182024; // Darker
 
-$red: $secondary-300;
-$orange: $secondary-200;
-$yellow: $secondary-100;
-$green: $primary-200;
-$blue: $primary-300;
+$blue: #0092b7;
+$indigo: #630a53;
+$purple: #7f1876;
+$pink: #b40863;
+$red: #dc354d;
+$orange: #ff7f12;
+$yellow: #ffc432;
+$green: #00b982;
+$teal: #168374;
+$cyan: #17a2b8 !default;
 
 $white: #ffffff;
 $black: #000000;
 
-$primary: $primary-600;
-$secondary: $primary-300;
-$success: $primary-100;
-$info: $primary-400;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$mid: $gray-300;
-$dark: $gray-800;
+$blue-100: #a6e8f1;
+$blue-200: #7cd6e5;
+$blue-300: #59c5d9;
+$blue-400: #50b4ce;
+$blue-500: #47a2c1;
+$blue-600: #0092b7;
+
+$indigo-100: #ebd0f4;
+$indigo-200: #dda9db;
+$indigo-300: #bf71ba;
+$indigo-400: #a0479a;
+$indigo-500: #7f1876;
+$indigo-600: #630a53;
+
+$pink-100: #f9bbe4;
+$pink-200: #f09dce;
+$pink-300: #ed7dbd;
+$pink-400: #eb57aa;
+$pink-500: #d53184;
+$pink-600: #b40863;
+
+$red-100: #f9aab6;
+$red-200: #f28b97;
+$red-300: #f4697d;
+$red-400: #dc354d;
+$red-500: #cf3339;
+$red-600: #a12b2f;
+
+$orange-100: #ffcca9;
+$orange-200: #fab687;
+$orange-300: #f6a065;
+$orange-400: #ff7f12;
+$orange-500: #ea6a00;
+$orange-600: #e05a00;
+
+$yellow-100: #fae4c0;
+$yellow-200: #f9d99b;
+$yellow-300: #f7cc78;
+$yellow-400: #ffc432;
+$yellow-500: #f4b53f;
+$yellow-600: #f2a83c;
+
+$green-100: #afeece;
+$green-200: #92e4bf;
+$green-300: #77d8af;
+$green-400: #5ecd8f;
+$green-500: #59c290;
+$green-600: #00b982;
+
+$teal-100: #afeee3;
+$teal-200: #89d8cc;
+$teal-300: #61c4b5;
+$teal-400: #4eae9f;
+$teal-500: #449989;
+$teal-600: #168374;
+
+// Color System
+$prevention-100: #b5e3f3;
+$prevention-200: #8cc1d2;
+$prevention-300: #679eb1;
+$prevention-400: #4d7e92;
+$prevention-500: #275b71;
+$prevention-600: #003950;
+$prevention: $prevention-600;
+
+$rescue-100: #b5f1eb;
+$rescue-200: #93eae2;
+$rescue-300: #6fe4db;
+$rescue-400: #65dcd2;
+$rescue-500: #61d6ca;
+$rescue-600: #00d1c3;
+$rescue: $rescue-600;
+
+$recycle-100: #d1ecc1;
+$recycle-200: #badeab;
+$recycle-300: #a3d097;
+$recycle-400: #75c46c;
+$recycle-500: #5ca958;
+$recycle-600: #3d8944;
+$recycle: $recycle-500;
+
+// TODO: Have Abby/Jenny explain why we need new colors and can't use any of the primary color variations
+// Action Areas
+$optimize: #003a52;
+$enhance: #045b80;
+$refine: #006995;
+$maximize: #048dc6;
+$reshape: #009dde;
+$strengthen: $rescue;
+// $recycle: #5CA958 // TB: Already in use. This may indicate the need to rename the action area color variables.
+
+// Stakeholders
+$producers: $red;
+$manufacturing: $indigo;
+$retail: $orange;
+$foodservice: $pink; // TODO: Does this name need to include "restaurants"
+$policymakers: $teal;
+$capital-providers: $green;
+
+// Bootstrap Colors
+$primary: $prevention;
+$secondary: $rescue;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+$lighter: $gray-100;
+$light: $gray-200;
+$mid: $gray-600;
+$dark: $gray-700;
+$darker: $gray-900;
+
+// Opaque Color System
 $black-50: rgba($black, 0.5);
 
-$prevention: $primary-600;
-$rescue: $primary-400;
-$recycling: $primary-100;
-
+// Color Maps
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -135,101 +147,41 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
+  "white": $white,
+  "lighter": $lighter,
   "light": $light,
   "mid": $mid,
   "dark": $dark,
-  "white": $white,
   "black": $black,
-  "black-50": $black-50,
-  // TODO - This is an example and should be incremented by 10 for all theme colors.
-  // This will require an additional map and logic.
-  "gray": $gray-400,
-  "green": $success,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
   "red": $red,
   "orange": $orange,
   "yellow": $yellow,
-  "primary-100": $primary-100,
-  "primary-110": $primary-110,
-  "primary-120": $primary-120,
-  "primary-130": $primary-130,
-  "primary-140": $primary-140,
-  "primary-150": $primary-150,
-  "primary-160": $primary-160,
-  "primary-200": $primary-200,
-  "primary-210": $primary-210,
-  "primary-220": $primary-220,
-  "primary-230": $primary-230,
-  "primary-240": $primary-240,
-  "primary-250": $primary-250,
-  "primary-260": $primary-260,
-  "primary-300": $primary-300,
-  "primary-310": $primary-310,
-  "primary-320": $primary-320,
-  "primary-330": $primary-330,
-  "primary-340": $primary-340,
-  "primary-350": $primary-350,
-  "primary-360": $primary-360,
-  "primary-400": $primary-400,
-  "primary-410": $primary-410,
-  "primary-420": $primary-420,
-  "primary-430": $primary-430,
-  "primary-440": $primary-440,
-  "primary-450": $primary-450,
-  "primary-460": $primary-460,
-  "primary-500": $primary-500,
-  "primary-510": $primary-510,
-  "primary-520": $primary-520,
-  "primary-530": $primary-530,
-  "primary-540": $primary-540,
-  "primary-550": $primary-550,
-  "primary-560": $primary-560,
-  "primary-600": $primary-600,
-  "primary-610": $primary-610,
-  "primary-620": $primary-620,
-  "primary-630": $primary-630,
-  "primary-640": $primary-640,
-  "primary-650": $primary-650,
-  "primary-660": $primary-660,
-  "secondary-100": $secondary-100,
-  "secondary-110": $secondary-110,
-  "secondary-120": $secondary-120,
-  "secondary-130": $secondary-130,
-  "secondary-140": $secondary-140,
-  "secondary-150": $secondary-150,
-  "secondary-160": $secondary-160,
-  "secondary-200": $secondary-200,
-  "secondary-210": $secondary-210,
-  "secondary-220": $secondary-220,
-  "secondary-230": $secondary-230,
-  "secondary-240": $secondary-240,
-  "secondary-250": $secondary-250,
-  "secondary-260": $secondary-260,
-  "secondary-300": $secondary-300,
-  "secondary-310": $secondary-310,
-  "secondary-320": $secondary-320,
-  "secondary-330": $secondary-330,
-  "secondary-340": $secondary-340,
-  "secondary-350": $secondary-350,
-  "secondary-360": $secondary-360,
-  "secondary-400": $secondary-400,
-  "secondary-410": $secondary-410,
-  "secondary-420": $secondary-420,
-  "secondary-430": $secondary-430,
-  "secondary-440": $secondary-440,
-  "secondary-450": $secondary-450,
-  "secondary-460": $secondary-460,
-  "secondary-500": $secondary-500,
-  "secondary-510": $secondary-510,
-  "secondary-520": $secondary-520,
-  "secondary-530": $secondary-530,
-  "secondary-540": $secondary-540,
-  "secondary-550": $secondary-550,
-  "secondary-560": $secondary-560,
-  "neutral-100": $neutral-100,
-  "neutral-200": $neutral-200,
-  "neutral-300": $neutral-300,
-  "neutral-400": $neutral-400,
-  "prevention": $primary-600,
-  "rescue": $primary-400,
-  "recycling": $primary-100,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "prevention": $prevention,
+  "prevention-100": $prevention-100,
+  "prevention-200": $prevention-200,
+  "prevention-300": $prevention-300,
+  "prevention-400": $prevention-400,
+  "prevention-500": $prevention-500,
+  "prevention-600": $prevention-600,
+  "rescue": $rescue,
+  "rescue-100": $rescue-100,
+  "rescue-200": $rescue-200,
+  "rescue-300": $rescue-300,
+  "rescue-400": $rescue-400,
+  "rescue-500": $rescue-500,
+  "rescue-600": $rescue-600,
+  "recycle": $recycle,
+  "recycle-100": $recycle-100,
+  "recycle-200": $recycle-200,
+  "recycle-300": $recycle-300,
+  "recycle-400": $recycle-400,
+  "recycle-500": $recycle-500,
+  "recycle-600": $recycle-600,
 );

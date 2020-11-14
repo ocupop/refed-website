@@ -63,8 +63,8 @@ cta_resources_and_guides:
   link_label: Explore Resources & Guides
   section_background_color: 'primary'
   colorbar:
-    color: 
-    bar_position:  
+    color:
+    bar_position:
 cta_insights_engine:
 testimonials:
   - text: >-
@@ -87,7 +87,7 @@ cta_buttons:
     link_label: Learn about Our Work
   - link: /data-and-insights
     link_label: Data & Insights
-  - link: /capital-and-innovation  
+  - link: /capital-and-innovation
     link_label: See Capital & Innovation
 ---
 
@@ -104,7 +104,7 @@ cta_buttons:
     </div>
   </div>
 </section>
-<section class="bg-neutral-200">
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -118,15 +118,15 @@ cta_buttons:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html 
-  items=site.case_studies 
+{% include sections/carousels/carousel_split.html
+  items=site.case_studies
   theme='light'
-  section_background_color='white' 
-  image_width='50%' 
-  image_alignment='left' 
-  image_to_edge=true 
-  text_to_edge=true 
-  section_class='p-0' 
+  section_background_color='white'
+  image_width='50%'
+  image_alignment='left'
+  image_to_edge=true
+  text_to_edge=true
+  section_class='p-0'
 %}
 
 <section>
@@ -165,7 +165,7 @@ cta_buttons:
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
-<section class="bg-neutral-200">
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12">
