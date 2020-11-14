@@ -17,13 +17,13 @@
                   {% if hero.title %}
                     <h1>{{ hero.title }}</h1>
                   {% endif %}
-                  {% unless include.description_html == false %}    
+                  {% unless include.description_html == false %}
                     {{ hero.description_html | default: hero.content | truncatewords: 20 }}
                   {% endunless %}
-                  
-                  {% if page.layout != 'post' %}              
+
+                  {% if page.layout != 'post' %}
                     {% if hero.url %}
-                      <a class="d-block card-link block mr-3 text-primary-400" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                      <a class="d-block card-link block mr-3 text-rescue-400" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
                     {% endif %}
                     {% if hero.buttons.link %}
                       <div class="hero-buttons mt-3">

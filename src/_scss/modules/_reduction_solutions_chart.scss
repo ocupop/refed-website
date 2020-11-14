@@ -15,20 +15,20 @@
       text-transform: uppercase;
       font-size: 16px;
       font-weight: bold;
-      border-bottom: 10px solid $primary-600;
+      border-bottom: 10px solid $prevention;
     }
     &.prevention label {
-      border-bottom-color: $primary-600;
+      border-bottom-color: $prevention;
     }
     &.rescue label {
-      border-bottom-color: $primary-400;
+      border-bottom-color: $rescue-400;
     }
     &.recycling label {
       border-bottom-color: $green;
     }
 
     .solutions {
-      border-right: 1px solid $primary-600;
+      border-right: 1px solid $prevention;
       display: flex;
       flex: 1;
       .solution {

@@ -16,7 +16,7 @@
           {% endif %}
           {{ hero.description_html | default: hero.content | truncatewords: 20 }}
           {% if hero.link != nil %}
-          <a class="text-link text-primary-400 block mr-3"
+          <a class="text-link text-rescue-400 block mr-3"
             href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
           {% endif %}
           {% if hero.buttons.link %}

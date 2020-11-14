@@ -1,37 +1,37 @@
-%btn {
-} // end .button
+// %btn {
+// } // end .button
 
-.btn {
-  //@extend %btn;
-}
+// .btn {
+//   //@extend %btn;
+// }
 
-%text-btn {
-  font-weight: 600;
-  color: $blue;
-  &:after {
-    content: "";
-    @include arrow(right, 8px, $blue);
-    margin-left: 12px;
-    vertical-align: -4px;
-  }
-  &.text-primary-400:after {
-    @include arrow(right, 8px, $primary-400);
-  }
-}
+// %text-btn {
+//   font-weight: 600;
+//   color: $blue;
+//   &:after {
+//     content: "";
+//     @include arrow(right, 8px, $blue);
+//     margin-left: 12px;
+//     vertical-align: -4px;
+//   }
+//   &.text-rescue-400:after {
+//     @include arrow(right, 8px, $rescue-400);
+//   }
+// }
 
-.text-link,
-.card-link {
-  @extend %text-btn;
-  @extend .btn;
-}
+// .text-link,
+// .card-link {
+//   @extend %text-btn;
+//   @extend .btn;
+// }
 
-.download-link {
-  font-weight: 600;
-  i {
-    background-color: $secondary;
-    padding: 4px;
-    border-radius: 50%;
-    color: $white;
-    margin-left: 5px;
-  }
-}
+// .download-link {
+//   font-weight: 600;
+//   i {
+//     background-color: $secondary;
+//     padding: 4px;
+//     border-radius: 50%;
+//     color: $white;
+//     margin-left: 5px;
+//   }
+// }
