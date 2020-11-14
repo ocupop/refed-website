@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a class="footer-brand" href="/">{{ site.title }}</a>
+          <a class="footer-brand" href="/" title="{{ site.title }}">
+            <img src="/img/logo-wordmark.svg" alt="ReFED logo">
+          </a>
         </div>
       </div>
     </div>
@@ -18,21 +20,10 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-md-5 text-light bg-secondary stay-connected-column">
-          <h3>Stay Connected with ReFED</h3>
-          <ul class="nav p-0 my-3">
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/refed-rethink-food-waste/" class="bg-white mr-2 social-icon">
-                <i class="ri-linkedin-fill"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/refed" class="bg-white social-icon">
-                <i class="ri-twitter-fill"></i>
-              </a>
-            </li>
-          </ul>
-          <p class="newsletter-signup">Sign up for our newsletter and other email updates</p>
+        <div class="col-md-5 text-light bg-blue stay-connected-column">
+          <h4 class="mb-0">Stay Connected with ReFED</h4>
+          {% include nav/socialnav.html %}
+          <p class="editable">Sign up for our newsletter and other email updates</p>
           <a href="#" class="newsletter-signup-cta toggle-newsletter-modal btn btn-primary btn-lg text-serif">Subscribe</a>
         </div>
       </div>

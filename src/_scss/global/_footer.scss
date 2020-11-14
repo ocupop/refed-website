@@ -9,19 +9,13 @@
   }
   .footer-brand {
     display: block;
-    background-image: url(../img/logo-wordmark.svg);
-    background-size: contain;
     width: 190px;
-    height: 50px;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: left center;
-    text-indent: -1000px;
   }
   .footer-links-column,
   .stay-connected-column {
-    padding-top: rem(40);
-    padding-bottom: rem(40);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   .footer-links-column {
     //padding-left:0;
@@ -29,8 +23,6 @@
       columns: 2;
       display: block;
       font-size: $font-size-base;
-      margin-top: -22px;
-      margin-bottom: -22px;
       //li{margin-bottom: 15px 0;}
       .nav-item {
         a.nav-link {
@@ -41,33 +33,19 @@
   }
   .stay-connected-column {
     h3 {
-      margin-bottom: 23px;
       font-weight: $font-weight-bold;
     }
-    .social-icon {
-      font-size: 23px;
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .newsletter-signup {
-      margin-top: 36px;
-      font-size: $font-size-lg;
+    .socialnav {
+      a {
+        margin-right: 10px;
+        i {
+          color: $blue;
+        }
+      }
     }
     .newsletter-signup-cta {
       font-family: $font-family-serif;
       font-size: $font-size-lg;
-    }
-  }
-
-  /* Mobile Only */
-  @include media-breakpoint-down(sm) {
-    .mega-footer {
-      > .container {
-        max-width: inherit;
-      }
     }
   }
 
@@ -88,7 +66,7 @@
         left: 0;
       }
       &:after {
-        background-color: $secondary;
+        background-color: $blue;
         right: 0;
       }
       > .container {
@@ -99,25 +77,27 @@
 
     .footer-links-column,
     .stay-connected-column {
-      padding-top: rem(87);
-      padding-bottom: rem(110);
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
 
     .footer-links-column {
       padding-left: 0;
       .footer-links {
         font-size: $font-size-lg;
-        //margin-top:-22px;
-        //margin-bottom:-22px;
-        .nav-item {
-          a.nav-link {
-            //padding:22px 0;
-          }
-        }
       }
     }
     .stay-connected-column {
       padding-left: 10%;
+    }
+  }
+
+  /* Mobile Only */
+  @include media-breakpoint-down(sm) {
+    .mega-footer {
+      > .container {
+        max-width: inherit;
+      }
     }
   }
 }

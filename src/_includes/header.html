@@ -36,10 +36,10 @@
               {% if link.links != nil %}
               <div class="dropdown-menu mega-menu v-2 z-depth-1 p-sm-0 py-md-5" aria-labelledby="collapse-{{ link.title | slugify }}">
                 <div class="row justify-content-lg-center">
-                  <a class="nav-back-button d-flex d-lg-none" href="#">{{ link.title }} <span class="left-nav-arrow ml-4"></span> </a>
+                  <a class="nav-back-button d-flex justify-content-start d-lg-none w-100" href="#">Back <span class="left-nav-arrow ml-4"></span> </a>
                   {% for sublink in link.links %}
                   <div class="col-12 col-lg-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 or link.links.size == 3 and forloop.last == true %}two-col-sublinks{% endif %} sublink-{{ sublink.title | slugify}}">
-                    <h6 class="sub-title font-weight-bold white-text m-0"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
+                    <h6 class="sub-title font-weight-bold text-white"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
                     {% if sublink.link contains  '/social' %}
                       {% include modules/nav_stay_connected.html %}
                     {% elsif sublink.links.size %}
@@ -72,7 +72,7 @@
             </li>
             {% endfor %}
           </ul>
-          <ul class="utility-links navbar-nav ml-auto">   
+          <ul id="topnav" class="navbar-nav ml-auto">   
             <li class="nav-item search">
               <a class="nav-link" href="/search">
                 {{ link.title }}                 
@@ -82,8 +82,8 @@
             {% for link in site.data.navigation.top_bar_navigation.links %}   
               <li class="nav-item">
                 <a class="nav-link" href="{{ link.link }}">
-                  {{ link.title }}                 
-                    <span class="arrow d-inline-block d-lg-none">{% include icons/arrow.svg  %}</span>
+                  {{ link.title }}             
+                  <span class="arrow d-inline-block d-lg-none">{% include icons/arrow.svg  %}</span>
                 </a>
               </li>
             {% endfor %}            

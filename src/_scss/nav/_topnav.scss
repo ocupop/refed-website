@@ -1,0 +1,46 @@
+#topnav {
+  // mobile styles are defined in "primary.scss" because they are the same as the primary styles
+  margin-top: 0;
+
+  /* MOBILE ONLY */
+  @include media-breakpoint-down(md) {
+    display: column-reverse;
+
+    li.search {
+      display: none;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    li {
+      .nav-link {
+        font-family: $font-family-serif;
+        color: $primary;
+        font-size: rem(16);
+        background-color: $light;
+        margin-left: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        &:hover {
+          background-color: $secondary;
+          color: #fff;
+        }
+      }
+
+      &.search .nav-link {
+        background-color: transparent;
+        &:hover {
+          background-color: transparent;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    li {
+      .nav-link {
+        font-size: em(17);
+      }
+    }
+  }
+}
