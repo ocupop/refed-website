@@ -43,7 +43,7 @@
             height: rem(40);
             transform: rotate(90deg) translateX(-7px);
             path {
-              fill: $neutral-300;
+              fill: $mid;
             }
             polygon {
               fill: transparent;
@@ -91,7 +91,7 @@
                 a {
                   font-size: rem(16);
                   padding: em(12) em(75);
-                  color: $neutral-300;
+                  color: $mid;
                   &:hover {
                     color: $white;
                   }
@@ -161,7 +161,7 @@
           border-bottom: 9px solid $orange;
         }
         &:nth-child(5) a {
-          background-color: $primary-500;
+          background-color: $teal;
           color: $white;
         }
 
@@ -209,7 +209,7 @@
               font-size: em(16.5);
               &:hover {
                 text-decoration: none;
-                color: $neutral-100;
+                color: $mid;
               }
             }
           }
