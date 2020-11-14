@@ -106,7 +106,7 @@ $recycle: $recycle-500;
 
 // TODO: Have Abby/Jenny explain why we need new colors and can't use any of the primary color variations
 // Action Areas
-$optimize: #003a52;
+$optimize: #003a52; // Should be prevention-600
 $enhance: #045b80;
 $refine: #006995;
 $maximize: #048dc6;
@@ -120,7 +120,7 @@ $manufacturing: $indigo;
 $retail: $orange;
 $foodservice: $pink; // TODO: Does this name need to include "restaurants"
 $policymakers: $teal;
-$capital-providers: $green;
+$capital: $green;
 
 // Bootstrap Colors
 $primary: $prevention;
@@ -184,4 +184,16 @@ $theme-colors: (
   "recycle-400": $recycle-400,
   "recycle-500": $recycle-500,
   "recycle-600": $recycle-600,
+  "optimize": $optimize,
+  "enhance": $enhance,
+  "refine": $refine,
+  "maximize": $maximize,
+  "reshape": $reshape,
+  "strengthen": $strengthen,
+  "producers": $producers,
+  "manufacturing": $manufacturing,
+  "retail": $retail,
+  "foodservice": $foodservice,
+  "policymakers": $policymakers,
+  "capital": $capital,
 );

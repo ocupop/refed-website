@@ -28,4 +28,14 @@
     justify-content: space-between;
     // align-items: center;
   }
+  #typography {
+  }
+  #colorPalette {
+    .info {
+      display: block;
+    }
+    code {
+      display: block;
+    }
+  }
 }
