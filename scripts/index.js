@@ -21,7 +21,24 @@
 // document
 //   .querySelectorAll('.__react-component')
 //   .forEach(renderComponentInElement)
+import { gsap } from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
+
+ScrollTrigger.create({
+  trigger: ".subnav",
+  start: 'top +110',
+  end: 99999,
+  pin: true,
+  pinSpacing: false,
+  toggleClass: {
+    className: 'fixed-top',
+    targets: '.subnav'
+  }
+})
 // Navbar collapse sub-menu
 var matches = document.querySelectorAll('.nav-back-button');
 if (matches) {
@@ -35,27 +52,30 @@ if (matches) {
 }
 
 
-/* BEGIN Sticky Sub-Navigation with ScrollMagick */
-var w = window.innerWidth;
-var controller;
-var size = w > 768 ? "big" : "small";
-//if (size === "big") {
-makeScrollMagic();
-//}
+// /* BEGIN Sticky Sub-Navigation with ScrollMagick */
+// var w = window.innerWidth;
+// var controller;
+// var size = w > 768 ? "big" : "small";
+// //if (size === "big") {
+// makeScrollMagic();
+// //}
 
-function makeScrollMagic() {
-  controller = new ScrollMagic.Controller();
-  var scene = new ScrollMagic.Scene({
-    triggerElement: ".subnav",
-    triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
-  })
-    .setClassToggle(".subnav", "fixed-top") // add class toggle
-    .setPin(".subnav", {
-      // spacerClass: "stickynav"
-    })
-    //.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-    .addTo(controller);
-}
+// function makeScrollMagic() {
+//   controller = new ScrollMagic.Controller();
+//   var scene = new ScrollMagic.Scene({
+//     triggerElement: ".subnav",
+//     triggerHook: 0, // 0=top, 0.5=middle, 1=bottom
+//   })
+//     .setClassToggle(".subnav", "fixed-top") // add class toggle
+//     .setPin(".subnav", {
+//       // spacerClass: "stickynav"
+//     })
+//     // .addIndicators()
+//     // .addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+//     .addTo(controller);
+// }
+
+
 /*
  THIS FUNCTION ALLOWED FOR SCROLLMAGICK ONLY TO ACTIVATE ON DESKTOP SIZES, NOT MOBILE.
 NOTE: after writing this, I later discovered the "WatchCSS" option for flickity, which is a more elegant solution:

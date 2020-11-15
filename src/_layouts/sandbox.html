@@ -15,8 +15,8 @@ show_footer:
     </div>
   </div>
 </section>
-{% if page.subnav %}
-  {% include nav/subnav.html items=page.sections %}
+{% if page.subnav.show %}
+  {% include nav/subnav.html items=page.sections label=page.subnav.label %}
 {% endif %}
 
 {% for section in page.sections %}
@@ -29,7 +29,10 @@ show_footer:
   <div class="container">
     <div class="row">
       <div class="col-12">
-
+        <div class="editable">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate porro iste fugit eveniet sapiente illo animi
+          ea, sint corporis itaque id similique esse nostrum voluptatem ab neque ipsum repudiandae!
+        </div>
       </div>
     </div>
   </div>

@@ -1,11 +1,16 @@
+$header-height: 110px;
+$header-condensed-height: 60px;
 .subnav {
-  padding: 2rem 0;
+  padding: 1rem 0 0;
   background-color: $teal;
   color: $white;
   z-index: 999;
-  @include transition(0.5);
+  @include transition(1s);
   &.fixed-top {
     box-shadow: 0 0 5px rgba($black, 0.5);
+    padding: 0.25rem 0 !important;
+    height: auto !important;
+    @include transition(1s);
     .col {
       display: flex;
       align-items: center;
@@ -16,13 +21,30 @@
   .navbar {
     padding: 0.5rem 0;
   }
+  // .navbar-toggler {
+  //   border: none;
+  //   .navbar-toggler-icon {
+  //     background: none;
+  //     color: $white;
+  //     font-size: 2rem;
+  //     &:before {
+  //       content: "\ea78";
+  //       font-family: $font-family-icon !important;
+  //       font-style: normal;
+  //       -webkit-font-smoothing: antialiased;
+  //     }
+  //   }
+  //   &.collapsed .navbar-toggler-icon:before {
+  //     content: "\ea4e";
+  //   }
+  // }
   ul.nav {
     width: 100%;
+    @include media-breakpoint-down(md) {
+      // flex-direction: column;
+    }
     li.nav-item {
-      margin-right: 2em;
-      &:last-item {
-        margin-right: 0;
-      }
+      margin-right: 1.5rem;
       a.nav-link {
         padding: 0.5rem 0;
         font-weight: $font-weight-semibold;
