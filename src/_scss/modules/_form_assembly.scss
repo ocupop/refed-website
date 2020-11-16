@@ -53,7 +53,7 @@
         margin-top: 0 !important;
         text-transform: uppercase !important;
         font-weight: 100 !important;
-        background-color: $secondary;
+        background-color: $blue;
         text-transform: none !important;
         border-radius: 0;
         font-weight: 600 !important;
@@ -125,7 +125,7 @@
           margin-top: 0 !important;
           text-transform: uppercase !important;
           font-weight: 100 !important;
-          background-color: $secondary;
+          background-color: $blue;
           text-transform: none !important;
           border-radius: 0;
           font-weight: 600 !important;
@@ -170,6 +170,21 @@
         border: 1px solid $body-color;
         select {
           width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.form-theme-light {
+  .wFormContainer {
+    .wForm {
+      .inputWrapper {
+        display: block;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          background-color: $white !important;
         }
       }
     }

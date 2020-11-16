@@ -16,27 +16,22 @@ hero:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section>
+<section id="stay-connected">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
         <div class="editable mb-4">
           <h2>Social Channels</h2>
         </div>
-        <div class="d-flex">
-          <a href="{{ site.twitter_url }}" class="circle-icon circle-icon-smaller rounded-circle bg-teal text-white">
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a href="{{ site.linkedin_url }}" class="circle-icon circle-icon-smaller rounded-circle bg-rescue-400 text-white">
-            <i class="ri-linkedin-fill"></i>
-          </a>
+        <div class="socialnav-rounded">
+          {% include nav/socialnav.html %}
         </div>
       </div>
       <div class="col-lg-6">
         <div class="editable">
           <h2>Newsletter</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est fugit quod ipsam commodi consectetur ex officiis vitae neque inventore.</p>
-          <a href="/newsletter-archive" class="btn btn-secondary">See Newsletter Archive</a>
+          <a href="/newsletter-archive" class="btn btn-blue editable">See Newsletter Archive</a>
         </div>
       </div>
     </div>
