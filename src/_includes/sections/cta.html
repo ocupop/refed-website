@@ -1,4 +1,4 @@
-<section class="cta bg-{{ include.cta.section_background_color : default: lightest }} text-left" id="{{ include.id }}">
+<section class="cta bg-{{ include.cta.section_background_color | default: 'lighter' }} text-left" id="{{ include.id }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mb-3 mb-lg-0">
@@ -11,7 +11,7 @@
       </div>
       {% if include.cta.link != nil %}
       <div class="col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
-        <a href="{{ include.cta.link }}" class="btn btn-success text-serif text-nowrap btn-lg">{{ include.cta.link_label }}</a>
+        <a href="{{ include.cta.link }}" class="btn btn-recycle text-serif text-nowrap btn-lg">{{ include.cta.link_label }}</a>
       </div>
       {% endif %}
     </div>

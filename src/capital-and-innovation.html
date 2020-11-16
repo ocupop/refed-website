@@ -158,7 +158,6 @@ _sticky_nav:
 
 {% include nav/subnav.html items=page._sticky_nav label="Key Program Areas" %}
 
-
 <section id="investment-and-innovation" class="bg-lighter">
   <div class="container">
     <div class="row mb-5">
@@ -166,8 +165,10 @@ _sticky_nav:
         <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
       </div>
       <div class="col">
-        <h3 class="editable text-serif">Investment and Innovation</h3>
-        <p>ReFED’s Capital & Innovation team creates and provides a number of resources and tools for food businesses, capital providers, and food waste solution providers. These assets provide insights on the food waste landscape and can help inform key decisions when it comes to reducing the amount of food that goes uneaten.</p>
+        <div class="editable">
+          <h3>Investment and Innovation</h3>
+          <p>ReFED’s Capital & Innovation team creates and provides a number of resources and tools for food businesses, capital providers, and food waste solution providers. These assets provide insights on the food waste landscape and can help inform key decisions when it comes to reducing the amount of food that goes uneaten.</p>
+        </div>
       </div>
     </div>
     <div class="row mb-5">
@@ -178,7 +179,7 @@ _sticky_nav:
             <h4>{{ resource.title }}</h4>
             {{ resource.description_html }}
           </div>
-          <a href="{{ resource.link }}" class="text-link">{{ resource.link_label | default: 'Learn More' }}</a>
+          <a href="{{ resource.link }}" class="btn-link text-blue">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
       <div class="col-lg-1"></div>
@@ -237,16 +238,16 @@ _sticky_nav:
     <div class="row">
       <div class="col-lg-7">
         <div class="editable">
-          <h3>The ReFED Nonprofit Food Recovery Accelerator</h3>
+          <h4>The ReFED Nonprofit Food Recovery Accelerator</h4>
           <p>In a country where up to forty percent of perfectly good food is wasted, yet 37 million Americans are food insecure, an opportunity exists to enact systems-level change to enhance the food system, reduce waste, and ensure that food ultimately goes towards serving its highest purpose of feeding people in a dignified manner.</p>
           <p>ReFED saw this opportunity and in the Fall of 2019 launched its Nonprofit Food Recovery Accelerator with support from the Walmart Foundation and in partnership with +Acumen.</p>
           <p>The Accelerator immersed 10 nonprofit food recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs. Its focus was on leveraging earned revenue models, technology solutions, and human-centered design to catalyze ideas and inspire actions that could help the organizations overcome challenges that have limited their ability to scale solutions to increase the amount of healthy food available to food insecure Americans.</p>
         </div>
 
-        <a href="#" class="text-link editable">Learn More <span class="text-danger">* add link *</span></a>
+        <a href="#" class="btn-link text-blue editable">Learn More <span class="text-danger">* add link *</span></a>
       </div>
       <div class="col-lg-4 ml-lg-auto">
-        <h6 class="editable text-uppercase text-mid mt-5">Program at a Glance</h6>
+        <h6 class="editable text-gray mt-5">Program at a Glance</h6>
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
             <li class="d-flex align-items-center mb-3"><span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}</li>
@@ -277,7 +278,7 @@ _sticky_nav:
           <h4>{{ solution.title }}</h4>
           {{ solution.description_html }}
           {% if solution.link %}
-            <a href="{{ solution.link }}" class="text-link">{{ solution.link_label | default: 'Learn More' }}</a>
+            <a href="{{ solution.link }}" class="btn-link text-blue">{{ solution.link_label | default: 'Learn More' }}</a>
           {% endif %}
         </div>
       </div>
@@ -303,7 +304,7 @@ _sticky_nav:
         <div class="col-lg-6 mb-5">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
-          <a href="{{ convening.link }}" class="text-link">{{ convening.link_label | default: 'Learn More'}}</a>
+          <a href="{{ convening.link }}" class="btn-link text-blue">{{ convening.link_label | default: 'Learn More'}}</a>
         </div>
       {% endfor %}
     </div>
@@ -333,7 +334,7 @@ _sticky_nav:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="text-center text-serif editable">Explore other areas of the ReFED organization</h3>
+        <h3 class="text-center editable">Explore other areas of the ReFED organization</h3>
       </div>
     </div>
     <div class="row">

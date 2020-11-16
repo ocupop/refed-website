@@ -66,13 +66,14 @@ operation_principles:
           We are agile: we iterate quickly, learn from our work, and use it to
           improve next time- We collaborate wisely
       - title: We believe in progress not perfection
-    icon_image: /img/icons/operating_principles/operatingprinciples_integrity.svg
+    icon_image: /img/icons/operating_principles/operatingprinciples_design.svg
 cta:
   description_html: >-
     <p>Learn more about ReFED, our values, and our mission. <a
     href="/contact">Contact us</a> if you think you are a good match.</p>
   link: /who-we-are
   link_label: Get to know us
+  section_background_color: lighter
   colorbar:
     color: '#e65e4a'
     bar_position:
@@ -97,21 +98,22 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="preheader editable">Current Vacancies</h2>
+        <h3 class="editable">Current Vacancies</h3>
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
-
-        <p class="h3 text-serif font-weight-light my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
-        <hr />
+        <div id="notification-careers" >
+          <p class="h3 my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
+        </div>
+        <hr class="mb-5"/>
       </div>
     </div>
-
+    <!-- TODO loop through careers -->
     {% for i in (1..3) %}
-      <div class="row my-5">
+      <div class="row mb-5">
         <div class="col-12">
-          <h3>Job Title</h3>
-          <h5 class="mb-3">Job Location</h5>
+          <h4>Job Title</h4>
+          <h5 class="text-gray">Job Location</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="btn btn-secondary mt-5" href="#">Apply Now</a>
+          <a class="btn btn-blue mt-3" href="#">Apply Now</a>
         </div>
       </div>
     {% endfor %}
@@ -120,11 +122,11 @@ cta:
 <section class="cta bg-primary text-white">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 mb-3 mb-lg-0">
+      <div class="col-12 col-lg-7 mb-3 mb-lg-0">
         <p class="lead editable">Don’t see a match? We would still love to connect with you if you have something to bring to the table</p>
       </div>
-      <div class="col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
-        <a href="#" class="btn btn-success text-serif text-nowrap btn-lg">Submit a Resume</a>
+      <div class="col-12 col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
+        <a href="#" class="btn btn-recycle text-serif btn-lg editable">Submit a Resume</a>
       </div>
     </div>
   </div>
@@ -132,10 +134,10 @@ cta:
 <section class="bg-lighter">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
-        <h2 class="preheader">Our Values</h2>
+      <div class="col-12 col-lg-8">
+        <h3>Our Values</h3>
         <p>Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.</p>
-        <a href="#" class="text-link">See our values</a>
+        <a href="/who-we-are#our-values" class="btn-link text-blue">See our values</a>
       </div>
     </div>
   </div>
@@ -143,70 +145,28 @@ cta:
 
 <section>
   <div class="container">
-    <h2 class="preheader">Perks and Benefits</h2>
-    <p>ReFED offers a competitive benefits package, opportunities for professional development, and policies and programs that encourage a healthy work-life balance. Join our ReFED family and help us drive purposeful action to reduce wasted food in the U.S.</p>
-    <ul class="row circle-icon-list circle-icon-list--small-list p-0 w-100">
-      <!-- repeat this one. Remove the other ones. background color and icon will be dynamic -->
+    <div class="row mb-5">
+      <div class="col-12 col-lg-10">
+        <div class="editable">
+          <h3>Perks and Benefits</h3>
+          <p>ReFED offers a competitive benefits package, opportunities for professional development, and policies and programs that encourage a healthy work-life balance. Join our ReFED family and help us drive purposeful action to reduce wasted food in the U.S.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
       {% for benefit in page.perks_and_benefits %}
-        <li class="d-md-flex col-md-6 align-items-center">
-          <div class="circle-icon circle-icon-small rounded-circle bg-info">
-            <img src="{{ benefit.icon_image }}" class="img-fluid" alt="{{ benefit.title}} icon" />
+        <div class="col-md-6">
+          <div class="row align-items-center mb-5">
+            <div class="col-md-auto">
+              <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md" alt="{{ benefit.title}} icon" />
+            </div>
+            <div class="col">
+              <p class="lead mb-0">{{ benefit.title }}</p>
+            </div>
           </div>
-          <div class="description col">
-            <p class="lead">{{ benefit.title }}</p>
-          </div>
-        </li>
+        </div>
       {% endfor %}
-      <!-- END repeat comment -->
-      <!-- <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-info">
-          <img src="/img/icons/careers/careers_401k.svg" class="img-fluid" alt="401k icon">
-        </div>
-        <div class="description col">
-          <p class="lead editable">401(k) plans with generous employer matching</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-primary">
-          <img src="/img/icons/careers/careers_vision.svg" class="img-fluid" alt="Vision and Dental icon">
-        </div>
-        <div class="description col">
-          <p class="lead editable">Option dental and vision coverage</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-primary">
-          <img src="/img/icons/careers/careers_professionaldev.svg" class="img-fluid" alt="Professional Dev icon">
-        </div>
-        <div class="description col">
-          <p class="lead editable">Professional Development Opportunities and Mentor Program</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-secondary"></div>
-        <div class="description col">
-          <p class="lead editable">Short-term and long-term disability coverage</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-secondary"></div>
-        <div class="description col">
-          <p class="lead editable">Paid holidays, vacation, sick, and personal time.</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-success"></div>
-        <div class="description col">
-          <p class="h3">Term life insurance</p>
-        </div>
-      </li>
-      <li class="d-md-flex col-md-6 align-items-center">
-        <div class="circle-icon circle-icon-small rounded-circle bg-success"></div>
-        <div class="description col">
-          <p class="h3">Flexible work environment</p>
-        </div>
-      </li> -->
-    </ul>
+    </div>
   </div>
 </section>
 
@@ -214,9 +174,9 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="preheader editable">
+        <h3 class="editable">
           Our Equity Commitment
-        </h2>
+        </h3>
         <div class="editable">
           <p>ReFED, Inc. is an equal opportunity employer. We believe that everyone has a seat at the table, and that this table always has room for growth. The success of our organization is rooted in the visible and invisible qualities of our people, who embody a variety of views, perspectives, and backgrounds to push the envelope of what&rsquo;s possible and better meet the needs of our community in the hopes of building a sustainable, resilient, and inclusive food system. Community is more than a word here. As stewards of this food system &mdash; one that benefits from the inclusion and enhancement of diverse voices &mdash; we recognize that systemic barriers limit opportunities for certain groups which contributes to ongoing disparities. Furthermore, we accept that our commitment to diversity, equity, and inclusion (DEI) means a commitment to constant learning, listening, and iteration in all aspects of our work.</p>
           <p>Intrinsically, we are an organization that seeks to attract exceptional and dedicated talent to advance our mission, and that firmly believes that inclusion through recruiting, hiring, developing, training, and promoting employees of all genders, races, religions, ages, national origin, political affiliations, ancestries, sexual orientations, disabilities, and veteran status, creates an atmosphere that enables us to lead with an entrepreneurial spirit and innovate with enterprise. The time for action to reduce food waste is now. Let&rsquo;s work together to advance data-driven solutions.</p>
@@ -230,7 +190,7 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="mb-5 editable">Operation Principles at ReFED:</h2>
+        <h3 class="mb-5 editable">Operation Principles at ReFED:</h3>
       </div>
     </div>
     <div class="row">

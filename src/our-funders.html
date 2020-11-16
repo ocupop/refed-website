@@ -14,17 +14,6 @@ hero:
       - link:
         link_label:
         button_type:
-cta:
-  description_html: >-
-    <p>To learn how you can support our mission, please contact us via
-    email.</p>
-  link: /contact
-  link_label: Contact Us
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - left
-
 logo_pile:
   title: Our Funders
   description_html: >- 
@@ -38,18 +27,30 @@ logo_pile:
       image: https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
     - alt_text: Refed Alt Tag
       image: https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
+case_studies:      
+cta:
+  description_html: >-
+    <p>To learn how you can support our mission, please contact us via
+    email.</p>
+  link: /contact
+  link_label: Contact Us
+  section_background_color: lighter
+  colorbar:
+    color: '#e65e4a'
+    bar_position:
+      - left      
 
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section class="page-intro" id="overview">
+<section id="overview">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="lead editable mb-0">
-          ReFED envisions a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow. ReFED produces data and insights which help inform work with a diverse stakeholder network to catalyze collaboration, investment, and innovation to reach our national and global goals of reducing food waste by 50 percent by 2030.
-        </p>
+        <div class="lead editable">
+          <p>ReFED envisions a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow. ReFED produces data and insights which help inform work with a diverse stakeholder network to catalyze collaboration, investment, and innovation to reach our national and global goals of reducing food waste by 50 percent by 2030.</p>
+        </div>
       </div>
     </div>
   </div>

@@ -28,10 +28,10 @@ $arrow-header-desktop-height: 10rem;
     .stat {
       line-height: 1.2;
       .number {
-        font-size: rem(31);
+        font-size: 2rem;
       }
       label {
-        font-size: rem(12);
+        font-size: 0.9rem;
       }
     }
   }
@@ -47,9 +47,9 @@ $arrow-header-desktop-height: 10rem;
         width: 3rem;
         height: 100%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: rotate(0);
         border-style: solid;
-        border-width: calc(#{$arrow-header-desktop-height} / 2) 0 calc(#{$arrow-header-desktop-height} / 2) 4rem;
+        border-width: calc(#{$arrow-header-desktop-height} / 2) 0 calc(#{$arrow-header-desktop-height} / 2) 3rem;
         border-color: transparent transparent transparent #168374;
         svg {
           display: none;
@@ -91,10 +91,10 @@ $arrow-header-desktop-height: 10rem;
       background-color: $white;
       .stat {
         .number {
-          font-size: rem(50);
+          font-size: 2.2rem;
         }
         label {
-          font-size: rem(17);
+          font-size: 1rem;
         }
       }
     }

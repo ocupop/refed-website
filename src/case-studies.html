@@ -14,6 +14,8 @@ hero:
         button_type:  
 featured_case_studies:
   - crown-family-philanthropies
+  - sample-case-study
+  - crown-family-philanthropies
 cta:
   description_html: >-
     From innovation accelerators to capital campaigns to convening leadership,
@@ -21,7 +23,7 @@ cta:
     doing today.
   link: /our-impact
   link_label: See our impact
-  section_background_color: lightest
+  section_background_color: lighter
   colorbar:
     color: '#e65e4a'
     bar_position:
@@ -30,14 +32,11 @@ cta:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-
-
 <div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
-  {% for featured_slug in page.featured_case_studies %}
-    
-    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %}
+  {% for featured in page.featured_case_studies %}
+    {% assign case_study = site.case_studies | where: 'slug', featured | first %}
     {% include sections/split_section.html 
-      item=featured
+      item=case_study
       section_background_color='primary' 
       preheader='Impact Stories'
       section_background_color='white' 
@@ -50,42 +49,11 @@ cta:
     %}
   {% endfor %}
 </div>
-
-
-<!-- This section needs work -->
-
-<section class="list-with-filter">
+<!-- TODO logic to rule out displaying case studies twice on this page -->
+<section>
   <div class="container"> 
-    <!-- <div class="row mb-5">
-      <div class="col">
-        <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
-          View:
-        </label>
-        <select class="form-control d-inline w-auto" id="jumpmenu" name="jumpmenu" onChange="self.location=this.options[this.selectedIndex].value">
-          <option value='#'>All</option>
-          <option value='#invenstment-tracker'>Webinars</option>
-          <option value='#'>Other</option>
-          <option value='#'>These options will</option>
-          <option value='#'>filter the results</option>
-          <option value='#'>listed below</option>
-        </select>
- 
-      </div>  
-    </div> -->
-
     {% include sections/carousels/carousel_cards.html items=site.case_studies %}
-
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
    
 {% include sections/cta.html cta=page.cta %}

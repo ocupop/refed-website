@@ -104,28 +104,16 @@ _sticky_nav:
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-<section class="pb-0" id="overview">
+<section id="overview">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-lg-8">
         <div class="lead editable">
           <p>A range of solutions to reduce food waste already exist – some are breakthrough, some are basic, and importantly, many have a strong potential for investment returns. ReFED estimates that an investment of $YY over the next ten years will reduce food waste by XX tons, which will then avoid ZZ tons of GHGs, provide the ability to rescue AA meals, create BB jobs, and deliver CC in economic value to the country. And many businesses, cities, nonprofits, and others are already making a substantial impact to address the problem.</p>
         </div>
+        <p class="h3 editable">But much more needs to be done.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="pt-0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h2 class="preheader editable">But much more needs to be done.</h2>
-        <div class="editable">
-          <p>Our new Roadmap 2030 outlines seven priority areas across the food system where we must focus our efforts over the next ten years. Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste. What’s more, Roadmap 2030 is powered by the brand new ReFED Insights Engine, an online hub for data and insights; analysis of available solutions; recommended best practices; a directory of potential partners; and more. In line with the United Nations General Assembly’s recommended three-step approach of target, measure, and act to achieve a 50% reduction in food waste by 2030, ReFED’s Roadmap 2030 and the ReFED Insights Engine were specifically developed to provide food system players with everything they need to move from awareness about the problem to action.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 ml-lg-auto">
+      <div class="col-lg-3 ml-lg-auto">
         <p class="text-danger">Stat chart pulled from insights engine</p>
         <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
       </div>
@@ -133,21 +121,19 @@ _sticky_nav:
   </div>
 </section>
 
-<section class="bg-light"  id="roadmap-2020">
+<section id="roadmap-2020" class="bg-lighter">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-lg-auto">
-        <div class="text-center">
-          <h2 class="editable">Food Waste Action Guide</h2>
-          <div class="lead editable">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugit porro vero a, inventore minima quas necessitatibus quo quia? Vitae beatae possimus officiis praesentium, vel omnis quos ullam, ipsa porro voluptas facilis ad vero, optio assumenda? Amet, quod deleniti! Eaque illum ea et non enim temporibus commodi similique. Necessitatibus ipsum aperiam delectus nihil aut odio culpa officia vitae illo fugit. Eum aliquam suscipit maxime maiores eligendi dicta voluptates ratione consequuntur repellendus</p>
-          </div>
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="editable text-center">
+          <h2>Food Waste Action Guide</h2>
+          <p>Our new Roadmap 2030 outlines seven priority areas across the food system where we must focus our efforts over the next ten years. Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste. What’s more, Roadmap 2030 is powered by the brand new ReFED Insights Engine, an online hub for data and insights; analysis of available solutions; recommended best practices; a directory of potential partners; and more. In line with the United Nations General Assembly’s recommended three-step approach of target, measure, and act to achieve a 50% reduction in food waste by 2030, ReFED’s Roadmap 2030 and the ReFED Insights Engine were specifically developed to provide food system players with everything they need to move from awareness about the problem to action.</p>
         </div>
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-12">
-        <div class="bg-lighter p-5 text-center">
+        <div class="bg-white p-5 text-center">
           <p class="text-danger">Add Action guide section</p>
         </div>
       </div>
@@ -160,13 +146,14 @@ _sticky_nav:
 <section id="seven-action-areas">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-lg-10">
         <div class="editable">
           <h2>Priority Action Areas</h2>
           <p>Within each priority action area, we analyzed a range of potential solutions based on their impact potential (amount of food waste diverted, GHG emissions reduced, meals recovered, jobs created, and net economic benefit), effort required, feasibility, and potential barriers.</p>
         </div>
       </div>
     </div>
+    <!-- TODO loop through action areas once they are added -->
     {% for num in (1..4) %}
       <div class="row my-5 py-5">
         <div class="col-md-auto">
@@ -175,7 +162,7 @@ _sticky_nav:
         <div class="col">
           <h3 class="text-serif">Harvest Everything Grown</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p>
-          <a href="#" class="mt-3 btn btn-secondary">Learn More</a>
+          <a href="#" class="mt-3 btn btn-blue">Learn More</a>
         </div>
       </div>
     {% endfor %}
@@ -227,20 +214,19 @@ _sticky_nav:
     <div class="row my-5">
       <div class="col-12">
         <div class="text-center">
-          <a href="{{ site.insights_engine_url }}" class="btn btn-secondary">See Full Chart on ReFED Insights Engine</a>
+          <a href="{{ site.insights_engine_url }}" class="btn btn-blue">See Full Chart on ReFED Insights Engine</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
 <section>
   <div class="container" id="key-levers">
     <div class="row mb-5">
       <div class="col-12">
         <h2 class="editable">Levers</h2>
-        <p class="preheader">Everyone has a role to play in reducing food waste – even if you’re not directly connected to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</p>
+        <h3>Everyone has a role to play in reducing food waste – even if you’re not directly connected to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</h3>
       </div>
     </div>
     {% for lever in page.levers %}

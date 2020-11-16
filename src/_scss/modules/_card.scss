@@ -1,5 +1,6 @@
 // TODO: If the intent is to override Bootstrap's default styles then this should go in the Vendor folder
 .card {
+  border: 0;
   .card-body {
     padding: $card-spacer-x 0;
   }
