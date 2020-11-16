@@ -11,6 +11,7 @@
 .bg-image,
 .bg-video,
 .bg-iframe,
+.bg-placeholder,
 .hero-image,
 .bg-color-info,
 .responsive-iframe {
@@ -142,8 +143,6 @@
 .text-sans-serif {
   font-family: $font-family-base !important;
 }
-
-
 
 .opacity-0 {
   opacity: 0;

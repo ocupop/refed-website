@@ -1,25 +1,26 @@
-<section id="{{ group.tag }}">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class=" col-12 col-lg-9">
-        <h3>{{ group.label }}</h3>
-        <p>{{ group.summary }}</p>
-      </div>
-      <div class="col-12 col-lg-3">
-        {% for metric in group.metrics %}
-          {% include charts/donut.html label=metric.label slug=metric.slug  %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
+{% if page.subnav.show %}
+  {% include nav/subnav.html items=page.sectors label=page.subnav.label %}
+{% endif %}
 
-<section class="solution-group">
-  <div class="container">
-    {% for category in site.action_area_categories %}
-      <label>{{ category.label }}</label>
-      {% for area in category.areas %}
-        <div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse" data-target="#{{ group.tag }}-{{ area.uid }}">
+{% for sector in page.sectors %}
+  <section id="{{ sector.label | slugify | default: 'all-solutions' }}" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class=" col-12 col-lg-9">
+          <h3>{{ sector.label }}</h3>
+          <p>{{ sector.summary }}</p>
+        </div>
+        <div class="col-12 col-lg-3">
+          {% include charts/donut.html %}
+        </div>
+      </div>
+
+      <div class="sector">
+        {% for category in site.action_area_categories %}
+        <label>{{ category.label }}</label>
+        {% for area in category.areas %}
+        <div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse"
+          data-target="#{{ sector.tag }}-{{ area.uid }}">
           <div class="col-lg-auto flex-lg-grow-1">
             <div class="d-flex align-items-center">
               <div class="col-auto">
@@ -56,12 +57,14 @@
             </div>
           </div>
         </div>
-        <div class="collapse" id="{{ group.tag }}-{{ area.uid }}">
+        <div class="collapse" id="{{ sector.tag }}-{{ area.uid }}">
           <div class="row my-3">
             <div class="col-12">
               <div class="bg-light text-prevention p-5">
                 <h5 class="text-serif">Overview</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quaerat incidunt soluta dolore veritatis iste odit? Magnam aut qui excepturi illum odit laboriosam at. Quaerat porro quidem illo eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quaerat incidunt soluta dolore
+                  veritatis
+                  iste odit? Magnam aut qui excepturi illum odit laboriosam at. Quaerat porro quidem illo eaque!</p>
               </div>
             </div>
           </div>
@@ -95,9 +98,12 @@
               </div>
             </div>
           </div>
-          <hr/>
+          <hr />
         </div>
-      {% endfor %}
-    {% endfor %}
-  </div>
-</section>
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endfor %}
+
