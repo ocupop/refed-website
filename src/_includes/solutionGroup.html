@@ -16,28 +16,22 @@
 
 <section class="solution-group">
   <div class="container">
-    {% assign prevention = site.action_areas | where: "category", "prevention" %}
-    {% assign rescue = site.action_areas | where: "category", "rescue" %}
-    {% assign recycle = site.action_areas | where: "category", "recycle" %}
-
-    {% assign categories = site.action_areas | group_by: "category" %}
-
-    {% for category in categories %}
-      {% for area in category.items %}
-        <div data-target="#collapse-{{ area.slug }}" class="row border-{{ area.category }}" data-toggle="collapse">
+    {% for category in site.action_area_categories %}
+      {% for area in category.areas %}
+        <div class="row row-{{ category.uid }}" data-toggle="collapse" data-target="#collapse-{{ area.uid }}">
           <div class="col-lg-auto flex-lg-grow-1">
             <div class="d-flex align-items-center">
               <div class="col-auto">
-                <div class="icon icon-sm icon-{{ area.slug | split: '-' | first }}"></div>
+                <div class="icon icon-sm icon-{{ area.uid }} ml-3"></div>
               </div>
               <div class="col">
-                <h4 class="mb-0">{{ area.title }}</h4>
+                <h4 class="mb-0">{{ area.label }}</h4>
               </div>
             </div>
           </div>
           <div class="col-lg-auto ml-lg-auto">
             <div class="d-flex align-items-center">
-
+              <!-- TODO: Loop through the key indicators. Where is this array managed? -->
               <div class="d-flex flex-column flex-lg-row align-items-center pr-4">
                 <span class="stat-number">
                   2
@@ -51,7 +45,7 @@
                 </span>
                 <span class="stat-text">Financial Investment<br>Needed</span>
               </div>
-
+              <!-- END TODO -->
             </div>
           </div>
           <div class="col-12 col-lg-auto">
@@ -61,8 +55,8 @@
             </div>
           </div>
         </div>
-        <div class="collapse" id="collapse-{{ area.slug }}">
-          <div class="bg-light text-prevention">
+        <div class="row collapse" id="collapse-{{ area.uid }}">
+          <div class="bg-light text-prevention p-5">
             <h5 class="text-serif">Overview</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quaerat incidunt soluta dolore veritatis iste odit? Magnam aut qui excepturi illum odit laboriosam at. Quaerat porro quidem illo eaque!</p>
           </div>
@@ -98,6 +92,5 @@
         </div>
       {% endfor %}
     {% endfor %}
-
   </div>
 </section>

@@ -6,12 +6,9 @@
 .solution-group {
   .row {
     position: relative;
-    padding: 0.75rem 2rem;
     align-items: center;
     border-left: 10px solid transparent;
-    &:hover {
-      text-decoration: none;
-    }
+    cursor: pointer;
     &::before {
       content: "";
       display: block;
@@ -20,7 +17,24 @@
       position: absolute;
       left: 15px;
       top: 0;
+      background-color: transparent;
     }
+    &.row-prevention {
+      &::before {
+        background-color: $prevention;
+      }
+    }
+    &.row-rescue {
+      &::before {
+        background-color: $rescue;
+      }
+    }
+    &.row-recycle {
+      &::before {
+        background-color: $recycle;
+      }
+    }
+
     h4 {
       font-size: 1.2rem;
       @include media-breakpoint-up(lg) {
@@ -30,6 +44,42 @@
     .icon-img-sm {
       @include media-breakpoint-down(md) {
         width: 40px;
+      }
+    }
+  }
+  .stat-number {
+    font-size: 36px;
+    font-family: $font-family-serif;
+    margin-right: 10px;
+  }
+
+  .stat-text {
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .collapse-trigger {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    font-size: 14px;
+    padding: 15px;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    span {
+      margin-right: 5px;
+    }
+    @include media-breakpoint-up(lg) {
+      flex-direction: column;
+      span {
+        margin-right: 0;
+        &:nth-of-type(1) {
+          margin-bottom: 5px;
+        }
       }
     }
   }
