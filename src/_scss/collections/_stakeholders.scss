@@ -5,11 +5,10 @@
 
 .solution-group {
   .row {
-    // margin-bottom: 1.5rem;
-    align-items: center;
     position: relative;
-    padding-left: 30px;
-    border-left: 10px solid red;
+    padding: 0.75rem 2rem;
+    align-items: center;
+    border-left: 10px solid transparent;
     &:hover {
       text-decoration: none;
     }

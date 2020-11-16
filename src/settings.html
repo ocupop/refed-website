@@ -188,6 +188,31 @@ palette:
   </div>
 </section>
 
+<!-- ICONS -->
+<section id="themeIcons">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">Icons</p>
+        <p class="subheading">Stakeholders</p>
+        <div class="row row-cols-1 row-cols-md-5">
+          {% for stakeholder in site.stakeholders %}
+          <div class="col my-2">
+            <div class="p-3 text-center">
+              <i class="icon icon-sm icon-{{ stakeholder.slug | split: '-' | first }} m-auto"></i>
+            </div>
+            <div class="info py-2">
+              <code>.icon-{{ stakeholder.slug }}</code><br/>
+              <small>{{ stakeholder.title }}</small>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section>
   <div class="container">
