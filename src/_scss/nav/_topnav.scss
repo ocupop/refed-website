@@ -15,14 +15,13 @@
       .nav-link {
         font-family: $font-family-serif;
         color: $primary;
-        font-size: rem(16);
+        font-size: 1rem;
         background-color: $light;
-        margin-left: 1em;
-        padding-right: 1em;
-        padding-left: 1em;
+        margin-left: 1rem;
+        padding: 6px 12px;
         &:hover {
-          background-color: $secondary;
-          color: #fff;
+          background-color: $blue;
+          color: $white;
         }
       }
 
@@ -30,7 +29,7 @@
         background-color: transparent;
         &:hover {
           background-color: transparent;
-          color: #000;
+          color: $black;
         }
       }
     }
@@ -39,7 +38,7 @@
   @include media-breakpoint-up(xl) {
     li {
       .nav-link {
-        font-size: em(17);
+        font-size: 1rem;
       }
     }
   }

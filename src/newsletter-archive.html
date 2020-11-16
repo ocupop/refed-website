@@ -7,11 +7,13 @@ hero:
     image: /img/newsroom/archives_header_image.jpg
    
 ---
+
 {% include modules/subnav_newsroom.html %}
-
 {% include sections/carousels/carousel_hero.html items=page.hero %}
-
-{% include sections/newsroom_filter.html %}
+{% comment %}
+  TODO implement filtering
+  {% include sections/newsroom_filter.html %}
+{% endcomment %}
 
 <section class="press-list">
   <div class="container"> 
