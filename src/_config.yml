@@ -297,12 +297,41 @@ _array_structures:
           embed_url:
 
 
-#hard coded select fields
-area_categories:
-  - prevention
-  - rescue
-  - recycle
+# Action Areas Taxonomy
+action_area_categories:
+  - label: Prevention
+    uid: prevention
+    areas:
+      - label: Optimize The Harvest
+        slug: optimize-the-harvest
+        uid: optimize
+      - label: Enhance Product Distribution
+        slug: enhance-product-distribution
+        uid: enhance
+      - label: Refine Product Management
+        slug: refine-product-management
+        uid: refine
+      - label: Maximize Product Utilization
+        slug: maximize-product-utilization
+        uid: maximize
+      - label: Reshape Consumer Environments
+        slug: reshape-consumer-environments
+        uid: reshape
+  - label: Rescue
+    uid: rescue
+    areas:
+      - label: Strengthen Food Rescue
+        slug: strengthen-food-rescue
+        uid: rescue
+  - label: Recycling
+    uid: recycle
+    areas:
+      - label: Recycle Anything Remaining
+        slug: recycle-anything-remaining
+        uid: recycle
 
+
+#hard coded select fields
 event_types:
   - in_person
   - webinar
