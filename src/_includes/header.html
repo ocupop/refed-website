@@ -40,7 +40,7 @@
                   {% for sublink in link.links %}
                   <div class="col-12 col-lg-3 sub-menu mb-xl-0 mb-4 {% if sublink.links.size > 7 or link.links.size == 3 and forloop.last == true %}two-col-sublinks{% endif %} sublink-{{ sublink.title | slugify}}">
                     <h6 class="sub-title font-weight-bold text-white"><a href="{{ sublink.link }}">{{ sublink.title }}</a></h6>
-                    {% if sublink.link contains  '/social' %}
+                    {% if sublink.link contains  '/stay-connected' %}
                       {% include modules/nav_stay_connected.html %}
                     {% elsif sublink.links.size %}
                       <ul class="list-unstyled">

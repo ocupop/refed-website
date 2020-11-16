@@ -8,3 +8,43 @@
   font-size: 4rem;
   color: $white;
 }
+
+//buttons
+.btn-link {
+  padding-right: 25px;
+  position: relative;
+  color: $blue;
+  &::after {
+    content: "\ea6d";
+    font-family: 'remixicon' !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+  }
+  &:hover {
+    color: darken($blue, 15%);
+    text-decoration: none;
+  }
+  &.download-link {
+    padding-right: 35px;
+    &::after {
+      content: "\ec5a";
+      font-family: 'remixicon' !important;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      background-color: $blue;
+      width: 25px;
+      height: 25px;
+      color: $white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
