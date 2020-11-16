@@ -298,6 +298,10 @@ _array_structures:
 
 
 #hard coded select fields
+area_categories:
+  - prevention
+  - rescue
+  - recycle
 
 event_types:
   - in_person
