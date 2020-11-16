@@ -12,7 +12,7 @@
         {% endif %}
         {{ featured.description_html }}
     
-        <p><a href="{{ featured.event_site_link | default: featured.url }}" {% if featured.event_site_link %}target="_blank"{% endif %} class="btn-link">Learn more</a></p>
+        <p><a href="{{ featured.event_site_link | default: featured.url }}" {% if featured.event_site_link %}target="_blank"{% endif %} class="btn-link text-secondary">Learn more</a></p>
         {% if featured.featured_image %}
           <img class="img-fluid mt-5" src="{{ featured.featured_image}}" alt="{{ featured.title }} image" />
         {% endif %}

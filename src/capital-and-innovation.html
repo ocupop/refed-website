@@ -217,7 +217,7 @@ _sticky_nav:
           <h4>{{ service.title }}</h4>
           {{ service.description_html }}
           {% if service.link %}
-            <a href="{{ service.link }}" class="text-link">{{ service.link_label | default: 'Learn More' }}</a>
+            <a href="{{ service.link }}" class="btn-link">{{ service.link_label | default: 'Learn More' }}</a>
           {% endif %}
         </div>
       </div>

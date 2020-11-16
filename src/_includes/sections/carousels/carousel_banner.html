@@ -43,7 +43,7 @@
                   {% if item.buttons.size > 0 %}
                     <div class="hero-buttons mt-3">
                       {% for button in hero.buttons %}
-                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3"
+                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn-link{% endif %} block mr-3"
                                   href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                       {% endfor %}
                     </div>
