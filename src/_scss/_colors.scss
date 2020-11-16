@@ -3,7 +3,7 @@ $gray-100: #f8f8f7; // Lighter
 $gray-200: #eceae8; // Light
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #848484;
 $gray-600: #6d8089; // Mid
 $gray-700: #344955; // Dark
 $gray-800: #343a40 !default;
@@ -132,6 +132,7 @@ $danger: $red !default;
 
 $lighter: $gray-100;
 $light: $gray-200;
+$gray: $gray-500;
 $mid: $gray-600;
 $dark: $gray-700;
 $darker: $gray-900;
@@ -150,6 +151,7 @@ $theme-colors: (
   "white": $white,
   "lighter": $lighter,
   "light": $light,
+  "gray": $gray,
   "mid": $mid,
   "dark": $dark,
   "black": $black,
@@ -163,6 +165,12 @@ $theme-colors: (
   "green": $green,
   "teal": $teal,
   "cyan": $cyan,
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
   "prevention": $prevention,
   "prevention-100": $prevention-100,
   "prevention-200": $prevention-200,

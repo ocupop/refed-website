@@ -18,7 +18,7 @@
       <h4>{{ include.title | default: item.title }}</h4>
   
       {% if include.item_date or item.item_date %}
-        <h6 class="meta"> 
+        <h6 class="meta text-gray"> 
             {% if include.source or item.source %}{{ include.source | default: item.source }} | {% endif %}  
             {{ include.item_date | default: item.item_date | date: "%B %-d, %Y" }}
         </h6>

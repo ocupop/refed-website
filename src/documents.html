@@ -58,12 +58,12 @@ document_sections:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="preheader">{{ section.title }}</h2>
+        <h3>{{ section.title }}</h3>
         {% if section.description_html %}
           {{ section.description_html }}
         {% endif %}
         {% for document in section.documents %}
-          <a href="{{ document.document }}" class="btn btn-secondary">{{ document.label | default: 'View Document '}}</a>
+          <a href="{{ document.document }}" class="btn btn-blue">{{ document.label | default: 'View Document '}}</a>
         {% endfor %}
         {% if section.videos.first.embed_url  %}
           {% for video in section.videos %}
@@ -78,28 +78,3 @@ document_sections:
   </div>
 </section>
 {% endfor %}
-<section class="bg-lighter">
-  <div class="container">
-    <h2 class="preheader">Financials</h2>
-    <p class="max-out-text-width">Access our current and historical financial documents, including our IRS Form 990:</p>
-    <a href="#" class="btn btn-secondary">Download 2018 Financials</a>
-    <a href="#" class="btn btn-secondary">Download 2019 Financials</a>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="preheader">Brand Guidelines</h2>
-        <p class="max-out-text-width">Download our brand guidelines to get an outlook of our distinctive identity, visual assets and related rules, meant to direct proper and consistent usage of our brand across all media.</p>
-        <a href="#" class="btn btn-secondary">Download Brand Guidelines</a>
-        <a href="#" class="btn btn-secondary">Download Logos</a>
-
-        <div class="video-responsive mt-5" style="padding-bottom:39%;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/1CfR5MkYkk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

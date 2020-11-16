@@ -1,12 +1,6 @@
 ---
 layout: default
 title: Stakeholder Engagement
-_assets:
-  - logos:
-    - pcc:
-    - other
-  - image:
-
 hero:
   - title: Stakeholder Engagement
     subtitle: Our Work
@@ -18,9 +12,6 @@ hero:
       - link:
         link_label:
         button_type:
-
-
-
 partnerships:
   - title: Pacific Coast Collaborative (PCC)
     text_above_logos_html: >-
@@ -97,9 +88,6 @@ partnerships:
       - link: '#'
         link_label: Visit Website
         button_type: button
-
-
-
 testimonial:
   text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -122,26 +110,10 @@ cta_buttons:
     link_label: See Data & Insights
   - link: /capital-innovation
     link_label: See Capital & Innovation
-
-
-
-sample_events:
-  - title: Event Name 1
-    date: 2012-02-16
-    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    featured_image: 'https://via.placeholder.com/410x410'
-    url: '#'
-  - title: Event Name 2
-    date: 2012-09-11
-    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    featured_image: 'https://via.placeholder.com/410x410'
-    url: '#'
-  - title: Event Name 3
-    date: 2012-07-26
-    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    featured_image: 'https://via.placeholder.com/410x410'
-    url: '#'
-
+events:
+  - 2021-food-waste-summit
+  - logistics-connecting-food-and-transportation
+  - organizational-financial-health-during-and-after-covid-19
 _sticky_nav:
   - link: '#partnerships'
     link_label: 'Partnerships'
@@ -149,17 +121,15 @@ _sticky_nav:
     link_label: 'Networks'
   - link: '#events'
     link_label: 'Events'
-
 ---
 
 {% include sections/carousels/carousel_hero.html items=page.hero %}
 
-
-<section class="">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="preheader editable">Overview</h2>
+        <h3 class="editable">Overview</h3>
         <div class="editable">
           <p class="lead">Engaging and Activating Stakeholders Across the Food System</p>
         </div>
@@ -173,20 +143,16 @@ _sticky_nav:
   </div>
 </section>
 
-
-
 {% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
-
-
 
 <section class="bg-lighter" id="partnerships">
   <div class="container">
     <div class="row pb-5">
       <div class="col-md-auto">
-        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_partnerships.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_partnerships.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Partnerships icon" />
       </div>
       <div class="col">
-        <p class="preheader editable text-prevention">Partnerships</p>
+        <h3 class="editable">Partnerships</h3>
         <p class="editable">The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
       </div>
     </div>
@@ -200,7 +166,7 @@ _sticky_nav:
           </div>
           <div class="row flex-wrap align-items-center mb-5">
           {% for logo in partner.logos %}
-            <div class=" ">
+            <div>
                 {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
                 <img class='d-inline align-middle m-3 ' style="max-width:250px;max-height:100px;" src="{{ logo.image }}" alt="{{ logo.alt }}"/>
                 {% if logo.link %}</a>{% endif %}
@@ -214,108 +180,58 @@ _sticky_nav:
             </div>
             -->
           {% endfor %}
-
           </div>
-          <div class="editable mb-5">
+          <div class="mb-5">
             {{ partner.text_below_logos_html }}
           </div>
-
           {% for item in partner.buttons %}
-            <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}text-link{% else %}btn btn-primary-300 btn-small{% endif %}  d-inline mr-3 mb-2">{{ item.link_label }}</a>
+            <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}text-link{% else %}btn btn-blue{% endif %} d-inline mr-3 mb-2">{{ item.link_label }}</a>
           {% endfor %}
         </div>
       </div>
     {% endfor %}
-
   </div>
 </section>
 
-
-
 <section class="bg-white" id="networks">
   <div class="container">
-
     <div class="row">
       <div class="col-md-auto">
         <img src="/img/icons/stakeholder_engagement/stakeholderengagement_networks.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <p class="preheader editable text-prevention">Networks</p>
-        <p class="editable">The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
+        <h3>Networks</h3>
+        <div class="editable">
+          <p>The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
-
-
 
 <section class="bg-lighter" id="events">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-md-auto">
-        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_events.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_events.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Icon events" />
       </div>
       <div class="col">
-        <p class="preheader editable text-prevention">Events</p>
-        <p class="editable">The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
-      </div>
-    </div>
-
-    <div class="row mt-5">
-
-      <div class="col-12">
-        <div class="responsive-card-deck cards-lg-3">
-
-          <div class="card mb-4">
-            <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
-            <div class="card-body">
-              <h4 class="editable">Food Waste Summit</h4>
-              <hr>
-              <div class="editable">
-                <p> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-              </div>
-              <a href="" class="editable text-link">Learn More</a>
-            </div>
-          </div>
-
-          <div class="card mb-4">
-            <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
-            <div class="card-body">
-              <h4 class="editable">Webinars</h4>
-              <hr>
-              <div class="editable">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in </p>
-              </div>
-              <a href="/webinar-events" class="editable text-link">Learn More</a>
-            </div>
-          </div>
-
-          <div class="card mb-4">
-            <div class="bg-image aspect-4x3 editable" style="background-image: url({{ site.placeholder_image }})"></div>
-            <div class="card-body">
-              <h4 class="editable">In Person Events</h4>
-              <hr>
-              <div class="editable">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit Agreement.</p>
-              </div>
-              <a href="/in-person-events/" class="editable text-link">Learn More</a>
-            </div>
-          </div>
-
+        <h3 class="editable">Events</h3>
+        <div class="editable">
+          <p>The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
         </div>
       </div>
-
-
     </div>
+    {% assign events = '' | split: ''  %}
+    {% for object in page.events %}
+      {% assign item = site.events | where: 'slug', object | first %}
+      {% assign events = events | push: item %}
+    {% endfor %}
+    {% include sections/carousels/carousel_cards.html items=events %}
   </div>
 </section>
 
-
-
 {% include sections/testimonial.html testimonial=page.testimonial %}
-
-
 {% include sections/cta_insights_engine.html %}
 
 <section class="bg-lighter">
