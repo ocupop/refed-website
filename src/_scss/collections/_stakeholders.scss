@@ -4,9 +4,17 @@
 }
 
 .solution-group {
+  padding: 0;
+  label {
+    position: absolute;
+    margin-left: -1rem;
+    font-size: 0.75rem;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+  }
   .row {
     position: relative;
-    align-items: center;
+    // align-items: center;
     border-left: 10px solid transparent;
     cursor: pointer;
     &::before {
