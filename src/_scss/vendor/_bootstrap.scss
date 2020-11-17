@@ -11,12 +11,13 @@
 
 //buttons
 .btn-link {
+  padding-left: 0;
   padding-right: 25px;
   position: relative;
   color: $blue;
   &::after {
     content: "\ea6d";
-    font-family: 'remixicon' !important;
+    font-family: "remixicon" !important;
     position: absolute;
     right: 0;
     top: 50%;
@@ -31,7 +32,7 @@
     padding-right: 35px;
     &::after {
       content: "\ec5a";
-      font-family: 'remixicon' !important;
+      font-family: "remixicon" !important;
       position: absolute;
       right: 0;
       top: 50%;

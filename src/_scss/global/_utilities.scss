@@ -8,22 +8,25 @@
 }
 
 // Background utlities
+.bg-hero,
 .bg-image,
 .bg-video,
 .bg-iframe,
 .bg-placeholder,
-.hero-image,
 .bg-color-info,
 .responsive-iframe {
   position: relative;
   display: flex;
   height: 0;
+  padding-top: 25%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: $black;
-  // background-image: url(https://via.placeholder.com/700x500/f2783c/f2783c?text=placeholder);
+  background-color: $dark;
   overflow: hidden;
+  &.bg-contain {
+    background-size: contain;
+  }
   &.aspect-1x1 {
     padding-top: 100%;
   }
@@ -32,6 +35,9 @@
   }
   &.aspect-3x1 {
     padding-top: 33%;
+  }
+  &.aspect-4x1 {
+    padding-top: 25%;
   }
   &.aspect-4x3 {
     padding-top: 75%;
@@ -67,8 +73,19 @@
   }
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-placeholder {
+  background-color: $black;
+  color: $white;
+}
+
+.bg-hero {
+  .bg-fill {
+    padding: 1rem 0;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    background-color: rgba($black, 0.5);
+  }
 }
 
 .bg-fill {

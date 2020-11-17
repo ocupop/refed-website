@@ -103,12 +103,15 @@ carousel_testimonial:
     cite: The Kroger Co.
     image:
 ---
+{% include components/hero.html items=page.hero %}
 
+{% comment %}
 {% include sections/carousels/carousel_hero.html items=page.hero %}
+{% endcomment %}
 
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12">
         <div class="lead editable">
           <p>For us, success is a sustainable, resilient, and inclusive food system that allows the planet, people and the economy to thrive - a food system that is optimized to preserve water and land resources, minimize climate impacts, and make the best use of the food we grow.</p>
@@ -229,9 +232,12 @@ carousel_testimonial:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="bg-placeholder aspect-3x1 bg-black text-white">
+        <div class="bg-placeholder aspect-3x1">
           <div class="bg-fill">
-            <h4 class="text-uppercase">Funder Logo Carousel</h4>
+            <div class="text-center">
+              <h4 class="text-uppercase">Funder Logo Carousel</h4>
+              <small>.src/_includes/sections/carousels/carousel_images.html</small>
+            </div>
           </div>
         </div>
         <!-- TODO: Refactor Carousels -->
