@@ -20,11 +20,11 @@ cta:
       <div class="col-lg-5">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <img src="{{ page.icon_image }}" class="icon-img-lg" alt="{{ page.title}} icon" />
+            <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
           </div>
           <div class="col">
-            <h6 class="mb-0 editable">Stakeholder</h6>
-            <h2>{{ page.title }}</h2>
+            <h6 class="mb-0">Stakeholder</h6>
+            <h2 class="editable">{{ page.title }}</h2>
           </div>
         </div>
         <div class="row mt-5">
@@ -37,13 +37,12 @@ cta:
       <div class="col-lg-6 ml-lg-auto">
         <div class="row align-items-center">
           <div class="col-6">
-            <p class="text-danger">Tonnage graphic</p>
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
+            {% include charts/donut.html %}
           </div>
           <div class="col-6">
-            <h6>Total Waste by **Title**</h6>
+            <h6>Total Waste by {{ page.title }}</h6>
             <hr />
-            <p class="display-4 text-serif">XX Tons</p>
+            <p class="display-4 text-serif">XM Tons</p>
           </div>
         </div>
         <div class="row mt-5">
@@ -51,7 +50,7 @@ cta:
             <h6>Causes</h6>
             <hr />
             {% for i in (1..3) %}
-              <p class="lead text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
+              <p class="text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
             {% endfor  %}
             <a href="#" class="btn-link">See more in the Insights Engine</a>
           </div>
@@ -61,7 +60,7 @@ cta:
             <h6>Destinations</h6>
             <hr />
             {% for i in (1..3) %}
-              <p class="lead text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
+              <p class="text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
             {% endfor  %}
             <a href="#" class="btn-link">See more in the Insights Engine</a>
           </div>
@@ -70,21 +69,42 @@ cta:
     </div>
   </div>
 </section>
-{% include modules/funding_pipeline.html %}
-<section id="non-government-grants">
+
+<section class="bg-light">
   <div class="container">
-    <div class="row align-items-center mb-5">
-      <div class="col-lg-9">
-        <h3>All solutions for {{ page.title }}</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum doloremque sapiente cupiditate suscipit asperiores ratione nesciunt harum at quis mollitia, exercitationem assumenda placeat tenetur error delectus aspernatur molestiae sunt natus non laborum quidem. Harum magni iure provident, quia officia aperiam quod, error aut dicta perspiciatis perferendis ipsam corporis accusantium sapiente repudiandae reiciendis pariatur aliquam dolorem veniam quos nostrum consequuntur nulla. Ex blanditiis debitis, laboriosam excepturi eligendi minus architecto atque magnam maxime? Quisquam</p>
-      </div>
-      <div class="col-lg-3">
-        <p class="text-danger">Investment Needed Chart</p>
-        <img src="{{ site.placeholder_image}}" class="img-fluid" alt="" />
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="editable text-center">
+          <h2>2.68% of U.S. food waste or 2.28 million tons could be avoided annually</h2>
+          <p>if <em>Retailers</em> implemented these solutions to reduce waste in <em>Retail</em> in all states</p>
+        </div>
       </div>
     </div>
-    {% include sections/collapse_solutions.html %}
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-2x1 bg-dark text-white">
+          <div class="bg-fill">
+            <h2 class="text-uppercase">Chart from Insights Engine</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="text-center">
+          <a href="#" class="btn btn-primary editable">Explore the Solution Provider Directory</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+
+{% include stakeholders/sectors.html %}
+
+
 {% include sections/cta_insights_engine.html data=layout.cta_insights_engine %}
+
+<!-- TODO: add split slide for case studies -->
+
 {% include sections/cta.html cta=layout.cta %}

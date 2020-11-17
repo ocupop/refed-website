@@ -1,0 +1,131 @@
+.slideContainer {
+  // height: 100vh;
+  width: 200vw;
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .row {
+    min-height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .col-copy {
+    padding-right: 0;
+    padding-left: 0;
+    z-index: 100;
+    @include media-breakpoint-up(lg) {
+      .content {
+        max-width: 35vw;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .content {
+        max-width: 28vw;
+        &.content-lg {
+          max-width: 33vw;
+        }
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      // TODO: This may need to be refactored to make this content managed on some instances?
+      &.accordion-nav {
+        @include media-breakpoint-up(lg) {
+          button {
+            width: 50%;
+          }
+        }
+      }
+      li {
+        margin-bottom: 15px;
+      }
+      a {
+        background: transparent;
+        display: block;
+        line-height: 1.25;
+        border: 0;
+        color: $gray-800;
+        width: 100%;
+        font-family: $headings-font-family;
+        font-size: 1.1rem;
+        text-align: left;
+        font-weight: 400;
+        padding: 12px 0;
+        border-bottom: 1px solid $gray-800;
+        @include transition(0.5s);
+        &:hover {
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
+        &:active,
+        &:focus {
+          opacity: 0.7;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .col-asset {
+    padding-right: 0;
+    padding-left: 0;
+    z-index: 100;
+    .content {
+      margin: 2rem 0;
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  //  Desktop
+  @include media-breakpoint-up(lg) {
+    width: 100vw;
+    padding: 0;
+    &.slide-padded {
+      padding: 3rem 0;
+    }
+    &.slide-full {
+      height: 100vh;
+      max-height: 100vw;
+    }
+    &.slide-square {
+      max-height: 50vw;
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: calc(70vw);
+      padding: 0;
+      margin: auto;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      margin: auto;
+    }
+    .col-asset {
+      .content {
+        margin: 0;
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

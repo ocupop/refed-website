@@ -37,11 +37,17 @@ collections:
   reports_and_guides:
     output: true
 
-# defaults:
-#   - scope:
-#       type: events
-#     values:
-#       date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
+defaults:
+  -
+    scope:
+      type: 'stakeholders'
+    values:
+      layout: stakeholder
+      # variable_name: value
+  # - scope:
+  #     type: events
+  #   values:
+  #     date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
 
 
 # Build settings

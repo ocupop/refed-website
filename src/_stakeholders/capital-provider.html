@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Capital Provider
+description_html: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque magnam maiores repellendus hic, ratione dolor aspernatur dolorem. Repudiandae, fuga odit consequuntur ipsum fugit maxime ab dolores sit tempora architecto?</p>"
 hero:
   - title: Capital Provider
     subtitle:
@@ -12,26 +12,24 @@ hero:
       - link:
         link_label:
         button_type:
+
 subnav:
   show: true
   label: Explore Types of Capital Providers
 
-solution_groups:
+sectors:
   - label: Government Grants
     summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi repellat fugit officiis dolorum! Laudantium fuga sint cumque perferendis eius quibusdam tempora quaerat nostrum excepturi laboriosam, eaque ut sapiente maiores?
-    tag: non-government-grants
     metrics:
       - label: Investment Needed
         slug: investment
   - label: Non Government Grants
     summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi repellat fugit officiis dolorum! Laudantium fuga sint cumque perferendis eius quibusdam tempora quaerat nostrum excepturi laboriosam, eaque ut sapiente maiores?
-    tag: government-grants
     metrics:
       - label: Investment Needed
         slug: investment
   - label: Impact Investments
     summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi repellat fugit officiis dolorum! Laudantium fuga sint cumque perferendis eius quibusdam tempora quaerat nostrum excepturi laboriosam, eaque ut sapiente maiores?
-    tag: impact-investments
     metrics:
       - label: Investment Needed
         slug: investment
@@ -47,28 +45,64 @@ solution_groups:
       <div class="col-lg-6">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <img src="/img/icons/global/financing.svg" class="icon-img-lg" alt="Financing icon">
+            <i class="icon icon-lg icon-capital"></i>
           </div>
           <div class="col">
-            <h6 class="mb-0 editable">Stakeholder</h6>
-            <h2>Capital Provider</h2>
+            <h6>Stakeholder</h6>
+            <h2>{{ page.title }}</h2>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12">
             <h6>Summary</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque magnam maiores repellendus hic, ratione dolor aspernatur dolorem. Repudiandae, fuga odit consequuntur ipsum fugit maxime ab dolores sit tempora architecto?</p>
+            {{ page.description_html }}
           </div>
         </div>
       </div>
       <div class="col-lg-6">
+        <!-- TODO: This touches API -->
         <h6>Investment Needed</h6>
         <p class="display-4 text-serif">$XX</p>
       </div>
     </div>
   </div>
 </section>
-{% include modules/funding_pipeline.html %}
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="editable text-center">
+          <h2>$XX Opportunity to be Unlocked with $XX Capital</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-2x1 bg-dark text-white">
+          <div class="bg-fill">Funding Pipeline Chart</div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="text-center">
+          <a href="#" class="btn btn-primary">Explore the Solution Provider Directory</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="container">
     <div class="row">
@@ -82,8 +116,4 @@ solution_groups:
   </div>
 </section>
 
-{% include nav/subnav.html items=page.sections label=page.subnav.label %}
-
-{% for group in page.solution_groups %}
-  {% include solutionGroup.html %}
-{% endfor %}
+{% include stakeholders/sectors.html %}
