@@ -1,3 +1,7 @@
+.container {
+  position: relative;
+}
+
 .lead {
   font-weight: 400;
   font-size: 1.4rem;
@@ -9,7 +13,13 @@
   .carousel-control-next {
     font-size: 4rem;
     color: $white;
-    width: 10%;
+    width: 5%;
+  }
+  .carousel-control-prev {
+    left: -5%;
+  }
+  .carousel-control-next {
+    right: -5%;
   }
 }
 

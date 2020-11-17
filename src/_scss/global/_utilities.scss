@@ -83,7 +83,6 @@
       position: relative;
     }
   }
-
 }
 
 .bg-hero {
@@ -93,6 +92,12 @@
   }
   h3 {
     font-size: calc(16px + 1vw);
+  }
+  .btn-link {
+    color: $rescue;
+    &:hover {
+      color: lighten($rescue, 15%);
+    }
   }
   .bg-fill {
     padding: 1rem 0;

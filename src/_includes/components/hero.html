@@ -7,7 +7,7 @@
         <div class="bg-fill text-white">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-9">
+              <div class="col-12 col-lg-10">
                 {% if hero.label %}<h3 class="mb-0">{{ hero.label }}</h3>{% endif %}
                 {% if hero.title %}<h1 class="mt-0">{{ hero.title }}</h1>{% endif %}
                 {{ hero.description_html }}
@@ -21,15 +21,15 @@
                 </div>
               </div>
             </div>
+            <a class="carousel-control-prev" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
     </div>
