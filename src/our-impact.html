@@ -178,7 +178,7 @@ cta:
   </div>
 </section>
 
-<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+<div id="featured-organizations" class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
   {% for featured_slug in page.case_studies %}
     {% assign featured = site.case_studies | where: 'slug', featured_slug | first %}
     {% include sections/split_section.html
@@ -240,6 +240,6 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta_featured_organizations id='featured-organizations' %}
+{% include sections/cta.html cta=page.cta_featured_organizations %}
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
 {% include sections/cta.html cta=page.cta %}
