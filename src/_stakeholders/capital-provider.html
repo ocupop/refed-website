@@ -1,6 +1,8 @@
 ---
 title: Capital Provider
-description_html: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque magnam maiores repellendus hic, ratione dolor aspernatur dolorem. Repudiandae, fuga odit consequuntur ipsum fugit maxime ab dolores sit tempora architecto?</p>"
+featured_image:
+description_html: >-
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque magnam maiores repellendus hic, ratione dolor aspernatur dolorem. Repudiandae, fuga odit consequuntur ipsum fugit maxime ab dolores sit tempora architecto?</p>
 hero:
   - title: Capital Provider
     subtitle:
@@ -34,55 +36,18 @@ sectors:
       - label: Investment Needed
         slug: investment
 
+case_studies:
 
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="row align-items-center">
-          <div class="col-md-auto">
-            <i class="icon icon-lg icon-capital"></i>
-          </div>
-          <div class="col">
-            <h6>Stakeholder</h6>
-            <h2>{{ page.title }}</h2>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12">
-            <h6>Summary</h6>
-            {{ page.description_html }}
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <!-- TODO: This touches API -->
-        <h6>Investment Needed</h6>
-        <p class="display-4 text-serif">$XX</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+{% contentfor highlight %}
 <section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="editable text-center">
           <h2>$XX Opportunity to be Unlocked with $XX Capital</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas accusamus eveniet possimus itaque quia non, aliquam dolorem ipsam? Animi eaque tenetur libero architecto voluptatem. Consectetur eius corrupti incidunt laudantium!</p>
         </div>
       </div>
     </div>
@@ -109,11 +74,30 @@ sectors:
       <div class="col-lg-10">
         <div class="editable">
           <h2>Types of capital providers</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur dolore sapiente earum quae, molestias deleniti, perspiciatis dolorem aspernatur qui atque, sint officiis cumque recusandae praesentium. Doloremque suscipit atque ullam dolores.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nam distinctio sit aliquid id, consectetur dolorum quisquam beatae! Recusandae, officiis obcaecati non reprehenderit modi eaque asperiores mollitia beatae dicta eos.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+{% endcontentfor %}
 
-{% include stakeholders/sectors.html %}
+
+{% contentfor extra %}
+<section class="slide">
+  <div class="container">
+    <div class="row">
+      <div class="col-asset">
+
+      </div>
+      <div class="col-copy">
+        <div class="content">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcontentfor %}
+
+

@@ -30,6 +30,7 @@ collections:
     output: false
   action_areas:
     output: true
+    permalink: /action-areas/:title/
   stakeholders:
     output: true
   events:
@@ -43,6 +44,12 @@ defaults:
       type: 'stakeholders'
     values:
       layout: stakeholder
+      # variable_name: value
+  -
+    scope:
+      type: 'action_areas'
+    values:
+      layout: action_area
       # variable_name: value
   # - scope:
   #     type: events
@@ -58,6 +65,7 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-contentblocks
 
 _array_structures:
   sections:
@@ -302,6 +310,19 @@ _array_structures:
           title:
           embed_url:
 
+  sectors:
+    - label: Sector
+      icon: pie_chart
+      value:
+        label:
+        summary:
+        metrics:
+  metrics:
+    - label: Key metrics
+      icon: insights
+      value:
+        label:
+        slug:
 
 # Action Areas Taxonomy
 action_area_categories:
