@@ -3,49 +3,41 @@ layout: page
 title: Home
 hero:
   - title: We're on a mission to end food waste through data-driven solutions
-    subtitle:
+    label:
     description_html:
     image: /img/home/homepage_header_image_01.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+      - label:
+        alt:
+        url:
   - title: >-
       ReFED Insights Engine: an online data center designed to serve as the next
       generation.
-    subtitle:
+    label:
     description_html:
     image: /img/home/homepage_header_image_02.jpg
-    link: www.insights-engine.com
-    link_text: Learn More
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+      - label:
+        alt:
+        url: www.insights-engine.com
+
   - title: >-
       2020 ReFED Roadmap: The next steps to reach our goal of reducing food
       waste.
-    subtitle:
+    label:
     description_html:
     image: /img/home/homepage_header_image_03.jpg
-    link: www.refed.com
-    link_text: Learn More
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+      - label:
+        alt:
+        url: https://www.refed.com
+
   - title: Headline for the newest update ReFED has to share with the community.
-    subtitle:
+    label:
     description_html:
     image: /img/home/homepage_header_image_04.jpg
-    link:
-    link_text: Learn More
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+
 two_column_slide:
   - featured_image: /img/home/homepage_header_image_02.jpg
     title: The Multi-Billion Dollar Food Waste Problem
@@ -104,10 +96,6 @@ carousel_testimonial:
     image:
 ---
 {% include components/hero.html items=page.hero %}
-
-{% comment %}
-{% include sections/carousels/carousel_hero.html items=page.hero %}
-{% endcomment %}
 
 <section>
   <div class="container">

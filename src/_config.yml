@@ -14,6 +14,11 @@ linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
 insights_engine_url:  https://www.insights-engine-fpo.com/
 
+# Default Values
+default_cta: Learn More
+
+
+
 # Collections
 collections:
   articles:

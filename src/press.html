@@ -3,18 +3,18 @@ layout: default
 title: Press
 hero:
   - title: ReFED in the Press
-    subtitle: Newsroom
+    label: Newsroom
     image: /img/newsroom/press_header_image.jpg
-    buttons:
-      - link: '#'
-        button_text: Download Media Assets
-        button_type: button
-      - link: '#'
-        button_text: Download Brand Guide
-        button_type: button
-      - link: '/contact'
-        button_text: Contact ReFED
-        button_type: button
+    links:
+      - label: Download Media Assets
+        url: '#'
+        alt:
+      - label: Download Brand Guide
+        url: '#'
+        alt:
+      - label: Contact ReFED
+        url: '/contact'
+        alt:
 cta:
   description_html: >-
     <p>See past newsletters in the newsletter archive</p>
@@ -29,7 +29,9 @@ cta:
 
 
 {% include modules/subnav_newsroom.html %}
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+
+{% include components/hero.html items=page.hero %}
+
 {% comment %}
   TODO implement filtering
   {% include sections/newsroom_filter.html %}
@@ -52,16 +54,16 @@ cta:
           <option value='#'>filter the results</option>
           <option value='#'>listed below</option>
         </select>
- 
-      </div>  
+
+      </div>
     </div>  -->
 
     <div class="row">
       </div>
         <div class="press-list">
-          {% assign sorted = site.press | sort_by: 'date' | reverse %} 
+          {% assign sorted = site.press | sort_by: 'date' | reverse %}
           {% for item in sorted %}
-            {% include modules/card_horizontal.html image_size='contain' url=press.link link_target='_blank' %}  
+            {% include modules/card_horizontal.html image_size='contain' url=press.link link_target='_blank' %}
           {% endfor %}
         </div>
       </div>

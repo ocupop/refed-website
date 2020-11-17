@@ -3,15 +3,10 @@ layout: default
 title: Our Impact
 hero:
   - title: Our Impact
-    subtitle:
+    label:
     description_html:
     image: /img/our_impact/our_impact_header_image.png
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 featured_case_studies:
   - crown-family-philanthropies
   - crown-family-philanthropies
@@ -48,7 +43,7 @@ cta:
       - right
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container">
@@ -221,7 +216,7 @@ cta:
         </div>
       </div>
     </div> -->
-  
+
     {% assign case_studies = '' | split: ',' %}
     {% for object in page.featured_case_studies %}
       {% assign item = site.case_studies | where: 'slug', object | first %}

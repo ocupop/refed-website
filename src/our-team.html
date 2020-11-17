@@ -3,15 +3,10 @@ layout: default
 title: Our Team
 hero:
   - title: We are powered by our team's diverse expertise and experience
-    subtitle:
+    label:
     description_html:
     image: /img/team/ourteam_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 team_members:
   - name: Dana Gunders
     featured_image: https://www.betaclub.org/uploads/scholarship-winners/FPO-portrait.jpg
@@ -231,7 +226,8 @@ cta:
       - left
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
+
 <section class="pb-0" id="staff">
   <div class="container">
     <div class="row">

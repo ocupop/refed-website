@@ -3,15 +3,10 @@ layout: default
 title: Stakeholder Engagement
 hero:
   - title: Stakeholder Engagement
-    subtitle: Our Work
+    label: Our Work
     description_html:
     image: /img/stakeholder_engagement/stakeholder_engagement_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 partnerships:
   - title: Pacific Coast Collaborative (PCC)
     text_above_logos_html: >-
@@ -123,7 +118,7 @@ _sticky_nav:
     link_label: 'Events'
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container">

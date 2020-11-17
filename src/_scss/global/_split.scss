@@ -1,4 +1,4 @@
-.slide {
+.split {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,14 +45,14 @@
   @include media-breakpoint-up(lg) {
     width: 100vw;
     padding: 0;
-    &.slide-padded {
+    &.split-padded {
       padding: 3rem 0;
     }
-    &.slide-full {
+    &.split-full {
       height: 100vh;
       max-height: 100vw;
     }
-    &.slide-square {
+    &.split-square {
       max-height: 50vw;
     }
     .container {

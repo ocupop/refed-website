@@ -3,15 +3,10 @@ layout: default
 title: Investment Tracker
 hero:
   - title: Investment Tracker
-    subtitle:
+    label:
     description_html:
     image: /img/investment_tracker/investmenttracker_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 trend_reports:
   - title: Foundation Funding Trends
     description_html: >-
@@ -58,7 +53,7 @@ cta:
       - right
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container">

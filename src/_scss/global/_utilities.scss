@@ -79,12 +79,23 @@
 }
 
 .bg-hero {
+  h1,
+  h2 {
+    font-size: calc(16px + 2vw);
+  }
+  h3 {
+    font-size: calc(16px + 1vw);
+  }
   .bg-fill {
     padding: 1rem 0;
     height: auto;
     top: auto;
     bottom: 0;
     background-color: rgba($black, 0.5);
+    @include media-breakpoint-down(md) {
+      // TODO: refactor so that hero displays well in all conditions on mobile viewports
+      // position: relative;
+    }
   }
 }
 
