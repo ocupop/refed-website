@@ -22,19 +22,28 @@ $arrow-header-desktop-height: 10rem;
       }
     }
   }
-
-  .row.statistics {
-    background-color: $white;
-    .stat {
-      line-height: 1.2;
-      .number {
-        font-size: 2rem;
-      }
-      label {
-        font-size: 0.9rem;
+ 
+  .stat {
+    line-height: 1.2;
+    .number {
+      font-size: 2rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 2.2rem;
       }
     }
+    label {
+      font-size: 0.8rem;
+    }
   }
+
+  .h4 {
+    font-size: 1.3rem;
+    line-height: 1;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+    }
+  }
+
 
   @include media-breakpoint-up(md) {
     .row.arrow-header {
@@ -62,40 +71,12 @@ $arrow-header-desktop-height: 10rem;
         height: auto;
       }
     }
-    .row.statistics {
-      background-color: $white;
-    }
 
     // medium and large width only
-    @include media-breakpoint-down(lg) {
-      .icon-img-md {
-        max-width: rem(55);
-      }
-      .row.statistics {
-        .stat {
-          flex-direction: column !important;
-          align-items: start !important;
-        }
-      }
-    }
-    // large width only
-    @include media-breakpoint-down(lg) {
-      .icon-img-md {
-        max-width: rem(70);
-      }
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    .row.statistics {
-      background-color: $white;
+    @include media-breakpoint-down(md) {
       .stat {
-        .number {
-          font-size: 2.2rem;
-        }
-        label {
-          font-size: 1rem;
-        }
+        flex-direction: column !important;
+        align-items: start !important;
       }
     }
   }

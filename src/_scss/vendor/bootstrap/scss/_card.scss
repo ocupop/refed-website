@@ -66,16 +66,6 @@
   margin-bottom: 0;
 }
 
-.card-link {
-  @include hover() {
-    text-decoration: none;
-  }
-
-  + .card-link {
-    margin-left: $card-spacer-x;
-  }
-}
-
 //
 // Optional textual caps
 //
