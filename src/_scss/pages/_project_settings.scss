@@ -1,4 +1,7 @@
 #project-settings-page {
+  .row {
+    margin-top: 0.25rem;
+  }
   .heading {
     font-weight: bolder;
     font-size: 1.4rem;
@@ -7,6 +10,11 @@
     text-transform: uppercase;
     margin: 0;
     padding: 1rem;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+      background-color: lighten($primary, 10%);
+    }
   }
 
   .subheading {
