@@ -27,7 +27,7 @@ cta:
   {% assign featured = featured | push: item %}
 {% endfor %}
 
-{% include sections/carousels/carousel_hero_in_container.html description_html=false items=featured preheader='Blog' %}
+{% include sections/carousels/carousel_hero_in_container.html description_html=false items=featured subtitle='Blog' %}
 
 <section>
   <div class="container">
@@ -72,7 +72,7 @@ cta:
         </div>
       </div>
       <div class="col-lg-4 ml-lg-auto text-lg-right">
-        <a href="/press" class="btn btn-lg btn-recycle editable">See Press Articles</a>
+        <a href="/press" class="btn btn-lg btn-secondary editable">See Press Articles</a>
       </div>
     </div>
   </div>

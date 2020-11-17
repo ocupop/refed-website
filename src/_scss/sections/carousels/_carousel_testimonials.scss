@@ -4,7 +4,7 @@
   background-position: center center;
   padding-top: 60px;
   padding-bottom: 60px;
-  @include darken-bkg-image(0.8,$primary);
+  @include darken-bkg-image(0.8,$dark);
   .testimonial-slide {
     padding-top: 60px;
     blockquote{

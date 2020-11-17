@@ -1,0 +1,14 @@
+section {
+  &.bg-dark {
+    color: $white;
+    a {
+      color: $rescue;
+      &.btn-link {
+        color: $rescue;
+      }
+      &.btn {
+        color: $white;
+      }
+    }
+  }
+}

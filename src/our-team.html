@@ -255,10 +255,10 @@ cta:
     </div>
     {% for team_member in page.team_members %}
       <div class="row mb-5">
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
           <img src="{{team_member.image | default: site.placeholder_image}}" class="img-fluid mb-3 mb-lg-0" alt="title" />
         </div>
-        <div class="col-md-7 ml-lg-auto">
+        <div class="col-12 col-md-7 ml-lg-auto">
           <h4>{{ team_member.name }}</h4>
             <h5 class="text-gray d-inline-block border-top pt-3">{{ team_member.position }}</h5>
           <p>{{ team_member.bio_summary_html }}</p>
@@ -268,10 +268,10 @@ cta:
   </div>
 </section>
 
-<section class="bg-primary text-white" id="board-of-directors">
+<section class="bg-dark text-white" id="board-of-directors">
   <div class="container">
     <div class="row mb-5 pb-5">
-      <div class="col-lg-8">
+      <div class="col-12 col-lg-8">
         <h3 class="editable">Board of Directors</h3>
         <div class="editable">
           <p>ReFED’s strength has long rested in the power of the people who surround, advise, and contribute to our work. ReFED’s
@@ -283,7 +283,7 @@ cta:
     </div>
     <div class="row">
       {% for member in page.board_of_directors.members %}
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
           <div class="row align-items-center mb-4">
             <div class="col-6">
               <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid mb-3 mb-lg-0" alt="title" />
@@ -301,10 +301,10 @@ cta:
   </div>
 </section>
 
-<section class="bg-lighter" id="advisory-council">
+<section class="bg-light" id="advisory-council">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-lg-10">
+        <div class="col-12 col-lg-10">
           <h3 class="editable">Advisory Council</h3>
           <div class="editable">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos commodi dolor sint, doloremque tenetur consequatur est qui dolore omnis ea facere ullam et sunt cupiditate rerum. Ipsa recusandae eos nostrum.</p>
@@ -313,12 +313,12 @@ cta:
       </div>
       <div class="row align-items-center">
         {% for member in page.advisory_council.members %}
-          <div class="col-6 col-lg-4">
+          <div class="col-12 col-6 col-lg-4">
             <div class="row align-items-center mb-4">
-              <div class="col-lg-4">
+              <div class="col-12 col-lg-4">
                 <img src="{{ member.image | default: site.placeholder_image }}" class="img-fluid" alt="{{member.name }} image" />
               </div>
-              <div class="col-lg-8">
+              <div class="col-12 col-lg-8">
                 <h4 class="mb-0">{{ member.name }}</h4>
                 <div class="text-serif">
                   {{ member.summary_html }}
@@ -336,7 +336,7 @@ cta:
 <section id="expert-network">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-lg-8">
+      <div class="col-12 col-lg-8">
         <h3 class="editable">Expert Network</h3>
         <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
         <a href="#" class="btn btn-blue editable">Become or Nominate a Participant</a>
@@ -344,7 +344,7 @@ cta:
     </div>
     <div class="row pt-5">
       {% for person in site.data.expert_network %}
-        <div class="col-6 col-lg-4 mb-3">
+        <div class="col-12 col-6 col-lg-4 mb-3">
           {% if person.name %}<h5 class="mb-0">{{ person.name }}</h5>{% endif %}
           <p class="text-gray">
             <small>

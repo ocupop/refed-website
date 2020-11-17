@@ -74,7 +74,7 @@ cta:
     href="/contact">Contact us</a> if you think you are a good match.</p>
   link: /who-we-are
   link_label: Get to know us
-  section_background_color: lighter
+  section_background_color:
   colorbar:
     color: '#e65e4a'
     bar_position:
@@ -102,7 +102,7 @@ cta:
         <h3 class="editable">Current Vacancies</h3>
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
         <div id="notification-careers" >
-          <p class="h3 my-5">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
+          <p class="h3 my-5 editable">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
         </div>
         <hr class="mb-5"/>
       </div>
@@ -120,19 +120,19 @@ cta:
     {% endfor %}
   </div>
 </section>
-<section class="cta bg-primary text-white">
+<section class="cta bg-dark text-white">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-7 mb-3 mb-lg-0">
         <p class="lead editable">Don’t see a match? We would still love to connect with you if you have something to bring to the table</p>
       </div>
       <div class="col-12 col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
-        <a href="#" class="btn btn-recycle text-serif btn-lg editable">Submit a Resume</a>
+        <a href="#" class="btn btn-secondary text-serif btn-lg editable">Submit a Resume</a>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-lighter">
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8">
@@ -156,9 +156,9 @@ cta:
     </div>
     <div class="row align-items-center">
       {% for benefit in page.perks_and_benefits %}
-        <div class="col-md-6">
+        <div class="col-12 col-md-6">
           <div class="row align-items-center mb-5">
-            <div class="col-md-auto">
+            <div class="col-12 col-md-auto">
               <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md" alt="{{ benefit.title}} icon" />
             </div>
             <div class="col">
@@ -171,7 +171,7 @@ cta:
   </div>
 </section>
 
-<section class="bg-primary text-white">
+<section class="bg-dark text-white">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -196,7 +196,7 @@ cta:
     </div>
     <div class="row">
       {% for principle in page.operation_principles %}
-        <div class="col-md-6 mb-5">
+        <div class="col-12 col-md-6 mb-5">
           <img src="{{ principle.icon_image }}" class="img-fluid w-25 mb-4" alt="{{ principle.title }}" />
           <h4 class="mb-3">{{ principle.title }}</h4>
           <ul class="pl-3">

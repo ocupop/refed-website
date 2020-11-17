@@ -24,7 +24,7 @@ cta:
   description_html: From innovation accelerators to capital campaigns to convening leadership, learn about the impact we’ve brought to the food system and the work we are doing today.
   link: /our-impact
   link_label: See our impact
-  section_background_color: lighter
+  section_background_color:
   colorbar:
     color: '#e65e4a'
     bar_position:
@@ -56,7 +56,7 @@ cta:
       </div>
     </div>
     <div class="row align-items-center mb-5">
-      <div class="col-md-auto">
+      <div class="col-12 col-md-auto">
         <img src="/img/icons/work/ourwork_dataandinsights.svg" class="img-fluid icon-img-xl mr-md-3" alt="Data icon" />
       </div>
       <div class="col">
@@ -66,7 +66,7 @@ cta:
             The Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
           </p>
         </div>
-        <a class="editable btn-link text-blue" href="/data-and-insights">Learn More</a>
+        <a class="btn btn-link editable" href="/data-and-insights">Learn More</a>
       </div>
     </div>
     <div class="row align-items-center mb-5">
@@ -78,11 +78,11 @@ cta:
         <div class="editable">
           <p>The Capital & Innovation team works with capital providers, food businesses, technology companies, innovators, and policymakers across the food system to drive the adoption of and catalyze public, private, and philanthropic funding for effective, scalable food waste solutions.</p>
         </div>
-        <a class="editable btn-link text-blue mr-3" href="/capital-and-innovation">Learn More</a>
+        <a class="btn btn-link editable" href="/capital-and-innovation">Learn More</a>
       </div>
     </div>
     <div class="row align-items-center mb-5">
-      <div class="col-md-auto">
+      <div class="col-12 col-md-auto">
         <img src="/img/icons/work/ourwork_stakeholderengagement.svg" class="img-fluid icon-img-xl mr-md-3" alt="Stakeholder icon" />
       </div>
       <div class="col">
@@ -90,7 +90,7 @@ cta:
         <div class="editable">
           <p>The Stakeholder Engagement team works to convene key stakeholders across private and public entities around food waste solutions and issues that require a systems-based approach.</p>
         </div>
-        <a class="editable btn-link text-blue mr-3" href="/stakeholder-engagement">Learn More</a>
+        <a class="btn btn-link editable" href="/stakeholder-engagement">Learn More</a>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@ cta:
 
 {% include sections/split_section.html
   id='covid-19'
-  section_background_color='primary'
+  section_background_color='dark'
   image_width='50%'
   image_alignment='right'
   image_to_edge=true
@@ -106,6 +106,5 @@ cta:
   section_class='py-0'
   item=page.split_section_global_crisis
 %}
-
 
 {% include sections/cta.html cta=page.cta %}

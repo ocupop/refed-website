@@ -7,7 +7,7 @@
   border-radius: unset;
   background-color: transparent;
   svg {
-    color: $primary;
+    color: $dark;
   }
   &.previous {
     left: -58px;
@@ -19,12 +19,12 @@
 
 .flickity-page-dots {
   .dot {
-    border: 1px solid $primary;
+    border: 1px solid $dark;
     background-color: transparent;
     width: rem(17);
     height: rem(17);
     &.is-selected {
-      background-color: $primary;
+      background-color: $dark;
     }
   }
 }

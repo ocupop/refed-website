@@ -24,7 +24,7 @@ cta_featured_organizations:
   description_html: See how the ReFED efforts have inspired action and efforts in these featured organizations and companies.
   link: '#'
   link_label: See Featured Organizations
-  section_background_color: primary
+  section_background_color: dark
 carousel_testimonial:
   - text: >-
       “The ReFED team has been an incredible strategic partner in our journey to
@@ -54,7 +54,7 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="lead editable" >
+        <div class="lead editable">
           <p>In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and on the most effective solutions. ReFED’s Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.</p>
         </div>
       </div>
@@ -178,15 +178,13 @@ cta:
   </div>
 </section>
 
-<!-- This section needs work -->
-
 <div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
   {% for featured_slug in page.case_studies %}
     {% assign featured = site.case_studies | where: 'slug', featured_slug | first %}
     {% include sections/split_section.html
         item=featured
         section_background_color='primary'
-        preheader='Impact Stories'
+        subtitle='Impact Stories'
         section_background_color='white'
         image_width='50%'
         image_alignment='right'
@@ -202,8 +200,19 @@ cta:
 
 <section class="list-with-filter">
   <div class="container pt-5">
-    {% assign thisCollection = site.case_studies %}
-    {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-auto mb-5">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Filtering</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+      {% assign thisCollection = site.case_studies %}
+      {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+    {% endcomment %}
 
     <!-- <div class="row">
       <div class="col-12">

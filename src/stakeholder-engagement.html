@@ -130,8 +130,8 @@ _sticky_nav:
     <div class="row">
       <div class="col-12">
         <h3 class="editable">Overview</h3>
-        <div class="editable">
-          <p class="lead">Engaging and Activating Stakeholders Across the Food System</p>
+        <div class="editable lead">
+          <p>Engaging and Activating Stakeholders Across the Food System</p>
         </div>
         <div class="editable">
           <p>To meet our 2030 goal of reducing food waste by 50 percent, coordination and collaboration is essential. With our holistic view of the food system, ReFED facilitates this by building high-value partnerships and incentivizing new players into the food waste space, through it’s Stakeholder Engagement team.</p>
@@ -143,46 +143,57 @@ _sticky_nav:
   </div>
 </section>
 
-
-
-<!-- {% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %} -->
+<div class="bg-placeholder aspect-auto">
+  <div class="bg-fill">
+    <div class="text-center">
+      <h4 class="text-uppercase">Sticky Nav</h4>
+      <small>.src/_modules/sticky_nav.html </small>
+    </div>
+  </div>
+</div>
+{% comment %}
+  {% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
+{% endcomment %}
 
 <section class="bg-lighter" id="partnerships">
   <div class="container">
     <div class="row pb-5">
-      <div class="col-md-auto">
+      <div class="col-12 col-md-auto">
         <img src="/img/icons/stakeholder_engagement/stakeholderengagement_partnerships.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Partnerships icon" />
       </div>
       <div class="col">
         <h3 class="editable">Partnerships</h3>
-        <p class="editable">The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
+        <div class="editable">
+          <p>The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
+        </div>
       </div>
     </div>
 
     {% for partner in page.partnerships %}
       <div class="row py-5">
-        <div class="col-12 col-xl-10 mr-xl-auto mb-5">
-          <p class="h3 editable">{{ partner.title }}</p>
-          <div class="editable">
+        <div class="col-12 mb-5">
+          <h3>{{ partner.title }}</h3>
+          <div>
             {{ partner.text_above_logos_html }}
           </div>
-          <div class="row flex-wrap align-items-center mb-5">
-          {% for logo in partner.logos %}
-            <div>
-                {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
-                <img class='d-inline align-middle m-3 ' style="max-width:250px;max-height:100px;" src="{{ logo.image }}" alt="{{ logo.alt }}"/>
-                {% if logo.link %}</a>{% endif %}
+          <div class="bg-placeholder aspect-3x1 mb-5">
+            <div class="bg-fill">
+              <div class="text-center">
+                <h4 class="text-uppercase">Partner logos</h4>
+              </div>
             </div>
-            <!-- use the method below if we want to do eqully spaced columns -->
-            <!--
-            <div class="col col-6 col-md-3 ">
-                {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
-                <img class='w-100' src="{{ logo.image }}" alt="{{ logo.alt }}"/>
-                {% if logo.link %}</a>{% endif %}
-            </div>
-            -->
-          {% endfor %}
           </div>
+          {% comment %}
+            <div class="row flex-wrap align-items-center mb-5">
+            {% for logo in partner.logos %}
+              <div>
+                  {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
+                  <img class="d-inline align-middle m-3" style="max-width:250px; max-height:100px;" src="{{ logo.image }}" alt="{{ logo.alt }}"/>
+                  {% if logo.link %}</a>{% endif %}
+              </div>
+            {% endfor %}
+            </div>
+          {% endcomment %}
           <div class="mb-5">
             {{ partner.text_below_logos_html }}
           </div>
@@ -198,11 +209,11 @@ _sticky_nav:
 <section class="bg-white" id="networks">
   <div class="container">
     <div class="row">
-      <div class="col-md-auto">
+      <div class="col-12 col-md-auto">
         <img src="/img/icons/stakeholder_engagement/stakeholderengagement_networks.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <h3>Networks</h3>
+        <h3 class="editable">Networks</h3>
         <div class="editable">
           <p>The food system is large, complex, and ever-evolving, requiring coordination, knowledge sharing and creative collaboration. We facilitate several strategic partnerships, each of which brings together key players to collaboratively work towards a more sustainable, resilient, and inclusive food system. Leading these partnerships enables ReFED to cement its role as the central convener on U.S. food waste solutions and foster greater collaboration among partners in the sector.</p>
         </div>
@@ -214,7 +225,7 @@ _sticky_nav:
 <section class="bg-lighter" id="events">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-auto">
+      <div class="col-12 col-md-auto">
         <img src="/img/icons/stakeholder_engagement/stakeholderengagement_events.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Icon events" />
       </div>
       <div class="col">
@@ -240,7 +251,7 @@ _sticky_nav:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="text-center preheader editable">Explore other areas of the ReFED organization</h3>
+        <h3 class="text-center editable">Explore other areas of the ReFED organization</h3>
       </div>
     </div>
     <div class="row">
