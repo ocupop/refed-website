@@ -44,9 +44,20 @@ cta:
     %}
   {% endfor %}
 </div>
-<!-- TODO logic to rule out displaying case studies twice on this page -->
+
+
 <section>
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-auto mb-5">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Filtering</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TODO logic to rule out displaying case studies twice on this page -->
     {% include sections/carousels/carousel_cards.html items=site.case_studies %}
   </div>
 </section>

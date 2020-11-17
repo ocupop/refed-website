@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: $dark;
+  background-color: $darker;
   overflow: hidden;
   &.bg-contain {
     background-size: contain;
@@ -50,6 +50,7 @@
   }
   &.aspect-auto {
     height: auto;
+    padding-top: 0;
   }
 
   iframe {
@@ -76,6 +77,13 @@
 .bg-placeholder {
   background-color: $black;
   color: $white;
+  &.aspect-auto {
+    padding-top: 0;
+    .bg-fill {
+      position: relative;
+    }
+  }
+
 }
 
 .bg-hero {

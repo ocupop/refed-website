@@ -14,7 +14,7 @@
     li {
       .nav-link {
         font-family: $font-family-serif;
-        color: $primary;
+        color: $body-color;
         font-size: 1rem;
         background-color: $light;
         margin-left: 1rem;
@@ -38,7 +38,7 @@
   @include media-breakpoint-up(xl) {
     li {
       .nav-link {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }

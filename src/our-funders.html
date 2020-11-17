@@ -10,9 +10,9 @@ hero:
     image: /img/funders/ourfunders_header_image.jpg
     links:
 logo_pile:
-  title: Our Funders
+  title:
   description_html: >-
-    <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
+
   logos:
     - link: http://www.refed.com
       alt_text: Refed Alt Tag
@@ -34,7 +34,6 @@ cta:
     color: '#e65e4a'
     bar_position:
       - left
-
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -51,13 +50,41 @@ cta:
   </div>
 </section>
 
-{% include sections/logo_pile.html logo_pile=page.logo_pile %}
+<section class="bg-lighter logo-pile">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <h3 class="editable">
+          Our Funders
+        </h3>
+        <div class="editable">
+          <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% comment %}
+          {% include sections/logo_pile.html logo_pile=page.logo_pile %}
+        {% endcomment %}
+        <div class="bg-placeholder aspect-3x1">
+          <div class="bg-fill">
+            <div class="text-center">
+              <h4 class="text-uppercase">Funder Logo Pile</h4>
+              <small>.src/_includes/sections/carousels/logo_pile.html</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% include sections/carousels/carousel_split.html
   items=site.case_studies
-  preheader='Funder Impact Stories'
+  subtitle='Funder Impact Stories'
   id="funder-impact"
-  section_background_color='primary'
+  section_background_color='dark'
   image_width='50%'
   image_alignment='right'
   image_to_edge=true

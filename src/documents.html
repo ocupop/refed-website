@@ -8,41 +8,41 @@ document_sections:
       priorities, and our targets to drive a 50 percent reduction in the amount
       of wasted food in the United States by the year 2030.</p>
     documents:
-      - document_label: Download the 2019 Annual Report
+      - label: Download the 2019 Annual Report
         document:
-      - document_label: Download the 2018 Annual Report
+      - label: Download the 2018 Annual Report
         document:
-    videos:
-      title: ReFED Mission Video
-      embed_url: 'https://www.youtube.com/embed/jMmmcDVzmo8'
+    embeds:
+      - title: Final Report
+        embed_url: '//e.issuu.com/embed.html?d=refed-bestpractices-report-final&u=refed'
   - title: Financials
     description_html: >-
       <p>Access our current and historical financial documents, including our
       IRS Form 990:</p>
     documents:
-      - document_label: Download 2019 Financials
+      - label: Download 2019 Financials
         document:
-      - document_label: Download 2018 Financials
+      - label: Download 2018 Financials
         document:
-    videos:
-      title:
-      embed_url:
+    embeds:
+      - title:
+        embed_url:
   - title: Brand Guidelines
     description_html: >-
       <p>Download our brand guidelines to get an outlook of our distinctive
       identity, visual assets and related rules, meant to direct proper and
       consistent usage of our brand across all media.</p>
     documents:
-      - document_label: Download Brand Guidelines
+      - label: Download Brand Guidelines
         document:
-      - document_label: Download Logos
+      - label: Download Logos
         document:
-    videos:
-      title:
-      embed_url:
+    embeds:
+      - title:
+        embed_url:
 ---
 
-<section class="bg-primary text-white">
+<section class="bg-dark">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -63,13 +63,12 @@ document_sections:
           {{ section.description_html }}
         {% endif %}
         {% for document in section.documents %}
-          <a href="{{ document.document }}" class="btn btn-blue">{{ document.label | default: 'View Document '}}</a>
+          <a href="{{ document.document }}" class="btn btn-primary mr-3 mb-3">{{ document.label | default: 'View Document '}}</a>
         {% endfor %}
-        {% if section.videos.first.embed_url  %}
-          {% for video in section.videos %}
-            {{ video.embed_url }}
-            <div class="video-responsive mt-5">
-              <iframe width="560" height="315" src="{{ video.embed_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if section.embeds.first.embed_url  %}
+          {% for embed in section.embeds %}
+            <div class="responsive-iframe aspect-16x9 mt-5">
+              <iframe src="{{ embed.embed_url }}"></iframe>
             </div>
           {% endfor %}
         {% endif %}

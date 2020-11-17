@@ -58,7 +58,7 @@ solution_providers:
   - title: The ReFED COVID-19 Food Waste Solutions Fund
     description_html: >-
       <p>The COVID-19 pandemic completely disrupted the food supply chain, resulting in a surge of on-farm food loss, food business closures, and a growing number of food insecure individuals. In response to these challenges ReFED launched the COVID-19 Food Waste Solutions Fund to quickly deliver vital funding to mid-sized organizations across the U.S. that could rapidly scale food waste reduction and hunger relief efforts, with a particular focus on the rescue of fresh, healthy food from farms and dignified, convenient last-mile delivery to the increased number of Americans facing food insecurity.</p>
-    link:
+    link: 'https://covid.refed.com/covidsolutionsfund'
     link_label:
   - title: The Wonderful Company POM Innovation Challenge
     description_html: >-
@@ -153,8 +153,8 @@ _subnav:
 <section id="investment-and-innovation" class="bg-lighter">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-auto mr-md-3">
-        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
+      <div class="col-12 col-md-auto">
+        <img class="icon-img-lg mr-md-3" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
       </div>
       <div class="col">
         <div class="editable">
@@ -165,13 +165,13 @@ _subnav:
     </div>
     <div class="row mb-5">
       {% for resource in page.resources_and_tools %}
-      <div class="col-lg-4 mb-5">
+      <div class="col-12 col-lg-5 mb-5">
         <div class="pr-lg-5">
           <div class="editable">
             <h4>{{ resource.title }}</h4>
             {{ resource.description_html }}
           </div>
-          <a href="{{ resource.link }}" class="btn-link text-blue">{{ resource.link_label | default: 'Learn More' }}</a>
+          <a href="{{ resource.link }}" class="btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
       <div class="col-lg-1"></div>
@@ -182,8 +182,8 @@ _subnav:
 <section id="advisory-services">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-auto mr-lg-3">
-        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
+      <div class="col-md-auto">
+        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Advisory Services</h3>
@@ -202,14 +202,14 @@ _subnav:
     </div>
     {% for service in page.advisory_services %}
       <div class="row align-items-center mb-5">
-        <div class="col-lg-4">
-          <div class="bg-image aspect-16x9 bg-dark" style="background-image: url({{ service.featured_image }})"></div>
+        <div class="col-12 col-lg-4">
+          <div class="bg-image aspect-16x9" style="background-image: url({{ service.featured_image }})"></div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-12 col-lg-8">
           <h4>{{ service.title }}</h4>
           {{ service.description_html }}
           {% if service.link %}
-            <a href="{{ service.link }}" class="btn-link">{{ service.link_label | default: 'Learn More' }}</a>
+            <a href="{{ service.link }}" class="btn btn-link">{{ service.link_label | default: 'Learn More' }}</a>
           {% endif %}
         </div>
       </div>
@@ -219,8 +219,8 @@ _subnav:
 <section id="solution-challenge-platform" class="bg-lighter">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-auto mr-lg-3">
-        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
+      <div class="col-12 col-md-auto">
+        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Solution Challenge Platform</h3>
@@ -228,7 +228,7 @@ _subnav:
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-12 col-lg-7">
         <div class="editable">
           <h4>The ReFED Nonprofit Food Recovery Accelerator</h4>
           <p>In a country where up to forty percent of perfectly good food is wasted, yet 37 million Americans are food insecure, an opportunity exists to enact systems-level change to enhance the food system, reduce waste, and ensure that food ultimately goes towards serving its highest purpose of feeding people in a dignified manner.</p>
@@ -236,9 +236,9 @@ _subnav:
           <p>The Accelerator immersed 10 nonprofit food recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs. Its focus was on leveraging earned revenue models, technology solutions, and human-centered design to catalyze ideas and inspire actions that could help the organizations overcome challenges that have limited their ability to scale solutions to increase the amount of healthy food available to food insecure Americans.</p>
         </div>
 
-        <a href="#" class="btn-link text-blue editable">Learn More <span class="text-danger">* add link *</span></a>
+        <a href="#" class="btn-link text-blue editable">Learn More</a>
       </div>
-      <div class="col-lg-4 ml-lg-auto">
+      <div class="col-12 col-lg-4 ml-lg-auto">
         <h6 class="editable text-gray mt-5">Program at a Glance</h6>
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
@@ -248,25 +248,25 @@ _subnav:
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[0].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[1].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5 w-100" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[2].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[3].image }}')"></div>
       </div>
     </div>
     {% for solution in page.solution_providers %}
       <div class="row align-items-center mb-5">
-        <div class="col-lg-3">
+        <div class="col-12 col-lg-3">
           <div class="bg-image aspect-5x7 bg-dark" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-12 col-lg-9">
           <h4>{{ solution.title }}</h4>
           {{ solution.description_html }}
           {% if solution.link %}
@@ -281,11 +281,11 @@ _subnav:
 <section id="convenings">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-auto mr-lg-3">
-        <img class="icon-img-lg" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
+      <div class="col-12 col-md-auto">
+        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
       </div>
       <div class="col">
-        <h3 class="editable text-serif">Convenings</h3>
+        <h3 class="editable">Convenings</h3>
         <div class="editable">
           <p>The Capital & Innovation Team’s hosts a wide range of convenings to foster collaboration and solutions-oriented synergies between food businesses, capital providers, and food waste solution providers.</p>
         </div>
@@ -293,7 +293,7 @@ _subnav:
     </div>
     <div class="row">
       {% for convening in page.convenings %}
-        <div class="col-lg-6 mb-5">
+        <div class="col-12 col-lg-6 mb-5">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
           <a href="{{ convening.link }}" class="btn-link text-blue">{{ convening.link_label | default: 'Learn More'}}</a>
@@ -301,16 +301,16 @@ _subnav:
       {% endfor %}
     </div>
     <div class="row mt-5">
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[4].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[5].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5 w-100" data-cms-editor-link="cloudcannon:#_assets[6].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[6].image }}')"></div>
       </div>
-      <div class="col-md-3">
+      <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5" data-cms-editor-link="cloudcannon:#_assets[7].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[7].image }}')"></div>
       </div>
     </div>
