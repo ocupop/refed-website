@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Capital and Innovation
 hero:
   - title: Capital and Innovation
@@ -125,15 +125,11 @@ _assets:
   - image: /img/who_we_are/aboutus_image_03.jpg
   - image: /img/who_we_are/aboutus_image_04.jpg
 
-_sticky_nav:
-  - link: '#investment-and-innovation'
-    link_label: 'Investment and Innovation'
-  - link: '#advisory-services'
-    link_label: 'Advisory Services'
-  - link: '#solution-challenge-platform'
-    link_label: 'Solution Challenge Platform'
-  - link: '#convenings'
-    link_label: 'Convenings'
+_subnav:
+  - label: 'Investment and Innovation'
+  - label: 'Advisory Services'
+  - label: 'Solution Challenge Platform'
+  - label: 'Convenings'
 
 ---
 
@@ -156,7 +152,7 @@ _sticky_nav:
   </div>
 </section>
 
-{% include nav/subnav.html items=page._sticky_nav label="Key Program Areas" %}
+{% include nav/subnav.html items=page._subnav label="Key Program Areas" %}
 
 <section id="investment-and-innovation" class="bg-lighter">
   <div class="container">

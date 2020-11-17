@@ -66,6 +66,30 @@ palette:
 
 <section>
   <div class="container">
+    <!-- FOR REVIEW -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#reviewSummary">Review</p>
+        <div id="reviewSummary" class="collapse show">
+          <ul class="list-group">
+            {% assign items = site.pages | where: "layout", "page" | sort: 'title' %}
+            {% assign size = items.size %}
+            <li class="list-group-item">
+              <h4>Standalone Pages <span class="float-right badge badge-secondary">{{ size }}</span></h4>
+              <div class="bg-lighter p-4">
+                {% for item in items  %}
+                <a href="{{ item.url }}" class="d-flex justify-content-between py-1">
+                  <span>{{ item.title }}</span>
+                  <span>{{ item.url }}</span>
+                </a>
+                {% endfor %}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- SETTINGS -->
     <div class="row">
       <div class="col-12">
@@ -261,7 +285,7 @@ palette:
             <li class="list-group-item">
               <h4 data-toggle="collapse" data-target="#{{collection}}">{{ collection }} <span
                   class="float-right badge badge-secondary">{{ size }}</span></h4>
-              <div id="actionAreas" class="collapse show">
+              <div id="{{collection}}" class="collapse show">
                 <div class="bg-lighter p-4">
                   {% for item in items  %}
                     {% unless item.layout == 'sandbox' %}
