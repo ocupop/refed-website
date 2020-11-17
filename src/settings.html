@@ -86,7 +86,7 @@ palette:
             <div class="text-sans-serif">
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
-              <h3>Heading 3</h3>
+              <h3 class="text-sans-serif">Heading 3</h3>
               <h4>Heading 4</h4>
               <h5>Heading 5</h5>
               <h6>Heading 6</h6>
@@ -106,10 +106,6 @@ palette:
           </div>
         </div>
         <p class="subheading mt-5">Text Utilities</p>
-        <div class="info">
-          <span class="preheader">Please Refactor</span>
-          <code>.preheader</code>
-        </div>
 
         <div class="info">
           <span class="text-uppercase">Uppercase Text</span>
@@ -135,7 +131,7 @@ palette:
           <div class="row row-cols-1 {% if category.colors.first.label %}row-cols-md-4{% else %}row-cols-md-6{% endif %}">
             {% for color in category.colors %}
               <div class="col my-2">
-                <div class="bg-image aspect-2x1 bg-{{ color.variable }}"></div>
+                <div class="bg-image aspect-2x1 bg-{{ color.variable }} color-info"></div>
                 <div class="info py-2">
                   <code>${{ color.variable }}</code>
                   {% if color.label %}
@@ -221,7 +217,7 @@ palette:
   </div>
 </section>
 
-
+<!-- SETTINGS -->
 <section>
   <div class="container">
     <div class="row">
@@ -253,6 +249,38 @@ palette:
             src="{{ site.socialshare.twitter.image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
             alt="{{ site.socialshare.twitter.image | default: 'incomplete' }}" class="img-fluid">
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="themeIcons">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="heading">COllections</p>
+        <ul class="list-group">
+          {% assign collections = "pages,action_areas,stakeholders,case_studies,events,reports_and_guides,press,careers" | split: ',' %}
+          {% for collection in collections %}
+            {% assign size = site[{{collection}}].size %}
+            {% assign items = site[{{collection}}] %}
+          <li class="list-group-item">
+            <h4 data-toggle="collapse" data-target="#{{collection}}">{{ collection }} <span class="float-right badge badge-secondary">{{ size }}</span></h4>
+            <div id="actionAreas" class="collapse show">
+                <div class="bg-lighter p-4">
+                {% for item in items %}
+                <a href="{{ item.url }}" class="d-flex justify-content-between py-1">
+                  <span>{{ item.title }}</span>
+                  <span>{{ item.url }}</span>
+                </a>
+                {% endfor %}
+                </div>              
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
       </div>
     </div>
   </div>

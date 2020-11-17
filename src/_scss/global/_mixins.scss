@@ -100,3 +100,26 @@
     }
   }
 }
+
+// @mixin color-variant($parent, $slug, $color, $ignore-warning: false) {
+//   #{$parent} {
+//     background-color: $color !important;
+//     background-size: contain;
+//     background-position: center center;
+//   }
+// }
+
+  // &.color-info {
+  //   &::before {
+  //     // TODO: Add logic to map through and add hex values based on color map
+  //     content: "#{$slug}";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     padding: 1rem;
+  //     width: 100%;
+  //     height: 100%;
+  //     color: $white;
+  //     display: flex;
+  //   }
+  // }

@@ -11,7 +11,7 @@ cta:
     bar_position: right
 ---
 
-{% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %}
+<!-- {% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %} -->
 
 <section>
   <div class="container">
@@ -19,11 +19,7 @@ cta:
       <div class="col-lg-5">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <img
-              src="{{ page.icon_image }}"
-              class="icon-img-lg"
-              alt="{{ page.title }} icon"
-            />
+            <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
           </div>
           <div class="col">
             <h6 class="mb-0">Action Area</h6>
@@ -62,8 +58,8 @@ cta:
     </div>
   </div>
 </section>
-
-<!-- {% include modules/sticky_nav.html navigation=page._sticky_nav header=page._sticky_nav_headline %} -->
+{% capture label %}Explore this Action Area: {{page.title}}{% endcapture %}
+{% include nav/subnav.html items=page.sectors label=label %}
 
 <section class="pb-0" id="modeled-solutions">
   <div class="container">
@@ -324,22 +320,15 @@ cta:
 
 {% include sections/cta_insights_engine.html data=layout.cta_insights_engine %}
 
-<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
-  {% for featured_slug in page.case_studies %}
-    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %}
-    {% include sections/split_section.html
-        item=featured
-        section_background_color='primary'
-        preheader='Case Study'
-        section_background_color='white'
-        image_width='50%'
-        image_alignment='right'
-        image_to_edge=true
-        text_to_edge=true
-        button_type='text'
-        section_class='p-0'
-    %}
+{% if page.case_studies.size > 0 %}
+  {% for slug in page.case_studies %}
+    {% assign item = site.case_studies | where: 'slug', slug | first %}
+    {% include components/slide.html  item=item %}
   {% endfor %}
+{% endif %}
+
+<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+
 </div>
 
 {% include sections/cta.html cta=layout.cta %}
