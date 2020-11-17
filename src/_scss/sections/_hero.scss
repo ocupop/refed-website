@@ -1,113 +1,102 @@
-.hero{
-  //height:0;
-  padding-top: 0;
-  height: auto;
-  // min-height:em(594);
-  position:relative;
-  display: flex;
-  flex-direction: column-reverse;
-  @include media-breakpoint-up(lg) {
-    padding-top: 33%;
-    height: 0;
-  }
-    
-  // .hero-image{
-  //   height: auto;
-  //   position: absolute;
-  //   top:0;
-  //   left:0;
-  //   bottom:0;
-  //   right:0;
-  //   background-size: cover;
-  //   background-position: center center;
-  // }
+// TODO: Remove... this should be accounted for with just the utility class (.bg-hero)
+// .hero {
+//   //height:0;
+//   padding-top: 0;
+//   height: auto;
+//   // min-height:em(594);
+//   position: relative;
+//   display: flex;
+//   flex-direction: column-reverse;
+//   @include media-breakpoint-up(lg) {
+//     padding-top: 33%;
+//     height: 0;
+//   }
 
-  .hero-content {
-    position: relative;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;  
-    background-color:rgba($black, 0.5);
-    padding-left: 20px;
-    padding-right: 20px;
-    @include media-breakpoint-up(lg) {
-      position: absolute;
-      height: auto;
-      padding: 0;
-    }
-    .hero-copy{
-      h1{
-        //font-size:48px; // isthis really different than other places site wide? ~pstroot
-      }
-      .preheader { 
-        font-size:em(40);
-      }
-      .hero-p {
-        p:first-child { 
-          margin-top:0;
-        }
-        p:last-child { 
-          margin-bottom:0;
-        }
-      }
-    }
-  }
-   
-  // @include media-breakpoint-down(lg) {
-  //   height:em(550);
-  // }
+//   .hero-content {
+//     position: relative;
+//     height: 100%;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row-reverse;
+//     background-color: rgba($black, 0.5);
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     @include media-breakpoint-up(lg) {
+//       position: absolute;
+//       height: auto;
+//       padding: 0;
+//     }
+//     .hero-copy {
+//       h1 {
+//         //font-size:48px; // isthis really different than other places site wide? ~pstroot
+//       }
+//       .preheader {
+//         font-size: em(40);
+//       }
+//       .hero-p {
+//         p:first-child {
+//           margin-top: 0;
+//         }
+//         p:last-child {
+//           margin-bottom: 0;
+//         }
+//       }
+//     }
+//   }
 
-  // @include media-breakpoint-down(md) {
-  //     height:em(450);
-  //   &.image-overlaps-bottom .hero-content{ padding-bottom:190px;} 
-  // }
-  // @include media-breakpoint-down(sm) {
-  //   height:auto;    
-  //     &.image-overlaps-bottom .hero-content{ padding-bottom:95px;} 
-  // }
-    
-  /* Desktop Only */
-  @include media-breakpoint-up(md) {
-    .hero-content{
-      .hero-copy{
-        // margin-right: 50px;
-        // max-width:em(1020);
-      }
-      .hero-social{
-        a {
-          width: 40px;
-          height: 40px;
-          background-color: $white;
-          i {
-            font-size: 24px;
-          }
-        }
-      }
-    }
-  }
-}
+//   // @include media-breakpoint-down(lg) {
+//   //   height:em(550);
+//   // }
 
-.hero-social {
-  position: absolute;
-  right: 0;
-  bottom: 30px;
-  z-index: 100;
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    margin: 15px 0;
-    background-color: $white;
-    i {
-      font-size: 23px;
-      color: $black;
-    }
-  }
-}
+//   // @include media-breakpoint-down(md) {
+//   //     height:em(450);
+//   //   &.image-overlaps-bottom .hero-content{ padding-bottom:190px;}
+//   // }
+//   // @include media-breakpoint-down(sm) {
+//   //   height:auto;
+//   //     &.image-overlaps-bottom .hero-content{ padding-bottom:95px;}
+//   // }
 
+//   /* Desktop Only */
+//   @include media-breakpoint-up(md) {
+//     .hero-content {
+//       .hero-copy {
+//         // margin-right: 50px;
+//         // max-width:em(1020);
+//       }
+//       .hero-social {
+//         a {
+//           width: 40px;
+//           height: 40px;
+//           background-color: $white;
+//           i {
+//             font-size: 24px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .hero-social {
+//   position: absolute;
+//   right: 0;
+//   bottom: 30px;
+//   z-index: 100;
+//   a {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 38px;
+//     height: 38px;
+//     margin: 15px 0;
+//     background-color: $white;
+//     i {
+//       font-size: 23px;
+//       color: $black;
+//     }
+//   }
+// }

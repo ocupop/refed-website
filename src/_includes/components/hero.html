@@ -1,0 +1,19 @@
+{% assign hero = include.items.first %}
+<section class="bg-hero" style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
+  <div class="bg-fill text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          {% if hero.label %}<h3 class="mb-0">{{ hero.label }}</h3>{% endif %}
+          {% if hero.title %}<h1 class="mt-0">{{ hero.title }}</h1>{% endif %}
+          {{ hero.description_html }}
+          <div class="d-flex align-items-center">
+            {% for link in hero.links %}
+              <a href="{{ link.url }}" class="btn btn-link" alt="{{ link.alt }}">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
