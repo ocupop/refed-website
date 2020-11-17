@@ -1,5 +1,8 @@
-// TODO: I like that you are using some new sass functions/features... but this code warrants a discussion to make sure that the solution is "robust"
+// TODO: I like that we are using some new sass functions/features... but this code warrants a discussion to make sure that the solution is "robust"
 .reduction-solutions-chart {
+  label {
+    display: block;
+  }
   .col-1of7 {
     width: percentage(1 / 7);
   }
@@ -23,7 +26,7 @@
     &.rescue label {
       border-bottom-color: $rescue-400;
     }
-    &.recycling label {
+    &.recycle label {
       border-bottom-color: $green;
     }
 

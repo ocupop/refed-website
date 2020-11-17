@@ -357,6 +357,32 @@ action_area_categories:
         slug: recycle-anything-remaining
         uid: recycle
 
+# Stakeholder Taxonomy
+stakeholder_categories:
+  - label:
+    uid:
+    stakeholders:
+      - label: Producers
+        slug: producers
+        uid: producers
+      - label: Manufacturing
+        slug: manufacturing
+        uid: manufacturing
+      - label: Retail
+        slug: retail
+        uid: retail
+      - label: Restaurants & Foodservice
+        slug: restaurants-and-foodservice
+        uid: foodservice
+  - label:
+    uid:
+    stakeholders:
+      - label: Policymakers
+        slug: policymakers
+        uid: policymakers
+      - label: Capital Providers
+        slug: capital-providers
+        uid: capital
 
 #hard coded select fields
 event_types:

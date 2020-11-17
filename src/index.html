@@ -92,13 +92,13 @@ funder_images:
       title: Test 1
 carousel_testimonial:
   - text: >-
-      “The ReFED team has been an incredible strategic partner in our journey to
+      The ReFED team has been an incredible strategic partner in our journey to
       end hunger and waste. ReFED’s insights and guidance helped shape the
       strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
       Innovation Fund and its open call for innovative solutions. Kroger values
       ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
       never been more excited and hopeful that together we can truly change our
-      food system.”
+      food system.
     author: Denise Oserhues
     cite: The Kroger Co.
     image:
@@ -138,41 +138,54 @@ carousel_testimonial:
 <section class="bg-lighter">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
+      <div class="col-12 col-lg-6">
         <h2 class="editable">
           We Have Identified Seven Priority Action Areas of food waste reduction solutions
         </h2>
       </div>
-      <div class="col-lg-6 ml-lg-auto">
+      <div class="col-12 col-lg-6 ml-lg-auto">
         <p class="editable">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
     </div>
-    {% include modules/reduction_solutions_chart.html %}
+
+    {% include pages/home/reduction_solutions_chart.html %}
   </div>
 </section>
+
 <section class="bg-lighter pt-0">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-8">
-        <h3 class="editable">
-          Dive into Our Solutions
-        </h3>
-        <div class="editable lead">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti deserunt numquam, non eos autem quisquam temporibus impedit. Facere, iure voluptate?</p>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="my-2">
+          {% include charts/donut.html %}
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="text-lg-right">
-          <a href="/food-waste-solutions" class="btn btn-blue btn-lg text-serif editable">Learn More</a>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="my-2">
+          {% include charts/donut.html %}
         </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="my-2">
+          {% include charts/donut.html %}
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="my-2 editable">
+          <h3>Dive into Our Solutions</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti deserunt numquam, non eos autem quisquam
+            temporibus impedit. Facere, iure voluptate?</p>
+        </div>
+        <a href="/food-waste-solutions" class="btn btn-blue editable">Learn More</a>
       </div>
     </div>
   </div>
 </section>
 
 {% include sections/cta_insights_engine.html data=page.cta_insights_engine %}
+
 <section class="bg-primary text-white">
   <div class="container">
     <div class="row">
@@ -182,15 +195,18 @@ carousel_testimonial:
         </h2>
       </div>
     </div>
-    {% include stakeholders/stakeholders-grid.html %}
+
+    {% include stakeholders/grid.html %}
+
     <hr class="border-white" />
+
     <div class="row mt-5">
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <p class="lead editable">
           Find out how to engage with ReFED no matter what field you are in.
         </p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <div class="text-lg-right">
           <a href="/engage" class="btn btn-lg btn-recycle text-serif">Find out more ways to engage</a>
         </div>
@@ -200,6 +216,7 @@ carousel_testimonial:
 </section>
 
 {% include modules/cta_newsfeed.html items=site.articles %}
+
 <section>
   <div class="container">
     <div class="row">
@@ -212,10 +229,20 @@ carousel_testimonial:
     </div>
     <div class="row">
       <div class="col-12">
+        <div class="bg-placeholder aspect-3x1 bg-black text-white">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Funder Logo Carousel</h4>
+          </div>
+        </div>
+        <!-- TODO: Refactor Carousels -->
+        {% comment %}
         {% include sections/carousels/carousel_images.html items=page.funder_images.images %}
+        {% endcomment %}
       </div>
     </div>
   </div>
 </section>
+
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
+
 {% include modules/stay_connected.html %}

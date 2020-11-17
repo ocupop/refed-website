@@ -12,7 +12,7 @@
           <div class="{% if num_items > 2 %}news-carousel{% else %}row{% endif %}">
             {% for item in include.items %}
               <div class="card news-{{ forloop.index }} col-lg-6">
-                <div class="bg-image aspect-2x1" style="background-image:url({{ item.featured_image | default: site.placeholder_image }})"></div>
+                <div class="bg-image aspect-2x1" style="background-image:url('{{ item.featured_image | default: site.placeholder_image }}')"></div>
                 <div class="card-body">
                   <div class="card-subtitle mb-2 text-muted">{{ item.date | date: "%B %-d, %Y" }}</div>
                   <p class="card-text">{{ item.title }}</p>

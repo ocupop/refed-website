@@ -20,19 +20,20 @@
 @import "nav/primarynav";
 @import "nav/topnav";
 
+// TODO: Migrate all module styles
 @import "modules/card";
 @import "modules/form_assembly";
-//@import "modules/large_image_beyond_bounds_module";
-//@import "modules/simple_copy_and_cta";
 @import "modules/circle_icon_list";
-//@import "modules/staff";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
-@import "modules/reduction_solutions_chart";
 @import "modules/key_indicators_box";
 @import "modules/horizontal_card";
 
+// Collection Specific Styles
 @import "collections/stakeholders";
+
+// Page Specific Styles
+@import "pages/home/reduction_solutions_chart";
 
 @import "pages/our_funders";
 @import "pages/who_we_are";
@@ -42,6 +43,7 @@
 @import "pages/engage";
 @import "pages/project_settings";
 
+// TODO: Refactor Section styles
 @import "sections/hero";
 @import "sections/cta_newsfeed";
 @import "sections/card_grid";
@@ -58,7 +60,7 @@
 @import "sections/accordion";
 @import "sections/accordion";
 @import "sections/theory_of_change";
-// @import "sections/collapse_solutions";
+
 @import "sections/newsroom_filter";
 
 @import "components/slides";
