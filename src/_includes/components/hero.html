@@ -1,9 +1,11 @@
-{% assign hero = include.items.first %}
 <section id="{{ include.id | default: 'pageHero' }}" class="carousel slide {{ include.style | default: 'carousel-fade' }}" data-ride="carousel">
   <div class="carousel-inner">
     {% for hero in include.items %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <div class="bg-hero" style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
+      <div class="bg-hero"
+        data-cms-editor-link="cloudcannon:#hero"
+        data-cms-editor-link-style="modal"
+        style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
         <div class="bg-fill text-white">
           <div class="container">
             <div class="row">

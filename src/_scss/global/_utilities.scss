@@ -1,6 +1,4 @@
-// TODO: Add everyone's favorite utility classes.
-
-// Responsive Cards
+// Responsive Cards - TODO: Refactor to use Bootstrap:
 .responsive-card-deck {
   @include make-responsive-cards();
   margin-left: -15px;
@@ -160,6 +158,33 @@
 
 .max-out-text-width {
   max-width: rem(900);
+}
+
+// Add the random colorbar to seperate sections from design
+section.divide {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 200px;
+    min-width: 10%;
+    max-width: 50%;
+    top: 0;
+    left: 0;
+    border-top: 20px solid $salmon;
+  }
+  &.divide-right {
+    &::before {
+      right: 0;
+      left: auto;
+    }
+  }
+  &.divide-left {
+    &::before {
+      left: 0;
+      right: auto;
+    }
+  }
 }
 
 // Text Utilities

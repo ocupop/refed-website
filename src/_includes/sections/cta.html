@@ -1,22 +1,18 @@
-<section class="cta bg-{{ include.cta.section_background_color | default: 'lighter' }} text-left" id="{{ include.id }}">
+{% assign cta = include.cta %}
+<section id="{{ include.id }}" class="bg-lighter">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-3 mb-lg-0">
-        {% if include.cta.title != nil %}
-          <h2>{{ include.cta.title }}</h2>
-        {% endif %}
-        {% if include.cta.description_html != nil %}
-          <div class="h4">{{ include.cta.description_html }}</div>
+      <div class="col-lg-8">
+        {% if cta.title %}<h2>{{ cta.title }}</h2>{% endif %}
+        {% if cta.description_html %}
+          <div class="h4">{{ cta.description_html }}</div>
         {% endif %}
       </div>
-      {% if include.cta.link != nil %}
-      <div class="col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
-        <a href="{{ include.cta.link }}" class="btn btn-secondary text-serif text-nowrap btn-lg">{{ include.cta.link_label }}</a>
+      <div class="col-12 col-lg-4">
+        {% if cta.link %}
+          <a href="{{ cta.link.url }}" class="btn btn-secondary text-serif btn-lg">{{ cta.link.label }}</a>
+        {% endif %}
       </div>
-      {% endif %}
     </div>
   </div>
-  {% if include.cta.colorbar != nil %}
-    <div class="section__colorbar {{ include.cta.colorbar.bar_position }}" style="background-color:{{ include.cta.colorbar.color }}"></div>
-  {% endif %}
 </section>

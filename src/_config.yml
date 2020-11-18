@@ -73,42 +73,42 @@ plugins:
   - jekyll-contentblocks
 
 _array_structures:
+  links:
+    - label: Links
+      icon: link
+      value:
+        label:
+        url:
+        alt:
+        links:
+        _stay_connected: false
   sections:
     - label: Standard
       icon: article
       value:
         _type: single_column
         title:
-        section_html:
+        content_html:
     - label: Hero
       icon: panorama
       value:
         _type: hero
         title:
-        subtitle:
-        description_html:
+        label:
+        content_html:
         image:
-        link:
-        link_label:
-        buttons:
-          - link:
-            link_label:
-            button_type:
-  navigation:
-    - label: Navigation
-      icon: link
-      value:
-        link:
-        title:
         links:
-  links:
-    - label: Links
-      icon: link
-      value:
-        title:
-        link:
-        links:
-        _stay_connected: false
+
+  # TODO: Confirm the need for this array structure
+  # navigation:
+  #   - label: Navigation
+  #     icon: link
+  #     value:
+  #       link:
+  #       title:
+  #       links:
+
+
   page_sections:
     - label: Single Column
       icon: article
@@ -278,9 +278,6 @@ _array_structures:
         description_html:
         link:
         link_label:
-        colorbar:
-          color:
-          bar_position:
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode

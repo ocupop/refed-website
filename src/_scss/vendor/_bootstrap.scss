@@ -21,6 +21,29 @@
   .carousel-control-next {
     right: -5%;
   }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    top: 0;
+    left: 11%;
+    z-index: 15;
+    display: flex;
+    justify-content: start;
+    padding-left: 0;
+    margin: 4rem 0 0;
+    list-style: none;
+    li {
+      height: 1rem;
+      width: 1rem;
+      border: 1px solid $dark;
+      background-color: transparent;
+      border-radius: 100%;
+      &.active {
+        background-color: $dark;
+      }
+    }
+  }
 }
 
 //buttons

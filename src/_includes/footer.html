@@ -1,10 +1,10 @@
-<footer id="pageFooter" >
+<footer id="pageFooter">
   <div class="logo-band bg-white py-3">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <a class="footer-brand" href="/" title="{{ site.title }}">
-            <img src="/img/logo-wordmark.svg" alt="ReFED logo">
+            <img src="/img/logo-wordmark.svg" alt="ReFED logo" />
           </a>
         </div>
       </div>
@@ -16,7 +16,7 @@
         <div class="col-md-7 text-light bg-dark footer-links-column">
           <ul class="footer-links navbar-nav ml-auto">
             {% for link in site.data.navigation.footer_navigation.links %}
-              <li class="nav-item"><a class="nav-link text-light font-weight-light" href="{{ link.link }} ">{{ link.title }} </a></li>
+              <li class="nav-item"><a class="nav-link text-light font-weight-light" href="{{ link.url }} ">{{ link.label }} </a></li>
             {% endfor %}
           </ul>
         </div>
