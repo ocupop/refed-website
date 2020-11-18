@@ -96,20 +96,22 @@ cta:
       <div class="col-12">
         <h3 class="editable">Current Vacancies</h3>
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
-        <div id="notification-careers" >
-          <p class="h3 my-5 editable">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
-        </div>
+        {% assign num_careers = site.careers | size %}
+        {% if num_careers < 1 %}
+          <div id="notification-careers" >
+            <p class="h3 my-5 editable">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
+          </div>
+        {% endif %}
         <hr class="mb-5"/>
       </div>
     </div>
-    <!-- TODO loop through careers -->
-    {% for i in (1..3) %}
+    {% for career in site.careers %}
       <div class="row mb-5">
         <div class="col-12">
-          <h4>Job Title</h4>
-          <h5 class="text-gray">Job Location</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="btn btn-blue mt-3" href="#">Apply Now</a>
+          <h4>{{ career.title }}</h4>
+          <h5 class="text-gray">{{ career.location }}</h5>
+          {{ career.description_html }}
+          <a class="btn btn-primary mt-3" href="{{ career.apply_link }}" target="_blank">Apply Now</a>
         </div>
       </div>
     {% endfor %}
@@ -133,7 +135,7 @@ cta:
       <div class="col-12 col-lg-8">
         <h3>Our Values</h3>
         <p>Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.</p>
-        <a href="/who-we-are#our-values" class="btn-link text-blue">See our values</a>
+        <a href="/who-we-are#our-values" class="btn btn-link">See our values</a>
       </div>
     </div>
   </div>
@@ -154,7 +156,7 @@ cta:
         <div class="col-12 col-md-6">
           <div class="row align-items-center mb-5">
             <div class="col-12 col-md-auto">
-              <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md" alt="{{ benefit.title}} icon" />
+              <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md mb-3 mb-md-0" alt="{{ benefit.title}} icon" />
             </div>
             <div class="col">
               <p class="lead mb-0">{{ benefit.title }}</p>

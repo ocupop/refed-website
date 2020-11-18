@@ -23,7 +23,7 @@
 
                   {% if page.layout != 'post' %}
                     {% if hero.url %}
-                      <a class="btn-link mr-3 text-secondary" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                      <a class="btn btn-link mr-3 text-secondary" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
                     {% endif %}
                     {% if hero.buttons.link %}
                       <div class="hero-buttons mt-3">

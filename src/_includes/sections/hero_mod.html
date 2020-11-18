@@ -16,13 +16,13 @@
           {% endif %}
           {{ hero.description_html | default: hero.content | truncatewords: 20 }}
           {% if hero.link != nil %}
-          <a class="btn-link text-rescue-400 block mr-3"
+          <a class="btn btn-link text-rescue-400 block mr-3"
             href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
           {% endif %}
           {% if hero.buttons.link %}
           <div class="hero-buttons mt-3">
             {% for button in hero.buttons %}
-            <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn-link{% endif %} block mr-3"
+            <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} block mr-3"
               href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
             {% endfor %}
           </div>

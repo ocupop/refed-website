@@ -16,12 +16,12 @@
           </div>
         {% endif %}
         {% if include.link %}
-          <a class="btn-link block mr-3" href="{{ include.link }}">{{ include.link_label }}</a>
+          <a class="btn btn-link mr-3" href="{{ include.link }}">{{ include.link_label }}</a>
         {% endif %}
         {% if include.buttons %}
         <div class="hero-buttons mt-3">
           {% for button in include.buttons %}
-          <a class="btn btn-blue block mr-3" href="{{ button.link }}">{{ button.link_label }}</a>
+          <a class="btn btn-primary mr-3" href="{{ button.link }}">{{ button.link_label }}</a>
           {% endfor %}
         </div>
         {% endif %}

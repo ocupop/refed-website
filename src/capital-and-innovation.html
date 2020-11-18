@@ -171,7 +171,7 @@ _subnav:
             <h4>{{ resource.title }}</h4>
             {{ resource.description_html }}
           </div>
-          <a href="{{ resource.link }}" class="btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
+          <a href="{{ resource.link }}" class="btn btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
       <div class="col-lg-1"></div>
@@ -236,7 +236,7 @@ _subnav:
           <p>The Accelerator immersed 10 nonprofit food recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs. Its focus was on leveraging earned revenue models, technology solutions, and human-centered design to catalyze ideas and inspire actions that could help the organizations overcome challenges that have limited their ability to scale solutions to increase the amount of healthy food available to food insecure Americans.</p>
         </div>
 
-        <a href="#" class="btn-link text-blue editable">Learn More</a>
+        <a href="#" class="btn btn-link editable">Learn More</a>
       </div>
       <div class="col-12 col-lg-4 ml-lg-auto">
         <h6 class="editable text-gray mt-5">Program at a Glance</h6>
@@ -270,7 +270,7 @@ _subnav:
           <h4>{{ solution.title }}</h4>
           {{ solution.description_html }}
           {% if solution.link %}
-            <a href="{{ solution.link }}" class="btn-link text-blue">{{ solution.link_label | default: 'Learn More' }}</a>
+            <a href="{{ solution.link }}" class="btn btn-link">{{ solution.link_label | default: 'Learn More' }}</a>
           {% endif %}
         </div>
       </div>
@@ -296,7 +296,7 @@ _subnav:
         <div class="col-12 col-lg-6 mb-5">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
-          <a href="{{ convening.link }}" class="btn-link text-blue">{{ convening.link_label | default: 'Learn More'}}</a>
+          <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
         </div>
       {% endfor %}
     </div>

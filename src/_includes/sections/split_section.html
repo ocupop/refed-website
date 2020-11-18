@@ -59,7 +59,7 @@
             <div class="mb-4 item-description">{{ description }}</div>
             {% if include.omit_url != true %}
               {% if item.url or include.url %}
-                <a class="m-0 {% if include.button_type == 'text' or item.button_type == 'text' %}btn-link{% else %}btn {{ include.button_class | default: 'btn-blue' }}{% endif %} " href="{{ include.url | default: item.url  }}">{{ include.link_label | default: item.link_label | default: 'Learn More'}}</a>
+                <a class="m-0 {% if include.button_type == 'text' or item.button_type == 'text' %}btn btn-link{% else %}btn {{ include.button_class | default: 'btn-primary' }}{% endif %} " href="{{ include.url | default: item.url  }}">{{ include.link_label | default: item.link_label | default: 'Learn More'}}</a>
               {% endif %}
             {% endif %}
           </div>

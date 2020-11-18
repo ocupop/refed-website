@@ -17,20 +17,7 @@ section {
     padding-bottom: rem(100);
   }
 }
-.section__colorbar {
-  position: absolute;
-  height: 20px;
-  width: 200px;
-  min-width: 10%;
-  max-width: 50%;
-  top: 0;
-  &.right {
-    right: 0;
-  }
-  &.left {
-    left: 0;
-  }
-}
+
 
 .container-more-wide {
   max-width: 1596px;
