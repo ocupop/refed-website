@@ -278,9 +278,6 @@ _array_structures:
         description_html:
         link:
         link_label:
-        colorbar:
-          color:
-          bar_position:
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode

@@ -1,0 +1,102 @@
+---
+layout: default
+title: Our Impact
+hero:
+  - title: Our Impact
+    label:
+    description_html:
+    image: /img/our_impact/our_impact_header_image.png
+    links:
+featured_case_studies:
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+case_studies:
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+  - crown-family-philanthropies
+
+carousel_testimonial:
+  - text: >-
+      “The ReFED team has been an incredible strategic partner in our journey to
+      end hunger and waste. ReFED’s insights and guidance helped shape the
+      strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
+      Innovation Fund and its open call for innovative solutions. Kroger values
+      ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
+      never been more excited and hopeful that together we can truly change our
+      food system.”
+    author: Denise Oserhues
+    cite: The Kroger Co.
+    image:
+---
+
+{% include components/hero.html items=page.hero %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable">
+          <p>In the U.S. we spend $218 billion a year growing, processing, transporting, and disposing of food that is
+            never eaten. However, one of the key challenges in the field is lack of data both on the problem itself and
+            on the most effective solutions. ReFED’s Data and Insights team uses economics and data to generate
+            actionable solutions to reduce the amount of food that goes uneaten.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include_relative _partials/theory_of_change.html %}
+
+{% include components/split.html items=page.case_studies label="Impact Stories" %}
+
+
+<!-- TODO: This section needs work -->
+<section class="list-with-filter">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-auto mb-5">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Filtering</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    {% assign thisCollection = site.case_studies %}
+    {% assign allCats =  thisCollection | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+    {% endcomment %}
+
+    <!-- <div class="row">
+      <div class="col-12">
+        <div class="btn-group dropdown mb-4 filter-case-studies">
+          <label class="preheader mr-3" for="filter">View: </label>
+          <button type="button" name="filter" class="dropdown-select preheader dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            View:
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" data-value="all">All</a>
+            {% for eachCat in allCats %}
+              <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    {% assign case_studies = '' | split: ',' %}
+    {% for object in page.featured_case_studies %}
+    {% assign item = site.case_studies | where: 'slug', object | first %}
+    {% assign case_studies = case_studies | push: item %}
+    {% endfor %}
+    {% include sections/carousels/carousel_cards.html items=case_studies %}
+  </div>
+</section>
+
+{% include_relative _partials/featured_cta.html %}
+
+{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
+
+{% include_relative _partials/cta.html %}

@@ -1,0 +1,47 @@
+<section id="{{ include.id | default: 'pageCarousel' }}" class="carousel slide {{ include.style | default: '' }}" data-ride="carousel">
+  <!-- TODO: Refactor indicators -->
+  <ol class="carousel-indicators d-none">
+    {% for slug in include.items %}
+    <li data-target="#{{ include.id | default: 'pageCarousel' }}" data-slide-to="{{ forloop.index0 }}"
+      {% if forloop.first %}class="active" {% endif %}></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for slug in include.items limit: 1 %}
+      {% assign item = site.case_studies | where: 'slug', slug | first %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="split">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
+                <div class="content">
+                  <h3>{{ include.label | default: 'Case Study' }}</h3>
+                  <h2>{{ item.title }}</h2>
+                  {{ item.excerpt | truncatewords: 40 }}
+                  {% if item.url %}
+                  <a href="{{item.url}}" class="btn btn-link">{{ item.title || item.label }}</a>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-asset">
+                <div class="content">
+                  <div class="bg-image aspect-2x1" style="background-image: url('{{ item.featured_image }}')"></div>
+                </div>
+              </div>
+            </div>
+            {% if include.items.size > 1 %}
+            <a class="carousel-control-prev" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

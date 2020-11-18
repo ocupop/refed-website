@@ -1,6 +1,4 @@
-// TODO: Add everyone's favorite utility classes.
-
-// Responsive Cards
+// Responsive Cards - TODO: Refactor to use Bootstrap:
 .responsive-card-deck {
   @include make-responsive-cards();
   margin-left: -15px;
@@ -160,6 +158,23 @@
 
 .max-out-text-width {
   max-width: rem(900);
+}
+
+.border-divider,
+.section__colorbar {
+  position: absolute;
+  height: 0;
+  width: 200px;
+  min-width: 10%;
+  max-width: 50%;
+  top: 0;
+  border-top: 20px solid $black;
+  &.divider-right {
+    right: 0;
+  }
+  &.divider-left {
+    left: 0;
+  }
 }
 
 // Text Utilities
