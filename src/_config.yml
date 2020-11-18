@@ -88,14 +88,14 @@ _array_structures:
       value:
         _type: single_column
         title:
-        section_html:
+        content_html:
     - label: Hero
       icon: panorama
       value:
         _type: hero
         title:
         label:
-        description_html:
+        content_html:
         image:
         links:
 

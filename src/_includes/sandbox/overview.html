@@ -4,7 +4,7 @@
       <div class="col-12">
         <h2 data-cms-editor-link="cloudcannon:#sections[{{include.index}}].title" data-cms-editor-link-style="modal" class="cms-editor-link">{{ section.title }}</h2>
         <p data-cms-editor-link="cloudcannon:#sections[{{include.index}}].lead" data-cms-editor-link-style="modal" class="cms-editor-link lead">{{ section.lead }}</p>
-        <div data-cms-editor-link="cloudcannon:#sections[{{include.index}}].content_html" data-cms-editor-link-style="modal" class="cms-editor-link">{{ section.content_html }}</div>
+        <div data-cms-editor-link="cloudcannon:#sections[{{include.index}}].content" data-cms-editor-link-style="modal" class="cms-editor-link">{{ section.content }}</div>
         <div class="d-flex align-items-center">
           {% for link in section.links %}
           <a href="{{ link.url }}" class="btn btn-secondary" alt="{{ link.alt }}">{{ link.label }}</a>
