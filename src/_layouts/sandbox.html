@@ -22,7 +22,7 @@ show_footer:
 {% for section in page.sections %}
   {% capture include %}sandbox/{{ section._type }}.html{% endcapture %}
   {% assign slug = section.title | slugify %}
-  {% include {{include}} slug=slug %}
+  {% include {{include}} slug=slug index=forloop.index0 %}
 {% endfor %}
 
 <section>

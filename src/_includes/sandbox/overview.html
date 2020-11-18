@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 data-cms-editor-link="cloudcannon:#sections.overview.title" class="cms-editor-link">{{ section.title }}</h2>
-        <p data-cms-editor-link="cloudcannon:#sections.overview.title" class="cms-editor-link lead">{{ section.lead }}</p>
+        <h2 data-cms-editor-link="cloudcannon:#sections[include.index].title" class="cms-editor-link">{{ section.title }}</h2>
+        <p data-cms-editor-link="cloudcannon:#sections[include.index].lead" class="cms-editor-link lead">{{ section.lead }}</p>
         {{ section.content_html }}
         <div class="d-flex align-items-center">
           {% for link in section.links %}
