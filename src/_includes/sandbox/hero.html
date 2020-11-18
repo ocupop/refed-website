@@ -1,39 +1,24 @@
-<section class="hero bg-image" style="background-image: url({{ include.image | default: site.placeholder_image }});">
-  <div class="hero-content">
-    <div class="container py-5 text-white">
-      <div class="hero-copy">
-        {% if include.subtitle %}
-        <div class='preheader'>{{ include.subtitle }}</div>
-        {% endif %}
-        {% if include.title %}
-        <h1>{{ include.title }}</h1>
-        {% else if include.title %}
-        <h1>{{ include.title }}</h1>
-        {% endif %}
-        {% if include.description_html %}
-        <div class="hero-p">
-          {{ include.description_html }}
+{% assign hero = section %}
+<div class="bg-hero" data-cms-editor-link="cloudcannon:#sections.hero" data-cms-editor-link-style="modal"
+  style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
+  <div class="bg-fill text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          {% if hero.label %}<h3 class="mb-0">{{ hero.label }}</h3>{% endif %}
+          {% if hero.title %}<h1 class="mt-0">{{ hero.title }}</h1>{% endif %}
+          {{ hero.description_html }}
+          <div class="d-flex align-items-center">
+            {% for link in hero.links %}
+            {% if link.url %}
+            <a href="{{ link.url }}" class="btn btn-link"
+              alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
+            {% endif %}
+            {% endfor %}
+          </div>
         </div>
-        {% endif %}
-        {% if include.link %}
-        <a class="btn-link block mr-3" href="{{ include.link }}">{{ include.link_label }}</a>
-        {% endif %}
-        {% if include.buttons %}
-        <div class="hero-buttons mt-3">
-          {% for button in include.buttons %}
-          <a class="btn btn-blue block mr-3" href="{{ button.link }}">{{ button.link_label }}</a>
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
-      <div class="hero-social">
-        <a href="#" class="linkedin">
-          <i class="ri-linkedin-fill"></i>
-        </a>
-        <a href="#" class="twitter">
-          <i class="ri-twitter-fill"></i>
-        </a>
       </div>
     </div>
   </div>
-</section>
+</div>
+</div>
