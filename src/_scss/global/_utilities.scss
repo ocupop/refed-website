@@ -160,20 +160,30 @@
   max-width: rem(900);
 }
 
-.border-divider,
-.section__colorbar {
-  position: absolute;
-  height: 0;
-  width: 200px;
-  min-width: 10%;
-  max-width: 50%;
-  top: 0;
-  border-top: 20px solid $black;
-  &.divider-right {
-    right: 0;
-  }
-  &.divider-left {
+// Add the random colorbar to seperate sections from design
+section.divide {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 200px;
+    min-width: 10%;
+    max-width: 50%;
+    top: 0;
     left: 0;
+    border-top: 20px solid $salmon;
+  }
+  &.divide-right {
+    &::before {
+      right: 0;
+      left: auto;
+    }
+  }
+  &.divide-left {
+    &::before {
+      left: 0;
+      right: auto;
+    }
   }
 }
 
