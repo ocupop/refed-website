@@ -1,12 +1,9 @@
 <div class="row">
-  <div class="col">
-
+  <div class="col-12">
     <div class="accordion" id="refedAccordian">
-
       {% for item in include.items %}
       <div class="border-bottom border-lightest py-4">
-
-        <div class="" id="heading-{{ forloop.index }}">
+        <div id="heading-{{ forloop.index }}">
           <div class="accordian-label collapsed text-serif position-relative pr-4" style="cursor:pointer;" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
               {{ item.title }}
               <span class="toggle position-absolute">
@@ -14,11 +11,10 @@
               </span>
           </div>
         </div>
-
         <div class="accordian-content collapse pt-4 max-out-text-width" id="collapse-{{ forloop.index }}" aria-labelledby="heading-{{ forloop.index }}" data-parent="#refedAccordian">
           {{ item.description_html }}
           {% if item.link %}
-            <a href="{{ item.link }}">{{ item.link_label | default: 'See More'}}</a>
+            <a href="{{ item.link }}" class="btn btn-link">{{ item.link_label | default: 'See More'}}</a>
           {% endif %}
         </div>
       </div>

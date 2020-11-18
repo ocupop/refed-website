@@ -1,6 +1,6 @@
 ---
 layout: default
-title: We Can Reduce Waste by 50%
+title: Food Waste Challenge
 hero:
   - title: In the US, approximately 40% of all food goes uneaten.
     label:
@@ -121,7 +121,7 @@ _sticky_nav:
   <div class="container" id="overview">
     <div class="row align-items-center">
       <div class="col-lg-4">
-        <img src="https://via.placeholder.com/375x375" class="img-fluid mb-3" alt="" />
+        {% include charts/donut.html %}
       </div>
       <div class="col-lg-8">
         <div>
@@ -136,7 +136,7 @@ _sticky_nav:
 
 {% include sections/split_section.html
   id='good-news'
-  section_background_color='primary'
+  section_background_color='dark'
   image_width='33%'
   image_alignment='right'
   image_to_edge=true
@@ -146,7 +146,15 @@ _sticky_nav:
   item=page.split_section_good_news
 %}
 
-<!-- {% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore this issue" %} -->
+<div class="bg-placeholder aspect-auto">
+  <div class="bg-fill">
+    <h4>Subnav</h4>
+    <small>.src/_includes/modules/sticky_nav.html</small>
+  </div>
+</div>
+{% comment %}
+  {% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore this issue" %}
+{% endcomment %}
 
 {% include sections/split_section.html
   id='what-is-food-waste'
@@ -174,77 +182,79 @@ _sticky_nav:
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_workenvironment.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_workenvironment.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Environment icon" />
       </div>
       <div class="col">
-        <h3 class="editable">Climate and Resources</h3>
+        <h4 class="editable">Climate and Resources</h4>
         <p class="editable">The Data and insights team uses economics and data to generate actionalble solutions to reduce the amount of food that goes uneaten.</p>
-        <h3 class="editable my-5">Food Waste Consumes:</h3>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 text-blue mb-4 mb-lg-5">
-            <div class="row">
-              <div class="col-auto">
-                <div class="rounded-circle bg-blue m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+        <h4 class="text-serif my-5 editable ">Food Waste Consumes:</h4>
+        <div id="food-waste-consumes">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 text-blue mb-4 mb-lg-5">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-blue m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">21%</div> of all Fresh Water
+                </div>
               </div>
-              <div class="col font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">21%</div> of all Fresh Water
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-orange mb-4 mb-lg-5">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-orange m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">19%</div> of all Fertilizer
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 text-orange mb-4 mb-lg-5">
-            <div class="row align-items-center">
-              <div class="col-auto">
-                <div class="rounded-circle bg-orange m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
-              </div>
-              <div class="col font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">19%</div> of all Fertilizer
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 text-teal mb-4 mb-lg-5">
-            <div class="row">
-              <div class="col-auto">
-                <div class="rounded-circle bg-teal m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
-              </div>
-              <div class="col font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">18%</div> of all Cropland
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 text-teal mb-4 mb-lg-5">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-teal m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">18%</div> of all Cropland
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-indigo mb-4 mb-lg-5">
-            <div class="row">
-              <div class="col-auto">
-                <div class="rounded-circle bg-indigo m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
-              </div>
-              <div class="col stat font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">21%</div> of Landfill Volume
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 text-recycle mb-4 mb-lg-5">
-            <div class="row">
-              <div class="col-auto">
-                <div class="rounded-circle bg-recycle m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
-              </div>
-              <div class="col font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">XX%</div> of Something
+            <div class="col-12 col-sm-6 col-lg-4 text-indigo mb-4 mb-lg-5">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-indigo m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col stat font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">21%</div> of Landfill Volume
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-yellow mb-4 mb-lg-5">
-            <div class="row">
-              <div class="col-auto">
-                <div class="rounded-circle bg-yellow m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
-              </div>
-              <div class="col font-weight-bold pl-0">
-                <div class="stat-number font-weight-light">XX%</div> of Something
+          </div>  
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 text-recycle mb-4 mb-lg-5">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-recycle m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">XX%</div> of Something
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-yellow mb-4 mb-lg-5">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="rounded-circle bg-yellow m-0" style="width: 5.6875rem;height: 5.6875rem;"></div>
+                </div>
+                <div class="col font-weight-bold pl-0">
+                  <div class="stat-number font-weight-light">XX%</div> of Something
+                </div>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -258,30 +268,29 @@ _sticky_nav:
         <img src="/img/icons/food_waste/foodwaste_medicalbenefits.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <p class="h3 editable">Food Insecurity</p>
+        <h4 class="editable">Food Insecurity</h4>
         <p class="editable">One in seven Americans, many of them children, are food insecure and lack reliable access to sufficient, affordable, nutritious food. And because of the impact of COVID-19, the number of people facing food insecurity in 2020 could grow to 54 million, according to Feeding America. Yet, we waste XX times the amount of food it would take to feed all of those people.</p>
         <div class="text-center p-0 p-lg-5">
           <img src="/img/food_waste_challenge/1-in-7-americans-are-insecure.gif" alt="1 in 7 Americans are food insecure" class="w-100">
           <br/><small class="text-danger">(NOTE: this is a gif image. We may want to make it a dynamic svg graphic)</small>
         </div>
       </div>
-    </div><!-- END .row -->
+    </div>
   </div>
 </section>
 <section class="pt-lg-0">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_economicvalue.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_economicvalue.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Economy icon" />
       </div>
       <div class="col">
-        <h3 class="editable">Economy</h3>
+        <h4 class="editable">Economy</h4>
         <p class="editable">The financial cost of food waste is greatest for consumers since they pay retail prices for food, while consumer-facing businesses pay lower wholesale rates.</p>
         <div class="text-center p-0 p-lg-5">
-          <img src="/img/food_waste_challenge/billion-dollars-wasted.gif" alt="$218 Billion Dollars Wasted" class="w-100">
-          <br/><small class="text-danger">(NOTE: this is a gif image. We may want to make it a dynamic svg graphic)</small>
+          <img src="/img/food_waste_challenge/billion-dollars-wasted.gif" alt="$218 Billion Dollars Wasted" class="img-fluid">
         </div>
-    </div><!-- END .row -->
+    </div>
   </div>
 </section>
 
@@ -293,8 +302,6 @@ _sticky_nav:
         <p class="editable">Addressable food waste can be found throughout the supply chain, which can be simplified into four segments: farms, food manufacturers, consumer-facing businesses (including distributors, retail grocers, restaurants, foodservice providers, and institutions), and homes (including all types of dwellings).</p>
         <p class="editable lead text-center my-5"><span class='text-serif' style="font-size:1.43em;">85%</span> of food waste occurring downstream at consumer-facing businesses and homes</p>
         <img class="w-100 d-block" src="/img/food_waste_challenge/where-does-food-waste-occur.gif" alt="Where does food waste occur?" />
-        <br/>
-        <small class='text-danger'>(TODO: Temporary graphic until we can get approved data)</small>
       </div>
     </div>
   </div>
@@ -311,7 +318,7 @@ _sticky_nav:
         <div class="editable">
           <p>Nearly 80% of food waste comes from perishable foods, which include fruits and vegetables, meats, prepared fresh deli items,seafood, milk and dairy, and some grain products such as bread and bakery items. In contrast, non-perishable foods — pastas, canned goods, and highly processed, shelf-stable products — are generally wasted less because they don’t spoil as easily. Perishables often get discarded because they are inexpensive and quickly go bad. Pound per pound, fruits and vegetables are among the least expensive and fastest spoiling foods, constituting over 40% of total food waste. Conversely, seafood and meats are the two least wasted and most expensive food types.</p>
         </div>
-        <a class="btn-link text-blue editable" href="#">Dive Deeper into the Data in the Insights</a>
+        <a class="btn-link text-blue editable" href="#">Dive Deeper into the Data in the Insights Engine</a>
       </div>
     </div>
   </div>
@@ -323,7 +330,7 @@ _sticky_nav:
     <p class="editable" >The reasons for food waste are numerous and complex across the food value chain. Here are some examples of why it occurs:</p>
     <div class="row my-5">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_producers.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_producers.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Producers icon" />
       </div>
       <div class="col">
         <div class="row">
@@ -370,7 +377,7 @@ _sticky_nav:
             <div class="editable">
               <p>(Grocery Retailers, Restaurants, Institutions & Foodservice): Customers demand a variety and consistency of food availability that strains inventory management and food purchasing. Businesses are reluctant to change stocking practices or product sizes if those practices are intricately tied to their brand identities. Also, high customer standards for freshness lead businesses to dispose of safe, edible food when it is perceived to be past its prime.</p>
             </div>
-            <a class="editable btn-link text-blue mr-3" href="#">Learn More</a>
+            <a class="btn btn-link editable" href="#">Learn More</a>
           </div>
           <div class="col-12 col-sm-10 col-md-9 col-lg-4 ml-lg-auto">
             <div class="bg-image aspect-1x1" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[2].image }}')"></div>
@@ -417,11 +424,11 @@ _sticky_nav:
   </div>
 </section>
 
-<section class="bg-primary text-white">
+<section class="bg-dark text-white">
   <div class="container">
     <div class="row my-5">
-      <div class="col-md-auto">
-        <img src="/img/icons/barriers/barriers.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+      <div class="col-12 col-md-auto">
+        <img src="/img/icons/barriers/barriers.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Barriers icon" />
       </div>
       <div class="col">
         <h2 class="editable">Barriers To Solutions Implementation</h2>

@@ -181,7 +181,7 @@ primary_navigation:
               alt:
               links:
             - label: Investment Tracker
-              url: '/investment-tracker'
+              url: '/resources-and-guides/#investment-tracker'
               alt:
               links:
             - label: Reports and Guides
