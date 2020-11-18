@@ -5,29 +5,24 @@ hero:
   - title: >-
       Investing in ReFED is an investment in a sustainable, resilient, and
       inclusive food system.
-    subtitle:
+    label:
     description_html:
     image: /img/funders/ourfunders_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 logo_pile:
-  title: 
-  description_html: >- 
-    
+  title:
+  description_html: >-
+
   logos:
     - link: http://www.refed.com
       alt_text: Refed Alt Tag
       image: https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
-    - link:  
+    - link:
       alt_text: Refed Alt Tag
       image: https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
     - alt_text: Refed Alt Tag
       image: https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
-case_studies:      
+case_studies:
 cta:
   description_html: >-
     <p>To learn how you can support our mission, please contact us via
@@ -41,7 +36,7 @@ cta:
       - left
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section id="overview">
   <div class="container">
@@ -85,16 +80,16 @@ cta:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html 
+{% include sections/carousels/carousel_split.html
   items=site.case_studies
   subtitle='Funder Impact Stories'
   id="funder-impact"
-  section_background_color='dark' 
-  image_width='50%' 
-  image_alignment='right' 
-  image_to_edge=true 
-  text_to_edge=true 
-  section_class='p-0' 
+  section_background_color='dark'
+  image_width='50%'
+  image_alignment='right'
+  image_to_edge=true
+  text_to_edge=true
+  section_class='p-0'
 %}
-   
+
 {% include sections/cta.html cta=page.cta %}

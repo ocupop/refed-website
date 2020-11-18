@@ -10,6 +10,7 @@
 @import "global/buttons";
 @import "global/typography";
 @import "global/icons";
+@import "global/split";
 @import "global/animations";
 @import "global/header";
 @import "global/footer";
@@ -45,13 +46,12 @@
 @import "pages/project_settings";
 
 // TODO: Refactor Section styles
-@import "sections/hero";
 @import "sections/cta_newsfeed";
 @import "sections/card_grid";
 @import "sections/testimonial";
 @import "sections/carousels/all_carousels";
 @import "sections/carousels/carousel_images";
-@import "sections/carousels/carousel_hero";
+
 @import "sections/carousels/carousel_split";
 @import "sections/carousels/carousel_testimonials";
 @import "sections/cta";
@@ -63,7 +63,5 @@
 @import "sections/theory_of_change";
 
 @import "sections/newsroom_filter";
-
-@import "components/slides";
 
 @import "vendor/bootstrap";

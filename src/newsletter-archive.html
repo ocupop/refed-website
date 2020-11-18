@@ -3,20 +3,23 @@ layout: default
 title: Newsletter Archive
 hero:
   - title: Newsletter Archive
-    subtitle: Newsroom
+    label: Newsroom
     image: /img/newsroom/archives_header_image.jpg
-   
+    links:
+
 ---
 
 {% include modules/subnav_newsroom.html %}
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+
+{% include components/hero.html items=page.hero %}
+
 {% comment %}
   TODO implement filtering
   {% include sections/newsroom_filter.html %}
 {% endcomment %}
 
 <section class="press-list">
-  <div class="container"> 
+  <div class="container">
 
     <!-- <div class="row">
       <div class="col">
@@ -32,16 +35,16 @@ hero:
           <option value='#'>filter the results</option>
           <option value='#'>listed below</option>
         </select>
- 
-      </div>  
+
+      </div>
     </div>  -->
-    
+
     <div class="row">
-      <div class="col">     
+      <div class="col">
         <div class="post-list">
-          {% assign sorted = site.newsletters | sort_by: 'date' | reverse %} 
+          {% assign sorted = site.newsletters | sort_by: 'date' | reverse %}
           {% for item in sorted %}
-            {% include modules/card_horizontal.html %}     
+            {% include modules/card_horizontal.html %}
           {% endfor %}
         </div>
       </div>

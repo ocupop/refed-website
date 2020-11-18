@@ -3,15 +3,10 @@ layout: default
 title: Case Studies
 hero:
   - title: Featured Organizations
-    subtitle: 
+    label:
     description_html:
     image: /img/case_studies/featuredorganizations_casestudy_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:  
+    links:
 featured_case_studies:
   - crown-family-philanthropies
   - sample-case-study
@@ -30,29 +25,29 @@ cta:
       - right
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
   {% for featured in page.featured_case_studies %}
     {% assign case_study = site.case_studies | where: 'slug', featured | first %}
-    {% include sections/split_section.html 
+    {% include sections/split_section.html
       item=case_study
-      section_background_color='primary' 
-      subtitle='Impact Stories'
-      section_background_color='white' 
-      image_width='50%' 
-      image_alignment='right' 
-      image_to_edge=true 
-      text_to_edge=true 
+      section_background_color='primary'
+      preheader='Impact Stories'
+      section_background_color='white'
+      image_width='50%'
+      image_alignment='right'
+      image_to_edge=true
+      text_to_edge=true
       button_type='text'
-      section_class='p-0 mt-5' 
+      section_class='p-0 mt-5'
     %}
   {% endfor %}
 </div>
 
 
 <section>
-  <div class="container"> 
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="bg-placeholder aspect-auto mb-5">
@@ -66,5 +61,5 @@ cta:
     {% include sections/carousels/carousel_cards.html items=site.case_studies %}
   </div>
 </section>
-   
+
 {% include sections/cta.html cta=page.cta %}

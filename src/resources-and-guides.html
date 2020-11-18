@@ -3,15 +3,11 @@ layout: default
 title: Resources and Guides
 hero:
   - title: Resources & Guides
-    subtitle:
+    label:
     description_html:
     image: /img/resources_and_guides/resourcesandguides_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+
 cta_insights_engine:
 food_waste_tools:
   - title: Food Waster Tracker
@@ -104,7 +100,8 @@ partner_resources:
     link_label:
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
+
 
 <section id="overview">
   <div class="container">

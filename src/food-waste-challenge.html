@@ -3,15 +3,11 @@ layout: default
 title: Food Waste Challenge
 hero:
   - title: In the US, approximately 40% of all food goes uneaten.
-    subtitle:
+    label:
     description_html:
     image: /img/food_waste_challenge/food_waste_challenge_header_image.png
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+
 split_section_good_news:
   type: custom
   subtitle: The good news?
@@ -119,7 +115,7 @@ _sticky_nav:
     link_label: 'What causes food waste?'
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container" id="overview">
@@ -260,7 +256,6 @@ _sticky_nav:
             </div>
           </div> 
         </div>
-         
       </div>
     </div>
   </div>

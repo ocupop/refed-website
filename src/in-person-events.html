@@ -3,15 +3,10 @@ layout: default
 title: In Person Events
 hero:
   - title: In Person Events
-    subtitle:
+    label:
     description_html:
     image: /img/events/events_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 featured_event: 2021-food-waste-summit
 cta_webinars:
   description_html: >-
@@ -25,7 +20,7 @@ cta_webinars:
       - left
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 {% if page.featured_event %}
   {% include events/featured_event.html %}

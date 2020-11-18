@@ -3,15 +3,10 @@ layout: default
 title: Our Work
 hero:
   - title: Our purpose is to end food waste by advancing data-driven solutions.
-    subtitle:
+    label:
     description_html:
     image: /img/our_work/our_work_header_image.png
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 split_section_global_crisis:
   type: custom
   subtitle: Global Crisis
@@ -32,7 +27,7 @@ cta:
 
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container">

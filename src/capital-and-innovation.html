@@ -3,15 +3,11 @@ layout: page
 title: Capital and Innovation
 hero:
   - title: Capital and Innovation
-    subtitle: Our Work
+    label: Our Work
     description_html:
     image: /img/capital_and_innovation/capitalandinnovation_header_image.jpg
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
+
 resources_and_tools:
   - title: Solutions Database
     description_html: >-
@@ -133,7 +129,7 @@ _subnav:
 
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section>
   <div class="container">

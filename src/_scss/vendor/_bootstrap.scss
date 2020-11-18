@@ -1,12 +1,26 @@
+.container {
+  position: relative;
+}
+
 .lead {
   font-weight: 400;
   font-size: 1.4rem;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  font-size: 4rem;
-  color: $white;
+.carousel {
+  padding: 0;
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 4rem;
+    color: $white;
+    width: 5%;
+  }
+  .carousel-control-prev {
+    left: -5%;
+  }
+  .carousel-control-next {
+    right: -5%;
+  }
 }
 
 //buttons

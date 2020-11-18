@@ -5,15 +5,10 @@ hero:
   - title: >-
       We’re a national nonprofit dedicated to ending food waste across the food
       system.
-    subtitle:
+    label:
     description_html:
     image: /img/who_we_are/who_we_are_header_image.png
-    link:
-    link_text:
-    buttons:
-      - link:
-        link_label:
-        button_type:
+    links:
 _assets:
   - image: /img/who_we_are/aboutus_image_01.jpg
   - image: /img/who_we_are/aboutus_image_02.jpg
@@ -54,7 +49,7 @@ cta:
       - left
 ---
 
-{% include sections/carousels/carousel_hero.html items=page.hero %}
+{% include components/hero.html items=page.hero %}
 
 <section id="about-us">
   <div class="container">
