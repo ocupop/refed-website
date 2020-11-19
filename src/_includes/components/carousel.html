@@ -1,15 +1,9 @@
 <section id="{{ include.id | default: 'pageCarousel' }}"
-  class="carousel slide {{ include.style | default: '' }} {{ include.theme | default: '' }}"
+  class="carousel carousel-{{include.layout}} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }}"
   data-ride="carousel">
-  <!-- TODO: Refactor indicators -->
-  <ol class="carousel-indicators d-none">
-    {% for slug in include.items %}
-    <li data-target="#{{ include.id | default: 'pageCarousel' }}" data-slide-to="{{ forloop.index0 }}"
-      {% if forloop.first %}class="active" {% endif %}></li>
-    {% endfor %}
-  </ol>
   <div class="carousel-inner">
     {% for slug in include.items %}
+      {% assign index = forloop.index0 %}
       <!-- This logic assumes that all collection instances have a title attribute -->
       {% if slug.title %}
         {% assign item = slug %}
@@ -19,6 +13,13 @@
 
       {% if item %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <!-- TODO: Refactor indicators -->
+          <ol class="carousel-indicators">
+            {% for slug in include.items %}
+            <li data-target="#{{ include.id | default: 'pageCarousel' }}" data-slide-to="{{ forloop.index0 }}"
+              {% if index == 0 %}class="active" {% endif %}></li>
+            {% endfor %}
+          </ol>
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
           {% include components/{{ include.layout | default: "two-column" }}.html
             label=include.label

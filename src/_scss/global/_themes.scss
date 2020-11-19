@@ -5,6 +5,15 @@
 .bg-dark {
   background-color: $dark;
   color: $white;
+  a {
+    color: $rescue;
+    &.btn.btn-link {
+      color: $rescue;
+    }
+    &.btn {
+      color: $white;
+    }
+  }
 }
 .bg-mid {
   background-color: $mid;
