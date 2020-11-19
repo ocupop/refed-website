@@ -102,7 +102,17 @@ testimonials:
       - lighter
     image_alignment:
       - left
+
 cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
+
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
@@ -322,7 +332,7 @@ _subnav:
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
 
-{% include components/cta_insights_engine.html %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
 <section class="bg-lighter">
   <div class="container">

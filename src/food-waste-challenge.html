@@ -78,14 +78,6 @@ barriers_to_solutions_implementation:
   - title: End-market Development
     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-cta_insights_engine:
-  subtitle: Our Newest Solution
-  title: ReFED Insights Engine
-  description_html: <p>ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.</p>
-  link: 'https://www.insights-engine-fpo.com/'
-  link_label: Launch ReFED Insights Engine
-  laptop_screen_image: /img/laptop-screen-fpo.jpg
-
 cta:
   description_html: ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.
   link: /food-waste-solutions
@@ -94,6 +86,16 @@ cta:
     color: '#e65e4a'
     bar_position:
       - right
+
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 
 _assets:
 - image: /img/food_waste_challenge/foodwaste_causes_image_01.jpg
@@ -452,5 +454,6 @@ _sticky_nav:
   item=page.split_section_policy_overview
 %}
 
-{% include components/cta_insights_engine.html data=page.cta_insights_engine id='refed-insights-engine' %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
+
 {% include sections/cta.html cta=page.cta %}

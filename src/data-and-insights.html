@@ -60,7 +60,7 @@ cta_resources_and_guides:
   colorbar:
     color:
     bar_position:
-cta_insights_engine:
+
 testimonials:
   - text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -84,6 +84,16 @@ cta_buttons:
     link_label: Data & Insights
   - link: /capital-and-innovation
     link_label: See Capital & Innovation
+
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -161,7 +171,9 @@ cta_buttons:
   </div>
 </section>
 {% include sections/cta.html cta=page.cta_resources_and_guides %}
-{% include components/cta_insights_engine.html %}
+
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
+
 {% for testimonial in page.testimonials %}
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}

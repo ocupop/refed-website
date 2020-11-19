@@ -35,9 +35,9 @@ hero:
     image: /img/home/homepage_header_image_04.jpg
     links:
 
-two_column_slide:
-  - featured_image: /img/home/homepage_header_image_02.jpg
-    title: The Multi-Billion Dollar Food Waste Problem
+features:
+  - title: The Multi-Billion Dollar Food Waste Problem
+    featured_image: /img/home/homepage_header_image_02.jpg
     description_html: >-
       <p>52 million tons of food sent to landfill annually, plus another 10
       million tons that is discarded or left unharvested on farms. If all of our
@@ -45,28 +45,20 @@ two_column_slide:
       &ldquo;mega-farm&rdquo; would cover roughly 80 million acres, over
       three-quarters of the entire state of California &ndash; all for food that
       is never eaten.</p>
-    link: /food-waste-challenge
-    link_label:
-  - featured_image: /img/home/homepage_header_image_01.jpg
-    title: It Effects Our Climate & Resources
+    links:
+      - label:
+        url: /food-waste-challenge
+        alt:
+  - title: It Effects Our Climate & Resources
+    featured_image: /img/home/homepage_header_image_01.jpg
     description_html: >-
       <p>The Data and Insights team uses economics and data to generate
       actionable solutions to reduce the amount of food that goes uneaten.</p>
-    link: /food-waste-problem
-    link_label:
-cta_insights_engine:
-  subtitle: Our Newest Solution
-  title: ReFED Insights Engine
-  description_html: >-
-    <p>ReFED Insights Engine is an online data center designed to serve as the
-    next generation of data, insights, and guidance on U.S. food waste. With
-    more granular
-      data, more extensive analysis, more customized views, and the ability to be
-      updated regularly, we see this tool as laying the foundation for action around
-      our 2030 national goal to reduce food waste by 50 percent.</p>
-  link: 'https://www.insights-engine-fpo.com/'
-  link_label: Launch ReFED Insights Engine
-  laptop_screen_image: /img/laptop-screen-fpo.jpg
+    links:
+      - label:
+        url: /food-waste-problem
+        alt:
+
 funder_images:
   images:
     - image: /img/logo-meta.jpg
@@ -79,6 +71,7 @@ funder_images:
       title: Test Logo 4
     - image: /img/logo-meta.jpg
       title: Test 1
+
 carousel_testimonial:
   - text: >-
       The ReFED team has been an incredible strategic partner in our journey to
@@ -91,8 +84,24 @@ carousel_testimonial:
     author: Denise Oserhues
     cite: The Kroger Co.
     image:
+
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 ---
-{% include components/hero.html items=page.hero %}
+
+{% include components/carousel.html
+  items=page.hero
+  layout="hero"
+  theme="dark"
+%}
+
 
 <section>
   <div class="container">
@@ -106,22 +115,11 @@ carousel_testimonial:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html
-  items=page.two_column_slide
-  include_arrows=true
-  theme='light'
-  section_background_color='white'
-  image_width='50%'
-  image_alignment='left'
-  image_to_edge=false
-  text_to_edge=false
-  image_width="50%"
-  section_class='pt-0'
+{% include components/carousel.html
+  items=page.features
+  theme="dark"
 %}
 
-{% comment %}
-{% include sections/carousels/carousel_two_column.html items=page.two_column_slide %}
-{% endcomment %}
 
 <section class="bg-lighter">
   <div class="container">
@@ -172,7 +170,7 @@ carousel_testimonial:
   </div>
 </section>
 
-{% include sections/cta_insights_engine.html data=page.cta_insights_engine %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
 <section class="bg-dark text-white">
   <div class="container">

@@ -8,7 +8,6 @@ hero:
     image: /img/solutions/solutions_header_image.jpg
     links:
 
-cta_insights_engine:
 levers:
   - title: Policy
     description_html: >-
@@ -84,6 +83,15 @@ cta:
     color:
     bar_position:
 
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 _sticky_nav:
   - link: '#priority-action-areas'
     link_label: 'Priority action areas'
@@ -268,6 +276,6 @@ _sticky_nav:
   </div>
 </section>
 
-{% include components/cta_insights_engine.html %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
 {% include sections/cta.html cta=page.cta %}

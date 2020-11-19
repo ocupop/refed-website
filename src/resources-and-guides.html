@@ -8,7 +8,6 @@ hero:
     image: /img/resources_and_guides/resourcesandguides_header_image.jpg
     links:
 
-cta_insights_engine:
 food_waste_tools:
   - title: Food Waster Tracker
     id: food-waste-tracker
@@ -98,6 +97,16 @@ partner_resources:
       <p>The FAO is collaborating with donors, bi- and multi-lateral agencies, and financial institutions and private sector partners (the food packaging industry and others) to develop and implement a program on food loss and waste reduction.</p>
     link:
     link_label:
+
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -125,7 +134,7 @@ partner_resources:
   </div>
 </section>
 
-{% include components/cta_insights_engine.html data=page.cta_insights_engine id='insights-engine' %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
 <section>
   <div class="container">

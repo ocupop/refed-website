@@ -97,7 +97,7 @@ testimonial:
   image: '/img/quotes/quote_image_01.jpg'
   section_background_color: white
   image_alignment: left
-cta_insights_engine:
+
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
@@ -109,6 +109,16 @@ events:
   - 2021-food-waste-summit
   - logistics-connecting-food-and-transportation
   - organizational-financial-health-during-and-after-covid-19
+
+cta_insights_engine:
+  subtitle: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  content:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 _sticky_nav:
   - link: '#partnerships'
     link_label: 'Partnerships'
@@ -240,7 +250,8 @@ _sticky_nav:
 </section>
 
 {% include sections/testimonial.html testimonial=page.testimonial %}
-{% include components/cta_insights_engine.html %}
+
+{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
 <section class="bg-lighter">
   <div class="container">
