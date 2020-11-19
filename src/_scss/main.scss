@@ -10,7 +10,6 @@
 @import "global/buttons";
 @import "global/typography";
 @import "global/icons";
-@import "global/split";
 @import "global/animations";
 @import "global/header";
 @import "global/footer";
@@ -21,6 +20,12 @@
 @import "nav/subnav";
 @import "nav/primarynav";
 @import "nav/topnav";
+
+// Components
+@import "components/carousel";
+@import "components/hero";
+@import "components/split";
+@import "components/insights_engine";
 
 // TODO: Migrate all module styles
 @import "modules/card";
@@ -55,7 +60,7 @@
 @import "sections/carousels/carousel_split";
 @import "sections/carousels/carousel_testimonials";
 @import "sections/cta";
-@import "sections/insights_engine";
+
 @import "sections/logo_pile";
 @import "sections/split_section";
 @import "sections/accordion";

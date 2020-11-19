@@ -27,7 +27,7 @@
 }
 
 .cta-insights-engine {
-  .image-column {
+  .col-asset {
     .laptop-container {
       position: relative;
       width: 150%;
@@ -38,14 +38,14 @@
   }
 
   @include media-breakpoint-up(lg) {
-    .copy-column {
+    .col-copy {
       min-height: 23.2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .image-column {
+    .col-asset {
       .laptop-container {
         position: absolute;
         bottom: -60px;
@@ -55,7 +55,7 @@
   }
 
   @include media-breakpoint-up(xl) {
-    .copy-column {
+    .col-copy {
       min-height: 33.6rem;
     }
   }

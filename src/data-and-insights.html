@@ -161,7 +161,7 @@ cta_buttons:
   </div>
 </section>
 {% include sections/cta.html cta=page.cta_resources_and_guides %}
-{% include sections/cta_insights_engine.html %}
+{% include components/cta_insights_engine.html %}
 {% for testimonial in page.testimonials %}
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}

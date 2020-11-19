@@ -321,7 +321,9 @@ _subnav:
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
-{% include sections/cta_insights_engine.html %}
+
+{% include components/cta_insights_engine.html %}
+
 <section class="bg-lighter">
   <div class="container">
     <div class="row">

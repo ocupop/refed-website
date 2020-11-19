@@ -1,0 +1,27 @@
+{% assign item = incude.item %}
+<section id="{{ include.id | default: 'cta-insights-engine' }}" class="cta-insights-engine bg-light overflow-x-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-copy">
+        <div class="py-5">
+          <h3>{{ item.label | default: 'Our Newest Innovation'}}</h3>
+          <h2>{{ item.title | default: 'ReFED Insights Engine' }}</h2>
+          <p>{{ item.content | default: site.insights_engine_description }}</p>
+          <div class="cta-button">
+            <a href="{{ item.link.url | default: site.insights_engine_url }}"
+              class="btn btn-blue">{{ item.link.label | default: 'Launch ReFED Insights Engine' }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-asset">
+        <div class="laptop-container">
+          <div class="laptop">
+            <img src="/img/laptop.png" alt="Laptop" />
+          </div>
+          <img class="screen" src="{{ item.featured_image | default: '/img/laptop-screen-fpo.jpg'}}"
+            alt="Laptop Screen showing {{ item.title | default: 'ReFED Insights Engine'}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
