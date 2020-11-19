@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-10">
-          {% if include.label %}<h3 class="mb-0">{{ include.label }}</h3>{% endif %}
+          {% if item.label %}<h3 class="mb-0">{{ item.label }}</h3>{% endif %}
           {% if item.title %}<h1 class="mt-0">{{ item.title }}</h1>{% endif %}
           {{ item.description_html | default: item.excerpt  | truncatewords: 40 }}
           {% if item.url %}

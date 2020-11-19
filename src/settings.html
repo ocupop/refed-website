@@ -278,7 +278,7 @@ palette:
         <p class="heading" data-toggle="collapse" data-target="#collectionSummary">COllections</p>
         <div id="collectionSummary" class="collapse">
           <ul class="list-group">
-            {% assign collections = "pages,action_areas,stakeholders,case_studies,events,reports_and_guides,press,careers" | split: ',' %}
+            {% assign collections = "pages,action_areas,stakeholders,case_studies,events,downloads,press,careers" | split: ',' %}
             {% for collection in collections %}
             {% assign size = site[collection].size %}
             {% assign items = site[collection] | sort: 'title' %}

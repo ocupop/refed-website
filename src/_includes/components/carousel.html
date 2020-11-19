@@ -1,6 +1,7 @@
 <div id="{{ include.id | default: 'pageCarousel' }}"
   class="carousel carousel-{{include.layout | default: 'two-column'}} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }}"
   data-ride="carousel">
+  <!-- TODO: Refactor indicators -->
   <ol class="carousel-indicators d-none">
     {% for slug in include.items %}
     <li data-target="#{{ include.id | default: 'pageCarousel' }}" data-slide-to="{{ forloop.index0 }}"
@@ -17,14 +18,8 @@
         {% assign item = site[include.collection] | where: 'slug', slug | first %}
       {% endif %}
 
-
-
       {% if item %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <!-- TODO: Refactor indicators -->
-
-
-
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
           {% include components/{{ include.layout | default: "two-column" }}.html
             label=include.label
@@ -46,4 +41,7 @@
       {% endif %}
     {% endfor %}
   </div>
+  {% if include.layout == 'hero' %}
+    {% include nav/socialnav.html %}
+  {% endif %}
 </div>
