@@ -1,4 +1,4 @@
-<section id="{{ include.id | default: 'pageCarousel' }}"
+<div id="{{ include.id | default: 'pageCarousel' }}"
   class="carousel carousel-{{include.layout | default: 'two-column'}} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }}"
   data-ride="carousel">
   <ol class="carousel-indicators d-none">
@@ -16,15 +16,15 @@
       {% else %}
         {% assign item = site[include.collection] | where: 'slug', slug | first %}
       {% endif %}
-  
-      
-    
+
+
+
       {% if item %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
           <!-- TODO: Refactor indicators -->
-        
-          
- 
+
+
+
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
           {% include components/{{ include.layout | default: "two-column" }}.html
             label=include.label
@@ -46,4 +46,4 @@
       {% endif %}
     {% endfor %}
   </div>
-</section>
+</div>
