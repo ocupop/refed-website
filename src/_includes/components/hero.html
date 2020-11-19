@@ -1,42 +1,26 @@
-<section id="{{ include.id | default: 'pageHero' }}" class="carousel slide {{ include.style | default: 'carousel-fade' }}" data-ride="carousel">
-  <div class="carousel-inner">
-    {% for hero in include.items %}
-    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <div class="bg-hero"
-        data-cms-editor-link="cloudcannon:#hero"
-        data-cms-editor-link-style="modal"
-        style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
-        <div class="bg-fill text-white">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-10">
-                {% if hero.label %}<h3 class="mb-0">{{ hero.label }}</h3>{% endif %}
-                {% if hero.title %}<h1 class="mt-0">{{ hero.title }}</h1>{% endif %}
-                {{ hero.description_html }}
-                <div class="d-flex align-items-center">
-                  {% for link in hero.links %}
-                   {% if link.url %}
-                    <a href="{{ link.url }}" class="btn btn-link"
-                      alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-            {% if include.items.size > 1 %}
-              <a class="carousel-control-prev" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#{{ include.id | default: 'pageHero' }}" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            {% endif %}
+{% assign hero = include.item %}
+<div class="bg-hero" data-cms-editor-link="cloudcannon:#hero" data-cms-editor-link-style="modal"
+  style="background-image:url('{{ item.image | default: item.featured_image }}')">
+  <div class="bg-fill text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          {% if include.label %}<h3 class="mb-0">{{ include.label }}</h3>{% endif %}
+          {% if item.title %}<h1 class="mt-0">{{ item.title }}</h1>{% endif %}
+          {{ item.description_html | default: item.excerpt  | truncatewords: 40 }}
+          {% if item.url %}
+            <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn-link">{{ site.default_cta }}</a></p>
+          {% endif %}
+          <div class="d-flex align-items-center">
+            {% for link in item.links %}
+              {% if link.url %}
+                <a href="{{ link.url }}" class="btn btn-link"
+                  alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
-    {% endfor %}
   </div>
-</section>
+</div>

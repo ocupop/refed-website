@@ -280,8 +280,8 @@ palette:
           <ul class="list-group">
             {% assign collections = "pages,action_areas,stakeholders,case_studies,events,reports_and_guides,press,careers" | split: ',' %}
             {% for collection in collections %}
-            {% assign size = site[{{collection}}].size %}
-            {% assign items = site[{{collection}}] | sort: 'title' %}
+            {% assign size = site[collection].size %}
+            {% assign items = site[collection] | sort: 'title' %}
             <li class="list-group-item">
               <h4 data-toggle="collapse" data-target="#{{collection}}">{{ collection }} <span
                   class="float-right badge badge-secondary">{{ size }}</span></h4>

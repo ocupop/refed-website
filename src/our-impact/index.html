@@ -49,7 +49,14 @@ carousel_testimonial:
 
 {% include_relative _partials/theory_of_change.html %}
 
-{% include components/split.html items=page.case_studies label="Impact Stories" %}
+
+{% include components/carousel.html
+  items=page.case_studies
+  label="Impact Stories"
+  collection="case_studies"
+  layout="split"
+  theme="dark"
+%}
 
 
 <!-- TODO: This section needs work -->
