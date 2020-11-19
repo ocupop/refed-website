@@ -164,7 +164,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-md-3" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
+        <img class="icon-img-lg mr-md-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
       </div>
       <div class="col">
         <div class="editable">
@@ -177,11 +177,9 @@ _subnav:
       {% for resource in page.resources_and_tools %}
       <div class="col-12 col-lg-5 mb-5">
         <div class="pr-lg-5">
-          <div class="editable">
-            <h4>{{ resource.title }}</h4>
-            {{ resource.description_html }}
-          </div>
-          <a href="{{ resource.link }}" class="btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
+          <h4>{{ resource.title }}</h4>
+          {{ resource.description_html }}
+          <a href="{{ resource.link }}" class="btn btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
       <div class="col-lg-1"></div>
@@ -193,7 +191,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Advisory Services</h3>
@@ -213,7 +211,7 @@ _subnav:
     {% for service in page.advisory_services %}
       <div class="row align-items-center mb-5">
         <div class="col-12 col-lg-4">
-          <div class="bg-image aspect-16x9" style="background-image: url({{ service.featured_image }})"></div>
+          <div class="bg-image aspect-16x9 mb-3" style="background-image: url({{ service.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-8">
           <h4>{{ service.title }}</h4>
@@ -230,7 +228,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Solution Challenge Platform</h3>
@@ -246,7 +244,7 @@ _subnav:
           <p>The Accelerator immersed 10 nonprofit food recovery organizations in a combination of virtual curriculum and in-person ReFED Learning Labs. Its focus was on leveraging earned revenue models, technology solutions, and human-centered design to catalyze ideas and inspire actions that could help the organizations overcome challenges that have limited their ability to scale solutions to increase the amount of healthy food available to food insecure Americans.</p>
         </div>
 
-        <a href="#" class="btn-link text-blue editable">Learn More</a>
+        <a href="#" class="btn btn-link editable">Learn More</a>
       </div>
       <div class="col-12 col-lg-4 ml-lg-auto">
         <h6 class="editable text-gray mt-5">Program at a Glance</h6>
@@ -273,14 +271,14 @@ _subnav:
     </div>
     {% for solution in page.solution_providers %}
       <div class="row align-items-center mb-5">
-        <div class="col-12 col-lg-3">
-          <div class="bg-image aspect-5x7 bg-dark" style="background-image: url({{ solution.featured_image }})"></div>
+        <div class="col-6 col-lg-3">
+          <div class="bg-image aspect-5x7 bg-dark mb-3" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-9">
           <h4>{{ solution.title }}</h4>
           {{ solution.description_html }}
           {% if solution.link %}
-            <a href="{{ solution.link }}" class="btn-link text-blue">{{ solution.link_label | default: 'Learn More' }}</a>
+            <a href="{{ solution.link }}" class="btn btn-link">{{ solution.link_label | default: 'Learn More' }}</a>
           {% endif %}
         </div>
       </div>
@@ -292,7 +290,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
       </div>
       <div class="col">
         <h3 class="editable">Convenings</h3>
@@ -306,7 +304,7 @@ _subnav:
         <div class="col-12 col-lg-6 mb-5">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
-          <a href="{{ convening.link }}" class="btn-link text-blue">{{ convening.link_label | default: 'Learn More'}}</a>
+          <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
         </div>
       {% endfor %}
     </div>

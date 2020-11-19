@@ -29,9 +29,12 @@ cta:
 
 
 {% include modules/subnav_newsroom.html %}
-
 {% include components/hero.html items=page.hero %}
-
+<div class="bg-placeholder aspect-auto">
+  <div class="bg-fill p-3">
+    <h4>Search / Filter</h4>
+  </div>
+</div>
 {% comment %}
   TODO implement filtering
   {% include sections/newsroom_filter.html %}
@@ -39,25 +42,6 @@ cta:
 
 <section>
   <div class="container">
-
-    <!-- <div class="row">
-      <div class="col">
-
-        <label for="view-filter" class="preheader align-middle d-inline-block mr-3">
-          View:
-        </label>
-        <select class="form-control d-inline w-auto" id="jumpmenu" name="jumpmenu" onChange="self.location=this.options[this.selectedIndex].value">
-          <option value='#'>All</option>
-          <option value='#invenstment-tracker'>Webinars</option>
-          <option value='#'>Other</option>
-          <option value='#'>These options will</option>
-          <option value='#'>filter the results</option>
-          <option value='#'>listed below</option>
-        </select>
-
-      </div>
-    </div>  -->
-
     <div class="row">
       </div>
         <div class="press-list">
@@ -71,7 +55,7 @@ cta:
   </div>
 </section>
 
-<section class="bg-primary text-white">
+<section class="bg-dark">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto ">

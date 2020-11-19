@@ -29,9 +29,9 @@
       </div> 
 
       {% if item.link %}
-      <a href="{{ include.link | default: item.link }}" class="mt-3 btn-link" target="_blank">{{ include.link_label | default: 'Read More' }}</a>
+      <a href="{{ include.link | default: item.link }}" class="btn btn-link mt-3" target="_blank">{{ include.link_label | default: 'Read More' }}</a>
       {% elsif include.url or item.url %}
-        <a href="{{ include.url | default: item.url }}" class="mt-3 btn-link" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
+        <a href="{{ include.url | default: item.url }}" class="btn btn-link mt-3" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
       {% endif %}
     </div>
   </div>

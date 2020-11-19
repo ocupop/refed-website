@@ -17,12 +17,12 @@
               {{ hero.description_html | default: hero.content | truncatewords: 30 }}
             </div>
             {% if hero.link != nil %}
-              <p><a class="btn-link text-rescue block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
+              <p><a class="btn btn-link text-rescue block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
             {% if hero.buttons.first.link %}
               <div class="hero-buttons mt-3">
                 {% for button in hero.buttons %}
-                  <a class="{% if button.button_type == 'button' %}btn btn-blue{% endif %}{% if button.button_type == 'text' %}btn-link{% endif %} mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                  <a class="{% if button.button_type == 'button' %}btn btn-blue{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                 {% endfor %}
               </div>
             {% endif %}
@@ -64,7 +64,7 @@
                   {% if hero.buttons.link %}
                     <div class="hero-buttons mt-3">
                       {% for button in hero.buttons %}
-                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                       {% endfor %}
                     </div>
                   {% endif %}
