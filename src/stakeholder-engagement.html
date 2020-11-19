@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Stakeholder Engagement
 hero:
   - title: Stakeholder Engagement
@@ -128,8 +128,6 @@ _sticky_nav:
     link_label: 'Events'
 ---
 
-{% include components/hero.html items=page.hero %}
-
 <section>
   <div class="container">
     <div class="row">
@@ -207,7 +205,7 @@ _sticky_nav:
               <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-blue{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
             {% endfor %}
           </div>
-          
+
         </div>
       </div>
     {% endfor %}

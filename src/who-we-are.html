@@ -56,7 +56,11 @@ _assets:
 
 ---
 
-{% include components/hero.html items=page.hero %}
+{% include components/carousel.html
+  items=page.hero
+  layout="hero"
+  theme="dark"
+%}
 
 <section id="about-us">
   <div class="container">
