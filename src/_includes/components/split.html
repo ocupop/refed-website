@@ -14,7 +14,9 @@
 
           <!-- TODO: Potential refactor to add logic to assignment only -->
           {% if item.url %}
-            <a href="{{ item.url }}" class="btn btn-link" title="{{ item.title }}">{{ site.default_cta }}</a>
+            <p>
+              <a href="{{ item.url }}" class="btn btn-link" title="{{ item.title }}">{{ site.default_cta }}</a>
+            </p>
           {% endif %}
           {% if item.link %}
             {% assign link = item.link %}
@@ -28,7 +30,9 @@
       </div>
       <div class="col-12 col-lg-6 col-asset">
         <div class="content">
-          {% include components/image.html aspect="4x3" %}
+          {% assign aspect = include.aspect | default: '1x1' %}
+          {% assign src = item.featured_image %}
+          {% include components/image.html aspect=aspect src=src %}
         </div>
       </div>
     </div>
