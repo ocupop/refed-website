@@ -4,14 +4,16 @@ title: ReFED Newsroom
 featured_articles:
   - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 cta:
+  title:
+  label:
   description_html: See past newsletters in the newsletter archive
-  link: /newsletter-archive
-  link_label: See Newsletter Archive
-  section_background_color: lighter
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See Newsletter Archive
+    url: /newsletter-archive
+    alt:
+  theme: lighter
+  add_divider: right
+
 ---
 
 {% include modules/subnav_newsroom.html %}
@@ -83,4 +85,4 @@ cta:
 </section>
 
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

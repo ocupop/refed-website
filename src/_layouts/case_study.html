@@ -5,12 +5,12 @@ layout: default
 
 {% include sections/hero.html title=page.title image=page.featured_image %}
 
-{% include sections/split_section.html   
-  image_width='50%' 
-  image_alignment='right'  
-  image_to_edge=true   
-  text_to_edge=false 
-  item=page   
+{% include sections/split_section.html
+  image_width='50%'
+  image_alignment='right'
+  image_to_edge=true
+  text_to_edge=false
+  item=page
   omit_url=true
   subtitle='Overview'
   title=' '
@@ -23,7 +23,7 @@ layout: default
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}
 
 
 

@@ -12,17 +12,19 @@ featured_case_studies:
   - sample-case-study
   - crown-family-philanthropies
 cta:
+  title:
+  label:
   description_html: >-
     From innovation accelerators to capital campaigns to convening leadership,
     learn about the impact we’ve brought to the food system and the work we are
     doing today.
-  link: /our-impact
-  link_label: See our impact
-  section_background_color: lighter
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See our impact
+    url: /our-impact
+    alt:
+  theme:
+  add_divider:
+
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -62,4 +64,4 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

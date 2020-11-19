@@ -20,12 +20,16 @@ featured_articles:
 featured_case_studies:
   - crown-family-philanthropies
 cta:
+  title:
+  label:
   description_html: To learn how you can support our mission, please contact us via email.
-  link: /contact
-  link_label: Contact Us
-  colorbar:
-    color: "#e65e4a"
-    bar_position: left
+  link:
+    label: Contact Us
+    url: /contact
+    alt:
+  theme:
+  add_divider: left
+
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -321,5 +325,5 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}
 

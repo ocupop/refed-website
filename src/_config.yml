@@ -39,6 +39,7 @@ collections:
     permalink: /action-areas/:title/
   stakeholders:
     output: true
+    permalink: /stakeholders/:title/
   events:
     output: true
   reports_and_guides:
@@ -374,6 +375,17 @@ stakeholder_categories:
         uid: capital
 
 #hard coded select fields
+add_dividers:
+  - left
+  - right
+
+themes:
+  - lighter
+  - light
+  - mid
+  - dark
+  - darker
+
 event_types:
   - in_person
   - webinar

@@ -63,17 +63,19 @@ operation_principles:
           improve next time- We collaborate wisely
       - title: We believe in progress not perfection
     icon_image: /img/icons/operating_principles/operatingprinciples_design.svg
+
 cta:
+  title:
+  label:
   description_html: >-
     <p>Learn more about ReFED, our values, and our mission. <a
     href="/contact">Contact us</a> if you think you are a good match.</p>
-  link: /who-we-are
-  link_label: Get to know us
-  section_background_color:
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - left
+  link:
+    label: Get to know us
+    url: /who-we-are
+    alt:
+  theme:
+  add_divider:
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -207,4 +209,4 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

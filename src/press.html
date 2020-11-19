@@ -16,14 +16,15 @@ hero:
         url: '/contact'
         alt:
 cta:
+  title:
+  label:
   description_html: >-
     <p>See past newsletters in the newsletter archive</p>
-  link: /newsletter-archive
-  link_label: See Newsletter Archive
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See Newsletter Archive
+    url: /newsletter-archive
+  theme:
+  add_divider: right
 
 ---
 
@@ -75,4 +76,4 @@ cta:
 </section>
 
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

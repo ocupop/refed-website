@@ -213,17 +213,18 @@ advisory_council:
       featured_image:
       summary_html: '<p>Chief Operating Officer, 84.51&deg;</p>'
 cta:
+  title:
+  label:
   description_html: >-
     <p>ReFED's work is made possible with generous support from and in
-    partnership
-      with our funders.</p>
-  link: /our-funders
-  link_label: See Who is Funding Our Mission
-  section_background_color: lighter
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - left
+    partnership with our funders.</p>
+  link:
+    label: See Who is Funding Our Mission
+    url: /our-funders
+    alt:
+  theme: lighter
+  add_divider: left
+
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -357,4 +358,4 @@ cta:
   </div>
 </section>
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

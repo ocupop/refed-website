@@ -1,13 +1,15 @@
 ---
 layout: default
 cta:
+  title:
+  label:
   description_html: >-
     <p>Find more <a href="/newsroom">news and updates</a> from the <a href='/newsroom'>ReFED blog</a>, including our <a href='#/press'>press articles</a> and <a href="/newsletter-archive">newsletters</a>.</p>
-  link: /newsroom
-  link_label: View More in the Newsroom
-  colorbar:
-    color: "#e65e4a"
-    bar_position: right
+  link:
+    label: View More in the Newsroom
+    url: /newsroom
+    alt:
+  add_divider: right
 ---
 
 {% include modules/subnav_newsroom.html %}
@@ -52,14 +54,5 @@ cta:
 </section>
 
 
-{% include sections/cta.html cta=layout.cta %}
-
-
-
-
-
-
-
-
-
+{% include sections/cta.html item=layout.cta %}
 

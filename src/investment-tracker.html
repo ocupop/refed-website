@@ -40,17 +40,19 @@ partner_resources:
     link: 'https://google.com'
     link_label:
 cta:
+  title:
+  label:
   description_html: >-
     ReFED offers a range of solutions for organizations to advance their own
     food waste initiatives. Our interactive tools, reports and strategic
     solutions can help your team get started.
-  link: /food-waste-solutions
-  link_label: See All Solutions
-  section_background_color:
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See All Solutions
+    url: /food-waste-solutions
+    alt:
+  theme:
+  add_divider: right
+
 ---
 
 {% include components/hero.html items=page.hero %}
@@ -228,4 +230,4 @@ cta:
     {% endfor %}
   </div>
 </section>
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

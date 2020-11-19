@@ -16,14 +16,15 @@ split_section_global_crisis:
   link_label: View our COVID-19 initiatives
   url: go-to-here
 cta:
+  title:
+  label:
   description_html: From innovation accelerators to capital campaigns to convening leadership, learn about the impact we’ve brought to the food system and the work we are doing today.
-  link: /our-impact
-  link_label: See our impact
-  section_background_color:
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See our impact
+    url: /our-impact
+    alt:
+  theme:
+  add_divider: right
 
 ---
 
@@ -102,4 +103,4 @@ cta:
   item=page.split_section_global_crisis
 %}
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

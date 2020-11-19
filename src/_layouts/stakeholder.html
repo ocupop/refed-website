@@ -10,19 +10,23 @@ cta_insights_engine:
     url: 'https://www.insights-engine-fpo.com/'
     alt:
 cta:
+  title:
+  label:
   description_html: >-
     <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
-  link: /food-waste-solutions
-  link_label: See All Solutions
-  colorbar:
-    color:
-    bar_position:
+  link:
+    label: See All Solutions
+    url: /food-waste-solutions
+    alt:
+  theme:
+  add_divider:
 ---
 
-<!-- TODO: Add Hero -->
+{% include components/hero.html items=page.hero %}
 
 {% include stakeholders/summary.html %}
 
+{{ content }}
 
 {% contentblock highlight %}
 
@@ -38,4 +42,4 @@ cta:
   {% include components/slide.html  item=page.case_studies.first %}
 {% endif %}
 
-{% include sections/cta.html cta=layout.cta %}
+{% include sections/cta.html item=layout.cta %}

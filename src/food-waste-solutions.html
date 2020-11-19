@@ -72,16 +72,18 @@ levers:
       diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
     icon_image: /img/icons/levers/levers_communication.svg
 cta:
+  title:
+  label:
   description_html: >-
     <p>ReFED offers a range of solutions for organizations to advance their own
     food waste initiatives. Our interactive tools, reports and strategic
     solutions can help your team get started.</p>
-  link: /resources-guides
-  link_label: See all Resources
-  section_background_color:  'lighter'
-  colorbar:
-    color:
-    bar_position:
+  link:
+    label: See all Resources
+    url: /resources-guides
+    alt:
+  theme:  'lighter'
+  add_divider:
 
 cta_insights_engine:
   subtitle: Our Newest Innovation
@@ -278,4 +280,4 @@ _sticky_nav:
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

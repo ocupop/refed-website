@@ -51,15 +51,18 @@ tools_and_guides:
       featured_image: 'https://via.placeholder.com/500x500'
       link: 'https://www.google.com/'
       link_label: Download
+
 cta_resources_and_guides:
+  title:
+  label:
   description_html: >-
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quod hic sed deserunt soluta? Obcaecati inventore expedita</p>
-  link: /resources-and-guides
-  link_label: Explore Resources & Guides
-  section_background_color: 'dark'
-  colorbar:
-    color:
-    bar_position:
+  link:
+    label: Explore Resources & Guides
+    url: /resources-and-guides
+    alt:
+  theme: 'dark'
+  add_divider:
 
 testimonials:
   - text: >-
@@ -170,7 +173,8 @@ cta_insights_engine:
     </div>
   </div>
 </section>
-{% include sections/cta.html cta=page.cta_resources_and_guides %}
+
+{% include sections/cta.html item=page.cta_resources_and_guides %}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 

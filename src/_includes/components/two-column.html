@@ -1,9 +1,12 @@
+{% unless item %}
+  {% assign item = include.item %}
+{% endunless %}
 <section>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
         <div class="content">
-          {% if item.label %}<h3>{{ include.label }}</h3>{% endif %}
+          {% if item.label %}<h3>{{ item.label }}</h3>{% endif %}
           {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
           {{ item.excerpt | default: item.description_html | truncatewords: 40 }}
           {% if item.url %}

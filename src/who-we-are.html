@@ -16,8 +16,9 @@ _assets:
   - image: /img/who_we_are/aboutus_image_04.jpg
   - image: /img/who_we_are/aboutus_ourfounder_image.jpg
 our_founder:
-  type: custom
+  label:
   title: Our Founder
+  featured_image: /img/who_we_are/aboutus_ourfounder_image.jpg
   summary: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -32,43 +33,24 @@ our_founder:
     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
     cupidatat non proident, sunt in.” culpa qui officia deserunt mollit anim id
     est laborum.
-  featured_image: /img/who_we_are/aboutus_ourfounder_image.jpg
-  link_label: Read More
-  url: /about-us
-  button_type: text
+  link:
+    label: Read More
+    url: /about-us
+    alt: Jessie Fink
 
-_our_founder_test:
-  title: Our Founder
-  excerpt: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in.” culpa qui officia deserunt mollit anim id est
-    laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in.” culpa qui officia deserunt mollit anim id
-    est laborum.
-  image: /img/who_we_are/aboutus_ourfounder_image.jpg
-  links:
-    - label: Read More
-      url: /about-us
-      alt: About ReFED
 cta:
+  title:
+  label:
   description_html: >-
     Beyond our passion for food, we’re a team of problem solvers, researchers,
     economists and strategists. Meet the people behind the work.
-  link: /our-team
-  link_label: Get to know us
-  section_background_color: lighter
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - left
+  link:
+    label: Get to know us
+    url: /our-team
+    alt:
+  theme: lighter
+  add_divider: left
+
 _assets:
   our_founder_image: /img/who_we_are/aboutus_ourfounder_image.jpg
 
@@ -268,40 +250,11 @@ _assets:
   </div>
 </section>
 
-<section id="our-founder" class="bg-lighter">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
-        <div class="content">
-          <h3 class="editable"></h3>
-          <h2 class="editable">Our Founder</h2>
-          <div class="editable">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in.” culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in.” culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 col-asset">
-        <div class="content">
-          <div class="bg-image aspect-1x1" style="background-image: url('')"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 
 {% include components/split.html
   id='our-founder'
-  theme='lighter'
-  items=page.our_founder_test
+  theme='light'
+  item=page.our_founder
   reverse='true'
 %}
 
@@ -319,4 +272,4 @@ _assets:
 %}
 
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}

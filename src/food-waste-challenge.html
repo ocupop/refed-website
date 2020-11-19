@@ -79,13 +79,15 @@ barriers_to_solutions_implementation:
     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 cta:
+  title:
+  label:
   description_html: ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.
-  link: /food-waste-solutions
-  link_label: See Our Solutions
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - right
+  link:
+    label: See Our Solutions
+    url: /food-waste-solutions
+    alt:
+  theme:
+  add_divider: right
 
 cta_insights_engine:
   subtitle: Our Newest Innovation
@@ -456,4 +458,4 @@ _sticky_nav:
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
-{% include sections/cta.html cta=page.cta %}
+{% include sections/cta.html item=page.cta %}
