@@ -1,6 +1,50 @@
-.carousel-hero {
+.carousel {
+  &.carousel-hero {
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-controls {
+      transform: translateY(-20px);
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-80px);
+      }
+    }
+    .carousel-control-prev {
+      left: 15px;
+      font-size: 2rem;
+      @include media-breakpoint-up(lg) {
+        left: -5%;
+        font-size: 4rem;
+      }
+    }
+    .carousel-control-next {
+      right: auto;
+      left: 30px;
+      font-size: 2rem;
+      @include media-breakpoint-up(lg) {
+        left: auto;
+        right: -5%;
+        font-size: 4rem;
+      }
+    }
+
+    .bg-hero {
+      padding-top: 50%;
+      @include media-breakpoint-up(lg) {
+        padding-top: 25%;
+      }
+      .bg-fill {
+        padding-bottom: 2rem;
+        @include media-breakpoint-up(lg) {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+  &.carousel-split {
+  }
+  &.carousel-two-column {
+   
+  }
 }
-.carousel-split {
-}
-.carousel-two-column {
-}
+
