@@ -1,6 +1,11 @@
 ---
 layout: newsroom
 title: ReFED Newsroom
+hero:
+  title: ReFED Articles
+  label: Newsroom
+  image: /img/newsroom/press_header_image.jpg
+  links:
 featured_articles:
   - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 cta:
@@ -9,16 +14,14 @@ cta:
   description_html: See past newsletters in the newsletter archive
   link:
     label: See Newsletter Archive
-    url: /newsletter-archive
+    url: /newsroom/newsletter-archive
     alt:
   theme: lighter
   add_divider: right
 
 ---
 
-{% include modules/subnav_newsroom.html %}
-
-<div class="bg-placeholder aspect-auto mt-4">
+<div class="bg-placeholder aspect-auto">
   <div class="bg-fill p-3">
     <h4>Search / Filter</h4>
   </div>
@@ -27,14 +30,6 @@ cta:
   TODO implement filtering
   {% include sections/newsroom_filter.html %}
 {% endcomment %}
-
-{% assign featured = '' | split: ',' %}
-{% for object in page.featured_articles %}
-  {% assign item = site.articles | where: 'slug', object | first %}
-  {% assign featured = featured | push: item %}
-{% endfor %}
-
-{% include sections/carousels/carousel_hero_in_container.html description_html=false items=featured subtitle='Blog' %}
 
 <section>
   <div class="container">

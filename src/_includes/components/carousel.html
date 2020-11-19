@@ -16,15 +16,11 @@
       {% else %}
         {% assign item = site[include.collection] | where: 'slug', slug | first %}
       {% endif %}
-  
-      
     
       {% if item %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
           <!-- TODO: Refactor indicators -->
         
-          
- 
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
           {% include components/{{ include.layout | default: "two-column" }}.html
             label=include.label
@@ -46,4 +42,7 @@
       {% endif %}
     {% endfor %}
   </div>
+  {% if include.layout == 'hero' %}
+    {% include nav/socialnav.html %}
+  {% endif %}
 </section>

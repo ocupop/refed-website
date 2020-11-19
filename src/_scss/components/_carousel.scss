@@ -23,7 +23,7 @@
       font-size: 2rem;
       @include media-breakpoint-up(lg) {
         left: auto;
-        right: -5%;
+        right: 0;
         font-size: 4rem;
       }
     }
@@ -38,6 +38,19 @@
         @include media-breakpoint-up(lg) {
           padding-bottom: 1rem;
         }
+      }
+    }
+    .socialnav {
+      position: absolute;
+      right: 0;
+      bottom: 3%;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-up(lg) {
+        bottom: 7%;
+      }
+      a {
+        margin: 0 0 10px;
       }
     }
   }

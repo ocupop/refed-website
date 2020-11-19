@@ -43,7 +43,7 @@ collections:
     permalink: /stakeholders/:title/
   events:
     output: true
-  reports_and_guides:
+  downloads:
     output: true
 
 defaults:
