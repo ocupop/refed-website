@@ -154,7 +154,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-md-3" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
+        <img class="icon-img-lg mr-md-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_investmentinnovation.svg">
       </div>
       <div class="col">
         <div class="editable">
@@ -167,10 +167,8 @@ _subnav:
       {% for resource in page.resources_and_tools %}
       <div class="col-12 col-lg-5 mb-5">
         <div class="pr-lg-5">
-          <div class="editable">
-            <h4>{{ resource.title }}</h4>
-            {{ resource.description_html }}
-          </div>
+          <h4>{{ resource.title }}</h4>
+          {{ resource.description_html }}
           <a href="{{ resource.link }}" class="btn btn-link">{{ resource.link_label | default: 'Learn More' }}</a>
         </div>
       </div>
@@ -183,7 +181,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_advisoryservices.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Advisory Services</h3>
@@ -203,7 +201,7 @@ _subnav:
     {% for service in page.advisory_services %}
       <div class="row align-items-center mb-5">
         <div class="col-12 col-lg-4">
-          <div class="bg-image aspect-16x9" style="background-image: url({{ service.featured_image }})"></div>
+          <div class="bg-image aspect-16x9 mb-3" style="background-image: url({{ service.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-8">
           <h4>{{ service.title }}</h4>
@@ -220,7 +218,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_solutionchallenge.svg">
       </div>
       <div class="col">
         <h3 class="editable text-serif">Solution Challenge Platform</h3>
@@ -263,8 +261,8 @@ _subnav:
     </div>
     {% for solution in page.solution_providers %}
       <div class="row align-items-center mb-5">
-        <div class="col-12 col-lg-3">
-          <div class="bg-image aspect-5x7 bg-dark" style="background-image: url({{ solution.featured_image }})"></div>
+        <div class="col-6 col-lg-3">
+          <div class="bg-image aspect-5x7 bg-dark mb-3" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-9">
           <h4>{{ solution.title }}</h4>
@@ -282,7 +280,7 @@ _subnav:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-auto">
-        <img class="icon-img-lg mr-lg-3" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
+        <img class="icon-img-lg mr-lg-3 mb-3" src="/img/icons/capital_and_innovation/capitalandinnovation_covenings.svg">
       </div>
       <div class="col">
         <h3 class="editable">Convenings</h3>

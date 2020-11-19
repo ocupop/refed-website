@@ -192,9 +192,12 @@ _sticky_nav:
           <div class="mb-5">
             {{ partner.text_below_logos_html }}
           </div>
-          {% for item in partner.buttons %}
-            <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-blue{% endif %} d-inline mr-3 mb-2">{{ item.link_label }}</a>
-          {% endfor %}
+          <div class="d-lg-flex">
+            {% for item in partner.buttons %}
+              <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-blue{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
+            {% endfor %}
+          </div>
+          
         </div>
       </div>
     {% endfor %}
