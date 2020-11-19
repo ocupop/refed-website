@@ -3,97 +3,97 @@ top_bar_navigation:
   links:
    - label: Contact
      url: /contact
-     alt:
+     alt: Contact ReFED
      links:
    - label: Newsroom
-     url: /newsroom
-     alt:
+     url: /newsroom/
+     alt: Visit our Newsroom
      links:
    - label: Stay Connected
-     url: /stay-connected
+     url: /engage/stay-connected
      alt:
      links:
 primary_navigation:
   navigation:
   links:
     - label: About
-      url: /about
+      url:
       alt:
       links:
         - label: Who We Are
-          url: /who-we-are/
+          url: /about/who-we-are/
           alt:
           links:
             - label: About Us
-              url: '/who-we-are/#about-us'
+              url: '/about/who-we-are/#about-us'
               alt:
             - label: Our Values
-              url: '/who-we-are/#our-values'
+              url: '/about/who-we-are/#our-values'
               alt:
             - label: Our History
-              url: '/who-we-are/#our-history'
+              url: '/about/who-we-are/#our-history'
               alt:
         - label: Our Team
-          url: /our-team/
+          url: /about/our-team/
           alt:
           links:
             - label: Staff
-              url: '/our-team/#staff'
+              url: '/about/our-team/#staff'
               alt:
             - label: Board of Directors
-              url: '/our-team/#board-of-directors'
+              url: '/about/our-team/#board-of-directors'
               alt:
             - label: Advisory Council
-              url: '/our-team/#advisory-council'
+              url: '/about/our-team/#advisory-council'
               alt:
             - label: Expert Network
-              url: '/our-team/#expert-network'
+              url: '/about/our-team/#expert-network'
               alt:
         - label: Our Funders
-          url: /our-funders/
+          url: /about/our-funders/
           alt:
           links:
             - label: Overview
-              url: '/our-funders/#overview'
+              url: '/about/our-funders/#overview'
               alt:
             - label: Funder Impact
-              url: '/our-funders/#funder-impact'
+              url: '/about/our-funders/#funder-impact'
               alt:
         - label: Careers
-          url: /careers
+          url: /about/careers
           alt:
           links:
             - label: Documents
-              url: /documents
+              url: /about/documents
               alt:
               links:
                 - label: Annual Reports
-                  url: '/documents/#annual-reports'
+                  url: '/about/documents/#annual-reports'
                   alt:
                 - label: Financials
-                  url: '/documents/#financials'
+                  url: '/about/documents/#financials'
                   alt:
                 - label: Brand Guidelines
-                  url: '/documents/#brand-guidelines'
+                  url: '/about/documents/#brand-guidelines'
                   alt:
     - label: Our Work
-      url: /our-work
+      url: /our-work/
       alt:
       links:
         - label: Our Work
-          url: /our-work
+          url: /our-work/
           alt:
           links:
             - label: Data & Insights
-              url: '/data-and-insights'
+              url: '/our-work/data-and-insights'
               alt:
               links:
             - label: Capitol & Innovation
-              url: /capital-and-innovation
+              url: /our-work/capital-and-innovation
               alt:
               links:
             - label: Stakeholder Engagement
-              url: '/stakeholder-engagement'
+              url: '/our-work/stakeholder-engagement'
               alt:
               links:
             - label: Covid-19
@@ -101,135 +101,135 @@ primary_navigation:
               alt:
               links:
         - label: Our Impact
-          url: /our-impact
+          url: /our-work/our-impact
           alt:
           links:
             - label: Case Studies
-              url: '/case-studies'
+              url: '/our-work/case-studies'
               alt:
               links:
             - label: Featured Organizations
-              url: '/our-impact/#featured-organizations'
+              url: '/our-work/our-impact/#featured-organizations'
               alt:
               links:
     - label: Food Waste
-      url: /food-waste
+      url:
       alt:
       links:
         - label: The Challenge
-          url: /food-waste-challenge
+          url: /food-waste/the-challenge
           alt:
           links:
             - label: Overview
-              url: '/food-waste-challenge/#overview'
+              url: '/food-waste/the-challenge/#overview'
               alt:
               links:
             - label: Explore Food Waste
-              url: '/food-waste-challenge/#explore-food-waste'
+              url: '/food-waste/the-challenge/#explore-food-waste'
               alt:
               links:
             - label: Barriers to Solutions
-              url: '/food-waste-challenge/#barriers-to-solutions'
+              url: '/food-waste/the-challenge/#barriers-to-solutions'
               alt:
               links:
             - label: Policy Overview
-              url: '/food-waste-challenge/#policy-overview'
+              url: '/food-waste/the-challenge/#policy-overview'
               alt:
               links:
         - label: Solutions
-          url: /food-waste-solutions
+          url: /food-waste/the-solutions
           alt:
           links:
             - label: Overview
-              url: '/food-waste-solutions/#overview'
+              url: '/food-waste/the-solutions/#overview'
               alt:
               links:
             - label: Roadmap 2020
-              url: '/food-waste-solutions/#roadmap-2020'
+              url: '/food-waste/the-solutions/#roadmap-2020'
               alt:
               links:
             - label: Seven Action Areas
-              url: '/food-waste-solutions/#seven-action-areas'
+              url: '/food-waste/the-solutions/#seven-action-areas'
               alt:
               links:
             - label: Key Levers
-              url: '/food-waste-solutions/#key-levers'
+              url: '/food-waste/the-solutions/#key-levers'
               alt:
               links:
         - label: Resources & Guides
-          url: /resources-and-guides
+          url: /food-waste/resources-and-guides
           alt:
           links:
             - label: The Roadmap 2030
-              url: '/resources-and-guides/#roadmap-2030'
+              url: '/food-waste/resources-and-guides/#roadmap-2030'
               alt:
               links:
             - label: ReFED Insights Engine
-              url: '/resources-and-guides/#insights-engine'
+              url: '/food-waste/resources-and-guides/#insights-engine'
               alt:
               links:
             - label: Solutions Database
-              url: '/resources-and-guides/#solutions-database'
+              url: '/food-waste/resources-and-guides/#solutions-database'
               alt:
               links:
             - label: Impact Calculator
-              url: '/resources-and-guides/#impact-calculator'
+              url: '/food-waste/resources-and-guides/#impact-calculator'
               alt:
               links:
             - label: Solutions Provider Database
-              url: '/resources-and-guides/#solutions-provider-database'
+              url: '/food-waste/resources-and-guides/#solutions-provider-database'
               alt:
               links:
             - label: Investment Tracker
-              url: '/resources-and-guides/#investment-tracker'
+              url: '/food-waste/resources-and-guides/#investment-tracker'
               alt:
               links:
             - label: Reports and Guides
-              url: '/resources-and-guides/#reports-and-guides'
+              url: '/food-waste/resources-and-guides/#reports-and-guides'
               alt:
               links:
             - label: Partner Resources
-              url: '/resources-and-guides/#partner-resources'
+              url: '/food-waste/resources-and-guides/#partner-resources'
               alt:
               links:
     - label: Engage
-      url: /engage
+      url:
       alt:
       links:
         - label: Ways to Engage
-          url: /engage
+          url: /engage/ways-to-engage
           alt:
           links:
             - label: Stakeholder Actions
-              url: /engage/#stakeholder-actions
+              url: /engage/ways-to-engage/#stakeholder-actions
               alt:
               links:
             - label: Call for Funders
-              url: '/engage/#call-for-funders'
+              url: '/engage/ways-to-engage/#call-for-funders'
               alt:
               links:
             - label: Partner with Us
-              url: /engage/#partner-with-us
+              url: /engage/ways-to-engage/#partner-with-us
               alt:
               links:
             - label: Collaborate with Us
-              url: '/engage/#collaborate'
+              url: '/engage/ways-to-engage/#collaborate'
               alt:
               links:
         - label: Events
-          url: /in-person-events
+          url: /engage/events/in-person-events
           alt:
           links:
             - label: In-person Events
-              url: '/in-person-events'
+              url: '/engage/events/in-person-events'
               alt:
               links:
             - label: Webinars
-              url: '/webinar-events'
+              url: '/engage/events/webinars'
               alt:
               links:
         - label: Stay Connected
-          url: /stay-connected
+          url: /engage/stay-connected
           alt:
           _stay_connected: true
           links:
@@ -246,14 +246,14 @@ primary_navigation:
               alt:
               links:
     - label: Insights Engine
-      url:
+      url: https://insights-engine.vercel.app/
       alt:
       links:
 footer_navigation:
   navigation:
   links:
    - label: Careers
-     url: /careers
+     url: /about/careers
      alt:
    - label: Newsroom
      url: /newsroom
