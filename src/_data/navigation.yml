@@ -217,15 +217,15 @@ primary_navigation:
               alt:
               links:
         - label: Events
-          url: /engage/events/in-person-events
+          url: /engage/in-person-events
           alt:
           links:
             - label: In-person Events
-              url: '/engage/events/in-person-events'
+              url: '/engage/in-person-events'
               alt:
               links:
             - label: Webinars
-              url: '/engage/events/webinars'
+              url: '/engage/webinar-events'
               alt:
               links:
         - label: Stay Connected
