@@ -45,7 +45,7 @@ cta:
         <div class="press-list">
           {% assign sorted = site.press | sort: 'item_date' %}
           {% for item in sorted reversed %}
-            {% include modules/card_horizontal.html image_size='contain' url=press.link link_target='_blank' %}
+            {% include modules/card_horizontal.html image_size='contain' url=press.link.url link_target='_blank' %}
           {% endfor %}
         </div>
       </div>
