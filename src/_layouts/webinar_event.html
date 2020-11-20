@@ -2,10 +2,7 @@
 layout: default
 ---
 
-{% assign subtitle = page.subtitle %}
-{% assign title = page.title %}
-{% assign description_html = page.description_html %}
-{% include sections/hero.html title=title subtitle=subtitle description_html=description_html image=page.featured_image %}
+{% include components/hero.html item=page %}
 <section>
   <div class="container">
     <div class="row mb-5">

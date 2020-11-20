@@ -49,20 +49,6 @@ collections:
 defaults:
   -
     scope:
-      type: 'stakeholders'
-    values:
-      layout: stakeholder
-      # variable_name: value
-  -
-    scope:
-      type: 'action_areas'
-    values:
-      layout: action_area
-      _options:
-        featured_image:
-          uploads_dir: "/uploads/action_areas"
-  -
-    scope:
       type: 'articles'
     values:
       layout: article
@@ -71,13 +57,58 @@ defaults:
           uploads_dir: "/uploads/articles"
   -
     scope:
+      type: 'press'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/press"
+  -
+    scope:
+      type: 'newsletters'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/newsletters"
+  -
+    scope:
+      type: 'case_studies'
+    values:
+      layout: case_study
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/case-studies"
+  -
+    scope:
+      type: 'action_areas'
+    values:
+      layout: action_area
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/action_areas"        
+  -
+    scope:
+      type: 'stakeholders'
+    values:
+      layout: stakeholder
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/stakeholders"
+  -
+    scope:
+      type: 'events'
+    values:
+      # layout: 
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/events"         
+  -
+    scope:
       type: 'downloads'
     values:
       layout: download
       _options:
         featured_image:
           uploads_dir: "/uploads/downloads"
-
 
       # variable_name: value
   # - scope:
@@ -461,8 +492,6 @@ _comments:
   cards: page section for card grid that is not related to a collection
 
 _options:
-  featured_image:
-    uploads_dir: "/uploads/:title"
   layout:
     hidden: true
 
