@@ -20,7 +20,10 @@
       {% endif %}
 
       {% if item %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div
+          data-cms-editor-link="cloudcannon:#{{ include.editor }}"
+          data-cms-editor-link-style="modal"
+          class="carousel-item {% if forloop.first %}active{% endif %} cms-editor-link">
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
           <div class="{{ include.class | default: '' }}">
             {% include components/{{ include.layout | default: "two-column" }}.html
