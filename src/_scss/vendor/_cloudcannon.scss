@@ -1,7 +1,17 @@
 .editor-link {
   display: none;
+  &.btn {
+    background-color: $yellow !important;
+    border-color: $yellow !important;
+  }
 }
 
 .cms-editor-active .editor-link {
   display: block;
+}
+
+.cms-editor-active {
+  .cms-editor-link {
+    outline-color: $yellow;
+  }
 }
