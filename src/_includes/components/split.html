@@ -1,12 +1,12 @@
 {% assign item = include.item %}
 <div class="split bg-{{ include.theme | default: 'white' }}">
-  <div
-    data-cms-editor-link="cloudcannon:#{{ include.editor }}"
-    data-cms-editor-link-style="modal"
-    class="container cms-editor-link">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
-        <div class="content">
+        <div
+          data-cms-editor-link="cloudcannon:#{{ include.editor }}"
+          data-cms-editor-link-style="modal"
+          class="content cms-editor-link">
           {% if item.label %}<h3>{{ item.label }}</h3>{% endif %}
           {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
           {% if item.summary %}
@@ -32,7 +32,10 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 col-asset">
-        <div class="content">
+        <div
+          data-cms-editor-link="cloudcannon:#{{ include.editor }}.featured_image"
+          data-cms-editor-link-style="modal"
+          class="content cms-editor-link">
           {% assign aspect = include.aspect | default: '1x1' %}
           {% assign src = item.featured_image | default: item.image %}
           {% include components/image.html aspect=aspect src=src %}
