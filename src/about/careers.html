@@ -118,15 +118,11 @@ cta:
         </div>
       </div>
     {% endfor %}
-    <div class="row editor-link">
-      <div class="col-12">
-        <p>
-          Add new job opening
-          <a href="cloudcannon:#careers[+]" class="ml-4 btn btn-editor">
-            <i class="ri-add-fill"></i>
-          </a>
-        </p>
-      </div>
+    <div data-cms-editor-link="cloudcannon:#careers[+]" class="d-flex align-items-center editor-link">
+      <button class="mr-3 btn btn-editor">
+        <i class="ri-add-fill"></i>
+      </button>
+      <span>Add new job opening</span>
     </div>
   </div>
 </section>
