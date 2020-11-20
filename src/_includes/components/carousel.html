@@ -1,6 +1,7 @@
 <div id="{{ include.id | default: 'pageCarousel' }}"
   class="carousel carousel-{{include.layout | default: 'two-column'}} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }}"
-  data-ride="carousel">
+  data-ride="carousel"
+  data-interval="{{ include.interval | default: '7000' }}">
   <!-- TODO: Refactor indicators -->
   <ol class="carousel-indicators d-none">
     {% for slug in include.items %}
@@ -21,22 +22,27 @@
       {% if item %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
           <!-- Logic: carousel will support several possible layout values. [two-column, split, hero, etc] -->
-          {% include components/{{ include.layout | default: "two-column" }}.html
-            label=include.label
-            item=item
-          %}
-          {% if include.items.size > 1 %}
-            <div class="carousel-controls container">
-              <a class="carousel-control-prev" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="prev">
-                <i class="ri-arrow-left-s-fill"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="next">
-                <i class="ri-arrow-right-s-fill"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          {% endif %}
+          <div class="{{ include.class | default: '' }}">
+            {% include components/{{ include.layout | default: "two-column" }}.html
+              label=include.label
+              item=item
+            %}
+          </div>
+
+          {% comment %}
+            {% if include.items.size > 1 %}
+              <div class="carousel-controls container">
+                <a class="carousel-control-prev" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="prev">
+                  <i class="ri-arrow-left-s-fill"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="next">
+                  <i class="ri-arrow-right-s-fill"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            {% endif %}
+          {% endcomment %}
         </div>
       {% endif %}
     {% endfor %}

@@ -46,7 +46,7 @@
   }
 }
 
-//buttons
+// Buttons
 .btn-link {
   padding-left: 0;
   padding-right: 25px;
@@ -84,5 +84,14 @@
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+// Cards
+.card {
+  border: 0;
+  background-color: transparent;
+  .card-body {
+    padding: $card-spacer-x 0;
   }
 }
