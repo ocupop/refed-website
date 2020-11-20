@@ -1,4 +1,5 @@
 ---
+review: true
 layout: default
 title:
 document_sections:
@@ -55,7 +56,10 @@ document_sections:
 
 {% for section in page.document_sections %}
 <section class="{% cycle '', 'bg-lighter' %}" id="{{ section.title | slugify }}">
-  <div class="container">
+  <div
+    data-cms-editor-link="cloudcannon:#document_sections[{{forloop.index0}}]"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
       <div class="col-12">
         <h3>{{ section.title }}</h3>
