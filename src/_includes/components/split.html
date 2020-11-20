@@ -1,6 +1,9 @@
 {% assign item = include.item %}
 <div class="split bg-{{ include.theme | default: 'white' }}">
-  <div class="container">
+  <div
+    data-cms-editor-link="cloudcannon:#{{ include.editor }}"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
       <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
         <div class="content">
