@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Stay Connected
 hero:
@@ -14,7 +15,7 @@ hero:
     <div class="row">
       <div class="col-lg-6">
         <div class="editable mb-4">
-          <h2>Social Channels</h2>
+          <h2 class="editable">Social Channels</h2>
         </div>
         <div class="socialnav-rounded">
           {% include nav/socialnav.html %}
@@ -22,29 +23,14 @@ hero:
       </div>
       <div class="col-lg-6">
         <div class="editable">
-          <h2>Newsletter</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est fugit quod ipsam commodi consectetur ex officiis vitae neque inventore.</p>
-          <a href="/newsletter-archive" class="btn btn-blue editable">See Newsletter Archive</a>
+          <h2 class="editable">Newsletter</h2>
+          <p class="editable">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est fugit quod ipsam commodi consectetur ex officiis vitae neque inventore.</p>
+          <a href="/newsletter-archive" class="btn btn-primary editable">See Newsletter Archive</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section class="bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8 mx-lg-auto ">
-        <h4 class="editable">The Latest to your Mailbox</h4>
-        <h2 class="editable">Subscribe to our Mailing List</h2>
-        <p class="lead editable">Sign up to receive updates from ReFED</p>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-12 col-lg-8 mx-lg-auto ">
-        <div class="form-theme-dark">
-          {% include modules/form_subscribe.html %}
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include forms/mailinglist.html %}
 </section>

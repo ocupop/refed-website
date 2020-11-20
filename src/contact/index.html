@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Contact
 hero:
@@ -7,14 +8,19 @@ hero:
     description_html:
     image: /img/contact/contactus_header_image.jpg
     links:
-downloads:
-  links:
+links:
+  - label: Media Assets
+    url:
+    alt:
+  - label: Download Brand Guidelines
+    url:
+    alt:
 ---
 
 <section class="pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <div class="row">
           <div class="col-md-auto">
             <img src="/img/icons/contact/contact_general.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Contact Icon">
@@ -28,7 +34,7 @@ downloads:
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <div class="row">
           <div class="col-md-auto">
             <img src="/img/icons/contact/contact_media.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Contact Icon">
@@ -46,7 +52,7 @@ downloads:
   </div>
 </section>
 
-<section class="general-inquiry">
+<section id="general-inquiry">
     <div class="container mb-3">
       <div class="row mb-4">
         <div class="col-md-12">
@@ -56,12 +62,13 @@ downloads:
       </div>
       <div class="row">
         <div class="col-lg-8 mx-lg-auto">
-          {% include modules/form_contact.html %}
+          <!-- TODO: replace with editable functionality -->
+          {% include_relative _partials/form_contact.html %}
         </div>
       </div>
     </div>
 </section>
-<section class="bg-lighter">
+<section id="media-inquiry" class="bg-lighter">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -72,15 +79,15 @@ downloads:
     <div class="row">
       <div class="col-12">
         <div class="d-lg-flex">
-          <a href="#" class="btn btn-blue mb-3 mr-3">Media Assets</a>
-          <a href="#" class="btn btn-blue mb-3">Dowload Brand Guidelines</a>
+          {% include components/links.html items=page.links %}
         </div>
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg-8 mx-lg-auto">
         <div class="form-theme-light">
-          {% include modules/form_media_contact.html %}
+          <!-- TODO: replace with editable functionality -->
+          {% include_relative _partials/form_media_contact.html %}
         </div>
       </div>
     </div>

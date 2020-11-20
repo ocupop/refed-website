@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Our Funders
 hero:
@@ -9,20 +10,13 @@ hero:
     description_html:
     image: /img/funders/ourfunders_header_image.jpg
     links:
-logo_pile:
-  title:
-  description_html: >-
-
-  logos:
-    - link: http://www.refed.com
-      alt_text: Refed Alt Tag
-      image: https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
-    - link:
-      alt_text: Refed Alt Tag
-      image: https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
-    - alt_text: Refed Alt Tag
-      image: https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
+logos:
+  - label: ReFED Logo
+    link: 'http://www.refed.com'
+    featured_image: >-
+      https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
 case_studies:
+  - sample-case-study
 cta:
   title:
   label:
@@ -35,7 +29,6 @@ cta:
     alt:
   theme: lighter
   add_divider: left
-
 ---
 
 <section id="overview">
@@ -80,16 +73,15 @@ cta:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html
-  items=site.case_studies
-  subtitle='Funder Impact Stories'
-  id="funder-impact"
-  section_background_color='dark'
-  image_width='50%'
-  image_alignment='right'
-  image_to_edge=true
-  text_to_edge=true
-  section_class='p-0'
+{% include components/carousel.html
+  items=page.case_studies
+  label='Funder Impact Stories'
+  theme="dark"
+  id="caseStudiesCarousel"
+  reverse="true"
+  layout="two-column"
+  collection="case_studies"
+  editor="case_studies"
 %}
 
 {% include components/cta.html item=page.cta editor="cta" %}

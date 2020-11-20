@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Our Team
 hero:
@@ -7,7 +8,7 @@ hero:
     description_html:
     image: /img/team/ourteam_header_image.jpg
     links:
-team_members:
+staff:
   - name: Dana Gunders
     featured_image: https://www.betaclub.org/uploads/scholarship-winners/FPO-portrait.jpg
     position: Executive Director
@@ -141,77 +142,76 @@ team_members:
       pristine land there, culminating in the 2007 establishment of Patagonia Sur.
       Warren received a BA from Colgate University and an MBA from Harvard Business
       School.</p>
+
 board_of_directors:
-  members:
-    - name: Nicola Dixon
-      featured_image:
-      summary_html: >-
-        <p>Chair, ReFED Board of Directors</p><p>Executive Director, General
-        Mills Foundation</p>
-    - name: Eduardo Romero
-      featured_image:
-      summary_html: >-
-        <p>Secretary, ReFED Board of Directors</p><p>President and CEO, Hana
-        Group</p>
-    - name: Steve Swartz
-      featured_image:
-      summary_html: >-
-        <p>Treasurer, ReFED Board of Directors</p><p>Chief Strategy Officer, The
-        Wonderful Company</p>
-    - name: Jesse Fink
-      featured_image:
-      summary_html: >-
-        <p>Non-Executive Chairman and Co-Founder, MissionPoint
-        Partners</p><p>Trustee, Fink Family Foundation</p>
-    - name: Stacey Greene-Koehnke
-      featured_image:
-      summary_html: '<p>Chief Operations Officer, Atlanta Community Food Bank</p>'
-    - name: Charles C. Savitt
-      featured_image:
-      summary_html: >-
-        <p>Director of Strategic Client Relationships, Sher Edling
-        LLP</p><p>Trustee and Treasurer, The Windward Fund</p>
-    - name: Yalmaz Sidiqqui
-      featured_image:
-      summary_html: >-
-        <p>Vice President Corporate Sustainability, MGM Resorts
-        International</p>
+  - name: Nicola Dixon
+    featured_image:
+    summary_html: >-
+      <p>Chair, ReFED Board of Directors</p><p>Executive Director, General
+      Mills Foundation</p>
+  - name: Eduardo Romero
+    featured_image:
+    description_html: >-
+      <p>Secretary, ReFED Board of Directors</p><p>President and CEO, Hana
+      Group</p>
+  - name: Steve Swartz
+    featured_image:
+    description_html: >-
+      <p>Treasurer, ReFED Board of Directors</p><p>Chief Strategy Officer, The
+      Wonderful Company</p>
+  - name: Jesse Fink
+    featured_image:
+    description_html: >-
+      <p>Non-Executive Chairman and Co-Founder, MissionPoint
+      Partners</p><p>Trustee, Fink Family Foundation</p>
+  - name: Stacey Greene-Koehnke
+    featured_image:
+    description_html: '<p>Chief Operations Officer, Atlanta Community Food Bank</p>'
+  - name: Charles C. Savitt
+    featured_image:
+    description_html: >-
+      <p>Director of Strategic Client Relationships, Sher Edling
+      LLP</p><p>Trustee and Treasurer, The Windward Fund</p>
+  - name: Yalmaz Sidiqqui
+    featured_image:
+    description_html: >-
+      <p>Vice President Corporate Sustainability, MGM Resorts
+      International</p>
 advisory_council:
-  members:
-    - name: Dr. Jonathan Foley
-      featured_image:
-      summary_html: '<p>Executive Director, Project Drawdown</p>'
-    - name: Tejal Mody
-      featured_image:
-      summary_html: '<p>Managing Director, Rabobank</p>'
-    - name: Ryan Shadrick Wilson
-      featured_image:
-      summary_html: '<p>Founder, Boardwalk Collective LLC</p>'
-    - name: Elise Golan
-      featured_image:
-      summary_html: >-
-        <p>Director for Sustainable Development, U.S. Department of
-        Agriculture</p>
-    - name: Susan Robinson
-      featured_image:
-      summary_html: '<p>Senior Director of Sustainability, Waste Management</p>'
-    - name: Jigar Shah
-      featured_image:
-      summary_html: '<p>Co-founder and President, Generate Capital</p>'
-    - name: Dr. Liz Goodwin
-      featured_image:
-      summary_html: >-
-        <p>Senior Fellow and Director, Food Loss and Waste World Resources
-        Institute</p>
-    - name: Ami McReynolds
-      featured_image:
-      summary_html: <p>Chief Equity and Programs Officer Feeding America</p>
-    - name: Andrew Shakman
-      featured_image:
-      summary_html: '<p>Chief Executive Officer and Co-founder, LeanPath</p>'
-    - name: Milen Mahadevan
-      featured_image:
-      summary_html: '<p>Chief Operating Officer, 84.51&deg;</p>'
+  - name: Dr. Jonathan Foley
+    featured_image:
+    description_html: '<p>Executive Director, Project Drawdown</p>'
+  - name: Tejal Mody
+    featured_image:
+    description_html: '<p>Managing Director, Rabobank</p>'
+  - name: Ryan Shadrick Wilson
+    featured_image:
+    description_html: '<p>Founder, Boardwalk Collective LLC</p>'
+  - name: Elise Golan
+    featured_image:
+    description_html: >-
+      <p>Director for Sustainable Development, U.S. Department of
+      Agriculture</p>
+  - name: Susan Robinson
+    featured_image:
+    description_html: '<p>Senior Director of Sustainability, Waste Management</p>'
+  - name: Jigar Shah
+    featured_image:
+    description_html: '<p>Co-founder and President, Generate Capital</p>'
+  - name: Dr. Liz Goodwin
+    featured_image:
+    description_html: >-
+      <p>Senior Fellow and Director, Food Loss and Waste World Resources
+      Institute</p>
+  - name: Ami McReynolds
+    featured_image:
+    description_html: <p>Chief Equity and Programs Officer Feeding America</p>
+  - name: Andrew Shakman
+    featured_image:
+    description_html: '<p>Chief Executive Officer and Co-founder, LeanPath</p>'
+  - name: Milen Mahadevan
+    featured_image:
+    description_html: '<p>Chief Operating Officer, 84.51&deg;</p>'
 cta:
   title:
   label:
@@ -248,22 +248,33 @@ cta:
         <p class="lead editable">ReFED team members come from a wide variety of backgrounds, bringing a diverse blend of expertise and experience in food business strategy and sustainability, innovation, finance, data analytics, research, agricultural development, and communications.</p>
       </div>
     </div>
-    {% for team_member in page.team_members %}
+    {% for item in page.staff %}
       <div class="row mb-5">
         <div class="col-12 col-md-4">
-          <img src="{{team_member.image | default: site.placeholder_image}}" class="img-fluid mb-3 mb-lg-0" alt="title" />
+          <img
+            data-cms-editor-link="cloudcannon:#staff[{{ forloop.index0 }}].featured_image"
+            data-cms-editor-link-style="modal"
+            src="{{ item.featured_image | default: site.placeholder_image }}"
+            class="img-fluid mb-3 mb-lg-0 cms-editor-link"
+            alt="{{ item.name }}" />
         </div>
         <div class="col-12 col-md-7 ml-lg-auto">
-          <h4>{{ team_member.name }}</h4>
-            <h5 class="text-gray d-inline-block border-top pt-3">{{ team_member.position }}</h5>
-          <p>{{ team_member.bio_summary_html }}</p>
+          <div
+            data-cms-editor-link="cloudcannon:#staff[{{ forloop.index0 }}]"
+            data-cms-editor-link-style="modal"
+            class="p-1 cms-editor-link">
+            <h4>{{ item.name }}</h4>
+            <h5 class="text-gray d-inline-block border-top pt-3">{{ item.position }}</h5>
+            <p>{{ item.bio_summary_html }}</p>
+
+          </div>
         </div>
       </div>
     {% endfor %}
   </div>
 </section>
 
-<section class="bg-dark text-white" id="board-of-directors">
+<section id="board-of-directors" class="bg-dark">
   <div class="container">
     <div class="row mb-5 pb-5">
       <div class="col-12 col-lg-8">
@@ -277,16 +288,19 @@ cta:
       </div>
     </div>
     <div class="row">
-      {% for member in page.board_of_directors.members %}
+      {% for item in page.board_of_directors %}
         <div class="col-12 col-lg-6">
           <div class="row align-items-center mb-4">
             <div class="col-6">
-              <img src="{{ person.image | default: site.placeholder_image }}" class="img-fluid mb-3 mb-lg-0" alt="title" />
+              <img data-cms-editor-link="cloudcannon:#board_of_directors[{{ forloop.index0 }}].featured_image"
+                data-cms-editor-link-style="modal" src="{{ item.featured_image | default: site.placeholder_image }}"
+                class="img-fluid mb-3 mb-lg-0 cms-editor-link" alt="{{ item.name }}" />
             </div>
             <div class="col-6">
-              <h4>{{member.name}}</h4>
-              <div class="text-serif">
-                {{ member.summary_html }}
+              <div data-cms-editor-link="cloudcannon:#board_of_directors[{{ forloop.index0 }}]" data-cms-editor-link-style="modal"
+                class="cms-editor-link">
+                <h4>{{ item.name }}</h4>
+                <div class="text-serif">{{ item.description_html }}</div>
               </div>
             </div>
           </div>
@@ -307,16 +321,21 @@ cta:
         </div>
       </div>
       <div class="row align-items-center">
-        {% for member in page.advisory_council.members %}
+        {% for item in page.advisory_council %}
           <div class="col-12 col-6 col-lg-4">
             <div class="row align-items-center mb-4">
               <div class="col-12 col-lg-4">
-                <img src="{{ member.image | default: site.placeholder_image }}" class="img-fluid" alt="{{member.name }} image" />
+                <img data-cms-editor-link="cloudcannon:#advisory_council[{{ forloop.index0 }}].featured_image"
+                  data-cms-editor-link-style="modal" src="{{ item.featured_image | default: site.placeholder_image }}"
+                  class="img-fluid cms-editor-link" alt="{{ item.name }}" />
               </div>
               <div class="col-12 col-lg-8">
-                <h4 class="mb-0">{{ member.name }}</h4>
-                <div class="text-serif">
-                  {{ member.summary_html }}
+                <div data-cms-editor-link="cloudcannon:#advisory_council[{{ forloop.index0 }}]" data-cms-editor-link-style="modal"
+                  class="cms-editor-link">
+                  <h4 class="mb-0">{{ item.name }}</h4>
+                  <div class="text-serif">
+                    {{ item.description_html }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,22 +353,24 @@ cta:
       <div class="col-12 col-lg-8">
         <h3 class="editable">Expert Network</h3>
         <p class="editable">The ReFED Expert Network is a group of more than 50 experts who share their knowledge and time on key projects at ReFED, as well as connect with, teach, and learn from their Expert Network peers. Experts bring perspectives from all parts of the food system and a diverse set of backgrounds. Together, they are influencing and strengthening impactful food waste-reducing work in pursuit of our shared goal: a 50% reduction in food waste by the year 2030.</p>
-        <a href="#" class="btn btn-blue editable">Become or Nominate a Participant</a>
+        <a href="#" class="btn btn-primary editable">Become or Nominate a Participant</a>
       </div>
     </div>
     <div class="row pt-5">
       {% for person in site.data.expert_network %}
         <div class="col-12 col-6 col-lg-4 mb-3">
-          {% if person.name %}<h5 class="mb-0">{{ person.name }}</h5>{% endif %}
-          <p class="text-gray">
-            <small>
-              {% if person.role %}
-                {{ person.role }}
-              {% endif %}
-                {% if person.organization %}, {{person.organization }}
-              {% endif %}
-            </small>
-          </p>
+          <div class="">
+            {% if person.name %}<h5 class="mb-0">{{ person.name }}</h5>{% endif %}
+            <p class="text-gray">
+              <small>
+                {% if person.role %}
+                  {{ person.role }}
+                {% endif %}
+                  {% if person.organization %}, {{person.organization }}
+                {% endif %}
+              </small>
+            </p>
+          </div>
         </div>
       {% endfor %}
     </div>

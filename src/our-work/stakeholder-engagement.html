@@ -202,7 +202,7 @@ _sticky_nav:
           </div>
           <div class="d-lg-flex">
             {% for item in partner.buttons %}
-              <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-blue{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
+              <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-primary{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
             {% endfor %}
           </div>
 
