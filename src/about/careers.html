@@ -95,6 +95,11 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <div class="float-right editor-link">
+          <a href="cloudcannon:#careers[+]" class="btn btn-editor">
+            <i class="ri-add-fill"></i>
+          </a>
+        </div>
         <h3 class="editable">Current Vacancies</h3>
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
         {% assign num_careers = site.careers | size %}
@@ -108,7 +113,7 @@ cta:
     </div>
     {% for career in site.careers %}
       <div class="row mb-5">
-        <div class="col-12">
+        <div class="col-12 cms-editor-link">
           <h4>{{ career.title }}</h4>
           <h5 class="text-gray">{{ career.location }}</h5>
           {{ career.description_html }}
@@ -116,6 +121,11 @@ cta:
         </div>
       </div>
     {% endfor %}
+    <div class="row ">
+      <div class="col-12">
+
+      </div>
+    </div>
   </div>
 </section>
 <section class="cta bg-dark text-white">
@@ -134,9 +144,9 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8">
-        <h3>Our Values</h3>
-        <p>Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.</p>
-        <a href="/who-we-are#our-values" class="btn btn-link">See our values</a>
+        <h3 class="editable">Our Values</h3>
+        <p class="editable">Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.</p>
+        <a href="/who-we-are#our-values" class="btn btn-link editable">See our values</a>
       </div>
     </div>
   </div>
