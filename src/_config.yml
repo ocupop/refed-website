@@ -68,7 +68,15 @@ defaults:
       layout: article
       _options:
         featured_image:
-          uploads_dir: "/uploads/articles"        
+          uploads_dir: "/uploads/articles"
+  -
+    scope:
+      type: 'downloads'
+    values:
+      layout: download
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/downloads"          
 
 
       # variable_name: value
@@ -412,6 +420,7 @@ document_types:
   - featured
   - report
   - guide
+  - series
 
 bar_position:
   - left
