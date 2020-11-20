@@ -4,7 +4,11 @@
     <div class="row">
       <div class="col-lg-6 col-copy">
         <div class="py-5">
-          <h3>{{ item.label | default: 'Our Newest Innovation'}}</h3>
+          <h3
+            data-cms-editor-link="cloudcannon:#cta-insights-engine.label"
+            data-cms-editor-link-style="modal"
+            class="cms-editor-link"
+          >{{ item.label | default: 'Our Newest Innovation'}}</h3>
           <h2>{{ item.title | default: 'ReFED Insights Engine' }}</h2>
           <p>{{ item.content | default: site.insights_engine_description }}</p>
           <div class="cta-button">
