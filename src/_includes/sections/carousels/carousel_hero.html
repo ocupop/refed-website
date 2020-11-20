@@ -22,7 +22,7 @@
             {% if hero.buttons.first.link %}
               <div class="hero-buttons mt-3">
                 {% for button in hero.buttons %}
-                  <a class="{% if button.button_type == 'button' %}btn btn-blue{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                  <a class="{% if button.button_type == 'button' %}btn btn-primary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                 {% endfor %}
               </div>
             {% endif %}
