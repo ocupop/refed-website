@@ -1,2 +1,2 @@
 {% assign item = include.item %}
-<div class="bg-image aspect-{{ include.aspect }}" style="background-image: url('{{ item.featured_image | default: item.image }}')"></div>
+<div class="bg-image aspect-{{ include.aspect }}" style="background-image: url('{{ item.src }}')"></div>
