@@ -95,11 +95,6 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="float-right editor-link">
-          <a href="cloudcannon:#careers[+]" class="btn btn-editor">
-            <i class="ri-add-fill"></i>
-          </a>
-        </div>
         <h3 class="editable">Current Vacancies</h3>
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
         {% assign num_careers = site.careers | size %}
@@ -123,9 +118,14 @@ cta:
         </div>
       </div>
     {% endfor %}
-    <div class="row ">
+    <div class="row editor-link">
       <div class="col-12">
-
+        <p>
+          Add new job opening
+          <a href="cloudcannon:#careers[+]" class="ml-4 btn btn-editor">
+            <i class="ri-add-fill"></i>
+          </a>
+        </p>
       </div>
     </div>
   </div>
