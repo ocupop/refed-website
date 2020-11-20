@@ -1,0 +1,7 @@
+{% for link in include.items %}
+  <a href="{{ link.url }}"
+    data-cms-editor-link="cloudcannon:#links[{{ forloop.index0 }}]"
+    data-cms-editor-link-style="modal"
+    class="btn {{ include.class | default: 'btn-primary mr-3'}} cms-editor-link"
+    title="{{ link.alt | default: link.label }}">{{ link.label }}</a>
+{% endfor %}
