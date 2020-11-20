@@ -358,7 +358,7 @@ cta:
     <div class="row pt-5">
       {% for person in site.data.expert_network %}
         <div class="col-12 col-6 col-lg-4 mb-3">
-          <div data-cms-editor-link="cloudcannon:data.expert_network[{{ forloop.index0 }}]" data-cms-editor-link-style="modal"
+          <div data-cms-editor-link="cloudcannon:expert_network[{{ forloop.index0 }}]" data-cms-editor-link-style="modal"
             class="cms-editor-link">
             {% if person.name %}<h5 class="mb-0">{{ person.name }}</h5>{% endif %}
             <p class="text-gray">
