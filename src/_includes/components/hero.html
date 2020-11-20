@@ -1,6 +1,7 @@
 {% assign item = include.item %}
-<div class="bg-hero"
-  style="background-image:url('{{ item.image | default: item.featured_image }}')">
+<div class="bg-hero cms-editor-link"
+  data-cms-editor-link="cloudcannon:#hero[{{include.index}}]" data-cms-editor-link-style="modal"
+  style="background-image:url('{{ item.featured_image | default: item.image }}')">
   <div class="bg-fill text-white">
     <div class="container">
       <div class="row">
