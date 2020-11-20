@@ -251,7 +251,7 @@ cta:
       <div class="row mb-5">
         <div class="col-12 col-md-4">
           <img
-            data-cms-editor-link="cloudcannon:#team_members[{{ forloop.index0 }}].featured_image"
+            data-cms-editor-link="cloudcannon:#staff[{{ forloop.index0 }}].featured_image"
             data-cms-editor-link-style="modal"
             src="{{ item.featured_image | default: site.placeholder_image }}"
             class="img-fluid mb-3 mb-lg-0 cms-editor-link"
@@ -259,7 +259,7 @@ cta:
         </div>
         <div class="col-12 col-md-7 ml-lg-auto">
           <div
-            data-cms-editor-link="cloudcannon:#team_members[{{ forloop.index0 }}]"
+            data-cms-editor-link="cloudcannon:#staff[{{ forloop.index0 }}]"
             data-cms-editor-link-style="modal"
             class="p-1 cms-editor-link">
             <h4>{{ item.name }}</h4>
