@@ -5,3 +5,6 @@
     class="btn {{ include.class | default: 'btn-primary mr-3'}} cms-editor-link"
     title="{{ link.alt | default: link.label }}">{{ link.label }}</a>
 {% endfor %}
+<a href="cloudcannon:#links[+]" class="btn {{ include.class | default: 'btn-primary mr-3'}} editor-link">
+  <i class="ri-add-fill"></i>
+</a>
