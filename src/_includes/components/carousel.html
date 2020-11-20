@@ -26,6 +26,7 @@
             {% include components/{{ include.layout | default: "two-column" }}.html
               label=include.label
               item=item
+              index=forloop.index0
             %}
           </div>
 
