@@ -81,9 +81,16 @@ document_sections:
   </div>
 </section>
 {% endfor %}
-<div data-cms-editor-link="cloudcannon:collections/_careers/" class="d-flex align-items-center editor-link">
-  <button class="mr-3 btn btn-editor">
-    <i class="ri-add-fill"></i>
-  </button>
-  <span>Add new job opening</span>
+<div class="container editor-link">
+  <div class="row">
+    <div class="col-12">
+      <div data-cms-editor-link="cloudcannon:#document_sections[+]" class="d-flex align-items-center">
+        <button class="mr-3 btn btn-editor">
+          <i class="ri-add-fill"></i>
+        </button>
+        <span>Add Document Section</span>
+      </div>
+    </div>
+  </div>
 </div>
+
