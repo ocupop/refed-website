@@ -58,6 +58,19 @@ defaults:
       type: 'action_areas'
     values:
       layout: action_area
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/action_areas"
+  -
+    scope:
+      type: 'articles'
+    values:
+      layout: article
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/articles"        
+
+
       # variable_name: value
   # - scope:
   #     type: events

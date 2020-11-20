@@ -36,8 +36,8 @@ cta:
     <div class="row">
       <div class="col-12">
         <div class="post-list">
-          {% assign sorted = site.articles | sort_by: 'item_date' | reverse %}
-          {% for item in sorted %}
+          {% assign sorted = site.articles | sort: 'item_date'  %}
+          {% for item in sorted reversed %}
             {% include modules/card_horizontal.html %}
           {% endfor %}
         </div>
@@ -55,7 +55,7 @@ cta:
         </div>
       </div>
       <div class="col-lg-4 ml-lg-auto text-lg-right">
-        <a href="/press" class="btn btn-lg btn-secondary editable">See Press Articles</a>
+        <a href="/newsroom/press" class="btn btn-lg btn-secondary editable">See Press Articles</a>
       </div>
     </div>
   </div>

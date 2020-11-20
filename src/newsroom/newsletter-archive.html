@@ -24,8 +24,8 @@ hero:
     <div class="row">
       <div class="col">
         <div class="post-list">
-          {% assign sorted = site.newsletters | sort_by: 'date' | reverse %}
-          {% for item in sorted %}
+          {% assign sorted = site.newsletters | sort: 'item_date' %}
+          {% for item in sorted reversed %}
             {% include modules/card_horizontal.html %}
           {% endfor %}
         </div>

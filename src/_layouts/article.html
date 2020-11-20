@@ -14,23 +14,18 @@ cta:
 
 {% include modules/subnav_newsroom.html %}
 
-<section class="pb-0 hide-social">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <!-- {% include sections/hero_mod.html title=page.title image=page.featured_image subtitle="Blog" aspect="3x1" %} -->
-        {% include sections/hero.html title=page.title image=page.featured_image subtitle="Blog" %}
-      </div>
-    </div>
-  </div>
-</section>
-
 <section>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <div class="meta border-bottom border-color-primary d-inline-block mb-4 pb-2">
-          {% if page.item_date %}( {{ page.item_date | date: '%B %-d, %Y' }}){% endif %}
+      <div class="col-12">
+        {% include components/image.html item=page aspect="3x1" %}
+        <h2 class="mt-4">{{ page.title }}</h2>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="border-bottom border-color-primary d-inline-block mb-4 pb-2">
+          {% if page.item_date %} {{ page.item_date | date: '%B %-d, %Y' }}{% endif %}
         </div>
         <div class="content">
           {{ content }}
@@ -38,12 +33,9 @@ cta:
       </div>
     </div>
   </div>
-</div>
 </section>
 
-
-
-<section class="bg-primary text-white">
+<section class="bg-dark">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -52,7 +44,6 @@ cta:
     </div>
   </div>
 </section>
-
 
 {% include components/cta.html item=layout.cta %}
 
