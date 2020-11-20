@@ -9,7 +9,7 @@
         <div class="py-5">
           <h3>{{ item.label | default: 'Our Newest Innovation'}}</h3>
           <h2>{{ item.title | default: 'ReFED Insights Engine' }}</h2>
-          <p>{{ item.content | default: site.insights_engine_description }}</p>
+          <p>{{ item.summary | default: site.insights_engine_description }}</p>
           <div class="cta-button">
             <a href="{{ item.link.url | default: site.insights_engine_url }}"
               class="btn btn-blue">{{ item.link.label | default: 'Launch ReFED Insights Engine' }}</a>
