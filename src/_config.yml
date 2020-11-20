@@ -69,14 +69,14 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/uploads/articles"
-  -
-    scope:
-      type: 'downloads'
-    values:
-      layout: download
-      _options:
-        featured_image:
-          uploads_dir: "/uploads/downloads"          
+  # -
+  #   scope:
+  #     type: 'downloads'
+  #   values:
+  #     layout: download
+  #     _options:
+  #       featured_image:
+  #         uploads_dir: "/uploads/downloads"          
 
 
       # variable_name: value
