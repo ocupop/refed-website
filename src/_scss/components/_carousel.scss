@@ -57,7 +57,52 @@
   &.carousel-split {
   }
   &.carousel-two-column {
-   
+  }
+  &.carousel-card {
+    .carousel-inner {
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev {
+        display: flex;
+      }
+      .carousel-item-next {
+        opacity: 0;
+      }
+      .carousel-item-right,
+      .carousel-item-left {
+        transform: translateX(0);
+      }
+      .carousel-item > div {
+        display: none;
+      }
+      .carousel-item > div:first-child {
+        display: block;
+      }
+      @include media-breakpoint-up(md) {
+        .carousel-item > div {
+          display: block;
+        }
+        // /* display 3 */
+        // .carousel-item-right.active,
+        // .carousel-item-next {
+        //   transform: translateX(33.333%);
+        // }
+        // .carousel-item-left.active,
+        // .carousel-item-prev {
+        //   transform: translateX(-33.333%);
+        // }
+        /* display 2 */
+        .carousel-item-right.active,
+        .carousel-item-next {
+          transform: translateX(50%);
+        }
+        .carousel-item-left.active,
+        .carousel-item-prev {
+          transform: translateX(-50%);
+        }
+      }
+      @include media-breakpoint-up(xl) {
+      }
+    }
   }
 }
-
