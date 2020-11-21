@@ -7,7 +7,7 @@ summary: >-
   ReFED Hosts First Food Waste Innovation Demo Day at SOCAP, Announces Release
   of Food Waste Investment Report
 author:
-featured_image: /uploads/articles/blog1.png
+featured_image: /uploads/articles/blog1.jpg
 ---
 
 By Alexandria Coari
