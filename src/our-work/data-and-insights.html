@@ -1,56 +1,55 @@
 ---
+review: true
 layout: page
 title: Data & Insights
-_assets:
-  - image:
 hero:
   - title: Data & Insights
     label: Our Work
     description_html:
     image: /img/data_and_insights/dataandinsights_header_image.jpg
     links:
+case_studies:
 tools_and_guides:
-  cards:
-    - title: Tool Title Here
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-        Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-        sodales ligula in libero. Sed dignissim lacinia nunc.
-      featured_image: 'https://via.placeholder.com/615x500'
-      link: 'https://www.google.com/'
-      link_label: Download
-    - title: Guide Title Here
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-        quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-      featured_image: 'https://via.placeholder.com/1000x500'
-      link: 'https://www.google.com/'
-      link_label: Download
-    - title: Tool Title Here
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-        Vestibulum lacinia arcu eget nulla. Class aptent taciti
-      featured_image: 'https://via.placeholder.com/500x700'
-      link: 'https://www.google.com/'
-      link_label: Download
-    - title: Another Tool Here
-      text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-        Vestibulum lacinia arcu eget nulla. Class aptent taciti
-      featured_image: 'https://via.placeholder.com/500x500'
-      link: 'https://www.google.com/'
-      link_label: Download
+  - title: Tool Title Here
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+      sodales ligula in libero. Sed dignissim lacinia nunc.
+    featured_image: 'https://via.placeholder.com/615x500'
+    link: 'https://www.google.com/'
+    link_label: Download
+  - title: Guide Title Here
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+    featured_image: 'https://via.placeholder.com/1000x500'
+    link: 'https://www.google.com/'
+    link_label: Download
+  - title: Tool Title Here
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti
+    featured_image: 'https://via.placeholder.com/500x700'
+    link: 'https://www.google.com/'
+    link_label: Download
+  - title: Another Tool Here
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti
+    featured_image: 'https://via.placeholder.com/500x500'
+    link: 'https://www.google.com/'
+    link_label: Download
 
 cta_resources_and_guides:
   title:
@@ -97,6 +96,9 @@ cta_insights_engine:
     label: Launch ReFED Insights Engine
     url: 'https://www.insights-engine-fpo.com/'
     alt:
+
+_assets:
+
 ---
 
 <section>
@@ -124,16 +126,19 @@ cta_insights_engine:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html
-  items=site.case_studies
-  theme='light'
-  section_background_color='white'
-  image_width='50%'
-  image_alignment='left'
-  image_to_edge=true
-  text_to_edge=true
-  section_class='p-0'
+{% include components/carousel.html
+  id='caseStudies'
+  theme='white'
+  items=page.case_studies
+  editor='case_studies'
+  layout='split'
+  reverse='true'
+  aspect='4x3'
 %}
+
+{% unless page.case_studies.size > 0 %}
+  {% include cloudcannon/add.html array='case_studies' %}
+{% endunless %}
 
 <section>
   <div class="container">
@@ -146,13 +151,11 @@ cta_insights_engine:
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="bg-image aspect-4x3">
-          <div class="bg-fill">
-            <div class="text-center">
-              <h4 class="text-uppercase">Corresponding asset</h4>
-            </div>
-          </div>
-        </div>
+        <div
+          data-cms-editor-link="cloudcannon:#_assets[0]"
+          data-cms-editor-link-style="modal"
+          class="bg-image aspect-4x3 cms-editor-link"
+          style="background-image: url('{{ page._asset[0] }}');"></div>
       </div>
     </div>
   </div>
@@ -166,7 +169,14 @@ cta_insights_engine:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include sections/carousels/carousel_cards.html items=page.tools_and_guides.cards %}
+        <div class="bg-placeholder aspect-3x1">
+          <div class="bg-fill">
+            <p>carousel_cards</p>
+          </div>
+        </div>
+        {% comment %}
+        {% include sections/carousels/carousel_cards.html items=page.tools_and_guides %}
+        {% endcomment %}
       </div>
     </div>
   </div>
@@ -180,6 +190,7 @@ cta_insights_engine:
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
+
 <section class="bg-light">
   <div class="container">
     <div class="row">

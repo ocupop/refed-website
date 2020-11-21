@@ -1,6 +1,7 @@
 ---
+review: true
 layout: default
-title:
+title: ReFED Documents
 document_sections:
   - title: Annual Reports
     description_html: >-
@@ -55,7 +56,10 @@ document_sections:
 
 {% for section in page.document_sections %}
 <section class="{% cycle '', 'bg-lighter' %}" id="{{ section.title | slugify }}">
-  <div class="container">
+  <div
+    data-cms-editor-link="cloudcannon:#document_sections[{{forloop.index0}}]"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
       <div class="col-12">
         <h3>{{ section.title }}</h3>
@@ -77,9 +81,19 @@ document_sections:
   </div>
 </section>
 {% endfor %}
-<div data-cms-editor-link="cloudcannon:collections/_careers/" class="d-flex align-items-center editor-link">
-  <button class="mr-3 btn btn-editor">
-    <i class="ri-add-fill"></i>
-  </button>
-  <span>Add new job opening</span>
-</div>
+
+<section class="editor-link">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div data-cms-editor-link="cloudcannon:#document_sections[+]" class="d-flex align-items-center">
+          <button class="mr-3 btn btn-editor">
+            <i class="ri-add-fill"></i>
+          </button>
+          <span>Add Document Section</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

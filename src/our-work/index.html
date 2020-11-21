@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Our Work
 hero:
@@ -7,7 +8,7 @@ hero:
     description_html:
     image: /img/our_work/our_work_header_image.png
     links:
-split_section_global_crisis:
+global_crisis:
   type: custom
   subtitle: Global Crisis
   title: Covid-19
@@ -60,7 +61,7 @@ cta:
             The Data and Insights team uses economics and data to generate actionable solutions to reduce the amount of food that goes uneaten.
           </p>
         </div>
-        <a class="btn btn-link editable" href="/data-and-insights">Learn More</a>
+        <a class="btn btn-link editable" href="/our-work/data-and-insights">Learn More</a>
       </div>
     </div>
     <div class="row align-items-center mb-5">
@@ -72,7 +73,7 @@ cta:
         <div class="editable">
           <p>The Capital & Innovation team works with capital providers, food businesses, technology companies, innovators, and policymakers across the food system to drive the adoption of and catalyze public, private, and philanthropic funding for effective, scalable food waste solutions.</p>
         </div>
-        <a class="btn btn-link editable" href="/capital-and-innovation">Learn More</a>
+        <a class="btn btn-link editable" href="/our-work/capital-and-innovation">Learn More</a>
       </div>
     </div>
     <div class="row align-items-center mb-5">
@@ -84,21 +85,19 @@ cta:
         <div class="editable">
           <p>The Stakeholder Engagement team works to convene key stakeholders across private and public entities around food waste solutions and issues that require a systems-based approach.</p>
         </div>
-        <a class="btn btn-link editable" href="/stakeholder-engagement">Learn More</a>
+        <a class="btn btn-link editable" href="/our-work/stakeholder-engagement">Learn More</a>
       </div>
     </div>
   </div>
 </section>
 
-{% include sections/split_section.html
-  id='covid-19'
-  section_background_color='dark'
-  image_width='50%'
-  image_alignment='right'
-  image_to_edge=true
-  text_to_edge=true
-  section_class='py-0'
-  item=page.split_section_global_crisis
+{% include components/split.html
+  id='global-crisis'
+  theme='dark'
+  item=page.global_crisis
+  editor='global_crisis'
+  aspect='4x3'
 %}
+
 
 {% include components/cta.html item=page.cta editor="cta" %}
