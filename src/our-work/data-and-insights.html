@@ -97,6 +97,9 @@ cta_insights_engine:
     label: Launch ReFED Insights Engine
     url: 'https://www.insights-engine-fpo.com/'
     alt:
+
+_assets:
+
 ---
 
 <section>
@@ -149,13 +152,11 @@ cta_insights_engine:
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="bg-image aspect-4x3">
-          <div class="bg-fill">
-            <div class="text-center">
-              <h4 class="text-uppercase">Corresponding asset</h4>
-            </div>
-          </div>
-        </div>
+        <div
+          data-cms-editor-link="cloudcannon:#_assets[0]"
+          data-cms-editor-link-style="modal"
+          class="bg-image aspect-4x3"
+          style="background-image: url('{{ page._asset[0] }}');"></div>
       </div>
     </div>
   </div>
@@ -183,6 +184,7 @@ cta_insights_engine:
   {% assign id = forloop.index | prepend:'testimonial-' %}
   {% include sections/testimonial.html testimonial=testimonial id=id %}
 {% endfor %}
+
 <section class="bg-light">
   <div class="container">
     <div class="row">
