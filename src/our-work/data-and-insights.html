@@ -1,14 +1,14 @@
 ---
+review: true
 layout: page
 title: Data & Insights
-_assets:
-  - image:
 hero:
   - title: Data & Insights
     label: Our Work
     description_html:
     image: /img/data_and_insights/dataandinsights_header_image.jpg
     links:
+case_studies:
 tools_and_guides:
   cards:
     - title: Tool Title Here
@@ -124,16 +124,19 @@ cta_insights_engine:
   </div>
 </section>
 
-{% include sections/carousels/carousel_split.html
-  items=site.case_studies
-  theme='light'
-  section_background_color='white'
-  image_width='50%'
-  image_alignment='left'
-  image_to_edge=true
-  text_to_edge=true
-  section_class='p-0'
+{% include components/carousel.html
+  id='caseStudies'
+  theme='white'
+  items=page.case_studies
+  editor='case_studies'
+  layout='split'
+  reverse='true'
+  aspect='4x3'
 %}
+
+{% unless page.case_studies.size > 0 %}
+  {% include cloudcannon/add.html array='case_studies' %}
+{% endunless %}
 
 <section>
   <div class="container">
