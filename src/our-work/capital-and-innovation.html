@@ -211,7 +211,10 @@ _subnav:
       </div>
     </div>
     {% for service in page.advisory_services %}
-      <div class="row align-items-center mb-5">
+      <div 
+        class="row align-items-center mb-5"
+        data-cms-editor-link="cloudcannon:#advisory_services"
+        data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
           <div class="bg-image aspect-16x9 mb-3" style="background-image: url({{ service.featured_image }})"></div>
         </div>
@@ -254,7 +257,12 @@ _subnav:
         <h6 class="editable text-gray mt-5">Program at a Glance</h6>
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
-            <li class="d-flex align-items-center mb-3"><span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}</li>
+            <li 
+              class="d-flex align-items-center mb-3"
+              data-cms-editor-link="cloudcannon:#program_at_a_glance_stats"
+              data-cms-editor-link-style="modal">
+              <span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -274,7 +282,10 @@ _subnav:
       </div>
     </div>
     {% for solution in page.solution_providers %}
-      <div class="row align-items-center mb-5">
+      <div
+        class="row align-items-center mb-5"
+        data-cms-editor-link="cloudcannon:#solution_providers"
+        data-cms-editor-link-style="modal">
         <div class="col-6 col-lg-3">
           <div class="bg-image aspect-5x7 bg-dark mb-3" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
@@ -305,7 +316,10 @@ _subnav:
     </div>
     <div class="row">
       {% for convening in page.convenings %}
-        <div class="col-12 col-lg-6 mb-5">
+        <div 
+          class="col-12 col-lg-6 mb-5"
+          data-cms-editor-link="cloudcannon:#convenings"
+          data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
           <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
@@ -345,7 +359,7 @@ _subnav:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include sections/cta_buttons.html items=page.cta_buttons %}
+        {% include sections/cta_buttons.html items=page.cta_buttons editor-link="#cta_buttons" %}
       </div>
     </div>
   </div>
