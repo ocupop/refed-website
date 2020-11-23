@@ -1,0 +1,20 @@
+<div class="row align-items-center">
+  <div class="col-12">
+    <h6>Addressable waste</h6>
+    <p class="display-4 text-serif">5M Tons</p>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-12">
+    <h6>Key Indicators</h6>
+
+    <div class="row">
+      {% for item in page.key_indicators %}
+      <div class="col-12 col-sm-6 mb-4">
+        <span class="stat-number d-block">{{ item.number }}</span>
+        <h6 class="stat-text text-primary">{{ item.text }}</h6>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
