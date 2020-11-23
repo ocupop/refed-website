@@ -1,6 +1,9 @@
 {% assign item = include.item %}
 
-<div class="row my-5 {{ post.news_type | slugify }}">
+<div 
+  class="row my-5 {{ post.news_type | slugify }}"
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal">
 
     {% if include.featured_image or item.featured_image %}
       {% if include.image_size == 'contain' %}

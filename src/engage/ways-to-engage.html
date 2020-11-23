@@ -56,7 +56,7 @@ cta:
           <div class="col">
             <h4 class="editable text-serif">Partner with us?</h4>
             <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-            <a href="/engage/#partner-with-us" class="editable btn btn-link">Learn More</a>
+            <a href="#partner-with-us" class="editable btn btn-link">Learn More</a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ cta:
         <img src="/img/icons/engage/engage_funders.svg" class="img-fluid icon-img-lg mb-3" alt="Funders Icon" />
       </div>
       <div class="col">
-        <h2>Call for Funders</h2>
+        <h2 class="editable">Call for Funders</h2>
       </div>
     </div>
     <div class="row mb-4">
@@ -122,7 +122,7 @@ cta:
 
     {% for object in page.featured_articles %}
       {% assign item = site.articles | where: 'slug', object | first %}
-      {% include modules/card_horizontal.html item=item %}
+      {% include modules/card_horizontal.html item=item editor-link="#featured-articles" %}
     {% endfor %}
 
   </div>
@@ -279,14 +279,17 @@ cta:
   id='join-our-team'
   section_class='py-0'
   item=page.join_our_team
+  editor-link="#join_our_team"
 %}
 
 <section class="bg-lighter">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="">Join Our Solution Providers Directory</h3>
-        <p>Explore the dynamic, expanding food waste innovation sector, broken down by food waste solution type, organizational status, and geographic reach. The ReFED Food Waste Innovator Database is a living compilation of commercial and nonprofit entities turning the food waste problem into an opportunity for economic, social, and environmental impacts. To get a perspective on the measureable impacts of the broader Innovator Categories, visit the ‘Related Solution(s)’ pages linked to each ‘Innovator Detail’ page.</p>
+        <h3 class="editable">Join Our Solution Providers Directory</h3>
+        <div class="editable">
+          <p>Explore the dynamic, expanding food waste innovation sector, broken down by food waste solution type, organizational status, and geographic reach. The ReFED Food Waste Innovator Database is a living compilation of commercial and nonprofit entities turning the food waste problem into an opportunity for economic, social, and environmental impacts. To get a perspective on the measureable impacts of the broader Innovator Categories, visit the ‘Related Solution(s)’ pages linked to each ‘Innovator Detail’ page.</p>
+        </div>
         <a href="#" class="btn btn-primary mt-3 editable">Explore Solution Providers Directory</a>
       </div>
     </div>
