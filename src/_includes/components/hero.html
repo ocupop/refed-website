@@ -1,7 +1,6 @@
 {% assign item = include.item %}
-{% assign editorlink = 'cloudcannon:#hero' %}
 <div class="bg-hero"
-  data-cms-editor-link="cloudcannon:#hero" data-cms-editor-link-style="modal"
+  data-cms-editor-link="cloudcannon:{{ include.editor | default: '#hero' }}" data-cms-editor-link-style="modal"
   style="background-image:url('{{ item.featured_image | default: item.image }}')">
   <div class="bg-fill text-white">
     <div class="container cms-editor-link">

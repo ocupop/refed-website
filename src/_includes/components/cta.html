@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 <section id="{{ include.id }}" class="bg-{{ include.theme | default: 'lighter' }}{% if item.add_divider %} divide divide-{{ item.add_divider | default: 'left' }}{% endif %}">
   <div
-    data-cms-editor-link="cloudcannon:#{{ include.editor }}"
+    data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
     data-cms-editor-link-style="modal"
     class="container cms-editor-link">
     <div class="row">

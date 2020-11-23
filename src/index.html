@@ -113,7 +113,7 @@ cta_insights_engine:
   theme="white"
   id="featuresCarousel"
   reverse="true"
-  editor="features"
+  editor-link="#features"
 %}
 
 
@@ -166,7 +166,7 @@ cta_insights_engine:
   </div>
 </section>
 
-{% include components/cta_insights_engine.html item=page.cta_insights_engine editor="cta_insights_engine" %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine editor-link="#cta_insights_engine" %}
 
 <section class="bg-dark text-white">
   <div class="container">
@@ -211,6 +211,7 @@ cta_insights_engine:
             id="articlesCarousel"
             reverse="true"
             interval="false"
+            editor-link="collections/_articles"
           %}
 
         </div>
@@ -221,7 +222,7 @@ cta_insights_engine:
               href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</p>
           <p>
             <!-- TODO: Clean up class selectors here -->
-            <button class="newsletter-signup-cta toggle-newsletter-modal btn btn-secondary btn-lg text-serif editable">Subscribe</button>
+            <button class="newsletter-signup-cta toggle-newsletter-modal btn btn-secondary btn-lg text-serif">Subscribe</button>
           </p>
         </div>
       </div>
@@ -258,7 +259,7 @@ cta_insights_engine:
   </div>
 </section>
 
-{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial editor="carousel_testimonial" %}
+{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial editor-link="#carousel_testimonial" %}
 
 <section class="bg-lighter">
   <div class="container">
@@ -273,7 +274,7 @@ cta_insights_engine:
       </div>
       <div class="col-12 col-lg-4">
         <div class="text-lg-right">
-          <button class="btn btn-lg btn-secondary text-serif toggle-newsletter-modal newsletter-signup-cta editable">Subscribe</button>
+          <button class="btn btn-lg btn-secondary text-serif toggle-newsletter-modal newsletter-signup-cta">Subscribe</button>
         </div>
       </div>
     </div>
