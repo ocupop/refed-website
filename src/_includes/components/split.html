@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-12 col-lg-6 col-copy {% if include.reverse %}order-2{% endif %}">
         <div
-          data-cms-editor-link="cloudcannon:#{{ include.editor }}"
+          data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
           data-cms-editor-link-style="modal"
           class="content cms-editor-link">
           {% if item.label %}<h3>{{ item.label }}</h3>{% endif %}
@@ -33,7 +33,7 @@
       </div>
       <div class="col-12 col-lg-6 col-asset">
         <div
-          data-cms-editor-link="cloudcannon:#{{ include.editor }}.featured_image"
+          data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
           data-cms-editor-link-style="modal"
           class="content cms-editor-link">
           {% assign aspect = include.aspect | default: '1x1' %}
