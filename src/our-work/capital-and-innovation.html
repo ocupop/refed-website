@@ -212,7 +212,7 @@ _subnav:
     </div>
     {% for service in page.advisory_services %}
       <div 
-        class="row align-items-center mb-5"
+        class="row align-items-center mb-5 cms-editor-link"
         data-cms-editor-link="cloudcannon:#advisory_services"
         data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
@@ -258,7 +258,7 @@ _subnav:
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
             <li 
-              class="d-flex align-items-center mb-3"
+              class="d-flex align-items-center mb-3 cms-editor-link"
               data-cms-editor-link="cloudcannon:#program_at_a_glance_stats"
               data-cms-editor-link-style="modal">
               <span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}
@@ -283,7 +283,7 @@ _subnav:
     </div>
     {% for solution in page.solution_providers %}
       <div
-        class="row align-items-center mb-5"
+        class="row align-items-center mb-5 cms-editor-link"
         data-cms-editor-link="cloudcannon:#solution_providers"
         data-cms-editor-link-style="modal">
         <div class="col-6 col-lg-3">
@@ -317,7 +317,7 @@ _subnav:
     <div class="row">
       {% for convening in page.convenings %}
         <div 
-          class="col-12 col-lg-6 mb-5"
+          class="col-12 col-lg-6 mb-5 cms-editor-link"
           data-cms-editor-link="cloudcannon:#convenings"
           data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
