@@ -174,7 +174,10 @@ _subnav:
     </div>
     <div class="row mb-5">
       {% for resource in page.resources_and_tools %}
-      <div class="col-12 col-lg-5 mb-5">
+      <div 
+        class="col-12 col-lg-5 mb-5"
+        data-cms-editor-link="cloudcannon:#resources_and_tools"
+        data-cms-editor-link-style="modal">
         <div class="pr-lg-5">
           <h4>{{ resource.title }}</h4>
           {{ resource.description_html }}
@@ -231,7 +234,9 @@ _subnav:
       </div>
       <div class="col">
         <h3 class="editable text-serif">Solution Challenge Platform</h3>
-        <p>The Solution Challenge Platform gives innovative food waste solution providers various opportunities - like funding, pilots, and accelerator programs - to scale their impact.</p>
+        <div class="editable">
+          <p>The Solution Challenge Platform gives innovative food waste solution providers various opportunities - like funding, pilots, and accelerator programs - to scale their impact.</p>
+        </div>
       </div>
     </div>
     <div class="row">
