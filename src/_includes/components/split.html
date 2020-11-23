@@ -21,7 +21,7 @@
               <a href="{{ item.url }}" class="btn btn-link" title="{{ item.title }}">{{ site.default_cta }}</a>
             </p>
           {% endif %}
-          {% if item.link %}
+          {% if item.link.url %}
             {% assign link = item.link %}
             <p>
               <a href="{{ link.url }}" class="btn {% if link.label %}btn-primary{% else %}btn-link{% endif %}"
