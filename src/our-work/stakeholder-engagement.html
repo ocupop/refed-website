@@ -119,13 +119,11 @@ cta_insights_engine:
     label: Launch ReFED Insights Engine
     url: 'https://www.insights-engine-fpo.com/'
     alt:
-_sticky_nav:
-  - link: '#partnerships'
-    link_label: 'Partnerships'
-  - link: '#networks'
-    link_label: 'Networks'
-  - link: '#events'
-    link_label: 'Events'
+
+_subnav:
+  - label: 'Partnerships'
+  - label: 'Networks'
+  - label: 'Events' 
 ---
 
 <section>
@@ -146,17 +144,7 @@ _sticky_nav:
   </div>
 </section>
 
-<div class="bg-placeholder aspect-auto">
-  <div class="bg-fill">
-    <div class="text-center">
-      <h4 class="text-uppercase">Sticky Nav</h4>
-      <small>.src/_modules/sticky_nav.html </small>
-    </div>
-  </div>
-</div>
-{% comment %}
-  {% include modules/sticky_nav.html navigation=page._sticky_nav header="Key Program Areas" %}
-{% endcomment %}
+{% include nav/subnav.html items=page._subnav label="Key Program Areas" %}
 
 <section class="bg-lighter" id="partnerships">
   <div class="container">
@@ -173,7 +161,10 @@ _sticky_nav:
     </div>
 
     {% for partner in page.partnerships %}
-      <div class="row py-5">
+      <div 
+        class="row py-5 cms-editor-link"
+        data-cms-editor-link="cloudcannon:#partnerships"
+        data-cms-editor-link-style="modal">
         <div class="col-12 mb-5">
           <h3>{{ partner.title }}</h3>
           <div>
@@ -246,11 +237,18 @@ _sticky_nav:
       {% assign item = site.events | where: 'slug', object | first %}
       {% assign events = events | push: item %}
     {% endfor %}
-    {% include sections/carousels/carousel_cards.html items=events %}
+    {% include components/carousel.html 
+      items=events
+      layout="card"
+      class="col-md-4"
+      theme="lighter"
+      interval="false"
+      editor-link="#events"
+    %}
   </div>
 </section>
 
-{% include sections/testimonial.html testimonial=page.testimonial %}
+{% include sections/testimonial.html testimonial=page.testimonial editor-link="#testimonial" %}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
