@@ -12,8 +12,7 @@ cta:
   theme: lighter
   add_divider: right
 ---
-
-<!-- {% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %} -->
+{% include components/hero.html item=page.hero %}
 
 <section>
   <div class="container">
@@ -25,41 +24,31 @@ cta:
           </div>
           <div class="col">
             <h6 class="mb-0">Action Area</h6>
-            <h2>{{ page.title }}</h2>
+            <h2
+              data-cms-editor-link="cloudcannon:#title"
+              data-cms-editor-link-style="modal">
+              {{ page.title }}
+            </h2>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12">
-            <h6>Summary</h6>
-            {{ page.description_html }}
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 ml-lg-auto">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <h6>Addressable waste</h6>
-            <p class="display-4 text-serif">5M Tons</p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12">
-            <h6>Key Indicators</h6>
-
-            <div class="row">
-              {% for item in page.key_indicators %}
-              <div class="col-12 col-sm-6 mb-4">
-                <span class="stat-number d-block">{{ item.number }}</span>
-                <h6 class="stat-text text-primary">{{ item.text }}</h6>
-              </div>
-              {% endfor %}
+            <h6 class="editable">Summary</h6>
+            <div
+              data-cms-editor-link="cloudcannon:#description_html"
+              data-cms-editor-link-style="modal">
+              {{ page.description_html }}
             </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-6 ml-lg-auto">
+        {% include action_areas/metrics.html %}
+      </div>
     </div>
   </div>
 </section>
+
 {% capture label %}Explore this Action Area: {{page.title}}{% endcapture %}
 {% include nav/subnav.html items=page.sectors label=label %}
 
@@ -312,8 +301,8 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12 text-center ">
-        <h3>Stakeholder Recommendations</h3>
-        <h2>What Can I Do To Solve Food Waste?</h2>
+        <h3 class="editable">Stakeholder Recommendations</h3>
+        <h2 class="editable">What Can I Do To Solve Food Waste?</h2>
       </div>
     </div>
     {% include stakeholders/grid.html %}
@@ -322,15 +311,14 @@ cta:
 
 {% include components/cta_insights_engine.html item=layout.cta_insights_engine %}
 
-{% if page.case_studies.size > 0 %}
-  {% for slug in page.case_studies %}
-    {% assign item = site.case_studies | where: 'slug', slug | first %}
-    {% include components/slide.html  item=item %}
-  {% endfor %}
-{% endif %}
 
-<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+{% include components/carousel.html
+  items=page.case_studies
+  layout="split"
+  theme="white"
+  id="caseStudyCarousel"
+  editor-link="#case_studies"
+%}
 
-</div>
 
 {% include components/cta.html item=layout.cta editor-link="#cta" %}
