@@ -122,7 +122,7 @@ cta:
 
     {% for object in page.featured_articles %}
       {% assign item = site.articles | where: 'slug', object | first %}
-      {% include modules/card_horizontal.html item=item editor-link="#featured-articles" %}
+      {% include modules/card_horizontal.html item=item editor-link="#featured_articles" %}
     {% endfor %}
 
   </div>
@@ -176,7 +176,9 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">1.8B</div>
-              <label class="editable my-1">Meals<br class="d-none d-lg-block"> Recovered</label>
+              <label class="my-1">
+                <span class="editable">Meals<br class="d-none d-lg-block"> Recovered</span>
+              </label>
             </div>
           </div>
         </div>
@@ -187,7 +189,9 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">1.6T</div>
-              <label class="editable my-1">Gallons of<br class="d-none d-lg-block"> water conserved</label>
+              <label class="my-1">
+                <span class="editable">Gallons of<br class="d-none d-lg-block"> water conserved</span>
+              </label>
             </div>
           </div>
         </div>
@@ -198,7 +202,8 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light">$6B</div>
-              <label class="editable my-1">Consumer<br class="d-none d-lg-block"> Savings</label>
+              <label class="my-1">
+                <span class="editable">Consumer<br class="d-none d-lg-block"> Savings</label></span>
             </div>
           </div>
         </div>
@@ -209,7 +214,9 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">15K</div>
-              <label class="editable my-1">Jobs<br class="d-none d-lg-block"> Created</label>
+              <label class="editable my-1">
+                <span class="editable">Jobs<br class="d-none d-lg-block"> Created</span>
+              </label>  
             </div>
           </div>
         </div>
@@ -221,7 +228,9 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">18M</div>
-              <label class="editable my-1">Tons greenhouse gas emissions reduced</label>
+              <label class="my-1">
+                <span class="editable">Tons greenhouse gas emissions reduced</span>
+              </label>
             </div>
           </div>
         </div>
@@ -247,6 +256,7 @@ cta:
   image_to_edge=true
   text_to_edge=true
   section_class='p-0'
+  editor-link="#featured_case_studies"
 %}
 
 <section id="partner-with-us">
