@@ -309,7 +309,10 @@ cta:
   </div>
 </section>
 
-{% include components/cta_insights_engine.html item=layout.cta_insights_engine %}
+{% include components/cta_insights_engine.html
+  item=layout.cta_insights_engine
+  theme="light"
+%}
 
 
 {% include components/carousel.html
@@ -321,4 +324,8 @@ cta:
 %}
 
 
-{% include components/cta.html item=layout.cta editor-link="#cta" %}
+{% include components/cta.html
+  item=layout.cta
+  theme="light"
+  editor-link="#cta"
+%}
