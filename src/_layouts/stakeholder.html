@@ -1,25 +1,5 @@
 ---
 layout: default
-cta_insights_engine:
-  label: Our Newest Innovation
-  title: ReFED Insights Engine
-  featured_image: /img/laptop-screen-fpo.jpg
-  summary:
-  link:
-    label: Launch ReFED Insights Engine
-    url: 'https://www.insights-engine-fpo.com/'
-    alt:
-cta:
-  title:
-  label:
-  description_html: >-
-    <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
-  link:
-    label: See All Solutions
-    url: /food-waste-solutions
-    alt:
-  theme:
-  add_divider:
 ---
 <!-- Hero -->
 {% include components/hero.html item=page.hero %}
@@ -39,7 +19,7 @@ cta:
 
 <!-- Insights Engine -->
 {% include components/cta_insights_engine.html
-  item=layout.cta_insights_engine
+  item=page.cta_insights_engine
   theme="light"
 %}
 
@@ -56,7 +36,7 @@ cta:
 
 <!-- CTA -->
 {% include components/cta.html
-  item=layout.cta
+  item=page.cta
   theme="light"
   editor-link="#cta"
 %}
