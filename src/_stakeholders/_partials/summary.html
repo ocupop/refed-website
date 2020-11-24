@@ -17,7 +17,7 @@
             <div
               data-cms-editor-link="cloudcannon:#summary_html"
               data-cms-editor-link-style="modal"
-              class="editor-link"
+              class="cms-editor-link"
             >
               {{ page.summary_html }}
             </div>
@@ -45,7 +45,7 @@
               <p
                 data-cms-editor-link="cloudcannon:#causes"
                 data-cms-editor-link-style="modal"
-                class="text-serif {% unless forloop.last %}mb-0{% endunless %} editor-link">
+                class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">
                 {{ cause.label }}
               </p>
             {% endfor  %}
@@ -59,7 +59,7 @@
               <p
                 data-cms-editor-link="cloudcannon:#destinations"
                 data-cms-editor-link-style="modal"
-                class="text-serif {% unless forloop.last %}mb-0{% endunless %} editor-link">{{ destination.label }}</p>
+                class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">{{ destination.label }}</p>
             {% endfor  %}
             <a href="{{ site.insights_engine_url }}" class="btn btn-link editable">See more in the Insights Engine</a>
             {% endif %}
