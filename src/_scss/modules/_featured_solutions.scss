@@ -1,14 +1,16 @@
-.featured-solutions{
-  .filterable-list{
-    .flickity-slider{
+.featured-solutions {
+  .filterable-list {
+    .flickity-slider {
       //display:flex;
     }
-    .filterable-list-item{
+    .filterable-list-item {
       //height:100%;
     }
   }
 }
-.horizontal-carousel-arrows-only.flickity-resize .filterable-list-item{
+
+// TODO: this is a crazy class selector for what appears to be a simple style declaration. Please avoid adding custom classes when you can accomplish the same thing using Bootstrap classes.
+.horizontal-carousel-arrows-only.flickity-resize .filterable-list-item {
   height: 100%;
   display: flex;
   flex-direction: column;

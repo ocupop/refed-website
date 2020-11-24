@@ -1,6 +1,4 @@
-// TODO: Add everyone's favorite utility classes.
-
-// Responsive Cards
+// Responsive Cards - TODO: Refactor to use Bootstrap:
 .responsive-card-deck {
   @include make-responsive-cards();
   margin-left: -15px;
@@ -8,20 +6,25 @@
 }
 
 // Background utlities
+.bg-hero,
 .bg-image,
 .bg-video,
 .bg-iframe,
-.hero-image,
+.bg-placeholder,
+.bg-color-info,
 .responsive-iframe {
   position: relative;
-  display: block;
+  display: flex;
   height: 0;
+  padding-top: 25%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: $black;
-  // background-image: url(https://via.placeholder.com/700x500/f2783c/f2783c?text=placeholder);
+  background-color: $darker;
   overflow: hidden;
+  &.bg-contain {
+    background-size: contain;
+  }
   &.aspect-1x1 {
     padding-top: 100%;
   }
@@ -31,6 +34,9 @@
   &.aspect-3x1 {
     padding-top: 33%;
   }
+  &.aspect-4x1 {
+    padding-top: 25%;
+  }
   &.aspect-4x3 {
     padding-top: 75%;
   }
@@ -39,6 +45,10 @@
   }
   &.aspect-16x9 {
     padding-top: 56.25%;
+  }
+  &.aspect-auto {
+    height: auto;
+    padding-top: 0;
   }
 
   iframe {
@@ -62,8 +72,74 @@
   }
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-placeholder {
+  background-color: $black;
+  color: $white;
+  &.aspect-auto {
+    padding-top: 0;
+    .bg-fill {
+      position: relative;
+    }
+  }
+}
+
+.bg-hero {
+  h1,
+  h2 {
+    font-size: calc(16px + 2vw);
+  }
+  h3 {
+    font-size: calc(16px + 1vw);
+  }
+  .btn-link {
+    color: $rescue;
+    &:hover {
+      color: lighten($rescue, 15%);
+    }
+  }
+  .bg-fill {
+    padding: 1rem 0;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    background-color: rgba($black, 0.5);
+    @include media-breakpoint-down(md) {
+      // TODO: refactor so that hero displays well in all conditions on mobile viewports
+      // position: relative;
+    }
+  }
+}
+
+.bg-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-full {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-half {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-third {
+  min-height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-responsive {
@@ -84,145 +160,43 @@
   max-width: rem(900);
 }
 
-// TODO: This should use Bootstrap syntax of "text-" instead of "font-"
-.font-serif {
-  font-family: $font-family-serif;
-}
-
-// TODO: Let's use Bootstrap color maps in _settings.scss to accomplish
-.bg-lightest {
-  background-color: $almost-white;
-}
-
-.logo-farm {
-  margin-top: rem(40);
-  margin-left: rem(-20);
-  margin-right: rem(-20);
-  img {
-    display: inline-block;
-    margin: rem(20);
-  }
-}
-
-.icon-img-xl {
-  max-width: 8.5rem;
-  width: 8.5rem;
-}
-
-.icon-img-lg {
-  max-width: 100px;
-  width: 100%;
-}
-
-.icon-img-md {
-  max-width: 80px;
-  width: 100%;
-}
-
-.icon-img-sm {
-  max-width: 60px;
-  width: 100%;
-}
-
-@media screen and (min-width: $screen-md-min) {
-  ul.two-column-list {
-    column-count: 2;
-    column-gap: 80px;
-    li {
-      -webkit-column-break-inside: avoid;
-    }
-  }
-}
-
-@media screen and (min-width: $screen-md-min) {
-  .two-columns {
-    column-count: 2;
-    article {
-      -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-      page-break-inside: avoid; /* Firefox */
-      break-inside: avoid; /* IE 10+ */
-    }
-  }
-}
-/* STRETCH COLUMN content inside of a container all the way to the edge of the browser */
-/*
-SAMPLE
-<section>
-  <div class="container extend-to-browser-edge">
-    <div class="row">
-      <div class="p-5 col-12 col-md-8 stretch-left stretch-bkg" style="background-color:green;"><span class='stretched-inner' style="background-color:green;"></span>Content</div>
-      <div class="p-5 col-12 col-md-4 stretch-right stretch-image" style="background-color:blue;"><span class='stretched-inner' style="background-image:url(https://picsum.photos/id/134/1000/333)"></div>
-    </div>
-  </div>
-</section>
-*/
-.extend-to-browser-edge {
-  .stretch-left .stretched-inner,
-  .stretch-right .stretched-inner {
-    position: absolute;
+// Add the random colorbar to seperate sections from design
+section.divide {
+  &::before {
     content: "";
+    position: absolute;
+    height: 0;
+    width: 200px;
+    min-width: 10%;
+    max-width: 50%;
     top: 0;
-    bottom: 0;
-    display: block;
-    z-index: -1;
+    left: 0;
+    border-top: 20px solid $salmon;
   }
-  .stretch-image {
-    .stretched-inner {
-      z-index: 1;
-    }
-    > .stretched-inner {
-      background-size: cover;
-      background-position: center center;
-    }
-  }
-
-  /* Mobile Only */
-  @include media-breakpoint-down(lg) {
-    .stretch-left .stretched-inner,
-    .stretch-right .stretched-inner {
-      width: calc(100vw);
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  /* Desktop Only */
-  @include media-breakpoint-up(xl) {
-    position: relative;
-    .stretch-left .stretched-inner,
-    .stretch-right .stretched-inner {
-      width: calc(
-        100% + (((100vw) - #{map-get($container-max-widths, "xl")}) / 2)
-      ); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-      @media screen and (max-width: $screen-lg-min) {
-        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "lg")}) / 2));
-      }
-      @media screen and (max-width: $screen-md-min) {
-        width: calc(100% + (((100vw) - #{map-get($container-max-widths, "md")}) / 2));
-      }
-    }
-
-    .stretch-left .stretched-inner {
+  &.divide-right {
+    &::before {
       right: 0;
+      left: auto;
     }
-    .stretch-right .stretched-inner {
+  }
+  &.divide-left {
+    &::before {
       left: 0;
+      right: auto;
     }
   }
 }
 
-/*
-@media screen and (min-width:  $screen-xl-min) {
-  // special spacing for the strata under the home page hero.
-  &.container-more-wide {
-      .stretch-left .stretched-inner,
-      .stretch-right .stretched-inner{
-        width: calc(100% + (((100vw - 17px) - 1374px ) / 2)); // width of the column plus the width of the gutter, minus 17px for the scrollbar width.
-      }
-    }
+// Text Utilities
+.text-serif {
+  font-family: $font-family-serif !important;
 }
-*/
-/* END STRETCH COLUMN */
+.text-sans-serif {
+  font-family: $font-family-base !important;
+}
+.text-lg {
+  font-size: 1.2rem;
+}
 
 .opacity-0 {
   opacity: 0;
@@ -267,4 +241,37 @@ SAMPLE
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// TODO: How does this fit in with the mixin?
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  &.arrow-up {
+    border-bottom: 10px solid $white;
+  }
+  &.arrow-down {
+    border-top: 10px solid $white;
+  }
+}
+
+.section__colorbar {
+  position: absolute;
+  height: 15px;
+  width: 100px;
+  max-width: 25%;
+  top: 0;
+  &.right {
+    right: 0;
+  }
+  &.left {
+    left: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 200px;
+    height: 20px;
+    max-width: 50%;
+  }
 }

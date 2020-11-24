@@ -1,3 +1,17 @@
 ---
 layout: default
+title: Tom's Sandbox
+collection: case_studies
+slug: sample-case-study
 ---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% assign item = site[page.collection] | where: 'slug', page.slug | first %}
+        <h1>Title: {{ item.title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>

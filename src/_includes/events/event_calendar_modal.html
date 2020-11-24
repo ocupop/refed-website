@@ -1,0 +1,18 @@
+<div class="modal fade" id="modal-calendar" tabindex="-1" role="dialog" aria-labelledby="modal-calendar"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="font-weight-lighter">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% include events/google_calendar_link.html %}
+        {% if page.start_time%}
+          {% include events/ics_calendar_link.html %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sandbox
 hero:
   - title: We're on a mission to end food waste through data-driven solutions
     subtitle:
@@ -11,7 +11,7 @@ hero:
       - link:
         link_label:
         button_type:
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
     subtitle:
     description_html:
     image:
@@ -62,14 +62,14 @@ carousel_testimonial:
     author: Firstname Lastname
     cite: CEO and Founder of Somecompanyname
 two_column_slide:
-  - image: 'https://via.placeholder.com/615x615'
+  - featured_image: 'https://via.placeholder.com/615x615'
     title: Slide Title
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
       nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
     link: /contact/
     link_label: Contact
-  - image: 'https://via.placeholder.com/515x615'
+  - featured_image: 'https://via.placeholder.com/515x615'
     title: Slide Title
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -117,7 +117,7 @@ carousel_cards:
         Vestibulum lacinia arcu eget nulla. Class aptent taciti
       featured_image: 'https://via.placeholder.com/500x500'
       link: 'https://www.google.com/'
-      link_label: Different Link    
+      link_label: Different Link
 ---
 <section class="pb-0">
   <div class="container">
@@ -128,7 +128,9 @@ carousel_cards:
     </div>
   </div>
 </section>
-{% include sections/carousels/carousel_hero.html hero=page.hero %}
+
+{% include components/hero.html items=page.site.case_studies %}
+
 <section class="pb-0">
   <div class="container">
     <div class="row">
@@ -166,7 +168,7 @@ carousel_cards:
     </div>
   </div>
 </section>
-{% include sections/carousels/carousel_two_column.html two_column_slide=page.two_column_slide %}
+{% include sections/carousels/carousel_two_column.html two_column_slide=site.case_studies %}
 <section class="pb-0">
   <div class="container">
     <div class="row">
@@ -180,11 +182,13 @@ carousel_cards:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include sections/carousels/carousel_cards.html items=page.carousel_cards.cards %}
+        {% include sections/carousels/carousel_cards.html items=site.case_studies %}
       </div>
     </div>
   </div>
 </section>
+
+{% include sections/carousels/carousel_split.html items=site.case_studies items=site.case_studies section_background_color='primary' image_width='50%' image_alignment='right' image_to_edge=true text_to_edge=true section_class='p-0' %}
 
 
 

@@ -1,0 +1,112 @@
+.accordion {
+  .accordian-label {
+    font-size: 1.4rem;
+    color: $rescue-400;
+    .toggle {
+      width: 1.7rem;
+      float: right;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: rem(13);
+      svg {
+        display: block;
+        max-width: 100%;
+        transform: rotate(0deg);
+        transform-origin: 50% 65%;
+        transition: transform 0.2s linear;
+        polygon {
+          fill: $white;
+        }
+        path {
+          fill: transparent;
+        }
+      }
+    }
+    &.collapsed {
+      color: $white;
+      &:hover {
+        color: $rescue-400;
+        .toggle {
+          svg {
+            polygon {
+              fill: transparent;
+            }
+            path {
+              fill: $rescue-400;
+            }
+          }
+        }
+      }
+      .toggle {
+        svg {
+          max-width: 100%;
+          transform: rotate(180deg);
+          polygon {
+            fill: transparent;
+          }
+          path {
+            fill: $mid;
+          }
+        }
+      }
+    }
+  }
+  .accordian-content {
+  }
+}
+
+.accordion-theme-2 {
+  .accordian-label {
+    font-size: 1.5625rem;
+    color: $rescue-400;
+    .toggle {
+      width: rem(40);
+      height: rem(40);
+      background-color: $primary;
+      padding: 0.7rem 0.6rem;
+      transition: background-color 0.2s linear;
+      svg {
+        width: 100%;
+        transform: rotate(0deg);
+        transform-origin: 50% 56%;
+        transition: transform 0.3s linear;
+        polygon {
+          fill: $white;
+        }
+        path {
+          fill: $white;
+        }
+      }
+    }
+    &.collapsed {
+      &:hover {
+        .toggle {
+          svg {
+            polygon {
+              fill: $primary;
+            }
+            path {
+              fill: $primary;
+            }
+          }
+        }
+      }
+      .toggle {
+        background-color: transparent;
+        svg {
+          max-width: 100%;
+          transform: rotate(180deg);
+          polygon {
+            fill: $primary;
+          }
+          path {
+            fill: $primary;
+          }
+        }
+      }
+    }
+  }
+  .accordian-content {
+  }
+}

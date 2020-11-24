@@ -1,0 +1,70 @@
+{% assign item = include.item %}
+
+<div 
+  class="row my-5 {{ post.news_type | slugify }}"
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal">
+
+    {% if include.featured_image or item.featured_image %}
+      {% if include.image_size == 'contain' %}
+        <div class="col-6 col-md-4 col-lg-{{left_col_size | default: 3}} mx-auto d-flex align-items-center">
+          <img src="{{ include.featured_image | default: item.featured_image}}" class="w-100 mb-3" alt="" />
+        </div>
+      {% else %}
+        <div class="col-12 col-sm-9 col-md-4 col-lg-{{ include.left_col_size | default: 3}}   mb-3">
+          <div class="bg-image aspect-{{ include.aspect_ratio | default: '4x3' }} bg-dark flex-grow-1 flex-shrink-1" style="background-image:url('{{ include.featured_image | default: item.featured_image}}');"></div>
+        </div>
+      {% endif %}
+    {% endif %}
+  
+    <div class="{% if include.featured_image or item.featured_image %}col-12 col-md-8 col-lg-9{% else %}col-12{% endif %}">
+      <h4>{{ include.title | default: item.title }}</h4>
+  
+      {% if include.item_date or item.item_date %}
+        <h6 class="text-gray"> 
+            {% if include.source or item.source %}{{ include.source | default: item.source }} | {% endif %}  
+            {{ include.item_date | default: item.item_date | date: "%B %-d, %Y" }}
+        </h6>
+      {% endif %}  
+
+      <div  class="border-top border-color-mid pt-3 my-3">
+        {{ item.summary | default: item.description_html | truncatewords: 50 }}
+      </div> 
+
+      {% if item.link %}
+      <a href="{{ include.link | default: item.link }}" class="btn btn-link" target="_blank">{{ include.link_label | default: 'Read More' }}</a>
+      {% elsif include.url or item.url %}
+        <a href="{{ include.url | default: item.url }}" class="btn btn-link" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
+      {% endif %}
+    </div>
+  </div>
+
+
+  {% comment %}
+  THE FOLLOWING VARIABLES CAN BE PASSED INTO THIS INCLUDE 
+  
+    image_size ('cover' or 'contain'. Default: contain)
+    featured_image
+    aspect_ratio (default: '4x3')
+    title
+    excerpt
+    date 'dd-mm-yyyy'
+    left_col_size (default '4')
+    url
+    link_label
+    link_target (default: '_self')
+    excerpt
+    source
+    item:
+      news_type ('newsletter', 'press' or 'archive')
+      featured_image
+      aspect_ratio (default: 4x3)
+      title
+      excerpt
+      item_date 'dd-mm-yyyy'
+      url
+      summary
+      source
+      
+  {% endcomment %}
+  

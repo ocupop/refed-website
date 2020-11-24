@@ -1,0 +1,21 @@
+{% assign featured = site.events | where: 'slug', page.featured_event | first %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Featured Event</h3>
+        <h2>{{ featured.title }}</h2>
+        {% if featured.date_label %}
+          <h6 class="text-gray mb-3">{{ featured.date_label }}</h6>
+        {% else %}
+          <h6 class="text-gray mb-3">{{ featured.date_label | default: featured.item_date | date: '%B %-d, %Y' }}</h6>
+        {% endif %}
+        {{ featured.description_html }}
+        <p><a href="{{ featured.event_site_link | default: featured.url }}" {% if featured.event_site_link %}target="_blank"{% endif %} class="btn btn-link">Learn more</a></p>
+        {% if featured.featured_image %}
+          <img class="img-fluid mt-5" src="{{ featured.featured_image}}" alt="{{ featured.title }} image" />
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

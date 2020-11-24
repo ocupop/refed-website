@@ -2,16 +2,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  @include media-breakpoint-down(md) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include darken-bkg-image(0.8,$primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include darken-bkg-image(0.8,$dark);
   .testimonial-slide {
-    padding-top: 100px;
-    @include media-breakpoint-down(md) {
-      padding-top: 60px;
-    }
+    padding-top: 60px;
     blockquote{
       font-weight: $font-weight-normal;
       font-size: 1.9rem;
@@ -41,13 +36,5 @@
   .flickity-page-dots{
     top: 0;
     bottom: inherit;
-  }
-  .flickity-prev-next-button {
-    &.next {
-      right: 0;
-    }
-    &.prev {
-      left: 0;
-    }
   }
 }

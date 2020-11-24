@@ -1,0 +1,23 @@
+{% unless item %}
+  {% assign item = include.item %}
+{% endunless %}
+<section>
+  <div class="container cms-editor-link">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 {% if include.reverse %}order-2{% endif %}">
+        <div class="p-5">
+          {% if item.label %}<h3>{{ item.label }}</h3>{% endif %}
+          {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+          {{ item.excerpt | default: item.description_html | truncatewords: 40 }}
+          {% if item.url %}
+          <a href="{{ item.url }}" class="btn btn-link">{{ site.default_cta }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        {% include components/image.html aspect="4x3" src=item.featured_image %}
+      </div>
+    </div>
+  </div>
+</section>
+

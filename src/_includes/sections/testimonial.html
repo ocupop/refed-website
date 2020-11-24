@@ -1,7 +1,11 @@
-<section class="testimonial testimonial-{{include.testimonial.section_background_color}} {{include.testimonial.image_alignment}}" id="{{ include.id }}">
-  <div class="container">
-    <div class="row">    
-    <div class="col-6 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">          
+<section 
+  class="testimonial bg-{{include.testimonial.section_background_color}} image-{{include.testimonial.image_alignment}}"
+  id="{{ include.id }}"
+  data-cms-editor-link="cloudcannon:{{ include.editor-link | default: '#testimonials'}}"
+  data-cms-editor-link-style="modal">
+  <div class="container cms-editor-link">
+    <div class="row">
+    <div class="col-6 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">
       <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url('{{ include.testimonial.image }}')"></div>
     </div>
       <div class="col-lg-7">
@@ -9,7 +13,7 @@
         <blockquote class="pr-lg-5">
           <p>“{{ include.testimonial.text }}”</p>
           <footer class="mt-5">
-            <div class="cite font-serif">
+            <div class="cite text-serif">
               {{ include.testimonial.author }}
               <div class="credentials font-italic">{{ include.testimonial.cite }}</div>
             </div>
@@ -17,8 +21,7 @@
         </blockquote>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>
 
-  

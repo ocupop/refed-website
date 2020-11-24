@@ -1,0 +1,30 @@
+---
+layout: sandbox
+title: Vizzuality API Sandbox
+solutions:
+  - title: Buyer Spec Expansion
+    api_endpoint: >-
+      https://refed-api-staging.herokuapp.com/solution_database/solutions/buyer-spec-expansion
+  - title: Coordination Matching
+    api_endpoint: >-
+      https://refed-api-staging.herokuapp.com/solution_database/solutions/coordination-matching
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      {% for solution in page.solutions %}
+        {% include components/SolutionDetail.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include components/StakeholdersList.html %}
+      </div>
+    </div>
+  </div>
+</section>

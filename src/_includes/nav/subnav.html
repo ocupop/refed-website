@@ -1,0 +1,22 @@
+<div class="subnav">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <span class="mr-3">{{ include.label }}:</span>
+        <nav class="navbar navbar-expand-md">
+          <button class="collapsed navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-{{ include.label | slugify }}"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex align-items-center justify-content-end"></span>
+          </button>
+          <ul id="nav-{{ include.label | slugify }}" class="nav navbar-collapse collapse">
+            {% for item in include.items %}
+            <li class="nav-item">
+              <a href="#{{ item.label | slugify }}" class="nav-link">{{ item.label }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

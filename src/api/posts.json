@@ -1,19 +1,20 @@
 ---
 layout: none
-permalink: api/posts
+title: API - Articles
+permalink: api/articles
 ---
 [
-{% for post in site.posts %}
+{% for article in site.articles %}
   {
-    "layout": {{ post['layout'] | jsonify }},
-    "url": {{ post['url'] | jsonify }},
-    "title": {{ post['title'] | jsonify }},
-    "slug": {{ post['slug'] | jsonify }},
-    "post_date": {{ post['post_date'] | jsonify }},
-    "date": {{ post['date'] | jsonify }},
-    "categories": {{ post['categories'] | jsonify }},
-    "tags": {{ post['tags'] | jsonify }},
-    "output": {{ post['output'] | jsonify }}
+    "layout": {{ article['layout'] | jsonify }},
+    "url": {{ article['url'] | jsonify }},
+    "title": {{ article['title'] | jsonify }},
+    "slug": {{ article['slug'] | jsonify }},
+    "article_date": {{ article['article_date'] | jsonify }},
+    "date": {{ article['date'] | jsonify }},
+    "categories": {{ article['categories'] | jsonify }},
+    "tags": {{ article['tags'] | jsonify }},
+    "output": {{ article['output'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

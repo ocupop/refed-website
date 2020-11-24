@@ -27,6 +27,9 @@ let webpackConfig = {
   },
   resolve: {
     extensions: [".json", ".js", ".jsx"],
+    alias: {
+      "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+    }
   },
 }
 

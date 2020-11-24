@@ -7,43 +7,66 @@
 @import "global/utilities";
 @import "global/base";
 @import "global/layout";
+@import "global/themes";
 @import "global/buttons";
 @import "global/typography";
+@import "global/icons";
 @import "global/animations";
 @import "global/header";
 @import "global/footer";
 
-@import "modules/carousels";
-@import "modules/card";
-@import "modules/hero";
-@import "modules/homepage_newsfeed";
-@import "modules/large_image_beyond_bounds_module";
-@import "modules/simple_copy_and_cta";
+// Nav
+@import "nav/socialnav";
+@import "nav/subnav";
+@import "nav/primarynav";
+@import "nav/topnav";
+
+// Components
+@import "components/carousel";
+@import "components/hero";
+@import "components/split";
+@import "components/insights_engine";
+
+// TODO: Migrate all module styles
+
+@import "modules/form_assembly";
 @import "modules/circle_icon_list";
-@import "modules/staff";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
-@import "modules/owl_carousel";
-@import "modules/reduction_solutions_chart";
-@import "modules/split_carousel";
+@import "modules/key_indicators_box";
+@import "modules/horizontal_card";
+
+// Collection Specific Styles
+@import "collections/stakeholders";
+
+// Page Specific Styles
+@import "pages/home/reduction_solutions_chart";
 
 @import "pages/our_funders";
 @import "pages/who_we_are";
 @import "pages/our_team";
-@import "pages/food_waste.scss";
+@import "pages/food_waste";
+@import "pages/newsroom";
+@import "pages/engage";
+@import "pages/project_settings";
 
+// TODO: Refactor Section styles
 @import "sections/card_grid";
 @import "sections/testimonial";
+@import "sections/carousels/all_carousels";
 @import "sections/carousels/carousel_images";
-@import "sections/carousels/carousel_hero";
+
+@import "sections/carousels/carousel_split";
 @import "sections/carousels/carousel_testimonials";
 @import "sections/cta";
-@import "sections/insights_engine";
 
-@import "nav/primary";
-@import "nav/utility";
-@import "nav/sticky_nav";
+@import "sections/logo_pile";
+@import "sections/split_section";
+@import "sections/accordion";
+@import "sections/accordion";
+@import "sections/theory_of_change";
+
+@import "sections/newsroom_filter";
 
 @import "vendor/bootstrap";
-
-
+@import "vendor/cloudcannon";

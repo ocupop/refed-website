@@ -1,27 +1,22 @@
+// %btn {
+// } // end .button
 
-%btn {
+// .btn {
+//   //@extend %btn;
+// }
 
-} // end .button
-
-
-
-.btn{
-    //@extend %btn;
-}
-
-%text-btn {
-  font-weight: $font-weight-semibold;
-  color: $blue;
-  &:after{
-    content: '';
-    @include arrow(right,8px,$blue);
-    margin-left: 12px;
-    vertical-align: -4px;
-  }
-}
-
-.text-link, .card-link{
-  @extend %text-btn;
-}
+// %text-btn {
+//   font-weight: 600;
+//   color: $blue;
+//   &:after {
+//     content: "";
+//     @include arrow(right, 8px, $blue);
+//     margin-left: 12px;
+//     vertical-align: -4px;
+//   }
+//   &.text-rescue-400:after {
+//     @include arrow(right, 8px, $rescue-400);
+//   }
+// }
 
 

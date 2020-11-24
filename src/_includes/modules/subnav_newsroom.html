@@ -1,0 +1,16 @@
+<section class="subnav bg-teal py-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+        <nav class="navbar navbar-expand-md" id="secondarynav">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ml-4"><a href="/newsroom" class='text-light opacity-5 {% if page.url ==  "/newsroom/" %}opacity-100 active{% endif %}'>Blog</a></li>
+            <li class="nav-item ml-4"><a href="/newsroom/press" class='text-light opacity-5 {% if page.url contains "/press/" %}opacity-100 active{% endif %}'>In The Press</a></li>
+            <li class="nav-item ml-4"><a href="/newsroom/newsletter-archive" class='text-light opacity-5 {% if page.url contains "/newsletter-archive/" %}opacity-100 active{% endif %}'>Newsletter Archive</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+

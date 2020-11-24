@@ -7,23 +7,29 @@ url: 'https://victorious-shoe.cloudvent.net'
 # url: 'http://www.refed.com' # the base hostname & protocol for your site
 permalink: pretty
 
+# timezone: EST
+
 twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
-insights_engine_url: https://trusty-sanctuary.cloudvent.net
-insights_engine_api_url:
+insights_engine_url:  https://insights-engine.vercel.app/
+insights_engine_description: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
+insights_engine_api_baseurl: https://api.refed.com/v2/
+
+# Default Values
+default_cta: Learn More
+
+
 
 # Collections
 collections:
-  posts:
+  articles:
     output: true
-    permalink: /posts/:title/
+    permalink: /articles/:title/
   press:
     output: false
     sort_by: date
   newsletters:
-    output: true
-  team_members:
     output: false
   case_studies:
     output: true
@@ -31,20 +37,85 @@ collections:
     output: false
   action_areas:
     output: true
+    permalink: /action-areas/:title/
   stakeholders:
     output: true
+    permalink: /stakeholders/:title/
   events:
     output: true
-  reports_and_guides:
+  downloads:
     output: true
 
-
 defaults:
-  - scope:
-      type: "action_areas"
+  -
+    scope:
+      type: 'articles'
+    values:
+      layout: article
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/articles"
+  -
+    scope:
+      type: 'press'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/press"
+  -
+    scope:
+      type: 'newsletters'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/newsletters"
+  -
+    scope:
+      type: 'case_studies'
+    values:
+      layout: case_study
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/case-studies"
+  -
+    scope:
+      type: 'action_areas'
     values:
       layout: action_area
-      permalink: /action/:title/
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/action_areas"
+  -
+    scope:
+      type: 'stakeholders'
+    values:
+      layout: stakeholder
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/stakeholders"
+  -
+    scope:
+      type: 'events'
+    values:
+      # layout:
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/events"
+  -
+    scope:
+      type: 'downloads'
+    values:
+      layout: download
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/downloads"
+
+      # variable_name: value
+  # - scope:
+  #     type: events
+  #   values:
+  #     date: "YYYY-MM-DD HH:MM:SS +/-TTTT"
+
 
 # Build settings
 safe: false
@@ -54,23 +125,45 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-contentblocks
 
 _array_structures:
-  navigation:
-    - label: Navigation
-      icon: link
-      value:
-        link:
-        title:
-        links:
   links:
     - label: Links
       icon: link
       value:
-        title:
-        link:
+        label:
+        url:
+        alt:
         links:
         _stay_connected: false
+  sections:
+    - label: Standard
+      icon: article
+      value:
+        _type: single_column
+        title:
+        content_html:
+    - label: Hero
+      icon: panorama
+      value:
+        _type: hero
+        title:
+        label:
+        content_html:
+        image:
+        links:
+
+  # TODO: Confirm the need for this array structure
+  # navigation:
+  #   - label: Navigation
+  #     icon: link
+  #     value:
+  #       link:
+  #       title:
+  #       links:
+
+
   page_sections:
     - label: Single Column
       icon: article
@@ -139,26 +232,10 @@ _array_structures:
         image:
         section_background_color:
         image_alignment:
-  cta_insights_engine:
-    - label: Insights Engine
-      icon: computer
-      value:
-        preheader: Our Newest Solution
-        title: ReFED Insights Engine
-        description_html: >-
-          <p>ReFED Insights Engine is an online data center designed to serve as the next
-            generation of data, insights, and guidance on U.S. food waste. With more granular
-            data, more extensive analysis, more customized views, and the ability to be
-            updated regularly, we see this tool as laying the foundation for action around
-            our 2030 national goal to reduce food waste by 50 percent.</p>
-        link: 'https://www.insights-engine-fpo.com/'
-        link_label:
-        laptop_screen_image: /img/laptop-screen-fpo.jpg
   logo_pile:
     - label: Logo Pile
       icon: view_module
       value:
-        preheader:
         headline:
         text:
         logos:
@@ -183,6 +260,7 @@ _array_structures:
         text:
         featured_image:
         link:
+        link_label:
   images:
     - label: Images
       icon: insert_photo
@@ -240,14 +318,11 @@ _array_structures:
         description_html:
         link:
         link_label:
-        colorbar:
-          color:
-          bar_position:
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode
       value:
-        image:
+        featured_image:
         title:
         description_html:
         link:
@@ -277,11 +352,95 @@ _array_structures:
           title:
           embed_url:
 
+  sectors:
+    - label: Sector
+      icon: pie_chart
+      value:
+        label:
+        summary:
+        metrics:
+  metrics:
+    - label: Key metrics
+      icon: insights
+      value:
+        label:
+        slug:
+
+# Action Areas Taxonomy
+action_area_categories:
+  - label: Prevention
+    uid: prevention
+    areas:
+      - label: Optimize The Harvest
+        slug: optimize-the-harvest
+        uid: optimize
+      - label: Enhance Product Distribution
+        slug: enhance-product-distribution
+        uid: enhance
+      - label: Refine Product Management
+        slug: refine-product-management
+        uid: refine
+      - label: Maximize Product Utilization
+        slug: maximize-product-utilization
+        uid: maximize
+      - label: Reshape Consumer Environments
+        slug: reshape-consumer-environments
+        uid: reshape
+  - label: Rescue
+    uid: rescue
+    areas:
+      - label: Strengthen Food Rescue
+        slug: strengthen-food-rescue
+        uid: rescue
+  - label: Recycling
+    uid: recycle
+    areas:
+      - label: Recycle Anything Remaining
+        slug: recycle-anything-remaining
+        uid: recycle
+
+# Stakeholder Taxonomy
+stakeholder_categories:
+  - label:
+    uid:
+    stakeholders:
+      - label: Producers
+        slug: producers
+        uid: producers
+      - label: Manufacturing
+        slug: manufacturing
+        uid: manufacturing
+      - label: Retail
+        slug: retail
+        uid: retail
+      - label: Restaurants & Foodservice
+        slug: restaurants-and-foodservice
+        uid: foodservice
+  - label:
+    uid:
+    stakeholders:
+      - label: Policymakers
+        slug: policymakers
+        uid: policymakers
+      - label: Capital Providers
+        slug: capital-providers
+        uid: capital
 
 #hard coded select fields
-news_types:
-  - article
-  - newsletter
+add_dividers:
+  - left
+  - right
+
+themes:
+  - lighter
+  - light
+  - mid
+  - dark
+  - darker
+
+event_types:
+  - in_person
+  - webinar
 
 button_types:
   - text
@@ -291,6 +450,7 @@ document_types:
   - featured
   - report
   - guide
+  - series
 
 bar_position:
   - left
@@ -329,6 +489,10 @@ image_width:
 
 _comments:
   cards: page section for card grid that is not related to a collection
+
+_options:
+  layout:
+    hidden: true
 
 placeholder_image: 'https://via.placeholder.com/1000'
 

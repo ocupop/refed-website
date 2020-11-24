@@ -1,0 +1,223 @@
+---
+review: true
+layout: page
+title: ReFED Careers
+hero:
+  - title: Discover the difference and make your mark with us at ReFED
+    label:
+    description_html:
+    image: /img/careers/careers_header_image.jpg
+    links:
+perks_and_benefits:
+  - title: Competitive medical benefits package for individuals and families
+    icon_image: /img/icons/careers/careers_medicalbenefits.svg
+  - title: 401(k) plans with generous employer matching
+    icon_image: /img/icons/careers/careers_401k.svg
+  - title: Optional dental and vision coverage
+    icon_image: /img/icons/careers/careers_vision.svg
+  - title: Professional Development Opportunities and Mentor Program
+    icon_image: /img/icons/careers/careers_professionaldev.svg
+  - title: Short-term and long-term disability coverage
+    icon_image: /img/icons/careers/careers_disability.svg
+  - title: 'Paid holidays, vacation, sick, and family leave'
+    icon_image: /img/icons/careers/careers_holiday.svg
+  - title: Term life insurance
+    icon_image: /img/icons/careers/careers_lifeinsurance.svg
+  - title: Flexible work environment
+    icon_image: /img/icons/careers/careers_workenvironment.svg
+operation_principles:
+  - title: We are guided by integrity
+    list_items:
+      - title: We ensure our work advances our mission
+      - title: We go where the facts take us
+      - title: We prioritize the team over individuals
+      - title: We make sure our work is reliable
+      - title: We work efficiently
+      - title: We hold ourselves accountable
+      - title: We use the newspaper test
+    icon_image: /img/icons/operating_principles/operatingprinciples_integrity.svg
+  - title: We make our teammates feel good
+    list_items:
+      - title: We are flexible
+      - title: We create space for true time off
+      - title: We keep things in perspective
+      - title: We make work fun
+    icon_image: /img/icons/operating_principles/operatingprinciples_team.svg
+  - title: We communicate clearly
+    list_items:
+      - title: We use shared and simple language
+      - title: We expect and respect everyones’ opinions
+      - title: We communicate directly
+    icon_image: /img/icons/operating_principles/operatingprinciples_communicate.svg
+  - title: We work smartly
+    list_items:
+      - title: We act intentionally
+      - title: We expect and respect everyones’ opinions
+      - title: We collaborate wisely
+      - title: We define and honor project roles
+    icon_image: /img/icons/operating_principles/operatingprinciples_worksmartly.svg
+  - title: We take inspiration from design thinking
+    list_items:
+      - title: We identify and empathize with all stakeholders we affect
+      - title: >-
+          We are agile: we iterate quickly, learn from our work, and use it to
+          improve next time- We collaborate wisely
+      - title: We believe in progress not perfection
+    icon_image: /img/icons/operating_principles/operatingprinciples_design.svg
+
+cta:
+  title:
+  label:
+  description_html: >-
+    <p>Learn more about ReFED, our values, and our mission. <a
+    href="/contact">Contact us</a> if you think you are a good match.</p>
+  link:
+    label: Get to know us
+    url: /who-we-are
+    alt:
+  theme:
+  add_divider:
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable">
+          <p>At ReFED, we believe that a core pillar of our organization lies in the strength of our people. We are committed to attracting, developing, and retaining exceptional talent, and to creating a work environment that is dynamic, rewarding, and enables each of us to realize our potential.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="editable">Current Vacancies</h3>
+        <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
+        {% assign num_careers = site.careers | size %}
+        {% if num_careers < 1 %}
+          <div id="notification-careers" >
+            <p class="h3 my-5 editable">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
+          </div>
+        {% endif %}
+        <hr class="mb-5"/>
+      </div>
+    </div>
+    {% for career in site.careers %}
+      <div class="row mb-5">
+        <div
+          data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]"
+          class="col-12 cms-editor-link">
+          <h4>{{ career.title }}</h4>
+          <h5 class="text-gray">{{ career.location }}</h5>
+          {{ career.description_html }}
+          <a class="btn btn-primary mt-3" href="{{ career.apply_link }}" target="_blank">Apply Now</a>
+        </div>
+      </div>
+    {% endfor %}
+    <div data-cms-editor-link="cloudcannon:collections/_careers[+]" class="d-flex align-items-center editor-link">
+      <button class="mr-3 btn btn-editor">
+        <i class="ri-add-fill"></i>
+      </button>
+      <span>Add new job opening</span>
+    </div>
+  </div>
+</section>
+<section class="cta bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7 mb-3 mb-lg-0">
+        <p class="lead editable">Don’t see a match? We would still love to connect with you if you have something to bring to the table</p>
+      </div>
+      <div class="col-12 col-lg-4 text-lg-center ml-lg-auto d-lg-flex justify-content-lg-end align-items-lg-center">
+        <a href="#" class="btn btn-secondary text-serif btn-lg editable">Submit a Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h3 class="editable">Our Values</h3>
+        <p class="editable">Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.</p>
+        <a href="/who-we-are#our-values" class="btn btn-link editable">See our values</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 col-lg-10">
+        <div class="editable">
+          <h3>Perks and Benefits</h3>
+          <p>ReFED offers a competitive benefits package, opportunities for professional development, and policies and programs that encourage a healthy work-life balance. Join our ReFED family and help us drive purposeful action to reduce wasted food in the U.S.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      {% for benefit in page.perks_and_benefits %}
+        <div class="col-12 col-md-6">
+          <div
+            data-cms-editor-link="cloudcannon:#perks_and_benefits"
+            data-cms-editor-link-style="modal"
+            class="row align-items-center mb-5 cms-editor-link">
+            <div class="col-12 col-md-auto">
+              <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md mb-3 mb-md-0" alt="{{ benefit.title}} icon" />
+            </div>
+            <div class="col">
+              <p class="lead mb-0">{{ benefit.title }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="editable">Our Equity Commitment</h3>
+        <div class="editable">
+          <p>ReFED, Inc. is an equal opportunity employer. We believe that everyone has a seat at the table, and that this table always has room for growth. The success of our organization is rooted in the visible and invisible qualities of our people, who embody a variety of views, perspectives, and backgrounds to push the envelope of what&rsquo;s possible and better meet the needs of our community in the hopes of building a sustainable, resilient, and inclusive food system. Community is more than a word here. As stewards of this food system &mdash; one that benefits from the inclusion and enhancement of diverse voices &mdash; we recognize that systemic barriers limit opportunities for certain groups which contributes to ongoing disparities. Furthermore, we accept that our commitment to diversity, equity, and inclusion (DEI) means a commitment to constant learning, listening, and iteration in all aspects of our work.</p>
+          <p>Intrinsically, we are an organization that seeks to attract exceptional and dedicated talent to advance our mission, and that firmly believes that inclusion through recruiting, hiring, developing, training, and promoting employees of all genders, races, religions, ages, national origin, political affiliations, ancestries, sexual orientations, disabilities, and veteran status, creates an atmosphere that enables us to lead with an entrepreneurial spirit and innovate with enterprise. The time for action to reduce food waste is now. Let&rsquo;s work together to advance data-driven solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mb-5 editable">Operation Principles at ReFED:</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for principle in page.operation_principles %}
+        <div
+          data-cms-editor-link="cloudcannon:#operation_principles"
+          data-cms-editor-link-style="modal"
+          class="col-12 col-md-6 mb-5 cms-editor-link">
+          <img src="{{ principle.icon_image }}" class="img-fluid w-25 mb-4" alt="{{ principle.title }}" />
+          <h4 class="mb-3">{{ principle.title }}</h4>
+          <ul class="pl-3">
+            {% for item in principle.list_items %}
+              <li class="mb-3">{{ item.title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include components/cta.html item=page.cta editor-link="#cta" %}

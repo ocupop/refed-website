@@ -1,59 +1,29 @@
 ---
 layout: default
 ---
-{% include modules/hero.html %}
-<section>
-  <div class="container">
-    <div class="float-sm-right mb-sm-5 ml-sm-5 w-50">
-      <img src="{{ page.image }}" class="w-100">
-    </div>
-    <div class="preheader pb-3 pr-5 mb-3">Overview</div>
-    {{ content }}
-    <div class="preheader pb-3 pr-5 mb-3">Impact</div>
-    <ul>
-      {% for impact in page.impacts %}
-        <li>{{ impact.title }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 
 
+{% include sections/hero.html title=page.title image=page.featured_image %}
 
+{% include sections/split_section.html
+  image_width='50%'
+  image_alignment='right'
+  image_to_edge=true
+  text_to_edge=false
+  item=page
+  omit_url=true
+  subtitle='Overview'
+  title=' '
+  description=page.content
+  image=page.overview_image
+%}
 
+{% for testimonial in page.testimonials %}
+  {% assign id = forloop.index | prepend:'testimonial-' %}
+  {% include sections/testimonial.html testimonial=testimonial id=id %}
+{% endfor %}
 
-{% if page.testimonial %} 
-
-<section class="testimonial testimonial-1 bg-primary text-white">
-    <a name="testimonials"></a>
-    <a name="testimonial-1"></a>
-    <div class="container">
-      <div class="row flex-md-row-reverse">    
-        <div class="col-md-4 mb-5 mb-md-0">          
-            <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url({{ page.testimonial.image }})"></div>
-        </div>
-        <div class="col-md-8">
-          <div class="h3 testimonial">
-            <blockquote class="pr-md-5">
-              “{{ page.testimonial.quote }}”</p>
-              <footer>
-                <div class="cite">
-                    {{ page.testimonial.name }}
-                  <div class="credentials font-italic">{{ page.testimonial.cite }}</div>
-                </div>
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>    
-    </div>
-  </section>
-  {% endif %}
-  
-
-
-
-{% include modules/cta.html %}
+{% include components/cta.html item=page.cta editor-link="#cta" %}
 
 
 

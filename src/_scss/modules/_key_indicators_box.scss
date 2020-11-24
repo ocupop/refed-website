@@ -1,0 +1,26 @@
+// TODO: This needs to be refactored and it looks like it is only applicable to the action areas?
+.key-indicators-box {
+    @include media-breakpoint-down(xs) {
+        flex-wrap: wrap;
+
+        > div {
+            border-left: none !important;
+            padding-left: 0 !important;
+            border-bottom: 1px solid $mid;
+            margin-bottom: rem(7);
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0 !important;
+            }
+        }
+        .key-indicators-box__stat {
+            width: 100%;
+            border-bottom: none;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        .key-indicators-box__label {
+            max-width: rem(100);
+        }
+    }
+}

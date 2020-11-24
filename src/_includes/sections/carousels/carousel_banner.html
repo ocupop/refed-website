@@ -1,0 +1,70 @@
+<div id="{{ include.id | default: 'heroCarousel' }}" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {% for item in include.items %}
+    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="bg-image aspect-3x1" style="background-image:url('{{ item.image | default: site.placeholder_image }}');">
+        <div class="bg-fill align-items-end">
+          <div class="position-relative bg-black-50 text-white py-5 w-100">
+            <div class="container">
+              <div class="row">
+                {% if include.items.size > 1 %}
+                <div class="col-1">
+                  <div class="bg-fill">
+                    <a class="text-white h1" href="#{{ include.id | default: 'heroCarousel' }}" role="button" data-slide="prev">
+                      <i class="ri-arrow-left-s-fill"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-1 order-3">
+                  <div class="bg-fill">
+                    <a class="text-white h1" href="#{{ include.id | default: 'heroCarousel' }}" role="button" data-slide="next">
+                      <i class="ri-arrow-right-s-fill"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                {% endif %}
+                <div class="col-10 col-lg-8">
+                  {% if item.subtitle %}
+                    <h3>{{ item.subtitle }}</h3>
+                  {% endif %}
+                  {% if item.title %}
+                    <h1>{{ item.title }}</h1>
+                  {% endif %}
+                  <div class="">
+                    {{ item.description_html | default: item.content | truncatewords: 30 }}
+                  </div>
+                  {% if item.link != nil %}
+                    <p>
+                      <a href="{{ item.link }}">{{ item.link_label | default: 'Learn More'}}</a>
+                    </p>
+                  {% endif %}
+                  {% if item.buttons.size > 0 %}
+                    <div class="hero-buttons mt-3">
+                      {% for button in hero.buttons %}
+                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} block mr-3"
+                                  href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if include.items.size > 1 %}
+  <!--
+    <ol class="carousel-indicators">
+      {% for item in include.items %}
+      <li data-target="#{{ include.id | default: 'heroCarousel' }}" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+      {% endfor %}
+    </ol>
+  -->
+  {% endif %}
+  {% include nav/socialnav.html %}
+</div>

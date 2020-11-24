@@ -1,33 +1,21 @@
 .testimonial{
-  &.testimonial-primary   { background-color:$primary; }
-  &.testimonial-secondary { background-color:$secondary; }
-  &.testimonial-success   { background-color:$success; }
-  &.testimonial-info      { background-color:$info; }
-  &.testimonial-warning   { background-color:$warning; }
-  &.testimonial-danger    { background-color:$danger; }
-  &.testimonial-light     { background-color:$light; }
-  &.testimonial-mid       { background-color:$mid; }
-  &.testimonial-dark      { background-color:$dark; }
-  &.testimonial-white      { background-color:$white; }
-  &.testimonial-black      { background-color:$black; }
-
-  &.testimonial-primary,
-  &.testimonial-secondary,
-  &.testimonial-success,
-  &.testimonial-info,
-  &.testimonial-warning,
-  &.testimonial-danger,
-  &.testimonial-mid,
-  &.testimonial-dark,
-  &.testimonial-black{
+  &.bg-primary,
+  &.bg-secondary,
+  &.bg-success,
+  &.bg-info,
+  &.bg-warning,
+  &.bg-danger,
+  &.bg-mid,
+  &.bg-dark,
+  &.bg-black{
     color:$white;
   }
 
-  &.right > .container > .row{
+  &.image-right > .container > .row{
     flex-direction: row-reverse !important;
   }
   @include media-breakpoint-down(md) {
-    &.right > .container > .row,{
+    &.image-right > .container > .row,{
         flex-direction: column-reverse !important;
     }
   }

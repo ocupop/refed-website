@@ -1,0 +1,26 @@
+{% assign item = include.item %}
+<section id="{{ include.id }}" class="bg-{{ include.theme | default: 'lighter' }}{% if item.add_divider %} divide divide-{{ item.add_divider | default: 'left' }}{% endif %}">
+  <div
+    data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
+    <div class="row">
+      <div class="col-lg-7">
+        {% if item.label %}<h2>{{ item.label }}</h2>{% endif %}
+        {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
+        {% if item.description_html %}
+          <div class="lead">{{ item.description_html }}</div>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-5">
+        <p class="text-right">
+          {% if item.link %}
+            {% assign link = item.link %}
+            <!-- TODO: Discuss if we should convert this to an include to standardize logic and fallbacks for links [components/link.html] -->
+            <a href="{{ link.url }}" title="{{ link.alt }}" class="btn btn-secondary text-serif btn-lg">{{ link.label }}</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

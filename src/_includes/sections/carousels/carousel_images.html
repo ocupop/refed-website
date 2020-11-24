@@ -1,4 +1,5 @@
-<div class="carousel-refed mb-5">
+{% assign num_items = include.items | size %}
+<div class="{% if num_items > 4 %}carousel-refed{% else%}d-flex flex-wrap{% endif %} mb-5">
   {% for item in include.items %}
     <div class="image-wrapper">
       <div class="image-item">

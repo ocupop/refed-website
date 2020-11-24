@@ -1,0 +1,252 @@
+#primarynav {
+  /* Large screen and above */
+  @include media-breakpoint-up(lg) {
+    .primary-nav-links {
+      &.navbar-nav {
+        margin-top: 1rem;
+        margin-bottom: -9px;
+        > li.nav-item {
+          font-size: 0.9rem;
+          margin-left: 10px;
+          position: inherit;
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 15px;
+          border-bottom: 9px solid transparent;
+          &:nth-child(1):hover {
+            border-bottom: 9px solid $red;
+          }
+          &:nth-child(2):hover {
+            border-bottom: 9px solid $blue;
+          }
+          &:nth-child(3):hover {
+            border-bottom: 9px solid $green;
+          }
+          &:nth-child(4):hover {
+            border-bottom: 9px solid $orange;
+          }
+          &:last-of-type {
+            a {
+              background-color: $teal;
+              color: $white;
+              &:hover {
+                background-color: darken($teal, 10%);
+              }
+            } 
+          }
+          a {
+            padding: 6px 12px;
+            font-weight: $font-weight-semibold;
+            color: $body-color;
+            cursor: pointer;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          .dropdown-menu {
+            border: none;
+            background-color: $dark;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: auto;
+            margin-top: 23px;
+            &::before {
+              content: '';
+              background-color: $dark;
+              width: 200vw;
+              height: 100%;
+              top: 0;
+              display: block;
+              position: absolute;
+              left: -50vw;
+            }
+    
+            > li.nav-item .menu-item,
+            .menu-item {
+              color: $white;
+            }
+            .sub-title {
+              a {
+                margin-bottom: 0.9rem;
+                text-transform: none; 
+                color: $white
+              }
+            }
+            ul {
+              li {
+                &.nav-item {
+                  a {
+                    font-weight: 300;
+                    font-size: 0.9rem;
+                    &:hover {
+                      text-decoration: none;
+                      color: $mid;
+                    }
+                  }
+                }
+              }
+            }
+    
+            .sub-menu {
+              border-right: 1px solid $gray-300;
+              padding-left: 2rem;
+              padding-right: 2rem;
+              &.two-col-sublinks {
+                flex: 0 0 50%;
+                max-width: 45%;
+                > ul {
+                  column-count: 2;
+                }
+              }
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
+        }
+        
+        .socialnav {
+          padding-left: 12px;
+          a {
+            margin-right: 10px;
+            padding: 10px;
+            i {
+              color: $dark;
+            }
+          }
+        }
+        .subscribe-item {
+          padding-left: 12px;
+          a {
+            &.btn-lg {
+              padding: 1rem 1.9rem;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* MOBILE ONLY */
+  @include media-breakpoint-down(md) {
+    // for both primary and utility links on mobile{
+    .navbar-nav {
+      li {
+        position: inherit;
+        a {
+          color: $white;
+          padding: 0.75rem 3rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: normal;
+          text-transform: none;
+          cursor: pointer;
+
+          .arrow {
+            width: 2.2rem;
+            height: 2.2rem;
+            transform: rotate(90deg);
+            path {
+              fill: $mid;
+            }
+            polygon {
+              fill: transparent;
+            }
+          }
+          &:hover {
+            background-color: $primary;
+            text-decoration: none;
+            .arrow path {
+              fill: $white;
+            }
+          }
+        }
+        .dropdown-menu {
+          background-color: $dark;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 0;
+          transition: transform 0.2s linear;
+          display: block !important;
+          transform: translateX(105%);
+
+          &.show {
+            transform: translateX(0);
+          }
+          > .container {
+            padding: 0;
+            max-width: inherit;
+            > .row {
+              margin: 0;
+              display: block;
+            }
+          }
+
+          .sub-menu {
+            margin-bottom: 0 !important;
+            padding-left: 0;
+            padding-right: 0;
+            ul {
+              display: none;
+              li {
+                a {
+                  font-size: 1rem;
+                  padding: 0.8rem 3rem;
+                  color: $mid;
+                  &:hover {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+
+          .nav-back-button {
+            background-color: $dark;
+            .left-nav-arrow {
+              transition: transform 0.3s ease-out;
+            }
+            &:hover {
+              background-color: $primary;
+              .left-nav-arrow {
+                transform: translateX(-10px);
+              }
+            }
+          }
+          
+        }
+        .socialnav {
+          padding: 1.2rem 3rem;
+          a {
+            margin-right: 10px;
+            padding: 10px;
+            i {
+              color: $dark;
+            }
+          }
+        }
+        .subscribe-item {
+          padding: 1.2rem 3rem;
+        }
+      }
+    }
+  }
+
+  /* X-Large screen and above */
+  @include media-breakpoint-up(xl) {
+    .primary-nav-links.navbar-nav {
+      > li.nav-item {
+        font-size: 1rem;
+        > a {
+          padding: 6px 18px;
+        }
+      }
+    }
+  }
+}

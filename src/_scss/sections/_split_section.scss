@@ -1,0 +1,185 @@
+/* SPLIT SECTION content inside of a container all the way to the edge of the browser */
+
+.split-section {
+  .col-text {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .col-image {
+    padding: 0;
+  }
+
+  .bkg {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* Mobile Only */
+  @include media-breakpoint-down(md) {
+    .container {
+      max-width: initial;
+    }
+    .col-image {
+      width: 100%;
+      padding-bottom: percentage(9/16); //make mobile image 16:9 aspect ratio
+      .bkg,
+      img {
+        width: 100%;
+      }
+    }
+    .col-text {
+      padding-left: 0;
+      padding-right: 0;
+      .col-text-content {
+        margin: auto;
+        padding-left: rem(15);
+        padding-right: rem(15);
+        max-width: #{map-get($container-max-widths, "md")} !important;
+        @include media-breakpoint-down(sm) {
+          max-width: #{map-get($container-max-widths, "sm")} !important;
+        }
+        @include media-breakpoint-down(xs) {
+          max-width: initial !important;
+        }
+      }
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
+
+    .image-to-browser-edge {
+    }
+  }
+
+  /* Desktop Only */
+
+  // desktop only
+  @include media-breakpoint-up(lg) {
+    &.image-left .col-text {
+      padding-left: 7rem;
+    }
+    &.image-right .col-text {
+      padding-right: 7rem;
+    }
+    position: relative;
+    .col-image {
+      img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text-to-browser-edge .bkg {
+      right: 0;
+      left: auto;
+    }
+    .image-to-browser-edge {
+      img {
+        left: 0;
+        right: auto;
+      }
+    }
+    &.image-left {
+      > .container > .row {
+        flex-direction: row-reverse;
+      }
+      .text-to-browser-edge {
+        .bkg {
+          left: 0;
+          right: auto;
+        }
+      }
+      .image-to-browser-edge .bkg {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .text-to-browser-edge,
+    .image-to-browser-edge {
+      .bkg,
+      img {
+        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "lg")}) / 2));
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .text-to-browser-edge,
+    .image-to-browser-edge {
+      .bkg,
+      img,
+      .bg-image {
+        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "xl")}) / 2));
+      }
+    }
+  }
+
+  // background and text colors{
+  .column-primary .bkg {
+    background-color: $primary;
+  }
+  .column-secondary .bkg {
+    background-color: $secondary;
+  }
+  .column-success .bkg {
+    background-color: $success;
+  }
+  .column-info .bkg {
+    background-color: $info;
+  }
+  .column-warning .bkg {
+    background-color: $warning;
+  }
+  .column-danger .bkg {
+    background-color: $danger;
+  }
+  .column-light .bkg {
+    background-color: $light;
+  }
+  .column-mid .bkg {
+    background-color: $mid;
+  }
+  .column-dark .bkg {
+    background-color: $dark;
+  }
+  .column-white .bkg {
+    background-color: $white;
+  }
+  .column-black .bkg {
+    background-color: $black;
+  }
+  .column-lighter .bkg {
+    background-color: $lighter;
+  }
+  .column-light .bkg {
+    background-color: $light;
+  }
+
+  .column-primary,
+  .column-secondary,
+  .column-success,
+  .column-info,
+  .column-warning,
+  .column-danger,
+  .column-mid,
+  .column-dark,
+  .column-black {
+    color: $white;
+  }
+
+  .column-info .btn-info {
+    background-color: $primary;
+  }
+}

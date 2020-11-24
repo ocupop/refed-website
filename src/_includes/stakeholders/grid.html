@@ -1,0 +1,18 @@
+<div class="row">
+  {% for category in site.stakeholder_categories %}
+    {% for item in category.stakeholders %}
+      {% assign stakeholder = site.stakeholders | where: 'slug', item.slug | first %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="text-center p-lg-5">
+          <a href="{{ stakeholder.url }}" class="bg-image aspect-1x1 rounded-circle align-items-center" style="background-image: url('{{ stakeholder.featured_image }}')">
+            <div class="bg-fill">
+              <i class="icon icon-md icon-{{ item.uid }}"></i>
+            </div>
+          </a>
+          <h3 class="mt-4 text-serif">{{ item.label }}</h3>
+          <a href="{{ stakeholder.url }}" class="btn btn-link">Learn More</a>
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>

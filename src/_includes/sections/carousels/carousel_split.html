@@ -1,0 +1,24 @@
+
+{% assign nbr_items = include.items | size %}
+
+<div class=" carousel-image-{{include.image_alignment | default: 'right'}} carousel-split {% if include.include_arrows == true %}carousel-refed-dots{% else %}carousel-refed-dots-only{% endif %} theme-{{ include.theme | default: 'dark' }} {% if nbr_items <= 1 %}no-carousel{% else %}has-carousel{% endif %}">
+  {% for item in include.items %}
+    {% include sections/split_section.html %}
+  {% endfor %}
+</div>
+
+
+
+
+
+{% comment %}
+
+  ** THESE ARE ALL OF THE POSSIBLE VARIABLES THAT CAN BE PASSED INTO THIS INCLUDE
+  SEE split_section.html for a list of values that can be passed into that child include
+
+  items (an array of slide data. This can be a collection. Required)
+  image_alignment (right or left. Default: right)
+  include_arrows (true or false. Default: false)
+  theme  (dark or light. Default: 'dark')
+
+{% endcomment %}

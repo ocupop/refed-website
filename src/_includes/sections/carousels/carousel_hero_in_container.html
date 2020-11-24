@@ -1,0 +1,48 @@
+{% assign num_slides = include.items | size %}
+<div class=" pt-5">
+  <div class="position-relative">
+    <div id="carousel-hero" class="carousel-refed carousel-hero-in-container">
+    {% for hero in include.items %}
+      <div class="w-100">
+        <div class="container" >
+          <div class="hero bg-image w-100 px-0" style="background-image:url({{ hero.image | default: hero.featured_image }});">
+            <div class="hero-content">
+              <div class="p-5 text-white w-100">
+                <div class="row">
+                  <div class="col-12">
+                  {% if include.subtitle or hero.subtitle %}
+                      <div class="preheader">{{ include.subtitle | default: hero.subtitle }}</div>
+                  {% endif %}
+
+                  {% if hero.title %}
+                    <h1>{{ hero.title }}</h1>
+                  {% endif %}
+                  {% unless include.description_html == false %}
+                    {{ hero.description_html | default: hero.content | truncatewords: 20 }}
+                  {% endunless %}
+
+                  {% if page.layout != 'post' %}
+                    {% if hero.url %}
+                      <a class="btn btn-link mr-3 text-secondary" href="{{ hero.url }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                    {% endif %}
+                    {% if hero.buttons.link %}
+                      <div class="hero-buttons mt-3">
+                        {% for button in hero.buttons %}
+                            <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn-link text-secondary{% endif %}" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

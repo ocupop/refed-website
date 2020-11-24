@@ -1,19 +1,19 @@
 <section>
-  <div class="carousel-refed carousel-two-column show-dots dots-right">
-    {% for slide in include.two_column_slide %}
+  <div class="carousel-refed-dots carousel-two-column dots-right">
+    {% for slide in include.items %}
       <div class="w-100">
         <div class="container">
           <div class="row align-items-center">  
             <div class="col-lg-5">
-              <img class="d-block w-100 img-fluid" src="{{ slide.image }}" alt="{{ slide.title }} image" />
+              <div class="bg-image aspect-1x1" style="background-image: url({{ slide.featured_image }})"></div>
             </div> 
             <div class="col-lg-6 ml-lg-auto py-5">
               <h2>{{ slide.title }}</h2>
-              {% if slide.description_html %}
-                {{ slide.description_html }}
-              {% endif %}
-              {% if slide.link %}
-                <a href="{{ slide.link }}" class="btn btn-secondary mt-4">{{ slide.link_label | default: 'Learn More' }}</a>
+              {{ slide.description_html | default: slide.content | truncatewords: 30 }}
+              {% if slide.link or slide.url %}
+                <p>
+                  <a href="{{ slide.link | default: slide.url }}" class="btn btn-secondary mt-4">{{ slide.link_label | default: 'Learn More' }}</a>
+                </p>
               {% endif %}
             </div>    
           </div>

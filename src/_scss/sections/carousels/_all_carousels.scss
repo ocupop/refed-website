@@ -1,0 +1,152 @@
+.carousel-refed {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.flickity-prev-next-button {
+  border-radius: unset;
+  background-color: transparent;
+  svg {
+    color: $dark;
+  }
+  &.previous {
+    left: -58px;
+  }
+  &.next {
+    right: -58px;
+  }
+}
+
+.flickity-page-dots {
+  .dot {
+    border: 1px solid $dark;
+    background-color: transparent;
+    width: rem(17);
+    height: rem(17);
+    &.is-selected {
+      background-color: $dark;
+    }
+  }
+}
+
+.dots-white {
+  .flickity-page-dots {
+    .dot {
+      border: 1px solid $white;
+      &.is-selected {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.text-light,
+.text-white {
+  .flickity-button {
+    opacity: 0.8;
+    svg path {
+      fill: $white;
+    }
+    &:hover {
+      background: transparent;
+      opacity: 1;
+    }
+  }
+
+  .flickity-page-dots {
+    .dot {
+      border-color: $white;
+      &.is-selected {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+// This should actually be in a different scss folder. Maybe one for "carousels"
+
+.carousel-refed-dots {
+  .flickity-page-dots {
+    top: -40px;
+    bottom: inherit;
+  }
+  .flickity-prev-next-button {
+    &.previous {
+      left: -25px;
+    }
+    &.next {
+      right: -25px;
+    }
+  }
+  &.carousel-two-column {
+    .flickity-page-dots {
+      top: 0;
+      bottom: inherit;
+      left: 0;
+      right: 0;
+      width: 50%;
+      text-align: left;
+      margin-left: 7px;
+    }
+    &.dots-right {
+      .flickity-page-dots {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .flickity-prev-next-button {
+      &.previous {
+        left: 0;
+      }
+      &.next {
+        right: 0;
+      }
+    }
+
+    &.carousel-image-right {
+      .flickity-page-dots {
+        left: 0;
+        max-width: #{map-get($container-max-widths, "xl")};
+        padding-top: em(50);
+        // TODO: make responsive size max width;
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .dots-right {
+      .flickity-page-dots {
+        @include media-breakpoint-up(lg) {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      &.dots-right .flickity-page-dots {
+        left: 0;
+        right: auto;
+      }
+      .flickity-page-dots {
+        top: 375px;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      .flickity-page-dots {
+        top: 67vw;
+        &:after {
+          content: "need to find a solution for the placement of these dots.";
+          background-color: pink;
+          padding: 4px;
+          display: block;
+          font-size: 12px;
+          width: 180%;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

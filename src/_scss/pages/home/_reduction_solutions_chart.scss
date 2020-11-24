@@ -1,0 +1,92 @@
+// TODO: I like that we are using some new sass functions/features... but this code warrants a discussion to make sure that the solution is "robust"
+.reduction-solutions-chart {
+  label {
+    display: block;
+  }
+  .col-1of7 {
+    width: percentage(1 / 7);
+  }
+  .col-5of7 {
+    width: percentage((1/7) * 5);
+  }
+
+  .group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    label {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 10px solid $prevention;
+    }
+    &.prevention label {
+      border-bottom-color: $prevention;
+    }
+    &.rescue label {
+      border-bottom-color: $rescue-400;
+    }
+    &.recycle label {
+      border-bottom-color: $green;
+    }
+
+    .solutions {
+      border-right: 1px solid $prevention;
+      display: flex;
+      flex: 1;
+      .solution {
+        text-align: center;
+        padding: 10px 30px 10px;
+        float: left;
+        padding-bottom: 30px;
+        .circle-icon {
+        }
+        .title {
+        }
+      }
+    }
+    &:last-child .solutions {
+      border-right: none;
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @include media-breakpoint-down(lg) {
+    .col-1of7,
+    .col-5of7 {
+      display: block;
+      width: 100%;
+    }
+    .group .solutions {
+      border: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .group .solutions {
+      flex-wrap: wrap;
+      .solution {
+        width: 33.33%;
+        flex: initial;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .group .solutions {
+      .solution {
+        width: 50%;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .group .solutions {
+      display: block;
+      .solution {
+        width: auto;
+        float: none;
+      }
+    }
+  }
+}

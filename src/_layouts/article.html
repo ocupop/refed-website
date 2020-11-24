@@ -1,0 +1,49 @@
+---
+layout: default
+cta:
+  title:
+  label:
+  description_html: >-
+    <p>Find more <a href="/newsroom">news and updates</a> from the <a href='/newsroom'>ReFED blog</a>, including our <a href='#/press'>press articles</a> and <a href="/newsletter-archive">newsletters</a>.</p>
+  link:
+    label: View More in the Newsroom
+    url: /newsroom
+    alt:
+  add_divider: right
+---
+
+{% include modules/subnav_newsroom.html %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include components/image.html src=page.featured_image aspect="3x1" %}
+        <h2 class="mt-4">{{ page.title }}</h2>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="border-bottom border-color-primary d-inline-block mb-4 pb-2">
+          {% if page.item_date %} {{ page.item_date | date: '%B %-d, %Y' }}{% endif %}
+        </div>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="m-0 editable">ReFED is a national nonprofit working to end food loss and waste across the food system by advancing data-driven solutions to the problem. ReFED leverages data and insights to highlight supply chain inefficiencies and economic opportunities; mobilizes and connects people to take targeted action; and catalyzes capital to spur innovation and scale high-impact initiatives. ReFED’s goal is a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include components/cta.html item=layout.cta editor-link="#cta" %}
+

@@ -1,0 +1,50 @@
+#project-settings-page {
+  .row {
+    margin-top: 0.25rem;
+  }
+  .heading {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background-color: $dark;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1rem;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+      background-color: lighten($primary, 10%);
+    }
+  }
+
+  .subheading {
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: $gray-200;
+    color: $body-color;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+  }
+
+  .info {
+    font-size: 80%;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: $gray-100;
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+  #typography {
+  }
+  #colorPaletteContent,
+  #iconContent {
+    .info {
+      display: block;
+    }
+    code {
+      display: block;
+    }
+  }
+}

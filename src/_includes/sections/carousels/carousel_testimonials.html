@@ -1,14 +1,15 @@
-<section class="carousel-testimonials-section bg-primary text-white darken-bkg-image" style="background-image:url({{ section.background_image | default: 'https://picsum.photos/id/155/1000/333' }});">
-  <div class="carousel-testimonials">      
-    {% for testimonial in include.testimonials %}
-    <div class="testimonial-slide w-100" >  
-      <div class="container">     
+{% assign num_items = include.items | size %}
+<section class="carousel-testimonials-section bg-dark text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
+  <div class="{% if num_items > 1 %}carousel-refed-dots{% endif %} carousel-testimonials">
+    {% for testimonial in include.items %}
+    <div class="testimonial-slide w-100" >
+      <div class="container">
         <div class="row">
           <div class="col-12 text-center">
             <blockquote>
               "{{ testimonial.text }}"
-              <footer class="font-serif">
-                <div class='cite'>—{{ testimonial.author }}</div>
+              <footer class="text-serif">
+                <div class='cite'>{{ testimonial.author }}</div>
                 <div class='credentials font-italic'>{{ testimonial.cite }}</div>
               </footer>
             </blockquote>
@@ -16,6 +17,6 @@
         </div>
       </div>
     </div>
-    {% endfor %}    
+    {% endfor %}
   </div>
 </section>

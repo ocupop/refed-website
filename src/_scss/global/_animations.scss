@@ -12,11 +12,11 @@
   }
 }
 
-.card {
-    // Loop through the cards and delay the loading animation.
-  @for $i from 1 through 20 {
-    &:nth-child(#{$i}) {
-      @include animation(cardSlideIn, .8s, .1s * $i);
-    }
-  }
-}
+// .card {
+//     // Loop through the cards and delay the loading animation.
+//   @for $i from 1 through 20 {
+//     &:nth-child(#{$i}) {
+//       @include animation(cardSlideIn, .8s, .1s * $i);
+//     }
+//   }
+// }

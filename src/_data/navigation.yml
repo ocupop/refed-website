@@ -1,213 +1,272 @@
 top_bar_navigation:
   navigation:
   links:
-   - title: Search
-     link: /search
-   - title: Contact
-     link: /contact
+   - label: Contact
+     url: /contact
+     alt: Contact ReFED
      links:
-   - title: Newsroom
-     link: /newsroom
+   - label: Newsroom
+     url: /newsroom/
+     alt: Visit our Newsroom
      links:
-   - title: Stay Connected
-     link: /stay-connected
+   - label: Stay Connected
+     url: /engage/stay-connected
+     alt:
      links:
 primary_navigation:
   navigation:
   links:
-    - title: About
-      link: /about
+    - label: About
+      url:
+      alt:
       links:
-        - title: Who We Are
-          link: /who-we-are/
+        - label: Who We Are
+          url: /about/who-we-are/
+          alt:
           links:
-            - title: Our Mission
-              link: '/who-we-are/#our-mission'
-            - title: Our Vision
-              link: '/who-we-are/#our-vision'
-            - title: Our Values
-              link: '/who-we-are/#our-values'
-            - title: Our History
-              link: '/who-we-are/#our-history'           
-        - title: Our Team
-          link: /our-team/
+            - label: About Us
+              url: '/about/who-we-are/#about-us'
+              alt:
+            - label: Our Values
+              url: '/about/who-we-are/#our-values'
+              alt:
+            - label: Our History
+              url: '/about/who-we-are/#our-history'
+              alt:
+        - label: Our Team
+          url: /about/our-team/
+          alt:
           links:
-            - title: Staff
-              link: '/our-team/#staff'
-            - title: Board of Directors
-              link: '/our-team/#board-of-directors'
-            - title: Advisory Council
-              link: '/our-team/#advisory-council'
-            - title: Expert Network
-              link: '/our-team/#expert-network'
-        - title: Our Funders
-          link: /our-funders/
+            - label: Staff
+              url: '/about/our-team/#staff'
+              alt:
+            - label: Board of Directors
+              url: '/about/our-team/#board-of-directors'
+              alt:
+            - label: Advisory Council
+              url: '/about/our-team/#advisory-council'
+              alt:
+            - label: Expert Network
+              url: '/about/our-team/#expert-network'
+              alt:
+        - label: Our Funders
+          url: /about/our-funders/
+          alt:
           links:
-            - title: Overview
-              link: '/our-funders/#overview'
-            - title: Funder Impact
-              link: '/our-funders/#funder-impact'
-        - title: Careers
-          link: /careers
+            - label: Overview
+              url: '/about/our-funders/#overview'
+              alt:
+            - label: Funder Impact
+              url: '/about/our-funders/#funder-impact'
+              alt:
+        - label: Careers
+          url: /about/careers
+          alt:
           links:
-            - title: Documents
-              link: /documents
+            - label: Documents
+              url: /about/documents
+              alt:
               links:
-                - title: Financials
-                  link: '/documents/#financials'
-                - title: Annual Reports
-                  link: '/documents/#annual-reports'
-                - title: Brand Guidelines
-                  link: '/documents/#brand-guidelines'
-    - title: Our Work
-      link: /our-work
+                - label: Annual Reports
+                  url: '/about/documents/#annual-reports'
+                  alt:
+                - label: Financials
+                  url: '/about/documents/#financials'
+                  alt:
+                - label: Brand Guidelines
+                  url: '/about/documents/#brand-guidelines'
+                  alt:
+    - label: Our Work
+      url: /our-work/
+      alt:
       links:
-        - title: Our Work
-          link: /our-work
+        - label: Our Work
+          url: /our-work/
+          alt:
           links:
-            - title: Data & Insights
-              link: '/our-work/#data-insights'
+            - label: Data & Insights
+              url: '/our-work/data-and-insights'
+              alt:
               links:
-            - title: Capitol & Innovation
-              link: /our-work/#capital-innovation
+            - label: Capitol & Innovation
+              url: /our-work/capital-and-innovation
+              alt:
               links:
-            - title: Stakeholder Engagement
-              link: '/our-work/#stakeholder-engagement'
+            - label: Stakeholder Engagement
+              url: '/our-work/stakeholder-engagement'
+              alt:
               links:
-            - title: Future Planning (TBD)
-              link: '/our-work/#future-planning'
+            - label: Covid-19
+              url: '/our-work/#covid-19'
+              alt:
               links:
-            - title: Covid-19
-              link: '/our-work/#covid-19'
-              links:
-        - title: Our Impact
-          link: /our-impact
+        - label: Our Impact
+          url: /our-work/our-impact
+          alt:
           links:
-            - title: Case Studies
-              link: '/our-impact/#case-studies'
+            - label: Case Studies
+              url: '/our-work/case-studies'
+              alt:
               links:
-            - title: Testimonials
-              link: '/our-impact/#testimonials'
+            - label: Featured Organizations
+              url: '/our-work/our-impact/#featured-organizations'
+              alt:
               links:
-    - title: Food Waste
-      link: /food-waste
+    - label: Food Waste
+      url:
+      alt:
       links:
-        - title: The Challenge
-          link: /food-waste-challenge
+        - label: The Challenge
+          url: /food-waste/the-challenge
+          alt:
           links:
-            - title: 2030 Goals
-              link: '/food-waste-challenge/#2030-goals'
+            - label: Overview
+              url: '/food-waste/the-challenge/#overview'
+              alt:
               links:
-            - title: Current Situation
-              link: '/food-waste-challenge/#current-situation'
+            - label: Explore Food Waste
+              url: '/food-waste/the-challenge/#explore-food-waste'
+              alt:
               links:
-            - title: Impacts
-              link: '/food-waste-challenge/#impacts'
+            - label: Barriers to Solutions
+              url: '/food-waste/the-challenge/#barriers-to-solutions'
+              alt:
               links:
-            - title: Policy Overview
-              link: '/food-waste-challenge/#policy-overview'
+            - label: Policy Overview
+              url: '/food-waste/the-challenge/#policy-overview'
+              alt:
               links:
-            - title: Funding Need
-              link: '/food-waste-challenge/#funding-need'
-              links:
-        - title: Solutions
-          link: /food-waste-solutions
+        - label: Solutions
+          url: /food-waste/the-solutions
+          alt:
           links:
-            - title: Overview
-              link: '/food-waste-solutions/#overview'
+            - label: Overview
+              url: '/food-waste/the-solutions/#overview'
+              alt:
               links:
-            - title: Solutions Tracker
-              link: '/food-waste-solutions/#solutions-tracker'
+            - label: Roadmap 2020
+              url: '/food-waste/the-solutions/#roadmap-2020'
+              alt:
               links:
-            - title: Progress Reports
-              link: '/food-waste-solutions/#progress-reports'
+            - label: Seven Action Areas
+              url: '/food-waste/the-solutions/#seven-action-areas'
+              alt:
               links:
-        - title: Resources & Guides
-          link: /resources-guides
+            - label: Key Levers
+              url: '/food-waste/the-solutions/#key-levers'
+              alt:
+              links:
+        - label: Resources & Guides
+          url: /food-waste/resources-and-guides
+          alt:
           links:
-            - title: Insights Engine
-              link: '/resources-guides/#insights-engine'
+            - label: The Roadmap 2030
+              url: '/food-waste/resources-and-guides/#roadmap-2030'
+              alt:
               links:
-            - title: Food Waste Tracker
-              link: '/resources-guides/#food-waste-tracker'
+            - label: ReFED Insights Engine
+              url: '/food-waste/resources-and-guides/#insights-engine'
+              alt:
               links:
-            - title: Investment Tracker
-              link: '/resources-guides/#investment-tracker'
+            - label: Solutions Database
+              url: '/food-waste/resources-and-guides/#solutions-database'
+              alt:
               links:
-            - title: Solutions Tracker
-              link: '/resources-guides/#solutions-tracker'
+            - label: Impact Calculator
+              url: '/food-waste/resources-and-guides/#impact-calculator'
+              alt:
               links:
-            - title: Impact Calculator
-              link: '/resources-guides/#impact-calculator'
+            - label: Solutions Provider Database
+              url: '/food-waste/resources-and-guides/#solutions-provider-database'
+              alt:
               links:
-            - title: Innovator Database
-              link: '/resources-guides/#innovator-database'
+            - label: Investment Tracker
+              url: '/food-waste/resources-and-guides/#investment-tracker'
+              alt:
               links:
-            - title: Policy Tracker
-              link: '/resources-guides/#policy-tracker'
+            - label: Reports and Guides
+              url: '/food-waste/resources-and-guides/#reports-and-guides'
+              alt:
               links:
-            - title: The Roadmap
-              link: '/resources-guides/#roadmap'
+            - label: Partner Resources
+              url: '/food-waste/resources-and-guides/#partner-resources'
+              alt:
               links:
-            - title: ReFED Reports
-              link: '/resources-guides/#refed-reports'
-              links:
-            - title: Action Guides
-              link: '/resources-guides/#action-guides'
-              links:
-    - title: Engage
-      link: /engage
+    - label: Engage
+      url:
+      alt:
       links:
-        - title: Ways to Engage
-          link: /engage
+        - label: Ways to Engage
+          url: /engage/ways-to-engage
+          alt:
           links:
-            - title: Partner with Us
-              link: /engage/partner-with-us
+            - label: Stakeholder Actions
+              url: /engage/ways-to-engage/#stakeholder-actions
+              alt:
               links:
-            - title: Business Reporting
-              link: '/engage/#business-reporting'
+            - label: Call for Funders
+              url: '/engage/ways-to-engage/#call-for-funders'
+              alt:
               links:
-            - title: Call for Funders
-              link: '/engage/#call-for-funders'
+            - label: Partner with Us
+              url: /engage/ways-to-engage/#partner-with-us
+              alt:
               links:
-        - title: Events
-          link: /events
+            - label: Collaborate with Us
+              url: '/engage/ways-to-engage/#collaborate'
+              alt:
+              links:
+        - label: Events
+          url: /engage/in-person-events
+          alt:
           links:
-            - title: Food Waste Summit
-              link: '/events/#food-waste-summit'
+            - label: In-person Events
+              url: '/engage/in-person-events'
+              alt:
               links:
-            - title: Webinars
-              link: '/events/#webinars'
+            - label: Webinars
+              url: '/engage/webinar-events'
+              alt:
               links:
-        - title: Stay Connected
-          link: /social
+        - label: Stay Connected
+          url: /engage/stay-connected
+          alt:
           _stay_connected: true
           links:
-            - title: Twitter
-              link: 'https://twitter.com/refed'
+            - label: Twitter
+              url: 'https://twitter.com/refed'
+              alt:
               links:
-            - title: LinkedIn
-              link: https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
+            - label: LinkedIn
+              url: https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
+              alt:
               links:
-            - title: Facebook
-              link: 'https://www.facebook.com/rethinkfoodwaste/'
+            - label: Facebook
+              url: 'https://www.facebook.com/rethinkfoodwaste/'
+              alt:
               links:
-
-    - title: Insights Engine
-      link:
+    - label: Insights Engine
+      url: https://insights-engine.vercel.app/
+      alt:
       links:
 footer_navigation:
   navigation:
   links:
-   - title: Careers
-     link: /careers
-   - title: Newsroom
-     link: /newsroom
-   - title: Media Inquiry
-     link: /#
-   - title: Terms of Use
-     link: /terms-of-use
-   - title: Privacy Policy
-     link: /privacy
-   - title: Contact ReFED
-     link: /contact
+   - label: Careers
+     url: /about/careers
+     alt:
+   - label: Newsroom
+     url: /newsroom
+     alt:
+   - label: Media Inquiry
+     url: /#
+     alt:
+   - label: Terms of Use
+     url: /terms-of-use
+     alt:
+   - label: Privacy Policy
+     url: /privacy
+     alt:
+   - label: Contact ReFED
+     url: /contact
+     alt:

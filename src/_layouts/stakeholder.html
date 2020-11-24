@@ -1,0 +1,45 @@
+---
+layout: default
+cta_insights_engine:
+  label: Our Newest Innovation
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  summary:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
+cta:
+  title:
+  label:
+  description_html: >-
+    <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
+  link:
+    label: See All Solutions
+    url: /food-waste-solutions
+    alt:
+  theme:
+  add_divider:
+---
+
+{% include components/hero.html item=page.hero %}
+
+{% include stakeholders/summary.html %}
+
+{{ content }}
+
+{% contentblock highlight %}
+
+{% if page.sectors.size > 0 %}
+  {% include stakeholders/sectors.html %}
+{% endif %}
+
+{% contentblock extra %}
+
+{% include components/cta_insights_engine.html item=layout.cta_insights_engine %}
+
+{% if case_studies.size > 0 %}
+  {% include components/slide.html  item=page.case_studies.first %}
+{% endif %}
+
+{% include components/cta.html item=layout.cta editor-link="#cta" %}

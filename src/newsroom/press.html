@@ -1,0 +1,61 @@
+---
+layout: newsroom
+title: Press
+hero:
+  title: ReFED in the Press
+  label: Newsroom
+  image: /img/newsroom/press_header_image.jpg
+  links:
+    - label: Download Media Assets
+      url: '#'
+      alt:
+    - label: Download Brand Guide
+      url: '#'
+      alt:
+    - label: Contact ReFED
+      url: '/contact'
+      alt:
+cta:
+  title:
+  label:
+  description_html: >-
+    <p>See past newsletters in the newsletter archive</p>
+  link:
+    label: See Newsletter Archive
+    url: /newsroom/newsletter-archive
+  theme:
+  add_divider: right
+
+---
+
+<div class="bg-placeholder aspect-auto">
+  <div class="bg-fill p-3">
+    <h4>Search / Filter</h4>
+  </div>
+</div>
+{% comment %}
+  TODO implement filtering
+  {% include sections/newsroom_filter.html %}
+{% endcomment %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      </div>
+        <div class="press-list">
+          {% assign sorted = site.press | sort: 'item_date' %}
+          {% for item in sorted reversed %}
+            {% include modules/card_horizontal.html image_size='contain' url=press.link.url link_target='_blank' %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  {% include forms/mailinglist.html %}
+</section>
+
+
+{% include components/cta.html item=page.cta editor-link="#cta" %}
