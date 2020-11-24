@@ -218,13 +218,9 @@ cta:
     </div>
   </div>
 </section>
-{% assign featured = '' | split: ',' %}
-{% for object in page.featured_case_studies %}
-  {% assign item = site.case_studies | where: 'slug', object | first %}
-  {% assign featured = featured | push: item %}
-{% endfor %}
 {% include components/carousel.html
-  items=featured
+  items=page.featured_case_studies
+  collection="case_studies"
   layout="split"
   theme="light"
   id="caseStudyCarousel"

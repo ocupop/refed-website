@@ -232,13 +232,9 @@ _subnav:
         </div>
       </div>
     </div>
-    {% assign events = '' | split: ''  %}
-    {% for object in page.events %}
-      {% assign item = site.events | where: 'slug', object | first %}
-      {% assign events = events | push: item %}
-    {% endfor %}
     {% include components/carousel.html 
-      items=events
+      items=page.events
+      collection="events"
       layout="card"
       class="col-md-4"
       theme="lighter"
