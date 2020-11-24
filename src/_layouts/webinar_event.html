@@ -2,10 +2,7 @@
 layout: default
 ---
 
-{% assign subtitle = page.subtitle %}
-{% assign title = page.title %}
-{% assign description_html = page.description_html %}
-{% include sections/hero.html title=title subtitle=subtitle description_html=description_html image=page.featured_image %}
+{% include components/hero.html item=page %}
 <section>
   <div class="container">
     <div class="row mb-5">
@@ -19,7 +16,7 @@ layout: default
         <p class="text-danger">Should we do a modal for bio details?</p>
         {% for panelist in page.panelists %}
           <div class="mb-4">
-            <h4 class="font-serif mb-0">{{ panelist.name }}</h4>
+            <h4 class="text-serif mb-0">{{ panelist.name }}</h4>
             <p class="mb-0">{{ panelist.role }}</p>
             <a href="">See Bio for Details</a>
           </div>
@@ -49,7 +46,7 @@ layout: default
   </div>
 </section>
 {% if page.series_events %}
-  <section class="bg-neutral-200">
+  <section class="bg-light">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">

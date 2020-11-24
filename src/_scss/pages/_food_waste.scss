@@ -1,17 +1,10 @@
 
 
-
-
-.food-waste-consumes{
-
-  .stat{
-    font-size:1.4375rem;
-    line-height: 1.1;
-    .stat{
-      font-size:3.75rem;
-    }
+/* Food waste pages */
+#food-waste-consumes {
+  .stat-number {
+    font-size: 36px;
+    font-family: $font-family-serif;
+    margin-right: 10px;
   }
- 
 }
-
-/* RESOURCES AND GUIDES  PAGE */

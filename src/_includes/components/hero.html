@@ -1,0 +1,31 @@
+{% assign item = include.item %}
+<div class="bg-hero"
+  data-cms-editor-link="cloudcannon:{{ include.editor-link | default: '#hero' }}"
+  data-cms-editor-link-style="modal"
+  style="background-image:url('{{ item.featured_image | default: item.image }}')">
+  <div class="bg-fill text-white">
+    <div class="container cms-editor-link">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          {% if item.label %}<h3 class="mb-0">{{ item.label }}</h3>{% endif %}
+          {% if item.title %}<h1 class="mt-0">{{ item.title }}</h1>{% endif %}
+          {% unless item.url == page.url %}
+            {{ item.description_html | default: item.excerpt  | truncatewords: 40 }}
+          {% endunless %}
+          
+          {% if item.url and item.url != page.url %}
+            <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn-link">{{ site.default_cta }}</a></p>
+          {% endif %}
+          <div class="d-flex align-items-center">
+            {% for link in item.links %}
+              {% if link.url %}
+                <a href="{{ link.url }}" class="btn btn-link"
+                  alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

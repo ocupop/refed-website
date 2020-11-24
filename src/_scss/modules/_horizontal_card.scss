@@ -1,5 +1,8 @@
+// TODO: Refactor and looks for ways to remove this unnecessary class
 .horizontal-card {
-    .card-text{
-        p:last-child{ margin-bottom:0 !important;}
+    .card-text {
+        p:last-child {
+            margin-bottom: 0 !important;
+        }
     }
 }

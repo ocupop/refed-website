@@ -1,3 +1,4 @@
+// TODO: This file belongs in the vendor folder
 .wFormContainer {
   max-width: 100% !important;
   .wFormHeader,
@@ -34,8 +35,8 @@
         line-height: 38px !important;
         height: 38px !important;
         font-size: 13px !important;
-        background-color: $neutral-100 !important;
-        width: 100% !important
+        background-color: $lighter !important;
+        width: 100% !important;
       }
     }
     .inputWrapper select:not([multiple]) {
@@ -52,7 +53,7 @@
         margin-top: 0 !important;
         text-transform: uppercase !important;
         font-weight: 100 !important;
-        background-color: $secondary;
+        background-color: $blue;
         text-transform: none !important;
         border-radius: 0;
         font-weight: 600 !important;
@@ -100,10 +101,9 @@
       }
     }
   }
-  
 }
 
-.form-theme-dark {
+.bg-dark {
   .wFormContainer {
     .wForm {
       .label {
@@ -125,7 +125,7 @@
           margin-top: 0 !important;
           text-transform: uppercase !important;
           font-weight: 100 !important;
-          background-color: $secondary;
+          background-color: $blue;
           text-transform: none !important;
           border-radius: 0;
           font-weight: 600 !important;
@@ -173,6 +173,20 @@
         }
       }
     }
-    
+  }
+}
+
+.bg-light {
+  .wFormContainer {
+    .wForm {
+      .inputWrapper {
+        display: block;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          background-color: $white !important;
+        }
+      }
+    }
   }
 }

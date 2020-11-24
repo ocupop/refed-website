@@ -1,44 +1,34 @@
-<footer id="pageFooter" >
-  <div class="logo-band bg-white py-3">            
+<footer id="pageFooter">
+  <div class="logo-band bg-white py-3">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a class="footer-brand" href="/">{{ site.title }}</a>
-        </div>
-      </div>    
-    </div>
-  </div>      
-  <div class="mega-footer bg-dark position-relative">   
-    <div class="container">      
-      <div class="row">
-        <div class="col-md-7 text-light bg-primary footer-links-column">
-          <ul class="footer-links navbar-nav ml-auto">         
-            {% for link in site.data.navigation.footer_navigation.links %}            
-              <li class="nav-item"><a class="nav-link text-light font-weight-light" href="{{ link.link }} ">{{ link.title }} </a></li>
-            {% endfor %}  
-          </ul>    
-        </div>
-        <div class="col-md-5 text-light bg-secondary stay-connected-column">
-          <h3>Stay Connected with ReFED</h3>
-          <ul class="nav p-0 my-3">
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/refed-rethink-food-waste/" class="bg-white mr-2 social-icon">
-                <i class="ri-linkedin-fill"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/refed" class="bg-white social-icon">
-                <i class="ri-twitter-fill"></i>
-              </a>
-            </li>
-          </ul>
-          <p class="newsletter-signup">Sign up for our newsletter and other email updates</p>
-          <a href="#" class="newsletter-signup-cta toggle-newsletter-modal btn btn-primary btn-lg font-serif">Subscribe</a>
+          <a class="footer-brand" href="/" title="{{ site.title }}">
+            <img src="/img/logo-wordmark.svg" alt="ReFED logo" />
+          </a>
         </div>
       </div>
-      <ul class="utility-links navbar-nav ml-auto ">
-      </ul>
+    </div>
+  </div>
+  <div class="mega-footer bg-dark position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 text-light bg-dark footer-links-column">
+          <ul class="footer-links navbar-nav ml-auto">
+            {% for link in site.data.navigation.footer_navigation.links %}
+              <li class="nav-item"><a class="nav-link text-light font-weight-light" href="{{ link.url }} ">{{ link.label }} </a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-5 text-light bg-primary stay-connected-column">
+          <h4 class="mb-0">Stay Connected with ReFED</h4>
+          {% include nav/socialnav.html %}
+          <p class="editable">
+            Sign up for our newsletter and other email updates
+          </p>
+          <a href="#" class="newsletter-signup-cta toggle-newsletter-modal btn btn-dark btn-lg text-serif">Subscribe</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
-{% include modules/mailinglist_overlay.html %}

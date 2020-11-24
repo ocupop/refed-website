@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-12">
             {% if hero.subtitle %}
-              <div class="preheader">{{ hero.subtitle }}</div>
+              <h4 class="text-serif">{{ hero.subtitle }}</h4>
             {% endif %}
             {% if hero.title %}
               <h1>{{ hero.title }}</h1>
@@ -17,12 +17,12 @@
               {{ hero.description_html | default: hero.content | truncatewords: 30 }}
             </div>
             {% if hero.link != nil %}
-              <p><a class="text-link text-primary-450 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
+              <p><a class="btn btn-link text-rescue block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a></p>
             {% endif %}
             {% if hero.buttons.first.link %}
               <div class="hero-buttons mt-3">
                 {% for button in hero.buttons %}
-                  <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                  <a class="{% if button.button_type == 'button' %}btn btn-primary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                 {% endfor %}
               </div>
             {% endif %}
@@ -37,7 +37,7 @@
     </a>
     <a href="{{ site.twitter_url }}" class="twitter" target="_blank" rel="noopener">
       <i class="ri-twitter-fill"></i>
-    </a>              
+    </a>
   </div>
 </div>
 
@@ -59,12 +59,12 @@
                   {% endif %}
                   {{ hero.description_html | default: hero.content | truncatewords: 20 }}
                   {% if hero.link != nil %}
-                    <a class="text-link text-primary-400 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
+                    <a class="btn-link text-rescue-400 block mr-3" href="{{ hero.link }}">{{ hero.link_label | default: 'Learn More'}}</a>
                   {% endif %}
                   {% if hero.buttons.link %}
                     <div class="hero-buttons mt-3">
                       {% for button in hero.buttons %}
-                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}text-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
+                        <a class="{% if button.button_type == 'button' %}btn btn-secondary{% endif %}{% if button.button_type == 'text' %}btn btn-link{% endif %} block mr-3" href="{{ button.link }}">{{ button.button_text | default: 'Learn More' }}</a>
                       {% endfor %}
                     </div>
                   {% endif %}
@@ -81,7 +81,7 @@
       </a>
       <a href="{{ site.twitter_url }}" class="twitter" target="_blank" rel="noopener">
         <i class="ri-twitter-fill"></i>
-      </a>              
+      </a>
     </div>
   </div>
 {% endif %}

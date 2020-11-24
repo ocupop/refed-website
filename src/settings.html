@@ -1,0 +1,307 @@
+---
+layout: page
+title: Project Settings
+palette:
+  - label: Grays
+    colors:
+      - variable: lighter
+      - variable: light
+      - variable: mid
+      - variable: dark
+      - variable: darker
+  - label: Base Colors
+    colors:
+      - variable: blue
+      - variable: indigo
+      - variable: purple
+      - variable: pink
+      - variable: red
+      - variable: orange
+      - variable: yellow
+      - variable: green
+      - variable: teal
+      - variable: cyan
+  - label: Brand Colors
+    colors:
+      - variable: primary
+      - variable: secondary
+      - variable: prevention
+      - variable: rescue
+      - variable: recycle
+  - label: Action Areas
+    colors:
+      - variable: optimize
+        label: Optimize the Harvest [ prevention-600 ]
+      - variable: enhance
+        label: Enhance Product Distribution
+      - variable: refine
+        label: Refine Product Management
+      - variable: maximize
+        label: Maximize Product Utilization
+      - variable: reshape
+        label: Reshape Consumer Environments
+      - variable: strengthen
+        label: Strengthen Food Rescue
+      - variable: recycle
+        label: Recycle Anything Remaining
+
+  - label: Stakeholders
+    colors:
+      - variable: producers
+        label: Producers
+      - variable: manufacturing
+        label: Manufacturing
+      - variable: retail
+        label: Retail
+      - variable: foodservice
+        label: Restaurant & Foodservice
+      - variable: policymakers
+        label: Policymakers
+      - variable: capital
+        label: Capital Providers
+
+
+
+---
+
+<section>
+  <div class="container">
+    <!-- FOR REVIEW -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#reviewSummary">Review</p>
+        <div id="reviewSummary" class="collapse show">
+          <ul class="list-group">
+            {% assign items = site.pages | where: "review", "true" | sort: 'title' %}
+            {% assign size = items.size %}
+            <li class="list-group-item">
+              <h4>Standalone Pages <span class="float-right badge badge-secondary">{{ size }}</span></h4>
+              <div class="bg-lighter p-4">
+                {% for item in items  %}
+                <a href="{{ item.url }}" target="_blank" class="d-flex justify-content-between py-1">
+                  <span>{{ item.title }}</span>
+                  <span>{{ item.url }}</span>
+                </a>
+                {% endfor %}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#settingsContent">Settings</p>
+        <div id="settingsContent" class="collapse">
+          <p class="subheading">General</p>
+          <p>
+            <strong>Client:</strong> {{ site.client | default: 'incomplete' }}<br />
+            <strong>Project Title:</strong> {{ site.title | default: 'incomplete' }}<br />
+            <strong>Analytics:</strong> {{ site.analytics.default | default: 'incomplete' }}<br />
+            <strong>Permalink Pattern:</strong> {{ site.permalink | default: 'incomplete' }}<br />
+            <strong>Plugins:</strong> {{ site.plugins | default: 'incomplete' }}<br />
+          </p>
+
+          <p class="subheading">Social Sharing</p>
+          <p>
+            <strong>Description:</strong><br />
+            {{ site.description | default: 'incomplete' }}
+          </p>
+          <p>
+            <strong>Default Share Image:</strong><br />
+            <img
+              src="{{ site.socialshare.featured_image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+              alt="{{ site.socialshare.featured_image | default: 'incomplete' }}" class="img-fluid">
+          </p>
+          <p>
+            <strong>Twitter:</strong> {{ site.socialshare.twitter.username | default: 'incomplete' }}<br />
+            <img
+              src="{{ site.socialshare.twitter.image | default: 'https://via.placeholder.com/1280x630/333333/000000?text=incomplete' }}"
+              alt="{{ site.socialshare.twitter.image | default: 'incomplete' }}" class="img-fluid">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#typographyContent">Typography</p>
+        <div id="typographyContent" class="collapse">
+          <p class="subheading">Headings</p>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="info">Base Styles</div>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="info d-block">Adding the <code>.text-sans-serif</code> modifier class</div>
+              <div class="text-sans-serif">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3 class="text-sans-serif">Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="info d-block">Adding the <code>.text-serif</code> modifier class</div>
+              <div class="text-serif">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+              </div>
+            </div>
+          </div>
+          <p class="subheading mt-5">Text Utilities</p>
+
+          <div class="info">
+            <span class="text-uppercase">Uppercase Text</span>
+            <code>.text-uppercase</code>
+          </div>
+          <div class="info">
+            <span class="text-lowercase">Lowercase Text</span>
+            <code>.text-lowercase</code>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- COLOR PALETTE -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#colorPaletteContent">Color Palette</p>
+        <div id="colorPaletteContent" class="collapse">
+          {% for category in page.palette %}
+          <p class="subheading">{{ category.label }}</p>
+          <div class="row row-cols-1 {% if category.colors.first.label %}row-cols-md-4{% else %}row-cols-md-6{% endif %}">
+            {% for color in category.colors %}
+            <div class="col my-2">
+              <div class="bg-image aspect-2x1 bg-{{ color.variable }} color-info"></div>
+              <div class="info py-2">
+                <code>${{ color.variable }}</code>
+                {% if color.label %}
+                <small>{{ color.label }}</small>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#buttonContent">Buttons</p>
+        <div id="buttonContent" class="collapse">
+          <p class="subheading">Default Styles</p>
+          <div class="info">
+            <button class="btn">Button</button>
+            <code>.btn</code>
+          </div>
+          <div class="info">
+            <button class="btn btn-primary">Button</button>
+            <code>.btn.btn-primary</code>
+          </div>
+          <div class="info">
+            <button class="btn btn-secondary">Button</button>
+            <code>.btn.btn-secondary</code>
+          </div>
+          <div class="info">
+            <button class="btn btn-primary btn-lg">Button</button>
+            <code>.btn.btn-primary.btn-lg</code>
+          </div>
+          <div class="info">
+            <button class="btn btn-primary btn-lg text-serif">Button</button>
+            <code>.btn.btn-primary.btn-lg.text-serif</code>
+          </div>
+          <p class="subheading mt-3">Custom Styles</p>
+          <div class="info">
+            <a class="btn btn-link">Button</a>
+            <code>.btn.btn-link</code>
+          </div>
+          <div class="info">
+            <a class="btn btn-link text-secondary">Button</a>
+            <code>.btn.btn-link.text-secondary</code>
+          </div>
+          <div class="info">
+            <a class="btn btn-link download-link">Button</a>
+            <code>.btn.btn-link.download-link</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#iconContent">Icons</p>
+        <div id="iconContent" class="collapse">
+          <p class="subheading">Stakeholders</p>
+          <div class="row row-cols-1 row-cols-md-5">
+            {% for stakeholder in site.stakeholders %}
+            <div class="col my-2">
+              <div class="p-3 text-center">
+                <i class="icon icon-sm icon-{{ stakeholder.slug | split: '-' | first }} m-auto"></i>
+              </div>
+              <div class="info py-2">
+                <code>.icon-{{ stakeholder.slug }}</code><br />
+                <small>{{ stakeholder.title }}</small>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLECTIONS -->
+    <div class="row">
+      <div class="col-12">
+        <p class="heading" data-toggle="collapse" data-target="#collectionSummary">COllections</p>
+        <div id="collectionSummary" class="collapse">
+          <ul class="list-group">
+            {% assign collections = "pages,action_areas,stakeholders,case_studies,events,downloads,press,careers" | split: ',' %}
+            {% for collection in collections %}
+            {% assign size = site[collection].size %}
+            {% assign items = site[collection] | sort: 'title' %}
+            <li class="list-group-item">
+              <h4 data-toggle="collapse" data-target="#{{collection}}">{{ collection }} <span
+                  class="float-right badge badge-secondary">{{ size }}</span></h4>
+              <div id="{{collection}}" class="collapse show">
+                <div class="bg-lighter p-4">
+                  {% for item in items  %}
+                    {% unless item.layout == 'sandbox' %}
+                      <a href="{{ item.url }}" class="d-flex justify-content-between py-1">
+                        <span>{{ item.title }}</span>
+                        <span>{{ item.url }}</span>
+                      </a>
+                    {% endunless %}
+                  {% endfor %}
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

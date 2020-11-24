@@ -1,0 +1,87 @@
+---
+review: true
+layout: page
+title: Our Funders
+hero:
+  - title: >-
+      Investing in ReFED is an investment in a sustainable, resilient, and
+      inclusive food system.
+    label:
+    description_html:
+    image: /img/funders/ourfunders_header_image.jpg
+    links:
+logos:
+  - label: ReFED Logo
+    link: 'http://www.refed.com'
+    featured_image: >-
+      https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
+case_studies:
+  - sample-case-study
+cta:
+  title:
+  label:
+  description_html: >-
+    <p>To learn how you can support our mission, please contact us via
+    email.</p>
+  link:
+    label: Contact Us
+    url: /contact
+    alt:
+  theme: lighter
+  add_divider: left
+---
+
+<section id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lead editable">
+          <p>ReFED envisions a sustainable, resilient, and inclusive food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow. ReFED produces data and insights which help inform work with a diverse stakeholder network to catalyze collaboration, investment, and innovation to reach our national and global goals of reducing food waste by 50 percent by 2030.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter logo-pile">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <h3 class="editable">
+          Our Funders
+        </h3>
+        <div class="editable">
+          <p>Collaboration is at the core of everything we do, and we could not accomplish our mission without the generous support, involvement, and enthusiasm of our growing number of funders.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% comment %}
+          {% include sections/logo_pile.html logo_pile=page.logo_pile %}
+        {% endcomment %}
+        <div class="bg-placeholder aspect-3x1">
+          <div class="bg-fill">
+            <div class="text-center">
+              <h4 class="text-uppercase">Funder Logo Pile</h4>
+              <small>.src/_includes/sections/carousels/logo_pile.html</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include components/carousel.html
+  items=page.case_studies
+  label='Funder Impact Stories'
+  theme="dark"
+  id="caseStudiesCarousel"
+  reverse="true"
+  layout="two-column"
+  collection="case_studies"
+  editor-link="#case_studies"
+%}
+
+{% include components/cta.html item=page.cta editor-link="#cta" %}

@@ -1,0 +1,48 @@
+// Icon Utiltities
+.icon-img-xl {
+  max-width: 8.5rem;
+  width: 8.5rem;
+}
+
+.icon-img-lg {
+  max-width: 100px;
+  width: 100%;
+}
+
+.icon-img-md {
+  max-width: 80px;
+  width: 100%;
+}
+
+.icon-img-sm {
+  max-width: 60px;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $darker;
+}
+
+// Sizes
+.icon-sm {
+  width: 60px;
+  height: 60px;
+}
+.icon-md {
+  width: 80px;
+  height: 80px;
+}
+.icon-lg {
+  width: 100px;
+  height: 100px;
+}
+
+// Background images
+@each $color, $value in $theme-colors {
+  @include icon-variant(".icon-#{$color}", $color, $value, true);
+}

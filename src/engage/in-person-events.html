@@ -1,0 +1,98 @@
+---
+layout: page
+title: In Person Events
+hero:
+  - title: In Person Events
+    label:
+    description_html:
+    image: /img/events/events_header_image.jpg
+    links:
+featured_event: 2021-food-waste-summit
+cta_webinars:
+  description_html: >-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas
+    assumenda, doloremque optio ipsum</p>
+  link:
+  link_label: Get to know us
+  colorbar:
+    color: '#e65e4a'
+    bar_position:
+      - left
+---
+
+{% if page.featured_event %}
+  {% include events/featured_event.html %}
+{% endif %}
+
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-3">Upcoming In Person Events</h2>
+        <div class="bg-placeholder aspect-auto mb-5">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Filtering</h4>
+          </div>
+        </div>
+        <!-- <div class="form-group">
+          <label for="jumpmenu">Event Types: </label>
+          <select class="form-control d-inline-block" style="width:inherit;" id="jumpmenu" name="jumpmenu"
+            onChange="self.location=this.options[this.selectedIndex].value">
+            <option value='#'>All</option>
+            <option value='#invenstment-tracker'>Webinars</option>
+            <option value='#'>Other</option>
+            <option value='#'>These options will</option>
+            <option value='#'>filter the results</option>
+            <option value='#'>listed below</option>
+          </select>
+        </div> -->
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3">
+        {% assign upcoming_events = site.events | where: 'event_type', 'in_person' | sort: 'item_date' | reversed %}
+        {% for event in upcoming_events %}
+          {% assign now = 'now' | date: '%s' | plus: 0 %}
+          {% assign event_start = event.item_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+          {% if event_start >= now %}
+
+          {% include events/event_card.html %}
+        {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-teal py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-7">
+        <div class="text-white editable lead text-serif">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas assumenda, doloremque optio ipsum</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 ml-lg-auto text-lg-right">
+        <a href="/webinar-events" class="btn btn-lg btn-secondary editable">See Webinars</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mb-5 editable">Browse Past Events</h3>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-12">
+        {% include events/past_events_logic.html event_type="in_person" %}
+        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,207 @@
+// Base Color Palette
+$gray-100: #f8f8f7; // Lighter
+$gray-200: #f3f2f0; // Light
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #848484;
+$gray-600: #6d8089; // Mid
+$gray-700: #344955; // Body color
+$gray-800: #343a40 !default;
+$gray-900: #182024; // Darker
+
+$blue: #0092b7;
+$indigo: #630a53;
+$purple: #7f1876;
+$pink: #b40863;
+$red: #dc354d;
+$orange: #ff7f12;
+$yellow: #ffc432;
+$green: #00b982;
+$teal: #168374;
+$cyan: #17a2b8 !default;
+
+$white: #ffffff;
+$black: #000000;
+
+$blue-100: #a6e8f1;
+$blue-200: #7cd6e5;
+$blue-300: #59c5d9;
+$blue-400: #50b4ce;
+$blue-500: #47a2c1;
+$blue-600: #0092b7;
+
+$indigo-100: #ebd0f4;
+$indigo-200: #dda9db;
+$indigo-300: #bf71ba;
+$indigo-400: #a0479a;
+$indigo-500: #7f1876;
+$indigo-600: #630a53;
+
+$pink-100: #f9bbe4;
+$pink-200: #f09dce;
+$pink-300: #ed7dbd;
+$pink-400: #eb57aa;
+$pink-500: #d53184;
+$pink-600: #b40863;
+
+$red-100: #f9aab6;
+$red-200: #f28b97;
+$red-300: #f4697d;
+$red-400: #dc354d;
+$red-500: #cf3339;
+$red-600: #a12b2f;
+
+$orange-100: #ffcca9;
+$orange-200: #fab687;
+$orange-300: #f6a065;
+$orange-400: #ff7f12;
+$orange-500: #ea6a00;
+$orange-600: #e05a00;
+
+$yellow-100: #fae4c0;
+$yellow-200: #f9d99b;
+$yellow-300: #f7cc78;
+$yellow-400: #ffc432;
+$yellow-500: #f4b53f;
+$yellow-600: #f2a83c;
+
+$green-100: #afeece;
+$green-200: #92e4bf;
+$green-300: #77d8af;
+$green-400: #5ecd8f;
+$green-500: #59c290;
+$green-600: #00b982;
+
+$teal-100: #afeee3;
+$teal-200: #89d8cc;
+$teal-300: #61c4b5;
+$teal-400: #4eae9f;
+$teal-500: #449989;
+$teal-600: #168374;
+
+// Color System
+$prevention-100: #b5e3f3;
+$prevention-200: #8cc1d2;
+$prevention-300: #679eb1;
+$prevention-400: #4d7e92;
+$prevention-500: #275b71;
+$prevention-600: #003950;
+$prevention: $prevention-600;
+
+$rescue-100: #b5f1eb;
+$rescue-200: #93eae2;
+$rescue-300: #6fe4db;
+$rescue-400: #65dcd2;
+$rescue-500: #61d6ca;
+$rescue-600: #00d1c3;
+$rescue: $rescue-600;
+
+$recycle-100: #d1ecc1;
+$recycle-200: #badeab;
+$recycle-300: #a3d097;
+$recycle-400: #75c46c;
+$recycle-500: #5ca958;
+$recycle-600: #3d8944;
+$recycle: $recycle-500;
+
+// TODO: Have Abby/Jenny explain why we need new colors and can't use any of the primary color variations
+// Action Areas
+$optimize: #003a52; // Should be prevention-600
+$enhance: #045b80;
+$refine: #006995;
+$maximize: #048dc6;
+$reshape: #009dde;
+$strengthen: $rescue;
+// $recycle: #5CA958 // TB: Already in use. This may indicate the need to rename the action area color variables.
+
+// Stakeholders
+$producers: $red;
+$manufacturing: $indigo;
+$retail: $orange;
+$foodservice: $pink; // TODO: Does this name need to include "restaurants"
+$policymakers: $teal;
+$capital: $green;
+
+// Misc
+$salmon: #e65e4a;
+
+// Bootstrap Colors
+$primary: $blue;
+$secondary: $recycle;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+$lighter: $gray-100;
+$light: $gray-200;
+$gray: $gray-500;
+$mid: $gray-600;
+$dark: $prevention-600;
+$darker: $gray-900;
+
+// Color Maps
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "lighter": $lighter,
+  "light": $light,
+  "gray": $gray,
+  "mid": $mid,
+  "dark": $dark,
+  "black": $black,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "prevention": $prevention,
+  "prevention-100": $prevention-100,
+  "prevention-200": $prevention-200,
+  "prevention-300": $prevention-300,
+  "prevention-400": $prevention-400,
+  "prevention-500": $prevention-500,
+  "prevention-600": $prevention-600,
+  "rescue": $rescue,
+  "rescue-100": $rescue-100,
+  "rescue-200": $rescue-200,
+  "rescue-300": $rescue-300,
+  "rescue-400": $rescue-400,
+  "rescue-500": $rescue-500,
+  "rescue-600": $rescue-600,
+  "recycle": $recycle,
+  "recycle-100": $recycle-100,
+  "recycle-200": $recycle-200,
+  "recycle-300": $recycle-300,
+  "recycle-400": $recycle-400,
+  "recycle-500": $recycle-500,
+  "recycle-600": $recycle-600,
+  "optimize": $optimize,
+  "enhance": $enhance,
+  "refine": $refine,
+  "maximize": $maximize,
+  "reshape": $reshape,
+  "strengthen": $strengthen,
+  "producers": $producers,
+  "manufacturing": $manufacturing,
+  "retail": $retail,
+  "foodservice": $foodservice,
+  "policymakers": $policymakers,
+  "capital": $capital,
+);

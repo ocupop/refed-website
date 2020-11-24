@@ -1,0 +1,65 @@
+---
+layout: page
+title: Case Studies
+hero:
+  - title: Featured Organizations
+    label:
+    description_html:
+    image: /img/case_studies/featuredorganizations_casestudy_header_image.jpg
+    links:
+featured_case_studies:
+  - crown-family-philanthropies
+  - sample-case-study
+  - crown-family-philanthropies
+cta:
+  title:
+  label:
+  description_html: >-
+    From innovation accelerators to capital campaigns to convening leadership,
+    learn about the impact we’ve brought to the food system and the work we are
+    doing today.
+  link:
+    label: See our impact
+    url: /our-impact
+    alt:
+  theme:
+  add_divider:
+
+---
+
+<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
+  {% for featured in page.featured_case_studies %}
+    {% assign case_study = site.case_studies | where: 'slug', featured | first %}
+    {% include sections/split_section.html
+      item=case_study
+      section_background_color='primary'
+      preheader='Impact Stories'
+      section_background_color='white'
+      image_width='50%'
+      image_alignment='right'
+      image_to_edge=true
+      text_to_edge=true
+      button_type='text'
+      section_class='p-0 mt-5'
+    %}
+  {% endfor %}
+</div>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-placeholder aspect-auto mb-5">
+          <div class="bg-fill">
+            <h4 class="text-uppercase">Filtering</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TODO logic to rule out displaying case studies twice on this page -->
+    {% include sections/carousels/carousel_cards.html items=site.case_studies %}
+  </div>
+</section>
+
+{% include components/cta.html item=page.cta editor-link="#cta" %}

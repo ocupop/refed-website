@@ -1,17 +1,18 @@
 ---
 layout: default
-cta: 
+cta:
+  title:
+  label:
   description_html: >-
     <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
-  link: /food-waste-solutions
-  link_label: See All Solutions
-  section_background_color: neutral-100
-  colorbar:
-    color: "#e65e4a"
-    bar_position: right
+  link:
+    label: See All Solutions
+    url: /food-waste-solutions
+    alt:
+  theme: lighter
+  add_divider: right
 ---
-
-{% include sections/hero.html subtitle='Priority Action Area' title=page.title image=page.hero_image %}
+{% include components/hero.html item=page.hero %}
 
 <section>
   <div class="container">
@@ -19,51 +20,37 @@ cta:
       <div class="col-lg-5">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <img
-              src="{{ page.icon_image }}"
-              class="icon-img-lg"
-              alt="{{ page.title }} icon"
-            />
+            <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
           </div>
           <div class="col">
             <h6 class="mb-0">Action Area</h6>
-            <h2>{{ page.title }}</h2>
+            <h2
+              data-cms-editor-link="cloudcannon:#title"
+              data-cms-editor-link-style="modal">
+              {{ page.title }}
+            </h2>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12">
-            <h6>Summary</h6>
-            {{ page.description_html }}
+            <h6 class="editable">Summary</h6>
+            <div
+              data-cms-editor-link="cloudcannon:#description_html"
+              data-cms-editor-link-style="modal">
+              {{ page.description_html }}
+            </div>
           </div>
         </div>
       </div>
       <div class="col-lg-6 ml-lg-auto">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <h6>Addressable waste</h6>
-            <p class="display-4 font-serif">5M Tons</p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12">
-            <h6>Key Indicators</h6>
-
-            <div class="row">
-              {% for item in page.key_indicators %}
-              <div class="col-12 col-sm-6 mb-4">
-                <span class="stat-number d-block">{{ item.number }}</span>
-                <h6 class="stat-text text-primary">{{ item.text }}</h6>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+        {% include action_areas/metrics.html %}
       </div>
     </div>
   </div>
 </section>
 
-{% include modules/sticky_nav.html navigation=page._sticky_nav header=page._sticky_nav_headline %}
+{% capture label %}Explore this Action Area: {{page.title}}{% endcapture %}
+{% include nav/subnav.html items=page.sectors label=label %}
 
 <section class="pb-0" id="modeled-solutions">
   <div class="container">
@@ -79,7 +66,7 @@ cta:
       </div>
     </div>
 
-    <hr class="bg-neutral-300" />
+    <hr class="bg-mid" />
 
     {% for i in (1..3) %}
     <div class="row my-5">
@@ -97,9 +84,9 @@ cta:
           praesentium ad deleniti qui alias similique unde, quaerat laudantium
           obcaecati.
         </p>
-        
-        <div class="key-indicators-box d-flex flex-column flex-sm-row bg-lightest p-3 text-neutral-300 mb-4">
-          
+
+        <div class="key-indicators-box d-flex flex-column flex-sm-row bg-lighter p-3 text-mid mb-4">
+
           <div class="key-indicators-box__label d-flex flex-column justify-content-center pr-4 pb-3 pb-sm-0">
             <div class='stat-text m-0'>Key Indicators</div>
           </div>
@@ -116,12 +103,12 @@ cta:
         </div>
 
         <div class="d-flex flex-column flex-lg-row">
-          <a href="#" class="text-link mr-4">See Solution Factsheet</a>
-          <a href="#" class="text-link">See Solution Provider Database</a>
+          <a href="#" class="btn btn-link mr-4">See Solution Factsheet</a>
+          <a href="#" class="btn btn-link">See Solution Provider Database</a>
         </div>
       </div>
     </div>
-    
+
     {% endfor %}
 
   </div>
@@ -137,12 +124,12 @@ cta:
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis 
+            aliquip ex ea commodo consequat. Duis
           </p>
         </div>
       </div>
     </div>
-    <hr class="bg-neutral-300" />
+    <hr class="bg-mid" />
 
     {% for i in (1..2) %}
     <div class="row my-5">
@@ -159,15 +146,15 @@ cta:
           aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
           praesentium ad deleniti qui alias similique unde, quaerat laudantium
           obcaecati.
-        </p>   
+        </p>
 
         <div class="d-flex flex-column flex-lg-row">
-          <a href="#" class="text-link mr-4">Learn More</a>
+          <a href="#" class="btn btn-link mr-4">Learn More</a>
         </div>
 
       </div>
     </div>
-    
+
     {% endfor %}
   </div>
 </section>
@@ -186,7 +173,7 @@ cta:
         </div>
       </div>
     </div>
-    <hr class="bg-neutral-300" />
+    <hr class="bg-mid" />
 
     {% for i in (1..3) %}
     <div class="row my-5">
@@ -197,15 +184,15 @@ cta:
           aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
           praesentium ad deleniti qui alias similique unde, quaerat laudantium
           obcaecati.
-        </p>  
+        </p>
       </div>
-    </div>    
+    </div>
     {% endfor %}
   </div>
 </section>
 
 
-<section class="bg-lightest" id="levers">
+<section class="bg-lighter" id="levers">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -218,7 +205,7 @@ cta:
         <img src="/img/icons/levers/levers_financing.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <h3 class="font-serif mb-4">Top Financing Recommendations</h3>        
+        <h3 class="text-serif mb-4">Top Financing Recommendations</h3>
         <div class="row">
           <div class="col-12 col-lg-6 pr-md-4">
             <div class="description_html my-2">
@@ -236,8 +223,8 @@ cta:
               </div>
               <div class="col-lg-6">
                 <h6>Public</h6>
-                <p class="display-4 font-serif mb-2">$6.6B</p>
-                <p class="mb-0"><small>Corporate Finance - <span class="text-primary-100 font-weight-bold">$5.2B</span></small> </p>
+                <p class="display-4 text-serif mb-2">$6.6B</p>
+                <p class="mb-0"><small>Corporate Finance - <span class="text-recycle font-weight-bold">$5.2B</span></small> </p>
                 <p class="mb-0"><small>Private Equity - <span class="text-primary-130 font-weight-bold">$0.8B</span></small> </p>
                 <p class="mb-0"><small>Project Finance - <span class="text-primary-150 font-weight-bold">$0.5B</span></small> </p>
               </div>
@@ -252,11 +239,11 @@ cta:
         <img src="/img/icons/levers/levers_policy.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <h3 class="font-serif mb-4">Top Policy Recommendations</h3>
+        <h3 class="text-serif mb-4">Top Policy Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
             <div class="description_html my-2">
-                
+
                 <h4 class="mb-2">Policy Recommendation Name</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
                 <ul>
@@ -275,7 +262,7 @@ cta:
         <img src="/img/icons/levers/levers_communication.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <h3 class="font-serif mb-4">Top Comms Recommendations</h3>
+        <h3 class="text-serif mb-4">Top Comms Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
             <div class="description_html my-2">
@@ -288,13 +275,13 @@ cta:
         </div>
       </div>
     </div>
-  
+
     <div class="row mt-5">
       <div class="col-md-auto">
         <img src="/img/icons/levers/levers_innovation.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
       </div>
       <div class="col">
-        <h3 class="font-serif mb-4">Top Innovation Recommendations</h3>
+        <h3 class="text-serif mb-4">Top Innovation Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
             <div class="description_html my-2">
@@ -314,32 +301,31 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12 text-center ">
-        <div class="preheader">Stakeholder Recommendations</div>
-        <h2>What Can I Do To Solve Food Waste?</h2>
+        <h3 class="editable">Stakeholder Recommendations</h3>
+        <h2 class="editable">What Can I Do To Solve Food Waste?</h2>
       </div>
     </div>
-    {% include stakeholders/stakeholders-grid.html %}   
+    {% include stakeholders/grid.html %}
   </div>
 </section>
 
-{% include sections/cta_insights_engine.html data=layout.cta_insights_engine %}
+{% include components/cta_insights_engine.html
+  item=layout.cta_insights_engine
+  theme="light"
+%}
 
-<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
-  {% for featured_slug in page.case_studies %} 
-    {% assign featured = site.case_studies | where: 'slug', featured_slug | first %} 
-    {% include sections/split_section.html 
-        item=featured 
-        section_background_color='primary'
-        preheader='Case Study' 
-        section_background_color='white' 
-        image_width='50%'
-        image_alignment='right' 
-        image_to_edge=true 
-        text_to_edge=true
-        button_type='text' 
-        section_class='p-0'
-    %} 
-  {% endfor %}
-</div>
 
-{% include sections/cta.html cta=layout.cta %}
+{% include components/carousel.html
+  items=page.case_studies
+  layout="split"
+  theme="white"
+  id="caseStudyCarousel"
+  editor-link="#case_studies"
+%}
+
+
+{% include components/cta.html
+  item=layout.cta
+  theme="light"
+  editor-link="#cta"
+%}

@@ -1,11 +1,8 @@
 ---
 layout: default
 ---
-{% assign title = page.title %}
-{% assign subtitle = page.subtitle %}
-{% assign description_html = page.description_html %}
-{% assign image = page.featured_image %}
-{% include sections/hero.html title=title subtitle=subtitle description_html=description_html image=image %}
+
+{% include components/hero.html item=page %}
 <section>
   <div class="container">
     <div class="row mb-5">
@@ -17,6 +14,7 @@ layout: default
             {% if page.start_time %}{{ page.start_time }} {% if page.end_time %} - {{ page.end_time }}{% endif %} EST{% endif%}
             {% endif %}
         </h2>
+        {{ page.description_html }}
       </div>
     </div>
     <div class="row">

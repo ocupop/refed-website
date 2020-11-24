@@ -1,0 +1,24 @@
+{% assign hero = section %}
+<div class="bg-hero" data-cms-editor-link="cloudcannon:#sections.hero" data-cms-editor-link-style="modal"
+  style="background-image:url('{{ hero.image | default: hero.featured_image }}')">
+  <div class="bg-fill text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          {% if hero.label %}<h3 class="mb-0">{{ hero.label }}</h3>{% endif %}
+          {% if hero.title %}<h1 class="mt-0">{{ hero.title }}</h1>{% endif %}
+          {{ hero.description_html }}
+          <div class="d-flex align-items-center">
+            {% for link in hero.links %}
+            {% if link.url %}
+            <a href="{{ link.url }}" class="btn btn-link"
+              alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,78 +1,58 @@
-
-
-#pageHeader{
-  border-bottom:9px solid $light;
+#pageHeader {
+  border-bottom: 9px solid $light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 1000;
   @include media-breakpoint-down(lg) {
-    > .container { max-width: 100%; }
+    > .container {
+      max-width: 100%;
+    }
   }
 }
-.navbar-brand{
-  background-image: url(../img/logo-wordmark.png);
-  background-size: contain;
-
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: left center;
-  text-indent: -1000px;
-  width: 50%;
+.navbar-brand {
   max-width: 175px;
-  height: rem(67);
-  font-size: 15px;
-  
-  margin-top: rem(15);
-  margin-bottom: rem(15);
-  margin-left: rem(17);
-
-  // * margin-top: em(15.12);
-  // * margin-bottom: em(20.12);
+  padding-left: 15px;
+  @include media-breakpoint-up(lg) {
+    max-width: 190px;
+    padding-left: 0;
+  }
+}
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-
-  /* MOBILE NAV */
-  @include media-breakpoint-down(md) {
-  #pageHeader{
+/* MOBILE NAV */
+@include media-breakpoint-down(md) {
+  #pageHeader {
     // position: absolute;
-    z-index: 11;
+    z-index: 1000;
     width: 100%;
-    > .container{
+    > .container {
       max-width: inherit;
       width: 100%;
       padding: 0;
     }
-    .navbar-collapse{
-      background-color:$primary;
+    .navbar-collapse {
+      background-color: $dark;
       color: $white;
       overflow: hidden;
       z-index: 9999;
       width: 100%;
-      &.collapse{ }
-      &.collapsing{ }
-      &.collapse.show{ }
     }
   }
-
-}
-
-@media screen and (min-width: $screen-md-min){
-  .navbar-brand{
-    background-image:url(../img/logo-wordmark.png);
-    width: rem(242);
-    max-width: 350px;
-    height: rem(67);
-    font-size: 1rem;
-    margin-top: rem(15.12);
-    margin-bottom: rem(20.12);
-  }
-}
-
-
-.navbar-collapse{
 }
 
 /* MOBLIE TOGGLE BUTTON */
 
-.navbar-toggler{
-  &:focus{outline:none;} 
+.navbar-toggler {
+  margin-right: 15px;
+  &:focus {
+    outline: none;
+  }
   .navbar-toggler-icon {
     display: inline-block;
     cursor: pointer;
@@ -82,39 +62,30 @@
       width: 35px;
       height: 5px;
       background-color: $gray-800;
-      margin: 6px 0;
+      margin: 5px 0;
       transition: 0.4s;
     }
     .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-8px, 7px);
+      transform: rotate(-45deg) translate(-5px, 5px);
     }
-    
     .bar2 {
       opacity: 0;
     }
-    
     .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -9px);
     }
   }
-  &.collapsed{
-    .navbar-toggler-icon{
+  &.collapsed {
+    .navbar-toggler-icon {
       .bar1 {
-        -webkit-transform: none;
         transform: none;
       }
-      
       .bar2 {
         opacity: 1;
       }
-      
       .bar3 {
-        -webkit-transform: none;
         transform: none;
       }
     }
   }
 }
-  
