@@ -7,7 +7,11 @@ hero:
     description_html:
     image: /img/resources_and_guides/resourcesandguides_header_image.jpg
     links:
-
+_assets:
+  - image:
+    document:
+    label: Download Roadmap 2030
+    alt: 
 food_waste_tools:
   - title: Food Waster Tracker
     id: food-waste-tracker
@@ -114,10 +118,10 @@ cta_insights_engine:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4">
-        <div class="bg-image aspect-5x7">
-          <div class="bg-fill">
-            <h4>Roadmap asset</h4>
-          </div>
+        <div 
+          class="bg-image aspect-5x7"
+          data-cms-editor-link="cloudcannon:{{ page._assets[0].image }}"
+          data-cms-editor-link-style="modal">
         </div>
       </div>
       <div class="col-lg-7 ml-lg-auto">
@@ -126,7 +130,11 @@ cta_insights_engine:
           <h2>Roadmap 2030 and Action Plan</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsum, eos assumenda eum aliquid sapiente dignissimos deleniti commodi cum explicabo error perferendis, veniam quasi iure maiores eligendi necessitatibus architecto reiciendis, nam nostrum quos ab. Dolore eos modi molestiae facilis, nisi quod sunt a numquam earum nostrum nobis! Doloremque eius vitae itaque doloribus eos ab illo ut, placeat commodi, impedit aliquid quam aspernatur dignissimos dolorum cum? Cupiditate repellendus aut odio id porro reiciendis dolore omnis ipsum facilis vel doloremque cumque quas molestias, quo non numquam aspernatur rem incidunt ea consequatur temporibus velit nulla? Expedita neque maiores possimus explicabo mollitia cumque aut.`</p>
         </div>
-        <a href="#" class="btn btn-secondary btn-lg mt-4">Download Roadmap 2030</a>
+        <a 
+          href="{{ page._assets[0].document }}"
+          class="btn btn-secondary btn-lg mt-4"
+          data-cms-editor-link="cloudcannon:{{ page._assets[0].document }}"
+          >{{ page._assets[0].label }}</a>
       </div>
     </div>
   </div>
@@ -138,7 +146,11 @@ cta_insights_engine:
   <div class="container">
     <h3 class="editable">Our Food Waste Tools:</h3>
     {% for tool in page.food_waste_tools %}
-    <div id="{{ tool.id }}" class="row align-items-center py-lg-5 my-5">
+    <div 
+      id="{{ tool.id }}"
+      class="row align-items-center py-lg-5 my-5 cms-editor-link"
+      data-cms-editor-link="cloudcannon:#food_waste_tools"
+      data-cms-editor-link-style="modal">
       <div class="col-12 col-md-auto">
         <img src="{{ tool.icon_image }}" class="img-fluid icon-img-xl mr-4 mb-3" alt="{{ tool.title }} icon">
       </div>
@@ -158,7 +170,7 @@ cta_insights_engine:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Reports &amp; Action Guides</h2>
+        <h2 class="editable">Reports &amp; Action Guides</h2>
         <div class="bg-placeholder aspect-auto">
           <div class="bg-fill">
             Filter bar
@@ -172,16 +184,22 @@ cta_insights_engine:
   <div class="container" id="roadmap-2030">
     <div class="row align-items-center">
       <div class="col-lg-4">
-        <div class="bg-image aspect-5x7 mb-3">
-          <div class="bg-fill">
-            <h4>Roadmap 2030 asset</h4>
-          </div>
+        <div 
+          class="bg-image aspect-5x7 mb-3"
+          data-cms-editor-link="cloudcannon:{{ page._assets[0].image }}"
+          data-cms-editor-link-style="modal">
         </div>
       </div>
       <div class="col-lg-7 ml-lg-auto">
-        <h2>Roadmap 2030</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsum, eos assumenda eum aliquid sapiente dignissimos deleniti commodi cum explicabo error perferendis, veniam quasi iure maiores eligendi necessitatibus architecto reiciendis, nam nostrum quos ab. Dolore eos modi molestiae facilis, nisi quod sunt a numquam earum nostrum nobis! Doloremque eius vitae itaque doloribus eos ab illo ut, placeat commodi, impedit aliquid quam aspernatur dignissimos dolorum cum? Cupiditate repellendus aut odio id porro reiciendis dolore omnis ipsum facilis vel doloremque cumque quas molestias, quo non numquam aspernatur rem incidunt ea consequatur temporibus velit nulla? Expedita neque maiores possimus explicabo mollitia cumque aut.`</p>
-        <a href="#" class="btn btn-secondary btn-lg mt-4">Download Roadmap 2030</a>
+        <h2 class="editable">Roadmap 2030</h2>
+        <div class="editable">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsum, eos assumenda eum aliquid sapiente dignissimos deleniti commodi cum explicabo error perferendis, veniam quasi iure maiores eligendi necessitatibus architecto reiciendis, nam nostrum quos ab. Dolore eos modi molestiae facilis, nisi quod sunt a numquam earum nostrum nobis! Doloremque eius vitae itaque doloribus eos ab illo ut, placeat commodi, impedit aliquid quam aspernatur dignissimos dolorum cum? Cupiditate repellendus aut odio id porro reiciendis dolore omnis ipsum facilis vel doloremque cumque quas molestias, quo non numquam aspernatur rem incidunt ea consequatur temporibus velit nulla? Expedita neque maiores possimus explicabo mollitia cumque aut.`</p>
+        </div>
+        <a 
+          href="{{ page._assets[0].document }}"
+          class="btn btn-secondary btn-lg mt-4"
+          data-cms-editor-link="cloudcannon:{{ page._assets[0].document }}"
+          >{{ page._assets[0].label }}</a>
       </div>
     </div>
   </div>
@@ -190,7 +208,6 @@ cta_insights_engine:
 <section>
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <!-- TODO add logic to show reports and guides -->
       {% for download in site.downloads %}
         <div class="col mb-5">
           <div class="card">
@@ -216,7 +233,7 @@ cta_insights_engine:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include sections/accordion.html items=page.partner_resources %}
+        {% include sections/accordion.html items=page.partner_resources editor-link="#partner_resources" %}
       </div>
     </div>
   </div>
