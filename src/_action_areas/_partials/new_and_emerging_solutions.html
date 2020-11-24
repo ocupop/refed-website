@@ -1,0 +1,42 @@
+<section id="new-emerging-solutions" class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>New & Emerging Solutions</h2>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-mid" />
+
+    {% for i in (1..2) %}
+    <div class="row my-5">
+      <div class="col-4 col-lg-1">
+        <div class="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0"
+          style="background-image: url(https://via.placeholder.com/1000)"></div>
+      </div>
+      <div class="col-lg-11">
+        <h4>Solution Name</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam
+          aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
+          praesentium ad deleniti qui alias similique unde, quaerat laudantium
+          obcaecati.
+        </p>
+
+        <div class="d-flex flex-column flex-lg-row">
+          <a href="#" class="btn btn-link mr-4">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<section id="modeled-solutions" class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable">Modeled Solutions</h2>
+        <p data-cms-editor-link="cloudcannon:#modeled_solutions" data-cms-editor-link-style="modal"
+          class="cms-editor-link">
+          {{ page.modeled_solutions.summary }}
+        </p>
+      </div>
+    </div>
+
+    <hr class="bg-mid" />
+
+    <div class="__react-component" data-component="SolutionsList" data-category="{{ page.title | slugify }}"
+      data-metrics="{{ metrics }}">
+    </div>
+
+    {% comment %}
+    {% for solution in page.modeled_solutions.solutions %}
+      {% assign metrics = 'total-mtco2e-avoided' %}
+      <div
+        class="__react-component"
+        data-component="SolutionsListItem"
+        data-slug="{{ solution.slug }}"
+        data-metrics="{{ metrics }}">
+      </div>
+    {% endfor %}
+    {% endcomment %}
+
+  </div>
+</section>
