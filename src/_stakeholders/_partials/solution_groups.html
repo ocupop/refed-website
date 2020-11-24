@@ -5,7 +5,7 @@
 {% for sector in page.solution_groups %}
   <section id="{{ sector.label | slugify | default: 'all-solutions' }}" class="py-5">
     <div
-      data-cms-editor-link="cloudcannon:#sectors[{{ forloop.index0 }}]"
+      data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}]"
       data-cms-editor-link-style="modal"
       class="container cms-editor-link">
       <div class="row align-items-center">
