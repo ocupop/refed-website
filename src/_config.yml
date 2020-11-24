@@ -387,12 +387,12 @@ stakeholder_categories:
       - label: Producers
         slug: producers
         uid: producers
-      - label: Manufacturing
-        slug: manufacturing
-        uid: manufacturing
-      - label: Retail
-        slug: retail
-        uid: retail
+      - label: Manufacturers
+        slug: manufacturers
+        uid: manufacturers
+      - label: Retailers
+        slug: retailers
+        uid: retailers
       - label: Restaurants & Foodservice
         slug: restaurants-and-foodservice
         uid: foodservice
@@ -404,7 +404,7 @@ stakeholder_categories:
         uid: policymakers
       - label: Capital Providers
         slug: capital-providers
-        uid: capital
+        uid: capital-providers
 
 #hard coded select fields
 add_dividers:
