@@ -149,7 +149,7 @@ _array_structures:
         links:
   # Array structures for managing API integrations
   solutions:
-    - label: Solutions
+    - label: Solution
       icon: assignment
       value:
         label:
@@ -163,12 +163,22 @@ _array_structures:
         summary:
         metrics:
 
-  metrics:
-    - label: Key metrics
+  indicators:
+    - label: Key indicator
       icon: insights
       value:
         label:
         slug:
+  causes:
+    - label: Cause
+      icon: insights
+      value:
+        label:
+  destinations:
+    - label: Destination
+      icon: insights
+      value:
+        label:
   # End API array structures
 
   sections:

@@ -7,14 +7,14 @@
             <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
           </div>
           <div class="col">
-            <h6 class="mb-0">Stakeholder</h6>
+            <h6 class="mb-0 editable">Stakeholder</h6>
             <h2 class="editable">{{ page.title }}</h2>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12">
-            <h6>Summary</h6>
-            {{ page.description_html }}
+            <h6 class="editable">Summary</h6>
+            {{ page.summary_html }}
           </div>
         </div>
       </div>
@@ -30,20 +30,33 @@
           </div>
         </div>
 
-        <div class="row d-none">
+        <div class="row">
           <div class="col-12">
-            <h6 class="mt-5">Causes</h6>
+            {% if page.causes %}
+            <h6 class="mt-5 editable">Causes</h6>
             <hr />
-            {% for i in (1..3) %}
-            <p class="text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
+            {% for cause in page.causes %}
+              <p
+                data-cms-editor-link="cloudcannon:#causes"
+                data-cms-editor-link-style="modal"
+                class="text-serif {% unless forloop.last %}mb-0{% endunless %}">
+                {{ cause }}
+              </p>
             {% endfor  %}
-            <a href="#" class="btn btn-link">See more in the Insights Engine</a>
-            <h6 class="mt-5">Destinations</h6>
+            <a href="{{ site.insights_engine_url }}" class="btn btn-link editable">See more in the Insights Engine</a>
+            {% endif %}
+
+            {% if page.destinations %}
+            <h6 class="mt-5 editable">Destinations</h6>
             <hr />
-            {% for i in (1..3) %}
-            <p class="text-serif {% unless forloop.last %}mb-0{% endunless %}">Lorem ipsum dolor sit amet.</p>
+            {% for destination in page.destinations %}
+              <p
+                data-cms-editor-link="cloudcannon:#destinations"
+                data-cms-editor-link-style="modal"
+                class="text-serif {% unless forloop.last %}mb-0{% endunless %}">{{ destination }}</p>
             {% endfor  %}
-            <a href="#" class="btn btn-link">See more in the Insights Engine</a>
+            <a href="{{ site.insights_engine_url }}" class="btn btn-link editable">See more in the Insights Engine</a>
+            {% endif %}
           </div>
         </div>
       </div>
