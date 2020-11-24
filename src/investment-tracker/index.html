@@ -101,35 +101,35 @@ cta:
       <div class="col-lg-5">
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
+            {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray">Public</h6>
-            <p class="display-4 text-serif mb-2">$6.6B</p>
-            <p class="mb-0"><small>Corporate Finance - <span class="text-recycle font-weight-bold">$5.2B</span></small> </p>
+            <h6 class="text-gray editable">Public</h6>
+            <p class="display-4 text-serif mb-2 editable">$6.6B</p>
+            <p class="mb-0"><small class="editable">Corporate Finance - <span class="text-recycle font-weight-bold">$5.2B</span></small> </p>
             <p class="mb-0"><small>Private Equity - <span class="text-recycle-300 font-weight-bold">$0.8B</span></small> </p>
           </div>
         </div>
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
+            {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray">Private</h6>
-            <p class="display-4 text-serif mb-2">$8.2B</p>
-            <p class="mb-0"><small>Tax Subsidy - <span class="text-teal-600 font-weight-bold">$7.2B</span></small> </p>
-            <p class="mb-0"><small>Project Finance - <span class="text-teal-300 font-weight-bold">$1.1B</span></small> </p>
+            <h6 class="text-gray editable">Private</h6>
+            <p class="display-4 text-serif mb-2 editable">$8.2B</p>
+            <p class="mb-0"><small class="editable">Tax Subsidy - <span class="text-teal-600 font-weight-bold">$7.2B</span></small> </p>
+            <p class="mb-0"><small class="editable">Project Finance - <span class="text-teal-300 font-weight-bold">$1.1B</span></small> </p>
           </div>
         </div>
         <div class="row align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="{{ site.placeholder_image }}" class="img-fluid" alt="" />
+            {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray">Philanthropic</h6>
-            <p class="display-4 text-serif mb-2">$3B</p>
-            <p class="mb-0"><small>Grants - <span class="text-prevention font-weight-bold">$7.2B</span></small> </p>
-            <p class="mb-0"><small>Impact Investments - <span class="text-prevention-100 font-weight-bold">$1.1B</span></small> </p>
+            <h6 class="text-gray editable">Philanthropic</h6>
+            <p class="display-4 text-serif mb-2 editable">$3B</p>
+            <p class="mb-0"><small class="editable">Grants - <span class="text-prevention font-weight-bold">$7.2B</span></small> </p>
+            <p class="mb-0"><small class="editable">Impact Investments - <span class="text-prevention-100 font-weight-bold">$1.1B</span></small> </p>
           </div>
         </div>
       </div>
@@ -155,8 +155,7 @@ cta:
       <div 
         class="row align-items-center mb-5"
         data-cms-editor-link="cloudcannon:#trend_reports"
-        data-cms-editor-link-style="modal"
-        >
+        data-cms-editor-link-style="modal">
         <div class="col-lg-3">
           <div class="bg-image aspect-5x7 bg-dark" style="background-image: url('{{ report.featured_image }}')"></div>
         </div>
@@ -205,7 +204,7 @@ cta:
       </div>
     </div>
     <div class="row my-5">
-      <div class="col-lg-10 mx-lg-auto">
+      <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="editable">
           <h3>What Does it Do?</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam a nostrum, dolore odio ullam deleniti mollitia. Excepturi ea et id consectetur impedit incidunt iste dolorem accusamus minima. Voluptate, dolore suscipit?</p>
