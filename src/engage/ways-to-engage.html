@@ -8,16 +8,17 @@ hero:
     image: /img/engage/engage_header_image.jpg
     links:
 join_our_team:
-  subtitle: Join Our Team
-  title:
+  subtitle: 
+  title: Join Our Team
   summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
-  featured_image: 'https://via.placeholder.com/410x410'
+  featured_image: 'https://via.placeholder.com/768x768'
   link_label: See Careers
   url: /careers
 featured_articles:
 - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 featured_case_studies:
+  - crown-family-philanthropies
   - crown-family-philanthropies
 cta:
   title:
@@ -164,7 +165,11 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light">$2B</div>
-              <label class="editable my-1">Business<br class="d-none d-lg-block"> Profit</label>
+              <label class="my-1">
+                <span class="editable">
+                  Business<br class="d-none d-lg-block"> Profit
+                </span>
+              </label>
             </div>
           </div>
         </div>
@@ -214,7 +219,7 @@ cta:
             </div>
             <div class="col stat font-weight-bold pl-0 justify-content-start align-items-center d-flex flex-row">
               <div class="editable number mr-2 text-serif font-weight-light text-uppercase d-inline-block">15K</div>
-              <label class="editable my-1">
+              <label class="my-1">
                 <span class="editable">Jobs<br class="d-none d-lg-block"> Created</span>
               </label>  
             </div>
@@ -239,23 +244,18 @@ cta:
   </div>
 </section>
 
+
 {% assign featured = '' | split: ',' %}
 {% for object in page.featured_case_studies %}
   {% assign item = site.case_studies | where: 'slug', object | first %}
   {% assign featured = featured | push: item %}
 {% endfor %}
 
-{% include sections/carousels/carousel_split.html
+{% include components/carousel.html
   items=featured
-  subtitle='Impact Stories'
-  section_background_color='dark'
-  theme='dark'
-  button_type='text'
-  image_width='50%'
-  image_alignment='right'
-  image_to_edge=true
-  text_to_edge=true
-  section_class='p-0'
+  layout="split"
+  theme="dark"
+  id="caseStudyCarousel"
   editor-link="#featured_case_studies"
 %}
 
@@ -280,19 +280,14 @@ cta:
   </div>
 </section>
 
-{% include sections/split_section.html
-  section_background_color='light'
-  image_width='50%'
-  image_alignment='left'
-  image_to_edge=true
-  text_to_edge=true
+{% include components/split.html
   id='join-our-team'
-  section_class='py-0'
+  theme='lighter'
+  reverse=true
   item=page.join_our_team
-  editor-link="#join_our_team"
 %}
 
-<section class="bg-lighter">
+<section class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12">
