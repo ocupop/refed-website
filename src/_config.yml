@@ -155,8 +155,8 @@ _array_structures:
         label:
         api_endpoint:
 
-  sectors:
-    - label: Sector
+  solution_groups:
+    - label: Solution Group
       icon: pie_chart
       value:
         label:
@@ -415,6 +415,7 @@ stakeholder_categories:
       - label: Capital Providers
         slug: capital-providers
         uid: capital-providers
+
 
 #hard coded select fields
 add_dividers:

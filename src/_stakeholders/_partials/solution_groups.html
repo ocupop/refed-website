@@ -1,10 +1,13 @@
 {% if page.subnav.show %}
-  {% include nav/subnav.html items=page.sectors label=page.subnav.label %}
+  {% include nav/subnav.html items=page.solution_groups label=page.subnav.label %}
 {% endif %}
 
-{% for sector in page.sectors %}
+{% for sector in page.solution_groups %}
   <section id="{{ sector.label | slugify | default: 'all-solutions' }}" class="py-5">
-    <div class="container">
+    <div
+      data-cms-editor-link="cloudcannon:#sectors[{{ forloop.index0 }}]"
+      data-cms-editor-link-style="modal"
+      class="container cms-editor-link">
       <div class="row align-items-center">
         <div class=" col-12 col-lg-9">
           <h3>{{ sector.label }}</h3>
