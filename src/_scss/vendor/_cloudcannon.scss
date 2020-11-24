@@ -20,8 +20,14 @@
 }
 
 .cms-editor-active {
-  .cms-editor-link {
+  .cms-editor-link,
+  .editable {
+    outline-width: 2px;
+    outline-style: dashed;
     outline-color: $yellow;
+    &.global-editor-link {
+      outline-color: $red;
+    }
   }
 }
 
