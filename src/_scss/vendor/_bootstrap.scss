@@ -12,14 +12,14 @@
   .carousel-control-prev,
   .carousel-control-next {
     font-size: 4rem;
-    color: $white;
+    color: inherit;
     width: 5%;
   }
   .carousel-control-prev {
-    left: -5%;
+    left: 0;
   }
   .carousel-control-next {
-    right: -5%;
+    right: 0;
   }
   .carousel-indicators {
     position: absolute;

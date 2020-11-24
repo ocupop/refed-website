@@ -106,3 +106,13 @@
     }
   }
 }
+
+//styles for indicators and controls on different backgrounds
+.bg-dark {
+  .carousel-indicators {
+    li {
+      border: 1px solid $white;
+
+    }
+  }
+}

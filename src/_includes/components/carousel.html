@@ -35,7 +35,7 @@
             %}
           </div>
 
-          {% comment %}
+          {% if include.layout == "hero" %}
             {% if include.items.size > 1 %}
               <div class="carousel-controls container">
                 <a class="carousel-control-prev" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="prev">
@@ -48,11 +48,23 @@
                 </a>
               </div>
             {% endif %}
-          {% endcomment %}
+          {% endif %}
+       
         </div>
       {% endif %}
     {% endfor %}
   </div>
+  {% if include.controls == "true" and include.items.size > 1 %}
+    <a class="carousel-control-prev" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="prev">
+      <i class="ri-arrow-left-s-fill"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#{{ include.id | default: 'pageCarousel' }}" role="button" data-slide="next">
+      <i class="ri-arrow-right-s-fill"></i>
+      <span class="sr-only">Next</span>
+    </a>
+  {% endif %}
+
   {% if include.layout == 'hero' %}
     {% include nav/socialnav.html %}
   {% endif %}

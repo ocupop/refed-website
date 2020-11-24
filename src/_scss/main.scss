@@ -26,6 +26,7 @@
 @import "components/hero";
 @import "components/split";
 @import "components/insights_engine";
+@import "components/testimonials";
 
 // TODO: Migrate all module styles
 
@@ -56,8 +57,6 @@
 @import "sections/carousels/all_carousels";
 @import "sections/carousels/carousel_images";
 
-@import "sections/carousels/carousel_split";
-@import "sections/carousels/carousel_testimonials";
 @import "sections/cta";
 
 @import "sections/logo_pile";

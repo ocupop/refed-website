@@ -73,7 +73,8 @@ funder_images:
       title: Test 1
 
 carousel_testimonial:
-  - text: >-
+  - title: Denise Oserhues
+    description_html: >-
       The ReFED team has been an incredible strategic partner in our journey to
       end hunger and waste. ReFED’s insights and guidance helped shape the
       strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
@@ -81,9 +82,13 @@ carousel_testimonial:
       ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
       never been more excited and hopeful that together we can truly change our
       food system.
-    author: Denise Oserhues
     cite: The Kroger Co.
-    image:
+  - title: Firstname Lastname
+    description_html: >-
+      The ReFED team has been an incredible strategic partner in our journey to
+      end hunger and waste. ReFED’s insights and guidance helped shape the
+      strategy of The Kroger Co. Zero Hunger 
+    cite: Somecompany 
 
 cta_insights_engine:
   label: Our Newest Innovation
@@ -113,6 +118,7 @@ cta_insights_engine:
   theme="white"
   id="featuresCarousel"
   reverse="true"
+  controls="true"
   editor-link="#features"
 %}
 
@@ -133,36 +139,6 @@ cta_insights_engine:
     </div>
 
     {% include home/reduction_solutions_chart.html %}
-  </div>
-</section>
-
-<section class="bg-lighter pt-0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="my-2">
-          {% include charts/donut.html %}
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="my-2">
-          {% include charts/donut.html %}
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="my-2">
-          {% include charts/donut.html %}
-        </div>
-      </div>
-      <div class="col-12 col-lg-3">
-        <div class="my-2 editable">
-          <h3>Dive into Our Solutions</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti deserunt numquam, non eos autem quisquam
-            temporibus impedit. Facere, iure voluptate?</p>
-        </div>
-        <a href="/food-waste-solutions" class="btn btn-primary editable">Learn More</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -259,7 +235,17 @@ cta_insights_engine:
   </div>
 </section>
 
-{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial editor-link="#carousel_testimonial" %}
+<section class="carousel-testimonials-section bg-dark" style="background-image:url(https://picsum.photos/id/155/1000/333);">
+  {% include 
+    components/carousel.html 
+    items=page.carousel_testimonial 
+    layout="testimonial"
+    theme="transparent"
+    id="testimonialsCarousel"
+    controls="true"
+    editor-link="#carousel_testimonial"
+  %}
+</section>
 
 <section class="bg-lighter">
   <div class="container">
