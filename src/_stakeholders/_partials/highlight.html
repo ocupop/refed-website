@@ -1,0 +1,35 @@
+{% assign highlight = include.highlight %}
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-lg-auto">
+        <div class="text-center">
+          {{ highlight.description_html }}
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        {% if highlight.featured_image %}
+          <img src="{{ highlight.featured_image }}" alt="{{ page.title }} Insights Engine" class="img-fluid"/>
+        {% else %}
+          <div class="bg-placeholder aspect-2x1 bg-black text-white">
+            <div class="bg-fill">
+              <h4 class="text-uppercase">Chart from Insights Engine</h4>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if highlight.link %}
+    {% assign link = page.highlight.link %}
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="text-center">
+          <a href="{{ link.url }}" title="{{ link.alt }}" class="btn btn-primary">{{ link.label }}</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

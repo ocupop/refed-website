@@ -21,25 +21,43 @@ cta:
   theme:
   add_divider:
 ---
-
+<!-- Hero -->
 {% include components/hero.html item=page.hero %}
 
-{% include stakeholders/summary.html %}
+{% include_relative _partials/summary.html %}
 
 {{ content }}
 
-{% contentblock highlight %}
+{% if page.highlight %}
+  {% include_relative _partials/highlight.html highlight=page.highlight %}
+{% endif %}
 
 {% if page.sectors.size > 0 %}
-  {% include stakeholders/sectors.html %}
+  {% include_relative _partials/sectors.html %}
 {% endif %}
 
-{% contentblock extra %}
 
-{% include components/cta_insights_engine.html item=layout.cta_insights_engine %}
+<!-- Insights Engine -->
+{% include components/cta_insights_engine.html
+  item=layout.cta_insights_engine
+  theme="light"
+%}
 
-{% if case_studies.size > 0 %}
-  {% include components/slide.html  item=page.case_studies.first %}
-{% endif %}
+<!-- Case Studies -->
+{% include components/carousel.html
+  items=page.case_studies
+  layout="slide"
+  theme="white"
+  id="caseStudyCarousel"
+  reverse="true"
+  interval="5000"
+  editor-link="#case_studies"
+%}
 
-{% include components/cta.html item=layout.cta editor-link="#cta" %}
+<!-- CTA -->
+{% include components/cta.html
+  item=layout.cta
+  theme="light"
+  editor-link="#cta"
+
+%}
