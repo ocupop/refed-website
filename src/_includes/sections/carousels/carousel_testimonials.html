@@ -1,9 +1,14 @@
 {% assign num_items = include.items | size %}
 <section class="carousel-testimonials-section bg-dark text-white darken-bkg-image" style="background-image:url(https://picsum.photos/id/155/1000/333);">
-  <div class="{% if num_items > 1 %}carousel-refed-dots{% endif %} carousel-testimonials">
+  <div 
+    class="{% if num_items > 1 %}carousel-refed-dots{% endif %} carousel-testimonials">
     {% for testimonial in include.items %}
-    <div class="testimonial-slide w-100" >
-      <div class="container">
+    <div 
+      class="testimonial-slide w-100">
+      <div 
+        class="container cms-editor-link"
+        data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+        data-cms-editor-link-style="modal">
         <div class="row">
           <div class="col-12 text-center">
             <blockquote>
