@@ -42,6 +42,11 @@
   height: 100px;
 }
 
+.icon-xl {
+  width: 120px;
+  height: 120px;
+}
+
 // Background images
 @each $color, $value in $theme-colors {
   @include icon-variant(".icon-#{$color}", $color, $value, true);
