@@ -7,7 +7,6 @@ $gutter-width: 1rem;
   align-items: center;
   width: 100%;
   @include animation(ticker, 12s, 0);
-  animation: ticker 18s linear infinite;
   .ticker-image {
     width: $column-width;
     margin: auto;
