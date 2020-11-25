@@ -59,18 +59,22 @@ features:
         url: /food-waste-problem
         alt:
 
-funder_images:
-  images:
-    - image: /img/logo-meta.jpg
-      title: Test 1
-    - image: /android-chrome-512x512.png
-      title: Test Logo 2
-    - image: /img/logo-signature.png
-      title: Test Logo 3
-    - image: /android-chrome-192x192.png
-      title: Test Logo 4
-    - image: /img/logo-meta.jpg
-      title: Test 1
+funder_logos:
+  - image: /img/logo-meta.jpg
+    alt: Test 1
+    url:
+  - image: /android-chrome-512x512.png
+    alt: Test Logo 2
+    url:
+  - image: /img/logo-signature.png
+    alt: Test Logo 3
+    url:
+  - image: /android-chrome-192x192.png
+    alt: Test Logo 4
+    url:
+  - image: /img/logo-meta.jpg
+    alt: Test 1
+    url:
 
 carousel_testimonial:
   - text: >-
@@ -242,22 +246,12 @@ cta_insights_engine:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <div class="text-center">
-              <h4 class="text-uppercase">Funder Logo Carousel</h4>
-              <small>.src/_includes/sections/carousels/carousel_images.html</small>
-            </div>
-          </div>
-        </div>
-        <!-- TODO: Refactor Carousels -->
-        {% comment %}
-        {% include sections/carousels/carousel_images.html items=page.funder_images.images %}
-        {% endcomment %}
+        {% include components/ticker.html items=page.funder_logos %}
       </div>
     </div>
   </div>
 </section>
+
 
 {% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial editor-link="#carousel_testimonial" %}
 
