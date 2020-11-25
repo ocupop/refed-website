@@ -253,10 +253,9 @@ _array_structures:
     - label: Carousel Testimonial
       icon: format_quote
       value:
-        text:
-        author:
+        title:
+        description_html:
         cite:
-        image:
   testimonial:
     - label: Testimonial
       icon: format_quote

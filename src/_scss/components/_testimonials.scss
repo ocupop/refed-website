@@ -6,7 +6,13 @@
   padding-bottom: 60px;
   @include darken-bkg-image(0.8,$dark);
   .testimonial-slide {
-    padding-top: 60px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+      min-height: 500px;
+    }
     blockquote{
       font-weight: $font-weight-normal;
       font-size: 1.9rem;
@@ -30,11 +36,16 @@
       }
     }
   }
-  .flickity-viewport {
-    transition: height 0.2s;
-  }
-  .flickity-page-dots{
-    top: 0;
-    bottom: inherit;
+  .carousel-testimonial {
+    .carousel-indicators {
+      margin: 0;
+      justify-content: center;
+    }
+    .carousel-control-prev {
+      left: 0;
+    }
+    .carousel-control-next {
+      right: 0;
+    }
   }
 }
