@@ -2,23 +2,34 @@
   {% include nav/subnav.html items=page.solution_groups label=page.subnav.label %}
 {% endif %}
 
-{% for sector in page.solution_groups %}
-  <section id="{{ sector.label | slugify | default: 'all-solutions' }}" class="py-5">
-    <div
-      data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}]"
-      data-cms-editor-link-style="modal"
-      class="container cms-editor-link">
+{% for group in page.solution_groups %}
+  <section id="{{ group.label | slugify | default: 'all-solutions' }}" class="py-5">
+    <div class="container">
       <div class="row align-items-center">
         <div class=" col-12 col-lg-9">
-          <h3>{{ sector.label }}</h3>
-          <p>{{ sector.summary }}</p>
+          <h3
+            data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}].label"
+            data-cms-editor-link-style="modal"
+            class="cms-editor-link">
+            {{ group.label }}
+          </h3>
+          <p
+            data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}].summary"
+            data-cms-editor-link-style="modal"
+            class="cms-editor-link">
+            {{ group.summary }}
+          </p>
         </div>
         <div class="col-12 col-lg-3">
           {% include charts/donut.html %}
         </div>
       </div>
 
-      <div class="sector">
+      <!-- TODO: Refactor naming. "sector" is not the appropriate class selector -->
+      <div
+        data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}]"
+        data-cms-editor-link-style="modal"
+        class="sector cms-editor-link">
         {% for category in site.action_area_categories %}
           <label>{{ category.label }}</label>
           {% for area in category.areas %}
