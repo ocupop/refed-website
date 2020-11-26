@@ -1,0 +1,8 @@
+{% assign item = include.item %}
+<div
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal"
+  class="my-2 cms-editor-link">
+  <h4 class="mb-2">{{ item.label }}</h4>
+  <p>{{ item.description_html }}</p>
+</div>

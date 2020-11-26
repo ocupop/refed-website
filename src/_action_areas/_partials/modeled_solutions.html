@@ -12,21 +12,7 @@
 
     <hr class="bg-mid" />
 
-    <div class="__react-component" data-component="SolutionsList" data-category="{{ page.title | slugify }}"
-      data-metrics="{{ metrics }}">
-    </div>
-
-    {% comment %}
-    {% for solution in page.modeled_solutions.solutions %}
-      {% assign metrics = 'total-mtco2e-avoided' %}
-      <div
-        class="__react-component"
-        data-component="SolutionsListItem"
-        data-slug="{{ solution.slug }}"
-        data-metrics="{{ metrics }}">
-      </div>
-    {% endfor %}
-    {% endcomment %}
+    <div class="__react-component" data-component="ActionAreaSolutions" data-category="{{ page.title | slugify }}" data-modeled="true"></div>
 
   </div>
 </section>
