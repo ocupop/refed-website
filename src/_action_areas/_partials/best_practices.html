@@ -2,28 +2,26 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Best Practices</h2>
+        <h2 class="editable global-editor-link">Best Practices</h2>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis
-          </p>
+          <p
+            data-cms-editor-link="cloudcannon:#best_practices.summary"
+            data-cms-editor-link-style="modal"
+            class="cms-editor-link">{{ page.best_practices.summary }}</p>
         </div>
       </div>
     </div>
     <hr class="bg-mid" />
-
-    {% for i in (1..3) %}
+  </div>
+  <div
+    data-cms-editor-link="cloudcannon:#best_practices.items"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
+    {% for item in page.best_practices.items %}
     <div class="row my-5">
       <div class="col-12">
-        <h4>Best Practice Title</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veniam
-          aliquid quibusdam quaerat repudiandae. Ea, odio qui. Amet dolorem vel
-          praesentium ad deleniti qui alias similique unde, quaerat laudantium
-          obcaecati.
-        </p>
+        <h4>{{ item.label }}</h4>
+        <p>{{ item.summary }}</p>
       </div>
     </div>
     {% endfor %}

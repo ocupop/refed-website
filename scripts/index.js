@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
 // import StakeholdersList from './StakeholdersList'
 // import SolutionDetail from './SolutionDetail'
-import SolutionsList from './SolutionsList'
+import ActionAreaSolutions from './ActionAreaSolutions'
 import { gsap } from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const COMPONENTS = {
   HelloWorld,
-  SolutionsList
+  ActionAreaSolutions
 }
 
 function renderComponentInElement(el) {
@@ -399,9 +399,9 @@ $('.ics-download').on('click', function () {
 
 /**
  * Upcoming fix for resizing the carousels:
- * 
+ *
  * Place in each carousel function like so:
- 
+
  var flkty_logos = new Flickity( carousel, {
       ...
       on: {
@@ -409,14 +409,14 @@ $('.ics-download').on('click', function () {
           flickity_recalculate_heights(this);
         }
       }
-    });      
-    flkty_logos.onresize = function(event) { 
+    });
+    flkty_logos.onresize = function(event) {
       flickity_recalculate_heights(this);
-    }; 
+    };
 
  * This resets the content of each flickity slide to 100% height, allowing for full height background images even if slide content is different heights.
  */
-function flickity_recalculate_heights(obj){
+function flickity_recalculate_heights(obj) {
   obj.element.classList.remove('flickity-init')
   obj.resize();
   obj.element.classList.add('flickity-init')
