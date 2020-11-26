@@ -9,6 +9,7 @@ hero:
     image: /img/data_and_insights/dataandinsights_header_image.jpg
     links:
 case_studies:
+  - crown-family-philanthropies
 tools_and_guides:
   - title: Tool Title Here
     text: >-
@@ -130,10 +131,11 @@ _assets:
   id='caseStudies'
   theme='white'
   items=page.case_studies
-  editor-link='#case_studies'
   layout='split'
   reverse='true'
   aspect='4x3'
+  collection='case_studies'
+  editor-link='#case_studies'
 %}
 
 {% unless page.case_studies.size > 0 %}

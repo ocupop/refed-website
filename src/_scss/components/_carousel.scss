@@ -12,8 +12,9 @@
     .carousel-control-prev {
       left: 15px;
       font-size: 2rem;
+      display: flex;
       @include media-breakpoint-up(lg) {
-        left: -5%;
+        left: -3%;
         font-size: 4rem;
       }
     }
@@ -21,6 +22,7 @@
       right: auto;
       left: 30px;
       font-size: 2rem;
+      display: flex;
       @include media-breakpoint-up(lg) {
         left: auto;
         right: 0;
@@ -55,55 +57,114 @@
     }
   }
   &.carousel-split {
+    padding-bottom: 50px;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
+    .carousel-indicators {
+      z-index: 900;
+      @include media-breakpoint-up(lg) {
+        right: auto;
+        margin-left: 25%;
+        transform: translateX(-25%);
+      }
+    }
+    &.reverse {
+      .carousel-indicators {
+        @include media-breakpoint-up(lg) {
+          right: 0;
+          margin-left: 15%;
+          left: auto;
+          margin-right: 25%;
+        }
+      }
+      
+    }
   }
   &.carousel-two-column {
   }
   &.carousel-card {
+    @media (max-width: 768px) {
+      .carousel-inner .carousel-item > div {
+          display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+          display: block;
+      }
+    }
+    
     .carousel-inner {
       .carousel-item.active,
       .carousel-item-next,
       .carousel-item-prev {
-        display: flex;
-      }
-      .carousel-item-next {
-        opacity: 0;
-      }
-      .carousel-item-right,
-      .carousel-item-left {
-        transform: translateX(0);
-      }
-      .carousel-item > div {
-        display: none;
-      }
-      .carousel-item > div:first-child {
-        display: block;
-      }
-      @include media-breakpoint-up(md) {
-        .carousel-item > div {
-          display: block;
-        }
-        // /* display 3 */
-        // .carousel-item-right.active,
-        // .carousel-item-next {
-        //   transform: translateX(33.333%);
-        // }
-        // .carousel-item-left.active,
-        // .carousel-item-prev {
-        //   transform: translateX(-33.333%);
-        // }
-        /* display 2 */
-        .carousel-item-right.active,
-        .carousel-item-next {
-          transform: translateX(50%);
-        }
-        .carousel-item-left.active,
-        .carousel-item-prev {
-          transform: translateX(-50%);
-        }
-      }
-      @include media-breakpoint-up(xl) {
+          display: flex;
       }
     }
+    
+    /* display 3 */
+    @media (min-width: 768px) {  
+      .carousel-inner {
+        .carousel-item-right.active,
+        .carousel-item-next {
+          transform: translateX(33.333%);
+        }
+
+        .carousel-item-left.active, 
+        .carousel-item-prev {
+          transform: translateX(-33.333%);
+        }
+        .carousel-item-right,
+        .carousel-item-left{ 
+          transform: translateX(0);
+        }
+      }
+    }
+    
+    // .carousel-inner {
+    //   .carousel-item.active,
+    //   .carousel-item-next,
+    //   .carousel-item-prev {
+    //     display: flex;
+    //   }
+    //   .carousel-item-next {
+    //     opacity: 0;
+    //   }
+    //   .carousel-item-right,
+    //   .carousel-item-left {
+    //     transform: translateX(0);
+    //   }
+    //   .carousel-item > div {
+    //     display: none;
+    //     &:first-child {
+    //       display: block;
+    //     }
+    //   }
+    //   @include media-breakpoint-up(md) {
+    //     .carousel-item > div {
+    //       display: block;
+    //     }
+    //     // /* display 3 */
+    //     .carousel-item-right.active,
+    //     .carousel-item-next {
+    //       transform: translateX(33.333%);
+    //     }
+    //     .carousel-item-left.active,
+    //     .carousel-item-prev {
+    //       transform: translateX(-33.333%);
+    //     }
+    //     /* display 2 */
+    //     // .carousel-item-right.active,
+    //     // .carousel-item-next {
+    //     //   transform: translateX(50%);
+    //     // }
+    //     // .carousel-item-left.active,
+    //     // .carousel-item-prev {
+    //     //   transform: translateX(-50%);
+    //     // }
+    //   }
+    //   @include media-breakpoint-up(xl) {
+    //   }
+    // }
   }
 }
 

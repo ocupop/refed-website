@@ -14,25 +14,27 @@
     font-size: 4rem;
     color: inherit;
     width: 5%;
+    opacity: 1;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   .carousel-control-prev {
     left: 0;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
   }
   .carousel-control-next {
     right: 0;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
   }
   .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: auto;
-    top: 0;
-    left: 0;
-    z-index: 15;
-    display: flex;
-    justify-content: start;
-    padding-left: 0;
-    margin: 4rem 0 0;
-    list-style: none;
+    bottom: 30px;
     li {
       height: 1rem;
       width: 1rem;
@@ -83,6 +85,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+}
+
+.bg-dark {
+  .carousel-indicators {
+    li {
+      border: 1px solid $white;
+      background-color: transparent;
+      border-radius: 100%;
+      &.active {
+        background-color: $white;
+      }
     }
   }
 }
