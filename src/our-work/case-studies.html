@@ -9,8 +9,6 @@ hero:
     links:
 featured_case_studies:
   - crown-family-philanthropies
-  - crown-family-philanthropies
-  - crown-family-philanthropies
 cta:
   title:
   label:
@@ -54,7 +52,7 @@ cta:
     <!-- TODO logic to rule out displaying case studies twice on this page -->
     {% include 
       components/carousel.html 
-      items=site.articles
+      items=site.case_studies
       controls="true"
       layout="card"
       class="col-md-4"

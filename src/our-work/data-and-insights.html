@@ -173,18 +173,23 @@ _assets:
       <div class="col-12">
         <div class="bg-placeholder aspect-3x1">
           <div class="bg-fill">
-            <p>carousel_cards</p>
+            <p>tools cards grid</p>
           </div>
         </div>
         {% comment %}
         {% include sections/carousels/carousel_cards.html items=page.tools_and_guides %}
         {% endcomment %}
+        
       </div>
     </div>
   </div>
 </section>
 
-{% include components/cta.html item=page.cta_resources_and_guides %}
+{% include 
+  components/cta.html 
+  item=page.cta_resources_and_guides 
+  theme="dark"
+%}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 

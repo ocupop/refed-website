@@ -1,18 +1,18 @@
 <div id="{{ include.id | default: 'pageCarousel' }}"
-  class="carousel carousel-{{include.layout | default: 'two-column'}} {% if include.reverse == 'true' %}reverse{% endif %} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }}"
+  class="carousel carousel-{{include.layout | default: 'two-column'}} {% if include.reverse == 'true' %}reverse{% endif %} slide {{ include.style | default: '' }} bg-{{ include.theme | default: 'lighter' }} {% if include.cards %}cards-{{ include.cards }}{% endif %}"
   data-ride="carousel"
   data-interval="{{ include.interval | default: '7000' }}">
   <!-- TODO: Refactor indicators -->
   {% if include.indicators == 'true' and include.items.size > 1 %}
   <ol class="carousel-indicators">
-    {% for slug in include.items %}
+    {% for slug in include.items limit: 9 %}
     <li data-target="#{{ include.id | default: 'pageCarousel' }}" data-slide-to="{{ forloop.index0 }}"
       {% if forloop.index0 == 0 %}class="active" {% endif %}></li>
     {% endfor %}
   </ol>
   {% endif %}
   <div class="carousel-inner">
-    {% for slug in include.items %}
+    {% for slug in include.items limit: 9 %}
       {% assign index = forloop.index0 %}
       <!-- This logic assumes that all collection instances have a title attribute -->
       {% if slug.title %}
@@ -36,6 +36,7 @@
               aspect=include.aspect
               reverse=include.reverse
               button=include.button
+              image=include.image
             %}
           </div>
 

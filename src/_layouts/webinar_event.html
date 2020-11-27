@@ -61,7 +61,15 @@ layout: default
             {% assign event = site.events | where: 'slug', object | first %}
             {% assign series_events = series_events | push: event %}
           {% endfor %}
-          {% include sections/carousels/carousel_cards.html items=series_events %}
+          {% include 
+            components/carousel.html 
+            items=series_events
+            controls="true"
+            layout="card"
+            class="col-md-4"
+            theme="white"
+            interval="false"
+          %}
         </div>
       </div>
     </div>
@@ -78,7 +86,15 @@ layout: default
       <div class="col-12">
         <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
         {% include events/past_events_logic.html event_type="webinar" %}
-        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+        {% include 
+          components/carousel.html 
+          items=past_events_sorted
+          controls="true"
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+        %}
       </div>
     </div>
   </div>

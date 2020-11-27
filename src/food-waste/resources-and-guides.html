@@ -159,7 +159,7 @@ cta_insights_engine:
       </div>
       <div class="col">
         <h2>{{ tool.title }}:</h2>
-        <div class="lead">
+        <div class="lead mb-0">
           {{ tool.description_html }}
         </div>
         <a class="btn btn-link" href="{{ tool.link }}" >{{ tool.link_label | default: 'Learn More' }}</a>
@@ -216,7 +216,7 @@ cta_insights_engine:
       {% for download in site.downloads %}
         <div class="col mb-5">
           <div class="card">
-            <img class="card-img-top img-fluid" src="{{ download.featured_image }}" alt="{{ download.title }} image" />
+            <img class="card-img-top img-fluid shadow" src="{{ download.featured_image }}" alt="{{ download.title }} image" />
             <div class="card-body">
               <h4 class="card-title">{{ download.title }}</h4>
               <a href="{{ download.document }}" class="btn btn-link download-link d-inline-block" target="_blank">Download</a>

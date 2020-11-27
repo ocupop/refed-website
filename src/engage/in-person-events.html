@@ -91,7 +91,15 @@ cta_webinars:
     <div class="row mb-5">
       <div class="col-12">
         {% include events/past_events_logic.html event_type="in_person" %}
-        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+        {% include 
+          components/carousel.html 
+          items=past_events_sorted
+          controls="true"
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+        %}
       </div>
     </div>
   </div>

@@ -40,6 +40,7 @@
       width: 1rem;
       border: 1px solid $dark;
       background-color: transparent;
+      background-clip: inherit;
       border-radius: 100%;
       &.active {
         background-color: $dark;
@@ -50,8 +51,7 @@
 
 // Buttons
 .btn-link {
-  padding-left: 0;
-  padding-right: 25px;
+  padding: 0 25px 0 0;
   position: relative;
   color: $blue;
   &::after {
@@ -94,9 +94,9 @@
     li {
       border: 1px solid $white;
       background-color: transparent;
-      border-radius: 100%;
       &.active {
         background-color: $white;
+        border-color: $white;
       }
     }
   }

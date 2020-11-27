@@ -20,7 +20,11 @@
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        {% include components/image.html aspect="4x3" src=item.featured_image %}
+        {% if include.image == 'img' %}
+          <img src="{{ item.featured_image}}" class="img-fluid" alt="{{ item.title }} image">
+        {% else %}
+          {% include components/image.html src=item.featured_image %}
+        {% endif %}
       </div>
     </div>
   </div>

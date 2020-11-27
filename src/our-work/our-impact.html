@@ -92,13 +92,17 @@ carousel_testimonial:
         </div>
       </div>
     </div> -->
-
-    {% assign case_studies = '' | split: ',' %}
-    {% for object in page.featured_case_studies %}
-    {% assign item = site.case_studies | where: 'slug', object | first %}
-    {% assign case_studies = case_studies | push: item %}
-    {% endfor %}
-    {% include sections/carousels/carousel_cards.html items=case_studies %}
+    {% include 
+      components/carousel.html 
+      items=page.featured_case_studies
+      controls="true"
+      layout="card"
+      class="col-md-4"
+      theme="white"
+      interval="false"
+      collection="case_studies"
+      editor-link="#featured_case_studies"
+    %}
   </div>
 </section>
 
