@@ -16,7 +16,8 @@ logos:
     featured_image: >-
       https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
 case_studies:
-  - sample-case-study
+  - crown-family-philanthropies
+  - crown-family-philanthropies
 cta:
   title:
   label:
@@ -73,15 +74,17 @@ cta:
   </div>
 </section>
 
-{% include components/carousel.html
-  items=page.case_studies
-  label='Funder Impact Stories'
-  theme="dark"
-  id="caseStudiesCarousel"
-  reverse="true"
-  layout="two-column"
-  collection="case_studies"
-  editor-link="#case_studies"
-%}
+{% if page.case_studies %}
+  {% include components/carousel.html
+    items=page.case_studies
+    label='Funder Impact Stories'
+    theme="dark"
+    id="caseStudiesCarousel"
+    layout="split"
+    collection="case_studies"
+    indicators="true"
+    editor-link="#case_studies"
+  %}
+{% endif %}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}

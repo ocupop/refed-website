@@ -4,7 +4,7 @@
   <div class="bg-image aspect-4x3"
     style="background-image:url('{{ item.featured_image | default: site.placeholder_image }}')"></div>
   <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted border-bottom border-dark">{{ item.date | date: "%B %-d, %Y" }}</div>
+    <div class="card-subtitle mb-2 pb-2 text-muted border-bottom border-dark">{{ item.item_date | date: "%B %-d, %Y" }}</div>
     <p class="text-lg">{{ item.title }}</p>
     {% if item.url %}
       <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn-link">{{ 'Read More' | default: site.default_cta }}</a></p>

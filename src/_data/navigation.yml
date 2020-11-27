@@ -59,23 +59,23 @@ primary_navigation:
             - label: Funder Impact
               url: '/about/our-funders/#funder-impact'
               alt:
+        - label: Documents
+          url: /about/documents
+          alt: 
+          links:
+            - label: Annual Reports
+              url: '/about/documents/#annual-reports'
+              alt:
+            - label: Financials
+              url: '/about/documents/#financials'
+              alt:
+            - label: Brand Guidelines
+              url: '/about/documents/#brand-guidelines'
+              alt:
         - label: Careers
           url: /about/careers
           alt:
-          links:
-            - label: Documents
-              url: /about/documents
-              alt:
-              links:
-                - label: Annual Reports
-                  url: '/about/documents/#annual-reports'
-                  alt:
-                - label: Financials
-                  url: '/about/documents/#financials'
-                  alt:
-                - label: Brand Guidelines
-                  url: '/about/documents/#brand-guidelines'
-                  alt:
+          links:      
     - label: Our Work
       url: /our-work/
       alt:

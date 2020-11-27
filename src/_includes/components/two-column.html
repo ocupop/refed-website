@@ -9,13 +9,22 @@
           {% if item.label %}<h3>{{ item.label }}</h3>{% endif %}
           {% if item.title %}<h2>{{ item.title }}</h2>{% endif %}
           {{ item.excerpt | default: item.description_html | truncatewords: 40 }}
-          {% if item.url %}
-          <a href="{{ item.url }}" class="btn btn-link">{{ site.default_cta }}</a>
+          {% if item.url or item.links.first.url %}
+            {% if item.url %}
+              {% assign url = item.url %}
+            {% elsif item.links.first.url %}
+              {% assign url = item.links.first.url %}
+            {% endif %}
+            <p><a href="{{ url }}" class="btn {% if include.button %}btn-primary{% else %}btn-link{% endif %}">{{ site.default_cta }}</a></p>
           {% endif %}
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        {% include components/image.html aspect="4x3" src=item.featured_image %}
+        {% if include.image == 'img' %}
+          <img src="{{ item.featured_image}}" class="img-fluid" alt="{{ item.title }} image">
+        {% else %}
+          {% include components/image.html src=item.featured_image %}
+        {% endif %}
       </div>
     </div>
   </div>

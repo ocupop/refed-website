@@ -38,7 +38,7 @@ hero:
 
 features:
   - title: The Multi-Billion Dollar Food Waste Problem
-    featured_image: /img/home/homepage_header_image_02.jpg
+    featured_image: /img/home/homepage-slider-01.png
     description_html: >-
       <p>52 million tons of food sent to landfill annually, plus another 10
       million tons that is discarded or left unharvested on farms. If all of our
@@ -51,7 +51,7 @@ features:
         url: /food-waste-challenge
         alt:
   - title: It Effects Our Climate & Resources
-    featured_image: /img/home/homepage_header_image_01.jpg
+    featured_image: /img/home/homepage-slider-02.png
     description_html: >-
       <p>The Data and Insights team uses economics and data to generate
       actionable solutions to reduce the amount of food that goes uneaten.</p>
@@ -59,23 +59,52 @@ features:
       - label:
         url: /food-waste-problem
         alt:
+  - title: Lorem Title
+    featured_image: /img/home/homepage-slider-03.png
+    description_html: >-
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptas odit ab illo, atque in ipsam vero eaque dolor iusto.</p>
+    links:
+      - label:
+        url: /food-waste-problem
+        alt:      
 
 funder_logos:
-  - image: /img/logo-meta.jpg
-    alt: Test 1
+  - image: /img/home/1024px-Deloitte.png
+    alt: Deloitte
     url:
-  - image: /android-chrome-512x512.png
-    alt: Test Logo 2
+  - image: /img/home/claneil_foundation_logo.png
+    alt: Claneil Foundation
     url:
-  - image: /img/logo-signature.png
-    alt: Test Logo 3
+  - image: /img/home/crown-logo.png
+    alt: Crown Family Philanthropies
     url:
-  - image: /android-chrome-192x192.png
-    alt: Test Logo 4
+  - image: /img/home/Fink-Family-Foundation-2.jpg
+    alt: Fink Family Foundation
     url:
-  - image: /img/logo-meta.jpg
-    alt: Test 1
+  - image: /img/home/general_mills_logo.png
+    alt: General Mills
     url:
+  - image: /img/home/Kroger_ZHZW_Foundation_onWhite.png
+    alt: Kroger Co Zero Hunder Zero Waste Foundation
+    url:
+  - image: /img/home/kroger_foundation_logo.png
+    alt: Kroger Foundation
+    url:
+  - image: /img/home/morton_salt_logo.png
+    alt: Morton Salt
+    url:
+  - image: /img/home/Nielsen_logo.png
+    alt: Nielsen
+    url:
+  - image: /img/home/pisces_foundation_logo.png
+    alt: Pisces Foundation
+    url:
+  - image: /img/home/posner_horizontal_charcoal.png
+    alt: Posner Foundation
+    url:
+  - image: /img/home/SP-final-logo.png
+    alt: Spring Point
+    url:   
 
 carousel_testimonial:
   - title: Denise Oserhues
@@ -124,7 +153,11 @@ cta_insights_engine:
   id="featuresCarousel"
   reverse="true"
   controls="true"
+  indicators="true"
   editor-link="#features"
+  button="button"
+  aspect="contain"
+  image="img"
 %}
 
 
@@ -182,23 +215,23 @@ cta_insights_engine:
   <div class="container">
     <div class="row align-items-stretch">
       <div class="col-12 col-lg-8 d-flex align-items-center">
-        <div class="py-5">
-          <h2 class="editable">News &amp; Updates</h2>
+        <div class="py-5 pr-lg-5">
+          <h2 class="mb-5 editable">News &amp; Updates</h2>
           {% include components/carousel.html
             items=site.articles
             layout="card"
             class= "col-md-6"
             theme="lighter"
             id="articlesCarousel"
-            reverse="true"
             interval="false"
+            controls="true"
+            cards="2"
             editor-link="collections/_articles"
           %}
-
         </div>
       </div>
       <div class="col-12 col-lg-4 bg-light d-flex align-items-center">
-        <div class="p-5">
+        <div class="py-5 px-lg-5">
           <p class="lead mb-5 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a
               href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</p>
           <p>
@@ -237,6 +270,7 @@ cta_insights_engine:
     theme="transparent"
     id="testimonialsCarousel"
     controls="true"
+    indicators="true"
     editor-link="#carousel_testimonial"
   %}
 </section>

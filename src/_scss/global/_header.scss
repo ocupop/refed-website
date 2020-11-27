@@ -13,10 +13,11 @@
   }
 }
 .navbar-brand {
-  max-width: 175px;
+  width: 175px;
   padding-left: 15px;
   @include media-breakpoint-up(lg) {
-    max-width: 190px;
+    max-width: 100%;
+    width: 190px;
     padding-left: 0;
   }
 }
@@ -66,7 +67,7 @@
       transition: 0.4s;
     }
     .bar1 {
-      transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 6px);
     }
     .bar2 {
       opacity: 0;
