@@ -30,7 +30,7 @@ collections:
     output: false
     sort_by: date
   newsletters:
-    output: false
+    output: true
   case_studies:
     output: true
   careers:
@@ -109,6 +109,15 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/uploads/downloads"
+
+  - 
+    scope:
+      type: 'newsletters'
+    values:
+      layout: article
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/newsletters"
 
       # variable_name: value
   # - scope:
