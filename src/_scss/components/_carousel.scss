@@ -10,12 +10,14 @@
       }
     }
     .carousel-control-prev {
-      left: 15px;
+      left: 8px;
       font-size: 2rem;
       display: flex;
+      width: auto;
       @include media-breakpoint-up(lg) {
-        left: -3%;
+        left: -4%;
         font-size: 4rem;
+        width: 5%;
       }
     }
     .carousel-control-next {
@@ -23,10 +25,12 @@
       left: 30px;
       font-size: 2rem;
       display: flex;
+      width: auto;
       @include media-breakpoint-up(lg) {
         left: auto;
         right: 0;
         font-size: 4rem;
+        width: 5%;
       }
     }
 
@@ -36,7 +40,7 @@
         padding-top: 25%;
       }
       .bg-fill {
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
         @include media-breakpoint-up(lg) {
           padding-bottom: 1rem;
           min-height: 160px;
