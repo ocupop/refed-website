@@ -3,10 +3,11 @@
 {% endif %}
 
 {% for group in page.solution_groups %}
+  {% assign editorRef = solution_groups[{{ forloop.index0 }}] %}
   <section id="{{ group.label | slugify | default: 'all-solutions' }}" class="py-5">
     <div class="container">
       <div
-        data-cms-editor-link="cloudcannon:#solution-groups[{{ forloop.index0 }}]"
+        data-cms-editor-link="cloudcannon:#{{ editorRef }}"
         data-cms-editor-link-style="modal"
         class="row align-items-center cms-editor-link">
         <div class=" col-12 col-lg-9">
@@ -65,7 +66,7 @@
                   <div class="bg-light text-prevention p-5">
                     <h5 class="text-serif editable global-editor-link">Overview</h5>
                     <p
-                      data-cms-editor-link="cloudcannon:#solution_groups.action_areas"
+                      data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas[{{ area.slug }}].summary"
                       data-cms-editor-link-style="modal"
                       class="cms-editor-link">
                       {{ active_area.summary }}
