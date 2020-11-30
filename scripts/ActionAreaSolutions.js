@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
+import { formatMoney } from './helpers'
 
 const SOLUTIONS_URL = 'https://api.refed.com/v2/solution_database/solutions'
 
-const ActionAreaSolutions = ({ category, modeled }) => {
+const ActionAreaSolutions = ({ category, modeled = false }) => {
   const [solutions, setSolutions] = useState(false)
 
   useEffect(() => {
@@ -23,8 +24,20 @@ const ActionAreaSolutions = ({ category, modeled }) => {
     <>
       {solutions && solutions.map(solution => {
         const { id, attributes: { name, image_url, definition, data } } = solution
-        const emmissionsReduction = data.find(item => item.indicator === 'total-mtco2e-avoided').value
-        const investmentNeeded = data.find(item => item.indicator === 'us-dollars-cost').value
+
+        // TODO: This can be promoted to a helper method at some point
+        const formatIndicator = (indicator) => {
+          const val = data.find(item => item.indicator === indicator).value
+          const roundedVal = Math.round((val / 100000) * 10) / 10
+          return `${roundedVal}M Tons`
+        }
+        const investmentNeeded = () => {
+          const val = data.find(item => item.indicator === 'us-dollars-cost').value
+          const roundedVal = Math.round((val / 100000) * 10) / 10
+          return `${formatMoney(roundedVal)}M`
+        }
+
+
 
         return (
           <div className="row my-5">
@@ -43,31 +56,14 @@ const ActionAreaSolutions = ({ category, modeled }) => {
                       <div className='stat-text m-0'>Key Indicators</div>
                     </div>
                     <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
-                      {emmissionsReduction ? (
-                        <span className="stat-number d-block lead">{Math.round((emmissionsReduction / 100000) * 10) / 10}M Tons</span>
-                      ) : (
-                          <span className="stat-number d-block lead">N/A</span>
-                        )}
+                      <span className="stat-number d-block lead">{formatIndicator('total-mtco2e-avoided')}</span>
                       <span className="stat-text d-block">Emissions Reduction</span>
                     </div>
 
                     <div className="key-indicators-box__stat d-flex flex-column pl-4 border-left pb-3 pb-sm-0">
-                      {investmentNeeded ? (
-                        <span className="stat-number d-block lead">${Math.round((investmentNeeded / 100000) * 10) / 10}M</span>
-                      ) : (
-                          <span className="stat-number d-block lead">N/A</span>
-                        )}
+                      <span className="stat-number d-block lead">{investmentNeeded()}</span>
                       <span className="stat-text d-block">Investment Needed</span>
                     </div>
-                    {/* {indicators && indicators.map(indicator => {
-
-                  return (
-                    <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
-                      <span className="stat-number d-block lead">XX</span>
-                      <span className="stat-text d-block">{indicator.attributes.name}</span>
-                    </div>
-                  )
-                })} */}
                   </div>
 
                   <div className="d-flex flex-column flex-lg-row">

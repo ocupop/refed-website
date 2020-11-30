@@ -12,9 +12,9 @@ permalink: pretty
 twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
-insights_engine_url:  https://insights-engine.vercel.app/
+insights_engine_url:  https://insights-engine.vercel.app
 insights_engine_description: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
-insights_engine_api_baseurl: https://api.refed.com/v2/
+insights_engine_api_baseurl: https://api.refed.com/v2
 
 # Default Values
 default_cta: Learn More
@@ -93,6 +93,17 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/uploads/stakeholders"
+      _array_structures:
+        solutions:
+          - label: Solution
+            icon: assignment
+            value:
+              slug:
+              label:
+              invesment_needed:
+              investment_needed_summary:
+              innovation_opportunities_html:
+
   -
     scope:
       type: 'events'
@@ -170,7 +181,63 @@ _array_structures:
       value:
         label:
         summary:
-        metrics:
+        action_areas:
+          optimize-the-harvest:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          enhance-product-distribution:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          refine-product-management:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          maximize-product-utilization:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          reshape-consumer-environments:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          strengthen-food-rescue:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
+          recycle-anything-remaining:
+            total_investment_needed:
+            financing_opportunity_summary:
+            solutions:
+              - slug:
+                invesment_needed:
+                investment_needed_summary:
+                innovation_opportunities_html:
 
   indicators:
     - label: Key indicator
@@ -372,30 +439,37 @@ action_area_categories:
       - label: Optimize The Harvest
         slug: optimize-the-harvest
         uid: optimize
+        definition:
       - label: Enhance Product Distribution
         slug: enhance-product-distribution
         uid: enhance
+        definition:
       - label: Refine Product Management
         slug: refine-product-management
         uid: refine
+        definition:
       - label: Maximize Product Utilization
         slug: maximize-product-utilization
         uid: maximize
+        definition:
       - label: Reshape Consumer Environments
         slug: reshape-consumer-environments
         uid: reshape
+        definition:
   - label: Rescue
     uid: rescue
     areas:
       - label: Strengthen Food Rescue
         slug: strengthen-food-rescue
         uid: rescue
+        definition:
   - label: Recycling
     uid: recycle
     areas:
       - label: Recycle Anything Remaining
         slug: recycle-anything-remaining
         uid: recycle
+        definition:
 
 # Stakeholder Taxonomy
 stakeholder_categories:
