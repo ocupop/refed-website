@@ -106,10 +106,23 @@ cta_buttons:
     link_label: See Data & Insights
   - link: /capital-innovation
     link_label: See Capital & Innovation
-events:
-  - 2021-food-waste-summit
-  - logistics-connecting-food-and-transportation
-  - organizational-financial-health-during-and-after-covid-19
+
+event_types:
+  - title: Food Waste Summit
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum harum similique sed doloribus repudiandae impedit tempore voluptates velit unde voluptas temporibus, maiores cum deserunt reprehenderit voluptatibus necessitatibus inventore at.</p>
+    featured_image:
+    link: https://summit.refed.com/
+  - title: Webinars
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem expedita vel totam. Dignissimos tempore distinctio enim vel quae dolore assumenda quaerat porro nisi ratione? Natus nobis delectus dignissimos. Sunt, debitis!</p>
+    featured_image:  
+    link: /engage/webinar-events
+  - title: In Person Events
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam eligendi earum officiis quam, quidem dicta! Dolor maiores veritatis rem alias consectetur ut voluptatibus illum aliquid autem, ea placeat numquam.</p>
+    featured_image:  
+    link: /engage/in-person-events
 
 cta_insights_engine:
   label: Our Newest Innovation
@@ -234,13 +247,13 @@ _subnav:
       </div>
     </div>
     {% include components/carousel.html 
-      items=page.events
-      collection="events"
+      items=page.event_types
       layout="card"
       class="col-md-4"
       theme="lighter"
       interval="false"
-      editor-link="#events"
+      show-description="true"
+      editor-link="#event_types"
     %}
   </div>
 </section>
