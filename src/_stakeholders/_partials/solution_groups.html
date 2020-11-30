@@ -3,7 +3,7 @@
 {% endif %}
 
 {% for group in page.solution_groups %}
-  {% assign editorRef = solution_groups[{{ forloop.index0 }}] %}
+  {% capture editorRef %}solution_groups[{{ forloop.index0 }}]{% endcapture %}
   <section id="{{ group.label | slugify | default: 'all-solutions' }}" class="py-5">
     <div class="container">
       <div
