@@ -19,25 +19,16 @@
   display: block;
 }
 
-.cms-editor-active {
+.cms-region-highlighted {
   .cms-editor-link,
   .editable {
-    outline: 2px dotted $yellow;
+    outline: 2px dotted $yellow !important;
     &.global-editor-link {
-      outline: 3px dotted $orange;
+      outline: 2px dotted $orange;
     }
-    &:hover {
-      i {
-        visibility: visible;
-      }
+    i {
+      color: $orange;
     }
-  }
-}
-
-.cms-editor-link {
-  i {
-    visibility: hidden;
-    color: $yellow;
   }
 }
 
