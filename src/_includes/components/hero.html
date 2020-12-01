@@ -14,12 +14,12 @@
           {% endunless %}
           
           {% if item.url and item.url != page.url %}
-            <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn-link">{{ site.default_cta }}</a></p>
+            <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn {% if include.button %}btn-primary{% else %}btn-link{% endif %}">{{ site.default_cta }}</a></p>
           {% endif %}
           <div class="d-flex align-items-center">
             {% for link in item.links %}
               {% if link.url %}
-                <a href="{{ link.url }}" class="btn btn-link"
+                <a href="{{ link.url }}" class="btn {% if include.button %}btn-primary{% else %}btn-link{% endif %} mr-3"
                   alt="{{ link.alt | default: link.label }}">{{ link.label | default: site.default_cta }}</a>
               {% endif %}
             {% endfor %}

@@ -9,7 +9,7 @@ summary: >-
   capital and innovation landscape and highlights specific examples of
   philanthropic, public, and private food waste investment, including a Special
   Report on Foundation Funding.
-featured_image: /uploads/press/ReFED_Logo_Horizontal_Horizontal.jpg
+featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 link:
 ---
 

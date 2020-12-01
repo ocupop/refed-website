@@ -75,7 +75,15 @@ primary_navigation:
         - label: Careers
           url: /about/careers
           alt:
-          links:      
+          links:
+            - label: Current Vacancies
+              url: '/about/careers#current-vacancies'
+              alt:
+            - label: Perks and Benefits
+              url: '/about/careers#perks-and-benefits'
+              alt:
+            - label: Operation Principles
+              url: '/about/careers#operation-principles'
     - label: Our Work
       url: /our-work/
       alt:
@@ -88,7 +96,7 @@ primary_navigation:
               url: '/our-work/data-and-insights'
               alt:
               links:
-            - label: Capitol & Innovation
+            - label: Capital & Innovation
               url: /our-work/capital-and-innovation
               alt:
               links:
@@ -259,7 +267,7 @@ footer_navigation:
      url: /newsroom
      alt:
    - label: Media Inquiry
-     url: /#
+     url: /contact#media-inquiry
      alt:
    - label: Terms of Use
      url: /terms-of-use

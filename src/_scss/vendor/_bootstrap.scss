@@ -1,5 +1,9 @@
 .container {
   position: relative;
+  @include media-breakpoint-down(sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .lead {
@@ -36,12 +40,12 @@
   .carousel-indicators {
     bottom: 30px;
     li {
-      height: 1rem;
-      width: 1rem;
-      border: 1px solid $dark;
+      height: 0.75rem;
+      width: 0.75rem;
+      border: 5px solid $dark;
       background-color: transparent;
       background-clip: inherit;
-      border-radius: 100%;
+      border-radius: 50%;
       &.active {
         background-color: $dark;
       }
@@ -92,7 +96,7 @@
 .bg-dark {
   .carousel-indicators {
     li {
-      border: 1px solid $white;
+      border: 5px solid $white;
       background-color: transparent;
       &.active {
         background-color: $white;

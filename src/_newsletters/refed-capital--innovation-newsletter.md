@@ -4,7 +4,7 @@ item_date: 2018-08-03 00:00:00
 summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
   waste.
-featured_image: /uploads/newsletters/ReFED_Logo_Horizontal_Horizontal.jpg
+featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 link:  
 ---
 
@@ -14,25 +14,25 @@ Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quart
 
 #### Great Minds Think Differently: Diverse Group at Innovator Workshop Accelerates Food Waste Solutions
 
-![](/uploads/optimized-summit.png)<br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
+![](/uploads/newsletters/optimized-summit.jpg)<br>Weren’t able to attend the US Food Waste Summit and Innovator Workshop in Boston this past June? Read the highlights&nbsp;[here](https://www.refed.com/content-hub/great-minds-think-differently-diverse-group-at-innovator-workshop-accelerates-food-waste-solutions)!
 
 #### Emily Gousen Joins ReFED as Capital & Innovation Manager
 
 We’re excited to welcome Emily as the newest member of the organization. In her role, she will be supporting innovators fighting food waste by helping them scale their businesses and get the funding they need to grow their impact. Emily is passionate about using economics and data to find sustainable solutions that make smart business sense, and brings 10 years of experience working in academia, government, nonprofit, and private business sectors. Emily brings with her a depth of knowledge in food waste tracking and measurement, agricultural production and sustainability, strategic sourcing, and innovation mentorship to food-based startups.
 
-![](/uploads/emilyg.jpg)
+![](/uploads/newsletters/emilyg.jpg)
 
 # Opportunities to Get Involved
 
 #### ReFED to Host Food Waste Innovation Demo Day at SOCAP
 
-![](/uploads/socap2018pic.png)
+![](/uploads/newsletters/socap2018pic.jpg)
 
 ReFED will be hosting an interactive demo day featuring innovators who are at the forefront of tackling the food waste challenge. Six impact-driven innovators will pitch their projects in front of an expert panel of funders who will serve as judges. Pitch slots have already been filled, but pick up your tickets to the conference&nbsp;[here](http://socialcapitalmarkets.net/register/){: target="_blank"} and make sure to join us for what is sure to be an exciting event!
 
 #### ReFED Joins FoodBytes! as a Community Partner: Open Call for Applications Closes August 12
 
-#### ![](/uploads/pasted-image-0.png)
+#### ![](/uploads/newsletters/pasted-image-0.jpg)
 
 We’re excited to support Rabobank’s&nbsp;[FoodBytes!](https://www.foodbytesworld.com){: target="_blank"}&nbsp;pitch competition, which has a rich history of highlighting several food waste innovators including Imperfect Produce, ReGrained, Seal the Seasons, and Smallhold. The next-gen food and agriculture pitch competition returns to NYC on Oct 17 & 18. Apply today to take part in a day-long mentorship intensive and then pitch your business to hundreds of corporates, investors, and media. Past judges and mentors include Justin Gold of&nbsp;[Justin’s](http://justins.com){: target="_blank"}, Robyn O’Brien of&nbsp;[Allergy Kids Foundation](https://robynobrien.com/allergy-kids-foundation/){: target="_blank"}, Chuck Templeton of&nbsp;[S2G Ventures](http://s2gventures.com){: target="_blank"}, and Rob Leclerc of&nbsp;[AgFunder](https://agfunder.com/?mc_cid=0d9102b7cf&amp;mc_eid=411fa807ad){: target="_blank"}.
 

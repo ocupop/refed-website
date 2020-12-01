@@ -1,22 +1,22 @@
 ---
+title: 'ReFED Capital & Innovation Newsletter: November 2018'
 item_date: 2018-11-15 00:00:00
-title: 'REFED CAPITAL & INNOVATION NEWSLETTER: NOVEMBER 2018'
 summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
   waste.
 featured_image: /uploads/newsletters/innovator-infographic-05-1.jpg  
 link:
 ---
-<div class="editable">
+
   # Updates From ReFED
 
 #### [ReFED's 2018 U.S. Food Waste Investment Report Reveals VC Funding Reaches $125M YTD 2018 and Foundation Funding Increases 70% Over Five Years](http://www.refed.com/2018InvestmentReport){: target="_blank"}
 
-![](/uploads/articles/fwirpic2.png)<br>This report highlights specific examples of philanthropic, public and private investment, including a Special Report on Foundation Funding. Key takeaways include news about big businesses joining the food waste innovation game and the role of complementary forms of capital to scale for-profit and nonprofit organizations. Read more funding highlights and trends [here](http://www.refed.com/2018InvestmentReport){: target="_blank"}.
+![](/uploads/newsletters/fwirpic2.png)<br>This report highlights specific examples of philanthropic, public and private investment, including a Special Report on Foundation Funding. Key takeaways include news about big businesses joining the food waste innovation game and the role of complementary forms of capital to scale for-profit and nonprofit organizations. Read more funding highlights and trends [here](http://www.refed.com/2018InvestmentReport){: target="_blank"}.
 
 #### [Six Food Waste Solutions Showcased at ReFED's First Innovation Demo Day](https://www.refed.com/content-hub/goodr-and-pulp-pantry-take-first-place-and-runner-up-at-refeds-food-waste-innovation-demo-day){: target="_blank"}
 
-![](/uploads/articles/blog1-2.png)<br>ReFED hosted its first interactive demo day featuring prevention, recovery and recycling innovators tackling food waste. Six impact-driven innovators pitched their companies in front of an expert panel of judges at the SOCAP conference. Pulp Pantry (CPG) snagged the Runner-Up spot, while GoodR (donation coordination) walked away in First Place - winning a coveted spot at ReFED's next Innovator Workshop and US Food Waste Summit. Read more about the event on our [blog](https://www.refed.com/content-hub/goodr-and-pulp-pantry-take-first-place-and-runner-up-at-refeds-food-waste-innovation-demo-day){: target="_blank"}.
+![](/uploads/newsletters/blog1-2.jpg)<br>ReFED hosted its first interactive demo day featuring prevention, recovery and recycling innovators tackling food waste. Six impact-driven innovators pitched their companies in front of an expert panel of judges at the SOCAP conference. Pulp Pantry (CPG) snagged the Runner-Up spot, while GoodR (donation coordination) walked away in First Place - winning a coveted spot at ReFED's next Innovator Workshop and US Food Waste Summit. Read more about the event on our [blog](https://www.refed.com/content-hub/goodr-and-pulp-pantry-take-first-place-and-runner-up-at-refeds-food-waste-innovation-demo-day){: target="_blank"}.
 
 #### [Innovator Spotlight Series: Food Forward's Rick Nahmias Discusses Food Recovery, Fundraising and More](https://www.refed.com/content-hub/Innovator-Spotlight-Series/food-forward){: target="_blank"}
 
@@ -26,19 +26,19 @@ Food Forward recovers and redistributes 400K pounds of surplus produce every wee
 
 #### [General Mills Announces New $1M Funding Opportunity For Food Recovery Nonprofits](https://www.generalmills.com/food-recovery-champions?mc_cid=1b8c65e51f&amp;mc_eid=[UNIQID]&amp;mc_cid=1fb77ed531&amp;mc_eid=[UNIQID]){: target="_blank"}
 
-![](/uploads/articles/general-mills.jpg)
+![](/uploads/newsletters/general-mills.jpg)
 
 We’re excited to announce a new competitive grants program from General Mills Foundation to catalyze surplus food recovery programs across North America. Organizations can apply to grants between $25K- $75K to fund innovative food recovery projects or for general operating support. Learn more about the selection criteria and submit a Letter of Intent by December 9th [here](https://www.generalmills.com/food-recovery-champions?mc_cid=1b8c65e51f&amp;mc_eid=[UNIQID]&amp;mc_cid=1fb77ed531&amp;mc_eid=[UNIQID]){: target="_blank"}.
 
 #### [FoodShot Global Makes Over $30M In Funding Opportunities Available](http://www.foodshot.org/about.html){: target="_blank"}
 
-![](/uploads/articles/foodshot-global-3.PNG)
+![](/uploads/newsletters/foodshot-global-3.jpg)
 
 FoodShot Global is supporting mission-driven, scalable, accelerated for-profit businesses with global impact to address this year's Challenge area, Innovating Soil 3.0. Up to $10M in equity and up to $20M in debt funding is available to innovative businesses that address the crisis of soil deterioration. A GroundBreaker Prize of more than $500K in philanthropic capital is also available to researchers, social entrepreneurs and advocates. Read about the program [here](http://www.foodshot.org/about.html){: target="_blank"} and apply by December 1st.
 
 #### [FoodFutureCo Accelerator Now Accepting Applications](https://gust.com/programs/foodfutureco-accelerator-cohort-4){: target="_blank"}
 
-![](/uploads/articles/foodfutureco.PNG)<br>FoodFutureCo is a scale-up accelerator for small, established organizations that provide unique products and solutions across the food system. This accelerator provides consulting, global distribution, financing, operation scaling, buyer meetings and financial exit support to companies to reach their next stage of growth. Cohort companies will each receive an investment of $15K with the possibility for follow-on investment. Apply [here](https://gust.com/programs/foodfutureco-accelerator-cohort-4){: target="_blank"} by November 16th.
+![](/uploads/newsletters/foodfutureco.jpg)<br>FoodFutureCo is a scale-up accelerator for small, established organizations that provide unique products and solutions across the food system. This accelerator provides consulting, global distribution, financing, operation scaling, buyer meetings and financial exit support to companies to reach their next stage of growth. Cohort companies will each receive an investment of $15K with the possibility for follow-on investment. Apply [here](https://gust.com/programs/foodfutureco-accelerator-cohort-4){: target="_blank"} by November 16th.
 
 # News From the Field
 
@@ -77,4 +77,4 @@ WWF shares the results from its on-farm food loss study, revealing specific oppo
 #### [Whole Foods' Walter Robb Is Taking On Food Waste](https://www-forbes-com.cdn.ampproject.org/c/s/www.forbes.com/sites/danagunders/2018/08/10/whole-foods-walter-robb-is-taking-on-food-waste/amp/){: target="_blank"}
 
 Since selling Whole Foods to Amazon, the company's former co-CEO is taking his skills to the next era of food companies. He recently joined the boards of FoodMaven, a digital platform and logistics company food recovery company, and Apeel Sciences, a company that extends the shelf life of produce through a naturally derived coating.
-</div>
+
