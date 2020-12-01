@@ -26,8 +26,10 @@
     &.global-editor-link {
       outline: 3px dotted $orange;
     }
-    i {
-      visibility: visible;
+    &:hover {
+      i {
+        visibility: visible;
+      }
     }
   }
 }
