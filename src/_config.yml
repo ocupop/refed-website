@@ -18,6 +18,7 @@ insights_engine_api_baseurl: https://api.refed.com/v2
 
 # Default Values
 default_cta: Learn More
+edit_cta: <i class="ri-edit-2-line"></i>
 
 
 
