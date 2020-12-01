@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-12 col-lg-6">
             <div data-cms-editor-link="cloudcannon:#levers.financing_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
-              {{ page.levers.financing_recommendations_html }}
+              {{ page.levers.financing_recommendations_html | default: 'Enter details...' }}
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -34,7 +34,7 @@
         <div class="row">
           <div class="col-12 ">
             <div data-cms-editor-link="cloudcannon:#levers.policy_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
-              {{ page.levers.policy_recommendations_html }}
+              {{ page.levers.policy_recommendations_html | default: 'Enter details...' }}
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
         <div class="row">
           <div class="col-12 ">
             <div data-cms-editor-link="cloudcannon:#levers.comms_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
-              {{ page.levers.comms_recommendations_html }}
+              {{ page.levers.comms_recommendations_html | default: 'Enter details...' }}
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
         <div class="row">
           <div class="col-12 ">
             <div data-cms-editor-link="cloudcannon:#levers.innovation_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
-              {{ page.levers.innovation_recommendations_html }}
+              {{ page.levers.innovation_recommendations_html | default: 'Enter details...' }}
             </div>
           </div>
         </div>
