@@ -58,3 +58,9 @@ label,
     color: $orange;
   }
 }
+
+[class*="display-"] {
+  font-family: $font-family-serif;
+}
+.display-1 {
+}

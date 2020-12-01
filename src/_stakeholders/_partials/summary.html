@@ -1,7 +1,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
+      <div class="col-12 col-lg-7">
         <div class="row align-items-center">
           <div class="col-md-auto">
             <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
@@ -17,14 +17,14 @@
             <div
               data-cms-editor-link="cloudcannon:#summary_html"
               data-cms-editor-link-style="modal"
-              class="cms-editor-link"
+              class="pr-lg-5 cms-editor-link"
             >
               {{ page.summary_html }}
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 ml-lg-auto">
+      <div class="col-12 col-lg-5 ml-lg-auto">
         <div class="row align-items-center">
           <div class="col-6">
             {% include charts/donut.html
