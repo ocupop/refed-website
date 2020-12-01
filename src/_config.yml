@@ -134,7 +134,7 @@ defaults:
       layout: download
       _options:
         featured_image:
-          uploads_dir: "/uploads/downloads"
+          uploads_dir: "/downloads"
 
   -
     scope:

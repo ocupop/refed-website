@@ -35,12 +35,16 @@
     }
 
     .bg-hero {
-      padding-top: 50%;
+      padding-top: 75%;
+      @include media-breakpoint-up(sm) {
+        padding-top: 50%;
+      }
       @include media-breakpoint-up(lg) {
         padding-top: 25%;
       }
       .bg-fill {
         padding-bottom: 2.5rem;
+        padding-right: 1rem;
         @include media-breakpoint-up(lg) {
           padding-bottom: 1rem;
           min-height: 160px;
