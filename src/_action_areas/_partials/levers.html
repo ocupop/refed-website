@@ -14,13 +14,9 @@
         <h3 class="editable global-editor-link">Top Financing Recommendations</h3>
         <div class="row">
           <div class="col-12 col-lg-6">
-            {% for lever in page.levers.financing %}
-              {% capture editor-link %}#levers.financing[{{ forloop.index0 }}]{% endcapture %}
-              {% include_relative _partials/lever.html
-                item=lever
-                editor-link=editor-link
-              %}
-            {% endfor %}
+            <div data-cms-editor-link="cloudcannon:#levers.financing_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.financing_recommendations_html | default: 'Enter details...' }}
+            </div>
           </div>
           <div class="col-12 col-lg-6">
             {% include charts/investment.html %}
@@ -37,13 +33,9 @@
         <h3 class="editable global-editor-link">Top Policy Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
-            {% for lever in page.levers.policy %}
-              {% capture editor-link %}#levers.policy[{{ forloop.index0 }}]{% endcapture %}
-              {% include_relative _partials/lever.html
-                item=lever
-                editor-link=editor-link
-              %}
-            {% endfor %}
+            <div data-cms-editor-link="cloudcannon:#levers.policy_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.policy_recommendations_html | default: 'Enter details...' }}
+            </div>
           </div>
         </div>
       </div>
@@ -57,13 +49,9 @@
         <h3 class="editable global-editor-link">Top Comms Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
-            {% for lever in page.levers.comms %}
-              {% capture editor-link %}#levers.comms[{{ forloop.index0 }}]{% endcapture %}
-              {% include_relative _partials/lever.html
-                item=lever
-                editor-link=editor-link
-              %}
-            {% endfor %}
+            <div data-cms-editor-link="cloudcannon:#levers.comms_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.comms_recommendations_html | default: 'Enter details...' }}
+            </div>
           </div>
         </div>
       </div>
@@ -77,13 +65,9 @@
         <h3 class="editable global-editor-link">Top Innovation Recommendations</h3>
         <div class="row">
           <div class="col-12 ">
-            {% for lever in page.levers.innovation %}
-              {% capture editor-link %}#levers.innovation[{{ forloop.index0 }}]{% endcapture %}
-              {% include_relative _partials/lever.html
-                item=lever
-                editor-link=editor-link
-              %}
-            {% endfor %}
+            <div data-cms-editor-link="cloudcannon:#levers.innovation_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.innovation_recommendations_html | default: 'Enter details...' }}
+            </div>
           </div>
         </div>
       </div>

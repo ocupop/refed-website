@@ -17,8 +17,8 @@
               {% endfor %}
             </ul>
           {% endif %}
-          {% if group.link %}
-            <a href="{{ group.link.url }}" class="btn btn-dark my-5">{{ group.link.label }}</a>
+          {% if group.link.url %}
+            <a href="{{ group.link.url }}" title="{{ link.alt | default: site.default_cta }}" class="btn btn-dark my-5">{{ group.link.label | default: site.default_cta }}</a>
           {% endif %}
 
         </div>
@@ -37,7 +37,7 @@
             {% for area in category.areas %}
               {% assign active_area = group.action_areas[area.slug] %}
 
-              {% if page.slug == 'capital-providers' %}
+              {% if page.uid == 'capital-providers' %}
                 <!-- collapsible rows should only appear on Capital Providers page -->
                 <div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse" data-target="#{{ sector.uid }}-{{ area.uid }}">
                   <div class="col-lg-auto flex-lg-grow-1">

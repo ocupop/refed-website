@@ -18,6 +18,7 @@ insights_engine_api_baseurl: https://api.refed.com/v2
 
 # Default Values
 default_cta: Learn More
+edit_cta: <i class="ri-edit-2-line"></i>
 
 
 
@@ -135,7 +136,7 @@ defaults:
         featured_image:
           uploads_dir: "/uploads/downloads"
 
-  - 
+  -
     scope:
       type: 'newsletters'
     values:
@@ -153,6 +154,7 @@ defaults:
 
 # Build settings
 safe: false
+exclude: ['_partials']
 sass:
   # style: compressed
   sass_dir: _scss
@@ -181,13 +183,6 @@ _array_structures:
         description_html:
         featured_image:
         links:
-  # Array structures for managing API integrations
-  solutions:
-    - label: Solution
-      icon: assignment
-      value:
-        label:
-        api_endpoint:
 
   solution_groups:
     - label: Solution Group
@@ -224,16 +219,7 @@ _array_structures:
       value:
         label:
         slug:
-  causes:
-    - label: Cause
-      icon: insights
-      value:
-        label:
-  destinations:
-    - label: Destination
-      icon: insights
-      value:
-        label:
+
   # End API array structures
 
   sections:
@@ -544,6 +530,8 @@ _comments:
 
 _options:
   layout:
+    hidden: true
+  uid:
     hidden: true
 
 placeholder_image: 'https://via.placeholder.com/1000'
