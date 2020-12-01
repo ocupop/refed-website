@@ -135,7 +135,7 @@ defaults:
         featured_image:
           uploads_dir: "/uploads/downloads"
 
-  - 
+  -
     scope:
       type: 'newsletters'
     values:
@@ -153,6 +153,7 @@ defaults:
 
 # Build settings
 safe: false
+exclude: ['_partials']
 sass:
   # style: compressed
   sass_dir: _scss
@@ -544,6 +545,8 @@ _comments:
 
 _options:
   layout:
+    hidden: true
+  uid:
     hidden: true
 
 placeholder_image: 'https://via.placeholder.com/1000'
