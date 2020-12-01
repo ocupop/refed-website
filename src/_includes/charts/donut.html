@@ -6,7 +6,7 @@
   <div class="bg-fill text-white">
     <div class="w-50 py-3 text-center">
       <p class="display-4">
-        {{ item.label }}
+        {{ item.label | default: 'Edit...' }}
       </p>
       {% if item.caption %}
         <small class="text-uppercase">{{ item.caption }}</small>
