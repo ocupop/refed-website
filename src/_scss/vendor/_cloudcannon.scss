@@ -32,7 +32,7 @@
   .editable {
     outline: 2px dotted $yellow !important;
     &.global-editor-link {
-      outline: 2px dotted $orange;
+      outline: 2px dotted $orange !important;
     }
     i {
       visibility: visible;

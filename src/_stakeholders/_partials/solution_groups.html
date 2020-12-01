@@ -6,21 +6,26 @@
   {% capture editorRef %}solution_groups[{{ forloop.index0 }}]{% endcapture %}
   <section id="{{ group.label | slugify | default: 'all-solutions' }}" class="py-5">
     <div class="container">
-      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}" data-cms-editor-link-style="modal" class="row align-items-center cms-editor-link">
+      <div class="row align-items-center">
         <div class=" col-12 col-lg-9">
-          <h3>{{ group.label }}</h3>
-          <div>{{ group.description_html }}</div>
-          {% if group.opportunities.size > 0 %}
+          <div
+            data-cms-editor-link="cloudcannon:#{{ editorRef }}"
+            data-cms-editor-link-style="modal"
+            class="cms-editor-link">
+            <h3>{{ group.label }}</h3>
+            <div>{{ group.description_html }}</div>
+            {% if group.opportunities.size > 0 %}
             <ul>
               {% for opportunity in group.opportunities %}
               <li>{{ opportunity.label }}</li>
               {% endfor %}
             </ul>
-          {% endif %}
-          {% if group.link.url %}
-            <a href="{{ group.link.url }}" title="{{ link.alt | default: site.default_cta }}" class="btn btn-dark my-5">{{ group.link.label | default: site.default_cta }}</a>
-          {% endif %}
-
+            {% endif %}
+            {% if group.link.url %}
+            <a href="{{ group.link.url }}" title="{{ link.alt | default: site.default_cta }}"
+              class="btn btn-dark my-5">{{ group.link.label | default: site.default_cta }}</a>
+            {% endif %}
+          </div>
         </div>
         <div class="col-12 col-lg-3">
           {% capture editor-link %}#{{ editorRef }}.stat{% endcapture %}
@@ -79,18 +84,26 @@
                     <div class="col-12">
                       <div class="bg-light text-prevention p-5">
                         <h5 class="text-serif editable global-editor-link">Overview</h5>
-                        <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas[{{ area.slug }}].summary" data-cms-editor-link-style="modal" class="cms-editor-link">
+                        <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.summary" data-cms-editor-link-style="modal" class="cms-editor-link">
                           {{ active_area.summary }}
                         </p>
                         <div class="row">
                           <div class="col-md-auto">
-                            <div class="stat-number">
+                            <div
+                              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_opportunity"
+                              data-cms-editor-link-style="modal"
+                              class="stat-number cms-editor-link">
                               ${{ active_area.total_investment_opportunity | default: '0' }}
                             </div>
                           </div>
                           <div class="col">
                             <h4 class="editable global-editor-link">Financing Opportunity</h4>
-                            <p>{{ active_area.financing_opportunity_summary }}</p>
+                            <p
+                              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.financing_opportunity_summary"
+                              data-cms-editor-link-style="modal"
+                              class="cms-editor-link">
+                              {{ active_area.financing_opportunity_summary }}
+                            </p>
                           </div>
                         </div>
                       </div>
