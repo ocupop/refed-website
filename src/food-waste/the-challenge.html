@@ -39,13 +39,14 @@ split_section_what_is_the_impact:
   featured_image: https://via.placeholder.com/650x650
 
 split_section_policy_overview:
-  type: custom
   title: Policy Overview
   summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
   featured_image: /img/food_waste_challenge/foodwaste_policyoverview_image.jpg
   link_label: View Policy Tracker
-  url: '#'
-
+  link:
+    label: View Policy Tracker
+    url: /policy-tracker
+    alt:
 barriers_to_solutions_implementation:
   - title: Misalignment of Costs and Benefits
     description_html: There is limited reason for businesses to implement a new technology or process if another part of the supply chain receives the benefit.
@@ -106,17 +107,12 @@ _assets:
 - image: /img/food_waste_challenge/foodwaste_causes_image_04.jpg
 - image: /img/food_waste_challenge/foodwaste_causes_image_05.jpg
 
-_sticky_nav:
-  - link: '#what-is-food-waste'
-    link_label: 'What is food waste?'
-  - link: '#impacts'
-    link_label: 'What is the impact?'
-  - link: '#where-does-food-waste-occur'
-    link_label: 'Where does food waste occur?'
-  - link: '#which-foods-get-wasted'
-    link_label: 'Which foods get wasted?'
-  - link: '#what-causes-food-waste'
-    link_label: 'What causes food waste?'
+_subnav:
+  - label: 'What is food waste?'
+  - label: 'What is the impact?'
+  - label: 'Where does food waste occur?'
+  - label: 'Which foods get wasted?'
+  - label: 'What causes food waste?'
 ---
 
 <section>
@@ -146,17 +142,10 @@ _sticky_nav:
   button_class='btn-secondary'
   section_class='py-0'
   item=page.split_section_good_news
+  editor-link="#split_section_good_news"
 %}
 
-<div class="bg-placeholder aspect-auto">
-  <div class="bg-fill">
-    <h4>Subnav</h4>
-    <small>.src/_includes/modules/sticky_nav.html</small>
-  </div>
-</div>
-{% comment %}
-  {% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore this issue" %}
-{% endcomment %}
+{% include nav/subnav.html items=page._subnav label="Explore this issue" %}
 
 {% include sections/split_section.html
   id='what-is-food-waste'
@@ -167,10 +156,11 @@ _sticky_nav:
   text_to_edge=true
   section_class='py-0'
   item=page.split_section_what_is_food_waste
+  editor-link="#split_section_what_is_food_waste"
 %}
 
 {% include sections/split_section.html
-  id='impacts'
+  id='what-is-the-impact'
   section_background_color='white'
   image_width='33%'
   image_alignment='right'
@@ -178,6 +168,7 @@ _sticky_nav:
   text_to_edge=false
   section_class='pb-0'
   item=page.split_section_what_is_the_impact
+  editor-link="#split_section_what_is_the_impact"
 %}
 
 <section>
@@ -190,7 +181,9 @@ _sticky_nav:
         <h4 class="editable">Climate and Resources</h4>
         <p class="editable">The Data and insights team uses economics and data to generate actionalble solutions to reduce the amount of food that goes uneaten.</p>
         <h4 class="text-serif my-5 editable ">Food Waste Consumes:</h4>
-        <div id="food-waste-consumes">
+        <img src="/img/home/homepage-slider-01.png" class="img-fluid editable" alt="Stats graphic">
+        <!-- we can remove this if this section is not going to be editable -->
+        <!-- <div id="food-waste-consumes">
           <div class="row">
             <div class="col-12 col-sm-6 col-lg-4 text-blue mb-4 mb-lg-5">
               <div class="row">
@@ -257,7 +250,7 @@ _sticky_nav:
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -273,8 +266,7 @@ _sticky_nav:
         <h4 class="editable">Food Insecurity</h4>
         <p class="editable">One in seven Americans, many of them children, are food insecure and lack reliable access to sufficient, affordable, nutritious food. And because of the impact of COVID-19, the number of people facing food insecurity in 2020 could grow to 54 million, according to Feeding America. Yet, we waste XX times the amount of food it would take to feed all of those people.</p>
         <div class="text-center p-0 p-lg-5">
-          <img src="/img/food_waste_challenge/1-in-7-americans-are-insecure.gif" alt="1 in 7 Americans are food insecure" class="w-100">
-          <br/><small class="text-danger">(NOTE: this is a gif image. We may want to make it a dynamic svg graphic)</small>
+          <img src="/img/food_waste_challenge/1-in-7-americans-are-insecure.gif" alt="1 in 7 Americans are food insecure" class="img-fluid">
         </div>
       </div>
     </div>
@@ -350,7 +342,7 @@ _sticky_nav:
 
     <div class="row my-5">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_manufacturing.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_manufacturing.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Manufacturing icon" />
       </div>
       <div class="col">
         <div class="row">
@@ -370,9 +362,9 @@ _sticky_nav:
 
     <div class="row my-5">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_retail.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_retail.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Retail icon" />
       </div>
-      <div class="col pl-md-0">
+      <div class="col">
         <div class="row">
           <div class="col-12 col-lg-7 mb-4 mb-md-3 mb-lg-0">
             <h3 class="editable mb-2">Retail Businesses</h3>
@@ -390,7 +382,7 @@ _sticky_nav:
 
     <div class="row my-5">
       <div class="col-12 col-md-auto">
-        <img src="{{ site.placeholder_image }}" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/refed_homes.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Homes icon" />
       </div>
       <div class="col">
         <div class="row">
@@ -408,7 +400,7 @@ _sticky_nav:
 
     <div class="row my-5">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/food_waste/foodwaste_foodservice.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/food_waste/foodwaste_foodservice.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Foodservice icon" />
       </div>
       <div class="col">
         <div class="row">
@@ -443,15 +435,12 @@ _sticky_nav:
   </div>
 </section>
 
-{% include sections/split_section.html
+{% include components/split.html
   id='policy-overview'
-  section_background_color='white'
-  image_width='50%'
-  image_alignment='left'
-  image_to_edge=true
-  text_to_edge=false
-  section_class='py-0'
+  theme='white'
   item=page.split_section_policy_overview
+  reverse="true"
+  editor-link="#split_section_policy_overview"
 %}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}

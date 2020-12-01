@@ -66,14 +66,14 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="editable">Overview</h3>
+        <h3 class="mb-4 editable">Overview</h3>
+        <h2 class="mb-5 editable">$XX Opportunity to be Unlocked with $XX Capital</h2>
         <div class="editable">
-          <h2>$XX Opportunity to be Unlocked with $XX Capital</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-12">
         <div class="bg-placeholder aspect-2x1 bg-dark">
           <div class="bg-fill">
@@ -161,7 +161,7 @@ cta:
         data-cms-editor-link="cloudcannon:#trend_reports"
         data-cms-editor-link-style="modal">
         <div class="col-lg-3">
-          <div class="bg-image aspect-5x7 bg-dark" style="background-image: url('{{ report.featured_image }}')"></div>
+          <div class="bg-image aspect-5x7 bg-dark mr-lg-4" style="background-image: url('{{ report.featured_image }}')"></div>
         </div>
         <div class="col-lg-9">
           <h3 class="text-serif">{{ report.title }}</h3>
@@ -221,11 +221,13 @@ cta:
 </section>
 {% include components/carousel.html
   items=page.case_studies
+  label="Catalytic Capital Solutions"
   layout="split"
   theme="light"
   id="caseStudyCarousel"
   collection="case_studies"
   editor-link="#case_studies"
+  indicators="true"
 %}
 
 <section class="bg-dark text-white">
