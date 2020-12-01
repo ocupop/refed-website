@@ -1,3 +1,11 @@
-<div class="bg-placeholder aspect-1x1">
-  <div class="bg-fill">/charts/donut.html </div>
+{% assign item = include.item %}
+<div
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal"
+  class="bg-image aspect-1x1 cms-editor-link" style="background-image: url('{{ item.static_image }}');">
+  <div class="bg-fill text-white">
+    <div class="display-1">
+      {{ item.label }}
+    </div>
+  </div>
 </div>
