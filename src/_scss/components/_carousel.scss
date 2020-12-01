@@ -57,7 +57,20 @@
         bottom: 7%;
       }
       a {
-        margin: 0 0 10px;
+        margin: 0 0 7px;
+        width: 30px;
+        height: 30px;
+        i {
+          font-size: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+          margin: 0 0 10px;
+          width: 37px;
+          height: 37px;
+          i {
+            font-size: 23px;
+          }
+        }
       }
     }
   }
