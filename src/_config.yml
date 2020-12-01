@@ -182,13 +182,6 @@ _array_structures:
         description_html:
         featured_image:
         links:
-  # Array structures for managing API integrations
-  solutions:
-    - label: Solution
-      icon: assignment
-      value:
-        label:
-        api_endpoint:
 
   solution_groups:
     - label: Solution Group
@@ -225,16 +218,7 @@ _array_structures:
       value:
         label:
         slug:
-  causes:
-    - label: Cause
-      icon: insights
-      value:
-        label:
-  destinations:
-    - label: Destination
-      icon: insights
-      value:
-        label:
+
   # End API array structures
 
   sections:

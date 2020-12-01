@@ -17,8 +17,8 @@
               {% endfor %}
             </ul>
           {% endif %}
-          {% if group.link %}
-            <a href="{{ group.link.url }}" class="btn btn-dark my-5">{{ group.link.label }}</a>
+          {% if group.link.url %}
+            <a href="{{ group.link.url }}" title="{{ link.alt | default: site.default_cta }}" class="btn btn-dark my-5">{{ group.link.label | default: site.default_cta }}</a>
           {% endif %}
 
         </div>

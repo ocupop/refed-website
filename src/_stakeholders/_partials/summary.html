@@ -4,7 +4,7 @@
       <div class="col-12 col-lg-7">
         <div class="row align-items-center">
           <div class="col-md-auto">
-            <i class="icon icon-lg icon-{{ page.slug | split: '-' | first }}"></i>
+            <i class="icon icon-lg icon-{{ page.uid }}"></i>
           </div>
           <div class="col">
             <h6 class="mb-0 editable global-editor-link">Stakeholder</h6>
@@ -41,24 +41,24 @@
             <h6 class="mt-5 editable">Causes</h6>
             <hr />
             <!-- With updates to the API this could be a dynamic component. -->
-            <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.sector_id }}"></div> -->
+            <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.uid }}"></div> -->
             {% for cause in page.tons_surplus.causes %}
               <p data-cms-editor-link="cloudcannon:#causes" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">
                 {{ cause.label }}
               </p>
             {% endfor  %}
-            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=cause&indicator=tons-surplus&sector={{ page.sector_id }}&view=detail&year=2019" class="btn btn-link editable">See more in the Insights Engine</a>
+            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=cause&indicator=tons-surplus&sector={{ page.uid }}&view=detail&year=2019" class="btn btn-link editable">See more in the Insights Engine</a>
             {% endif %}
 
             {% if page.tons_surplus.destinations %}
             <h6 class="mt-5 editable">Destinations</h6>
             <hr />
             <!-- With updates to the API this could be a dynamic component. -->
-            <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.sector_id }}"></div> -->
+            <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.uid }}"></div> -->
             {% for destination in page.tons_surplus.destinations %}
               <p data-cms-editor-link="cloudcannon:#destinations" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">{{ destination.label }}</p>
             {% endfor  %}
-            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=destination&indicator=tons-surplus&sector={{ page.sector_id }}&view=detail&year=2019" class="btn btn-link">
+            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=destination&indicator=tons-surplus&sector={{ page.uid }}&view=detail&year=2019" class="btn btn-link">
               See more in the Insights Engine
             </a>
             {% endif %}
