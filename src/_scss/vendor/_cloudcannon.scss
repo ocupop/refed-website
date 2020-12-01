@@ -26,6 +26,16 @@
     &.global-editor-link {
       outline: 3px dotted $orange;
     }
+    i {
+      visibility: visible;
+    }
+  }
+}
+
+.cms-editor-link {
+  i {
+    visibility: hidden;
+    color: $yellow;
   }
 }
 
