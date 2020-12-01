@@ -19,6 +19,14 @@
   display: block;
 }
 
+.cms-editor-link,
+.editable {
+  i {
+    visibility: hidden;
+    color: $orange;
+  }
+}
+
 .cms-region-highlighted {
   .cms-editor-link,
   .editable {
@@ -27,6 +35,7 @@
       outline: 2px dotted $orange;
     }
     i {
+      visibility: visible;
       color: $orange;
     }
   }
