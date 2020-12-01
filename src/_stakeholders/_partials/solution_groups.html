@@ -84,18 +84,26 @@
                     <div class="col-12">
                       <div class="bg-light text-prevention p-5">
                         <h5 class="text-serif editable global-editor-link">Overview</h5>
-                        <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas[{{ area.slug }}].summary" data-cms-editor-link-style="modal" class="cms-editor-link">
+                        <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.summary" data-cms-editor-link-style="modal" class="cms-editor-link">
                           {{ active_area.summary }}
                         </p>
                         <div class="row">
                           <div class="col-md-auto">
-                            <div class="stat-number">
+                            <div
+                              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_opportunity"
+                              data-cms-editor-link-style="modal"
+                              class="stat-number cms-editor-link">
                               ${{ active_area.total_investment_opportunity | default: '0' }}
                             </div>
                           </div>
                           <div class="col">
                             <h4 class="editable global-editor-link">Financing Opportunity</h4>
-                            <p>{{ active_area.financing_opportunity_summary }}</p>
+                            <p
+                              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.financing_opportunity_summary"
+                              data-cms-editor-link-style="modal"
+                              class="cms-editor-link">
+                              {{ active_area.financing_opportunity_summary }}
+                            </p>
                           </div>
                         </div>
                       </div>
