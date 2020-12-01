@@ -94,6 +94,11 @@ defaults:
         featured_image:
           uploads_dir: "/uploads/stakeholders"
       _array_structures:
+        opportunities:
+          - label: Opportunity
+            icon:
+            value:
+              label:
         solutions:
           - label: Solution
             icon: assignment
@@ -103,7 +108,16 @@ defaults:
               invesment_needed:
               investment_needed_summary:
               innovation_opportunities_html:
-
+        causes:
+          - label: Cause
+            icon: assignment
+            value:
+              label:
+        destinations:
+          - label: Destination
+            icon: assignment
+            value:
+              label:
   -
     scope:
       type: 'events'
@@ -174,61 +188,26 @@ _array_structures:
         summary:
         action_areas:
           optimize-the-harvest:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           enhance-product-distribution:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           refine-product-management:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           maximize-product-utilization:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           reshape-consumer-environments:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           strengthen-food-rescue:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
           recycle-anything-remaining:
-            total_investment_needed:
-            financing_opportunity_summary:
+            opportunities:
             solutions:
-              - slug:
-                invesment_needed:
-                investment_needed_summary:
-                innovation_opportunities_html:
 
   indicators:
     - label: Key indicator

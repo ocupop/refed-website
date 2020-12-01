@@ -27,21 +27,29 @@
       <div class="col-lg-6 ml-lg-auto">
         <div class="row align-items-center">
           <div class="col-6">
-            {% include charts/donut.html %}
+            {% include charts/donut.html
+              item=page.stats.percentage_total_waste
+              editor-link="#stats.percentage_total_waste"
+            %}
           </div>
           <div class="col-6">
-            <h6>Total Waste by {{ page.title }}</h6>
+            <h6 class="text-muted">Total Waste by {{ page.title }}</h6>
             <hr />
-            <p class="display-4 text-serif">XXM Tons</p>
+            <p
+              data-cms-editor-link="cloudcannon:#stats.total_waste"
+              data-cms-editor-link-style="modal"
+              class="display-4 text-serif cms-editor-link">{{ page.stats.total_waste.label }}</p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-12">
-            {% if page.causes %}
+            {% if page.tons_surplus.causes %}
             <h6 class="mt-5 editable">Causes</h6>
             <hr />
-            {% for cause in page.causes %}
+            <!-- With updates to the API this could be a dynamic component. -->
+            <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.sector_id }}"></div> -->
+            {% for cause in page.tons_surplus.causes %}
               <p
                 data-cms-editor-link="cloudcannon:#causes"
                 data-cms-editor-link-style="modal"
@@ -49,19 +57,23 @@
                 {{ cause.label }}
               </p>
             {% endfor  %}
-            <a href="{{ site.insights_engine_url }}" class="btn btn-link editable">See more in the Insights Engine</a>
+            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=cause&indicator=tons-surplus&sector={{ page.sector_id }}&view=detail&year=2019" class="btn btn-link editable">See more in the Insights Engine</a>
             {% endif %}
 
-            {% if page.destinations %}
+            {% if page.tons_surplus.destinations %}
             <h6 class="mt-5 editable">Destinations</h6>
             <hr />
-            {% for destination in page.destinations %}
+            <!-- With updates to the API this could be a dynamic component. -->
+            <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.sector_id }}"></div> -->
+            {% for destination in page.tons_surplus.destinations %}
               <p
                 data-cms-editor-link="cloudcannon:#destinations"
                 data-cms-editor-link-style="modal"
                 class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">{{ destination.label }}</p>
             {% endfor  %}
-            <a href="{{ site.insights_engine_url }}" class="btn btn-link editable">See more in the Insights Engine</a>
+            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=destination&indicator=tons-surplus&sector={{ page.sector_id }}&view=detail&year=2019" class="btn btn-link">
+              See more in the Insights Engine
+            </a>
             {% endif %}
           </div>
         </div>

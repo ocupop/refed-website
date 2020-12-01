@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
-// import StakeholdersList from './StakeholdersList'
-// import SolutionDetail from './SolutionDetail'
 import ActionAreaSolutions from './ActionAreaSolutions'
+// import Causes from './stakeholders/Causes'
+
 import { gsap } from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -13,7 +13,8 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const COMPONENTS = {
   HelloWorld,
-  ActionAreaSolutions
+  ActionAreaSolutions,
+  // Causes,
 }
 
 function renderComponentInElement(el) {
