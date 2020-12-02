@@ -40,7 +40,9 @@
       .subnav-wrapper {
         display: flex;
       }
-      
+      .h4 {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -59,7 +61,7 @@
     }
     li.nav-item {
       margin-right: 1.5rem;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(xl) {
         max-width: 15%;
       }
       a.nav-link {
@@ -77,10 +79,12 @@
         }
         @include media-breakpoint-down(lg) {
           display: none;
-          margin-top: 4px;
           &.active {
             display: block;
           }
+        }
+        @include media-breakpoint-down(md) {
+          margin-top: 4px;
         }
       }
     }
@@ -105,6 +109,12 @@
 #subnav-toggle {
   position: absolute;
   right: 7px;
-  top: 0px;
+  top: -3px;
+  display: block;
+  font-size: 30px;
+  line-height: 1;
   @include transition(0.4s);
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
 }
