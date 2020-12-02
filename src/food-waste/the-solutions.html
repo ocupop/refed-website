@@ -141,27 +141,80 @@ _assets:
     <div class="row mt-5">
       <div class="col-12">
         <div class="overflow-hidden">
-        <div class="text-center">
-          <h3 class="editable">The Path Forward</h3>
-          <h2 class="editable">Roadmap to 2030: Reducing US Food Waste by 50%</h2>
-        </div>
-        <div class="mt-4 p-5 bg-dark">
-          <div class="lead editable">
-            <p>ReFED’s Roadmap 2030 and the ReFED Insights Engine was specifically developed to provide food system players with
-            everything they need to move from awareness about the problem to action.</p>
-            <p>Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste.</p>
+          <div class="text-center">
+            <h3 class="editable">The Path Forward</h3>
+            <h2 class="editable">Roadmap to 2030: Reducing US Food Waste by 50%</h2>
+          </div>
+          <div class="mt-4 p-5 bg-dark">
+            <div class="lead editable">
+              <p>ReFED’s Roadmap 2030 and the ReFED Insights Engine was specifically developed to provide food system players with
+              everything they need to move from awareness about the problem to action.</p>
+              <p>Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste.</p>
+            </div>
+          </div>
+          <div class="pl-3 bg-light">
+            {% include components/cta_insights_engine.html
+              item=page.powered_by_insights_engine
+              theme="light"
+            %}
           </div>
         </div>
-        <div class="pl-3 bg-light">
-          {% include components/cta_insights_engine.html
-            item=page.powered_by_insights_engine
-            theme="light"
-          %}
-        </div>
-        <div class="p-5 bg-white">
+        <div class="py-5 bg-white text-center">
           <h3 class="editable">Key Action Areas</h3>
-          <p class="editable">Our Roadmap to 2030: Reducing U.S. Food Waste looks at the entire food supply chain and outlines seven key action areas where the food system must focus its food waste reduction efforts over the next ten years.</p>
+          <p class="lead editable">Our Roadmap to 2030: Reducing U.S. Food Waste looks at the entire food supply chain and outlines seven key action areas where the food system must focus its food waste reduction efforts over the next ten years.</p>
+          <a href="#" class="btn btn-link">Learn More</a>
         </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="p-4 border-bottom">
+              {% include home/reduction_solutions_chart.html %}
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6">
+            <div class="p-4 text-center border">
+              <h3 class="editable">Solutions</h3>
+              <p class="editable">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolorum quod debitis? Dolorem doloremque sapiente.
+              </p>
+              <a href="#" class="btn btn-link editable">Learn More</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-4 text-center border">
+              <h3 class="editable">Levers</h3>
+              <p class="editable">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolorum quod debitis? Dolorem doloremque sapiente.
+              </p>
+              <a href="#" class="btn btn-link editable">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="p-4 text-center border">
+              <h3 class="editable">Stakeholder Recommendations</h3>
+              <p class="w-75 mx-auto editable">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolorum quod debitis? Dolorem doloremque sapiente.
+              </p>
+              <a href="#" class="btn btn-link editable">Learn More</a>
+              {% include_relative _partials/stakeholder_icon_grid.html %}
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="p-4 text-center border">
+              <h3 class="editable">The end result?</h3>
+              <p class="lead w-75 mx-auto editable">We’re committed to generating the awareness and action needed to achieve a 50% reduction in food waste by the year 2030 in accordance with national and international goals – and to creating a sustainable, inclusive, and resilient food system that optimizes environmental resources, minimizes climate impacts, and makes the best use of the food we grow.</p>
+              <a href="#" class="btn btn-secondary btn-lg text-serif my-4 editable">Download the Roadmap Executive Report</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
