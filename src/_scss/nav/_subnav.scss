@@ -9,6 +9,8 @@
   }
 
   .h4 {
+    margin-bottom: 0;
+    line-height: 1;
     @include media-breakpoint-down(md) {
       font-size: 1rem;
     }
@@ -43,6 +45,9 @@
     }
     li.nav-item {
       margin-right: 1.5rem;
+      @include media-breakpoint-up(lg) {
+        max-width: 15%;
+      }
       a.nav-link {
         padding: 0.5rem 0;
         font-weight: $font-weight-semibold;
