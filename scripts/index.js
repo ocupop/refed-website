@@ -29,9 +29,22 @@ document
   .querySelectorAll('.__react-component')
   .forEach(renderComponentInElement)
 
+var headerHeight = document.getElementById('pageHeader').getBoundingClientRect().height;
+
+console.log(headerHeight)
+
+
+function toggleSubnav() {
+  var element = document.getElementById("subnav");
+  element.classList.toggle("show-links");
+}
+
+document.getElementById("subnav-toggle").addEventListener("click", toggleSubnav);
+
 
 ScrollTrigger.create({
   trigger: ".subnav",
+  // start: 'top +' + headerHeight,
   start: 'top +110',
   end: 99999,
   pin: true,
@@ -41,6 +54,9 @@ ScrollTrigger.create({
     targets: '.subnav'
   }
 })
+
+
+
 // Navbar collapse sub-menu
 var matches = document.querySelectorAll('.nav-back-button');
 if (matches) {
@@ -129,160 +145,6 @@ $('.carousel-card .carousel-item').each(function () {
   }
 })
 
-
-
-
-
-/* CAROUSELS */
-/* HOMEPAGE - NEWS CAROUSEL UNDER THE HERO */
-var elem = document.querySelector('.news-carousel');
-if (elem) {
-  var flkty_featurednews = new Flickity(elem, {
-    prevNextButtons: true,
-    pageDots: false,
-    "wrapAround": true,
-    cellAlign: 'left'
-  });
-}
-
-/* Full page width carousel (Home page "The multi-billion dollar food waste problem") */
-// var elems = document.querySelectorAll('.carousel-full-width');
-// if(elems){
-//   elems.forEach(function(elem) {
-//     var flkty_slide = new Flickity( elem, {
-//     prevNextButtons: false,
-//     pageDots: true,
-//     "wrapAround": true,
-//     cellAlign: 'left',
-//     adaptiveHeight: false
-//   });
-// });
-// }
-
-
-
-
-/* 3 cards at a time (Home page "What can I do to solve food waste") */
-// var elem = document.querySelector('.three-card-carousel');
-// if(elem){
-//   var flkty_three_card = new Flickity( elem, {
-//   cellAlign: 'left',
-//   contain: true,
-//   "wrapAround": true,
-//   prevNextButtons: true,
-//   pageDots: true,
-//   adaptiveHeight: false
-// });
-// }
-
-/* This adds a class of "flickity-resize" to carousels after they have initialized */
-Flickity.prototype._createResizeClass = function () {
-  var that = this;
-  setTimeout(function () {
-    that.element.classList.add('flickity-resize');
-  }, 1000);
-};
-
-Flickity.createMethods.push('_createResizeClass');
-
-var resize = Flickity.prototype.resize;
-Flickity.prototype.resize = function () {
-  this.element.classList.remove('flickity-resize');
-  resize.call(this);
-  this.element.classList.add('flickity-resize');
-};
-
-/* Carousels - no dots by default */
-var carousel = document.querySelectorAll('.carousel-refed');
-if (carousel) {
-  carousel.forEach(function (carousel) {
-    var flkty_logos = new Flickity(carousel, {
-      contain: true,
-      cellAlign: 'left',
-      "wrapAround": true,
-      prevNextButtons: true,
-      arrowShape: { x0: 15, x1: 80, y1: 50, x2: 80, y2: 50, x3: 80 },
-      pageDots: false,
-      adaptiveHeight: false,
-      on: {
-        ready: function () {
-          this.element.classList.add('flickity-init')
-        }
-      }
-    })
-  });
-}
-
-/* Carousels - with dots */
-var carousel_with_dots = document.querySelectorAll('.carousel-refed-dots');
-if (carousel_with_dots) {
-  carousel_with_dots.forEach(function (carousel_with_dots) {
-    var flkty_logos = new Flickity(carousel_with_dots, {
-      contain: true,
-      cellAlign: 'left',
-      "wrapAround": true,
-      prevNextButtons: true,
-      arrowShape: { x0: 15, x1: 80, y1: 50, x2: 80, y2: 50, x3: 80 },
-      pageDots: true,
-      adaptiveHeight: false,
-      on: {
-        ready: function () {
-          this.element.classList.add('flickity-init')
-        }
-      }
-    })
-  });
-}
-
-/* Carousels - with dots */
-var carousel_dots_only = document.querySelectorAll('.carousel-refed-dots-only');
-if (carousel_dots_only) {
-  carousel_dots_only.forEach(function (carousel_dots_only) {
-    var refed_dots_only = new Flickity(carousel_dots_only, {
-      contain: true,
-      cellAlign: 'left',
-      "wrapAround": true,
-      prevNextButtons: false,
-      pageDots: true,
-      adaptiveHeight: false,
-      on: {
-        ready: function () {
-          this.element.classList.add('flickity-init')
-        }
-      }
-    })
-  });
-}
-
-
-
-/*
-var elem = document.querySelector('.featured-story-carousel');
-if(elem){
-var flkty_featuredstory = new Flickity( elem, {
-cellAlign: 'center',
-prevNextButtons: false,
-pageDots: true,
-"wrapAround": true,
-contain: true,
-});
-}
-
-var elem = document.querySelector('.hero-style-carousel');
-if(elem){
-var flkty_hero = new Flickity( elem, {
-cellAlign: 'center',
-prevNextButtons: true,
-pageDots: false,
-"wrapAround": true,
-contain: true,
-});
-}
-*/
-
-
-
-
 /* BEGIN filterable list */
 var filtered_list = document.querySelectorAll('.list-with-filter'); // for each dropdown on the page
 if (filtered_list) {
@@ -311,58 +173,54 @@ function init_dropdown(section) {
 }
 
 
-function init_filter_buttons(section) {
-  /* add event listeners to the CASE STUDIES category pill (on the "our Impact" page) */
-  var pills = section.querySelectorAll('.case-study-filter');
-  if (pills) {
-    pills.forEach(function (pill) { // for each option in this dropdown
-      pill.style.cursor = 'pointer';
-      pill.addEventListener("click", (e) => {
-        e.preventDefault();
-        var filter = pill.getAttribute("data-filter");
-        var elem = pill.closest('.horizontal-carousel-arrows-only');
-        filterList(section, filter);
+// function init_filter_buttons(section) {
+//   /* add event listeners to the CASE STUDIES category pill (on the "our Impact" page) */
+//   var pills = section.querySelectorAll('.case-study-filter');
+//   if (pills) {
+//     pills.forEach(function (pill) { // for each option in this dropdown
+//       pill.style.cursor = 'pointer';
+//       pill.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         var filter = pill.getAttribute("data-filter");
+//         var elem = pill.closest('.horizontal-carousel-arrows-only');
+//         filterList(section, filter);
 
-      });
-    });
-  }
-}
+//       });
+//     });
+//   }
+// }
 
+// function filterList(section, filter) {
+//   console.log("FILTER = " + filter)
+//   var dropdown = section.querySelector('.dropdown');
+//   var list = section.querySelector('.filterable-list');
 
-
-
-
-function filterList(section, filter) {
-  console.log("FILTER = " + filter)
-  var dropdown = section.querySelector('.dropdown');
-  var list = section.querySelector('.filterable-list');
-
-  // SHOW/HIDE lements based on which filter is selected.
-  var listitems = list.querySelectorAll('.filterable-list-item');
-  for (var i = 0; i < listitems.length; i++) {
-    listitems[i].style.display = '';
-  }
-  if (filter !== 'all') {
-    var listitems = list.querySelectorAll('.card:not(.' + filter + ')');
-    for (var i = 0; i < listitems.length; i++) {
-      listitems[i].style.display = 'none';
-    }
-  }
+//   // SHOW/HIDE lements based on which filter is selected.
+//   var listitems = list.querySelectorAll('.filterable-list-item');
+//   for (var i = 0; i < listitems.length; i++) {
+//     listitems[i].style.display = '';
+//   }
+//   if (filter !== 'all') {
+//     var listitems = list.querySelectorAll('.card:not(.' + filter + ')');
+//     for (var i = 0; i < listitems.length; i++) {
+//       listitems[i].style.display = 'none';
+//     }
+//   }
 
 
-  // change the value of the dropdown menu as well.
-  var options = dropdown.querySelectorAll('.dropdown-item');
-  for (var i = 0; i < options.length; i++) {
-    var label = 'Select';
-    if (options[i].getAttribute('data-value') == filter) {
-      var label = options[i].textContent;
-      break;
-    }
-  }
-  dropdown.querySelector('.dropdown-select').textContent = label;
-  var flkty = Flickity.data(list)
-  flkty.resize(); // TODO: this should be variable.
-}
+//   // change the value of the dropdown menu as well.
+//   var options = dropdown.querySelectorAll('.dropdown-item');
+//   for (var i = 0; i < options.length; i++) {
+//     var label = 'Select';
+//     if (options[i].getAttribute('data-value') == filter) {
+//       var label = options[i].textContent;
+//       break;
+//     }
+//   }
+//   dropdown.querySelector('.dropdown-select').textContent = label;
+//   var flkty = Flickity.data(list)
+//   flkty.resize(); // TODO: this should be variable.
+// }
 
 /* END filterable list */
 
@@ -398,27 +256,3 @@ $('.ics-download').on('click', function () {
 
 
 
-/**
- * Upcoming fix for resizing the carousels:
- *
- * Place in each carousel function like so:
-
- var flkty_logos = new Flickity( carousel, {
-      ...
-      on: {
-        ready: function() {
-          flickity_recalculate_heights(this);
-        }
-      }
-    });
-    flkty_logos.onresize = function(event) {
-      flickity_recalculate_heights(this);
-    };
-
- * This resets the content of each flickity slide to 100% height, allowing for full height background images even if slide content is different heights.
- */
-function flickity_recalculate_heights(obj) {
-  obj.element.classList.remove('flickity-init')
-  obj.resize();
-  obj.element.classList.add('flickity-init')
-}

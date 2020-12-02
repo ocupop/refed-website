@@ -1,45 +1,43 @@
 .subnav {
-  padding: 1rem 0 0;
   background-color: $teal;
   color: $white;
   z-index: 999;
-  @include transition(1s);
+  width: 100%;
+  @include transition(0.5s);
   &.fixed-top {
-    box-shadow: 0 0 5px rgba($black, 0.5);
-    padding: 0.25rem 0 !important;
-    height: auto !important;
-    @include transition(1s);
-    .col {
-      display: flex;
-      align-items: center;
-      @include transition(0.5);
+    transform: translateY(-32px) !important;
+  }
+
+  .h4 {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 1rem 0 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    &.fixed-top {
+      box-shadow: 0 0 5px rgba($black, 0.5);
+      padding: 0.25rem 0 !important;
+      height: auto !important;
+      transform: translateY(0) !important;
+      .col {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
   .navbar {
-    padding: 0.5rem 0;
+    padding: 2px;
+    @include media-breakpoint-up(lg) {
+      padding: 0.5rem 0;
+    }
   }
-  // .navbar-toggler {
-  //   border: none;
-  //   .navbar-toggler-icon {
-  //     background: none;
-  //     color: $white;
-  //     font-size: 2rem;
-  //     &:before {
-  //       content: "\ea78";
-  //       font-family: $font-family-icon !important;
-  //       font-style: normal;
-  //       -webkit-font-smoothing: antialiased;
-  //     }
-  //   }
-  //   &.collapsed .navbar-toggler-icon:before {
-  //     content: "\ea4e";
-  //   }
-  // }
   ul.nav {
     width: 100%;
-    @include media-breakpoint-down(md) {
-      // flex-direction: column;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
     }
     li.nav-item {
       margin-right: 1.5rem;
@@ -56,7 +54,31 @@
           color: $white;
           opacity: 1;
         }
+        @include media-breakpoint-down(lg) {
+          display: none;
+          padding: 0.3rem 0;
+          &.active {
+            display: block;
+          }
+        }
       }
     }
   }
+  &.show-links {
+    height: auto !important;
+    max-height: 100% !important;
+    ul.nav {
+      li.nav-item {
+        a.nav-link {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#subnav-toggle {
+  position: absolute;
+  right: 7px;
+  top: 5px;
 }
