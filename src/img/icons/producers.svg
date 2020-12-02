@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 661 600"><defs><style>.cls-1{fill:#dc354d;}.cls-2{fill:#fff;}.cls-3{fill:#00d1c3;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Group_1719" data-name="Group 1719"><circle class="cls-1" cx="300" cy="300" r="300"/><g id="Group_694" data-name="Group 694"><g id="Group_692" data-name="Group 692"><g id="Path_1131" data-name="Path 1131"><polygon class="cls-2" points="468.12 325.76 435.38 198.72 297.61 131.93 168.66 198.44 131.85 325.55 118.4 321.65 156.89 188.76 297.41 116.27 447.31 188.95 481.67 322.27 468.12 325.76"/></g></g><g id="Group_693" data-name="Group 693"><g id="Path_1132" data-name="Path 1132"><path class="cls-2" d="M446.83,447.79H374v-127H223.49V447.79H152.7V330.19l33.6-117.57,111.38-55.69,115.54,55.63,33.61,117.63Zm-58.86-14h44.86V332.15l-31.35-109.7L297.8,172.53l-99.74,49.86L166.7,332.15V433.79h42.79v-127H388Z"/></g></g><g id="Line_517" data-name="Line 517"><rect class="cls-2" x="289.66" y="274.89" width="14" height="206.52" transform="translate(-183.96 374.99) rotate(-51.51)"/></g><g id="Line_518" data-name="Line 518"><rect class="cls-2" x="196.48" y="371.46" width="205.71" height="14" transform="translate(-171.27 271.82) rotate(-38.89)"/></g></g><rect class="cls-3" x="644" y="528" width="17" height="17"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DC354D;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2">
+		<g id="Group_1719">
+			<circle class="st0" cx="300" cy="300" r="300"/>
+			<g id="Group_694">
+				<g id="Group_692">
+					<g id="Path_1131">
+						<polygon class="st1" points="468.1,325.8 435.4,198.7 297.6,131.9 168.7,198.4 131.9,325.5 118.4,321.6 156.9,188.8 
+							297.4,116.3 447.3,188.9 481.7,322.3 						"/>
+					</g>
+				</g>
+				<g id="Group_693">
+					<g id="Path_1132">
+						<path class="st1" d="M446.8,447.8H374v-127H223.5v127h-70.8V330.2l33.6-117.6l111.4-55.7l115.5,55.6l33.6,117.6L446.8,447.8z
+							 M388,433.8h44.9V332.1l-31.4-109.7l-103.7-49.9l-99.7,49.9l-31.4,109.8v101.6h42.8v-127H388L388,433.8z"/>
+					</g>
+				</g>
+				<g id="Line_517">
+					
+						<rect x="289.7" y="274.9" transform="matrix(0.6224 -0.7827 0.7827 0.6224 -183.9527 374.9945)" class="st1" width="14" height="206.5"/>
+				</g>
+				<g id="Line_518">
+					
+						<rect x="196.5" y="371.5" transform="matrix(0.7784 -0.6278 0.6278 0.7784 -171.2657 271.8105)" class="st1" width="205.7" height="14"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
