@@ -1,6 +1,5 @@
 <!-- collapsible rows should only appear on Capital Providers page -->
-<div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse"
-  data-target="#{{ sector.uid }}-{{ area.uid }}">
+<div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse" data-target="#{{ sector.uid }}-{{ area.uid }}">
   <div class="col-lg-auto flex-lg-grow-1">
     <div class="d-flex align-items-center">
       <div class="col-auto">
@@ -13,10 +12,7 @@
   </div>
   <div class="col-lg-auto ml-lg-auto">
     <div class="d-flex align-items-center">
-      <div
-        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions"
-        data-cms-editor-link-style="modal"
-        class="d-flex flex-column flex-lg-row align-items-center pr-4 cms-editor-link">
+      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions" data-cms-editor-link-style="modal" class="d-flex flex-column flex-lg-row align-items-center pr-4 cms-editor-link">
         <span class="stat-number">
           {{ active_area.solutions.size | default: '0' }}
         </span>
@@ -24,10 +20,7 @@
       </div>
 
       <div class="d-flex flex-column flex-lg-row align-items-center pl-4 border-left">
-        <span
-          data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed"
-          data-cms-editor-link-style="modal"
-          class="stat-number cms-editor-link">
+        <span data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed" data-cms-editor-link-style="modal" class="stat-number cms-editor-link">
           ${{ active_area.total_investment_needed | default: '0' }}
         </span>
         <span class="stat-text">Financial Investment<br />Needed</span>
@@ -46,27 +39,18 @@
     <div class="col-12">
       <div class="bg-light text-prevention p-5">
         <h5 class="text-serif editable global-editor-link">Overview</h5>
-        <p
-          data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.summary"
-          data-cms-editor-link-style="modal"
-          class="cms-editor-link">
+        <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.summary" data-cms-editor-link-style="modal" class="cms-editor-link">
           {{ active_area.summary }}
         </p>
         <div class="row">
           <div class="col-md-auto">
-            <div
-              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_opportunity"
-              data-cms-editor-link-style="modal"
-              class="stat-number cms-editor-link">
+            <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_opportunity" data-cms-editor-link-style="modal" class="stat-number cms-editor-link">
               ${{ active_area.total_investment_opportunity | default: '0' }}
             </div>
           </div>
           <div class="col">
             <h4 class="editable global-editor-link">Financing Opportunity</h4>
-            <p
-              data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.financing_opportunity_summary"
-              data-cms-editor-link-style="modal"
-              class="cms-editor-link">
+            <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.financing_opportunity_summary" data-cms-editor-link-style="modal" class="cms-editor-link">
               {{ active_area.financing_opportunity_summary }}
             </p>
           </div>
@@ -97,10 +81,7 @@
       </div>
 
       <h6 class="editable global-editor-link">Innovation Opportunities</h6>
-      <div
-        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].innovation_opportunities_html"
-        data-cms-editor-link-style="modal"
-        class="cms-editor-link">
+      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].innovation_opportunities_html" data-cms-editor-link-style="modal" class="cms-editor-link">
         {{ solution.innovation_opportunities_html }}
       </div>
       <div class="d-flex flex-column flex-lg-row">
