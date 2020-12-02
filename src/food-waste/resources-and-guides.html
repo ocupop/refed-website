@@ -147,19 +147,19 @@ cta_insights_engine:
 
 <section>
   <div class="container">
-    <h3 class="editable">Our Food Waste Tools:</h3>
+    <h3 class="editable mb-5">Our Food Waste Tools:</h3>
     {% for tool in page.food_waste_tools %}
     <div 
       id="{{ tool.id }}"
-      class="row align-items-center py-lg-5 my-5 cms-editor-link"
+      class="row align-items-center mb-5 cms-editor-link"
       data-cms-editor-link="cloudcannon:#food_waste_tools"
       data-cms-editor-link-style="modal">
       <div class="col-12 col-md-auto">
-        <img src="{{ tool.icon_image }}" class="img-fluid icon-img-xl mr-4 mb-3" alt="{{ tool.title }} icon">
+        <img src="{{ tool.icon_image }}" class="img-fluid icon-img-xl mb-3 mb-md-0 mr-md-3" alt="{{ tool.title }} icon">
       </div>
       <div class="col">
-        <h2>{{ tool.title }}:</h2>
-        <div class="lead mb-0">
+        <h4>{{ tool.title }}:</h4>
+        <div class="mb-0">
           {{ tool.description_html }}
         </div>
         <a class="btn btn-link" href="{{ tool.link }}" >{{ tool.link_label | default: 'Learn More' }}</a>
