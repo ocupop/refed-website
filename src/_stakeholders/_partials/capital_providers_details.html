@@ -66,43 +66,28 @@
     </div>
     <div class="col-lg-11">
       <h6 class="editable global-editor-link">Modeled Solution</h6>
-      <h4
-        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].label"
-        data-cms-editor-link-style="modal"
-        class="cms-editor-link">
+      <h4 data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].label" data-cms-editor-link-style="modal" class="cms-editor-link">
         {{ solution.label }}
       </h4>
-      <p
-        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].definition"
-        data-cms-editor-link-style="modal"
-        class="cms-editor-link">
+      <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].definition" data-cms-editor-link-style="modal" class="cms-editor-link">
         {{ solution.definition }}
       </p>
       <div class="row">
         <div class="col-md-auto">
-          <div
-            data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed"
-            data-cms-editor-link-style="modal"
-            class="stat-number cms-editor-link">
+          <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed" data-cms-editor-link-style="modal" class="stat-number cms-editor-link">
             ${{ solution.investment_needed | default: '0' }}
           </div>
         </div>
         <div class="col">
           <h4 class="editable global-editor-link">Investment Needed</h4>
-          <p
-            data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed_summary"
-            data-cms-editor-link-style="modal"
-            class="cms-editor-link">
+          <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed_summary" data-cms-editor-link-style="modal" class="cms-editor-link">
             {{ solution.investment_needed_summary }}
           </p>
         </div>
       </div>
 
       <h6 class="mt-3 editable global-editor-link">Innovation Opportunities</h6>
-      <div
-        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].innovation_opportunities_html"
-        data-cms-editor-link-style="modal"
-        class="cms-editor-link">
+      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].innovation_opportunities_html" data-cms-editor-link-style="modal" class="cms-editor-link">
         {{ solution.innovation_opportunities_html }}
       </div>
       <div class="mt-5">
