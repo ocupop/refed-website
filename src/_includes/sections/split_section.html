@@ -45,14 +45,14 @@
 {%endif%}
 
 <section class="split-section image-{{include.image_alignment | default: 'right'}} {{ include.section_class }}" id="{{ include.id }}">
-    <div
-      data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
-      data-cms-editor-link-style="modal"
-      class="container split-section cms-editor-link">
+    <div class="container split-section">
       <div class="row">
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
           <span class='bkg'></span>
-          <div class="col-text-content">
+          <div
+            data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+            data-cms-editor-link-style="modal"
+            class="col-text-content cms-editor-link">
             {% if include.subtitle or item.subtitle %}
               <h3>{{ include.subtitle | default: item.subtitle  }}</h3>
             {% endif %}
@@ -67,7 +67,10 @@
             {% endif %}
           </div>
         </div>
-        <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'dark'}}">
+        <div
+          data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
+          data-cms-editor-link-style="modal"
+          class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'dark'}} cms-editor-link">
           <span class="bkg" style="background-image:url('{{ image }}')"></span>
         </div>
       </div>
