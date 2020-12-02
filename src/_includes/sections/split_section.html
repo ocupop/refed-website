@@ -67,11 +67,11 @@
             {% endif %}
           </div>
         </div>
-        <div
-          data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
-          data-cms-editor-link-style="modal"
-          class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'dark'}} cms-editor-link">
-          <span class="bkg" style="background-image:url('{{ image }}')"></span>
+        <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'dark'}}">
+          <span
+            data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
+            data-cms-editor-link-style="modal"
+            class="bkg cms-editor-link" style="background-image:url('{{ image }}')"></span>
         </div>
       </div>
     </div>
