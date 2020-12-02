@@ -56,12 +56,12 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
                       <div className='stat-text m-0'>Key Indicators</div>
                     </div>
                     <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
-                      <span className="stat-number d-block lead">{formatIndicator('total-mtco2e-avoided')}</span>
+                      <span className="display-4 d-block lead">{formatIndicator('total-mtco2e-avoided')}</span>
                       <span className="stat-text d-block">Emissions Reduction</span>
                     </div>
 
                     <div className="key-indicators-box__stat d-flex flex-column pl-4 border-left pb-3 pb-sm-0">
-                      <span className="stat-number d-block lead">{investmentNeeded()}</span>
+                      <span className="display-4 d-block lead">{investmentNeeded()}</span>
                       <span className="stat-text d-block">Investment Needed</span>
                     </div>
                   </div>
