@@ -14,8 +14,7 @@ _stat:
   caption: tons of food
 
 split_section_good_news:
-  type: custom
-  subtitle: The good news?
+  label: The good news?
   title: Food waste is a solvable problem – and we know how to do it.
   summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   featured_image: /img/food_waste_challenge/foodwaste_image_01.jpg
@@ -23,8 +22,7 @@ split_section_good_news:
   url: /food-waste-solutions
 
 split_section_what_is_food_waste:
-  type: custom
-  subtitle: What is Food Waste?
+  label: What is Food Waste?
   title:
   summary: >-
     <p>Various organizations define food loss and waste in different ways. ReFED has adopted the U.S. Department
@@ -37,8 +35,7 @@ split_section_what_is_food_waste:
   featured_image: /img/food_waste_challenge/foodwaste_image_02.jpg
 
 split_section_what_is_the_impact:
-  type: custom
-  subtitle: What is the Impact of Food Waste?
+  label: What is the Impact of Food Waste?
   title:
   summary: When you consider what it takes to grow, transport, cool, cook, and serve food, the impacts of wasting food are truly staggering. If all of our country’s uneaten food was grown in one place, this “mega-farm” would cover roughly 80 million acres, over three-quarters of the entire state of California – all for food that is never eaten.
   featured_image: https://via.placeholder.com/650x650
@@ -47,7 +44,6 @@ split_section_policy_overview:
   title: Policy Overview
   summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
   featured_image: /img/food_waste_challenge/foodwaste_policyoverview_image.jpg
-  link_label: View Policy Tracker
   link:
     label: View Policy Tracker
     url: /policy-tracker
@@ -440,7 +436,7 @@ _subnav:
         </div>
       </div>
     </div>
-    {% include sections/accordion.html items=page.barriers_to_solutions_implementation %}
+    {% include sections/accordion.html items=page.barriers_to_solutions_implementation editor-link="#barriers_to_solutions_implementation" %}
   </div>
 </section>
 
@@ -452,6 +448,6 @@ _subnav:
   editor-link="#split_section_policy_overview"
 %}
 
-{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine editor-link="#cta_insights_engine" %}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}
