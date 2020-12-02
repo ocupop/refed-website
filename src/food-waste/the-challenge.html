@@ -8,6 +8,11 @@ hero:
     image: /img/food_waste_challenge/food_waste_challenge_header_image.png
     links:
 
+_stat:
+  static_image:
+  label: XXM
+  caption: tons of food
+
 split_section_good_news:
   type: custom
   subtitle: The good news?
@@ -79,6 +84,7 @@ barriers_to_solutions_implementation:
   - title: End-market Development
     description_html: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
 cta:
   title:
   label:
@@ -119,7 +125,10 @@ _subnav:
   <div class="container" id="overview">
     <div class="row align-items-center">
       <div class="col-lg-4">
-        {% include charts/donut.html %}
+        {% include charts/donut.html
+          item=page._stat
+          editor-link="#_stat"
+        %}
       </div>
       <div class="col-lg-8">
         <div>
