@@ -1,35 +1,35 @@
 <!-- collapsible rows should only appear on Capital Providers page -->
-<div class="row row-{{ category.uid }} align-items-center" data-toggle="collapse" data-target="#{{ sector.uid }}-{{ area.uid }}">
-  <div class="col-lg-auto flex-lg-grow-1">
+<div class="row row-{{ category.uid }}" data-toggle="collapse" data-target="#{{ group.uid }}-{{ area.uid }}">
+  <div class="col-12 col-lg-6 col-xl-5">
     <div class="d-flex align-items-center">
-      <div class="col-auto">
-        <div class="icon icon-sm icon-{{ area.uid }} ml-3"></div>
-      </div>
-      <div class="col">
-        <h4 class="mb-0">{{ area.label }}</h4>
-      </div>
+      <div class="icon icon-sm icon-{{ area.uid }} mx-4"></div>
+      <h4 class="mb-0">{{ area.label }}</h4>
     </div>
   </div>
-  <div class="col-lg-auto ml-lg-auto">
-    <div class="d-flex align-items-center">
-      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions" data-cms-editor-link-style="modal" class="d-flex flex-column flex-lg-row align-items-center pr-4 cms-editor-link">
+  <div class="col-12 col-lg-6 col-xl-5">
+    <div class="row justify-content-lg-end">
+      <div class="d-flex align-items-center pr-4 ml-5 cms-editor-link"
+        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions"
+        data-cms-editor-link-style="modal">
         <span class="stat-number">
           {{ active_area.solutions.size | default: '0' }}
         </span>
         <span class="stat-text">Modeled<br />Solutions</span>
       </div>
 
-      <div class="d-flex flex-column flex-lg-row align-items-center pl-4 border-left">
-        <span data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed" data-cms-editor-link-style="modal" class="stat-number cms-editor-link">
+      <div class="d-flex align-items-center pl-4 border-left cms-editor-link"
+        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed"
+        data-cms-editor-link-style="modal" >
+        <span class="stat-number">
           ${{ active_area.total_investment_needed | default: '0' }}
         </span>
         <span class="stat-text">Financial Investment<br />Needed</span>
       </div>
     </div>
   </div>
-  <div class="col-12 col-lg-auto">
-    <div class="collapse-trigger mt-3 mt-lg-0 bg-prevention">
-      <span>Explore<br class="d-none d-lg-block" /> Solutions</span>
+  <div class="col-12 col-xl-auto">
+    <div class="collapse-trigger">
+      <span>Explore<br/> Solutions</span>
       <span class="arrow arrow-down"></span>
     </div>
   </div>

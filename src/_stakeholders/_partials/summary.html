@@ -22,10 +22,12 @@
       </div>
       <div class="col-12 col-lg-5 ml-lg-auto">
         {% if page.uid == 'capital-providers' %}
-          {% include charts/donut.html
-            item=page.stats.total_investment_needed
-            editor-link="#stats.total_investment_needed"
-          %}
+          <div class="w-50">
+            {% include charts/donut.html
+              item=page.stats.total_investment_needed
+              editor-link="#stats.total_investment_needed"
+            %}
+          </div>
         {% else %}
         <div class="row align-items-center">
           <div class="col-6">
