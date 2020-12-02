@@ -94,93 +94,122 @@ cta_insights_engine:
     label: Launch ReFED Insights Engine
     url: 'https://www.insights-engine-fpo.com/'
     alt:
-_sticky_nav:
-  - link: '#priority-action-areas'
-    link_label: 'Priority action areas'
-  - link: '#solutions'
-    link_label: 'Solutions'
-  - link: '#levers'
-    link_label: 'Levers'
-  - link: '#stakeholder-recommendations'
-    link_label: 'Stakeholder recommendations'
+
+powered_by_insights_engine:
+  label: Powered by
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  summary:
+
+_subnav:
+  - label: 'Priority Action Areas'
+  - label: 'Solutions'
+  - label: 'Levers'
+  - label: 'Stakeholder Recommendations'
+
+_assets:
+  highlight_insights_engine_image:
+  size_of_the_prize_graphic_image:
 
 ---
 
 <section id="overview">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-7">
+      <div class="col-12">
         <div class="lead editable">
           <p>A range of solutions to reduce food waste already exist – some are breakthrough, some are basic, and importantly, many have a strong potential for investment returns. ReFED estimates that an investment of $YY over the next ten years will reduce food waste by XX tons, which will then avoid ZZ tons of GHGs, provide the ability to rescue AA meals, create BB jobs, and deliver CC in economic value to the country. And many businesses, cities, nonprofits, and others are already making a substantial impact to address the problem.</p>
         </div>
-        <p class="h3 editable">But much more needs to be done.</p>
-      </div>
-      <div class="col-lg-3 ml-lg-auto">
-        {% include charts/donut.html %}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="roadmap-2020" class="bg-lighter">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto">
-        <div class="editable text-center">
-          <h2>Food Waste Action Guide</h2>
-          <p>Our new Roadmap 2030 outlines seven priority areas across the food system where we must focus our efforts over the next ten years. Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste. What’s more, Roadmap 2030 is powered by the brand new ReFED Insights Engine, an online hub for data and insights; analysis of available solutions; recommended best practices; a directory of potential partners; and more. In line with the United Nations General Assembly’s recommended three-step approach of target, measure, and act to achieve a 50% reduction in food waste by 2030, ReFED’s Roadmap 2030 and the ReFED Insights Engine were specifically developed to provide food system players with everything they need to move from awareness about the problem to action.</p>
+        <h3 class="editable">But much more needs to be done.</h3>
+        <div
+          data-cms-editor-link="cloudcannon:#_assets.size_of_the_prize_graphic_image"
+          data-cms-editor-link-style="modal"
+          class="mt-5 cms-editor-link">
+          {% if _assets.highlight_insights_engine_image %}
+          <img src="{{ _assets.size_of_the_prize_graphic_image }}" alt="{{ page.title }} Insights Engine" class="img-fluid" />
+          {% else %}
+          <div class="bg-placeholder aspect-3x1 bg-black text-white">
+            <div class="bg-fill">
+              <h4 class="text-uppercase">Size of the prize graphic</h4>
+            </div>
+          </div>
+          {% endif %}
         </div>
       </div>
     </div>
+
     <div class="row mt-5">
       <div class="col-12">
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <h4>Priority Action Areas section</h4>
+        <div class="overflow-hidden">
+        <div class="text-center">
+          <h3 class="editable">The Path Forward</h3>
+          <h2 class="editable">Roadmap to 2030: Reducing US Food Waste by 50%</h2>
+        </div>
+        <div class="mt-4 p-5 bg-dark">
+          <div class="lead editable">
+            <p>ReFED’s Roadmap 2030 and the ReFED Insights Engine was specifically developed to provide food system players with
+            everything they need to move from awareness about the problem to action.</p>
+            <p>Building on our landmark 2016 Roadmap to Reduce US Food Waste by 20%, this new action plan provides details on more than 40 solutions to reduce food waste.</p>
           </div>
+        </div>
+        <div class="pl-3 bg-light">
+          {% include components/cta_insights_engine.html
+            item=page.powered_by_insights_engine
+            theme="light"
+          %}
+        </div>
+        <div class="p-5 bg-white">
+          <h3 class="editable">Key Action Areas</h3>
+          <p class="editable">Our Roadmap to 2030: Reducing U.S. Food Waste looks at the entire food supply chain and outlines seven key action areas where the food system must focus its food waste reduction efforts over the next ten years.</p>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<div class="bg-placeholder aspect-auto">
-  <div class="bg-fill">
-    <h4>Subnav</h4>
-    <small>.src/_includes/modules/sticky_nav.html</small>
-  </div>
-</div>
-{% comment %}
-  {% include modules/sticky_nav.html navigation=page._sticky_nav header="Explore Solution Areas" %}
-{% endcomment %}
 
-<section id="seven-action-areas">
+
+
+
+
+<!-- START: page sub navigation -->
+{% include nav/subnav.html items=page._subnav label="Explore Solution Areas" %}
+
+<section id="priority-action-areas">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10">
         <div class="editable">
           <h2>Priority Action Areas</h2>
-          <p>Within each priority action area, we analyzed a range of potential solutions based on their impact potential (amount of food waste diverted, GHG emissions reduced, meals recovered, jobs created, and net economic benefit), effort required, feasibility, and potential barriers.</p>
+          <p>Within each priority action area, we analyzed a range of potential solutions based on their impact
+            potential (amount of food waste diverted, GHG emissions reduced, meals recovered, jobs created, and net
+            economic benefit), effort required, feasibility, and potential barriers.</p>
         </div>
       </div>
     </div>
     {% for category in site.action_area_categories %}
       {% for area in category.areas %}
-        <div class="row my-5 py-lg-5">
-          <div class="col-md-auto">
-            <i class="icon icon-md icon-{{area.uid}} my-2"></i>
-          </div>
-          <div class="col">
-            <h3>{{ area.label }}</h3>
-            {{ area.description_html }}
-            <a href="/action-areas/{{ area.slug }}" class="mt-3 btn btn-primary">Learn More</a>
-          </div>
+        {% assign active_area = site.action_areas | where: 'slug', area.slug | first %}
+      <div class="row my-5 py-lg-5">
+        <div class="col-md-auto">
+          <i class="icon icon-md icon-{{area.uid}} my-2"></i>
         </div>
+
+        <div
+          data-cms-editor-link="cloudcannon:#description_html"
+          data-cms-editor-link-style="modal"
+          class="col cms-editor-link">
+          <h3>{{ active_area.title }}</h3>
+          {{ active_area.description_html }}
+          <a href="{{ active_area.url }}" class="mt-3 btn btn-primary">Learn More</a>
+        </div>
+      </div>
       {% endfor %}
     {% endfor %}
   </div>
 </section>
 
-<section class="bg-light">
+<section id="solutions" class="bg-light">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
@@ -210,26 +239,31 @@ _sticky_nav:
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="bg-light pt-0">
-  <div class="container">
-    <div class="row">
+    <div class="row mt-5 pt-5">
       <div class="col-12 col-lg-10 mx-lg-auto">
         <div class="text-center">
           <h2 class="h1 editable">2.68% of U.S. food waste or 2.28 million tons could be avoided annually</h2>
           <div class="lead editable">
-            <p>if All Stakeholders implemented these solutions to reduce waste in All Stakeholders in all states</p>
+            <p>if <em>All Stakeholders</em> implemented these solutions to reduce waste in <em>All Stakeholders</em> in all states</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-12">
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <h4>Chart from insights engine</h4>
+        <div
+          data-cms-editor-link="cloudcannon:#_assets.highlight_insights_engine_image"
+          data-cms-editor-link-style="modal"
+          class="cms-editor-link">
+          {% if _assets.highlight_insights_engine_image %}
+          <img src="{{ _assets.highlight_insights_engine_image }}" alt="{{ page.title }} Insights Engine" class="img-fluid" />
+          {% else %}
+          <div class="bg-placeholder aspect-2x1 bg-black text-white">
+            <div class="bg-fill">
+              <h4 class="text-uppercase">Top 5 solutions for <span class="text-primary">All Stakeholders</span></h4>
+            </div>
           </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -243,28 +277,34 @@ _sticky_nav:
   </div>
 </section>
 
-<section>
-  <div class="container" id="key-levers">
+<section id="levers">
+  <div class="container">
     <div class="row mb-5">
       <div class="col-12">
         <h2 class="editable">Levers</h2>
-        <h3 class="editable">Everyone has a role to play in reducing food waste – even if you’re not directly connected to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</h3>
+        <h3 class="editable">Everyone has a role to play in reducing food waste – even if you’re not directly connected
+          to the food industry – and these key “levers” can be used to facilitate implementation of the solutions:</h3>
       </div>
     </div>
     {% for lever in page.levers %}
-      <div class="row mb-5">
-        <div class="col-12 col-md-auto">
-          <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="{{ lever.title }} icon" />
-        </div>
-        <div class="col">
-          <h4>{{ lever.title }}</h4>
-          {{ lever.description_html }}
-        </div>
+    <div class="row mb-5">
+      <div class="col-12 col-md-auto">
+        <!-- TODO: Refactor to use icon classes and background images -->
+        <img src="{{ lever.icon_image }}" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="{{ lever.title }} icon" />
       </div>
+      <div
+        data-cms-editor-link="cloudcannon:#levers[{{forloop.index0}}]"
+        data-cms-editor-link-style="modal"
+        class="col cms-editor-link">
+        <h4>{{ lever.title }}</h4>
+        {{ lever.description_html }}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
-<section class="bg-dark">
+
+<section id="stakeholder-recommendations" class="bg-dark">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -275,6 +315,7 @@ _sticky_nav:
     {% include components/icon-grid.html %}
   </div>
 </section>
+<!-- END: page sub navigation -->
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
