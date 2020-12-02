@@ -41,13 +41,12 @@ partnerships:
       - link: 'http://www.refed.com'
         alt_text: Refed Alt Tag
         image: https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg
-    buttons:
-      - link: '#'
-        link_label: See Annual Report
-        button_type: button
-      - link: '#'
-        link_label: Visit Website
-        button_type: button
+    links:
+      - label: See Annual Report
+        url: '#'
+        alt:
+      - label: Visit Website
+        url: 'https://pacificcoastcollaborative.org/'
   - title: Other Partnership Name
     text_above_logos_html: >-
       <p>ReFED leads measurement and communications efforts for the Pacific Coast Collaborative, a first-of-it’s kind regional public-private partnership, bringing local jurisdictions and food businesses on the west coast together to co-create and implement measurable action to halve food waste by 2030.</p>
@@ -77,13 +76,13 @@ partnerships:
       - link: 'http://www.refed.com'
         alt_text: Refed Alt Tag
         image: https://www.logolynx.com/images/logolynx/s_fc/fc07dee232517e20751e18a85d5a3c9d.jpeg
-    buttons:
-      - link: '#'
-        link_label: See Annual Report
-        button_type: button
-      - link: '#'
-        link_label: Visit Website
-        button_type: button
+    links:
+      - label: See Annual Report
+        url: '#'
+        alt:
+      - label: Visit Website
+        url: '#'
+        alt:
 testimonial:
   text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -206,8 +205,8 @@ _subnav:
             {{ partner.text_below_logos_html }}
           </div>
           <div class="d-lg-flex">
-            {% for item in partner.buttons %}
-              <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-primary{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
+            {% for item in partner.links %}
+              <a href="{{ item.url }}" class="btn btn-primary mr-3 mb-2" target="_blank">{{ item.label }}</a>
             {% endfor %}
           </div>
 
