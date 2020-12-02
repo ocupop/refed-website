@@ -25,11 +25,13 @@ trend_reports:
     featured_image:
     document_path: /uploads/placeholder-pdf.pdf
 featured_articles:
-  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
-  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee    
+  - >-
+    refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+  - >-
+    refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 case_studies:
   - crown-family-philanthropies
-  - crown-family-philanthropies  
+  - crown-family-philanthropies
 partner_resources:
   - title: Save The Food
     description_html: >-
@@ -50,24 +52,28 @@ cta:
   title:
   label:
   description_html: >-
-    ReFED offers a range of solutions for organizations to advance their own
+    <p>ReFED offers a range of solutions for organizations to advance their own
     food waste initiatives. Our interactive tools, reports and strategic
-    solutions can help your team get started.
+    solutions can help your team get started.</p>
   link:
     label: See All Solutions
-    url: /food-waste-solutions
+    url: /food-waste/the-solutions
     alt:
   theme:
   add_divider: right
-
 ---
+
 <!-- TODO: Sort out where this page fits into the site information architecture -->
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h3 class="mb-4 editable">Overview</h3>
-        <h2 class="mb-5 editable">$XX Opportunity to be Unlocked with $XX Capital</h2>
+        <h3 class="mb-4 editable">
+          Overview
+        </h3>
+        <h2 class="mb-5 editable">
+          $XX Opportunity to be Unlocked with $XX Capital
+        </h2>
         <div class="editable">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -95,7 +101,9 @@ cta:
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="editable">Trends</h2>
+        <h2 class="editable">
+          Trends
+        </h2>
         <div class="editable">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
@@ -108,8 +116,12 @@ cta:
             {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray editable">Public</h6>
-            <p class="display-4 text-serif mb-2 editable">$6.6B</p>
+            <h6 class="text-gray editable">
+              Public
+            </h6>
+            <p class="display-4 text-serif mb-2 editable">
+              $6.6B
+            </p>
             <p class="mb-0"><small class="editable">Corporate Finance - <span class="text-recycle font-weight-bold">$5.2B</span></small> </p>
             <p class="mb-0"><small class="editable">Private Equity - <span class="text-recycle-300 font-weight-bold">$0.8B</span></small> </p>
           </div>
@@ -119,8 +131,12 @@ cta:
             {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray editable">Private</h6>
-            <p class="display-4 text-serif mb-2 editable">$8.2B</p>
+            <h6 class="text-gray editable">
+              Private
+            </h6>
+            <p class="display-4 text-serif mb-2 editable">
+              $8.2B
+            </p>
             <p class="mb-0"><small class="editable">Tax Subsidy - <span class="text-teal-600 font-weight-bold">$7.2B</span></small> </p>
             <p class="mb-0"><small class="editable">Project Finance - <span class="text-teal-300 font-weight-bold">$1.1B</span></small> </p>
           </div>
@@ -130,8 +146,12 @@ cta:
             {% include charts/donut.html %}
           </div>
           <div class="col-lg-6">
-            <h6 class="text-gray editable">Philanthropic</h6>
-            <p class="display-4 text-serif mb-2 editable">$3B</p>
+            <h6 class="text-gray editable">
+              Philanthropic
+            </h6>
+            <p class="display-4 text-serif mb-2 editable">
+              $3B
+            </p>
             <p class="mb-0"><small class="editable">Grants - <span class="text-prevention font-weight-bold">$7.2B</span></small> </p>
             <p class="mb-0"><small class="editable">Impact Investments - <span class="text-prevention-100 font-weight-bold">$1.1B</span></small> </p>
           </div>
@@ -156,10 +176,7 @@ cta:
 <section class="pt-0">
   <div class="container">
     {% for report in page.trend_reports %}
-      <div 
-        class="row align-items-center mb-5 cms-editor-link"
-        data-cms-editor-link="cloudcannon:#trend_reports"
-        data-cms-editor-link-style="modal">
+      <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#trend_reports" data-cms-editor-link-style="modal">
         <div class="col-lg-3">
           <div class="bg-image aspect-5x7 bg-dark mr-lg-4" style="background-image: url('{{ report.featured_image }}')"></div>
         </div>
@@ -178,7 +195,9 @@ cta:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h3 class="editable">Year to Date Funding Highlights</h3>
+        <h3 class="editable">
+          Year to Date Funding Highlights
+        </h3>
       </div>
     </div>
     {% for object in page.featured_articles %}
@@ -234,14 +253,13 @@ cta:
   <div class="container">
     <div class="row mb-4">
       <div class="col-12">
-        <h3 class="editable">Partner Resources</h3>
+        <h3 class="editable">
+          Partner Resources
+        </h3>
       </div>
     </div>
     {% for resource in page.partner_resources %}
-      <div 
-        class="row cms-editor-link"
-        data-cms-editor-link="cloudcannon:#partner_resources"
-        data-cms-editor-link-style="modal">
+      <div class="row cms-editor-link" data-cms-editor-link="cloudcannon:#partner_resources" data-cms-editor-link-style="modal">
         <div class="col-12">
           <h4 class="text-serif">{{ resource.title }}</h4>
           {{ resource.description_html }}
