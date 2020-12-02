@@ -21,6 +21,12 @@
         </div>
       </div>
       <div class="col-12 col-lg-5 ml-lg-auto">
+        {% if page.uid == 'capital-providers' %}
+          {% include charts/donut.html
+            item=page.stats.total_investment_needed
+            editor-link="#stats.total_investment_needed"
+          %}
+        {% else %}
         <div class="row align-items-center">
           <div class="col-6">
             {% include charts/donut.html
@@ -64,6 +70,7 @@
             {% endif %}
           </div>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>
