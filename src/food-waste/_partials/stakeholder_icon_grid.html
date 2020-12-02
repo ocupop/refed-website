@@ -1,0 +1,19 @@
+<div class="row justify-content-center my-4">
+  <div class="col-12 col-lg-8">
+    <div class="d-flex align-items-start">
+      {% for category in site.stakeholder_categories %}
+      {% for item in category.stakeholders %}
+      {% assign stakeholder = site.stakeholders | where: 'slug', item.slug | first %}
+      <div class="col-auto mx-auto">
+        <div class="text-center">
+          <a href="{{ stakeholder.url }}" title="{{ stakeholder.title }}">
+            <i class="icon icon-sm icon-{{ item.uid }}"></i>
+          </a>
+          <!-- <p>{{ item.label }}</p> -->
+        </div>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
