@@ -53,8 +53,8 @@
             data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
             data-cms-editor-link-style="modal"
             class="col-text-content cms-editor-link">
-            {% if include.subtitle or item.subtitle %}
-              <h3>{{ include.subtitle | default: item.subtitle  }}</h3>
+            {% if include.label or item.label %}
+              <h3>{{ include.label | default: item.label  }}</h3>
             {% endif %}
             {% if include.title or item.title %}
               <h2 class="mb-3">{{ include.title | default: item.title  }}</h2>
