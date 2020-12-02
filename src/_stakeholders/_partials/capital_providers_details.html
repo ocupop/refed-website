@@ -13,7 +13,10 @@
   </div>
   <div class="col-lg-auto ml-lg-auto">
     <div class="d-flex align-items-center">
-      <div class="d-flex flex-column flex-lg-row align-items-center pr-4">
+      <div
+        data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions"
+        data-cms-editor-link-style="modal"
+        class="d-flex flex-column flex-lg-row align-items-center pr-4 cms-editor-link">
         <span class="stat-number">
           {{ active_area.solutions.size | default: '0' }}
         </span>
