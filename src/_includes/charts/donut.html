@@ -2,7 +2,7 @@
 <div
   data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
   data-cms-editor-link-style="modal"
-  class="bg-image bg-transparent aspect-1x1 cms-editor-link" style="background-image: url('{{ item.static_image }}');">
+  class="bg-image bg-transparent aspect-1x1 cms-editor-link" style="background-image: url('{{ item.static_image | default: '/img/donut_placeholder.svg' }}');">
   <div class="bg-fill">
     <div class="w-50 py-3 text-center">
       <p class="display-4">
