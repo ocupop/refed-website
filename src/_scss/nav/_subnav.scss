@@ -61,9 +61,7 @@
     }
     li.nav-item {
       margin-right: 1.5rem;
-      @include media-breakpoint-up(xl) {
-        max-width: 15%;
-      }
+
       a.nav-link {
         padding: 0;
         font-weight: $font-weight-semibold;
