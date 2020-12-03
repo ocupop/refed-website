@@ -55,6 +55,17 @@ advisory_services:
     featured_image:
     link: 'https://deliveringgood.doordash.com/'
     link_label: Learn More
+  - title: Strategic Guidance for Capital Providers and Food Businesses
+    description_html: >-
+      <p>The Capital and Innovation team works directly with capital providers
+      and advises them on existing funding opportunities in the food waste space
+      that best fit with their priorities and interests. The team also works
+      one-on-one with food businesses to help them identify the most effective
+      solutions and prospective solution providers that can meet
+      businesses&rsquo; operations and needs.</p>
+    featured_image:
+    link:
+    link_label: Contact Us
 program_at_a_glance_stats:
   - title: Nonprofit Organizations
     stat: 10
@@ -163,15 +174,14 @@ _assets:
   - image: /img/who_we_are/aboutus_image_03.jpg
   - image: /img/who_we_are/aboutus_image_04.jpg
 _subnav:
-  - label: 'Investment and Innovation'
+  - label: Investment and Innovation
     _slug: investment-and-innovation
-  - label: 'Advisory Services'
+  - label: Advisory Services
     _slug: advisory-services
-  - label: 'Solution Challenge Platform'
+  - label: Solution Challenge Platform
     _slug: solution-challenge-platform
-  - label: 'Convenings'
+  - label: Convenings
     _slug: convenings
-
 ---
 
 <section>
@@ -185,8 +195,8 @@ _subnav:
           <p>Catalyzing Capital to Spur Innovation and Scale High-impact Initiatives</p>
         </div>
         <div class="editable">
-          <p>ReFED&rsquo;s Capital and Innovation team works to catalyze the $XX billion investment of public, private and philanthropic investment needed in food waste solutions to reduce greenhouse gas emissions (GHG) emissions, conserve natural resources, and recover meals for those in need. While food waste solutions available today have the dynamic potential to make a scalable impact in creating a more resilient, sustainable, and inclusive food system, they continue to face financing barriers. To overcome the bottlenecks and help de-risk new innovations, $100- $200 million annually is needed in catalytic grants, innovation investments, and low cost project finance.</p>
-          <p>We are committed to aggregating the catalytic impact-oriented capital needed for solutions to become widely adopted. Through the team&rsquo;s work with investors, innovators, and technology companies, they educate and incentivize funders on emerging investment opportunities in food waste, drive the adoption of effective food waste solutions by food businesses, and build the capacity of solution providers in order to scale and replicate their service offering, with the ultimate goal of increasing efficiency. The team hosts food waste innovation challenges, accelerators, a database of solution providers, networking events, actively advises capital providers, and tracks philanthropic and private capital investment into solutions.</p>
+          <p>ReFED&rsquo;s Capital and Innovation team works to catalyze the $XX billion investment of public, private and philanthropic investment needed in food waste solutions to reduce greenhouse gas emissions (GHG) emissions, conserve natural resources, and recover meals for those in need. While food waste solutions available today have the dynamic potential to make a scalable impact in creating a more resilient, sustainable, and inclusive food system, they continue to face financing barriers. To overcome the bottlenecks and help de-risk new innovations, $100 - $200 million annually is needed in catalytic grants, innovation investments, and low cost project finance.</p>
+          <p>To drive food waste reduction across the supply chain, the Capital and Innovation team educate and advise funders on emerging investment opportunities in food waste, drive the adoption of effective food waste solutions by food businesses, and build the capacity of solution providers in order to scale and/or replicate their service offerings.</p>
         </div>
       </div>
     </div>
@@ -204,16 +214,13 @@ _subnav:
       <div class="col">
         <div class="editable">
           <h3>Investment and Innovation</h3>
-          <p>We create and provide a number of resources and tools for food businesses, capital providers, and food waste solution providers. These assets provide insights on the food waste landscape and can help inform key decisions when it comes to reducing the amount of food that goes uneaten.</p>
+          <p>The Capital and Innovation team create and provide a number of resources and tools for food businesses, capital providers, and food waste solution providers. These assets provide insights on the food waste landscape and can help inform key decisions when it comes to reducing the amount of food that goes uneaten.</p>
         </div>
       </div>
     </div>
     <div class="row mb-5">
       {% for resource in page.resources_and_tools %}
-      <div
-        class="col-12 col-lg-5 mb-5 cms-editor-link"
-        data-cms-editor-link="cloudcannon:#resources_and_tools"
-        data-cms-editor-link-style="modal">
+      <div class="col-12 col-lg-5 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#resources_and_tools" data-cms-editor-link-style="modal">
         <div class="pr-lg-5">
           <h4>{{ resource.title }}</h4>
           {{ resource.description_html }}
@@ -236,7 +243,7 @@ _subnav:
           Advisory Services
         </h3>
         <div class="editable">
-          <p>Leveraging the expertise and knowledge of the Capital &amp; Innovation team, ReFED offers direct advisory services to food businesses, capital providers, technology companies, and many others on food waste reduction programs and investment strategies.</p>
+          <p>Leveraging the expertise and knowledge of the Capital and Innovation team, ReFED offers direct advisory services to food businesses, capital providers, technology companies, and many others on food waste reduction programs and investment strategies.</p>
         </div>
       </div>
     </div>
@@ -248,10 +255,7 @@ _subnav:
       </div>
     </div>
     {% for service in page.advisory_services %}
-      <div
-        class="row align-items-center mb-5 cms-editor-link"
-        data-cms-editor-link="cloudcannon:#advisory_services"
-        data-cms-editor-link-style="modal">
+      <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#advisory_services" data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
           <div class="bg-image aspect-16x9 mb-3 mr-lg-4" style="background-image: url({{ service.featured_image }})"></div>
         </div>
@@ -298,10 +302,7 @@ _subnav:
         </h6>
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
-            <li
-              class="d-flex align-items-center mb-3 cms-editor-link"
-              data-cms-editor-link="cloudcannon:#program_at_a_glance_stats"
-              data-cms-editor-link-style="modal">
+            <li class="d-flex align-items-center mb-3 cms-editor-link" data-cms-editor-link="cloudcannon:#program_at_a_glance_stats" data-cms-editor-link-style="modal">
               <span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}
             </li>
           {% endfor %}
@@ -356,10 +357,7 @@ _subnav:
     </div>
     <div class="row">
       {% for convening in page.convenings %}
-        <div
-          class="col-12 col-lg-6 mb-5 cms-editor-link"
-          data-cms-editor-link="cloudcannon:#convenings"
-          data-cms-editor-link-style="modal">
+        <div class="col-12 col-lg-6 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#convenings" data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
           <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
