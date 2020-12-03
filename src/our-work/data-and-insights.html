@@ -103,7 +103,7 @@ cta_insights_engine:
     alt:
 
 _assets:
-
+  - image: https://via.placeholder.com/768
 ---
 
 <section>
@@ -158,10 +158,10 @@ _assets:
       </div>
       <div class="col-lg-6">
         <div
-          data-cms-editor-link="cloudcannon:#_assets[0]"
+          data-cms-editor-link="cloudcannon:#_assets[0].image"
           data-cms-editor-link-style="modal"
           class="bg-image aspect-4x3 cms-editor-link"
-          style="background-image: url('{{ page._asset[0] }}');"></div>
+          style="background-image: url('{{ page._assets[0].image }}');"></div>
       </div>
     </div>
   </div>
