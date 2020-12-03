@@ -1,5 +1,5 @@
 {% assign item = include.item %}
-<section id="{{ include.id | default: 'cta-insights-engine' }}" class="cta-insights-engine bg-{{ include.theme | default: 'light' }} {% if include.divide %}divide divide-{{ include.divide }}{% endif %}">
+<section id="{{ include.id | default: 'cta-insights-engine' }}" class="cta-insights-engine bg-{{ include.theme | default: 'light' }} {% if item.add_divider %}divide divide-{{ item.add_divider }}{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-copy">
