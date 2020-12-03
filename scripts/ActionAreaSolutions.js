@@ -78,7 +78,7 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
 
                   <div className="">
                     <a href={`https://insights-engine.vercel.app/solution-database/${id}`} className="btn btn-link mr-4">See Solution Factsheet</a>
-                    <a href={`https://insights-engine.vercel.app/solution-database`} className="btn btn-link">See Solution Provider Database</a>
+                    <a href={`https://insights-engine.vercel.app/solution-provider-directory?solution=${id}`} className="btn btn-link">See Solution Provider Directory</a>
                   </div>
                 </>
               ) : (
