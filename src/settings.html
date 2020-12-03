@@ -72,12 +72,11 @@ palette:
         <p class="heading" data-toggle="collapse" data-target="#reviewSummary">Review</p>
         <div id="reviewSummary" class="collapse show">
           <ul class="list-group">
-            {% assign items = site.pages | where: "review", "true" | sort: 'title' %}
-            {% assign size = items.size %}
+            {% assign size = site.pages.size %}
             <li class="list-group-item">
               <h4>Standalone Pages <span class="float-right badge badge-secondary">{{ size }}</span></h4>
               <div class="bg-lighter p-4">
-                {% for item in items  %}
+                {% for item in site.pages  %}
                 <a href="{{ item.url }}" target="_blank" class="d-flex justify-content-between py-1">
                   <span>{{ item.title }}</span>
                   <span>{{ item.url }}</span>
