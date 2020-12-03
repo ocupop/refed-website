@@ -109,7 +109,7 @@ _subnav:
 
 _assets:
   highlight_insights_engine_image:
-  size_of_the_prize_graphic_image:
+  size_of_the_prize_graphic_image: /img/solutions-sizeoftheprize.png
 
 ---
 
@@ -125,14 +125,8 @@ _assets:
           data-cms-editor-link="cloudcannon:#_assets.size_of_the_prize_graphic_image"
           data-cms-editor-link-style="modal"
           class="mt-5 cms-editor-link">
-          {% if _assets.highlight_insights_engine_image %}
-          <img src="{{ _assets.size_of_the_prize_graphic_image }}" alt="{{ page.title }} Insights Engine" class="img-fluid" />
-          {% else %}
-          <div class="bg-placeholder aspect-3x1 bg-black text-white">
-            <div class="bg-fill">
-              <h4 class="text-uppercase">Size of the prize graphic</h4>
-            </div>
-          </div>
+          {% if page._assets.size_of_the_prize_graphic_image %}
+            <img src="{{ page._assets.size_of_the_prize_graphic_image }}" alt="{{ page.title }} Insights Engine" class="img-fluid d-block mx-auto" />
           {% endif %}
         </div>
       </div>
