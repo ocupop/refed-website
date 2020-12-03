@@ -1,0 +1,24 @@
+.icon-grid {
+  .icon-wrapper {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  h3 {
+    line-height: 1.3;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex: 1;
+  .stakeholder_icon,
+  .action_area_icon,
+  .solution_icon {
+    text-align: center;
+    padding: 10px 30px 10px;
+    float: left;
+    padding-bottom: 30px;
+  }
+}
