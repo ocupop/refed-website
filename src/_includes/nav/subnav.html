@@ -12,8 +12,9 @@
           <nav class="navbar">
             <ul id="nav-{{ include.label | slugify }}" class="nav">
               {% for item in include.items %}
+              {% assign slug = item.label | slugify %}
               <li class="nav-item">
-                <a href="#{{ item.label | slugify }}" class="nav-link">{{ item.label }}</a>
+                <a href="#{{ item._slug | default: slug }}" class="nav-link">{{ item.label }}</a>
               </li>
               {% endfor %}
             </ul>

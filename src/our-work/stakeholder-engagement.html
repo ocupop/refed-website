@@ -115,12 +115,12 @@ event_types:
   - title: Webinars
     description_html: >-
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem expedita vel totam. Dignissimos tempore distinctio enim vel quae dolore assumenda quaerat porro nisi ratione? Natus nobis delectus dignissimos. Sunt, debitis!</p>
-    featured_image:  
+    featured_image:
     link: /engage/webinar-events
   - title: In Person Events
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam eligendi earum officiis quam, quidem dicta! Dolor maiores veritatis rem alias consectetur ut voluptatibus illum aliquid autem, ea placeat numquam.</p>
-    featured_image:  
+    featured_image:
     link: /engage/in-person-events
 
 cta_insights_engine:
@@ -135,8 +135,11 @@ cta_insights_engine:
 
 _subnav:
   - label: 'Partnerships'
+    _slug: partnerships
   - label: 'Networks'
-  - label: 'Events' 
+    _slug: networks
+  - label: 'Events'
+    _slug: events
 ---
 
 <section>
@@ -174,7 +177,7 @@ _subnav:
     </div>
 
     {% for partner in page.partnerships %}
-      <div 
+      <div
         class="row py-5 cms-editor-link"
         data-cms-editor-link="cloudcannon:#partnerships"
         data-cms-editor-link-style="modal">
@@ -245,7 +248,7 @@ _subnav:
         </div>
       </div>
     </div>
-    {% include components/carousel.html 
+    {% include components/carousel.html
       items=page.event_types
       layout="card"
       class="col-md-4"
