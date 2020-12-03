@@ -1,9 +1,11 @@
-
-<div class="row flex-wrap align-items-center justify-content-center">
+<div
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal"
+  class="row flex-wrap align-items-center justify-content-center cms-editor-link">
   {% for logo in include.items %}
     <div class="col-6 col-sm-3 col-md-2 text-center py-2">
       {% if logo.link != nil %}<a href="{{logo.link}}" target="_blank">{% endif %}
-        <div class="bg-image aspect-1x1 bg-contain bg-transparent" style="background-image: url({{ logo.featured_image }})"></div>
+        <div class="bg-image aspect-1x1 bg-contain bg-transparent" style="background-image: url('{{ logo.featured_image }}')"></div>
       {% if logo.link != nil %}</a>{% endif %}
     </div>
   {% endfor %}
