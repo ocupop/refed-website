@@ -231,7 +231,9 @@ cta_insights_engine:
           <p class="lead mb-5 editable">Find more <a href="/newsroom">news and updates</a> from ReFED, including our <a href="/newsroom">press releases</a> and <a href="/newsroom">newsletters</a>.</p>
           <p>
             <!-- TODO: Clean up class selectors here -->
-            <button class="newsletter-signup-cta toggle-newsletter-modal btn btn-secondary btn-lg text-serif">Subscribe</button>
+            <button class="newsletter-signup-cta toggle-newsletter-modal btn btn-secondary btn-lg text-serif">
+              <span class="editable">Subscribe</span>
+            </button>
           </p>
         </div>
       </div>
@@ -251,7 +253,10 @@ cta_insights_engine:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include components/ticker.html items=page.funder_logos %}
+        {% include components/ticker.html
+          items=page.funder_logos
+          editor-link="#funder_logos"
+        %}
       </div>
     </div>
   </div>
@@ -283,7 +288,9 @@ cta_insights_engine:
       </div>
       <div class="col-12 col-lg-4">
         <div class="text-lg-right">
-          <button class="btn btn-lg btn-secondary text-serif toggle-newsletter-modal newsletter-signup-cta">Subscribe</button>
+          <button class="btn btn-lg btn-secondary text-serif toggle-newsletter-modal newsletter-signup-cta">
+            <span class="editable">Subscribe</span>
+          </button>
         </div>
       </div>
     </div>
