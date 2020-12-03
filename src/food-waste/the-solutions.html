@@ -1,4 +1,5 @@
 ---
+review: true
 layout: page
 title: Food Waste Solutions
 hero:
@@ -103,9 +104,13 @@ powered_by_insights_engine:
 
 _subnav:
   - label: 'Priority Action Areas'
+    _slug: priority-action-areas
   - label: 'Solutions'
+    _slug: solutions
   - label: 'Levers'
+    _slug: levers
   - label: 'Stakeholder Recommendations'
+    _slug: stakeholder-recommendations
 
 _assets:
   highlight_insights_engine_image:
@@ -220,7 +225,10 @@ _assets:
 
 
 <!-- START: page sub navigation -->
-{% include nav/subnav.html items=page._subnav label="Explore Solution Areas" %}
+{% include nav/subnav.html
+  items=page._subnav
+  label="Explore Solution Areas"
+%}
 
 <section id="priority-action-areas">
   <div class="container">

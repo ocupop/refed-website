@@ -1,10 +1,13 @@
 <div class="subnav" id="subnav">
-  <div class="container">
+  <div
+    data-cms-editor-link="cloudcannon:#_subnav"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
       <div class="col-12">
         <div class="subnav-wrapper">
-          <div class="subnav-heading">
-            <span class="mr-3 h4 text-serif">{{ include.label }}:</span>
+          <div class="subnav-heading mr-3 text-serif">
+            {{ include.label }}:
           </div>
           <nav class="navbar">
             <ul id="nav-{{ include.label | slugify }}" class="nav">
