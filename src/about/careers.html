@@ -109,6 +109,7 @@ cta:
     {% for career in site.careers %}
       <div class="row mb-5">
         <div
+          data-cms-editor-link-style="modal"
           data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]"
           class="col-12 cms-editor-link">
           <h4>{{ career.title }}</h4>
