@@ -1,5 +1,6 @@
 // TODO: I like that we are using some new sass functions/features... but this code warrants a discussion to make sure that the solution is "robust"
-.reduction-solutions-chart {
+.solution_taxonomy {
+  margin: 1rem 0.25rem;
   label {
     display: block;
   }
@@ -30,22 +31,10 @@
       border-bottom-color: $green;
     }
 
-    .solutions {
-      border-right: 1px solid $prevention;
-      display: flex;
-      flex: 1;
-      .solution {
-        text-align: center;
-        padding: 10px 30px 10px;
-        float: left;
-        padding-bottom: 30px;
-        .circle-icon {
-        }
-        .title {
-        }
-      }
+    .icons {
+      // border-right: 1px solid $prevention;
     }
-    &:last-child .solutions {
+    &:last-child .icons {
       border-right: none;
     }
   }
@@ -57,15 +46,15 @@
       display: block;
       width: 100%;
     }
-    .group .solutions {
+    .group .icons {
       border: none;
     }
   }
 
   @include media-breakpoint-down(md) {
-    .group .solutions {
+    .group .icons {
       flex-wrap: wrap;
-      .solution {
+      .action_area_icon {
         width: 33.33%;
         flex: initial;
       }
@@ -73,8 +62,8 @@
   }
 
   @include media-breakpoint-down(sm) {
-    .group .solutions {
-      .solution {
+    .group .icons {
+      .action_area_icon {
         width: 50%;
       }
     }

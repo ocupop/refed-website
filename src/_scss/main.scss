@@ -24,11 +24,12 @@
 // Components
 @import "components/carousel";
 @import "components/hero";
-@import "components/icon_grid";
+@import "components/icons";
 @import "components/split";
 @import "components/ticker";
 @import "components/insights_engine";
 @import "components/testimonials";
+@import "components/solution_taxonomy";
 
 // TODO: Migrate all module styles
 
@@ -40,9 +41,6 @@
 
 // Collection Specific Styles
 @import "collections/stakeholders";
-
-// Page Specific Styles
-@import "pages/home/reduction_solutions_chart";
 
 @import "pages/our_funders";
 @import "pages/who_we_are";
