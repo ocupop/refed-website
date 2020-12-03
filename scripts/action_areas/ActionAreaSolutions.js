@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
-import { formatMoney } from './helpers'
+import { formatMoney } from '../helpers'
 
 const SOLUTIONS_URL = 'https://api.refed.com/v2/solution_database/solutions'
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
-import ActionAreaSolutions from './ActionAreaSolutions'
+import ActionAreaSolutions from './action_areas/ActionAreaSolutions'
+import KeyIndicators from './action_areas/KeyIndicators'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
@@ -14,6 +15,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 const COMPONENTS = {
   HelloWorld,
   ActionAreaSolutions,
+  KeyIndicators,
   // Causes,
 }
 
@@ -30,9 +32,8 @@ document
   .forEach(renderComponentInElement)
 
 //subnav toggle
-var element =  document.getElementById('subnav-toggle');
-if (typeof(element) != 'undefined' && element != null)
-{
+var element = document.getElementById('subnav-toggle');
+if (typeof (element) != 'undefined' && element != null) {
   document.getElementById("subnav-toggle").addEventListener("click", toggleSubnav);
 }
 

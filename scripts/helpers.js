@@ -13,3 +13,15 @@ export const formatMoney = (amount, currency = '$', decimalCount = 0, decimal = 
     console.log('Error formatting value:', e)
   }
 }
+
+export const toCamel = (str) => {
+  return str.replace(/([-_][a-z])/ig, ($1) => {
+    return $1.toUpperCase()
+      .replace('-', '')
+      .replace('_', '')
+  })
+}
+
+export const toSnake = (str) => {
+  return str.replace('-', '_')
+}
