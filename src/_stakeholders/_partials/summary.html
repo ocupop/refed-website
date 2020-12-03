@@ -52,7 +52,7 @@
             {% if page.tons_surplus.causes %}
             <h6 class="mt-5 editable">Causes</h6>
             <hr />
-            <!-- With updates to the API this could be a dynamic component. -->
+            <!-- TODO: With updates to the API this could be a dynamic component. -->
             <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.uid }}"></div> -->
             {% for cause in page.tons_surplus.causes %}
               <p data-cms-editor-link="cloudcannon:#tons_surplus.causes" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">
