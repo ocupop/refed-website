@@ -21,7 +21,7 @@
 
 .cms-editor-link,
 .editable {
-  i {
+  .ri-edit-2-line {
     visibility: hidden;
     color: $orange;
   }
@@ -34,7 +34,7 @@
     &.global-editor-link {
       outline: 2px dotted $orange !important;
     }
-    i {
+    .ri-edit-2-line {
       visibility: visible;
       color: $orange;
     }
