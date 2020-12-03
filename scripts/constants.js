@@ -1,0 +1,1 @@
+export const INSIGHTS_ENGINE_API = 'https://api.refed.com/v2/solution_database/solutions/'

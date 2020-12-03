@@ -4,10 +4,16 @@
   <div class="bg-image aspect-4x3"
     style="background-image:url('{{ item.featured_image | default: site.placeholder_image }}')"></div>
   <div class="card-body">
-    <div class="card-subtitle mb-2 text-muted border-bottom border-dark">{{ item.date | date: "%B %-d, %Y" }}</div>
+    {% if item.item_date %}
+      <div class="card-subtitle mb-2 pb-2 text-muted border-bottom border-dark">{{ item.item_date | date: "%B %-d, %Y" }}</div>
+    {% endif %}
     <p class="text-lg">{{ item.title }}</p>
-    {% if item.url %}
-      <p><a href="{{ item.url }}" alt="{{ item.title }}" class="btn-link">{{ 'Read More' | default: site.default_cta }}</a></p>
+    {% if include.show-description %}
+      {{ item.description_html }}
+    {% endif %}
+
+    {% if item.url or item.link %}
+      <p><a href="{{ item.url | default: item.link }}" alt="{{ item.title }}" class="btn-link">{{ 'Read More' | default: site.default_cta }}</a></p>
     {% endif %}
   </div>
 </div>

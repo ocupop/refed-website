@@ -1,5 +1,5 @@
 {% assign item = include.item %}
-<section id="{{ include.id | default: 'cta-insights-engine' }}" class="cta-insights-engine bg-light overflow-x-hidden divide divide-left">
+<section id="{{ include.id | default: 'cta-insights-engine' }}" class="cta-insights-engine bg-{{ include.theme | default: 'light' }} {% if include.divide %}divide divide-{{ include.divide }}{% endif %}">
   <div
     data-cms-editor-link="cloudcannon:#cta_insights_engine"
     data-cms-editor-link-style="modal"
@@ -10,12 +10,15 @@
           <h3>{{ item.label | default: 'Our Newest Innovation'}}</h3>
           <h2>{{ item.title | default: 'ReFED Insights Engine' }}</h2>
           <p>{{ item.summary | default: site.insights_engine_description }}</p>
+          {% if item.link %}
           <div class="cta-button">
             <a href="{{ item.link.url | default: site.insights_engine_url }}"
               class="btn btn-primary">{{ item.link.label | default: 'Launch ReFED Insights Engine' }}</a>
           </div>
+          {% endif %}
         </div>
       </div>
+
       <div class="col-lg-6 col-asset">
         <div class="laptop-container">
           <div class="laptop">

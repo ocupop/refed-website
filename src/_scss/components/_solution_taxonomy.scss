@@ -1,0 +1,81 @@
+// TODO: I like that we are using some new sass functions/features... but this code warrants a discussion to make sure that the solution is "robust"
+.solution_taxonomy {
+  margin: 1rem 0.25rem;
+  label {
+    display: block;
+  }
+  .col-1of7 {
+    width: percentage(1 / 7);
+  }
+  .col-5of7 {
+    width: percentage((1/7) * 5);
+  }
+
+  .group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    label {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 10px solid $prevention;
+    }
+    &.prevention label {
+      border-bottom-color: $prevention;
+    }
+    &.rescue label {
+      border-bottom-color: $rescue-400;
+    }
+    &.recycle label {
+      border-bottom-color: $green;
+    }
+
+    .icons {
+      // border-right: 1px solid $prevention;
+    }
+    &:last-child .icons {
+      border-right: none;
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @include media-breakpoint-down(lg) {
+    .col-1of7,
+    .col-5of7 {
+      display: block;
+      width: 100%;
+    }
+    .group .icons {
+      border: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .group .icons {
+      flex-wrap: wrap;
+      .action_area_icon {
+        width: 33.33%;
+        flex: initial;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .group .icons {
+      .action_area_icon {
+        width: 50%;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .group .solutions {
+      display: block;
+      .solution {
+        width: auto;
+        float: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<section id="best_practices">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable global-editor-link">Best Practices</h2>
+        <div>
+          <p data-cms-editor-link="cloudcannon:#best_practices.summary" data-cms-editor-link-style="modal" class="cms-editor-link">{{ page.best_practices.summary }}</p>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-mid" />
+  </div>
+  <div data-cms-editor-link="cloudcannon:#best_practices.items" data-cms-editor-link-style="modal" class="container cms-editor-link">
+    {% for item in page.best_practices.items %}
+    <div class="row my-5">
+      <div class="col-12">
+        <h4>{{ item.label }}</h4>
+        <p>{{ item.summary }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -116,11 +116,11 @@ $strengthen: $rescue;
 
 // Stakeholders
 $producers: $red;
-$manufacturing: $indigo;
-$retail: $orange;
+$manufacturers: $indigo;
+$retailers: $orange;
 $foodservice: $pink; // TODO: Does this name need to include "restaurants"
 $policymakers: $teal;
-$capital: $green;
+$capital-providers: $green;
 
 // Misc
 $salmon: #e65e4a;
@@ -199,9 +199,9 @@ $theme-colors: (
   "reshape": $reshape,
   "strengthen": $strengthen,
   "producers": $producers,
-  "manufacturing": $manufacturing,
-  "retail": $retail,
+  "manufacturers": $manufacturers,
+  "retailers": $retailers,
   "foodservice": $foodservice,
   "policymakers": $policymakers,
-  "capital": $capital,
+  "capital-providers": $capital-providers,
 );

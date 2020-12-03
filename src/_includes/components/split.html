@@ -36,7 +36,7 @@
           data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
           data-cms-editor-link-style="modal"
           class="content cms-editor-link">
-          {% assign aspect = include.aspect | default: '1x1' %}
+          {% assign aspect = include.aspect | default: '4x3' %}
           {% assign src = item.featured_image | default: item.image %}
           {% include components/image.html aspect=aspect src=src %}
         </div>

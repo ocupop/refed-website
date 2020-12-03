@@ -1,5 +1,4 @@
 ---
-review: true
 layout: default
 title: ReFED Documents
 document_sections:
@@ -10,7 +9,7 @@ document_sections:
       of wasted food in the United States by the year 2030.</p>
     documents:
       - label: Download the 2019 Annual Report
-        document:
+        document: /downloads/ReFed_Annual_Report_2019-digital.pdf
       - label: Download the 2018 Annual Report
         document:
     embeds:
@@ -67,7 +66,7 @@ document_sections:
           {{ section.description_html }}
         {% endif %}
         {% for document in section.documents %}
-          <a href="{{ document.document }}" class="btn btn-primary mr-3 mb-3">{{ document.label | default: 'View Document '}}</a>
+          <a href="{{ document.document }}" class="btn btn-primary mr-3 mb-3" target="_blank">{{ document.label | default: 'View Document '}}</a>
         {% endfor %}
         {% if section.embeds.first.embed_url  %}
           {% for embed in section.embeds %}

@@ -51,3 +51,16 @@ label,
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.lead {
+  em {
+    font-style: normal;
+    color: $orange;
+  }
+}
+
+[class*="display-"] {
+  font-family: $font-family-serif;
+}
+.display-1 {
+}

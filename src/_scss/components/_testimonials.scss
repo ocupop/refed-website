@@ -1,0 +1,56 @@
+.carousel-testimonials-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include darken-bkg-image(0.8,$dark);
+  .testimonial-slide {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+      min-height: 500px;
+    }
+    blockquote{
+      font-weight: $font-weight-normal;
+      font-size: 1.9rem;
+      line-height: 1.4;
+      @include media-breakpoint-down(xl) {
+        font-size: 1.7rem;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 1.5rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 1.2rem; 
+      }
+      footer{
+        margin-top: 1.3rem;
+        font-size: 1.1rem;
+        .credentials{
+          margin-top: 0.4rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .carousel-testimonial {
+    .carousel-indicators {
+      margin: 0;
+      justify-content: center;
+      top: -35px;
+      bottom: auto;
+      @include media-breakpoint-up(lg) {
+        top: 0px;
+      }
+    }
+    .carousel-control-prev {
+      left: 0;
+    }
+    .carousel-control-next {
+      right: 0;
+    }
+  }
+}

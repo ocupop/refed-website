@@ -1,5 +1,4 @@
 ---
-review: true
 layout: page
 title: Data & Insights
 hero:
@@ -12,42 +11,46 @@ case_studies:
   - crown-family-philanthropies
 tools_and_guides:
   - title: Tool Title Here
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-      nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
-      tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-      nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-      per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim
-      lacinia nunc.
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+        Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+        sodales ligula in libero. Sed dignissim lacinia nunc.</p>
     featured_image: 'https://via.placeholder.com/615x500'
     link: 'https://www.google.com/'
     link_label: Download
   - title: Guide Title Here
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-      nibh elementum imperdiet. Duis sagittis ipsum.
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+        Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+        sodales ligula in libero. Sed dignissim lacinia nunc.</p>
     featured_image: 'https://via.placeholder.com/1000x500'
     link: 'https://www.google.com/'
     link_label: Download
   - title: Tool Title Here
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-      nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
-      tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-      nulla. Class aptent taciti
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+        mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+        Vestibulum lacinia arcu eget nulla. Class aptent taciti</p>
     featured_image: 'https://via.placeholder.com/500x700'
     link: 'https://www.google.com/'
     link_label: Download
   - title: Another Tool Here
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-      nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
-      tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-      nulla. Class aptent taciti
+    description_html: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+      quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+      mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+      Vestibulum lacinia arcu eget nulla. Class aptent taciti
     featured_image: 'https://via.placeholder.com/500x500'
     link: 'https://www.google.com/'
     link_label: Download
@@ -81,10 +84,11 @@ testimonials:
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
-  - link: /data-and-insights
-    link_label: Data & Insights
-  - link: /capital-and-innovation
+  - link: /our-work/capital-and-innovation
     link_label: See Capital & Innovation
+  - link: /our-work/stakeholder-engagement
+    link_label: See Stakeholder Engagement
+
 cta_insights_engine:
   label: Our Newest Innovation
   title: ReFED Insights Engine
@@ -95,6 +99,7 @@ cta_insights_engine:
     url: 'https://www.insights-engine-fpo.com/'
     alt:
 _assets:
+  - image: https://via.placeholder.com/768
 ---
 
 <section>
@@ -129,10 +134,11 @@ _assets:
   id='caseStudies'
   theme='white'
   items=page.case_studies
-  editor-link='#case_studies'
   layout='split'
   reverse='true'
   aspect='4x3'
+  collection='case_studies'
+  editor-link='#case_studies'
 %}
 
 {% unless page.case_studies.size > 0 %}
@@ -152,7 +158,11 @@ _assets:
         </div>
       </div>
       <div class="col-lg-6">
-        <div data-cms-editor-link="cloudcannon:#_assets[0]" data-cms-editor-link-style="modal" class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._asset[0] }}');"></div>
+        <div
+          data-cms-editor-link="cloudcannon:#_assets[0].image"
+          data-cms-editor-link-style="modal"
+          class="bg-image aspect-4x3 cms-editor-link"
+          style="background-image: url('{{ page._assets[0].image }}');"></div>
       </div>
     </div>
   </div>
@@ -161,29 +171,34 @@ _assets:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2 class="preheader editable">
-          New &amp; Noteworthy Tools
-        </h2>
+        <h2 class="editable">New &amp; Noteworthy Tools</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <p>carousel_cards</p>
-          </div>
-        </div>
-        {% comment %}
-        {% include sections/carousels/carousel_cards.html items=page.tools_and_guides %}
-        {% endcomment %}
+        {% include components/carousel.html
+          items=page.tools_and_guides
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+          show-description="true"
+          controls="true"
+          editor-link="#tools_and_guides"
+        %}
       </div>
     </div>
   </div>
 </section>
 
-{% include components/cta.html item=page.cta_resources_and_guides %}
+{% include
+  components/cta.html
+  item=page.cta_resources_and_guides
+  theme="dark"
+  editor-link="#cta_resources_and_guides"
+%}
 
-{% include components/cta_insights_engine.html item=page.cta_insights_engine %}
+{% include components/cta_insights_engine.html item=page.cta_insights_engine editor-link="#cta_insights_engine" %}
 
 {% for testimonial in page.testimonials %}
   {% assign id = forloop.index | prepend:'testimonial-' %}
@@ -201,7 +216,7 @@ _assets:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include sections/cta_buttons.html items=page.cta_buttons %}
+        {% include sections/cta_buttons.html items=page.cta_buttons editor-link="#cta_buttons" %}
       </div>
     </div>
   </div>

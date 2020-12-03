@@ -1,5 +1,4 @@
 ---
-review: true
 layout: page
 title: Our Impact
 hero:
@@ -19,7 +18,8 @@ case_studies:
   - crown-family-philanthropies
 
 carousel_testimonial:
-  - text: >-
+  - title: Denise Oserhues
+    description_html: >-
       “The ReFED team has been an incredible strategic partner in our journey to
       end hunger and waste. ReFED’s insights and guidance helped shape the
       strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
@@ -27,9 +27,7 @@ carousel_testimonial:
       ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
       never been more excited and hopeful that together we can truly change our
       food system.”
-    author: Denise Oserhues
     cite: The Kroger Co.
-    image:
 ---
 
 <section>
@@ -52,7 +50,7 @@ carousel_testimonial:
   label="Impact Stories"
   collection="case_studies"
   layout="split"
-  theme="white"
+  theme="light"
   aspect="4x3"
 %}
 
@@ -87,21 +85,34 @@ carousel_testimonial:
               <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
             {% endfor %}
           </div>
-        
-      
-     -->
-
-    {% assign case_studies = '' | split: ',' %}
-    {% for object in page.featured_case_studies %}
-    {% assign item = site.case_studies | where: 'slug', object | first %}
-    {% assign case_studies = case_studies | push: item %}
-    {% endfor %}
-    {% include sections/carousels/carousel_cards.html items=case_studies %}
-  
+        </div>
+      </div>
+    </div> -->
+    {% include
+      components/carousel.html
+      items=page.featured_case_studies
+      controls="true"
+      layout="card"
+      class="col-md-4"
+      theme="white"
+      interval="false"
+      collection="case_studies"
+      editor-link="#featured_case_studies"
+    %}
+  </div>
 </section>
 
 {% include_relative _partials/featured_cta.html %}
 
-{% include sections/carousels/carousel_testimonials.html items=page.carousel_testimonial %}
+<section class="carousel-testimonials-section bg-dark" style="background-image:url(https://picsum.photos/id/155/1000/333);">
+  {% include
+    components/carousel.html
+    items=page.carousel_testimonial
+    layout="testimonial"
+    theme="transparent"
+    id="testimonialsCarousel"
+    editor-link="#carousel_testimonial"
+  %}
+</section>
 
 {% include_relative _partials/cta.html %}

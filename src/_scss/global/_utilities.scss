@@ -243,6 +243,15 @@ section.divide {
   justify-content: center;
 }
 
+.overflow-x-hidden {
+  overflow-y: inherit;
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+
 // TODO: How does this fit in with the mixin?
 .arrow {
   width: 0;
@@ -254,24 +263,5 @@ section.divide {
   }
   &.arrow-down {
     border-top: 10px solid $white;
-  }
-}
-
-.section__colorbar {
-  position: absolute;
-  height: 15px;
-  width: 100px;
-  max-width: 25%;
-  top: 0;
-  &.right {
-    right: 0;
-  }
-  &.left {
-    left: 0;
-  }
-  @include media-breakpoint-up(lg) {
-    width: 200px;
-    height: 20px;
-    max-width: 50%;
   }
 }

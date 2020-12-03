@@ -29,34 +29,33 @@
 .cta-insights-engine {
   .col-asset {
     .laptop-container {
-      position: relative;
-      width: 150%;
+      width: 130%;
       bottom: 0;
       margin-left: auto;
       margin-right: auto;
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        width: 200%;
+        bottom: -60px;
+      }
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        bottom: -60px;
+        width: 165%;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 135%;
+      }
     }
+    
   }
-
-  @include media-breakpoint-up(lg) {
-    .col-copy {
-      min-height: 23.2rem;
+  .col-copy {
+    @include media-breakpoint-up(xl) {
+      min-height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-
-    .col-asset {
-      .laptop-container {
-        position: absolute;
-        bottom: -60px;
-        width: 175%;
-      }
-    }
   }
 
-  @include media-breakpoint-up(xl) {
-    .col-copy {
-      min-height: 33.6rem;
-    }
-  }
 }

@@ -1,21 +1,26 @@
-<div class="subnav">
-  <div class="container">
+<div class="subnav" id="subnav">
+  <div
+    data-cms-editor-link="cloudcannon:#_subnav"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
-      <div class="col">
-        <span class="mr-3">{{ include.label }}:</span>
-        <nav class="navbar navbar-expand-md">
-          <button class="collapsed navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-{{ include.label | slugify }}"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon d-flex align-items-center justify-content-end"></span>
-          </button>
-          <ul id="nav-{{ include.label | slugify }}" class="nav navbar-collapse collapse">
-            {% for item in include.items %}
-            <li class="nav-item">
-              <a href="#{{ item.label | slugify }}" class="nav-link">{{ item.label }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
+      <div class="col-12">
+        <div class="subnav-wrapper">
+          <div class="subnav-heading mr-3 text-serif">
+            {{ include.label }}:
+          </div>
+          <nav class="navbar">
+            <ul id="nav-{{ include.label | slugify }}" class="nav">
+              {% for item in include.items %}
+              {% assign slug = item.label | slugify %}
+              <li class="nav-item">
+                <a href="#{{ item._slug | default: slug }}" class="nav-link">{{ item.label }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+        <i id="subnav-toggle" class="ri-arrow-down-s-line"></i>
       </div>
     </div>
   </div>

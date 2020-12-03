@@ -8,16 +8,6 @@ hero:
     image: /img/events/webinar_header_image.jpg
     links:
 featured_event: organizational-financial-health-during-and-after-covid-19
-cta_events:
-  description_html: >-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas
-    assumenda, doloremque optio ipsum</p>
-  link: /
-  link_label: Get to know us
-  colorbar:
-    color: '#e65e4a'
-    bar_position:
-      - left
 ---
 
 {% if page.featured_event %}
@@ -62,7 +52,7 @@ cta_events:
         </div>
       </div>
       <div class="col-lg-4 ml-lg-auto text-lg-right">
-        <a href="/in-person-events" class="btn btn-secondary btn-lg editable">See Events</a>
+        <a href="/engage/in-person-events" class="btn btn-secondary btn-lg editable">See Events</a>
       </div>
     </div>
   </div>
@@ -78,7 +68,15 @@ cta_events:
     <div class="row mb-5">
       <div class="col-12">
         {% include events/past_events_logic.html event_type="webinar" %}
-        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+        {% include
+          components/carousel.html
+          items=past_events_sorted
+          controls="true"
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+        %}
       </div>
     </div>
   </div>

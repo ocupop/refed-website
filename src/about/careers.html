@@ -1,5 +1,4 @@
 ---
-review: true
 layout: page
 title: ReFED Careers
 hero:
@@ -91,7 +90,7 @@ cta:
   </div>
 </section>
 
-<section class="bg-lighter">
+<section id="current-vacancies" class="bg-lighter">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -109,6 +108,7 @@ cta:
     {% for career in site.careers %}
       <div class="row mb-5">
         <div
+          data-cms-editor-link-style="modal"
           data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]"
           class="col-12 cms-editor-link">
           <h4>{{ career.title }}</h4>
@@ -118,11 +118,13 @@ cta:
         </div>
       </div>
     {% endfor %}
-    <div data-cms-editor-link="cloudcannon:collections/_careers[+]" class="d-flex align-items-center editor-link">
-      <button class="mr-3 btn btn-editor">
-        <i class="ri-add-fill"></i>
-      </button>
-      <span>Add new job opening</span>
+    <div data-cms-editor-link="cloudcannon:collections/_careers[+]" class="editor-link">
+      <div  class="d-flex align-items-center">
+        <button class="mr-3 btn btn-editor">
+          <i class="ri-add-fill"></i>
+        </button>
+        <span>Add new job opening</span>
+      </div>
     </div>
   </div>
 </section>
@@ -150,7 +152,7 @@ cta:
   </div>
 </section>
 
-<section>
+<section id="perks-and-benefits">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-lg-10">
@@ -194,7 +196,7 @@ cta:
   </div>
 </section>
 
-<section>
+<section id="operation-principles">
   <div class="container">
     <div class="row">
       <div class="col-12">

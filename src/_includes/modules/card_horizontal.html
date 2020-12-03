@@ -1,23 +1,23 @@
 {% assign item = include.item %}
 
 <div 
-  class="row my-5 {{ post.news_type | slugify }}"
+  class="row align-items-center my-5 {{ post.news_type | slugify }} cms-editor-link"
   data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
   data-cms-editor-link-style="modal">
 
     {% if include.featured_image or item.featured_image %}
       {% if include.image_size == 'contain' %}
         <div class="col-6 col-md-4 col-lg-{{left_col_size | default: 3}} mx-auto d-flex align-items-center">
-          <img src="{{ include.featured_image | default: item.featured_image}}" class="w-100 mb-3" alt="" />
+          <img src="{{ include.featured_image | default: item.featured_image}}" class="w-100 mb-3 mr-lg-4" alt="" />
         </div>
       {% else %}
-        <div class="col-12 col-sm-9 col-md-4 col-lg-{{ include.left_col_size | default: 3}}   mb-3">
-          <div class="bg-image aspect-{{ include.aspect_ratio | default: '4x3' }} bg-dark flex-grow-1 flex-shrink-1" style="background-image:url('{{ include.featured_image | default: item.featured_image}}');"></div>
+        <div class="col-12 col-sm-9 col-md-4 col-lg-{{ include.left_col_size | default: 3}} mb-3 ">
+          <div class="bg-image aspect-{{ include.aspect_ratio | default: '4x3' }} bg-dark flex-grow-1 flex-shrink-1 mr-lg-4" style="background-image:url('{{ include.featured_image | default: item.featured_image}}');"></div>
         </div>
       {% endif %}
     {% endif %}
   
-    <div class="{% if include.featured_image or item.featured_image %}col-12 col-md-8 col-lg-9{% else %}col-12{% endif %}">
+    <div class="{% if include.featured_image or item.featured_image %}col-12 col-md-8{% else %}col-12{% endif %}">
       <h4>{{ include.title | default: item.title }}</h4>
   
       {% if include.item_date or item.item_date %}

@@ -26,6 +26,8 @@
   @include media-breakpoint-down(md) {
     .container {
       max-width: initial;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .col-image {
       width: 100%;
@@ -110,7 +112,7 @@
     .image-to-browser-edge {
       .bkg,
       img {
-        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "lg")}) / 2));
+        width: calc(100% + (((100vw ) - #{map-get($container-max-widths, "lg")}) / 2));
       }
     }
   }
@@ -121,7 +123,7 @@
       .bkg,
       img,
       .bg-image {
-        width: calc(100% + (((100vw - 17px) - #{map-get($container-max-widths, "xl")}) / 2));
+        width: calc(100% + (((100vw) - #{map-get($container-max-widths, "xl")}) / 2));
       }
     }
   }

@@ -21,6 +21,7 @@
     "bootstrap.native": "3.0.13",
     "concurrently": "^5.1.0",
     "gsap": "^3.5.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "remixicon": "^2.4.0",

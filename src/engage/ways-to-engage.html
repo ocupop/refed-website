@@ -8,15 +8,15 @@ hero:
     image: /img/engage/engage_header_image.jpg
     links:
 join_our_team:
-  subtitle: 
+  subtitle:
   title: Join Our Team
   summary: Public policy at the federal, state, and municipal levels can offer opportunities to accelerate large-scale food waste reduction. The Food Waste Policy Finder – developed by ReFED and the Harvard Law School Food Law and Policy Clinic to provide an overview of current federal and state policies related to food waste – depicts the existing policy landscape, while highlighting best-practice legislation in order to inform the continued development and implementation of sound food waste policy.
   featured_image: 'https://via.placeholder.com/768x768'
   link_label: See Careers
   url: /careers
 featured_articles:
-- refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
-- refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
+  - refed-appoints-nicola-dixon-as-new-board-chair-and-announces-new-board-member-and-executive-committee
 featured_case_studies:
   - crown-family-philanthropies
   - crown-family-philanthropies
@@ -42,12 +42,9 @@ cta:
             <img src="/img/icons/engage/engage_stakeholder.svg" class="img-fluid icon-img-md mb-3" alt="Stakeholder icon" />
           </div>
           <div class="col">
-            <h4 class="editable text-serif">
-              What can I do to Solve Food Waste?
-            </h4>
-            <p class="editable">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            </p>
+            <h4 class="editable text-serif mb-0">What can I do so solve food waste?</h4>
+            <p class="editable mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+
             <a href="#stakeholder-actions" class="editable btn btn-link">Learn More</a>
           </div>
         </div>
@@ -59,12 +56,8 @@ cta:
             <img src="/img/icons/engage/engage_partner.svg" class="img-fluid icon-img-md mb-3" alt="Partner icon" />
           </div>
           <div class="col">
-            <h4 class="editable text-serif">
-              Partner with Us
-            </h4>
-            <p class="editable">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            </p>
+            <h4 class="editable text-serif mb-0">Partner with us?</h4>
+            <p class="editable mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
             <a href="#partner-with-us" class="editable btn btn-link">Learn More</a>
           </div>
         </div>
@@ -76,13 +69,9 @@ cta:
             <img src="/img/icons/engage/engage_funders.svg" class="img-fluid icon-img-md mb-3" alt="Funders Icon" />
           </div>
           <div class="col">
-            <h4 class="editable text-serif">
-              Call for Funders
-            </h4>
-            <p class="editable">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            </p>
-            <a href="#call-for-funders" class="editable btn btn-link">Support Our Mission</a>
+            <h4 class="editable text-serif mb-0">Call for Funders</h4>
+            <p class="editable mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            <a href="#call-for-funders" class="editable btn btn-link">Learn More</a>
           </div>
         </div>
       </div>
@@ -93,13 +82,9 @@ cta:
             <img src="/img/icons/engage/engage_newsletter.svg" class="img-fluid icon-img-md mb-3" alt="Newsletter icon" />
           </div>
           <div class="col">
-            <h4 class="editable text-serif">
-              Sign Up for Our Newsletter
-            </h4>
-            <p class="editable">
-              Join over 10,000 food waste enthusiasts to stay informed on ReFED Activities and receive the latest insights on food waste solutions.&nbsp;
-            </p>
-            <a href="#" class="editable btn btn-link toggle-newsletter-modal">Sign Up</a>
+            <h4 class="editable text-serif mb-0">Sign Up for our newsletter</h4>
+            <p class="editable mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            <a href="#" class="editable btn btn-link toggle-newsletter-modal">Learn More</a>
           </div>
         </div>
       </div>
@@ -116,7 +101,7 @@ cta:
         </h2>
       </div>
     </div>
-    {% include stakeholders/grid.html %}
+    {% include components/stakeholder_grid.html %}
   </div>
 </section>
 
@@ -254,8 +239,8 @@ cta:
                 <p>15K</p>
               </div>
               <label class="my-1">
-                <span class="editable">Jobs<br class="d-none d-lg-block" /> Created</span>
-              </label>  
+                <span class="editable">Jobs<br class="d-none d-lg-block"> Created</span>
+              </label>
             </div>
           </div>
         </div>
@@ -325,6 +310,7 @@ cta:
   theme='lighter'
   reverse=true
   item=page.join_our_team
+  editor-link="#join_our_team"
 %}
 
 <section class="bg-light">

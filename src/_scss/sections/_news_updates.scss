@@ -1,0 +1,26 @@
+#news-and-updates {
+  .bg-light {
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: $light;
+    }
+    &::before {
+      left: -100%;
+    }
+    &::after {
+      right: -100%;
+    }
+    
+    @include media-breakpoint-up(lg) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -12,6 +12,16 @@
   }
 }
 
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 // .card {
 //     // Loop through the cards and delay the loading animation.
 //   @for $i from 1 through 20 {

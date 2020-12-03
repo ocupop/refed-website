@@ -13,7 +13,7 @@
 {% elsif include.image_width == '75%' %}
   {% capture text-class %}col-lg-3{% endcapture %}
   {% capture image-class %}col-lg-9{% endcapture %}
-{% else %} 
+{% else %}
   {% capture text-class %}col-lg-6{% endcapture %}
   {% capture image-class %}col-lg-6{% endcapture %}
 {% endif %}
@@ -46,12 +46,15 @@
 
 <section class="split-section image-{{include.image_alignment | default: 'right'}} {{ include.section_class }}" id="{{ include.id }}">
     <div class="container split-section">
-      <div class="row">   
+      <div class="row">
         <div class="col-text col-12 {{text-class}} column-{{include.section_background_color | default: 'transparent'}}">
           <span class='bkg'></span>
-          <div class="col-text-content">
-            {% if include.subtitle or item.subtitle %}
-              <h3>{{ include.subtitle | default: item.subtitle  }}</h3>
+          <div
+            data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+            data-cms-editor-link-style="modal"
+            class="col-text-content cms-editor-link">
+            {% if include.label or item.label %}
+              <h3>{{ include.label | default: item.label  }}</h3>
             {% endif %}
             {% if include.title or item.title %}
               <h2 class="mb-3">{{ include.title | default: item.title  }}</h2>
@@ -65,8 +68,10 @@
           </div>
         </div>
         <div class="col-image col-12 {{image-class}} column-{{include.section_background_color | default: 'dark'}}">
-          <!--<img src="{{ image }}" alt="" class="d-block">-->
-          <span class="bkg" style="background-image:url('{{ image }}')"></span>
+          <span
+            data-cms-editor-link="cloudcannon:{{ include.editor-link }}.featured_image"
+            data-cms-editor-link-style="modal"
+            class="bkg cms-editor-link" style="background-image:url('{{ image }}')"></span>
         </div>
       </div>
     </div>
@@ -80,13 +85,13 @@
 
   item (a collection item. See each variable below for possible child variables)
   title or item.title
-  preheader or item.preheader 
-  description or item.description_html ir item.content 
-  url or item.url 
+  preheader or item.preheader
+  description or item.description_html ir item.content
+  url or item.url
   link_label or item.link_label (default: 'Learn More')
-  image or item.hero or item.featured_image 
+  image or item.hero or item.featured_image
   omit_url (Omits the link under the content, even if it is passed in with the item)
-  button_class (an extra class to add to the button to help define color. (default: 'btn-secondary') 
+  button_class (an extra class to add to the button to help define color. (default: 'btn-secondary')
   button_type or item.button_type (passing a value of 'text' will make it a text link. No value makes it a button link)
   image_width (The width of the image column. possible values: '25%', '33%', '50%', '66%', '75%')  (default: '50%')
   text_to_edge (true or false. Default: false)

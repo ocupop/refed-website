@@ -24,13 +24,16 @@
 // Components
 @import "components/carousel";
 @import "components/hero";
+@import "components/icons";
 @import "components/split";
+@import "components/ticker";
 @import "components/insights_engine";
+@import "components/testimonials";
+@import "components/solution_taxonomy";
 
 // TODO: Migrate all module styles
 
 @import "modules/form_assembly";
-@import "modules/circle_icon_list";
 @import "modules/subscribe_form_overlay";
 @import "modules/featured_solutions";
 @import "modules/key_indicators_box";
@@ -38,9 +41,6 @@
 
 // Collection Specific Styles
 @import "collections/stakeholders";
-
-// Page Specific Styles
-@import "pages/home/reduction_solutions_chart";
 
 @import "pages/our_funders";
 @import "pages/who_we_are";
@@ -55,14 +55,8 @@
 @import "sections/testimonial";
 @import "sections/carousels/all_carousels";
 @import "sections/carousels/carousel_images";
-
-@import "sections/carousels/carousel_split";
-@import "sections/carousels/carousel_testimonials";
-@import "sections/cta";
-
-@import "sections/logo_pile";
+@import "sections/news_updates";
 @import "sections/split_section";
-@import "sections/accordion";
 @import "sections/accordion";
 @import "sections/theory_of_change";
 

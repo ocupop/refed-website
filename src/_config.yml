@@ -12,12 +12,13 @@ permalink: pretty
 twitter_url: https://twitter.com/refed
 linkedin_url: https://www.linkedin.com/company/refed-rethink-food-waste/
 
-insights_engine_url:  https://insights-engine.vercel.app/
+insights_engine_url:  https://insights-engine.vercel.app
 insights_engine_description: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
-insights_engine_api_baseurl: https://api.refed.com/v2/
+insights_engine_api_baseurl: https://api.refed.com/v2
 
 # Default Values
 default_cta: Learn More
+edit_cta: <i class="ri-edit-2-line"></i>
 
 
 
@@ -30,7 +31,7 @@ collections:
     output: false
     sort_by: date
   newsletters:
-    output: false
+    output: true
   case_studies:
     output: true
   careers:
@@ -84,7 +85,7 @@ defaults:
       layout: action_area
       _options:
         featured_image:
-          uploads_dir: "/uploads/action_areas"        
+          uploads_dir: "/uploads/action_areas"
   -
     scope:
       type: 'stakeholders'
@@ -93,14 +94,39 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/uploads/stakeholders"
+      _array_structures:
+        opportunities:
+          - label: Opportunity
+            icon:
+            value:
+              label:
+        solutions:
+          - label: Solution
+            icon: assignment
+            value:
+              slug:
+              label:
+              invesment_needed:
+              investment_needed_summary:
+              innovation_opportunities_html:
+        causes:
+          - label: Cause
+            icon: assignment
+            value:
+              label:
+        destinations:
+          - label: Destination
+            icon: assignment
+            value:
+              label:
   -
     scope:
       type: 'events'
     values:
-      # layout: 
+      # layout:
       _options:
         featured_image:
-          uploads_dir: "/uploads/events"         
+          uploads_dir: "/uploads/events"
   -
     scope:
       type: 'downloads'
@@ -108,7 +134,16 @@ defaults:
       layout: download
       _options:
         featured_image:
-          uploads_dir: "/uploads/downloads"
+          uploads_dir: "/downloads"
+
+  -
+    scope:
+      type: 'newsletters'
+    values:
+      layout: article
+      _options:
+        featured_image:
+          uploads_dir: "/uploads/newsletters"
 
       # variable_name: value
   # - scope:
@@ -119,6 +154,7 @@ defaults:
 
 # Build settings
 safe: false
+exclude: ['_partials']
 sass:
   # style: compressed
   sass_dir: _scss
@@ -137,6 +173,55 @@ _array_structures:
         alt:
         links:
         _stay_connected: false
+  # Hero array for carousels
+  hero:
+    - label: Hero
+      icon: panorama
+      value:
+        title:
+        label:
+        description_html:
+        featured_image:
+        links:
+
+  solution_groups:
+    - label: Solution Group
+      icon: pie_chart
+      value:
+        label:
+        summary:
+        action_areas:
+          optimize-the-harvest:
+            opportunities:
+            solutions:
+          enhance-product-distribution:
+            opportunities:
+            solutions:
+          refine-product-management:
+            opportunities:
+            solutions:
+          maximize-product-utilization:
+            opportunities:
+            solutions:
+          reshape-consumer-environments:
+            opportunities:
+            solutions:
+          strengthen-food-rescue:
+            opportunities:
+            solutions:
+          recycle-anything-remaining:
+            opportunities:
+            solutions:
+
+  indicators:
+    - label: Key indicator
+      icon: insights
+      value:
+        label:
+        slug:
+
+  # End API array structures
+
   sections:
     - label: Standard
       icon: article
@@ -153,15 +238,6 @@ _array_structures:
         content_html:
         image:
         links:
-
-  # TODO: Confirm the need for this array structure
-  # navigation:
-  #   - label: Navigation
-  #     icon: link
-  #     value:
-  #       link:
-  #       title:
-  #       links:
 
 
   page_sections:
@@ -218,10 +294,9 @@ _array_structures:
     - label: Carousel Testimonial
       icon: format_quote
       value:
-        text:
-        author:
+        title:
+        description_html:
         cite:
-        image:
   testimonial:
     - label: Testimonial
       icon: format_quote
@@ -232,7 +307,6 @@ _array_structures:
         image:
         section_background_color:
         image_alignment:
-
   logo_pile:
     - label: Logo Pile
       icon: view_module
@@ -275,50 +349,17 @@ _array_structures:
         title:
         description:
         solutions:
-  solutions:
-    - label: Solutions
-      icon: assignment
-      value:
-        title:
-        api_endpoint:
-  hero:
-    - label: Hero
-      icon: panorama
-      value:
-        title:
-        subtitle:
-        description_html:
-        image:
-        link:
-        link_text:
-        buttons:
-          - link:
-            link_label:
-            button_type:
-  members:
-    - label: Members
-      icon: face
-      value:
-        name:
-        featured_image:
-        summary_html:
+
   panelists:
     - label: Panelists
       icon: face
       value:
         name:
         featured_image:
-        summary_html:
+        description_html:
         role:
         organization:
-  cta:
-    - label: Call to action
-      icon: call_to_action
-      value:
-        title:
-        description_html:
-        link:
-        link_label:
+
   two_column_slide:
     - label: Two Column Slide
       icon: chrome_reader_mode
@@ -328,6 +369,7 @@ _array_structures:
         description_html:
         link:
         link_label:
+
   carousel_logo:
     - label: Carousel Logo
       icon: view_carousel
@@ -340,6 +382,7 @@ _array_structures:
         image:
         link:
         title:
+
   document_sections:
     - label: Document sections
       icon: article
@@ -353,20 +396,6 @@ _array_structures:
           title:
           embed_url:
 
-  sectors:
-    - label: Sector
-      icon: pie_chart
-      value:
-        label:
-        summary:
-        metrics:
-  metrics:
-    - label: Key metrics
-      icon: insights
-      value:
-        label:
-        slug:
-
 # Action Areas Taxonomy
 action_area_categories:
   - label: Prevention
@@ -375,30 +404,37 @@ action_area_categories:
       - label: Optimize The Harvest
         slug: optimize-the-harvest
         uid: optimize
+        definition:
       - label: Enhance Product Distribution
         slug: enhance-product-distribution
         uid: enhance
+        definition:
       - label: Refine Product Management
         slug: refine-product-management
         uid: refine
+        definition:
       - label: Maximize Product Utilization
         slug: maximize-product-utilization
         uid: maximize
+        definition:
       - label: Reshape Consumer Environments
         slug: reshape-consumer-environments
         uid: reshape
+        definition:
   - label: Rescue
     uid: rescue
     areas:
       - label: Strengthen Food Rescue
         slug: strengthen-food-rescue
         uid: rescue
+        definition:
   - label: Recycling
     uid: recycle
     areas:
       - label: Recycle Anything Remaining
         slug: recycle-anything-remaining
         uid: recycle
+        definition:
 
 # Stakeholder Taxonomy
 stakeholder_categories:
@@ -408,12 +444,12 @@ stakeholder_categories:
       - label: Producers
         slug: producers
         uid: producers
-      - label: Manufacturing
-        slug: manufacturing
-        uid: manufacturing
-      - label: Retail
-        slug: retail
-        uid: retail
+      - label: Manufacturers
+        slug: manufacturers
+        uid: manufacturers
+      - label: Retailers
+        slug: retailers
+        uid: retailers
       - label: Restaurants & Foodservice
         slug: restaurants-and-foodservice
         uid: foodservice
@@ -425,7 +461,8 @@ stakeholder_categories:
         uid: policymakers
       - label: Capital Providers
         slug: capital-providers
-        uid: capital
+        uid: capital-providers
+
 
 #hard coded select fields
 add_dividers:
@@ -493,6 +530,8 @@ _comments:
 
 _options:
   layout:
+    hidden: true
+  uid:
     hidden: true
 
 placeholder_image: 'https://via.placeholder.com/1000'

@@ -55,14 +55,21 @@ layout: default
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2>Browse Past Events</h2>
+        <h2 class="editable">Browse Past Events</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
         {% include events/past_events_logic.html event_type="in_person" %}
-        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+        {% include 
+          components/carousel.html 
+          items=past_events_sorted
+          controls="true"
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+        %}
       </div>
     </div>
   </div>

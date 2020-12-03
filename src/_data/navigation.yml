@@ -59,23 +59,31 @@ primary_navigation:
             - label: Funder Impact
               url: '/about/our-funders/#funder-impact'
               alt:
+        - label: Documents
+          url: /about/documents
+          alt: 
+          links:
+            - label: Annual Reports
+              url: '/about/documents/#annual-reports'
+              alt:
+            - label: Financials
+              url: '/about/documents/#financials'
+              alt:
+            - label: Brand Guidelines
+              url: '/about/documents/#brand-guidelines'
+              alt:
         - label: Careers
           url: /about/careers
           alt:
           links:
-            - label: Documents
-              url: /about/documents
+            - label: Current Vacancies
+              url: '/about/careers#current-vacancies'
               alt:
-              links:
-                - label: Annual Reports
-                  url: '/about/documents/#annual-reports'
-                  alt:
-                - label: Financials
-                  url: '/about/documents/#financials'
-                  alt:
-                - label: Brand Guidelines
-                  url: '/about/documents/#brand-guidelines'
-                  alt:
+            - label: Perks and Benefits
+              url: '/about/careers#perks-and-benefits'
+              alt:
+            - label: Operation Principles
+              url: '/about/careers#operation-principles'
     - label: Our Work
       url: /our-work/
       alt:
@@ -88,7 +96,7 @@ primary_navigation:
               url: '/our-work/data-and-insights'
               alt:
               links:
-            - label: Capitol & Innovation
+            - label: Capital & Innovation
               url: /our-work/capital-and-innovation
               alt:
               links:
@@ -239,7 +247,7 @@ primary_navigation:
               links:
             - label: LinkedIn
               url: https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
-              alt:
+              alt: 
               links:
             - label: Facebook
               url: 'https://www.facebook.com/rethinkfoodwaste/'
@@ -259,7 +267,7 @@ footer_navigation:
      url: /newsroom
      alt:
    - label: Media Inquiry
-     url: /#
+     url: /contact#media-inquiry
      alt:
    - label: Terms of Use
      url: /terms-of-use

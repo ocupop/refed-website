@@ -1,5 +1,4 @@
 ---
-review: true
 layout: page
 title: Our Funders
 hero:
@@ -14,9 +13,10 @@ logos:
   - label: ReFED Logo
     link: 'http://www.refed.com'
     featured_image: >-
-      https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
+      https://via.placeholder.com/150x50
 case_studies:
-  - sample-case-study
+  - crown-family-philanthropies
+  - crown-family-philanthropies
 cta:
   title:
   label:
@@ -57,31 +57,23 @@ cta:
     </div>
     <div class="row">
       <div class="col-12">
-        {% comment %}
-          {% include sections/logo_pile.html logo_pile=page.logo_pile %}
-        {% endcomment %}
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <div class="text-center">
-              <h4 class="text-uppercase">Funder Logo Pile</h4>
-              <small>.src/_includes/sections/carousels/logo_pile.html</small>
-            </div>
-          </div>
-        </div>
+        {% include components/logo_pile.html items=page.logos %}
       </div>
     </div>
   </div>
 </section>
 
-{% include components/carousel.html
-  items=page.case_studies
-  label='Funder Impact Stories'
-  theme="dark"
-  id="caseStudiesCarousel"
-  reverse="true"
-  layout="two-column"
-  collection="case_studies"
-  editor-link="#case_studies"
-%}
+{% if page.case_studies %}
+  {% include components/carousel.html
+    items=page.case_studies
+    label='Funder Impact Stories'
+    theme="dark"
+    id="caseStudiesCarousel"
+    layout="split"
+    collection="case_studies"
+    indicators="true"
+    editor-link="#case_studies"
+  %}
+{% endif %}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}

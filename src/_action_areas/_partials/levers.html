@@ -1,0 +1,76 @@
+<section id="levers" class="bg-lighter">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="editable global-editor-link">Levers</h2>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_financing.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Financing" />
+      </div>
+      <div class="col">
+        <h3 class="editable global-editor-link">Top Financing Recommendations</h3>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div data-cms-editor-link="cloudcannon:#levers.financing_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.financing_recommendations_html | default: 'Enter details...' }}
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            {% include charts/investment.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_policy.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Policy" />
+      </div>
+      <div class="col">
+        <h3 class="editable global-editor-link">Top Policy Recommendations</h3>
+        <div class="row">
+          <div class="col-12 ">
+            <div data-cms-editor-link="cloudcannon:#levers.policy_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.policy_recommendations_html | default: 'Enter details...' }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_communication.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Communications" />
+      </div>
+      <div class="col">
+        <h3 class="editable global-editor-link">Top Comms Recommendations</h3>
+        <div class="row">
+          <div class="col-12 ">
+            <div data-cms-editor-link="cloudcannon:#levers.comms_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.comms_recommendations_html | default: 'Enter details...' }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-auto">
+        <img src="/img/icons/levers/levers_innovation.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Innovation" />
+      </div>
+      <div class="col">
+        <h3 class="editable global-editor-link">Top Innovation Recommendations</h3>
+        <div class="row">
+          <div class="col-12 ">
+            <div data-cms-editor-link="cloudcannon:#levers.innovation_recommendations_html" data-cms-editor-link-style="modal" class="cms-editor-link">
+              {{ page.levers.innovation_recommendations_html | default: 'Enter details...' }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

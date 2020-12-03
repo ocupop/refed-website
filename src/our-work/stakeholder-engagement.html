@@ -62,16 +62,14 @@ partnerships:
           https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHz90h1rYr_L9Ok4MseHwDB8tEDcWFIxlBlQ&usqp=CAU
       - link: 'http://www.refed.com'
         alt_text: Refed Alt Tag
-        image: >-
-          https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg
-    buttons:
-      - link: '#'
-        link_label: See Annual Report
-        button_type: button
-      - link: '#'
-        link_label: Visit Website
-        button_type: button
-  - title: Federal Agency Partnerships
+        image: https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg
+    links:
+      - label: See Annual Report
+        url: '#'
+        alt:
+      - label: Visit Website
+        url: 'https://pacificcoastcollaborative.org/'
+  - title: Other Partnership Name
     text_above_logos_html: >-
       <p>On October 18, 2018, the U.S. Environmental Protection Agency
       (&ldquo;EPA&rdquo;), the U.S. Food and Drug Administration
@@ -114,35 +112,14 @@ partnerships:
           https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
       - link: 'http://www.refed.com'
         alt_text: Refed Alt Tag
-        image: >-
-          https://www.logolynx.com/images/logolynx/s_fc/fc07dee232517e20751e18a85d5a3c9d.jpeg
-    buttons:
-      - link: >-
-          https://www.usda.gov/sites/default/files/documents/usda-epa-fda-formal-agreement-food-loss-waste.pdf
-        link_label: View Agreement
-        button_type: button
-  - title: Further with Food
-    text_above_logos_html: >-
-      <p>ReFED is facilitating a group of leading nonprofits, government
-      agencies and industry associations working on food waste reduction to
-      ensure coordination and collaboration across our various
-      efforts.</p><p>Further with Food provides comprehensive information about
-      food loss and waste in the United States and about solutions dedicated to
-      reducing it.&nbsp; This virtual resource center offers a broad spectrum of
-      users &ndash; such as businesses, government entities, investors, NGOs,
-      academics, and individuals &mdash; a platform to find and share
-      information about proven solutions and innovative new approaches to reduce
-      the volume of surplus food generated, feed hungry people, and divert food
-      and scraps to the highest beneficial use.</p>
-    text_below_logos_html:
-    logos:
-      - link:
-        alt_text:
-        image:
-    buttons:
-      - link: 'https://furtherwithfood.org/'
-        link_label: Visit Website
-        button_type: button
+        image: https://www.logolynx.com/images/logolynx/s_fc/fc07dee232517e20751e18a85d5a3c9d.jpeg
+    links:
+      - label: See Annual Report
+        url: '#'
+        alt:
+      - label: Visit Website
+        url: '#'
+        alt:
 testimonial:
   text: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -162,14 +139,27 @@ testimonial:
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
-  - link: /data-insights
+  - link: /our-work/data-and-insights
     link_label: See Data & Insights
-  - link: /capital-innovation
+  - link: /our-work/capital-and-innovation
     link_label: See Capital & Innovation
-events:
-  - 2021-food-waste-summit
-  - logistics-connecting-food-and-transportation
-  - organizational-financial-health-during-and-after-covid-19
+
+event_types:
+  - title: Food Waste Summit
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum harum similique sed doloribus repudiandae impedit tempore voluptates velit unde voluptas temporibus, maiores cum deserunt reprehenderit voluptatibus necessitatibus inventore at.</p>
+    featured_image:
+    link: https://summit.refed.com/
+  - title: Webinars
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem expedita vel totam. Dignissimos tempore distinctio enim vel quae dolore assumenda quaerat porro nisi ratione? Natus nobis delectus dignissimos. Sunt, debitis!</p>
+    featured_image:
+    link: /engage/webinar-events
+  - title: In Person Events
+    description_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam eligendi earum officiis quam, quidem dicta! Dolor maiores veritatis rem alias consectetur ut voluptatibus illum aliquid autem, ea placeat numquam.</p>
+    featured_image:
+    link: /engage/in-person-events
 cta_insights_engine:
   label: Our Newest Innovation
   title: ReFED Insights Engine
@@ -180,9 +170,12 @@ cta_insights_engine:
     url: 'https://www.insights-engine-fpo.com/'
     alt:
 _subnav:
-  - label: Partnerships
-  - label: Networks
-  - label: Events
+  - label: 'Partnerships'
+    _slug: partnerships
+  - label: 'Networks'
+    _slug: networks
+  - label: 'Events'
+    _slug: events
 ---
 
 <section>
@@ -223,7 +216,10 @@ _subnav:
     </div>
 
     {% for partner in page.partnerships %}
-      <div class="row py-5 cms-editor-link" data-cms-editor-link="cloudcannon:#partnerships" data-cms-editor-link-style="modal">
+      <div
+        class="row py-5 cms-editor-link"
+        data-cms-editor-link="cloudcannon:#partnerships"
+        data-cms-editor-link-style="modal">
         <div class="col-12 mb-5">
           <h3>{{ partner.title }}</h3>
           <div>
@@ -251,8 +247,8 @@ _subnav:
             {{ partner.text_below_logos_html }}
           </div>
           <div class="d-lg-flex">
-            {% for item in partner.buttons %}
-              <a href="{{ item.link }}" class="{% if item.button_type == 'text' %}btn-link{% else %}btn btn-primary{% endif %} mr-3 mb-2">{{ item.link_label }}</a>
+            {% for item in partner.links %}
+              <a href="{{ item.url }}" class="btn btn-primary mr-3 mb-2" target="_blank">{{ item.label }}</a>
             {% endfor %}
           </div>
 
@@ -295,18 +291,14 @@ _subnav:
         </div>
       </div>
     </div>
-    {% assign events = '' | split: ''  %}
-    {% for object in page.events %}
-      {% assign item = site.events | where: 'slug', object | first %}
-      {% assign events = events | push: item %}
-    {% endfor %}
-    {% include components/carousel.html 
-      items=events
+    {% include components/carousel.html
+      items=page.event_types
       layout="card"
       class="col-md-4"
       theme="lighter"
       interval="false"
-      editor-link="#events"
+      show-description="true"
+      editor-link="#event_types"
     %}
   </div>
 </section>

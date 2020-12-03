@@ -149,9 +149,9 @@ cta_insights_engine:
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
-  - link: /data-and-insights
+  - link: /our-work/data-and-insights
     link_label: See Data & Insights
-  - link: /stakeholder-engagement
+  - link: /our-work/stakeholder-engagement
     link_label: See Stakeholder Engagement
 _assets:
   - image: /img/who_we_are/aboutus_image_01.jpg
@@ -163,10 +163,15 @@ _assets:
   - image: /img/who_we_are/aboutus_image_03.jpg
   - image: /img/who_we_are/aboutus_image_04.jpg
 _subnav:
-  - label: Investment and Innovation
-  - label: Advisory Services
-  - label: Solution Challenge Platform
-  - label: Convenings
+  - label: 'Investment and Innovation'
+    _slug: investment-and-innovation
+  - label: 'Advisory Services'
+    _slug: advisory-services
+  - label: 'Solution Challenge Platform'
+    _slug: solution-challenge-platform
+  - label: 'Convenings'
+    _slug: convenings
+
 ---
 
 <section>
@@ -205,7 +210,10 @@ _subnav:
     </div>
     <div class="row mb-5">
       {% for resource in page.resources_and_tools %}
-      <div class="col-12 col-lg-5 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#resources_and_tools" data-cms-editor-link-style="modal">
+      <div
+        class="col-12 col-lg-5 mb-5 cms-editor-link"
+        data-cms-editor-link="cloudcannon:#resources_and_tools"
+        data-cms-editor-link-style="modal">
         <div class="pr-lg-5">
           <h4>{{ resource.title }}</h4>
           {{ resource.description_html }}
@@ -240,9 +248,12 @@ _subnav:
       </div>
     </div>
     {% for service in page.advisory_services %}
-      <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#advisory_services" data-cms-editor-link-style="modal">
+      <div
+        class="row align-items-center mb-5 cms-editor-link"
+        data-cms-editor-link="cloudcannon:#advisory_services"
+        data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
-          <div class="bg-image aspect-16x9 mb-3" style="background-image: url({{ service.featured_image }})"></div>
+          <div class="bg-image aspect-16x9 mb-3 mr-lg-4" style="background-image: url({{ service.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-8">
           <h4>{{ service.title }}</h4>
@@ -287,14 +298,17 @@ _subnav:
         </h6>
         <ul class="list-unstyled">
           {% for stat in page.program_at_a_glance_stats %}
-            <li class="d-flex align-items-center mb-3 cms-editor-link" data-cms-editor-link="cloudcannon:#program_at_a_glance_stats" data-cms-editor-link-style="modal">
+            <li
+              class="d-flex align-items-center mb-3 cms-editor-link"
+              data-cms-editor-link="cloudcannon:#program_at_a_glance_stats"
+              data-cms-editor-link-style="modal">
               <span class="h3 text-serif mr-2 mb-0">{{ stat.stat }}</span> {{ stat.title }}
             </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    <div class="row mt-5">
+    <div class="row my-5">
       <div class="col-12 col-md-3">
         <div class="bg-image aspect-1x1 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal" style="background-image: url('{{ page._assets[0].image }}')"></div>
       </div>
@@ -311,7 +325,7 @@ _subnav:
     {% for solution in page.solution_providers %}
       <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#solution_providers" data-cms-editor-link-style="modal">
         <div class="col-6 col-lg-3">
-          <div class="bg-image aspect-5x7 bg-dark mb-3" style="background-image: url({{ solution.featured_image }})"></div>
+          <div class="bg-image aspect-5x7 bg-dark mb-3 mr-lg-4" style="background-image: url({{ solution.featured_image }})"></div>
         </div>
         <div class="col-12 col-lg-9">
           <h4>{{ solution.title }}</h4>
@@ -342,7 +356,10 @@ _subnav:
     </div>
     <div class="row">
       {% for convening in page.convenings %}
-        <div class="col-12 col-lg-6 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#convenings" data-cms-editor-link-style="modal">
+        <div
+          class="col-12 col-lg-6 mb-5 cms-editor-link"
+          data-cms-editor-link="cloudcannon:#convenings"
+          data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
           <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>

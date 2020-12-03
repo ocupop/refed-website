@@ -9,8 +9,6 @@ hero:
     links:
 featured_case_studies:
   - crown-family-philanthropies
-  - sample-case-study
-  - crown-family-philanthropies
 cta:
   title:
   label:
@@ -27,24 +25,18 @@ cta:
 
 ---
 
-<div class="carousel-refed-dots-only carousel-image-right carousel-split theme-light">
-  {% for featured in page.featured_case_studies %}
-    {% assign case_study = site.case_studies | where: 'slug', featured | first %}
-    {% include sections/split_section.html
-      item=case_study
-      section_background_color='primary'
-      preheader='Impact Stories'
-      section_background_color='white'
-      image_width='50%'
-      image_alignment='right'
-      image_to_edge=true
-      text_to_edge=true
-      button_type='text'
-      section_class='p-0 mt-5'
-    %}
-  {% endfor %}
-</div>
 
+  {% include components/carousel.html
+    items=page.featured_case_studies
+    label='Impact Stories'
+    theme="white"
+    id="caseStudiesCarousel"
+    layout="two-column"
+    collection="case_studies"
+    controls="true"
+    indicators="true"
+    editor-link="#featured_case_studies"
+  %}
 
 <section>
   <div class="container">
@@ -58,7 +50,16 @@ cta:
       </div>
     </div>
     <!-- TODO logic to rule out displaying case studies twice on this page -->
-    {% include sections/carousels/carousel_cards.html items=site.case_studies %}
+    {% include
+      components/carousel.html
+      items=site.case_studies
+      controls="true"
+      layout="card"
+      class="col-md-4"
+      theme="white"
+      interval="false"
+      editor-link="#case_studies"
+    %}
   </div>
 </section>
 

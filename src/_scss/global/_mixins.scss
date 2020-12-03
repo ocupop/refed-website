@@ -2,11 +2,12 @@
   transition: $property $duration $effect;
 }
 
-@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s) {
+@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s, $count: 1) {
   animation-name: $effect;
   animation-duration: $duration;
   animation-fill-mode: both;
   animation-delay: ($delay);
+  animation-iteration-count: $count;
 }
 
 @mixin make-responsive-cards($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
@@ -89,7 +90,7 @@
 @mixin icon-variant($parent, $slug, $color, $ignore-warning: false) {
   #{$parent} {
     background-color: $color !important;
-    background-image: url('/img/icons/#{$slug}.svg');
+    background-image: url("/img/icons/#{$slug}.svg");
     background-size: contain;
     background-position: center center;
   }
@@ -109,17 +110,17 @@
 //   }
 // }
 
-  // &.color-info {
-  //   &::before {
-  //     // TODO: Add logic to map through and add hex values based on color map
-  //     content: "#{$slug}";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     padding: 1rem;
-  //     width: 100%;
-  //     height: 100%;
-  //     color: $white;
-  //     display: flex;
-  //   }
-  // }
+// &.color-info {
+//   &::before {
+//     // TODO: Add logic to map through and add hex values based on color map
+//     content: "#{$slug}";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding: 1rem;
+//     width: 100%;
+//     height: 100%;
+//     color: $white;
+//     display: flex;
+//   }
+// }

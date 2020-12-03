@@ -13,12 +13,37 @@ layout: default
     <div class="row">
       <div class="col-lg-6">
         <h6>Panelists</h6>
-        <p class="text-danger">Should we do a modal for bio details?</p>
         {% for panelist in page.panelists %}
-          <div class="mb-4">
+          <div 
+            data-cms-editor-link="cloudcannon:#panelists"
+            data-cms-editor-link-style="modal"
+            class="mb-4 cms-editor-link">
             <h4 class="text-serif mb-0">{{ panelist.name }}</h4>
-            <p class="mb-0">{{ panelist.role }}</p>
-            <a href="">See Bio for Details</a>
+            <p class="mb-2">{{ panelist.role }}</p>
+            <button class="btn btn-link" data-toggle="modal" data-target="#modal-bio-{{ forloop.index }}">See Bio for Details</button>
+          </div>
+          <div class="modal fade" id="modal-bio-{{ forloop.index }}" tabindex="-1" aria-labelledby="modal-bio-label-{{ forloop.index }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="bg-image aspect-1x1" style="background-image: url({{ panelist.featured_image }})"></div>
+                    </div>
+                    <div class="col-lg-8">
+                      <h4 class="text-serif mb-0">{{ panelist.name }}</h4>
+                      <p>{{ panelist.role }}</p>
+                      {{ panelist.description_html }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         {% endfor %}
         <div class="d-flex mb-5 mt-5 mb-lg-0">
@@ -61,7 +86,15 @@ layout: default
             {% assign event = site.events | where: 'slug', object | first %}
             {% assign series_events = series_events | push: event %}
           {% endfor %}
-          {% include sections/carousels/carousel_cards.html items=series_events %}
+          {% include 
+            components/carousel.html 
+            items=series_events
+            controls="true"
+            layout="card"
+            class="col-md-4"
+            theme="light"
+            interval="false"
+          %}
         </div>
       </div>
     </div>
@@ -76,9 +109,16 @@ layout: default
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text-danger">Add past events collection - will this only show events of the type that the page is showing ie in person vs webinar?</p>
         {% include events/past_events_logic.html event_type="webinar" %}
-        {% include sections/carousels/carousel_cards.html items=past_events_sorted %}
+        {% include 
+          components/carousel.html 
+          items=past_events_sorted
+          controls="true"
+          layout="card"
+          class="col-md-4"
+          theme="white"
+          interval="false"
+        %}
       </div>
     </div>
   </div>
