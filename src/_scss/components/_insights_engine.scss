@@ -8,6 +8,7 @@
     height: 0;
     padding-bottom: 63.19%;
     z-index: 1;
+    pointer-events: none;
     img {
       width: 100%;
     }
@@ -47,7 +48,6 @@
         width: 135%;
       }
     }
-    
   }
   .col-copy {
     @include media-breakpoint-up(xl) {
@@ -57,5 +57,4 @@
       justify-content: center;
     }
   }
-
 }
