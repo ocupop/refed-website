@@ -31,8 +31,9 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
           const roundedVal = Math.round((val / 100000) * 10) / 10
           return `${roundedVal}M Tons`
         }
-        const investmentNeeded = () => {
-          const val = data.find(item => item.indicator === 'us-dollars-cost').value
+
+        const formatValue = (indicator) => {
+          const val = data.find(item => item.indicator === indicator).value
           const roundedVal = Math.round((val / 100000) * 10) / 10
           return `${formatMoney(roundedVal)}M`
         }
@@ -55,14 +56,23 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
                     <div className="key-indicators-box__label d-flex flex-column justify-content-center pr-4 pb-3 pb-sm-0">
                       <div className='stat-text m-0'>Key Indicators</div>
                     </div>
-                    <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
+                    {/* <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
                       <span className="display-4 d-block lead">{formatIndicator('total-mtco2e-avoided')}</span>
-                      <span className="stat-text d-block">Emissions Reduction</span>
-                    </div>
+                      <span className="stat-text d-block">CO2e Reduction</span>
+                    </div> */}
 
-                    <div className="key-indicators-box__stat d-flex flex-column pl-4 border-left pb-3 pb-sm-0">
-                      <span className="display-4 d-block lead">{investmentNeeded()}</span>
+                    {/* <div className="key-indicators-box__stat d-flex flex-column pl-4 border-left pb-3 pb-sm-0">
+                      <span className="display-4 d-block lead">{formatMoney('us-dollars-cost')}</span>
                       <span className="stat-text d-block">Investment Needed</span>
+                    </div> */}
+
+                    <div className="d-flex flex-column px-4 border-left pb-3 pb-sm-0">
+                      <span className="display-4 d-block lead">{formatMoney('us-dollars-financial-benefit')}</span>
+                      <span className="stat-text d-block">Financial Benefit</span>
+                    </div>
+                    <div className="d-flex flex-column px-4 border-left pb-3 pb-sm-0">
+                      <span className="display-4 d-block lead">{formatIndicator('tons-diverted')}</span>
+                      <span className="stat-text d-block">Waste Diverted</span>
                     </div>
                   </div>
 
