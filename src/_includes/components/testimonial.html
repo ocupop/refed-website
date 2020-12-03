@@ -3,7 +3,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto text-center">
-        <blockquote>
+        <blockquote
+          data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+          data-cms-editor-link-style="modal"
+          class="cms-editor-link">
           "{{ item.description_html }}"
           <footer class="text-serif">
             <div class='cite'>{{ item.title }}</div>
