@@ -55,7 +55,7 @@
             <!-- With updates to the API this could be a dynamic component. -->
             <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.uid }}"></div> -->
             {% for cause in page.tons_surplus.causes %}
-              <p data-cms-editor-link="cloudcannon:#causes" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">
+              <p data-cms-editor-link="cloudcannon:#tons_surplus.causes" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">
                 {{ cause.label }}
               </p>
             {% endfor  %}
@@ -68,7 +68,7 @@
             <!-- With updates to the API this could be a dynamic component. -->
             <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.uid }}"></div> -->
             {% for destination in page.tons_surplus.destinations %}
-              <p data-cms-editor-link="cloudcannon:#destinations" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">{{ destination.label }}</p>
+              <p data-cms-editor-link="cloudcannon:#tons_surplus.destinations" data-cms-editor-link-style="modal" class="text-serif {% unless forloop.last %}mb-0{% endunless %} cms-editor-link">{{ destination.label }}</p>
             {% endfor  %}
             <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=destination&indicator=tons-surplus&sector={{ page.uid }}&view=detail&year=2019" class="btn btn-link">
               See more in the Insights Engine
