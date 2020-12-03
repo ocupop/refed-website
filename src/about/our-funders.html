@@ -14,7 +14,7 @@ logos:
   - label: ReFED Logo
     link: 'http://www.refed.com'
     featured_image: >-
-      https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
+      https://via.placeholder.com/150x50         
 case_studies:
   - crown-family-philanthropies
   - crown-family-philanthropies
@@ -58,15 +58,7 @@ cta:
     </div>
     <div class="row">
       <div class="col-12">
-        {% include sections/logo_pile.html logo_pile=page.logos %}
-        <div class="bg-placeholder aspect-3x1">
-          <div class="bg-fill">
-            <div class="text-center">
-              <h4 class="text-uppercase">Funder Logo Pile</h4>
-              <small>.src/_includes/sections/carousels/logo_pile.html</small>
-            </div>
-          </div>
-        </div>
+        {% include components/logo_pile.html items=page.logos %}
       </div>
     </div>
   </div>
