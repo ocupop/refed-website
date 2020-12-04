@@ -1,5 +1,5 @@
 <div 
-  data-cms-editor-link="cloudcannon:#collections/_events"
+  data-cms-editor-link="cloudcannon:collections/_events"
   data-cms-editor-link-style="modal" 
   class="card mb-4">
   <div class="bg-image aspect-4x3" style="background-image: url({{ event.featured_image | default: site.placeholder_image }})"></div>
@@ -8,6 +8,6 @@
     <h6 class="text-gray">{{ event.item_date | date: '%B %-d, %Y' }}</h6>
     <hr>
     <p>{{ event.description_html }}</p>                        
-    <a href="{{ event.url }}" class="btn btn-link stretched-link">Read More</a>                        
+    <a href="{{ event.url }}" class="btn btn-link">Read More</a>                        
   </div>
 </div>
