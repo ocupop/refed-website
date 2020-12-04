@@ -7,7 +7,8 @@ hero:
     description_html:
     image: /img/careers/careers_header_image.jpg
     links:
-careers:    
+careers:
+  - test-career-1
 perks_and_benefits:
   - title: Competitive medical benefits package for individuals and families
     icon_image: /img/icons/careers/careers_medicalbenefits.svg
@@ -64,7 +65,6 @@ operation_principles:
           improve next time- We collaborate wisely
       - title: We believe in progress not perfection
     icon_image: /img/icons/operating_principles/operatingprinciples_design.svg
-
 cta:
   title:
   label:
@@ -99,19 +99,16 @@ cta:
         <p class="lead editable">We Want You to Become a Food Waste Champion!</p>
         {% assign num_careers = site.careers | size %}
         {% if num_careers < 1 %}
-          <div id="notification-careers" >
+          <div id="notification-careers">
             <p class="h3 my-5 editable">Thank you for your interest in working at ReFED. There are currently no vacancies available. Please check the website at a later date for any future opportunities.</p>
           </div>
         {% endif %}
-        <hr class="mb-5"/>
+        <hr class="mb-5" />
       </div>
     </div>
     {% for career in site.careers %}
       <div class="row mb-5">
-        <div
-          data-cms-editor-link-style="modal"
-          data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]"
-          class="col-12 cms-editor-link">
+        <div data-cms-editor-link-style="modal" data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]" class="col-12 cms-editor-link">
           <h4>{{ career.title }}</h4>
           <h5 class="text-gray">{{ career.location }}</h5>
           {{ career.description_html }}
@@ -120,7 +117,7 @@ cta:
       </div>
     {% endfor %}
     <div data-cms-editor-link="cloudcannon:collections/_careers[+]" class="editor-link">
-      <div  class="d-flex align-items-center">
+      <div class="d-flex align-items-center">
         <button class="mr-3 btn btn-editor">
           <i class="ri-add-fill"></i>
         </button>
@@ -166,10 +163,7 @@ cta:
     <div class="row align-items-center">
       {% for benefit in page.perks_and_benefits %}
         <div class="col-12 col-md-6">
-          <div
-            data-cms-editor-link="cloudcannon:#perks_and_benefits"
-            data-cms-editor-link-style="modal"
-            class="row align-items-center mb-5 cms-editor-link">
+          <div data-cms-editor-link="cloudcannon:#perks_and_benefits" data-cms-editor-link-style="modal" class="row align-items-center mb-5 cms-editor-link">
             <div class="col-12 col-md-auto">
               <img src="{{ benefit.icon_image }}" class="img-fluid icon-img-md mb-3 mb-md-0" alt="{{ benefit.title}} icon" />
             </div>
@@ -206,10 +200,7 @@ cta:
     </div>
     <div class="row">
       {% for principle in page.operation_principles %}
-        <div
-          data-cms-editor-link="cloudcannon:#operation_principles"
-          data-cms-editor-link-style="modal"
-          class="col-12 col-md-6 mb-5 cms-editor-link">
+        <div data-cms-editor-link="cloudcannon:#operation_principles" data-cms-editor-link-style="modal" class="col-12 col-md-6 mb-5 cms-editor-link">
           <img src="{{ principle.icon_image }}" class="img-fluid w-25 mb-4" alt="{{ principle.title }}" />
           <h4 class="mb-3">{{ principle.title }}</h4>
           <ul class="pl-3">
