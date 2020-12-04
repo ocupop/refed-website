@@ -1,6 +1,9 @@
 {% assign featured = site.events | where: 'slug', page.featured_event | first %}
 <section>
-  <div class="container">
+  <div 
+    data-cms-editor-link="cloudcannon:#featured_event"
+    data-cms-editor-link-style="modal"
+    class="container cms-editor-link">
     <div class="row">
       <div class="col-12">
         <h3>Featured Event</h3>
