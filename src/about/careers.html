@@ -106,9 +106,10 @@ cta:
         <hr class="mb-5" />
       </div>
     </div>
-    {% for career in site.careers %}
+    {% for object in page.careers %}
+      {% assign career = site.careers | where: 'slug', object | first %}
       <div class="row mb-5">
-        <div data-cms-editor-link-style="modal" data-cms-editor-link="cloudcannon:#careers[{{forloop.index0}}]" class="col-12 cms-editor-link">
+        <div data-cms-editor-link-style="modal" data-cms-editor-link="cloudcannon:#careers" class="col-12 cms-editor-link">
           <h4>{{ career.title }}</h4>
           <h5 class="text-gray">{{ career.location }}</h5>
           {{ career.description_html }}
