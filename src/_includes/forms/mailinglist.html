@@ -1,72 +1,20 @@
-<section class="pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="row mb-3">
-          <div class="col-md-auto">
-            <img src="/img/icons/contact/contact_general.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Contact Icon">
-          </div>
-          <div class="col">
-            <h3 class="editable mb-0">General Inquiry</h3>
-            <p class="editable mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quidem minima deserunt amet dicta id omnis harum assumenda in adipisci.</p>
-            <a href="#general-inquiry" class="btn btn-link editable">Ask Us</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="row mb-3">
-          <div class="col-md-auto">
-            <img src="/img/icons/contact/contact_media.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Contact Icon">
-          </div>
-          <div class="col">
-            <h3 class="editable mb-0">Media Inquiry</h3>
-            <p class="mb-2 editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quidem minima deserunt amet dicta id omnis harum assumenda in adipisci.</p>
-            <a href="#media-inquiry" class="btn btn-link editable">Ask Us</a>
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-8 mx-lg-auto ">
+      <h4 class="text-serif editable">
+        The Latest Food Waste News Straight to your Mailbox
+      </h4>
+      <h2 class="editable">
+        Subscribe to our Mailing List
+      </h2>
+      <p class="lead editable">
+        Sign up to receive updates from ReFED
+      </p>
     </div>
   </div>
-</section>
-
-<section id="general-inquiry">
-    <div class="container mb-3">
-      <div class="row mb-4">
-        <div class="col-12 col-lg-8 mx-lg-auto">
-          <h2 class="editable">General Inquiry</h2>
-          <p class="lead editable">Get in touch with the ReFED team with any questions.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-8 mx-lg-auto">
-          <!-- TODO: replace with editable functionality -->
-          {% include_relative _partials/form_contact.html %}
-        </div>
-      </div>
-    </div>
-</section>
-<section id="media-inquiry" class="bg-lighter">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8 mx-lg-auto">
-        <h2 class="editable">Media Inquiry</h2>
-        <p class="lead editable">If you are a news media professional with a question for ReFED please submit your request in the form below:</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-lg-8 mx-lg-auto">
-        <div class="d-lg-flex">
-          {% include components/links.html items=page.links %}
-        </div>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-lg-8 mx-lg-auto">
-        <div class="form-theme-light">
-          <!-- TODO: replace with editable functionality -->
-          {% include_relative _partials/form_media_contact.html %}
-        </div>
-      </div>
+  <div class="row mt-4">
+    <div class="col-12 col-lg-8 mx-lg-auto ">
+      {% include forms/subscribe.html %}
     </div>
   </div>
-</section>
+</div>
