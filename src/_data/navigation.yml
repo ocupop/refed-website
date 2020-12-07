@@ -1,18 +1,18 @@
 top_bar_navigation:
   navigation:
   links:
-   - label: Contact
-     url: /contact
-     alt: Contact ReFED
-     links:
-   - label: Newsroom
-     url: /newsroom/
-     alt: Visit our Newsroom
-     links:
-   - label: Stay Connected
-     url: /engage/stay-connected
-     alt:
-     links:
+    - label: Contact
+      url: /contact
+      alt: Contact ReFED
+      links:
+    - label: Newsroom
+      url: /newsroom/
+      alt: Visit our Newsroom
+      links:
+    - label: Stay Connected
+      url: /engage/stay-connected
+      alt:
+      links:
 primary_navigation:
   navigation:
   links:
@@ -61,7 +61,7 @@ primary_navigation:
               alt:
         - label: Documents
           url: /about/documents
-          alt: 
+          alt:
           links:
             - label: Annual Reports
               url: '/about/documents/#annual-reports'
@@ -93,7 +93,7 @@ primary_navigation:
           alt:
           links:
             - label: Data & Insights
-              url: '/our-work/data-and-insights'
+              url: /our-work/data-and-insights
               alt:
               links:
             - label: Capital & Innovation
@@ -101,7 +101,7 @@ primary_navigation:
               alt:
               links:
             - label: Stakeholder Engagement
-              url: '/our-work/stakeholder-engagement'
+              url: /our-work/stakeholder-engagement
               alt:
               links:
             - label: Covid-19
@@ -113,7 +113,7 @@ primary_navigation:
           alt:
           links:
             - label: Case Studies
-              url: '/our-work/case-studies'
+              url: /our-work/case-studies
               alt:
               links:
             - label: Featured Organizations
@@ -209,7 +209,7 @@ primary_navigation:
           alt:
           links:
             - label: Stakeholder Actions
-              url: /engage/ways-to-engage/#stakeholder-actions
+              url: '/engage/ways-to-engage/#stakeholder-actions'
               alt:
               links:
             - label: Call for Funders
@@ -217,11 +217,7 @@ primary_navigation:
               alt:
               links:
             - label: Partner with Us
-              url: /engage/ways-to-engage/#partner-with-us
-              alt:
-              links:
-            - label: Collaborate with Us
-              url: '/engage/ways-to-engage/#collaborate'
+              url: '/engage/ways-to-engage/#partner-with-us'
               alt:
               links:
         - label: Events
@@ -229,11 +225,11 @@ primary_navigation:
           alt:
           links:
             - label: In-person Events
-              url: '/engage/in-person-events'
+              url: /engage/in-person-events
               alt:
               links:
             - label: Webinars
-              url: '/engage/webinar-events'
+              url: /engage/webinar-events
               alt:
               links:
         - label: Stay Connected
@@ -246,35 +242,36 @@ primary_navigation:
               alt:
               links:
             - label: LinkedIn
-              url: https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
-              alt: 
+              url: >-
+                https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
+              alt:
               links:
             - label: Facebook
               url: 'https://www.facebook.com/rethinkfoodwaste/'
               alt:
               links:
     - label: Insights Engine
-      url: https://insights-engine.vercel.app/
+      url: 'https://insights-engine.vercel.app/'
       alt:
       links:
 footer_navigation:
   navigation:
   links:
-   - label: Careers
-     url: /about/careers
-     alt:
-   - label: Newsroom
-     url: /newsroom
-     alt:
-   - label: Media Inquiry
-     url: /contact#media-inquiry
-     alt:
-   - label: Terms of Use
-     url: /terms-of-use
-     alt:
-   - label: Privacy Policy
-     url: /privacy
-     alt:
-   - label: Contact ReFED
-     url: /contact
-     alt:
+    - label: Careers
+      url: /about/careers
+      alt:
+    - label: Newsroom
+      url: /newsroom
+      alt:
+    - label: Media Inquiry
+      url: '/contact#media-inquiry'
+      alt:
+    - label: Terms of Use
+      url: /terms-of-use
+      alt:
+    - label: Privacy Policy
+      url: /privacy
+      alt:
+    - label: Contact ReFED
+      url: /contact
+      alt:
