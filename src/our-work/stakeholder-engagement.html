@@ -32,37 +32,19 @@ partnerships:
       pre-competitive and collaborative working groups to share lessons learned
       and best practices, demonstration projects, and develop solutions to
       collective challenges</p>
-    logos:
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
-      - link:
-        alt_text: Refed Alt Tag
-        image: >-
-          https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
-      - alt_text: Refed Alt Tag
-        image: >-
-          https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://www.logolynx.com/images/logolynx/s_fc/fc07dee232517e20751e18a85d5a3c9d.jpeg
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHz90h1rYr_L9Ok4MseHwDB8tEDcWFIxlBlQ&usqp=CAU
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg
+    logo_piles:
+      - title: Food Business Signatories    
+        logos:
+          - label: Refed Alt Tag
+            link: 'http://www.refed.com'
+            featured_image: >-
+              https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
+      - title: Resource Partners
+        logos:        
+          - label: Refed Alt Tag
+            link: 'http://www.refed.com'
+            featured_image: >-
+              https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
     links:
       - label: See Annual Report
         url: '#'
@@ -82,37 +64,13 @@ partnerships:
       and measurement on progress, identifying new cross-sector collaboration
       opportunities, and more.</p>
     text_below_logos_html:
-    logos:
-      - link:
-        alt_text: Refed Alt Tag
-        image: >-
-          https://bankingthefuture.com/wp-content/uploads/2019/04/logo-placeholder-300x150.jpg
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://image.shutterstock.com/image-vector/line-cloud-logo-icon-260nw-1033660648.jpg
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHz90h1rYr_L9Ok4MseHwDB8tEDcWFIxlBlQ&usqp=CAU
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg
-      - alt_text: Refed Alt Tag
-        image: >-
-          https://www.datacomplianceeurope.eu/wp-content/uploads/2016/12/logo-placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: >-
-          https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
-      - link: 'http://www.refed.com'
-        alt_text: Refed Alt Tag
-        image: https://www.logolynx.com/images/logolynx/s_fc/fc07dee232517e20751e18a85d5a3c9d.jpeg
+    logo_piles:
+      - title:
+        logos:
+          - label: Refed Alt Tag
+            link: 'http://www.refed.com'
+            featured_image: >-
+              https://www.startupchile.org/wp-content/uploads/2018/06/914c34473699-Logo_Placeholder.png
     links:
       - label: See Annual Report
         url: '#'
@@ -221,28 +179,26 @@ _subnav:
         data-cms-editor-link="cloudcannon:#partnerships"
         data-cms-editor-link-style="modal">
         <div class="col-12 mb-5">
-          <h3>{{ partner.title }}</h3>
+          <h4>{{ partner.title }}</h4>
           <div>
             {{ partner.text_above_logos_html }}
           </div>
-          <div class="bg-placeholder aspect-3x1 mb-5">
-            <div class="bg-fill">
-              <div class="text-center">
-                <h4 class="text-uppercase">Partner logos</h4>
-              </div>
-            </div>
-          </div>
-          {% comment %}
-            <div class="row flex-wrap align-items-center mb-5">
-            {% for logo in partner.logos %}
-              <div>
-                  {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
-                  <img class="d-inline align-middle m-3" style="max-width:250px; max-height:100px;" src="{{ logo.image }}" alt="{{ logo.alt }}" />
-                  {% if logo.link %}</a>{% endif %}
-              </div>
+          {% assign num_logo_piles = partner.logo_piles | size %}
+          {% if num_logo_piles > 0 %}
+            {% for logo_pile in partner.logo_piles %}
+              <div class="row my-4">
+                <div class="col-12">
+                  {% if logo_pile.title %}
+                    <h5>{{ logo_pile.title }}</h5>
+                  {% endif %}
+                  {% include components/logo_pile.html
+                    items=logo_pile.logos
+                    editor-link='#logo_piles'
+                  %}
+                </div>
+              </div>  
             {% endfor %}
-            </div>
-          {% endcomment %}
+          {% endif %}
           <div class="mb-5">
             {{ partner.text_below_logos_html }}
           </div>
@@ -262,7 +218,7 @@ _subnav:
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-auto">
-        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_networks.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="" />
+        <img src="/img/icons/stakeholder_engagement/stakeholderengagement_networks.svg" class="img-fluid icon-img-lg mb-3 mr-md-3" alt="Networks icon" />
       </div>
       <div class="col">
         <h3 class="editable">
