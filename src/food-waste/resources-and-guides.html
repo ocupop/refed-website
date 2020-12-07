@@ -101,7 +101,6 @@ partner_resources:
       <p>The FAO is collaborating with donors, bi- and multi-lateral agencies, and financial institutions and private sector partners (the food packaging industry and others) to develop and implement a program on food loss and waste reduction.</p>
     link:
     link_label:
-
 cta_insights_engine:
   label: Our Newest Innovation
   title: ReFED Insights Engine
@@ -213,7 +212,10 @@ cta_insights_engine:
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       {% for download in site.downloads %}
-        <div class="col mb-5">
+        <div 
+          data-cms-editor-link="cloudcannon:collections/_downloads"
+          data-cms-editor-link-style="modal" 
+          class="col mb-5">
           <div class="card">
             <img class="card-img-top img-fluid shadow" src="{{ download.featured_image }}" alt="{{ download.title }} image" />
             <div class="card-body">
