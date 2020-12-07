@@ -1,24 +1,13 @@
-{% assign items = include.items %}
-{% for item in items %}
-  {% assign color-theme = forloop.index | modulo: 3 | prepend: 'theme-' %}
-  {% case color-theme %}
-    {% when 'theme-0' %}
-      {% assign theme = 'rescue' %}
-    {% when 'theme-1' %}
-      {% assign theme = 'prevention' %}
-    {% when 'theme-2' %}
-      {% assign theme = 'recycle' %}
-  {% endcase %}
-  <div class="row align-items-center mb-5">
-    <div class="col-lg-6">
-      {% include charts/donut.html item=item %}
-    </div>
-    <div class="col-lg-6">
-      <h6>{{ item.title }}</h6>
-      <p class="display-4 text-serif mb-2">{{ item.label }}</p>
-      {% for stat in item.stats %}
-        <p class="mb-0"><small>{{ stat.label }} - <span class="text-{{ theme }}-{% cycle '600', '500', '400', '300', '200', '100' %} font-weight-bold">{{ stat.statistic }}</span></small> </p>
-      {% endfor %}
-    </div>
+{% assign item = include.item %}
+<div class="row align-items-center mb-5">
+  <div class="col-lg-6">
+    {% include charts/donut.html item=item %}
   </div>
-{% endfor %}
+  <div class="col-lg-6">
+    <h6>{{ item.title }}</h6>
+    <p class="display-4 text-serif mb-2">{{ item.label }}</p>
+    {% for stat in item.stats %}
+      <p class="mb-0"><small>{{ stat.label }} - <span class="text-{{ include.color-theme | default: 'recycle' }}-{% cycle '600', '500', '400', '300', '200', '100' %} font-weight-bold">{{ stat.statistic }}</span></small> </p>
+    {% endfor %}
+  </div>
+</div>

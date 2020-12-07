@@ -1,117 +1,26 @@
 ---
 layout: sandbox
-metrics:
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B 
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B
-  - title: Public
-    label: $6.6B
-    static_image:
-    caption: Total
-    stats:
-      - label: Corporate Finance
-        statistic: $5.2B
-      - label: Private Equity
-        statistic: $0.8B
-      - label: Lorem title
-        statistic: $0.6B
-      - label: Lorem another longetitle
-        statistic: $0.9B                                 
+metric:
+  title: Public
+  label: $6.6B
+  static_image:
+  caption: Total
+  stats:
+    - label: Corporate Finance
+      statistic: $5.2B
+    - label: Private Equity
+      statistic: $0.8B
+    - label: Lorem title
+      statistic: $0.6B
+    - label: Lorem another longetitle
+      statistic: $0.9B                              
 ---
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include charts/investment.html items=page.metrics %}
+        {% include charts/investment.html item=page.metric %}
       </div>
     </div>
   </div>
