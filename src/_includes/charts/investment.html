@@ -5,7 +5,7 @@
   </div>
   <div class="col-lg-6">
     <h6>{{ item.title }}</h6>
-    <p class="display-4 text-serif mb-2">{{ item.label }}</p>
+    <p class="display-4 text-serif mb-2">{{ item.total }}</p>
     {% for stat in item.stats %}
       <p class="mb-0"><small>{{ stat.label }} - <span class="text-{{ include.color-theme | default: 'recycle' }}-{% cycle '600', '500', '400', '300', '200', '100' %} font-weight-bold">{{ stat.statistic }}</span></small> </p>
     {% endfor %}
