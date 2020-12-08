@@ -1,28 +1,9 @@
-.carousel-testimonials-section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  @include darken-bkg-image(0.8,$dark);
-  blockquote{
-    font-weight: $font-weight-normal;
-    font-size: 1.9rem;
-    line-height: 1.4;
-    @include media-breakpoint-down(xl) {
-      font-size: 1.7rem;
-    }
-    @include media-breakpoint-down(lg) {
-      font-size: 1.5rem;
-    }
-    @include media-breakpoint-down(md) {
-      font-size: 1.2rem; 
-    }
-    footer{
-      margin-top: 1.3rem;
-      font-size: 1.1rem;
-      .credentials{
-        margin-top: 0.4rem;
-        font-size: 1rem;
-      }
+.carousel-testimonial {
+  @extend .bg-testimonial;
+  .bg-testimonial {
+    background-image: none;
+    &::before {
+      display: none;
     }
   }
   .carousel-testimonial {
@@ -37,9 +18,11 @@
     }
     .carousel-control-prev {
       left: 0;
+      color: $white;
     }
     .carousel-control-next {
       right: 0;
+      color: $white;
     }
   }
 }
