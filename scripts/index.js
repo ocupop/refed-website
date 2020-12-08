@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
 import ActionAreaSolutions from './action_areas/ActionAreaSolutions'
 import KeyIndicators from './action_areas/KeyIndicators'
+import TopSolutions from './stakeholders/TopSolutions'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
@@ -16,6 +17,7 @@ const COMPONENTS = {
   HelloWorld,
   ActionAreaSolutions,
   KeyIndicators,
+  TopSolutions,
   // Causes,
 }
 

@@ -22,10 +22,13 @@
           {% else %}
             <div class="bg-placeholder aspect-2x1 bg-black text-white">
               <div class="bg-fill">
-                <h4 class="text-uppercase">Top 5 solutions for <span class="text-primary">{{ page.title }}</span></h4>
+                <h4 class="text-uppercase">Featured Chart for <span class="text-primary">{{ page.title }}</span></h4>
               </div>
             </div>
           {% endif %}
+
+          <div class="__react-component" data-component="TopSolutions" data-stakeholder="{{ page.uid }}"></div>
+
         </div>
       </div>
     </div>

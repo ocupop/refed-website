@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
-import { formatMoney, toCamel } from '../helpers'
+import { formatMoney, toCamel, abbreviateNumber } from '../helpers'
 import { INDICATORS } from '../constants'
 
 
@@ -14,7 +14,7 @@ const KeyIndicators = ({ category }) => {
     console.log("Totals:", totals)
     const formattedTotals = totals.map(total => {
       const label = INDICATORS[toCamel(total.indicator)]
-      const formattedValue = Math.round((total.value / 100000) * 10) / 10
+      const formattedValue = abbreviateNumber(total.value)
       return { label, formattedValue }
     })
     return formattedTotals
