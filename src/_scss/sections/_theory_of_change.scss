@@ -112,6 +112,7 @@ $toc-line-color: $gray-500;
           left: calc(-1 * #{$toc-col-padding});
         }
       }
+      
       &#col3-block6:after {
         top: 20%;
       }
@@ -130,6 +131,12 @@ $toc-line-color: $gray-500;
           width: calc(#{$toc-col-padding} * 2);
           top: 50%;
           left: 100%;
+        }
+      }
+
+      &#col4-block1 {
+        &:before {
+          width: $toc-col-padding;
         }
       }
 
@@ -210,8 +217,32 @@ $toc-line-color: $gray-500;
         border-top: 1px solid $toc-line-color;
         border-bottom: 1px solid $toc-line-color;
         border-left: 1px solid $toc-line-color;
-        height: 210%;
-        top: 50%;
+        height: 100%;
+        top: 0;
+        transform: translateY(-50%);
+        width: $toc-col-padding; // should match column padding
+        right: 100%;
+      }
+
+      &#col5-block3:before {
+        content: "";
+        position: absolute;
+        border-left: 1px solid $toc-line-color;
+        height: 120%;
+        top: 0;
+        transform: translateY(-50%);
+        width: $toc-col-padding; // should match column padding
+        right: 100%;
+      }
+
+      &#col5-block4:before {
+        content: "";
+        position: absolute;
+        border-top: 1px solid $toc-line-color;
+        border-bottom: 1px solid $toc-line-color;
+        border-left: 1px solid $toc-line-color;
+        height: 110%;
+        top: -4%;
         transform: translateY(-50%);
         width: $toc-col-padding; // should match column padding
         right: 100%;
