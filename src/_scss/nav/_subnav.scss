@@ -16,13 +16,11 @@
     }
   }
   .subnav-wrapper {
-    display: flex;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
+    display: block;
   }
   .subnav-heading {
     white-space: nowrap;
+    font-size: 12px;
   }
   @include media-breakpoint-up(lg) {
     padding: 1rem 0;
@@ -47,7 +45,7 @@
   }
 
   .navbar {
-    padding: 2px;
+    padding: 0;
     width: 100%;
     @include media-breakpoint-up(lg) {
       padding: 0.5rem 0;
@@ -55,12 +53,13 @@
   }
   ul.nav {
     width: 100%;
+    flex-wrap: nowrap;
     @include transition(0.5s);
     @include media-breakpoint-down(lg) {
       flex-direction: column;
     }
     li.nav-item {
-      margin-right: 1.5rem;
+      margin-right: 10px;
 
       a.nav-link {
         padding: 0;
@@ -107,7 +106,7 @@
 #subnav-toggle {
   position: absolute;
   right: 7px;
-  top: -3px;
+  top: 4px;
   display: block;
   font-size: 30px;
   line-height: 1;
