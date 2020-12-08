@@ -2,8 +2,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 60px;
-  padding-bottom: 60px;
   @include darken-bkg-image(0.8,$dark);
   blockquote{
     font-weight: $font-weight-normal;
@@ -31,10 +29,10 @@
     .carousel-indicators {
       margin: 0;
       justify-content: center;
-      top: -35px;
+      // top: -35px;
       bottom: auto;
       @include media-breakpoint-up(lg) {
-        top: 0px;
+        top: 40px;
       }
     }
     .carousel-control-prev {
