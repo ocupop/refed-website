@@ -7,12 +7,10 @@ hero:
     description_html:
     image: /img/our_impact/our_impact_header_image.png
     links:
-
 featured_case_studies:
   - crown-family-philanthropies
 case_studies:
   - crown-family-philanthropies
-
 testimonials:
   - title: Denise Oserhues
     description_html: >-
@@ -80,9 +78,9 @@ testimonials:
               <a class="dropdown-item" href="#" data-value="{{ eachCat.name | slugify }}">{{ eachCat.name }}</a>
             {% endfor %}
           </div>
-        </div>
-      </div>
-    </div> -->
+        
+      
+     -->
     {% include
       components/carousel.html
       items=page.featured_case_studies
@@ -94,7 +92,7 @@ testimonials:
       collection="case_studies"
       editor-link="#featured_case_studies"
     %}
-  </div>
+  
 </section>
 
 {% include_relative _partials/featured_cta.html %}
