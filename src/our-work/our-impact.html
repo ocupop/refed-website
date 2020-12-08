@@ -10,23 +10,19 @@ hero:
 
 featured_case_studies:
   - crown-family-philanthropies
-  - crown-family-philanthropies
-  - crown-family-philanthropies
 case_studies:
   - crown-family-philanthropies
-  - crown-family-philanthropies
-  - crown-family-philanthropies
 
-carousel_testimonial:
+testimonials:
   - title: Denise Oserhues
     description_html: >-
-      “The ReFED team has been an incredible strategic partner in our journey to
+      The ReFED team has been an incredible strategic partner in our journey to
       end hunger and waste. ReFED’s insights and guidance helped shape the
       strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation’s
       Innovation Fund and its open call for innovative solutions. Kroger values
       ReFED’s deep knowledge and leadership in food waste reduction, and we’ve
       never been more excited and hopeful that together we can truly change our
-      food system.”
+      food system.
     cite: The Kroger Co.
 ---
 
@@ -43,7 +39,6 @@ carousel_testimonial:
 </section>
 
 {% include_relative _partials/theory_of_change.html %}
-
 
 {% include components/carousel.html
   items=page.case_studies
@@ -107,11 +102,11 @@ carousel_testimonial:
 <section class="carousel-testimonials-section bg-dark" style="background-image:url(https://picsum.photos/id/155/1000/333);">
   {% include
     components/carousel.html
-    items=page.carousel_testimonial
+    items=page.testimonials
     layout="testimonial"
     theme="transparent"
     id="testimonialsCarousel"
-    editor-link="#carousel_testimonial"
+    editor-link="#testimonials"
   %}
 </section>
 
