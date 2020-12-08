@@ -26,6 +26,20 @@ export const toSnake = (str) => {
   return str.replace('-', '_')
 }
 
+export const sortBy = ({ solutions, indicator }) => {
+  const sortedArray = solutions.sort((a, b) => {
+    const valueA = a.data.find(metric => metric.indicator == indicator).value
+    const valueB = b.data.find(metric => metric.indicator == indicator).value
+    return valueA < valueB ? 1 : -1
+  })
+
+  return sortedArray
+}
+
+export const getIndicatorValue = (data, indicator) => {
+  return data.find(metric => metric.indicator == indicator).value
+}
+
 // export const abbreviateNumber = (value) => {
 //   let newValue = value
 
