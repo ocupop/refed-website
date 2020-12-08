@@ -1,21 +1,24 @@
+{% assign item = include.item %}
 <section 
-  class="testimonial bg-{{include.testimonial.section_background_color}} image-{{include.testimonial.image_alignment}}"
+  class="testimonial bg-{{ item.section_background_color}} image-{{ item.image_alignment}}"
   id="{{ include.id }}"
   data-cms-editor-link="cloudcannon:{{ include.editor-link | default: '#testimonials'}}"
   data-cms-editor-link-style="modal">
   <div class="container cms-editor-link">
     <div class="row">
-    <div class="col-6 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">
-      <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url('{{ include.testimonial.image }}')"></div>
-    </div>
-      <div class="col-lg-7">
+      {% if item.image %}
+        <div class="col-6 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url('{{ item.image }}')"></div>
+        </div>
+      {% endif %}
+      <div class="{% if item.image %}col-lg-7{% else %}col-12{% endif %}">
         <div class="testimonial lead">
         <blockquote class="pr-lg-5">
-          <p>“{{ include.testimonial.text }}”</p>
+          <p>“{{ item.text }}”</p>
           <footer class="mt-5">
             <div class="cite text-serif">
-              {{ include.testimonial.author }}
-              <div class="credentials font-italic">{{ include.testimonial.cite }}</div>
+              {{ item.author }}
+              <div class="credentials font-italic">{{ item.cite }}</div>
             </div>
           </footer>
         </blockquote>

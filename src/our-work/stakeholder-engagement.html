@@ -102,7 +102,7 @@ cta_buttons:
   - link: /our-work/capital-and-innovation
     link_label: See Capital & Innovation
 
-event_types:
+event_type_overviews:
   - title: Food Waste Summit
     description_html: >-
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum harum similique sed doloribus repudiandae impedit tempore voluptates velit unde voluptas temporibus, maiores cum deserunt reprehenderit voluptatibus necessitatibus inventore at.</p>
@@ -252,18 +252,18 @@ _subnav:
       </div>
     </div>
     {% include components/carousel.html
-      items=page.event_types
+      items=page.event_type_overviews
       layout="card"
       class="col-md-4"
       theme="lighter"
       interval="false"
       show-description="true"
-      editor-link="#event_types"
+      editor-link="#event_type_overviews"
     %}
   </div>
 </section>
 
-{% include sections/testimonial.html testimonial=page.testimonial editor-link="#testimonial" %}
+{% include sections/testimonial.html item=page.testimonial editor-link="#testimonial" %}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}
 
