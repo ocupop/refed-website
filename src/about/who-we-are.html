@@ -31,6 +31,11 @@ our_founder:
     label:
     url:
     alt:
+equity_and_inclusion:
+  title: Equity and Inclusion
+  description_html: >-
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente, quae nam in veniam repellat atque sed! Rem ratione libero repellat ipsum unde explicabo doloribus doloremque ducimus! Labore, minus reiciendis?</p>
+  featured_image: https://via.placeholder.com/1000   
 cta:
   title:
   label:
@@ -293,6 +298,11 @@ _assets:
   editor-link='#our_founder'
 %}
 
-
+{% include components/split.html
+  id='equity-and-inclusion'
+  item=page.equity_and_inclusion
+  editor-link='#equity_and_inclusion'
+  theme='light'
+%}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}

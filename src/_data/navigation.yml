@@ -33,6 +33,9 @@ primary_navigation:
             - label: Our History
               url: '/about/who-we-are/#our-history'
               alt:
+            - label: Equity and Inclusion
+              url: '/about/who-we-are/#equity-and-inclusion'
+              alt:    
         - label: Our Team
           url: /about/our-team/
           alt:
