@@ -82,8 +82,8 @@ primary_navigation:
             - label: Perks and Benefits
               url: '/about/careers#perks-and-benefits'
               alt:
-            - label: Operation Principles
-              url: '/about/careers#operation-principles'
+            - label: Working at ReFED
+              url: '/about/careers#working-at-refed'
     - label: Our Work
       url: /our-work/
       alt:
