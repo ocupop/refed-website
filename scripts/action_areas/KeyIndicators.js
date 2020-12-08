@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 import { formatMoney, toCamel, abbreviateNumber } from '../helpers'
-import { INDICATORS } from '../constants'
+import { INDICATOR_MAP } from '../constants'
 
 
 const KeyIndicators = ({ category }) => {
@@ -11,11 +11,12 @@ const KeyIndicators = ({ category }) => {
   const [keyIndicators, setKeyIndicators] = useState(false)
 
   const formatTotals = (totals) => {
-    console.log("Totals:", totals)
+
     const formattedTotals = totals.map(total => {
-      const label = INDICATORS[toCamel(total.indicator)]
+      const indicator = INDICATOR_MAP[toCamel(total.indicator)]
+      const { prefix, label } = indicator
       const formattedValue = abbreviateNumber(total.value)
-      return { label, formattedValue }
+      return { prefix, label, formattedValue }
     })
     return formattedTotals
   }
@@ -45,7 +46,7 @@ const KeyIndicators = ({ category }) => {
         {keyIndicators && keyIndicators.map(indicator => {
           return (
             <div className="col-12 col-sm-6 mb-4">
-              <span className="display-4 d-block">{indicator.formattedValue}</span>
+              <span className="display-4 d-block">{indicator.prefix}{indicator.formattedValue}</span>
               <h6>{indicator.label}</h6>
             </div>
           )
@@ -60,3 +61,5 @@ KeyIndicators.propTypes = {
 }
 
 export default KeyIndicators
+
+
