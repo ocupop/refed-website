@@ -1,14 +1,19 @@
 {% assign item = include.item %}
-<div class="testimonial-slide">
+<section>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto text-center">
+    <div class="row align-items-center">
+      {% if item.featured_image %}
+        <div class="col-12 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">
+          <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url('{{ item.featured_image }}')"></div>
+        </div>
+      {% endif %}
+      <div class="col-12 {% if item.featured_image %}col-lg-7 ml-lg-auto{% else %}col-lg-10 mx-lg-auto text-center{% endif %}">
         <blockquote
           data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
           data-cms-editor-link-style="modal"
           class="cms-editor-link">
           "{{ item.description_html }}"
-          <footer class="text-serif">
+          <footer class="text-serif mt-3">
             <div class='cite'>{{ item.title }}</div>
             <div class='credentials font-italic'>{{ item.cite }}</div>
           </footer>
@@ -16,4 +21,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

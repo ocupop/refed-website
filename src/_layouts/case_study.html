@@ -3,24 +3,25 @@ layout: default
 ---
 
 
-{% include sections/hero.html title=page.title image=page.featured_image %}
+{% include components/hero.html item=page %}
 
-{% include sections/split_section.html
-  image_width='50%'
-  image_alignment='right'
-  image_to_edge=true
-  text_to_edge=false
-  item=page
-  omit_url=true
-  subtitle='Overview'
-  title=' '
-  description=page.content
-  image=page.overview_image
-%}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <h3>Overview</h3>
+        {{ page.description_html }}
+      </div>
+      <div class="col-12 col-lg-6">
+        <img src="{{ page.overview_image }}" class="img-fluid" alt="{{ page.title }} image">
+      </div>
+    </div>
+  </div>
+</section>
 
 {% for testimonial in page.testimonials %}
   {% assign id = forloop.index | prepend:'testimonial-' %}
-  {% include sections/testimonial.html testimonial=testimonial id=id %}
+  {% include components/testimonial.html item=testimonial id=id %}
 {% endfor %}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}

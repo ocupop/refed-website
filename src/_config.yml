@@ -289,24 +289,14 @@ _array_structures:
       value:
         _type: carousel_logos
         logo:
-
-  carousel_testimonial:
-    - label: Carousel Testimonial
+  testimonials:
+    - label: Testimonial
       icon: format_quote
       value:
         title:
         description_html:
         cite:
-  testimonial:
-    - label: Testimonial
-      icon: format_quote
-      value:
-        text:
-        author:
-        cite:
-        image:
-        section_background_color:
-        image_alignment:
+        featured_image:
   logo_pile:
     - label: Logo Pile
       icon: view_module
@@ -370,11 +360,6 @@ _array_structures:
         link:
         link_label:
 
-  carousel_logo:
-    - label: Carousel Logo
-      icon: view_carousel
-      value:
-        logo:
   logo:
     - label: Logo
       icon: insert_photo

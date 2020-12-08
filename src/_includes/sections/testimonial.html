@@ -1,4 +1,5 @@
 {% assign item = include.item %}
+{% for item in item %}
 <section 
   class="testimonial bg-{{ item.section_background_color}} image-{{ item.image_alignment}}"
   id="{{ include.id }}"
@@ -14,10 +15,10 @@
       <div class="{% if item.image %}col-lg-7{% else %}col-12{% endif %}">
         <div class="testimonial lead">
         <blockquote class="pr-lg-5">
-          <p>“{{ item.text }}”</p>
+          <p>“{{ item.description_html }}”</p>
           <footer class="mt-5">
             <div class="cite text-serif">
-              {{ item.author }}
+              {{ item.title }}
               <div class="credentials font-italic">{{ item.cite }}</div>
             </div>
           </footer>
@@ -27,4 +28,4 @@
     </div>
   </div>
 </section>
-
+{% endfor %}
