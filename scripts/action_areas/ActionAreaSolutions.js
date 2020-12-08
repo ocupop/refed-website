@@ -44,7 +44,7 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
           <div className="row my-5">
             <div className="col-4 col-lg-1">
               <div className="bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0"
-                style={{ backgroundImage: `url(${image_url})` }}></div>
+                style={{ backgroundImage: `url(${image_url == 'TBD' ? '' : image_url})` }}></div>
             </div>
             <div className="col-lg-11">
               <h4>{name}</h4>
@@ -56,16 +56,6 @@ const ActionAreaSolutions = ({ category, modeled = false }) => {
                     <div className="key-indicators-box__label d-flex flex-column justify-content-center pr-4 pb-3 pb-sm-0">
                       <div className='stat-text m-0'>Key Indicators</div>
                     </div>
-                    {/* <div className="key-indicators-box__stat d-flex flex-column pl-4 pr-4 border-left pb-3 pb-sm-0">
-                      <span className="display-4 d-block lead">{formatIndicator('total-mtco2e-avoided')}</span>
-                      <span className="stat-text d-block">CO2e Reduction</span>
-                    </div> */}
-
-                    {/* <div className="key-indicators-box__stat d-flex flex-column pl-4 border-left pb-3 pb-sm-0">
-                      <span className="display-4 d-block lead">{formatMoney('us-dollars-cost')}</span>
-                      <span className="stat-text d-block">Investment Needed</span>
-                    </div> */}
-
                     <div className="d-flex flex-column px-4 border-left pb-3 pb-sm-0">
                       <span className="display-4 d-block lead">{formatMoney('us-dollars-financial-benefit')}</span>
                       <span className="stat-text d-block">Financial Benefit</span>
