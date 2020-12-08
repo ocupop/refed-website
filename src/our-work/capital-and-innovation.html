@@ -245,13 +245,6 @@ _subnav:
         </div>
       </div>
     </div>
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="editable">
-          <p><strong>[OCUPOP]: Can we get rid of this block since we do not intend to fill it</strong></p>
-        </div>
-      </div>
-    </div>
     {% for service in page.advisory_services %}
       <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#advisory_services" data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
@@ -357,7 +350,9 @@ _subnav:
         <div class="col-12 col-lg-6 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#convenings" data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
-          <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
+          {% if convening.link %}
+            <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
