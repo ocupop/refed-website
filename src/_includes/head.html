@@ -6,8 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include newrelic.html %}
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.meta[0].title %}{{ page.meta[0].title | escape }}{% else %}{{ page.title | default: site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.meta[0].description%}{{ page.meta[0].description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {% include socialshare.html %}
