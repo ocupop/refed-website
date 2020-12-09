@@ -37,7 +37,7 @@ collections:
     output: false
     sort_by: date
   newsletters:
-    output: true
+    output: false
   case_studies:
     output: true
   careers:
