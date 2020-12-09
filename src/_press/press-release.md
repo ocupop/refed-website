@@ -6,7 +6,7 @@ summary: >-
   solutions, and an interactive map that centralizes federal- and state-level
   food waste policy to assist advocates and policymakers.
 featured_image: /uploads/press/refedpolicyfinder.png
-link:
+categories:
 ---
 
 

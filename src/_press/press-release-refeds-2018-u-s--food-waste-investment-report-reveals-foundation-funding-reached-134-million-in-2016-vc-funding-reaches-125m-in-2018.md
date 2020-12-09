@@ -10,7 +10,7 @@ summary: >-
   philanthropic, public, and private food waste investment, including a Special
   Report on Foundation Funding.
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
-link:
+categories:
 ---
 
 Contact: Melody Serafino, media@refed.com

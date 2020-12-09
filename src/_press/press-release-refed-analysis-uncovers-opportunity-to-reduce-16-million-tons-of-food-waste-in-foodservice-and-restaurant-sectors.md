@@ -9,6 +9,7 @@ summary: >-
   restaurants, industry trade associations, and more than 60 expert contributors
   to create the Restaurant and Foodservice Food Waste Action Guides to support
   businesses in developing and implementing food waste solutions.
+categories:  
 ---
 
 
