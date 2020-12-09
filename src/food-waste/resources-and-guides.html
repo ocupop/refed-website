@@ -220,7 +220,9 @@ cta_insights_engine:
             <div class="card-img-top bg-image aspect-5x7 shadow" style="background-image: url({{ download.featured_image }})" alt="{{ download.title }} image"></div>
             <div class="card-body">
               <h4 class="card-title">{{ download.title }}</h4>
-              <a href="{{ download.document }}" class="btn btn-link download-link d-inline-block" target="_blank">Download</a>
+              {% for item in download.documents %}
+                <a href="{{ item.document }}" class="btn btn-link download-link d-inline-block" target="_blank">{{ item.label | default: 'Download' }}</a>
+              {% endfor %}
             </div>
           </div>
         </div>
