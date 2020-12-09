@@ -56,16 +56,13 @@ const Main = () => (
 
 ReactDOM.render(<Main />, document.getElementById("main"))
 
-//subnav toggle
-var element = document.getElementById('subnav-toggle');
-if (typeof (element) != 'undefined' && element != null) {
-  document.getElementById("subnav-toggle").addEventListener("click", toggleSubnav);
-}
+$('#subnav-toggle').on('click', function(){
+  $('#subnav').toggleClass('show-links');
+})
 
-function toggleSubnav() {
-  var element = document.getElementById("subnav");
-  element.classList.toggle("show-links");
-}
+$('#subnav .nav-link').on('click', function(){
+  $('#subnav').removeClass('show-links')
+})
 
 //subnav scroll trigger
 ScrollTrigger.create({

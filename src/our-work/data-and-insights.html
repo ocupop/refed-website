@@ -1,12 +1,25 @@
 ---
 layout: page
 title: Data & Insights
+meta:
+  title:
+  description:
+  image:
 hero:
   - title: Data & Insights
     label: Our Work
     description_html:
     image: /img/data_and_insights/dataandinsights_header_image.jpg
     links:
+cta_insights_engine:
+  label: Powered by the Insights Engine
+  title: ReFED Insights Engine
+  featured_image: /img/laptop-screen-fpo.jpg
+  summary:
+  link:
+    label: Launch ReFED Insights Engine
+    url: 'https://www.insights-engine-fpo.com/'
+    alt:
 case_studies:
 tools_and_guides:
   - title: Tool Title Here
@@ -84,15 +97,6 @@ cta_buttons:
     link_label: See Capital & Innovation
   - link: /our-work/stakeholder-engagement
     link_label: See Stakeholder Engagement
-cta_insights_engine:
-  label: Our Newest Innovation
-  title: ReFED Insights Engine
-  featured_image: /img/laptop-screen-fpo.jpg
-  summary:
-  link:
-    label: Launch ReFED Insights Engine
-    url: 'https://www.insights-engine-fpo.com/'
-    alt:
 _assets:
   - image: 'https://via.placeholder.com/768'
 ---
@@ -117,6 +121,8 @@ _assets:
   </div>
 </section>
 
+{% include components/cta_insights_engine.html item=page.cta_insights_engine editor-link="#cta_insights_engine" %}
+
 {% include components/carousel.html
   id='caseStudies'
   theme='lighter'
@@ -137,7 +143,7 @@ _assets:
     <div class="row align-items-center">
       <div class="col-lg-6">
         <h3 class="editable">
-          Moving form Awareness to Scalable Action
+          A New Pathway to Action
         </h3>
         <div class="editable">
           <p>The Insights Engine supports stakeholders across the food system in achieving the 2030 national goal of reducing food waste by 50% by:</p>
@@ -189,10 +195,7 @@ _assets:
   editor-link="#cta_resources_and_guides"
 %}
 
-{% include components/cta_insights_engine.html item=page.cta_insights_engine editor-link="#cta_insights_engine" %}
-
 {% include components/testimonial.html item=page.testimonial %}
-
 
 <section class="bg-light">
   <div class="container">

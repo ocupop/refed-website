@@ -1,6 +1,11 @@
 ---
 layout: page
 title: ReFED Careers
+meta:
+  title: Food Waste Organization - Food Waste Reduction - ReFED
+  description: >-
+    ReFED is a nonprofit food recycling & waste management organization in the US. We help businesses, nonprofits & investors put the most impactful solutions to reduce food waste into action.
+  image:
 hero:
   - title: Discover the difference and make your mark with us at ReFED
     label:
@@ -26,45 +31,20 @@ perks_and_benefits:
     icon_image: /img/icons/careers/careers_lifeinsurance.svg
   - title: Flexible work environment
     icon_image: /img/icons/careers/careers_workenvironment.svg
-operation_principles:
-  - title: We are guided by integrity
-    list_items:
-      - title: We ensure our work advances our mission
-      - title: We go where the facts take us
-      - title: We prioritize the team over individuals
-      - title: We make sure our work is reliable
-      - title: We work efficiently
-      - title: We hold ourselves accountable
-      - title: We use the newspaper test
-    icon_image: /img/icons/operating_principles/operatingprinciples_integrity.svg
-  - title: We make our teammates feel good
-    list_items:
-      - title: We are flexible
-      - title: We create space for true time off
-      - title: We keep things in perspective
-      - title: We make work fun
-    icon_image: /img/icons/operating_principles/operatingprinciples_team.svg
-  - title: We communicate clearly
-    list_items:
-      - title: We use shared and simple language
-      - title: We expect and respect everyones’ opinions
-      - title: We communicate directly
-    icon_image: /img/icons/operating_principles/operatingprinciples_communicate.svg
-  - title: We work smartly
-    list_items:
-      - title: We act intentionally
-      - title: We expect and respect everyones’ opinions
-      - title: We collaborate wisely
-      - title: We define and honor project roles
-    icon_image: /img/icons/operating_principles/operatingprinciples_worksmartly.svg
-  - title: We take inspiration from design thinking
-    list_items:
-      - title: We identify and empathize with all stakeholders we affect
-      - title: >-
-          We are agile: we iterate quickly, learn from our work, and use it to
-          improve next time- We collaborate wisely
-      - title: We believe in progress not perfection
-    icon_image: /img/icons/operating_principles/operatingprinciples_design.svg
+working_at_refed:
+  - title: We Take Inspiration From Design Thinking
+    description_html: >-
+      <p>We hire incredible people with a ‘can-do’ attitude that are hungry, passionate, and love new challenges. We embrace the idea that if we’re not continuously iterating and adapting — we are not evolving. Ultimately, “progress not perfection” is what we strive for by fostering a culture of innovation and continuous improvement.</p>
+    featured_image: 'https://via.placeholder.com/768'
+  - title: We Encourage Mutual Respect and Recognition
+    description_html: >-
+      <p>Respect is the hallmark of working at ReFED. We use the platinum rule: do unto others as they would have you do unto them. In doing so, we recognize that the best decisions are made when a diverse range of voices are heard and acknowledged. Hence, we aim to understand and apply our teammates’ expertise and experience, as well as actively seeking ways to help each other grow.</p>
+    featured_image: https://via.placeholder.com/768
+  - title: We Work as a Team and Lift Up Our Teammates
+    description_html: >-
+      <p>Above all, we thrive because we work as a team and celebrate success as a team.
+        That means we show up for each other, act with empathy, and bring our authentic selves to work every day. We empower our employees in a work environment that is flexible and conducive to creating space for true time off, and that fosters a sense of belonging, participation, and commitment among employees.</p>
+    featured_image: https://via.placeholder.com/768
 cta:
   title:
   label:
@@ -155,7 +135,7 @@ cta:
         <p class="editable">
           Our values ground our decision-making, root our actions in a shared purpose greater than ourselves, and are a cornerstone of our vision of a sustainable, resilient, and inclusive food system that preserves the well-being of our planet, our people, and our economy.
         </p>
-        <a href="/who-we-are#our-values" class="btn btn-link editable">See our values</a>
+        <a href="/about/who-we-are/#our-values" class="btn btn-link editable">See our values</a>
       </div>
     </div>
   </div>
@@ -204,28 +184,29 @@ cta:
   </div>
 </section>
 
-<section id="operation-principles">
+<section id="working-at-refed">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h3 class="mb-5 editable">
-          TODO: Replace section with new content<br />Working at ReFED
+          Working at ReFED
         </h3>
       </div>
     </div>
-    <div class="row">
-      {% for principle in page.operation_principles %}
-        <div data-cms-editor-link="cloudcannon:#operation_principles" data-cms-editor-link-style="modal" class="col-12 col-md-6 mb-5 cms-editor-link">
-          <img src="{{ principle.icon_image }}" class="img-fluid w-25 mb-4" alt="{{ principle.title }}" />
-          <h4 class="mb-3">{{ principle.title }}</h4>
-          <ul class="pl-3">
-            {% for item in principle.list_items %}
-              <li class="mb-3">{{ item.title }}</li>
-            {% endfor %}
-          </ul>
+    {% for item in page.working_at_refed %}
+    <div
+    data-cms-editor-link-style="modal"
+      data-cms-editor-link="cloudcannon:#working_at_refed"
+      class="row align-items-center cms-editor-link mb-5">
+        <div class="col-12 col-md-6 {% cycle 'order-lg-2', ''%}">
+          <h4 class="mb-3">{{ item.title }}</h4>
+          {{ item.description_html }}
         </div>
-      {% endfor %}
+        <div class="col-12 col-md-6">
+          <div class="bg-image aspect-16x9" style="background-image: url({{ item.featured_image }})"></div>
+        </div>
     </div>
+    {% endfor %}
   </div>
 </section>
 

@@ -16,6 +16,12 @@ insights_engine_url:  https://insights-engine.vercel.app
 insights_engine_description: ReFED Insights Engine is an online data center designed to serve as the next generation of data, insights, and guidance on U.S. food waste. With more granular data, more extensive analysis, more customized views, and the ability to be updated regularly, we see this tool as laying the foundation for action around our 2030 national goal to reduce food waste by 50 percent.
 insights_engine_api_baseurl: https://api.refed.com/v2
 
+socialshare:
+  featured_image: /img/socialshare.png
+  twitter:
+    username: "@refed"
+    image: /img/socialshare.png
+
 # Default Values
 default_cta: Learn More
 edit_cta: <i class="ri-edit-2-line"></i>
@@ -31,7 +37,7 @@ collections:
     output: false
     sort_by: date
   newsletters:
-    output: true
+    output: false
   case_studies:
     output: true
   careers:
@@ -135,6 +141,8 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/downloads"
+        document:
+          uploads_dir: "/downloads"  
 
   -
     scope:

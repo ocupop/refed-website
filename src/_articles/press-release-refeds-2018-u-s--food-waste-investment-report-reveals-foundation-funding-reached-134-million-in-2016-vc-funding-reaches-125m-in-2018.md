@@ -3,14 +3,20 @@ title: >-
   Press Release: ReFED’s 2018 U.S. Food Waste Investment Report Reveals
   Foundation Funding Reached $134 Million in 2016; VC Funding Reaches $125M in
   2018
+meta:
+  title:
+  description:
+  image:  
 item_date: 2018-11-13 00:00:00  
 summary: >-
   ReFED's 2018 U.S. Food Waste Investment Report details key trends in the
   capital and innovation landscape and highlights specific examples of
   philanthropic, public, and private food waste investment, including a Special
   Report on Foundation Funding.
+author:  
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
-link:
+categories:
+  - Press Release
 ---
 
 Contact: Melody Serafino, media@refed.com

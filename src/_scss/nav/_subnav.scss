@@ -4,32 +4,39 @@
   z-index: 999;
   width: 100%;
   padding: 5px 0;
-  &.fixed-top {
-    transform: translateY(-32px) !important;
-  }
-
-  .h4 {
-    margin-bottom: 0;
-    line-height: 1;
-    @include media-breakpoint-down(md) {
-      font-size: 1rem;
-    }
-  }
-  .subnav-wrapper {
-    display: flex;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
-  }
-  .subnav-heading {
-    white-space: nowrap;
-  }
+  min-height: 30px;
   @include media-breakpoint-up(lg) {
     padding: 1rem 0;
     position: relative;
     top: auto;
     left: auto;
-    &.fixed-top {
+  }
+
+  // .h4 {
+  //   margin-bottom: 0;
+  //   line-height: 1;
+  //   font-size: 12px;
+  //   @include media-breakpoint-down(lg) {
+  //     font-size: 0.9rem;
+  //   }
+  // }
+  .subnav-wrapper {
+    display: block;
+  }
+  .subnav-heading {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    line-height: 1;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+  
+  &.fixed-top {
+    transform: translateY(-32px) !important;
+    opacity: 1;
+    @include media-breakpoint-up(lg) {
       box-shadow: 0 0 5px rgba($black, 0.5);
       height: auto !important;
       transform: translateY(0) !important;
@@ -44,24 +51,24 @@
         font-size: 1rem;
       }
     }
+    #subnav-toggle {
+      opacity: 1;
+    }
   }
 
   .navbar {
-    padding: 2px;
+    padding: 0;
     width: 100%;
-    @include media-breakpoint-up(lg) {
-      padding: 0.5rem 0;
-    }
   }
   ul.nav {
     width: 100%;
+    flex-wrap: nowrap;
     @include transition(0.5s);
     @include media-breakpoint-down(lg) {
       flex-direction: column;
     }
     li.nav-item {
-      margin-right: 1.5rem;
-
+      margin-right: 10px;
       a.nav-link {
         padding: 0;
         font-weight: $font-weight-semibold;
@@ -80,6 +87,7 @@
           &.active {
             display: block;
           }
+          
         }
         @include media-breakpoint-down(md) {
           margin-top: 4px;
@@ -107,10 +115,11 @@
 #subnav-toggle {
   position: absolute;
   right: 7px;
-  top: -3px;
+  top: -4px;
   display: block;
   font-size: 30px;
   line-height: 1;
+  opacity: 0;
   @include transition(0.4s);
   @include media-breakpoint-up(xl) {
     display: none;

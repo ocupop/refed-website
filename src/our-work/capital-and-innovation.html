@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Capital and Innovation
+meta:
+  title:
+  description:
+  image:
 hero:
   - title: Capital and Innovation
     label: Our Work
@@ -10,16 +14,15 @@ hero:
 resources_and_tools:
   - title: Solutions Database
     description_html: >-
-      <p>Provides a stakeholder-specific, comprehensive analysis of 40+ food
-      waste reduction solutions based on impact goals, along with detailed fact
-      sheets on each.</p>
+      <p>A stakeholder-specific, comprehensive<br />cost-benefit analysis of 40+
+      food waste<br />reduction solutions based on impact<br />goals, plus
+      detailed fact sheets on each.</p>
     link: www.link.com
     link_label: See Solutions database
   - title: Solutions Provider Directory
     description_html: >-
-      <p>Connects with a vetted list of 700+ nonprofit and for-profit
-      organizations ready to help implement food waste reduction
-      initiatives.</p>
+      <p>A vetted list of 700+ nonprofit and for-profit organizations ready to
+      help implement food waste reduction initiatives.</p>
     link: www.link.com
     link_label: See Solution Provider Directory
   - title: Solution Fact Sheets
@@ -245,13 +248,6 @@ _subnav:
         </div>
       </div>
     </div>
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="editable">
-          <p><strong>[OCUPOP]: Can we get rid of this block since we do not intend to fill it</strong></p>
-        </div>
-      </div>
-    </div>
     {% for service in page.advisory_services %}
       <div class="row align-items-center mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#advisory_services" data-cms-editor-link-style="modal">
         <div class="col-12 col-lg-4">
@@ -357,7 +353,9 @@ _subnav:
         <div class="col-12 col-lg-6 mb-5 cms-editor-link" data-cms-editor-link="cloudcannon:#convenings" data-cms-editor-link-style="modal">
           <h4>{{ convening.title }}</h4>
           {{ convening.description_html }}
-          <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
+          {% if convening.link %}
+            <a href="{{ convening.link }}" class="btn btn-link">{{ convening.link_label | default: 'Learn More'}}</a>
+          {% endif %}
         </div>
       {% endfor %}
     </div>

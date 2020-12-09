@@ -1,12 +1,19 @@
 ---
 title: 'ReFED Newsletter: September 2017'
+meta:
+  title:
+  description:
+  image:
 item_date: 2017-09-12 00:00:00
 summary: >-
   This summer has been an exciting time of growth and progress, both for ReFED
   and in the effort to reduce wasted food at scale. We have developed new
   programs around food business engagement, capital and innovation, and are
   growing our team.
+author:  
 featured_image: /uploads/newsletters/bg-wheat.jpg  
+categories:
+  - Newsletter
 ---
 
 

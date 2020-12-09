@@ -1,9 +1,9 @@
 {% assign item = include.item %}
-<section>
+<section class="{% unless item.featured_image %}bg-testimonial{% endunless %}">
   <div class="container">
     <div class="row align-items-center">
       {% if item.featured_image %}
-        <div class="col-12 col-lg-3 mb-5 mb-lg-0 mx-lg-auto">
+        <div class="col-12 col-lg-3 mb-5 mb-lg-0 mx-lg-auto {% if include.reverse %}order-2{% endif %}">
           <div class="bg-image aspect-1x1 rounded-circle" style="background-image:url('{{ item.featured_image }}')"></div>
         </div>
       {% endif %}
