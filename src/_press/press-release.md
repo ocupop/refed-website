@@ -7,6 +7,7 @@ summary: >-
   food waste policy to assist advocates and policymakers.
 featured_image: /uploads/press/refedpolicyfinder.png
 categories:
+  - Press Release
 ---
 
 

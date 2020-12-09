@@ -5,7 +5,8 @@ summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
   waste.
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
-link:  
+categories:
+  - Newsletter 
 ---
 
 Hello Fellow Food Waste Fighters,<br><br>Welcome to the first of ReFED’s quarterly Capital & Innovation newsletters!<br><br>There’s a lot going on in the fight against food waste. It’s our mission to keep you up to speed on all the latest developments within the ecosystem.<br><br>What you can expect from these newsletters: the latest happenings at ReFED, opportunities for capital providers and innovators to get involved, important news from the field, and more.<br><br>As a member of our community, your input is incredibly valuable. This newsletter is a work in progress so if you have any suggestions, feedback, or news you’d like highlighted in the future, don’t hesitate to reach out.<br><br>Keep up the good fight!<br><br>Alexandria Coari, Capital & Innovation Director<br>&nbsp;

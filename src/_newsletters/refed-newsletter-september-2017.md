@@ -7,6 +7,8 @@ summary: >-
   programs around food business engagement, capital and innovation, and are
   growing our team.
 featured_image: /uploads/newsletters/bg-wheat.jpg  
+categories:
+  - Newsletter
 ---
 
 

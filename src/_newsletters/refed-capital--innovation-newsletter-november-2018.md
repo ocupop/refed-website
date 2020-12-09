@@ -5,7 +5,8 @@ summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
   waste.
 featured_image: /uploads/newsletters/innovator-infographic-05-1.jpg  
-link:
+categories:
+  - Newsletter
 ---
 
   # Updates From ReFED

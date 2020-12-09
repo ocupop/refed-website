@@ -11,6 +11,7 @@ summary: >-
   Report on Foundation Funding.
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 categories:
+  - Press Release
 ---
 
 Contact: Melody Serafino, media@refed.com
