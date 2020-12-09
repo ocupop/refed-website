@@ -58,47 +58,4 @@
       </div>
     </div>
   </div>
-
-  {% for solution in active_area.solutions %}
-  <div class="row my-3">
-    <div class="col-4 col-lg-1">
-      <i class="icon icon-sm sticky"></i>
-    </div>
-    <div class="col-lg-11">
-      <h6 class="editable global-editor-link">Modeled Solution</h6>
-      <h4 data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].label" data-cms-editor-link-style="modal" class="cms-editor-link">
-        {{ solution.label }}
-      </h4>
-      <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].definition" data-cms-editor-link-style="modal" class="cms-editor-link">
-        {{ solution.definition }}
-      </p>
-      <div class="row">
-        <div class="col-md-auto">
-          <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed" data-cms-editor-link-style="modal" class="display-4 cms-editor-link">
-            ${{ solution.investment_needed | default: '0' }}
-          </div>
-        </div>
-        <div class="col">
-          <h4 class="editable global-editor-link">Investment Needed</h4>
-          <p data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].investment_needed_summary" data-cms-editor-link-style="modal" class="cms-editor-link">
-            {{ solution.investment_needed_summary }}
-          </p>
-        </div>
-      </div>
-
-      <h6 class="mt-3 editable global-editor-link">Innovation Opportunities</h6>
-      <div data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions[{{forloop.index0}}].innovation_opportunities_html" data-cms-editor-link-style="modal" class="cms-editor-link">
-        {{ solution.innovation_opportunities_html }}
-      </div>
-      <div class="mt-5">
-        <a href="{{ site.insights_engine_url }}/solution-database/{{ solution.slug }}" class="btn btn-link mr-4">See
-          Solution Factsheet</a>
-        <a href="{{ site.insights_engine_url }}/solution-database/" class="btn btn-link">See Solution Provider
-          Database</a>
-      </div>
-    </div>
-  </div>
-  {% unless forloop.last %}
-  <hr />{% endunless %}
-  {% endfor %}
 </div>

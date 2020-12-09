@@ -4,11 +4,16 @@ import HelloWorld from './HelloWorld'
 import ActionAreaSolutions from './action_areas/ActionAreaSolutions'
 import KeyIndicators from './action_areas/KeyIndicators'
 import TopSolutions from './stakeholders/TopSolutions'
+import ModeledSolutions from './stakeholders/ModeledSolutions'
+import SolutionGroup from './stakeholders/SolutionGroup'
+import Test from './Test'
+import CategorySolutions from './action_areas/CategorySolutions'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { InsightsEngineProvider } from './context'
 
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
@@ -18,20 +23,38 @@ const COMPONENTS = {
   ActionAreaSolutions,
   KeyIndicators,
   TopSolutions,
+  ModeledSolutions,
+  SolutionGroup,
+  Test,
+  CategorySolutions,
   // Causes,
 }
 
-function renderComponentInElement(el) {
-  var Component = COMPONENTS[el.dataset.component];
-  if (!Component) return;
+const portals = []
+
+function buildPortal(el) {
+  var Component = COMPONENTS[el.dataset.component]
+  if (!Component) return
   // get props from elements data attribute, like the post_id
-  const props = Object.assign({}, el.dataset);
-  ReactDOM.render(<Component {...props} />, el);
+  const props = Object.assign({}, el.dataset)
+  return ReactDOM.createPortal(<Component {...props} />, el)
 }
+
 
 document
   .querySelectorAll('.__react-component')
-  .forEach(renderComponentInElement)
+  .forEach((el) => {
+    const portal = buildPortal(el)
+    portals.push(portal)
+  })
+
+const Main = () => (
+  <InsightsEngineProvider>
+    {portals.map(portal => portal)}
+  </InsightsEngineProvider>
+)
+
+ReactDOM.render(<Main />, document.getElementById("main"))
 
 //subnav toggle
 var element = document.getElementById('subnav-toggle');

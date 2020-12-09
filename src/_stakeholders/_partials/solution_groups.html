@@ -41,6 +41,15 @@
             {% for area in category.areas %}
               {% assign active_area = group.action_areas[area.slug] %}
 
+              <!-- <div
+                class="__react-component"
+                data-component="SolutionGroup"
+                data-category='{{ area.slug }}'
+                data-slugs='{{ active_area.solutions | join: "," }}'>
+              </div> -->
+
+
+              {% comment %}
               {% if page.uid == 'capital-providers' %}
                 {% include_relative _partials/capital_providers_details.html %}
               {% else %}
@@ -65,6 +74,7 @@
                   </div>
                 </div>
               {% endif %}
+              {% endcomment %}
 
             {% endfor %}
           {% endfor %}

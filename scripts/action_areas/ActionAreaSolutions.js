@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
-import { formatMoney } from '../helpers'
+// import { formatMoney } from '../helpers'
+import { formatMoney, toCamel, abbreviateNumber } from '../helpers'
+import { INDICATOR_MAP, SOLUTIONS_ENDPOINT } from '../constants'
 
-const SOLUTIONS_URL = 'https://api.refed.com/v2/solution_database/solutions'
 
 const ActionAreaSolutions = ({ category, modeled = false }) => {
   const [solutions, setSolutions] = useState(false)
 
   useEffect(() => {
-    axios.get(`${SOLUTIONS_URL}/?category=${category}`)
+    axios.get(`${SOLUTIONS_ENDPOINT}/?category=${category}`)
       .then(({ data: { data } }) => {
         const filteredSolutions = modeled
           ? data.filter(solution => solution.attributes.include_in_model)
