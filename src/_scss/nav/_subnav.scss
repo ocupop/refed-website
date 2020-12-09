@@ -19,8 +19,8 @@
     margin-bottom: 0;
     line-height: 1;
     font-size: 12px;
-    @include media-breakpoint-down(md) {
-      font-size: 1rem;
+    @include media-breakpoint-down(lg) {
+      font-size: 0.9rem;
     }
   }
   .subnav-wrapper {
@@ -28,6 +28,8 @@
   }
   .subnav-heading {
     white-space: nowrap;
+    font-size: 0.9rem;
+    line-height: 1;
   }
   
   &.fixed-top {
@@ -114,6 +116,9 @@
   font-size: 30px;
   line-height: 1;
   @include transition(0.4s);
+  @include media-breakpoint-up(lg) {
+    top: 1px;
+  }
   @include media-breakpoint-up(xl) {
     display: none;
   }
