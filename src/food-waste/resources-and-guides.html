@@ -217,7 +217,7 @@ cta_insights_engine:
           data-cms-editor-link-style="modal" 
           class="col mb-5 cms-editor-link">
           <div class="card">
-            <img class="card-img-top img-fluid shadow" src="{{ download.featured_image }}" alt="{{ download.title }} image" />
+            <div class="card-img-top bg-image aspect-5x7 shadow" style="background-image: url({{ download.featured_image }})" alt="{{ download.title }} image"></div>
             <div class="card-body">
               <h4 class="card-title">{{ download.title }}</h4>
               <a href="{{ download.document }}" class="btn btn-link download-link d-inline-block" target="_blank">Download</a>
