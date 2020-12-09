@@ -1,4 +1,4 @@
-<meta property="og:title" content="{{ page.title | default: site.title }}" />
+<meta property="og:title" content="{% if page.meta.title %}{{ page.meta.title }}{% else %}{{ page.title | default: site.title }}{% endif %}" />
 <meta property="og:description" content="{{ page.meta.description | default: site.description }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
