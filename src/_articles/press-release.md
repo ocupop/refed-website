@@ -5,6 +5,7 @@ summary: >-
   Today, ReFED unveiled two new tools: a database of innovative food waste
   solutions, and an interactive map that centralizes federal- and state-level
   food waste policy to assist advocates and policymakers.
+author:  
 featured_image: /uploads/press/refedpolicyfinder.png
 categories:
   - Press Release

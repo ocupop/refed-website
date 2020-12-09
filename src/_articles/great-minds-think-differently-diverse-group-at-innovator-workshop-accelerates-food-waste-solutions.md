@@ -7,7 +7,8 @@ summary: >-
   convened food waste innovators, food businesses, funders, and policymakers to
   shape the future of food waste solutions provision.
 author:  
-featured_image: /uploads/articles/article1.jpg  
+featured_image: /uploads/articles/article1.jpg
+categories:
 ---
 
 By Emily Gousen

@@ -5,6 +5,7 @@ summary: "ReFED recently caught up with Caue Suplicy, Founder and CEO of Barnana
 author:
 featured_image: /uploads/articles/snacks-organic-gingersnap-banana-brittle-1.jpg
 photo_credit: www.barnana.com
+categories:
 ---
 
 

@@ -3,12 +3,13 @@ title: >-
   Press Release: ReFED Analysis Uncovers Opportunity to Reduce 16 Million Tons
   of  Food Waste in Foodservice and Restaurant Sectors
 item_date: 2018-02-06 00:00:00
-featured_image: /uploads/press/post-restaurant-1.jpg
 summary: >-
   ReFED collaborated with the four largest foodservice providers, major
   restaurants, industry trade associations, and more than 60 expert contributors
   to create the Restaurant and Foodservice Food Waste Action Guides to support
   businesses in developing and implementing food waste solutions.
+featured_image: /uploads/press/post-restaurant-1.jpg
+author:  
 categories:
   - Press Release
 ---

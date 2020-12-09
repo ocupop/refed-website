@@ -4,6 +4,7 @@ item_date: 2017-04-30 00:00:00
 summary: 'ReFED recently connected with Dan Kurzrock, Co-Founder and Executive Grain Officer at ReGrained, to learn about what it takes to make tasty food from beer waste.'
 author:
 featured_image: /uploads/articles/Both-Bars-2.jpg
+categories:
 ---
 
 

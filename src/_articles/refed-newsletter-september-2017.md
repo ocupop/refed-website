@@ -6,6 +6,7 @@ summary: >-
   and in the effort to reduce wasted food at scale. We have developed new
   programs around food business engagement, capital and innovation, and are
   growing our team.
+author:  
 featured_image: /uploads/newsletters/bg-wheat.jpg  
 categories:
   - Newsletter

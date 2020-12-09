@@ -4,6 +4,7 @@ item_date: 2017-04-26 12:00:00
 summary: 'This post was written by Janet Reynolds of FoodFutureCo. Janet Reynolds is FoodFutureCo’s fellow and a co-founder of Waste for Good, a social enterprise building hyper-local networks to connect sustainably-minded food providers to a hub in the community, where food waste is converted into clean energy.'
 author:
 featured_image: /uploads/articles/GI_Market_food_waste.jpg
+categories:
 ---
 
 This post was written by Janet Reynolds of [FoodFutureCo](http://www.foodfuture.co/). Janet Reynolds is FoodFutureCo’s fellow and a co-founder of [Waste for Good](http://www.wasteforgood.com/), a social enterprise building hyper-local networks to connect sustainably-minded food providers to a hub in the community, where food waste is converted into clean energy.

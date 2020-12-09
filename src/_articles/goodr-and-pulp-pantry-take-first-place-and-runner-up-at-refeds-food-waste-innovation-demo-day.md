@@ -8,6 +8,7 @@ summary: >-
   of Food Waste Investment Report
 author:
 featured_image: /uploads/articles/blog1.jpg
+categories:
 ---
 
 By Alexandria Coari

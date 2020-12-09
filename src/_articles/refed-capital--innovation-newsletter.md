@@ -4,6 +4,7 @@ item_date: 2018-08-03 00:00:00
 summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
   waste.
+author:  
 featured_image: /uploads/ReFED_Logo_Horizontal_Horizontal.jpg
 categories:
   - Newsletter 
