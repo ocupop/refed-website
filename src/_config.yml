@@ -141,6 +141,8 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "/downloads"
+        document:
+          uploads_dir: "/downloads"  
 
   -
     scope:
