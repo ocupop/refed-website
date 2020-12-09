@@ -2,6 +2,10 @@
 title: >-
   Goodr and Pulp Pantry Take First Place and Runner Up at ReFED's Food Waste
   Innovation Demo Day
+meta:
+  title:
+  description:
+  image:  
 item_date: 2018-11-09 00:00:00  
 summary: >-
   ReFED Hosts First Food Waste Innovation Demo Day at SOCAP, Announces Release

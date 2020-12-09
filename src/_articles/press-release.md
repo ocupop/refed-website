@@ -1,5 +1,9 @@
 ---
 title: 'Press Release: New ReFED Innovation and Policy Tools'
+meta:
+  title:
+  description:
+  image:
 item_date: 2017-04-17 11:00:00
 summary: >-
   Today, ReFED unveiled two new tools: a database of innovative food waste

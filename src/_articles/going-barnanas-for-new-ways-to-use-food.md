@@ -1,5 +1,9 @@
 ---
 title: Going Barnanas for new ways to use food
+meta:
+  title:
+  description:
+  image:
 item_date: 2017-04-17 00:01:00
 summary: "ReFED recently caught up with Caue Suplicy, Founder and CEO of Barnana, to learn what its like being a pioneer in the 'edible upcycling' industry."
 author:

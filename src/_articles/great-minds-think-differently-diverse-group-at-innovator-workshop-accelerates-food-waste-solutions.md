@@ -1,6 +1,10 @@
 ---
 title: >-
   Great Minds Think Differently: Diverse group at Innovator Workshop accelerates food waste solutions
+meta:
+  title:
+  description:
+  image:  
 item_date: 2018-07-31 00:00:00  
 summary: >-
   Our takeaways from the U.S. Food Waste Summit Innovator Workshop, which

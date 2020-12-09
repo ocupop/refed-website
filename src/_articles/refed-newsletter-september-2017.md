@@ -1,5 +1,9 @@
 ---
 title: 'ReFED Newsletter: September 2017'
+meta:
+  title:
+  description:
+  image:
 item_date: 2017-09-12 00:00:00
 summary: >-
   This summer has been an exciting time of growth and progress, both for ReFED

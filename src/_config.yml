@@ -172,13 +172,6 @@ plugins:
   - jekyll-contentblocks
 
 _array_structures:
-  meta:
-    label: Meta Data
-    icon: share
-    value:
-      title:
-      description:
-      image: 
   links:
     - label: Links
       icon: link

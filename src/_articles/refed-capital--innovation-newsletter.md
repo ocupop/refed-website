@@ -1,5 +1,9 @@
 ---
 title: 'ReFED Capital & Innovation Newsletter: August 2018'
+meta:
+  title:
+  description:
+  image:
 item_date: 2018-08-03 00:00:00
 summary: >-
   ReFED's quarterly update on the entrepreneurs and investors fighting food
