@@ -1,28 +1,3 @@
----
-layout: default
-_subnav:
-  - label: Modeled Solutions
-    _slug: modeled_solutions
-  - label: New & Emerging Solutions
-    _slug: new_and_emerging_solutions
-  - label: Best Practices
-    _slug: best_practices
-  - label: Levers
-    _slug: levers
-
-cta:
-  title:
-  label:
-  description_html: >-
-    <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
-  link:
-    label: See All Solutions
-    url: /food-waste-solutions
-    alt:
-  theme: lighter
-  add_divider: right
----
-
 <!-- Hero -->
 {% include components/hero.html item=page.hero %}
 
@@ -37,10 +12,7 @@ cta:
           </div>
           <div class="col">
             <h6 class="mb-0">Action Area</h6>
-            <h2
-              data-cms-editor-link="cloudcannon:#title"
-              data-cms-editor-link-style="modal"
-              class="cms-editor-link">
+            <h2 data-cms-editor-link="cloudcannon:#title" data-cms-editor-link-style="modal" class="cms-editor-link">
               {{ page.title }}
             </h2>
           </div>
@@ -48,10 +20,7 @@ cta:
         <div class="row mt-5">
           <div class="col-12">
             <h6 class="editable global-editor-link">Summary</h6>
-            <div
-              data-cms-editor-link="cloudcannon:#description_html"
-              data-cms-editor-link-style="modal"
-              class="cms-editor-link">
+            <div data-cms-editor-link="cloudcannon:#description_html" data-cms-editor-link-style="modal" class="cms-editor-link">
               {{ page.description_html }}
             </div>
           </div>
