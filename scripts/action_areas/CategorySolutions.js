@@ -13,6 +13,7 @@ const CategorySolutions = ({ category, modeled_solutions_summary }) => {
                 data-cms-editor-link="cloudcannon:#modeled_solutions"
                 data-cms-editor-link-style="modal"
                 className="cms-editor-link">
+
                 {modeled_solutions_summary}
               </p>
             </div>
