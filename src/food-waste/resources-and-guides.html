@@ -239,7 +239,7 @@ cta_insights_engine:
                 {{ download.description_html }}
               {% endif %}
               {% for item in download.documents %}
-                <a href="{{ item.document }}" class="btn btn-link download-link d-inline-block" target="_blank">{{ item.label | default: 'Download' }}</a>
+                <a href="{{ item.document }}" class="btn btn-link download-link d-inline-block mb-2" target="_blank">{{ item.label | default: 'Download' }}</a>
               {% endfor %}
             </div>
           </div>
