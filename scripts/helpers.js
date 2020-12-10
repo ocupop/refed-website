@@ -1,3 +1,5 @@
+import { INDICATOR_MAP } from './constants'
+
 export const formatMoney = (amount, currency = '$', decimalCount = 0, decimal = '.', thousands = ',') => {
   try {
     decimalCount = Math.abs(decimalCount)
@@ -54,4 +56,28 @@ export const abbreviateNumber = (num, fixed) => {
     d = c < 0 ? c : Math.abs(c), // enforce -0 is 0
     e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power
   return e;
+}
+
+export const convertArrayToObject = (array, key) => {
+  const initialValue = {};
+  return array.reduce((obj, item) => {
+    return {
+      ...obj,
+      [item[key]]: item,
+    }
+  }, initialValue)
+}
+
+export const formatTotals = (totals) => {
+
+  const formattedTotals = totals.map(total => {
+    const key = toCamel(total.indicator)
+    const indicator = INDICATOR_MAP[key]
+    const { prefix, label, show } = indicator
+    const formattedValue = abbreviateNumber(total.value)
+
+    return { key, show, prefix, label, formattedValue }
+  })
+
+  return convertArrayToObject(formattedTotals, 'key')
 }

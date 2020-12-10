@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
-import ActionAreaSolutions from './action_areas/ActionAreaSolutions'
-import KeyIndicators from './action_areas/KeyIndicators'
+import KeyIndicators from './KeyIndicators'
 import TopSolutions from './stakeholders/TopSolutions'
 import ModeledSolutions from './stakeholders/ModeledSolutions'
 import SolutionGroup from './stakeholders/SolutionGroup'
 import Test from './Test'
-import CategorySolutions from './action_areas/CategorySolutions'
+import CategorySolutions from './CategorySolutions'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
@@ -20,7 +19,6 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const COMPONENTS = {
   HelloWorld,
-  ActionAreaSolutions,
   KeyIndicators,
   TopSolutions,
   ModeledSolutions,
@@ -29,6 +27,18 @@ const COMPONENTS = {
   CategorySolutions,
   // Causes,
 }
+
+// function renderAppInElement(el) {
+//   const Component = COMPONENTS[el.dataset.component]
+//   if (!Component) return
+//   // get props from elements data attribute, like the post_id
+//   const props = Object.assign({}, el.dataset);
+//   ReactDOM.render(<InsightsEngineProvider><Component {...props} /></InsightsEngineProvider>, el);
+// }
+
+// document
+//   .querySelectorAll('.__react-app')
+//   .forEach(renderAppInElement)
 
 const portals = []
 
@@ -56,11 +66,11 @@ const Main = () => (
 
 ReactDOM.render(<Main />, document.getElementById("main"))
 
-$('#subnav-toggle').on('click', function(){
+$('#subnav-toggle').on('click', function () {
   $('#subnav').toggleClass('show-links');
 })
 
-$('#subnav .nav-link').on('click', function(){
+$('#subnav .nav-link').on('click', function () {
   $('#subnav').removeClass('show-links')
 })
 

@@ -8,6 +8,7 @@ const Test = () => {
   return (
     <div>
       <h5>Indicator: {state.indicator}</h5>
+      <p>Category: {state.category}</p>
     </div>
   )
 }

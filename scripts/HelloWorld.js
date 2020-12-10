@@ -7,7 +7,7 @@ const HelloWorld = ({ category }) => {
 
   return (
     <>
-      <h5>Solutions: {state.allSolutions.data.length}</h5>
+      {/* <h5>Solutions: {state.allSolutions.data.length}</h5> */}
       <p><strong>Category: {category}</strong></p>
       <p><strong>Indicator: {state.indicator}</strong></p>
       <button className="btn btn-primary" onClick={() => setIndicator('another')}>Click</button>

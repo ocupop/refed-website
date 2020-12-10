@@ -2,38 +2,47 @@ export const SOLUTIONS_ENDPOINT = 'https://api.refed.com/v2/solution_database/so
 
 export const INDICATOR_MAP = {
   usDollarsProfit: {
-    label: "Potential Profit",
+    show: true,
+    label: "Net Financial Benefit",
     prefix: "$"
   },
   usDollarsCost: {
+    show: true,
     label: "Investment Needed",
     prefix: "$"
   },
   usDollarsFinancialBenefit: {
+    show: false,
     label: "Financial Benefit",
     prefix: "$"
   },
   tonsDiverted: {
-    label: "Tons Diverted",
+    show: true,
+    label: "Food Waste Tons Diverted",
     prefix: ""
   },
   totalMtco2eAvoided: {
-    label: "CO2e Reduction",
+    show: true,
+    label: "MT CO2e Reduction",
     prefix: ""
   },
   gallonsWaterSaved: {
+    show: true,
     label: "Gallons Water Saved",
     prefix: ""
   },
   mealEquivalentDiverted: {
+    show: false,
     label: "Meals Diverted",
     prefix: ""
   },
   mealsRecovered: {
-    label: "Meals Recovered",
+    show: true,
+    label: "Meals Saved",
     prefix: ""
   },
   jobsCreated: {
+    show: false,
     label: "Jobs Created",
     prefix: ""
   },
