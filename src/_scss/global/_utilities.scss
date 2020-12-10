@@ -70,6 +70,11 @@
     z-index: 0;
     object-fit: cover;
   }
+
+  // utilities for when not wanting background-position: center center
+  &.bg-top-left {
+    background-position: top left;
+  }
 }
 
 .bg-placeholder {
