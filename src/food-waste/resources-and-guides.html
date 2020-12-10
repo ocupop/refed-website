@@ -71,6 +71,7 @@ food_waste_tools:
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
     link_label: Learn More
     link: '#'
+downloads:    
 partner_resources:
   - title: Save the Food
     description_html: >-
@@ -229,7 +230,7 @@ cta_insights_engine:
 <section>
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      {% for download in site.downloads %}
+      {% for download in page.downloads %}
         <div data-cms-editor-link="cloudcannon:collections/_downloads" data-cms-editor-link-style="modal" class="col mb-5 cms-editor-link">
           <div class="card">
             <div class="card-img-top bg-image aspect-4x3 bg-top-left bg-transparent" style="background-image: url({{ download.featured_image }})" alt="{{ download.title }} image"></div>
