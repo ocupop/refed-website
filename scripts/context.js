@@ -44,10 +44,9 @@ const InsightsEngineProvider = ({ children }) => {
 
   useEffect(() => {
     if (state.category) {
-      console.log("getting category solutions")
+      // console.log("getting category solutions")
       axios.get(`${SOLUTIONS_ENDPOINT}/?category=${state.category}`)
         .then(({ data: response }) => {
-          console.log(response.meta.total.attributes.data)
           const categoryTotals = formatTotals(response.meta.total.attributes.data)
           setState({ ...state, filteredSolutions: response, categoryTotals: categoryTotals })
         })
@@ -55,9 +54,9 @@ const InsightsEngineProvider = ({ children }) => {
     }
   }, [state.category])
 
-  useEffect(() => {
-    console.log("STATE:", state)
-  }, [state])
+  // useEffect(() => {
+  //   console.log("STATE:", state)
+  // }, [state])
 
   return (
     <InsightsEngineContext.Provider value={{ state, setIndicator, setCategory }}>

@@ -11,7 +11,6 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
   const emergingSolutions = filteredSolutions ? filteredSolutions.data.filter(solution => !solution.attributes.include_in_model) : false
 
   useEffect(() => {
-    console.log("Cat:", category)
     if (category) {
       setCategory(category)
     }
