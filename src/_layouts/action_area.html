@@ -22,6 +22,19 @@ cta:
   theme: lighter
   add_divider: right
 ---
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="__react-component" data-component="HelloWorld" data-category="{{ page.title | slugify }}"></div>
+        <hr>
+        <div class="__react-component" data-component="Test"></div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
 <!-- Hero -->
 {% include components/hero.html item=page.hero %}
 
@@ -60,9 +73,12 @@ cta:
 <!-- START: page sub navigation -->
 {% include nav/subnav.html items=layout._subnav label=page.title %}
 
-{% include_relative _partials/modeled_solutions.html %}
-
-{% include_relative _partials/new_and_emerging_solutions.html %}
+<div
+  class="__react-component"
+  data-component="CategorySolutions"
+  data-category="{{ page.title | slugify }}"
+  data-modeled_solutions_summary="{{ page.modeled_solutions.summary }}"
+  data-new_and_emerging_solutions_summary="{{ page.new_and_emerging_solutions.summary }}"></div>
 
 {% include_relative _partials/best_practices.html %}
 

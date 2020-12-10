@@ -1,3 +1,5 @@
+import { INDICATOR_MAP } from './constants'
+
 export const formatMoney = (amount, currency = '$', decimalCount = 0, decimal = '.', thousands = ',') => {
   try {
     decimalCount = Math.abs(decimalCount)
@@ -40,26 +42,9 @@ export const getIndicatorValue = (data, indicator) => {
   return data.find(metric => metric.indicator == indicator).value
 }
 
-// export const abbreviateNumber = (value) => {
-//   let newValue = value
-
-//   if (value >= 1000) {
-//     var suffixes = ["", "k", "m", "b", "t"]
-//     var suffixNum = Math.floor(("" + value).length / 3)
-//     console.log(suffixNum)
-//     var shortValue = ''
-
-//     for (var precision = 2; precision >= 1; precision--) {
-//       shortValue = parseFloat((suffixNum != 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(precision))
-//       var dotLessShortValue = (shortValue + '').replace(/[^a-zA-Z 0-9]+/g, '')
-//       if (dotLessShortValue.length <= 2) { break }
-//     }
-
-//     if (shortValue % 1 != 0) shortValue = shortValue.toFixed(1)
-//     newValue = shortValue + suffixes[suffixNum]
-//   }
-//   return '3M'
-// }
+export const liquidToJSON = (liquidString) => {
+  return JSON.parse(liquidString.replace(/=>/g, ': ').replace(/(\s)nil(\s|,)/g, '"nil",').replace(/Liquid::ImageDrop/g, '"Liquid::ImageDrop"').replace(/\}(|\s+){/g, '},{'));
+}
 
 export const abbreviateNumber = (num, fixed) => {
   if (num === null) { return null; } // terminate early
@@ -71,4 +56,28 @@ export const abbreviateNumber = (num, fixed) => {
     d = c < 0 ? c : Math.abs(c), // enforce -0 is 0
     e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power
   return e;
+}
+
+export const convertArrayToObject = (array, key) => {
+  const initialValue = {};
+  return array.reduce((obj, item) => {
+    return {
+      ...obj,
+      [item[key]]: item,
+    }
+  }, initialValue)
+}
+
+export const formatTotals = (totals) => {
+
+  const formattedTotals = totals.map(total => {
+    const key = toCamel(total.indicator)
+    const indicator = INDICATOR_MAP[key]
+    const { prefix, label, show } = indicator
+    const formattedValue = abbreviateNumber(total.value)
+
+    return { key, show, prefix, label, formattedValue }
+  })
+
+  return convertArrayToObject(formattedTotals, 'key')
 }

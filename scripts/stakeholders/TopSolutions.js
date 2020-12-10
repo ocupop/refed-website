@@ -18,7 +18,7 @@ const TopSolutions = ({ stakeholder }) => {
             return {
               name,
               definition,
-              data
+              data,
             }
           })
         console.log(sortBy({ solutions, indicator }).slice(0, 5))
