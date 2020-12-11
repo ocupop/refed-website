@@ -9,12 +9,13 @@ _subnav:
     _slug: best_practices
   - label: Levers
     _slug: levers
-
 cta:
   title:
   label:
   description_html: >-
-    <p>ReFED offers a range of solutions for organizations to advance their own food waste initiatives. Our interactive tools, reports and strategic solutions can help your team get started.</p>
+    <p>ReFED offers a range of solutions for organizations to advance their own
+    food waste initiatives. Our interactive tools, reports and strategic
+    solutions can help your team get started.</p>
   link:
     label: See All Solutions
     url: /food-waste-solutions
@@ -22,17 +23,18 @@ cta:
   theme: lighter
   add_divider: right
 ---
+
 <!-- <section>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="__react-component" data-component="HelloWorld" data-category="{{ page.title | slugify }}"></div>
-        <hr>
+        <div class="__react-component" data-component="HelloWorld" data-category="{{ page.title | slugify }}">
+        <hr />
         <div class="__react-component" data-component="Test"></div>
-      </div>
-    </div>
-  </div>
-</section> -->
+      
+    
+  
+ -->
 
 
 <!-- Hero -->
@@ -73,12 +75,7 @@ cta:
 <!-- START: page sub navigation -->
 {% include nav/subnav.html items=layout._subnav label=page.title %}
 
-<div
-  class="__react-component"
-  data-component="CategorySolutions"
-  data-category="{{ page.title | slugify }}"
-  data-modeled_solutions_summary="{{ page.modeled_solutions.summary }}"
-  data-new_and_emerging_solutions_summary="{{ page.new_and_emerging_solutions.summary }}"></div>
+<div class="__react-component" data-component="CategorySolutions" data-category="{{ page.title | slugify }}" data-modeled_solutions_summary="{{ page.modeled_solutions.summary }}" data-new_and_emerging_solutions_summary="{{ page.new_and_emerging_solutions.summary }}"></div>
 
 {% include_relative _partials/best_practices.html %}
 
