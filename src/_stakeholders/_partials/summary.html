@@ -11,7 +11,7 @@
               Stakeholder
             </h6>
             <h2 class="editable">
-              Capital Providers
+              Retailers
             </h2>
           </div>
         </div>
@@ -53,7 +53,9 @@
         <div class="row">
           <div class="col-12">
             {% if page.tons_surplus.causes %}
-            <h6 class="mt-5 editable">Causes</h6>
+            <h6 class="mt-5 editable">
+              Causes
+            </h6>
             <hr />
             <!-- TODO: With updates to the API this could be a dynamic component. -->
             <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.uid }}"></div> -->
@@ -62,11 +64,13 @@
                 {{ cause.label }}
               </p>
             {% endfor  %}
-            <a href="{{ site.insights_engine_url }}/food-waste-monitor?break_by=cause&indicator=tons-surplus&sector={{ page.uid }}&view=detail&year=2019" class="btn btn-link editable">See more in the Insights Engine</a>
+            <a href="https://insights-engine.vercel.app/food-waste-monitor?break_by=cause&indicator=tons-surplus&sector=retailers&view=detail&year=2019" class="btn btn-link editable">See more in the Insights Engine</a>
             {% endif %}
 
             {% if page.tons_surplus.destinations %}
-            <h6 class="mt-5 editable">Destinations</h6>
+            <h6 class="mt-5 editable">
+              Destinations
+            </h6>
             <hr />
             <!-- With updates to the API this could be a dynamic component. -->
             <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.uid }}"></div> -->
