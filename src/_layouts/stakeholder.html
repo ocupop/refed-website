@@ -5,19 +5,19 @@ layout: default
 {% include components/hero.html item=page.hero %}
 
 <!-- Summary -->
-{% include stakeholders/summary.html %}
+{% include_relative _partials/summary.html %}
 
 <!-- Page Content -->
 {{ content }}
 
 <!-- Highlight -->
 {% if page.highlight %}
-  {% include stakeholders/highlight.html highlight=page.highlight %}
+  {% include_relative _partials/highlight.html highlight=page.highlight %}
 {% endif %}
 
 <!-- Solution Groups -->
 {% if page.solution_groups.size > 0 %}
-  {% include stakeholders/solution_groups.html %}
+  {% include_relative _partials/solution_groups.html %}
 {% else %}
 
 {% endif %}
