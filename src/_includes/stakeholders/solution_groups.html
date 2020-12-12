@@ -1,0 +1,84 @@
+{% if page.subnav.show %}
+  {% include nav/subnav.html items=page.solution_groups label=page.subnav.label %}
+{% endif %}
+
+{% for group in page.solution_groups %}
+  {% capture editorRef %}solution_groups[{{ forloop.index0 }}]{% endcapture %}
+  <section id="{{ group.label | slugify | default: 'all-solutions' }}" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class=" col-12 col-lg-9">
+          <div data-cms-editor-link="cloudcannon:#{{ editorRef }}" data-cms-editor-link-style="modal" class="cms-editor-link">
+            <h3>{{ group.label }}</h3>
+            <div>{{ group.description_html }}</div>
+            {% if group.opportunities.size > 0 %}
+            <ul>
+              {% for opportunity in group.opportunities %}
+              <li>{{ opportunity.label }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% if group.link.url %}
+            <a href="{{ group.link.url }}" title="{{ link.alt | default: site.default_cta }}" class="btn btn-dark my-5">{{ group.link.label | default: site.default_cta }}</a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          {% capture editor-link %}#{{ editorRef }}.stat{% endcapture %}
+          {% include charts/donut.html
+            item=group.stat
+            editor-link=editor-link
+          %}
+        </div>
+      </div>
+
+        <div class="solution-group">
+          {% for category in site.action_area_categories %}
+            <label>{{ category.label }}</label>
+            {% for area in category.areas %}
+              {% assign active_area = group.action_areas[area.slug] %}
+
+              <!-- <div
+                class="__react-component"
+                data-component="SolutionGroup"
+                data-category='{{ area.slug }}'
+                data-slugs='{{ active_area.solutions | join: "," }}'>
+              </div> -->
+
+
+
+              {% if page.uid == 'capital-providers' %}
+                {% include_relative _partials/capital_providers_details.html %}
+              {% else %}
+                <div class="row row-{{ category.uid }}">
+                  <div class="col-12">
+                    <div class="d-flex align-items-start">
+                      <div class="col-auto">
+                        <div class="icon icon-sm icon-{{ area.uid }} ml-3"></div>
+                      </div>
+                      <div class="col">
+                        <h4 class="mt-3">{{ area.label }}</h4>
+                        <div class="my-4">
+                          <p class="text-serif editable global-editor-link">
+                            Key Opportunities
+                          </p>
+                          <ul>
+                            {% for opportunity in active_area.opportunities %}
+                            <li>{{ opportunity.label }}</li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+
+
+            {% endfor %}
+          {% endfor %}
+        </div>
+
+    
+  </section>
+{% endfor %}
