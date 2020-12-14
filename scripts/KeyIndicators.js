@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { InsightsEngineContext } from './context'
 
 
 const KeyIndicatorOverview = () => {
-  const { state } = useContext(InsightsEngineContext)
-  const { filteredSolutions, categoryTotals } = state
-  const modeledSolutions = filteredSolutions ? filteredSolutions.data.filter(solution => solution.attributes.include_in_model) : false
+  const { categorySolutions, categoryTotals } = useContext(InsightsEngineContext)
+  const modeledSolutions = categorySolutions.data ? categorySolutions.data.filter(solution => solution.attributes.include_in_model) : false
   const keyIndicators = [
     "tonsDiverted",
     "usDollarsProfit",
@@ -28,14 +27,14 @@ const KeyIndicatorOverview = () => {
         </div>
         {keyIndicators && keyIndicators.map(uid => {
           const indicator = categoryTotals[uid]
-          return (
-            <>
-              <div className="col-12 col-sm-6 mb-4">
+          if (indicator) {
+            return (
+              <div key={uid} className="col-12 col-sm-6 mb-4">
                 <span className="display-4 d-block">{indicator.prefix}{indicator.formattedValue}</span>
                 <h6>{indicator.label}</h6>
               </div>
-            </>
-          )
+            )
+          }
         })}
       </div>
     </>

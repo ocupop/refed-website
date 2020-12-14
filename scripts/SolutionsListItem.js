@@ -35,12 +35,10 @@ const SolutionsListItem = ({ solution }) => {
                   const indicator = solutionTotals[uid]
                   if (indicator) {
                     return (
-                      <>
-                        <div className="d-flex flex-column px-4 border-left pb-3 pb-sm-0">
-                          <span className="display-4 d-block lead">{indicator.prefix}{indicator.formattedValue}</span>
-                          <span className="stat-text d-block">{indicator.label}</span>
-                        </div>
-                      </>
+                      <div key={uid} className="d-flex flex-column px-4 border-left pb-3 pb-sm-0">
+                        <span className="display-4 d-block lead">{indicator.prefix}{indicator.formattedValue}</span>
+                        <span className="stat-text d-block">{indicator.label}</span>
+                      </div>
                     )
                   }
                 })}

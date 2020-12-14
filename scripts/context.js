@@ -4,62 +4,74 @@ import { SOLUTIONS_ENDPOINT, INDICATOR_MAP } from './constants'
 import { formatTotals } from './helpers'
 
 
-const initialState = {
-  category: null,
-  allSolutions: {
-    data: [],
-    included: [],
-    meta: {}
-  },
-  filteredSolutions: {
-    data: [],
-    included: [],
-    meta: {}
-  },
-  topSolutions: [],
-  indicator: 'tons-diverted'
-}
+// const initialState = {
+//   category: null,
+//   filteredSolutions: null,
+//   topSolutions: [],
+// }
 // const initialState = {}
-const InsightsEngineContext = React.createContext([initialState, () => { }])
+const InsightsEngineContext = React.createContext()
 
 const InsightsEngineProvider = ({ children }) => {
-  const [state, setState] = useState(initialState)
-
-  const setIndicator = (indicator) => {
-    setState({ ...state, indicator })
-  }
-
-  const setCategory = (category) => {
-    setState({ ...state, category })
+  // const [state, setState] = useState(initialState)
+  const [allSolutions, setAllSolutions] = useState(false)
+  const [activeCategory, setActiveCategory] = useState(false)
+  const [categorySolutions, setCategorySolutions] = useState(false)
+  const [categoryTotals, setCategoryTotals] = useState(false)
+  const [indicator, setIndicator] = useState(false)
+  const [topSolutions, setTopSolutions] = useState(false)
+  const state = {
+    allSolutions,
+    activeCategory,
+    categorySolutions,
+    categoryTotals,
+    indicator,
+    topSolutions
   }
 
   // useEffect(() => {
   //   axios.get(SOLUTIONS_ENDPOINT)
   //     .then(({ data: response }) => {
-
-  //       setState({ ...state, allSolutions: response })
+  //       console.log(response)
+  //       // setAllSolutions(response)
   //     })
   //     .catch(error => console.log('error', error))
   // }, [])
 
+
   useEffect(() => {
-    if (state.category) {
-      // console.log("getting category solutions")
-      axios.get(`${SOLUTIONS_ENDPOINT}/?category=${state.category}`)
+    if (activeCategory) {
+      axios.get(`${SOLUTIONS_ENDPOINT}/?category=${activeCategory}`)
         .then(({ data: response }) => {
-          const categoryTotals = formatTotals(response.meta.total.attributes.data)
-          setState({ ...state, filteredSolutions: response, categoryTotals: categoryTotals })
+          // console.log(activeCategory, response)
+          setCategorySolutions(response)
+          setCategoryTotals(formatTotals(response.meta.total.attributes.data))
         })
         .catch(error => console.log('error', error))
     }
-  }, [state.category])
+  }, [activeCategory])
+
+  // useEffect(() => {
+  //   if (indicator) {
+  //     // TODO: Add logic for sorting top solutions based on indicator
+  //     console.log(indicator)
+  //     // setTopSolutions([])
+  //   }
+  // }, [indicator])
 
   // useEffect(() => {
   //   console.log("STATE:", state)
   // }, [state])
 
   return (
-    <InsightsEngineContext.Provider value={{ state, setIndicator, setCategory }}>
+    <InsightsEngineContext.Provider value={{
+      activeCategory: [activeCategory, setActiveCategory],
+      indicator: [indicator, setIndicator],
+      allSolutions: allSolutions,
+      categorySolutions: categorySolutions,
+      categoryTotals: categoryTotals,
+      topSolutions: topSolutions
+    }}>
       {children}
     </InsightsEngineContext.Provider>
   )
