@@ -137,15 +137,15 @@ primary_navigation:
               alt:
               links:
             - label: Explore Food Waste
-              url: /food-waste/the-challenge/#explore-food-waste
+              url: /food-waste/the-challenge/#what_is_food_waste
               alt:
               links:
             - label: Barriers to Solutions
-              url: /food-waste/the-challenge/#barriers-to-solutions
+              url: /food-waste/the-challenge/#barriers_to_solutions
               alt:
               links:
             - label: Policy Overview
-              url: /food-waste/the-challenge/#policy-overview
+              url: /food-waste/the-challenge/#policy_overview
               alt:
               links:
         - label: Solutions
@@ -156,16 +156,16 @@ primary_navigation:
               url: /food-waste/the-solutions/#overview
               alt:
               links:
-            - label: Roadmap 2020
-              url: /food-waste/the-solutions/#roadmap-2020
+            - label: Roadmap 2030
+              url: /food-waste/the-solutions/#roadmap-2030
               alt:
               links:
-            - label: Seven Action Areas
-              url: /food-waste/the-solutions/#seven-action-areas
+            - label: Key Action Areas
+              url: /food-waste/the-solutions/#key-action-areas
               alt:
               links:
             - label: Key Levers
-              url: /food-waste/the-solutions/#key-levers
+              url: /food-waste/the-solutions/#levers
               alt:
               links:
         - label: Resources & Guides

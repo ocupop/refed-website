@@ -8,10 +8,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class=" col-12 col-lg-9">
-          <div
-            data-cms-editor-link="cloudcannon:#{{ editorRef }}"
-            data-cms-editor-link-style="modal"
-            class="cms-editor-link">
+          <div data-cms-editor-link="cloudcannon:#{{ editorRef }}" data-cms-editor-link-style="modal" class="cms-editor-link">
             <h3>{{ group.label }}</h3>
             <div>{{ group.description_html }}</div>
             {% if group.opportunities.size > 0 %}
@@ -62,7 +59,9 @@
                       <div class="col">
                         <h4 class="mt-3">{{ area.label }}</h4>
                         <div class="my-4">
-                          <p class="text-serif editable global-editor-link">Key Opportunities</p>
+                          <p class="text-serif editable global-editor-link">
+                            Key Opportunities
+                          </p>
                           <ul>
                             {% for opportunity in active_area.opportunities %}
                             <li>{{ opportunity.label }}</li>
@@ -80,7 +79,6 @@
           {% endfor %}
         </div>
 
-    </div>
+    
   </section>
 {% endfor %}
-
