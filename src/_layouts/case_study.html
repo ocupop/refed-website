@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 {% include components/hero.html item=page %}
 
 <section>
@@ -10,20 +9,13 @@ layout: default
     <div class="row">
       <div class="col-12 col-lg-6">
         <h3 class="editable global-editor-link">Overview</h3>
-        <div
-          data-cms-editor-link="cloudcannon:#description_html"
-          data-cms-editor-link-style="modal"
-          class="cms-editor-link">
+        <div data-cms-editor-link="cloudcannon:#description_html" data-cms-editor-link-style="modal" class="cms-editor-link">
           {{ page.description_html }}
         </div>
         
       </div>
       <div class="col-12 col-lg-6">
-        <img
-          src="{{ page.overview_image }}"
-          data-cms-editor-link="cloudcannon:#overview_image"
-          data-cms-editor-link-style="modal"
-          class="img-fluid cms-editor-link" alt="{{ page.title }} image">
+        <img src="{{ page.overview_image }}" data-cms-editor-link="cloudcannon:#overview_image" data-cms-editor-link-style="modal" class="img-fluid cms-editor-link" alt="{{ page.title }} image" />
       </div>
     </div>
   </div>
@@ -35,19 +27,3 @@ layout: default
 {% endfor %}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
