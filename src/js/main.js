@@ -15,6 +15,7 @@
   \*****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 11:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n\n  for (var i = 0, arr2 = new Array(len); i < len; i++) {\n    arr2[i] = arr[i];\n  }\n\n  return arr2;\n}\n\nmodule.exports = _arrayLikeToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayLikeToArray.js?");
@@ -27,6 +28,7 @@ eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.len
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\n\nmodule.exports = _arrayWithHoles;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayWithHoles.js?");
@@ -39,6 +41,7 @@ eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module) => {
 
 eval("function _defineProperty(obj, key, value) {\n  if (key in obj) {\n    Object.defineProperty(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n\n  return obj;\n}\n\nmodule.exports = _defineProperty;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/defineProperty.js?");
@@ -51,6 +54,7 @@ eval("function _defineProperty(obj, key, value) {\n  if (key in obj) {\n    Obje
   \*********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 28:0-14 */
 /***/ ((module) => {
 
 eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return;\n  var _arr = [];\n  var _n = true;\n  var _d = false;\n  var _e = undefined;\n\n  try {\n    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {\n      _arr.push(_s.value);\n\n      if (i && _arr.length === i) break;\n    }\n  } catch (err) {\n    _d = true;\n    _e = err;\n  } finally {\n    try {\n      if (!_n && _i[\"return\"] != null) _i[\"return\"]();\n    } finally {\n      if (_d) throw _e;\n    }\n  }\n\n  return _arr;\n}\n\nmodule.exports = _iterableToArrayLimit;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js?");
@@ -63,6 +67,7 @@ eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefi
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableRest;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/nonIterableRest.js?");
@@ -75,6 +80,7 @@ eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to 
   \**************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithHoles.js\");\n\nvar iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ \"./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ \"./node_modules/@babel/runtime/helpers/nonIterableRest.js\");\n\nfunction _slicedToArray(arr, i) {\n  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();\n}\n\nmodule.exports = _slicedToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/slicedToArray.js?");
@@ -87,6 +93,7 @@ eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);\n}\n\nmodule.exports = _unsupportedIterableToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js?");
@@ -113,6 +120,7 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -126,6 +134,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -139,6 +148,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -152,6 +162,7 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -165,6 +176,7 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -178,6 +190,7 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -191,6 +204,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -204,6 +218,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -217,6 +232,7 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -230,6 +246,7 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -243,6 +260,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -256,6 +274,7 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -269,6 +288,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -282,6 +302,7 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -295,6 +316,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -308,6 +330,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -321,6 +344,7 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -334,6 +358,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -347,6 +372,7 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -360,6 +386,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -373,6 +400,7 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -386,6 +414,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -399,6 +428,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -412,6 +442,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -425,6 +456,7 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -516,7 +548,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! namespace exports */
 /*! export abbreviateNumber [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export convertArrayToObject [provided] [no usage info] [missing usage info prevents renaming] */
-/*! export createReducer [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export formatMoney [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export formatTotals [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export getIndicatorValue [provided] [no usage info] [missing usage info prevents renaming] */
@@ -529,7 +560,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"formatMoney\": () => /* binding */ formatMoney,\n/* harmony export */   \"toCamel\": () => /* binding */ toCamel,\n/* harmony export */   \"toSnake\": () => /* binding */ toSnake,\n/* harmony export */   \"sortBy\": () => /* binding */ sortBy,\n/* harmony export */   \"getIndicatorValue\": () => /* binding */ getIndicatorValue,\n/* harmony export */   \"liquidToJSON\": () => /* binding */ liquidToJSON,\n/* harmony export */   \"abbreviateNumber\": () => /* binding */ abbreviateNumber,\n/* harmony export */   \"convertArrayToObject\": () => /* binding */ convertArrayToObject,\n/* harmony export */   \"formatTotals\": () => /* binding */ formatTotals,\n/* harmony export */   \"createReducer\": () => /* binding */ createReducer\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ \"./node_modules/@babel/runtime/helpers/defineProperty.js\");\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ \"./scripts/constants.js\");\n;\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\n\nvar formatMoney = function formatMoney(amount) {\n  var currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '$';\n  var decimalCount = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;\n  var decimal = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '.';\n  var thousands = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : ',';\n\n  try {\n    decimalCount = Math.abs(decimalCount);\n    decimalCount = isNaN(decimalCount) ? 2 : decimalCount;\n    var negativeSign = amount < 0 ? '-' : '';\n    var i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();\n    var j = i.length > 3 ? i.length % 3 : 0;\n    return currency + negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\\d{3})(?=\\d)/g, \"$1\".concat(thousands)) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : '');\n  } catch (e) {\n    console.log('Error formatting value:', e);\n  }\n};\nvar toCamel = function toCamel(str) {\n  return str.replace(/([-_][a-z])/ig, function ($1) {\n    return $1.toUpperCase().replace('-', '').replace('_', '');\n  });\n};\nvar toSnake = function toSnake(str) {\n  return str.replace('-', '_');\n};\nvar sortBy = function sortBy(_ref) {\n  var solutions = _ref.solutions,\n      indicator = _ref.indicator;\n  var sortedArray = solutions.sort(function (a, b) {\n    var valueA = a.data.find(function (metric) {\n      return metric.indicator == indicator;\n    }).value;\n    var valueB = b.data.find(function (metric) {\n      return metric.indicator == indicator;\n    }).value;\n    return valueA < valueB ? 1 : -1;\n  });\n  return sortedArray;\n};\nvar getIndicatorValue = function getIndicatorValue(data, indicator) {\n  return data.find(function (metric) {\n    return metric.indicator == indicator;\n  }).value;\n};\nvar liquidToJSON = function liquidToJSON(liquidString) {\n  return JSON.parse(liquidString.replace(/=>/g, ': ').replace(/(\\s)nil(\\s|,)/g, '\"nil\",').replace(/Liquid::ImageDrop/g, '\"Liquid::ImageDrop\"').replace(/\\}(|\\s+){/g, '},{'));\n};\nvar abbreviateNumber = function abbreviateNumber(num, fixed) {\n  if (num === null) {\n    return null;\n  } // terminate early\n\n\n  if (num === 0) {\n    return '0';\n  } // terminate early\n\n\n  fixed = !fixed || fixed < 0 ? 0 : fixed; // number of decimal places to show\n\n  var b = num.toPrecision(2).split(\"e\"),\n      // get power\n  k = b.length === 1 ? 0 : Math.floor(Math.min(b[1].slice(1), 14) / 3),\n      // floor at decimals, ceiling at trillions\n  c = k < 1 ? num.toFixed(0 + fixed) : (num / Math.pow(10, k * 3)).toFixed(1 + fixed),\n      // divide by power\n  d = c < 0 ? c : Math.abs(c),\n      // enforce -0 is 0\n  e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power\n\n  return e;\n};\nvar convertArrayToObject = function convertArrayToObject(array, key) {\n  var initialValue = {};\n  return array.reduce(function (obj, item) {\n    return _objectSpread(_objectSpread({}, obj), {}, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, item[key], item));\n  }, initialValue);\n};\nvar formatTotals = function formatTotals(totals) {\n  var formattedTotals = totals.map(function (total) {\n    var key = toCamel(total.indicator);\n    var indicator = _constants__WEBPACK_IMPORTED_MODULE_1__.INDICATOR_MAP[key];\n    var prefix = indicator.prefix,\n        label = indicator.label,\n        show = indicator.show;\n    var formattedValue = abbreviateNumber(total.value);\n    return {\n      key: key,\n      show: show,\n      prefix: prefix,\n      label: label,\n      formattedValue: formattedValue\n    };\n  });\n  return convertArrayToObject(formattedTotals, 'key');\n};\nvar createReducer = function createReducer(initialState, fnMap) {\n  return function () {\n    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n\n    var _ref2 = arguments.length > 1 ? arguments[1] : undefined,\n        type = _ref2.type,\n        payload = _ref2.payload;\n\n    var handler = fnMap[type];\n    return handler ? handler(state, payload) : state;\n  };\n};\n\n//# sourceURL=webpack://refed-website/./scripts/helpers.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"formatMoney\": () => /* binding */ formatMoney,\n/* harmony export */   \"toCamel\": () => /* binding */ toCamel,\n/* harmony export */   \"toSnake\": () => /* binding */ toSnake,\n/* harmony export */   \"sortBy\": () => /* binding */ sortBy,\n/* harmony export */   \"getIndicatorValue\": () => /* binding */ getIndicatorValue,\n/* harmony export */   \"liquidToJSON\": () => /* binding */ liquidToJSON,\n/* harmony export */   \"abbreviateNumber\": () => /* binding */ abbreviateNumber,\n/* harmony export */   \"convertArrayToObject\": () => /* binding */ convertArrayToObject,\n/* harmony export */   \"formatTotals\": () => /* binding */ formatTotals\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ \"./node_modules/@babel/runtime/helpers/defineProperty.js\");\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ \"./scripts/constants.js\");\n;\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\n\nvar formatMoney = function formatMoney(amount) {\n  var currency = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '$';\n  var decimalCount = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;\n  var decimal = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '.';\n  var thousands = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : ',';\n\n  try {\n    decimalCount = Math.abs(decimalCount);\n    decimalCount = isNaN(decimalCount) ? 2 : decimalCount;\n    var negativeSign = amount < 0 ? '-' : '';\n    var i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();\n    var j = i.length > 3 ? i.length % 3 : 0;\n    return currency + negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\\d{3})(?=\\d)/g, \"$1\".concat(thousands)) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : '');\n  } catch (e) {\n    console.log('Error formatting value:', e);\n  }\n};\nvar toCamel = function toCamel(str) {\n  return str.replace(/([-_][a-z])/ig, function ($1) {\n    return $1.toUpperCase().replace('-', '').replace('_', '');\n  });\n};\nvar toSnake = function toSnake(str) {\n  return str.replace('-', '_');\n};\nvar sortBy = function sortBy(_ref) {\n  var solutions = _ref.solutions,\n      indicator = _ref.indicator;\n  var sortedArray = solutions.sort(function (a, b) {\n    var valueA = a.data.find(function (metric) {\n      return metric.indicator == indicator;\n    }).value;\n    var valueB = b.data.find(function (metric) {\n      return metric.indicator == indicator;\n    }).value;\n    return valueA < valueB ? 1 : -1;\n  });\n  return sortedArray;\n};\nvar getIndicatorValue = function getIndicatorValue(data, indicator) {\n  return data.find(function (metric) {\n    return metric.indicator == indicator;\n  }).value;\n};\nvar liquidToJSON = function liquidToJSON(liquidString) {\n  return JSON.parse(liquidString.replace(/=>/g, ': ').replace(/(\\s)nil(\\s|,)/g, '\"nil\",').replace(/Liquid::ImageDrop/g, '\"Liquid::ImageDrop\"').replace(/\\}(|\\s+){/g, '},{'));\n};\nvar abbreviateNumber = function abbreviateNumber(num, fixed) {\n  if (num === null) {\n    return null;\n  } // terminate early\n\n\n  if (num === 0) {\n    return '0';\n  } // terminate early\n\n\n  fixed = !fixed || fixed < 0 ? 0 : fixed; // number of decimal places to show\n\n  var b = num.toPrecision(2).split(\"e\"),\n      // get power\n  k = b.length === 1 ? 0 : Math.floor(Math.min(b[1].slice(1), 14) / 3),\n      // floor at decimals, ceiling at trillions\n  c = k < 1 ? num.toFixed(0 + fixed) : (num / Math.pow(10, k * 3)).toFixed(1 + fixed),\n      // divide by power\n  d = c < 0 ? c : Math.abs(c),\n      // enforce -0 is 0\n  e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power\n\n  return e;\n};\nvar convertArrayToObject = function convertArrayToObject(array, key) {\n  var initialValue = {};\n  return array.reduce(function (obj, item) {\n    return _objectSpread(_objectSpread({}, obj), {}, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, item[key], item));\n  }, initialValue);\n};\nvar formatTotals = function formatTotals(totals) {\n  var formattedTotals = totals.map(function (total) {\n    var key = toCamel(total.indicator);\n    var indicator = _constants__WEBPACK_IMPORTED_MODULE_1__.INDICATOR_MAP[key];\n    var prefix = indicator.prefix,\n        label = indicator.label,\n        show = indicator.show;\n    var formattedValue = abbreviateNumber(total.value);\n    return {\n      key: key,\n      show: show,\n      prefix: prefix,\n      label: label,\n      formattedValue: formattedValue\n    };\n  });\n  return convertArrayToObject(formattedTotals, 'key');\n};\n\n//# sourceURL=webpack://refed-website/./scripts/helpers.js?");
 
 /***/ }),
 
@@ -723,6 +754,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -736,6 +768,7 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -749,6 +782,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -762,6 +796,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://refed-website/./node_modules/prop-types/index.js?");
@@ -774,6 +809,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1050,6 +1086,16 @@ eval("/** @license React v0.20.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 52:26-46 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 125:13-33 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 149:24-44 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 193:15-35 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 548:28-48 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 565:25-45 */
+/*! CommonJS bailout: exports.unstable_shouldYield(...) prevents optimization as exports is passed as call context at 578:74-102 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 591:20-40 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 695:20-40 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 804:24-44 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
