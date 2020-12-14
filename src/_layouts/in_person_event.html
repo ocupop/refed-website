@@ -20,11 +20,11 @@ layout: default
     <div class="row">
       <div class="col-12">
         {% if page.location %}
-          <h6>Location</h6>
+          <h6 class="editable global-editor-link">Location</h6>
           {{ page.location }}
         {% endif %}
         {% if page.details_html %}
-          <h6 class="mt-5">Details</h6>
+          <h6 class="mt-5 editable global-editor-link">Details</h6>
           {{ page.details_html }}
         {% endif %}
         <div class="d-flex mb-5 mt-5 mb-lg-0">
@@ -55,7 +55,7 @@ layout: default
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2 class="editable">Browse Past Events</h2>
+        <h2 class="editable global-editor-link">Browse Past Events</h2>
       </div>
     </div>
     <div class="row">
