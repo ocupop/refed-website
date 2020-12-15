@@ -3,7 +3,7 @@ title: ReFED | Rethink Food Waste
 email: info@refed.com
 description: 'A data-driven guide for businesses, government, funders, and nonprofits to collectively reduce food waste at scale. Together, we can reduce U.S. food waste by 50% by 2030.'
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://victorious-shoe.cloudvent.net'
+# url: 'https://victorious-shoe.cloudvent.net'
 # url: 'http://www.refed.com' # the base hostname & protocol for your site
 permalink: pretty
 
