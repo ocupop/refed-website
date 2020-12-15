@@ -59,10 +59,7 @@
               <hr />
               <!-- TODO: With updates to the API this could be a dynamic component. -->
               <!-- <div class="__react-component" data-component="Causes" data-sector="{{ page.uid }}"></div> -->
-              <div
-                data-cms-editor-link="cloudcannon:#tons_surplus.causes"
-                data-cms-editor-link-style="modal"
-                class="text-serif cms-editor-link">
+              <div data-cms-editor-link="cloudcannon:#tons_surplus.causes" data-cms-editor-link-style="modal" class="text-serif cms-editor-link">
                 {% for cause in page.tons_surplus.causes %}
                 <p {% unless forloop.last %}class="mb-0" {% endunless %}>
                   {{ cause.label }}
@@ -82,10 +79,7 @@
               <hr />
               <!-- With updates to the API this could be a dynamic component. -->
               <!-- <div class="__react-component" data-component="Destinations" data-sector="{{ page.uid }}"></div> -->
-              <div
-                data-cms-editor-link="cloudcannon:#tons_surplus.destinations"
-                data-cms-editor-link-style="modal"
-                class="text-serif cms-editor-link">
+              <div data-cms-editor-link="cloudcannon:#tons_surplus.destinations" data-cms-editor-link-style="modal" class="text-serif cms-editor-link">
                 {% for destination in page.tons_surplus.destinations %}
                   <p {% unless forloop.last %}class="mb-0" {% endunless %}>{{ destination.label }}</p>
                 {% endfor  %}
