@@ -4,16 +4,6 @@
   .wFormTitle {
     display: none !important;
   }
-  
-  .select-wrapper {
-    width: 100%;
-    .inputWrapper {
-      border: 1px solid $body-color;
-      select {
-        width: 100% !important;
-      }
-    }
-  }
 }
 
 .wForm {
@@ -28,6 +18,9 @@
         margin-top: 0;
       }
     }
+  }
+  .wFormTitle {
+    display: none;
   }
   .label {
     font-family: $font-family-base;
@@ -55,6 +48,10 @@
   }
   .inputWrapper {
     border: 0 !important;
+    width: 100%;
+  }
+  select {
+    width: 100%;
   }
   .inputWrapper select:not([multiple]) {
     height: 38px !important;
@@ -63,7 +60,7 @@
   }
   .actions {
     padding: 0 !important;
-    border: 0;
+    border: 0 !important;
     margin-top: 30px;
     .primaryAction {
       padding: 12px 30px !important;
@@ -109,92 +106,84 @@
         }
       }
     }
-  }
+  } 
+}
+
+.supportInfo {
+  display: none;
 }
 
 .bg-dark {
-  .wFormContainer {
-    .wForm {
-      .label {
-        &.preField {
-          color: $white !important;
-        }
-      }
-      .inputWrapper select:not([multiple]) {
-        border: 1px solid $white !important;
-        background-color: transparent !important;
+  .wForm {
+    .label {
+      &.preField {
         color: $white !important;
       }
-      .actions {
-        padding: 0 !important;
-        border: 0;
-        margin-top: 30px;
-        .primaryAction {
-          padding: 12px 30px !important;
-          margin-top: 0 !important;
-          text-transform: uppercase !important;
-          font-weight: 100 !important;
-          background-color: $blue;
-          text-transform: none !important;
-          border-radius: 0;
-          font-weight: 600 !important;
-        }
-      }
-      .choices {
-        &.vertical {
-          display: block;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-      }
-      .postField {
+    }
+    .inputWrapper select:not([multiple]) {
+      border: 1px solid $white !important;
+      background-color: transparent !important;
+      color: $white !important;
+    }
+    .actions {
+      padding: 0 !important;
+      border: 0;
+      margin-top: 30px;
+      .primaryAction {
+        padding: 12px 30px !important;
+        margin-top: 0 !important;
+        text-transform: uppercase !important;
+        font-weight: 100 !important;
+        background-color: $blue;
         text-transform: none !important;
-        font-weight: 600;
-        font-family: $font-family-base;
-        color: $body-color;
+        border-radius: 0;
+        font-weight: 600 !important;
       }
-      .section {
-        &.inline {
-          &.group {
-            display: flex;
-            justify-content: space-between;
-            .oneField {
-              width: 48% !important;
-              padding: 0;
-              .inputWrapper {
-                border: 1px solid $body-color;
-                select {
-                  width: 100% !important;
-                  color: $body-color;
-                }
+    }
+    .choices {
+      &.vertical {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .postField {
+      text-transform: none !important;
+      font-weight: 600;
+      font-family: $font-family-base;
+      color: $body-color;
+    }
+    .section {
+      &.inline {
+        &.group {
+          display: flex;
+          justify-content: space-between;
+          .oneField {
+            width: 48% !important;
+            padding: 0;
+            .inputWrapper {
+              border: 1px solid $body-color;
+              select {
+                width: 100% !important;
+                color: $body-color;
               }
             }
           }
         }
       }
     }
-    .select-wrapper {
-      width: 100%;
-      .inputWrapper {
-        border: 1px solid $body-color;
-        select {
-          width: 100% !important;
-        }
-      }
-    }
   }
 }
 
-.bg-lighter {
-  .wFormContainer {
-    .wForm {
-      .inputWrapper {
-        display: block;
-        input[type="text"],
-        input[type="email"],
-        textarea {
-          background-color: $white !important;
-        }
+.bg-lighter,
+.bg-light {
+  .wForm {
+    .inputWrapper {
+      display: block;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        background-color: $white !important;
       }
     }
   }
