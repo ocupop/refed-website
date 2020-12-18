@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import { SOLUTIONS_ENDPOINT, INDICATOR_MAP } from './constants'
-import { formatTotals } from './helpers'
+import { sortBy, formatTotals, getIndicatorValue, abbreviateNumber, toCamel } from './helpers'
+
 
 
 // const initialState = {
@@ -18,27 +19,30 @@ const InsightsEngineProvider = ({ children }) => {
   const [activeCategory, setActiveCategory] = useState(false)
   const [categorySolutions, setCategorySolutions] = useState(false)
   const [categoryTotals, setCategoryTotals] = useState(false)
-  const [indicator, setIndicator] = useState(false)
+  const [activeStakeholder, setActiveStakeholder] = useState('retailers')
+  const [activeIndicator, setActiveIndicator] = useState('tons-diverted')
   const [topSolutions, setTopSolutions] = useState(false)
   const state = {
     allSolutions,
     activeCategory,
     categorySolutions,
     categoryTotals,
-    indicator,
+    activeIndicator,
+    activeStakeholder,
     topSolutions
   }
 
-  // useEffect(() => {
-  //   axios.get(SOLUTIONS_ENDPOINT)
-  //     .then(({ data: response }) => {
-  //       console.log(response)
-  //       // setAllSolutions(response)
-  //     })
-  //     .catch(error => console.log('error', error))
-  // }, [])
+  // All Solutions
+  useEffect(() => {
+    axios.get(SOLUTIONS_ENDPOINT)
+      .then(({ data: response }) => {
 
+        setAllSolutions(response)
+      })
+      .catch(error => console.log('error', error))
+  }, [])
 
+  // Category Solutions
   useEffect(() => {
     if (activeCategory) {
       axios.get(`${SOLUTIONS_ENDPOINT}/?category=${activeCategory}`)
@@ -51,13 +55,44 @@ const InsightsEngineProvider = ({ children }) => {
     }
   }, [activeCategory])
 
-  // useEffect(() => {
-  //   if (indicator) {
-  //     // TODO: Add logic for sorting top solutions based on indicator
-  //     console.log(indicator)
-  //     // setTopSolutions([])
-  //   }
-  // }, [indicator])
+  // Top Solutions
+  useEffect(() => {
+    if (activeIndicator && activeStakeholder) {
+      // TODO: Add logic for sorting top solutions based on indicator
+      console.log("Calculating top solutions:", activeIndicator)
+      axios.get(`${SOLUTIONS_ENDPOINT}?stakeholder=${activeStakeholder}`)
+        .then(({ data: response }) => {
+          const orderedSolutions = response.data
+            .filter(solution => solution.attributes.include_in_model)
+            .map(solution => {
+              const { name, data, definition } = solution.attributes
+              const indicator = INDICATOR_MAP[toCamel(activeIndicator)]
+              const value = data.find(metric => metric.indicator == activeIndicator).value
+
+              return {
+                id: solution.id,
+                name,
+                definition,
+                data,
+                value,
+                formattedValue: abbreviateNumber(value),
+                label: indicator.label
+              }
+            })
+            .sort((a, b) => a.value < b.value ? 1 : -1)
+
+          const solutions = orderedSolutions
+            .map(solution => {
+              const percentage = (solution.value / orderedSolutions[0].value * 100).toFixed(1)
+              return { ...solution, percentage }
+            })
+            .slice(0, 5)
+
+          setTopSolutions(solutions)
+        })
+        .catch(error => console.log('error', error))
+    }
+  }, [activeIndicator])
 
   // useEffect(() => {
   //   console.log("STATE:", state)
@@ -66,7 +101,8 @@ const InsightsEngineProvider = ({ children }) => {
   return (
     <InsightsEngineContext.Provider value={{
       activeCategory: [activeCategory, setActiveCategory],
-      indicator: [indicator, setIndicator],
+      activeIndicator: [activeIndicator, setActiveIndicator],
+      activeStakeholder: [activeStakeholder, setActiveStakeholder],
       allSolutions: allSolutions,
       categorySolutions: categorySolutions,
       categoryTotals: categoryTotals,

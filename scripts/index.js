@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // import HelloWorld from './HelloWorld'
 import KeyIndicators from './KeyIndicators'
-// import TopSolutions from './stakeholders/TopSolutions'
+import TopSolutions from './stakeholders/TopSolutions'
 // import ModeledSolutions from './stakeholders/ModeledSolutions'
 // import SolutionGroup from './stakeholders/SolutionGroup'
 // import Test from './Test'
@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 const COMPONENTS = {
   // HelloWorld,
   KeyIndicators,
-  // TopSolutions,
+  TopSolutions,
   // ModeledSolutions,
   // SolutionGroup,
   // Test,

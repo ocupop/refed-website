@@ -58,6 +58,13 @@ export const abbreviateNumber = (num, fixed) => {
   return e;
 }
 
+export const objectToArray = (object) => {
+  if (object) {
+    return Object.entries(object).map(e => Object.assign({}, e[1], { id: e[0] }))
+  }
+}
+
+
 export const convertArrayToObject = (array, key) => {
   const initialValue = {};
   return array.reduce((obj, item) => {
@@ -81,4 +88,10 @@ export const formatTotals = (totals) => {
   })
 
   return convertArrayToObject(formattedTotals, 'key')
+}
+
+export const getIndicatorOptions = () => {
+  const options = Object.entries(INDICATOR_MAP).map(e => Object.assign({}, e[1], { id: e[0] }))
+
+  return options
 }
