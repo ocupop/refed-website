@@ -21,10 +21,10 @@ const KeyIndicatorOverview = () => {
   return (
     <>
       <div className="row">
-        <div className="col-12 col-sm-6 mb-4">
+        {/* <div className="col-12 col-sm-6 mb-4">
           <span className="display-4 d-block">{modeledSolutions.length}</span>
           <h6>Modeled Solutions</h6>
-        </div>
+        </div> */}
         {keyIndicators && keyIndicators.map(uid => {
           const indicator = categoryTotals[uid]
           if (indicator) {
