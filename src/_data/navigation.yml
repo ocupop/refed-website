@@ -1,7 +1,6 @@
 ---
 top_bar_navigation:
   navigation:
-  links:
     - label: Contact
       url: /contact
       alt: Contact ReFED
@@ -16,7 +15,6 @@ top_bar_navigation:
       links:
 primary_navigation:
   navigation:
-  links:
     - label: About
       url:
       alt:
@@ -24,7 +22,7 @@ primary_navigation:
         - label: Who We Are
           url: /about/who-we-are/
           alt:
-          links:
+          sublinks:
             - label: About Us
               url: /about/who-we-are/#about-us
               alt:
@@ -40,7 +38,7 @@ primary_navigation:
         - label: Our Team
           url: /about/our-team/
           alt:
-          links:
+          sublinks:
             - label: Staff
               url: /about/our-team/#staff
               alt:
@@ -56,7 +54,7 @@ primary_navigation:
         - label: Our Funders
           url: /about/our-funders/
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /about/our-funders/#overview
               alt:
@@ -66,7 +64,7 @@ primary_navigation:
         - label: Documents
           url: /about/documents
           alt:
-          links:
+          sublinks:
             - label: Annual Reports
               url: /about/documents/#annual-reports
               alt:
@@ -79,7 +77,7 @@ primary_navigation:
         - label: Careers
           url: /about/careers
           alt:
-          links:
+          sublinks:
             - label: Current Vacancies
               url: /about/careers#current-vacancies
               alt:
@@ -95,7 +93,7 @@ primary_navigation:
         - label: Our Work
           url: /our-work/
           alt:
-          links:
+          sublinks:
             - label: Data & Insights
               url: /our-work/data-and-insights
               alt:
@@ -115,7 +113,7 @@ primary_navigation:
         - label: Our Impact
           url: /our-work/our-impact
           alt:
-          links:
+          sublinks:
             - label: Case Studies
               url: /our-work/case-studies
               alt:
@@ -131,7 +129,7 @@ primary_navigation:
         - label: The Challenge
           url: /food-waste/the-challenge
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /food-waste/the-challenge/#overview
               alt:
@@ -151,7 +149,7 @@ primary_navigation:
         - label: Solutions
           url: /food-waste/the-solutions
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /food-waste/the-solutions/#overview
               alt:
@@ -171,7 +169,7 @@ primary_navigation:
         - label: Resources & Guides
           url: /food-waste/resources-and-guides
           alt:
-          links:
+          sublinks:
             - label: The Roadmap 2030
               url: /food-waste/resources-and-guides/#roadmap-2030
               alt:
@@ -211,7 +209,7 @@ primary_navigation:
         - label: Ways to Engage
           url: /engage/ways-to-engage
           alt:
-          links:
+          sublinks:
             - label: Stakeholder Actions
               url: /engage/ways-to-engage/#stakeholder-actions
               alt:
@@ -227,7 +225,7 @@ primary_navigation:
         - label: Events
           url: /engage/in-person-events
           alt:
-          links:
+          sublinks:
             - label: In-person Events
               url: /engage/in-person-events
               alt:
@@ -240,7 +238,7 @@ primary_navigation:
           url: /engage/stay-connected
           alt:
           _stay_connected: true
-          links:
+          sublinks:
             - label: Twitter
               url: 'https://twitter.com/refed'
               alt:
@@ -255,12 +253,10 @@ primary_navigation:
               alt:
               links:
     - label: Insights Engine
-      url: 'https://insights-engine.vercel.app/'
+      url: 'https://strict-violin.cloudvent.net/'
       alt:
-      links:
 footer_navigation:
   navigation:
-  links:
     - label: Careers
       url: /about/careers
       alt:
