@@ -1,22 +1,17 @@
 ---
 top_bar_navigation:
   navigation:
-  links:
     - label: Contact
       url: /contact
       alt: Contact ReFED
-      links:
     - label: Newsroom
       url: /newsroom/
       alt: Visit our Newsroom
-      links:
     - label: Stay Connected
       url: /engage/stay-connected
       alt:
-      links:
 primary_navigation:
   navigation:
-  links:
     - label: About
       url:
       alt:
@@ -24,7 +19,7 @@ primary_navigation:
         - label: Who We Are
           url: /about/who-we-are/
           alt:
-          links:
+          sublinks:
             - label: About Us
               url: /about/who-we-are/#about-us
               alt:
@@ -40,7 +35,7 @@ primary_navigation:
         - label: Our Team
           url: /about/our-team/
           alt:
-          links:
+          sublinks:
             - label: Staff
               url: /about/our-team/#staff
               alt:
@@ -56,7 +51,7 @@ primary_navigation:
         - label: Our Funders
           url: /about/our-funders/
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /about/our-funders/#overview
               alt:
@@ -66,7 +61,7 @@ primary_navigation:
         - label: Documents
           url: /about/documents
           alt:
-          links:
+          sublinks:
             - label: Annual Reports
               url: /about/documents/#annual-reports
               alt:
@@ -79,7 +74,7 @@ primary_navigation:
         - label: Careers
           url: /about/careers
           alt:
-          links:
+          sublinks:
             - label: Current Vacancies
               url: /about/careers#current-vacancies
               alt:
@@ -95,35 +90,29 @@ primary_navigation:
         - label: Our Work
           url: /our-work/
           alt:
-          links:
+          sublinks:
             - label: Data & Insights
               url: /our-work/data-and-insights
               alt:
-              links:
             - label: Capital & Innovation
               url: /our-work/capital-and-innovation
               alt:
-              links:
             - label: Stakeholder Engagement
               url: /our-work/stakeholder-engagement
               alt:
-              links:
             - label: Covid-19
               url: /our-work/#covid-19
               alt:
-              links:
         - label: Our Impact
           url: /our-work/our-impact
           alt:
-          links:
+          sublinks:
             - label: Case Studies
               url: /our-work/case-studies
               alt:
-              links:
             - label: Featured Organizations
               url: /our-work/our-impact/#featured-organizations
               alt:
-              links:
     - label: Food Waste
       url:
       alt:
@@ -131,79 +120,63 @@ primary_navigation:
         - label: The Challenge
           url: /food-waste/the-challenge
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /food-waste/the-challenge/#overview
               alt:
-              links:
             - label: Explore Food Waste
               url: /food-waste/the-challenge/#what_is_food_waste
               alt:
-              links:
             - label: Barriers to Solutions
               url: /food-waste/the-challenge/#barriers_to_solutions
               alt:
-              links:
             - label: Policy Overview
               url: /food-waste/the-challenge/#policy_overview
               alt:
-              links:
         - label: Solutions
           url: /food-waste/the-solutions
           alt:
-          links:
+          sublinks:
             - label: Overview
               url: /food-waste/the-solutions/#overview
               alt:
-              links:
-            - label: Roadmap 2030
+            - label: Roadmap to 2030
               url: /food-waste/the-solutions/#roadmap-2030
               alt:
-              links:
             - label: Key Action Areas
               url: /food-waste/the-solutions/#key-action-areas
               alt:
-              links:
             - label: Key Levers
               url: /food-waste/the-solutions/#levers
               alt:
-              links:
         - label: Resources & Guides
           url: /food-waste/resources-and-guides
           alt:
-          links:
+          sublinks:
             - label: The Roadmap 2030
               url: /food-waste/resources-and-guides/#roadmap-2030
               alt:
-              links:
             - label: ReFED Insights Engine
               url: /food-waste/resources-and-guides/#insights-engine
               alt:
-              links:
             - label: Solutions Database
               url: /food-waste/resources-and-guides/#solutions-database
               alt:
-              links:
             - label: Impact Calculator
               url: /food-waste/resources-and-guides/#impact-calculator
               alt:
-              links:
             - label: Solutions Provider Database
               url: /food-waste/resources-and-guides/#solutions-provider-database
               alt:
-              links:
             - label: Investment Tracker
               url: /food-waste/resources-and-guides/#investment-tracker
               alt:
-              links:
             - label: Reports and Guides
               url: /food-waste/resources-and-guides/#reports-and-guides
               alt:
-              links:
             - label: Partner Resources
               url: /food-waste/resources-and-guides/#partner-resources
               alt:
-              links:
     - label: Engage
       url:
       alt:
@@ -211,56 +184,46 @@ primary_navigation:
         - label: Ways to Engage
           url: /engage/ways-to-engage
           alt:
-          links:
+          sublinks:
             - label: Stakeholder Actions
               url: /engage/ways-to-engage/#stakeholder-actions
               alt:
-              links:
             - label: Support Our Mission
               url: /engage/ways-to-engage/#support-our-mission
               alt:
-              links:
             - label: Partner with Us
               url: /engage/ways-to-engage/#partner-with-us
               alt:
-              links:
         - label: Events
           url: /engage/in-person-events
           alt:
-          links:
+          sublinks:
             - label: In-person Events
               url: /engage/in-person-events
               alt:
-              links:
             - label: Webinars
               url: /engage/webinar-events
               alt:
-              links:
         - label: Stay Connected
           url: /engage/stay-connected
           alt:
           _stay_connected: true
-          links:
+          sublinks:
             - label: Twitter
               url: 'https://twitter.com/refed'
               alt:
-              links:
             - label: LinkedIn
               url: >-
                 https://www.linkedin.com/company/refed-rethink-food-waste/?trk=extra_biz_viewers_viewed
               alt:
-              links:
             - label: Facebook
               url: 'https://www.facebook.com/rethinkfoodwaste/'
               alt:
-              links:
     - label: Insights Engine
-      url: 'https://insights-engine.vercel.app/'
+      url: 'https://strict-violin.cloudvent.net/'
       alt:
-      links:
 footer_navigation:
   navigation:
-  links:
     - label: Careers
       url: /about/careers
       alt:

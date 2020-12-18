@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-7 text-light bg-dark footer-links-column">
           <ul class="footer-links navbar-nav ml-auto">
-            {% for link in site.data.navigation.footer_navigation.links %}
+            {% for link in site.data.navigation.footer_navigation.navigation %}
               <li class="nav-item"><a class="nav-link text-light font-weight-light" href="{{ link.url }} ">{{ link.label }} </a></li>
             {% endfor %}
           </ul>

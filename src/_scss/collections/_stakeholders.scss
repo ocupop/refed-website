@@ -1,6 +1,16 @@
-.stakeholders-layout,
+.stakeholder-layout,
 #capital-provider-page,
 #policymaker-page {
+}
+
+.stakeholder-layout {
+  @include media-breakpoint-down(md) {
+    [class^="col-"]{
+      &.border-left {
+        border-left: 0 !important;
+      }
+    }
+  }
 }
 
 .sector,
