@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HelloWorld from './HelloWorld'
+// import HelloWorld from './HelloWorld'
 import KeyIndicators from './KeyIndicators'
-import TopSolutions from './stakeholders/TopSolutions'
-import ModeledSolutions from './stakeholders/ModeledSolutions'
-import SolutionGroup from './stakeholders/SolutionGroup'
-import Test from './Test'
+// import TopSolutions from './stakeholders/TopSolutions'
+// import ModeledSolutions from './stakeholders/ModeledSolutions'
+// import SolutionGroup from './stakeholders/SolutionGroup'
+// import Test from './Test'
 import CategorySolutions from './CategorySolutions'
 // import Causes from './stakeholders/Causes'
 
@@ -18,12 +18,12 @@ import { InsightsEngineProvider } from './context'
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const COMPONENTS = {
-  HelloWorld,
+  // HelloWorld,
   KeyIndicators,
-  TopSolutions,
-  ModeledSolutions,
-  SolutionGroup,
-  Test,
+  // TopSolutions,
+  // ModeledSolutions,
+  // SolutionGroup,
+  // Test,
   CategorySolutions,
   // Causes,
 }
@@ -54,6 +54,7 @@ function buildPortal(el) {
 document
   .querySelectorAll('.__react-component')
   .forEach((el) => {
+    console.log("React Component:", el.dataset.component)
     const portal = buildPortal(el)
     portals.push(portal)
   })

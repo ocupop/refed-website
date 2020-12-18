@@ -30,6 +30,7 @@
     display: none;
     @include media-breakpoint-up(lg) {
       display: block;
+      line-height: 1.3;
     }
   }
   

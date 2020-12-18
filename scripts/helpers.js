@@ -52,7 +52,7 @@ export const abbreviateNumber = (num, fixed) => {
   fixed = (!fixed || fixed < 0) ? 0 : fixed; // number of decimal places to show
   var b = (num).toPrecision(2).split("e"), // get power
     k = b.length === 1 ? 0 : Math.floor(Math.min(b[1].slice(1), 14) / 3), // floor at decimals, ceiling at trillions
-    c = k < 1 ? num.toFixed(0 + fixed) : (num / Math.pow(10, k * 3)).toFixed(1 + fixed), // divide by power
+    c = k < 1 ? num.toFixed(0 + fixed) : (num / Math.pow(10, k * 3)).toFixed(fixed), // divide by power
     d = c < 0 ? c : Math.abs(c), // enforce -0 is 0
     e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power
   return e;
@@ -74,7 +74,8 @@ export const formatTotals = (totals) => {
     const key = toCamel(total.indicator)
     const indicator = INDICATOR_MAP[key]
     const { prefix, label, show } = indicator
-    const formattedValue = abbreviateNumber(total.value)
+    const fixed = prefix === '$' ? 0 : 1
+    const formattedValue = abbreviateNumber(total.value, fixed)
 
     return { key, show, prefix, label, formattedValue }
   })

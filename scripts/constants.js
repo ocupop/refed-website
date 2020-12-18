@@ -47,3 +47,4 @@ export const INDICATOR_MAP = {
     prefix: ""
   },
 }
+

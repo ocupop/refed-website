@@ -4,15 +4,14 @@ import { InsightsEngineContext } from './context'
 import SolutionsListItem from './SolutionsListItem'
 
 const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emerging_solutions_summary }) => {
-  const { state, setCategory } = useContext(InsightsEngineContext)
-  const { filteredSolutions } = state
-
-  const modeledSolutions = filteredSolutions ? filteredSolutions.data.filter(solution => solution.attributes.include_in_model) : false
-  const emergingSolutions = filteredSolutions ? filteredSolutions.data.filter(solution => !solution.attributes.include_in_model) : false
+  const { categorySolutions, activeCategory } = useContext(InsightsEngineContext)
+  const [pageCategory, setPageCategory] = activeCategory
+  const modeledSolutions = categorySolutions.data ? categorySolutions.data.filter(solution => solution.attributes.include_in_model) : false
+  const emergingSolutions = categorySolutions.data ? categorySolutions.data.filter(solution => !solution.attributes.include_in_model) : false
 
   useEffect(() => {
     if (category) {
-      setCategory(category)
+      setPageCategory(category)
     }
   }, [category])
 
@@ -34,7 +33,9 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
           </div>
 
           <hr className="bg-mid" />
-          {modeledSolutions && modeledSolutions.map(solutionData => <SolutionsListItem solution={solutionData} />)}
+          {modeledSolutions && modeledSolutions.map(solutionData => {
+            return <SolutionsListItem solution={solutionData} key={solutionData.id} />
+          })}
 
         </div>
       </section>
@@ -53,7 +54,9 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
           </div>
 
           <hr className="bg-mid" />
-          {emergingSolutions && emergingSolutions.map(solutionData => <SolutionsListItem solution={solutionData} />)}
+          {emergingSolutions && emergingSolutions.map(solutionData => {
+            return <SolutionsListItem solution={solutionData} key={solutionData.id} />
+          })}
         </div>
       </section>
     </>
