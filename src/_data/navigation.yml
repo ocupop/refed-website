@@ -107,8 +107,8 @@ primary_navigation:
           url: /our-work/our-impact
           alt:
           sublinks:
-            - label: Case Studies
-              url: /our-work/case-studies
+            - label: ReFED Impact Stories
+              url: /our-work/impact-stories
               alt:
             - label: Featured Organizations
               url: /our-work/our-impact/#featured-organizations
