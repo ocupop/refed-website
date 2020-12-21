@@ -108,10 +108,7 @@ primary_navigation:
           alt:
           sublinks:
             - label: ReFED Impact Stories
-              url: /our-work/impact-stories
-              alt:
-            - label: Featured Organizations
-              url: /our-work/our-impact/#featured-organizations
+              url: /our-work/case-studies
               alt:
     - label: Food Waste
       url:
