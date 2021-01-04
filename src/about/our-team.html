@@ -169,6 +169,13 @@ board_of_directors:
   - name: Yalmaz Sidiqqui
     featured_image: /uploads/team/92311e34aed687c93c86b9ea81a2bb0e.jpg
     description_html: '<p>Vice President Corporate Sustainability, MGM Resorts International</p>'
+former_board_members:
+  - name: Rob Kaplan
+    title: Title
+    company: Company Name
+  - name: Devon Klatell
+    title: Title
+    company: Company Name
 advisory_council:
   - name: Dr. Jonathan Foley
     featured_image: /uploads/team/Jonathan Foley.jpg
@@ -288,6 +295,31 @@ cta:
           </div>
         </div>
       {% endfor %}
+    </div>
+    <hr class="border-white my-5">
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="editable">
+          <h4>Recognition of Former Board Members</h4>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          {% for item in page.former_board_members %}
+            <div class="col-12 col-md-4 mb-4">
+              <div data-cms-editor-link="cloudcannon:#former_board_members[{{ forloop.index0 }}]" data-cms-editor-link-style="modal" class="cms-editor-link">
+                <h5>{{ item.name }}</h5>
+                {% if item.title %}
+                  <p class="mb-0 text-serif">{{ item.title }}</p>
+                {% endif %}
+                {% if item.company %}
+                  <p class="text-serif">{{ item.company }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
     <div class="editor-link">
       <div class="row">
