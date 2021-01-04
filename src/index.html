@@ -115,19 +115,19 @@ funder_logos:
 testimonials:
   - title: Denise Oserhues
     description_html: >-
-      <p>The ReFED team has been an incredible strategic partner in our journey
+      <p>"The ReFED team has been an incredible strategic partner in our journey
       to end hunger and waste. ReFED&rsquo;s insights and guidance helped shape
       the strategy of The Kroger Co. Zero Hunger | Zero Waste Foundation&rsquo;s
       Innovation Fund and its open call for innovative solutions. Kroger values
       ReFED&rsquo;s deep knowledge and leadership in food waste reduction, and
       we&rsquo;ve never been more excited and hopeful that together we can truly
-      change our food system.</p>
+      change our food system."</p>
     cite: The Kroger Co.
   - title: Firstname Lastname
     description_html: >-
-      The ReFED team has been an incredible strategic partner in our journey to
+      "The ReFED team has been an incredible strategic partner in our journey to
       end hunger and waste. ReFED’s insights and guidance helped shape the
-      strategy of The Kroger Co. Zero Hunger
+      strategy of The Kroger Co. Zero Hunger"
     cite: Somecompany
 cta_insights_engine:
   label: Powered by
@@ -300,18 +300,17 @@ cta_insights_engine:
   </div>
 </section>
 
-
-  {% include
-    components/carousel.html
-    items=page.testimonials
-    layout="testimonial"
-    theme="transparent"
-    id="testimonialsCarousel"
-    controls="true"
-    indicators="true"
-    editor-link="#testimonials"
-    interval="false"
-  %}
+{% include
+  components/carousel.html
+  items=page.testimonials
+  layout="testimonial"
+  theme="transparent"
+  id="testimonialsCarousel"
+  controls="true"
+  indicators="true"
+  editor-link="#testimonials"
+  interval="false"
+%}
 
 <section class="bg-lighter">
   <div class="container">
