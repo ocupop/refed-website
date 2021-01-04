@@ -171,10 +171,10 @@ board_of_directors:
     description_html: '<p>Vice President Corporate Sustainability, MGM Resorts International</p>'
 former_board_members:
   - name: Rob Kaplan
-    title: Title
+    role: Role name
     company: Company Name
   - name: Devon Klatell
-    title: Title
+    role: Role name
     company: Company Name
 advisory_council:
   - name: Dr. Jonathan Foley
@@ -309,8 +309,8 @@ cta:
             <div class="col-12 col-md-4 mb-4">
               <div data-cms-editor-link="cloudcannon:#former_board_members[{{ forloop.index0 }}]" data-cms-editor-link-style="modal" class="cms-editor-link">
                 <h5>{{ item.name }}</h5>
-                {% if item.title %}
-                  <p class="mb-0 text-serif">{{ item.title }}</p>
+                {% if item.role %}
+                  <p class="mb-0 text-serif">{{ item.role }}</p>
                 {% endif %}
                 {% if item.company %}
                   <p class="text-serif">{{ item.company }}</p>
