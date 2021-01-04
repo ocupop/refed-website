@@ -39,11 +39,11 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
 
         </div>
       </section>
-      <section id="new_and_emerging_solutions" className="pb-0">
+      <section id="unmodeled_solutions" className="pb-0">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2>{emergingSolutions.length} New &amp; Emerging Solutions</h2>
+              <h2>{emergingSolutions.length} Unmodeled Solutions</h2>
               <p
                 data-cms-editor-link="cloudcannon:#new_and_emerging_solutions"
                 data-cms-editor-link-style="modal"
