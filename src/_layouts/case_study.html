@@ -22,9 +22,16 @@ layout: default
   </div>
 </section>
 
-{% for testimonial in page.testimonials %}
-  {% assign id = forloop.index | prepend:'testimonial-' %}
-  {% include components/testimonial.html item=testimonial id=id editor-link="#testimonials" %}
-{% endfor %}
+{% include
+  components/carousel.html
+  items=page.testimonials
+  layout="testimonial"
+  theme="transparent"
+  id="testimonialsCarousel"
+  controls="true"
+  indicators="true"
+  editor-link="#testimonials"
+  interval="false"
+%}
 
 {% include components/cta.html item=page.cta editor-link="#cta" %}
