@@ -1,6 +1,7 @@
-- name: John Doe
-  role: President
-  organization: Test Co. Inc
+---
+- name: Lee Anderson
+  role: 'Director, Global Issues Management & Public Affairs'
+  organization: General Mills
 - name: Jane Doe
   role: CEO
   organization: Big Co. LTD.
@@ -22,3 +23,4 @@
 - name: Susan Johnson
   role: Employee
   organization: Cogswell Cogs
+---
