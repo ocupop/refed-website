@@ -112,9 +112,8 @@ defaults:
             value:
               slug:
               label:
-              invesment_needed:
+              investment_needed:
               investment_needed_summary:
-              innovation_opportunities_html:
         causes:
           - label: Cause
             icon: assignment

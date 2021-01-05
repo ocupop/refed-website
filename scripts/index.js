@@ -7,6 +7,7 @@ import TopSolutions from './stakeholders/TopSolutions'
 // import SolutionGroup from './stakeholders/SolutionGroup'
 // import Test from './Test'
 import CategorySolutions from './CategorySolutions'
+import StakeholderSolution from './StakeholderSolution'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
@@ -25,6 +26,7 @@ const COMPONENTS = {
   // SolutionGroup,
   // Test,
   CategorySolutions,
+  StakeholderSolution,
   // Causes,
 }
 

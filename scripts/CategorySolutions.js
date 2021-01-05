@@ -34,7 +34,7 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
 
           <hr className="bg-mid" />
           {modeledSolutions && modeledSolutions.map(solutionData => {
-            return <SolutionsListItem solution={solutionData} key={solutionData.id} />
+            return <SolutionsListItem solution={solutionData} key={solutionData.id} showIndicators={true} />
           })}
 
         </div>
@@ -55,7 +55,7 @@ const CategorySolutions = ({ category, modeled_solutions_summary, new_and_emergi
 
           <hr className="bg-mid" />
           {emergingSolutions && emergingSolutions.map(solutionData => {
-            return <SolutionsListItem solution={solutionData} key={solutionData.id} />
+            return <SolutionsListItem solution={solutionData} key={solutionData.id} showIndicators={false} />
           })}
         </div>
       </section>
