@@ -110,16 +110,15 @@ partnerships:
       - label: Visit Website
         url: 'https://furtherwithfood.org/'
         alt:
-testimonial:
-  title: Kyle Pogue
-  description_html: >-
-    <p>We are partnering with ReFED to address food loss and waste, because they
-    have a unique and necessary expertise and have done a fantastic job
-    elevating this complex issue. It really needs to be all hands in to address
-    the inefficiencies in our food system, and we look forward to our continued
-    collaboration with them to tackle this issue.</p>
-  cite: 'Environmental Program Manager, CalRecycle'
-  featured_image: /uploads/kyle-pogue-quote.png
+testimonials:
+  - title: Kyle Pogue
+    description_html: >-
+      <p>"We are partnering with ReFED to address food loss and waste, because they
+      have a unique and necessary expertise and have done a fantastic job
+      elevating this complex issue. It really needs to be all hands in to address
+      the inefficiencies in our food system, and we look forward to our continued
+      collaboration with them to tackle this issue."</p>
+    cite: 'Environmental Program Manager, CalRecycle'
 cta_buttons:
   - link: /our-work
     link_label: Learn about Our Work
@@ -289,9 +288,15 @@ _subnav:
 </section>
 
 {% include
-  components/testimonial.html
-  item=page.testimonial
-  editor-link="#testimonial"
+  components/carousel.html
+  items=page.testimonials
+  layout="testimonial"
+  theme="transparent"
+  id="testimonialsCarousel"
+  controls="true"
+  indicators="true"
+  editor-link="#testimonials"
+  interval="false"
 %}
 
 {% include components/cta_insights_engine.html item=page.cta_insights_engine %}

@@ -136,12 +136,12 @@ staff:
       Italy.</p>
 board_of_directors:
   - name: Nicola Dixon
-    featured_image: /uploads/team/Nicola Dixon.jpg
+    featured_image: /uploads/team/Nicola-Dixon.jpg
     description_html: >-
       <p>Chair, ReFED Board of Directors</p><p>Executive Director, General Mills
       Foundation</p>
   - name: Eduardo Romero
-    featured_image: /uploads/team/Eduardo Romero.jpg
+    featured_image: /uploads/team/Eduardo-Romero.jpg
     description_html: >-
       <p>Secretary, ReFED Board of Directors</p><p>President and CEO, Hana
       Group</p>
@@ -169,18 +169,25 @@ board_of_directors:
   - name: Yalmaz Sidiqqui
     featured_image: /uploads/team/92311e34aed687c93c86b9ea81a2bb0e.jpg
     description_html: '<p>Vice President Corporate Sustainability, MGM Resorts International</p>'
+former_board_members:
+  - name: Rob Kaplan
+    role: Role name
+    company: Company Name
+  - name: Devon Klatell
+    role: Role name
+    company: Company Name
 advisory_council:
   - name: Dr. Jonathan Foley
-    featured_image: /uploads/team/Jonathan Foley.jpg
+    featured_image: /uploads/team/Jonathan-Foley.jpg
     description_html: '<p>Executive Director, Project Drawdown</p>'
   - name: Tejal Mody
-    featured_image: /uploads/team/Tejal Mody-Rabobank.jpg
+    featured_image: /uploads/team/Tejal-Mody-Rabobank.jpg
     description_html: '<p>Managing Director, Rabobank</p>'
   - name: Ryan Shadrick Wilson
     featured_image: /uploads/team/ryanshadwickv2.png
     description_html: '<p>Founder, Boardwalk Collective LLC</p>'
   - name: Elise Golan
-    featured_image: /uploads/team/Elise Golan USDA.jpg
+    featured_image: /uploads/team/Elise-Golan-USDA.jpg
     description_html: >-
       <p>Director for Sustainable Development, U.S. Department of
       Agriculture</p>
@@ -301,6 +308,43 @@ cta:
         </div>
       </div>
     </div>
+    <hr class="border-white my-5" />
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="editable">
+          <h4>Former Board Members</h4>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          {% for item in page.former_board_members %}
+            <div class="col-12 col-md-4 mb-4">
+              <div data-cms-editor-link="cloudcannon:#former_board_members[{{ forloop.index0 }}]" data-cms-editor-link-style="modal" class="cms-editor-link">
+                <h5>{{ item.name }}</h5>
+                {% if item.role %}
+                  <p class="mb-0 text-serif">{{ item.role }}</p>
+                {% endif %}
+                {% if item.company %}
+                  <p class="text-serif">{{ item.company }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="editor-link">
+      <div class="row">
+        <div class="col-12">
+          <div data-cms-editor-link="cloudcannon:#former_board_members[+]" class="d-flex align-items-center">
+            <button class="mr-3 btn btn-editor">
+              <i class="ri-add-fill"></i>
+            </button>
+            <span>Add Former Board Members</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -316,12 +360,12 @@ cta:
           </div>
         </div>
       </div>
-      <div class="row align-items-center">
+      <div class="row align-items-lg-center">
         {% for item in page.advisory_council %}
-          <div class="col-12 col-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="row align-items-center mb-4">
-              <div class="col-12 col-lg-4">
-                <img data-cms-editor-link="cloudcannon:#advisory_council[{{ forloop.index0 }}].featured_image" data-cms-editor-link-style="modal" src="{{ item.featured_image | default: site.placeholder_image }}" class="img-fluid cms-editor-link" alt="{{ item.name }}" />
+              <div class="col-6 col-lg-4">
+                <div class="bg-image aspect-1x1" data-cms-editor-link="cloudcannon:#advisory_council[{{ forloop.index0 }}].featured_image" data-cms-editor-link-style="modal" style="background-image: url({{ item.featured_image | default: site.placeholder_image }})" alt="{{ item.name }}"></div>
               </div>
               <div class="col-12 col-lg-8">
                 <div data-cms-editor-link="cloudcannon:#advisory_council[{{ forloop.index0 }}]" data-cms-editor-link-style="modal" class="cms-editor-link">
