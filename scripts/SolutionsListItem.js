@@ -5,7 +5,7 @@ import { formatTotals } from './helpers'
 const SolutionsListItem = ({ solution, showIndicators, investmentNeeded, investmentSummary }) => {
   const [solutionTotals, setSolutionTotals] = useState(false)
   const [keyIndicators, setKeyIndicators] = useState(['usDollarsProfit', 'tonsDiverted'])
-  const { id, attributes: { name, include_in_model, image_url, definition, data } } = solution
+  const { id, name, include_in_model, image_url, definition, data } = solution
 
   useEffect(() => {
     if (data) {

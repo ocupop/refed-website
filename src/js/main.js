@@ -15,7 +15,6 @@
   \*****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 11:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n\n  for (var i = 0, arr2 = new Array(len); i < len; i++) {\n    arr2[i] = arr[i];\n  }\n\n  return arr2;\n}\n\nmodule.exports = _arrayLikeToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayLikeToArray.js?");
@@ -28,7 +27,6 @@ eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.len
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\n\nmodule.exports = _arrayWithHoles;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayWithHoles.js?");
@@ -41,7 +39,6 @@ eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) return arrayLikeToArray(arr);\n}\n\nmodule.exports = _arrayWithoutHoles;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js?");
@@ -54,7 +51,6 @@ eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./n
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 eval("function _assertThisInitialized(self) {\n  if (self === void 0) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }\n\n  return self;\n}\n\nmodule.exports = _assertThisInitialized;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/assertThisInitialized.js?");
@@ -67,7 +63,6 @@ eval("function _assertThisInitialized(self) {\n  if (self === void 0) {\n    thr
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module) => {
 
 eval("function _defineProperty(obj, key, value) {\n  if (key in obj) {\n    Object.defineProperty(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n\n  return obj;\n}\n\nmodule.exports = _defineProperty;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/defineProperty.js?");
@@ -440,8 +435,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 2:2-16 */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 eval("function _extends() {\n  module.exports = _extends = Object.assign || function (target) {\n    for (var i = 1; i < arguments.length; i++) {\n      var source = arguments[i];\n\n      for (var key in source) {\n        if (Object.prototype.hasOwnProperty.call(source, key)) {\n          target[key] = source[key];\n        }\n      }\n    }\n\n    return target;\n  };\n\n  return _extends.apply(this, arguments);\n}\n\nmodule.exports = _extends;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/extends.js?");
@@ -454,7 +447,6 @@ eval("function _extends() {\n  module.exports = _extends = Object.assign || func
   \**************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module) => {
 
 eval("function _inheritsLoose(subClass, superClass) {\n  subClass.prototype = Object.create(superClass.prototype);\n  subClass.prototype.constructor = subClass;\n  subClass.__proto__ = superClass;\n}\n\nmodule.exports = _inheritsLoose;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/inheritsLoose.js?");
@@ -467,7 +459,6 @@ eval("function _inheritsLoose(subClass, superClass) {\n  subClass.prototype = Ob
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter);\n}\n\nmodule.exports = _iterableToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/iterableToArray.js?");
@@ -480,7 +471,6 @@ eval("function _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" &
   \*********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 28:0-14 */
 /***/ ((module) => {
 
 eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return;\n  var _arr = [];\n  var _n = true;\n  var _d = false;\n  var _e = undefined;\n\n  try {\n    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {\n      _arr.push(_s.value);\n\n      if (i && _arr.length === i) break;\n    }\n  } catch (err) {\n    _d = true;\n    _e = err;\n  } finally {\n    try {\n      if (!_n && _i[\"return\"] != null) _i[\"return\"]();\n    } finally {\n      if (_d) throw _e;\n    }\n  }\n\n  return _arr;\n}\n\nmodule.exports = _iterableToArrayLimit;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js?");
@@ -493,7 +483,6 @@ eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefi
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableRest;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/nonIterableRest.js?");
@@ -506,7 +495,6 @@ eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to 
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableSpread;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/nonIterableSpread.js?");
@@ -519,7 +507,6 @@ eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt t
   \************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js\");\n\nfunction _objectWithoutProperties(source, excluded) {\n  if (source == null) return {};\n  var target = objectWithoutPropertiesLoose(source, excluded);\n  var key, i;\n\n  if (Object.getOwnPropertySymbols) {\n    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);\n\n    for (i = 0; i < sourceSymbolKeys.length; i++) {\n      key = sourceSymbolKeys[i];\n      if (excluded.indexOf(key) >= 0) continue;\n      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;\n      target[key] = source[key];\n    }\n  }\n\n  return target;\n}\n\nmodule.exports = _objectWithoutProperties;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/objectWithoutProperties.js?");
@@ -532,7 +519,6 @@ eval("var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithout
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module) => {
 
 eval("function _objectWithoutPropertiesLoose(source, excluded) {\n  if (source == null) return {};\n  var target = {};\n  var sourceKeys = Object.keys(source);\n  var key, i;\n\n  for (i = 0; i < sourceKeys.length; i++) {\n    key = sourceKeys[i];\n    if (excluded.indexOf(key) >= 0) continue;\n    target[key] = source[key];\n  }\n\n  return target;\n}\n\nmodule.exports = _objectWithoutPropertiesLoose;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js?");
@@ -545,7 +531,6 @@ eval("function _objectWithoutPropertiesLoose(source, excluded) {\n  if (source =
   \**************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithHoles.js\");\n\nvar iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ \"./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ \"./node_modules/@babel/runtime/helpers/nonIterableRest.js\");\n\nfunction _slicedToArray(arr, i) {\n  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();\n}\n\nmodule.exports = _slicedToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/slicedToArray.js?");
@@ -558,7 +543,6 @@ eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 eval("function _taggedTemplateLiteral(strings, raw) {\n  if (!raw) {\n    raw = strings.slice(0);\n  }\n\n  return Object.freeze(Object.defineProperties(strings, {\n    raw: {\n      value: Object.freeze(raw)\n    }\n  }));\n}\n\nmodule.exports = _taggedTemplateLiteral;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js?");
@@ -571,7 +555,6 @@ eval("function _taggedTemplateLiteral(strings, raw) {\n  if (!raw) {\n    raw = 
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js\");\n\nvar iterableToArray = __webpack_require__(/*! ./iterableToArray */ \"./node_modules/@babel/runtime/helpers/iterableToArray.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ \"./node_modules/@babel/runtime/helpers/nonIterableSpread.js\");\n\nfunction _toConsumableArray(arr) {\n  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();\n}\n\nmodule.exports = _toConsumableArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/toConsumableArray.js?");
@@ -584,9 +567,6 @@ eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \".
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 9:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 17:0-14 */
 /***/ ((module) => {
 
 eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") {\n    module.exports = _typeof = function _typeof(obj) {\n      return typeof obj;\n    };\n  } else {\n    module.exports = _typeof = function _typeof(obj) {\n      return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n    };\n  }\n\n  return _typeof(obj);\n}\n\nmodule.exports = _typeof;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/typeof.js?");
@@ -599,7 +579,6 @@ eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Sy
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);\n}\n\nmodule.exports = _unsupportedIterableToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js?");
@@ -820,7 +799,6 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -834,7 +812,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -848,7 +825,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -862,7 +838,6 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -876,7 +851,6 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -890,7 +864,6 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -904,7 +877,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -918,7 +890,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -932,7 +903,6 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -946,7 +916,6 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -960,7 +929,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -974,7 +942,6 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -988,7 +955,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1002,7 +968,6 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1016,7 +981,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1030,7 +994,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1044,7 +1007,6 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1058,7 +1020,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1072,7 +1033,6 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1086,7 +1046,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1100,7 +1059,6 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1114,7 +1072,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1128,7 +1085,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1142,7 +1098,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1156,7 +1111,6 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1175,7 +1129,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n/* harmony import */ var _SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SolutionsListItem */ \"./scripts/SolutionsListItem.js\");\n;\n\n\n\n\n\nvar CategorySolutions = function CategorySolutions(_ref) {\n  var category = _ref.category,\n      modeled_solutions_summary = _ref.modeled_solutions_summary,\n      new_and_emerging_solutions_summary = _ref.new_and_emerging_solutions_summary;\n\n  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_context__WEBPACK_IMPORTED_MODULE_3__.InsightsEngineContext),\n      categorySolutions = _useContext.categorySolutions,\n      activeCategory = _useContext.activeCategory;\n\n  var _activeCategory = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(activeCategory, 2),\n      pageCategory = _activeCategory[0],\n      setPageCategory = _activeCategory[1];\n\n  var modeledSolutions = categorySolutions.data ? categorySolutions.data.filter(function (solution) {\n    return solution.attributes.include_in_model;\n  }) : false;\n  var emergingSolutions = categorySolutions.data ? categorySolutions.data.filter(function (solution) {\n    return !solution.attributes.include_in_model;\n  }) : false;\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    if (category) {\n      setPageCategory(category);\n    }\n  }, [category]);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"section\", {\n    id: \"modeled_solutions\",\n    className: \"pb-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-12\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h2\", null, modeledSolutions.length, \" Modeled Solutions\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", {\n    \"data-cms-editor-link\": \"cloudcannon:#modeled_solutions\",\n    \"data-cms-editor-link-style\": \"modal\",\n    className: \"cms-editor-link\"\n  }, modeled_solutions_summary))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"hr\", {\n    className: \"bg-mid\"\n  }), modeledSolutions && modeledSolutions.map(function (solutionData) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__.default, {\n      solution: solutionData,\n      key: solutionData.id,\n      showIndicators: true\n    });\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"section\", {\n    id: \"unmodeled_solutions\",\n    className: \"pb-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-12\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h2\", null, emergingSolutions.length, \" Unmodeled Solutions\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", {\n    \"data-cms-editor-link\": \"cloudcannon:#new_and_emerging_solutions\",\n    \"data-cms-editor-link-style\": \"modal\",\n    className: \"cms-editor-link\"\n  }, new_and_emerging_solutions_summary))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"hr\", {\n    className: \"bg-mid\"\n  }), emergingSolutions && emergingSolutions.map(function (solutionData) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__.default, {\n      solution: solutionData,\n      key: solutionData.id,\n      showIndicators: false\n    });\n  }))));\n};\n\nCategorySolutions.propTypes = {\n  category: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),\n  modeled_solutions_summary: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),\n  new_and_emerging_solutions_summary: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CategorySolutions);\n\n//# sourceURL=webpack://refed-website/./scripts/CategorySolutions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n/* harmony import */ var _SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SolutionsListItem */ \"./scripts/SolutionsListItem.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n;\n\n\n\n\n\n\nvar CategorySolutions = function CategorySolutions(_ref) {\n  var category = _ref.category,\n      modeled_solutions_summary = _ref.modeled_solutions_summary,\n      new_and_emerging_solutions_summary = _ref.new_and_emerging_solutions_summary;\n\n  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_context__WEBPACK_IMPORTED_MODULE_3__.InsightsEngineContext),\n      categorySolutions = _useContext.categorySolutions,\n      activeCategory = _useContext.activeCategory,\n      activeIndicator = _useContext.activeIndicator;\n\n  var _activeCategory = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(activeCategory, 2),\n      pageCategory = _activeCategory[0],\n      setPageCategory = _activeCategory[1];\n\n  var modeledSolutions = categorySolutions.modeledSolutions,\n      emergingSolutions = categorySolutions.emergingSolutions;\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    if (category) {\n      setPageCategory(category);\n    }\n  }, [category]);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, modeledSolutions && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"section\", {\n    id: \"modeled_solutions\",\n    className: \"pb-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-12\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h2\", null, modeledSolutions.length, \" Modeled Solutions\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", {\n    \"data-cms-editor-link\": \"cloudcannon:#modeled_solutions\",\n    \"data-cms-editor-link-style\": \"modal\",\n    className: \"cms-editor-link\"\n  }, modeled_solutions_summary))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"hr\", {\n    className: \"bg-mid\"\n  }), modeledSolutions && modeledSolutions.map(function (solution) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__.default, {\n      solution: solution,\n      key: solution.id,\n      showIndicators: true\n    });\n  }))), emergingSolutions && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"section\", {\n    id: \"unmodeled_solutions\",\n    className: \"pb-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-12\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h2\", null, emergingSolutions.length, \" Unmodeled Solutions\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", {\n    \"data-cms-editor-link\": \"cloudcannon:#new_and_emerging_solutions\",\n    \"data-cms-editor-link-style\": \"modal\",\n    className: \"cms-editor-link\"\n  }, new_and_emerging_solutions_summary))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"hr\", {\n    className: \"bg-mid\"\n  }), emergingSolutions && emergingSolutions.map(function (solution) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_4__.default, {\n      solution: solution,\n      key: solution.id,\n      showIndicators: false\n    });\n  }))));\n};\n\nCategorySolutions.propTypes = {\n  category: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),\n  modeled_solutions_summary: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),\n  new_and_emerging_solutions_summary: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CategorySolutions);\n\n//# sourceURL=webpack://refed-website/./scripts/CategorySolutions.js?");
 
 /***/ }),
 
@@ -1205,7 +1159,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n;\n\n\n\n\nvar SolutionsListItem = function SolutionsListItem(_ref) {\n  var solution = _ref.solution,\n      showIndicators = _ref.showIndicators,\n      investmentNeeded = _ref.investmentNeeded,\n      investmentSummary = _ref.investmentSummary;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),\n      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),\n      solutionTotals = _useState2[0],\n      setSolutionTotals = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(['usDollarsProfit', 'tonsDiverted']),\n      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3, 2),\n      keyIndicators = _useState4[0],\n      setKeyIndicators = _useState4[1];\n\n  var id = solution.id,\n      _solution$attributes = solution.attributes,\n      name = _solution$attributes.name,\n      include_in_model = _solution$attributes.include_in_model,\n      image_url = _solution$attributes.image_url,\n      definition = _solution$attributes.definition,\n      data = _solution$attributes.data;\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    if (data) {\n      setSolutionTotals((0,_helpers__WEBPACK_IMPORTED_MODULE_3__.formatTotals)(data));\n    }\n  }, [data]);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row my-5 align-items-start\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-4 col-lg-1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0\",\n    style: {\n      backgroundImage: \"url(\".concat(image_url == 'TBD' ? '' : image_url, \")\")\n    }\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-lg-11\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h4\", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, definition), showIndicators && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"key-indicators-box d-flex flex-column flex-sm-row bg-lighter p-3 text-mid mb-4\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"key-indicators-box__label d-flex flex-column justify-content-center pr-4 pb-3 pb-sm-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"stat-text m-0\"\n  }, \"Key Indicators\")), keyIndicators && keyIndicators.map(function (uid) {\n    var indicator = solutionTotals[uid];\n\n    if (indicator) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n        key: uid,\n        className: \"d-flex flex-column px-4 border-left pb-3 pb-sm-0\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"span\", {\n        className: \"display-4 d-block lead\"\n      }, indicator.prefix, indicator.formattedValue), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"span\", {\n        className: \"stat-text d-block\"\n      }, indicator.label));\n    }\n  }))), investmentNeeded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row align-items-start\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-md-auto\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"display-4\"\n  }, \"$\", investmentNeeded)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h4\", null, \"Investment Needed\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, investmentSummary)))), include_in_model ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"mt-4\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-database/\".concat(id),\n    className: \"btn btn-link mr-4\"\n  }, \"See Solution Factsheet\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-provider-directory?solution=\".concat(id),\n    className: \"btn btn-link\"\n  }, \"See Solution Provider Directory\"))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-database/\".concat(id),\n    className: \"btn btn-link\"\n  }, \"Learn More\"))))));\n};\n\nSolutionsListItem.propTypes = {\n  solution: prop_types__WEBPACK_IMPORTED_MODULE_2___default().instanceOf(Object)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SolutionsListItem);\n\n//# sourceURL=webpack://refed-website/./scripts/SolutionsListItem.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n;\n\n\n\n\nvar SolutionsListItem = function SolutionsListItem(_ref) {\n  var solution = _ref.solution,\n      showIndicators = _ref.showIndicators,\n      investmentNeeded = _ref.investmentNeeded,\n      investmentSummary = _ref.investmentSummary;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),\n      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),\n      solutionTotals = _useState2[0],\n      setSolutionTotals = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(['usDollarsProfit', 'tonsDiverted']),\n      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3, 2),\n      keyIndicators = _useState4[0],\n      setKeyIndicators = _useState4[1];\n\n  var id = solution.id,\n      name = solution.name,\n      include_in_model = solution.include_in_model,\n      image_url = solution.image_url,\n      definition = solution.definition,\n      data = solution.data;\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    if (data) {\n      setSolutionTotals((0,_helpers__WEBPACK_IMPORTED_MODULE_3__.formatTotals)(data));\n    }\n  }, [data]);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row my-5 align-items-start\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-4 col-lg-1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"bg-image aspect-1x1 rounded-circle mb-3 mb-lg-0\",\n    style: {\n      backgroundImage: \"url(\".concat(image_url == 'TBD' ? '' : image_url, \")\")\n    }\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-lg-11\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h4\", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, definition), showIndicators && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"key-indicators-box d-flex flex-column flex-sm-row bg-lighter p-3 text-mid mb-4\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"key-indicators-box__label d-flex flex-column justify-content-center pr-4 pb-3 pb-sm-0\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"stat-text m-0\"\n  }, \"Key Indicators\")), keyIndicators && keyIndicators.map(function (uid) {\n    var indicator = solutionTotals[uid];\n\n    if (indicator) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n        key: uid,\n        className: \"d-flex flex-column px-4 border-left pb-3 pb-sm-0\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"span\", {\n        className: \"display-4 d-block lead\"\n      }, indicator.prefix, indicator.formattedValue), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"span\", {\n        className: \"stat-text d-block\"\n      }, indicator.label));\n    }\n  }))), investmentNeeded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"row align-items-start\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col-md-auto\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"display-4\"\n  }, \"$\", investmentNeeded)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"col\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"h4\", null, \"Investment Needed\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, investmentSummary)))), include_in_model ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", {\n    className: \"mt-4\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-database/\".concat(id),\n    className: \"btn btn-link mr-4\"\n  }, \"See Solution Factsheet\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-provider-directory?solution=\".concat(id),\n    className: \"btn btn-link\"\n  }, \"See Solution Provider Directory\"))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"p\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"a\", {\n    href: \"https://insights-engine.vercel.app/solution-database/\".concat(id),\n    className: \"btn btn-link\"\n  }, \"Learn More\"))))));\n};\n\nSolutionsListItem.propTypes = {\n  solution: prop_types__WEBPACK_IMPORTED_MODULE_2___default().instanceOf(Object)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SolutionsListItem);\n\n//# sourceURL=webpack://refed-website/./scripts/SolutionsListItem.js?");
 
 /***/ }),
 
@@ -1220,7 +1174,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n/* harmony import */ var _SolutionsListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SolutionsListItem */ \"./scripts/SolutionsListItem.js\");\n;\n\n\n\n\nvar StakeholderSolution = function StakeholderSolution(_ref) {\n  var slug = _ref.slug,\n      investmentneeded = _ref.investmentneeded,\n      investmentsummary = _ref.investmentsummary;\n\n  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_2__.InsightsEngineContext),\n      allSolutions = _useContext.allSolutions;\n\n  var solution = allSolutions.data ? allSolutions.data.find(function (solution) {\n    return solution.id === slug;\n  }) : false;\n  console.log(\"SOLUTION:\", solution);\n  console.log(\"NEEDED:\", investmentneeded);\n  console.log(\"SUMMARY:\", investmentsummary);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, solution && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_3__.default, {\n    solution: solution,\n    investmentNeeded: investmentneeded,\n    investmentSummary: investmentsummary\n  }));\n};\n\nStakeholderSolution.propTypes = {\n  slug: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StakeholderSolution);\n\n//# sourceURL=webpack://refed-website/./scripts/StakeholderSolution.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n/* harmony import */ var _SolutionsListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SolutionsListItem */ \"./scripts/SolutionsListItem.js\");\n;\n\n\n\n\nvar StakeholderSolution = function StakeholderSolution(_ref) {\n  var slug = _ref.slug,\n      investmentneeded = _ref.investmentneeded,\n      investmentsummary = _ref.investmentsummary;\n\n  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_2__.InsightsEngineContext),\n      allSolutions = _useContext.allSolutions;\n\n  var solution = allSolutions ? allSolutions.find(function (solution) {\n    return solution.id === slug;\n  }) : false;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, solution && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolutionsListItem__WEBPACK_IMPORTED_MODULE_3__.default, {\n    solution: solution,\n    investmentNeeded: investmentneeded,\n    investmentSummary: investmentsummary\n  }));\n};\n\nStakeholderSolution.propTypes = {\n  slug: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StakeholderSolution);\n\n//# sourceURL=webpack://refed-website/./scripts/StakeholderSolution.js?");
 
 /***/ }),
 
@@ -1252,7 +1206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"InsightsEngineContext\": () => /* binding */ InsightsEngineContext,\n/* harmony export */   \"InsightsEngineProvider\": () => /* binding */ InsightsEngineProvider\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ \"./node_modules/@babel/runtime/helpers/defineProperty.js\");\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */ \"./scripts/constants.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n;\n\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\n\n\n\n // const initialState = {\n//   category: null,\n//   filteredSolutions: null,\n//   topSolutions: [],\n// }\n// const initialState = {}\n\nvar InsightsEngineContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createContext();\n\nvar InsightsEngineProvider = function InsightsEngineProvider(_ref) {\n  var children = _ref.children;\n\n  // const [state, setState] = useState(initialState)\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),\n      allSolutions = _useState2[0],\n      setAllSolutions = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState3, 2),\n      activeCategory = _useState4[0],\n      setActiveCategory = _useState4[1];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState6 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState5, 2),\n      categorySolutions = _useState6[0],\n      setCategorySolutions = _useState6[1];\n\n  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState8 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState7, 2),\n      categoryTotals = _useState8[0],\n      setCategoryTotals = _useState8[1];\n\n  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('retailers'),\n      _useState10 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState9, 2),\n      activeStakeholder = _useState10[0],\n      setActiveStakeholder = _useState10[1];\n\n  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('tons-diverted'),\n      _useState12 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState11, 2),\n      activeIndicator = _useState12[0],\n      setActiveIndicator = _useState12[1];\n\n  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState14 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState13, 2),\n      topSolutions = _useState14[0],\n      setTopSolutions = _useState14[1];\n\n  var state = {\n    allSolutions: allSolutions,\n    activeCategory: activeCategory,\n    categorySolutions: categorySolutions,\n    categoryTotals: categoryTotals,\n    activeIndicator: activeIndicator,\n    activeStakeholder: activeStakeholder,\n    topSolutions: topSolutions\n  }; // All Solutions\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    axios__WEBPACK_IMPORTED_MODULE_3___default().get(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT).then(function (_ref2) {\n      var response = _ref2.data;\n      setAllSolutions(response);\n    })[\"catch\"](function (error) {\n      return console.log('error', error);\n    });\n  }, []); // Category Solutions\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    if (activeCategory) {\n      axios__WEBPACK_IMPORTED_MODULE_3___default().get(\"\".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT, \"/?category=\").concat(activeCategory)).then(function (_ref3) {\n        var response = _ref3.data;\n        // console.log(activeCategory, response)\n        setCategorySolutions(response);\n        setCategoryTotals((0,_helpers__WEBPACK_IMPORTED_MODULE_5__.formatTotals)(response.meta.total.attributes.data));\n      })[\"catch\"](function (error) {\n        return console.log('error', error);\n      });\n    }\n  }, [activeCategory]); // Top Solutions\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    if (activeIndicator && activeStakeholder) {\n      // TODO: Add logic for sorting top solutions based on indicator\n      console.log(\"Calculating top solutions:\", activeIndicator);\n      axios__WEBPACK_IMPORTED_MODULE_3___default().get(\"\".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT, \"?stakeholder=\").concat(activeStakeholder)).then(function (_ref4) {\n        var response = _ref4.data;\n        var orderedSolutions = response.data.filter(function (solution) {\n          return solution.attributes.include_in_model;\n        }).map(function (solution) {\n          var _solution$attributes = solution.attributes,\n              name = _solution$attributes.name,\n              data = _solution$attributes.data,\n              definition = _solution$attributes.definition;\n          var indicator = _constants__WEBPACK_IMPORTED_MODULE_4__.INDICATOR_MAP[(0,_helpers__WEBPACK_IMPORTED_MODULE_5__.toCamel)(activeIndicator)];\n          var value = data.find(function (metric) {\n            return metric.indicator == activeIndicator;\n          }).value;\n          return {\n            id: solution.id,\n            name: name,\n            definition: definition,\n            data: data,\n            value: value,\n            formattedValue: (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.abbreviateNumber)(value),\n            label: indicator.label\n          };\n        }).sort(function (a, b) {\n          return a.value < b.value ? 1 : -1;\n        });\n        var solutions = orderedSolutions.map(function (solution) {\n          var percentage = (solution.value / orderedSolutions[0].value * 100).toFixed(1);\n          return _objectSpread(_objectSpread({}, solution), {}, {\n            percentage: percentage\n          });\n        }).slice(0, 5);\n        setTopSolutions(solutions);\n      })[\"catch\"](function (error) {\n        return console.log('error', error);\n      });\n    }\n  }, [activeIndicator]); // useEffect(() => {\n  //   console.log(\"STATE:\", state)\n  // }, [state])\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(InsightsEngineContext.Provider, {\n    value: {\n      activeCategory: [activeCategory, setActiveCategory],\n      activeIndicator: [activeIndicator, setActiveIndicator],\n      activeStakeholder: [activeStakeholder, setActiveStakeholder],\n      allSolutions: allSolutions,\n      categorySolutions: categorySolutions,\n      categoryTotals: categoryTotals,\n      topSolutions: topSolutions\n    }\n  }, children);\n};\n\n\n\n//# sourceURL=webpack://refed-website/./scripts/context.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"InsightsEngineContext\": () => /* binding */ InsightsEngineContext,\n/* harmony export */   \"InsightsEngineProvider\": () => /* binding */ InsightsEngineProvider\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ \"./node_modules/@babel/runtime/helpers/defineProperty.js\");\n/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */ \"./scripts/constants.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n;\n\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\n\n\n\n\nvar InsightsEngineContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createContext();\n\nvar InsightsEngineProvider = function InsightsEngineProvider(_ref) {\n  var children = _ref.children;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),\n      allSolutions = _useState2[0],\n      setAllSolutions = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState3, 2),\n      activeCategory = _useState4[0],\n      setActiveCategory = _useState4[1];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState6 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState5, 2),\n      categorySolutions = _useState6[0],\n      setCategorySolutions = _useState6[1];\n\n  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState8 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState7, 2),\n      categoryTotals = _useState8[0],\n      setCategoryTotals = _useState8[1];\n\n  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('retailers'),\n      _useState10 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState9, 2),\n      activeStakeholder = _useState10[0],\n      setActiveStakeholder = _useState10[1];\n\n  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('tons-diverted'),\n      _useState12 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState11, 2),\n      activeIndicator = _useState12[0],\n      setActiveIndicator = _useState12[1];\n\n  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),\n      _useState14 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState13, 2),\n      topSolutions = _useState14[0],\n      setTopSolutions = _useState14[1];\n\n  var state = {\n    allSolutions: allSolutions,\n    activeCategory: activeCategory,\n    categorySolutions: categorySolutions,\n    categoryTotals: categoryTotals,\n    activeIndicator: activeIndicator,\n    activeStakeholder: activeStakeholder,\n    topSolutions: topSolutions\n  };\n\n  var getSolutionDetails = function getSolutionDetails(solution) {\n    var _solution$attributes = solution.attributes,\n        name = _solution$attributes.name,\n        data = _solution$attributes.data,\n        definition = _solution$attributes.definition,\n        include_in_model = _solution$attributes.include_in_model,\n        image_url = _solution$attributes.image_url;\n    var indicator = _constants__WEBPACK_IMPORTED_MODULE_4__.INDICATOR_MAP[(0,_helpers__WEBPACK_IMPORTED_MODULE_5__.toCamel)(activeIndicator)];\n    var value = data.find(function (metric) {\n      return metric.indicator == activeIndicator;\n    }).value;\n    return {\n      id: solution.id,\n      name: name,\n      definition: definition,\n      include_in_model: include_in_model,\n      image_url: image_url,\n      data: data,\n      value: value,\n      formattedValue: (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.abbreviateNumber)(value),\n      label: indicator.label\n    };\n  };\n\n  var getOrderedSolutions = function getOrderedSolutions(data) {\n    var solutions = data.filter(function (solution) {\n      return solution.attributes.include_in_model;\n    }).map(function (solution) {\n      return getSolutionDetails(solution);\n    }).sort(function (a, b) {\n      return a.value < b.value ? 1 : -1;\n    });\n    return solutions;\n  }; // All Solutions\n\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    axios__WEBPACK_IMPORTED_MODULE_3___default().get(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT).then(function (_ref2) {\n      var response = _ref2.data;\n      var solutions = response.data.map(function (solution) {\n        return getSolutionDetails(solution);\n      });\n      setAllSolutions(solutions);\n    })[\"catch\"](function (error) {\n      return console.log('error', error);\n    });\n  }, []); // Category Solutions\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    if (activeCategory) {\n      axios__WEBPACK_IMPORTED_MODULE_3___default().get(\"\".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT, \"/?category=\").concat(activeCategory)).then(function (_ref3) {\n        var response = _ref3.data;\n        var modeledSolutions = getOrderedSolutions(response.data);\n        var emergingSolutions = response.data.filter(function (solution) {\n          return !solution.attributes.include_in_model;\n        }).map(function (solution) {\n          return getSolutionDetails(solution);\n        });\n        setCategorySolutions({\n          modeledSolutions: modeledSolutions,\n          emergingSolutions: emergingSolutions\n        });\n        setCategoryTotals((0,_helpers__WEBPACK_IMPORTED_MODULE_5__.formatTotals)(response.meta.total.attributes.data));\n      })[\"catch\"](function (error) {\n        return console.log('error', error);\n      });\n    }\n  }, [activeCategory, activeIndicator]); // Top Solutions\n\n  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {\n    if (activeIndicator && activeStakeholder) {\n      // console.log(\"Calculating top solutions:\", activeIndicator)\n      axios__WEBPACK_IMPORTED_MODULE_3___default().get(\"\".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.SOLUTIONS_ENDPOINT, \"?stakeholder=\").concat(activeStakeholder)).then(function (_ref4) {\n        var response = _ref4.data;\n        var orderedSolutions = getOrderedSolutions(response.data);\n        var solutions = orderedSolutions.map(function (solution) {\n          var percentage = (solution.value / orderedSolutions[0].value * 100).toFixed(1);\n          return _objectSpread(_objectSpread({}, solution), {}, {\n            percentage: percentage\n          });\n        }).slice(0, 5);\n        setTopSolutions(solutions);\n      })[\"catch\"](function (error) {\n        return console.log('error', error);\n      });\n    }\n  }, [activeIndicator]); // useEffect(() => {\n  //   console.log(\"STATE:\", state)\n  // }, [state])\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(InsightsEngineContext.Provider, {\n    value: {\n      activeCategory: [activeCategory, setActiveCategory],\n      activeIndicator: [activeIndicator, setActiveIndicator],\n      activeStakeholder: [activeStakeholder, setActiveStakeholder],\n      allSolutions: allSolutions,\n      categorySolutions: categorySolutions,\n      categoryTotals: categoryTotals,\n      topSolutions: topSolutions\n    }\n  }, children);\n};\n\n\n\n//# sourceURL=webpack://refed-website/./scripts/context.js?");
 
 /***/ }),
 
@@ -1501,7 +1455,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1515,7 +1468,6 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1529,7 +1481,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1543,7 +1494,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://refed-website/./node_modules/prop-types/index.js?");
@@ -1556,7 +1506,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1951,16 +1900,6 @@ eval("/** @license React v0.20.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 52:26-46 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 125:13-33 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 149:24-44 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 193:15-35 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 548:28-48 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 565:25-45 */
-/*! CommonJS bailout: exports.unstable_shouldYield(...) prevents optimization as exports is passed as call context at 578:74-102 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 591:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 695:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 804:24-44 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";

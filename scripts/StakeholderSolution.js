@@ -5,10 +5,8 @@ import SolutionsListItem from './SolutionsListItem'
 
 const StakeholderSolution = ({ slug, investmentneeded, investmentsummary }) => {
   const { allSolutions } = useContext(InsightsEngineContext)
-  const solution = allSolutions.data ? allSolutions.data.find(solution => solution.id === slug) : false
-  console.log("SOLUTION:", solution)
-  console.log("NEEDED:", investmentneeded)
-  console.log("SUMMARY:", investmentsummary)
+  const solution = allSolutions ? allSolutions.find(solution => solution.id === slug) : false
+
   return (
     <>
       {solution && (

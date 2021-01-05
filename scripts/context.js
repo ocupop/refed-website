@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import { SOLUTIONS_ENDPOINT, INDICATOR_MAP } from './constants'
-import { sortBy, formatTotals, getIndicatorValue, abbreviateNumber, toCamel } from './helpers'
+import { formatTotals, abbreviateNumber, toCamel } from './helpers'
 
 
-
-// const initialState = {
-//   category: null,
-//   filteredSolutions: null,
-//   topSolutions: [],
-// }
-// const initialState = {}
 const InsightsEngineContext = React.createContext()
 
 const InsightsEngineProvider = ({ children }) => {
-  // const [state, setState] = useState(initialState)
   const [allSolutions, setAllSolutions] = useState(false)
   const [activeCategory, setActiveCategory] = useState(false)
   const [categorySolutions, setCategorySolutions] = useState(false)
@@ -32,12 +24,37 @@ const InsightsEngineProvider = ({ children }) => {
     topSolutions
   }
 
+  const getSolutionDetails = (solution) => {
+    const { name, data, definition, include_in_model, image_url } = solution.attributes
+    const indicator = INDICATOR_MAP[toCamel(activeIndicator)]
+    const value = data.find(metric => metric.indicator == activeIndicator).value
+    return {
+      id: solution.id,
+      name,
+      definition,
+      include_in_model,
+      image_url,
+      data,
+      value,
+      formattedValue: abbreviateNumber(value),
+      label: indicator.label
+    }
+  }
+
+  const getOrderedSolutions = (data) => {
+    const solutions = data
+      .filter(solution => solution.attributes.include_in_model)
+      .map(solution => getSolutionDetails(solution))
+      .sort((a, b) => a.value < b.value ? 1 : -1)
+    return solutions
+  }
+
   // All Solutions
   useEffect(() => {
     axios.get(SOLUTIONS_ENDPOINT)
       .then(({ data: response }) => {
-
-        setAllSolutions(response)
+        const solutions = response.data.map(solution => getSolutionDetails(solution))
+        setAllSolutions(solutions)
       })
       .catch(error => console.log('error', error))
   }, [])
@@ -47,40 +64,25 @@ const InsightsEngineProvider = ({ children }) => {
     if (activeCategory) {
       axios.get(`${SOLUTIONS_ENDPOINT}/?category=${activeCategory}`)
         .then(({ data: response }) => {
-          // console.log(activeCategory, response)
-          setCategorySolutions(response)
+          const modeledSolutions = getOrderedSolutions(response.data)
+          const emergingSolutions = response.data
+            .filter(solution => !solution.attributes.include_in_model)
+            .map(solution => getSolutionDetails(solution))
+
+          setCategorySolutions({ modeledSolutions, emergingSolutions })
           setCategoryTotals(formatTotals(response.meta.total.attributes.data))
         })
         .catch(error => console.log('error', error))
     }
-  }, [activeCategory])
+  }, [activeCategory, activeIndicator])
 
   // Top Solutions
   useEffect(() => {
     if (activeIndicator && activeStakeholder) {
-      // TODO: Add logic for sorting top solutions based on indicator
-      console.log("Calculating top solutions:", activeIndicator)
+      // console.log("Calculating top solutions:", activeIndicator)
       axios.get(`${SOLUTIONS_ENDPOINT}?stakeholder=${activeStakeholder}`)
         .then(({ data: response }) => {
-          const orderedSolutions = response.data
-            .filter(solution => solution.attributes.include_in_model)
-            .map(solution => {
-              const { name, data, definition } = solution.attributes
-              const indicator = INDICATOR_MAP[toCamel(activeIndicator)]
-              const value = data.find(metric => metric.indicator == activeIndicator).value
-
-              return {
-                id: solution.id,
-                name,
-                definition,
-                data,
-                value,
-                formattedValue: abbreviateNumber(value),
-                label: indicator.label
-              }
-            })
-            .sort((a, b) => a.value < b.value ? 1 : -1)
-
+          const orderedSolutions = getOrderedSolutions(response.data)
           const solutions = orderedSolutions
             .map(solution => {
               const percentage = (solution.value / orderedSolutions[0].value * 100).toFixed(1)
