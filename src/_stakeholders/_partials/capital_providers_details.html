@@ -57,12 +57,7 @@
         </div>
       </div>
       {% for solution in active_area.solutions %}
-        <div
-          class="__react-component"
-          data-component="StakeholderSolution"
-          data-slug="{{ solution.slug }}"
-          data-investmentneeded="{{ solution.investment_needed }}"
-          data-investmentsummary="{{ solution.investment_needed_summary }}">
+        <div class="__react-component" data-component="StakeholderSolution" data-slug="{{ solution.slug }}" data-investmentneeded="{{ solution.investment_needed }}" data-investmentsummary="{{ solution.investment_needed_summary }}">
         </div>
       {% endfor %}
     </div>
