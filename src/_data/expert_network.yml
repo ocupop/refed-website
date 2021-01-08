@@ -8,9 +8,9 @@
 - name: Jill Conklin
   role:
   organization:
-- name: Susan Johnson
-  role: Employee
-  organization: Cogswell Cogs
+- name: Erin Connor
+  role:
+  organization:
 - name: John Doe
   role: President
   organization: Test Co. Inc
