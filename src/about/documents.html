@@ -4,7 +4,9 @@ title: ReFED Documents
 meta:
   title: Food Waste Organization - Food Waste Reduction - ReFED
   description: >-
-    ReFED is a nonprofit food recycling & waste management organization in the US. We help businesses, nonprofits & investors put the most impactful solutions to reduce food waste into action.
+    ReFED is a nonprofit food recycling & waste management organization in the
+    US. We help businesses, nonprofits & investors put the most impactful
+    solutions to reduce food waste into action.
   image:
 document_sections:
   - title: Annual Reports
@@ -19,7 +21,7 @@ document_sections:
         document:
     embeds:
       - title: Final Report
-        embed_url: '//e.issuu.com/embed.html?d=refed-bestpractices-report-final&u=refed'
+        embed_url: //e.issuu.com/embed.html?d=refed-bestpractices-report-final&u=refed
   - title: Financials
     description_html: >-
       <p>Access our current and historical financial documents, including our
@@ -51,8 +53,12 @@ document_sections:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="editable">Annual Report and Financials</h1>
-        <p class="lead editable">ReFED, Inc. is a 501c (3) tax-exempt non-profit organization that is committed to operating with transparency and accountability, by sharing our financials and the meaningful milestones we’ve made over the course of the years to promote and catalyze focused action towards reducing the amount of food that goes uneaten.</p>
+        <h1 class="editable">
+          Annual Report and Financials
+        </h1>
+        <p class="lead editable">
+          ReFED, Inc. is a 501(c)(3) tax-exempt non-profit organization that is committed to operating with transparency and accountability, by sharing our financials and the meaningful milestones we&rsquo;ve made over the course of the years to promote and catalyze focused action towards reducing the amount of food that goes uneaten.
+        </p>
       </div>
     </div>
   </div>
@@ -60,10 +66,7 @@ document_sections:
 
 {% for section in page.document_sections %}
 <section class="{% cycle '', 'bg-lighter' %}" id="{{ section.title | slugify }}">
-  <div
-    data-cms-editor-link="cloudcannon:#document_sections[{{forloop.index0}}]"
-    data-cms-editor-link-style="modal"
-    class="container cms-editor-link">
+  <div data-cms-editor-link="cloudcannon:#document_sections[{{forloop.index0}}]" data-cms-editor-link-style="modal" class="container cms-editor-link">
     <div class="row">
       <div class="col-12">
         <h3>{{ section.title }}</h3>
@@ -100,4 +103,3 @@ document_sections:
     </div>
   </div>
 </section>
-
