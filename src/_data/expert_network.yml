@@ -5,9 +5,9 @@
 - name: Hunt Briggs
   role:
   organization:
-- name: Marty Smith
-  role: Founder
-  organization: Sprockets and Things
+- name: Jill Conklin
+  role:
+  organization:
 - name: Susan Johnson
   role: Employee
   organization: Cogswell Cogs
