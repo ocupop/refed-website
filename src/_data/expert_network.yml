@@ -8,178 +8,178 @@
 - name: Ricky Ashenfelter
   role: CEO & Co-Founder
   organization: Spoiler Alert
+- name: Greg Baker
+  role: Executive Director
+  organization: 'Center for Food Innovation and Entrepreneurship, Santa Clara University'
+- name: Liz Baldridge
+  role: 'Interim Managing Director, Manufacturing Food Industry Partnerships'
+  organization: Feeding America
+- name: JoAnne Berkenkamp
+  role: Managing Director
+  organization: MBOLD Coalition
+- name: Dylan Bondy
+  role: Director of Outreach
+  organization: Imperfect Foods
 - name: Hunt Briggs
   role: Senior Consultant
   organization: RRS
+- name: Kelly Bryan
+  role: 'Manager, Sustainability'
+  organization: Village Capital
+- name: Jean Buzby
+  role: USDA Food Loss and Waste Liaison
+  organization: U.S. Department of Agriculture
+- name: Kathleen Cacciola
+  role: 'Vice President, Enterprise Sustainability'
+  organization: Aramark
 - name: Jill Conklin
   role: Strategic Development Officer
   organization: Food for Soul
 - name: Erin Connor
   role: 'Manager, Cisco Crisis Respone'
   organization: Cisco
-- name: Josh Domingues
-  role:
-  organization: FlashFood
-- name: Hannah Friedman
-  role: Investment Associate
-  organization: Closed Loop Partners
-- name: Jess Rosen
-  role:
-  organization: Closed Loop Partners
-- name: JoAnne Berkenkamp
-  role: Managing Director
-  organization: MBOLD Coalition
-- name: Lorenzo Macaluso
-  role: Director
-  organization: Green Business Services
-- name: Brian Roe
-  role: Professor
-  organization: Ohio State University
-- name: Sueli Shaw
-  role: Head of Social Impact
-  organization: DoorDash
-- name: Andrea Schnitzer
-  role: Senior Environmental Scientist
-  organization: 'ERG, Inc.'
+- name: Christy Cook
+  role: VP Customer Success
+  organization: Leanpath
 - name: Megan Cornish
   role: VP External
   organization: FoodMaven
+- name: Claire Cummings
+  role: Waste Programs Manager
+  organization: Bon Appetit Management Company
+- name: Steve Dietz
+  role: Vice-President of Development
+  organization: Food Donation Connection
 - name: Nicola Dixon
   role: >-
     Executive Director, General Mills Foundation; and Director, Global
     Philanthropy & Employee Engagement
   organization: General Mills
-- name: Kathleen Cacciola
-  role: 'Vice President, Enterprise Sustainability'
-  organization: Aramark
-- name: Claire Cummings
-  role: Waste Programs Manager
-  organization: Bon Appetit Management Company
-- name: Nell Fry
-  role: Senior Manager
-  organization: Sodexo
-- name: Dylan Bondy
-  role: Director of Outreach
-  organization: Imperfect Foods
-- name: Denise Osterheus
-  role: >-
-    Sr Director, Corporate Affairs, President of The Kroger Co. Zero Hunger |
-    Zero Waste Foundation
-  organization: The Kroger Co.
-- name: Darcie Renn
-  role: Director of Sustainability
-  organization: Albertsons Companies
-- name: Anna Vinogradova
-  role: Sustainability Director
-  organization: Walmart
-- name: Hannah Koski
-  role: Head of Sustainability and Social Impact
-  organization: Blue Apron
-- name: Jeff Yorzyk
-  role: Director of Sustainability
-  organization: HelloFresh US
-- name: Dawn Rhodes
-  role: Program Lead - Sustainability
-  organization: 'Chick-fil-A, Inc.'
-- name: Jean Buzby
-  role: USDA Food Loss and Waste Liaison
-  organization: U.S. Department of Agriculture
+- name: Josh Domingues
+  role:
+  organization: FlashFood
 - name: Claudia Fabiano
   role: 'Environmental Protection Specialist, Sustainable Management of Food'
   organization: U.S. Environmental Protection Agency
-- name: Shannon Kenny
-  role: Senior Advisor for Food Loss and Food Waste
-  organization: U.S. Environmental Protection Agency
-- name: Tom O'Donnell
-  role: Sustainability Coordinator
-  organization: U.S. Environmental Protection Agency (NAHE) and Cabrini University
-- name: Greg Baker
-  role: Executive Director
-  organization: 'Center for Food Innovation and Entrepreneurship, Santa Clara University'
-- name: Emily Broad Leib
-  role: Faculty Director
-  organization: 'Harvard Law School, Food Law and Policy Clinic'
-- name: Lisa Johnson
-  role: Independent Consultant and Adjunct Assistant Professor
-  organization: LKJ Consulting and North Carolina State University
-- name: Darby Molloy
-  role: Registered Dietitian
-  organization: UChicago Medicine
-- name: Roni Neff
-  role: Associate Professor
-  organization: Johns Hopkins Bloomberg School of Public Health Center for a Livable Future
-- name: Ned Spang
-  role: Assistant Professor
-  organization: UC Davis
-- name: Turner Wyatt
-  role: CEO
-  organization: Upcycled Food Association
-- name: Nora Goldstein
-  role: Editor
-  organization: BioCycle
-- name: Ida Posner
-  role: Strategic Advisor
-  organization: Posner Foundation of Pittsburgh
-- name: Elizabeth Washburn Surti
-  role: Senior Principal
-  organization: Draper Richards Kaplan Foundation
-- name: Kelly Bryan
-  role: 'Manager, Sustainability'
-  organization: Village Capital
 - name: Jesse Fink
   role: Chairman
   organization: MissionPoint Partners
-- name: Danielle Joseph
-  role: Executive Director
-  organization: Closed Loop Partners
-- name: Ben Gray
-  role: Chief Operating Officer
-  organization: Upcycled Food Association
-- name: Darby Hoover
-  role: Senior Resource Specialist
-  organization: Natural Resources Defense Council
-- name: Brian Lipinski
-  role: 'Associate, Food Program'
-  organization: World Resources Institute
-- name: Mary Muth
-  role: 'Director, Food, Nutrition, & Obesity Policy Research'
-  organization: RTI International
-- name: Dan Plechaty
-  role: 'Program Manager, Global Intelligence'
-  organization: ClimateWorks Foundation
-- name: Kai Robertson
-  role: 'Lead Advisor, FLW Protocol'
-  organization: World Resources Institute
-- name: Dan Holladay
-  role: Food & Ag. Public-Private-Partnership Consultant
-  organization: University of California ANR - The Vine
-- name: Sunny Reelhorn Parr
-  role: Executive Director
-  organization: The Kroger Co. Zero Hunger | Zero Waste Foundation
-- name: Liz Baldridge
-  role: 'Interim Managing Director, Manufacturing Food Industry Partnerships'
-  organization: Feeding America
-- name: Steve Dietz
-  role: Vice-President of Development
-  organization: Food Donation Connection
-- name: Bill Reighard
-  role: President
-  organization: Food Donation Connection LLC
-- name: Christy Cook
-  role: VP Customer Success
-  organization: Leanpath
 - name: Steve Finn
   role: >-
     Vice President of Food Waste Prevention (Leanpath), Affiliated Faculty
     (UPenn)
   organization: Leanpath
+- name: Hannah Friedman
+  role: Investment Associate
+  organization: Closed Loop Partners
+- name: Nell Fry
+  role: Senior Manager
+  organization: Sodexo
+- name: Nora Goldstein
+  role: Editor
+  organization: BioCycle
+- name: Ben Gray
+  role: Chief Operating Officer
+  organization: Upcycled Food Association
+- name: Andy Harig
+  role: 'Vice President - Tax, Trade, Sustainability & Policy Development'
+  organization: FMI
+- name: Dan Holladay
+  role: Food & Ag. Public-Private-Partnership Consultant
+  organization: University of California ANR - The Vine
+- name: Darby Hoover
+  role: Senior Resource Specialist
+  organization: Natural Resources Defense Council
+- name: Lisa Johnson
+  role: Independent Consultant and Adjunct Assistant Professor
+  organization: LKJ Consulting and North Carolina State University
+- name: Danielle Joseph
+  role: Executive Director
+  organization: Closed Loop Partners
+- name: Shannon Kenny
+  role: Senior Advisor for Food Loss and Food Waste
+  organization: U.S. Environmental Protection Agency
+- name: Hannah Koski
+  role: Head of Sustainability and Social Impact
+  organization: Blue Apron
+- name: Emily Broad Leib
+  role: Faculty Director
+  organization: 'Harvard Law School, Food Law and Policy Clinic'
+- name: Brian Lipinski
+  role: 'Associate, Food Program'
+  organization: World Resources Institute
+- name: Lorenzo Macaluso
+  role: Director
+  organization: Green Business Services
+- name: Darby Molloy
+  role: Registered Dietitian
+  organization: UChicago Medicine
+- name: Mary Muth
+  role: 'Director, Food, Nutrition, & Obesity Policy Research'
+  organization: RTI International
+- name: Roni Neff
+  role: Associate Professor
+  organization: Johns Hopkins Bloomberg School of Public Health Center for a Livable Future
+- name: Tom O'Donnell
+  role: Sustainability Coordinator
+  organization: U.S. Environmental Protection Agency (NAHE) and Cabrini University
+- name: Denise Osterheus
+  role: >-
+    Sr Director, Corporate Affairs, President of The Kroger Co. Zero Hunger |
+    Zero Waste Foundation
+  organization: The Kroger Co.
+- name: Sunny Reelhorn Parr
+  role: Executive Director
+  organization: The Kroger Co. Zero Hunger | Zero Waste Foundation
+- name: Dan Plechaty
+  role: 'Program Manager, Global Intelligence'
+  organization: ClimateWorks Foundation
+- name: Ida Posner
+  role: Strategic Advisor
+  organization: Posner Foundation of Pittsburgh
+- name: Bill Reighard
+  role: President
+  organization: Food Donation Connection LLC
+- name: Darcie Renn
+  role: Director of Sustainability
+  organization: Albertsons Companies
+- name: Dawn Rhodes
+  role: Program Lead - Sustainability
+  organization: 'Chick-fil-A, Inc.'
+- name: Kai Robertson
+  role: 'Lead Advisor, FLW Protocol'
+  organization: World Resources Institute
+- name: Brian Roe
+  role: Professor
+  organization: Ohio State University
+- name: Jess Rosen
+  role:
+  organization: Closed Loop Partners
+- name: Andrea Schnitzer
+  role: Senior Environmental Scientist
+  organization: 'ERG, Inc.'
 - name: Matt Schwartz
   role: Co-Founder & CEO
   organization: Afresh Technologies
 - name: Andrew Shakman
   role: Co-Founder & CEO
   organization: Leanpath
-- name: Andy Harig
-  role: 'Vice President - Tax, Trade, Sustainability & Policy Development'
-  organization: FMI
+- name: Sueli Shaw
+  role: Head of Social Impact
+  organization: DoorDash
+- name: Ned Spang
+  role: Assistant Professor
+  organization: UC Davis
+- name: Elizabeth Washburn Surti
+  role: Senior Principal
+  organization: Draper Richards Kaplan Foundation
+- name: Anna Vinogradova
+  role: Sustainability Director
+  organization: Walmart
+- name: Turner Wyatt
+  role: CEO
+  organization: Upcycled Food Association
+- name: Jeff Yorzyk
+  role: Director of Sustainability
+  organization: HelloFresh US
 ---
