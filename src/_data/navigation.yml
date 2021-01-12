@@ -185,11 +185,11 @@ primary_navigation:
             - label: Stakeholder Actions
               url: /engage/ways-to-engage/#stakeholder-actions
               alt:
-            - label: Support Our Mission
-              url: /engage/ways-to-engage/#support-our-mission
+            - label: Become a Funder
+              url: /engage/ways-to-engage/#become-a-funder
               alt:
-            - label: Partner with Us
-              url: /engage/ways-to-engage/#partner-with-us
+            - label: Work with Us
+              url: /engage/ways-to-engage/#work-with-us
               alt:
         - label: Events
           url: /engage/in-person-events
