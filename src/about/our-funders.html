@@ -16,10 +16,67 @@ hero:
     description_html:
     image: /img/funders/Our Funders.png
     links:
-logos:
-  - label: ReFED Logo
-    link: 'http://www.refed.com'
-    featured_image: 'https://via.placeholder.com/150x50'
+financial_funders:
+  - label: Ajana Foundation
+    link:
+    featured_image:
+  - label: Arjay R. & Frances F. Miller Family Foundation
+    link:
+    featured_image:
+  - label: Atticus Trust
+    link:
+    featured_image:
+  - label: The Claneil Foundation
+    link:
+    featured_image: /uploads/logos/financial-funders/claneil_foundation_logo.png
+  - label: Crown Family Philanthropies
+    link:
+    featured_image: /uploads/logos/financial-funders/crown-logo.png
+  - label: Fink Family Foundation
+    link:
+    featured_image: /uploads/logos/financial-funders/Fink-Family-Foundation-2.png
+  - label: General Mills
+    link:
+    featured_image: /uploads/logos/financial-funders/general_mills_logo.png
+  - label: Harbourton Foundation
+    link:
+    featured_image:
+  - label: Jackie & Orion Hindawi
+    link:
+    featured_image:
+  - label: Kenneth Goldman Donor Fund
+    link:
+    featured_image:
+  - label: The Kroger Co. Zero Hunger Zero Waste Foundation
+    link:
+    featured_image: /uploads/logos/financial-funders/Kroger_ZHZW_Foundation_onWhite.png
+  - label: Peter Welles
+    link:
+    featured_image:
+  - label: Morton Salt
+    link:
+    featured_image: /uploads/logos/financial-funders/morton_salt_logo.png
+  - label: Pisces Foundation
+    link:
+    featured_image: /uploads/logos/financial-funders/pisces_foundation_logo.png
+  - label: Posner Foundation of Pittsburgh
+    link:
+    featured_image: /uploads/logos/financial-funders/posner_horizontal_charcoal.png
+  - label: Spring Point
+    link:
+    featured_image: /uploads/logos/financial-funders/SP-final-logo.png
+  - label: Walmart Foundation
+    link:
+    featured_image: /uploads/logos/financial-funders/walmartfoundation_logo.png
+  - label: Wiancko Charitable Foundation
+    link:
+    featured_image:
+  - label: Robert W. Wilson Charitable Trust
+    link:
+    featured_image:
+  - label: Anonymous Donor
+    link:
+    featured_image:
 case_studies:
   - crown-family-philanthropies
 cta:
@@ -36,7 +93,7 @@ cta:
   add_divider: left
 ---
 
-<section id="overview">
+<section id="overview" class="bg-lighter">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -48,7 +105,7 @@ cta:
   </div>
 </section>
 
-<section class="bg-lighter logo-pile">
+<section class="bg-lightest logo-pile">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10">
@@ -63,8 +120,8 @@ cta:
     <div class="row">
       <div class="col-12">
         {% include components/logo_pile.html
-          items=page.logos
-          editor-link='#logos'
+          items=page.financial_funders
+          editor-link='#financial_funders'
         %}
       </div>
     </div>

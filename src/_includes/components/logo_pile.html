@@ -3,10 +3,18 @@
   data-cms-editor-link-style="modal"
   class="row flex-wrap align-items-center justify-content-center cms-editor-link">
   {% for logo in include.items %}
-    <div class="col-6 col-sm-3 col-md-2 text-center py-2">
-      {% if logo.link != nil %}<a href="{{logo.link}}" target="_blank">{% endif %}
-        <div class="bg-image aspect-1x1 bg-contain bg-transparent" style="background-image: url('{{ logo.featured_image }}')"></div>
-      {% if logo.link != nil %}</a>{% endif %}
+    <div class="col-6 col-sm-3 col-md-3 text-center">
+      {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
+        {% if logo.featured_image %}
+          <div class="p-4">
+            <div class="bg-image aspect-1x1 bg-contain bg-transparent" style="background-image: url('{{ logo.featured_image }}')"></div>
+          </div>
+        {% else %}
+          <div class="p-4">
+            <h5 class="text-uppercase text-dark">{{ logo.label }}</h5>
+          </div>  
+        {% endif %}
+      {% if logo.link %}</a>{% endif %}
     </div>
   {% endfor %}
 </div>
