@@ -11,6 +11,14 @@ hero:
     description_html:
     image: /uploads/header-images-for-the-refed-website-4x1-10.png
     links:
+advisory_services:
+  subtitle:
+  title: Advisory Services
+  summary: >-
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cumque, enim deleniti eveniet expedita possimus earum corporis eum omnis adipisci, obcaecati alias facere quidem accusamus! Commodi laborum modi consequatur repellendus!
+  featured_image:
+  link_label:
+  url: 
 join_our_team:
   subtitle:
   title: Join Our Team!
@@ -151,6 +159,11 @@ cta:
         </div>
       </div>
     </div>
+    <div class="row mb-4">
+      <div class="col-12">
+        <a href="" class="btn btn-primary editable">Support our Mission</a>
+      </div>
+    </div>
 
     {% for object in page.featured_articles %}
       {% assign item = site.articles | where: 'slug', object | first %}
@@ -170,6 +183,7 @@ cta:
         <div class="editable">
           <p>ReFED estimates that $18 billion in investment is needed to implement food waste reduction solutions, but that would unlock $100 billion of net societal economic value &ndash; including meals recovered, resources conserved, business profits, jobs created, and more.</p>
         </div>
+        <a href="" class="btn btn-primary editable">Contact Us</a>
       </div>
     </div>
 
@@ -328,30 +342,13 @@ cta:
     </div>
   </div>
 </section>
-
 {% include components/split.html
-  id='join-our-team'
+  id='advisory-services'
   theme='lighter'
   reverse=true
-  item=page.join_our_team
-  editor-link="#join_our_team"
+  item=page.advisory_services
+  editor-link="#advisory_services"
 %}
-
-<section class="bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="editable">
-          Join Our Solution Provider Directory
-        </h3>
-        <div class="editable">
-          <p>The Solution Provider Directory showcases over 700 for-profits, nonprofits, and individuals with ready-to-implement food waste reduction solutions. Being a part of the Solution Provider Directory will give you access to ReFED&rsquo;s growing network of food businesses, funders, subject matter experts, researchers, and government agencies. You will also receive notifications about future funding opportunities, upcoming events, and industry reports.</p>
-        </div>
-        <a href="https://www.surveymonkey.com/r/refedsolutionprovider-questionnaire" class="btn btn-primary mt-3 editable" rel="noopener" target="_blank">Join the Solution Provider Directory</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section>
   <div class="container">
@@ -369,6 +366,30 @@ cta:
     </div>
   </div>
 </section>
+
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="editable">
+          Join Our Solution Provider Directory
+        </h3>
+        <div class="editable">
+          <p>The Solution Provider Directory showcases over 700 for-profits, nonprofits, and individuals with ready-to-implement food waste reduction solutions. Being a part of the Solution Provider Directory will give you access to ReFED&rsquo;s growing network of food businesses, funders, subject matter experts, researchers, and government agencies. You will also receive notifications about future funding opportunities, upcoming events, and industry reports.</p>
+        </div>
+        <a href="https://www.surveymonkey.com/r/refedsolutionprovider-questionnaire" class="btn btn-primary mt-3 editable" rel="noopener" target="_blank">Join the Solution Provider Directory</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include components/split.html
+  id='join-our-team'
+  theme='lighter'
+  reverse=true
+  item=page.join_our_team
+  editor-link="#join_our_team"
+%}
 
 <section class="bg-dark">
   {% include forms/mailinglist.html %}
