@@ -1,0 +1,27 @@
+---
+layout: none
+title: API - Events
+permalink: api/events
+---
+[
+{% for event in site.events %}
+  {
+    "layout": {{ event['layout'] | jsonify }},
+    "url": {{ event['url'] | jsonify }},
+    "title": {{ event['title'] | jsonify }},
+    "subtitle": {{ event['subtitle'] | jsonify }},
+    "slug": {{ event['slug'] | jsonify }},
+    "item_date": {{ event['item_date'] | jsonify }},
+    "date_label": {{ event['date_label'] | jsonify }},
+    "date": {{ event['date'] | jsonify }},
+    "categories": {{ event['categories'] | jsonify }},
+    "event_type": {{ event['event_type'] | jsonify }},
+    "panelists": {{ event['panelists'] | jsonify }},
+    "event_site_link": {{ event['event_site_link'] | jsonify }},
+    "register_link": {{ event['register_link'] | jsonify }},
+    "key_takeaways": {{ event['key_takeaways'] | jsonify }},
+    "featured_image": {{ event['featured_image'] | jsonify }},
+    "output": {{ event['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

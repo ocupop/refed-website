@@ -1,0 +1,21 @@
+---
+layout: none
+title: API - Press
+permalink: api/press
+---
+[
+{% for press in site.press %}
+  {
+    "url": {{ press['url'] | jsonify }},
+    "title": {{ press['title'] | jsonify }},
+    "slug": {{ press['slug'] | jsonify }},
+    "item_date": {{ press['item_date'] | jsonify }},
+    "date": {{ press['date'] | jsonify }},
+    "categories": {{ press['categories'] | jsonify }},
+    "source": {{ press['source'] | jsonify }},
+    "featured_image": {{ press['featured_image'] | jsonify }},
+    "description": {{ press['description_html'] | jsonify }},
+    "link": {{ press['link'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

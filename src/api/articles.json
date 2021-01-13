@@ -10,10 +10,11 @@ permalink: api/articles
     "url": {{ article['url'] | jsonify }},
     "title": {{ article['title'] | jsonify }},
     "slug": {{ article['slug'] | jsonify }},
-    "article_date": {{ article['article_date'] | jsonify }},
+    "item_date": {{ article['item_date'] | jsonify }},
     "date": {{ article['date'] | jsonify }},
     "categories": {{ article['categories'] | jsonify }},
-    "tags": {{ article['tags'] | jsonify }},
+    "author": {{ article['author'] | jsonify }},
+    "featured_image": {{ article['featured_image'] | jsonify }},
     "output": {{ article['output'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
