@@ -21,7 +21,7 @@ permalink: api/events
     "register_link": {{ event['register_link'] | jsonify }},
     "key_takeaways": {{ event['key_takeaways'] | jsonify }},
     "featured_image": {{ event['featured_image'] | jsonify }},
-    "output": {{ event['output'] | jsonify }}
+    "content": {{ event['content'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
