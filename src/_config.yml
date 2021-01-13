@@ -557,3 +557,6 @@ _options:
 
 placeholder_image: 'https://via.placeholder.com/1000'
 
+algolia:
+  application_id: C3MOSKEBQL
+  index_name: dev_refed
