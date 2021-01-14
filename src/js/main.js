@@ -15,7 +15,6 @@
   \*****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 11:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n\n  for (var i = 0, arr2 = new Array(len); i < len; i++) {\n    arr2[i] = arr[i];\n  }\n\n  return arr2;\n}\n\nmodule.exports = _arrayLikeToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayLikeToArray.js?");
@@ -28,7 +27,6 @@ eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.len
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\n\nmodule.exports = _arrayWithHoles;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayWithHoles.js?");
@@ -41,7 +39,6 @@ eval("function _arrayWithHoles(arr) {\n  if (Array.isArray(arr)) return arr;\n}\
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) return arrayLikeToArray(arr);\n}\n\nmodule.exports = _arrayWithoutHoles;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js?");
@@ -54,7 +51,6 @@ eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./n
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 eval("function _assertThisInitialized(self) {\n  if (self === void 0) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }\n\n  return self;\n}\n\nmodule.exports = _assertThisInitialized;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/assertThisInitialized.js?");
@@ -67,7 +63,6 @@ eval("function _assertThisInitialized(self) {\n  if (self === void 0) {\n    thr
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module) => {
 
 eval("function _defineProperty(obj, key, value) {\n  if (key in obj) {\n    Object.defineProperty(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n  } else {\n    obj[key] = value;\n  }\n\n  return obj;\n}\n\nmodule.exports = _defineProperty;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/defineProperty.js?");
@@ -440,8 +435,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 2:2-16 */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 eval("function _extends() {\n  module.exports = _extends = Object.assign || function (target) {\n    for (var i = 1; i < arguments.length; i++) {\n      var source = arguments[i];\n\n      for (var key in source) {\n        if (Object.prototype.hasOwnProperty.call(source, key)) {\n          target[key] = source[key];\n        }\n      }\n    }\n\n    return target;\n  };\n\n  return _extends.apply(this, arguments);\n}\n\nmodule.exports = _extends;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/extends.js?");
@@ -454,7 +447,6 @@ eval("function _extends() {\n  module.exports = _extends = Object.assign || func
   \**************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module) => {
 
 eval("function _inheritsLoose(subClass, superClass) {\n  subClass.prototype = Object.create(superClass.prototype);\n  subClass.prototype.constructor = subClass;\n  subClass.__proto__ = superClass;\n}\n\nmodule.exports = _inheritsLoose;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/inheritsLoose.js?");
@@ -467,7 +459,6 @@ eval("function _inheritsLoose(subClass, superClass) {\n  subClass.prototype = Ob
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter);\n}\n\nmodule.exports = _iterableToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/iterableToArray.js?");
@@ -480,7 +471,6 @@ eval("function _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" &
   \*********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 28:0-14 */
 /***/ ((module) => {
 
 eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return;\n  var _arr = [];\n  var _n = true;\n  var _d = false;\n  var _e = undefined;\n\n  try {\n    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {\n      _arr.push(_s.value);\n\n      if (i && _arr.length === i) break;\n    }\n  } catch (err) {\n    _d = true;\n    _e = err;\n  } finally {\n    try {\n      if (!_n && _i[\"return\"] != null) _i[\"return\"]();\n    } finally {\n      if (_d) throw _e;\n    }\n  }\n\n  return _arr;\n}\n\nmodule.exports = _iterableToArrayLimit;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js?");
@@ -493,7 +483,6 @@ eval("function _iterableToArrayLimit(arr, i) {\n  if (typeof Symbol === \"undefi
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableRest;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/nonIterableRest.js?");
@@ -506,7 +495,6 @@ eval("function _nonIterableRest() {\n  throw new TypeError(\"Invalid attempt to 
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module) => {
 
 eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableSpread;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/nonIterableSpread.js?");
@@ -519,7 +507,6 @@ eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt t
   \************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js\");\n\nfunction _objectWithoutProperties(source, excluded) {\n  if (source == null) return {};\n  var target = objectWithoutPropertiesLoose(source, excluded);\n  var key, i;\n\n  if (Object.getOwnPropertySymbols) {\n    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);\n\n    for (i = 0; i < sourceSymbolKeys.length; i++) {\n      key = sourceSymbolKeys[i];\n      if (excluded.indexOf(key) >= 0) continue;\n      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;\n      target[key] = source[key];\n    }\n  }\n\n  return target;\n}\n\nmodule.exports = _objectWithoutProperties;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/objectWithoutProperties.js?");
@@ -532,7 +519,6 @@ eval("var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithout
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module) => {
 
 eval("function _objectWithoutPropertiesLoose(source, excluded) {\n  if (source == null) return {};\n  var target = {};\n  var sourceKeys = Object.keys(source);\n  var key, i;\n\n  for (i = 0; i < sourceKeys.length; i++) {\n    key = sourceKeys[i];\n    if (excluded.indexOf(key) >= 0) continue;\n    target[key] = source[key];\n  }\n\n  return target;\n}\n\nmodule.exports = _objectWithoutPropertiesLoose;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js?");
@@ -545,7 +531,6 @@ eval("function _objectWithoutPropertiesLoose(source, excluded) {\n  if (source =
   \**************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithHoles.js\");\n\nvar iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ \"./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ \"./node_modules/@babel/runtime/helpers/nonIterableRest.js\");\n\nfunction _slicedToArray(arr, i) {\n  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();\n}\n\nmodule.exports = _slicedToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/slicedToArray.js?");
@@ -558,7 +543,6 @@ eval("var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ \"./node_
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 eval("function _taggedTemplateLiteral(strings, raw) {\n  if (!raw) {\n    raw = strings.slice(0);\n  }\n\n  return Object.freeze(Object.defineProperties(strings, {\n    raw: {\n      value: Object.freeze(raw)\n    }\n  }));\n}\n\nmodule.exports = _taggedTemplateLiteral;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js?");
@@ -571,7 +555,6 @@ eval("function _taggedTemplateLiteral(strings, raw) {\n  if (!raw) {\n    raw = 
   \******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js\");\n\nvar iterableToArray = __webpack_require__(/*! ./iterableToArray */ \"./node_modules/@babel/runtime/helpers/iterableToArray.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ \"./node_modules/@babel/runtime/helpers/nonIterableSpread.js\");\n\nfunction _toConsumableArray(arr) {\n  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();\n}\n\nmodule.exports = _toConsumableArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/toConsumableArray.js?");
@@ -584,9 +567,6 @@ eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \".
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 9:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 17:0-14 */
 /***/ ((module) => {
 
 eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") {\n    module.exports = _typeof = function _typeof(obj) {\n      return typeof obj;\n    };\n  } else {\n    module.exports = _typeof = function _typeof(obj) {\n      return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n    };\n  }\n\n  return _typeof(obj);\n}\n\nmodule.exports = _typeof;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/typeof.js?");
@@ -599,7 +579,6 @@ eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Sy
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);\n}\n\nmodule.exports = _unsupportedIterableToArray;\n\n//# sourceURL=webpack://refed-website/./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js?");
@@ -820,7 +799,6 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -834,7 +812,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -848,7 +825,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -862,7 +838,6 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -876,7 +851,6 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -890,7 +864,6 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -904,7 +877,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -918,7 +890,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -932,7 +903,6 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -946,7 +916,6 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -960,7 +929,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -974,7 +942,6 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -988,7 +955,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1002,7 +968,6 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1016,7 +981,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1030,7 +994,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1044,7 +1007,6 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1058,7 +1020,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1072,7 +1033,6 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1086,7 +1046,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1100,7 +1059,6 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1114,7 +1072,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1128,7 +1085,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1142,7 +1098,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1156,7 +1111,6 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1191,6 +1145,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n;\n\n\n\nvar KeyIndicatorOverview = function KeyIndicatorOverview() {\n  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_2__.InsightsEngineContext),\n      categorySolutions = _useContext.categorySolutions,\n      categoryTotals = _useContext.categoryTotals;\n\n  var modeledSolutions = categorySolutions.data ? categorySolutions.data.filter(function (solution) {\n    return solution.attributes.include_in_model;\n  }) : false;\n  var keyIndicators = [\"tonsDiverted\", \"usDollarsProfit\", \"usDollarsCost\", \"totalMtco2eAvoided\", \"gallonsWaterSaved\", \"mealsRecovered\"];\n\n  if (!categoryTotals) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"Loading...\");\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"row\"\n  }, keyIndicators && keyIndicators.map(function (uid) {\n    var indicator = categoryTotals[uid];\n\n    if (indicator) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        key: uid,\n        className: \"col-12 col-sm-6 mb-4\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n        className: \"display-4 d-block\"\n      }, indicator.prefix, indicator.formattedValue), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h6\", null, indicator.label));\n    }\n  })));\n};\n\nKeyIndicatorOverview.propTypes = {\n  category: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KeyIndicatorOverview);\n\n//# sourceURL=webpack://refed-website/./scripts/KeyIndicators.js?");
+
+/***/ }),
+
+/***/ "./scripts/List.js":
+/*!*************************!*\
+  !*** ./scripts/List.js ***!
+  \*************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/slicedToArray.js\");\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _ListItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ListItem */ \"./scripts/ListItem.js\");\n;\n\n\n\n\n\nvar List = function List() {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),\n      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),\n      allListItems = _useState2[0],\n      setAllListItems = _useState2[1];\n\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    axios__WEBPACK_IMPORTED_MODULE_2___default().get(\"https://caring-ship.cloudvent.net/api/articles.json\").then(function (response) {\n      setAllListItems(response.data);\n    })[\"catch\"](function (error) {\n      return console.log('error', error);\n    });\n  }, []);\n  console.log('all list items', allListItems);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, allListItems && allListItems.map(function (listItem, index) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_ListItem__WEBPACK_IMPORTED_MODULE_4__.default, {\n      key: index,\n      listItem: listItem\n    });\n  }));\n};\n\nList.propTypes = {};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (List);\n\n//# sourceURL=webpack://refed-website/./scripts/List.js?");
+
+/***/ }),
+
+/***/ "./scripts/ListItem.js":
+/*!*****************************!*\
+  !*** ./scripts/ListItem.js ***!
+  \*****************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n;\n\n\nvar ListItem = function ListItem(_ref) {\n  var listItem = _ref.listItem;\n  var title = listItem.title,\n      item_date = listItem.item_date,\n      summary = listItem.summary,\n      url = listItem.url,\n      featured_image = listItem.featured_image,\n      source = listItem.source;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"row align-items-center my-5 cms-editor-link\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    \"class\": \"col-12 col-sm-9 col-md-4 col-lg-3 mb-3 \"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    \"class\": \"bg-image aspect-4x3 bg-dark flex-grow-1 flex-shrink-1 mr-lg-4\",\n    style: {\n      backgroundImage: \"url(\" + featured_image + \")\"\n    }\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"col-12 col-md-8\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h4\", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h6\", {\n    className: \"text-gray\"\n  }, source && source, \" |\", item_date && item_date), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"border-top border-color-mid pt-3 my-3\"\n  }, summary), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"a\", {\n    href: url,\n    className: \"btn btn-link\"\n  }, \"Read More\"))));\n};\n\nListItem.propTypes = {};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItem);\n\n//# sourceURL=webpack://refed-website/./scripts/ListItem.js?");
 
 /***/ }),
 
@@ -1291,7 +1275,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _KeyIndicators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./KeyIndicators */ \"./scripts/KeyIndicators.js\");\n/* harmony import */ var _stakeholders_TopSolutions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stakeholders/TopSolutions */ \"./scripts/stakeholders/TopSolutions.js\");\n/* harmony import */ var _CategorySolutions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CategorySolutions */ \"./scripts/CategorySolutions.js\");\n/* harmony import */ var _StakeholderSolution__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StakeholderSolution */ \"./scripts/StakeholderSolution.js\");\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! gsap/ScrollToPlugin */ \"./node_modules/gsap/ScrollToPlugin.js\");\n/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! gsap/ScrollTrigger */ \"./node_modules/gsap/ScrollTrigger.js\");\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n;\n // import HelloWorld from './HelloWorld'\n\n\n // import ModeledSolutions from './stakeholders/ModeledSolutions'\n// import SolutionGroup from './stakeholders/SolutionGroup'\n// import Test from './Test'\n\n\n // import Causes from './stakeholders/Causes'\n\n\n\n\n\ngsap__WEBPACK_IMPORTED_MODULE_7__.gsap.registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_8__.ScrollToPlugin, gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_9__.ScrollTrigger);\nvar COMPONENTS = {\n  // HelloWorld,\n  KeyIndicators: _KeyIndicators__WEBPACK_IMPORTED_MODULE_2__.default,\n  TopSolutions: _stakeholders_TopSolutions__WEBPACK_IMPORTED_MODULE_3__.default,\n  // ModeledSolutions,\n  // SolutionGroup,\n  // Test,\n  CategorySolutions: _CategorySolutions__WEBPACK_IMPORTED_MODULE_4__.default,\n  StakeholderSolution: _StakeholderSolution__WEBPACK_IMPORTED_MODULE_5__.default // Causes,\n\n}; // function renderAppInElement(el) {\n//   const Component = COMPONENTS[el.dataset.component]\n//   if (!Component) return\n//   // get props from elements data attribute, like the post_id\n//   const props = Object.assign({}, el.dataset);\n//   ReactDOM.render(<InsightsEngineProvider><Component {...props} /></InsightsEngineProvider>, el);\n// }\n// document\n//   .querySelectorAll('.__react-app')\n//   .forEach(renderAppInElement)\n\nvar portals = [];\n\nfunction buildPortal(el) {\n  var Component = COMPONENTS[el.dataset.component];\n  if (!Component) return; // get props from elements data attribute, like the post_id\n\n  var props = Object.assign({}, el.dataset);\n  return /*#__PURE__*/react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, props), el);\n}\n\ndocument.querySelectorAll('.__react-component').forEach(function (el) {\n  console.log(\"React Component:\", el.dataset.component);\n  var portal = buildPortal(el);\n  portals.push(portal);\n});\n\nvar Main = function Main() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_context__WEBPACK_IMPORTED_MODULE_6__.InsightsEngineProvider, null, portals.map(function (portal) {\n    return portal;\n  }));\n};\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Main, null), document.getElementById(\"main\"));\n$('#subnav-toggle').on('click', function () {\n  $('#subnav').toggleClass('show-links');\n});\n$('#subnav .nav-link').on('click', function () {\n  $('#subnav').removeClass('show-links');\n}); //subnav scroll trigger\n\ngsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_9__.ScrollTrigger.create({\n  trigger: \".subnav\",\n  // start: 'top +' + headerHeight,\n  start: 'top +110',\n  end: 99999,\n  pin: true,\n  pinSpacing: false,\n  toggleClass: {\n    className: 'fixed-top',\n    targets: '.subnav'\n  }\n});\n$('.carousel-card .carousel-item').each(function () {\n  var minPerSlide = 3;\n  var next = $(this).next();\n\n  if (!next.length) {\n    next = $(this).siblings(':first');\n  }\n\n  next.children(':first-child').clone().appendTo($(this));\n\n  for (var i = 0; i < minPerSlide; i++) {\n    next = next.next();\n\n    if (!next.length) {\n      next = $(this).siblings(':first');\n    }\n\n    next.children(':first-child').clone().appendTo($(this));\n  }\n});\nvar btns = document.querySelectorAll('.toggle-newsletter-modal');\n\nif (btns) {\n  btns.forEach(function (btn) {\n    // for each option in this dropdown\n    btn.style.cursor = 'pointer';\n    btn.addEventListener(\"click\", function (e) {\n      e.preventDefault();\n      var body = document.getElementsByTagName(\"BODY\")[0];\n      body.classList.toggle(\"show-subscribe-form\");\n    });\n  });\n} //generate ics file to download\n\n\n$('.ics-download').on('click', function () {\n  var cal_single = ics();\n  var subject = $(this).data('subject');\n  var description = $(this).data('description');\n  var location = $(this).data('location');\n  var event_begin = moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');\n  console.log($(this).data('begin'));\n  var event_end = moment($(this).data('end'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');\n  console.log('moment', moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss'));\n  console.log(subject, description, location, event_begin, event_end); // cal_single.addEvent('Best Day', 'This is the best day to demonstrate a single event.', 'New York', '11/12/1987', '11/12/1987');\n\n  cal_single.addEvent(subject, description, location, event_begin, event_end);\n  cal_single.download(subject);\n});\n\n//# sourceURL=webpack://refed-website/./scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _KeyIndicators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./KeyIndicators */ \"./scripts/KeyIndicators.js\");\n/* harmony import */ var _stakeholders_TopSolutions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stakeholders/TopSolutions */ \"./scripts/stakeholders/TopSolutions.js\");\n/* harmony import */ var _CategorySolutions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CategorySolutions */ \"./scripts/CategorySolutions.js\");\n/* harmony import */ var _StakeholderSolution__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StakeholderSolution */ \"./scripts/StakeholderSolution.js\");\n/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./List */ \"./scripts/List.js\");\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! gsap/ScrollToPlugin */ \"./node_modules/gsap/ScrollToPlugin.js\");\n/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! gsap/ScrollTrigger */ \"./node_modules/gsap/ScrollTrigger.js\");\n/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./context */ \"./scripts/context.js\");\n;\n // import HelloWorld from './HelloWorld'\n\n\n // import ModeledSolutions from './stakeholders/ModeledSolutions'\n// import SolutionGroup from './stakeholders/SolutionGroup'\n// import Test from './Test'\n\n\n\n // import Causes from './stakeholders/Causes'\n\n\n\n\n\ngsap__WEBPACK_IMPORTED_MODULE_8__.gsap.registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_9__.ScrollToPlugin, gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_10__.ScrollTrigger);\nvar COMPONENTS = {\n  // HelloWorld,\n  KeyIndicators: _KeyIndicators__WEBPACK_IMPORTED_MODULE_2__.default,\n  TopSolutions: _stakeholders_TopSolutions__WEBPACK_IMPORTED_MODULE_3__.default,\n  // ModeledSolutions,\n  // SolutionGroup,\n  // Test,\n  CategorySolutions: _CategorySolutions__WEBPACK_IMPORTED_MODULE_4__.default,\n  StakeholderSolution: _StakeholderSolution__WEBPACK_IMPORTED_MODULE_5__.default,\n  List: _List__WEBPACK_IMPORTED_MODULE_6__.default // Causes,\n\n}; // function renderAppInElement(el) {\n//   const Component = COMPONENTS[el.dataset.component]\n//   if (!Component) return\n//   // get props from elements data attribute, like the post_id\n//   const props = Object.assign({}, el.dataset);\n//   ReactDOM.render(<InsightsEngineProvider><Component {...props} /></InsightsEngineProvider>, el);\n// }\n// document\n//   .querySelectorAll('.__react-app')\n//   .forEach(renderAppInElement)\n\nvar portals = [];\n\nfunction buildPortal(el) {\n  var Component = COMPONENTS[el.dataset.component];\n  if (!Component) return; // get props from elements data attribute, like the post_id\n\n  var props = Object.assign({}, el.dataset);\n  return /*#__PURE__*/react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, props), el);\n}\n\ndocument.querySelectorAll('.__react-component').forEach(function (el) {\n  console.log(\"React Component:\", el.dataset.component);\n  var portal = buildPortal(el);\n  portals.push(portal);\n});\n\nvar Main = function Main() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_context__WEBPACK_IMPORTED_MODULE_7__.InsightsEngineProvider, null, portals.map(function (portal) {\n    return portal;\n  }));\n};\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Main, null), document.getElementById(\"main\"));\n$('#subnav-toggle').on('click', function () {\n  $('#subnav').toggleClass('show-links');\n});\n$('#subnav .nav-link').on('click', function () {\n  $('#subnav').removeClass('show-links');\n}); //subnav scroll trigger\n\ngsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_10__.ScrollTrigger.create({\n  trigger: \".subnav\",\n  // start: 'top +' + headerHeight,\n  start: 'top +110',\n  end: 99999,\n  pin: true,\n  pinSpacing: false,\n  toggleClass: {\n    className: 'fixed-top',\n    targets: '.subnav'\n  }\n});\n$('.carousel-card .carousel-item').each(function () {\n  var minPerSlide = 3;\n  var next = $(this).next();\n\n  if (!next.length) {\n    next = $(this).siblings(':first');\n  }\n\n  next.children(':first-child').clone().appendTo($(this));\n\n  for (var i = 0; i < minPerSlide; i++) {\n    next = next.next();\n\n    if (!next.length) {\n      next = $(this).siblings(':first');\n    }\n\n    next.children(':first-child').clone().appendTo($(this));\n  }\n});\nvar btns = document.querySelectorAll('.toggle-newsletter-modal');\n\nif (btns) {\n  btns.forEach(function (btn) {\n    // for each option in this dropdown\n    btn.style.cursor = 'pointer';\n    btn.addEventListener(\"click\", function (e) {\n      e.preventDefault();\n      var body = document.getElementsByTagName(\"BODY\")[0];\n      body.classList.toggle(\"show-subscribe-form\");\n    });\n  });\n} //generate ics file to download\n\n\n$('.ics-download').on('click', function () {\n  var cal_single = ics();\n  var subject = $(this).data('subject');\n  var description = $(this).data('description');\n  var location = $(this).data('location');\n  var event_begin = moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');\n  console.log($(this).data('begin'));\n  var event_end = moment($(this).data('end'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss');\n  console.log('moment', moment($(this).data('begin'), 'MM-DD-YYYY h:mm:ss a').format('YYYY/MM/DD HH:mm:ss'));\n  console.log(subject, description, location, event_begin, event_end); // cal_single.addEvent('Best Day', 'This is the best day to demonstrate a single event.', 'New York', '11/12/1987', '11/12/1987');\n\n  cal_single.addEvent(subject, description, location, event_begin, event_end);\n  cal_single.download(subject);\n});\n\n//# sourceURL=webpack://refed-website/./scripts/index.js?");
 
 /***/ }),
 
@@ -1501,7 +1485,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1515,7 +1498,6 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1529,7 +1511,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1543,7 +1524,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://refed-website/./node_modules/prop-types/index.js?");
@@ -1556,7 +1536,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1951,16 +1930,6 @@ eval("/** @license React v0.20.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 52:26-46 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 125:13-33 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 149:24-44 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 193:15-35 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 548:28-48 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 565:25-45 */
-/*! CommonJS bailout: exports.unstable_shouldYield(...) prevents optimization as exports is passed as call context at 578:74-102 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 591:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 695:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 804:24-44 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
