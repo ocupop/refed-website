@@ -4,8 +4,11 @@ title: API - Newsletter
 permalink: api/newsletters
 ---
 [
-{% for newsletter in site.newsletters %}
+{% assign sorted = site.newsletters | sort: 'item_date'  %}
+{% for newsletter in sorted reversed %}
+{% assign id = 'newsletter-' | append: forloop.index %}
   {
+    "id": {{ id | jsonify }},
     "url": {{ newsletter['url'] | jsonify }},
     "title": {{ newsletter['title'] | jsonify }},
     "slug": {{ newsletter['slug'] | jsonify }},

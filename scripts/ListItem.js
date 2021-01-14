@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 
-const ListItem = ({listItem}) => {
-  const {title, item_date, summary, url, featured_image, source } = listItem
+const ListItem = ({item}) => {
+  const {title, item_date, summary, url, featured_image, source } = item
   return (
     <>
      <div 
@@ -36,7 +36,7 @@ const ListItem = ({listItem}) => {
 }
 
 ListItem.propTypes = {
-
+  item: PropTypes.instanceOf(Object)
 }
 
 export default ListItem

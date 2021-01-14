@@ -3,10 +3,10 @@ import axios from 'axios'
 import PropTypes from 'prop-types'
 import ListItem from './ListItem'
 
-const List = () => {
+const List = ({source}) => {
   const [allListItems, setAllListItems] = useState(false)
   useEffect(() => {
-    axios.get(`https://caring-ship.cloudvent.net/api/articles.json`)
+    axios.get(`https://caring-ship.cloudvent.net/api/${source}.json`)
       .then(response => {
         setAllListItems(response.data)
       })
@@ -15,15 +15,15 @@ const List = () => {
   console.log('all list items', allListItems)
   return (
     <>
-     {allListItems && allListItems.map((listItem, index) => {
-        return <ListItem key={index} listItem={listItem}/>
+     {allListItems && allListItems.map(item => {
+        return <ListItem key={item.id} item={item}/>
       })}
     </>
   )
 }
 
 List.propTypes = {
-
+  source: PropTypes.string
 }
 
 export default List

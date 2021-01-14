@@ -6,8 +6,9 @@ permalink: api/articles
 [
 {% assign sorted = site.articles | sort: 'item_date'  %}
 {% for article in sorted reversed %}
+  {% assign id = 'article-' | append: forloop.index %}
   {
-    "layout": {{ article['layout'] | jsonify }},
+    "id": {{ id | jsonify }},
     "url": {{ article['url'] | jsonify }},
     "title": {{ article['title'] | jsonify }},
     "slug": {{ article['slug'] | jsonify }},

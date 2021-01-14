@@ -4,8 +4,11 @@ title: API - Press
 permalink: api/press
 ---
 [
-{% for press in site.press %}
+  {% assign sorted = site.press | sort: 'item_date'  %}
+  {% for press in sorted reversed %}
+  {% assign id = 'press-' | append: forloop.index %}
   {
+    "id": {{ id | jsonify }},
     "url": {{ press['url'] | jsonify }},
     "title": {{ press['title'] | jsonify }},
     "slug": {{ press['slug'] | jsonify }},
