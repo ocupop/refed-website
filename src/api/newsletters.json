@@ -13,7 +13,7 @@ permalink: api/newsletters
     "date": {{ newsletter['date'] | jsonify }},
     "categories": {{ newsletter['categories'] | jsonify }},
     "featured_image": {{ newsletter['featured_image'] | jsonify }},
-    "summary": {{ newsletter['summary'] | jsonify }},
+    "summary": {{ newsletter['summary'] | default: item.description_html | truncatewords: 50 | jsonify }},
     "link": {{ newsletter['link'] | jsonify }},
     "content": {{ article['content'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}

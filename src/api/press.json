@@ -14,7 +14,7 @@ permalink: api/press
     "categories": {{ press['categories'] | jsonify }},
     "source": {{ press['source'] | jsonify }},
     "featured_image": {{ press['featured_image'] | jsonify }},
-    "description": {{ press['description_html'] | jsonify }},
+    "summary": {{ press['description_html'] | jsonify }},
     "link": {{ press['link'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}

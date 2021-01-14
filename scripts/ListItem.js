@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import moment from 'moment'
 
 const ListItem = ({listItem}) => {
   const {title, item_date, summary, url, featured_image, source } = listItem
@@ -7,8 +8,8 @@ const ListItem = ({listItem}) => {
     <>
      <div 
       className="row align-items-center my-5 cms-editor-link">
-        <div class="col-12 col-sm-9 col-md-4 col-lg-3 mb-3 ">
-          <div class="bg-image aspect-4x3 bg-dark flex-grow-1 flex-shrink-1 mr-lg-4" style={ {backgroundImage: "url("+featured_image+")"}}></div>
+        <div className="col-12 col-sm-9 col-md-4 col-lg-3 mb-3 ">
+          <div className="bg-image aspect-4x3 bg-dark flex-grow-1 flex-shrink-1 mr-lg-4" style={ {backgroundImage: "url("+featured_image+")"}}></div>
         </div>
       
         <div className="col-12 col-md-8">
@@ -16,12 +17,12 @@ const ListItem = ({listItem}) => {
             { title }
           </h4>
           <h6 className="text-gray"> 
-              { source && source } |
-              { item_date && item_date  }
+              { source && source }
+              { item_date && moment(item_date).format('MMMM D YYYY')  }
           </h6>
 
           <div  className="border-top border-color-mid pt-3 my-3">
-            { summary }
+            { summary && summary }
           </div> 
           <a href={url} className="btn btn-link">Read More</a>
           {/* <a href="{{ item.link }}" className="btn btn-link" target="_blank">Read More</a> */}
