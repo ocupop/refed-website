@@ -6,7 +6,7 @@ import ListItem from './ListItem'
 const List = () => {
   const [allListItems, setAllListItems] = useState(false)
   useEffect(() => {
-    axios.get(`https://caring-ship.cloudvent.net/api/press.json`)
+    axios.get(`https://caring-ship.cloudvent.net/api/articles.json`)
       .then(response => {
         setAllListItems(response.data)
       })
