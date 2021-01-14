@@ -10,7 +10,7 @@ permalink: api/articles
     "url": {{ article['url'] | jsonify }},
     "title": {{ article['title'] | jsonify }},
     "slug": {{ article['slug'] | jsonify }},
-    "item_date": {{ article['item_date'] | date: "%Y%-d-%m" | jsonify }},
+    "item_date": {{ article['item_date'] | date: "%Y-%m-%d" | jsonify }},
     "date": {{ article['date'] | jsonify }},
     "categories": {{ article['categories'] | jsonify }},
     "author": {{ article['author'] | jsonify }},
