@@ -14,8 +14,9 @@ permalink: api/articles
     "date": {{ article['date'] | jsonify }},
     "categories": {{ article['categories'] | jsonify }},
     "author": {{ article['author'] | jsonify }},
+    "summary": {{ article['summary'] | jsonify }},
     "featured_image": {{ article['featured_image'] | jsonify }},
-    "output": {{ article['output'] | jsonify }}
+    "content": {{ article['content'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
