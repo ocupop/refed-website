@@ -12,25 +12,41 @@
     left: auto;
   }
 
-  // .h4 {
-  //   margin-bottom: 0;
-  //   line-height: 1;
-  //   font-size: 12px;
-  //   @include media-breakpoint-down(lg) {
-  //     font-size: 0.9rem;
-  //   }
-  // }
   .subnav-wrapper {
     display: block;
+    
   }
   .subnav-heading {
     white-space: nowrap;
     font-size: 0.9rem;
     line-height: 1;
-    display: none;
     @include media-breakpoint-up(lg) {
       display: block;
       line-height: 1.3;
+      margin-bottom: 5px;
+    }
+  }
+  .subnav-navbar {
+    ul.nav {
+      li.nav-item {
+        a.nav-link {
+          opacity: 0.5;
+          &:hover,
+          &.active {
+            color: $white;
+            opacity: 1;
+          }
+          @include media-breakpoint-down(lg) {
+            display: none;
+            &.active {
+              display: block;
+            }
+          }
+          @include media-breakpoint-down(md) {
+            margin-top: 4px;
+          }
+        }
+      }
     }
   }
   
@@ -52,15 +68,17 @@
         font-size: 1rem;
       }
     }
-    #subnav-toggle {
-      opacity: 1;
+    .subnav-heading {
+      margin-bottom: 0;
     }
+    
   }
 
   .navbar {
     padding: 0;
     width: 100%;
   }
+  
   ul.nav {
     width: 100%;
     flex-wrap: nowrap;
@@ -77,39 +95,35 @@
         text-transform: uppercase;
         color: $light;
         line-height: 1;
-        opacity: 0.5;
-        &:hover,
-        &.active {
-          color: $white;
-          opacity: 1;
-        }
-        @include media-breakpoint-down(lg) {
-          display: none;
-          &.active {
-            display: block;
-          }
-          
-        }
         @include media-breakpoint-down(md) {
           margin-top: 4px;
         }
       }
     }
   }
-  &.show-links {
-    height: auto !important;
-    max-height: 100% !important;
-    ul.nav {
-      li.nav-item {
-        a.nav-link {
-          display: block;
-          margin-bottom: 7px;
-        }
-      }
-    }
-    #subnav-toggle {
-      transform: rotate(-180deg);
-    }
+  // &.show-links {
+  //   height: auto !important;
+  //   max-height: 100% !important;
+  //   ul.nav {
+  //     li.nav-item {
+  //       a.nav-link {
+  //         display: block;
+  //         margin-bottom: 7px;
+  //       }
+  //     }
+  //   }
+  //   #subnav-toggle {
+  //     transform: rotate(-180deg);
+  //   }
+  // }
+}
+
+#subnav-mobile {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  .nav-link {
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }
 
@@ -120,7 +134,8 @@
   display: block;
   font-size: 30px;
   line-height: 1;
-  opacity: 0;
+  opacity: 1;
+  color: $white;
   @include transition(0.4s);
   @include media-breakpoint-up(xl) {
     display: none;

@@ -71,12 +71,9 @@ const Main = () => (
 
 ReactDOM.render(<Main />, document.getElementById("main"))
 
-$('#subnav-toggle').on('click', function () {
-  $('#subnav').toggleClass('show-links');
-})
-
-$('#subnav .nav-link').on('click', function () {
-  $('#subnav').removeClass('show-links')
+$('#subnav-mobile .nav-link').on('click', function () {
+  console.log('close the subnav')
+  $('#subnav-mobile').collapse('hide');
 })
 
 //subnav scroll trigger

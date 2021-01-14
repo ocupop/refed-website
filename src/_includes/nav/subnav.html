@@ -9,18 +9,34 @@
           <div class="subnav-heading mr-3 text-serif">
             {{ include.label }}:
           </div>
-          <nav class="navbar">
+          <nav class="navbar subnav-navbar">
             <ul id="nav-{{ include.label | slugify }}" class="nav">
               {% for item in include.items %}
               {% assign slug = item.label | slugify %}
               <li class="nav-item">
-                <a href="#{{ item._slug | default: slug }}" class="nav-link">{{ item.label }}</a>
+                <a href="#{{ item._slug | default: slug }}" class="nav-link {% if forloop.first %}active{% endif %}">{{ item.label }}</a>
               </li>
               {% endfor %}
             </ul>
           </nav>
         </div>
-        <i id="subnav-toggle" class="ri-arrow-down-s-line"></i>
+        <button id="subnav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subnav-mobile" aria-controls="subnav-mobile" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="ri-arrow-down-s-line"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="collapse bg-teal-500 mt-1" id="subnav-mobile">
+    <div class="container">
+      <div>
+        <ul id="nav-{{ include.label | slugify }}" class="nav">
+          {% for item in include.items %}
+          {% assign slug = item.label | slugify %}
+          <li class="nav-item">
+            <a href="#{{ item._slug | default: slug }}" class="nav-link">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
