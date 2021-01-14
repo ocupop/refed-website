@@ -4,7 +4,8 @@ title: API - Articles
 permalink: api/articles
 ---
 [
-{% for article in site.articles %}
+{% assign sorted = site.articles | sort: 'item_date'  %}
+{% for article in sorted | reversed %}
   {
     "layout": {{ article['layout'] | jsonify }},
     "url": {{ article['url'] | jsonify }},
