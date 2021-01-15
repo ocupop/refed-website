@@ -5,12 +5,7 @@
   width: 100%;
   padding: 5px 0;
   min-height: 30px;
-  &.fixed-top {
-    position: fixed;
-    top: 110px;
-    left: 0;
-    width: 100%;
-  }
+ 
   @include media-breakpoint-down(md) {
     &:not(.fixed-top) {
       .subnav-navbar {
@@ -71,12 +66,15 @@
   }
   
   &.fixed-top {
-    transform: translateY(-32px) !important;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    width: 100%;
     opacity: 1;
     @include media-breakpoint-up(lg) {
+      top: 110px;
       box-shadow: 0 0 5px rgba($black, 0.5);
       height: auto !important;
-      transform: translateY(0) !important;
       .col {
         display: flex;
         align-items: center;
@@ -91,7 +89,6 @@
     .subnav-heading {
       margin-bottom: 0;
     }
-    
   }
 
   .navbar {
@@ -121,28 +118,18 @@
       }
     }
   }
-  // &.show-links {
-  //   height: auto !important;
-  //   max-height: 100% !important;
-  //   ul.nav {
-  //     li.nav-item {
-  //       a.nav-link {
-  //         display: block;
-  //         margin-bottom: 7px;
-  //       }
-  //     }
-  //   }
-  //   #subnav-toggle {
-  //     transform: rotate(-180deg);
-  //   }
-  // }
 }
 
 #subnav-mobile {
   padding-top: 3px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   position: relative;
   z-index: 1200;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -16px;
+  }
   @include media-breakpoint-up(xl) {
     display: none;
   }
@@ -150,7 +137,6 @@
     padding-top: 3px;
     padding-bottom: 3px;
   }
-  
 }
 
 #subnav-toggle {
@@ -163,6 +149,9 @@
   opacity: 1;
   color: $white;
   @include transition(0.4s);
+  @include media-breakpoint-up(lg) {
+    top: -9px;
+  }
   @include media-breakpoint-up(xl) {
     display: none;
   }
