@@ -1,4 +1,5 @@
 import { INDICATOR_MAP } from './constants'
+import { format } from 'date-fns'
 
 export const formatMoney = (amount, currency = '$', decimalCount = 0, decimal = '.', thousands = ',') => {
   try {
@@ -94,4 +95,8 @@ export const getIndicatorOptions = () => {
   const options = Object.entries(INDICATOR_MAP).map(e => Object.assign({}, e[1], { id: e[0] }))
 
   return options
+}
+
+export const formatDate = (date) => {
+  return format(new Date(date), 'MMMM dd yyyy')
 }

@@ -9,6 +9,7 @@ import TopSolutions from './stakeholders/TopSolutions'
 import CategorySolutions from './CategorySolutions'
 import StakeholderSolution from './StakeholderSolution'
 import List from './List'
+import EventList from './EventList'
 // import Causes from './stakeholders/Causes'
 
 import { gsap } from "gsap"
@@ -28,7 +29,8 @@ const COMPONENTS = {
   // Test,
   CategorySolutions,
   StakeholderSolution,
-  List
+  List,
+  EventList
   // Causes,
 }
 
@@ -79,11 +81,8 @@ $('#subnav-mobile .nav-link').on('click', function () {
 //subnav scroll trigger
 ScrollTrigger.create({
   trigger: ".subnav",
-  // start: 'top +' + headerHeight,
   start: 'top +110',
   end: 99999,
-  // pin: true,
-  // pinSpacing: false,
   toggleClass: {
     className: 'fixed-top',
     targets: '.subnav'

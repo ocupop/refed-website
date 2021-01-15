@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { format } from 'date-fns'
+import {formatDate} from './helpers'
 
 const ListItem = ({item}) => {
   const {title, item_date, summary, url, featured_image, source, link } = item
@@ -18,7 +18,7 @@ const ListItem = ({item}) => {
           </h4>
           <h6 className="text-gray"> 
               { source && <span>{source} | </span>}
-              { item_date && format(new Date(item_date), 'MMMM dd yyyy') }
+              { item_date && formatDate(item_date) }
           </h6>
 
           <div  className="border-top border-color-mid pt-3 my-3">

@@ -4,17 +4,6 @@ show_summary:
 show_footer:
 ---
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="editable">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate porro iste fugit eveniet sapiente illo animi ea, sint corporis itaque id similique esse nostrum voluptatem ab neque ipsum repudiandae!
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 {% if page.subnav.show %}
   {% include nav/subnav.html items=page.sections label=page.subnav.label %}
 {% endif %}
@@ -24,19 +13,6 @@ show_footer:
   {% assign slug = section.title | slugify %}
   {% include {{include}} slug=slug index=forloop.index0 %}
 {% endfor %}
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="editable">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate porro iste fugit eveniet sapiente illo animi
-          ea, sint corporis itaque id similique esse nostrum voluptatem ab neque ipsum repudiandae!
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 {{ content }}
 
