@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import moment from 'moment'
 
 const ListItem = ({item}) => {
-  const {title, item_date, summary, url, featured_image, source } = item
+  const {title, item_date, summary, url, featured_image, source, link } = item
   return (
     <>
      <div 
@@ -17,14 +17,15 @@ const ListItem = ({item}) => {
             { title }
           </h4>
           <h6 className="text-gray"> 
-              { source && source }
+              { source && <span>{source} | </span>}
               { item_date && moment(item_date).format('MMMM D YYYY')  }
           </h6>
 
           <div  className="border-top border-color-mid pt-3 my-3">
             { summary && summary }
           </div> 
-          <a href={url} className="btn btn-link">Read More</a>
+          { link ? <a href={ link } className="btn btn-link" target="_blank">Read More</a> : <a href={url} className="btn btn-link">Read More</a>}
+          
           {/* <a href="{{ item.link }}" className="btn btn-link" target="_blank">Read More</a> */}
           {/* {% elsif include.url or item.url %}
             <a href="{{ include.url | default: item.url }}" className="btn btn-link" target="{{ include.link_target | default: '_self'}}">{{ include.link_label | default: 'Read More' }}</a>
