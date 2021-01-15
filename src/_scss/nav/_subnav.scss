@@ -152,11 +152,17 @@
   line-height: 1;
   opacity: 1;
   color: $white;
-  transform: rotate(-180deg);
-  &.collapsed {
-    transform: rotate(0);
+  i {
+    display: inline-block;
+    @include transition(0.4s);
+    transform: rotate(-180deg);
   }
-  @include transition(0.4s);
+  &.collapsed {
+    i {
+      transform: rotate(0);
+    }
+  }
+ 
   @include media-breakpoint-up(lg) {
     top: -9px;
   }
