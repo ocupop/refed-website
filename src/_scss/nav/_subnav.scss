@@ -137,10 +137,14 @@
   padding-bottom: 3px;
   position: relative;
   z-index: 1200;
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
   .nav-link {
     padding-top: 3px;
     padding-bottom: 3px;
   }
+  
 }
 
 #subnav-toggle {
