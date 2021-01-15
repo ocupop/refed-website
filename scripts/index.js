@@ -82,8 +82,8 @@ ScrollTrigger.create({
   // start: 'top +' + headerHeight,
   start: 'top +110',
   end: 99999,
-  pin: true,
-  pinSpacing: false,
+  // pin: true,
+  // pinSpacing: false,
   toggleClass: {
     className: 'fixed-top',
     targets: '.subnav'
