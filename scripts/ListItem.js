@@ -18,7 +18,7 @@ const ListItem = ({item}) => {
           </h4>
           <h6 className="text-gray"> 
               { source && <span>{source} | </span>}
-              { item_date && format(new Date(2014, 1, 11), 'MM/dd/yyyy') }
+              { item_date && format(new Date(item_date), 'MMMM dd yyyy') }
           </h6>
 
           <div  className="border-top border-color-mid pt-3 my-3">
