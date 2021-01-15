@@ -136,18 +136,26 @@
   .nav-link {
     padding-top: 3px;
     padding-bottom: 3px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 }
 
 #subnav-toggle {
   position: absolute;
   right: 7px;
-  top: -4px;
+  top: -2px;
   display: block;
   font-size: 30px;
   line-height: 1;
   opacity: 1;
   color: $white;
+  transform: rotate(-180deg);
+  &.collapsed {
+    transform: rotate(0);
+  }
   @include transition(0.4s);
   @include media-breakpoint-up(lg) {
     top: -9px;
