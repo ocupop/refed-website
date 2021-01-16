@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import PropTypes from 'prop-types'
 import EventCard from './EventCard'
-import lodash from 'lodash'
+import _ from 'lodash'
 
 const EventList = ({source}) => {
   const [allEvents, setAllEvents] = useState(false)
@@ -10,7 +10,7 @@ const EventList = ({source}) => {
     axios.get(`https://caring-ship.cloudvent.net/api/${source}.json`)
       .then(response => {
         setAllEvents(response.data)
-        // setAllEvents(_.sortBy({allEvents}, {item_date}))
+        setAllEvents(_.sortBy({allEvents}, {item_date}))
       })
       .catch(error => console.log('error', error))
   }, [])
