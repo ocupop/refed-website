@@ -1,5 +1,5 @@
 <!-- collapsible rows should only appear on Capital Providers page -->
-<div class="row row-{{ category.uid }}" data-toggle="collapse" data-target="#{{ group.uid }}-{{ area.uid }}">
+<div class="row row-{{ category.uid }}" data-toggle="collapse" data-target="#{{ group.label | slugify }}-{{ area.uid }}">
   <div class="col-12 col-lg-6 col-xl-5">
     <div class="d-flex align-items-center">
       <div class="icon icon-sm icon-{{ area.uid }} mx-4"></div>
@@ -30,7 +30,7 @@
     </div>
   </div>
 </div>
-<div class="collapse" id="{{ group.uid }}-{{ area.uid }}">
+<div class="collapse" id="{{ group.label | slugify }}-{{ area.uid }}">
   <div class="row my-3">
     <div class="col-12">
       <div class="bg-light text-prevention p-5">
