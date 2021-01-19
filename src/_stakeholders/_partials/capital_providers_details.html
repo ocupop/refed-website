@@ -1,12 +1,12 @@
 <!-- collapsible rows should only appear on Capital Providers page -->
-<div class="row row-{{ category.uid }}" data-toggle="collapse" data-target="#{{ group.label | slugify }}-{{ area.uid }}">
-  <div class="col-12 col-lg-6 col-xl-5">
+<div class="row row-{{ category.uid }} {% if active_area.solutions.size == null %}disabled{% endif %}" data-toggle="collapse" data-target="#{{ group.label | slugify }}-{{ area.uid }}">
+  <div class="col-12 col-lg-6 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
     <div class="d-flex align-items-center">
       <div class="icon icon-sm icon-{{ area.uid }} mx-4"></div>
       <h4 class="mb-0">{{ area.label }}</h4>
     </div>
   </div>
-  <div class="col-12 col-lg-6 col-xl-5">
+  <div class="col-12 col-lg-6 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
     <div class="row justify-content-lg-end">
       <div class="d-flex align-items-center pr-4 ml-5 cms-editor-link" data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions" data-cms-editor-link-style="modal">
         <span class="display-4 mr-1">
@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="col-12 col-xl-auto">
-    <div class="collapse-trigger">
+    <div class="collapse-trigger {% if active_area.solutions.size == null %}opacity-6{% endif %}">
       <span>Explore<br /> Solutions</span>
       <span class="arrow arrow-down"></span>
     </div>

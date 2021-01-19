@@ -309,3 +309,7 @@ section.divide {
     border-top: 10px solid $white;
   }
 }
+
+.disabled {
+  pointer-events: none;
+}
