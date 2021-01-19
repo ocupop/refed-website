@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { formatTotals } from './helpers'
 
-const SolutionsListItem = ({ solution, showIndicators, investmentNeeded, investmentSummary }) => {
+const SolutionsListItem = ({ solution, showIndicators, investmentNeeded }) => {
   const [solutionTotals, setSolutionTotals] = useState(false)
   const [keyIndicators, setKeyIndicators] = useState(['usDollarsProfit', 'tonsDiverted'])
   const { id, name, include_in_model, image_url, definition, data } = solution
@@ -47,7 +47,7 @@ const SolutionsListItem = ({ solution, showIndicators, investmentNeeded, investm
 
           {investmentNeeded && (
             <>
-              <div className="row align-items-start">
+              <div className="row align-items-center">
                 <div className="col-md-auto">
                   <div className="display-4">
                     ${investmentNeeded}
@@ -55,7 +55,6 @@ const SolutionsListItem = ({ solution, showIndicators, investmentNeeded, investm
                 </div>
                 <div className="col">
                   <h4>Investment Needed</h4>
-                  <p>{investmentSummary}</p>
                 </div>
               </div>
             </>
@@ -83,7 +82,9 @@ const SolutionsListItem = ({ solution, showIndicators, investmentNeeded, investm
 }
 
 SolutionsListItem.propTypes = {
-  solution: PropTypes.instanceOf(Object)
+  solution: PropTypes.instanceOf(Object),
+  investmentNeeded: PropTypes.string,
+  showIndicators: PropTypes.bool
 }
 
 export default SolutionsListItem

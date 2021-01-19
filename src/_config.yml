@@ -113,7 +113,6 @@ defaults:
               slug:
               label:
               investment_needed:
-              investment_needed_summary:
         causes:
           - label: Cause
             icon: assignment
