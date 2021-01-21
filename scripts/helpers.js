@@ -82,7 +82,8 @@ export const formatTotals = (totals) => {
     const key = toCamel(total.indicator)
     const indicator = INDICATOR_MAP[key]
     const { prefix, label, show } = indicator
-    const fixed = prefix === '$' ? 0 : 1
+    // const fixed = prefix === '$' ? 0 : 1
+    const fixed = 1
     const formattedValue = abbreviateNumber(total.value, fixed)
 
     return { key, show, prefix, label, formattedValue }
