@@ -1,12 +1,12 @@
 <!-- collapsible rows should only appear on Capital Providers page -->
 <div class="row row-{{ category.uid }} {% if active_area.solutions.size == null %}disabled{% endif %}" data-toggle="collapse" data-target="#{{ group.label | slugify }}-{{ area.uid }}">
-  <div class="col-12 col-lg-6 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
+  <div class="col-12 col-lg-5 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
     <div class="d-flex align-items-center">
       <div class="icon icon-sm icon-{{ area.uid }} mx-4"></div>
       <h4 class="mb-0">{{ area.label }}</h4>
     </div>
   </div>
-  <div class="col-12 col-lg-6 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
+  <div class="col-12 col-lg-7 col-xl-5 {% if active_area.solutions.size == null %}opacity-6{% endif %}">
     <div class="row justify-content-lg-end">
       <div class="d-flex align-items-center pr-4 ml-5 cms-editor-link" data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.solutions" data-cms-editor-link-style="modal">
         <span class="display-4 mr-1">
@@ -15,7 +15,7 @@
         <small class="text-uppercase font-weight-bold">Modeled<br />Solutions</small>
       </div>
 
-      <div class="d-flex align-items-center pl-4 border-left cms-editor-link" data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed" data-cms-editor-link-style="modal">
+      <div class="flex-fill d-flex align-items-center pl-4 border-left cms-editor-link" data-cms-editor-link="cloudcannon:#{{ editorRef }}.action_areas.{{ area.slug }}.total_investment_needed" data-cms-editor-link-style="modal">
         <span class="display-4 mr-1">
           ${{ active_area.total_investment_needed | default: '0' }}
         </span>
