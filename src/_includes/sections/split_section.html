@@ -31,7 +31,7 @@
 {% elsif item.summary %}
   {% capture description %}{{ item.summary }}{% endcapture %}
 {% elsif item.description_html  %}
-  {% capture description %}{{item.description_html | truncatewords: 50}}{% endcapture %}
+  {% capture description %}{{item.description_html }}{% endcapture %}
 {% else %}
   {% capture description %}{{item.content | truncatewords: 50}}{% endcapture %}
 {%endif%}
