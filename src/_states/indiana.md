@@ -38,7 +38,7 @@ policy_data:
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
-      - title: Ind. Code § 34-30-5-1—34-30-5-2
+      - title: 'Ind. Code § 34-30-5-1, 34-30-5-2'
         type_of_protection: Civil
         when_protection_will_not_apply: 'Intentional, knowing, or reckless misconduct'
         who_is_protected: 'Donor: Any person<br>Distributor: Nonprofit/charitable organization'
