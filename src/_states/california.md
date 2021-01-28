@@ -54,8 +54,8 @@ policy_data:
       restricted_donations_on_expired_labels:
   liability_protection:
     legislation:
-      - title: Cal. Civ. Code § 1714.25.
-        type_of_protection: Civil
+      - title: Cal. Civ. Code § 1714.25.<br>Cal. Health & Safety § 114433.
+        type_of_protection: Civil and Criminal
         when_protection_will_not_apply: >-
           For the original donor, there is no protection for negligence or a
           willful act; for the ultimate distributor, there is no protection for
