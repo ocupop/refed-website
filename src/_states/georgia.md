@@ -110,23 +110,35 @@ policy_data:
         applies_to_food_type: Prepackaged Sandwiches
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
-          (2) (b) Prepackaged Sandwiches. 1. Type A . . . (ii) Type A Sandwiches
-          which are stored, transported and offered for sale in a
+          4. Prepackaged Sandwiches . . . (i) Type A Sandwiches . . . (II) Type
+          A Sandwiches which are stored, transported and offered for sale in a
           non-refrigerated state shall be labeled with an EXPIRATION DATE not
-          later than two (2) days from the date of manufacture. 2. Type B
-          Sandwiches. (i) Type B Sandwiches are those prePACKAGED sandwiches
-          which are handled and sold as refrigerated sandwiches . . . (iii) The
+          later than two (2) days from the date of manufacture. (ii) Type B
+          Sandwiches . . . (II) Type B Sandwiches which are labeled “keep
+          refrigerated,” and which are stored, transported and offered for sale
+          under refrigeration; . . . shall be labeled with an EXPIRATION DATE
+          not later than seven (7) days from the date of manufacture. (III) The
           EXPIRATION DATE for sandwiches shall state the last day of sale in
           terms of the month, or its abbreviation, and numerical day of the
-          month (e.g. 6-6). The expiration day shall be preceded by an
+          month; i.e. 6-6. The expiration day shall be preceded by an
           explanatory term, such as “Expires”, “Sell-By”, or similar wording.
-          Other PRODUCT CODES or dating methods are prohibited. 3. Type C
-          Sandwiches. (i) Type C Sandwiches are those prePACKAGED sandwiches
-          which are immediately hard frozen after manufacture, […] (iv) The
-          EXPIRATION DATE, as required in Subparagraphs (ii) and (iii) of this
-          section, shall meet the criteria as in 40-7-1-.26(2)(b)2.(iii); and be
-          conspicuously displayed on the front of the wrapper.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.26 (2013).
+          Other product codes or dating methods are prohibited. (iii) Type C
+          Sandwiches . . . (I) Type C Sandwiches are those prePACKAGED
+          sandwiches which are immediately hard frozen after manufacture, and
+          which are in a frozen state until the time of sale to institutions or
+          FOOD ESTABLISHMENTS. . . (II) Type C Sandwiches intended to be
+          maintained in a refrigerated state after removal from the freezer
+          shall be labeled as “keep refrigerated,” placed under refrigeration at
+          or below 5°C (41°F), and an EXPIRATION DATE - not to exceed seven (7)
+          days - shall be stamped on each individual sandwich label. (III) Type
+          C Sandwiches intended to be maintained in a non-refrigerated state
+          after removal from the freezer shall have an EXPIRATION DATE not to
+          exceed two (2) days from the date of such removal stamped on each
+          individual sandwich. (IV) The EXPIRATION DATE, as required in
+          Subparagraphs (II) and (III) of this section, shall meet the criteria
+          as in 40-7-1-.13(3)(e)4(ii)(III) and be conspicuously displayed on the
+          front of the wrapper.
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13.
       - title: '12'
         applies_to_food_type: Prepackaged Sandwiches
         purpose_of_law: Sale after date not permitted
