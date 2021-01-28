@@ -46,7 +46,7 @@ policy_data:
           resulting from the handling, preparation, processing, cooking or
           consumption of food and which is collected from any source and
           includes animals or parts thereof as defined in section 25-3201, Idaho
-          Code.The term shall not apply to private household wastes not removed
+          Code. The term shall not apply to private household wastes not removed
           from the premises where produced. Idaho Code Ann. § 25-234 (2015);
           Idaho Admin. Code r. 02.04.03.400 (2015).
         prohibitions: >-
@@ -62,8 +62,7 @@ policy_data:
           (2015).
         relevant_state_regulatory_body: >-
           Idaho Department of Agriculture, Division of Animal Industries (§
-          25-235 (2015)), <a href="http://www.agri.idaho.gov/AGRI/"
-          target="_blank">http://www.agri.idaho.gov/AGRI/</a>.
+          25-235 (2015)), http://www.agri.idaho.gov/AGRI/.
   organics_recycling_mandates:
     legislation:
       - title:
