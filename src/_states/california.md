@@ -74,9 +74,11 @@ policy_data:
         additional_protections:
   tax_incentives:
     legislation:
-      - title: CAL. REV. & TAX. CODE § 17053.88
+      - title: CAL. REV. & TAX. CODE § 17053.88.5
         deduction_or_credit: Credit
-        benefit: 10% of inventory cost
+        benefit: >-
+          15% of qualified value (with qualified value equal to approximately
+          the wholesale market price)<br>*Tax credit sunsets December 1, 2022
         eligible_donors: 'Taxpayer responsible for planting, managing, and harvesting crops'
         eligible_food: Fresh produce
         eligible_recipients: Food banks located in California
