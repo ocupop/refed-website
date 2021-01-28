@@ -7,13 +7,6 @@ policy_data:
     legislation:
       - title: Reg 1
         applies_to_food_type: General
-        purpose_of_law: Definition (best if used by date)
-        excerpted_language_from_the_law: >-
-          (C) Definitions . . .Best If Used by Date: A date no later than the
-          expiration of the estimated shelf life of a foodproduct . . .
-        legal_citation: 105 Mass. Code Regs. 520.119 (2013).
-      - title: Reg 2
-        applies_to_food_type: General
         purpose_of_law: Definition (open date)
         excerpted_language_from_the_law: >-
           Open Date means a recommended last date of retail sale of a food
