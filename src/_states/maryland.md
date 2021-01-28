@@ -65,6 +65,12 @@ policy_data:
           Mary's County
         eligible_food: Fresh farm products for human consumption
         eligible_recipients: Not Specified
+      - title: 'MD CODE ANN., TAX-GEN., § 10-746'
+        deduction_or_credit: Credit
+        benefit: Up to $50 of the expenses incurred to butcher and process venison
+        eligible_donors: Individuals
+        eligible_food: Venison - antlerless deer for human consumption
+        eligible_recipients: Venison donation program administered by a 501(c)(3) nonprofit
   animal_feed:
     legislation:
       - title: MD Code Ann. Agric. § 3-404 (2015)
