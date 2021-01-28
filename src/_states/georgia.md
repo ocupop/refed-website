@@ -92,12 +92,12 @@ policy_data:
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
-          (8)(c)(a) Raw and frozen shucked molluscan shellfish shall be obtained
-          in nonreturnable packages legibly bearing . . . the “sell by” date for
-          packages with a capacity of less than l.87L (one-half gallon) or the
-          date shucked for packages with a capacity of l.87L (one-half gallon)
-          or more.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.10 (2013).
+          (14)(a) Raw shucked shellfish shall be obtained in nonreturnable
+          packages which bear a legible label that identifies . . . (2) the
+          “sell by” or “best if used by” date for packages with a capacity of
+          less than l.879L (one-half gallon) or the date shucked for packages
+          with a capacity of l.879L (one-half gallon) or more.
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.09 (2013).
       - title: Reg 10
         applies_to_food_type: Shellfish
         purpose_of_law: Sale after date not permitted / Definition (expiration date)
