@@ -100,13 +100,12 @@ policy_data:
         legal_citation: Ga. Comp. R. & Regs. 40-7-1-.09 (2013).
       - title: Reg 10
         applies_to_food_type: Shellfish
-        purpose_of_law: Sale after date not permitted / Definition (expiration date)
+        purpose_of_law: Sale after date not permitted.
         excerpted_language_from_the_law: >-
-          (35) “Expiration Date” is synonymous with Pull Date, Best-By Date,
-          Best Before Date, Use-By Date, and Sell-By Date; and means the last
-          date on which the following FOOD products can be sold at retail or
-          wholesale: . . . (d) Shucked oysters
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.02 (2013).
+          (3)(e) It shall be unLAWful to sell or offer for sale, at retail or
+          wholesale, the following FOOD items past the EXPIRATION DATE stated on
+          the label : (5) Shucked oysters
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13 (2013).
       - title: Reg 11
         applies_to_food_type: Prepackaged Sandwiches
         purpose_of_law: Date labeling required
