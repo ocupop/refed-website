@@ -71,7 +71,7 @@ policy_data:
           (3)(e) Expiration Dates. It shall be unlawful to sell or offer for
           sale, at retail or wholesale, the following food items past the
           EXPIRATION DATE stated on the label: (2) Infant Formula.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.26 (2013).
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13 (2013).
       - title: Reg 7
         applies_to_food_type: Milk
         purpose_of_law: Date labeling required
