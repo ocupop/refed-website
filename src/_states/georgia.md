@@ -143,12 +143,12 @@ policy_data:
         applies_to_food_type: Prepackaged Sandwiches
         purpose_of_law: Sale after date not permitted
         excerpted_language_from_the_law: >-
-          (2) Expiration Dates. It shall be unlawful to sell or offer for sale,
+          (3) Expiration Dates. It shall be unlawful to sell or offer for sale,
           at retail or wholesale, the following food items past the EXPIRATION
-          DATE stated on the label: […](b) Prepackaged Sandwiches. For the
+          DATE stated on the label: […] 4. Prepackaged Sandwiches. For the
           purpose of this section, prePACKAGED sandwiches shall be classified as
           Type A, Type B or Type C.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.26 (2013).
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13.
     label_regulation:
       date_labels_required_for:
         - eggs
