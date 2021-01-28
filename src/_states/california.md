@@ -56,20 +56,21 @@ policy_data:
     legislation:
       - title: Cal. Civ. Code § 1714.25.<br>Cal. Health & Safety § 114433.
         type_of_protection: Civil and Criminal
-        when_protection_will_not_apply: >-
-          For the original donor, there is no protection for negligence or a
-          willful act; for the ultimate distributor, there is no protection for
-          negligence, recklessness, or intentional misconduct.
+        when_protection_will_not_apply: No protection in cases of gross negligence or intentional misconduct.
         who_is_protected: >-
-          Donor: Any food facility, nonprofit charitable organization or food
-          bank<br>Distributor: Nonprofit/charitable organization or food bank
+          Donor: Any person (including businesses and organizations), gleaner,
+          or food facility <br>Distributor: Nonprofit/charitable organization or
+          food bank
         eligible_recipients:
         standards_for_donated_food: >-
           Apparently fit for human consumption. Provides protection regardless
-          of compliance with packaging and labeling laws; food must be fit for
-          human consumption.
+          of compliance with packaging and labeling laws; provides protection
+          even when the food exceeds the labeled shelf life date recommended by
+          the manufacturer (for past-date perishable food, person distributing
+          food to the end recipient must make a good-faith evaluation that the
+          food is wholesome).
         protections_apply_when_recipient_pays_for_donated_food: 'No'
-        protections_apply_to_direct_donations: 'No'
+        protections_apply_to_direct_donations: Yes (donation by food facility only)
         additional_protections:
   tax_incentives:
     legislation:
