@@ -49,7 +49,7 @@ policy_data:
         excerpted_language_from_the_law: >-
           (2) (c) EGGS cannot be offered or held for sale after the EXPIRATION
           DATE, according to Departmental Rules Chapter 40-3-1-.01(e)1.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.2 (2013).
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13.
       - title: Reg 5
         applies_to_food_type: Infant Formula
         purpose_of_law: Date labeling required
