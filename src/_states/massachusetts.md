@@ -14,36 +14,30 @@ policy_data:
           shelf life. An open date on a food package is preceded by terminology
           such as “sell by,” “best by,” “use by,” or similar words.
         legal_citation: 105 Mass. Code Regs. 500.003.
-      - title: Reg 3
+      - title: Reg 2
         applies_to_food_type: General
         purpose_of_law: Date label required
         excerpted_language_from_the_law: >-
-          (G) (1) Placement of the Date. A date shall be displayed with the term
-          “sell by” or “best if used by” in reasonable proximity to the
-          designated date. (2) Such a date shall consist of the common
+          B)(5) Placement of the Date. (a) The term “sell by,” “best by,” “use
+          by,” or similar words shall be either immediately adjacent to, above,
+          or below the designated date. (b) The date shall consist of the common
           abbreviation for the calendar month and numerals for the day and year,
-          e.g., Feb. 10, 1980; or numerals for the month, day and year, e.g.,
-          2/10/80, except that: (a) Perishable food products need not have the
-          year identification included in the date, and frozen and long shelf
-          life foods need not have the day identification included in the date.
-          (b) Fresh bakery products may be dated with only the day designation,
-          e.g., Monday, or an abbreviation thereof, e.g., Mon. (3) A date shall
-          be accompanied by disclosure of recommended product storage
-          conditions, if such conditions significantly affect the validity of
-          such a date. (4) A date and any recommended storage conditions shall
-          be printed, stamped, embossed, perforated, or otherwise shown on the
-          retail package, a label on such package, or a tag attached to such
-          package in a manner that is easily readable and separate from other
-          information, graphics, or lettering so as to be clearly visible to a
-          prospective purchaser. (5) If a date and recommended storage
-          conditions do not appear on the principal display panel, the
-          information panel, or on another conspicuous portion of the individual
-          retail package, a statement must appear on the principal display or
-          information panel indicating where such information can be found
-          elsewhere on the package. (6) An individual prepackaged food product
-          which is not labeled in accordance with the provisions of 105 CMR
-          520.119 shall be deemed “mis-branded” pursuant to M.G.L. c. 94, § 187.
-        legal_citation: 105 Mass. Code Regs. 520.119 (2013).
+          e.g., Feb. 10, 2020; or numerals for the month, day and year, e.g.,
+          2/10/20, except that perishable food products need not have the year
+          identification included in the date, and frozen and long shelf life
+          foods need not have the day identification included in the date. (c)
+          The date shall be accompanied by disclosure of recommended product
+          storage conditions, if such conditions significantly affect the
+          validity of the date. (d) The date and any recommended storage
+          conditions shall be printed, stamped, embossed, perforated, or
+          otherwise shown on the retail package. Such label on such package, or
+          a tag attached to such package, shall be affixed in a manner that is
+          easily readable and separate from other information, graphics, or
+          lettering so as to be clearly visible to a prospective purchaser. (e)
+          An individual prepackaged food product which is not labeled in
+          accordance with 105 CMR 500.006(B)(5) shall be deemed misbranded
+          pursuant to M.G.L. c. 94, § 187.
+        legal_citation: 105 Mass. Code Regs. 500.006.
       - title: Reg 4
         applies_to_food_type: General
         purpose_of_law: Sale after date not permitted
