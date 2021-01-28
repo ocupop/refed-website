@@ -42,7 +42,7 @@ policy_data:
           manufactured milk products shall be approved by the department and
           shall indicate the date of manufacture of the product or the last day
           the product is to be offered for sale.
-        legal_citation: Fla. Admin. Code Ann. r. 5D-1.007 (2013).
+        legal_citation: Fla. Admin. Code Ann. r. 5K-10.003 (2013).
       - title: Reg 5
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Sale after date not permitted
