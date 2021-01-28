@@ -54,16 +54,16 @@ policy_data:
         applies_to_food_type: Infant Formula
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
-          (2) (a) Infant Formula.279 1. Each and every container of liquid or
-          powdered infant formula made from two or more ingredients and
+          (3)(e)(2) Infant Formula.279 1. (i) Each and every container of liquid
+          or powdered infant formula made from two or more ingredients and
           represented as or intended as a replacement or supplement for milk,
           shall conspicuously show in common and express terms the calendar
           month and year after which the product is not to be sold or used for
-          human consumption. 2. The expiration date, or the date after which the
-          product is not to be sold or used for human consumption, shall be
+          human consumption. 2.(ii) The expiration date, or the date after which
+          the product is not to be sold or used for human consumption, shall be
           determined by the manufacturer based on empirical data, or other
           verifiable scientific means.
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.26 (2013).
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13 (2013).
       - title: Reg 6
         applies_to_food_type: Infant Formula
         purpose_of_law: Sale after date not permitted
