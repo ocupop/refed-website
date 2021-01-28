@@ -9,11 +9,12 @@ policy_data:
         applies_to_food_type: General
         purpose_of_law: Definition (expiration date)
         excerpted_language_from_the_law: >-
-          (35) “Expiration Date” is synonymous with Pull Date, Best-By Date,
-          Best Before Date, Use-ByDate, and Sell-By Date; and means the last
-          date on which the following FOOD products canbe sold at retail or
-          wholesale:(a) Prepackaged sandwiches; (b) Eggs, (c) Infant formula,(d)
-          Shucked oysters,(e) Milk, and (f)POTENTIALLY HAZARDOUS FOOD
+          38. “Expiration Date” is synonymous with Pull Date, Best-By Date, Best
+          Before Date, Use-By Date, and Sell-By Date; and means the last date on
+          which the following FOOD products can be sold at retail or wholesale:
+          (i) EGGS; (ii) Infant formula; (iii) Milk; (iv) PrePACKAGED
+          sandwiches; (v) Shucked oysters; and (vi) TIME/TEMPERATURE CONTROL FOR
+          SAFETY FOOD, or any FOOD that is labeled as “keep refrigerated.”
         legal_citation: Ga. Comp. R. & Regs. 40-7-1-.02.
       - title: Reg 2
         applies_to_food_type: Eggs
