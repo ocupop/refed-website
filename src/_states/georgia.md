@@ -82,13 +82,12 @@ policy_data:
         legal_citation: Ga. Comp. R. & Regs. 40-2-3-.01 (2013).
       - title: Reg 8
         applies_to_food_type: Milk
-        purpose_of_law: Sale after date not permitted / Definition (expiration date)
+        purpose_of_law: Sale after date not permitted.
         excerpted_language_from_the_law: >-
-          (35) “Expiration Date” is synonymous with Pull Date, Best-By Date,
-          Best Before Date, Use-By Date, and Sell-By Date; and means the last
-          date on which the following FOOD products can be sold at retail or
-          wholesale: . . . (e) Milk
-        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.02 (2013).
+          (3)(e) Expiration Dates. It shall be unlawful to sell or offer for
+          sale, at retail or wholesale, the following food items past the
+          EXPIRATION DATE stated on the label: (3) Milk.
+        legal_citation: Ga. Comp. R. & Regs. 40-7-1-.13 (2013).
       - title: Reg 9
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
