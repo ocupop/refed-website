@@ -132,14 +132,16 @@ policy_data:
       - title: >-
           SEATTLE MUN. CODE 21.36.082(C)–(D) (2017); SEATTLE MUN. CODE
           21.36.083(B)–(C) (2017)
-        generators_covered:
+        generators_covered: All single-family and multifamily residences and commercial businesses
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
         other_requirements: >-
-          Waiver from the above requirements if there is inadequate storage pace
-          in the residence or commercial structure for recyclable materials.
+          Businesses and individuals must separate food waste and subscribe to
+          compost collection services. Property owners must provide organics
+          bins and collection services to their tenants.
         waivers: >-
-          Waiver from the above requirements if there is inadequate storage pace
-          in the residence or commercial structure for recyclable materials.
+          Waiver from the above requirements if there is inadequate storage
+          space in the residence or commercial structure for recyclable
+          materials.
 ---
 
