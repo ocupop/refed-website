@@ -89,5 +89,15 @@ policy_data:
           generator; and (3) do not have general waste removal services provided
           for by the franchisor. A waiver is valid for one year and may be
           renewed.
+      - title: N.Y. Envtl. Conservation Law §§ 27-2201¬ – 27-22¬19.
+        generators_covered: >-
+          Businesses, nonprofits, government entities, and other organizations,
+          including supermarkets, food service businesses, higher education
+          institutions, hotels, food processors, correctional facilities, and
+          entertainment venues
+        waste_production: 2 tons/week
+        exemptions_for_distance_from_organics_processing_facility: 25 miles
+        other_requirements:
+        waivers:
 ---
 
