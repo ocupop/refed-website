@@ -32,7 +32,7 @@ policy_data:
           the terminal sale date has expired, or sell or offer for sale any
           fresh, frozen, or previously frozen shellfish not in compliance with
           any and all requirements of Rule 5L-1, F.A.C.
-        legal_citation: Fla. Admin. Code Ann r. 5L-1.007 (2013).
+        legal_citation: Fla. Admin. Code Ann r. 5L-1.007.
       - title: Reg 4
         applies_to_food_type: Milk/Dairy
         purpose_of_law: Date labeling required
