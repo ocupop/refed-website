@@ -133,11 +133,22 @@ policy_data:
           target="_blank">http://www.oregon.gov/oda/Pages/default.aspx</a>.
   organics_recycling_mandates:
     legislation:
-      - title:
-        generators_covered:
+      - title: Metro Code Ch. 5.10.410–470
+        generators_covered: >-
+          Businesses that cook, assemble, serve, or sell food, including but not
+          limited to cafeterias, restaurants, retailers, hotels, correctional
+          facilities, and colleges and universities
         waste_production:
         exemptions_for_distance_from_organics_processing_facility:
-        other_requirements:
-        waivers:
+        other_requirements: >-
+          Local jurisdictions within the Metro region must adopt policies
+          requiring covered businesses to source-separate food waste and send it
+          to an authorized facility
+        waivers: >-
+          Local jurisdictions may establish procedures for granting temporary
+          waivers to covered businesses if the business produces less than 250
+          pounds of food waste per week, physical barriers to compliance exist,
+          compliance would be unreasonable costly, or compliance would result in
+          a violation of another local rule
 ---
 
