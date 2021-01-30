@@ -55,19 +55,19 @@ policy_data:
         applies_to_food_type: Packaged Perishable or Semi-Perishable Foods
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
-          (a) No person shall sell, offer for sale, or have in his or her
-          possession with intent to sell any prepackaged perishable or
-          semi-perishable food products unless it is identified with an open
-          date determined by the manufacturer, processor, packer, repacker,
-          retailer, or other person who packaged such food products, and which
-          is displayed in the form specified in 105 CMR 500.006(B)(5)<br>(b) No
-          person receiving a perishable or semi-perishable product in bulk
-          intended for use as a repacked product or as a component of a larger
-          food item shall offer such item for prepackaged retail self-service
-          sale without placing an open date on such product, and the date shall
-          be no later than the date specified on the bulk container from which
-          it was obtained.
-        legal_citation: 105 Mass. Code Regs. 520.119 (2013).
+          B)(1) Open Dating of Perishable and Semi-perishable Food Products. (a)
+          No person shall sell, offer for sale, or have in his or her possession
+          with intent to sell any prepackaged perishable or semi-perishable food
+          products unless it is identified with an open date determined by the
+          manufacturer, processor, packer, repacker, retailer, or other person
+          who packaged such food products, and which is displayed in the form
+          specified in 105 CMR 500.006(B)(5)<br>(b) No person receiving a
+          perishable or semi-perishable product in bulk intended for use as a
+          repacked product or as a component of a larger food item shall offer
+          such item for prepackaged retail self-service sale without placing an
+          open date on such product, and the date shall be no later than the
+          date specified on the bulk container from which it was obtained.
+        legal_citation: 105 Mass. Code Regs. 500.006.
       - title: Reg 6
         applies_to_food_type: Packaged Perishable or Semi-Perishable Foods
         purpose_of_law: Sale after date not permitted
