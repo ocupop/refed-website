@@ -50,15 +50,16 @@ policy_data:
         applies_to_food_type: Shellfish
         purpose_of_law: Date labeling required
         excerpted_language_from_the_law: >-
-          6.6 (d) The dealer shall assure that each package containing less than
-          64 fluid ounces of fresh or frozen shellfish shall have: (i) The
-          shucker-packer’s or repacker’s license number on the label; and (ii) A
-          “SELL BY DATE” which provides a reasonable subsequent shelf-life or
-          the words “BEST IF USED BY” followed by a date when the product would
-          be expected to reach the end of its shelf-life. The date shall consist
-          of the abbreviation for the month and number of the day of the month.
-          For frozen shellfish, the year will be added to the date.
-        legal_citation: 31-3-9 R.I. Code R. § 6.0 (2013).
+          5. The dealer shall assure that each package containing less than
+          sixty-four (64) fluid ounces of fresh or frozen shellfish shall have:
+          a. The shucker-packer's or repacker's license or certification number
+          (if applicable) on the label; and b. A “SELL BY DATE” which provides a
+          reasonable subsequent shelf-life or the words “BEST IF USED BY”
+          followed by a date when the product would be expected to reach the end
+          of its shelf-life. The date shall consist of the abbreviation for the
+          month and number of the day of the month. For frozen shellfish, the
+          year will be added to the date.
+        legal_citation: 216-50-10 R.I. Code R. § 6.4.
     label_regulation:
       date_labels_required_for:
         - shellfish
