@@ -55,7 +55,7 @@ policy_data:
           department, under the provisions of Section 502.231, F.S. (1)(f) This
           rule does not apply to containers of milk or milk products which are
           not to be sold in the State of Florida.
-        legal_citation: Fla. Admin. Code Ann r. 5D-1.007 (2013).
+        legal_citation: Fla. Admin. Code Ann r. 5K-10.003.
     label_regulation:
       date_labels_required_for:
         - dairy
