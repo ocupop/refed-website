@@ -68,32 +68,6 @@ policy_data:
           open date on such product, and the date shall be no later than the
           date specified on the bulk container from which it was obtained.
         legal_citation: 105 Mass. Code Regs. 500.006.
-      - title: Reg 6
-        applies_to_food_type: Packaged Perishable or Semi-Perishable Foods
-        purpose_of_law: Sale after date not permitted
-        excerpted_language_from_the_law: >-
-          (F) Sale of Past Date Food Products. No person shall offer for sale in
-          the Commonwealth any food product after the expiration of a “sell by
-          date” or a “best if used by date” unless: (1) It is wholesome and its
-          sensory physical qualities have not significantly diminished; and, (2)
-          It is segregated from food products which are not “past date”; and,
-          (3) It is clearly and conspicuously marked either on the package or
-          through the use of shelf markers or placecards, as being offered for
-          sale after the recommended last date of sale or best use. (K1) (1)
-          Exemptions 105 CMR 520.101 through 520.205 do not apply to: (a) Fresh
-          meat, fresh poultry, fresh fish, fresh fruits, and fresh vegetables
-          offered for sale unpackaged or in a container permitting sensory
-          examination. (b) Salt and crystallized refined sugar. (c) Food
-          products shipped in bulk form for use solely in the manufacture of
-          other foods and not for distribution to the consumer in such bulk form
-          or container. (d) Individually packaged food products which are
-          prepackaged as components of a larger food item, if the larger food
-          item is identified with a date no later than the corresponding date
-          for any such components. (e) Food products prepackaged for retail sale
-          with a net weight of less than 1½ ounces. (f) Food products
-          manufactured for sale outside the Commonwealth, processed for sale
-          outside the Commonwealth, or stored for sale outside the Commonwealth.
-        legal_citation: 105 Mass. Code Regs. 520.119 (2013).
     label_regulation:
       date_labels_required_for:
         - perishables
